@@ -1,0 +1,475 @@
+<html>
+<head>
+    <title>Adobe Forum Statistics</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.js" ></script>
+<script src="//malsup.github.io/jquery.blockUI.js" ></script>
+<script src="//raw.githubusercontent.com/timdream/wordcloud2.js/master/src/wordcloud2.js"></script>
+<script>
+var sortByValue = function(obj){
+    var newr = {};
+    var buckets = [];
+    for ( var key in obj ){
+        if( !(obj[key] in newr) ){
+            newr[obj[key]] = [];
+            buckets.push(obj[key]);
+        }
+        newr[obj[key]].push(key);
+    }
+    buckets = buckets.sort(function(a,b){
+        return b-a;
+    });
+    var ret = [];
+    for (var ind in buckets){
+        newr[buckets[ind]] = newr[buckets[ind]].sort(function(a,b){
+            return b-a;
+        });
+        for( var wordind in newr[buckets[ind]] ){
+            ret.push(newr[buckets[ind]][wordind]);
+        }
+    }
+    return ret;
+};
+var makeBox = function(){
+    var str = "";
+    var li = [];
+    var parts = [];
+    var split = [];
+    $("#allselect option:selected").each(function(){
+        li.push($(this).text())
+    });
+    for(var i in li){
+        for(var j=parseInt(i)+1; j < li.length; j++ ){
+            if(li[j] === li[i] ){
+                continue;
+            }
+            for(var ind in li[i]){
+                if(li[j][ind] === li[i][ind]){
+                    str += li[j][ind];
+                }else{
+                    break;
+                }
+            }
+            split = str.split(" > ");
+            split.pop();
+            if(split.length > 0 && parts.indexOf(split.join(" > ")) === -1){
+                parts.push(split.join(" > "));
+            }
+            str = "";
+        }
+    }
+    $("#joinselect").html("");
+    parts.sort();
+    for(var ind in parts){
+        var myoption = $(document.createElement('option'));
+        myoption.text(parts[ind]);
+        $("#joinselect").append(myoption)
+    }
+};
+
+var namesToInd = {};
+var indToNames = {};
+var createDynamicBoxes = function(data){
+    var str = "";
+    var split = [];
+    var li = [];
+    for( var i in data["names"] ){
+        str = data["names"][i];
+        split = str.split("/");
+        str = split.pop();
+        split.push(str.split("-")[0]);
+        if(li.indexOf(split.join(" > ")) === -1){
+            li.push(split.join(" > "));
+        }
+    }
+    for( var i in data["names"] ){
+        namesToInd[data["names"][i]] = i;
+        indToNames[i] = data["names"][i];
+    }
+    li.sort();
+    for( var part in li ){
+        var myoption = $(document.createElement('option'));
+        myoption.attr("value", li[part]);
+        myoption.text(li[part]);
+        $("#allselect").append(myoption);
+    }
+    $("#allselect").change(makeBox);
+};
+var drawNGramPanel = function(headertxt, classtxt, data, addition){
+    var lsize = $(document.createElement('div'));
+    var heading = $(document.createElement('h5'));
+    var txt = "";
+    var atag = "";
+    var split = [];
+    heading.text(headertxt);
+    lsize.append(heading);
+    var rsize = $(document.createElement('div'));
+    rsize.attr('class', classtxt);
+    var sortedUni = sortByValue(data[classtxt]);
+    for( var ind in sortedUni){
+        var word = sortedUni[ind];
+        txt = "";
+        div = $(document.createElement('div'));
+        atag = $(document.createElement('a'));
+        atag.text('"'+word+'"');
+        split = word.split(' ');
+        for(var char in split){
+            txt += split[char]+"+";
+        }
+        txt = txt.substring(0, txt.length-1);
+        atag.attr("href", "/search?q="+txt);
+        atag.attr("target", '_blank');
+        div.append(atag);
+        div.append("<span>   "+data[classtxt][word]+"</span>");
+        rsize.append(div);
+    }
+    lsize.attr("style", "width:25%;float:left;padding-right:1cm;");
+    rsize.attr("style", "height:11em;overflow:scroll;");
+    lsize.append(rsize);
+    if(addition){
+        lsize.append(addition);
+    }
+    return lsize;
+};
+var drawNGrams = function(context, data, ngramsclick){
+    context.find(".uni").parent().remove();
+    context.find(".bi").parent().remove();
+    context.find(".tri").parent().remove();
+    context.find(".wordcloud").remove();
+    context.append(drawNGramPanel("UNIGRAMS:  ", "uni", data));
+    var button = $(document.createElement('button'));
+    button.attr('type', 'button');
+    button.attr('class','getngrams')
+    button.text("GET MORE NGRAMS");
+    button.click(ngramsclick);
+    context.append(drawNGramPanel("BIGRAMS:  ", "bi", data, button));
+    context.append(drawNGramPanel("TRIGRAMS:  ", "tri", data));
+    return context;
+};
+var formatData = function(data, ngramsclick){
+    var str = "";
+    var ret = $(document.createElement('div'));
+    var abr = $(document.createElement('br'));
+    var div = $(document.createElement('div'));
+    var atag = $(document.createElement('a'));
+    var lsize = $(document.createElement('div'));
+    var csize = $(document.createElement('div'));
+    var rsize = $(document.createElement('div'));
+
+    div.text("Number of Threads: "+data['threads'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")); 
+    lsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Number of Posts: "+data['posts'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    lsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Number of Sentences: "+data['sen'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    lsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Number of Words: "+data['words'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    lsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Number of Characters: "+data['len'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    lsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Number of 0 Length Sentences: "+data['zeros'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    lsize.append(div);
+    lsize.attr("style", "float:left;padding-right:1cm;");
+    ret.append(lsize);
+
+    div = $(document.createElement('div'));
+    div.text("Average Posts per Thread: "+(data['posts']/data['threads']).toFixed(2));
+    csize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average Sentences per Post: "+(data['sen']/data['posts']).toFixed(2));
+    csize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average 0 Length per Post: "+(data['zeros']/data['posts']).toFixed(2));
+    csize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average Words per Sentences: "+(data['words']/data['sen']).toFixed(2));
+    csize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average Characters per Word: "+(data['len']/data['words']).toFixed(2));
+    csize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Percent 0 Length Sentences: "+((data['zeros']/data['sen'])*100).toFixed(2)+"%");
+    csize.append(div);
+    csize.attr("style", "float:left;padding-right:1cm;");
+    ret.append(csize);
+
+    div = $(document.createElement('div'));
+    div.text("Number of Sentiment Words: "+(data['sent']).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
+    rsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average Sentiment Words per Thread: "+(data['sent']/data['threads']).toFixed(2));
+    rsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average Sentiment Words per Post: "+(data['sent']/data['posts']).toFixed(2));
+    rsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Average Sentiment Words per Sentence: "+(data['sent']/data['sen']).toFixed(2));
+    rsize.append(div);
+    div = $(document.createElement('div'));
+    div.text("Percent Sentiment Words: "+((data['sent']/data['words'])*100).toFixed(2)+"%");
+    rsize.append(div);
+    rsize.attr("style", "float:left;padding-right:1cm;");
+    ret.append(rsize);
+
+    div = $(document.createElement('div'));
+    div.attr("style", "clear:both;")
+    ret.append(div);
+
+    return drawNGrams(ret, data, ngramsclick);
+};
+var redrawNGrams = function(data){
+    $('h4').each(function(){
+        for(var name in data){
+            if($(this).text() === name.split("/").join(" > ")){
+                var other = $(this).parent().clone();
+                $(this).parent().after(drawNGrams(other, data[name], function(){}));
+                $(this).parent().remove();
+                if ($("#wordbutton").is(':checked')){
+                    var canvas = $(document.createElement('canvas'));
+                    canvas.attr('class', 'wordcloud');
+                    canvas.attr('width', Math.ceil($("#statContainer").width()*0.75));
+                    canvas.attr('height', '300');
+                    other.append(canvas);
+
+                    var list = buildWordCloud( data[name], {'bi':0,'tri':0,'uni':0} );
+                    var max = Number.MIN_VALUE;
+                    var min = Number.MAX_VALUE;
+                    for( var ind in list){
+                        if(list[ind][1] > max){
+                            max = list[ind][1];
+                        }else if(list[ind][1] < min){
+                            min = list[ind][1];
+                        }
+                    }
+                    WordCloud($("#"+idHash[name]+" .wordcloud")[0]
+                        , { list: list
+                            , weightFactor: function(weight){
+                                return Math.ceil((42*(weight-min+1))/(max-min+1))+14;
+                            }, shape: "square"
+                            , click: function(item, dimension, event){
+                                window.open("/search?q="+item[0].split(' ').join('+'), '_blank');
+                            }
+                    });
+                }
+            }
+        }
+    });
+};
+var buildWordCloud = function(data, ngrams){
+    var list = [];
+    var i = 0;
+    for( var classtxt in ngrams ){
+        var sortedUni = sortByValue(data[classtxt]);
+        list.push([]);
+        for( var ind in sortedUni){
+            var word = sortedUni[ind];
+            var number = data[classtxt][word];
+            list[i].push([word, number]);
+        }
+        i++;
+    }
+    var ptr = [];
+    for(var i in list){
+        ptr.push(0);
+    }
+    var stop = 200;
+    var count = 0;
+    var ret = [];
+    while(true){
+        var max = 0;
+        var maxval = 0;
+        var end = true;
+        for(var i in list){
+            if(ptr[i] < list[i].length && list[i][ptr[i]][1] > maxval){
+                max = i;
+                maxval = list[i][ptr[i]][1];
+            }
+            end = end && (ptr[i] >= list[i].length);
+        }
+        if(ptr[max] < list[max].length){
+            ret.push(list[max][ptr[max]]);
+        }
+        ptr[max]++;
+        count++;
+        if(end || (stop <= count)){
+            break;
+        }
+    }
+    return ret;
+};
+var idHash = {};
+var drawStats = function(name, data, cb){
+    var mybox = $(document.createElement('fieldset'));
+    var myhead = $(document.createElement('h4'));
+    myhead.text(name);
+    mybox.append(myhead);
+    mybox.append(formatData(data, function(){
+        name = name.trim().split(" > ").join("/");
+        var thedata = { 'ngrams': [name]
+            , 'f': lastRender['f']
+            , 'b': lastRender['b'] };
+        $.post(document.URL+'statserver/', thedata, redrawNGrams);
+    }));
+
+    if ($("#wordbutton").is(':checked')){
+        var canvas = $(document.createElement('canvas'));
+        canvas.attr('class', 'wordcloud');
+        canvas.attr('width', Math.ceil($("#statContainer").width()*0.75));
+        canvas.attr('height', '300');
+        mybox.append(canvas);
+    }
+
+    mybox.attr("id", idHash[name.split(" > ").join("/")]);
+    $("#statContainer").append(mybox);
+    if(cb){
+        cb();
+    }
+    };
+    var displayResults = function(data){
+        $("#statContainer").html('');
+        var hello = data;
+    var order = [];
+    idHash = {};
+    var uniq = 0;
+    for ( var name in hello ){
+        idHash[name] = "adobe"+(uniq++);
+        order.push(name.split('/').join(" > "));
+    }
+    order.sort()
+    for( var name in order ){
+        drawStats(order[name], hello[order[name].split(' > ').join('/')], function(){
+            var list = buildWordCloud( hello[order[name].split(' > ').join('/')]
+                        , {'bi':0,'tri':0,'uni':0} );
+            var max = Number.MIN_VALUE;
+            var min = Number.MAX_VALUE;
+            for( var ind in list){
+                if(list[ind][1] > max){
+                    max = list[ind][1];
+                }else if(list[ind][1] < min){
+                    min = list[ind][1];
+                }
+            }
+            if ($("#wordbutton").is(':checked')){
+                WordCloud($("#"+idHash[order[name].split(' > ').join('/')]+" .wordcloud")[0]
+                    , { list: list
+                        , weightFactor: function(weight){
+                            return Math.ceil((42*(weight-min+1))/(max-min+1))+14;
+                        }, shape: "square"
+                        , click: function(item, dimension, event){
+                            window.open("/search?q="+item[0].split(' ').join('+'), '_blank');
+                        }
+
+                });
+            }
+        });
+    }
+};
+var lastRender = {};
+var retrieve = function(){
+    var sendlist = [];
+    var otherlist = [];
+    $("#joinselect option:selected").each(function(){
+        sendlist.push($(this).text()+" ");
+    });
+    $("#allselect option:selected").each(function(){
+        var flag = false;
+        for(var ind in sendlist){
+            if($(this).text().indexOf(sendlist[ind]) === 0){
+                flag = true;
+                break;
+            }
+        }
+        if(!flag){
+            sendlist.push($(this).text());
+        }
+        otherlist.push($(this).text());
+    });
+    var ajaxdata = [];
+    for(var ind in sendlist){
+        sendlist[ind] = sendlist[ind].trim().split(" > ").join("/");
+        ajaxdata.push({"j": [sendlist[ind]]});
+    }
+    for(var ind in otherlist){
+        otherlist[ind] = otherlist[ind].split(" > ").join("/");
+        for(var idx in ajaxdata){
+            if(otherlist[ind].indexOf(ajaxdata[idx]["j"]) === 0){
+                if( !("f" in ajaxdata[idx]) ){
+                    ajaxdata[idx]["f"] = []
+                }
+                var k = sendlist.indexOf(otherlist[ind])
+                    if(k !== -1){
+                        if(sendlist[k] === ajaxdata[idx]["j"][0]){
+                            ajaxdata[idx]["f"].push(otherlist[ind]);
+                        }else{
+                            continue;
+                        }
+                    }else{
+                        ajaxdata[idx]["f"].push(otherlist[ind]);
+                    }
+                    break;
+                }
+            }
+        }
+        thedata = {'f': [], 'j': []};
+        for( var ind in ajaxdata ){
+            ajaxdata[ind]["new"] = [];
+            for( var i in ajaxdata[ind]['f'] ){
+                ajaxdata[ind]["new"].push(namesToInd[ajaxdata[ind]["f"][i]]);
+            }
+            for( var i in ajaxdata[ind]['j'] ){
+                if( ajaxdata[ind]['j'][i] in namesToInd){
+                    ajaxdata[ind]['j'][i] = namesToInd[ajaxdata[ind]["j"][i]];
+                }
+            }
+            ajaxdata[ind]["f"] = ajaxdata[ind]["new"];
+            delete ajaxdata[ind]["new"];
+            thedata['f'] = thedata['f'].concat(ajaxdata[ind]["f"]);
+            thedata['j'] = thedata['j'].concat(ajaxdata[ind]['j']);
+        }
+        var bool = false;
+        if( $("#sentiment").is(':checked') )
+            bool = true;
+        thedata['b'] = bool;
+        $.post(document.URL+'statserver/', thedata, displayResults);
+    lastRender = thedata;
+};
+$(document).ready(function(){
+    $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+    $.get(document.URL+"names/", createDynamicBoxes);
+    $("#getstats").click(retrieve);
+});
+</script>
+
+</head>
+<body>
+
+    <form action="false;">
+        <h3>Select Forums:</h3>
+            <br />
+        <select multiple size="10" id="allselect">
+        </select>
+            <br />
+        <h3>Join on Categories:</h3>
+            <br />
+        <select multiple size="5" id="joinselect">
+        </select>
+            <br />
+            <br />
+        <input type="checkbox" id="sentiment" /> Only show N-Grams containing at least one sentiment word.
+            <br />
+        <input type="checkbox" id="wordbutton" /> Show Word Clouds.
+            <br />
+            <br />
+        <button id="getstats" type="button">GET THE STATS!</button>
+    </form>
+    <br />
+    <br />
+    <div id="statContainer">
+    </div>
+
+</body>
+
+</html>
