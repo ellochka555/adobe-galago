@@ -17,3 +17,11 @@ then use Galago's build functionality to create an index on this new \url{trec} 
 There is a sample dataset that I have collected, but this allows anyone to create
 a new dataset based on new data from Adobe.
 
+
+
+
+Need Java 7
+Clone git
+install galago
+make galago.conf
+install heritrix 3.2.0
