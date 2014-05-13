@@ -1,0 +1,86 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/FlexPMD/Discussions-3412670-780055</DOCNO>
+<TEXT>
+<subject>Build Maven KO</subject>
+<post author="MABqualixo" timestamp="Jan 19, 2011 8:14 AM">
+<s>salut, 
+</s><s>j'ai le message d'erreur suivant après récupération du trunk ou de la release 1.2: 
+> maven package [error] failed to execute goal on project flex-pmd-flex-lib: could not resolve dependencies for project com.adobe.ac:flex-pmd-flex-lib:swc:1.3-snapshot: failed to collect dependencies for [com.adobe.ac:flex-pmd-ruleset:jar:1.3-snapshot (compile), com.adobe.cairngorm:event-source:swc:1.1 (test), com.adobe.cairngorm:cairngorm:swc:2.2.1 (compile), com.adobe.flex.framework:flex-framework:pom:3.2.0.3958 (compile), com.adobe.flex.framework:playerglobal:swc:10-3.2.0.3958 (compile), com.adobe.flex.framework:datavisualization:swc:3.2.0.3958 (compile), com.adobe.flex.framework:datavisualization:rb.swc:en_us:3.2.0.3958 (compile), org.sonatype.flexmojos:flexmojos-unittest-support:swc:3.5.0 (test), junit:junit:jar:4.7 (test)]: failed to read artifact descriptor for com.adobe.cairngorm:event-source:swc:1.1: could not transfer artifact com.adobe.cairngorm:event-source:pom:1.1 from/to apache (http://cvs.apache.org/repository/): no connector available to access repository apache (http://cvs.apache.org/repository/) of type legacy using the available factories wagonrepositoryconnectorfactory 
+quelqu'un a une idée? 
+</s><s>merci!</s><s> 
+</s><s>mab qualixo (fr) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/FlexPMD/Discussions-3412670-3417604</DOCNO>
+<TEXT>
+<subject>Build Maven KO</subject>
+<post author="MABqualixo" timestamp="Jan 21, 2011 5:53 AM">
+<s>hi again, 
+i am still facing issues in maven build; below are some missing artifacts: 
+
+1) com.adobe.cairngorm:event-source:swc:1.1 
+try downloading the file manually from the project website. 
+</s><s>then, install it using the command: mvn install:install-file -dgroupid=com.adobe.cairngorm -dartifactid=event-source -dversion=1.1 -dpackaging=swc -dfile=/path/to/file 
+alternatively, if you host your own repository you can deploy the file there: mvn deploy:deploy-file -dgroupid=com.adobe.cairngorm -dartifactid=event-source -dversion=1.1 -dpackaging=swc -dfile=/path/to/file -durl=[url] -drepositoryid=[id] 
+</s><s>path to dependency: 1) com.adobe.ac:flex-pmd-flex-lib:swc:1.2 2) com.adobe.cairngorm:event-source:swc:1.1 
+2) com.adobe.flex.framework:datavisualization:swc:3.2.0.3958 
+try downloading the file manually from the project website. 
+</s><s>then, install it using the command: mvn install:install-file -dgroupid=com.adobe.flex.framework -dartifactid=datavisualization -dversion=3.2.0.3958 -dpackaging=swc -dfile=/path/to/file 
+alternatively, if you host your own repository you can deploy the file there: mvn deploy:deploy-file -dgroupid=com.adobe.flex.framework -dartifactid=datavisualization -dversion=3.2.0.3958 -dpackaging=swc -dfile=/path/to/file -durl=[url] -drepositoryid=[id] 
+</s><s>path to dependency: 1) com.adobe.ac:flex-pmd-flex-lib:swc:1.2 2) com.adobe.flex.framework:datavisualization:swc:3.2.0.3958 
+3) com.adobe.flex.framework:datavisualization:rb.swc:en_us:3.2.0.3958 
+try downloading the file manually from the project website. 
+</s><s>then, install it using the command: mvn install:install-file -dgroupid=com.adobe.flex.framework -dartifactid=datavisualization -dversion=3.2.0.3958 -dclassifier=en_us -dpackaging=rb.swc -dfile=/path/to/file 
+alternatively, if you host your own repository you can deploy the file there: mvn deploy:deploy-file -dgroupid=com.adobe.flex.framework -dartifactid=datavisualization -dversion=3.2.0.3958 -dclassifier=en_us -dpackaging=rb.swc -dfile=/path/to/file -durl=[url] -drepositoryid=[id] 
+</s><s>path to dependency: 1) com.adobe.ac:flex-pmd-flex-lib:swc:1.2 2) com.adobe.flex.framework:datavisualization:rb.swc:en_us:3.2.0.3958 
+
+</s><s>for reference, here is settings.xml 
+
+<repositories> <repository> <url>http://opensource.adobe.com/svn/opensource/cairngorm3/maven-repository</url> <id>cairngorm3-repo</id> </repository> <repository> <url>http://opensource.adobe.com/svn/opensource/flexpmd/maven-repository/re lease</url> <id>flexpmd-repo</id> </repository> <repository> <url>http://repository.sonatype.org/content/groups/flexgroup/</url> <id>flexgroup-repo</id> </repository> 
+</repositories> 
+
+</s><s>any help greatly appreciated. 
+</s><s>mab qualixo 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/FlexPMD/Discussions-3412670-3417609</DOCNO>
+<TEXT>
+<subject>Build Maven KO</subject>
+<post author="MABqualixo" timestamp="Jan 21, 2011 5:59 AM">
+<s>as a feedback, first issue (no connector available to access repository apache of type legacy using the available factories wagonrepositoryconnectorfactory) was fixed with downgrade to maven 2.x (was on latest maven 3.x), as maven since 3.x does not connect to legacy repositories anymore.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/FlexPMD/Discussions-3412670-4592344</DOCNO>
+<TEXT>
+<subject>Build Maven KO</subject>
+<post author="StevenErat" timestamp="Aug 1, 2012 12:08 PM">
+<s>i am cross referencing a similar thread that about this same issue: http://forums.adobe.com/thread/1041494 
+it started when i tried to build flexpmd with maven 3.x, then i downgraded to maven 2.x in order to access the 'legacy' repos.</s><s> however with maven 2.x i arrived at the same place where qualixo arrived, so presently i am still unable to build flexpmd until this is resolved. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/FlexPMD/Discussions-3412670-4594007</DOCNO>
+<TEXT>
+<subject>Build Maven KO</subject>
+<post author="StevenErat" timestamp="Aug 2, 2012 8:02 AM">
+<s>to anyone finding this thread with a maven 2 build error matching the above, see the previous cross referenced link.</s><s> the solution is to build from flex-pmd-java-parent intead of flex-pmd-parent. 
+</s></post>
+</TEXT>
+</DOC>
+
+

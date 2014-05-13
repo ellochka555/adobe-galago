@@ -1,0 +1,128 @@
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-3929233-904749</DOCNO>
+<TEXT>
+<subject>On Audition CS5.5 I want to be able to monitor my mix in Mono. How do I do that?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Sep 21, 2011 3:13 PM">
+<s>fortunately there's a simple way to configure the mixer's output section to do this: 
+what you do (and you can configure this however you want) is to open an instance of the channel mixer in the master section's fx.</s><s> if you want mono from both speakers, you have to modify the preset that says 'downmix to 1/0 (mono)' so that what happens on the l channel (70.71% = -3db) happens on the r channel as well.</s><s> then save a new preset called 'downmix to 1/1 (glorious mono)'. 
+</s><s>how you use this is delightfully simple - just toggle the power switch on the effect!</s><s> when active, it's mono, when you turn it off it's stereo again.</s><s> it works pretty much in real time, and obviously you can hack it around if you want so it's both channels to l or r, rather than both. 
+</s><s>incidentally, the expression 'glorious mono' is what the bbc has always referred to it as when it comes from more than one loudspeaker. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-3929233-904749</DOCNO>
+<TEXT>
+<subject>On Audition CS5.5 I want to be able to monitor my mix in Mono. How do I do that?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Sep 21, 2011 3:13 PM">
+<s>fortunately there's a simple way to configure the mixer's output section to do this: 
+what you do (and you can configure this however you want) is to open an instance of the channel mixer in the master section's fx.</s><s> if you want mono from both speakers, you have to modify the preset that says 'downmix to 1/0 (mono)' so that what happens on the l channel (70.71% = -3db) happens on the r channel as well.</s><s> then save a new preset called 'downmix to 1/1 (glorious mono)'. 
+</s><s>how you use this is delightfully simple - just toggle the power switch on the effect!</s><s> when active, it's mono, when you turn it off it's stereo again.</s><s> it works pretty much in real time, and obviously you can hack it around if you want so it's both channels to l or r, rather than both. 
+</s><s>incidentally, the expression 'glorious mono' is what the bbc has always referred to it as when it comes from more than one loudspeaker. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-4761844-1079494</DOCNO>
+<TEXT>
+<subject>Restoring the default settings for Audition CS6</subject>
+<post author="SteveG(AudioMasters)" timestamp="Oct 9, 2012 2:19 PM">
+<s>fortunately you don't have to uninstall and reinstall audition to do this - although that's certainly an option.</s><s> bear in mind that doing this will only work if you choose to delete your preferences as part of the process. 
+</s><s>there are several other options though, and i suggest reading through all of them before deciding which to use.</s><s> we'll start, though, with the other simple one.</s><s> if you start audition with the 'shift' key held down, this will achieve the same result - the preference files won't be read, and the default (aka 'vanilla') ones will be reinstated.</s><s> certainly with a mac (and probably a pc as well) you have to hold the 'shift' key down at least until the splash screen appears, otherwise it might not work. 
+</s><s>from here on, it gets a little more complicated, but you get more options.</s><s> the reason for this is that in order to get at the individual preference files, we have to consider three different operating systems, xp, windows 7, and os x. by default, in all of them, the location of these files is hidden, and you have to reveal it.</s><s> when you have done this, the path and files will be revealed. 
+</s><s>revealing hidden folders: xp: in a folder, go to tools>folder options>view and scroll down to the hidden folders entry.</s><s> select the 'show' option.</s><s> the path to the preferences folder is c:\documents and settings\[user_name]\application data\adobe\audition\5.0 
+windows 7: in a folder, go to organise>folders and search options>view, and then it's the same as xp.</s><s> the path to the preferences folder is c:\users\[username]\appdata\roaming\adobe\audition\5.0 
+mac ox: the preferences are in a library folder, and are apparently stored twice.</s><s> the locations of them are: 
+/users/[user_name]/library/preferences/adobe/audition/5.0/ /users/[user_name]/library/preferences/com.adobe.audition.5.0.plist there is a note about this at the end of this faq*. 
+</s><s>anyway, there are, apparently, several ways to unhide them: 
+1.</s><s> the easiest way to get there without opening terminal is to open finder or click on your desktop, click go in the menu bar, then hold down the option/alt key.</s><s> you should see library appear in the menu as long as your holding that key and clicking the menu item will bring it up in finder. 
+2.</s><s> use command+shift+g from the mac desktop (or finder>go>go to folder) and type in ~/library to temporarily access the library directory.</s><s> when you have finished manipulating the relevant parts of it, close this window and the folder will no longer be visible. 
+3.</s><s> to make the library folder visible permanently (like in os 10.6 and earlier), open the terminal application and use the following command: chflags nohidden ~/library/ 
+what do you have to do when you've revealed the folder?</s><s> the basic idea is that if audition opens, and it doesn't find a particular file in the preferences folder, it recreates it.</s><s> so, you can either delete all the files in it (the same as shift+open), or you can be more selective.</s><s> primarily there are three .xml files that you are interested in, and if you are only having a problem with one of them, then that's the only one you need to delete. 
+</s><s>application settings - deleting this will restore most of the settings in the program itself back to defaults 
+effect presets - deleting this will restore default settings, but if you have made any of your own presets, you will lose these too. 
+</s><s>favorites - the same as effect presets, only for the favorites list. 
+</s><s>there is also an .xml file for machine-specific settings, but this only affects your sound device, and generally would be rewritten anyway if anything changed, so generally doesn't need to be touched.</s><s> mainly it's the three i mention above that are the ones you will be interested in. 
+* a note from durin about the mac preferences files: "the directory path, ~/library/preferences/adobe/audition/5.0/ is where we store all the preferences, presets, workspaces, log files, etc. anything and everything a user may need access to.</s><s> the .plist file is more of an application/os level preferences - similar to an ini or registry entry in that it's less user-facing and more preferences for how the application works with the os.</s><s> in audition's case, this stores information such as the last directory accessed, file open/save dialog dimensions, and other mysterious prefs that are just random guids that audition and os x understand. 
+</s><s>in either case, if the directory or .plist is missing, it will be rebuilt on launch to the first-launch defaults." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-4761844-1079494</DOCNO>
+<TEXT>
+<subject>Restoring the default settings for Audition CS6</subject>
+<post author="SteveG(AudioMasters)" timestamp="Oct 9, 2012 2:19 PM">
+<s>fortunately you don't have to uninstall and reinstall audition to do this - although that's certainly an option.</s><s> bear in mind that doing this will only work if you choose to delete your preferences as part of the process. 
+</s><s>there are several other options though, and i suggest reading through all of them before deciding which to use.</s><s> we'll start, though, with the other simple one.</s><s> if you start audition with the 'shift' key held down, this will achieve the same result - the preference files won't be read, and the default (aka 'vanilla') ones will be reinstated.</s><s> certainly with a mac (and probably a pc as well) you have to hold the 'shift' key down at least until the splash screen appears, otherwise it might not work. 
+</s><s>from here on, it gets a little more complicated, but you get more options.</s><s> the reason for this is that in order to get at the individual preference files, we have to consider three different operating systems, xp, windows 7, and os x. by default, in all of them, the location of these files is hidden, and you have to reveal it.</s><s> when you have done this, the path and files will be revealed. 
+</s><s>revealing hidden folders: xp: in a folder, go to tools>folder options>view and scroll down to the hidden folders entry.</s><s> select the 'show' option.</s><s> the path to the preferences folder is c:\documents and settings\[user_name]\application data\adobe\audition\5.0 
+windows 7: in a folder, go to organise>folders and search options>view, and then it's the same as xp.</s><s> the path to the preferences folder is c:\users\[username]\appdata\roaming\adobe\audition\5.0 
+mac ox: the preferences are in a library folder, and are apparently stored twice.</s><s> the locations of them are: 
+/users/[user_name]/library/preferences/adobe/audition/5.0/ /users/[user_name]/library/preferences/com.adobe.audition.5.0.plist there is a note about this at the end of this faq*. 
+</s><s>anyway, there are, apparently, several ways to unhide them: 
+1.</s><s> the easiest way to get there without opening terminal is to open finder or click on your desktop, click go in the menu bar, then hold down the option/alt key.</s><s> you should see library appear in the menu as long as your holding that key and clicking the menu item will bring it up in finder. 
+2.</s><s> use command+shift+g from the mac desktop (or finder>go>go to folder) and type in ~/library to temporarily access the library directory.</s><s> when you have finished manipulating the relevant parts of it, close this window and the folder will no longer be visible. 
+3.</s><s> to make the library folder visible permanently (like in os 10.6 and earlier), open the terminal application and use the following command: chflags nohidden ~/library/ 
+what do you have to do when you've revealed the folder?</s><s> the basic idea is that if audition opens, and it doesn't find a particular file in the preferences folder, it recreates it.</s><s> so, you can either delete all the files in it (the same as shift+open), or you can be more selective.</s><s> primarily there are three .xml files that you are interested in, and if you are only having a problem with one of them, then that's the only one you need to delete. 
+</s><s>application settings - deleting this will restore most of the settings in the program itself back to defaults 
+effect presets - deleting this will restore default settings, but if you have made any of your own presets, you will lose these too. 
+</s><s>favorites - the same as effect presets, only for the favorites list. 
+</s><s>there is also an .xml file for machine-specific settings, but this only affects your sound device, and generally would be rewritten anyway if anything changed, so generally doesn't need to be touched.</s><s> mainly it's the three i mention above that are the ones you will be interested in. 
+* a note from durin about the mac preferences files: "the directory path, ~/library/preferences/adobe/audition/5.0/ is where we store all the preferences, presets, workspaces, log files, etc. anything and everything a user may need access to.</s><s> the .plist file is more of an application/os level preferences - similar to an ini or registry entry in that it's less user-facing and more preferences for how the application works with the os.</s><s> in audition's case, this stores information such as the last directory accessed, file open/save dialog dimensions, and other mysterious prefs that are just random guids that audition and os x understand. 
+</s><s>in either case, if the directory or .plist is missing, it will be rebuilt on launch to the first-launch defaults." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-4204470-962397</DOCNO>
+<TEXT>
+<subject>steps to troubleshoot and get past common problems with Audition</subject>
+<post author="Todd_Kopriva" timestamp="Feb 13, 2012 12:54 PM">
+<s>when you encounter a problem with audition, the following steps are often useful for getting past the problem and/or determining the cause of the problem:     1.  hold down shift while you launch audition      this overrides the preference files and launches audition using the default settings.   2.  manually rename or delete the preferences folder      step 1 only overrides certain preference files, while others such as workspace preference files, may be the cause of the problem.  depending on your os, locate the "5.0" folder in the location below and rename it or delete it.      windows xp: c:\document and settings\<username>\application data\adobe\audition\5.0\      windows vista/7: c:\users\<username>\appdata\roaming\adobe\audition\5.0\ *      mac os x: ~\library\preferences\adobe\audition\5.0\ **           * "appdata" may be a hidden folder.  you can type it into the location bar, or enable "show hidden files" in windows.           ** this is your user-level library folder, not the system-level tree.</s><s> 3. check your audition log.txt file      to enable a log file with cs 5.5, you must create an empty file in your preferences folder called "audition log.txt" using notepad, text edit, or any other editor.  after you create this file, launch audition and if it fails, open and/or share the log file for more specific information about what's happening.   4. check the operating system console or error log      both os x and windows can track application errors, and if the problem is occurring outside of the application code - a driver conflict, for example - then the os error report may be more informative than what we can get from the application.      os x: launch /applications/utilities/console.app   clear the view, then launch audition and note any error messages that appear.      windows: launch control panel > administrative tools > event viewer > windows logs > application then launch audition and note any error messages that appear.   5.</s><s> re-install audition      if at this point, nothing has resolved the issue or the error logs are inconclusive, it's a good time to uninstall audition, reboot, and reinstall audition.   6. obtain the full crash dump and send it to the adobe team      so you've walked through all the above steps, you've disconnected any external hardware interfaces to rule out any device or driver conflicts, and you've exhausted the basic troubleshooting steps.  visit http://forums.adobe.com/thread/900619 and follow the steps for your os that charles has documented to best obtain a full crash memory dump for audition, and send that to audbugs@adobe.com with a description of the problem and the steps you've taken, and we'll take a look. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-4204470-962397</DOCNO>
+<TEXT>
+<subject>steps to troubleshoot and get past common problems with Audition</subject>
+<post author="Todd_Kopriva" timestamp="Feb 13, 2012 12:54 PM">
+<s>when you encounter a problem with audition, the following steps are often useful for getting past the problem and/or determining the cause of the problem:     1.  hold down shift while you launch audition      this overrides the preference files and launches audition using the default settings.   2.  manually rename or delete the preferences folder      step 1 only overrides certain preference files, while others such as workspace preference files, may be the cause of the problem.  depending on your os, locate the "5.0" folder in the location below and rename it or delete it.      windows xp: c:\document and settings\<username>\application data\adobe\audition\5.0\      windows vista/7: c:\users\<username>\appdata\roaming\adobe\audition\5.0\ *      mac os x: ~\library\preferences\adobe\audition\5.0\ **           * "appdata" may be a hidden folder.  you can type it into the location bar, or enable "show hidden files" in windows.           ** this is your user-level library folder, not the system-level tree.</s><s> 3. check your audition log.txt file      to enable a log file with cs 5.5, you must create an empty file in your preferences folder called "audition log.txt" using notepad, text edit, or any other editor.  after you create this file, launch audition and if it fails, open and/or share the log file for more specific information about what's happening.   4. check the operating system console or error log      both os x and windows can track application errors, and if the problem is occurring outside of the application code - a driver conflict, for example - then the os error report may be more informative than what we can get from the application.      os x: launch /applications/utilities/console.app   clear the view, then launch audition and note any error messages that appear.      windows: launch control panel > administrative tools > event viewer > windows logs > application then launch audition and note any error messages that appear.   5.</s><s> re-install audition      if at this point, nothing has resolved the issue or the error logs are inconclusive, it's a good time to uninstall audition, reboot, and reinstall audition.   6. obtain the full crash dump and send it to the adobe team      so you've walked through all the above steps, you've disconnected any external hardware interfaces to rule out any device or driver conflicts, and you've exhausted the basic troubleshooting steps.  visit http://forums.adobe.com/thread/900619 and follow the steps for your os that charles has documented to best obtain a full crash memory dump for audition, and send that to audbugs@adobe.com with a description of the problem and the steps you've taken, and we'll take a look. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-4256315-973133</DOCNO>
+<TEXT>
+<subject>Setting the Sample Rate in Windows Vista and 7</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 9, 2012 1:16 PM">
+<s>this is an extract from a thread about setting up sound devices - specifically it relates to vista, but in general it applies to all current windows os's.   its originator is adobe's _durin_     you'll need to make sure that the sample rate for your input and output channels of your device match.   1.</s><s> right-click on the speaker icon in the lower-right corner of your desktop and choose recording devices   2.</s><s> right-click the microphone (or desired input channel for the device) and choose properties   3.</s><s> click the advanced tab and verify or change the default format option   4.</s><s> click ok then click the playback tab.  right-click on your default or desired output channel and choose properties 5.</s><s> make sure the default format option matches what you selected for your recording channel.  (you'll notice in this screenshot, my playback device is configured for 48,000hz while my microphone was configured for 44,100hz.  these need to match.</s><s>)   6. in audition, create a new session.  for best results, ensure your session sample rate matches the sample rates you selected for your decices.  audition will attempt to convert the sample rate of your recording on-the-fly to match the session sample rate, but it's always recommended to work at a single, consistent sample rate to ensure no change to the audio signal takes place.   bob howes added the following information to durin's setup procedure that is vista-specific:     the only thing to add is that you may have to do this again for future sessions--one of the pains of vista is that it allows other software to grab the sound settings and adjust them--so if, for example, you've just watched a youtube video with 48khz audio, but want to record at 44.1, windows may have left the settings at the last ones used.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Audition-FAQ-(frequently-asked-questions)/Discussions-4256315-973133</DOCNO>
+<TEXT>
+<subject>Setting the Sample Rate in Windows Vista and 7</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 9, 2012 1:16 PM">
+<s>this is an extract from a thread about setting up sound devices - specifically it relates to vista, but in general it applies to all current windows os's.   its originator is adobe's _durin_     you'll need to make sure that the sample rate for your input and output channels of your device match.   1.</s><s> right-click on the speaker icon in the lower-right corner of your desktop and choose recording devices   2.</s><s> right-click the microphone (or desired input channel for the device) and choose properties   3.</s><s> click the advanced tab and verify or change the default format option   4.</s><s> click ok then click the playback tab.  right-click on your default or desired output channel and choose properties 5.</s><s> make sure the default format option matches what you selected for your recording channel.  (you'll notice in this screenshot, my playback device is configured for 48,000hz while my microphone was configured for 44,100hz.  these need to match.</s><s>)   6. in audition, create a new session.  for best results, ensure your session sample rate matches the sample rates you selected for your decices.  audition will attempt to convert the sample rate of your recording on-the-fly to match the session sample rate, but it's always recommended to work at a single, consistent sample rate to ensure no change to the audio signal takes place.   bob howes added the following information to durin's setup procedure that is vista-specific:     the only thing to add is that you may have to do this again for future sessions--one of the pains of vista is that it allows other software to grab the sound settings and adjust them--so if, for example, you've just watched a youtube video with 48khz audio, but want to record at 44.1, windows may have left the settings at the last ones used.
+</s></post>
+</TEXT>
+</DOC>
+
+

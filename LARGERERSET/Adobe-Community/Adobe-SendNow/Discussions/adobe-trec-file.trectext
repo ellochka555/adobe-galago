@@ -1,0 +1,1326 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212733-1428772</DOCNO>
+<TEXT>
+<subject>Could not send large file</subject>
+<post author="cskeggs" timestamp="Mar 15, 2014 12:52 PM">
+<s>i have a paid subscription.</s><s> i was logged in with my user name.</s><s> i tried to send a 1.9gb file (which is within the 2gb limit).</s><s> i got a message when i tried to send it that the file exceeded the 100mb limit. 
+</s><s>what's up with that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212733-6221293</DOCNO>
+<TEXT>
+<subject>Could not send large file</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:02 PM">
+<s>i'm not sure why you got that message, since you have a paid subscription.</s><s> if you can tell me roughly when you attempted to send the file, i can ask the engineers to look at the server logs to see what happened. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212733-6221597</DOCNO>
+<TEXT>
+<subject>Could not send large file</subject>
+<post author="cskeggs" timestamp="Mar 18, 2014 1:08 PM">
+<s>it was a little while before i posted the message - 12:52pm on march 15 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212733-6223511</DOCNO>
+<TEXT>
+<subject>Could not send large file</subject>
+<post author="bob.treitman" timestamp="Mar 19, 2014 6:52 AM">
+<s>thanks.</s><s> i'll ask the engineer to check the logs.</s><s> are you uploading from a mac or windows machine?</s><s> also, do you know your internet connection's upload speed?</s><s> you can test it at testmy.net. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212733-6233409</DOCNO>
+<TEXT>
+<subject>Could not send large file</subject>
+<post author="cskeggs" timestamp="Mar 22, 2014 11:50 AM">
+<s>i am uploading from a windows 7 (windows 7 home premium) 
+i ran the test at testmy.net. the results: download speed: 31.2 mbps upload speed 8.8 mbps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-1426130</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 11, 2014 10:05 PM">
+<s>every time i connect and try to upload a file using adobe send now, i get an error message stating that the file was not uploaded and to check my internet.</s><s> everything else is good, so i know i am connected.</s><s> what's going on here?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6201803</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="saflynn" timestamp="Mar 12, 2014 12:32 AM">
+<s>hi mazianaus, sorry you are having problem with adobe sendnow what type of file are you trying to upload?</s><s> what operating system/browser are you using - i'd like to see if i can reproduce the problem 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6202356</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 12, 2014 4:58 AM">
+<s>hi, i am trying to upload a pdf, 7mg file. 
+</s><s>thanks 
+
+</s><s>sent from my ipad 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6202357</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 12, 2014 5:00 AM">
+<s>i am using imac.</s><s> operating on osx mavericks and using acrobat xi thanks 
+
+</s><s>sent from my ipad 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6221343</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:07 PM">
+<s>can you try sending it from the sendnow web client (at https://sendnow.acrobat.com)? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6222299</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 18, 2014 5:10 PM">
+<s>
+</s><s>i did try that method too but the same problem.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6223504</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 19, 2014 6:37 AM">
+<s>does this happen with all files or just this one?</s><s> in the meantime, i will ask the engineers to look through the logs to see if there was any error information recorded for your attempt. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229501</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 20, 2014 5:46 PM">
+<s>hi bob, 
+</s><s>yes this happensevery time, so i have stopped using this method.</s><s> although i liked it when it was working for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229493</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 6:44 PM">
+<s>every time with that one file, or every time with any file? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229588</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 20, 2014 7:20 PM">
+<s>every time bob. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229498</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 7:31 PM">
+<s>are you attempting to use sendnow at work?</s><s> we've occasionally had reports from users who suddenly couldn't use it and the cause ended up being a change that their systems adminstrator made to the organizations network settings that blocked the upload to our servers.</s><s> have you tried from home or another location? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229696</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 20, 2014 7:39 PM">
+<s>i have been sending from the workplace, i haven't used it at home.</s><s> i am on a wireless network, if that helps.</s><s> although i shall be changing to ethernet over the weekend, so i shall try without a wireless connection on monday. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229724</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 7:45 PM">
+<s>if my guess is correct, it's not the wireless-v-ethernet issue, but rather the way that your work network communicates with the internet.</s><s> i would be very interested to hear if you can use sendnow from your home or a public internet connection. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229700</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 20, 2014 7:52 PM">
+<s>i changed our internet service provider yesterday, so i shall try sending the file to me now.</s><s> maybe that will make a difference? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229703</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 20, 2014 7:57 PM">
+<s>ok just tried that, and this is what i got... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229726</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 7:59 PM">
+<s>one more thing to try.</s><s> sign in to https://workspaces.acrobat.com with the same adobe id and password as you use for adobe sendnow, and try to upload a file there.</s><s> this uses virtually the same mechanism as sendnow, so i would expect that if you can't upload your files on sendnow, you'll see the same problem with workspaces.</s><s> i don't think that it's the isp, per se, but rather with the way your work network is configured.</s><s> if you have a systems or network administrator, it would be interesting to ask if any changes were made since you were last able to upload your file(s) using sendnow. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229727</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 8:00 PM">
+<s>please click on the more info link - what does it say? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6229729</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 8:06 PM">
+<s>the fact that you're getting upload failures with both workspaces and sendnow leads me to suspect that my guess that it's a network issue in your workplace is correct.</s><s> i'll be interested to hear if it works from your home or elsewhere.</s><s> unfortunately, it's late here on the east coast of the us and i have to sign off for the night.</s><s> i'll check this thread in the morning. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6201826-6232935</DOCNO>
+<TEXT>
+<subject>Adobe SendNow new Web send method</subject>
+<post author="mazinaus" timestamp="Mar 21, 2014 9:24 PM">
+<s>hi bob, i'm at home now and decided to try uploading a file using this network... and it works.</s><s> so it must be something in my work environment.</s><s> although i was able to use it a while back at my workplace. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6232832-1433784</DOCNO>
+<TEXT>
+<subject>How can I edit my document?</subject>
+<post author="Tinman610" timestamp="Mar 21, 2014 7:14 PM">
+<s>i need to edit my document 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228972-1432882</DOCNO>
+<TEXT>
+<subject>Converting MSPublisher 2003 to .pdf -- fail to convert</subject>
+<post author="cmgreenlnd" timestamp="Mar 20, 2014 3:26 PM">
+<s>i'm having difficulties converting my publisher files to .pdf after several tries 
+
+
+i had no problems with previous versions 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228972-6229494</DOCNO>
+<TEXT>
+<subject>Converting MSPublisher 2003 to .pdf -- fail to convert</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 6:46 PM">
+<s>previous versions of ms publisher or previous versions of adobe sendnow?</s><s> we've not made any significant changes lately, so i assume the former. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228470-1432698</DOCNO>
+<TEXT>
+<subject>Idioma</subject>
+<post author="Carlos Santos" timestamp="Mar 20, 2014 12:26 PM">
+<s>na instalação da apliação não encontrei o idioma de portugal, pelo que tive de optar pelo espanhol; o que devo fazer para alterar? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228470-6228524</DOCNO>
+<TEXT>
+<subject>Idioma</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 12:33 PM">
+<s>adobe sendnow is not available in portuguese.</s><s> it is available in english, french, german, italian, spanish and japanese. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228470-6228765</DOCNO>
+<TEXT>
+<subject>Idioma</subject>
+<post author="Carlos%20Santos" timestamp="Mar 20, 2014 1:25 PM">
+<s>thank you.</s><s> it turns out that people in portugal who receive comments have some hesitation in opening, for doubting the spanish text no dia 20/03/2014, às 19:33, bob.treitman <forums_noreply@adobe.com> escreveu: 
+<quote>
+<s>
+</s><s>re: idioma created by bob.treitman in adobe sendnow - view the full discussion adobe sendnow is not available in portuguese.</s><s> it is available in english, french, german, italian, spanish and japanese. 
+</s><s>please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/6228524#6228524 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: idioma to unsubscribe from this thread, please visit the message page at re: idioma.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in adobe sendnow at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228265-1432700</DOCNO>
+<TEXT>
+<subject>WHAT IS THE CORRECT URL to send a document please?</subject>
+<post author="UncleSamYo" timestamp="Mar 20, 2014 11:40 AM">
+<s>what url format needs to be used to send a document by acrobat.com because a message appears on the tracking site stating the url format was not correct, (yet no example is supplied to say how the url should look, which is so unhelpful). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6228265-6228294</DOCNO>
+<TEXT>
+<subject>WHAT IS THE CORRECT URL to send a document please?</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 11:51 AM">
+<s>not sure that i understand your question.</s><s> if you are using adobe sendnow, then we take care of sending the email to your recipient(s).</s><s> what "tracking site" are you referring to? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6226127-1432128</DOCNO>
+<TEXT>
+<subject>How can I get the SendNow Premium Services</subject>
+<post author="DocCee1" timestamp="Mar 19, 2014 8:10 PM">
+<s>i just signed up with adobe sendnow at a cost of $19.99 year.</s><s> if i want the premium services, do i have to upgrade at an additional cost of $19.99? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6226127-6227094</DOCNO>
+<TEXT>
+<subject>How can I get the SendNow Premium Services</subject>
+<post author="bob.treitman" timestamp="Mar 20, 2014 6:28 AM">
+<s>i will contact you privately. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6225261-1431943</DOCNO>
+<TEXT>
+<subject>How do I contact the Subscription Manager for Sendnow</subject>
+<post author="Reeree" timestamp="Mar 19, 2014 5:16 PM">
+<s>i want to cancel my subscription to sendnow adobe order: ad0<removed by admin> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6225261-6225854</DOCNO>
+<TEXT>
+<subject>How do I contact the Subscription Manager for Sendnow</subject>
+<post author="StacySison" timestamp="Mar 19, 2014 5:26 PM">
+<s>hi reena, 
+</s><s>i'm so sorry to see you go.</s><s> your subscription to sendnow has been canceled. 
+</s><s>please let me know if you have further assistance! 
+</s><s>kindest regards, stacy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6225664-1432018</DOCNO>
+<TEXT>
+<subject>RECOVER DATA</subject>
+<post author="WOBBLY BOOT HOTEL" timestamp="Mar 19, 2014 4:17 PM">
+<s>how to recover data from adobe send now emails?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6225664-6225786</DOCNO>
+<TEXT>
+<subject>RECOVER DATA</subject>
+<post author="bob.treitman" timestamp="Mar 19, 2014 5:12 PM">
+<s>not sure that i understand.</s><s> what data are you trying to recover? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6225433-1432022</DOCNO>
+<TEXT>
+<subject>Why i get for the thame File 2 or more mails Back</subject>
+<post author="MKrumm" timestamp="Mar 19, 2014 3:22 PM">
+<s>hello i will my question write in english 
+i have the problem that i get 2 or more mail back that the file is downloadet from the server ... why?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6224783-1431808</DOCNO>
+<TEXT>
+<subject>error message</subject>
+<post author="jarider48" timestamp="Mar 19, 2014 12:02 PM">
+<s>i periodicallly get the following message an error occurred while trying th access the service when i attempt to send directly from the document.</s><s> when i go to the adobe website and upload i can do it?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6218197-1430214</DOCNO>
+<TEXT>
+<subject>Trouble with Send Now</subject>
+<post author="MaryannDAmico" timestamp="Mar 17, 2014 2:45 PM">
+<s>the messgae keeps popping up that the pdf has not uploaded so i cannot send it.</s><s> my internet connection is fine.</s><s> what to do?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6218197-6221288</DOCNO>
+<TEXT>
+<subject>Trouble with Send Now</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 11:52 AM">
+<s>are you still having this problem?</s><s> is this happening with all files, or just a specific pdf one?</s><s> if you can tell me when this happened, i can try to look through our logs to see if there were any errors recorded. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6218197-6222289</DOCNO>
+<TEXT>
+<subject>Trouble with Send Now</subject>
+<post author="MaryannDAmico" timestamp="Mar 18, 2014 5:03 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6218197-6223512</DOCNO>
+<TEXT>
+<subject>Trouble with Send Now</subject>
+<post author="bob.treitman" timestamp="Mar 19, 2014 6:53 AM">
+<s>your response was empty.</s><s> can you try again? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215083-1429412</DOCNO>
+<TEXT>
+<subject>adding small files</subject>
+<post author="gorv1" timestamp="Mar 16, 2014 4:45 PM">
+<s>pdf cannot be added file is too large - the file is 3 mb !</s><s>!</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215083-6221291</DOCNO>
+<TEXT>
+<subject>adding small files</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 11:54 AM">
+<s>is this happening for all pdf files or just one specific one?</s><s> how many files were you attempting to send in one transaction? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215083-6221481</DOCNO>
+<TEXT>
+<subject>adding small files</subject>
+<post author="gorv1" timestamp="Mar 18, 2014 12:45 PM">
+<s>it's quite wierd, i saved the pdf as a pdf and uploaded it successfully along with other pdf documents that couldn't initally be added. so 2 or 3 files at a time 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215083-6223510</DOCNO>
+<TEXT>
+<subject>adding small files</subject>
+<post author="bob.treitman" timestamp="Mar 19, 2014 6:44 AM">
+<s>so it's now working?</s><s> if not, let me know. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215343-1429481</DOCNO>
+<TEXT>
+<subject>unable to send files</subject>
+<post author="alvron" timestamp="Mar 16, 2014 7:57 PM">
+<s>why am i unable to send files.</s><s> my subscription is till dec 2014 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215343-6221284</DOCNO>
+<TEXT>
+<subject>unable to send files</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 11:44 AM">
+<s>what errors are you receiving?</s><s> please provide as many details as possible so that we can assist. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215343-6222421</DOCNO>
+<TEXT>
+<subject>unable to send files</subject>
+<post author="alvron" timestamp="Mar 18, 2014 6:14 PM">
+<s>hi thanks for your email.</s><s> when i click to send my file it just defaults asking if i would like to upgrade .</s><s> the system should know that i have already subscribed for the year.</s><s> i had no problems before so not sure what has happened. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215343-6223501</DOCNO>
+<TEXT>
+<subject>unable to send files</subject>
+<post author="bob.treitman" timestamp="Mar 19, 2014 6:21 AM">
+<s>this is pretty strange.</s><s> i will send you a private message to get more details. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6200937-1425858</DOCNO>
+<TEXT>
+<subject>icone bureau</subject>
+<post author="Ledom" timestamp="Mar 11, 2014 2:27 PM">
+<s>comment créer une icone sur le bureau ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6200937-6221346</DOCNO>
+<TEXT>
+<subject>icone bureau</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:10 PM">
+<s>see: http://forums.adobe.com/message/6082963#6082963 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6183101-1421603</DOCNO>
+<TEXT>
+<subject>Warum erhalte ich immer mehrere Antworten dass die Datei abgeholt wurde</subject>
+<post author="MKrumm" timestamp="Mar 5, 2014 3:04 PM">
+<s>warum erhalte ich immer mehrere antworten dass. sterben datei abgeholt wurde e gal war ich hochlade, es kommen immer mehrere mails dass. sterben datei heruntergeladen w urde?</s><s>?</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6183101-6221345</DOCNO>
+<TEXT>
+<subject>Warum erhalte ich immer mehrere Antworten dass die Datei abgeholt wurde</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:09 PM">
+<s>i'm afraid that i don't understand your question.</s><s> i used the microsoft translator to change it to english but i couldn't make sense.</s><s> can you try again? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6183192-1421674</DOCNO>
+<TEXT>
+<subject>No puedo enviar los datos adjuntos  por correo electrónico en Acrobat.</subject>
+<post author="luis labarta" timestamp="Mar 5, 2014 3:27 PM">
+<s>al intentar enviar un correo electrónico con los datos adjuntos que se señalan, me indica "error al enviar correo" y no me lo permite. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6183192-6221342</DOCNO>
+<TEXT>
+<subject>No puedo enviar los datos adjuntos  por correo electrónico en Acrobat.</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:05 PM">
+<s>are you using adobe sendnow or your own email account? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6204629-1426759</DOCNO>
+<TEXT>
+<subject>viewed files</subject>
+<post author="daysee" timestamp="Mar 12, 2014 4:09 PM">
+<s>when you close details on a file or delete a file, can it still be viewed by the person that you sent it to? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6204629-6205391</DOCNO>
+<TEXT>
+<subject>viewed files</subject>
+<post author="saflynn" timestamp="Mar 13, 2014 2:03 AM">
+<s>i daysee i'm not sure i fully understand what you mean by 'when you close details on a file' if a file or transaction is deleted by you anyone you shared the file with will no longer be able to download it from the url, this is also true for when a transaction expires 
+susan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6204629-6221341</DOCNO>
+<TEXT>
+<subject>viewed files</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:05 PM">
+<s>following up: if the recipient downloaded the file before you deleted it from sendnow, then she will still be able to view it since she has a copy on her computer. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6208924-1427836</DOCNO>
+<TEXT>
+<subject>close window</subject>
+<post author="racoop13" timestamp="Mar 14, 2014 5:18 AM">
+<s>how do i close adobe window, to get it off my screen. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6208924-6221340</DOCNO>
+<TEXT>
+<subject>close window</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:03 PM">
+<s>not sure what "adobe window" you are writing about.</s><s> can you take a screen capture for us? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6209288-1427958</DOCNO>
+<TEXT>
+<subject>File sent but not received</subject>
+<post author="joncat71" timestamp="Mar 14, 2014 7:30 AM">
+<s>message and files according to adobe email account say it was sent, but not received. require immediate help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6209288-6221339</DOCNO>
+<TEXT>
+<subject>File sent but not received</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 12:02 PM">
+<s>have you contacted the recipient to see if s/he received the email from adobe? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212931-1428844</DOCNO>
+<TEXT>
+<subject>translating</subject>
+<post author="karenferris" timestamp="Mar 15, 2014 2:58 PM">
+<s>how do i move a document from pdf to word document? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6212931-6221292</DOCNO>
+<TEXT>
+<subject>translating</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 11:55 AM">
+<s>you can use adobe exportpdf.</s><s> 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215907-1429632</DOCNO>
+<TEXT>
+<subject>YOU ANSWER ME FIRST</subject>
+<post author="ANGRYHOSTILE" timestamp="Mar 17, 2014 3:53 AM">
+<s>this is abuse of power while i am suffering and getting angrier by the minute if i do not receive my documents now.</s><s> i am very litigious and will report your site as unsafe, abusive, and i have deleted all adobe products from my computer.</s><s> my attorney will be very happy to file a law suit against your company.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215907-6215934</DOCNO>
+<TEXT>
+<subject>YOU ANSWER ME FIRST</subject>
+<post author="Dave%20Merchant" timestamp="Mar 17, 2014 3:56 AM">
+<s>you realize you're talking to other users in a public forum?</s><s> this isn't customer support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6215907-6221283</DOCNO>
+<TEXT>
+<subject>YOU ANSWER ME FIRST</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 11:44 AM">
+<s>what documents are you referring to? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-1232961</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="Morgan#Mccune" timestamp="Jun 14, 2013 2:23 PM">
+<s>is adobe sendnow included in the available apps for creative cloud subscribers?</s><s> does that include the premium upgraded sendnow?</s><s> i have access to sendnow but upgrade always asks for payment even when i am logged into adobe application manager. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-5410346</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="bob.treitman" timestamp="Jun 14, 2013 3:08 PM">
+<s>no, adobe sendnow is not part of the creative cloud subscription. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-5410407</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="Morgan%23Mccune" timestamp="Jun 14, 2013 3:29 PM">
+<s>hi bob and thanks.</s><s> a little more reading and it makes sense.</s><s> also, i see that the cost is per year and not per month.</s><s> how many more "supplementary apps" are available and/or how do i find out about them?</s><s> thanks again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-5414429</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="bob.treitman" timestamp="Jun 16, 2013 6:55 PM">
+<s>yes, the adobe sendnow pricing is annual, not monthly.</s><s> we have a number of other services, including createpdf, formscentral, and echosign.</s><s> for more information on these services, start here: https://www.acrobat.com/welcome/en/home.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-6119160</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="Sjaani" timestamp="Feb 13, 2014 3:45 PM">
+<s>any chance it might be added to cc in the future?</s><s> it would be great to have access to all these tools from one place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-6121799</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="bob.treitman" timestamp="Feb 14, 2014 12:11 PM">
+<s>i will refer your request up to the product teams.</s><s> thanks for the suggestion. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-6219941</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="goatian" timestamp="Mar 18, 2014 6:23 AM">
+<s>hi, bob i'm picking up an old post here, but was there any feedback from adobe about merging sendnow with cc?</s><s> all the (uk) agencies / studios i work with – all on cc – feel that it's very cheeky (dare i say, exploitative?</s><s>) to charge extra for sendnow.</s><s> thanks ian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-6220127</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="Dave%20Merchant" timestamp="Mar 18, 2014 7:08 AM">
+<s>the acrobat.com services are completely different from creative cloud - not only in terms of functionality but they are run by separate business units in adobe.</s><s> cc is targeted to 'creative' customers, acrobat is for enterprise and business customers.</s><s> acrobat pro is included in the full cc collection because it was in cs master collection, but that's pretty much a side effect. 
+</s><s>acrobat xi pro is also offered on subscription via "acrobat plus" which does include saas bundles, again this is a business/enterprise targeted solution so the pricing model is specific to that type of customer. 
+</s><s>that's also why you can't access files in one system from the other - the software simply isn't developed in tandem.</s><s> it's very unlikely that the two business units will combine their offers in the short term. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5410271-6220153</DOCNO>
+<TEXT>
+<subject>Is Adobe SendNow included in the available apps for Creative Cloud subscribers? Upgrade too?</subject>
+<post author="goatian" timestamp="Mar 18, 2014 7:19 AM">
+<s>thanks, dave - very informative and explains things. 
+i still think with all those brains, however, they could create a world where i can create, say, a large psd file (too big for email), then seamlessly send it to mr x at client x via the adobe server, without having to jump to the browser, sign in to sendnow, type in recipient's details, select file, etc, etc.</s><s> i wouldn't mind the sendnow charge if this was possible. 
+</s><s>appreciate your time. 
+</s><s>ian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6219794-1430537</DOCNO>
+<TEXT>
+<subject>Need to reset default e-mail address on Send Now - where do I go?</subject>
+<post author="bvsiq" timestamp="Mar 18, 2014 4:57 AM">
+<s>default is using outlook from the company i used to work for.</s><s> want to reset to comcast.net.</s><s> once i got the screen to change default, but i dont know how!</s><s> in any case they asked for some technical settings for comcast that i did not have a clue where to find!</s><s> my email address is bvsiq@comcast.net 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6219794-6220006</DOCNO>
+<TEXT>
+<subject>Need to reset default e-mail address on Send Now - where do I go?</subject>
+<post author="bob.treitman" timestamp="Mar 18, 2014 6:29 AM">
+<s>not quite sure what you are trying to do.</s><s> with sendnow, the address it uses for you is your adobe id - the address that you sign in with.</s><s> perhaps you could provide us with more details?</s><s> are you simply trying to change your adobe id? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6203481-1426531</DOCNO>
+<TEXT>
+<subject>Is there a way to reactivate the download link after a document was sent via Adobenow?</subject>
+<post author="darcil" timestamp="Mar 12, 2014 10:43 AM">
+<s>is there a way of reactivating the download link in the email that was sent via adobenow and the 7 day expiration has kicked in? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6203481-6204024</DOCNO>
+<TEXT>
+<subject>Is there a way to reactivate the download link after a document was sent via Adobenow?</subject>
+<post author="saflynn" timestamp="Mar 12, 2014 1:22 PM">
+<s>i'm afraid not, you will have to upload and resend the file again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6199423-1425582</DOCNO>
+<TEXT>
+<subject>Renseignements sur le téléchargement des fichiers</subject>
+<post author="Claudette Roy" timestamp="Mar 11, 2014 8:50 AM">
+<s>comment obtenir l'ensemble de toutes les informations concernant le téléchargement des fichiers sur une page afin d'avoir une vue d'ensemble.</s><s> actuellement, je peux seulement les voir un par un. 
+</s><s>je dois obtenir le nom des personnes, la date, l'heure, le nombre de téléchargements pour chacun des fichiers mais sur une page dans laquelle on pourra les voir tous en même temps. 
+c'est pour transmettre ces informations à une autre personne.</s><s> actuellement, sur mon compte, je vois tout cela mais fichier par fichier et je ne peux pas copier l'ensemble de ces informations pour les voir dans l'ensemble 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6199423-6202122</DOCNO>
+<TEXT>
+<subject>Renseignements sur le téléchargement des fichiers</subject>
+<post author="StacySison" timestamp="Mar 12, 2014 2:35 AM">
+<s>hi claudette, 
+</s><s>i saw your other forum post, are you all set? 
+</s><s>looking forward to hearing back from you. 
+</s><s>kind regards, stacy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6185790-1422246</DOCNO>
+<TEXT>
+<subject>How to put downloaded file to folder to send as pdf file</subject>
+<post author="SueSue" timestamp="Mar 6, 2014 10:32 AM">
+<s>how to put downloaded file to folder to send as pdf folder 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6185790-6202119</DOCNO>
+<TEXT>
+<subject>How to put downloaded file to folder to send as pdf file</subject>
+<post author="StacySison" timestamp="Mar 12, 2014 2:32 AM">
+<s>hi sue, 
+</s><s>check out this forum post and let me know if it helps! 
+</s><s>attaching pdf 
+</s><s>kind regards, stacy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6200945-1425819</DOCNO>
+<TEXT>
+<subject>Téléchargement des fichiers impossible par mes destinataires</subject>
+<post author="Claudette Roy" timestamp="Mar 11, 2014 2:25 PM">
+<s>pourquoi les destinataires de mes fichiers sont-ils incapables de les télécharger ?</s><s> ils sont rediriger vers une page "introuvable". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6200945-6201805</DOCNO>
+<TEXT>
+<subject>Téléchargement des fichiers impossible par mes destinataires</subject>
+<post author="saflynn" timestamp="Mar 12, 2014 12:46 AM">
+<s>claudette i've sent you a private message to get additional information 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6200119-1425668</DOCNO>
+<TEXT>
+<subject>Send Fax to a Fax Number</subject>
+<post author="kittieknauer" timestamp="Mar 11, 2014 11:21 AM">
+<s>can a fax be sent to a fax number?</s><s> how do you send a fax to a fax number? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6200119-6201804</DOCNO>
+<TEXT>
+<subject>Send Fax to a Fax Number</subject>
+<post author="saflynn" timestamp="Mar 12, 2014 12:35 AM">
+<s>it is not possible to use adobe sendnow to send a fax you can use adobe sendnow to send files via email 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6197393-1425085</DOCNO>
+<TEXT>
+<subject>signing in too officious?</subject>
+<post author="goatian" timestamp="Mar 10, 2014 3:50 PM">
+<s>i understand why we have to sign in to sendnow.</s><s> but how come it doesn't remember me, even though i tick, um, 'remember me'.</s><s> it doesn't 'remember me' - which means i have to sign in 3-4 times a day.</s><s> i don't have to do this with any other site which requires a password - including alternative 'send big files' sites. 
+</s><s>thanks ian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6197393-6198394</DOCNO>
+<TEXT>
+<subject>signing in too officious?</subject>
+<post author="saflynn" timestamp="Mar 11, 2014 1:14 AM">
+<s>hi ian sorry you are having problems with 'remember me' in sendnow before you close your browser are you selecting 'sign out' of sendnow?</s><s> when closing your browser does it automaticall clear your cookies?</s><s> susan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6197393-6198568</DOCNO>
+<TEXT>
+<subject>signing in too officious?</subject>
+<post author="goatian" timestamp="Mar 11, 2014 3:33 AM">
+<s>that's the thing, susan.</s><s> i'm not closing the browser, and therefore don't sign out.</s><s> i like to leave the sendnow page open, as i often need it all day, and don't want to go 'new page – navigate to sendnow – sign in' for each new batch of files to send.</s><s> but if i leave the page in the background for a few hours, when i come back to it, it wants me to sign in again.</s><s> it's as if it got upset because i hadn't used it for a bit. 
+</s><s>it's a shame adobe got rid of the app and made the service browser only, as the problem didn't occur with the app. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-6197393-6199615</DOCNO>
+<TEXT>
+<subject>signing in too officious?</subject>
+<post author="saflynn" timestamp="Mar 11, 2014 9:19 AM">
+<s>hi i will take a look and see if i can reproduce what you are seeing - this will take a few hours upon signin if you select 'remember me' after your session times out you should just see a 'resume session' dialog and when clicked on your session should resume. 
+</s><s>susan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-1321936</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="BAFBusinessBroker" timestamp="Oct 25, 2013 7:06 AM">
+<s>is there a way to set up a signature in the sendnow message area? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-5788199</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="bob.treitman" timestamp="Oct 25, 2013 7:10 AM">
+<s>unfortunately, no. but i will pass your inquiry on to the development team as a future enhancement to our services. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-5788093</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="BAFBusinessBroker" timestamp="Oct 25, 2013 7:17 AM">
+<s>thanks, bob.</s><s> because we are in real estate, we are legally required to add the full name, address and telephone number of the brokerage, with all coorespondence.</s><s> it is a laborious thing to do, particularly since there is also apparently no way to copy and paste that information onto the sendnow message panel.</s><s> we would use the service far more frequently, if it were not such a pain to insert all of that closing information by hand. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-5788208</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="bob.treitman" timestamp="Oct 25, 2013 7:21 AM">
+<s>you should be able to copy and paste into the message field; i'm surprised that is not working for you.</s><s> also, if you are using microsoft outlook 2007 or 2010, you can use the sendnow plugin for microsoft outlook, which allows you to use sendnow from within outlook. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-5788216</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="BAFBusinessBroker" timestamp="Oct 25, 2013 7:23 AM">
+<s>i did not know about outlook's link.</s><s> i will look for that.</s><s> thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-5788210</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="bob.treitman" timestamp="Oct 25, 2013 7:24 AM">
+<s>it's here: https://www.acrobat.com/sendnow/en/desktop-download.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5788089-5788452</DOCNO>
+<TEXT>
+<subject>SendNow Signature?</subject>
+<post author="BAFBusinessBroker" timestamp="Oct 25, 2013 8:59 AM">
+<s>bob, this was perfect and answered every difficulty i was having!</s><s> thank you, very much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-4729635-1072591</DOCNO>
+<TEXT>
+<subject>Blank page received when trying to download file</subject>
+<post author="SE2012" timestamp="Sep 26, 2012 11:56 AM">
+<s>team, 
+</s><s>i am trying to download a file sent to me using sendnow.</s><s> when i click on the link in the email, ie8 opens to the page, but it is blank except for the following: 
+it had worked on my dell laptop before it was reimaged after a harddrive crash.</s><s> would very much appreciate thoughts on settings and/or options that are needed to be able to download the file. 
+</s><s>thanks in advance, dale 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-4729635-4730117</DOCNO>
+<TEXT>
+<subject>Blank page received when trying to download file</subject>
+<post author="dave_m_k" timestamp="Sep 26, 2012 2:08 PM">
+<s>hi dale, 
+</s><s>it sounds like your flash player installation may be having some trouble. 
+</s><s>could you try these steps: 
+please try the steps below to try to resolve the issue: clear your browser cache (steps to do this vary by browser) try to update your version of flash player by visiting: http://get.adobe.com/flashplayer/ if you're still having trouble after those steps, please try this: go to this link where you can manage your flash player global settings: http://www.macromedia.com/support/documentation/en/flashplayer/help/se ttings_manager03.html ensure the "allow third-party flash content to store data on your computer" option is checked.</s><s> make sure the slider is set to a value other than 0 restart your browser to accept these changes. 
+</s><s>in rare instances, it may be necessary to reinstall adobe flash player to resolve issues with sendnow.</s><s> if you must do this, please follow the instructions outlined here: uninstall flash player | windows uninstall flash player | mac os 
+lastly, if the issue persists after the steps above, please try another web browser.</s><s> a list of supported browsers for accessing the sendnow service is available here: http://www.adobe.com/acom/systemreqs/ 
+let us know how it goes! 
+-david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-4729635-4730337</DOCNO>
+<TEXT>
+<subject>Blank page received when trying to download file</subject>
+<post author="SE2012" timestamp="Sep 26, 2012 3:21 PM">
+<s>hi david, 
+</s><s>thanks so much for your response.</s><s> here is a bit more information on the issue: 
+1) cleared the brower cache (i am using ie8 on winxp ) 2) already updated flash to version 11.4.402.278.</s><s> i was trying to update from an older version using ie, but kept getting a java script error.</s><s> so i used the flash update application that runs outside ie. that seemed to work fine.</s><s> 3) the link for the flash player global settings doesn't work.</s><s> i get a dialog with the message "operation aborted".</s><s> when i navigate to the settings manager itself, nothing shows up but the descriptions of the tabs.</s><s> therefore, i am not able to set the "allow third-party..." option. 
+</s><s>flash was already installed on the laptop when i got it, though it was a previous version (10.x).</s><s> it looks to be a supported version, but sendnow didn't run.</s><s> so that is why i went ahead and updated it. 
+</s><s>tried sendnow link on chrome and it works fine.</s><s> so definitely a problem with ie (and most likely flash).</s><s> will look to uninstall and then reinstall flash to see if i can get ie running. 
+</s><s>thanks for the great information, steps and links! 
+</s><s>best regards, dale 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-1240960</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="gregb73483" timestamp="Jun 24, 2013 6:15 PM">
+<s>when will the sendnow plug-in be available for outlook 2013? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-5448932</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="bob.treitman" timestamp="Jun 25, 2013 12:28 PM">
+<s>we do not currently have a target date for supporting outlook 2013. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-5578355</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="Joe_Zapert" timestamp="Aug 8, 2013 11:58 AM">
+<s>you know that's extremely lame, right?</s><s> you charge for sendnow, and you've got no acobat integration anymore (sending me to the sendnow website w/o selecting the file doesn't count.</s><s>) and no outlook integration, for all intents and purposes, since 2013 has been out for some time.</s><s> supporting three year old versions doesn't count for anything. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-5690736</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="Bryan.Simonson" timestamp="Sep 17, 2013 2:58 PM">
+<s>bob, this is unacceptable office 360 or outlook 2013 released june 28, 2011.</s><s> the issue of not supporting an industry standard application is one thing but now adobe has abandoned the desktop sendnow application. 
+</s><s>what i take from this is: adobe does not care about its customers or supporting its applications.</s><s> adobe will continue to receive my monthly subscription to cc but nothing more.</s><s> if i did not have to use your products i would abandoned them all together the same way you left me in the dark.</s><s> if adobe claims to be this cutting edge innovating company only to take the money and run i am glad html5 killed flash and now i know why steve jobs loathed the standard and adobe as a whole.</s><s> take the product from start to finish and propose a better service to upgrade to before abandoning the one you have.</s><s> fool me once shame on you, fool me twice shame on me! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-5729421</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="Tracey_A" timestamp="Oct 1, 2013 1:31 PM">
+<s>i was able to add the add-in to my outlook 2013. first, i installed it on another computer that had outlook 2010. next i copied the folder sendnowoutlookplugin to my programs files folder under adobe, then i double clicked on the vsto file which ran the install, close outlook before installing it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-5742466</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="random(1)" timestamp="Oct 7, 2013 12:33 PM">
+<s><quote>
+<s>tracey_a wrote: 
+then i double clicked on the vsto file which ran the install, close outlook before installing it. 
+</s></quote>didn't work for me with outlook 2013 on the 64-bit version of windows 7. 
+</s><s>double-clicked the .vsto file, then clicked install.</s><s> a "successful install" dialog appeared.</s><s> launched outlook, clicked on the file menu, selected options in the outlook options dialog, clicked add-ins 
+sendnowoutlook was listed under "inactive application add-ins" 
+</s><s>still in the outlook options dialog, clicked the go button next to manage: com add-ins in the com add-ins dialog, scrolled down to sendnowoutlook and clicked on it 
+some text appeared at the bottom of the dialog saying, "a runtime error occurred during the loading of this com add-in." 
+</s><s>the outlook plugin is working on my windows 8 pc because the plugin was already installed when i upgraded to office 2013.</s><s> i installed the "mandatory update" adobe has been sending out today for the desktop version of sendnow, but the outlook plugin on adobe's site is still two years old. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-SendNow/Discussions-5445937-5891991</DOCNO>
+<TEXT>
+<subject>Outlook 2013 plug-in</subject>
+<post author="bbordeaux" timestamp="Dec 2, 2013 8:39 AM">
+<s>any update for this?</s><s> ms no longer offers office 2010.</s><s> i need to send large files and adobe discontinued the desktop app.</s><s> we currently have 5 adobe sendnow licenses.</s><s> could someone please advise what marketing sense this makes? 
+</s></post>
+</TEXT>
+</DOC>
+
+

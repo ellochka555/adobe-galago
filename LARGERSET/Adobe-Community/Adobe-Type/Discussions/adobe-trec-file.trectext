@@ -1,0 +1,410 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-1290901</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Sandee Cohen" timestamp="Sep 6, 2013 1:06 PM">
+<s>i have just started using a typekit font for my demonstrations. 
+</s><s>however, i am interested in using it for my next book but i have questions. 
+</s><s>are the typekit fonts suitable for print production?</s><s> they are listed as opentype.</s><s> is that ordinary opentype?</s><s> the typekit fonts don't show up in the documet fonts folder when the job is packaged?</s><s> if i have to send native id files to my publisher, what would they have to have to edit the job?</s><s> are the fonts embedded in pdf files?</s><s> anyone have any caveats i should know about? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5663010</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Sandee%20Cohen" timestamp="Sep 8, 2013 7:52 AM">
+<s>http://www.youtube.com/watch?v=k8e_zmlcrng 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5664104</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="MiguelSousa" timestamp="Sep 8, 2013 7:54 PM">
+<s>https://typekit.com/help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5664662</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Sandee%20Cohen" timestamp="Sep 9, 2013 3:13 AM">
+<s>miguel, 
+</s><s>thanks for pointing me to the help file, but nothing there refers to print projects. 
+</s><s>typekit started as a web-based tool.</s><s> i'm wondering if it can be used for print. 
+i guess you don't know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5667285</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="MiguelSousa" timestamp="Sep 9, 2013 4:28 PM">
+<s>i'm not on the typekit team, so yes i don't know.</s><s> i pointed you to that page because it has information on how to contact the typekit folks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5670067</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Ben%2C%20Typekit%20Support" timestamp="Sep 10, 2013 1:20 PM">
+<s>hi sandee, 
+</s><s>this is ben from typekit.</s><s> we have started rolling out the new font sync feature from typekit in creative cloud.</s><s> you can learn more and sign up for access from this blog post: http://blog.typekit.com/2013/08/08/sign-up-for-early-access-to-desktop -font-sync/ 
+you'll be able to sync the fonts to your computer and use them in all your applications for web mockups, print design, word processing, and more.</s><s> this help page lists the foundries and faces that will be initially available for desktop: http://help.typekit.com/customer/portal/articles/1189216-coming-soon-s yncing-fonts-to-your-desktop 
+if you have any further questions, feel free to drop us a line at: support@typekit.com. 
+</s><s>cheers, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-6218587</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Mario%20Badilla" timestamp="Mar 17, 2014 4:47 PM">
+<s>what ben, from typekit support, has been traying to tell us underhand is that typekit synced fonts are not allowed to export or package from indesign, they suppose that the printer must have the fonts synced in their computers too, otherwise they are just floating in the cloud and you can use in your computer but not exporting it. 
+</s><s>thank you adobe, for an useless typekit feature!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-6219061</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Dov%20Isaacs" timestamp="Mar 17, 2014 8:40 PM">
+<s>mario, 
+</s><s>there is absolutely nothing underhanded about what ben is telling you. 
+</s><s>there are two ways you can use the typekit fonts for print publishing workflows. 
+(1) the first way is to compose in indesign with the typekit fonts as you would with any fonts that you have otherwise licensed and have installed on your desktop system.</s><s> for the purposes of printing, export pdf (preferably pdf/x-4 settings) and send the resultant pdf file to your print service provider.</s><s> all the typekit fonts are properly embedded in the pdf file and your print service provider should have no issues with printing the text formatted with said fonts. 
+(2) the second method assumes that your print service provider (or some intermediary) is going to be doing further edits to your work before producing the pdf file that you would have created per (1) above.</s><s> typically you would "package" such documents into a directory structure that copies linked content and fonts.</s><s> the only difference with the typekit fonts is that such fonts are not included in the package.</s><s> but since whoever is going to do those further edits and/or pdf export also needs the cc version of indesign, they will also have access to the same typekit fonts that you do via the creative cloud software.</s><s> there is no need to package the fonts from them.</s><s> if they have older cs versions of indesign, they will not be able to open your cc version indesign document anyway. 
+</s><s>so what is exactly the problem you are complaining about?</s><s> you have access to the fonts.</s><s> your print service provider has access to the fonts (assuming they have the software necessary to even open up your indesign document). 
+</s><s>the only difference is that typekti fonts are not available as "loose" font files.</s><s> you can't install them on any system that isn't currently licensed for the adobe creative cloud. 
+(for what it is worth, common practice notwithstanding, the ability to package the fonts - other than typekit fonts and certain asian fonts - used in an indesign document does not free the recipient of the obligation to fully and properly license such fonts.</s><s> the packaging operation is provided as a convenience, not as a substitute for properly licensing the digital assets in question!</s><s>) 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-1290901</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Sandee Cohen" timestamp="Sep 6, 2013 1:06 PM">
+<s>i have just started using a typekit font for my demonstrations. 
+</s><s>however, i am interested in using it for my next book but i have questions. 
+</s><s>are the typekit fonts suitable for print production?</s><s> they are listed as opentype.</s><s> is that ordinary opentype?</s><s> the typekit fonts don't show up in the documet fonts folder when the job is packaged?</s><s> if i have to send native id files to my publisher, what would they have to have to edit the job?</s><s> are the fonts embedded in pdf files?</s><s> anyone have any caveats i should know about? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5663010</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Sandee%20Cohen" timestamp="Sep 8, 2013 7:52 AM">
+<s>http://www.youtube.com/watch?v=k8e_zmlcrng 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5664104</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="MiguelSousa" timestamp="Sep 8, 2013 7:54 PM">
+<s>https://typekit.com/help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5664662</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Sandee%20Cohen" timestamp="Sep 9, 2013 3:13 AM">
+<s>miguel, 
+</s><s>thanks for pointing me to the help file, but nothing there refers to print projects. 
+</s><s>typekit started as a web-based tool.</s><s> i'm wondering if it can be used for print. 
+i guess you don't know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5667285</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="MiguelSousa" timestamp="Sep 9, 2013 4:28 PM">
+<s>i'm not on the typekit team, so yes i don't know.</s><s> i pointed you to that page because it has information on how to contact the typekit folks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-5670067</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Ben%2C%20Typekit%20Support" timestamp="Sep 10, 2013 1:20 PM">
+<s>hi sandee, 
+</s><s>this is ben from typekit.</s><s> we have started rolling out the new font sync feature from typekit in creative cloud.</s><s> you can learn more and sign up for access from this blog post: http://blog.typekit.com/2013/08/08/sign-up-for-early-access-to-desktop -font-sync/ 
+you'll be able to sync the fonts to your computer and use them in all your applications for web mockups, print design, word processing, and more.</s><s> this help page lists the foundries and faces that will be initially available for desktop: http://help.typekit.com/customer/portal/articles/1189216-coming-soon-s yncing-fonts-to-your-desktop 
+if you have any further questions, feel free to drop us a line at: support@typekit.com. 
+</s><s>cheers, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-6218587</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Mario%20Badilla" timestamp="Mar 17, 2014 4:47 PM">
+<s>what ben, from typekit support, has been traying to tell us underhand is that typekit synced fonts are not allowed to export or package from indesign, they suppose that the printer must have the fonts synced in their computers too, otherwise they are just floating in the cloud and you can use in your computer but not exporting it. 
+</s><s>thank you adobe, for an useless typekit feature!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-5659803-6219061</DOCNO>
+<TEXT>
+<subject>Using Typekit fonts in print projects</subject>
+<post author="Dov%20Isaacs" timestamp="Mar 17, 2014 8:40 PM">
+<s>mario, 
+</s><s>there is absolutely nothing underhanded about what ben is telling you. 
+</s><s>there are two ways you can use the typekit fonts for print publishing workflows. 
+(1) the first way is to compose in indesign with the typekit fonts as you would with any fonts that you have otherwise licensed and have installed on your desktop system.</s><s> for the purposes of printing, export pdf (preferably pdf/x-4 settings) and send the resultant pdf file to your print service provider.</s><s> all the typekit fonts are properly embedded in the pdf file and your print service provider should have no issues with printing the text formatted with said fonts. 
+(2) the second method assumes that your print service provider (or some intermediary) is going to be doing further edits to your work before producing the pdf file that you would have created per (1) above.</s><s> typically you would "package" such documents into a directory structure that copies linked content and fonts.</s><s> the only difference with the typekit fonts is that such fonts are not included in the package.</s><s> but since whoever is going to do those further edits and/or pdf export also needs the cc version of indesign, they will also have access to the same typekit fonts that you do via the creative cloud software.</s><s> there is no need to package the fonts from them.</s><s> if they have older cs versions of indesign, they will not be able to open your cc version indesign document anyway. 
+</s><s>so what is exactly the problem you are complaining about?</s><s> you have access to the fonts.</s><s> your print service provider has access to the fonts (assuming they have the software necessary to even open up your indesign document). 
+</s><s>the only difference is that typekti fonts are not available as "loose" font files.</s><s> you can't install them on any system that isn't currently licensed for the adobe creative cloud. 
+(for what it is worth, common practice notwithstanding, the ability to package the fonts - other than typekit fonts and certain asian fonts - used in an indesign document does not free the recipient of the obligation to fully and properly license such fonts.</s><s> the packaging operation is provided as a convenience, not as a substitute for properly licensing the digital assets in question!</s><s>) 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-1428139</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="EWadobe" timestamp="Mar 14, 2014 12:14 PM">
+<s>i am developing a website and using typekit and din.</s><s> on hover, i am getting odd gray shadowing.</s><s> see images.</s><s> anyone else get this?</s><s> anyone have a fix? 
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6210830</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="Ben%2C%20Typekit%20Support" timestamp="Mar 14, 2014 2:44 PM">
+<s>hi ew, 
+</s><s>i'm sorry you ran into trouble here.</s><s> do you have a live url you could send over so i can take a look?</s><s> also, could you tell me if this is happening in mulitple browsers or just one? 
+</s><s>let me know and we'll take it from there.</s><s> have a great weekend. 
+</s><s>cheers, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6211100</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="Romsinha" timestamp="Mar 14, 2014 4:42 PM">
+<s>moving to adobe type. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6212583</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="EWadobe" timestamp="Mar 15, 2014 11:43 AM">
+<s>sent in a pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6212585</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="EWadobe" timestamp="Mar 15, 2014 11:44 AM">
+<s>tested in mac chrome and safari, and pc ie9+ and chrome, with same results. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-1428139</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="EWadobe" timestamp="Mar 14, 2014 12:14 PM">
+<s>i am developing a website and using typekit and din.</s><s> on hover, i am getting odd gray shadowing.</s><s> see images.</s><s> anyone else get this?</s><s> anyone have a fix? 
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6210830</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="Ben%2C%20Typekit%20Support" timestamp="Mar 14, 2014 2:44 PM">
+<s>hi ew, 
+</s><s>i'm sorry you ran into trouble here.</s><s> do you have a live url you could send over so i can take a look?</s><s> also, could you tell me if this is happening in mulitple browsers or just one? 
+</s><s>let me know and we'll take it from there.</s><s> have a great weekend. 
+</s><s>cheers, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6211100</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="Romsinha" timestamp="Mar 14, 2014 4:42 PM">
+<s>moving to adobe type. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6212583</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="EWadobe" timestamp="Mar 15, 2014 11:43 AM">
+<s>sent in a pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6210362-6212585</DOCNO>
+<TEXT>
+<subject>Bad webfont rendering with Typekit and DIN</subject>
+<post author="EWadobe" timestamp="Mar 15, 2014 11:44 AM">
+<s>tested in mac chrome and safari, and pc ie9+ and chrome, with same results. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6211005-1428297</DOCNO>
+<TEXT>
+<subject>web license for Wendy Std Medium</subject>
+<post author="lucydesigns" timestamp="Mar 14, 2014 3:47 PM">
+<s>i need a web license to use wendy standard medium on a single client site.</s><s> is this possible?</s><s> i only see desktop format available and wendy std is not listed in typekit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6211005-1428297</DOCNO>
+<TEXT>
+<subject>web license for Wendy Std Medium</subject>
+<post author="lucydesigns" timestamp="Mar 14, 2014 3:47 PM">
+<s>i need a web license to use wendy standard medium on a single client site.</s><s> is this possible?</s><s> i only see desktop format available and wendy std is not listed in typekit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6208894-1427808</DOCNO>
+<TEXT>
+<subject>Using font for design</subject>
+<post author="chipxy" timestamp="Mar 14, 2014 4:10 AM">
+<s>mr. dov isaacs and other crew, thank you all for so simple answers on forum, you are the best because something complicated you answer on a simple way, but i have one more question.</s><s> as you said buying licence means that we are able to use font for design, print, etc. but if we are designing let say watermark for photo, because i am hobby photographer, not selling anything but like to design watermarks for my photos.</s><s> is it ok to add or attach ornament to letter, let say if i am using letter m inside some font is it ok if i attach flower to left leg of m, or ornament or anything, not changing software or anything else just adding something that is representing things that i do? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6208894-6210795</DOCNO>
+<TEXT>
+<subject>Using font for design</subject>
+<post author="Dov%20Isaacs" timestamp="Mar 14, 2014 2:36 PM">
+<s>i did reply to your private message.</s><s> repeating my response for others to see - 
+what you can do with a particular font depends upon the font and whom you license the font from.</s><s> for fonts you license from adobe, you may make any modifications or augmentations you want, either to the font itself, its outlines (assuming let's say you "outline" some text) or rasters.</s><s> the restriction is that you may not redistribute such fonts to others, the visual results in your artwork or photos, yes, the fonts themselves, no. 
+</s><s>hopefully that makes some sense? 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6208894-1427808</DOCNO>
+<TEXT>
+<subject>Using font for design</subject>
+<post author="chipxy" timestamp="Mar 14, 2014 4:10 AM">
+<s>mr. dov isaacs and other crew, thank you all for so simple answers on forum, you are the best because something complicated you answer on a simple way, but i have one more question.</s><s> as you said buying licence means that we are able to use font for design, print, etc. but if we are designing let say watermark for photo, because i am hobby photographer, not selling anything but like to design watermarks for my photos.</s><s> is it ok to add or attach ornament to letter, let say if i am using letter m inside some font is it ok if i attach flower to left leg of m, or ornament or anything, not changing software or anything else just adding something that is representing things that i do? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Discussions-6208894-6210795</DOCNO>
+<TEXT>
+<subject>Using font for design</subject>
+<post author="Dov%20Isaacs" timestamp="Mar 14, 2014 2:36 PM">
+<s>i did reply to your private message.</s><s> repeating my response for others to see - 
+what you can do with a particular font depends upon the font and whom you license the font from.</s><s> for fonts you license from adobe, you may make any modifications or augmentations you want, either to the font itself, its outlines (assuming let's say you "outline" some text) or rasters.</s><s> the restriction is that you may not redistribute such fonts to others, the visual results in your artwork or photos, yes, the fonts themselves, no. 
+</s><s>hopefully that makes some sense? 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+

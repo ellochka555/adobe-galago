@@ -1,0 +1,268 @@
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6219533-1430551</DOCNO>
+<TEXT>
+<subject>DocumentAncestors Not Adhering To XMP Specification In Photoshop</subject>
+<post author="Cartelrooy" timestamp="Mar 18, 2014 3:02 AM">
+<s>hi all, 
+</s><s>i'm currently in the process of writing a xmp sidecar parser.</s><s> however i have an issue when it comes to the photoshop namespace.</s><s> within the speificaion it says documentancestors are as follows: 
+photoshop:documentancestors -> unordered array of ancestor 
+which would be the following xml: 
+<photoshop:documentancestors> <rdf:bag> <rdf:li rdf:parsetype="resource"> <photoshop:ancestorid>uuid:cc3c1681-88d1-41c8-8b08-8d245fa78d61</phot oshop:ancestorid> </rdf:li> </rdf:bag> </photoshop:documentancestors> 
+</s><s>however the acutal ouytput i get from photoshop cs is: 
+<photoshop:documentancestors> <rdf:bag> <rdf:li>uuid:cc3c1681-88d1-41c8-8b08-8d245fa78d61</rdf:li> </rdf:bag> </photoshop:documentancestors> 
+
+</s><s>as you can see it is different as does not follow the specifcation, do older version of photoshop adhere to the speification? 
+</s><s>what to people determine the best approach is ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6219533-1430551</DOCNO>
+<TEXT>
+<subject>DocumentAncestors Not Adhering To XMP Specification In Photoshop</subject>
+<post author="Cartelrooy" timestamp="Mar 18, 2014 3:02 AM">
+<s>hi all, 
+</s><s>i'm currently in the process of writing a xmp sidecar parser.</s><s> however i have an issue when it comes to the photoshop namespace.</s><s> within the speificaion it says documentancestors are as follows: 
+photoshop:documentancestors -> unordered array of ancestor 
+which would be the following xml: 
+<photoshop:documentancestors> <rdf:bag> <rdf:li rdf:parsetype="resource"> <photoshop:ancestorid>uuid:cc3c1681-88d1-41c8-8b08-8d245fa78d61</phot oshop:ancestorid> </rdf:li> </rdf:bag> </photoshop:documentancestors> 
+</s><s>however the acutal ouytput i get from photoshop cs is: 
+<photoshop:documentancestors> <rdf:bag> <rdf:li>uuid:cc3c1681-88d1-41c8-8b08-8d245fa78d61</rdf:li> </rdf:bag> </photoshop:documentancestors> 
+
+</s><s>as you can see it is different as does not follow the specifcation, do older version of photoshop adhere to the speification? 
+</s><s>what to people determine the best approach is ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6166597-1417662</DOCNO>
+<TEXT>
+<subject>XMPFilesStatic.lib(Host_IO-Win.obj):-1: Error:LNK2001</subject>
+<post author="dersmon" timestamp="Feb 28, 2014 7:55 AM">
+<s>hey, 
+</s><s>i get the following 6 builderrors and have no idea where to start fixing it: 
+xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__openprocesstoken@12 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__openthreadtoken@16 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__mapgenericmask@8 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__accesscheck@32 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__duplicatetoken@12 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__getfilesecurityw@20 
+
+</s><s>any ideas/hints? 
+</s><s>greetings, simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6166597-6219266</DOCNO>
+<TEXT>
+<subject>XMPFilesStatic.lib(Host_IO-Win.obj):-1: Error:LNK2001</subject>
+<post author="dersmon" timestamp="Mar 18, 2014 1:40 AM">
+<s>nobody has any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6166597-6219490</DOCNO>
+<TEXT>
+<subject>XMPFilesStatic.lib(Host_IO-Win.obj):-1: Error:LNK2001</subject>
+<post author="JensKrueger" timestamp="Mar 18, 2014 2:34 AM">
+<s>all symbols are defined in the system library advapi32.lib.</s><s> try searching for the symbol names on msdn but leave out the "__imp__" part, e.g. search for openprocesstoken. Ê cheers, jens
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6166597-1417662</DOCNO>
+<TEXT>
+<subject>XMPFilesStatic.lib(Host_IO-Win.obj):-1: Error:LNK2001</subject>
+<post author="dersmon" timestamp="Feb 28, 2014 7:55 AM">
+<s>hey, 
+</s><s>i get the following 6 builderrors and have no idea where to start fixing it: 
+xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__openprocesstoken@12 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__openthreadtoken@16 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__mapgenericmask@8 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__accesscheck@32 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__duplicatetoken@12 xmpfilesstatic.lib(host_io-win.obj) : error lnk2001: unresolved external symbol __imp__getfilesecurityw@20 
+
+</s><s>any ideas/hints? 
+</s><s>greetings, simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6166597-6219266</DOCNO>
+<TEXT>
+<subject>XMPFilesStatic.lib(Host_IO-Win.obj):-1: Error:LNK2001</subject>
+<post author="dersmon" timestamp="Mar 18, 2014 1:40 AM">
+<s>nobody has any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6166597-6219490</DOCNO>
+<TEXT>
+<subject>XMPFilesStatic.lib(Host_IO-Win.obj):-1: Error:LNK2001</subject>
+<post author="JensKrueger" timestamp="Mar 18, 2014 2:34 AM">
+<s>all symbols are defined in the system library advapi32.lib.</s><s> try searching for the symbol names on msdn but leave out the "__imp__" part, e.g. search for openprocesstoken. Ê cheers, jens
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6096483-1400648</DOCNO>
+<TEXT>
+<subject>Problems registering XMPCore and XMPFiles .dll</subject>
+<post author="ChrisChinnery" timestamp="Feb 7, 2014 5:36 AM">
+<s>we have used the xmp sdk to generate both the xmpcore and xmpfiles.dll's.</s><s> however they will not register using regsvr32.</s><s> we built them with visual studio 2013, running on windows 8.1 64bit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6096483-6173463</DOCNO>
+<TEXT>
+<subject>Problems registering XMPCore and XMPFiles .dll</subject>
+<post author="Vipul.Jain" timestamp="Mar 3, 2014 1:04 AM">
+<s>are the binaries 32 bit or 64 bit?</s><s> if 32 bit, please see if http://support.microsoft.com/kb/282747 helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6096483-1400648</DOCNO>
+<TEXT>
+<subject>Problems registering XMPCore and XMPFiles .dll</subject>
+<post author="ChrisChinnery" timestamp="Feb 7, 2014 5:36 AM">
+<s>we have used the xmp sdk to generate both the xmpcore and xmpfiles.dll's.</s><s> however they will not register using regsvr32.</s><s> we built them with visual studio 2013, running on windows 8.1 64bit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6096483-6173463</DOCNO>
+<TEXT>
+<subject>Problems registering XMPCore and XMPFiles .dll</subject>
+<post author="Vipul.Jain" timestamp="Mar 3, 2014 1:04 AM">
+<s>are the binaries 32 bit or 64 bit?</s><s> if 32 bit, please see if http://support.microsoft.com/kb/282747 helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6094356-1400163</DOCNO>
+<TEXT>
+<subject>Using latest FileInfo SDK, latest Flash Builder, new project crashes in latest Bridge</subject>
+<post author="Marstano" timestamp="Feb 6, 2014 1:29 PM">
+<s>i've been trying to create a custom panel in adobe bridge.</s><s> i downloaded the xmp-fileinfo-sdk-cs6, loaded the jar file into adobe flash builder 4.7 (latest version), created a new project with no modifications, and published it to the correct custom file info panels folder on windows 7.</s><s> i then restarted bridge, opened fileinfo in a photo, but when i navigated to the new panel that i just created, it fails to load correctly and hangs the entire application.</s><s> the only way to close the window is to restart bridge. 
+</s><s>so just to be clear -- latest sdk, latest flash builder, latest bridge version, new project, no modifcation, completely crashes bridge.</s><s> the genericpanel is about the only thing that works without problem, but it's a little too limited for what i want to do (no business logic). 
+</s><s>not very reassuring that this is going to work at all.</s><s> has anyone else experienced this?</s><s> is there any workaround, or update i can try instead? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6094356-6107380</DOCNO>
+<TEXT>
+<subject>Using latest FileInfo SDK, latest Flash Builder, new project crashes in latest Bridge</subject>
+<post author="Marstano" timestamp="Feb 10, 2014 3:48 PM">
+<s>ok, finally got this working.</s><s> many hidden gotchas. 
+1.</s><s> you have to make a trust file for your custom panel.</s><s> this is actually in the sdk, around page 53, so my bad -- but the problem is that there is no feedback from the adobe application if you don't have this.</s><s> the application just hangs.</s><s> it should produce an error message "can't find trust file, etc.".</s><s> this should not be that hard to implement. 
+2.</s><s> the latest flex sdk does not seem to work in bridge cc or other similar applications.</s><s> you have to use flex sdk 3.x, apparently, and this is not in the documentation.</s><s> not only should you set the default sdk in flex builder to 3.x (i'm using 3.6) but you have to edit the build.properties file to make sure it's pointing to the correct folder, eg: c:/program files/adobe/adobe flash builder 4.7 (64 bit)/sdks/3.6.0.</s><s> fortunately flash builder 4.7 comes with 3.6 installed.</s><s> if you have an older version, it's likely to be completely different. 
+</s><s>more info in this thread: http://forums.adobe.com/thread/1114153. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6094356-1400163</DOCNO>
+<TEXT>
+<subject>Using latest FileInfo SDK, latest Flash Builder, new project crashes in latest Bridge</subject>
+<post author="Marstano" timestamp="Feb 6, 2014 1:29 PM">
+<s>i've been trying to create a custom panel in adobe bridge.</s><s> i downloaded the xmp-fileinfo-sdk-cs6, loaded the jar file into adobe flash builder 4.7 (latest version), created a new project with no modifications, and published it to the correct custom file info panels folder on windows 7.</s><s> i then restarted bridge, opened fileinfo in a photo, but when i navigated to the new panel that i just created, it fails to load correctly and hangs the entire application.</s><s> the only way to close the window is to restart bridge. 
+</s><s>so just to be clear -- latest sdk, latest flash builder, latest bridge version, new project, no modifcation, completely crashes bridge.</s><s> the genericpanel is about the only thing that works without problem, but it's a little too limited for what i want to do (no business logic). 
+</s><s>not very reassuring that this is going to work at all.</s><s> has anyone else experienced this?</s><s> is there any workaround, or update i can try instead? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6094356-6107380</DOCNO>
+<TEXT>
+<subject>Using latest FileInfo SDK, latest Flash Builder, new project crashes in latest Bridge</subject>
+<post author="Marstano" timestamp="Feb 10, 2014 3:48 PM">
+<s>ok, finally got this working.</s><s> many hidden gotchas. 
+1.</s><s> you have to make a trust file for your custom panel.</s><s> this is actually in the sdk, around page 53, so my bad -- but the problem is that there is no feedback from the adobe application if you don't have this.</s><s> the application just hangs.</s><s> it should produce an error message "can't find trust file, etc.".</s><s> this should not be that hard to implement. 
+2.</s><s> the latest flex sdk does not seem to work in bridge cc or other similar applications.</s><s> you have to use flex sdk 3.x, apparently, and this is not in the documentation.</s><s> not only should you set the default sdk in flex builder to 3.x (i'm using 3.6) but you have to edit the build.properties file to make sure it's pointing to the correct folder, eg: c:/program files/adobe/adobe flash builder 4.7 (64 bit)/sdks/3.6.0.</s><s> fortunately flash builder 4.7 comes with 3.6 installed.</s><s> if you have an older version, it's likely to be completely different. 
+</s><s>more info in this thread: http://forums.adobe.com/thread/1114153. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6083763-1397454</DOCNO>
+<TEXT>
+<subject>Include custom panel into the file</subject>
+<post author="Alex.Khitko" timestamp="Feb 4, 2014 1:17 AM">
+<s>hi 
+</s><s>i created custom panel.</s><s> it works great.</s><s> but is it possible to include scheme of this panel to the file, so that the file can be opened on another computer with this custom panel (without additional xml of custom schema on this machine)? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6083763-6087408</DOCNO>
+<TEXT>
+<subject>Include custom panel into the file</subject>
+<post author="aKhulbe" timestamp="Feb 4, 2014 11:11 PM">
+<s>hi, 
+</s><s>you can create panels in two ways - custom panels, which are created through flex sdk and generic panels, which are created from xml files.</s><s> in first case you have to keep the custom panel package on each computer you want to see the panel.</s><s> in second case you have to keep the xml file on all computer to see the panel.</s><s> there is no way to carry this panel information with the file itself. 
+</s><s>thanks, amit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6083763-1397454</DOCNO>
+<TEXT>
+<subject>Include custom panel into the file</subject>
+<post author="Alex.Khitko" timestamp="Feb 4, 2014 1:17 AM">
+<s>hi 
+</s><s>i created custom panel.</s><s> it works great.</s><s> but is it possible to include scheme of this panel to the file, so that the file can be opened on another computer with this custom panel (without additional xml of custom schema on this machine)? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/XMP-SDK/Discussions-6083763-6087408</DOCNO>
+<TEXT>
+<subject>Include custom panel into the file</subject>
+<post author="aKhulbe" timestamp="Feb 4, 2014 11:11 PM">
+<s>hi, 
+</s><s>you can create panels in two ways - custom panels, which are created through flex sdk and generic panels, which are created from xml files.</s><s> in first case you have to keep the custom panel package on each computer you want to see the panel.</s><s> in second case you have to keep the xml file on all computer to see the panel.</s><s> there is no way to carry this panel information with the file itself. 
+</s><s>thanks, amit 
+</s></post>
+</TEXT>
+</DOC>
+
+

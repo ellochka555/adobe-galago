@@ -1,0 +1,194 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-4799751-1088232</DOCNO>
+<TEXT>
+<subject>Unable to add a Project File in RoboSource Control</subject>
+<post author="Shekhar tech writer" timestamp="Oct 31, 2012 2:53 AM">
+<s>hi this is savana chandra shekhar, 
+i am working on robohelp 9 with robosource control 3. 
+</s><s>scanario 1: there are two users who want to work on the same project file from different location using robohelp and using version control 3. we have a server located in us and i myself located in india.</s><s> now, when i am trying to add or load the project file in robosource, i am unable to load or add the project file as the file size is around 160 mb. 
+</s><s>scanario 2: when i am using "add to version control" option after setting up the connection (by proving : connection name, server, port no., port type), i am getting the as displayed below.</s><s> please refer the image attached. 
+i will be greatful to you if you can please provide some firm solution regarding this issue. 
+</s><s>thanks savana chandra shekhar 
+
+
+
+</s><s>database: marshelpsource to database, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-4621065-1049535</DOCNO>
+<TEXT>
+<subject>RoboSource Control</subject>
+<post author="writerwi" timestamp="Aug 14, 2012 12:23 PM">
+<s>our server housing robosource control and our projects was recently shut down.</s><s> we are required to rebuild a server and re-install robosource control (version 2.3.1006.0).</s><s> how do i get our projects into a state where they can be added back into version control?</s><s> i'm guessing i need to break a link to the database on the old server so they can be added to version control on the newly built server, but i don't know how to do that.</s><s> any help you can provide will be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-4621065-4621077</DOCNO>
+<TEXT>
+<subject>RoboSource Control</subject>
+<post author="Willam%20van%20Weelden" timestamp="Aug 14, 2012 4:12 PM">
+<s>hi, 
+</s><s>i use tfs, but i think that the process for robosource control is similar. 
+1. make a backup.</s><s> 2. make sure that all the project files are writable.</s><s> 3.trash cpd 4. open the project. 
+</s><s>robohelp will try to connect to the database, but that will fail since your server is offline. 
+5.</s><s> when robohelp asks whether you want to browse for your project, choose no.</s><s> 6. when robohelp asks whether you want to disconnect from source control, choose yes.</s><s> 7. in your project, add the project to source control in the regular way. 
+</s><s>there is an alternative that is faster, but use at your own risk: open the xpj with a text editor.</s><s> go to the misc properties and delete all source control keys.</s><s> these keys should be the only keys in that section, but better safe than sorry.</s><s> trash the cpd, open project and add project to source control. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-4621065-4629554</DOCNO>
+<TEXT>
+<subject>RoboSource Control</subject>
+<post author="writerwi" timestamp="Aug 17, 2012 12:44 PM">
+<s>william, thank you for your quick response to my question.</s><s> the procedure worked beautifully.</s><s> we now have everything up and running again.</s><s> if i had my way, you would get 10,000+ points for a helpful answer that helped us in a critical situation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-4621065-4630555</DOCNO>
+<TEXT>
+<subject>RoboSource Control</subject>
+<post author="Willam%20van%20Weelden" timestamp="Aug 18, 2012 2:24 AM">
+<s>ha ha, i'm just glad it worked out for you.</s><s> that's good enough for me. 
+
+
+</s><s>greet, 
+
+
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-4295358-981329</DOCNO>
+<TEXT>
+<subject>New topics not found by other authors</subject>
+<post author="EdS89405" timestamp="Mar 27, 2012 12:51 PM">
+<s>we currently have several projects being shared by 6 users.</s><s> when one user adds a new topic to a project, the other user does a 'get' in robosource and the new topic files come over into their local folder, but when they open the project, they don't see the topic in the list of files.</s><s> also, the link in the toc looks broken for the user that just did the 'get'.</s><s> this has happened on several different projects.</s><s> although, everything (topics) appears fine for the new topic author.</s><s> we are using robosource3.2.0 with rh9.02.</s><s> thanks, ed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-3189698-734725</DOCNO>
+<TEXT>
+<subject>RoboSource Control and SQL Server 2008?</subject>
+<post author="Barry46278" timestamp="Oct 6, 2010 10:48 AM">
+<s>does anyone have any information about them being compatible?</s><s> i see the sysreqs only say sql server 2005, but has anyone tried it with 2008? 
+</s><s>thanks!</s><s> 
+</s><s>barry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-25317-25317</DOCNO>
+<TEXT>
+<subject>Automaptic prompt in RH does not appear when checking in files</subject>
+<post author="elkev" timestamp="Jan 6, 2009 3:55 PM">
+<s>i used to work with an older version of rh.</s><s> when i configured robosource control to prompt for checkin and checkout comments, i was prompted in robohelp (not robosource control) to add the needed commment.</s><s> a separate pop-up window appeared and i was able to enter my checkin and checkout comments.</s><s> now i simply get an error message that states the obvious fact that a comment needs to be added.</s><s> the only way that i can add a comment right now is in robosource control but not in robohelp.</s><s> how do i get this window to appear automatically in robohelp so i can enter the comments without having to open robosource control and add the comment.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-25317-3142673</DOCNO>
+<TEXT>
+<subject>Automaptic prompt in RH does not appear when checking in files</subject>
+<post author="Amarelv" timestamp="Sep 17, 2010 1:09 PM">
+<s>we're currently experiencing similar issue.</s><s> we configured robosource control to prompt for check out comments.</s><s> now we get an error message when we tried to check out a topic in robohelp and unable to make edits to the file.</s><s> could you please let us know how you were able to resolve this issue? 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-2804434-636347</DOCNO>
+<TEXT>
+<subject>Robosouce Control 3.1 - Unable to connect to db</subject>
+<post author="Mitelman" timestamp="May 11, 2010 8:59 AM">
+<s>hi, 
+</s><s>i've got an rh 7 project in a rsc 3.1 database running on a remote pc.</s><s> i created the db myself and everyone in my dept can access it but me.</s><s> when i try to connect, i get an error: "input string not in a correct format." along with a link, "show stack trace...".</s><s> the link displays the following: 
+
+</s><s>input string was not in a correct format. at system.number.stringtonumber(string str, numberstyles options, numberbuffer& number, numberformatinfo info, boolean parsedecimal) at system.number.parseint32(string s, numberstyles style, numberformatinfo info) at system.convert.toint32(string value) at ng3.core.configurationsettings.getintegersetting(string name, int32 defaultval) at ng3.mtconnection.ng3mtconnection.connect(configurationsettings settings, string connectionaliasname, string user, string pwd, boolean brememberpwd, ng3middletiersession session, offlineoption offline, object logindialog) at ng3explore.opendatabase.selectbutton_click(object sender, eventargs e) 
+
+i tried reinstalling both rh7 and rsc 3.1 but to no avail.</s><s> the fact that everyone else can access the db tells me there's nothing wrong with the way i set it up.</s><s> the only thing that i can think of that might explain my problem is that i logged on to the remote pc (the one hosting the rsc db) using my own windows account when i set up the database.</s><s> that would be the same account i'm using when i try to connect to the db from my own pc.</s><s> btw, it doesn't matter whether i try to connect through rh or rsc explorer; i get the same results from both. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-106915-106915</DOCNO>
+<TEXT>
+<subject>test</subject>
+<post author="Newsgroup_User" timestamp="Feb 19, 2008 9:25 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-133290-133290</DOCNO>
+<TEXT>
+<subject>error database</subject>
+<post author="glopezt" timestamp="Jan 3, 2008 10:58 AM">
+<s>help me please!</s><s>!</s><s> hi, my problem is when i try to use robosource control the version control apper a message error that message is with fails to connect to the robosource control database, i try to solve with reboot and modify some dll like i saw in a page (bsuuversioncontrolservices.dll, bsvcmicrosoftscc.dll, netserverinterop.dll ), but i don't find why don't change nothing and my message is the same and this say: a network error occurred connecting to this database.</s><s> please check te server process is running, and that te server machine is addressable on the network.</s><s> do you want to use robosource control offline using te tagging system?</s><s> if you select yes, your work will be saved locally and you can synchronize you work with the server when you reconnect to the network.</s><s> but i need connect with the database by frist time.</s><s> i'm working in roboinfo 5.0.2 and robosource control 2.3.1006.0 thanks.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-69800-69800</DOCNO>
+<TEXT>
+<subject>Setup Source Control</subject>
+<post author="sowing" timestamp="Aug 1, 2007 8:32 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-81923-81923</DOCNO>
+<TEXT>
+<subject>Help Needed Robosource Control  Database Error</subject>
+<post author="lsusiegel" timestamp="Jun 12, 2007 3:29 PM">
+<s>is anyone familiar with the robosource control explorer database error $$$$$$$$0?</s><s> we just recently started to get this error when checking in files in roboinfo.</s><s> we are running on windows server 2003.</s><s> any information or suggestions would be appreciated.</s><s> thanks!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboInfo/RoboSource-Control/Discussions-216167-216167</DOCNO>
+<TEXT>
+<subject>RoboSource System Requirments</subject>
+<post author="UpNorth" timestamp="May 30, 2006 10:40 AM">
+</post>
+</TEXT>
+</DOC>
+
+

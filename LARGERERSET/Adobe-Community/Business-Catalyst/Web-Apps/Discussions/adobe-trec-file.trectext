@@ -1,0 +1,2665 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-1001445</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="macKARMA_online" timestamp="May 9, 2012 1:17 PM">
+<s>how do i hide the pagination in web apps...viewing source i can see the code, but can't find where i can disable it within bc (or dreamweaver)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4392269</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="Sidney%20Mitchell" timestamp="May 9, 2012 2:45 PM">
+<s>hi, 
+</s><s>i would suggest looking into your module stylesheet file and update the pagination reference to "display:none". 
+</s><s>before: 
+
+</s><s>after: 
+
+</s><s>hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4392320</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="Liam%20Dilley" timestamp="May 9, 2012 3:16 PM">
+<s>that is how you hide it but if you need to not have any pagination rendered at all adjust the module to show more products per page. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4392361</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="Sidney%20Mitchell" timestamp="May 9, 2012 3:19 PM">
+<s>absolutely correct liam! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4392357</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="macKARMA_online" timestamp="May 9, 2012 3:39 PM">
+<s>thanks sidney and liam...good to know that i can get such quick responses from this forum -- first time i've used in the new format... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4436561</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="Gizay" timestamp="May 24, 2012 10:57 AM">
+<s>with what editor are you looking at the module stylesheet file?</s><s> i opened it with dreamweaver and was unable to veiw inside the modules. 
+</s><s>nancy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4501137</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="Mel%20RB" timestamp="Jun 18, 2012 6:03 AM">
+<s>just for info - i had this problem but only wanted to turn off pagination on some of my lists and leave it on others - so turning off the pagination for all in the module would not work for me.</s><s> i simply added 
+.nopag ul.pagination { display:none; } 
+to my css and then was able to switch off the pagination on a list by list basis by adding 
+<ul class="nopag"> {module_webapps,etc...</s><s>} </ul> 
+</s><s>pretty obvious - but i find these snippets of advice/code useful, so posted one of my own! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4597165</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="apokrisis" timestamp="Aug 3, 2012 1:27 PM">
+<s>this was super helpful.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-4626072</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="JRElder" timestamp="Aug 16, 2012 8:19 AM">
+<s>do be aware from an seo standpoint that the links still exist, and google will index the dynamically generated pages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-5012824</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="roly-poly-bird" timestamp="Jan 22, 2013 3:00 AM">
+<s>hi there, 
+i'm having the same trouble, but need to remove the pagination completely from the source code as google is finding it and marking it as bad links. 
+i understand your repsonse liam dilley that lisplaying more items would remove the pagination, however it is vital that i do limit the amout of results to just 3.</s><s> why is there not a parameter of 'number of results'. of results' rather than 'results per page'.</s><s> this is surely something that needs to be worked on as i can't be the only one who has discovered this is detrimental to seo? 
+</s><s>any help would be great. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-5937069</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="jbyrom3172" timestamp="Dec 17, 2013 12:18 AM">
+<s>i know this isnt the bc answer you were looking for but in webmaster tools you can tell search engines to ignore parameters.</s><s> here is an example of all the parameters in a normal webapp paginated url 
+?</s><s>pageid=10835467&a=webapp&ccid=15251&page=3&items=4 
+</s><s>i would set the webmaster tools to ignore all of the url parameters.</s><s> so in this example i would say ignore: pageid, a, ccid, page and items. 
+i wish that we had the option to turn off pagination and show most popular by views in web apps but this will atleast help with your seo concerns. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-5970242</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="percipiobc" timestamp="Dec 31, 2013 3:37 PM">
+<s>i've found this to be very helpful. 
+</s><s>rather than using the default list layout put the same markup in a .tpl file and point the module tag to that file. 
+</s><s>like so: 
+</s><s>our demo.tpl is located in /layouts/webapps/demotpl directory 37475 is the id of our demo webapp. 
+</s><s>module tag: {module_webapps,id,filter,totalresults template="relative url to tpl file"} (totalresults is just for this tpl example) 
+</s><s>example: {module_webapps,37475,l,4 template="/layouts/webapps/recipes/demo.tpl"} 
+</s><s>this will render only the latest 4 items from the demo webapp.</s><s> (no pagination). 
+bc loops over the list layout for each item in a web app but it only loops over the tpl file for the number specified. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-6221992</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="ushanbb" timestamp="Mar 18, 2014 3:36 PM">
+<s><quote>
+<s>example: {module_webapps,webapp_id,l,4 template="/path/to/custom/template.tpl"} 
+</s><s>this will render only the latest 4 items from the webapp with no pagination. 
+
+</s></quote>
+i found this answer to be the most useful for eliminating any links to pagination results.</s><s> thank you percipiobc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4391976-6222208</DOCNO>
+<TEXT>
+<subject>Hide web app pagination</subject>
+<post author="Liam%20Dilley" timestamp="Mar 18, 2014 5:24 PM">
+<s>that is just the nature of that case, this wont solve the pagination issue until bc offer up a paramater to disable it latest items case is one that never has had pagination. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6207577-1427546</DOCNO>
+<TEXT>
+<subject>How do you select a date range?</subject>
+<post author="joshock" timestamp="Mar 13, 2014 3:01 PM">
+<s>i've created a web app listing exhibits.</s><s> the custom fields include start date {tag_releasedate}and end date {tag_expirydate}.</s><s> i want to create one page listing current exhibits, one listing future exhibits, and one listing past exhibits.</s><s> how do i select content based on the date range?</s><s> i can place the tags on the list layout, but how do i filter them by date range before they are served to the client browser? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6207577-6217768</DOCNO>
+<TEXT>
+<subject>How do you select a date range?</subject>
+<post author="joshock" timestamp="Mar 17, 2014 12:49 PM">
+<s>no responses?</s><s> let me try to explain better. 
+i have a web app called exhibits with two custom date fields: 'open date' and 'close date'.</s><s> i would like to create three pages with list views.</s><s> one for current exhibits, one for past exhibits, and one for future events.</s><s> is that even possible with bc?</s><s> seems like it should be simple.</s><s> can i create a list based on custom field-content parameters? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6197200-1425031</DOCNO>
+<TEXT>
+<subject>Comma after address in BC-rendered Web App Map popup</subject>
+<post author="TwiceMedia" timestamp="Mar 10, 2014 3:02 PM">
+<s>has anyone submitted a ticket/asked to have the fact that the address in the map generated by "display web app results on a map" renders the address (in the map pop-up) in commas with no spaces.</s><s> eg 100 main street,city,state,zip,us 
+</s><s>it makes what would otherwise be a nice, simple solution to web-app generated maps quite messy and amateurish. 
+</s><s>any before the obvious answers begin, i am aware that this can be generated from scratch using the gmaps v3 api, but why do that when bc has the solution for you?</s><s> it would be perfect if it weren't for that one simple thing, or if we could actually customize the results in the pop-up easily. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-1420913</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="XenoPeople" timestamp="Mar 4, 2014 6:17 PM">
+<s>new to web apps and i have a question. 
+</s><s>when i enter a new item, for example, event name- and set the field type to text (hyperlink) or text (mutliline), when i insert it in the layout and then view it on the page, it is a clickable link.</s><s> but the link goes nowhere.</s><s> it goes to a "oops nothing is here" page.</s><s> and the url is something like event%title%. 
+
+</s><s>is there a way to have the clickable link just go to a page which futher outlines the event that was clicked on? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-6179947</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="Liam%20Dilley" timestamp="Mar 4, 2014 6:40 PM">
+<s>what is the link you are putting in.</s><s> can you show some examples?</s><s> the urls you are entering could be incorect if its not finding the page (404). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-6180019</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="XenoPeople" timestamp="Mar 4, 2014 7:00 PM">
+<s>i will include screenshots as that might clear it better (or not).</s><s> thank you first for answering liam.   what the general settings look like:   liam- is this the url you are talking about?</s><s> if so- how would i define it so that every event when clicked goes to the right place when using one web app (add events!</s><s>)- but then just adding items under that event?     step 1: add new field   step 2: insert into layout of web app (bottom item) - {tag_event_title}     step 3: check the site and click on the link "title of event, where does it go"     step 4: this is where it currently goes     what i would love to happen in a perfect world:   kind of how the event module works, how the title when clicked links to a more full description of the event...</s><s> i know web apps are different, but like i said "in a perfect world." seems like that may not be possible, if only because i don't see there is a "detailed event" layout, like events has (list and detailed layout customization).   thanks!   let me know if this doesn't help clarify.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-6180046</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="Liam%20Dilley" timestamp="Mar 4, 2014 7:06 PM">
+<s>are you trying to link to the detail view of the event?</s><s> if this is the case then you do not do it that way. 
+</s><s>you have the following: 
+{tag_name} - renders the item name wrapped in a link {tag_button,your text} - renders a link with custom text to the detail view {tag_itemurl_withhost} - just renders the full url {tag_itemurl_nolink} - just renders the path. 
+</s><s>you use that custom field if you wanted to link to something and that will work depending on what you put in each web app item, not the web app layouts itself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-6180020</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="XenoPeople" timestamp="Mar 4, 2014 7:09 PM">
+<s>yes, i want to link to the event detailed description if the title is clicked on.</s><s> let me look into what you have written and get back if i cannot make sense of it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-6180385</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="Liam%20Dilley" timestamp="Mar 5, 2014 12:12 AM">
+<s>if you read my post above i gave you the tags for that. the last two you would do <a href="thetag">view detail</a> etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179905-6193481</DOCNO>
+<TEXT>
+<subject>Linking when using Text (hyperlink) or Text (multiline)</subject>
+<post author="XenoPeople" timestamp="Mar 9, 2014 12:55 PM">
+<s>thank you for your help liam.</s><s> i solved this by going back through my settings.</s><s> i had clicked the disable detail view when setting up the app. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-993766</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="concypt" timestamp="Apr 23, 2012 1:21 AM">
+<s>i have created two web apps.</s><s> 1- abc 2- xyz 
+</s><s>in xyz, i have created a data source field(abc).</s><s> i want my customers can add/edit abc and xyz web app items.</s><s> i have a page for both where we have form for adding/creating web app items.</s><s> if we add some abc web app item it does not shown in "xyz" form.</s><s> what to do to make the form automatically updated and sync with abc web app items? 
+</s><s>please help, 
+thanks for your time, imran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-4356079</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="mario_gudelj" timestamp="Apr 23, 2012 6:15 PM">
+<s>hi imran, 
+</s><s>the data source, on the web app item creation form, unfortunately isn't populated dynamically.</s><s> so, you'd have to add new items manually in this case.</s><s> i believe this is on the wishlist and i encourage you to vote for it http://www.businesscatalyst.com/wish-list/list-public 
+cheers, 
+mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-4913065</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Tinymill%20Tim" timestamp="Dec 11, 2012 11:26 AM">
+<s>hey mario, is there any progress with this?</s><s> i know there are big things happening with web apps in 2013 and was wondering if this was on the list? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-4975589</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 9, 2013 11:13 AM">
+<s>hi tim, you can do this with a workaround.</s><s> first, create a custom list template and write: <option value="{tag_itemid}">{tag_name_nolink}</option> next, replace the option elements in your dropdown with the module (of course, use your own webapp id and template url): <select name="cat_custom_294547">
+     <option value="">-- please select --</option>
+     {module_webapps,18235,a template="/layouts/webapps/my_web_app/list_dropdown.tpl",,,,true,500,,1}
+</select> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-5507893</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Todd%20H%26M" timestamp="Jul 15, 2013 2:16 PM">
+<s>any progress on this mario? 
+also, the 'wish-list' link goes to a 404 page, does this live some where now? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-6180687</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Peter%20%C2%B7%20Genie%20Corp." timestamp="Mar 5, 2014 3:26 AM">
+<s>hi adam 
+</s><s>what a great workaround. 
+</s><s>it works fine in my web app but i have a question.</s><s> i am making a "job" database where we can add all of the jobs/assignments we are working on so it gives us an overview. 
+</s><s>so i am using it to load out clients from a seperate web app.</s><s> the problem is that if i want to edit or show the content of that tag it can't display it.</s><s> i am thinking that it can't save the option selected because the field i have made for this dont have these values. 
+</s><s>my question is what kind of field do you use, in your example "<select name="cat_custom_294547">". 
+i have tried with a dropdown, but it can't save the option selected, and as i said i think it is because the option dont exist in the field i am trying to save it to. 
+i hope this makes sense and there is a solution for this 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-6180829</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Peter%20%C2%B7%20Genie%20Corp." timestamp="Mar 5, 2014 4:33 AM">
+<s>have solved most of the problems, but in the edit template it wont load the value already selected in that dropdown.</s><s> the problem is that then i need to select it again every time. 
+i am using the dropdown for client, and i use the edit template to register the hours spend on the assignment.</s><s> the problem is that it loads the option values into the dropdown, but the one selected when i made the web app item is not selected. 
+</s><s>any ideas or tips? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-6180992</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Mar 5, 2014 5:52 AM">
+<s>hi peter, 
+</s><s>the selection will have to be set with js.</s><s> i don't often advocate putting scripts inline, but this is one way to do it: 
+<select name="cat_custom_294484">
+     <option value=" ">-- please select --</option>
+     {module_webapps,18235,a template="/layouts/webapps/my_web_app/list_dropdown.tpl",,,,true,500,,1}
+     <script>$('option[value="{tag_appropriate tag}"]').attr("selected","selected");</script>
+</select> 
+</s><s>probably a better way would be to add the tag to a data attribute, and then call your script from elsewhere: 
+<select class="myselect" name="cat_custom_294484" data-optionvalue="{tag_appropriate tag}">
+     <option value=" ">-- please select --</option>
+     {module_webapps,18235,a template="/layouts/webapps/my_web_app/list_dropdown.tpl",,,,true,500,,1}
+</select>
+
+<script>
+     var myselect = $('.myselect');
+     myselect.find('option[value="'+myselect.data('optionvalue')+'"]').attr('selected','selected');
+</script> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4353919-6180941</DOCNO>
+<TEXT>
+<subject>How to update options in web apps add/edit form for a data source field?</subject>
+<post author="Peter%20%C2%B7%20Genie%20Corp." timestamp="Mar 5, 2014 6:21 AM">
+<s>damn!   another great fix!</s><s> thanks a lot....   is there any way to use this in the "web app search form" because it doesn't seem to be possible to use the datasource field for searching?   when i just used a dropdown with no datasource i could search on the assignments on the specific client, but that is not possible out of the box with datasource?</s><s> any fix for this?</s><s> i can live with "just" searching the job number which is already working!     edit: this was not a problem after all, i don't know why it didn't work the first time!</s><s> thanks again adam for your great workarounds, they are much appreciated!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6179904-1420912</DOCNO>
+<TEXT>
+<subject>Web Apps and Outlook/Google Calendar</subject>
+<post author="XenoPeople" timestamp="Mar 4, 2014 6:12 PM">
+<s>i have just fallen in love with the potential of web apps- it's already solved one problem for me. 
+i have an issue i can't seem to get an answer for and wonder if web apps could be the resolve. 
+i have a client who wants to be able to have clients hit "add event to my outlook" or "add event to my google" calendar button and have it then do so. 
+</s><s>in order to do this my client has to create a google and outlook event and then enter the code into an event- (besides the fact that i am no longer using the events module, but instead using a web app when they add events.</s><s> it's much easier all around) .</s><s> this isn't very user friendly for the client. 
+</s><s>is there any way using a web app you can think of to streamline this process? 
+</s><s>is there a way to upload a ics (outlook event) file instead of an image? 
+</s><s>is there somewhere in the descirption they can enter the google code for the event and have it generate the html code as it should be rendered (not just showing the html code and not properly linking?</s><s>) 
+</s><s>i am pretty new to web apps and am sorry i waited so long to dive in.</s><s> please be patient with me.</s><s> any help is very much appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-1180811</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="it bandwagon" timestamp="Mar 30, 2013 2:33 AM">
+<s>i would like to use the web apps module to sell advertising on a site.</s><s> is there a way of using the ad rotator module to rotate those advertisement web apps? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-5192946</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 30, 2013 2:07 PM">
+<s>hi, you do not use it to do that.</s><s> you have two options. 
+1.</s><s> insert a web app module as a random item option and thus every page load you get a random web app item.</s><s> or 2.</s><s> use javascript to load all web app items and fade them in and out between each other. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-6010220</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="cretam" timestamp="Jan 13, 2014 10:54 PM">
+<s>hi liam, i would like to do the second option - can you please explain how i can do this?</s><s> i have setup my news items as a web app on this page http://www.sunnysideinstantlawn.com.au/ but i don't want it to change when the page is reloaded.</s><s> i would like it to be more of a slider.</s><s> i have looked through the bc gurus tutorials and cannot find how to rotate the web app items. 
+</s><s>any help would be greatly appreciated. 
+</s><s>thanks, tammy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-6010564</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 14, 2014 3:35 AM">
+<s>you have put the module which is a random web app item.</s><s> the code you did for the banner, you just the same thing, make a new call and target a web app module rendering the latest 5 items.</s><s> almost exactly like the banner. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-6010628</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="cretam" timestamp="Jan 14, 2014 3:52 AM">
+<s>i thought i would have to do that manually – can't believe there isn't an easy way in bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-6010572</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 14, 2014 4:02 AM">
+<s>well this is custom design features really.</s><s> bc gives you the data and you present it how you want to.</s><s> all part of web design 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-6173444</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="cretam" timestamp="Mar 3, 2014 12:37 AM">
+<s>thanks liam.</s><s> i am about to have another go at this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5191697-6173447</DOCNO>
+<TEXT>
+<subject>Is there any way of using the Ad Rotator module to rotate Web Apps?</subject>
+<post author="cretam" timestamp="Mar 3, 2014 12:42 AM">
+<s>hi liam, i have put the code in for the banner but not sure how to target a web app module rendering the latest 5 items.</s><s> how do i learn this stuff?</s><s> http://www.sunnysideinstantlawn.com.au/test-1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6171582-1418909</DOCNO>
+<TEXT>
+<subject>web apps search on select?</subject>
+<post author="Vladimir77" timestamp="Mar 2, 2014 9:13 AM">
+<s>hi, i have created a web app search form.</s><s> it has  three drop down menus. it works fine.</s><s> however, what i want is when a drop down menu is selected it triggers search function based on selected items.</s><s> could you please advise what script could do it?</s><s> here is the form detail:   <form name="catcustomcontentform54530" method="post" onsubmit="return checkwholeform54530(this)" action="/default.aspx?ccid=20937&fid=133718&excludeboolfalse=true&pag eid={module_oid}">   <ul class="search-list-form">     <li>       <label for="cat_custom_34">????:</label>       <select name="cat_custom_34" id="cat_custom_34" class="cat_dropdown">         <option value="*">-- all --</option>         <option value="?????????? ???? (????)">?????????? ???? (????)</option>         <option value="???? (??????????)">???? (??????????)</option>         <option value="????????&#1084;???? (????)">????????&#1084;???? (????)</option>         <option value="????&#1084;???????? ????????&#1084;???? ????">????&#1084;???????? ????????&#1084;???? ????</option>         <option value="???????????? (????)">???????????? (????)</option>         <option value="?????????????? ????">?????????????? ????</option>         <option value="?????????? &#1084;?????&#1084;??? ? ???????">?????????? &#1084;?????&#1084;??? ? ???????</option>         <option value="???? &#1084;?????&#1084;???">???? &#1084;?????&#1084;???</option>         <option value="????????????? ???? (????)">????????????? ???? (????)</option>         <option value="?????????????? ?????&#1084;???????? ?????&#1084;?">?????????????? ?????&#1084;???????? ?????&#1084;?</option>         <option value="sap/r3">sap/r3</option>       </select>     </li>     <li>       <label for="cat_custom_9">???????:</label>       <select name="cat_custom_9" id="cat_custom_9" class="cat_dropdown">         <option value="*">-- all --</option>         <option value="???????">???????</option>         <option value="???????????">???????????</option>         <option value="?????????????">?????????????</option>       </select>     </li>     <li>       <label for="cat_custom_16">????:</label>       <select name="cat_custom_16" id="cat_custom_16" class="cat_dropdown">         <option value="*">-- all --</option>         <option value="???????">???????</option>         <option value="??????????">??????????</option>       </select>     </li>     <li class="search-list-bnt">       <input class="cat_button search-list-btn" type="submit" value="?????" />     </li>   </ul> </form> <script type="text/javascript" src="/catalystscripts/validationfunctions.js"></script><script type="text/javascript">function checkwholeform54530(theform){var why = "";if (why != ""){alert(why);return false;}return true;}</script>{module_webappsresults}
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6158646-1415803</DOCNO>
+<TEXT>
+<subject>Web App Message</subject>
+<post author="RicardoDOSO" timestamp="Feb 26, 2014 6:32 AM">
+<s>how do i send a message to a customer from within a webapp?</s><s> i want to be able to send a confirmation or ask the customer to submit additional information.</s><s> when i'm using a form, i have a message button to communicate from within that form.</s><s> is there also a way to add this function to a web app? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-1414691</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="JohnSSmith" timestamp="Feb 24, 2014 8:30 PM">
+<s>seriously why are web app items sorted by name in the admin section. 
+</s><s>most would want it by date! 
+</s><s>but even if you do want it by name, why is there no option to change the sort. 
+i have a client with 100's of items, and they have nearly given up finding the latest items entered. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6154044</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 24, 2014 9:30 PM">
+<s>hey john, it would be a nice enhancement of course, but in my experience most of the clients i have worked with prefer it to be althabetical as they run based on the name of the thing and it makes it easier to find. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6154132</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="JohnSSmith" timestamp="Feb 24, 2014 10:04 PM">
+<s>it would also be a simple enhancement, something i added to the wishlist years ago. 
+i use webapps as a content management tool, as there is nothing else to use in its place.</s><s> there must be others using it for something similar. 
+</s><s>not sure if it is changed, but a web app is the only thing i can use for many people to login and then be able to post items, and select categories, so the items appear on different web pages simultaneously.</s><s> news or information that the volunteers need to get out to members, but we dont allow the volaunteers to have access to the full admin of the site. 
+</s><s>in the past i tried blogs and news, and they did not cut it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6154045</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 24, 2014 10:09 PM">
+<s>it is one of the things i have seen over the years, asked for but in the big scheme of things it is one of the low priority things.</s><s> i am sure you can imagine how many requests there are for a global platform and appreciate you got to prioritise that massive list. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6154536</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="JohnSSmith" timestamp="Feb 25, 2014 3:05 AM">
+<s>but liam is that not the problem 
+there are so many low level problems not getting fixed. 
+i just spent an hour deleteing customers with hard and soft bounced email addresses because there is no easy way to do it, and my client was angry. 
+</s><s>there are so many of these small problems, which are so easy to fix, yet they are not getting fixed, even after a full rewrite of the admin screen. 
+</s><s>look at the this problem http://forums.adobe.com/thread/1409142?tstart=0 really, one image at a time? 
+</s><s>seriously - why is everything half done, glossed over to look fantastic, but the functionality is not really there, and its not getting fixed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6154614</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 25, 2014 4:13 AM">
+<s>image thing, is minar, i can link many cms's at the core do that.</s><s> you have to build a media gallery to insert it into wordpress or it stil is one by one, or you get an addon.</s><s> i could built something with open platform and others can soon if its a big issue for thier site, for a custom sollution needed for that client.</s><s> i can say as well that the image thing is a small thing, i in a number of years now have not had clients complain about that much, probably 1 or 2. most complain about other things like the lack of marketing features there were - addressed and more things which have been addressed.</s><s> but of course there more things that can be done, and bc are working on sollutions for these. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6157021</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="JohnSSmith" timestamp="Feb 25, 2014 2:47 PM">
+<s>and thats the problem right there! 
+</s><s>for us many of these things are not minor.</s><s> yes liam, you can build something to get around it, and probably have for many of your clients, but for other bc sellers, we may not have that background to do so, and yet we were sold the platform based on it doing what we needed, supplementing our non coding backgrounds. 
+</s><s>its not as if we are asking for major changes, but when the whole backend is rewritten, and those small changes were not made, we have to ask why! 
+</s><s>when will bc improve the functionality of existing items, many of which are just small changes to reflect the functionality of other systems out there? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6157203</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 25, 2014 4:12 PM">
+<s>but that is the point of open platform, you will soon be able to go to the bc app store and purchase or obtain free apps to do those sorts of custom things so you do not have to code that.</s><s> so if i do it, i put it up on the app store and you can get it, install it and just use it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6157429</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="JohnSSmith" timestamp="Feb 25, 2014 5:41 PM">
+<s>liam i have a lot of respect for you.</s><s> you have helped me and others for a long time. 
+</s><s>however is it fair that we have to pay for things, when we have been asking for these small enhancements for years, even before you joined the platform, where outside systems were already offering the enhanced functionality. 
+i have always realised that, low priority should be behind higher priority items, but that does not mean they should not be done, and worse we are now expected to pay separately for it. 
+i stopped promoting bc years ago, because of those small functionality issues, that pushed bc to being nearly brochureware.</s><s> probabaly too harsh, but as soon as you get a little outside a small company client or they need something a little different, they were already using on other platforms, it falls over. 
+</s><s>but it was always due to the system actually nearly being there, and promoting it was there, but when it came to crunchtime, little things made it difficult or impossible to use.</s><s> the wishlist was full of small functionality changes that would have dramatically made bc easier to use and market to clients, but they never got done! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6154049-6157450</DOCNO>
+<TEXT>
+<subject>Sort by date in ADMIN for Web Apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 25, 2014 6:28 PM">
+<s>hopefully not small enhancements no. my point is that bc has been working on 2 major things for a while. 
+1.</s><s> the big migration to the amazon servers 2.</s><s> the ability for us to be able to build more of those custom sollutions we and other may need that bc can not prioritise high enough or invest in for the little return there end they may get through the open platform. 
+</s><s>at pretty we would love to see core features improved a lot as well, do not get me wrong here.</s><s> but you need to understand that your request in the scope of the global product and all the requests they get, its not right up there as a priority just yet.</s><s> they will get to it, but just do not expect it to be like next month is all i am saying. 
+</s><s>hopefully when they tick some more boxes on some big feature requests they need to deliver core stuff can be worked on more after, we just need to stay tuned.</s><s> you will have seen a massive improvement in the admin for example for this release...</s><s> no more bouncing around save bars, no more iframes, no constant load spinners as well as a few more tweaks and the closure of v2 to help v3 run better.</s><s> canonical url's for products are in too, and the system can handle bigger imports for marketing lists as well.</s><s> just a few things along with heaps of fixes.</s><s> that while they are working on this new open platform stuff. 
+</s><s>they seem to be flat out and doing heaps already this year at the moment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-1409142</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 17, 2014 6:21 PM">
+<s>hello   i curretnly have a marine listing website: www.mdbs.com.au and i have my customers list boats via customer submitted webapps.   this currently works fine but problem is they need to upload up to 20 boats.</s><s> after listing a few boats they are really annoyed with having to click and add each image seperately and their old system they would just select a folder with images in and that would upload to system.   have tried to implement some image uploaders but most need .php.   wanted to know if anyone has successfullly implemented this into any website or if there might be another work around.   regards valentino
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6130661</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 17, 2014 6:42 PM">
+<s>to upload multiple images in the file manager in bc.. 
+https://www.dropbox.com/s/dxxdnuhuylrzuo9/screenshot%202014-02-18%2013 .</s><s>42.16.png 
+</s><s>you just need to click the add button you see in that screenshot. it will add more file upload fields to upload more. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6130789</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 17, 2014 7:16 PM">
+<s>hello liam 
+</s><s>thanx for your quick reply. 
+</s><s>the web app which i use is a customer submitted one where they add listings from the front end using a secure zone. 
+</s><s>the file manager in bc still requires you to select single pictures at a time instead of being able to select multiple, such as 20 in the same time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6131227</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 17, 2014 11:53 PM">
+<s>you mean you have custom field to insert and image etc?</s><s> you could just have a field for the gallery id of a gallery (text field) place the id of a gallery in there and render out the module.</s><s> then what ever is in the folder will just render as the gallery. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6134602</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 18, 2014 9:14 PM">
+<s>hello liam   sorry, no.   i am talking about in the edit page form where you can upload images but can only upload one at a time.</s><s> as metioned previous its a customer submitted web app and it when the customer is submitting their boat listing that they have to select each individual image one at a time.</s><s> they are quite frustrated.   any help would be great.</s><s> regards   val
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6134676</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 18, 2014 9:23 PM">
+<s>val, that is what i am refering to.</s><s> because your only selecting one image to insert one location, you of course can only insert one image.</s><s> multiple images like in wordpress etc always come in the form of creating galleries or gallery snapshots to insert multiple.</s><s> for 1,2,3,4,5-10 images the default way really is a non issue.</s><s> if your looking to do a lot more - use the gallery module. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6134606</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 18, 2014 10:03 PM">
+<s>hello liam 
+</s><s>thank you for the quick reply. 
+</s><s>how would i insert a gallery module to the web_app customer submitt page as when i use the module tab it only lets me insert current photo galleries that are created and not allowing to upload new images. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6150439</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 23, 2014 9:29 PM">
+<s>hello liam 
+</s><s>i have tried to insert a gallery module into a web app edit page but have been unsuccessful. 
+</s><s>can you please clarify how this is done. 
+</s><s>thank you in advance. 
+</s><s>regards 
+</s><s>val 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130617-6154613</DOCNO>
+<TEXT>
+<subject>Multiple Image uploads with customer submitted web-apps</subject>
+<post author="Liam%20Dilley" timestamp="Feb 25, 2014 4:10 AM">
+<s>how you mean not working?</s><s> custom field and insert the module is one step, making it a bit easier and putting the module in the layout but where the id goes use the custom field tag and what id is pasted in there will render the right gallery. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6137244-1410768</DOCNO>
+<TEXT>
+<subject>How to target a specific webapp item</subject>
+<post author="scottkoons" timestamp="Feb 19, 2014 1:08 PM">
+<s>hi all, 
+</s><s>can i target a specific webapp item?</s><s> forexample i have a content holder that has three places for news information, but the css is slightly different on the last two items.</s><s> so my two thoughts are to eith specifically target webapp items (ie date) in the three css areas or can/should i do this using a backup list for the last 2 items?</s><s> i want them to display newest to oldest.</s><s> will using a backup list keep my date sorting the same or will it start it over again?</s><s> is there a way to tell bc to always display the second latest and then thrid latest item (like you can with the latest item)? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6137244-6137355</DOCNO>
+<TEXT>
+<subject>How to target a specific webapp item</subject>
+<post author="Liam%20Dilley" timestamp="Feb 19, 2014 1:24 PM">
+<s>hi there.</s><s> well there is lots of ways you can do this depending on the exact things you want to do. 
+</s><s>you have {tag_itemid} you can use to form unique classes, you got {tag_counter} on list view that you can use to render something like ns-1,ns-2,ns-3 etc to target with your css.</s><s> you got :first-child and :last-child in css you can use and you also have nth child in css as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6137244-6137697</DOCNO>
+<TEXT>
+<subject>How to target a specific webapp item</subject>
+<post author="scottkoons" timestamp="Feb 19, 2014 3:00 PM">
+<s>thanks liam.</s><s> how do i use the {tag_counter} to display a specific item?</s><s> i always want tag_counter=1 to be in the first position (with its custom css) and likewise, tag_counter=2 to be the second and tag_counter=3 to be the third.</s><s> can i somehow use the {tag_counter} to tell the page which item to render and where? 
+-scott 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6137244-6137934</DOCNO>
+<TEXT>
+<subject>How to target a specific webapp item</subject>
+<post author="Liam%20Dilley" timestamp="Feb 19, 2014 4:37 PM">
+<s>it will, it just counts the number of items scott. 
+<div class="myitem mycount-{tag_counter}"> 
+</s><s>the first item will be mycount-1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6134008-1409984</DOCNO>
+<TEXT>
+<subject>Event booking with Adult/child pricing?</subject>
+<post author="markbremmer" timestamp="Feb 18, 2014 4:31 PM">
+<s>hi, looking to see if anyone has created a webapp that would enable multiple seat and price selection.</s><s> ie.</s><s> 2 adults @ $50 and 1 child @ $20.</s><s> 
+</s><s>i've done this with other ecomm solutions but bc is looking a little clunky here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130996-1409157</DOCNO>
+<TEXT>
+<subject>jQuery and Javascript showing and hiding divs in web app detail view</subject>
+<post author="DearEmily33" timestamp="Feb 17, 2014 9:29 PM">
+<s>hi there, i admit i'm new to javascript and jquery however i've had some success using both on my webapp input forms placed on pages.</s><s> now i'm struggling because i'm trying to showcase the results of the input form on the detail page view version of the web app.</s><s> for some reason i can't get the coding to work and i'm not sure why.</s><s> if you have any tips or suggestions on how i can make it work i would be grateful. 
+</s><s>here is an example of some of the code i am using.</s><s> there are several blocks of code on the page and they all have id tags to correspond to april 19th-26th.</s><s> the goal is to show or hide a div when a certain value is present in the 'date19{tag_19th}' - for some reason i couldn't get the traditional show/hide jquery scripting to work so i discovered a work around for that aspect of it.</s><s> then once that div is show you should be able to click on the link within it to show another nested div that is hidden. 
+</s><s>the main problem i am having is with the scripting on the anchor tag with the id '19th_link' and the div id '19th_shifts.' i can't get the scripting (at the bottom of the page) to work with them and i'm not sure why.</s><s> i think i've tried every incarnation of spelling and positioning but i'm at a loss.</s><s> if you have any insight into this i would be grateful for help. 
+</s><s>thanks!</s><s>!</s><s>!</s><s> 
+
+</s><s><div class="date19{tag_19th}"><a id="19th_link" href="#19th_shifts"><h4>saturday, april 19th</h4></a><br>
+                <div id="19th_shifts" style="display:none;">
+                    <div class="row">
+                        <div class="twelve columns shift_block"><strong>shifts available:</strong>
+                            <div class="row">
+                                <div class="six columns">
+                                    <div class="detail_shifts" id="19_s1"><h4>shift 1</h4>
+                                        <strong>time:</strong> {tag_19_s1_a}-{tag_19_s1_b}<br><strong>volunteers requested:</strong> {tag_19_s1_volunteers}
+                                        <br /><strong>notes:</strong> {tag_19_s1_notes}</div> 
+                                    <div class="detail_shifts" id="19_s3"><h4>shift 3</h4>
+                                        <strong>time:</strong> {tag_19_s3_a}-{tag_19_s3_b}
+                                        <br /><strong>volunteers requested:</strong> {tag_19_s3_volunteers}
+                                        <br /><strong>notes:</strong> {tag_19_s3_notes}</div>
+                                    <div class="detail_shifts" id="19_s5"><h4>shift 5</h4>
+                                        <strong>time:</strong> {tag_19_s5_a}-{tag_19_s5_b}
+                                        <br /><strong>volunteers requested:</strong> {tag_19_s5_volunteers}
+                                        <br /><strong>notes:</strong> {tag_19_s5_notes}</div>
+                                </div>
+                                <div class="six columns">
+                                    <div class="detail_shifts" id="19_s2"><h4>shift 2</h4>
+                                        <strong>time:</strong> {tag_19_s2_a}-{tag_19_s2_b}
+                                        <br /><strong>volunteers requested:</strong> {tag_19_s2_volunteers}
+                                        <br /><strong>notes:</strong> {tag_19_s2_notes}</div>
+                                    <div class="detail_shifts" id="19_s4"><h4>shift 4</h4>
+                                        <strong>time:</strong> {tag_19_s1_a}-{tag_19_s1_b}
+                                        <br /><strong>volunteers requested:</strong> {tag_19_s4_volunteers}
+                                        <br /><strong>notes:</strong> {tag_19_s4_notes}</div>
+                                    <div class="detail_shifts" id="19_s6"><h4>shift 6</h4>
+                                        <strong>time:</strong> {tag_19_s6_a}-{tag_19_s6_b}
+                                        <br /><strong>volunteers requested:</strong> {tag_19_s6_volunteers}
+                                        <br /><strong>notes:</strong> {tag_19_s6_notes}</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#19th_link").click(function(){
+    $("#19th_shifts").hide();
+  });
+});
+</script> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130996-6131228</DOCNO>
+<TEXT>
+<subject>jQuery and Javascript showing and hiding divs in web app detail view</subject>
+<post author="Liam%20Dilley" timestamp="Feb 17, 2014 11:54 PM">
+<s>isnt this related to this thread?</s><s> http://forums.adobe.com/message/6130615#6130615 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6130996-6132469</DOCNO>
+<TEXT>
+<subject>jQuery and Javascript showing and hiding divs in web app detail view</subject>
+<post author="DearEmily33" timestamp="Feb 18, 2014 9:00 AM">
+<s>i wish that was what i needed and it is helpful but no that's not exactly what i need.</s><s> i need the javascript that will allow me to toggle a div to visible based on it's contents.</s><s> i also can't understand why this bit of script is not working:   $(document).ready(function(){    $("#19th_link").click(function(){      $("#19th_shifts").hide();     }); });   or for that matter why this won't work either:   $(document).ready(function(){   $("#19th_link").click(function(){     $("#19th_shifts").fadetoggle("fast");     }); });
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-1336046</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="OnTheBallWebDesigns" timestamp="Nov 15, 2013 6:38 AM">
+<s>hello 
+</s><s>is there a way to hide empty we app fields in detailed view.</s><s> working on a boat listing site with quite a few fields and want to exclude the field if the customer doesn't add any info. 
+http://uguru-autodealer-au21.businesscatalyst.com/boat-listings/43-cus tom-timber-trawler 
+i understand that java can do this however i am not fluent with this. 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-5885054</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="Alex%20Pavelescu" timestamp="Nov 29, 2013 7:02 AM">
+<s>hi, 
+</s><s>bc doesn't offer this as an out-of-the-box feature.</s><s> you'll have to use a little scripting to hide those fields.</s><s> i see you're using a list in your detail template for the respective webapp.</s><s> if you were to use a table instead, you'd have this easy workaround: http://jsfiddle.net/a4wgk/1/.</s><s> this is just one suggestion though, there are many variations/approaches depending on what html elements you're using to display the data in the first place. 
+</s><s>kind regards, alex pavelescu 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-5889793</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="OnTheBallWebDesigns" timestamp="Dec 1, 2013 1:39 PM">
+<s>hello alex 
+</s><s>thank you for your reply. 
+
+i have tried to add your script to my template but still showing the empty rows. 
+http://uguru-autodealer-au21.businesscatalyst.com/boat-listings/buzzca t 
+i put the javascript up in the head section, not sure if this is the problem.</s><s> have added code below. 
+<!</s><s>doctype html> <html lang="en" class="no-js"> <!--<!</s><s>[endif]--> <head> <meta charset="utf-8" /> <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport" /> <title>{tag_name}</title> <link href="/favicon.png" rel="shortcut icon" /> <link href="/home_badge_64.png" rel="apple-touch-icon" /> <link href="/home_badge_64.png" rel="apple-touch-icon-precomposed" /> <link href="/_assets/css/normalize.css" rel="stylesheet" /> <link href="/_assets/css/foundation.css" rel="stylesheet" /> <link href="/_assets/css/styles.css" rel="stylesheet" /> <script src="/_assets/js/custom.modernizr.js"></script> <script> $('td:last-child:empty').parent().hide(); </script> </head> <body> <script type="text/javascript"> // will retun 1 or 0 based on if user is logged in(1) or not logged in(0) var _isloggedin = !</s><s>!</s><s>parseint("{module_isloggedin}"); </script> <header> <section> <div class="row alpha"> <div class="large-12 columns"> {module_menu, version="2", menuid="625382", moduletemplategroup="utilitynav"} </div> <!-- end .columns.large-12 --> </div> <!-- end .row --> </section> <div class="row"> <div class="large-12 columns contain-to-grid"> {module_menu, version="2", menuid="625379", moduletemplategroup="primary"} </div> <!-- end .columns.large-12 --> </div> <!-- end .row --> </header> <!-- end header --> <div class="wrapper"> <div class="unhero"></div> <div class="row pagetitle"> <div class="column large-12"> <h1 class="left">{tag_name}</h1> </div> <!-- end .column.large-12 --> </div> <!-- end .row.pagetitle --> <div class="row supersize"> <div class="large-12 columns"> <div class="row"> <div class="columns large-6"> <div id="inner-slider"> <ul data-orbit="data-orbit"> {tag_image 1}{tag_image 2}{tag_image 3}{tag_image 4}{tag_image 5}{tag_image 6}{tag_image 7}{tag_image 8}</ul> <div class="mpgs panel"> <span class="mpg">mdbs: {tag_office}</span><span class="mpg"></span> </div> <h3>boat information</h3> <p><strong>description:</strong><br /> {tag_description}</p> <p><strong>dealer info:</strong><br />  </p> <br /> </div> </div> <!-- end .columns large-6 --> <div class="columns large-6"> <h2 class="alt"><small><del></del></small> {tag_currency} $<span class="tprice">{tag_price} <br /> </span></h2> <table cellpadding="10" style="border-bottom: 1px dotted #b7b9b1; width: 470px; border-top: 1px dotted #b7b9b1;"> <tbody> <tr> <td class="tablefields">who should enroll?:</td> <td>everyone</td> </tr> <tr> <td class="tablefields">location:</td> <td>los angeles</td> </tr> <tr> <td class="tablefields">location notes:</td> <td> </td> </tr> <tr> <td class="tablefields">public transportation:</td> <td>yes</td> </tr> <tr> <td class="tablefields">handicapped access:</td> <td>n/a</td> </tr> <tr> <td class="tablefields">parking notes:</td> <td> </td> </tr> <tr> <td class="tablefields">instructor:</td> <td>jim lafford</td> </tr> </tbody> </table> <hr /> <h3>more info</h3> <p><strong>downloadable details: </strong>{tag_downloadable details} </p> <hr /> <h3>loan calculator</h3> {module_contentholder, name="_template - loan calculator"} </div> <!-- end .columns large-6 --> </div> <!-- end .row --> </div> <!-- end .columns.large-12 --> </div> <!-- end .row.supersize --> </div> <!-- end .wrapper --> <footer> <div class="row collapse"> <div class="columns large-4"> {module_contentholder, name="_template - help center"} </div> <!-- end .columns.large-4 --> <div class="columns large-4"> <div class="columns small-6"> {module_contentholder, name="_template - my account"} </div> <!-- end .columns.small-6 --> <div class="columns small-6"> {module_contentholder, name="_template - privacy"} </div> <!-- end .columns.small-6 --> </div> <!-- end .columns.large-4 --> <div class="columns large-4"> {module_contentholder, name="_template - about us"} </div> <!-- end .search --> </div> <!-- end .columns.large-4 --> <!-- end .row.collapse --> <div class="row collapse omega"> <div class="columns large-6"> <p>{module_webapps,0,i,6651 template="/_settings/copyright"} - {module_webapps,0,i,6651 template="/_settings/company-name"}</p> </div> <!-- end .columns.large-6 --> <div class="columns large-6"> {module_menu, version="2", menuid="625381", moduletemplategroup="social"} </div> <!-- end .columns.large-6 --> </div> <!-- end .row.collapse --> </footer> <!-- end footer --> {module_contentholder, name="_template - scripts"} </body> </html> 
+</s><s>thank you in advance. 
+</s><s>regards 
+</s><s>valentino 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-5890962</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="Alex%20Pavelescu" timestamp="Dec 2, 2013 3:07 AM">
+<s>hi valentino, 
+</s><s>just 2 issues to cover: 
+- make sure you reference jquery - make sure you change the respective webapp's detail layout so it actually contains table elements, as you're currently using a list: http://screencasteu.worldsecuresystems.com/ap/2013-12-02_1257.png 
+</s><s>here's a working example: http://screencasteu.worldsecuresystems.com/ap/2013-12-02_1251.swf 
+</s><s>kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-5893942</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="OnTheBallWebDesigns" timestamp="Dec 2, 2013 4:43 PM">
+<s>alex you are a champ!   thank you for your time to guide me through this, was very helpful and has been implemented on the site perfectly.   regards valentino
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-6115852</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 12, 2014 8:32 PM">
+<s>hello alex   thank you for your help so far, i have run in a little trouble with the hide features script.   site is now live:   www.mdbs.com.au   </script>             <script> $('td:last-child:empty').parent().hide(); </script>   when i add the recaptcha v2 it hides the fields because its a table.   recaptcha v1 has been getting heaps of spam unfortunatley.   was thinking there could be a way to just div up the table i want to use the script for and not the whole page.     i had to take out the contact form with the captcha 1 as too much spam was sent through.   any advise would be appreciated.   regards   valentino
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5845006-6130615</DOCNO>
+<TEXT>
+<subject>Hide web app field in detailed view</subject>
+<post author="OnTheBallWebDesigns" timestamp="Feb 17, 2014 6:13 PM">
+<s>worked this one out.. 
+</s><s>wrapped the table i wanted to target in a <div> tablez and used the following script: 
+<script> $('#tablez table td:last-child:empty').parent().hide(); </script> 
+</s><s>now works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6126355-1408064</DOCNO>
+<TEXT>
+<subject>How to set product Id for event booking order?</subject>
+<post author="ColinAus" timestamp="Feb 16, 2014 11:31 AM">
+<s>we take paid bookings for a number of events through the year.</s><s> since the event booking information is identical for every event (only the event details change), we have implemented this by embedding the html from a standardised web form into each event's details section. 
+</s><s>however, when the event booking is submitted by the customer, business catalyst creates a product whose name is constructed as {form name}/{event name} to correspond to this event.</s><s> this product is referenced in the crm order for this event that is linked to the customer.</s><s> this means we get a separate product for each event type. 
+</s><s>the problem is that the product code that is assigned to the event booking product is the id of the web form that was used to process the event (ie. the form embedded in the event detail).</s><s> since we use the same web form for multiple events we are now seeing duplicate product codes. 
+i would like to create a common product for all event bookings and pass this product id when posting the form on submit of the event booking.</s><s> the reason for a single booking product is to simplify the synchronisation to our accounting system - otherwise we need to create a new product in the accounting system every time we add a new event. 
+</s><s>is there a query parameter i can include on the form's action url or as an input field to the form that controls the product id and / or the product name that will be used for the booking order? 
+</s><s>the only other solution i can think of to solve this challenge is to create a unique web form - event combination for every single event.</s><s> this is not a great solution due to the unnecessary duplication that this will involve - i would rather re-use a common piece of code. 
+</s><s>thanks for any help and advice. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5943199-1361519</DOCNO>
+<TEXT>
+<subject>Web App Import Bug</subject>
+<post author="alexchen2013" timestamp="Dec 18, 2013 5:05 PM">
+<s>hi, i imported a web app with csv format, but did not get one field displayed.</s><s> very strange, it is not items inactive.</s><s> i got all other item fields+ displayed, but one field not shown in the listing view.</s><s> when i clicked into detail view, it is shown.</s><s> the field can be shown when i click into each individual item and hit update.</s><s> i have got 1000+ items to update every day.</s><s> there is no way for me to click every item and just to hit update.</s><s> i double checked the tag spelling, it was correct.</s><s> i also followed this tutorial, http://forums.adobe.com/docs/doc-1747#comment-12057, it did not help my issue.</s><s> any ideas?</s><s> (my tag is: {tag_location}, might it be conflicting with any backend code?</s><s>) cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5943199-5954578</DOCNO>
+<TEXT>
+<subject>Web App Import Bug</subject>
+<post author="Ryan%20Perez" timestamp="Dec 24, 2013 5:47 AM">
+<s>you need to change the date of the expiry on the web apps: 
+if you go into the excel spreadsheet you will notice that the expiry is 1/1/99; you need to change the 1999 to 9999. 
+</s><s>best regards, 
+
+</s><s>ryan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5943199-5983138</DOCNO>
+<TEXT>
+<subject>Web App Import Bug</subject>
+<post author="alexchen2013" timestamp="Jan 5, 2014 4:53 PM">
+<s>hi ryan, the expiry date was 9999.</s><s> i got all listing data displayed (price, description, listing id etc).</s><s> however, just for that field, nothing is displayed.</s><s> i also checked the field under firebug, there was nothing.</s><s> i got exactly the same field inside detail template, which could display.</s><s> cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5943199-5983202</DOCNO>
+<TEXT>
+<subject>Web App Import Bug</subject>
+<post author="Liam%20Dilley" timestamp="Jan 5, 2014 5:01 PM">
+<s>some spreadsheet apps modify the date thinking it needs to be in a new format, its not bc that does that.</s><s> you need to ensure before you save/export this is corrected before importing back in as ryan indicated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5943199-5983206</DOCNO>
+<TEXT>
+<subject>Web App Import Bug</subject>
+<post author="alexchen2013" timestamp="Jan 5, 2014 5:06 PM">
+<s>hi liam, there is no problem with the csv.</s><s> the expiry date is "1/01/9999", not "1/01/1999" or "1/01/99".</s><s> otherwise, i don't get any listings displayed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5943199-6123074</DOCNO>
+<TEXT>
+<subject>Web App Import Bug</subject>
+<post author="juliaor" timestamp="Feb 15, 2014 3:36 AM">
+<s>i had the same problem with items not displaying in the list.</s><s> i reformatted the expiry date field in my csv, still the thing persisted as 'inactive'. 
+</s><s>for what it's worth, i've found that the release date has to be less than today.</s><s> i don't know the why of the whole chain, but when i set the release day back 1 day less than 'today', it activates and the listings display nicely.</s><s> it seems to be quite consistent. 
+</s><s>regards, julia 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6115197-1405282</DOCNO>
+<TEXT>
+<subject>Select Display Criteria - "Latest Items"</subject>
+<post author="madmudskipper959" timestamp="Feb 12, 2014 3:22 PM">
+<s>hello, created a custome app for announcements and would like to know when placing the module on a page what does the "latest items" under display criteria actually do?</s><s> how does it work out what the latest items are?</s><s> are announcements submitted displayed on the daily, weekly or monthly?</s><s> how do you or can you set the display time?</s><s> are announcements older then a week removed automatically? 
+really appreciate your help... thanks 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6108256-1403561</DOCNO>
+<TEXT>
+<subject>Daily imports with custom fields added</subject>
+<post author="jerrydever" timestamp="Feb 10, 2014 9:22 PM">
+<s>i have a realty client.</s><s> they utilize a 3rd party listings company.</s><s> every day, they add/edit/delete listings via the 3rd party company.</s><s> they want to import this data into their new bc site.</s><s> they want to import and add custom fields and when they import each day, they want the standard fields to update (i.e. price) but the custom fields to remain untouched.</s><s> the 3rd party can provide a tab-delimited file or they can ftp a rets (real estate transaction standard) feed. 
+</s><s>possible?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6099416-1401326</DOCNO>
+<TEXT>
+<subject>Web App Search Results to display TPL instead of List View</subject>
+<post author="barringtondesign" timestamp="Feb 7, 2014 11:35 PM">
+<s>is it possible to get the web app search results to display a tpl layout instead of the standard list view? 
+</s><s>if it is possible would the call go on the form or on the results page?</s><s> (currently use the same results page for multiple web apps. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6099416-6099476</DOCNO>
+<TEXT>
+<subject>Web App Search Results to display TPL instead of List View</subject>
+<post author="Liam%20Dilley" timestamp="Feb 8, 2014 12:01 AM">
+<s>not quite sure what your after.</s><s> you can send any search results to a custom page, i think you have done this?</s><s> that page can have its own template. 
+</s><s>the module itself for the search results: {module_webappsresults,,,bkp,resultsperpage,hideemptymessage,rowlength ,sort} 
+</s><s>are they key elements where bkp being true means the search results will use the list backup of the web app over the main one. 
+</s><s>if you apply the custom template rule by adding a space and template="pathtofile" you can specify the search results to use a custom template. http://helpx.adobe.com/business-catalyst/partner/using-custom-template s-modules.html 
+is any of that what your after? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6090748-1399285</DOCNO>
+<TEXT>
+<subject>ERROR: You do not have enough privileges to add this item.</subject>
+<post author="Peter-AM" timestamp="Feb 5, 2014 4:21 PM">
+<s>on any new web app items , or any new web apps created getting the message when attempting to do update (logged in as user and can access the item in edit) error: you do not have enough privileges to add this item.   the same user id can do updates to other web app web app items that already exist, the user is assigned and can login and select edit and add the content , but submit the web app item update results in succfull update.   what does the message error: you do not have enough privileges to add this item specifically indicate when the user is assigned to the web app / web app item, web app is designated as edit enabled for assigned user item is active and can update other web apps and can login to the web app in question but can not update newly created items without the message.   appears to me any web app that is new or modified is getting the error, existing ones are ok.   (happens on different browsers, cache cleared, logins not remembered, manual login actioned)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6069080-1393766</DOCNO>
+<TEXT>
+<subject>Web App List rendering in a table</subject>
+<post author="scottdouglas999" timestamp="Jan 30, 2014 8:06 AM">
+<s>i have three webapps listing on this site: http://browncommunicationsgroup.businesscatalyst.com/.</s><s> the top slider, the area under "the work" and in a modal window that opens when the view opprtunities link is clicked.</s><s> the web app list in the "the work" is rendering out in a table but the other two aren't.</s><s> i'm not sure why.</s><s> does anyone know of a setting oe what i can do to get rid of these tables? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6069080-6070485</DOCNO>
+<TEXT>
+<subject>Web App List rendering in a table</subject>
+<post author="Liam%20Dilley" timestamp="Jan 30, 2014 1:31 PM">
+<s>hey there, in the module paramater you will have set the number of items per row away from 1 to another number which tells bc to go render it in a table. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6069080-6071853</DOCNO>
+<TEXT>
+<subject>Web App List rendering in a table</subject>
+<post author="cedric%40bc-experts.com" timestamp="Jan 30, 2014 10:33 PM">
+<s>use this tag on your overview layout to render list style on your items 
+{tag_productlist,99,,,,true,true} 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6069080-6071962</DOCNO>
+<TEXT>
+<subject>Web App List rendering in a table</subject>
+<post author="Liam%20Dilley" timestamp="Jan 31, 2014 12:40 AM">
+<s>that is not really helpful, that is the tag for products in the overall layout and this is talking about web apps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6069080-6072021</DOCNO>
+<TEXT>
+<subject>Web App List rendering in a table</subject>
+<post author="cedric%40bc-experts.com" timestamp="Jan 31, 2014 12:43 AM">
+<s>oops, my bad 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5841174-1335033</DOCNO>
+<TEXT>
+<subject>moving between web app detail pages</subject>
+<post author="Grovehouse" timestamp="Nov 14, 2013 1:11 AM">
+<s>in a web app that is displaying personal profiles, (so enter the page, select the person, their details show) i need to have buttons on that detail page allowing users to move to the next detail page and the previous one.</s><s> this is so they can browse at the detail level without returning the to the list view.</s><s> i cannot see a module to allow this - is this doable? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5841174-5891358</DOCNO>
+<TEXT>
+<subject>moving between web app detail pages</subject>
+<post author="Alex%20Pavelescu" timestamp="Dec 2, 2013 5:40 AM">
+<s>hi 
+</s><s>this is doable only with some custom scripting.</s><s> if you use {module_webapps,xxxxx,a} it will list all your webapp items(with links to detail view) in an ordered list. 
+1.</s><s> item_1 2.</s><s> item_2 3.</s><s> item_3 
+</s><s>you should be able to put this module in a hidden div and use a script to match the current url with the position of the respective item in the list.</s><s> so if your current url is "yourdomain.com/webappname/item_2", the script should see that it maches the 2nd entry in webapp items list, so it would assign the "next" button with the href value of "item_3", and for the "previous" button it would pass "item_1"'s href. 
+</s><s>hope this helps. 
+</s><s>kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5841174-6029829</DOCNO>
+<TEXT>
+<subject>moving between web app detail pages</subject>
+<post author="Pebble%20Design" timestamp="Jan 19, 2014 3:16 PM">
+<s>this solution isn't ideal.</s><s> we have a client with 600+ properties in a web app and they want to be able to navigate between items. 
+</s><s>is this something that can be added in a future release?</s><s> it's a pretty basic feature in other cms platforms. 
+</s><s>cheers, klaye 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5841174-6071855</DOCNO>
+<TEXT>
+<subject>moving between web app detail pages</subject>
+<post author="cedric%40bc-experts.com" timestamp="Jan 30, 2014 10:38 PM">
+<s>this tutorial should do the trick http://kiyuco.com/tutorials/create-web-app-detail-page-pagination-2-0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-1047880</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="kenneth_rapp" timestamp="Aug 10, 2012 7:06 PM">
+<s>sorry, i've looked around to try to find the answer to this and i haven't been able to. 
+i have two web apps.</s><s> one, "locations," holds a list of addresses for several stores, with tags like {location_street_address}, {location_phone_number}.</s><s> another web app, "storegallery", holds items to be showcased at these stores, and in it i've defined locations as a data source field.</s><s> so that for each item, they can associate an item with a specific store. 
+</s><s>so in the detail template for storegallery i added one of the tags from locations, thinking that by having defined the data source, the tags from one would work in the other, but they don't.</s><s> i was only able to find tutorials on how to create the data source field but not on how to actually apply them in templates. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-4613830</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="Liam%20Dilley" timestamp="Aug 10, 2012 7:45 PM">
+<s>hi kenneth, the current version of web apps does not work like that.</s><s> when you define a data store all that does is provide a link to the other web app item you associate it with.</s><s> you can not put tags you built from one web app in another.</s><s> the data source output which is a hyperlink is the only thing you have.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-4613853</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="kenneth_rapp" timestamp="Aug 10, 2012 8:02 PM">
+<s>no of course it wouldn't work like that because that would be efficient and useful unlike whatever javascript hack i'm going to have to figure out to make it kind of work like that.   i don't suppose making it work like that is in the cards for a future release?   liamdilley wrote:   hi kenneth, the current version of web apps does not work like that.</s><s> when you define a data store all that does is provide a link to the other web app item you associate it with.</s><s> you can not put tags you built from one web app in another.</s><s> the data source output which is a hyperlink is the only thing you have.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-4613881</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="Liam%20Dilley" timestamp="Aug 10, 2012 8:24 PM">
+<s>check the bc blog roadmap post.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-4613856</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="kenneth_rapp" timestamp="Aug 10, 2012 9:04 PM">
+<s>alright.</s><s> i just replicated all the fields i needed into the other web app.</s><s> all i can do i guess. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-5575417</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="palvanov" timestamp="Aug 7, 2013 2:52 PM">
+<s>for whoever is looking for a solution to this... 
+</s><s>if you are trying to figure out how to use "data source" fields to show more than just a simple link from one web app to another web app, see below. 
+</s><s>this might save you hours of looking around. 
+</s><s>using kenneths example (from above), you should do this: 
+1) inside web app called "storegallery", create a "data source" field named "storelocation" 
+2) in the "detail template" layout of the web app "storegallery", insert this code: {module_webapps,123,i,{tag_storelocation_id}} 
+3) make sure to replace "123" above with the id of web app "locations" 
+4) in 'list template' layout of "locations" app, customize which details you'd like to show for each location 
+(ie {location_street_address}, {location_phone_number}.</s><s> etc.</s><s>) 
+
+
+</s><s>cheers!</s><s> a 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4613799-6059673</DOCNO>
+<TEXT>
+<subject>what am i doing wrong with data source?</subject>
+<post author="toty%20montana" timestamp="Jan 28, 2014 1:29 AM">
+<s>hi all.   i have issue with similar above article.   i have create 2 web app the idea i want multiple promotion can add to a hotel,   1- hotels app (name, description) 2- promotion app (promo_name, description, hotel_name "using data source field from app1")   after i finish all field above, - i have added items to app1(hotel1,hotel2) - i have added items to app2(promo1 for hotel1,promo2 forhotel1, and promo3 for hotel2).   front end so can show all hotels list for app1 and i can show promotions list for app2 with association link to hotel detail directly from the promotion detail, so in the hotel detail i would like to show all the promotion which belong to it's, ex: hotel1 have promo1 and promo2, and hotel2 have promo3 so i use this tag {module_webapps,34898,i,{tag_itemid}}  in hotels layout detail but it not working, it shown me only one item with error promotions tag   when i use this tag it work {module_webapps,34898,a} but i don't want all,   please help ty
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6055418-1390438</DOCNO>
+<TEXT>
+<subject>How are CRM orders created for web form payments on webapp detail page</subject>
+<post author="ColinAus" timestamp="Jan 26, 2014 11:08 PM">
+<s>i am trying to understand exactly what is happening on a web app and associated payment forms that were built for us by a 3rd party developer. 
+</s><s>here is the situation.</s><s> we have a webapp named student.</s><s> items for this webapp are created by customers.</s><s> no payment is required on item creation. 
+</s><s>when the customer wishes to enroll their student, they click a button/link that takes them to the detail page for the student webapp.</s><s> this page has a web form that includes credit card payment information. 
+</s><s>when the page is submitted, an autoresponder email is sent to the customer with their enrollment/order details (controlled by the webapp settings?</s><s>) and their is an admin email that is sent according to the workflow settings of the web form (i think). 
+</s><s>so far so good. 
+</s><s>when i look in the crm - orders i see orders that are created in relation to this payment.</s><s> the product that is listed as the single order item seems to have the same name as the web form used to submit the payment.</s><s> i can click through to this product in the e-commerce products listing. 
+</s><s>we have something similar for event bookings and there are a number of orders that also have similar product names to the events that were being paid for. 
+</s><s>it seems like these products all have the same (numeric) product code. 
+</s><s>my questions are: 
+is this product automatically created?</s><s> is that how the duplicate product codes have come about?</s><s> do i actually need (or should i) create specific products to associate with these orders?</s><s> if i do create products for these web form payments, how do i tell the web form to use this product id for the order that is created? 
+</s><s>is there anything else that i should know or be doing differently for this to work correctly? 
+</s><s>lastly, we are synchronising with saasu via onesaas.</s><s> saasu is our product master so it would be handy to be able to create the products in saasu first if we really do need a product on this order.</s><s> in that case i would like to be able to specify the product code or id for the order. 
+</s><s>i'm not sure if i really need or want separate product codes for each event or webapp order that is placed.</s><s> there is no inventory (obviously) and probably not much benefit in tracking these separately in the accounting system (other than to reconcile that a payment was received and it was associated with a certain "order"). 
+</s><s>thanks in advance for any help or advice you can give me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5981072-1371547</DOCNO>
+<TEXT>
+<subject>Sell webapp item?</subject>
+<post author="Novium" timestamp="Jan 4, 2014 5:15 PM">
+<s>hello, 
+</s><s>i'm creating a site for a photographer.</s><s> the photographer wants to sell unique photos of people.</s><s> the photos is not that kind of sensitive, just regular portrait.</s><s> i whoever belive that people do not want them public available in a store. 
+</s><s>my idea is to create a secure zone and a webapp item that is bound to a crm-user as the owner. 
+</s><s>the question is - can i sell a webapp item? 
+</s><s>the progress would be that the user see a prewiew and needs to buy the item to get the download of the full highres image. 
+</s><s>if this is not possible in a webapp, can it be done in ecommerce module? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5981072-6047941</DOCNO>
+<TEXT>
+<subject>Sell webapp item?</subject>
+<post author="TS-Rohit" timestamp="Jan 24, 2014 5:02 AM">
+<s>hi, 
+</s><s>you can charge for webapp items following the document here http://kb.worldsecuresystems.com/868/cpsid_86820.html , make a webapp/items secure and display items as you wish.</s><s> check for any other help document by searching here -> http://www.businesscatalyst.com/support/customers.html 
+kind regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5230259-1190665</DOCNO>
+<TEXT>
+<subject>Customer submitted Web App Items & Expiry Date</subject>
+<post author="bshatzer-LinksTechnology" timestamp="Apr 12, 2013 1:14 PM">
+<s>i'd like customers to be able to set a specific expiry date for web app items that they create.</s><s> the html generated by the web apps input form only creates radio buttons of the options "never expire" and "expire after x amount of days" 
+</s><s>the solution offered here suggests creating something which masks those and while i could certainly get my javascript judo on and put a date picker in front of the expirydate radio button options that calculates everything out, it just feels really "rube goldberg"-esque. 
+</s><s>considering that every other way of creating web app items (csv import or through the admin console) actually require a specfic expirey date to be supplied (even things set to never expire will technically expire in roughly 8,000 years), i find it incredibly hard to beleive that there is no way to set a specific expirey date through a form.</s><s> am i missing something? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5230259-6026016</DOCNO>
+<TEXT>
+<subject>Customer submitted Web App Items & Expiry Date</subject>
+<post author="BriceShatzer" timestamp="Jan 18, 2014 12:00 AM">
+<s>.....seriously?</s><s> is this really how this has to work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-6005783-1377856</DOCNO>
+<TEXT>
+<subject>Web App with 2 tier pricing?</subject>
+<post author="markander33" timestamp="Jan 12, 2014 2:04 PM">
+<s>hi, 
+</s><s>i'm making a directory site in which the user will get a free directory listing for a year, and after that they will need to purchase a listing - either a tier 1 listing or a tier 2 listing, priced differently. 
+</s><s>has anyone done this - can a web app have two pricing levels?</s><s> do i somehow need to join two web apps - one for tier 1, the other for tier 2, and have them both display in the same directory? 
+</s><s>any help would be appreciated, 
+tks, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5977069-1370475</DOCNO>
+<TEXT>
+<subject>{tag_blogpostauthorpicture} renders a 50x50 profile picture, can we make this render larger?</subject>
+<post author="AndyaHook" timestamp="Jan 3, 2014 8:15 AM">
+<s>{tag_blogpostauthorpicture} renders a 50x50 profile picture, can we make this render larger without another javascript work around? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5977069-5991657</DOCNO>
+<TEXT>
+<subject>{tag_blogpostauthorpicture} renders a 50x50 profile picture, can we make this render larger?</subject>
+<post author="AndyaHook" timestamp="Jan 8, 2014 1:09 AM">
+<s>the awnser is no, not without javascript.</s><s> the way to do it is to use javascript to change the url parameters of the img src "?</s><s>action=thumbnail&amp;width=50&amp;height=50" change it to your required resolution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5982874-1372070</DOCNO>
+<TEXT>
+<subject>Webapp:How to add image link to a dynamically resized image</subject>
+<post author="topelovely" timestamp="Jan 5, 2014 2:59 PM">
+<s>i have this in my list layout of my webapp: 
+
+<img src="{tag_storyimage_value}?action=thumbnail&width=400&height=300" /> 
+
+</s><s>this bc tag does not support link on the image.</s><s> how can i make bc place a link on this, which will take the user to the detail layout/view. 
+</s><s>will be most apreciated. 
+
+</s><s>kind regards. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5982874-5983799</DOCNO>
+<TEXT>
+<subject>Webapp:How to add image link to a dynamically resized image</subject>
+<post author="Liam%20Dilley" timestamp="Jan 5, 2014 11:52 PM">
+<s>you have {tag_itemurl_nolink} so you would make an anchor wrapping that around it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-1258106</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="Peter · Genie Corp." timestamp="Jul 19, 2013 3:12 AM">
+<s>hi guys     i need a bit of help, and i need some js to solve it, but haven't found the solution yet.   i have made a guestbook with web apps for a client, it all works fine, but i have a small issue.   if the user inputs:   hi xxxxxxx   thank you for your help yesterday   best regards xxxxxxx     when it is displayed it removes the line breaks so it looks like this:   hi xxxxxxx thank you for your help yesterday best regards xxxxxxx     any good way to have it displayed as it was entered so my client don't need to manually edit the inputs     best regards peter
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5519976</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="Peter%20%C2%B7%20Genie%20Corp." timestamp="Jul 19, 2013 6:27 AM">
+<s>i found this script which works, anyone who can edit it? 
+<script type='text/javascript'> function replacenewlines(e) { var element = document.getelementbyid('itemdescription'); 
+if (e.keycode == 13) { element.value = element.value.replace("\r", ""); element.value += "___newline___\n"; element.value = element.value.replace("___newline___\n", "<br />"); } } </script> 
+</s><s>this sort of works but it is not very pretty, because every time a user hits enter, it display <br/> and i think it would confuse users. 
+</s><s>so when i use it it will display: 
+hi xxxxxxx<br/> <br/> thank you for your help yesterday<br/> <br/> best regards<br/> xxxxxxx 
+
+i want a script which does exactly this but first when the form is submitted?</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5521600</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="thetrickster888" timestamp="Jul 19, 2013 1:34 PM">
+<s>do you have a url of the page you are including your form...</s><s> i'll be able to work something up for you quickly... it's pretty easy with some regex javascript.</s><s> the key is to make a function that does this and then call that script inside your "checkwholeform" function that bc adds when you insert a form so that the user hits submit, it passes bc's validation through the checkwholeform function and just before that function actually submits the form you call your function that replaces the html.</s><s> i'll work up a simpler and more robust solution for you, just give me the url so i can see what you're working with. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5521715</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="thetrickster888" timestamp="Jul 19, 2013 1:56 PM">
+<s>ok-- i worked something up.</s><s> i'm assuming your web form has the "checkwholeform" function and that you have jquery loaded in the head of your html page or page template.</s><s> check it out at: http://jsfiddle.net/thetrickster/jvdwa/ let me know if you have any problems. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5522525</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="cedric%40bc-experts.com" timestamp="Jul 19, 2013 11:55 PM">
+<s>hi, 
+</s><s>best to convert your multiline field to wysiwyg, there are some javascript to do this by specifying an id to your textarea and switch it to wyswig 
+hope this help cedric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5524777</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="Peter%20%C2%B7%20Genie%20Corp." timestamp="Jul 21, 2013 8:15 AM">
+<s>@ thetrickster888   thank you!</s><s>!</s><s>!   exactly what i needed, works perfectly!</s><s> thanks a lot!     @ cedric   that sounds interesting, i could use that for other things aswell, do you have more info on that?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5526201</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="cedric%40bc-experts.com" timestamp="Jul 22, 2013 12:08 AM">
+<s>hi peter, 
+</s><s>i think this might only work on the {tag_description} field as on admin it is using wyswig, so the logic should be the front-end can be a wyswig as well. 
+</s><s>the most common wyswig should be http://www.tinymce.com/ 
+this should work well with customer submitted webapps where they can style their description fields the way they like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5762586</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="Liz-Bord" timestamp="Oct 15, 2013 2:44 PM">
+<s>i tried to add the tinymce to my input fields on a web app edit form, and it's not showing up at all.</s><s> any one get this to work succesfully? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5764385</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="thetrickster888" timestamp="Oct 16, 2013 8:58 AM">
+<s>tiny mce is really easy to install - make sure you've referenced this script in your head element:   <script src="//tinymce.cachefly.net/4.0/tinymce.min.js"></script>   then, just add a class to your textarea in your web app edit layout...</s><s> a class like "tinymce".  then, in your head element, add this script after the line above:   <script>         tinymce.init({selector:'.tinymce'}); </script>   are you seeing any errors in your javascript console?  if you hit ctrl-shift-j or cmd-shift-j in google chrome do you see any red error messages?</s><s> if so, what are they?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-5519892-5764663</DOCNO>
+<TEXT>
+<subject>Web app input form, no <br/> in description</subject>
+<post author="Liz-Bord" timestamp="Oct 16, 2013 10:49 AM">
+<s>got it to work, thanks... didn't have the jquery loading... thought it was included in the tinymce js file. 
+</s><s>how about uploading photos?</s><s> the related image upload tools seem to need php or asp to operate...</s><s> would like the user to be able to add photos to the content if they want. 
+</s><s>is there any way to reference bc's wyswig editing tool on the web app front end input form?</s><s> that has the hooks for accessing photos, page links, etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-1045330</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="ljohnson2510" timestamp="Aug 6, 2012 12:07 PM">
+<s>i'd like to load my web app data into a javascript array.</s><s> has anyone done this or know the best way to accomplish this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4602953</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="fortunegreen" timestamp="Aug 6, 2012 5:19 PM">
+<s>i use the code below to sort my web apps.</s><s> might get you started. 
+var arr = []; $(".trainers li.country").each(function(){ var obj = {}; obj.name = $(this).find("p").html(); obj.property = $($(this).children()[1]).html(); arr.push(obj); }); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4975396</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 2:50 PM">
+<s>i know this topic is old, but i figured i'd offer my two cents anyway. 
+</s><s>for a list with many items, i use a custom list template (released after these posts were written) to create a js object: 
+'{tag_name_nolink}' : {id: '{tag_itemid}',url: '{tag_itemurl_nolink}'}, 
+and then on the page where i insert the module, i surround it with the rest of the object code: 
+<script> var itemlist = { {module_webapps,18231,a template="/layouts/webapps/my_web_app/customlist.tpl",,,,true,500,,1} null : {id: null,url: null} }; </script> 
+</s><s>now i can call an object with: 
+itemlist.url 
+or whatever. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4975445</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 3:12 PM">
+<s>that is inline scripts though adam.</s><s> better using html 5 data objects or similar output and a proper function. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4975516</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 3:18 PM">
+<s>technically inline, but still at the bottom of the page.</s><s> and the code that reads it wouldn't be inline. 
+i guess, to me, there are a lot of things that can't be done ideally in bc (though, that changes for the better every month), so this is a work around. 
+</s><s>that said, i'm completely unfamiliar with html5 data objects (except by name).</s><s> i'll check it out!</s><s> thanks, liam.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4975643</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 4:19 PM">
+<s>well not even that really.</s><s> all my scripts are external in objects optimized and only called when the elements that need to run them and any jquery plugin lazy loaded. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4975902</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 6:30 PM">
+<s>i really do the same thing, with this situation being the only exception.</s><s> one of the things i really like about this is that it is simply creating an object, without even traversing the dom. 
+</s><s>so, i'm assuming you see it as a performance hit.</s><s> is that it?</s><s> is there something you would do in this situation that doesn't cause concern? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976190</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="kenneth_rapp" timestamp="Jan 7, 2013 8:56 PM">
+<s>i like that, as long as you can safely expect you won't accidentally escape something improperly... it's unfortunate that webapps don't export to json on their own though. 
+</s><s>i've usually just pulled a custom data list template in with ajax (as html), attached it to a dummy dom object and used that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976213</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 10:10 PM">
+<s>do that often too. jquery .data is pretty awesome for use as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976244</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 10:17 PM">
+<s>that's a good alternative if you have hang-ups with my suggestion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976217</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 10:31 PM">
+<s>load rendering with modules in scripts i do not like.</s><s> which you can view when you use say chrome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976325</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 10:36 PM">
+<s>i really am curious what it is you don't like about it.</s><s> can it cause problems?</s><s> what's your view, liam? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976339</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 10:53 PM">
+<s>one the primary things i learnt at uni is the object oriented modal of design and development, mvc etc. seperation of the function, display, data being a fundemental point to develop and all the benifits of that. 
+</s><s>also, your html code will weigh more, i.e.</s><s> a web page riddled with similar code will have a kb size that is a lot larger than necessary.</s><s> the inline script and css will make the source more dense, search engines have to sift through it to find your actual content.</s><s> your html code will never be truely cached but the external dependencies, such as the css and javascript files, will be cached by the visitor's web browser after the first visit – this means that instead of loading a lot of superfluous html code for every page in your web site the visitor visits, it will quickly retrieve all style and interaction locally from the web browser cache and thus improve perfomance further. 
+no fall back interaction, and harder to manage, correct and update along with poor attrinbute accessability.</s><s> having your scripting in one central location makes your development time more effecient, working on new aspects of the site has no effect on the live site, functions can be wrote once called many times and only when needed.</s><s> object coding in javascript improves performance, management, use and more also. 
+</s><s>with these in mind the page load is just longer with inline scripting and the event handling is poorer and then coupled with the other elments mentioned above. 
+</s><s>just better done right bc has runs gzip, you can optimise your code and the server caching of css, script, image files and the browser it just all leads to better perfomance of your site which is also increasingly something google wants to see to rank you well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976341</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 10:59 PM">
+<s>also, another small improvement is declaring variable objects then using them. 
+var something = ""; 
+then when you assign data to that variable or object you create.... something = "my data"; this is more effecient. 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976332</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 11:03 PM">
+<s>thanks, liam.</s><s> i always appreciate hearing the rationale. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976333</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 7, 2013 11:06 PM">
+<s>and with declaring variables before using them-i had no idea that was better! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4976346</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 11:49 PM">
+<s>from c to jscript to java, that is a what you do 
+you are even able to create class's in javascript http://www.htmlgoodies.com/html5/tutorials/create-an-object-oriented-j avascript-class-constructor.html#fbid=gka89hyuis3 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978644</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="fortunegreen" timestamp="Jan 8, 2013 3:44 PM">
+<s>interesting discussion! 
+</s><s>in my past life as a software engineer, i used the mvc model, mainly with wpf and wcf building windows apps. 
+</s><s>never thought about using it in web development - duh! 
+i suspect my whole approach will change now. 
+</s><s>thanks liam for giving me food for thought. 
+</s><s>penny 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978750</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 4:29 PM">
+<s>alright penny and liam, 
+</s><s>i had to go do a bit of research because of penny's comment.</s><s> the subject of mvc is entirely foreign to me, so i entirely missed that in liam's comment. 
+</s><s>so liam, here's what i think you are saying to me: 
+i had bc output an object (part of my model) for my functions (model, controllers) to use, along with its usual job of delivering the html (the view portion of its own model).</s><s> this is first of all messy.</s><s> second, if i were to do this at all, done correctly, instead of just a lonely object sitting by itself i should have wrapped it into a useful function so it's purpose is more clear? 
+</s><s>scale of 1-5, how close am i.</s><s> (five is right on) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978905</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 4:59 PM">
+<s>penny, it is awesome to do so.</s><s> allows you to create and manage and re-use and helps your pefomance and structure of your bc sites no end do it! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978909</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 5:04 PM">
+<s>adam, to start you off in terms of basics....   have a functions file (i wrote a guide on the adobe site but bc took their guide section down as it was another place.</s><s> i got it saved and i will put it as a guide on these forums soon!</s><s>) where you write your functions.</s><s> each function for a job.   have a dom.js file where you run the dom in jquery.</s><s> one time call.</s><s> in here you can call a function when to run it.   so say you have the home page slider but that is only home page.   you wrap the function in an if statement that basically is..   if element exists (.length) then run this function.</s><s> if the element does not exist the function does not run.   you can lazy load and call scripts, create script library to run (on our sites we have one extra .js at the bottom called to do all our magic) and add plugins easily to a site, lazy load them so they do not run every time you load a page even if not needed....   you can progress to convert everything into objects not just functions.   you can progress still to use classes in javascript..   jquery has great features to aid in all these areas.....   so much you can do to optimise not just your sites and scripts but how you operate running these methods.   the oo apporach to your work is modular design and development just means you can do more for less and sites are just better.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978881</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="fortunegreen" timestamp="Jan 8, 2013 5:08 PM">
+<s>just thinking! 
+i am used to test driven development, so the minimum required code is written. 
+i wonder if this approach can be used in web development too. 
+</s><s>penny 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978917</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 5:23 PM">
+<s>penny, smaller the code the better really, lots of people use jquery plugins because they do not understand javascript or jquery that well to get something going.</s><s> often 4 lines of code can be done to do the same job.</s><s> some aspects wont work in that sense for web development and more over bc but you can come up with a really nice modal for yourself and bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978885</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 5:30 PM">
+<s>i have a scripts.js file that contains all my jquery plugins and an object with all my scripts divided up by their different purposes: 
+object.category.script (); 
+the only other script references i include in the document, with the exception of the obvious cdn references like jquery, are the odd time when a set of functions are very large and only applicable to a particular area of the site.</s><s> i do this because including them in my scripts.js file would make it to big to quickly read through. 
+</s><s>the reason i justify having a custom list layout output an object for me is because it saves (just in this particular scenario) a lot of http requests and unnecessary processing. 
+</s><s>we don't have an ideal coding world in bc. sometimes i think it's more about weighing the fruits of your options against the fruits of convention. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978960</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 6:07 PM">
+<s>it is actually a bit more load adam over you think it less http requests but you are right in a way but i have an awesome bc site framework now which can be more with more time applied to it even further that is not a template for sites but builds your sites with bc pretty awesome.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4978962</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="kenneth_rapp" timestamp="Jan 8, 2013 6:21 PM">
+<s>do you have a github account? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979070</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 6:41 PM">
+<s>perhaps more load overall, but certainly not on the front-end.</s><s> just the same, this has been an intriguing discussion, prompting a little research on my part.</s><s> i always appreciate that. 
+</s><s>i'd be interested to see how you do things, liam.</s><s> unless, of course, you feel a little protective of all the work you've done to develop it.</s><s> that would be understandable.</s><s> but i've always enjoyed learning from others. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979060</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 6:48 PM">
+<s>more adam, see by big above post due to the caching and a few other bits.</s><s> more load being inline.</s><s> i did a big basics guide for intermediates that was up on adobe site but removed as bc closing to many avenues for guides.</s><s> i will re-up it in the guides section i cleaned up before xmas on these forums.</s><s> that will be the guts of what i do and the basic concepts. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979080</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 7:34 PM">
+<s>thanks!</s><s> i look forward to it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979134</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 7:50 PM">
+<s>sounds of it your about there adam.</s><s> have to admit i have not fully practised what i preach in but defiantly do not do inline.</s><s> time to update but i think i do as some do with the object oriented, lazy loading etc. even if it is only slight improvements in perfomance in some areas and lots in others the management apsects of it alone is worth adopting. 
+</s><s>think about inline stuff as well with jquery and all the people calling the dom multiple times!, eeek!</s><s> so many do using bc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979191</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 8:02 PM">
+<s>to tell the truth, the thought of "calling" the dom has never even crossed my mind.</s><s> i think of server calls, and i think of how much work has to be performed by the browser (especially when i'm creating loops), but you're absolutely right.</s><s> we do call the dom, and it's just one more handshake that has to happen.</s><s> the first thing i'm going to look into is a dom.js approach. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979192</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="fortunegreen" timestamp="Jan 8, 2013 8:20 PM">
+<s>i think this has been one of the most interesting discussions on this forum, and has certainly stimulated my thinking! 
+</s><s>do any of you use source control? 
+i guess as a sole developer, it may be a bit pointless in my case, and i always take a copy of a file before i start modifying it. 
+</s><s>also, if clients are updating files you have no control over that. 
+</s><s>penny 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979136</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 8:21 PM">
+<s>i seen sites which do the jquery dom loading 20/3o times because of all the inline scripting!</s><s> pretty shocking, lol.</s><s> you can get it to have one js called in your templates which loads what you need when you need it and all the basics etc and out of the head to reduce the load there.</s><s> so clean, performs well.</s><s> ecommerce framework fuel offers through the ecommerce websites business has heaps of script to fix up bc ecommerce (which has so many issues) along with the standard issues and of course securezone ones all together.</s><s> more script then i like but i would hate to think the load it would be without some of the above mentioned stuff in play.</s><s> and that even uses old ways we do things, just a big job to update it at the moment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979196</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 8:31 PM">
+<s>i'm horrible about source control.</s><s> i'm also a solo act, and i think that has led to some lazy practices on my part.</s><s> however, i'm beginning to develop enough of a code library that i wont be able to get away with it much longer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979138</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="kenneth_rapp" timestamp="Jan 8, 2013 8:40 PM">
+<s>i started using git a few months ago and it's been amazing for organizing my work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979198</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 8, 2013 8:45 PM">
+<s>as per kenneth earlier in this discussion: 
+</s><s>"i've usually just pulled a custom data list template in with ajax (as html), attached it to a dummy dom object and used that." 
+</s><s>it just hit me, thanks to this discussion, that this is the better approach.</s><s> i'll still create my custom list template that outputs an object for me, but instead of having it load into the page, i'll avoid the caching by calling it through ajax into my scripts.js.</s><s> duh.</s><s> i was so close to a perfect solution! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4979555</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 9, 2013 1:44 AM">
+<s>git is awesome, how it works in coda 2 is awesome but....</s><s> you do not need it in bc. it is great for huge projects and team environments and big system development but a bit much for bc and i find it slows you down.</s><s> bit to much i think.</s><s> with some of the above and applying that to how you build bc in general, which i think literally the penny has droppoed on that from penny and sounds like she has some improvements to make on her bc builds already (which will be awesome) you can have great fun building bc sites.</s><s> i do.</s><s> 
+</s><s>here you go by the way re-document: http://forums.adobe.com/docs/doc-2964 
+</s><s>formed up this evening.</s><s> you may know a lot or do some or all of it but it a good guide for lots of people hopefully. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4980865</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Adam%20Cook%20(ONE%20Creative)" timestamp="Jan 9, 2013 10:37 AM">
+<s>liam, as i read through your document and thought about the merits of lazy loading, a question arose.</s><s> how do you handle jquery plugins?</s><s> currently, i paste them directly into the top portion of my scripts.js file, then call them from within my object at the bottom portion of the file.</s><s> to illustrate, this represents my current file structure (though i included the 'if' statements around my functions in a new attempt at make this better at lazy loading): 
+/* plugins */ 
+this represents a minimized version of a jquery plugin, pasted directly into my scripts.js file. 
+</s><s>here is another. 
+</s><s>and another. 
+
+/* my scripts */ 
+jquery.noconflict(); 
+function scriptlist() {
+     var $ = jquery;
+     var engine = {
+          utils : {
+              function1 : function() {
+                   //do stuff here
+              }
+              function2 : function() {
+                   //do stuff here
+              }
+          },
+          ui : {
+              function1 : function() {
+                   //do stuff here
+              }
+          }
+     };
+     if( $(element).length ) {
+</s><s>          engine.utils.function1();
+</s><s>     }
+</s><s>     if( $(element2).length ) {
+</s><s>          engine.utils.function2();
+</s><s>     }
+</s><s>     if( $(element).length ) {
+</s><s>          engine.ui.function1();
+</s><s>     }
+</s><s>};
+</s><s>jquery('body').on('click.productsubmitinput',function() {
+      jquery.ready(scriptlist());
+});
+scriptlist(); 
+now, there are probably many things wrong with what i wrote, and you are free to comment on them, but my questions are: is it bad to include the plugins at the top of this file?</s><s> should they, instead, be contained within my scriptlist() somehow?</s><s> should i have conditions set on their loading? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4981048</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 9, 2013 11:29 AM">
+<s>there are a few different ones but i call them in the dom.js but through lazy laoding.</s><s> they are declared with cache or not and their dependencies if they have them and then call functions / objects on the dom call.</s><s> if functions call a plugin then the plugin is only loaded when called. 
+</s><s>something else you can do is use getscript in jquery in a function to call another script to use only when you need it in that function. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4602234-4982253</DOCNO>
+<TEXT>
+<subject>How can I load web app data into a javascript array?</subject>
+<post author="kenneth_rapp" timestamp="Jan 9, 2013 6:57 PM">
+<s>have you looked at require.js?</s><s> (http://requirejs.org/) 
+i haven't had the best of luck using getscript with multiple libraries because of async issues, but apparently promises are a thing now and i'm trying to learn them, to make a function queue like this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-1001719</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="ographix" timestamp="May 10, 2012 12:00 AM">
+<s>hey people 
+</s><s>can some one give me a link to a really easy way how to create a web app slideshow. like the slide show on this page. http://nivo.dev7studios.com/ 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4394127</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="Carol%20-%20BCGurus.com" timestamp="May 10, 2012 8:26 AM">
+<s>hi ographix, 
+once you find a jquery slider you like, build the web app in a way that the list view outputs the correct markup. 
+</s><s>if you are still having problems, we have a handful of tutorials available to pro members that will walk you through how to set up a slideshow.</s><s> they are listed below. 
+http://bcgurus.com/pro - creating a responsive hero slideshow using flexslider 101 - responsive slider web app via flexslider - web app hero slideshow - photo gallery hero slideshow 
+carol | bcgurus.com | http://bcgurus.com/business-catalyst-templates for only $7 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4395424</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="ographix" timestamp="May 10, 2012 3:21 PM">
+<s>hey thanks for the reply. 
+i sort of under stand. 
+</s><s>any chance you know of free tutorials around about this?</s><s> only just starting and dont really have the money. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4396386</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="dft-au" timestamp="May 11, 2012 12:12 AM">
+<s>hey ographix, 
+</s><s>here is a tutorial on how to setup a simple slideshow using web apps.</s><s> if you have any issues let me know. 
+http://bit.ly/m2nxpv 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4996733</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 15, 2013 3:13 PM">
+<s>is it possible to post this link again please? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4997330</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="BCTemple" timestamp="Jan 15, 2013 8:30 PM">
+<s>sorry sleepingcatnz, we moved sites so the link changed.</s><s> you can catch that tutorial here: http://bit.ly/up6cgb 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4997409</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 15, 2013 9:57 PM">
+<s>thanks bc temple - appreciated!</s><s> there seems to be so many choices for sliders - do you recommend flexslider over the others?</s><s> i'm reverse engineering the oxo template. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-4997462</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="BCTemple" timestamp="Jan 15, 2013 10:26 PM">
+<s>no worries.</s><s> it really depends on what the sliders purpose is.</s><s> there are a lot of really good ones for different content types. 
+</s><s>if you just need a standard slider then flexslider does a good job.</s><s> it's got touch gestures for tablets and mobile, its responsive and was purchased by woothemes who look like they plan to continue updating and supporting it which is also good. 
+</s><s>there are other lightweight ones around, or bulky ones with lots of features but again it depends what you need. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000063</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 16, 2013 5:24 PM">
+<s>bctemple.</s><s> thanks for this - exactly what i had in mind.</s><s> i'm having a few issues tho unfortunately... if you get the time, can you please see: http://meluka.worldsecuresystems.com/home the 'white bar' is where the slideshow should be.</s><s> static image underneath is the old one.</s><s> many thanks, glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000175</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="BCTemple" timestamp="Jan 16, 2013 5:43 PM">
+<s>hi glenn, 
+</s><s>it doesn't look like your script is initialising.</s><s> the one at the bottom of the page needs to be wrapped in <script> tags. 
+</s><s>since you're using an external file, i'd recommend using that as it's better.</s><s> i see you've added the code in, but it's above the new scripts. 
+</s><s>so it's initialising before the scripts it requires have loaded. 
+</s><s>if you remove the one from your footer, and move your external script below the flexslider scripts it's more likely to initialise.</s><s> does that make sense? 
+</s><s>if not shoot me a pm and i'll take a closer look for you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000162</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 16, 2013 5:54 PM">
+<s>yes thanks again - will do! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000392</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 16, 2013 8:27 PM">
+<s>bctemple, i'm not sure where i'm going wrong so if you could cast your expert eye over it that would be very helpful please!</s><s> follwing code is in header: 
+<link type="text/css" href="/css/flexslider.css" rel="stylesheet" /> <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="/js/jquery.flexslider-min.js" type="text/javascript"></script> <script src="/js/jquery.flexslider.js" type="text/javascript">$('.flexslider').flexslider({ animation: "fade", slideshow: true, slideshowspeed: 7000, animationduration: 600, });</script> 
+</s><s>content holder that has the web app is in the body of the template (which i think/hope is all correct!</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000493</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="BCTemple" timestamp="Jan 16, 2013 9:25 PM">
+<s>sorry that's my fault, i should have explained that better.   you're scripts were fine:   <link type="text/css" href="/scripts/flexslider/flexslider.css" rel="stylesheet" /> <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="/scripts/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>   first things first, that jquery latest only needs to be loaded if you don't already have the jquery library being loaded.</s><s> you do, but it's way old (1.4.4) so i would remove the old one and replace it with this one.   your initialising code should just be wrapped in normal script tags:   <script type="text/javascript"> $(document).ready() { $('.flexslider').flexslider({         animation: "fade",         slideshow: true,         slideshowspeed: 7000,         animationduration: 600,         }); }); </script>   if it's going to be in it's own scripts tag you should also call it in either on window or document load.   it's preferable to put your javascript/jquery codes all in an external file.</s><s> you have one at the moment called js/jquery.functions.js which has the cycle slider code in it.   you could remove all the code in there and make that your functions file.</s><s> then any other js you add in for other plugins can all be initialised in order, in one file.   just make sure it's the last file to be loaded as the others need to load before it.   if i'm not explaining it well enough just shoot me a pm and i'll give you a hand.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000699</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 17, 2013 12:19 AM">
+<s>thanks bctemple, i'll do this first thing tomorrow (it's been a long day!</s><s>) just one question - what's a pm?</s><s> i really appreciate your help with this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5000660</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="BCTemple" timestamp="Jan 17, 2013 12:23 AM">
+<s>no worries, pm = private message - which you can send by going into a users profile (click the name or the avatar) and then top right is a link to send private messages, under actions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4393256-5002840</DOCNO>
+<TEXT>
+<subject>Web app Slideshow</subject>
+<post author="sleepingcatnz" timestamp="Jan 17, 2013 2:31 PM">
+<s>bctemple, thanks for all your help with this.</s><s> i've installed nivo slider that works well. 
+</s><s>kind regards, glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-1053878</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Aug 22, 2012 3:12 PM">
+<s>i'm trying to get at all the fields from each record of a web app listing, but not sure how to do it directly.</s><s> i'd like to get this data so that i can have complete control over mapping this data (especially since bc is only using v2 of gmaps, and i'd like to use v3)   i've added a mapping module to a page like this:   {module_webappsmap,23618,c,98803,google_key,600,450,20} bc then processes this code and this is the end result (taken from "view source" on the page when viewed in the browser):   <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key= aizasyd0kwvcqdfxodxtkecqrxq_itbnpfh40qq"type="text/javascript"></script><scriptsrc="/catalystscripts/gmaps.js" type="text/javascript"></script><divid="webapp_map_23618" style="height: 450px; width: 600px;"></div><script type="text/javascript"> var webapp_map_23618_gmap2 = cms.maps.initialize({id:"webapp_map_23618",width:600,points:[[39.7283 134102974,-104.889221191406,1,"the tavern lowry","<iframe src=\"http://www.lowry.org/lowry-business-directory/the-tavern-lowry\" style=\"border: medium none; width: 470px; height: 240px;\"></iframe>\n","7401 e.</s><s> 1st avenue,denver,co,80230,us"]]});</script>   i know my web form is collecting more information than just a latitude and longitude (where is this getting calculated?</s><s>), title, description, and address (as all one string?</s><s>).</s><s> how does bc know to serve up only this info and not every field from the entire db record item?   or...   can i set up soemthing that'll give me a list of all the fields of all the records in this particular webapp, so that i can use that data directly for whatever reason i need?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4641174</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mario_gudelj" timestamp="Aug 22, 2012 4:32 PM">
+<s>hi there, 
+<quote>
+<s>i know my web form is collecting more information than just a latitude and longitude (where is this getting calculated?</s><s>) 
+</s></quote>
+</s><s>lat and long are pulled from the bc database when the state, zip/poscode and country get geocoded. 
+<quote>
+<s>how does bc know to serve up only this info and not every field from the entire db record item? 
+</s></quote>
+</s><s>that's how it was programmed in the backed. 
+</s><s>but, i'm not sure what exactly you want to achieve.</s><s> you can not display any additional info with that maps module.</s><s> but there may be a workaround if you tell us what you'd like to do with that info. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4641478</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Aug 22, 2012 9:43 PM">
+<s>basically, i want to serve up a map listing all the entries for a particular category using v3 of google maps (not v2, as i'm finding out is the inherent built-in version of bc).</s><s> but i need more data fields from the db than what is currently being served up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4642499</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Aug 23, 2012 7:25 AM">
+<s>when i do an export all entries from my web app, i get a csv of all the records, but there are some fields listed such as external id, city, state, and zipcode, but using {tag_external id}, et al, won't display. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4644315</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mario_gudelj" timestamp="Aug 23, 2012 6:49 PM">
+<s>perhaps you could use a backup layout and then use the tags in there to construct whatever it is you want to build.</s><s> there's no tag for external id field.</s><s> you will need to import your external id field into a custom field if you wan to use it in the layout. 
+</s><s>cheer, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4687504</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Sep 10, 2012 11:07 AM">
+<s>what do you mean by "backup layout?" 
+and so to get a unique id for each entry, i'd have to create a custom field, save the entry, find out what the external id is, and then input it back into that custom field? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4694956</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Sep 12, 2012 8:39 PM">
+<s>bump. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4695300</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mario_gudelj" timestamp="Sep 13, 2012 1:17 AM">
+<s>web apps have 3 layouts, 2 list layouts and one detail layout.</s><s> one of the list layouts is called a backup layout.</s><s> in the admin interface it's called alternate list layout.</s><s> see this screenshot: 
+
+
+</s><s>as for the fields, you create those fields you need, download the import template and populate the columns in it, then import the file. 
+</s><s>you then setup the tags from those field in the layout. 
+i hope that makes more sense. 
+-m 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4711995</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Sep 19, 2012 3:33 PM">
+<s>i'm not sure i follow... 
+</s><s>so for any additional info i'd need in order to bypass bc's default mapping module, i have to create custom data fields and duplicate a lot of that info because bc doesn't make it accessible?</s><s> are there any configuration settings for the default mapping module? 
+</s><s>it seems the default mapping module is sorely lacking in functionality. :/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4711987</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="Liam%20Dilley" timestamp="Sep 19, 2012 3:49 PM">
+<s>no not really no. that module output is one option and a bit limited.</s><s> you have the ability to output coridinates etc with the tags avialible into your layouts like mario is indicating and use google maps latest api to do better, more or even use something else to use that information as you see fit.</s><s> you basically can create better mapping implementations by a mile over that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4712004</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Sep 19, 2012 3:59 PM">
+<s>then i really don't follow. 
+i'm pretty versed with google maps and its api.</s><s> i just have no clue about bc and how to get the data fields from the web app to a usable form on a page where i can use them. any step-by-steps, tutorials, pics, etc would be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4712217</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mario_gudelj" timestamp="Sep 19, 2012 5:56 PM">
+<s>i guess what you need has been explained here http://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simpl e-multiple-marker-example 
+all you need to do is replace the values in this array with tags - 
+var locations = [ ['bondi beach', -33.890542, 151.274856, 4], ['coogee beach', -33.923036, 151.259052, 5], ['cronulla beach', -34.028249, 151.157507, 3], ['manly beach', -33.80010128657071, 151.28747820854187, 2], ['maroubra beach', -33.950198, 151.259302, 1] ]; 
+the numbers are lat and long tags and the preceding text can be a composition of multiple tag including the custom tags, which our maps module doesn't plot by default. 
+i hope that helps! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4713449</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Sep 20, 2012 9:28 AM">
+<s>is there a list somewhere of all the available tags?</s><s> if not, how do i know what's available and what's not? 
+i tried going down a similar road previously, but i when i used {tag_latitude} or {tag_lat}, nothing was replaced and i still had {tag_xxx} in the code while previewing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4714622</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="Liam%20Dilley" timestamp="Sep 20, 2012 1:48 PM">
+<s>look in the right of the main overview of these forums.</s><s> modules and tags quick reference.</s><s> also th drop down in the layouts in the admin has the tags for that layout in there 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4756082</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="musegrid.com" timestamp="Oct 7, 2012 12:09 PM">
+<s>just released my solution for this at http://www.bcmapapp.com/ take a look it should solve what you are looking for. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4759748</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Oct 8, 2012 9:43 PM">
+<s>okay, so i think i have most of it working. my data list is coming in, and points are getting plotted.</s><s> however, a lot of the points in the same area are the same latitude and longitude.</s><s> what gives?</s><s> i've been reading that the bc only has a limited cache of geocoded addresses?</s><s> why doesn't bc hit google's geocoder when a new web app entry is created or updated? 
+</s><s>i've been playing with google's geocoder for getting better lat/long's for each address, and it is in fact getting more accurate results, but i'd rather not hit the geocoder for roughly a hundred points every time a user hits my page.</s><s> i've read that google has a limit on how many geocoder hits can be made per day. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4779020</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Oct 16, 2012 11:51 AM">
+<s>bump 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4788424</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Oct 20, 2012 7:23 AM">
+<s>bump. 
+</s><s>how can i get bc to use more accurate latitudes and longitudes for my points?</s><s> i read in another post that i need to supply all addresses with their latitudes and longitudes to bc and they'll update the database?</s><s> why can't bc hit google's geocoder when a new address is created within a web app? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4793163</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mario_gudelj" timestamp="Oct 22, 2012 10:31 PM">
+<s><quote>
+<s>i read in another post that i need to supply all addresses with their latitudes and longitudes to bc and they'll update the database? 
+</s></quote>that's correct. 
+<quote>
+<s>why can't bc hit google's geocoder when a new address is created within a web app? 
+</s></quote>we're not allowed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4793859</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mrkos67" timestamp="Oct 23, 2012 6:41 AM">
+<s>to whom at bc do i send all the addresses? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Web-Apps/Discussions-4641018-4795740</DOCNO>
+<TEXT>
+<subject>WebApp data / maps</subject>
+<post author="mario_gudelj" timestamp="Oct 23, 2012 5:39 PM">
+<s>send them to support team.</s><s> they'll look after it.</s><s> just submit a case with them. 
+-m 
+</s></post>
+</TEXT>
+</DOC>
+
+

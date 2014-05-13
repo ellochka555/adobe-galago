@@ -1,0 +1,744 @@
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5466504-1245598</DOCNO>
+<TEXT>
+<subject>Now available - Adobe Marketing Cloud community forums</subject>
+<post author="Carey Burgess" timestamp="Aug 6, 2013 9:35 AM">
+<s>we are excited to announce the launch of our new support community for the adobe marketing cloud solutions, including adobe experience manager (cq). 
+http://help-forums.adobe.com/ 
+this forum is now read-only, and will eventually be archived. 
+</s><s>users that visit the main listing for this forum will be automatically redirected to the new adobe experience manager forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5533747-1261503</DOCNO>
+<TEXT>
+<subject>Lucene indexing configuration</subject>
+<post author="Sergey77777" timestamp="Jul 24, 2013 4:48 AM">
+<s>is it possible to add custom analyzer (englishanalyzer) to properties and when it(analyzer) has to take in consideration custom boosts of these properties?</s><s> when i try to add analyzer to property, lucene does not consider boosts, and when i removed custom analyzer the problem disappeared too.</s><s> here is my workspace.xml search configuration:   <searchindex class="com.day.crx.query.lucene.lucenehandler">             <param name="path" value="${wsp.home}/index"/>             <param name="resultfetchsize" value="50"/>                      <param name="indexingconfiguration" value="${wsp.home}/indexing_config.xml"/> </searchindex> and here is indexing_config.xml analysers tag text:     <analyzers> <analyzer class="org.apache.lucene.analysis.en.englishanalyzer"> <property boost="5.0">cq:name</property> <property boost="5.0">jcr:title</property> <property boost="5.0">title</property> <property boost="4.0">cq:tags</property> <property boost="3.0">jcr:description</property> <property boost="3.0">jcr:data</property> <property boost="1.0">text</property> </analyzer> </analyzers> does anybody can help me?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5522363-1258706</DOCNO>
+<TEXT>
+<subject>hosting on Azure</subject>
+<post author="mp05" timestamp="Jul 19, 2013 9:34 PM">
+<s>hi we are trying to migrate cq5.4 running on rackspace with redhat linux to azure on centos vms.</s><s> officially the adobe documentation doesnt talk about azure hosting.</s><s> is it possible to host on azure with centos vms?</s><s> i believe rhel and centos should be compatible 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5500328-1253428</DOCNO>
+<TEXT>
+<subject>Upgrade to CQ 5.6.1 on a self-managed instance</subject>
+<post author="Mengmeng Niu" timestamp="Jul 12, 2013 11:20 AM">
+<s>we have a 5.6.0 instance that we started ourselves in the adobeaemcloud.</s><s> now we need to upgrade it to 5.6.1.</s><s> how can we do the upgrade ourselves?</s><s> does it have to be done in the aws servers or is there a way to do the upgrade from the ui?</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5474528-1247538</DOCNO>
+<TEXT>
+<subject>OSGI Console gives 404 in newly created cloud</subject>
+<post author="amith.cabraal" timestamp="Jul 3, 2013 12:57 PM">
+<s>i created a new cloud using cq5.6 and the author instance seems as normal. however the /system/console/configmgr returns a 404, without even prompting for a password ?</s><s> any ideas ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5456379-1243301</DOCNO>
+<TEXT>
+<subject>Login problem</subject>
+<post author="dchong_life" timestamp="Jun 27, 2013 11:31 AM">
+<s>i signed in with my adobe id and was presented with a screen indicating that i will received an email with instruction to login cloud manager.</s><s> i never receice any email and it has been couple of days.</s><s> how and where can i get help to resolve the problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5456379-5456564</DOCNO>
+<TEXT>
+<subject>Login problem</subject>
+<post author="pierretager" timestamp="Jun 27, 2013 12:03 PM">
+<s>you should have received an activation email by now. 
+</s><s>let us know otherwise. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5456379-5459307</DOCNO>
+<TEXT>
+<subject>Login problem</subject>
+<post author="Lars%20Schneider" timestamp="Jun 28, 2013 7:52 AM">
+<s>my problem is exactly the same.</s><s> could be please tell me (and future-users) what to do? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5456379-5461238</DOCNO>
+<TEXT>
+<subject>Login problem</subject>
+<post author="pierretager" timestamp="Jun 28, 2013 5:21 PM">
+<s>you should have received an activation email by now.</s><s> let us know otherwise. 
+</s><s>it takes up to 24h to activate new users. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5363402-1222007</DOCNO>
+<TEXT>
+<subject>markdown support in CQ 5.6?</subject>
+<post author="cardeo7777" timestamp="May 29, 2013 4:21 PM">
+<s>is there support for markdown in the rich text editor for cq 5.6?</s><s> if not native, does anyone have experience extending? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5363402-5404954</DOCNO>
+<TEXT>
+<subject>markdown support in CQ 5.6?</subject>
+<post author="KrestenKjaer" timestamp="Jun 13, 2013 5:20 AM">
+<s>hi cardeo.</s><s> 
+</s><s>we have a markdown component created using markdown4j and some basic javascript editor.</s><s> i took nothing more, than a few hours to implement. 
+</s><s>best regards.</s><s> kresten kjaer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5352203-1219387</DOCNO>
+<TEXT>
+<subject>AEM clouds fail to start on Amazon</subject>
+<post author="pierretager" timestamp="May 25, 2013 11:34 AM">
+<s>aem clouds started to fail on amazon on 5/23/2013 with the following error message: java.util.nosuchelementexception: could not get imageid(us-east-1/ami-2d8e4c44) 
+</s><s>the problem is due to amis provided by red hat that had a blank root password, which lead amazon to remove these amis from their public catalog.</s><s> to fix the issue, we have deployed a temporary fix as of 5/24/2013 4pm pdt, by replacing the red hat amis used by aem clouds with the new amis provided by red hat. 
+</s><s>with this temporary fix, aem clouds can be started again successfully, but only when using new amazon service accounts created after 5/24/2013 4pm pdt.</s><s> to create a new amazon service account, please go to services, click the tab 'cloud providers' and select amazon.</s><s> existing aem clouds in running, paused or stopped state are not impacted and should continue to operate as normal.</s><s> if you have existing aem clouds running, we recommend that you follow amazon's instructions you may have received from amazon directly via email.</s><s> see sample below. 
+</s><s>we are also actively working on resolving the issue with a permanent fix by next week, in order to create aem clouds successfully with all existing amazon service accounts.</s><s> we apologize for the inconvenience and will do our best to have a permanent fix as soon as possible. 
+</s><s>thanks in advance for your patience and understanding. 
+</s><s>adobe aem cloud management team 
+============================== 
+</s><s>subject: red hat, fedora, and centos public amis security note [account #*****************] 
+</s><s>dear amazon ec2 customer, 
+</s><s>your security is important to us. as part of our ongoing efforts to ensure a secure computing environment, we have identified several public third party amis which had a blank root password.</s><s> specifically, certain red hat enterprise linux (rhel) amis provided by red hat as well as some fedora and centos images within the public ami catalog and the aws marketplace did not lock the root password.</s><s> the ec2 best practice for ami publishers is to lock down the root password by default. 
+</s><s>for customers that only access their instances using the root permissions, this is not an issue.</s><s> however, many customers leverage the ability to define "local" users with different passwords and different permissions within their instance in order to increase security.</s><s> many of these customers proactively set a root password, but if you haven't set a root password and if you're using a rhel ami or another of the 3rd party amis configured in this way, users logged into your instance as a local user would be able to perform actions as root without additional credentials.</s><s> they would still need your ec2 credentials or local user password to log into the instance initially; however, we recommend if you're using this functionality on red hat enterprise linux, fedora, or centos amis, you should set a root password to prevent your local users from having root permissions. 
+</s><s>our records show that you have launched instances from the following amis in the past which may be configured in this manner.</s><s> we recommend that you validate your images are configured correctly if they are owned by you, or that you migrate to an updated version of that ami for future launches. 
+us-east-1 ami-a95390c0 
+if your root password is not yet set or locked, you can easily do so by logging into your running instance and issuing the following command to set it: 
+sudo passwd 
+or to lock it: 
+sudo passwd -l root 
+should you require assistance in either identifying or remediating applicable ec2 instances, please do not hesitate to contact aws support: 
+https://aws.amazon.com/support 
+for more information on how to use and share public amis in a secure manner, please see https://aws.amazon.com/articles/0155828273219400 
+regards, 
+the amazon web services team 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5346424-1218050</DOCNO>
+<TEXT>
+<subject>admin account for crxde Lite on CQ publish does not work</subject>
+<post author="BertoltMeier" timestamp="May 23, 2013 7:58 AM">
+<s>i set up an author and publisher adobe cq 5.6 instance in adobe cloud.</s><s> then i installed some packages.</s><s> this worked on the author, but on the publisher the packages do not seem to be installed correctly. 
+i want to analyze, but cannot login with admin account to crxde lite.</s><s> strangely, the admin account on publish works for apache felix and cq.</s><s> does somebody know, how i can access crxde on a publisher instance with admin account? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4670945-1060162</DOCNO>
+<TEXT>
+<subject>Security Hardening of Publish server</subject>
+<post author="Tim Goodman" timestamp="Sep 3, 2012 8:25 PM">
+<s>hi, 
+</s><s>i noticed when the cq cloud creates a publish instance that it can be accessed via the public internet on port 4503 
+</s><s>also, the anonymous user is granted access to /etc/* 
+obviously there is extra security hardening that needs to take place in cloud installs.</s><s> this would usually not be an issue as /etc/ would be behind firewalls (in your app zone) 
+</s><s>should the publish server's port 4503 be blocked in aws, or is there specific details on hardening the permissions? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4670945-5325709</DOCNO>
+<TEXT>
+<subject>Security Hardening of Publish server</subject>
+<post author="ararat01" timestamp="May 16, 2013 5:56 AM">
+<s>hey tim, the documentation points out to this page as a portal for all hardening of cq https://dev.day.com/docs/en/cq/current/deploying/security_checklist.ht ml hope this is what you ment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5201284-1183552</DOCNO>
+<TEXT>
+<subject>AEM 5.6 in Adobe CQ Cloud</subject>
+<post author="Tim Goodman" timestamp="Apr 2, 2013 9:12 PM">
+<s>i saw the announcement - is aem5.6 coming to adobecqcloud? 
+i just created a new instance and i saw it was still cq5.5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5201284-5202929</DOCNO>
+<TEXT>
+<subject>AEM 5.6 in Adobe CQ Cloud</subject>
+<post author="pierretager" timestamp="Apr 3, 2013 8:39 AM">
+<s>yes, aem 5.6 is now available on adobecqcloud.com. 
+</s><s>for launching aem 5.6 clouds, you need to create a new aem license in services and select aem 5.6 for the product version. 
+</s><s>see screenshot below: 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5201284-5292993</DOCNO>
+<TEXT>
+<subject>AEM 5.6 in Adobe CQ Cloud</subject>
+<post author="TGNZ1234" timestamp="May 6, 2013 4:06 AM">
+<s>sorry meant to write earlier - thanks, this solved the problem 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5267808-1199762</DOCNO>
+<TEXT>
+<subject>CQ trial?</subject>
+<post author="RodrigoFH" timestamp="Apr 25, 2013 11:42 AM">
+<s>hello pierre!</s><s> 
+</s><s>is it possible to use cq as a trial (for free) in a short period (3 months)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4958400-1127166</DOCNO>
+<TEXT>
+<subject>With my AdobeID satikuma@adobe.com not able to login https://www.adobecqcloud.com/content/packagesha</subject>
+<post author="satikumaa" timestamp="Dec 30, 2012 9:21 PM">
+<s>with my adobeid satikuma@adobe.com not able to login https://www.adobecqcloud.com/content/packageshare/tools/login.html . please activate my satikuma@adobe.com to login to cqcloud 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4958400-5251214</DOCNO>
+<TEXT>
+<subject>With my AdobeID satikuma@adobe.com not able to login https://www.adobecqcloud.com/content/packagesha</subject>
+<post author="gcole" timestamp="Apr 19, 2013 9:47 AM">
+<s>i see that this account was activated 1/5/13. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5230294-1190700</DOCNO>
+<TEXT>
+<subject>Is it possible to deploy a CQ5.4 cloud?</subject>
+<post author="Joerg Hermsdorf" timestamp="Apr 12, 2013 1:33 PM">
+<s>hi, 
+</s><s>the header of the deploymentscript (deployscript.sh) says: 
+# deploy cq 5.4 (5.5 alpha) on aws ec2 with multiple choices # details see: http://wiki.day.com/content/wiki/users/chuesler/how%20to%20deploy%20cq 5%20on%20amazon%20ec2.html # author: chuesler@adobe.com # version: 2.2 
+</s><s>would it be possible to deploy a cq5.4 cloud for testing/staging purposes as well via the cloud manager? 
+</s><s>thanks joerg 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5230294-5230609</DOCNO>
+<TEXT>
+<subject>Is it possible to deploy a CQ5.4 cloud?</subject>
+<post author="pierretager" timestamp="Apr 12, 2013 3:13 PM">
+<s>if you are using cloud manager, you don't have the option to deploy a cq 5.4 cloud. 
+</s><s>with cloud manager, you can deploy cq 5.5 and aem 5.6 clouds. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5207707-1185018</DOCNO>
+<TEXT>
+<subject>Hybrid CQ installation on-premises/cloud</subject>
+<post author="Gianluca Turturro" timestamp="Apr 4, 2013 2:01 PM">
+<s>does anybody have experience with a combined or hybrid cq installation?</s><s> i am most interested in the usecase, when a normal on-premises installation is sufficient for the standard load but a quick cloud expansion could be added/removed when needed, to cover peaks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5174500-1176672</DOCNO>
+<TEXT>
+<subject>package share contest</subject>
+<post author="reusr42" timestamp="Mar 24, 2013 10:54 AM">
+<s>hi, are the packages from the contest available somewhere? 
+ruben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5174500-5181804</DOCNO>
+<TEXT>
+<subject>package share contest</subject>
+<post author="pierretager" timestamp="Mar 26, 2013 7:49 PM">
+<s>they will be soon, please stay tuned. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5075036-1153920</DOCNO>
+<TEXT>
+<subject>How doI get CQ license to add to CQ Cloud?</subject>
+<post author="prahladas" timestamp="Feb 15, 2013 12:43 AM">
+<s>how doi get cq license to add to cq cloud? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5075036-5082062</DOCNO>
+<TEXT>
+<subject>How doI get CQ license to add to CQ Cloud?</subject>
+<post author="pierretager" timestamp="Feb 18, 2013 8:15 AM">
+<s>hi, 
+</s><s>thank you for your interest in cq. 
+</s><s>you need to purchase a cq license by contacting one of our sales rep. at 800-309-9301 
+</s><s>for more information about cq, please visit the following page: http://www.adobe.com/solutions/web-experience-management.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5072553-1153371</DOCNO>
+<TEXT>
+<subject>re-install software</subject>
+<post author="RTS11" timestamp="Feb 14, 2013 5:09 AM">
+<s>hello, 
+</s><s>i have experinced a bug in edge animate and would like to attempt a re-install as there are no repair options. 
+</s><s>after uninstalling the software manually, will i be allowed thru my cc account to do a clean re-install?</s><s> i am in the middle of a project so i do not want to lose access to the software. 
+</s><s>thanks, rts 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5072553-5074110</DOCNO>
+<TEXT>
+<subject>re-install software</subject>
+<post author="pierretager" timestamp="Feb 14, 2013 1:30 PM">
+<s>please post your question to the following forum: 
+http://forums.adobe.com/community/creative_cloud 
+this forum is dedicated to cq cloud discussions, not creative cloud. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5062948-1151116</DOCNO>
+<TEXT>
+<subject>AWS Security Groups not being removed</subject>
+<post author="Tim Goodman" timestamp="Feb 10, 2013 6:02 PM">
+<s>i also noticed this - when i created cloud instances, it also created a security group for each instance. 
+</s><s>on removal of the cloud via cloud manager, it did not remove the security group that it had created for that cloud.</s><s> i had to go into aws and remove it manually. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5062948-5071451</DOCNO>
+<TEXT>
+<subject>AWS Security Groups not being removed</subject>
+<post author="pierretager" timestamp="Feb 13, 2013 4:49 PM">
+<s>hi, 
+</s><s>thank you for your feedback. 
+</s><s>this is a known issue we plan to fix in a future release. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5049872-1148022</DOCNO>
+<TEXT>
+<subject>CQ Cloud Fails to start</subject>
+<post author="Tim Goodman" timestamp="Feb 5, 2013 11:39 AM">
+<s>on a more critical note - i've been seeing this a lot.</s><s> restoring from a backup or creating a new instance.</s><s> the cloud goes red with a status of "failed" 
+</s><s>this message is in the activity tab 
+java.lang.illegalstateexception: failed to start instance: jcrnoderesource, type=nt:unstructured, supertype=null, path=/var/clouds/content/companies/private/btss/clouds/btestrain9/dis patcher1 (command: startcomputinginstance, cloud: btestrain9, instance: dispatcher1) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5049872-5054501</DOCNO>
+<TEXT>
+<subject>CQ Cloud Fails to start</subject>
+<post author="pierretager" timestamp="Feb 6, 2013 10:42 PM">
+<s>hi, 
+</s><s>thank you for reporting a problem. 
+</s><s>we have resolved the issue and the system is now operating normaly again. 
+</s><s>please try starting a new cloud and let us know if you are still encountering any issue. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5048423-1147687</DOCNO>
+<TEXT>
+<subject>Multivariate component stats not recorded</subject>
+<post author="Tim Goodman" timestamp="Feb 5, 2013 1:53 AM">
+<s>hi, 
+</s><s>i am using the adobe cq cloud to create instances for the adobe author training course (i am an adobe certified instructor). 
+</s><s>one interesting thing i noticed: the default 'multivariate' component does not record statistics when testing within the author instance.</s><s> probably just a dispatcher setting - it may be worth looking at in the build (but a very minor issue) 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5033865-1144375</DOCNO>
+<TEXT>
+<subject>Creative Cloud Service "Not avilable in your country"</subject>
+<post author="WYGITS" timestamp="Jan 30, 2013 5:01 AM">
+<s>dear administrator, 
+</s><s>we have urgent business needs for using adobe creative cloud services.</s><s> our company resides in türkiye(turkey +90 area code). 
+</s><s>we would like to join the mebership system for minimum 50 users/per year business plan on creative cloud but referral warns "adobe does not have services to/in your country. 
+</s><s>so, my first question is; 
+will it be a live datacenter servicing business clients in turkey soon ? 
+</s><s>or in a way of solution - shall i try to participate services in the name of an international company which we are part of.(because we even cannot manage to enter payment site ( restiricted zone from tr-tr) but we can from england.</s><s>) 
+</s><s>secondly; 
+</s><s>if we subscribe services using method mentioned above , will it be a problem after payment and participate in services where our business groups head office in england and using services from turkey (telecoms network) and deploying applications (cs6 or adobe pro xi etc) on internal network . 
+</s><s>is there a possibility that happens to occur restrictions on use of applications or activation problems maybe ? 
+</s><s>urgent help and assistance needed! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5029566-1143339</DOCNO>
+<TEXT>
+<subject>Question</subject>
+<post author="access88200" timestamp="Jan 28, 2013 5:02 PM">
+<s>i have a cloud membership but i am asked if i want to continue trial? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5029566-5029648</DOCNO>
+<TEXT>
+<subject>Question</subject>
+<post author="pierretager" timestamp="Jan 28, 2013 5:41 PM">
+<s>hi, 
+</s><s>you are probabling referring to creative cloud membership.</s><s> in this case, please post your question to the following forum: http://forums.adobe.com/community/creative_cloud 
+thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5012884-1139493</DOCNO>
+<TEXT>
+<subject>Unable to upload package on dev.day.com</subject>
+<post author="Pinku72478" timestamp="Jan 22, 2013 3:38 AM">
+<s>for the contest going on over dev.day.com ,i have created a component and tried to upload its package .</s><s> but i was unable to do so as it gives out "missing cq wem license.</s><s> create a cq wem license first before uploading".</s><s> can somebody please explain the cause of error and how to resolve that issue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-5012884-5013127</DOCNO>
+<TEXT>
+<subject>Unable to upload package on dev.day.com</subject>
+<post author="pierretager" timestamp="Jan 22, 2013 6:10 AM">
+<s>hi, 
+</s><s>yes, you need to go to the services section, click on 'add new service ', then click on the adobe cq tab and click 'select' on the cq web content management card. 
+</s><s>fill out the form and use the same license file you are probably using on your development machine when you created your component or package you want to upload. 
+</s><s>let us know if this resolves your issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-1069684</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="Spencer Sun" timestamp="Sep 21, 2012 1:03 AM">
+<s>i am an adobe employee and i created my adobe id with my adobe email.</s><s> then i login to cq cloud with this id.</s><s> after i input my email and password, it told me:"you will be receiving an email shortly from adobe with a link to login with your adobe id credentials." but i never received this email and for this reason, every time i closed the "note", i need to sign in again to cq cloud.</s><s> is there anyone can help me? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4716668</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="pierretager" timestamp="Sep 21, 2012 8:13 AM">
+<s>please email me directly to my adobe email. 
+</s><s>pierre tager 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4798370</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="kvelhal" timestamp="Oct 24, 2012 4:04 PM">
+<s>i am also facing this exact same issue.</s><s> how can i login to cq cloud manager? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4798820</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="pierretager" timestamp="Oct 24, 2012 8:52 PM">
+<s>you should have received an activation email by now.</s><s> let us know otherwise. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4803893</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="marc.degen" timestamp="Oct 26, 2012 2:20 PM">
+<s>hi 
+</s><s>i've got the same message - but not with an adobe-mail-address.</s><s> can you please check this? 
+</s><s>thanks marc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4803972</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="pierretager" timestamp="Oct 26, 2012 2:33 PM">
+<s>you should have received an activation email by now.</s><s> let us know otherwise. 
+</s><s>fwiw, it may take up to 24h before receiving an activation email after registering the first time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4945047</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="psiinfo" timestamp="Dec 26, 2012 1:33 AM">
+<s>i am getting the same message for non adobe email address. 
+</s><s>thanks, prashant 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4715782-4963078</DOCNO>
+<TEXT>
+<subject>How can I login to CQ Cloud with an Adobe email</subject>
+<post author="gcole" timestamp="Jan 2, 2013 1:33 PM">
+<s>the first time that you contact adobecqcloud.com you will receive a 'thank you' welcome page.</s><s> the generation of that page will initiate a process to provision you.</s><s> once you have been provisioned, you will see the clouds dashboard as the first screen (instead of thankyou). 
+</s><s>if you are seeing the thankyou page for more than 24 hours then there is a problem in our provisioning process.</s><s> if that occurs, please send email to ptager@adobe.com and include the adobeid that you are using to log in.</s><s> this information will enable us to troubleshoot the issue.</s><s> we can also manually intervene in order to get your access set up quickly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4919433-1114997</DOCNO>
+<TEXT>
+<subject>Cloud Closing every time I save and Spontaneously</subject>
+<post author="MelanieJeanBean" timestamp="Dec 13, 2012 1:03 PM">
+<s>every time i use my trial version of cloud or photoshop, i will be working on a product and the program closes itself out.</s><s> i am getting so annoyed, i can never save anything before it boots me off the program.</s><s> help!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4869536-1103795</DOCNO>
+<TEXT>
+<subject>Adobe please add Confirmation emails to downloaded files</subject>
+<post author="jgriff121" timestamp="Nov 23, 2012 2:02 PM">
+<s>as an media artist.</s><s> i always send files to clients. there should be two major additions to the cloud service. 
+1. please set up confirmation emails so when a person or clients download file.</s><s> this is great way to know that people have sucessfuly downloaded your art.</s><s> 2.an etiable email when you send to an client or person.</s><s> you would not have to send emails preparing people for adobes email. 
+</s><s>please add this it would be a huge help 
+jgriff 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4869536-4875773</DOCNO>
+<TEXT>
+<subject>Adobe please add Confirmation emails to downloaded files</subject>
+<post author="pierretager" timestamp="Nov 26, 2012 3:40 PM">
+<s>hi, 
+</s><s>this forum is not related to creative cloud.</s><s> please post your suggestion to http://forums.adobe.com/community/creative_cloud 
+thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4868333-1103526</DOCNO>
+<TEXT>
+<subject>TTU Changement d'ordinateur : je ne peux plus lancer la moinde App Adobe sur mon MacBookPro retina ?</subject>
+<post author="PascalG198" timestamp="Nov 23, 2012 3:44 AM">
+<s>(englisk below) 
+</s><s>bonjour, 
+</s><s>j'ai changé d'ordinateur portable.</s><s> je passe d'un macbook pro (mai-2010) à un macbook pro retina (dernier modèle). 
+</s><s>j'ai fait migrer toutes mes données et applications entre les macintosh hd (disques ssd systèmes). 
+</s><s>si j'ai dû ressaisir pas mal d'id et de numéro de licence pour mes logiciels tels que office ou traktor (native instrument), par contre rien de tel avec le creative cloud cs6 ?</s><s> mais je ne peux pas utiliser les photoshop, fireworks, muse, indesign, etc. ils ne déarrent pas.</s><s> plus, le gestionnaire adobe me demande de les télécharger pour certains. 
+</s><s>mais l'adobe application manager m'indique qu'ils sont tous installés.</s><s> donc je les ai "jetés à la corbeille".</s><s> et vidé celle-ci, pour mieux les réinstaller.</s><s> mais l'adobe application manager m'indique qu'ils sont toujours installés ? 
+</s><s>que faire ? 
+</s><s>toute aide sera la bienvenue et je vous en remercie par avance. 
+</s><s>cordialement, 
+</s><s>pascal (paris) 
+*-*-*-*-*-*-*-*-* 
+</s><s>hello , 
+</s><s>i changed of computer.</s><s> i change for a macbookpro retina.</s><s> and i use apple's tool "migration" to move datas and applications.</s><s> from one another macintoshhd (ssd systems hd) 
+</s><s>unfortunatally, i can't launch creative cloud cs6 applications on the mbp retina ? 
+</s><s>the adobe system tells me that some components for the applications aren't present now on the mbp retina.</s><s> and that the best way is to reload them (the whole applications). 
+</s><s>but application manager tool says that "everything's allright", all the adobe creative cloud apllication are still installed.</s><s> and i don't know how to force a reinstall opertaion.</s><s> so as i'm a donkey...</s><s> i looked for informations to uninstall them in order to reinstall them.</s><s> on adobe web pages they proposed to move the appllications to the trash can.</s><s> so did i.</s><s> i empty it.</s><s> and.. now the application maanager says they are still installed. 
+</s><s>please if you vcan tell me what to do, don't hesitate.</s><s> i still hacve cs5 installed but yet i didn't try to use it.</s><s> i do want to reinstall correctly the creative cloud applications. 
+</s><s>best regards, 
+pascal (paris) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4868333-4868943</DOCNO>
+<TEXT>
+<subject>TTU Changement d'ordinateur : je ne peux plus lancer la moinde App Adobe sur mon MacBookPro retina ?</subject>
+<post author="pierretager" timestamp="Nov 23, 2012 8:45 AM">
+<s>bonjour, 
+</s><s>ce forum ne concerne pas creative cloud. 
+</s><s>merci de publier votre question sur le forum suivant: http://forums.adobe.com/community/creative_cloud 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4866590-1103105</DOCNO>
+<TEXT>
+<subject>No activation e-mail received</subject>
+<post author="dw_unab" timestamp="Nov 22, 2012 2:59 AM">
+<s>try to login at adobecqcloud.com with my adobe id, it tells me i should receive an activation e-mail but nothing appears in my inbox. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4866590-4868848</DOCNO>
+<TEXT>
+<subject>No activation e-mail received</subject>
+<post author="pierretager" timestamp="Nov 23, 2012 8:35 AM">
+<s>hi, 
+</s><s>you should have received an activation email by now or please check your junk folder. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4841354-1097808</DOCNO>
+<TEXT>
+<subject>Cloud Manager resetting password...</subject>
+<post author="nchipping" timestamp="Nov 12, 2012 10:45 AM">
+<s>i have a question about the cloud manager...</s><s> i'm not sure why this is, but when i "pause" my cloud and then start it up again, the password that i originally set is gone, so the system/console and the normal login system is just admin/admin.</s><s> is this supposed to be happening?</s><s> how can i stop it/fix it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/CQ-Cloud-(read-only)/Discussions-4841354-4847663</DOCNO>
+<TEXT>
+<subject>Cloud Manager resetting password...</subject>
+<post author="pierretager" timestamp="Nov 14, 2012 12:38 PM">
+<s>hi, 
+</s><s>our suspicion is that you have installed one of the "admin password rewriting" packages on the author that led to this situation. 
+</s><s>the fix is for you to visit the author instance via ip and reset the admin password to be the same one cloudmgr is using.</s><s> following this step, perform another pause/restart. 
+</s></post>
+</TEXT>
+</DOC>
+
+

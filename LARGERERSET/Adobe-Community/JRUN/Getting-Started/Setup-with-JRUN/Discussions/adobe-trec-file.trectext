@@ -1,0 +1,165 @@
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-280174</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="ceday" timestamp="Aug 21, 2006 2:04 AM">
+<s>i have began to get an error after installation of java update 1.4.2_02 jre.</s><s> (it was an auto update) it currently runs with 1.4.2_02 sdk as a service.</s><s> after starting to get the error, i uninstall the update but it still continues.</s><s> after restarting computer, it starts the server without problem.</s><s> while tryign to restart server with admin tools->services it gives the error (-2) error reported in logs: error occurred during initialization of vm could not reserve enough space for object heap i have done some research but nothing is useful for my problem. jvm.config hasnot been changed. but here is the arguments. java.args=-xms32m -xmx128m -duser.language=en-us -djintegra_native_mode -djintegra_prefetch_enums -dsun.io.usecanoncaches=false btw, it has 2gb ram.</s><s> i have read using "-server" in the wrong place could result this situation but it doesnt use it.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-384967</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="tzimmerman" timestamp="Aug 21, 2006 8:07 AM">
+<s>try adding the -server switch.</s><s> it goes right after the equal sign. java.args=-server -xms32m -xmx128m -duser.language=en-us -djintegra_native_mode -djintegra_prefetch_enums -dsun.io.usecanoncaches=false ted zimmerman
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-385609</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="ceday" timestamp="Aug 21, 2006 10:49 PM">
+<s>it didnt help.</s><s> while trying to restart via services, it gives the error (-2) but it adds "system cannot find the file specified". there is nothing about the file in the logs.</s><s> btw, in task manager vm size is shown as 1.9gb-even after a fresh start- (application mostly needs around max 1.4gb after a few hours-100mb at the start) this could be the reason why it can only reserve the space after a fresh start.</s><s> however, the server were running on this same config for months and there wasnt any problem at all.</s><s> anyway, is there anywhere else vm parameters are set except jvm config?</s><s> (i am not using admin panel, isnt that supposed to read the jvm config?</s><s>) could it be any registry value?</s><s> thx
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-386020</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="tzimmerman" timestamp="Aug 22, 2006 10:44 AM">
+<s>is this strictly a jrun install or cfmx on jrun?</s><s> have you looked at any of the other log files to see if there are other error messages?</s><s> the other thing you can try is to start the server from a command line.</s><s> make sure there are no jrunsvc or jrun.exe processes in the task manager.</s><s> then go to a command line in the {jrun-root}/bin folder and type in "jrun -start [server name]" without the quotes.</s><s> ted zimmerman
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-386556</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="ceday" timestamp="Aug 23, 2006 6:39 AM">
+<s>it seems the application uses another config file not to waste resources with admin application as it is explained here( http://mkruger.cfwebtools.com/index.cfm/2006/4/17/multiserver) here is the arguments it actually reads: java.args=-server -xms1000m -xmx1400m -xx:newsize=256m -xx:maxnewsize=256m -xx:maxpermsize=140m -xss128k -xincgc -dsun.io.usecanoncaches=false -duser.language=en-us it does a lot more sense now, however i cant still figure it out, what has been changed because of the update?</s><s>?</s><s> it might not allocate the space -1540m max with maxpermsize- because of lack of memory however there were not any of this a few days ago. thx for quick replies tzimmerman
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-386680</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="tzimmerman" timestamp="Aug 23, 2006 9:04 AM">
+<s>you still look like you're allocating way too much memory.</s><s> i would scale back both the min and max heap to something like java.args=-server -xms128m -xmx512m -xx:maxnewsize=256m -xx:maxpermsize=140m -xss128k -xincgc -dsun.io.usecanoncaches=false -duser.language=en-us ted zimmerman
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-394688</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="thrane" timestamp="Sep 2, 2006 12:23 PM">
+<s>greetings - our machine: dual xeon 3.06 4gb ram: we've tried to set -xms512m -xmx1024m but the cf server does not restart afterwards, it gets an vm initialization error, not enough memory.</s><s> but when we use -xms768m -xmx768m it works fine.</s><s> the machine has plenty of physical memory left - (the machine is a stripped down win2k3 with only cf and iis running on it) we have the pf set to system set, which is running at 1.6gb.</s><s> any ideas or suggestions greatly appreciated.</s><s> s
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-394689</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="thrane" timestamp="Sep 2, 2006 12:23 PM">
+<s>greetings - our machine: dual xeon 3.06 4gb ram: we've tried to set -xms512m -xmx1024m but the cf server does not restart afterwards, it gets an vm initialization error, not enough memory.</s><s> but when we use -xms768m -xmx768m it works fine.</s><s> the machine has plenty of physical memory left - (the machine is a stripped down win2k3 with only cf and iis running on it) we have the pf set to system set, which is running at 1.6gb.</s><s> any ideas or suggestions greatly appreciated.</s><s> s
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-415856</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="ceday" timestamp="Sep 28, 2006 10:49 PM">
+<s>those who have experience this problem, apply this patch: http://support.microsoft.com/kb/924054/ detailed information about the problem: http://forum.java.sun.com/thread.jspa?threadid=759413
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-415857</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="ceday" timestamp="Sep 28, 2006 10:49 PM">
+<s>those who have experience this problem, apply this patch: http://support.microsoft.com/kb/924054/ detailed information about the problem: http://forum.java.sun.com/thread.jspa?threadid=759413
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-415858</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="ceday" timestamp="Sep 28, 2006 10:49 PM">
+<s>those who have experience this problem, apply this patch: http://support.microsoft.com/kb/924054/ detailed information about the problem: http://forum.java.sun.com/thread.jspa?threadid=759413
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-752503</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="TofuDragon" timestamp="Dec 5, 2007 9:07 AM">
+<s>i'm having the exact same problem mentioned in this article, but i'm running on windows xp professional sp2 (32 bit).</s><s> i am in the process of moving over to a new computer.</s><s> both are running exact same os and current jre.</s><s> i only have the problem of cf server not starting on the new server when i set -xmx1212m to anything larger than 1212. i'm running -xmx1424m on my the "old" box which has lots of other things running.</s><s> the new server has nothing else running on it yet.</s><s> the fix doesn't help me since i'm not running windows server or 64 bit.</s><s> any ideas?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-752535</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="TofuDragon" timestamp="Dec 5, 2007 9:40 AM">
+<s>i get the error msg: windows could not start the coldfusion 8 application server on local computer.</s><s> for more information, review the system event log.</s><s> it this is a non-microsoft service, contact the service vendor, and refer to service-specific error code 2.</s><s> this is the text from the system event log: the coldfusion 8 application server service terminated with service-specific error 2 (0x2).
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-974679</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="organic10" timestamp="Oct 30, 2008 9:02 AM">
+<s>this thread is years old, but i'm experiencing the same problem: after running smooth for months, my dev cf8 server suddenly didn't start with 'error 2'.</s><s> no information on the internet, only menitons of the error.</s><s> i running apache, cf8 on xp sp2.</s><s> has anyone solved this?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Getting-Started/Setup-with-JRUN/Discussions-280174-1060027</DOCNO>
+<TEXT>
+<subject>Jrun service restart problem</subject>
+<post author="phil.carter" timestamp="Mar 20, 2009 7:16 AM">
+<s>agreed this thread is years old - but, this could still happen to folks running jrun and cf8.</s><s> for me, the cf application service would just not start.</s><s> in the event logs, i saw: "the coldfusion 8 application server service terminated with service-specific error 2 (0x2)." the fix was to edit <coldfusion dir>\runtime\bin\jvm.config and decrease the memory size for the -xms and -xmx values.</s><s> my server has 4gb ram, but -xms does not like being set at 2gb.</s><s> my java.args line now looks like this, and cf starts up just fine: java.args=-server -xms1024m -xmx1024m -dsun.io.usecanoncaches=false -xx:maxpermsize=192m -xx:<snip> hope this helps someone.
+</s></post>
+</TEXT>
+</DOC>
+
+

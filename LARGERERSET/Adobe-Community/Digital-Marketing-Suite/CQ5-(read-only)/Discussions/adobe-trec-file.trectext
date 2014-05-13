@@ -1,0 +1,2627 @@
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5466501-1245596</DOCNO>
+<TEXT>
+<subject>Now available - Adobe Marketing Cloud community forums</subject>
+<post author="Carey Burgess" timestamp="Aug 6, 2013 9:35 AM">
+<s>we are excited to announce the launch of our new support community for the adobe marketing cloud solutions, including adobe experience manager (cq). 
+http://help-forums.adobe.com/ 
+this forum is now read-only, and will eventually be archived. 
+</s><s>users that visit the main listing for this forum will be automatically redirected to the new adobe experience manager forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5084197-1156064</DOCNO>
+<TEXT>
+<subject>How to capture comments and read in next participent steps in Workflow?</subject>
+<post author="KaushikN" timestamp="Feb 19, 2013 2:55 AM">
+<s>i want to capture comments in one of the participent steps of my workflow and read them in the next step .</s><s> please share some suggestions on it .</s><s> i have added a from step as the participent step but it is saving data with random ids .</s><s> i am not able to figure out how to read the data for corresponding process step in the workflow ? 
+</s><s>please help . 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5084197-5112725</DOCNO>
+<TEXT>
+<subject>How to capture comments and read in next participent steps in Workflow?</subject>
+<post author="Sham%20HC" timestamp="Feb 28, 2013 8:35 PM">
+<s>* explicitly setting the work items comment property workitem.getmetadatamap().put("comment", "<comment entered from user>"); 
+* if the previous step is process step then the comment will not be carried over so explicitly setting the work items comment property, by reusing the comment from the first participant found, when going up the history, example:- 
+var previouscomment = ""; var history = workflowsession.gethistory(workitem.getworkflow()); for (var index = history.size() - 1; index >= 0; index--) { var previous = history.get(index); var type = previous.getworkitem().getnode().gettype(); if (type != null && (type.equals(packages.com.day.cq.workflow.model.workflownode.type_par ticipant) || type.equals(packages.com.day.cq.workflow.model.workflownode.type_dynam ic_participant))) { previouscomment = previous.getworkitem().getmetadatamap().get("comment", packages.java.lang.string); break; } } workitem.getmetadatamap().put("comment", previouscomment); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5084197-5112792</DOCNO>
+<TEXT>
+<subject>How to capture comments and read in next participent steps in Workflow?</subject>
+<post author="KaushikN" timestamp="Feb 28, 2013 10:23 PM">
+<s>thanks a ton man .</s><s> you are genious. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5084197-5819567</DOCNO>
+<TEXT>
+<subject>How to capture comments and read in next participent steps in Workflow?</subject>
+<post author="K%20VIKAS%20CHANDRAN" timestamp="Nov 6, 2013 6:19 AM">
+<s>thanks sham appriciate it !</s><s> this helped speed up, almost half a days effort saved. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5084197-5819574</DOCNO>
+<TEXT>
+<subject>How to capture comments and read in next participent steps in Workflow?</subject>
+<post author="K%20VIKAS%20CHANDRAN" timestamp="Nov 6, 2013 6:25 AM">
+<s>had to write java process for the same just in case somebody wants a java version of the answer sham mentioned above please feel free 
+<quote>
+<s>historyitem previoushistoryitem; string steptype; 
+this.workitem = item; this.workflowsession = session; this.history = workflowsession.gethistory(workitem.getworkflow()); 
+iterator<historyitem> historyiterator = history.iterator(); 
+while(historyiterator.hasnext()){ previoushistoryitem = historyiterator.next(); steptype = previoushistoryitem.getworkitem().getnode().gettype(); 
+if(steptype != null && steptype.equals(workflownode.type_participant) && previoushistoryitem.getworkitem().getmetadatamap().get("someproperty" ,string.class) != null){ someproperty=previoushistoryitem.getworkitem().getmetadatamap().get(" someproperty",string.class); log("\n someproperty : " + "\n" + someproperty); }else{ log("\nno step type or someproperty found..."); } 
+} 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5775157-1318874</DOCNO>
+<TEXT>
+<subject>Report framework requires at least one grouped column</subject>
+<post author="Oliver-2012" timestamp="Oct 21, 2013 1:47 AM">
+<s>a report requires at least one grouped column, otherwise finish button will lead to "the report doesn't contain grouped columns".</s><s> is it possible to configure a report not to require grouping? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5775157-5775979</DOCNO>
+<TEXT>
+<subject>Report framework requires at least one grouped column</subject>
+<post author="EddieLotter" timestamp="Oct 21, 2013 8:06 AM">
+<s><quote>
+<s>oliver-2012 wrote: 
+a report requires at least one grouped column, otherwise finish button will lead to "the report doesn't contain grouped columns".</s><s> is it possible to configure a report not to require grouping? 
+</s></quote>a report does not require grouping. 
+</s><s>did you create a report using the built-in wizard? 
+</s><s>create a blank report without the wizard.</s><s> add a query and then add fields to the detail section.</s><s> you should not get the error message you mentioned. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5775157-5776245</DOCNO>
+<TEXT>
+<subject>Report framework requires at least one grouped column</subject>
+<post author="Oliver-2012" timestamp="Oct 21, 2013 8:57 AM">
+<s>i created a new report (page activity report) from the tools/reports console.</s><s> i added two columns (page and type) and tried to click on "finish" -> error as described. 
+</s><s>then i created my own report (copied from libs/cq/reporting/components/auditreport) with custom columns (path, title, and some more).</s><s> the report displays the columns, but click on finish results in the same error, too.</s><s> is there any special property i have to set in the configurations/nodes of the report? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5775157-5776207</DOCNO>
+<TEXT>
+<subject>Report framework requires at least one grouped column</subject>
+<post author="EddieLotter" timestamp="Oct 21, 2013 9:05 AM">
+<s><quote>
+<s>oliver-2012 wrote: 
+i created a new report (page activity report) from the tools/reports console.</s><s> i added two columns (page and type) and tried to click on "finish" -> error as described. 
+</s><s>then i created my own report (copied from libs/cq/reporting/components/auditreport) with custom columns (path, title, and some more).</s><s> the report displays the columns, but click on finish results in the same error, too.</s><s> is there any special property i have to set in the configurations/nodes of the report? 
+</s></quote>i'm beginning to suspect you're not talking about coldfusion reports, right? 
+</s><s>this sub-forum is about creating reports for coldfusion. 
+</s><s>if you are indeed creating a report for coldfusion, but you're using a third-party report writer, please identify the report writer so that people who have experience with it will be able to help you. 
+</s><s>sorry for the confusion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5775157-5776253</DOCNO>
+<TEXT>
+<subject>Report framework requires at least one grouped column</subject>
+<post author="Oliver-2012" timestamp="Oct 21, 2013 9:19 AM">
+<s>hi eddie, 
+</s><s>i am so sorry - i was sure to start a cq5 thread...</s><s> cf is of course a total different story... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5775157-5776282</DOCNO>
+<TEXT>
+<subject>Report framework requires at least one grouped column</subject>
+<post author="Anit_Kumar" timestamp="Oct 21, 2013 9:22 AM">
+<s>moving the discussion to adobe cq forum. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4564664-1037717</DOCNO>
+<TEXT>
+<subject>Page impressions from multiple publish servers</subject>
+<post author="tb7032" timestamp="Jul 18, 2012 5:15 AM">
+<s>hi, 
+</s><s>i'm wondering if anybody has any strategies / experience using cq's inbuilt analytics (ie impressions) from multiple publish servers. 
+</s><s>in cq deployments i've been involved in, we've used 'external' analytics and the client's custom templates have not included '/libs/foundation/components/page/stats.jsp'.</s><s> however, i'd like to understand if i'm missing something here... 
+</s><s>if the stats were collected on each of the publish servers, there doesn't seem to be any mechanism for automatically aggregating them back on the author server (which would appear to be required for the display in the authoring ui to be useful). 
+i can see that the servlet endpoint for 'recording' the impression (/libs/wcm/stats/tracker.js) can be configured to point elsewhere... however is the recommendation really to point this back to the author environment?</s><s> is that really the suggested architecture though? 
+</s><s>even aside from the fact that you might not want your author 'externally' accessible (which i guess could be avoided by adding a servlet to publish which 'proxies' the request back to author, or using mod_proxy), surely, letting load from the publish servers anywhere near author doesn't sound like a great idea, plus there's all sorts of authentication issues here.</s><s> this can be easily demonstrated by firing up a local author and publish, and browsing the geometrixx online site on publish as an unauthenticated user (watch for 403s for /tracker.js). 
+i would imagine the concerns above might also apply to the mvt capabilities (although i notice they use a separate tracking endpoint). 
+am i missing something fundamental here about how this should be leveraged? 
+</s><s>thanks in advance, 
+tom 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4564664-4564671</DOCNO>
+<TEXT>
+<subject>Page impressions from multiple publish servers</subject>
+<post author="maggod" timestamp="Jul 18, 2012 5:53 AM">
+<s>tom, 
+</s><s>afaik you're completely right.</s><s> you've found a very bad architecture drawback. 
+</s><s>regards 
+</s><s>maggod 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4564664-5680482</DOCNO>
+<TEXT>
+<subject>Page impressions from multiple publish servers</subject>
+<post author="dr%20venture" timestamp="Sep 13, 2013 2:11 PM">
+<s>you can configure where it points by changing this config /libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.pageviewstatis ticsimpl 
+see this page for details http://helpx.adobe.com/cq/kb/pageviewtracking.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4564664-5680575</DOCNO>
+<TEXT>
+<subject>Page impressions from multiple publish servers</subject>
+<post author="dr%20venture" timestamp="Sep 13, 2013 2:18 PM">
+<s>oops i miss understood.</s><s> i see your point.</s><s> it would depend on your replication architecture as to which node you want to point it.</s><s> your right will get auth issues if you try to point cross server in some cases. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541026-1263218</DOCNO>
+<TEXT>
+<subject>CQ 5.6.0 to 5.6.1 upgrade failing on Tomcat7 restart</subject>
+<post author="JasonInTheRealWorld" timestamp="Jul 26, 2013 7:59 AM">
+<s>all - wanted to know if anybody is having a similar experience in upgrading from cq (aem) 5.6 to 5.6.1, and whether you could suggest a remedy.   the problem we're having with 5.6.1 can be replicated easily on an aws linux instance installing a fresh 5.6.1 installation (i.e. bypassing any upgrade that would happen by installing 5.6.0 first) and following the instructions provided by aem at https://dev.day.com/docs/en/cq/current/deploying/installing_cq.html#to mcat%207.</s><s> steps to replicate: 1.</s><s> [ok] launch a fresh aws linux installation using the latest ami provided by amazon 2.</s><s> [ok] install oracle java (1.7.0_25) and tomcat 7 (7.0.40 - which is the latest version provided by amazon); tomcat 7 is configured to use oracle java 3.</s><s> [ok] follow the instructions provided to configure tomcat7 and aem author 4.</s><s> [ok] visit the login page on the aem author - this works 5.</s><s> [ok] stop tomcat7 6.</s><s> [ok] start tomcat7 7.</s><s> [fail] visit the login page on the aem author - this hangs, telneting to the http port used by tomcat doesn't connect so basically everything is fine until you restart tomcat.</s><s> the same behaviour is observed when doing an upgrade - so doing an inplace upgrade from 5.6.0 to 5.6.1 succeeds but breaks when the tomcat service is restarted.   all comments warmly received.</s><s> thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541026-5546035</DOCNO>
+<TEXT>
+<subject>CQ 5.6.0 to 5.6.1 upgrade failing on Tomcat7 restart</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:35 PM">
+<s>on new system as a verification before restart go to /libs/system/install, delete the cqse-httpservice node and save your changes.</s><s> then restart your instance & see if it helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541026-5547518</DOCNO>
+<TEXT>
+<subject>CQ 5.6.0 to 5.6.1 upgrade failing on Tomcat7 restart</subject>
+<post author="JasonInTheRealWorld" timestamp="Jul 29, 2013 7:19 AM">
+<s>hi sham - tried that but in crxlite there is nothing resembling cqse-httpservice in /libs/system/install; we only have the following: com.adobe.granite.monitoring.core-0.3.6.jar org.apache.sling.jce.resource-2.2.4.jar org.apache.sling.tenant-1.0.0.jar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5538299-1262631</DOCNO>
+<TEXT>
+<subject>Client Context won't return string array</subject>
+<post author="rogerblanton87" timestamp="Jul 25, 2013 10:32 AM">
+<s>hey guys, 
+</s><s>i'm working with displaying dynamic user data via the client context. 
+i have managed to create a property on a user that is a string array. 
+</s><s>the problem i am having is when i look at my values in the client context (and the json response from getting the profiledata) i am only getting 1 of the values not the whole string array. 
+</s><s>for the default values that cq gives you this is also true. 
+</s><s>an example for you to see would be by viewing the client context of alison parker and then under her profile data displaying the "followers" property.</s><s> you will see in the crxde that there are multiple values for this property but only one is displayed and returned in teh json response. 
+</s><s>is there a way to return the whole array? 
+</s><s>any help you could give would be great! 
+</s><s>thanks so much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5538299-5546033</DOCNO>
+<TEXT>
+<subject>Client Context won't return string array</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:33 PM">
+<s>oob with login as alison parker & in client context i can see all the followers & do not know why your seeing one.</s><s> could you provide exact use case. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5538299-5547251</DOCNO>
+<TEXT>
+<subject>Client Context won't return string array</subject>
+<post author="rogerblanton87" timestamp="Jul 29, 2013 5:59 AM">
+<s>are you sure you are not looking at the social graph component instead of the profile component? 
+</s><s>if you open the client context under "tools" -> "client context configurations" -> "default" ->clientcontext 
+in the top portion fo teh client context (where is shows the profile image name gender etc) right click on that portion fo the client context, edit it so that one of the multifield dropdowns listed inside there points to "followers".</s><s> you will notice only 1 email address will appear "charles.s.johnson@trashymail.com". 
+</s><s>if you are referring to what you see under "alison parker's friends and followers (social graph)" this is not the section i am referring to.</s><s> the section i am referring to is 2 dialogs up from that (the first dialog you can edit inside the client context). 
+</s><s>if you do this you should see my issue.</s><s> i have tried attaching screenshots of the issue but it won't let me for whatever reason. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5547111-1264769</DOCNO>
+<TEXT>
+<subject>CQ5.3 server not ready</subject>
+<post author="kecen" timestamp="Jul 29, 2013 4:51 AM">
+<s>*error* webapp-crx launchpad webapp: error: error starting slinginstall:f:\microsoft\cq5\crx-quickstart\launchpad\startup\15\org .apache.sling.runmode-2.0.3-tlp-r818849.jar (org.osgi.framework.bundleexception: unresolved constraint in bundle org.apache.sling.runmode [18]: package; (&(package=org.osgi.framework)(version>=1.4.0))) org.osgi.framework.bundleexception: unresolved constraint in bundle org.apache.sling.runmode [18]: package; (&(package=org.osgi.framework)(version>=1.4.0)) at org.apache.felix.framework.felix.resolvebundle(felix.java:3263) at org.apache.felix.framework.felix.startbundle(felix.java:1597) at org.apache.felix.framework.felix.setactivestartlevel(felix.java:1077) at org.apache.felix.framework.startlevelimpl.run(startlevelimpl.java:264 ) at java.lang.thread.run(unknown source) 
+</s><s>hi all, 
+</s><s>i am having this error for each of my jar file under launchpad/startup.</s><s> anyone can help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-1260837</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 23, 2013 9:10 AM">
+<s>cq5 as windows service with ldap authentication 1 introduction   ldap:  lightweight directory access protocol used for accessing centralized directory services.</s><s> ldap is often used to achieve single sign on which allows a user to access multiple applications after logging in once.</s><s> 2 steps   1.    install ldap server, 1)    double click the file?download from apache website first? apachedirectorystudio-win32-x86_<architecture>-<version> 2)    after start the system, create a new server (cq5ldap) new-new server 3)    add group and users and save them name: adobe suffix: ou=groups, dc=adobe, dc=com) name: adobe2 suffix: ou=users, dc=adobe, dc=com) 4)    start the server 5)    create a new connection (cq5ldap) connection name: cq5ldap hostname: localhost port: 10389   6)    fill in the authentication information bind dnor user: uid=admin, ou=system bind password: secret   7)    right click the connection name, import users with ldif import   2.    configure repository.xml   remove or comment the loginmodule element in the repository configuration (repository.xml).</s><s> the configuration file can be found in the folder crx-quickstart/repository.</s><s> ensure that the file ldap_login.conf is in a folder such as crx-quickstart/conf/ of your crx installation folder.</s><s> add the following bolded code to repository.xml so that users can login     <securitymanager class="com.day.crx.core.crxsecuritymanager">         <workspaceaccessmanager  class="org.apache.jackrabbit.core.                security.simple.simpleworkspaceaccessmanager"/>         <usermanager class="com.day.crx.core.crxusermanagerimpl">             <param name="userspath" value="/home/users"/>             <param name="groupspath" value="/home/groups"/>             <param name="defaultdepth" value="1"/>         </usermanager>     </securitymanager>   3.    change start.bat and quickstart.bat from the command line, start quickstart with the option: -djava.security.auth.login.config=crx-quickstart/conf/ldap_login.conf     for example:     32-bit vm:      java -djava.security.auth.login.config=crx-quickstart/conf/ldap_login.conf -xmx384m -jar crx-quickstart-<version>.jar     64-bit vm:      java -djava.security.auth.login.config=crx-quickstart/conf/ldap_login.conf -xx:maxpermsize=128m -xmx512m -jar crx-quickstart-<version>.jar 4.    starting cq5 as windows service   we install cq5 as a windows service with instsrv.bat located in c:\author\crx-quickstart\opt\helpers.hence, if we want to use cq5 service with ldap.</s><s> we need to change instsrv.bat and then run instsrv.bat to install cq5 as a windows service.</s><s> replace line 40: set jvm_options=-xx:maxpermsize=256m with: set jvm_options=-djava.security.auth.login.config=c:/author2013/crx-quick start/conf/ldap_login.conf";"-xx:maxpermsize=256m   5.    start the cq5 service with cmd or service of task manager         c:>sc start cq5 (or any service name you installed, say cq5author) 6.    now you can login by ldap users
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5531709</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="shailesh08" timestamp="Jul 23, 2013 11:35 AM">
+<s>hi, i tried the steps mentioned, but the steps mentioned above are jumped may be because of the different ldap server.</s><s> i am using apache directory studio.</s><s> and even i could not find any option "import users from ldif".</s><s> can you please guide me what exactly i need to do. 
+
+</s><s>regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5531784</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 23, 2013 12:06 PM">
+<s>please see the screenshot about how to import users. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5533268</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="shailesh08" timestamp="Jul 23, 2013 11:22 PM">
+<s>
+</s><s>hi, sorry i was not clear about the problem in the msg.</s><s> i am not able to get what ldip needs to be entered in the dropdown over here in the screenshot.</s><s> can you even verify the ldap_login.conf file whether is that there is something missing in it. 
+com.day.crx { com.day.crx.core.crxloginmodule sufficient; com.day.crx.security.ldap.ldaploginmodule required principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider" host="10.242.135.12" port="10389" authdn="testuser" authpw="intel" secure="true" userroot="ou=users,ou=system" grouproot="ou=groups,ou=system" groupmembershipattribute="uniquemember" autocreate="create" autocreate.user.mail="profile/email" autocreate.user.givenname="profile/givenname" autocreate.user.sn="profile/familyname" autocreate.group.description="profile/aboutme" autocreate.group.mail="profile/email" autocreate.group.cn="profile/givenname" autocreate.path="direct" cache.expiration="600" cache.maxsize="100"; }; 
+
+</s><s>thanks & regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5534368</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 24, 2013 8:05 AM">
+<s>a file with the ldif file extension is a ldap data interchange format file. 
+</s><s>ldif (lightweight directory interchange format) is an ascii file format used to exchange data and enable the synchronization of that data between lightweight directory access protocol ( ldap ) server s called directory system agents (dsas).</s><s> ldap is a software protocol for enabling anyone to locate organizations, individuals, and other resources such as files and devices in a network.</s><s> an ldap directory can be distributed among many servers.</s><s> ldif is used to synchronize each ldap directory.</s><s>  the first step in synchronizing ldap directories is extracting the full contents of or a portion of the original ldap directory and formatting the contents into an ldif file.</s><s> the ldif file is then mailed to a directory synchronization robot called dirbot.</s><s> after several different steps, a final ldif file is compared to the original ldif file.</s><s> the update instructions on what records to add, delete, or modify in the original directory are decided.</s><s> these updates are then used to synchronize all ldap directories. 
+</s><s>if you don't have ldif file to be imported, it does not matter.</s><s> you can create entries by ldap server directly.</s><s> a .ldif file is just a file prepared by ldif editor. 
+</s><s>ldif file examples: http://www.juniper.net/techpubs/software/aaa_802/sbrc/sbrc70/sw-sbrc-a dmin/html/ldapconfig7.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5534457</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 24, 2013 8:21 AM">
+<s>the following is my sample ldap_login.conf, please refer to it.</s><s> please note the authpw (888888) must be the same as what you set in ldap server: 
+com.day.crx { com.day.crx.core.crxloginmodule sufficient; com.day.crx.security.ldap.ldaploginmodule required principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider" host="localhost" port="10389" authdn="uid=admin,ou=system" authpw="888888" userroot="ou=users,dc=adobe,dc=com" grouproot="ou=groups,dc=adobe,dc=com" userfilter="(objectclass=person)" useridattribute="sn" groupfilter="(objectclass=groupofuniquenames)" groupmembershipattribute="uniquemember" groupnameattribute="cn" deny_anonymous_access="true" autocreate="create" autocreate.user.mail="rep:e-mail" autocreate.user.cn="rep:fullname" autocreate.group.mail="rep:e-mail" autocreate.group.cn="rep:fullname" autocreate.group.localadmin="admin" autocreate.group.uniquemember="uniquemember" autocreate.group.description="description" autocreate.syncdelay="1800" autocreate.lastmodified ="lastmodified" autocreate.path="direct" cache.expiration="600" cache.maxsize="100"; }; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5534938</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="shailesh08" timestamp="Jul 24, 2013 10:25 AM">
+<s>com.day.crx {    com.day.crx.core.crxloginmodule sufficient;    com.day.crx.security.ldap.ldaploginmodule required               principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider"               host="192.168.1.8"               port="10390"      authdn="uid=testuser,ou=users,ou=system"               authpw="abc11"               secure="true"               userroot="ou=users,ou=system"               grouproot="ou=groups,ou=system"               groupmembershipattribute="uniquemember"               autocreate="create"               autocreate.user.mail="profile/email"               autocreate.user.givenname="profile/givenname"               autocreate.user.sn="profile/familyname"               autocreate.group.description="profile/aboutme"               autocreate.group.mail="profile/email"               autocreate.group.cn="profile/givenname"               autocreate.path="direct"               cache.expiration="600"               cache.maxsize="100"; };   repository.xml <?</s><s>xml version="1.0" encoding="iso-8859-1"?</s><s>> <!-- ===================================================================== == --> <!-- $id: repository-template.xml 78567 2011-06-16 04:27:03z tripod $ --> <!-- ===================================================================== == --> <!-- copyright (c) 1997-2008 day management ag                               --> <!-- barfuesserplatz 6, 4001 basel, switzerland                              --> <!-- all rights reserved.                                                    --> <!--                                                                          --> <!-- this software is the confidential and proprietary information of        --> <!-- day management ag, ("confidential information").</s><s> you shall not          --> <!-- disclose such confidential information and shall use it only in         --> <!-- accordance with the terms of the license agreement you entered into     --> <!-- with day.                                                               --> <!-- ===================================================================== == --> <!</s><s>doctype repository public "-//day management ag//dtd crx 2.4//en"                             "http://www.day.com/dtd/repository-2.4.dtd"> <repository>     <!--     virtual file system where the repository stores global state     (e.g. registered namespaces, custom node types, etc.</s><s>)     -->     <!--     <filesystem class="com.day.jackrabbit.fs.cq.cqfilesystem">         <param name="path" value="${rep.home}/repstore.dat"/>         <param name="autorepair" value="false"/>     </filesystem>     -->     <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem">         <param name="path" value="${rep.home}/repository"/>     </filesystem>     <!--     large binary objects are stored in the data store.     -->     <datastore class="com.day.crx.core.data.clusterdatastore"/>     <!--     security configuration     -->     <security appname="com.day.crx">         <!--             security manager:             class: fqn of class implementing the jackrabbitsecuritymanager interface         -->         <!--securitymanager class="com.day.crx.core.crxsecuritymanager" workspacename="" -->         <securitymanager class="com.day.crx.core.crxsecuritymanager">             <!--             optional user manager configuration             -->             <usermanager class="org.apache.jackrabbit.core.security.user.userperworkspaceuserm anager">                 <param name="userspath" value="/home/users"/>                 <param name="groupspath" value="/home/groups"/>                 <param name="defaultdepth" value="1"/>                 <param name="autoexpandtree" value="true"/>                 <authorizableaction class="org.apache.jackrabbit.core.security.user.action.accesscontrola ction">                   <param name="groupprivilegenames" value="jcr:read"/>                   <param name="userprivilegenames" value="jcr:all"/>                 </authorizableaction>                 <!--authorizableaction class="com.day.crx.core.ntlm.ntlmauthorizableaction"/>-->             </usermanager>             <!--             optional workspace access manager configuration            -->         </securitymanager>           <!--         access manager:         class: fqn of class implementing the accessmanager interface         -->         <accessmanager class="org.apache.jackrabbit.core.security.defaultaccessmanager"></ac cessmanager>         <!--         use loginmodule authenticating against repository itself         -->         <loginmodule class="com.day.crx.core.crxloginmodule">             <param name="anonymousid" value="anonymous"/>             <param name="adminid" value="admin"/>             <param name="disablentlmauth" value="true"/>             <param name="tokenexpiration" value="43200000"/>             <!-- param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/ -->         </loginmodule>     </security>     <!--     location of workspaces root directory and name of default workspace     -->     <workspaces rootpath="${rep.home}/workspaces" defaultworkspace="crx.default" maxidletime="5"/>     <!--     workspace configuration template:     used to create the initial workspace if there's no workspace yet     -->     <workspace name="${wsp.name}" simplelocking="true">         <!--         virtual file system of the workspace:         class: fqn of class implementing filesystem interface         -->         <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem">             <param name="path" value="${wsp.home}"/>         </filesystem>         <!--         persistence manager of the workspace:         class: fqn of class implementing persistencemanager interface         -->         <persistencemanager class="com.day.crx.persistence.tar.tarpersistencemanager"/>         <!--         search index and the file system it uses.         -->         <searchindex class="com.day.crx.query.lucene.lucenehandler">             <param name="path" value="${wsp.home}/index"/>             <param name="resultfetchsize" value="50"/>         </searchindex>         <!--         workspace security configuration         -->         <workspacesecurity>             <accesscontrolprovider class="org.apache.jackrabbit.core.security.authorization.acl.aclprovi der">                 <param name="omit-default-permission" value="true"/>             </accesscontrolprovider>         </workspacesecurity>         <!--         xml import configuration of the workspace         -->         <import>             <protecteditemimporter class="org.apache.jackrabbit.core.xml.accesscontrolimporter"/>             <protecteditemimporter class="org.apache.jackrabbit.core.security.user.userimporter">                 <param name="importbehavior" value="besteffort"/>             </protecteditemimporter>         </import>     </workspace>     <!--         configures the versioning     -->     <versioning rootpath="${rep.home}/version">         <!--             configures the filesystem to use for versioning of the respective             persistence manager         -->         <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem">             <param name="path" value="${rep.home}/version"/>         </filesystem>         <!--             configures the persistence manager to use for the versioning.             please note, that the current versioning implementation is based on             a 'normal' persistence manager, but this could change in future             implementations.         -->         <persistencemanager class="com.day.crx.persistence.tar.tarpersistencemanager"/>     </versioning>     <!--         enable searching the /jcr:system subtree     -->     <searchindex class="com.day.crx.query.lucene.lucenehandler">         <param name="path" value="${rep.home}/repository/index"/>     </searchindex>     <!--         cluster configuration.     -->     <cluster>         <journal class="com.day.crx.persistence.tar.tarjournal"/>     </cluster>     <!--         configures extension modules     -->     <modules>         <!--            sample configuration of an eventloggermodule requiring configuration            <module class="com.day.crx.eventlogger.eventloggermodule">                <param name="workspaces" value="crx.default"/>                <param name="logworkspace" value="crx.logger"/>                <param name="logpath" value="/logger"/>            </module>         -->     </modules> </repository>   hi, i am still not able to login using the user i created in ldap server.</s><s> i have verified by using the jxplorer and the ldap server is working fine as whatever user i am creating in jxplorer it is propagation and getting saved in the ldap server.   by looking into the screenshot seeing above if you find anything that is missing, please do let me know.   thanks & regards, shailesh
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5534994</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 24, 2013 10:36 AM">
+<s>1) comment out the following in your repository.xml: <!-- <loginmodule class="com.day.crx.core.crxloginmodule">             <param name="anonymousid" value="anonymous"/>             <param name="adminid" value="admin"/>             <param name="disablentlmauth" value="true"/>             <param name="tokenexpiration" value="43200000"/>             param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/         </loginmodule>   -->   2) add the following bolded code to repository.xml so that users can login     <securitymanager class="com.day.crx.core.crxsecuritymanager">         <workspaceaccessmanager  class="org.apache.jackrabbit.core.                security.simple.simpleworkspaceaccessmanager"/>         <usermanager class="com.day.crx.core.crxusermanagerimpl">             <param name="userspath" value="/home/users"/>             <param name="groupspath" value="/home/groups"/>             <param name="defaultdepth" value="1"/>         </usermanager>     </securitymanager>     yours:        <securitymanager class="com.day.crx.core.crxsecuritymanager">             <!--             optional user manager configuration             -->         <workspaceaccessmanager  class="org.apache.jackrabbit.core.                security.simple.simpleworkspaceaccessmanager"/>             <usermanager class="org.apache.jackrabbit.core.security.user.userperworkspaceuserm anager">                 <param name="userspath" value="/home/users"/>                 <param name="groupspath" value="/home/groups"/>                 <param name="defaultdepth" value="1"/>                 <param name="autoexpandtree" value="true"/>                 <authorizableaction class="org.apache.jackrabbit.core.security.user.action.accesscontrola ction">                   <param name="groupprivilegenames" value="jcr:read"/>                   <param name="userprivilegenames" value="jcr:all"/>                 </authorizableaction>                 <!--authorizableaction class="com.day.crx.core.ntlm.ntlmauthorizableaction"/>-->             </usermanager>             <!--             optional workspace access manager configuration            -->         </securitymanager>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5535256</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="shailesh08" timestamp="Jul 24, 2013 11:37 AM">
+<s>hi, still not able to login.., "user name and password do not match". 
+</s><s>is there anything else that could be there regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5535323</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 24, 2013 12:20 PM">
+<s>if it is password problem, you can try to reset password for the user with apache directory studio (ldap server): 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5537208</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="shailesh08" timestamp="Jul 25, 2013 4:46 AM">
+<s>hi, my instance stopped working after i modified the repository.xml as threaded in the chain above.</s><s> the two changes made were:- 1. added <securitymanager class="com.day.crx.core.crxsecuritymanager"> <workspaceaccessmanager class="org.apache.jackrabbit.core. security.simple.simpleworkspaceaccessmanager"/> <usermanager class="com.day.crx.core.crxusermanagerimpl"> <param name="userspath" value="/home/users"/> <param name="groupspath" value="/home/groups"/> <param name="defaultdepth" value="1"/> </usermanager> </securitymanager> 
+2. commented <loginmodule class="com.day.crx.core.crxloginmodule"> <param name="anonymousid" value="anonymous"/> <param name="adminid" value="admin"/> <param name="disablentlmauth" value="true"/> <param name="tokenexpiration" value="43200000"/> 
+</loginmodule> 
+</s><s>as i commented the first one and uncommented the second one in repository.xml my instance started working., before that i was getting service unavailable authenticationsupport service missing.</s><s> cannot authenticate request. 
+
+</s><s>is there anything else that could be done for this authentication part.</s><s>?</s><s> thanks & regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5537632</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="great98" timestamp="Jul 25, 2013 7:23 AM">
+<s>please use this correct ldap_login.conf as main reference, your authdn is not right, should be authdn="uid=admin,ou=system": 
+com.day.crx { com.day.crx.core.crxloginmodule sufficient; com.day.crx.security.ldap.ldaploginmodule required principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider" host="localhost" port="10389" authdn="uid=admin,ou=system" authpw="888888" userroot="ou=users,dc=adobe,dc=com" grouproot="ou=groups,dc=adobe,dc=com" userfilter="(objectclass=person)" useridattribute="sn" groupfilter="(objectclass=groupofuniquenames)" groupmembershipattribute="uniquemember" groupnameattribute="cn" deny_anonymous_access="true" autocreate="create" autocreate.user.mail="rep:e-mail" autocreate.user.cn="rep:fullname" autocreate.group.mail="rep:e-mail" autocreate.group.cn="rep:fullname" autocreate.group.localadmin="admin" autocreate.group.uniquemember="uniquemember" autocreate.group.description="description" autocreate.syncdelay="1800" autocreate.lastmodified ="lastmodified" autocreate.path="direct" cache.expiration="600" cache.maxsize="100"; }; 
+other steps ,please refer to the following url carefully: 
+http://helpx.adobe.com/cq/kb/ldapconfig.html http://dev.day.com/docs/en/crx/current/administering/ldap_authenticati on.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5531146-5546959</DOCNO>
+<TEXT>
+<subject>CQ5 as Windows Service with LDAP Authentication</subject>
+<post author="shailesh08" timestamp="Jul 29, 2013 3:01 AM">
+<s>hi, the links shared tells us the same things as we were trying before.</s><s> i tried every combination possible in repository.xml 1. loginmodule removed with org.apache.jackrabbit.core.security.user.userperworkspaceusermanager present. -503 error 2. loginmodule present with with org.apache.jackrabbit.core.security.user.userperworkspaceusermanager present. - able to open instance 3. loginmodule removed with com.day.crx.core.crxusermanagerimpl presnt. -503 error 4. loginmodule present with com.day.crx.core.crxusermanagerimpl present. -503 error 5. loginmodule present with com.day.crx.core.crxusermanagerimpl & org.apache.jackrabbit.core.security.user.userperworkspaceusermanager presnt. -503 error 6. loginmodule removed with com.day.crx.core.crxusermanagerimpl & org.apache.jackrabbit.core.security.user.userperworkspaceusermanager present. -503 error 
+the ldap_login.confg used is com.day.crx { com.day.crx.core.crxloginmodule sufficient; com.day.crx.security.ldap.ldaploginmodule required principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider" host="10.242.135.208" port="10390" authdn="uid=admin,ou=system" authpw="admin" userfilter="(objectclass=person)" useridattribute="uid" groupfilter="(objectclass=groupofuniquenames)" groupmembershipattribute="uniquemember" groupnameattribute="cn" deny_anonymous_access="true" secure="true" userroot="ou=users,ou=system" grouproot="ou=groups,ou=system" groupmembershipattribute="uniquemember" autocreate="create" autocreate.user.mail="profile/email" autocreate.user.givenname="profile/givenname" autocreate.user.sn="profile/familyname" autocreate.group.description="profile/aboutme" autocreate.group.mail="profile/email" autocreate.group.cn="profile/givenname" autocreate.path="direct" cache.expiration="600" cache.maxsize="100"; }; 
+
+
+</s><s>can you please verify if the authdn and the authpwd is correct or is there any mistake that i am commiting.</s><s> or there is something else which is causing the problem.. 
+
+</s><s>thanks & regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541672-1263439</DOCNO>
+<TEXT>
+<subject>Sending newsletters</subject>
+<post author="jcbsktrn1" timestamp="Jul 26, 2013 10:56 AM">
+<s>hi, we're having issues with sending newletters (campaigns).</s><s> we've no clue to what may be going wrong.</s><s> any help is greatly appreciated. 
+</s><s>the error in the log is this: 
+
+
+26.07.2013 17:23:16.137 *error* [10.150.122.43 [1374859396096] post /libs/mcm/content/newsletter.flighttest.json http/1.1] com.day.cq.mailer.impl.email.cqretrieveremailtemplate failed to retrieve content {} java.net.connectexception: connection refused at java.net.plainsocketimpl.socketconnect(native method) at java.net.plainsocketimpl.doconnect(plainsocketimpl.java:351) at java.net.plainsocketimpl.connecttoaddress(plainsocketimpl.java:213) at java.net.plainsocketimpl.connect(plainsocketimpl.java:200) at java.net.sockssocketimpl.connect(sockssocketimpl.java:366) at java.net.socket.connect(socket.java:529) at java.net.socket.connect(socket.java:478) at java.net.socket.<init>(socket.java:375) at java.net.socket.<init>(socket.java:249) at org.apache.commons.httpclient.protocol.defaultprotocolsocketfactory.createsocket(defaultprotocolsocketfactory.java:80) at org.apache.commons.httpclient.protocol.defaultprotocolsocketfactory.createsocket(defaultprotocolsocketfactory.java:122) at org.apache.commons.httpclient.httpconnection.open(httpconnection.java:707) at org.apache.commons.httpclient.httpmethoddirector.executewithretry(httpmethoddirector.java:387) at org.apache.commons.httpclient.httpmethoddirector.executemethod(httpmethoddirector.java:171) at org.apache.commons.httpclient.httpclient.executemethod(httpclient.java:397) at org.apache.commons.httpclient.httpclient.executemethod(httpclient.java:323) at com.day.cq.retriever.impl.httpclientgenerator.retrieve(httpclientgenerator.java:65) at com.day.cq.retriever.impl.retrieverserviceimpl.retrieve(retrieverserviceimpl.java:48) at com.day.cq.mailer.impl.email.cqretrieveremailtemplate.retrieve(cqretrieveremailtemplate.java:262) at com.day.cq.mailer.impl.email.cqretrieveremailtemplate.gethtml(cqretrieveremailtemplate.java:99) at com.day.cq.mailer.impl.email.cqretrieveremailtemplate.dobuild(cqretrieveremailtemplate.java:134) at com.day.cq.mailer.impl.email.cqretrieveremailtemplate.dobuild(cqretrieveremailtemplate.java:47) at com.day.cq.mailer.impl.email.abstractemailtemplate.buildmessage(abstractemailtemplate.java:141) at com.day.cq.mailer.impl.email.abstractemailtemplate.buildmessage(abstractemailtemplate.java:42) at com.day.cq.mailer.impl.cqmailing.send(cqmailing.java:157) at com.day.cq.mailer.impl.cqmailingservice.send(cqmailingservice.java:145) at com.day.cq.mcm.core.newsletter.newsletterserviceimpl.sendnewsletter(newsletterserviceimpl.java:341) at org.apache.jsp.libs.mcm.components.commands.newsletter.flighttest_post_jsp._jspservice(flighttest_post_jsp.java:296) at org.apache.sling.scripting.jsp.jasper.runtime.httpjspbase.service(httpjspbase.java:70) at javax.servlet.http.httpservlet.service(httpservlet.java:820) at org.apache.sling.scripting.jsp.jasper.servlet.jspservletwrapper.service(jspservletwrapper.java:502) at org.apache.sling.scripting.jsp.jasper.servlet.jspservletwrapper.service(jspservletwrapper.java:449) at org.apache.sling.scripting.jsp.jspscriptenginefactory.calljsp(jspscriptenginefactory.java:241) at org.apache.sling.scripting.jsp.jspscriptenginefactory.access$100(jspscriptenginefactory.java:86) at org.apache.sling.scripting.jsp.jspscriptenginefactory$jspscriptengine.eval(jspscriptenginefactory.java:441) at org.apache.sling.scripting.core.impl.defaultslingscript.call(defaultslingscript.java:361) at org.apache.sling.scripting.core.impl.defaultslingscript.eval(defaultslingscript.java:171) at org.apache.sling.scripting.core.impl.defaultslingscript.service(defaultslingscript.java:463) at org.apache.sling.engine.impl.request.requestdata.service(requestdata.java:508) at org.apache.sling.engine.impl.filter.slingcomponentfilterchain.render(slingcomponentfilterchain.java:45) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:64) at com.day.cq.wcm.core.impl.wcmdebugfilter.dofilter(wcmdebugfilter.java:148) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.day.cq.wcm.core.impl.wcmcomponentfilter.filterrootinclude(wcmcomponentfilter.java:333) at com.day.cq.wcm.core.impl.wcmcomponentfilter.dofilter(wcmcomponentfilter.java:160) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at org.apache.sling.engine.impl.slingrequestprocessorimpl.processcomponent(slingrequestprocessorimpl.java:254) at org.apache.sling.engine.impl.filter.requestslingfilterchain.render(requestslingfilterchain.java:49) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:64) at com.day.cq.wcm.core.impl.warp.timewarpfilter.dofilter(timewarpfilter.java:106) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.day.cq.wcm.mobile.core.impl.redirect.redirectfilter.dofilter(redirectfilter.java:290) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.pearson.pt.newrelic.filter.newrelicfilter.dofilter(newrelicfilter.java:82) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at org.apache.sling.engine.impl.debug.requestprogresstrackerlogfilter.dofilter(requestprogresstrackerlogfilter.java:59) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.day.cq.theme.impl.themeresolverfilter.dofilter(themeresolverfilter.java:76) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.day.cq.wcm.foundation.forms.impl.formshandlingservlet.dofilter(formshandlingservlet.java:220) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.adobe.granite.optout.impl.optoutfilter.dofilter(optoutfilter.java:74) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.day.cq.wcm.core.impl.wcmrequestfilter.dofilter(wcmrequestfilter.java:90) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at com.day.cq.wcm.designimporter.canvaspagedeleterequestfilter.dofilter(canvaspagedeleterequestfilter.java:87) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at org.apache.sling.rewriter.impl.rewriterfilter.dofilter(rewriterfilter.java:83) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at org.apache.sling.i18n.impl.i18nfilter.dofilter(i18nfilter.java:127) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at org.apache.sling.bgservlets.impl.backgroundservletstarterfilter.dofilter(backgroundservletstarterfilter.java:135) at org.apache.sling.engine.impl.filter.abstractslingfilterchain.dofilter(abstractslingfilterchain.java:60) at org.apache.sling.engine.impl.slingrequestprocessorimpl.processrequest(slingrequestprocessorimpl.java:151) at org.apache.sling.engine.impl.slingmainservlet.service(slingmainservlet.java:206) at org.apache.felix.http.base.internal.handler.servlethandler.dohandle(servlethandler.java:96) at org.apache.felix.http.base.internal.handler.servlethandler.handle(servlethandler.java:79) at org.apache.felix.http.base.internal.dispatch.servletpipeline.handle(servletpipeline.java:42) at org.apache.felix.http.base.internal.dispatch.invocationfilterchain.dofilter(invocationfilterchain.java:49) at org.apache.felix.http.base.internal.dispatch.httpfilterchain.dofilter(httpfilterchain.java:33) at org.apache.sling.i18n.impl.i18nfilter.dofilter(i18nfilter.java:127) at org.apache.felix.http.base.internal.handler.filterhandler.dohandle(filterhandler.java:88) at org.apache.felix.http.base.internal.handler.filterhandler.handle(filterhandler.java:76) at org.apache.felix.http.base.internal.dispatch.invocationfilterchain.dofilter(invocationfilterchain.java:47) at org.apache.felix.http.base.internal.dispatch.httpfilterchain.dofilter(httpfilterchain.java:33) at org.apache.sling.security.impl.referrerfilter.dofilter(referrerfilter.java:259) at org.apache.felix.http.base.internal.handler.filterhandler.dohandle(filterhandler.java:88) at org.apache.felix.http.base.internal.handler.filterhandler.handle(filterhandler.java:76) at org.apache.felix.http.base.internal.dispatch.invocationfilterchain.dofilter(invocationfilterchain.java:47) at org.apache.felix.http.base.internal.dispatch.httpfilterchain.dofilter(httpfilterchain.java:33) at org.apache.felix.http.sslfilter.internal.sslfilter.dofilter(sslfilter.java:55) at org.apache.felix.http.base.internal.handler.filterhandler.dohandle(filterhandler.java:88) at org.apache.felix.http.base.internal.handler.filterhandler.handle(filterhandler.java:76) at org.apache.felix.http.base.internal.dispatch.invocationfilterchain.dofilter(invocationfilterchain.java:47) at org.apache.felix.http.base.internal.dispatch.httpfilterchain.dofilter(httpfilterchain.java:33) at com.adobe.granite.license.impl.licensecheckfilter.dofilter(licensecheckfilter.java:179) at org.apache.felix.http.base.internal.handler.filterhandler.dohandle(filterhandler.java:88) at org.apache.felix.http.base.internal.handler.filterhandler.handle(filterhandler.java:76) at org.apache.felix.http.base.internal.dispatch.invocationfilterchain.dofilter(invocationfilterchain.java:47) at org.apache.felix.http.base.internal.dispatch.httpfilterchain.dofilter(httpfilterchain.java:33) at org.apache.sling.engine.impl.log.requestloggerfilter.dofilter(requestloggerfilter.java:75) at org.apache.felix.http.base.internal.handler.filterhandler.dohandle(filterhandler.java:88) at org.apache.felix.http.base.internal.handler.filterhandler.handle(filterhandler.java:76) at org.apache.felix.http.base.internal.dispatch.invocationfilterchain.dofilter(invocationfilterchain.java:47) at org.apache.felix.http.base.internal.dispatch.httpfilterchain.dofilter(httpfilterchain.java:33) at org.apache.felix.http.base.internal.dispatch.filterpipeline.dispatch(filterpipeline.java:48) at org.apache.felix.http.base.internal.dispatch.dispatcher.dispatch(dispatcher.java:39) at org.apache.felix.http.base.internal.dispatcherservlet.service(dispatcherservlet.java:67) at javax.servlet.http.httpservlet.service(httpservlet.java:820) at com.day.j2ee.servletengine.servletruntimeenvironment.service(servletruntimeenvironment.java:250) at com.day.j2ee.servletengine.requestdispatcherimpl.dofilter(requestdispatcherimpl.java:321) at com.day.j2ee.servletengine.requestdispatcherimpl.service(requestdispatcherimpl.java:340) at com.day.j2ee.servletengine.requestdispatcherimpl.service(requestdispatcherimpl.java:383) at com.day.j2ee.servletengine.servlethandlerimpl.process(servlethandlerimpl.java:360) at com.day.j2ee.servletengine.httplistener$worker.run(httplistener.java:644) at java.lang.thread.run(thread.java:662) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541672-5541913</DOCNO>
+<TEXT>
+<subject>Sending newsletters</subject>
+<post author="rush_pawan" timestamp="Jul 26, 2013 11:56 AM">
+<s>hi, 
+</s><s>by looking at log it seems to be an error related to getting connection for sending newsletter mail from mail server.</s><s> can you plz check your mail server configuration where it is accessible from your server machine or not. 
+</s><s>also i would also suggest you to re-refer (i know you have already gone through) this link as you are using ootb newletter template. 
+http://dev.day.com/docs/en/cq/current/wcm/campaigns.html#configuring the newsletter service component 
+let me know for more information. 
+</s><s>thanks, pawan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541672-5546796</DOCNO>
+<TEXT>
+<subject>Sending newsletters</subject>
+<post author="jcbsktrn1" timestamp="Jul 29, 2013 1:08 AM">
+<s>thanks, that didn't help unfortunately.</s><s> we can send email otherwise.</s><s> the mail server seems to be set-up ok.</s><s> the problem is only with the newsletter. 
+</s><s>any other tips?</s><s> the error seems to indicate "/libs/mcm/content/newsletter.flighttest.json http/1.1] com.day.cq.mailer.impl.email.cqretrieveremailtemplate failed to retrieve content".</s><s> but i don't understand what content it's trying to get. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541672-5546880</DOCNO>
+<TEXT>
+<subject>Sending newsletters</subject>
+<post author="jcbsktrn1" timestamp="Jul 29, 2013 1:42 AM">
+<s>in the log i can also see replication request.</s><s> can someone confirm to me if we need to configure the mail server on publish?</s><s> or on author?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540743-1263183</DOCNO>
+<TEXT>
+<subject>Form - Thank you page</subject>
+<post author="diego_kkk" timestamp="Jul 26, 2013 6:42 AM">
+<s>hi everybody.</s><s> i need to create a page "thank you" page that has to be linked in a form, but do not make it appear in the menu. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540743-5540771</DOCNO>
+<TEXT>
+<subject>Form - Thank you page</subject>
+<post author="dcollie" timestamp="Jul 26, 2013 6:54 AM">
+<s>look at /content/geometrixx/en/toolbar/jcr:content, hideinnav=true property. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540743-5540861</DOCNO>
+<TEXT>
+<subject>Form - Thank you page</subject>
+<post author="diego_kkk" timestamp="Jul 26, 2013 6:59 AM">
+<s>i'm just an editor; where i can access this property (if i can)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540743-5540968</DOCNO>
+<TEXT>
+<subject>Form - Thank you page</subject>
+<post author="diego_kkk" timestamp="Jul 26, 2013 7:22 AM">
+<s>just found. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540743-5546384</DOCNO>
+<TEXT>
+<subject>Form - Thank you page</subject>
+<post author="snayakar" timestamp="Jul 28, 2013 6:44 PM">
+<s>where you can access the property? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540743-5546805</DOCNO>
+<TEXT>
+<subject>Form - Thank you page</subject>
+<post author="Ojjis" timestamp="Jul 29, 2013 1:02 AM">
+<s>you can access the property from the site admin page.</s><s> right click on any page and choose "properties".</s><s> then you will find the "hide in navigation" checkbox under the basic properties tab.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5542007-1263550</DOCNO>
+<TEXT>
+<subject>Passing values from Form Component to Thank you page configured</subject>
+<post author="NitroHazeDev" timestamp="Jul 26, 2013 12:07 PM">
+<s>hello all, 
+</s><s>i want to pass values from a page , having a cq form component and on click of submit along with storing data in cq, i would want to send the data to the "thank you" page configured in the form component "start of the form".</s><s> is there any best practice to pass the data to the thank you page along with storing the data in cq. 
+</s><s>kindly let me know. 
+</s><s>regards, nz 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5542007-5546804</DOCNO>
+<TEXT>
+<subject>Passing values from Form Component to Thank you page configured</subject>
+<post author="Ojjis" timestamp="Jul 29, 2013 12:57 AM">
+<s>one way of doing this could be to implement your own servlet/filter.</s><s> this could handle the data from the form and store it accordingly in cq.</s><s> later on it could also pass variables to the "thank you" -page which it could redirect to. /johan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5546771-1264684</DOCNO>
+<TEXT>
+<subject>Change the default font of the richtext widget</subject>
+<post author="acrofat" timestamp="Jul 29, 2013 12:51 AM">
+<s>i want to change the default look and feel of the content of richtext widget.</s><s> i tried set the cls property when defining the widget, but it doesn't work. any idea? 
+thx 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533744-1261502</DOCNO>
+<TEXT>
+<subject>Lucene indexing configuration</subject>
+<post author="Sergey77777" timestamp="Jul 24, 2013 4:49 AM">
+<s>is it possible to add custom analyzer (englishanalyzer) to properties and when it(analyzer) has to take in consideration custom boosts of these properties?</s><s> when i try to add analyzer to property, lucene does not consider boosts, and when i removed custom analyzer the problem disappeared too.</s><s> here is my workspace.xml search configuration:   <searchindex class="com.day.crx.query.lucene.lucenehandler">             <param name="path" value="${wsp.home}/index"/>             <param name="resultfetchsize" value="50"/>                      <param name="indexingconfiguration" value="${wsp.home}/indexing_config.xml"/> </searchindex> and here is indexing_config.xml analysers tag text:     <analyzers> <analyzer class="org.apache.lucene.analysis.en.englishanalyzer"> <property boost="5.0">cq:name</property> <property boost="5.0">jcr:title</property> <property boost="5.0">title</property> <property boost="4.0">cq:tags</property> <property boost="3.0">jcr:description</property> <property boost="3.0">jcr:data</property> <property boost="1.0">text</property> </analyzer> </analyzers> does anybody can help me?   message was edited by: sergey77777
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533744-5546030</DOCNO>
+<TEXT>
+<subject>Lucene indexing configuration</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:32 PM">
+<s>which version of cq? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533744-5546765</DOCNO>
+<TEXT>
+<subject>Lucene indexing configuration</subject>
+<post author="Sergey77777" timestamp="Jul 29, 2013 12:26 AM">
+<s>cq 5.6 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5546693-1264655</DOCNO>
+<TEXT>
+<subject>Caching Client Libraries</subject>
+<post author="Kristian Wright" timestamp="Jul 28, 2013 11:52 PM">
+<s>does cq have a built in way to deal with client library caching issues?</s><s> when using the foundation image component, the final src attribute of the image in the clients browser is something like: 
+<img title="my image" alt="my image" src="/content/myapp/en/mypage/_jcr_content/somewhere/my_image.img.png /1368587149255.png"> 
+</s><s>this allows the browser to cache the image, but when the image is updated in cq, the src attribute is updated accordingly, and therefore the new image is requested by the browser. 
+</s><s>does cq also have this kind of functionality for it's client libraries, so that javascript and css files can be cached in the same sort of way, and automatically get renewed when updated?</s><s> for example, something like: 
+<script type="text/javascript" src="/etc/designs/myapp/myclientlib_1368587149255.js"></script> <link rel="stylesheet" href="/etc/designs/myapp/myclientlib_1368587149255.css" type="text/css"/> 
+i know we could set the expires headers, but this is not the most efficient way since the files may not have changes since since they were last requested. 
+</s><s>also, can this be done for other items, for example font files etc? 
+</s><s>any thoughts appreciated... 
+</s><s>cheers, k 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5546647-1264634</DOCNO>
+<TEXT>
+<subject>Java Content Assist in CQ 5.6 / CQ 5.5</subject>
+<post author="Nikitha.R" timestamp="Jul 28, 2013 10:58 PM">
+<s>in order to make java content assist work in cq 5.6/ cq 5.5, download the file crxde-missing-libs-1.0 from : https://dev.day.com/packageshare/packages/public/day/crxde/crxde-missi ng-libs.html and install it.</s><s> once installed, go to /etc/crxde/profiles/default/libs/ in your editor and refresh it.</s><s> once it is refreshed, right click and select build:refresh classpath. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5544708-1264189</DOCNO>
+<TEXT>
+<subject>Unable to replicate robots.txt through to the dispatcher</subject>
+<post author="hettyere" timestamp="Jul 27, 2013 10:31 PM">
+<s>i implemented robots.txt on both author and publish instances using the link below: 
+http://crxdelight.com/2012/02/04/how-to-protect-your-cq-instances-from -google-searches/ robots.txt exist and it is visible on both author and publish instances.</s><s> when i tried to display the robots.txt on dispatcher link "http://localhost/robots.txt", i got the error below: not found the requested url /robots.txt was not found on this server. 
+</s><s>is there any specific configuration settings needed on the dispatcher for it to recognize the robots.txt?</s><s> or are there any issues that could cause this problem? 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5544708-5545093</DOCNO>
+<TEXT>
+<subject>Unable to replicate robots.txt through to the dispatcher</subject>
+<post author="Yogesh%20Upadhyay" timestamp="Jul 28, 2013 7:23 AM">
+<s>if this file exists in publish then there is a dispatcher rule that is blocking this file. 
+</s><s>yogesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5544708-5545175</DOCNO>
+<TEXT>
+<subject>Unable to replicate robots.txt through to the dispatcher</subject>
+<post author="hettyere" timestamp="Jul 28, 2013 7:59 AM">
+<s>thank you yogesh for your prompt response. 
+</s><s>will you be able to tell which dispatcher rule that may be blocking this file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5544708-5546025</DOCNO>
+<TEXT>
+<subject>Unable to replicate robots.txt through to the dispatcher</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:30 PM">
+<s>following the article the filter [1] is blocking it as expected.</s><s> [1] /0080 { /type "deny" /glob "get * /robots.txt*" } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5544708-5546362</DOCNO>
+<TEXT>
+<subject>Unable to replicate robots.txt through to the dispatcher</subject>
+<post author="hettyere" timestamp="Jul 28, 2013 6:58 PM">
+<s>thank you sham for your response.   i added the line of code below in my dispatcher.any file.</s><s> it is still not able to see the robots.txt.   # deny content grabbing       /0080 { /type "allow" /glob "get * /robots.txt*" }     ?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533158-1261361</DOCNO>
+<TEXT>
+<subject>Updated my pages vanity url, but some of it doesn't reflect on /system/console/jcrresolver</subject>
+<post author="limjohnny88" timestamp="Jul 23, 2013 10:00 PM">
+<s>hi, 
+</s><s>i have follow the instruction on this page (http://helpx.adobe.com/adobe-cq/kb/vanity-urls.html) to create the vanity url for my content.</s><s> after i have populate the page property with the vanity url, some page the pages are not reflected on the jcr resolver page -> resolver map entries. 
+
+i am running version 5.6 of cq 
+
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533158-5546029</DOCNO>
+<TEXT>
+<subject>Updated my pages vanity url, but some of it doesn't reflect on /system/console/jcrresolver</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:31 PM">
+<s>have you used any special characters in vanity url?</s><s> if so remove that property from crxde light.</s><s> if that works file a daycare to get a hotfix that make vanity url validation more robust. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533158-5546388</DOCNO>
+<TEXT>
+<subject>Updated my pages vanity url, but some of it doesn't reflect on /system/console/jcrresolver</subject>
+<post author="limjohnny88" timestamp="Jul 28, 2013 6:56 PM">
+<s>hi sham, 
+</s><s>i dont have any special characters on the vanity url. 
+</s><s>actually i have a blueprint site setup.</s><s> the vanity url for the blueprint and some of its child site itself is working fine, some of the child site is not (all pages). 
+i have also checked it on crxde, the sling:vanitypath is storing the correct value. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5543379-1263866</DOCNO>
+<TEXT>
+<subject>How to store a value as Double using dialog?</subject>
+<post author="karan131" timestamp="Jul 27, 2013 5:13 AM">
+<s>hi, 
+</s><s>i want to store some values as double/long instead of string while using dialog. 
+i have used numberfield xtype also but it also stores data as string in the crx which hampers my sorting while searching any data. 
+</s><s>is there a way to store numbers as double/long? 
+</s><s>thanks, karan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5543379-5546036</DOCNO>
+<TEXT>
+<subject>How to store a value as Double using dialog?</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:35 PM">
+<s>pass a hidden variable with @typehint as the data type you want. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540080-1263043</DOCNO>
+<TEXT>
+<subject>Select Locations on map</subject>
+<post author="Padde1313" timestamp="Jul 26, 2013 2:49 AM">
+<s>hello, 
+</s><s>i would like to integrate a google map, where you can select your location/town, select a circuit and a division to find the nearest distributor. 
+</s><s>similar to this: 
+to maintain the backend you should just have to insert some locations and it will find coordinates on the map itself.</s><s> is there already a tool/plugin/code which can do this? 
+</s><s>thanks 
+</s><s>edit: of course it should also show some more information like phone etc. by clicking on the map. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540080-5546034</DOCNO>
+<TEXT>
+<subject>Select Locations on map</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:34 PM">
+<s>see if below oob option helps 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5537096-1262360</DOCNO>
+<TEXT>
+<subject>Can the Workflow Model Options in the sidekick be site specific</subject>
+<post author="jnyyy" timestamp="Jul 25, 2013 4:25 AM">
+<s>hi, 
+</s><s>do anyone know if the workflow options in the sidekick can be site specific or not?</s><s> potentially using tag in the model?</s><s> thanks.</s><s> 
+</s><s>johnny 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5537096-5546032</DOCNO>
+<TEXT>
+<subject>Can the Workflow Model Options in the sidekick be site specific</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:33 PM">
+<s>out of the box not possible & you need to custamize.</s><s> currently only those workflows appear in the workflow drop-down in the sidekick that have the "tags" property (inside model/metadata) value to either blank(no value) or "wcm".</s><s> you need to custamize to have logic for template/site specific. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5535851-1262011</DOCNO>
+<TEXT>
+<subject>DAM Cache</subject>
+<post author="Prem Pratick Kumar" timestamp="Jul 24, 2013 3:00 PM">
+<s>in our environment, after content update , the stuff(pdf/ppt) in cache is not getting invalidated.</s><s> and thus we are ending up with old content(pdf/docx).</s><s> and to work around this we end up clearing the dispatcher cache manually everytime.</s><s> what could be the issue and where do i look at ? 
+i have checked the below articles 
+https://dev.day.com/docs/en/cq/current/deploying/dispatcher/page_inval idate.html http://helpx.adobe.com/cq/kb/howtoflushassetspublish.html 
+thanks, prem pratick kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5535851-5546031</DOCNO>
+<TEXT>
+<subject>DAM Cache</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:32 PM">
+<s>first look at dispatcher log if invalidate request is coming?</s><s> if so verify the path & fix the issue accordingly.</s><s> if request is not reaching dispatcher verify launcher configuration & workflow why it is failing or not trigeering.</s><s> the article you mentioned is write one & will work if you configured everything correctly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5532863-1261289</DOCNO>
+<TEXT>
+<subject>Rich Text Editor - Saving encoded characters</subject>
+<post author="puuchyng" timestamp="Jul 23, 2013 6:45 PM">
+<s>hi all, 
+</s><s>i am using cq5.5 sp2.1.</s><s> the problem faced is that on ie8 western european (windows) encoding, special characters do not display correctly.</s><s> however, using html encoded version of the special character will display correctly, i.e. using &pound; instead of £. 
+</s><s>however, on the richtext editor in source edit, the &pound; gets converted to £ upon save, and is saved and rendered as £ instead of &pound;.</s><s> is there a way to remove the conversion upon save? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5532863-5546028</DOCNO>
+<TEXT>
+<subject>Rich Text Editor - Saving encoded characters</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:31 PM">
+<s>if you are accessing author instance through dispatcher.</s><s> make sure encoding is set properly in the web server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5518538-1257782</DOCNO>
+<TEXT>
+<subject>Adobe Analytics and Test & Target integration</subject>
+<post author="rush_pawan" timestamp="Jul 18, 2013 2:26 PM">
+<s>hi, 
+</s><s>i need suggestion on how i can leverage user behavior on site (tracking the path user accessed) to target the content on page.</s><s> one option i can think of to use adobe analytics to capture the path information (tracking) and test & target to configure with cq for segmentation and personalized content, but i am not sure how to connent analytics with test & target so that this information will be used to resolved the segment (or personalized content - i think here i am missing something) 
+</s><s>any suggestion will be appreciated. 
+</s><s>thanks, pawan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5518538-5524058</DOCNO>
+<TEXT>
+<subject>Adobe Analytics and Test & Target integration</subject>
+<post author="Sham%20HC" timestamp="Jul 20, 2013 7:34 PM">
+<s>in 5.6 take a look at commerce component last viewed product.</s><s> though it does not use analytics 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5518538-5529586</DOCNO>
+<TEXT>
+<subject>Adobe Analytics and Test & Target integration</subject>
+<post author="rush_pawan" timestamp="Jul 22, 2013 9:00 PM">
+<s>hi sham, 
+</s><s>thanks for response.</s><s> actually we are using 5.5 and i went through the document around it and it seems like the component is completely ecommerce compoenent which is not our requirement.</s><s> i want to display personalized content but based on user profile and click information.</s><s> if you can give some more direction will be helpful.</s><s> as of now i am planning to do a poc via using site catalyst and t&t (not sure how long it will go ) 
+</s><s>thanks, pawan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5518538-5538845</DOCNO>
+<TEXT>
+<subject>Adobe Analytics and Test & Target integration</subject>
+<post author="rush_pawan" timestamp="Jul 25, 2013 1:26 PM">
+<s>hi sham, 
+</s><s>i searched for other integration options and find out "adobe audience manager".</s><s> want to know wheather it will help me to achieve above requirement?</s><s> and do i only require this to be integrated in cq or something else?</s><s> please advise. 
+
+</s><s>thanks, pawan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5518538-5546027</DOCNO>
+<TEXT>
+<subject>Adobe Analytics and Test & Target integration</subject>
+<post author="Sham%20HC" timestamp="Jul 28, 2013 3:31 PM">
+<s>hi pawan, 
+</s><s>looks like aam might work.</s><s> i haven't used aam [1] & have limited knowledge. 
+</s><s>with commerce, in your cart items make total costs between 75 to 100$.</s><s> then go to any product page & do not add into cart.</s><s> go back to your cart you will see the last viewed product in the banner. 
+</s><s>at high level path is stored in client context.</s><s> in carts page teaser is configured with cq for segmentation and personalized content.</s><s> it matches what you are looking.</s><s> however i haven't get chance to look into implementation. 
+[1] http://dev.day.com/docs/en/cq/current/administering/integrating_with_a dobe_marketing_cloud/audiencemanager.html 
+thanks, sham 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-1042245</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="stewa52" timestamp="Jul 30, 2012 12:21 PM">
+<s>how do you change the base url so that /content/geometrixx/en does not show up in the url?</s><s> if www.geometrixx.com was the url how do you make it so that /conent/geometrixx/en does not show up in the url for the homepage? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4588099</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="orotas" timestamp="Jul 30, 2012 1:29 PM">
+<s>this shows you how to do it using just the jcr resource resolver setting http://dev.day.com/content/kb/home/cq5/development/how%20to%20configur e%20link%20rewriting.html. 
+</s><s>this is documentation on the more complex /etc/map approach https://cwiki.apache.org/sling/flexible-resource-resolution.html.</s><s> this will allow you to apply rules differently based on host name which you can't do with jcr resource resolver. 
+</s><s>you can combine either approach with using apache mod_rewrite to do the incoming rewrites (which has the approach of ensuring that the content is cached with it's full url in case you are want to use a single dispatcher to front for multiple web sites). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4629583</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="stewa52" timestamp="Aug 17, 2012 1:03 PM">
+<s>using teh jcr resource resolver i can get it so the /content/site/en/ is stripped out, but i still have to go to en.html for the homepage.</s><s> how can i get the homepage to act like a index.html file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4629671</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="stewa52" timestamp="Aug 17, 2012 2:01 PM">
+<s>also, once you change it so cq is mapping the url to pull out the /content/site/en, how do you configure the dispatcher? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4630101</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Rajesh.wdc" timestamp="Aug 17, 2012 4:46 PM">
+<s>easiest way would be to put a '/' in the "vanity url" field of "basic" tab on "page properties" of your home page 
+you can configure a list of such varity url's for each of your pages 
+like 
+www.geometrixx.com can be made to show en.html www.geometrixx.com/en can also be made to show en.html and so on. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4630244</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="orotas" timestamp="Aug 17, 2012 6:09 PM">
+<s>the problem with use a vanity url for this and striping it out in the resource resolver is that the request won't get cached by dispatcher (and it's probably one of you most highly trafficed sites so you want it to get cached by dispatcher. 
+i have found that it's best to use your web server tier for this kind of mapping.</s><s> if you are using apache you can set up mod_rewrite to do a rewrite of / to /en.html and the change will be transparent to the end user, but dispatcher will think the request is for en.html and will cache the page appropriately.</s><s> if you just pass / to dispatcher it won't cache the response. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4634442</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="stewa52" timestamp="Aug 20, 2012 11:48 AM">
+<s>if you have two sites, a mobile and desktop, how could you setup so that the /content//en does not show up?</s><s> if i change the mapping on the resource resolver then the mobile site links will just resolve to the desktop site. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4634470</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="orotas" timestamp="Aug 20, 2012 11:54 AM">
+<s>how do you currently distingush between your desktop site and your mobile site?</s><s> is it based on host name? 
+</s><s>if you have two different sites that are distingushed by host name you can't solve that problem with the jcr resource resolver.</s><s> you have two choices: use apache mod_rewrite to do the rewrites at the apache layer.</s><s> with mod_rewrite you can use the host name as part of your rule definition and map the host names to the correct paths.</s><s> use the /etc/map approach to configuring the resource resolver - you can see that documentation at https://cwiki.apache.org/sling/flexible-resource-resolution.html- this will allow you to configure different resource resolution based on request data. 
+</s><s>paul mcmahon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4643974</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="stewa52" timestamp="Aug 23, 2012 3:26 PM">
+<s>using /etc/map, i can replace the incoming requests to insert a /content/<sitename>/en, but what about the urls that are rendered in the html?</s><s> those urls will still have the /content/<sitename>/en.</s><s> do i still have to use the jcr resource rsolver to truncate the urls rendered in the html? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4644396</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Yogesh%20Upadhyay" timestamp="Aug 23, 2012 8:41 PM">
+<s>links on page also get resolve using /etc/map entry (unless link rewriter is disabled or those links in overriding pattern of link checker confguration).</s><s> you don't have to do any special configuration. 
+</s><s>yogesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4759229</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Tomalec%20W" timestamp="Oct 8, 2012 3:55 PM">
+<s>i set up /etc/map correctly (as far as i can read from /system/console/jcrresolver mapping map entries shows: ^/content/myapp/en/ http://localhost:8502/en-us/ external: 302 link checker transformer is enabled, but still i get <a href="/content/myapp/en/page.html">link</a>   so if there is no special configration needed, what am i doing wrong?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-4830579</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="C%20F%209" timestamp="Nov 7, 2012 11:37 AM">
+<s>hi - did you solve this issue?</s><s> and if so how please? 
+i have the same issue with url mapping set for example: /content/xyzzy/en_us:/en_us and maps fine on way in but doesn't work on way out. 
+</s><s>also the only other issue is the package manger link on the main page doesn't link and i wondered if this was a link that was supposed to be rewritten on the way out but was not. 
+</s><s>thank you very much, c 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-5545372</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Chandra%20gupta" timestamp="Jul 28, 2013 9:22 AM">
+<s>i am able to shorten url in combination with apache and /etc/map/http cq... and it works very well with http schema (non-secure).</s><s> but same shortened url not working with https (secure) ...</s><s> now you may ask https is configured on apache and cq....so to reply on this... yes...it's configured and in fact complete url works with https. 
+any speacial treatment for https to work?</s><s>?</s><s>?</s><s>... in fact shortned url does not work on cq level itself. my sling mtach is like this "qa.abc.com/abc" and internalredirect is like this /content/abc/en.html. 
+
+entry is made in /etc/map/http/localhost_any. 
+</s><s>please share your thoughts. 
+</s><s>thanks chandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-5545504</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Rajesh.wdc" timestamp="Jul 28, 2013 10:52 AM">
+<s>hi chandra, 
+</s><s>you would have created redirections under /etc/map/http.</s><s> you will also have to create same redirections under /etc/map/https too. 
+</s><s>regards rajesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-5545728</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Chandra%20gupta" timestamp="Jul 28, 2013 12:26 PM">
+<s>hey rajesh, 
+</s><s>thamks, it works, unfortunately, its not mentioned anywhere in adobewiki/ doc. 
+</s><s>thanks chandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4587936-5545732</DOCNO>
+<TEXT>
+<subject>Change the URL path for CQ?</subject>
+<post author="Chandra%20gupta" timestamp="Jul 28, 2013 12:36 PM">
+<s>i am glad about dispatcher caching as well ...cache folder got created under ihs cache directory in shortened url manner and i thought this is different than actul crx strcuture and cache would not be flushed but i was proved wrong and flush works 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533522-1261425</DOCNO>
+<TEXT>
+<subject>Handling Post requests to update node content</subject>
+<post author="krisgumm" timestamp="Jul 24, 2013 1:57 AM">
+<s>hi ,     i'm pretty new to cq5 and trying to handle http post request with my component .  my directory structure is   /apps/training/components/page/trainingpage/trainingpage.jsp   /apps/training/components/page/trainingpage/trainingpage.post.jsp   in my trainingpage.jsp ,   i have following   <form action="<%currentnode.getpath();%>.html" method="post" enctype="multipart/form-data">     <input type="text" name="name" /><br />     <input type="text" name="address" /><br />    <input type="submit" id="submit" value="submit" title="submit" />  </form>    </html>   when ever i submit this form  , i receive status 200 message with following and the properties gets appended at the root 'content ' and not at 'content\trainingsite'   status 200 message ok location /content parent location / path /content referer http://localhost:4502/content/trainingsite.html changelog <pre>modified("/content/name");<br/></pre>   my assumtion is that the action url to my custom jsp is not being resolved and the default post servelt might be getting called which is updating the properties at the root content in the repository .</s><s> i have even tried this case with updating my custom jsp file name from trainingpage.post.jsp to post.jsp but it's still the same .   the node path and resource path are returning as expected                             node path :          /content/trainingsite/jcr:content                                                                                                                                                        resource path :     /content/trainingsite/jcr:content   any pointers for any missing links ?</s><s> thanks for your help .   cheers
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5533522-5544501</DOCNO>
+<TEXT>
+<subject>Handling Post requests to update node content</subject>
+<post author="msulliva" timestamp="Jul 27, 2013 6:56 PM">
+<s>this should work, perhaps it's that <%currentnode.getpath();%> doesn't output anything in your form action (to output use <%= property %> without the semicolon instead of the scriptlet <% %> which just evaluates the contents instead of outputing), it seems cq inserts a parent there in the action for some reason, in your case /content, so your form is posting to /content which isn't where your post.jsp is located.</s><s> the path you really probably want is to post directly to your component, which would look something like /content/trainingsite/_jcr_content.html which would be output by <%= currentnode.getpath() %>.html, i used the ${currentnode.path} / ${currentpage.path} el syntax in my example because i think it's cleaner looking and avoids the scriptlet confusion. 
+</s><s>that said, why not just use the sling post servlet [1] which will save the contents of the form and use the redirect option to avoid the standard sling output (note the ./ prefix to the property names, this tells the post servlet to store that value at wherever your form action is posting to): 
+<%@include file="/libs/foundation/global.jsp"%> <%@page session="false"%> <h1>hello ${properties.name}</h1> <p>from: ${properties.address}</p> <form action="${currentnode.path}.html" method="post" enctype="multipart/form-data"> <input type="text" name="./name" value="${properties.name}" placeholder="name" /><br /> <input type="text" name="./address" value="${properties.address}" placeholder="address" /><br /> <input type="hidden" name=":redirect" value="${currentpage.path}.html" /> <input type="submit" id="submit" value="submit" title="submit" /> </form> 
+[1] http://sling.apache.org/site/manipulating-content-the-slingpostservlet -servletspost.html#manipulatingcontent-theslingpostservlet%2528servlet s.post%2529-%257b%257b%253aredirect%257d%257dhttp://sling.apache.org/site/manipulating-content-the-slingpostservlet -servletspost.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5543160-1263803</DOCNO>
+<TEXT>
+<subject>How  to exclude a page path in Query?</subject>
+<post author="karan131" timestamp="Jul 27, 2013 1:45 AM">
+<s>hi, 
+</s><s>i am trying to exclude certain path from a query. 
+i can't do it in the indexing configuration as i need this path at certain other positions as well. 
+i know there can be workarounds like creating a property on the page and using the property predicates i can exclude this page in my query.</s><s> but is there any simpler way of achieving this? 
+</s><s>regards, karan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5492686-1251697</DOCNO>
+<TEXT>
+<subject>How to create the query with multiple node types</subject>
+<post author="nidleksrao" timestamp="Jul 10, 2013 8:50 AM">
+<s>hi, 
+</s><s>i am having an issue in creating a query to search multiple node types. 
+</s><s>the requirement is to query documents/pages of the type dam:asset and cq:page present under a path. 
+i tried the following code snippet with no luck . 
+path=/content 1_type=cq:page 2_type=dam:asset property=jcr:content/metadata/@cq:tags property.1_value=<tag name> 
+i was able to write a query with single type.</s><s> however i could not find any documents/ materials with multipe types as shown above. 
+</s><s>thanks in advance. 
+</s><s>regards sudhi 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5492686-5492757</DOCNO>
+<TEXT>
+<subject>How to create the query with multiple node types</subject>
+<post author="Yogesh%20Upadhyay" timestamp="Jul 10, 2013 9:26 AM">
+<s>i don't think multiple type is possible.</s><s> instead use super type like nt:base that will cover both page and asset. 
+</s><s>yogesh www.wemblog.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5492686-5492974</DOCNO>
+<TEXT>
+<subject>How to create the query with multiple node types</subject>
+<post author="nidleksrao" timestamp="Jul 10, 2013 10:19 AM">
+<s>thanks yogesh.</s><s> this helped.</s><s> its working now. 
+</s><s>regards sudhi 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5492686-5543098</DOCNO>
+<TEXT>
+<subject>How to create the query with multiple node types</subject>
+<post author="karan131" timestamp="Jul 27, 2013 1:32 AM">
+<s>multiple node types are not present in query builder but you can use property predicates on "jcr:primarytype" property and do the same. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5537691-1262455</DOCNO>
+<TEXT>
+<subject>EN column in CQ5 Language Traslation missing</subject>
+<post author="Chandra gupta" timestamp="Jul 25, 2013 7:30 AM">
+<s>just curious to know why en column is not availble as default in translation console.</s><s> how content author maintain english text/data for the same.</s><s> i believe string-column (first is key)...</s><s> please advice.</s><s> thanks chandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5537691-5539185</DOCNO>
+<TEXT>
+<subject>EN column in CQ5 Language Traslation missing</subject>
+<post author="justin_at_adobe" timestamp="Jul 25, 2013 3:10 PM">
+<s>chandra- resourcebundle objects provided sling i18n differ from the jre implementations in that the key is returned as the message when no message exists.</s><s> in other words, the key is the default message.</s><s> this means that separate english messages do not need to be provided - they are the key. 
+</s><s>you obviously can use sling i18n with en resource bundles, but it isn't done that way in aem/cq.</s><s> see http://bit.ly/13ffzst for documentation on how to change the languages available in that grid. 
+</s><s>justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5537691-5542949</DOCNO>
+<TEXT>
+<subject>EN column in CQ5 Language Traslation missing</subject>
+<post author="Chandra%20gupta" timestamp="Jul 26, 2013 8:50 PM">
+<s>make sense justin..i am able to proceed now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5541752-1263475</DOCNO>
+<TEXT>
+<subject>CQ and J2EE application integration</subject>
+<post author="karanmahi" timestamp="Jul 26, 2013 11:02 AM">
+<s>there is a jsp-servlets j2ee application(ecommerce web site) which is deployed on tomcat.</s><s> now my requirement is to integrate this j2ee application with day cq to display contents related static pages.</s><s> with hybrid approach, where we maintain all the content related stuffs in cq and dynamic pages(ecommerce like checkout) in j2ee container, i have following challenges - how could we use the apache server to go back and forth between cq and j2ee container using redirection.</s><s> apache would be the front container for all the request and depending on the rewrite rules it would forward the request to either cq or j2ee container ?</s><s> any example of this would be helpful.</s><s> since cq does not provide ootb session feature, how should i do the session management across cq and j2ee container.</s><s> i mean when i go back and forth between cq and j2ee container. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540791-1263176</DOCNO>
+<TEXT>
+<subject>When is the copy in manuscripts activated?</subject>
+<post author="rod.lehman" timestamp="Jul 26, 2013 6:32 AM">
+<s>manuscripts apparently do not have any sort of activation feature.</s><s> are they automatically activated every time someone makes an update?</s><s> or, is the copy made live only when the page with the article containing the mansucript is activated? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540791-5541225</DOCNO>
+<TEXT>
+<subject>When is the copy in manuscripts activated?</subject>
+<post author="rod.lehman" timestamp="Jul 26, 2013 8:20 AM">
+<s>my mistake.</s><s> manuscripts cannot be activated from the new manuscript console, but they can be activated from the dam like other dam content. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5540440-1263096</DOCNO>
+<TEXT>
+<subject>Handling custom (localized) error pages</subject>
+<post author="RNI76" timestamp="Jul 28, 2013 11:59 PM">
+<s>on our site, we'd like to be able to maintain and serve custom/localized error pages in the end-users' own language rather than just a standard customized page like /apps/sling/servlet/errorhandler/404.jsp. 
+</s><s>right now, we're storing these localized pages as /content/<country>/<language>/errors/<errorcode>.html (e.g. /content/be/nl/errors/404.html), allowing editors to maintain them. 
+</s><s>normally, it wouldn't be hard to find and serve the correct page.</s><s> you could just serve http://www.mysite.com/content/gb/en/errors/404.html if the users tries to fetch the non-existing page http://www.mysite.com/content/gb/en/invalidpage.html. 
+</s><s>the problem is that we've got an apache server doing rewriting in front of cq like this: 
+/content/gb/en/products.html -> gb.mysite.com/products.html 
+- so when trying to determine which page to serve to the user, we use hard-coded reverse mappings (gb.mysite.com -> /content/gb/en/). 
+</s><s>the thing is, the webmasters need to be able to set up error pages for a new country site without contacting a developer to get the mappings updated. 
+</s><s>but how do i figure out which page to serve without using mappings? 
+</s><s>ideally, i'd like to use a "site setting" per site, allowing the webmaster to define e.g. /content/gb/en/errors as the "base path" for error pages.</s><s> but when all i've got to go on is a request for e.g. http://gb.mysite.com/invalid.html, then all i can do is try to find the nearest correct parent that resolves to a page - which would then be "/".</s><s> i thought i could resolve the full path of this root page to /content/gb/en/, but no luck. 
+</s><s>any ideas on how to handle this?</s><s> any and all suggestions would be most welcome! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-981240</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="giang.phan" timestamp="Mar 27, 2012 9:18 AM">
+<s>we are going to use cq5 as a content platform to be consumed by another service which is the end-point for our users.</s><s> as in we will be providing html for small sections of the front facing websites. 
+</s><s>to alleviate any issues that might come up from this integration, we are going to add a prefix to all our css classes, ids, and put all our javascript in namespaces.</s><s> the problem is the cq:include tag creates a <div> element around the component's jsp code and then adds the component name, super types, and jcr node title as css classes for this div.</s><s> for example: 
+<div class="parbase image tout-image">
+    <img src="..." class="prefix-our-image" />
+</div>
+<div class="subtitle tout-subtitle">
+    <div class="prefix-our-subtitle-div prefix-subtitle">
+        <h2>header subtitle</h2>
+    </div>
+</div> 
+</s><s>is there any way we can change the default behavior of cq5 to prefix the css classes and ids?</s><s> at least in non-edit mode as to not break the author experience as seen by setting cq:nodecoration to true.</s><s> we tried cq:cellname but didn't see that changing anything.</s><s> we are using cq5.4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4294965</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="giang.phan" timestamp="Mar 27, 2012 10:08 AM">
+<s>i was informed these wrapper divs arent generated on publish.</s><s> if this is true then thanks anyway! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4294982</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="G.%20Walt" timestamp="Mar 27, 2012 10:15 AM">
+<s>i don't think that it is possible to add a prefix to the wrapper div element that cq adds. 
+</s><s>you'll need to implement your logic manually, setting the cq:nodecoration=true property to your components, and adding a code like the following to each component: 
+<%@ include file="/libs/foundation/global.jsp" %>
+<%@ page contenttype="text/html; charset=utf-8" import="com.day.cq.wcm.api.wcmmode" %>
+<% 
+string classnames = componentcontext.getcssclassnames();
+if (wcmmode.fromrequest(request) == wcmmode.disabled)
+     classnames = classnames.replaceall("[a-za-z0-9_\\-]+ ?", "prefix-$0");
+%>
+<div class="<%= classnames %>">
+     <%-- component content goes here --%>
+</div> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4294983</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="G.%20Walt" timestamp="Mar 27, 2012 11:07 AM">
+<s>unless you have some specific configuration, these wrappers are also generated on the publish server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4295145</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="giang.phan" timestamp="Mar 27, 2012 11:05 AM">
+<s>walt, 
+</s><s>you are right about publish configurations (still there after testing) and your solution looks like the best.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4295250</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="giang.phan" timestamp="Mar 27, 2012 11:49 AM">
+<s>walt, 
+</s><s>i tried your solution, but it breaks the editing of the component if cq:nodecoration is set to true even though i am generating the div tags with the same css classes around it.</s><s> how does extjs know how to attach to the component for editing? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4296393</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="Shelly%20Goel" timestamp="Mar 27, 2012 10:00 PM">
+<s>hi, 
+</s><s>trying using below code in your component's sript 
+<%@page import="com.day.cq.wcm.api.components.includeoptions"%> <%@page import="com.day.cq.wcm.api.wcmmode"%> <% if (wcmmode.fromrequest(request) != wcmmode.edit && wcmmode.fromrequest(request) != wcmmode.design) { 
+
+</s><s>includeoptions.getoptions(request, true).forcesamecontext( boolean.true); } %> 
+</s><s>thanks shelly 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4297876</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="giang.phan" timestamp="Mar 28, 2012 10:56 AM">
+<s>shelly, 
+</s><s>what does includeoptions.forcesamecontext() exactly do?</s><s> according to java docs it says forces the same edit context for the next included component.</s><s> should i put this in the main page component that includes these smaller components outside the context of the generated <div> decoration? 
+</s><s>right now i am trying a different approach by only including the <div> decoration if edit mode is on in each component's jsp like so: 
+
+<!-- - book keeping stuff defined in our own global jsp files which includes cq5 global --> <%@page import="org.apache.commons.lang.stringutils"%> <c:set var="iseditmode"><%= wcmmode.fromrequest(request) == wcmmode.edit %> </c:set> <c:if test="${iseditmode}"> <div class="<%= stringutils.join(componentcontext.getcssclassnames(), ' ') %>"> </c:if> <!-- component code goes here -->
+
+<c:if test="${iseditmode}">
+</div>
+</c:if> 
+</s><s>what do you think about this approach?</s><s> is there anything wrong with it?</s><s> what will the includeoptions do?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4299502</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="Shelly%20Goel" timestamp="Mar 29, 2012 4:09 AM">
+<s>it is having similar result as the code you have written i.e. it will add the wrapper divs (generated for the component to show edit dialogs etc.</s><s>) only in edit mode.</s><s> its upto you to chose either of the ways. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4301074</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="utrive" timestamp="Mar 29, 2012 2:04 PM">
+<s>hi shelly, i applied your suggestion to my jsp.</s><s> but it still doesn't work.</s><s> i added cq:nodecoration=true & added foll. lines of code to my jsp.</s><s> it dosn't let me edit the component in edit mode. 
+%@page import="com.day.cq.wcm.api.components.includeoptions"%> <%@page import="com.day.cq.wcm.api.wcmmode"%> 
+
+<%-- set vars --%> <c:set var="titlelines" value="<%= properties.get("./titlelines", string[].class) %>" /> <c:if test="${empty titlelines}"> <%-- use page title if no title lines have been set --%> <c:set var="titlelines" value="<%= new string[]{resourcepage.gettitle()} %>" /> </c:if> 
+<%-- component markup --%> <c:if test="${not empty titlelines}"> <header class="${componentname}-component ${componentname}-header ${fn:trim(compclassid)} page-header"> <h1 class="${componentname}-headline page-title"> <c:foreach var="title" varstatus="loop" items="${titlelines}"> <c:if test="${not empty title}"> <span class="${componentname}-line ${componentname}-line-${loop.count} ${namespace}line${loop.count}">${fn:escapexml(title)}</span> </c:if> </c:foreach> </h1> </header> </c:if> 
+<c:if test="${iseditmode}"> ${editcomponenttitlelabel} <c:if test="${empty titlelines}"> ${fn:replace(editcomponenterrorlabel, "{0}", "please specify a title")} </c:if> </c:if> 
+<% 
+if (wcmmode.fromrequest(request) != wcmmode.edit && wcmmode.fromrequest(request) != wcmmode.design) { includeoptions.getoptions(request, true).forcesamecontext(boolean.true); } %> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4301679</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="Shelly%20Goel" timestamp="Mar 29, 2012 9:51 PM">
+<s>you dont have to set cq:nodecoration=true with this code. 
+</s><s>so, if you add this code in your component's script, edit mode will work as normal and in preview mode you will not get the additional markup like 
+<div class="componentname supertypename section"> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4302709</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="utrive" timestamp="Mar 30, 2012 8:38 AM">
+<s>thanks for the reply shelly.   i did removed the nodecoration property & applied your code to jsp but still see,   <div class="title touts-title" data-component-container="true"> in the preview mode.</s><s> we want this to go away in preview.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-4302779</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="utrive" timestamp="Mar 30, 2012 8:47 AM">
+<s>sorry i applied the changes to global component include level & that did it.</s><s> thanks a lot shelly.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-5420635</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="Anup%20Sheth" timestamp="Jun 18, 2013 8:28 AM">
+<s>hi shelly, 
+</s><s>the solution you have suggested only work for the next component that is included.</s><s> if i have more than one component included in the script then it will generate wrapper div for remaining components. 
+</s><s>for code given below 
+<% includeoptions.getoptions(request, true).forcesamecontext(boolean.true); %> <cq:include path="componenet1" resourcetype="/app/content/component1" /> <cq:include path="componenet2" resourcetype="/app/content/component2" /> 
+<div> tags are not generated for component1 but they are for component2.</s><s> as per the api documentation it only forces the same context on next included component. 
+</s><s>is there a way to disable it for all the components that are being included? 
+i am trying to generate xml from the component and div tags are spoiling my work. 
+</s><s>thanks, anup 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-5423394</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="snayakar" timestamp="Jun 18, 2013 4:35 PM">
+<s>hi anup, 
+</s><s>you are are right. the previous code work only for the next component that is included. 
+</s><s>but try this solution: 
+add the below code in to global.jsp, which you include for all the component jsp's. 
+if (wcmmode.fromrequest(request) != wcmmode.edit && wcmmode.fromrequest(request) != wcmmode.design) { includeoptions.getoptions(request, true).forcesamecontext(boolean.true); 
+this will not generate any more extra <div> tags for any number of components you add. 
+</s><s>hope this helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-5424766</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="Anup%20Sheth" timestamp="Jun 19, 2013 1:58 AM">
+<s>hi sanyakar, 
+</s><s>that work like a treat.</s><s> thanks for help. 
+</s><s>anup 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-5495450</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="callmemagnus" timestamp="Jul 11, 2013 3:41 AM">
+<s>i don't get it at all. 
+</s><s>i'm trying to include a component in a foreach loop.</s><s> the components generates json content. 
+i tried: 1) nodecoration, but that breaks the other view of my component (edit mode) 2) the includeoptions trick, but it only works for the first item in my foreach. 
+</s><s>how can i proceed ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-5495571</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="Anup%20Sheth" timestamp="Jul 11, 2013 5:17 AM">
+<s>hi magnus, 
+</s><s>every single component of yours include global.jsp or similar script that makes cq objects available along with inclusion of tag libraries. 
+</s><s>if you put the <%includeoptions.getoptions(request, true).forcesamecontext(boolean.true);%> 
+</s><s>then this code will be included in each and every of your component and hence the generation of extra <div> will be avoided.</s><s> but this has implication in edit mode. 
+</s><s>what i usually do is i create globaljson.jsp and globalxml.jsp for this purpose and create separate renderer xml.jsp and json.jsp in each component. 
+</s><s>include respective global*.jsp in this script.</s><s> this should solve your problem.</s><s> your normal component.jsp will include normal global.jsp and json or xml renderer will included respective global script with above code snippet. 
+</s><s>regards, anup 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4294752-5506130</DOCNO>
+<TEXT>
+<subject>Changing the CQ5 generated div tag around components</subject>
+<post author="callmemagnus" timestamp="Jul 15, 2013 5:07 AM">
+<s>thanks, 
+</s><s>i finally manage to do it by creating a hidden version of the component.</s><s> that version is only used to show this json, therefore i use the nodecoration trick. 
+-- magnus 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-1204604</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="Max_Salah" timestamp="May 3, 2013 9:07 AM">
+<s>i am trying to deploy aem with maven, so i followed this tutorial.</s><s> when i run the command mvn clear package, i get the following error:       c:\workspace\myproject\app>mvn clean package [info] scanning for projects...</s><s> [warning] the pom for com.day.jcr.vault:maven-vault-plugin:jar:0.0.10 is missing , no dependency information available [error] the build could not read 1 project -> [help 1] [error] [error]   the project com.uum:app:1-snapshot (c:\workspace\myproject\app\pom.xml ) has 3 errors [error]     unresolveable build extension: plugin com.day.jcr.vault:maven-vault- plugin:0.0.10 or one of its dependencies could not be resolved: failure to find com.day.jcr.vault:maven-vault-plugin:jar:0.0.10 in http://repo.maven.apache.org/ maven2 was cached in the local repository, resolution will not be reattempted un til the update interval of central has elapsed or updates are forced -> [help 2] [error]     unknown packaging: content-package @ line 12, column 16 [error]     'dependencies.dependency.groupid' for :core:jar is missing. @ line 1 8, column 22 [error] [error] to see the full stack trace of the errors, re-run maven with the -e swit ch.</s><s> [error] re-run maven using the -x switch to enable full debug logging.</s><s> [error] [error] for more information about the errors and possible solutions, please rea d the following articles: [error] [help 1] http://cwiki.apache.org/confluence/display/maven/projectbuildin gexception [error] [help 2] http://cwiki.apache.org/confluence/display/maven/pluginresoluti onexception my myproject/app/pom.xml looks like this:   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <project xmlns="http://maven.apache.org/pom/4.0.0" xmlns:xsi="http://www.w3.org/2001/xmlschema-instance" xsi:schemalocation="http://maven.apache.org/pom/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">     <modelversion>4.0.0</modelversion>     <parent>         <groupid>com.uum</groupid>         <artifactid>parent</artifactid>         <relativepath>../parent/pom.xml</relativepath>         <version>1-snapshot</version>     </parent>     <artifactid>app</artifactid>     <packaging>content-package</packaging>     <name>sample application package</name>     <dependencies>         <dependency>             <groupid><!-- {groupid} --></groupid>             <artifactid>core</artifactid>             <version>${project.version}</version>                               </dependency>         <!-- add additional dependencies -->     </dependencies>     <build>         <resources>             <resource>                 <directory>${basedir}/meta-inf</directory>                 <targetpath>../vault-work/meta-inf</targetpath>             </resource>             <resource>                 <directory>${basedir}/jcr_root</directory>                 <excludes>                     <exclude>**/.vlt</exclude>                     <exclude>**/.vltignore</exclude>                     <exclude>**/*.iml</exclude>                     <exclude>**/.classpath</exclude>                     <exclude>**/.project</exclude>                     <exclude>**/.ds_store</exclude>                     <exclude>**/target/**</exclude>                     <exclude>libs/**</exclude>                 </excludes>             </resource>         </resources>         <plugins>             <plugin>                 <groupid>com.day.jcr.vault</groupid>                 <artifactid>maven-vault-plugin</artifactid>                 <extensions>true</extensions>                 <configuration>                     <group>sample</group>                     <requiresroot>true</requiresroot>                     <install>true</install>                     <verbose>true</verbose>                     <packagefile>${project.build.directory}/${project.artifactid}-${project.version}.zip</packagefile>                     <version>${project.version}</version>                     <properties>                         <achandling>overwrite</achandling>                     </properties>                     <embeddeds>                         <embedded>                             <groupid><!-- {groupid} --></groupid>                             <artifactid>core</artifactid>                             <target><!-- {install path in the repository (e.g. /apps/myproject/install)} --></target>                         </embedded>                     </embeddeds>                 </configuration>             </plugin>         </plugins>     </build>     <profiles>         <profile>             <id>installpackages</id>             <activation>             </activation>             <build>                 <plugins>                     <plugin>                         <groupid>com.day.jcr.vault</groupid>                         <artifactid>maven-vault-plugin</artifactid>                         <executions>                             <execution>                                 <id>install-package</id>                                 <goals>                                     <goal>install</goal>                                 </goals>                             </execution>                         </executions>                     </plugin>                 </plugins>             </build>         </profile>     </profiles> </project> any idea how to get this work?   thanks in advance
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5288649</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="pchamoun" timestamp="May 3, 2013 10:57 AM">
+<s>here is a sample profile from a project i have.</s><s> i know it works.</s><s> i can see the jar under (..\.m2\repository\com\day\jcr\vault\maven-vault-plugin\0.0.6) give that a try: 
+
+<profile> <id>full</id> <activation> <activebydefault>false</activebydefault> </activation> <build> <resources> <resource> <directory>${basedir}/src/main/content/jcr_root</directory> <excludes> <exclude>**/*.vlt/**</exclude> <exclude>**/*.vlt</exclude> <exclude>**/*.ds_store</exclude> </excludes> <targetpath>.</targetpath> </resource> <resource> <directory>${basedir}/src/main/content/meta-inf</directory> <excludes> <exclude>**/*.vlt/**</exclude> <exclude>**/*.vlt</exclude> <exclude>**/*.ds_store</exclude> </excludes> <targetpath>../vault-work/meta-inf</targetpath> </resource> </resources> <plugins> <!-- use the vault plugin to create & install the package --> <plugin> <groupid>com.day.jcr.vault</groupid> <artifactid>maven-vault-plugin</artifactid> <version>0.0.6</version> <extensions>true</extensions> <executions> <execution> <id>create-package</id> <goals> <goal>package</goal> <goal>install</goal> </goals> </execution> </executions> <configuration> <verbose>true</verbose> <embeddeds> <embedded> <groupid>${project.groupid}</groupid> <artifactid>company-core</artifactid> <target>/apps/company/install</target> </embedded> </embeddeds> </configuration> </plugin> </plugins> </build> </profile> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5288695</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="rush_pawan" timestamp="May 3, 2013 10:59 AM">
+<s>hello, 
+</s><s>did you install vault in your day cq?</s><s> which will help to map repositoy system to local file system. http://dev.day.com/docs/en/cq/current/developing/developmenttools/deve loping_with_eclipse.html#installing filevault (vlt) 
+if yes, then can you try to modify your pom.xml to use correct vault plugin 
+instead of this in pom.xml <groupid>com.day.jcr.vault</groupid> <artifactid>maven-vault-plugin</artifactid> <version>0.0.10</version> 
+</s><s>use below (latest) 
+<groupid>com.day.jcr.vault</groupid> <artifactid>content-package-maven-plugin</artifactid> <version>0.0.14</version> 
+and replace it every where in pom.xml 
+i hope above helps you to resolve the issue 
+thanks, pawan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5288652</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="pchamoun" timestamp="May 3, 2013 10:59 AM">
+<s>yes i installed the vault as mentioned in the article. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5289027</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="J%C3%B6rg%20Hoh" timestamp="May 3, 2013 1:58 PM">
+<s>what are you configured plugin repositories?</s><s> have you added the adobe repository like this? 
+<pluginrepositories> <pluginrepository> <id>adobe-public-releases</id> <name>adobe basel public repository</name> <url>http://repo.adobe.com/nexus/content/groups/public</url> <releases> <enabled>true</enabled> <updatepolicy>never</updatepolicy> </releases> <snapshots> <enabled>false</enabled> </snapshots> </pluginrepository> </pluginrepositories> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5290207</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="Max_Salah" timestamp="May 4, 2013 11:38 AM">
+<s>thank you for your replay! 
+i have installed vault in my day cq and modified as u described.</s><s> i get the follwoing errors: <quote>
+<s>c:\workspace\myproject\app>mvn clean package [info] scanning for projects...</s><s> [warning] the pom for com.day.jcr.vault:content-package-maven-plugin:jar:0.0.10 is missing, no dependency information available [error] the build could not read 1 project -> [help 1] [error] [error] the project com.uum:app:1-snapshot (c:\workspace\myproject\app\pom.xml ) has 2 errors [error] unresolveable build extension: plugin com.day.jcr.vault:content-pack age-maven-plugin:0.0.14 or one of its dependencies could not be resolved: failur e to find com.day.jcr.vault:content-package-maven-plugin:jar:0.0.14 in http://re po.maven.apache.org/maven2 was cached in the local repository, resolution will n ot be reattempted until the update interval of central has elapsed or updates ar e forced -> [help 2] [error] unknown packaging: content-package @ line 12, column 16 [error] [error] to see the full stack trace of the errors, re-run maven with the -e swit ch.</s><s> [error] re-run maven using the -x switch to enable full debug logging.</s><s> [error] [error] for more information about the errors and possible solutions, please rea d the following articles: [error] [help 1] http://cwiki.apache.org/confluence/display/maven/projectbuildin gexception [error] [help 2] http://cwiki.apache.org/confluence/display/maven/pluginresoluti onexception 
+</s></quote>
+</s><s>message was edited by: max_salah: error message updated 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5290263</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="Max_Salah" timestamp="May 4, 2013 9:14 AM">
+<s>thank you for your replay! 
+i tried this solution but without success. 
+i have uploaded the project hier, i hope somebody can try it and tell me what did wrong. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5290973</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="mike_ottinger" timestamp="May 4, 2013 7:34 PM">
+<s>have you placed the following in your settings.xml? 
+<profile> <id>adobe-public</id> <activation> <activebydefault>true</activebydefault> </activation> <repositories> <repository> <id>adobe</id> <name>nexus proxy repository</name> <url>http://repo.adobe.com/nexus/content/groups/public/</url> <layout>default</layout> </repository> </repositories> <pluginrepositories> <pluginrepository> <id>adobe</id> <name>nexus proxy repository</name> <url>http://repo.adobe.com/nexus/content/groups/public/</url> <layout>default</layout> </pluginrepository> </pluginrepositories> </profile> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5291332</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="Max_Salah" timestamp="May 5, 2013 5:42 AM">
+<s>thank you for the helpful answer! 
+i tried your profile and i get the following on the console: 
+
+</s><s>c:\workspace\myproject\app>mvn clean package
+[info] scanning for projects...
+[info]
+[info] ------------------------------------------------------------------------
+[info] building sample application package 1-snapshot
+[info] ------------------------------------------------------------------------
+[warning] the pom for com.uum:core:jar:1-snapshot is missing, no dependency info
+rmation available
+[info] ------------------------------------------------------------------------
+[info] build failure
+[info] ------------------------------------------------------------------------
+[info] total time: 0.909s
+[info] finished at: sun may 05 12:53:55 cest 2013
+[info] final memory: 6m/149m
+[info] ------------------------------------------------------------------------
+[error] failed to execute goal on project app: could not resolve dependencies fo
+r project com.uum:app:content-package:1-snapshot: failure to find com.uum:core:j
+ar:1-snapshot in http://repo.adobe.com/nexus/content/groups/public/ was cached i
+n the local repository, resolution will not be reattempted until the update inte
+rval of adobe has elapsed or updates are forced -> [help 1]
+[error]
+[error] to see the full stack trace of the errors, re-run maven with the -e swit
+ch.
+[error] re-run maven using the -x switch to enable full debug logging.
+[error]
+[error] for more information about the errors and possible solutions, please rea
+d the following articles:
+[error] [help 1] http://cwiki.apache.org/confluence/display/maven/dependencyreso
+lutionexception 
+when i have removed the dependency 
+
+<dependencies>
+        <dependency>
+            <groupid>com.uum</groupid>
+            <artifactid>core</artifactid>
+            <version>1-snapshot</version>  
+
+        </dependency> 
+from myproject/app/pom.xml the built works fine.</s><s> my question is, why it couldn't find the core? 
+my myproject/core/pom.xml looks like this: 
+
+<?</s><s>xml version="1.0" encoding="utf-8"?</s><s>>
+</s><s><project xmlns="http://maven.apache.org/pom/4.0.0" xmlns:xsi="http://www.w3.org/2001/xmlschema-instance" xsi:schemalocation="http://maven.apache.org/pom/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelversion>4.0.0</modelversion>
+
+    <parent>
+        <groupid>com.uum</groupid>
+        <artifactid>parent</artifactid>
+        <relativepath>../parent/pom.xml</relativepath>
+        <version>1-snapshot</version>
+    </parent>
+
+    <artifactid>core</artifactid>
+    <packaging>bundle</packaging>
+
+    <name>sample core bundle</name>
+
+    <dependencies>
+        <dependency>
+            <groupid>com.day.cq.wcm</groupid>
+            <artifactid>cq-wcm-api</artifactid>
+        </dependency>
+
+        <!-- add additional dependencies here -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupid>org.apache.felix</groupid>
+                <artifactid>maven-scr-plugin</artifactid>
+            </plugin>
+
+            <plugin>
+                <groupid>org.apache.felix</groupid>
+                <artifactid>maven-bundle-plugin</artifactid>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <bundle-category>hoc</bundle-category>
+                        <include-resource>{maven-resources}</include-resource>
+                        <export-package>com.uum.myproject</export-package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <!-- define deployment steps when installpackages profile is selected -->
+
+        <profile>
+            <id>installpackages</id>
+            <activation>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupid>org.apache.sling</groupid>
+                        <artifactid>maven-sling-plugin</artifactid>
+                        <executions>
+                            <execution>
+                                <id>generate-adapter-metadata</id>
+                                <phase>process-classes</phase>
+                                <goals>
+                                    <goal>generate-adapter-metadata</goal>
+                                </goals>
+                            </execution>
+                            <execution>
+                                <id>install-bundle</id>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project> 
+i did like the explanation in the tutorial but doesn't work 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-5288319-5291837</DOCNO>
+<TEXT>
+<subject>Developing with Maven : [ERROR]     Unresolveable build extension: Plugin com.day.jcr.vault</subject>
+<post author="mike_ottinger" timestamp="May 5, 2013 11:11 AM">
+<s>looking closer at your pom files, i see you're declaring parent poms which will allow for dependency inheritence, etc. but i don't see that you've defined the child poms as modules to the parent, which gives you project aggregation in maven. 
+</s><s>if you place in your parent/pom.xml something like this: 
+<modules> <module>../core</module> <module>../app</module> </modules> 
+i think you'll get closer.</s><s> but you've also got an empty core project which i think maven is going to complain about.</s><s> also, in my opinion the root at myproject/pom.xml and parent/pom.xml are a little redundant.</s><s> consider making the myproject/pom.xml the "true" parent project by copy/pasting the contents of parent/pom.xml into /myproject/pom.xml, remove parent/pom.xml altogether, and then the above module lines would be: 
+<modules> <module>core</module> <module>app</module> </modules> 
+</s><s>hope this helps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-979400</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="pulsar440" timestamp="Aug 13, 2013 12:20 PM">
+<s>how to build a custom multifield component, having a text and a path field in each new entry? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4289665</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="Shelly%20Goel" timestamp="Mar 25, 2012 12:32 AM">
+<s>to achieve the same, please refer to the steps below: within your app project, define a folder called "clientlib".</s><s> create a text files called "js.txt" and specify the name of the js file which holds the custom xtype definition.</s><s> example: #base=js custompathfield.js define your js file which extends cq.form.compositefield and specify attributes required for the custom type.</s><s> here is an example for the same: /** * @class cq.custompathfieldwidget * @extends cq.form.compositefield * this is a custom path field with link text and target * @param {object} config the config object */ /** * @class ejst.customwidget * @extends cq.form.compositefield * this is a custom widget based on {@link cq.form.compositefield}. * @constructor * creates a new customwidget. * @param {object} config the config object */ cq.custompathfieldwidget = cq.ext.extend(cq.form.compositefield, { /** * @private * @type cq.ext.form.textfield */ hiddenfield: null, /** * @private * @type cq.ext.form.textfield */ linktext: null, /** * @private * @type cq.ext.form.textfield */ linkurl: null, /** * @private * @type cq.ext.form.checkbox */ openinnewwindow: null, /** * @private * @type cq.ext.form.formpanel */ formpanel: null, constructor: function (config) { config = config || {}; var defaults = { "border": true, "labelwidth": 75, "layout": "form" //"columns":6 }; config = cq.util.applydefaults(config, defaults); cq.custompathfieldwidget.superclass.constructor.call(this, config); }, //overriding cq.ext.component#initcomponent initcomponent: function () { cq.custompathfieldwidget.superclass.initcomponent.call(this); // hidden field this.hiddenfield = new cq.ext.form.hidden({ name: this.name }); this.add(this.hiddenfield); // link text this.add(new cq.ext.form.label({ cls: "customwidget-label", text: "link text" })); this.linktext = new cq.ext.form.textfield({ cls: "customwidget-1?, fieldlabel: "link text: ", maxlength: 80, maxlengthtext: "a maximum of 80 characters is allowed for the link text.", allowblank: true, listeners: { change: { scope: this, fn: this.updatehidden } } }); this.add(this.linktext); // link url this.add(new cq.ext.form.label({ cls: "customwidget-label", text: "link url" })); this.linkurl = new cq.form.pathfield({ cls: "customwidget-2?, fieldlabel: "link url: ", allowblank: false, width: 225, listeners: { change: { scope: this, fn: this.updatehidden }, dialogclose: { scope: this, fn: this.updatehidden } } }); this.add(this.linkurl); // link openinnewwindow this.openinnewwindow = new cq.ext.form.checkbox({ cls: "customwidget-3?, boxlabel: "new window", listeners: { change: { scope: this, fn: this.updatehidden }, check: { scope: this, fn: this.updatehidden } } }); this.add(this.openinnewwindow); }, processinit: function (path, record) { this.linktext.processinit(path, record); this.linkurl.processinit(path, record); this.openinnewwindow.processinit(path, record); }, setvalue: function (value) { var link = json.parse(value); this.linktext.setvalue(link.text); this.linkurl.setvalue(link.url); this.openinnewwindow.setvalue(link.openinnewwindow); this.hiddenfield.setvalue(value); }, getvalue: function () { return this.getrawvalue(); }, getrawvalue: function () { var link = { "url": this.linkurl.getvalue(), "text": this.linktext.getvalue(), "openinnewwindow": this.openinnewwindow.getvalue() }; return json.stringify(link); }, updatehidden: function () { this.hiddenfield.setvalue(this.getvalue()); } }); cq.ext.reg('mypathfield', cq.custompathfieldwidget);   so, once we have defined that, it's time to use in your component here is snippet from dialog.xml from component:   <linkspanel jcr:primarytype="cq:panel" border="false" height="" title="links" width=""> < items jcr:primarytype="cq:widgetcollection"> < links jcr:primarytype="cq:widget" fielddescription="press + to add more links" fieldlabel="links" hidelabel="true" name="./links" width="1000" xtype="multifield"> <fieldconfig jcr:primarytype="cq:widget" xtype="mypathfield"/> < listeners jcr:primarytype="nt:unstructured" /> < /links> < /items> < /linkspanel>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4293357</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="aklimets" timestamp="Mar 26, 2012 3:49 PM">
+<s>storing the objects as json strings in the multifield array works, but is not so nice, as reading the content (e.g. in the rendering jsp) requires parsing of json and searching for individual properties won't work. 
+</s><s>in general, for cases of multiple objects (instead of a simple array of individual values, for which the multifield and the jcr multi-value property is made for), i suggest to use parsys + individual components.</s><s> see also my reply on the day-communique google group. 
+</s><s>cheers, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4293657</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="Shelly%20Goel" timestamp="Mar 26, 2012 8:24 PM">
+<s>hi aklimets, 
+</s><s>the link you provided dosnt work, can you please check? 
+</s><s>thanks shelly 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4294154</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="aklimets" timestamp="Mar 27, 2012 3:26 AM">
+<s>sorry, the forum editor mixed it up.</s><s> here is the real link: 
+http://groups.google.com/group/day-communique/browse_thread/thread/ce8 ed133e677199/8a4db06d00b5e972?lnk=gst&q=compositefield#8a4db06d00b5e97 2 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4294206</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="Shelly%20Goel" timestamp="Mar 27, 2012 4:52 AM">
+<s>hi, 
+</s><s>that's a good way.</s><s> however, i am still not clear how to resolve the value not binding issue.</s><s> also, if the multifield is an array of name & title, how will we get the values of name & title for multifield[0] and so on. 
+</s><s>thanks shelly 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4332833</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="angerwin" timestamp="Apr 13, 2012 8:28 AM">
+<s>hi, ive got the same requirement. 
+i've come up with following dialog structure which works fine at the first look.</s><s> the values are stored correctly ( path and label have the type string[] ) and my i am able to create link with my jsp.</s><s> the only problem is that the values are not shown in the dialog when i want to edit them.</s><s> the second problem is that the move-up and move-down buttons doesn't work, although the delete-button works fine. 
+</s><s>does anybody does know a solution to that? 
+
+<?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primarytype="cq:dialog" title="textlinklist" xtype="tabpanel"> <items jcr:primarytype="cq:widgetcollection"> <static jcr:primarytype="cq:widget" title="text link list" xtype="panel"> <items jcr:primarytype="cq:widgetcollection"> <list jcr:primarytype="cq:widget" fielddescription="click the '+' to add a new textlink" hidelabel="true" xtype="multifield"> <fieldconfig jcr:primarytype="cq:widget" xtype="compositefield"> <items jcr:primarytype="cq:widgetcollection"> <label jcr:primarytype="cq:widget" name="./label" xtype="textfield"/> <path jcr:primarytype="cq:widget" name="./path" xtype="pathfield"/> </items> </fieldconfig> </list> </items> </static> </items> </jcr:root> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4345397</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="aklimets" timestamp="Apr 18, 2012 4:57 PM">
+<s>please read the above comments carefully.</s><s> the normal multifield is an array of *primitive* values (e.g. strings).</s><s> it is not an array of *objects*. 
+</s><s>the above cq.custompathfieldwidget from shelly puts objects into an array of strings by encoding the objects as json string.</s><s> this can work, but i wouldn't really recommend it as i noted above. 
+@shelly: i guess the problem you mention is what i meant: if you want to read those objects in the jsp, you also have to parse the json strings there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4286347-4712917</DOCNO>
+<TEXT>
+<subject>How to build a custom multifield component?</subject>
+<post author="A_Fejer" timestamp="Sep 20, 2012 2:07 AM">
+<s>hi everyone.   i have also spent some time trying to built a custom extjs dialog that has a multifield with a textfield and a pathfield with the help of the "using extjs widgets" examples from the package share.   my problem is that the example saves the values in a stringarray (string[]) with a seperator character and the user can mess up the input by typing that seperator character.</s><s> i have tried to alter my code to use json like shelly suggested, but it didn't work and i got following error message in firebug: "uncaught exception: cannot create component: xtype 'ejstcustom' not found and no default supplied."   is there some way to save the values in a child-node of the component node in separate properties instead of the string[]?   here's my code: ejst.customwidget = cq.ext.extend(cq.form.compositefield, {       /**      * @private      * @type cq.ext.form.textfield      */     hiddenfield: null,       /**      * @private      * @type cq.ext.form.textfield      */     namefield: null,       /**      * @private      * @type cq.ext.form.pathfield      */     linkpathfield: null,         constructor: function(config) {         config = config || { };         var defaults = {             "border": false,             "layout": "table",             "columns":2         };         config = cq.util.applydefaults(config, defaults);         ejst.customwidget.superclass.constructor.call(this, config);     },       // overriding cq.ext.component#initcomponent     initcomponent: function() {         ejst.customwidget.superclass.initcomponent.call(this);           this.hiddenfield = new cq.ext.form.hidden({             name: this.name         });         this.add(this.hiddenfield);           this.namefield= new cq.ext.form.textfield({             cls:"ejst-customwidget-2",             listeners: {                 change: {                     scope:this,                     fn:this.updatehidden                 }             }         });         this.add(this.namefield);           this.linkpathfield= new cq.form.pathfield({             rootpath: "/content",             predicate: "nosystem",             showtitlesintree: true,             allowblank: false,             listeners: {                 change: {                     scope:this,                     fn:this.updatehidden                 },                 dialogclose : {                     scope:this,                     fn:this.updatehidden                 }             }                     });         this.add(this.linkpathfield);       },         processinit: function (path, record) {         this.namefield.processinit(path, record);         this.linkpathfield.processinit(path, record);     },       // overriding cq.form.compositefield#setvalue      setvalue: function (value) {         var parts = value.split("|");         this.namefield.setvalue(parts[0]);         this.linkpathfield.setvalue(parts[1]);         this.hiddenfield.setvalue(value);     },       // overriding cq.form.compositefield#getvalue     getvalue: function() {         return this.getrawvalue();     },       getrawvalue: function () {         return this.namefield.getvalue() + "|" +                this.linkpathfield.getvalue();     },       // private     updatehidden: function() {         this.hiddenfield.setvalue(this.getvalue());     }   });   // register xtype cq.ext.reg('ejstcustom', ejst.customwidget); edit: here is my dialog.xml:     <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"     jcr:primarytype="cq:dialog"     warnifmodified="{boolean}false"     xtype="dialog">     <items         jcr:primarytype="cq:widget"         xtype="tabpanel">         <items jcr:primarytype="cq:widgetcollection">             <first                 jcr:primarytype="cq:widget"                 title="multi-field"                 xtype="panel">                 <items jcr:primarytype="cq:widgetcollection">                     <multi                         jcr:primarytype="cq:widget"                         fieldlabel="multi-field"                         hidelabel="{boolean}true"                         name="./multi"                         xtype="multifield">                         <fieldconfig                             jcr:primarytype="nt:unstructured"                             xtype="ejstcustom"/>                     </multi>                 </items>             </first>         </items>     </items> </jcr:root>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4309935-984560</DOCNO>
+<TEXT>
+<subject>Where can i download the ADOBE CQ5?</subject>
+<post author="narum16" timestamp="Apr 3, 2012 3:42 AM">
+<s>hi guys, 
+</s><s>where can i download the adobe cq5?</s><s> where can i find cq5 tutorials. 
+</s><s>thanks a' run 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4309935-4309971</DOCNO>
+<TEXT>
+<subject>Where can i download the ADOBE CQ5?</subject>
+<post author="ravindrareddydr" timestamp="Apr 3, 2012 4:35 AM">
+<s>you can find download links here.</s><s> but only authorizable clients are allowed to download 
+http://www.day.com/daycare.html 
+you can good tutorial one only best place is day docs 
+http://dev.day.com 
+you can download opensource crx 
+http://dev.day.com/microsling/content/blogs/main/downloads.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4309935-4310413</DOCNO>
+<TEXT>
+<subject>Where can i download the ADOBE CQ5?</subject>
+<post author="smacdonald2008" timestamp="Apr 3, 2012 8:35 AM">
+<s>there are different blogs that internal adobe employees create.</s><s> here are a few of them: 
+http://scottsdigitalcommunity.blogspot.ca/ http://blogs.adobe.com/mtg/ (mind the gap) www.experiencedelivers.com 
+for example - if you are looking at creating an cq project that uses an osgi bunlde, then see: http://scottsdigitalcommunity.blogspot.ca/2012/04/creating-osgi-bundle s-for-adobe-digital.html. 
+
+</s><s>hope this help, thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4309935-4312440</DOCNO>
+<TEXT>
+<subject>Where can i download the ADOBE CQ5?</subject>
+<post author="narum16" timestamp="Apr 4, 2012 6:12 AM">
+<s>hi guys, 
+</s><s>may i know the adobe cq5,5 available in trail versions. if available please send me the links. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4309935-4406367</DOCNO>
+<TEXT>
+<subject>Where can i download the ADOBE CQ5?</subject>
+<post author="Scott%20Brodersen" timestamp="May 14, 2012 12:16 PM">
+<s>this really isn't my area of expertise....but i don't think there is a link to a trial version of cq.</s><s> see the contact us section on the product page: 
+http://www.adobe.com/solutions/digital-marketing/web-experience-manage ment.html 
+fwiw scott 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4309935-5484999</DOCNO>
+<TEXT>
+<subject>Where can i download the ADOBE CQ5?</subject>
+<post author="gitesh_malik" timestamp="Jul 8, 2013 2:09 AM">
+<s>you may try http://cqtrials.corp.adobe.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-980522</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali Vusthipalli" timestamp="Mar 26, 2012 5:56 AM">
+<s>these instructions: http://dev.day.com/docs/en/cq/current/core/administering/ldap_authenti cation.html#switching on ldap authentication does not seem to be updated for 5.5, because the file crx-quickstart\server\etc\ldap_login.conf does not exist(even the server directory does not exist).</s><s> could any one help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4291892</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="hypnotec" timestamp="Mar 26, 2012 7:11 AM">
+<s>see the user comment at the bottom of said documentation page: 
+</s><s>"upgaded a 5.4 instance to 5.5 and ldap does not work right away.</s><s> you need to provide the full path to the ldap_login.conf on the start script." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4291896</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 26, 2012 7:24 AM">
+<s>thanks hypnotec 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4292885</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 26, 2012 12:53 PM">
+<s>also, http://dev.day.com/docs/en/cq/current/core/administering/ldap_authenti cation.html#increase the logging level for ldap to debug.</s><s> i can not find the file:crx-quickstart/server/runtime/0/_crx/web-inf/log4j.xml to debug the ldap issues as server folder does not exist.</s><s> could you help me with this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4292887</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="hypnotec" timestamp="Mar 26, 2012 12:59 PM">
+<s>again, the documentation is outdated. log levels are managed via the system console (e.g. http://localhost:4502/system/console/configmgr). consult the logging docs: http://dev.day.com/docs/en/cq/current/deploying/configure_logging.html - i think they're reasonably up to date for instance, add a logger for the ldap package. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4294350</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 27, 2012 5:56 AM">
+<s>based on the documentation(pasted below), i would need to know the name of the osgi service for ldap logging.</s><s> could you please help with the right name for this?</s><s> specify the osgi services for which the logger is to log messages; for example, all of the following: org.apache.sling org.apache.felix com.day 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4294357</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 27, 2012 6:00 AM">
+<s>is this: com.day.crx.security.ldap.ldaploginmodule the right one? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4294298</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="hypnotec" timestamp="Mar 27, 2012 6:00 AM">
+<s>it is the java package name of the login module as referenced in your jaas configuration. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4294358</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 27, 2012 6:06 AM">
+<s>thanks for such a quick reply, hypnotec.... really appreciate it! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4294303</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="hypnotec" timestamp="Mar 27, 2012 6:06 AM">
+<s>yes, or just the package name to have all classes: com.day.crx.security.ldap 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4295200</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 27, 2012 11:52 AM">
+<s>my cq instance is not coming up after i made changes to repository.xml and ldap_login.conf.</s><s> below is the error message that it is showing in error.log.</s><s> i have configured a new logger for ldap, but it does not seem to have created, is it because cq is down?</s><s> could you please help me?</s><s> thanks so much.   exception in error.log: 27.03.2012 14:05:48.234 *error* [felixstartlevel] org.apache.jackrabbit.core.repositoryimpl failed to start repository: neither jaas nor repositoryconfig contained a valid configuration for com.day.crx javax.jcr.repositoryexception: neither jaas nor repositoryconfig contained a valid configuration for com.day.crx           at org.apache.jackrabbit.core.defaultsecuritymanager.init(defaultsecurit ymanager.java:178)           at org.apache.jackrabbit.core.userperworkspacesecuritymanager.init(userp erworkspacesecuritymanager.java:107)           at com.day.crx.core.crxsecuritymanager.init(crxsecuritymanager.java:39)           at org.apache.jackrabbit.core.repositoryimpl.initsecuritymanager(reposit oryimpl.java:463)           at org.apache.jackrabbit.core.repositoryimpl.<init>(repositoryimpl.java: 324)           at com.day.crx.core.crxrepositoryimpl.<init>(crxrepositoryimpl.java:283)           at com.day.crx.core.crxrepositoryimpl.create(crxrepositoryimpl.java:258)           at com.day.crx.core.crxrepositoryimpl.create(crxrepositoryimpl.java:243)           at com.day.crx.sling.server.impl.jmx.managedrepository.activate(managedr epository.java:164)           at sun.reflect.nativemethodaccessorimpl.invoke0(native method)           at sun.reflect.nativemethodaccessorimpl.invoke(unknown source)           at sun.reflect.delegatingmethodaccessorimpl.invoke(unknown source)           at java.lang.reflect.method.invoke(unknown source)           at org.apache.felix.scr.impl.helper.basemethod.invokemethod(basemethod.j ava:227)           at org.apache.felix.scr.impl.helper.basemethod.access$500(basemethod.jav a:38)           at org.apache.felix.scr.impl.helper.basemethod$resolved.invoke(basemetho d.java:591)           at org.apache.felix.scr.impl.helper.basemethod.invoke(basemethod.java:47 2)           at org.apache.felix.scr.impl.helper.activatemethod.invoke(activatemethod .java:146)           at org.apache.felix.scr.impl.manager.immediatecomponentmanager.createimp lementationobject(immediatecomponentmanager.java:226)           at org.apache.felix.scr.impl.manager.immediatecomponentmanager.createcom ponent(immediatecomponentmanager.java:118)           at org.apache.felix.scr.impl.manager.delayedcomponentmanager.createrealc omponent(delayedcomponentmanager.java:95)           at org.apache.felix.scr.impl.manager.abstractcomponentmanager$registered .getservice(abstractcomponentmanager.java:1296)           at org.apache.felix.scr.impl.manager.delayedcomponentmanager.getservice( delayedcomp
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4298492</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Ron%20%40%20SFU" timestamp="Mar 28, 2012 2:49 PM">
+<s>hi murali, 
+</s><s>the problem is probably due to a misconfiguration in your ldap_login.conf or repository.xml file.</s><s> make sure your repository.xml is a valid xml (i.e. all tags, quotes are properly closed).</s><s> if you're still having problems please post your repositor.xml and ldap_login.conf. 
+</s><s>hope this helps.</s><s> ron 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4299611</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 29, 2012 5:12 AM">
+<s>hi ron,   thanks for your reply.</s><s> here are the configuration files.</s><s> when i use an active directory client tool, it works fine.   ldap_login.conf: com.day.crx {    com.day.crx.core.crxloginmodule sufficient;    com.day.crx.security.ldap.ldaploginmodule required                 principal_provider.name="rootdse"                 principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider"               host="<myldaphost>"               port="389"               authdn="cn=murali,ou=users accounts (unsorted),dc=us,dc=ad,dc=com"                 authpw="march1234%"               userroot="ou=ebt,ou=users accounts (unsorted),dc=us,dc=ad,dc=com"                 useridattribute="samaccountname"                 grouproot="cn=ebt-iwov,ou=ebt,ou=user and group accounts,dc=us,dc=ad,dc=com"                 groupmembershipattribute="member"                 autocreate="create"               autocreate.path="none"               autocreate.user.cn="rep:fullname"               autocreate.user.mail="profile/email"               autocreate.user.sn="profile/familyname"               autocreate.user.givenname="profile/givenname"               autocreate.group.cn="rep:fullname";               autocreate.group.mail="profile/email"               cache.expiration="7200"               cache.maxsize="200" };   repository.xml: <!</s><s>doctype repository public "-//day management ag//dtd crx 2.4//en"                             "http://www.day.com/dtd/repository-2.4.dtd"> <repository>     <!--     virtual file system where the repository stores global state     (e.g. registered namespaces, custom node types, etc.</s><s>)     -->     <!--     <filesystem class="com.day.jackrabbit.fs.cq.cqfilesystem">         <param name="path" value="${rep.home}/repstore.dat"/>         <param name="autorepair" value="false"/>     </filesystem>     -->     <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem">         <param name="path" value="${rep.home}/repository"/>     </filesystem>         <!--     large binary objects are stored in the data store.     -->     <datastore class="com.day.crx.core.data.clusterdatastore"/>         <!--     security configuration     -->     <security appname="com.day.crx">         <!--             security manager:             class: fqn of class implementing the jackrabbitsecuritymanager interface         -->         <!--securitymanager class="com.day.crx.core.crxsecuritymanager" workspacename="" -->         <securitymanager class="com.day.crx.core.crxsecuritymanager">             <!--             optional user manager configuration             -->             <usermanager class="org.apache.jackrabbit.core.security.user.userperworkspaceuserm anager">                 <param name="userspath" value="/home/users"/>                 <param name="groupspath" value="/home/groups"/>                 <param name="defaultdepth" value="1"/>                 <param name="autoexpandtree" value="true"/>                 <authorizableaction class="org.apache.jackrabbit.core.security.user.action.accesscontrola ction">                   <param name="groupprivilegenames" value="jcr:read"/>                   <param name="userprivilegenames" value="jcr:all"/>                 </authorizableaction>                 <!--authorizableaction class="com.day.crx.core.ntlm.ntlmauthorizableaction"/>-->             </usermanager>                 <!--             optional workspace access manager configuration            -->         </securitymanager>             <!--         access manager:         class: fqn of class implementing the accessmanager interface         -->         <accessmanager class="org.apache.jackrabbit.core.security.defaultaccessmanager"></ac cessmanager>         <!--         use loginmodule authenticating against repository itself         -->         <!--loginmodule class="com.day.crx.core.crxloginmodule">             <param name="anonymousid" value="anonymous"/>             <param name="adminid" value="admin"/>             <param name="disablentlmauth" value="true"/>             <param name="tokenexpiration" value="43200000"/>         </loginmodule-->     </security>         <!--     location of workspaces root directory and name of default workspace     -->     <workspaces rootpath="${rep.home}/workspaces" defaultworkspace="crx.default" maxidletime="5"/>     <!--     workspace configuration template:     used to create the initial workspace if there's no workspace yet     -->     <workspace name="${wsp.name}" simplelocking="true">         <!--         virtual file system of the workspace:         class: fqn of class implementing filesystem interface         -->         <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem">             <param name="path" value="${wsp.home}"/>         </filesystem>             <!--         persistence manager of the workspace:         class: fqn of class implementing persistencemanager interface         -->         <persistencemanager class="com.day.crx.persistence.tar.tarpersistencemanager"/>             <!--         search index and the file system it uses.         -->         <searchindex class="com.day.crx.query.lucene.lucenehandler">             <param name="path" value="${wsp.home}/index"/>             <param name="resultfetchsize" value="50"/>         </searchindex>             <!--         workspace security configuration         -->         <workspacesecurity>             <accesscontrolprovider class="org.apache.jackrabbit.core.security.authorization.acl.aclprovi der">                 <param name="omit-default-permission" value="true"/>             </accesscontrolprovider>         </workspacesecurity>             <!--         xml import configuration of the workspace         -->         <import>             <protecteditemimporter class="org.apache.jackrabbit.core.xml.accesscontrolimporter"/>             <protecteditemimporter class="org.apache.jackrabbit.core.security.user.userimporter">                 <param name="importbehavior" value="besteffort"/>             </protecteditemimporter>         </import>     </workspace>         <!--         configures the versioning     -->     <versioning rootpath="${rep.home}/version">         <!--             configures the filesystem to use for versioning of the respective             persistence manager         -->         <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem">             <param name="path" value="${rep.home}/version"/>         </filesystem>             <!--             configures the persistence manager to use for the versioning.             please note, that the current versioning implementation is based on             a 'normal' persistence manager, but this could change in future             implementations.         -->         <persistencemanager class="com.day.crx.persistence.tar.tarpersistencemanager"/>         </versioning>         <!--         enable searching the /jcr:system subtree     -->     <searchindex class="com.day.crx.query.lucene.lucenehandler">         <param name="path" value="${rep.home}/repository/index"/>     </searchindex>         <!--         cluster configuration.     -->     <cluster>         <journal class="com.day.crx.persistence.tar.tarjournal"/>     </cluster>         <!--         configures extension modules     -->     <modules>         <!--            sample configuration of an eventloggermodule requiring configuration            <module class="com.day.crx.eventlogger.eventloggermodule">                <param name="workspaces" value="crx.default"/>                <param name="logworkspace" value="crx.logger"/>                <param name="logpath" value="/logger"/>            </module>         -->     </modules> </repository>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4299551</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="justin_at_adobe" timestamp="Mar 29, 2012 5:43 AM">
+<s>murali- i believe you are missing a semi-colon after cache.maxsize="200" and there's an extra semi-colon after autocreate.group.cn="rep:fullname" 
+</s><s>the semi-colon has to go at the end of the options, not in the middle. 
+</s><s>i'm a bit surprised that jaas isn't complaining about this with a meaningful (or even not-so meaningful) error message. 
+</s><s>justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4299856</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 29, 2012 7:05 AM">
+<s>thanks justin.</s><s> my cq instance is up and running now.</s><s> i want to sync a user from ldap to cq, so with reference to the document: http://dev.day.com/docs/en/cq/current/core/administering/ldap_authenti cation.html#ldap user synchronization, i can't locate ldap user synchronization option in crx explorer.</s><s> could you please help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300343</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Ron%20%40%20SFU" timestamp="Mar 29, 2012 9:49 AM">
+<s>hi murali, 
+</s><s>the documentation is outdated for 5.5.</s><s> i haven't been able to find that feature in 5.5, but if your cq instance is properly connected to your ldap then you should just be able to login with your ldap credentials.</s><s> since you have autocreate="create" within your ldap_login.conf file, it should automatically create/sync that account from ldap to cq. 
+</s><s>cheers, ron 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300396</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 29, 2012 10:05 AM">
+<s>ron, i tried to login using my domain id, password with many different ways(id,name,lastname, firstname), but it does not work.</s><s> i have also looked at /home/users and /home/groups, it does not have any domain ids there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300372</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Ron%20%40%20SFU" timestamp="Mar 29, 2012 10:10 AM">
+<s>any errors in the error.log?</s><s> you may need to enable debug logging for ldap to get more info. my guess cq can't find the user in ldap.</s><s> the problem might be your values for 'userroot' in your ldap_login.conf.</s><s> from looking at your authdn "cn=murali,ou=users accounts (unsorted),dc=us,dc=ad,dc=com", i suspect your userroot should be ""ou=users accounts (unsorted),dc=us,dc=ad,dc=com".</s><s> give that a try. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300405</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 29, 2012 10:19 AM">
+<s>you are right.</s><s> after changing the userroot, it started working.</s><s> i am able to login using domain id/pwd.</s><s> but the custom ldap log file(that i created as mentioned in this thread above) is not created under logs or any where else under crx-quickstart. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300477</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 29, 2012 10:34 AM">
+<s>that is working now, ron.</s><s> the log file path should not contain ".." in the path as in (../logs/ldap.log).</s><s> once i changed that to /logs/ldap.log, it started working. 
+</s><s>another question: on my ldap server, i have two locations where cq users are created.</s><s> how can i configure two locations in ldap_login.conf?</s><s> for ex: userroot: ou=users accounts (unsorted),dc=us,dc=ad,dc=com and ou=ebt,ou=parkridge,ou=users accounts and groups,dc=us,dc=ad,dc=com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300540</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Ron%20%40%20SFU" timestamp="Mar 29, 2012 10:57 AM">
+<s>glad it hear it's working now.</s><s> as for different userroots, not sure if you can use a more top level userroot (e.g.</s><s> dc=us,dc=ad,dc=com) with a userfilter.</s><s> you may need to check with you ldap admin.</s><s> but you may be able to just simply setup this other userroot as a separate ldap server.</s><s> checkout this kb article - http://dev.day.com/content/kb/home/crx/crxsystemadministration/howtomu ltipleldapserver.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4300522</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 29, 2012 11:00 AM">
+<s>thank you so much for the help!</s><s>!</s><s> 
+</s><s>sure, i will refer that kb article.</s><s> one more observation is that after i login for the first time using the domain id, the documentation says that it will copy the ldap groups to crx.</s><s> it did not happen even after i login multiple times.</s><s> ldap.log file does not show any messages related to that.</s><s> could you please help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4301194</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Ron%20%40%20SFU" timestamp="Mar 29, 2012 2:48 PM">
+<s>problem seems to be your grouproot of "cn=ebt-iwov,ou=ebt,ou=user and group accounts,dc=us,dc=ad,dc=com".</s><s> i'm assuming your group id/name is 'ebt-iwov'.</s><s> since the default groupnameattribute is "cn", try setting your grouproot to "ou=ebt,ou=user and group accounts,dc=us,dc=ad,dc=com".</s><s> you will need to restart cq for the changes take affect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4302217</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 30, 2012 5:28 AM">
+<s>i have been assigned to multiple groups on active directory and ebt-iwov is one of them.</s><s> and ou=ebt,ou=user and group accounts,dc=us,dc=ad,dc=com has lot of other groups under it.</s><s> i am confused on how cq works with ldap actually - does it pull all the groups that the logged in user belongs to under the grouproot?</s><s> or when a user logs in, will it pull up all the groups under the grouproot?   i have already tried grouproot as ou=ebt,ou=user and group accounts,dc=us,dc=ad,dc=com, but i don't see any groups created in cq.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4302880</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Ron%20%40%20SFU" timestamp="Mar 30, 2012 9:54 AM">
+<s>from my understanding, the way cq's ldapusersync work is that it will import and create the ldap groups that is under the defined grouproot that that user is a member of.</s><s> one problem is that cq's ldapusersync isn't compatible with your ldap schema.</s><s> we had this problem initially because of the way we were storing groups in ldap. 
+</s><s>we were initially storing our group information in an object which has a member of locally defined attributes and stores the members of the group in multi-valued "memberuid" attributes (e.g.</s><s> murali).</s><s> cq assumes that the value of the member attribute has the form of the fully qualified name (e.g. uid=murali,ou=users accounts (unsorted),dc=us,dc=ad,dc=com).</s><s> so when it searches for group members it searches for "memberuid=uid=murali,ou=users accounts (unsorted),dc=us,dc=ad,dc=com" which produces no match. 
+</s><s>now, we have since changed our ldap schema to match this, however, we are still unhappy with the cq ldapusersync.</s><s> problem we have discovered is that when it creates cq groups pulled from ldap, it creates the group with the id using the principal-name which is the full dn in ldap.</s><s> for example, it will actually create the ldap group of ebt-iwov as /home/groups/c/cn/cn=ebt-iwov,ou=ebt,ou=user and group accounts,dc=us,dc=ad,dc=com (if using <param name="defaultdepth" value="3"/> for the com.day.crx.core.crxusermanagerimpl in repository.xml).</s><s> this is a problem for us because it would result in a very flat group hiearchy in the repository, creating 1000's of group records under the same node of /home/groups/c/cn/. 
+</s><s>since crx2.2 (cq5.4) the usermanager api has been updated to allow for creating groups with arbitrary groupd ids (e.g.</s><s> cn valud of the ldap group).</s><s> however, we were disappointed to discover that in 5.5 the ldapusersync hasn't been updated yet to make use of new api.</s><s> so since 5.4, we've been managing groups manually using scripts and we automate the synching vai cron job. 
+</s><s>within the cq higher education group, i don't believe anyone uses the ldapusersync for group integration simply because of its limitations. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4303100</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Murali%20Vusthipalli" timestamp="Mar 30, 2012 10:58 AM">
+<s>thanks for the such an useful information, ron.</s><s> from your experience, it would be great if you suggest an ideal ldap schema for cq needs?</s><s> do we have to create a special cq ldap group and then assign all users to that.</s><s> and do we need to make sure that these ldap user ids don't belong to any other ldap groups? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4304825</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="C.%20Vozar%20-%20CITYTECH" timestamp="Mar 31, 2012 12:42 PM">
+<s>for new adobe cq5.5 users i feel this thread needs a bit of clarity on ldap integration with cq.</s><s> i wrote a blog about the topic: http://www.citytechinc.com/us/en/blog/2012/03/adobe_cq5_5_and_ldap.htm l but will elaborate here. 
+</s><s>the changes to ldap setup between cq 5.4 and 5.5 are minimal (and mainly just not particularly clear) but the documentation on the support site has yet to reflect it.</s><s> in cq 5.5 (a fresh install) you will not get a /crx-quickstart/server/etc/sample_ldap_login.conf file to modify.</s><s> however, it's still appropriate to use in 5.5 as jaas configs are a standard for the jvm.</s><s> also, beware if you enable jaas in the quickstart script that comes with 5.5, it has an order of parameters issue and jaas configs won't parse correctly, you'll need to specify the jaas config prior to the -jar jvm option. 
+</s><s>in short if you are a new cq user to 5.5 and looking for ldap integration simply use the sample on the support site but refernce the configuration in the jvm as a command-line option rather than trying to figure out why /server/etc no longer exists. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4692355</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="rguggenb" timestamp="Sep 12, 2012 2:39 AM">
+<s>hi, 
+</s><s>i'm getting the following error after a login with correct credentials (authentication works): 
+java.lang.illegalargumentexception: invalid token '' at org.apache.jackrabbit.api.security.authentication.token.tokencredenti als.(tokencredentials.java:42) at com.day.crx.security.token.impl.tokenauthenticationhandler.createcred entials(tokenauthenticationhandler.java:528) at com.day.crx.security.token.impl.tokenauthenticationhandler.extractcre dentials(tokenauthenticationhandler.java:345) at org.apache.sling.auth.core.impl.authenticationhandlerholder.doextract credentials(authenticationhandlerholder.java:75) at org.apache.sling.auth.core.impl.abstractauthenticationhandlerholder.e xtractcredentials(abstractauthenticationhandlerholder.java:60) truncated. see log file for complete stacktrace 
+
+</s><s>any ideas on how to troubleshoot? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4849854</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="kstailey" timestamp="Nov 15, 2012 8:16 AM">
+<s>the invalid token error followed by empty single quotes '' is coming out of jackrabbit code that checks if the token is null or an empty string. 
+if (token == null || token.length() == 0) { throw new illegalargumentexception("invalid token '" + token + "'"); } 
+</s><s>the way it works for me: 
+log in as an administrator.</s><s> i use admin delete any ldap created test user account so logging in will be creating the account using ldap.</s><s> log into the the felix (web) console as admin and keep this window open for the duration of this test.</s><s> log out of cq but not the felix (web) console.</s><s> since the console uses http basic auth you can do this.</s><s> log out all users from cq.</s><s> use the felix console crx login tokens display to see that there are no tokens.</s><s> configure cq to use ldap and try to log in to the test account that had no cq account created yet.</s><s> the cq will return error 500 as jackrabbit throws "invalid token '' " your account will be created anyway from the ldap data.</s><s> use the felix console crx login tokens display to see that there is no token for your account.</s><s> delete the cookie from your web browser with the host name of your cq url and the value "login-token".</s><s> try to login to cq using your ldap account again.</s><s> this time you will get a login token and things will be normal. 
+</s><s>why doesn't the first login attempt get a crx login token? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4851082</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="kstailey" timestamp="Nov 15, 2012 2:51 PM">
+<s>also the cookie that comes back on the first ldap login that creates the qa account has three fields and the second one is not filled in. 
+</s><s>the details of a sample cookie from the create followed by the cookie content from the second login: 
+
+b7649c06-ad22-4115-8947-773f030f5579::crx.default b7649c06-ad22-4115-8947-773f030f5579:cbb60011-7526-4282-b89f-b44777def323_f9c7d8a78e20d620:crx.default 
+the ldap login that creates the cq account has a cookie with an empty second colon separated field.</s><s> most likely that field would have the crx login token if there was one. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4852534</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="kstailey" timestamp="Nov 16, 2012 7:03 AM">
+<s>tokens are stored in the user's home directory jcr node tree. 
+</s><s>there is no home directory jcr node tree for an ldap user that has never logged in.</s><s> autocreate mode specifies that the account is created on demand including the home directory. 
+</s><s>if the user's ldap cn is adams\, alice and ldap samaccountname is a-adams 
+then on the first login, autocreate causes these nodes to be created 
+/home/users/adams\, alice/a-adams /home/users/adams\, alice/a-adams/profile /home/users/adams\, alice/a-adams/rep:policy /home/users/adams\, alice/a-adams/rep:policy/allow 
+what is not created is: 
+/home/users/adams\, alice/a-adams/.tokens 
+i think that the routine that creates the .tokens node is executed prior to the one that creates the parent node of .tokens (in this case /home/users/adams\, alice/a-adams).</s><s> the result is that it fails to create the .tokens node. 
+</s><s>the second ldap login works, the home directory already exists and the .tokens node is created. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4857996</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="vijaynagpal" timestamp="Nov 19, 2012 1:30 AM">
+<s>same problem here.</s><s> first time login does not work for ldap user because of blank token.</s><s> are there any workarounds/config changes that will help first-time login to succeed? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-4861806</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="kstailey" timestamp="Nov 20, 2012 8:39 AM">
+<s>if your ldap (ad) user name contains upper case letters you must type them in exactly as they are in ldap (ad) in order to avoid this error. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5082717</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="sBurogyne" timestamp="Feb 18, 2013 12:51 PM">
+<s>hello ron, 
+</s><s>i have a similar problem, i have doublecheck with my repository.xml, it's exactly the same as murali posted.. and my ldap_login.conf, i actually name my config file jaas.conf, here is the content of my jaas.conf: 
+com.day.crx { com.day.crx.core.crxloginmodule sufficient; com.day.crx.security.ldap.ldaploginmodule required principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider" host="my ldap server" port="389" secure="false" authdn="cn=dcp,ou=users,o=com" authpw="xxxxxx" userroot="ou=users,o=com" userfilter="(objectclass=user)" useridattribute="cn" grouproot="ou=groups,o=com" groupmembershipattribute="member" autocreate="create" autocreate.user.membership="contributor" autocreate.user.mail="profile/email" autocreate.user.givenname="profile/givenname" autocreate.user.sn="profile/familyname" autocreate.path="direct" cache.expiration="600" cache.maxsize="1000"; }; 
+i tested the config by running the following comment: 
+java -djava.security.auth.login.config=c:/cq/author/crx-quickstart/etc/jaas.conf -xmx1024m -xx:maxpermsize=256m -jar cq5-author-p4502.jar 
+i have been look at it for a day now and don't seem to figure out..</s><s> i am running cq5.5 on my localhost.</s><s> any help will be great. 
+</s><s>thanks, silka b.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5349148</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Sanjupr" timestamp="May 24, 2013 5:25 AM">
+<s>i think i was able to replicate, in my case this, it had to do with the username ie samaccountname(logon name) and distinguished name.</s><s> lets say the user in ldap exist as tom dn(cn=tom,cn=users,dc=vmlabs,dc=ad,dc=local).</s><s> but the logon name is tom(lower case). 
+case1: login as tom. 
+</s><s>when ldap does the lookup it does find tom, it creates a user as tom, it would generates a login token and the login is successfull.</s><s> if you see in the crx, you will see a new user with tom. 
+</s><s>delete the user that got created 
+case2: login as tom. 
+</s><s>ldap does a look up, and it finds varun, i might be wrong but my hypothesis regarding this behaviour is, it does find the user tom but it fails to create a token for the same maybe because of dn mismatch.</s><s> but if you go ahead and check in crx you will find the user created as tom.</s><s> but when it tries to authenticate using that name, ldap rejects that and no token is generated for the user. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5526685</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="shailesh08" timestamp="Jul 22, 2013 4:33 AM">
+<s>hi, i am not able to get the user in cq from the ldap server, i have configured the ldap_login.conf and repository.xml as required.</s><s> can anyone help me out in figuring out what wrong i am doing. 
+
+
+</s><s>thanks & regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5526868</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Sanjupr" timestamp="Jul 22, 2013 6:11 AM">
+<s>what is the error that you are getting in the error.logs?</s><s> and what version of cq are you using? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5526974</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="shailesh08" timestamp="Jul 22, 2013 6:28 AM">
+<s>hi sanjupr, i am not getting any error in error log, but i am not able to login by the users i create using the ldap.</s><s> i will share the ldap_login.conf and respository.xml with you 
+repository.xml <?</s><s>xml version="1.0" encoding="iso-8859-1"?</s><s>> <!-- ===================================================================== == --> <!-- $id: repository-template.xml 78567 2011-06-16 04:27:03z tripod $ --> <!-- ===================================================================== == --> <!-- copyright (c) 1997-2008 day management ag --> <!-- barfuesserplatz 6, 4001 basel, switzerland --> <!-- all rights reserved. --> <!-- --> <!-- this software is the confidential and proprietary information of --> <!-- day management ag, ("confidential information").</s><s> you shall not --> <!-- disclose such confidential information and shall use it only in --> <!-- accordance with the terms of the license agreement you entered into --> <!-- with day. --> <!-- ===================================================================== == --> <!</s><s>doctype repository public "-//day management ag//dtd crx 2.4//en" "http://www.day.com/dtd/repository-2.4.dtd"> <repository> <!-- virtual file system where the repository stores global state (e.g. registered namespaces, custom node types, etc.</s><s>) --> <!-- <filesystem class="com.day.jackrabbit.fs.cq.cqfilesystem"> <param name="path" value="${rep.home}/repstore.dat"/> <param name="autorepair" value="false"/> </filesystem> --> <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem"> <param name="path" value="${rep.home}/repository"/> </filesystem> 
+<!-- large binary objects are stored in the data store. --> <datastore class="com.day.crx.core.data.clusterdatastore"/> 
+<!-- security configuration --> <security appname="com.day.crx"> <!-- security manager: class: fqn of class implementing the jackrabbitsecuritymanager interface --> <!--securitymanager class="com.day.crx.core.crxsecuritymanager" workspacename="" --> <securitymanager class="com.day.crx.core.crxsecuritymanager"> <!-- optional user manager configuration --> <usermanager class="org.apache.jackrabbit.core.security.user.userperworkspaceuserm anager"> <param name="userspath" value="/home/users"/> <param name="groupspath" value="/home/groups"/> <param name="defaultdepth" value="1"/> <param name="autoexpandtree" value="true"/> <authorizableaction class="org.apache.jackrabbit.core.security.user.action.accesscontrola ction"> <param name="groupprivilegenames" value="jcr:read"/> <param name="userprivilegenames" value="jcr:all"/> </authorizableaction> <!--authorizableaction class="com.day.crx.core.ntlm.ntlmauthorizableaction"/>--> </usermanager> 
+<!-- optional workspace access manager configuration --> </securitymanager> <!-- access manager: class: fqn of class implementing the accessmanager interface --> <accessmanager class="org.apache.jackrabbit.core.security.defaultaccessmanager"></ac cessmanager> <!-- use loginmodule authenticating against repository itself --> <loginmodule class="com.day.crx.core.crxloginmodule"> <param name="anonymousid" value="anonymous"/> <param name="adminid" value="admin"/> <param name="disablentlmauth" value="true"/> <param name="tokenexpiration" value="43200000"/> <!-- param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/ --> </loginmodule> </security> 
+<!-- location of workspaces root directory and name of default workspace --> <workspaces rootpath="${rep.home}/workspaces" defaultworkspace="crx.default" maxidletime="5"/> <!-- workspace configuration template: used to create the initial workspace if there's no workspace yet --> <workspace name="${wsp.name}" simplelocking="true"> <!-- virtual file system of the workspace: class: fqn of class implementing filesystem interface --> <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem"> <param name="path" value="${wsp.home}"/> </filesystem> 
+<!-- persistence manager of the workspace: class: fqn of class implementing persistencemanager interface --> <persistencemanager class="com.day.crx.persistence.tar.tarpersistencemanager"/> 
+<!-- search index and the file system it uses. --> <searchindex class="com.day.crx.query.lucene.lucenehandler"> <param name="path" value="${wsp.home}/index"/> <param name="resultfetchsize" value="50"/> </searchindex> 
+<!-- workspace security configuration --> <workspacesecurity> <accesscontrolprovider class="org.apache.jackrabbit.core.security.authorization.acl.aclprovi der"> <param name="omit-default-permission" value="true"/> </accesscontrolprovider> </workspacesecurity> 
+<!-- xml import configuration of the workspace --> <import> <protecteditemimporter class="org.apache.jackrabbit.core.xml.accesscontrolimporter"/> <protecteditemimporter class="org.apache.jackrabbit.core.security.user.userimporter"> <param name="importbehavior" value="besteffort"/> </protecteditemimporter> </import> </workspace> 
+<!-- configures the versioning --> <versioning rootpath="${rep.home}/version"> <!-- configures the filesystem to use for versioning of the respective persistence manager --> <filesystem class="org.apache.jackrabbit.core.fs.local.localfilesystem"> <param name="path" value="${rep.home}/version"/> </filesystem> 
+<!-- configures the persistence manager to use for the versioning.</s><s> please note, that the current versioning implementation is based on a 'normal' persistence manager, but this could change in future implementations. --> <persistencemanager class="com.day.crx.persistence.tar.tarpersistencemanager"/> 
+</versioning> 
+<!-- enable searching the /jcr:system subtree --> <searchindex class="com.day.crx.query.lucene.lucenehandler"> <param name="path" value="${rep.home}/repository/index"/> </searchindex> 
+<!-- cluster configuration. --> <cluster> <journal class="com.day.crx.persistence.tar.tarjournal"/> </cluster> 
+<!-- configures extension modules --> <modules> <!-- sample configuration of an eventloggermodule requiring configuration <module class="com.day.crx.eventlogger.eventloggermodule"> <param name="workspaces" value="crx.default"/> <param name="logworkspace" value="crx.logger"/> <param name="logpath" value="/logger"/> </module> --> </modules> </repository> 
+
+ldap_login.conf 
+com.day.crx { com.day.crx.core.crxloginmodule sufficient; com.day.crx.security.ldap.ldaploginmodule required principal_provider.class="com.day.crx.security.ldap.principals.ldappr incipalprovider" host="10.242.135.12" port="10389" secure="true" userroot="ou=users, ou=system" grouproot="ou=groups, o=example" groupmembershipattribute="uniquemember" autocreate="create" autocreate.user.mail="profile/email" autocreate.user.givenname="profile/givenname" autocreate.user.sn="profile/familyname" autocreate.group.description="profile/aboutme" autocreate.group.mail="profile/email" autocreate.group.cn="profile/givenname" autocreate.path="direct" cache.expiration="600" cache.maxsize="100"; }; 
+
+
+i am able to get the connection from the ldap server i checked that by creating a connection by using jxplorer vds.i am using cq5.5 
+
+
+</s><s>thanks & regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5526926</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="Sanjupr" timestamp="Jul 22, 2013 6:32 AM">
+<s>did you deliberately remove the below params?</s><s> authdn= authpw= 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Digital-Marketing-Suite/CQ5-(read-only)/Discussions-4291735-5526984</DOCNO>
+<TEXT>
+<subject>LDAP set up with CQ 5.5</subject>
+<post author="shailesh08" timestamp="Jul 22, 2013 6:42 AM">
+<s>no i copied the ldap_login.conf from somewhere and pasted at c:\author\crx-quickstart\conf.</s><s> is that the ldap_login.conf is not correct and because of that i am facing the issue? 
+
+</s><s>thanks & regards, shailesh 
+</s></post>
+</TEXT>
+</DOC>
+
+

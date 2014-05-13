@@ -1,0 +1,734 @@
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-317211</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(g_ballard)" timestamp="Oct 2, 2008 3:31 PM">
+<s>sorry if this was already discussed, hyperlink swf hit nothing here and i don't know what else to search.</s><s> i placed a client's .swf file in my web page and i am unable to hyper-link it back to her site.</s><s> what am i missing?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245607</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 2, 2008 4:00 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245608</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(g_ballard)" timestamp="Oct 2, 2008 9:23 PM">
+<s>it doesn't work does it?</s><s> cs2
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245609</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 3, 2008 3:54 AM">
+<s>are you still using golive?</s><s> i don't have time to experiment right now, but you might try creating an image map.</s><s> an image map should give you the option of adding a link over the swf file.</s><s> here are the instructions copied from the help center.</s><s> b to create an image map select an image on your web page.</s><s> in the smart image or image inspector, click the more tab and select the use map option.</s><s> note: by default, golive assigns a unique id to the image map and enters the id in the name text box.</s><s> you can replace this id by typing a name for the image map in the name text box on the more tab.</s><s> in the toolbar, select the rectangular tool , the circular tool , or the polygonal tool.</s><s> drag in the image to define the hotspot.</s><s> (if you are using the polygonal tool, click to define each point of the polygon.</s><s>) in the map area inspector, specify a file for the link destination of the selected hotspot.</s><s> use the target text box to specify the target frame in the destination frame set (if any).</s><s> type additional information in the title text box.</s><s> some browsers use this information to display tooltips or voice annotations.</s><s> you can also click an image and use the context menu to create a clickable image map.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245610</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="donaldsonjohn" timestamp="Oct 7, 2008 3:12 PM">
+<s>the linking should be done from within the flash movie.</s><s> john
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245611</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 8, 2008 2:02 AM">
+<s>> the linking should be done from within the flash movie.</s><s> yes, this of course would be the ideal way.</s><s> it seems that isn't the case in the file that was provided to g. if the .swf file didn't have a built in link, the question would be what is the best way one would make the .swf file become a link in and of itself.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245612</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="Jim%20or%20Marion%20Jordan" timestamp="Oct 8, 2008 4:54 AM">
+<s>>yes, this of course would be the ideal way this would be the only way.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245613</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(Murray_Summers)" timestamp="Oct 8, 2008 1:24 PM">
+<s>yes.</s><s> you cannot link active content (i.e., anything with embed or object tags) with html. -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245614</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 8, 2008 1:59 PM">
+<s>> yes.</s><s> you cannot link active content (i.e., anything with embed or object tags) with html.</s><s> what if he were to create a layer over the active content?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245615</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(Murray_Summers)" timestamp="Oct 8, 2008 2:30 PM">
+<s>you can't put a layer over active content.</s><s> there's no way to link flash reliably other than to use flash to put the link into the actionscript. -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245616</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 8, 2008 2:35 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245617</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(Murray_Summers)" timestamp="Oct 8, 2008 2:41 PM">
+<s>> i use flash so i build my links within the swf file.</s><s> if you want to use flash for navigation, consider this - 1.</s><s> some people don't have flash installed - what do they do?</s><s> 2. search engines don't parse flash links - your site will not be spidered most likely 3. screen assistive devices don't parse flash links - what will those users do?</s><s> 4. your authoring cannot maintain links within a flash movie, so if you move or rename a linked file, your navigation will break - what will you do?</s><s> you will have to remake those buttons.</s><s> it's usually a very bad idea for these reasons - and for these reasons, adobe has removed flash buttons and flash text from the next version of dreamweaver.</s><s> with regard to the 'over flash' question, all active content on a page will always rise to the top, so to speak, including flash, certain form elements, java applets, and active x controls.</s><s> this means that each of these will poke through layers.</s><s> there is not a good cross-browser/platform reliable way to solve this issue, but if you can be confident in your visitors using ie 5+ or nn6+, then you can use the flash wmode parameter (however, safari does not support this properly!</s><s>).</s><s> pvii article: http://www.projectseven.com/support/answers.asp?id=127 -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245618</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 8, 2008 3:08 PM">
+<s>murray, i am grateful that you point out all these changes.</s><s> i have much more learning to do and yet i seem to be busier than ever.</s><s> you are so knowledgeable about all this stuff.</s><s> do you ever feel the pressure and challenge of not being able to keep up?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245619</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(Murray_Summers)" timestamp="Oct 8, 2008 4:23 PM">
+<s>> do you ever feel the pressure and challenge of not being able to keep up?</s><s> every day.</s><s> there are just some parts of it i cannot devote the proper time to right now.</s><s> but a little bit every day is a good strategy for me. -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245620</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="donaldsonjohn" timestamp="Oct 8, 2008 4:23 PM">
+<s>>1. some people don't have flash installed - what do they do?</s><s> they shouldn't have to do anything.</s><s> as with javascript its a question of progressive enhancement.</s><s> provide the basic functionality and then enhance it for those who have javascript/flash available.</s><s> there is a *lot* of stuff you can google on progressive enhancement and both javascript and flash.</s><s> >2.search engines don't parse flash links - your site will not be spidered most likely google and yahoo do crawl links in swf.</s><s> >3. screen assistive devices don't parse flash links - what will those users do?</s><s> this is the same as 1.</s><s> >4. your authoring cannot maintain links within a flash movie, so if youmove or rename a linked file, your navigation will break - what will you do?</s><s> you will have to remake those buttons.</s><s> this is true.</s><s> but just as your links need not be hard coded in html, but can be dynamically generated, so they can with flash.</s><s> its going to depend on the site design and implementation choices.</s><s> >it's usually a very bad idea for these reasons - and for these reasons, adobe has removed flash buttons and flash text from the next version of dreamweaver.</s><s> they weren't being used.</s><s> nothing to do with adobe thinking they were a bad idea or not :-) john
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245622</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 8, 2008 5:03 PM">
+<s>> there are just some parts of it i cannot devote the proper time to right now.</s><s> but a little bit every day is a good strategy for me.</s><s> that's really good.</s><s> i try to do the same, but have increasingly spread myself a little too thin.</s><s> i keep pressing forward though and learn what i can.</s><s> right now i'm about 8 days behind where i usually am this time of the month.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245623</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 8, 2008 5:08 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245621</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(Murray_Summers)" timestamp="Oct 9, 2008 6:24 AM">
+<s>> they weren't being used.</s><s> nothing to do with adobe thinking they were a bad > idea or not :-) i really disagree.</s><s> the motivation was ever so much more than just their not being used.</s><s> in fact they were both being widely used by the very people who would be least qualified to use them, and getting into serious trouble by doing so.</s><s> in addition, there were so many maintenance issues, and bad practice notions associated with them - really, they have no place on a website - that they were removed, the same way that layout mode is removed.</s><s> > they shouldn't have to do anything.</s><s> as with javascript its a question of > progressive enhancement.</s><s> provide the basic functionality and then enhance > it for those who have javascript/flash available.</s><s> there is a *lot* of > stuff you can google on progressive enhancement and both javascript and > flash.</s><s> nice to say, and true indeed, but the people who use this bad stuff don't know that they have to do this.</s><s> > google and yahoo do crawl links in swf.</s><s> maybe.</s><s> > this is the same as 1. yes - see response to #1. -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245624</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="donaldsonjohn" timestamp="Oct 9, 2008 4:32 PM">
+<s>>i really disagree. after a decade of development there are many features in the application that require significant resources to maintain release to release, but aren't being used with significant frequency.</s><s> correspondingly, we've recently made some difficult decisions as a tradeoff between continuing to support infrequently used features vs. developing new features (http://www.adobe.com/go/kb402489) it seems fairly clear.</s><s> the features you mention are specifically included there.</s><s> >nice to say, and true indeed, but the people who use this bad stuff don't know that they have to do this.</s><s> i've never figured this one out.</s><s> the argument seems to be that because some people use things incorrectly, we should prevent anyone from using them or make it more difficult for them to use them.</s><s> i don't really understand the rationale behind that one.</s><s> > google and yahoo do crawl links in swf.</s><s> >maybe.</s><s> uhhm.</s><s> if you don't believe it, nothing i'm going to say is going to change your mind.</s><s> i'm not going to produce a whole load of references which say precisely that -- and in some cases offer evidence to prove it -- when you can go find them for yourself.</s><s> john
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245625</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="Jim%20or%20Marion%20Jordan" timestamp="Oct 10, 2008 5:39 AM">
+<s>i think the ' maybe' meant ' yes, these search engines index swf content but based on the way that most swf files are created and presented in a html page, these results are often useless.' i don't think anyone is counting on link popularity from a swf file.</s><s> only one link is needed to prove google looks at swf... http://www.google.com/search?q=disney+filetype%3aswf click each of the result links to see which swf files bomb because they can't access necessary data or are severely orphaned from their intended presentation environment.</s><s> and the complete original comment was "search engines don't parse flash links - your site will not be spidered most likely".</s><s> packing either an entire site (or site index/menu) in a flash file is no way to expect good vibes with a search engine.</s><s> most of us know the basic methods of how a html page is indexed and ranked (h1, h2, etc) and recognize that this info is missing from swf files.</s><s> just look at the odd page summaries on the google results page.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245626</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(Murray_Summers)" timestamp="Oct 10, 2008 7:04 AM">
+<s>thanks - my take exactly.</s><s> john reads marketing hype differently than i do, but i do respect his opinion.</s><s> i don't want to get into a contest over this, however, the meetings and discussions i have been privy to lead me to believe that flash text/buttons are regarded in the same ilk (and i do mean "ilk") as layout mode, converting tables to layers and vice versa, pop-up menus (the older ones), and many other just plain bad practices that should never have been in the product in the first place.</s><s> it's hard to make a silk purse out of that sow's ear.... -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245627</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="(g_ballard)" timestamp="Oct 10, 2008 9:59 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245606-1245628</DOCNO>
+<TEXT>
+<subject>How to Hyperlink SWF File</subject>
+<post author="LRK%202" timestamp="Oct 10, 2008 11:47 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-317212</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Dave_Evanson" timestamp="Oct 25, 2008 11:43 AM">
+<s>is there an equivalent of the site diagram or navigation window in dreamweaver?</s><s> i find having a map of the site and how the pages link very useful i looked in the cs4 help and all i could fine was a link to a knowledge base document talking about the site map category in the site definition dialogue.</s><s> but apparently that was for dreamweaver mx and doesnt appear to be in cs4.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-1245630</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="(Murray_Summers)" timestamp="Oct 26, 2008 4:13 AM">
+<s>> is there an equivalent of the site diagram or navigation window in > dreamweaver?</s><s> no.</s><s> > but apparently that was for dreamweaver mx and doesn't appear to be in > cs4.</s><s> yes - it was removed in cs4.</s><s> it was basically not so useful, and had not been changed since pre-dw4 days. -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-1245631</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Michael%20Peters" timestamp="Jan 6, 2009 1:10 PM">
+<s>i am also looking for some way of seeing the relationship between pages.</s><s> we have a lot of files in our site that are redundant and i want to see if there are any files linking into them.</s><s> is there any way of doing this without having to remove the files from the site and then doing a link check?</s><s> this seems to be a step backwards.</s><s> even the old pagemill used to have this facility.</s><s> michael
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-1245632</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="(Murray_Summers)" timestamp="Jan 6, 2009 1:21 PM">
+<s>use a sitewide find to search for the filenames? -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-1245633</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="(micdim)" timestamp="Jan 29, 2009 1:21 PM">
+<s>go here for a site map tool that is compatible with search engines also.</s><s> web assist http://www.webassist.com/professional/products/productdetails.asp?pid= 153
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-1245634</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="(Murray_Summers)" timestamp="Jan 29, 2009 2:12 PM">
+<s>that's a completely different thing.</s><s> it produces an xml sitemap specifically for upload to your remote site, to help with google spidering.</s><s> dw has never had that capability.</s><s> i believe the original poster (op) was asking about a visual sitemap function within dw that was removed from the product with cs3, as i recall.</s><s> it would show a visual representation of the hierarchy of files in your site which could be saved as jpg image. -- murray
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-1925699</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Paul%20T.%20Fischer" timestamp="Apr 28, 2009 5:05 PM">
+<s>i am currently using dreamweaver cs4 and was looking for this feature today.</s><s> i remember i could create a visual hierarchal relationship of my site pages (after 'setting' a home page) and after selecting the 'expand to show local and remote sites' button.</s><s> i have an assignment in school to produce a visual site map but it's kind of hard if someone in their infinite wisdom thinks this feature is not useful.</s><s> i have also used it professionally at work in several cases.</s><s> so, adobe, how come you removed this and why do you think it's not useful?</s><s> now, i have to manually 'draw' one in illustator or go find some other product on the web to automatically create one.</s><s> happy happy joy joy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2033518</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="4everprincess" timestamp="Jun 11, 2009 10:47 PM">
+<s>perhaps, i am missing something.</s><s> is there a similar or better tool that i am not aware of on cs4?</s><s>?</s><s>?</s><s>?</s><s> i find it difficult to believe that anyone in the world would say that link architecture is not an important feature.</s><s> perhaps, the simply are not aware of the importance of link strategies.</s><s> perhaps, they haven't heard of google. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2035964</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="johndonaldson" timestamp="Jun 12, 2009 6:11 PM">
+<s><quote>
+<s>4everprincess wrote: 
+is there a similar or better tool that i am not aware of on cs4?</s><s>?</s><s>?</s><s>?</s><s> 
+</s></quote>
+</s><s>not that i'm aware of -- this functionality was removed from both dreamweaver and golive.</s><s> a bummer for those who did use it, but apparently there weren't enough who did.</s><s> if you can create a lobby of those who are interested in having that facility back again: 
+https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+sorry, best i can suggest. 
+</s><s>john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2037368</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="efredian" timestamp="Jun 13, 2009 4:36 PM">
+<s>i couldn't agree more.</s><s> this was a very useful feature, especially if when preparing a document for reviewers to understand the flow of the site.</s><s> now, i guess, the only option is to create a flow diagram in visio or some other graphic tool.</s><s> poor decision on adobe's part.</s><s> it would be particularly helpful if you could map the site and print it to a document for reviewers. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2158582</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Dave30000" timestamp="Aug 5, 2009 8:12 PM">
+<s>johndonaldson wrote: Ê 4everprincess wrote: Ê is there a similar or better tool that i am not aware of on cs4?</s><s>?</s><s>?</s><s>? Ê not that i'm aware of -- this functionality was removed from both dreamweaver and golive.</s><s> a bummer for those who did use it, but apparently there weren't enough who did.</s><s> if you can create a lobby of those who are interested in having that facility back again: Ê https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform Ê sorry, best i can suggest. Ê john the wishform doesnt work in firefox, and neither does this forum, if you try to reply to this forum it crashes firefox just thought i would let you guys know. Ê i had to compose this message in ie8, most webdevs use firefox and it may seem that you are not getting much interest in this feature but this may be due to people not being able to use the site. Ê i am not even sure if the wishform even works in ie8 i submitted the form but it timed out on me so i have no idea whether it is successful or not. Ê the sitemap diagram feature was very handy and this is message i tried to submit to the wishform Ê *******enhancement / fmr********* brief title for your desired feature: Ê in macromedia dreamweaver 8 there was a feature that would generate visual sitemaps and save these as bitmaps.</s><s> this was a very handy tool for showing clients how websites were structured.</s><s> this feature was removed from adobe dreamweaver cs3 and cs4 Ê how would you like the feature to work? Ê i would like to see this feature reinstated with one additional piece of functionality, being able to see the full html title of subpages of supbages.</s><s> it would also be nice if it could generate an xml sitemap as well as a visual one that was compatible with search engines. Ê why is this feature important to you? Ê it allows me to show clients a visual representation of the websites architecture and the names of the pages within the structure of that architecture.</s><s> visio, dia and other diagramming tools do not create as clean a website diagram as what dreamweaver 8 does.</s><s> here is a link to a copy of a sitemap generated by dreamweaver 8 http://www.users.on.net/~nova/dreamweaver-sitemap.jpg
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2159117</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Dave30000" timestamp="Aug 6, 2009 2:42 AM">
+<s>well it looks like my wishform did submit ok and i got a nice prompt response back from heiko in adobe development. 
+</s><s>got some great news from heiko, apparently the sitemap feature was never removed, it was just disabled, i have just re-enabled it and now the site diagaram tool has appeared and works like a charm. 
+</s><s>here are the instructions heiko gave me via email for unhiding the sitemap tool in dreamweaver cs4; 
+the site map feature has been removed in dreamweaver cs4 by making it invisible.</s><s> you can let the site map reappear by tweaking preference settings of dreamweaver cs4. 
+
+</s><s>mac: 
+</s><s>1. go to your user folder > library > preferences 2. open "adobe dreamweaver cs4 prefs" in a texteditor 3. search for sitemap 4. replace false with true 5. save the file, restart dw 
+
+</s><s>windows: 
+</s><s>1. click on start 2. select run 3. type regedit and click ok -> the registry opens now 4. select hkey_currant_user > software > adobe > dreamweaver cs4 > feature management 5. in the right part of the window double click on site map 6. set site map to true -> when you now start dw the site map is enabled again 
+
+
+</s><s>please note that the feature is no longer supported by dreamweaver.</s><s> so please use the functionality with caution and care.</s><s> we are working on alternatives for the dreamweaver's site map feature for upcoming releases. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2159518</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Marian%20Driscoll" timestamp="Aug 6, 2009 6:32 AM">
+<s><quote>
+<s>dave30000 wrote: 
+the wishform doesnt work in firefox, and neither does this forum, if you try to reply to this forum it crashes firefox just thought i would let you guys know. 
+i had to compose this message in ie8, most webdevs use firefox and it may seem that you are not getting much interest in this feature but this may be due to people not being able to use the site. 
+</s></quote>
+1) you are talking to fellow users here so we can't do anything about firefox. 
+2) firefox is working fine for me and others on the adobe forums. 
+</s><s>using: firefox 3.5.2 with firebug, web developer, noscript (disabled on this site but still installed) and a few other extensions that might change how javascript is handled in a plain firefox install.</s><s> the few others that i know use firefox here are using plain installations.</s><s> i have heard from some webdevs that firefox 3.5's handling of javascript is sometimes sluggish (i haven't noticed) but it is still processed.</s><s> you should not have been prevented from using a submission form or this forum. 
+
+</s><s>that is nifty news about disabled functions in dw.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2176037</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="jonydare2008" timestamp="Aug 13, 2009 10:27 AM">
+<s>ok, i changed the code in the cs4 prefs, now how do i view my site map?</s><s> and can i generate a linked text site map from it to increase visibility on the search engines? 
+</s><s>also, i noticed after saving the prefs, quitting dw, and starting back up, the prefs default back to "false". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2180303</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="datuuri" timestamp="Aug 15, 2009 8:06 AM">
+<s>yeah!</s><s> how do i see the site map now that i ran regedit?</s><s> i bought dreamweaver for the express purpose of taking over my very extensive dynamic website.</s><s> the developers used golive and i saw how the site map could be used to trace the interconnections between the files.</s><s> they left a lot of 'garbage' in there too.</s><s> so, now i have dreamweaver cs4 and i'm looking for the mapping feature..</s><s> it doesn't exist!</s><s> i just can't believe it!</s><s> so, i found this thread and followed the regedit instructions, but don't see 'site map' on the menus anywhere.</s><s> the true/false key remained at true after reboot.</s><s> now what?</s><s> anyone?</s><s> if you're reading this adobe--i'm not a happy camper!</s><s> how could you possibly do this? 
+btw, i have a lot of work to do right away and i need this feature.</s><s> do i throw dreamweaver in the trash and get something that works? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2196030</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Dave_Evanson" timestamp="Aug 21, 2009 12:22 PM">
+<s>thanks for the info Ð the registry hack worked for me also.</s><s> i still can not understand why they dropped this feature; if they are working on a replacement for cs5 why hide the feature in cs4.</s><s> if there are potential problems with it they could still have put it as an option to enable in the preferences with a warning about any issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2211716</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="nmhopkins1" timestamp="Aug 28, 2009 2:55 PM">
+<s>any idea how to do this on a windows pc? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2212500</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="jonydare2008" timestamp="Aug 29, 2009 6:59 AM">
+<s>sorry, i'm a mac guy.</s><s> 
+
+</s><s>john lambert jonnydare28@comcast.net home office: 954.530.7181 cell: 954.336.9947 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2215288</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Marian%20Driscoll" timestamp="Aug 31, 2009 5:36 AM">
+<s><quote>
+<s>nmhopkins1 wrote: 
+any idea how to do this on a windows pc? 
+</s></quote>are you referring to the mac and windows instructions offered in post #11 or are you confused about something else in this thread? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2221196</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="jonydare2008" timestamp="Sep 2, 2009 9:50 AM">
+<s>ok, i have another question regarding stuff removed from cs/3 to cs/4: where the heck is my table height in the properties inspector.</s><s> sometimes i really need that to recreate original art. 
+</s><s>anybody know how to turn feature back on?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2223351</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Marian%20Driscoll" timestamp="Sep 3, 2009 5:50 AM">
+<s>it may help to recognize the audience of this particular forum.</s><s> this forum is for golive users transitioning to dreamweaver.</s><s> most people here will not be well-versed in dreamweaver or the variations between dreamweaver versions.</s><s> you would get the best response to your question in the dreamweaver forum.</s><s> there is a much larger audience for your question there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2253365</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Abacus%20Web" timestamp="Sep 16, 2009 11:56 AM">
+<s>dave30000, i folloewed your instructions for the mac which were quite good by the way, and restarted dw.Ê but once back in dw i was unable to find the menu item to perform the site map/diagram function.</s><s> anyone that has sucsessfully performed changing the defaults and used the hidden site map feature please post a reply on where the site map feature can be found.</s><s> thanks in advance
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2253369</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Abacus%20Web" timestamp="Sep 16, 2009 12:03 PM">
+<s>i would think that adobe might want to hide a feature that has problems and or is simply not ready for mass consumption.</s><s> deadlines cause funny things at big companies.</s><s> cs4 like any software package had a last day for changes.</s><s> if a feature does not pass by this date, the manager in charge of that software has the option of including, excluding, or hiding the unfinished feature. 
+</s><s>does this sound reasonable? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2253599</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="johndonaldson" timestamp="Sep 16, 2009 12:59 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2267328</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="simbalala" timestamp="Sep 23, 2009 7:23 AM">
+<s>see the help system for dreamweaver cs3. 
+http://tinyurl.com/kvyzts 
+it's available under the site menu item and also in the files panel. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2267502</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="datuuri" timestamp="Sep 23, 2009 8:16 AM">
+<s>these email links to forum messages don't open properly in vista.</s><s> crashes my internet explorer.</s><s> need to open task manager to exit.</s><s> whole adobe site does the same.</s><s> been this way for a couple weeks. 
+</s><s>dt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2267638</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="simbalala" timestamp="Sep 23, 2009 8:58 AM">
+<s>heh, vista?</s><s> 
+</s><s>getta mac 
+anyways here's the long link 
+http://livedocs.adobe.com/en_us/dreamweaver/9.0/help.html?content=ws67 b82596-c7f1-40be-a808-3a5ca5d9f871.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2267792</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="datuuri" timestamp="Sep 23, 2009 9:35 AM">
+<s>this is the broken link: 
+http://forums.adobe.com/message/2267638#2267638 
+dt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2383411</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="hershgrant" timestamp="Nov 10, 2009 4:46 PM">
+<s>in the dreamweaver prefs you can open up it up with text edit and change under feature management sitemap=false to sitemap=true and then restart dreamweaver and it should work but_______ before doing this find somebody at adobe to confirm this fix or try it themselves some of them do care enough to do this.</s><s> i am at a college and this is part of my image and i cannot experiment further. 
+</s><s>bh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2385607</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="aldenl88" timestamp="Nov 11, 2009 11:58 AM">
+<s>thank you so much for posting this .</s><s> it worked like a charm.</s><s> i have been looking for a replacement for this for months! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2391585</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="hershgrant" timestamp="Nov 13, 2009 9:46 AM">
+<s>your welcome.</s><s> i only wish adobe would make an official fix or response.</s><s> bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2413566</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="growanrowan" timestamp="Nov 22, 2009 10:18 PM">
+<s>thanks for the 'true' trick - works for me. anyone know how to create an image file from it?</s><s> fyi: visio can read your online site and automatically create a map to your preferences in visio go to: new>network>web site map. thanks for the useful posts folks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2577839</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Arthur_R" timestamp="Feb 9, 2010 1:02 AM">
+<s>i could not figure the way of doing it, what is the path to "dreamweaver prefs" or how can it be done?</s><s> thank you in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2600843</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="pixel_repairman" timestamp="Feb 18, 2010 6:33 AM">
+<s>arthur_r.</s><s> once the sitemap setting has been changed to "true" on the mac: you access it from the "files panel", in the 2nd drop-down menu.</s><s> (the one that has "local view" and "remote view".</s><s>) you should now have a "map view". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2626072</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="renrique" timestamp="Mar 1, 2010 1:42 AM">
+<s>reading the post and looking back golive just makes me sure of golive always where far much better than dreamweaver. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2638539</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="TomGroupGA" timestamp="Mar 5, 2010 9:32 AM">
+<s>no, there is no way.</s><s> cs3 had it, but i know that doesn't help us frustrated cs4 users.</s><s> let's all say a nice "thank you" to adobe for removing one of the best features of dreamweaver.</s><s> adobe should be ashamed of itself that i have to import my site into frontpage 2003 just to see the map/page relation view. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2641262</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="leoamoretti" timestamp="Mar 7, 2010 4:25 AM">
+<s>this works: 1.</s><s> go to run and type regedit 2.</s><s> find hkye_current_user and then find software 3.</s><s> find adobe folder and then dreamweaver cs4 4.</s><s> find feature management folder and doble-click it 5.</s><s> you'll see sitemap , just right-click and chage the value from false to true and you have the site map feature back in dreamwever cs4.</s><s> hope it helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2643493</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="TomGroupGA" timestamp="Mar 8, 2010 9:23 AM">
+<s>thank you leo.</s><s> you solution is perfect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2643673</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="leoamoretti" timestamp="Mar 8, 2010 10:36 AM">
+<s>you're welcome.i don't understand why adobe keeps this important feature hide in cs4?</s><s> but at least we have the solution to this issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/GoLive/GoLive-To-Dreamweaver/Discussions-1245629-2648568</DOCNO>
+<TEXT>
+<subject>Site Map/Diagram in Dreamweaver CS4?</subject>
+<post author="Arthur_R" timestamp="Mar 10, 2010 6:02 AM">
+<s>thank you, leoamoretti, this is exactly what i was looking for. 
+</s></post>
+</TEXT>
+</DOC>
+
+

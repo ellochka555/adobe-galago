@@ -1,0 +1,948 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6220233-1430665</DOCNO>
+<TEXT>
+<subject>Text Field repeating at Page Break in Interactive Adobe form in Webdynpro Java</subject>
+<post author="asawaledipak" timestamp="Mar 18, 2014 7:40 AM">
+<s>i have requirement in which text field containing 'rich text' data has a huge data coming at runtime.</s><s> it is displaying correctly without any scrollbars on a single page .</s><s>now the problem is when data exceeds to next page ,text field repeats it with first line and also adds scrollbar to text field.</s><s> i have set text field properties like allow page break,allow multiple lines ,height auto fit.</s><s> also the text field is in flowed subform ,allow page breaks checked.</s><s> kindly provide solution in quick time.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6220233-6220455</DOCNO>
+<TEXT>
+<subject>Text Field repeating at Page Break in Interactive Adobe form in Webdynpro Java</subject>
+<post author="Magus069" timestamp="Mar 18, 2014 8:36 AM">
+<s>did you make sure every subform's parent of the textfield is set to "flowed" and the allow page break within content is checked for every subform!</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6220233-6222583</DOCNO>
+<TEXT>
+<subject>Text Field repeating at Page Break in Interactive Adobe form in Webdynpro Java</subject>
+<post author="asawaledipak" timestamp="Mar 18, 2014 9:36 PM">
+<s>yes i have checked all the subforms flowed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6220233-1430665</DOCNO>
+<TEXT>
+<subject>Text Field repeating at Page Break in Interactive Adobe form in Webdynpro Java</subject>
+<post author="asawaledipak" timestamp="Mar 18, 2014 7:40 AM">
+<s>i have requirement in which text field containing 'rich text' data has a huge data coming at runtime.</s><s> it is displaying correctly without any scrollbars on a single page .</s><s>now the problem is when data exceeds to next page ,text field repeats it with first line and also adds scrollbar to text field.</s><s> i have set text field properties like allow page break,allow multiple lines ,height auto fit.</s><s> also the text field is in flowed subform ,allow page breaks checked.</s><s> kindly provide solution in quick time.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6220233-6220455</DOCNO>
+<TEXT>
+<subject>Text Field repeating at Page Break in Interactive Adobe form in Webdynpro Java</subject>
+<post author="Magus069" timestamp="Mar 18, 2014 8:36 AM">
+<s>did you make sure every subform's parent of the textfield is set to "flowed" and the allow page break within content is checked for every subform!</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6220233-6222583</DOCNO>
+<TEXT>
+<subject>Text Field repeating at Page Break in Interactive Adobe form in Webdynpro Java</subject>
+<post author="asawaledipak" timestamp="Mar 18, 2014 9:36 PM">
+<s>yes i have checked all the subforms flowed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-1427991</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 14, 2014 7:47 AM">
+<s>hello and thank you in advance for your help!   here is what i need accomplished: i have a yes/no radio button with a separate textfield (called "txtemailpublished") to the left of it.   when the user clicks the yes button, the textfield should be visible on the pdf as well as appears on the printed page when user uses the print button to print it.   when the user clicks the no button, the textfield should be visible on the pdf but does not appear on the printed page when user uses the print button to print it     here is what my issue is:   when i set the textfield's .relevant = "+print" and the .presence = "visible" properties, the textfield disappears.</s><s> i have been playing around with several options (within the radio buttons and print button itself) but can't seem to get it the way the client needs it to be.   any help would be appreciated it!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6211462</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="BR001" timestamp="Mar 14, 2014 9:42 PM">
+<s>hi, 
+</s><s>i think you want 
+txtemailpublished.relevant = "-print"; 
+in you no radio button click event and 
+txtemailpublished.relevant = ""; 
+in your yes radio button click event 
+(both are javascript) 
+</s><s>regards 
+</s><s>bruce 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6216152</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 17, 2014 5:33 AM">
+<s>hi bruce, 
+</s><s>thanks for the reply! 
+i did the following script as above.</s><s> it "works" but doesn't "work" because i need the text to stay on the visible screen even when "no" is selected but not allow the textfield to appear on the printout.</s><s> does this make sense? 
+</s><s>when i click "no" it doesn't appear on the print preview (which is correct), however if i click "cancel" on the print preview it still appears "hidden" on the pdf.</s><s> i would like it to "appear" on the pdf if i hit cancel. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6219337</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="BR001" timestamp="Mar 18, 2014 1:35 AM">
+<s>hi, 
+</s><s>i don't see that behaviour ... or maybe i am misunderstanding, here is a sample with the code i suggested, https://workspaces.acrobat.com/?d=bvmix*0-tgew*4fpxqkovw 
+regards 
+bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6220041</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 18, 2014 6:48 AM">
+<s>hi bruce, 
+</s><s>i really appreciate your help and the example you provided.</s><s> i don't know what was going on with my form.</s><s> i copied your example into my form and it worked fine! 
+</s><s>thanks again for all your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-1427991</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 14, 2014 7:47 AM">
+<s>hello and thank you in advance for your help!   here is what i need accomplished: i have a yes/no radio button with a separate textfield (called "txtemailpublished") to the left of it.   when the user clicks the yes button, the textfield should be visible on the pdf as well as appears on the printed page when user uses the print button to print it.   when the user clicks the no button, the textfield should be visible on the pdf but does not appear on the printed page when user uses the print button to print it     here is what my issue is:   when i set the textfield's .relevant = "+print" and the .presence = "visible" properties, the textfield disappears.</s><s> i have been playing around with several options (within the radio buttons and print button itself) but can't seem to get it the way the client needs it to be.   any help would be appreciated it!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6211462</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="BR001" timestamp="Mar 14, 2014 9:42 PM">
+<s>hi, 
+</s><s>i think you want 
+txtemailpublished.relevant = "-print"; 
+in you no radio button click event and 
+txtemailpublished.relevant = ""; 
+in your yes radio button click event 
+(both are javascript) 
+</s><s>regards 
+</s><s>bruce 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6216152</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 17, 2014 5:33 AM">
+<s>hi bruce, 
+</s><s>thanks for the reply! 
+i did the following script as above.</s><s> it "works" but doesn't "work" because i need the text to stay on the visible screen even when "no" is selected but not allow the textfield to appear on the printout.</s><s> does this make sense? 
+</s><s>when i click "no" it doesn't appear on the print preview (which is correct), however if i click "cancel" on the print preview it still appears "hidden" on the pdf.</s><s> i would like it to "appear" on the pdf if i hit cancel. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6219337</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="BR001" timestamp="Mar 18, 2014 1:35 AM">
+<s>hi, 
+</s><s>i don't see that behaviour ... or maybe i am misunderstanding, here is a sample with the code i suggested, https://workspaces.acrobat.com/?d=bvmix*0-tgew*4fpxqkovw 
+regards 
+bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6220041</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 18, 2014 6:48 AM">
+<s>hi bruce, 
+</s><s>i really appreciate your help and the example you provided.</s><s> i don't know what was going on with my form.</s><s> i copied your example into my form and it worked fine! 
+</s><s>thanks again for all your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6213597-1429009</DOCNO>
+<TEXT>
+<subject>Having problem in visible/hidden</subject>
+<post author="greenlnd34" timestamp="Mar 16, 2014 2:36 AM">
+<s>i am using same script under two subform section 1 and section 2. when click on button under section1, this script is working well, but section 2 not working. 
+</s><s>again if i click on the button section 2, it is working well, but section 1 not working then.</s><s> each section withstand other section.</s><s> i have seen presence action get corrupted. 
+var sec = xfa.resolvenodes("images.thumb[*]"); outer: for(var i=0; i<sec.length; i++) { if(sec.item(i).thum.rawvalue == null) { if (event.target.importdataobject("name")) { var attachmentobject = event.target.getdataobject("name"); var filetype = attachmentobject.path.substring(attachmentobject.path.lastindexof("." ) + 1); if (filetype === "jpg" || filetype === "jpeg" || filetype === "png" || filetype === "bmp" || filetype === "jpg") { var imagestream = event.target.getdataobjectcontents("name"); var imagestreamencoded = net.streamencode(imagestream, "base64"); sec.item(i).presence = "visible"; sec.item(i).thum.rawvalue = util.stringfromstream(imagestreamencoded); break; } else {app.alert("please insert correct format image");} } else { break outer;} //if cancel } } 
+</s><s>what should i do now? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6213597-6214926</DOCNO>
+<TEXT>
+<subject>Having problem in visible/hidden</subject>
+<post author="BR001" timestamp="Mar 16, 2014 3:25 PM">
+<s>hi, 
+</s><s>this looks ok, but how are the thumb rows being added?</s><s> maybe it is worth putting some console.println("...") statements after the "if(sec.item(i).thum.rawvalue == null)" and see if it is getting past that?</s><s> if there is only one thumb row then whichever is the first button to click will be the one that works. 
+</s><s>regards 
+</s><s>bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6213597-6220037</DOCNO>
+<TEXT>
+<subject>Having problem in visible/hidden</subject>
+<post author="greenlnd34" timestamp="Mar 18, 2014 6:30 AM">
+<s>thanks for your reply. 
+i am getting browser option to attach image too.</s><s> i have seen section 1 and 2 are not flowable, but auto hide.</s><s> all parent subforms are flowable.</s><s> when i make all flowable all working well.</s><s> now i have changed layout, all working well. 
+</s><s>do you think only child subform which is auto hide, withstands 2nd time to visible?</s><s> actually i like your idea, stong script.</s><s> you know this attachment script is yours.</s><s> i like your blog too. 
+</s><s>thanks for sharing your profound knowledge with us. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6213597-1429009</DOCNO>
+<TEXT>
+<subject>Having problem in visible/hidden</subject>
+<post author="greenlnd34" timestamp="Mar 16, 2014 2:36 AM">
+<s>i am using same script under two subform section 1 and section 2. when click on button under section1, this script is working well, but section 2 not working. 
+</s><s>again if i click on the button section 2, it is working well, but section 1 not working then.</s><s> each section withstand other section.</s><s> i have seen presence action get corrupted. 
+var sec = xfa.resolvenodes("images.thumb[*]"); outer: for(var i=0; i<sec.length; i++) { if(sec.item(i).thum.rawvalue == null) { if (event.target.importdataobject("name")) { var attachmentobject = event.target.getdataobject("name"); var filetype = attachmentobject.path.substring(attachmentobject.path.lastindexof("." ) + 1); if (filetype === "jpg" || filetype === "jpeg" || filetype === "png" || filetype === "bmp" || filetype === "jpg") { var imagestream = event.target.getdataobjectcontents("name"); var imagestreamencoded = net.streamencode(imagestream, "base64"); sec.item(i).presence = "visible"; sec.item(i).thum.rawvalue = util.stringfromstream(imagestreamencoded); break; } else {app.alert("please insert correct format image");} } else { break outer;} //if cancel } } 
+</s><s>what should i do now? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6213597-6214926</DOCNO>
+<TEXT>
+<subject>Having problem in visible/hidden</subject>
+<post author="BR001" timestamp="Mar 16, 2014 3:25 PM">
+<s>hi, 
+</s><s>this looks ok, but how are the thumb rows being added?</s><s> maybe it is worth putting some console.println("...") statements after the "if(sec.item(i).thum.rawvalue == null)" and see if it is getting past that?</s><s> if there is only one thumb row then whichever is the first button to click will be the one that works. 
+</s><s>regards 
+</s><s>bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6213597-6220037</DOCNO>
+<TEXT>
+<subject>Having problem in visible/hidden</subject>
+<post author="greenlnd34" timestamp="Mar 18, 2014 6:30 AM">
+<s>thanks for your reply. 
+i am getting browser option to attach image too.</s><s> i have seen section 1 and 2 are not flowable, but auto hide.</s><s> all parent subforms are flowable.</s><s> when i make all flowable all working well.</s><s> now i have changed layout, all working well. 
+</s><s>do you think only child subform which is auto hide, withstands 2nd time to visible?</s><s> actually i like your idea, stong script.</s><s> you know this attachment script is yours.</s><s> i like your blog too. 
+</s><s>thanks for sharing your profound knowledge with us. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6216864-1429847</DOCNO>
+<TEXT>
+<subject>How to automatically add file name to email subject line</subject>
+<post author="TexfloSW" timestamp="Mar 17, 2014 9:02 AM">
+<s>i just upgraded from adobe acrobat pro 9 to adobe acrobat xi pro.</s><s> during the install, i uninstalled (of course) adobe 9 and with it also went live cycle designer.   i designed a pdf in live cycle designer that i use to email from the pdf as an attachment.  previously, when i emailed the pdf designed in livecycle via outlook, the subject line of the email automatically filled with the file name.</s><s> with adobe acrobat pro xi, this no longer happens.   is there a setting that allows me to automatically fill the subject line of the pdf with the file name (or some way for me to set the subject line automaticallly) from the pdf?  most of my emailed pdf forms go to the same person, but because of volume it is too tedious to type the subject each time.   thank you for your consideration!   p.s.</s><s> i had originally posted this at http://forums.adobe.com/message/6216706#6216706, however it was suggested that i move this to live cycle.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6216864-6219911</DOCNO>
+<TEXT>
+<subject>How to automatically add file name to email subject line</subject>
+<post author="Ratnesh%20Ranjan" timestamp="Mar 18, 2014 6:19 AM">
+<s>hi texflosw, 
+</s><s>please send a sample pdf of this issue. 
+
+</s><s>regards, ratnesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6216864-1429847</DOCNO>
+<TEXT>
+<subject>How to automatically add file name to email subject line</subject>
+<post author="TexfloSW" timestamp="Mar 17, 2014 9:02 AM">
+<s>i just upgraded from adobe acrobat pro 9 to adobe acrobat xi pro.</s><s> during the install, i uninstalled (of course) adobe 9 and with it also went live cycle designer.   i designed a pdf in live cycle designer that i use to email from the pdf as an attachment.  previously, when i emailed the pdf designed in livecycle via outlook, the subject line of the email automatically filled with the file name.</s><s> with adobe acrobat pro xi, this no longer happens.   is there a setting that allows me to automatically fill the subject line of the pdf with the file name (or some way for me to set the subject line automaticallly) from the pdf?  most of my emailed pdf forms go to the same person, but because of volume it is too tedious to type the subject each time.   thank you for your consideration!   p.s.</s><s> i had originally posted this at http://forums.adobe.com/message/6216706#6216706, however it was suggested that i move this to live cycle.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6216864-6219911</DOCNO>
+<TEXT>
+<subject>How to automatically add file name to email subject line</subject>
+<post author="Ratnesh%20Ranjan" timestamp="Mar 18, 2014 6:19 AM">
+<s>hi texflosw, 
+</s><s>please send a sample pdf of this issue. 
+
+</s><s>regards, ratnesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-1427431</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="Ajay Yada" timestamp="Mar 13, 2014 12:05 PM">
+<s>hi, 
+</s><s>i am working on a static xdp template and stuck at a point where javascript doesn't work anymore. 
+i am trying to show/hide subforms depending on the values of xml nodes in the xml file. 
+i have tried the following: 
+- get the values of xml nodes form the xml file and store it in a variable. 
+</s><s>for example: 
+var test = xfa.data.resolvenode("document.data.general_information...").value; if(test == "yes") { //show subform } else { //hide subform } 
+</s><s>it looks simple but i have to get the values for 400 variables and if a node is missing from the xml file javascript breaks at that point and doesn't process or get the values for rest of the variables. 
+example: 
+var 1 = xfa.data.resolvnode..... var 2 = xfa.data.resolvnode..... var 3 = xfa.data.resolvnode..... var 4 = xfa.data.resolvnode..... 
+if a node is missing in the xml file at var 2, javascript doesn't execute or get the values for var 3 and var 4. 
+</s><s>how do i solve this problem?</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-6211597</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="BR001" timestamp="Mar 15, 2014 12:25 AM">
+<s>hi, 
+</s><s>the resolvenode method will return null if the element does not exist so try; 
+var test = xfa.data.resolvenode("document.data.general_information..."); if(test !== null && test.value == "yes") { //show subform } else { //hide subform } 
+</s><s>regards 
+</s><s>bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-6216194</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="Ajay%20Yada" timestamp="Mar 17, 2014 5:45 AM">
+<s>bruce, 
+</s><s>tried your suggestion but it didn't work.</s><s> i might be doing something wrong.</s><s> i have declared a group of variables that i am going to use i.e.</s><s> 10 variables and once the script doesn't find the node in the xml code just breaks.</s><s> it doesn't even try to get to the next line. 
+</s><s>for example: 
+var test1 = xfa.data.resolvenode("document.data.general_information..."); var test2 = xfa.data.resolvenode("document.data.general_information..."); var test3 = xfa.data.resolvenode("document.data.general_information..."); var test4 = xfa.data.resolvenode("document.data.general_information..."); var test5 = xfa.data.resolvenode("document.data.general_information..."); 
+if a node doesn't exist for test4, code doesn't run for test5.. it just breaks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-6219338</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="BR001" timestamp="Mar 18, 2014 1:40 AM">
+<s>hi, 
+</s><s>it wont be the resolvenode method itself causing the break just because the node isn't there.</s><s> do you get any error messages poping up?</s><s> in acrobat under edit ...</s><s> preferences ...</s><s> javascript you should have 
+</s><s>"enable javascript debugger ...", checked when exception is thrown set to break (or maybe trace) show console on errors and messages. 
+</s><s>failing all that you might need to post the complete code fragment or better still a sample of the form 
+regards 
+bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-1427431</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="Ajay Yada" timestamp="Mar 13, 2014 12:05 PM">
+<s>hi, 
+</s><s>i am working on a static xdp template and stuck at a point where javascript doesn't work anymore. 
+i am trying to show/hide subforms depending on the values of xml nodes in the xml file. 
+i have tried the following: 
+- get the values of xml nodes form the xml file and store it in a variable. 
+</s><s>for example: 
+var test = xfa.data.resolvenode("document.data.general_information...").value; if(test == "yes") { //show subform } else { //hide subform } 
+</s><s>it looks simple but i have to get the values for 400 variables and if a node is missing from the xml file javascript breaks at that point and doesn't process or get the values for rest of the variables. 
+example: 
+var 1 = xfa.data.resolvnode..... var 2 = xfa.data.resolvnode..... var 3 = xfa.data.resolvnode..... var 4 = xfa.data.resolvnode..... 
+if a node is missing in the xml file at var 2, javascript doesn't execute or get the values for var 3 and var 4. 
+</s><s>how do i solve this problem?</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-6211597</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="BR001" timestamp="Mar 15, 2014 12:25 AM">
+<s>hi, 
+</s><s>the resolvenode method will return null if the element does not exist so try; 
+var test = xfa.data.resolvenode("document.data.general_information..."); if(test !== null && test.value == "yes") { //show subform } else { //hide subform } 
+</s><s>regards 
+</s><s>bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-6216194</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="Ajay%20Yada" timestamp="Mar 17, 2014 5:45 AM">
+<s>bruce, 
+</s><s>tried your suggestion but it didn't work.</s><s> i might be doing something wrong.</s><s> i have declared a group of variables that i am going to use i.e.</s><s> 10 variables and once the script doesn't find the node in the xml code just breaks.</s><s> it doesn't even try to get to the next line. 
+</s><s>for example: 
+var test1 = xfa.data.resolvenode("document.data.general_information..."); var test2 = xfa.data.resolvenode("document.data.general_information..."); var test3 = xfa.data.resolvenode("document.data.general_information..."); var test4 = xfa.data.resolvenode("document.data.general_information..."); var test5 = xfa.data.resolvenode("document.data.general_information..."); 
+if a node doesn't exist for test4, code doesn't run for test5.. it just breaks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6207024-6219338</DOCNO>
+<TEXT>
+<subject>JavaScript Execution</subject>
+<post author="BR001" timestamp="Mar 18, 2014 1:40 AM">
+<s>hi, 
+</s><s>it wont be the resolvenode method itself causing the break just because the node isn't there.</s><s> do you get any error messages poping up?</s><s> in acrobat under edit ...</s><s> preferences ...</s><s> javascript you should have 
+</s><s>"enable javascript debugger ...", checked when exception is thrown set to break (or maybe trace) show console on errors and messages. 
+</s><s>failing all that you might need to post the complete code fragment or better still a sample of the form 
+regards 
+bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-1427991</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 14, 2014 7:47 AM">
+<s>hello and thank you in advance for your help!   here is what i need accomplished: i have a yes/no radio button with a separate textfield (called "txtemailpublished") to the left of it.   when the user clicks the yes button, the textfield should be visible on the pdf as well as appears on the printed page when user uses the print button to print it.   when the user clicks the no button, the textfield should be visible on the pdf but does not appear on the printed page when user uses the print button to print it     here is what my issue is:   when i set the textfield's .relevant = "+print" and the .presence = "visible" properties, the textfield disappears.</s><s> i have been playing around with several options (within the radio buttons and print button itself) but can't seem to get it the way the client needs it to be.   any help would be appreciated it!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6211462</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="BR001" timestamp="Mar 14, 2014 9:42 PM">
+<s>hi, 
+</s><s>i think you want 
+txtemailpublished.relevant = "-print"; 
+in you no radio button click event and 
+txtemailpublished.relevant = ""; 
+in your yes radio button click event 
+(both are javascript) 
+</s><s>regards 
+</s><s>bruce 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6216152</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 17, 2014 5:33 AM">
+<s>hi bruce, 
+</s><s>thanks for the reply! 
+i did the following script as above.</s><s> it "works" but doesn't "work" because i need the text to stay on the visible screen even when "no" is selected but not allow the textfield to appear on the printout.</s><s> does this make sense? 
+</s><s>when i click "no" it doesn't appear on the print preview (which is correct), however if i click "cancel" on the print preview it still appears "hidden" on the pdf.</s><s> i would like it to "appear" on the pdf if i hit cancel. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6219337</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="BR001" timestamp="Mar 18, 2014 1:35 AM">
+<s>hi, 
+</s><s>i don't see that behaviour ... or maybe i am misunderstanding, here is a sample with the code i suggested, https://workspaces.acrobat.com/?d=bvmix*0-tgew*4fpxqkovw 
+regards 
+bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-6209377-6220041</DOCNO>
+<TEXT>
+<subject>Script Logic Printing Form (image included)</subject>
+<post author="bethg44" timestamp="Mar 18, 2014 6:48 AM">
+<s>hi bruce, 
+</s><s>i really appreciate your help and the example you provided.</s><s> i don't know what was going on with my form.</s><s> i copied your example into my form and it worked fine! 
+</s><s>thanks again for all your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-795095</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="nylstdog" timestamp="Feb 22, 2011 8:23 AM">
+<s>i'm new to livecycle.</s><s> i created a form that has a submit by email button.</s><s> everytime i submit though i get the message "at least one required field was empty on export". it then highlights every field even if i put in data for that field.</s><s> how would i get the form to recognize the required fields have been entered.</s><s> please go slow as i said i am new to livecycle 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-3486219</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="Niall%20O'Donovan" timestamp="Feb 22, 2011 8:35 AM">
+<s>hi, 
+</s><s>it is likely that there is a required field that does not have a value. 
+</s><s>it may be that the field is hidden, so that the user does not see it, nor can they input data.</s><s> however even though the field is invisible/hidden, if it is set to required, then the submit by email will fail. 
+</s><s>as you probably know, the required state is set in the object > value palette. 
+</s><s>also, it may depend on the version of lc designer/acrobat/reader that you are using.</s><s> at one stage the manner in which radio buttons were highlighted as being required was indistinguishable from not required.</s><s> because of this we sometimes use an asterisk in the caption to manually indicate required fields. 
+</s><s>i'd suggest going through the form, looking for fields that are hidden and required. 
+</s><s>hope that helps, 
+niall 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-3486300</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="nylstdog" timestamp="Feb 22, 2011 9:07 AM">
+<s>as a test, i've submitted a value for a required field but when i submit it still highlights that box.</s><s> i've uploaded the pdf if anyone wants to take a look.</s><s> it's at: oit.nyls.edu/2011_public_interest_summer_funding.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-3487271</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="Niall%20O'Donovan" timestamp="Feb 22, 2011 3:12 PM">
+<s>hi, 
+</s><s>on page2 there is a date/time field which is the full height of the page, and without a value area.</s><s> therefore it does not appear obvious to the user, however it is mandatory and this is why the submit fails. 
+</s><s>delete "datetimefield1" on page2 and it should work. 
+</s><s>niall 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-795095</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="nylstdog" timestamp="Feb 22, 2011 8:23 AM">
+<s>i'm new to livecycle.</s><s> i created a form that has a submit by email button.</s><s> everytime i submit though i get the message "at least one required field was empty on export". it then highlights every field even if i put in data for that field.</s><s> how would i get the form to recognize the required fields have been entered.</s><s> please go slow as i said i am new to livecycle 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-3486219</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="Niall%20O'Donovan" timestamp="Feb 22, 2011 8:35 AM">
+<s>hi, 
+</s><s>it is likely that there is a required field that does not have a value. 
+</s><s>it may be that the field is hidden, so that the user does not see it, nor can they input data.</s><s> however even though the field is invisible/hidden, if it is set to required, then the submit by email will fail. 
+</s><s>as you probably know, the required state is set in the object > value palette. 
+</s><s>also, it may depend on the version of lc designer/acrobat/reader that you are using.</s><s> at one stage the manner in which radio buttons were highlighted as being required was indistinguishable from not required.</s><s> because of this we sometimes use an asterisk in the caption to manually indicate required fields. 
+</s><s>i'd suggest going through the form, looking for fields that are hidden and required. 
+</s><s>hope that helps, 
+niall 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-3486300</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="nylstdog" timestamp="Feb 22, 2011 9:07 AM">
+<s>as a test, i've submitted a value for a required field but when i submit it still highlights that box.</s><s> i've uploaded the pdf if anyone wants to take a look.</s><s> it's at: oit.nyls.edu/2011_public_interest_summer_funding.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3486172-3487271</DOCNO>
+<TEXT>
+<subject>"at least one required field was empty on export"</subject>
+<post author="Niall%20O'Donovan" timestamp="Feb 22, 2011 3:12 PM">
+<s>hi, 
+</s><s>on page2 there is a date/time field which is the full height of the page, and without a value area.</s><s> therefore it does not appear obvious to the user, however it is mandatory and this is why the submit fails. 
+</s><s>delete "datetimefield1" on page2 and it should work. 
+</s><s>niall 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-918400</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 6:52 AM">
+<s>hi, my appologies if this has been asked.</s><s> i found a few threads in searching the forums that deal with similar issues, but the solutions didn't help me any so i decided to start a new discussion.   i have a field called date1 and i have a field called rate.</s><s> quite simply, all i want to do is determine the default value held in rate based on whether date1 is set prior to 7/1/2011.   here is what i have tried with no luck.   if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "m/d/yyyy") >= "07/01/2011")then form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>555 else form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>51 endif   i have also tried several other bits of code, including some java script with no luck.</s><s> i would have to assume my error is somewhere in the way the field 'compares' the datefield with the value i specify in the formula.   i am a total form newb so i appologize if this comes off a bit ignorant.</s><s> thanks for any help i receive, in advance.</s><s> c.</s><s> s.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993190</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 7:05 AM">
+<s>since you are checking the format for 07/01/2011, try changing the format in the function. 
+if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "mm/dd/yyyy") >= "07/01/2011")then form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>555 else form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>51 endif 
+thanks srini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993291</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="pguerett" timestamp="Oct 27, 2011 7:14 AM">
+<s>the date2num function will return you the number of seconds that have elapsed since the epoch so you will need to compare it to the number of seconds that have elapsed from the epoch for 07/01/2011 ....so 
+if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "mm/dd/yyyy") >= date2num("07/01/2011", "mm/dd/yyyy))then 
+paul 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993321</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 7:45 AM">
+<s>well, niether of those options seemed to work.</s><s> i am not getting an script errors with it, but it fails to change the field if i change the date.</s><s> here is what i have currently. 
+if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "mm/dd/yyyy") >= date2num("07/01/2011", "mm/dd/yyyy"))then form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>555 else form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>51 endif 
+thanks for the help! 
+</s><s>any other suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993365</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 7:58 AM">
+<s>syntax seems tobe correct.</s><s> can you share your form to have a look at it.. 
+</s><s>thanks srini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993821</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 10:51 AM">
+<s>i'll have to find someplace to host it, i am not familiar with 'sharing' forms other than through webhosting.</s><s> let me find someplace i can upload it and then i will post a link. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993851</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 11:00 AM">
+<s>steps to share a document..</s><s> 1. go to url http://acrobat.com 2. create an account if you don't have one.</s><s> 3. then login to the website.</s><s> 4. in top left corner you will see a button called upload.</s><s> 5. click on browse and select the file you want to upload.</s><s> 6. after uploading, mouse over on the uploaded file.</s><s> click the down arrow button and choose share document.</s><s> 7. then you will be prompted a popup window at the lower left corner.</s><s> choose "publish it" option.</s><s> 8. in the next pop up window choose "copy link" option.</s><s> 9. you can paste the link in the forum thread.   thanks srini
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993903</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 11:12 AM">
+<s>excellent instructions!</s><s>!</s><s>!</s><s> 
+</s><s>here is is..</s><s> 
+</s><s>https://acrobat.com/#d=15d4nz4q8ce7zatqdgupdq 
+i have only started working the formula through on the first table row.</s><s> it is far from finished layout wise as well.</s><s> i just like to get the functionality working before making it "pretty". 
+</s><s>let me know what i did wrong if you see anything..</s><s> thanks again! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993933</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="pguerett" timestamp="Oct 27, 2011 11:25 AM">
+<s>there is nothing wrong with your code.</s><s> you placed it on the initialize event which means that it is only executed when the form starts up.</s><s> take the code out of that event and put it on the calculate event.</s><s> now it will fire everytime a referenced field (from your calculation) changes. 
+</s><s>paul 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993908</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 11:30 AM">
+<s>*headslap* 
+</s><s>thanks for opening my eyes..</s><s> i was about to go batty.. 
+</s><s>thanks everyone for all the help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993912</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 11:38 AM">
+<s>below is the working script.. 
+if (date2num($.formattedvalue, "m/d/yyyy") >= date2num("7/1/2011", "m/d/yyyy"))then table1.row2.rate1.rawvalue = .</s><s>555 else table1.row2.rate1.rawvalue = .</s><s>51 endif 
+you had placed the script in the initialize event of the mileage rate field.</s><s> it is supposed to be in the exit event of the date field in the same row. 
+https://acrobat.com/#d=ouflqsjsnobooxy-jmdria 
+thanks srini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-918400</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 6:52 AM">
+<s>hi, my appologies if this has been asked.</s><s> i found a few threads in searching the forums that deal with similar issues, but the solutions didn't help me any so i decided to start a new discussion.   i have a field called date1 and i have a field called rate.</s><s> quite simply, all i want to do is determine the default value held in rate based on whether date1 is set prior to 7/1/2011.   here is what i have tried with no luck.   if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "m/d/yyyy") >= "07/01/2011")then form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>555 else form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>51 endif   i have also tried several other bits of code, including some java script with no luck.</s><s> i would have to assume my error is somewhere in the way the field 'compares' the datefield with the value i specify in the formula.   i am a total form newb so i appologize if this comes off a bit ignorant.</s><s> thanks for any help i receive, in advance.</s><s> c.</s><s> s.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993190</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 7:05 AM">
+<s>since you are checking the format for 07/01/2011, try changing the format in the function. 
+if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "mm/dd/yyyy") >= "07/01/2011")then form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>555 else form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>51 endif 
+thanks srini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993291</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="pguerett" timestamp="Oct 27, 2011 7:14 AM">
+<s>the date2num function will return you the number of seconds that have elapsed since the epoch so you will need to compare it to the number of seconds that have elapsed from the epoch for 07/01/2011 ....so 
+if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "mm/dd/yyyy") >= date2num("07/01/2011", "mm/dd/yyyy))then 
+paul 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993321</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 7:45 AM">
+<s>well, niether of those options seemed to work.</s><s> i am not getting an script errors with it, but it fails to change the field if i change the date.</s><s> here is what i have currently. 
+if (date2num(form1.#subform[0].table1.row2.date1.formattedvalue, "mm/dd/yyyy") >= date2num("07/01/2011", "mm/dd/yyyy"))then form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>555 else form1.#subform[0].table1.row2.rate1.rawvalue = .</s><s>51 endif 
+thanks for the help! 
+</s><s>any other suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993365</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 7:58 AM">
+<s>syntax seems tobe correct.</s><s> can you share your form to have a look at it.. 
+</s><s>thanks srini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993821</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 10:51 AM">
+<s>i'll have to find someplace to host it, i am not familiar with 'sharing' forms other than through webhosting.</s><s> let me find someplace i can upload it and then i will post a link. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993851</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 11:00 AM">
+<s>steps to share a document..</s><s> 1. go to url http://acrobat.com 2. create an account if you don't have one.</s><s> 3. then login to the website.</s><s> 4. in top left corner you will see a button called upload.</s><s> 5. click on browse and select the file you want to upload.</s><s> 6. after uploading, mouse over on the uploaded file.</s><s> click the down arrow button and choose share document.</s><s> 7. then you will be prompted a popup window at the lower left corner.</s><s> choose "publish it" option.</s><s> 8. in the next pop up window choose "copy link" option.</s><s> 9. you can paste the link in the forum thread.   thanks srini
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993903</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 11:12 AM">
+<s>excellent instructions!</s><s>!</s><s>!</s><s> 
+</s><s>here is is..</s><s> 
+</s><s>https://acrobat.com/#d=15d4nz4q8ce7zatqdgupdq 
+i have only started working the formula through on the first table row.</s><s> it is far from finished layout wise as well.</s><s> i just like to get the functionality working before making it "pretty". 
+</s><s>let me know what i did wrong if you see anything..</s><s> thanks again! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993933</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="pguerett" timestamp="Oct 27, 2011 11:25 AM">
+<s>there is nothing wrong with your code.</s><s> you placed it on the initialize event which means that it is only executed when the form starts up.</s><s> take the code out of that event and put it on the calculate event.</s><s> now it will fire everytime a referenced field (from your calculation) changes. 
+</s><s>paul 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993908</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="scheckc" timestamp="Oct 27, 2011 11:30 AM">
+<s>*headslap* 
+</s><s>thanks for opening my eyes..</s><s> i was about to go batty.. 
+</s><s>thanks everyone for all the help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Designer/Discussions-3993256-3993912</DOCNO>
+<TEXT>
+<subject>Trouble checking date field value with formcalc</subject>
+<post author="Srini%20Dhulipalla" timestamp="Oct 27, 2011 11:38 AM">
+<s>below is the working script.. 
+if (date2num($.formattedvalue, "m/d/yyyy") >= date2num("7/1/2011", "m/d/yyyy"))then table1.row2.rate1.rawvalue = .</s><s>555 else table1.row2.rate1.rawvalue = .</s><s>51 endif 
+you had placed the script in the initialize event of the mileage rate field.</s><s> it is supposed to be in the exit event of the date field in the same row. 
+https://acrobat.com/#d=ouflqsjsnobooxy-jmdria 
+thanks srini 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,3208 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-1206747-311515</DOCNO>
+<TEXT>
+<subject>+++ Adobe Camera Raw - Frequently Asked Questions +++</subject>
+<post author="Ian Lyons" timestamp="Jun 8, 2012 3:49 AM">
+<s>q: is my camera supported by adobe camera raw (acr)?</s><s> a: here is the list of cameras officially supported by the current version of adobe camera raw and digital negative (dng) converter.</s><s> the page also provides links to the current version of acr and dng converter for both mac and windows. 
+q: what version of camera raw should i install?</s><s> a: photoshop cs6: see first question.</s><s> photoshop cs5: camera raw 6.7 win | mac photoshop cs 4: camera raw 5.7 win | mac photoshop cs 3: camera raw 4.6 win | mac photoshop cs 2: camera raw 3.7 win | mac photoshop cs: camera raw 2.4 win | mac 
+</s><s>for photoshop elements, windows: photoshop elements 10: (see first question) photoshop elements 9: camera raw 6.5 photoshop elements 8: camera raw 6.2 photoshop elements 7 and 6: camera raw 5.6 photoshop elements 5: camera raw 4.6 photoshop elements 4: camera raw 3.7 photoshop elements 3: camera raw 3.6 
+</s><s>for photoshop elements, macintosh: photoshop elements 10: (see first question) photoshop elements 9: camera raw 6.5 photoshop elements 8: camera raw 6.2 photoshop elements 6: camera raw 5.6 photoshop elements 4.0.1: camera raw 4.6 ( 4.1 under mac os 10.3) photoshop elements 3: camera raw 3.6 
+q: what version of camera raw started to support my camera?</s><s> a: this page: http://www.adobe.com/go/kb407111 lists when support for the raw files of your camera was added in camera raw.</s><s> if the version listed is higher than the one supported by your version of camera raw, you first need to convert the files to dng using the latest version of the dng converter in order to open them in camera raw. 
+q: i do not have the latest version of photoshop, how can i open the raw files from my new camera?</s><s> a: only the current version of photoshop will receive acr updates that add support for the latest cameras.</s><s> however, you can download the latest version of the dng converter, and use it to transform your raw files to the universal dng format.</s><s> camera raw 2.4 in photoshop cs and all newer versions of camera raw compatible with your version of photoshop will be able to open the dng files.</s><s> photoshop 7 and acr 1.0 do not support dng, therefore you will need to upgrade to the latest version of photoshop. 
+q: when will the new update of adobe camera raw be released?</s><s> a: adobe cannot comment on unannounced products, however, it is expected that acr and dng converter will be simultaneously updated 3 or 4 times per year (i.e. every 3 or 4 months). 
+q: what does "unofficial support" for a camera mean?</s><s> a: unofficial support means that adobe's quality engineering department has not tested the support to the degree that they want, and thus cannot guarantee the results.</s><s> so we don't include the camera in our official lists, and don't provide any technical support.</s><s> unofficial support means "use at your own risk". 
+q: how do i know that adobe camera raw is installed correctly?</s><s> a: for photoshop cs customers, the most efficient way to ensure that you have the latest camera raw update installed correctly is to choose the updates option from the help menu.</s><s> for photoshop elements customers the best way to verify that the camera raw plug-in is installed correctly is to make sure it appears (only once) in the "about plug-in" menu (see: photoshop menu on a mac or help menu on a pc).</s><s> the correct version is displayed when you pick its name and see its about box.</s><s> if "camera raw" is not in this list, you have not installed it correctly. 
+q: why is the profile listed in the calibration tab showing a version of adobe camera raw that's older than i am using ?</s><s> a: what you are seeing is normal, and is due to the fact that the built-in profile for your particular camera model hasn't changed between that version of adobe camera raw and the version you're using now.</s><s> if you see the profile listed as "beta" then your camera has only unofficial support. 
+q: why is there more than one profile listed in the calibration tab of adobe camera raw?</s><s> a: the built-in profile for your particular camera model has changed since it was first supported.</s><s> the profile shown by default identifies the latest version of adobe camera raw in which the profile was updated.</s><s> other profiles in the drop-down list identify those included with earlier versions of adobe camera raw, and are available in case you want to maintain compatibility with earlier versions. 
+q: my camera is listed, but photoshop cannot read its raw files.</s><s> a: download and install the most recent update to adobe camera raw. 
+q: where can i download the latest version of adobe camera raw?</s><s> a: adobe camera raw for: macintosh and windows 
+</s><s>q: i am trying to replace my existing acr plug-in with a more recent version, but cannot find acr in my photoshop/plug-in/file formats folder.</s><s> where is it located now?</s><s> a: as explained in the "readme", which can be found on the acr download page, the correct location is: photoshop cs2 mac: /library/application support/adobe/plug-ins/cs2/file formats/ win: \program files\common files\adobe\plug-ins\cs2\file formats\ 
+photoshop cs3 mac: /library/application support/adobe/plug-ins/cs3/file formats/ win: \program files\common files\adobe\plug-ins\cs3\file formats\ 
+note that "common files" is localized in non-english versions of windows. 
+q: why do i only see a small generic icon in adobe bridge instead of a thumbnail when i browse the folder containing my raw files?</s><s> a: bridge occasionally has difficulty with raw files, but this is usually because the user has installed acr into the wrong location or browsed the folder prior to installing the acr plug-in that provides support for their particular camera model.</s><s> the fix for this issue is usually to make absolutely sure that acr is installed correctly, then purge the bridge cache.</s><s> if you're in the habit of using the distributed cache (bridge 1.x) it would be prudent to manually delete the cache files from the folder containing your raw files. 
+
+q: whenever i open an image in adobe camera raw a small explanation mark within a yellow triangle appears in the upper right hand corner of the image.</s><s> a: this symbol indicates that a high quality preview is being generated by adobe camera raw.</s><s> it should disappear after a couple of seconds. 
+
+q: how do i turn off auto adjustments in adobe camera raw 3.x?</s><s> a: open adobe camera raw.</s><s> on the mac press cmd+u or on the pc ctrl+u.</s><s> this keystroke combination toggles auto adjustments on and off.</s><s> alternatively, disable the auto adjustments setting from the fly-out menu adjacent to the setting drop-down menu.</s><s> if you want the default to be off for auto adjustments simply choose "save new camera raw default" from the fly-out menu adjacent to the "settings" drop-down menu then choose done. 
+q: what about adobe camera raw 3.7 and newer versions?</s><s> a: camera raw 3.7 no longer supports per slider auto adjustments.</s><s> one auto control at the top of the panel now sets the exposure, shadows, brightness, and contrast sliders to their auto values.</s><s> the default control at the top of the panel sets these same four sliders to their default values.</s><s> the keyboard shortcut for the auto control is cmd/ctrl-u. the keyboard shortcut for the default control is cmd/ctrl-r. double clicking on a slider to set that single slider to its default value.</s><s> shift double clicking on a slider to set that single slider to its auto value. 
+q: why do i get the the following message: "unable to create an .xmp sidecar file.</s><s> the image settings will instead be stored in the adobe camera raw database." a: this message means that adobe camera raw is unable to write to the xmp sidecar file.</s><s> either the media is read-only (e.g.</s><s> a cd), or you don't have write access to the folder containing the image, or the existing xmp sidecar file is locked. 
+q: i cannot see all the tools and buttons of adobe camera raw.</s><s> a: set your monitor resolution to the minimum required for photoshop cs and higher, i.e.</s><s> 1024x768.</s><s> 
+</s><s>q: where can i obtain a listing of adobe camera raw keyboard shortcuts and modifiers?</s><s> a: on the photoshop online help file. 
+q: when i open my nikon nef files, all i see is the simple version of the raw dialog.</s><s> a: you are running nikon's plug-in, not adobe's.</s><s> delete from photoshop's plug-in folder and all subfolders all copies of the "nikon nef plugin".</s><s> nikon automatically installs this plug-in in up to two places inside photoshop's plug-in folder, and both must be deleted.</s><s> otherwise it overrides the adobe plug-in.</s><s> an alternative to the deletion is adding ~ in front of the nikon plug-ins names. 
+q: i installed the update.</s><s> i can now open my raw files, but i still cannot see thumbnails in the file browser.</s><s> a: purge the file browser cache for the problem folder.</s><s> tools > cache > purge cache for this folder. 
+q: is it better to resize my images in camera raw, or in photoshop?</s><s> a: the resampling code is fairly similar to (but not exactly the same as) the "bicubic sharper" resampling in photoshop cs and cs2.</s><s> it does not make very much difference which stage you do the resampling in.</s><s> the exception is non-square pixel cameras (nikon d1x and fuji s2 pro), for which it is best to upsample one size step in camera raw if you need a larger image. 
+q: what are raw images, and how do they differ from jpeg ones?</s><s> a: read this whitepaper (1mb pdf) written by bruce fraser for a concise answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-1206747-311515</DOCNO>
+<TEXT>
+<subject>+++ Adobe Camera Raw - Frequently Asked Questions +++</subject>
+<post author="Ian Lyons" timestamp="Jun 8, 2012 3:49 AM">
+<s>q: is my camera supported by adobe camera raw (acr)?</s><s> a: here is the list of cameras officially supported by the current version of adobe camera raw and digital negative (dng) converter.</s><s> the page also provides links to the current version of acr and dng converter for both mac and windows. 
+q: what version of camera raw should i install?</s><s> a: photoshop cs6: see first question.</s><s> photoshop cs5: camera raw 6.7 win | mac photoshop cs 4: camera raw 5.7 win | mac photoshop cs 3: camera raw 4.6 win | mac photoshop cs 2: camera raw 3.7 win | mac photoshop cs: camera raw 2.4 win | mac 
+</s><s>for photoshop elements, windows: photoshop elements 10: (see first question) photoshop elements 9: camera raw 6.5 photoshop elements 8: camera raw 6.2 photoshop elements 7 and 6: camera raw 5.6 photoshop elements 5: camera raw 4.6 photoshop elements 4: camera raw 3.7 photoshop elements 3: camera raw 3.6 
+</s><s>for photoshop elements, macintosh: photoshop elements 10: (see first question) photoshop elements 9: camera raw 6.5 photoshop elements 8: camera raw 6.2 photoshop elements 6: camera raw 5.6 photoshop elements 4.0.1: camera raw 4.6 ( 4.1 under mac os 10.3) photoshop elements 3: camera raw 3.6 
+q: what version of camera raw started to support my camera?</s><s> a: this page: http://www.adobe.com/go/kb407111 lists when support for the raw files of your camera was added in camera raw.</s><s> if the version listed is higher than the one supported by your version of camera raw, you first need to convert the files to dng using the latest version of the dng converter in order to open them in camera raw. 
+q: i do not have the latest version of photoshop, how can i open the raw files from my new camera?</s><s> a: only the current version of photoshop will receive acr updates that add support for the latest cameras.</s><s> however, you can download the latest version of the dng converter, and use it to transform your raw files to the universal dng format.</s><s> camera raw 2.4 in photoshop cs and all newer versions of camera raw compatible with your version of photoshop will be able to open the dng files.</s><s> photoshop 7 and acr 1.0 do not support dng, therefore you will need to upgrade to the latest version of photoshop. 
+q: when will the new update of adobe camera raw be released?</s><s> a: adobe cannot comment on unannounced products, however, it is expected that acr and dng converter will be simultaneously updated 3 or 4 times per year (i.e. every 3 or 4 months). 
+q: what does "unofficial support" for a camera mean?</s><s> a: unofficial support means that adobe's quality engineering department has not tested the support to the degree that they want, and thus cannot guarantee the results.</s><s> so we don't include the camera in our official lists, and don't provide any technical support.</s><s> unofficial support means "use at your own risk". 
+q: how do i know that adobe camera raw is installed correctly?</s><s> a: for photoshop cs customers, the most efficient way to ensure that you have the latest camera raw update installed correctly is to choose the updates option from the help menu.</s><s> for photoshop elements customers the best way to verify that the camera raw plug-in is installed correctly is to make sure it appears (only once) in the "about plug-in" menu (see: photoshop menu on a mac or help menu on a pc).</s><s> the correct version is displayed when you pick its name and see its about box.</s><s> if "camera raw" is not in this list, you have not installed it correctly. 
+q: why is the profile listed in the calibration tab showing a version of adobe camera raw that's older than i am using ?</s><s> a: what you are seeing is normal, and is due to the fact that the built-in profile for your particular camera model hasn't changed between that version of adobe camera raw and the version you're using now.</s><s> if you see the profile listed as "beta" then your camera has only unofficial support. 
+q: why is there more than one profile listed in the calibration tab of adobe camera raw?</s><s> a: the built-in profile for your particular camera model has changed since it was first supported.</s><s> the profile shown by default identifies the latest version of adobe camera raw in which the profile was updated.</s><s> other profiles in the drop-down list identify those included with earlier versions of adobe camera raw, and are available in case you want to maintain compatibility with earlier versions. 
+q: my camera is listed, but photoshop cannot read its raw files.</s><s> a: download and install the most recent update to adobe camera raw. 
+q: where can i download the latest version of adobe camera raw?</s><s> a: adobe camera raw for: macintosh and windows 
+</s><s>q: i am trying to replace my existing acr plug-in with a more recent version, but cannot find acr in my photoshop/plug-in/file formats folder.</s><s> where is it located now?</s><s> a: as explained in the "readme", which can be found on the acr download page, the correct location is: photoshop cs2 mac: /library/application support/adobe/plug-ins/cs2/file formats/ win: \program files\common files\adobe\plug-ins\cs2\file formats\ 
+photoshop cs3 mac: /library/application support/adobe/plug-ins/cs3/file formats/ win: \program files\common files\adobe\plug-ins\cs3\file formats\ 
+note that "common files" is localized in non-english versions of windows. 
+q: why do i only see a small generic icon in adobe bridge instead of a thumbnail when i browse the folder containing my raw files?</s><s> a: bridge occasionally has difficulty with raw files, but this is usually because the user has installed acr into the wrong location or browsed the folder prior to installing the acr plug-in that provides support for their particular camera model.</s><s> the fix for this issue is usually to make absolutely sure that acr is installed correctly, then purge the bridge cache.</s><s> if you're in the habit of using the distributed cache (bridge 1.x) it would be prudent to manually delete the cache files from the folder containing your raw files. 
+
+q: whenever i open an image in adobe camera raw a small explanation mark within a yellow triangle appears in the upper right hand corner of the image.</s><s> a: this symbol indicates that a high quality preview is being generated by adobe camera raw.</s><s> it should disappear after a couple of seconds. 
+
+q: how do i turn off auto adjustments in adobe camera raw 3.x?</s><s> a: open adobe camera raw.</s><s> on the mac press cmd+u or on the pc ctrl+u.</s><s> this keystroke combination toggles auto adjustments on and off.</s><s> alternatively, disable the auto adjustments setting from the fly-out menu adjacent to the setting drop-down menu.</s><s> if you want the default to be off for auto adjustments simply choose "save new camera raw default" from the fly-out menu adjacent to the "settings" drop-down menu then choose done. 
+q: what about adobe camera raw 3.7 and newer versions?</s><s> a: camera raw 3.7 no longer supports per slider auto adjustments.</s><s> one auto control at the top of the panel now sets the exposure, shadows, brightness, and contrast sliders to their auto values.</s><s> the default control at the top of the panel sets these same four sliders to their default values.</s><s> the keyboard shortcut for the auto control is cmd/ctrl-u. the keyboard shortcut for the default control is cmd/ctrl-r. double clicking on a slider to set that single slider to its default value.</s><s> shift double clicking on a slider to set that single slider to its auto value. 
+q: why do i get the the following message: "unable to create an .xmp sidecar file.</s><s> the image settings will instead be stored in the adobe camera raw database." a: this message means that adobe camera raw is unable to write to the xmp sidecar file.</s><s> either the media is read-only (e.g.</s><s> a cd), or you don't have write access to the folder containing the image, or the existing xmp sidecar file is locked. 
+q: i cannot see all the tools and buttons of adobe camera raw.</s><s> a: set your monitor resolution to the minimum required for photoshop cs and higher, i.e.</s><s> 1024x768.</s><s> 
+</s><s>q: where can i obtain a listing of adobe camera raw keyboard shortcuts and modifiers?</s><s> a: on the photoshop online help file. 
+q: when i open my nikon nef files, all i see is the simple version of the raw dialog.</s><s> a: you are running nikon's plug-in, not adobe's.</s><s> delete from photoshop's plug-in folder and all subfolders all copies of the "nikon nef plugin".</s><s> nikon automatically installs this plug-in in up to two places inside photoshop's plug-in folder, and both must be deleted.</s><s> otherwise it overrides the adobe plug-in.</s><s> an alternative to the deletion is adding ~ in front of the nikon plug-ins names. 
+q: i installed the update.</s><s> i can now open my raw files, but i still cannot see thumbnails in the file browser.</s><s> a: purge the file browser cache for the problem folder.</s><s> tools > cache > purge cache for this folder. 
+q: is it better to resize my images in camera raw, or in photoshop?</s><s> a: the resampling code is fairly similar to (but not exactly the same as) the "bicubic sharper" resampling in photoshop cs and cs2.</s><s> it does not make very much difference which stage you do the resampling in.</s><s> the exception is non-square pixel cameras (nikon d1x and fuji s2 pro), for which it is best to upsample one size step in camera raw if you need a larger image. 
+q: what are raw images, and how do they differ from jpeg ones?</s><s> a: read this whitepaper (1mb pdf) written by bruce fraser for a concise answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6216277-1429705</DOCNO>
+<TEXT>
+<subject>Images no will longer open in CS 3,4,5, or 6</subject>
+<post author="LouWho" timestamp="Mar 17, 2014 6:33 AM">
+<s>images will not open in bridge this message shows up "could not complete becaus the file was not found" ... started to day no problem in the past only thing different...</s><s> i downloaded camera raw 8.4 which didnot work.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6216277-6218158</DOCNO>
+<TEXT>
+<subject>Images no will longer open in CS 3,4,5, or 6</subject>
+<post author="Jeff%20Schewe" timestamp="Mar 17, 2014 2:53 PM">
+<s>first off, it would be useful to know what os and cpu you are on...hard to give advice without knowing.</s><s> second, what do you mean " i downloaded camera raw 8.4 which didnot work.." did you download it and it failed to install?</s><s> 8.4 will only work in photoshop cs6 and cc.</s><s> what kind of raw files?</s><s> did they ever work? 
+</s><s>really, you've not provided enough info to help you... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6216277-1429705</DOCNO>
+<TEXT>
+<subject>Images no will longer open in CS 3,4,5, or 6</subject>
+<post author="LouWho" timestamp="Mar 17, 2014 6:33 AM">
+<s>images will not open in bridge this message shows up "could not complete becaus the file was not found" ... started to day no problem in the past only thing different...</s><s> i downloaded camera raw 8.4 which didnot work.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6216277-6218158</DOCNO>
+<TEXT>
+<subject>Images no will longer open in CS 3,4,5, or 6</subject>
+<post author="Jeff%20Schewe" timestamp="Mar 17, 2014 2:53 PM">
+<s>first off, it would be useful to know what os and cpu you are on...hard to give advice without knowing.</s><s> second, what do you mean " i downloaded camera raw 8.4 which didnot work.." did you download it and it failed to install?</s><s> 8.4 will only work in photoshop cs6 and cc.</s><s> what kind of raw files?</s><s> did they ever work? 
+</s><s>really, you've not provided enough info to help you... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6215181-1429396</DOCNO>
+<TEXT>
+<subject>How do I download the CS6 RAW update for my Nikon D610?</subject>
+<post author="zoso64" timestamp="Mar 16, 2014 5:21 PM">
+<s>how do i download the cs6 raw update for my nikon d610? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6215181-6215494</DOCNO>
+<TEXT>
+<subject>How do I download the CS6 RAW update for my Nikon D610?</subject>
+<post author="kglad" timestamp="Mar 16, 2014 9:35 PM">
+<s>open the program you want to update and click help>updates. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6215181-1429396</DOCNO>
+<TEXT>
+<subject>How do I download the CS6 RAW update for my Nikon D610?</subject>
+<post author="zoso64" timestamp="Mar 16, 2014 5:21 PM">
+<s>how do i download the cs6 raw update for my nikon d610? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6215181-6215494</DOCNO>
+<TEXT>
+<subject>How do I download the CS6 RAW update for my Nikon D610?</subject>
+<post author="kglad" timestamp="Mar 16, 2014 9:35 PM">
+<s>open the program you want to update and click help>updates. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6213005-1428814</DOCNO>
+<TEXT>
+<subject>Connon 70D</subject>
+<post author="birdmanslp" timestamp="Mar 15, 2014 3:17 PM">
+<s>i just bought a connon eos 70d and can't open raw files with my photoshop element 12 ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6213005-6213788</DOCNO>
+<TEXT>
+<subject>Connon 70D</subject>
+<post author="Mylenium" timestamp="Mar 16, 2014 3:44 AM">
+<s>run all the necessary updates to get the latest version of camera raw. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6213005-6215841</DOCNO>
+<TEXT>
+<subject>Connon 70D</subject>
+<post author="Romsinha" timestamp="Mar 17, 2014 2:40 AM">
+<s>moving to camera raw forum. 
+</s><s>regards, romit sinha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6213005-1428814</DOCNO>
+<TEXT>
+<subject>Connon 70D</subject>
+<post author="birdmanslp" timestamp="Mar 15, 2014 3:17 PM">
+<s>i just bought a connon eos 70d and can't open raw files with my photoshop element 12 ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6213005-6213788</DOCNO>
+<TEXT>
+<subject>Connon 70D</subject>
+<post author="Mylenium" timestamp="Mar 16, 2014 3:44 AM">
+<s>run all the necessary updates to get the latest version of camera raw. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6213005-6215841</DOCNO>
+<TEXT>
+<subject>Connon 70D</subject>
+<post author="Romsinha" timestamp="Mar 17, 2014 2:40 AM">
+<s>moving to camera raw forum. 
+</s><s>regards, romit sinha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6211570-1428512</DOCNO>
+<TEXT>
+<subject>I messed up Lens Correction - photos titled</subject>
+<post author="Tom Mix 2013" timestamp="Mar 15, 2014 2:08 AM">
+<s>some of my photos are tilted or slanted.</s><s> i beleive it happened when i was exploring options in lens correction-upright.</s><s> how do i set this back to regular or default.</s><s> i can correct each photo (one at a time), but this is very time consuming.</s><s> thanks bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6211570-6213057</DOCNO>
+<TEXT>
+<subject>I messed up Lens Correction - photos titled</subject>
+<post author="ssprengel" timestamp="Mar 15, 2014 3:58 PM">
+<s>if you can select a group of photos that have this issue, turn on auto sync and click off in the lens correction upright area, and after the change has propagated to the group, turn off auto sync.</s><s> that should reset the upright function for the group of selected photos without affecting anything else with the photos. 
+</s><s>autosync is turned on and off by the little switch beside the sync button in the lr develop panel. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6211570-6213058</DOCNO>
+<TEXT>
+<subject>I messed up Lens Correction - photos titled</subject>
+<post author="Tom%20Mix%202013" timestamp="Mar 15, 2014 4:02 PM">
+<s>big thanks. bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6211570-1428512</DOCNO>
+<TEXT>
+<subject>I messed up Lens Correction - photos titled</subject>
+<post author="Tom Mix 2013" timestamp="Mar 15, 2014 2:08 AM">
+<s>some of my photos are tilted or slanted.</s><s> i beleive it happened when i was exploring options in lens correction-upright.</s><s> how do i set this back to regular or default.</s><s> i can correct each photo (one at a time), but this is very time consuming.</s><s> thanks bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6211570-6213057</DOCNO>
+<TEXT>
+<subject>I messed up Lens Correction - photos titled</subject>
+<post author="ssprengel" timestamp="Mar 15, 2014 3:58 PM">
+<s>if you can select a group of photos that have this issue, turn on auto sync and click off in the lens correction upright area, and after the change has propagated to the group, turn off auto sync.</s><s> that should reset the upright function for the group of selected photos without affecting anything else with the photos. 
+</s><s>autosync is turned on and off by the little switch beside the sync button in the lr develop panel. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6211570-6213058</DOCNO>
+<TEXT>
+<subject>I messed up Lens Correction - photos titled</subject>
+<post author="Tom%20Mix%202013" timestamp="Mar 15, 2014 4:02 PM">
+<s>big thanks. bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-1427923</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 6:16 AM">
+<s>what have i done wrong?</s><s> running windows 7 ...</s><s>photoshop cs5...</s><s> but cannot open raw images from a nikon d300.</s><s> the 'latest' acr w 6.7.1 is downloaded..</s><s> screen message says it is the wrong sort of document. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209183</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 6:52 AM">
+<s>what version of cr is installed in ps? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209121</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 6:56 AM">
+<s>i have downloaded acr w 6.7.1 it is on my c drive, but not sure if it is linked to photoshop programme.</s><s> if not linked/connected to photoshop, how is it done.</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209267</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 7:06 AM">
+<s>ps cs5 shipped with cr 6.0 which is sufficient for your nikon d300. 
+but to see which cr version is installed for photoshop cs5 - click help > about plug-in > camera raw.</s><s> the version is listed in the right side of the window. 
+if that's not 6.71, double-click the downloaded file and follow the onscreen instructions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209418</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 7:54 AM">
+<s>clicked the camera raw in the help file but nothing was listed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209391</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 7:55 AM">
+<s>no camera raw version was listed? 
+if yes, double-click the downloaded cr file and follow the onscreen instructions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209419</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 7:56 AM">
+<s>in the download file double click took me to the dng conversion chart. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209928</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 10:02 AM">
+<s>go here, download and install the latest update for ps cs5, http://www.adobe.com/downloads/updates/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-1427923</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 6:16 AM">
+<s>what have i done wrong?</s><s> running windows 7 ...</s><s>photoshop cs5...</s><s> but cannot open raw images from a nikon d300.</s><s> the 'latest' acr w 6.7.1 is downloaded..</s><s> screen message says it is the wrong sort of document. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209183</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 6:52 AM">
+<s>what version of cr is installed in ps? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209121</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 6:56 AM">
+<s>i have downloaded acr w 6.7.1 it is on my c drive, but not sure if it is linked to photoshop programme.</s><s> if not linked/connected to photoshop, how is it done.</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209267</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 7:06 AM">
+<s>ps cs5 shipped with cr 6.0 which is sufficient for your nikon d300. 
+but to see which cr version is installed for photoshop cs5 - click help > about plug-in > camera raw.</s><s> the version is listed in the right side of the window. 
+if that's not 6.71, double-click the downloaded file and follow the onscreen instructions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209418</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 7:54 AM">
+<s>clicked the camera raw in the help file but nothing was listed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209391</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 7:55 AM">
+<s>no camera raw version was listed? 
+if yes, double-click the downloaded cr file and follow the onscreen instructions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209419</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="plblmr" timestamp="Mar 14, 2014 7:56 AM">
+<s>in the download file double click took me to the dng conversion chart. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6209119-6209928</DOCNO>
+<TEXT>
+<subject>Raw Images not recognised.</subject>
+<post author="kglad" timestamp="Mar 14, 2014 10:02 AM">
+<s>go here, download and install the latest update for ps cs5, http://www.adobe.com/downloads/updates/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203359-1426490</DOCNO>
+<TEXT>
+<subject>Photoshop Camera Raw 6.7-Update Installation failed</subject>
+<post author="Hans-J" timestamp="Mar 12, 2014 10:07 AM">
+<s>photoshop camera raw 6.7-update installation failes.   system information: adobe photoshop version: 12.0.4 (12.0.4x20110407 [20110407.r.1265 2011/04/07:02:00:00 cutoff; r branch]) x32 operating system: windows xp 32-bit version: 5.1 service pack 3 regional setting = de camera raw 6.7.1 adobe support advisor (v1.6.1.20120504) is not able to locate the problem.   how can i successfully install the camera update?   best regards, hans-j
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203359-1426490</DOCNO>
+<TEXT>
+<subject>Photoshop Camera Raw 6.7-Update Installation failed</subject>
+<post author="Hans-J" timestamp="Mar 12, 2014 10:07 AM">
+<s>photoshop camera raw 6.7-update installation failes.   system information: adobe photoshop version: 12.0.4 (12.0.4x20110407 [20110407.r.1265 2011/04/07:02:00:00 cutoff; r branch]) x32 operating system: windows xp 32-bit version: 5.1 service pack 3 regional setting = de camera raw 6.7.1 adobe support advisor (v1.6.1.20120504) is not able to locate the problem.   how can i successfully install the camera update?   best regards, hans-j
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-1426554</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="LiaCecaci" timestamp="Mar 12, 2014 11:19 AM">
+<s>is there a maximum amount of presets that acr will load?</s><s> all of my presets are in the correct folders / file path but after a certain amount of presets, my presets panel goes blank.</s><s> there seems to be a glitch past a certain point. 
+</s><s>attached is two screenshots for reference.</s><s> you will see at a specific point the presets panel blanks out, however, there is obviously still content as the scroll bar still has room to scroll down. 
+</s><s>will this bug be addressed?</s><s> any insight on a maximum amount of presets acr can handle would be great. 
+
+
+*edit 
+the solution to this is to delete and re-install less presets, however, i need a solution for our users who actually need all presets for editing.</s><s> many thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6220990</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="tinaTS" timestamp="Mar 18, 2014 10:56 AM">
+<s>what version of photoshop, camera raw, and the os are you using? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221015</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="LiaCecaci" timestamp="Mar 18, 2014 11:00 AM">
+<s>most up to date cc everything, i think..</s><s> i just updated today - cs6, acr 8.3 os x 10.9.2 
+</s><s>this issue has been escalated to some sort of second tier support from adobe so i hope to hear back from them soon. 
+</s><s>thanks for any info you may have. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221170</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="tinaTS" timestamp="Mar 18, 2014 11:36 AM">
+<s>thanks, lia.</s><s> the support agents brought this to my attention. :-) 
+</s><s>i'm still a little confused.</s><s> are you using photoshop cc, or photoshop cs6?</s><s> if you go to photoshop > about photoshop, the exact version of photoshop will display. 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221222</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="LiaCecaci" timestamp="Mar 18, 2014 11:38 AM">
+<s>yay, praise be to you!</s><s> i'm using cc.</s><s> sorry for the confusion, i figured it was the same! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221381</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="tinaTS" timestamp="Mar 18, 2014 12:32 PM">
+<s>and if you go to photoshop > about photoshop, what's the version number in small numbers listed there?</s><s> we release smaller updates and this number will tell me which one you have. 
+thanks!</s><s> tina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-1426554</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="LiaCecaci" timestamp="Mar 12, 2014 11:19 AM">
+<s>is there a maximum amount of presets that acr will load?</s><s> all of my presets are in the correct folders / file path but after a certain amount of presets, my presets panel goes blank.</s><s> there seems to be a glitch past a certain point. 
+</s><s>attached is two screenshots for reference.</s><s> you will see at a specific point the presets panel blanks out, however, there is obviously still content as the scroll bar still has room to scroll down. 
+</s><s>will this bug be addressed?</s><s> any insight on a maximum amount of presets acr can handle would be great. 
+
+
+*edit 
+the solution to this is to delete and re-install less presets, however, i need a solution for our users who actually need all presets for editing.</s><s> many thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6220990</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="tinaTS" timestamp="Mar 18, 2014 10:56 AM">
+<s>what version of photoshop, camera raw, and the os are you using? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221015</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="LiaCecaci" timestamp="Mar 18, 2014 11:00 AM">
+<s>most up to date cc everything, i think..</s><s> i just updated today - cs6, acr 8.3 os x 10.9.2 
+</s><s>this issue has been escalated to some sort of second tier support from adobe so i hope to hear back from them soon. 
+</s><s>thanks for any info you may have. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221170</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="tinaTS" timestamp="Mar 18, 2014 11:36 AM">
+<s>thanks, lia.</s><s> the support agents brought this to my attention. :-) 
+</s><s>i'm still a little confused.</s><s> are you using photoshop cc, or photoshop cs6?</s><s> if you go to photoshop > about photoshop, the exact version of photoshop will display. 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221222</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="LiaCecaci" timestamp="Mar 18, 2014 11:38 AM">
+<s>yay, praise be to you!</s><s> i'm using cc.</s><s> sorry for the confusion, i figured it was the same! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6203629-6221381</DOCNO>
+<TEXT>
+<subject>Installing hundreds of presets causes glitch in ACR</subject>
+<post author="tinaTS" timestamp="Mar 18, 2014 12:32 PM">
+<s>and if you go to photoshop > about photoshop, what's the version number in small numbers listed there?</s><s> we release smaller updates and this number will tell me which one you have. 
+thanks!</s><s> tina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-1422184</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark@acm.org" timestamp="Mar 6, 2014 8:51 AM">
+<s>there has been a lot of discussion about how best to convert information from x-trans sensors.</s><s> early conversion algorithms have been criticized in various fora and the algorithms have been improved.</s><s> therefore, it's reasonable to assume that the algorithms will be improved again in the future. 
+</s><s>if i store a raw file and then convert it to another form, say, tiff, using a future conversion algorithm, i will obviously be able to take advantage of that algorithm.</s><s> what if i store it in dng form today and then convert it to tiff in the future?</s><s> will i be able to use the future conversion algorithm, or will key information have been lost in converting to dng? 
+</s><s>here's what i think the situation is: 
+if i use dng converter 8.4 and say that i want conversion that is compatible with acr 7.1, then the x-trans information is preserved.</s><s> moreover, converting to dng does lossless compression, so the dng file that results is likely to be smaller than the original raw file. 
+</s><s>if i use dng converter 8.4 and say that i want conversion that is compatible with acr 6.3 or earlier, then dng converter will do the conversion to rgb pixels.</s><s> this will result in a dng file that will probably be larger than the original raw file, and will make it impossible to use future raw conversion algorithms.</s><s> however, it will also yield a dng file that can be opened by versions of photoshop before cs6 and versions of lightroom before lr5. 
+i would really appreciate it if someone from adobe can tell me whether my understanding is correct, and correct it if it is not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6185472</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ssprengel" timestamp="Mar 6, 2014 9:13 AM">
+<s>your understanding is generally correct. 
+</s><s>at some point in the acr 7.x series, maybe 7.2 or 7.3, adobe updated their x-trans demosaicking/interpolation algorithms in the camera raw engine used in acr plug-in, dngc, and lr, to produce a higher quality result. 
+</s><s>the newer dng converters do not need to interpolate the data for newer acr plug-in versions. 
+</s><s>the newer dng converters do interpolate the data for older acr plug-ins and older lrs using the better algorithms so those older products have the better interpolation results to work with. 
+</s><s>older dng converters do a bad job of interpolating the data for even older acr plug-ins and lr versions and this poor quality cannot be improved even if a new acr plug-in or lr version is used because the damage done by the poor interpolation algorithms is already baked in. 
+</s><s>another thing you might see is if you convert the data using a newer dng converter and dng 7.1 compatibility options, but mistakenly process this dng with an older acr plug-in or older lr version, then you'll see holes in the data, because the older cr engine is expecting interpolated data and the newer dnc conversion options aren't interpolating, anymore. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6185522</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 6, 2014 9:34 AM">
+<s>gotcha.</s><s> so the question is whether this "older dng converters do a bad job..." situation is capable of happening again in the future if further improvements are made in the algorithms, or does acr 8.4 (unlike its predecessors) preserve all of the information in the x-trans raw file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6185585</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 6, 2014 9:44 AM">
+<s>putting it more bluntly: is it now safe to convert my x-trans raw files to dng and throw the originals away?</s><s> or might i regret doing so at some time in the future?</s><s> this question is interesting because the raw files are about 32 megabytes each and the dng files are between 17 and 20 megabytes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194219</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="deejjjaaaa" timestamp="Mar 9, 2014 7:15 PM">
+<s>> putting it more bluntly: is it now safe to convert my x-trans raw files to dng and throw the originals away? 
+no, because you don't know if it is safe and nobody else knows... do you believe in bugless code ? 
+> or might i regret doing so at some time in the future?</s><s> this question is interesting because the raw files are about 32 megabytes each and the dng files are between 17 and 20 megabytes. 
+storage is cheap, may i suggest to use http://www.code42.com/crashplan/ at least ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194299</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 9, 2014 8:37 PM">
+<s><quote>
+<s>ark@acm.org wrote: 
+putting it more bluntly: is it now safe to convert my x-trans raw files to dng and throw the originals away?</s><s> or might i regret doing so at some time in the future?</s><s> this question is interesting because the raw files are about 32 megabytes each and the dng files are between 17 and 20 megabytes. 
+</s></quote>
+</s><s>if you were in the habit of burning or throwing out your film negatives back in the days before digital photography, then i suppose one could understand your desire to discard your original raw files.</s><s> oy, weh!</s><s> 
+</s><s>storage is dirt cheap now.</s><s> you must value your work very little to consider throwing your raw originals away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194378</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 9, 2014 9:48 PM">
+<s>let me rephrase the question. 
+</s><s>suppose in a couple of years a new version of acr comes out that does a better job of demosaicing (or whatever) than the current one.</s><s> is there any reason to believe that it would be necessary to recreate every dng file from the corresponding raw file (as it was in going from acr 6.3 (i think) to acr 7.1) or is the dng file from acr 8.4 contain all of the information in the raw file? 
+</s><s>this is a reasonable question about workflow, and i think the derisive remarks from station_two are rude and inappropriate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194431</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ssprengel" timestamp="Mar 9, 2014 9:54 PM">
+<s>what are you converting the dng in the first place?</s><s> the original raws obviously contain all the information in the original raws. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194348</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 9, 2014 9:59 PM">
+<s>because lightroom cannot currently handle the original raws.</s><s> as a secondary matter, the dng files are half the size of the raw files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194567</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 9, 2014 11:47 PM">
+<s>well, ark, i don't appreciate being called rude and inappropriate, but i'm not here to argue with you. 
+</s><s>you still don't get it: 
+
+<quote>
+<s>ark@acm.org 
+let me rephrase the question. 
+</s><s>suppose in a couple of years a new version of acr comes out that does a better job of demosaicing (or whatever) than the current one.</s><s> is there any reason to believe that it would be necessary to recreate every dng file from the corresponding raw file (as it was in going from acr 6.3 (i think) to acr 7.1) or is the dng file from acr 8.4 contain all of the information in the raw file? 
+</s><s>this is a reasonable question about workflow- 
+</s></quote>
+no, it's a question about a hypothetical- and it lacks foundation.</s><s> yes, we do foresee the probability of future versions of acr doing a better job of the conversion, that is precisely the point.</s><s> but for acr to get to that point, it would require a breakthrough in technology that we cannot now predict.</s><s> not knowing what such an advance might entail, the question of whether the dng wrapper could be affecting the raw data in ways that we cannot currently discern becomes impossible to answer. 
+</s><s>given current technology, we can say today that the raw data is indeed not affected by the dng conversion, but no one can guarantee you that future technology advances will not force us to revise that view. 
+</s><s>that's why it is so unwise not to keep the original raw file in perpetuity, especially when the only drawback is the cost of file storage, which at this point is so ridiculously cheap as to be trivial. 
+</s><s>if you want to perceive rudeness and inappropriateness in my point of view, or in my expressing such an opinion, go ahead.</s><s> there's nothing i can do about it. 
+</s><s>you had a question, and i answered it to the best of my ability, that's all.</s><s> in my considered opinion, your stance is unwise. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194576</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="sandy_mc" timestamp="Mar 10, 2014 12:00 AM">
+<s>there is no way to know what information a hypothetical better x-trans demosaicing scheme might require, and so no way for anyone to know whether that information is contained in a converted dng or not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195296</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 10, 2014 7:42 AM">
+<s>sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file, then it doesn't matter what information a better x-trans demosaicing scheme might require.</s><s> and i believe that the whole point of the dng format is to make it possible to reconstruct the original raw information exactly. 
+</s><s>the whole point of my original question was to seek information to confirm or deny this belief.</s><s> the question of whether, and if so how, to archive raw files separately from the dng files that (if indeed they do) contain the same information is a completely independent question that deserves its own discussion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195366</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="deejjjaaaa" timestamp="Mar 10, 2014 7:55 AM">
+<s>> sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file, then it doesn't matter what information a better x-trans demosaicing scheme might require.</s><s> and i believe that the whole point of the dng format is to make it possible to reconstruct the original raw information exactly 
+then does it surprise you that adobe dng converter does not have an option to convert from dng back to original raw :-) ?</s><s> no, there is an option to embded the original raw file in dng, yes - but except that solution :-) ?</s><s> believing is a nice thing, but don't be taken for a ride like library of congress... unless you have a very specific defition of "original raw information" that suits you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195817</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 9:29 AM">
+<s>for the reasons i have explained and which deejjjaaaa has expanded on, you're still dead wrong. 
+
+<quote>
+<s>ark@acm.org wrote: 
+sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file- 
+</s></quote>
+</s><s>where on earth did you get that from?</s><s> you cannot "reconstruct" the exact original raw file from a dng file.</s><s> the option is simply not offered. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195881</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 10, 2014 9:42 AM">
+<s>there are two different questions.</s><s> the first is whether adobe--or anyone--offers a way to reconstruct the exact original raw file.</s><s> the second, which is the one i am asking, is whether a dng file contains all of the image information in the original raw file. 
+</s><s>for example, i have tried the following experiment: save a raw file from a fuji x-100 (note that the x100 does not have an x-trans sensor).</s><s> convert the raw file to dng and save the dng file. 
+</s><s>now load the raw file into lightroom and export a tiff image.</s><s> then do the same thing with the dng file.</s><s> the result is two tiff images that are bit-for-bit identical.</s><s> i think it is reasonable to conclude from that experiment that lightroom does not use any information from the raw file that is not also in the dng file, and this conclusion is reasonable whether or not there is a way to recreate the entire raw file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195980</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 9:50 AM">
+<s><quote>
+<s>ark@acm.org wrote: 
+sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file, then it doesn't matter what information a better x-trans demosaicing scheme might require.</s><s> and i believe that the whole point of the dng format is to make it possible to reconstruct the original raw information exactly- 
+</s></quote>
+</s><s>that is a fallacy. 
+
+
+<quote>
+<s>ark@acm.org wrote: 
+
+</s></quote>
+
+</s><s>belief, schmelief. 
+</s><s>with today's acr technology, adobe tells you that the raw to non-linear, demosaic'ed conversion of a dng image file is identical to the raw to non-linear, demosaic'ed conversion of the original raw file, not that you can "reconstruct" said original raw file as recorded by your camera. 
+</s><s>whether future acr technology can advance to the point that a conversion from the original raw file as recorded by your camera generates more information than the current, latest version of acr is mere speculation, and it would remain to be proven whether such theoretical enhanced acr could also extract the same enhanced conversion from a dng converted from the original raw with an improved dng converter that would incorporate the same technical advances as the hypothetical enhanced acr plug-in. 
+</s><s>sorry, if you take offense again, but i'm unabashedly back to my analogy of burning your film negatives. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195988</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 9:59 AM">
+<s>your last post, #14, contains the same flawed assumptions as your previous posts, plus another fallacy. 
+</s><s>you describe an experiment that uses today's acr technology and pretend to make it valid for a theoretical, future, enhanced acr technology that does not yet exist. 
+</s><s>that experiment is worthless and utterly irrelevant to the underlying question you posed. 
+</s><s>see post #15 in this thread: 
+whether future acr technology can advance to the point that a conversion from the original raw file as recorded by your camera generates more information than the current, latest version of acr is mere speculation, and it would remain to be proven whether such theoretical enhanced acr could also extract the same enhanced conversion from a dng converted from the original raw with an improved dng converter that would incorporate the same technical advances as the hypothetical enhanced acr plug-in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195996</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 10, 2014 10:00 AM">
+<s>station_two, you say that "adobe tells you that the raw to non-linear, demosaic'ed conversion of a dng image file is identical to the raw to non-linear, demosaic'ed conversion of the original raw file, not that you can "reconstruct" said original raw file as recorded by your camera." 
+i believe that adobe is now making a stronger statement, namely that starting with acr 8.4, the demosaicing/linearization is done *after* conversion to dng by default (i.e. unless you request compatibility with acr 7.1 or earlier), and that the dng file records the original pixel information from the x-trans sensor. 
+</s><s>if you believe that this claim is not true, i would appreciate some factual evidence that refutes it.</s><s> perhaps someone from adobe would be willing to clarify the matter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6196006</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 10:01 AM">
+<s>-this whole discussion is sooooooo pointless, given the already trivial cost of storage space. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6196013</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 10:09 AM">
+<s>ark@acm.org wrote:  -i believe that adobe is now making a stronger statement- if you believe that this claim is not true, i would appreciate some factual evidence that refutes it-   jeebus chrysler, ark!  now you want "factual evidence" of a hypothetical contingency the nature of which no one is in a position to foresee.  that is preposterous!   why don't you go post in the dng converter forum and see if any of the dng team members cares to engage in this discussion with you?   http://forums.adobe.com/community/dng?view=discussions   i'm out of here-and out of any other thread in which you choose to participate.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6197203</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ccastleb" timestamp="Mar 10, 2014 3:08 PM">
+<s>hi all, 
+</s><s>while the current dng setup preserves the ability to take advantage of future improvements to acr interpolation of x-trans sensors, it isn't guaranteed to be a 1:1 substitute for interpolating directly from the original raf files.</s><s> your best bet is to hold on to the originals to be certain you will get the best results. 
+</s><s>regards, 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6197662</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 5:38 PM">
+<s>thanks for posting, ccastleb.</s><s> maybe the op wiill reconsider now that adobe staff has chimed in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-1422184</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark@acm.org" timestamp="Mar 6, 2014 8:51 AM">
+<s>there has been a lot of discussion about how best to convert information from x-trans sensors.</s><s> early conversion algorithms have been criticized in various fora and the algorithms have been improved.</s><s> therefore, it's reasonable to assume that the algorithms will be improved again in the future. 
+</s><s>if i store a raw file and then convert it to another form, say, tiff, using a future conversion algorithm, i will obviously be able to take advantage of that algorithm.</s><s> what if i store it in dng form today and then convert it to tiff in the future?</s><s> will i be able to use the future conversion algorithm, or will key information have been lost in converting to dng? 
+</s><s>here's what i think the situation is: 
+if i use dng converter 8.4 and say that i want conversion that is compatible with acr 7.1, then the x-trans information is preserved.</s><s> moreover, converting to dng does lossless compression, so the dng file that results is likely to be smaller than the original raw file. 
+</s><s>if i use dng converter 8.4 and say that i want conversion that is compatible with acr 6.3 or earlier, then dng converter will do the conversion to rgb pixels.</s><s> this will result in a dng file that will probably be larger than the original raw file, and will make it impossible to use future raw conversion algorithms.</s><s> however, it will also yield a dng file that can be opened by versions of photoshop before cs6 and versions of lightroom before lr5. 
+i would really appreciate it if someone from adobe can tell me whether my understanding is correct, and correct it if it is not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6185472</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ssprengel" timestamp="Mar 6, 2014 9:13 AM">
+<s>your understanding is generally correct. 
+</s><s>at some point in the acr 7.x series, maybe 7.2 or 7.3, adobe updated their x-trans demosaicking/interpolation algorithms in the camera raw engine used in acr plug-in, dngc, and lr, to produce a higher quality result. 
+</s><s>the newer dng converters do not need to interpolate the data for newer acr plug-in versions. 
+</s><s>the newer dng converters do interpolate the data for older acr plug-ins and older lrs using the better algorithms so those older products have the better interpolation results to work with. 
+</s><s>older dng converters do a bad job of interpolating the data for even older acr plug-ins and lr versions and this poor quality cannot be improved even if a new acr plug-in or lr version is used because the damage done by the poor interpolation algorithms is already baked in. 
+</s><s>another thing you might see is if you convert the data using a newer dng converter and dng 7.1 compatibility options, but mistakenly process this dng with an older acr plug-in or older lr version, then you'll see holes in the data, because the older cr engine is expecting interpolated data and the newer dnc conversion options aren't interpolating, anymore. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6185522</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 6, 2014 9:34 AM">
+<s>gotcha.</s><s> so the question is whether this "older dng converters do a bad job..." situation is capable of happening again in the future if further improvements are made in the algorithms, or does acr 8.4 (unlike its predecessors) preserve all of the information in the x-trans raw file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6185585</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 6, 2014 9:44 AM">
+<s>putting it more bluntly: is it now safe to convert my x-trans raw files to dng and throw the originals away?</s><s> or might i regret doing so at some time in the future?</s><s> this question is interesting because the raw files are about 32 megabytes each and the dng files are between 17 and 20 megabytes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194219</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="deejjjaaaa" timestamp="Mar 9, 2014 7:15 PM">
+<s>> putting it more bluntly: is it now safe to convert my x-trans raw files to dng and throw the originals away? 
+no, because you don't know if it is safe and nobody else knows... do you believe in bugless code ? 
+> or might i regret doing so at some time in the future?</s><s> this question is interesting because the raw files are about 32 megabytes each and the dng files are between 17 and 20 megabytes. 
+storage is cheap, may i suggest to use http://www.code42.com/crashplan/ at least ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194299</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 9, 2014 8:37 PM">
+<s><quote>
+<s>ark@acm.org wrote: 
+putting it more bluntly: is it now safe to convert my x-trans raw files to dng and throw the originals away?</s><s> or might i regret doing so at some time in the future?</s><s> this question is interesting because the raw files are about 32 megabytes each and the dng files are between 17 and 20 megabytes. 
+</s></quote>
+</s><s>if you were in the habit of burning or throwing out your film negatives back in the days before digital photography, then i suppose one could understand your desire to discard your original raw files.</s><s> oy, weh!</s><s> 
+</s><s>storage is dirt cheap now.</s><s> you must value your work very little to consider throwing your raw originals away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194378</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 9, 2014 9:48 PM">
+<s>let me rephrase the question. 
+</s><s>suppose in a couple of years a new version of acr comes out that does a better job of demosaicing (or whatever) than the current one.</s><s> is there any reason to believe that it would be necessary to recreate every dng file from the corresponding raw file (as it was in going from acr 6.3 (i think) to acr 7.1) or is the dng file from acr 8.4 contain all of the information in the raw file? 
+</s><s>this is a reasonable question about workflow, and i think the derisive remarks from station_two are rude and inappropriate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194431</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ssprengel" timestamp="Mar 9, 2014 9:54 PM">
+<s>what are you converting the dng in the first place?</s><s> the original raws obviously contain all the information in the original raws. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194348</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 9, 2014 9:59 PM">
+<s>because lightroom cannot currently handle the original raws.</s><s> as a secondary matter, the dng files are half the size of the raw files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194567</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 9, 2014 11:47 PM">
+<s>well, ark, i don't appreciate being called rude and inappropriate, but i'm not here to argue with you. 
+</s><s>you still don't get it: 
+
+<quote>
+<s>ark@acm.org 
+let me rephrase the question. 
+</s><s>suppose in a couple of years a new version of acr comes out that does a better job of demosaicing (or whatever) than the current one.</s><s> is there any reason to believe that it would be necessary to recreate every dng file from the corresponding raw file (as it was in going from acr 6.3 (i think) to acr 7.1) or is the dng file from acr 8.4 contain all of the information in the raw file? 
+</s><s>this is a reasonable question about workflow- 
+</s></quote>
+no, it's a question about a hypothetical- and it lacks foundation.</s><s> yes, we do foresee the probability of future versions of acr doing a better job of the conversion, that is precisely the point.</s><s> but for acr to get to that point, it would require a breakthrough in technology that we cannot now predict.</s><s> not knowing what such an advance might entail, the question of whether the dng wrapper could be affecting the raw data in ways that we cannot currently discern becomes impossible to answer. 
+</s><s>given current technology, we can say today that the raw data is indeed not affected by the dng conversion, but no one can guarantee you that future technology advances will not force us to revise that view. 
+</s><s>that's why it is so unwise not to keep the original raw file in perpetuity, especially when the only drawback is the cost of file storage, which at this point is so ridiculously cheap as to be trivial. 
+</s><s>if you want to perceive rudeness and inappropriateness in my point of view, or in my expressing such an opinion, go ahead.</s><s> there's nothing i can do about it. 
+</s><s>you had a question, and i answered it to the best of my ability, that's all.</s><s> in my considered opinion, your stance is unwise. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6194576</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="sandy_mc" timestamp="Mar 10, 2014 12:00 AM">
+<s>there is no way to know what information a hypothetical better x-trans demosaicing scheme might require, and so no way for anyone to know whether that information is contained in a converted dng or not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195296</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 10, 2014 7:42 AM">
+<s>sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file, then it doesn't matter what information a better x-trans demosaicing scheme might require.</s><s> and i believe that the whole point of the dng format is to make it possible to reconstruct the original raw information exactly. 
+</s><s>the whole point of my original question was to seek information to confirm or deny this belief.</s><s> the question of whether, and if so how, to archive raw files separately from the dng files that (if indeed they do) contain the same information is a completely independent question that deserves its own discussion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195366</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="deejjjaaaa" timestamp="Mar 10, 2014 7:55 AM">
+<s>> sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file, then it doesn't matter what information a better x-trans demosaicing scheme might require.</s><s> and i believe that the whole point of the dng format is to make it possible to reconstruct the original raw information exactly 
+then does it surprise you that adobe dng converter does not have an option to convert from dng back to original raw :-) ?</s><s> no, there is an option to embded the original raw file in dng, yes - but except that solution :-) ?</s><s> believing is a nice thing, but don't be taken for a ride like library of congress... unless you have a very specific defition of "original raw information" that suits you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195817</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 9:29 AM">
+<s>for the reasons i have explained and which deejjjaaaa has expanded on, you're still dead wrong. 
+
+<quote>
+<s>ark@acm.org wrote: 
+sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file- 
+</s></quote>
+</s><s>where on earth did you get that from?</s><s> you cannot "reconstruct" the exact original raw file from a dng file.</s><s> the option is simply not offered. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195881</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 10, 2014 9:42 AM">
+<s>there are two different questions.</s><s> the first is whether adobe--or anyone--offers a way to reconstruct the exact original raw file.</s><s> the second, which is the one i am asking, is whether a dng file contains all of the image information in the original raw file. 
+</s><s>for example, i have tried the following experiment: save a raw file from a fuji x-100 (note that the x100 does not have an x-trans sensor).</s><s> convert the raw file to dng and save the dng file. 
+</s><s>now load the raw file into lightroom and export a tiff image.</s><s> then do the same thing with the dng file.</s><s> the result is two tiff images that are bit-for-bit identical.</s><s> i think it is reasonable to conclude from that experiment that lightroom does not use any information from the raw file that is not also in the dng file, and this conclusion is reasonable whether or not there is a way to recreate the entire raw file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195980</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 9:50 AM">
+<s><quote>
+<s>ark@acm.org wrote: 
+sandy_mc and station_two, if the information in a dng file is sufficient to reconstruct exactly the original raw file, then it doesn't matter what information a better x-trans demosaicing scheme might require.</s><s> and i believe that the whole point of the dng format is to make it possible to reconstruct the original raw information exactly- 
+</s></quote>
+</s><s>that is a fallacy. 
+
+
+<quote>
+<s>ark@acm.org wrote: 
+
+</s></quote>
+
+</s><s>belief, schmelief. 
+</s><s>with today's acr technology, adobe tells you that the raw to non-linear, demosaic'ed conversion of a dng image file is identical to the raw to non-linear, demosaic'ed conversion of the original raw file, not that you can "reconstruct" said original raw file as recorded by your camera. 
+</s><s>whether future acr technology can advance to the point that a conversion from the original raw file as recorded by your camera generates more information than the current, latest version of acr is mere speculation, and it would remain to be proven whether such theoretical enhanced acr could also extract the same enhanced conversion from a dng converted from the original raw with an improved dng converter that would incorporate the same technical advances as the hypothetical enhanced acr plug-in. 
+</s><s>sorry, if you take offense again, but i'm unabashedly back to my analogy of burning your film negatives. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195988</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 9:59 AM">
+<s>your last post, #14, contains the same flawed assumptions as your previous posts, plus another fallacy. 
+</s><s>you describe an experiment that uses today's acr technology and pretend to make it valid for a theoretical, future, enhanced acr technology that does not yet exist. 
+</s><s>that experiment is worthless and utterly irrelevant to the underlying question you posed. 
+</s><s>see post #15 in this thread: 
+whether future acr technology can advance to the point that a conversion from the original raw file as recorded by your camera generates more information than the current, latest version of acr is mere speculation, and it would remain to be proven whether such theoretical enhanced acr could also extract the same enhanced conversion from a dng converted from the original raw with an improved dng converter that would incorporate the same technical advances as the hypothetical enhanced acr plug-in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6195996</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ark%40acm.org" timestamp="Mar 10, 2014 10:00 AM">
+<s>station_two, you say that "adobe tells you that the raw to non-linear, demosaic'ed conversion of a dng image file is identical to the raw to non-linear, demosaic'ed conversion of the original raw file, not that you can "reconstruct" said original raw file as recorded by your camera." 
+i believe that adobe is now making a stronger statement, namely that starting with acr 8.4, the demosaicing/linearization is done *after* conversion to dng by default (i.e. unless you request compatibility with acr 7.1 or earlier), and that the dng file records the original pixel information from the x-trans sensor. 
+</s><s>if you believe that this claim is not true, i would appreciate some factual evidence that refutes it.</s><s> perhaps someone from adobe would be willing to clarify the matter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6196006</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 10:01 AM">
+<s>-this whole discussion is sooooooo pointless, given the already trivial cost of storage space. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6196013</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 10:09 AM">
+<s>ark@acm.org wrote:  -i believe that adobe is now making a stronger statement- if you believe that this claim is not true, i would appreciate some factual evidence that refutes it-   jeebus chrysler, ark!  now you want "factual evidence" of a hypothetical contingency the nature of which no one is in a position to foresee.  that is preposterous!   why don't you go post in the dng converter forum and see if any of the dng team members cares to engage in this discussion with you?   http://forums.adobe.com/community/dng?view=discussions   i'm out of here-and out of any other thread in which you choose to participate.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6197203</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="ccastleb" timestamp="Mar 10, 2014 3:08 PM">
+<s>hi all, 
+</s><s>while the current dng setup preserves the ability to take advantage of future improvements to acr interpolation of x-trans sensors, it isn't guaranteed to be a 1:1 substitute for interpolating directly from the original raf files.</s><s> your best bet is to hold on to the originals to be certain you will get the best results. 
+</s><s>regards, 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6185345-6197662</DOCNO>
+<TEXT>
+<subject>Does ACR include all information from X-Trans sensors?</subject>
+<post author="station_two" timestamp="Mar 10, 2014 5:38 PM">
+<s>thanks for posting, ccastleb.</s><s> maybe the op wiill reconsider now that adobe staff has chimed in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6187281-1422632</DOCNO>
+<TEXT>
+<subject>changing brush size in camera raw?</subject>
+<post author="stoleNFuture" timestamp="Mar 6, 2014 7:14 PM">
+<s>i'm having trouble with changing brush size in the camera raw brush tools.</s><s> what i use for input is a scandinavian keyboard and i have to type in alt gr+8 and alt gr+9 instead of brackets.</s><s> this works great in photoshop,  but sadly not in camera raw.</s><s> is anyone able to help me?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6187281-6187348</DOCNO>
+<TEXT>
+<subject>changing brush size in camera raw?</subject>
+<post author="R_Kelly" timestamp="Mar 6, 2014 8:29 PM">
+<s>in camera raw you should be able to right mouse click, hold and drag left or right to change the brush size 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6187281-6194773</DOCNO>
+<TEXT>
+<subject>changing brush size in camera raw?</subject>
+<post author="chrisdavies_SDL" timestamp="Mar 10, 2014 3:07 AM">
+<s>please can you confirm which specific language you have installed?</s><s> all 4 nordic languages support by acr (swedish, danish, norwegian and finnish) have different shortcut sets. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6187281-1422632</DOCNO>
+<TEXT>
+<subject>changing brush size in camera raw?</subject>
+<post author="stoleNFuture" timestamp="Mar 6, 2014 7:14 PM">
+<s>i'm having trouble with changing brush size in the camera raw brush tools.</s><s> what i use for input is a scandinavian keyboard and i have to type in alt gr+8 and alt gr+9 instead of brackets.</s><s> this works great in photoshop,  but sadly not in camera raw.</s><s> is anyone able to help me?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6187281-6187348</DOCNO>
+<TEXT>
+<subject>changing brush size in camera raw?</subject>
+<post author="R_Kelly" timestamp="Mar 6, 2014 8:29 PM">
+<s>in camera raw you should be able to right mouse click, hold and drag left or right to change the brush size 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6187281-6194773</DOCNO>
+<TEXT>
+<subject>changing brush size in camera raw?</subject>
+<post author="chrisdavies_SDL" timestamp="Mar 10, 2014 3:07 AM">
+<s>please can you confirm which specific language you have installed?</s><s> all 4 nordic languages support by acr (swedish, danish, norwegian and finnish) have different shortcut sets. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-1423728</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 4:17 PM">
+<s>hello everyone.</s><s> 
+</s><s>i have a new computer, and i have installed the creative cloud software's already.</s><s> i have created a camera profile using colorchecker passport. and by default it is saved inside this folder 
+c:\users\user name\appdata\roaming\adobe\cameraraw\cameraprofiles 
+when i open the camera profile inside the camera raw, i do see all the default profiles that came with camera raw, but i don't see my custom profile.</s><s> also, i dont see it inside lightroom profile thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192181</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 4:33 PM">
+<s>that is the correct location for user-created camera profiles on windows as long as you're logged into whatever user "user name" stands for. 
+</s><s>you haven't said that you're using only one camera model and that you're dealing with only raw files or dngs created with raw files from that one camera. 
+</s><s>camera profiles are specific to a single camera model and to raw format or non-raw (jpg) format.</s><s> if your source photo with the colorchecker was a jpg or a dng created from a jpg, then it will not be available for raw files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192224</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 5:22 PM">
+<s>dear ssprengel. 
+i am using the raw images that was shot with my canon 5d. and i have converted the colorcheker shot into a dng fomat, and draged the dng into the colorchcker that created a profile.</s><s> when i go to the camera raw profile folder in my computer i do see all the saved settings.</s><s> but i dont see any new profile inside the camera raw ,, something is not right.</s><s> thanks, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192569</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 9:41 PM">
+<s>what does this mean "and draged the dng into the colorchcker that created a profile"? 
+</s><s>what files are in your %appdata%\adobe\cameraraw\cameraprofiles folder? 
+</s><s>if you want, upload your camera profile to http://www.dropbox.com/ and post a public download link to it, here.</s><s> that way someone can check if it is a profile compatible with 5d images or not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192601</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 10:05 PM">
+<s>dear ssprengel: 
+ok this is how i do it.</s><s> after finish shooting, i shoot a final with a colorcheker.</s><s> i save the final shot which is the picture of the colorcheker as a dng file.</s><s> later, i open the color checker, and i drag and drop the dng file into the colorcheker program.</s><s> then i click on create profile, and a profile name is saved as a .dcp file into the camera profiles folder.</s><s> but when i open the camera raw profile i don't see those files thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192581</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 10:20 PM">
+<s>are there dozens or hundreds of dcp files or is this your first one?</s><s> there may be a practical limit to how many can be shown. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192634</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 11:59 PM">
+<s>i have attached a screen-shot of the folder and the camera raw in one screen-shot thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6193674</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 9, 2014 2:45 PM">
+<s>only one dcip file.</s><s> also, i deleted and recreated more files.</s><s> it is very strange, it dose show in the profile folder but i can see them in my camera profile in acr.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6193809</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 9, 2014 3:26 PM">
+<s>can you supply your dcp file and your colorchecker dng via dropbox? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6193767</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 9, 2014 4:03 PM">
+<s>updated....</s><s> 
+</s><s>dear ssprengel. 
+</s><s>thank you very much.</s><s> now it is working.</s><s> i had no idea what was the issue.</s><s> but the problem is solved. some thing was wrong with the files.</s><s> thank you very much for your help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-1423728</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 4:17 PM">
+<s>hello everyone.</s><s> 
+</s><s>i have a new computer, and i have installed the creative cloud software's already.</s><s> i have created a camera profile using colorchecker passport. and by default it is saved inside this folder 
+c:\users\user name\appdata\roaming\adobe\cameraraw\cameraprofiles 
+when i open the camera profile inside the camera raw, i do see all the default profiles that came with camera raw, but i don't see my custom profile.</s><s> also, i dont see it inside lightroom profile thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192181</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 4:33 PM">
+<s>that is the correct location for user-created camera profiles on windows as long as you're logged into whatever user "user name" stands for. 
+</s><s>you haven't said that you're using only one camera model and that you're dealing with only raw files or dngs created with raw files from that one camera. 
+</s><s>camera profiles are specific to a single camera model and to raw format or non-raw (jpg) format.</s><s> if your source photo with the colorchecker was a jpg or a dng created from a jpg, then it will not be available for raw files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192224</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 5:22 PM">
+<s>dear ssprengel. 
+i am using the raw images that was shot with my canon 5d. and i have converted the colorcheker shot into a dng fomat, and draged the dng into the colorchcker that created a profile.</s><s> when i go to the camera raw profile folder in my computer i do see all the saved settings.</s><s> but i dont see any new profile inside the camera raw ,, something is not right.</s><s> thanks, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192569</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 9:41 PM">
+<s>what does this mean "and draged the dng into the colorchcker that created a profile"? 
+</s><s>what files are in your %appdata%\adobe\cameraraw\cameraprofiles folder? 
+</s><s>if you want, upload your camera profile to http://www.dropbox.com/ and post a public download link to it, here.</s><s> that way someone can check if it is a profile compatible with 5d images or not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192601</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 10:05 PM">
+<s>dear ssprengel: 
+ok this is how i do it.</s><s> after finish shooting, i shoot a final with a colorcheker.</s><s> i save the final shot which is the picture of the colorcheker as a dng file.</s><s> later, i open the color checker, and i drag and drop the dng file into the colorcheker program.</s><s> then i click on create profile, and a profile name is saved as a .dcp file into the camera profiles folder.</s><s> but when i open the camera raw profile i don't see those files thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192581</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 10:20 PM">
+<s>are there dozens or hundreds of dcp files or is this your first one?</s><s> there may be a practical limit to how many can be shown. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6192634</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 8, 2014 11:59 PM">
+<s>i have attached a screen-shot of the folder and the camera raw in one screen-shot thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6193674</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 9, 2014 2:45 PM">
+<s>only one dcip file.</s><s> also, i deleted and recreated more files.</s><s> it is very strange, it dose show in the profile folder but i can see them in my camera profile in acr.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6193809</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="ssprengel" timestamp="Mar 9, 2014 3:26 PM">
+<s>can you supply your dcp file and your colorchecker dng via dropbox? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6192151-6193767</DOCNO>
+<TEXT>
+<subject>Custom Camera Profile Not Showing</subject>
+<post author="animationlife" timestamp="Mar 9, 2014 4:03 PM">
+<s>updated....</s><s> 
+</s><s>dear ssprengel. 
+</s><s>thank you very much.</s><s> now it is working.</s><s> i had no idea what was the issue.</s><s> but the problem is solved. some thing was wrong with the files.</s><s> thank you very much for your help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6193486-1424118</DOCNO>
+<TEXT>
+<subject>Over correction in Camera raw</subject>
+<post author="allthink" timestamp="Mar 9, 2014 12:34 PM">
+<s>hello, i have a problem with functionality of camera raw module 8.3 in adobe cs6.</s><s> the module is over correcting the raw(.nef) images when selecting "enable lens profile corrections".</s><s> the lens are selected right( nikon 24-70 2.8) but it's over corrected in the corners of the image(it's too bright after correction) why this happens after 8 editions of the acr module?</s><s> i attach image with the demonstraion. aperture 2.8 shutter speed 1/400 iso 1400 
+
+
+1.why that happens?</s><s> 2.will it be corrected?</s><s> 3.if yes, when? 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6193486-1424118</DOCNO>
+<TEXT>
+<subject>Over correction in Camera raw</subject>
+<post author="allthink" timestamp="Mar 9, 2014 12:34 PM">
+<s>hello, i have a problem with functionality of camera raw module 8.3 in adobe cs6.</s><s> the module is over correcting the raw(.nef) images when selecting "enable lens profile corrections".</s><s> the lens are selected right( nikon 24-70 2.8) but it's over corrected in the corners of the image(it's too bright after correction) why this happens after 8 editions of the acr module?</s><s> i attach image with the demonstraion. aperture 2.8 shutter speed 1/400 iso 1400 
+
+
+1.why that happens?</s><s> 2.will it be corrected?</s><s> 3.if yes, when? 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-1417761</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper Tonga" timestamp="Feb 28, 2014 9:20 AM">
+<s>hi, i need a confirmation about the hue and saturation sliders on the camera calibration tab.</s><s> they are there for fine tuning the camera color space primaries in a dng profile?</s><s> thanks a lot.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6171141</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 2, 2014 4:37 AM">
+<s>as i'm not a programmer, i can not read the source files in the dng sdk.</s><s> so, i need help for understanding two points conceptually.</s><s> thanks a lot in advance. 
+1.</s><s> there is a step in the dng workflow called "linearization" for constructing 16 bit cfa image from the digital data coming from the sensor.</s><s> i would like to learn the calculations in this step, a simple numerical example would be very helpful.</s><s> 2. after demosicing step, we have rgb file with three channels in the camera native space.</s><s> i would like to learn how we decide the primaries of this camera native space for converting it to the ciexyz or cielab. 
+</s><s>and additionally, which color space acr uses as pcs, ciexyz or cielab? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6174776</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="G.Hoffmann" timestamp="Mar 3, 2014 10:17 AM">
+<s>hello, here i'm again.   i'm probably in the wrong forum, because i can't tell you anything about the dng secrets (though i have the specs).   about your second question (more an issue for a color science forum), i've found something:   estimation of the primaries for a digital camera:   please refer to these docs:   (1) concerning the calculation of the color gamut in a digital camera francisco martínez-verdú et al. http://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0cem qfjab&url=http%3a%2f%2frua.ua.es%2fdspace%2fbitstream%2f10045%2f973%2f 1%2fproof_final.pdf&ei=ul8uu8-dkyo9ygorsikadq&usg=afqjcngknghqzjohu_dc 2jwqwtlxopstbq&bvm=bv.61965928,d.bgq&cad=rja (2) http://docs-hoffmann.de/leastsqu16112006.pdf   given is an equation   (*) x = c r   we have two applications:   (1)  original question   x = matrix  x1 x2 ...</s><s> xm                 y1 y2 ...</s><s> ym                  z1 z2 ...</s><s> zm   m=41 values in each row for cie cmfs (color matching functions) 380nm...780nm   r = matrix  r1 r2 ...</s><s> rm                  g1 g2 ...</s><s> gm                  b1 b2 ...</s><s> bm   41 values in each row for the sensor sensitivities for red, green and blue ccd array elements   matrix c is found by solving equation (*), using the pseudoinverse.</s><s> matrix c contains the xyz-coordinates of the primaries red, green, blue as columns 1, 2 and 3.   (2) about the mathematics   x = matrix  x1 x2  ...  xm                  y1 y2 ...</s><s> ym                  z1 z2 ...</s><s> zm m=24 values for the gretagmacbeth colorchecker   r = matrix  r1 r2 ...</s><s> rm                   g1 g2 ...</s><s> gm                   b1 b2 ...</s><s> bm   24 values in each row for the rgb results als delivered by the camera, for instance in srgb.</s><s> matrix c contains the xyz-coordinates of the effective primaries(including srgb)  red, green, blue as columns.   (2) explains the principle of the pseudoinverse for overdetermined systems of linear equations.</s><s> (1) explains the application for the identification of camera primaries for given sensor sensitivities.   unfortunately, the whole concept will fail, if the camera sensor sensitivities (cmfs) are not linear combinations of the cie cmfs x-bar, y-bar, z-bar.</s><s> in this case, a camera does not have primaries, but the computational result can be used as an approximation.   cmf = color matching function (cie)   i regret –it cannot be explained 'for the layman'.   best regards --gernot hoffmann
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6175549</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 3, 2014 1:17 PM">
+<s>hi gernot, 
+</s><s>i've also found some articles and with the addition of yours, i need some time to read and digest all of them.</s><s> thanks a lot for all your helps. 
+i have some math background, but i'm not so interested in the math side of this subject.</s><s> i just want to understand it at the conceptual level. 
+</s><s>can we not summarize what is happening at this stage in 4-5 sentences? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6178084</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="G.Hoffmann" timestamp="Mar 4, 2014 9:34 AM">
+<s>hello alper tonga,   let me begin with a recommendation: please read papers diagonally, where sabine süsstrunk is author or co-author.</s><s> this guarantees excellent quality.</s><s> for instance this one: http://infoscience.epfl.ch/record/182538/files/egpaper_final.pdf   if we refer to a certain document, i might be able to explain this and that.</s><s> please ask here.   the issue cannot be summarized in a few sentences, but trying this isn't wasted time:   an input device, camera or scanner, contains three types of color sensors, one for r, one for g and one for b. each sensitivity function (versus wavelength) looks like a narrow gaussian bell.</s><s> these shapes may overlap or not.</s><s> probably this sounds very reasonable – and it is, for instance, if we had to reproduce once and for ever offset prints.</s><s> this 'densitometric device' could be calibrated by test images for this application.   for real world photos this doesn't work.</s><s> the scene shows colors which can be uniquely described by cie xyz.</s><s> the camera should be able to reproduce these colors in xyz.</s><s> the only accurate solution to this problem was discovered by luther, the luther condition: original: http://docs-hoffmann.de/luther1927.pdf translation into english: http://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja& ved=0cduqfjab&url=http%3a%2f%2fiscc.org%2fpdf%2fluthercolorstimmetrics .pdf&ei=y5yvu7ryiqq8ygo73ykica&usg=afqjcnhgvmof2mywfbsy-zxcovnf33eola& bvm=bv.62286460,d.bgq the luther condition: the three sensitivity functions have to be the cie color matching functions (cmfs), or linear combinations of those.</s><s> x-bar, y-bar and z-bar are all positive, thus they can be used for sensors, but it turned out, that this choice leads to severe inaccuracies (the sensor covers the whole horseshoe diagram area, the x-bar and y-bar curves are widely overlapping and the transformation into common rgb-spaces suffers from noise).</s><s> linear combinations have mostly negative lobes.</s><s> as a compromise, these are clipped and the remaining behaviour isn't exactly colorimetric, but altogether not bad.</s><s> in any case it's nearer to the luther idea  than the densitometric solution.</s><s> therefore it's possible to solve this mentioned equation x = c r for c and extract the three columns as approximations for the primaries in xyz, or, how i would say now, calculate the three pseudoprimaries.   just this is explained in the article by sabine süsstrunk.     best regards --gernot hoffmann
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6178544</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 4, 2014 10:35 AM">
+<s>i've just come back to home and i was reading your first post and looking at the articles with more attention.</s><s> i think i get the idea, but need to read all the referenced materials here before saying anything.</s><s> thank you so much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6185957</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 6, 2014 12:03 PM">
+<s>my summary is here )) of course, it needs your corrections / confirmations / answers. 
+</s><s>the digital cameras are another type of animal and so they have different spectral sensitivities from human, they see the world different from us a little bit.</s><s> we need to map from their color vision to human vision which is specified by cie colorimetry. 
+</s><s>there are two species of this animal. 
+1.</s><s> if we have a camera whose spectral sensitivities are absolutely linear combinations of human cmfs, then with a 3x3 conversion matrix, we can exactly calculate its primaries with the help of some patches whose lab values are known previously.</s><s> in this case, is it possible to derive the coefficients of the conversion matrix from a single patch? 
+2.</s><s> if we have a camera whose spectral sensitivities are not linear combinations of human cmfs, then again with a 3x3 conversion matrix, we can not exactly calculate but we can estimate its primaries approximately with the help of some patches whose lab values are known previously.</s><s> but, in this case we need more patches for approximating the coefficients of the conversion matrix by the least squares technique.</s><s> the more patches, the more correct mapping. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6192566</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="G.Hoffmann" timestamp="Mar 9, 2014 12:23 AM">
+<s>i would like to confirm your opinion – you're right. 
+</s><s>if the spectral sensitivities are linear combinations of the cmfs, then the conversion matrix is the exact solution, as you said.</s><s> but this matrix contains 9 unknowns, which are not correlated.</s><s> therefore one needs at least 9 patches. 
+</s><s>if the conversion matrix is only an approximation, quite normal for commercial cameras, one needs more patches.</s><s> gmb colorchecker has 24 patches.</s><s> as shown in one of my documents the linear approach isn't very fruitful, whereas a nonlinear camera color calibration by gmb profilemaker delivered rather good results for the reproduction of paintings (opposed to 3d real scenes, where a single target isn't of great value, in my opinion). 
+</s><s>best regards --gernot hoffmann 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6193152</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 9, 2014 10:14 AM">
+<s>one more point is clear for me now.</s><s> thank you.</s><s> 
+</s><s>i would like to ask a specific question about the camera calibration tab, found in lr and acr and also found in dng profile editor. 
+</s><s>there are hue and saturation sliders on this tab and it is obvious that these sliders are there for fine tuning the estimated camera primaries. 
+</s><s>i'm playing with these sliders for some time and when the saturation sliders are all set to the left end (to the zero saturation point), i expect to get a grayscale image.</s><s> but when the saturation sliders are set to left end for all primaries, i've realized that i'm always getting a little bit blue-magenta tint on my photos. 
+</s><s>can there be any colorimetric reason for this behaviour? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-1417761</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper Tonga" timestamp="Feb 28, 2014 9:20 AM">
+<s>hi, i need a confirmation about the hue and saturation sliders on the camera calibration tab.</s><s> they are there for fine tuning the camera color space primaries in a dng profile?</s><s> thanks a lot.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6171141</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 2, 2014 4:37 AM">
+<s>as i'm not a programmer, i can not read the source files in the dng sdk.</s><s> so, i need help for understanding two points conceptually.</s><s> thanks a lot in advance. 
+1.</s><s> there is a step in the dng workflow called "linearization" for constructing 16 bit cfa image from the digital data coming from the sensor.</s><s> i would like to learn the calculations in this step, a simple numerical example would be very helpful.</s><s> 2. after demosicing step, we have rgb file with three channels in the camera native space.</s><s> i would like to learn how we decide the primaries of this camera native space for converting it to the ciexyz or cielab. 
+</s><s>and additionally, which color space acr uses as pcs, ciexyz or cielab? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6174776</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="G.Hoffmann" timestamp="Mar 3, 2014 10:17 AM">
+<s>hello, here i'm again.   i'm probably in the wrong forum, because i can't tell you anything about the dng secrets (though i have the specs).   about your second question (more an issue for a color science forum), i've found something:   estimation of the primaries for a digital camera:   please refer to these docs:   (1) concerning the calculation of the color gamut in a digital camera francisco martínez-verdú et al. http://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0cem qfjab&url=http%3a%2f%2frua.ua.es%2fdspace%2fbitstream%2f10045%2f973%2f 1%2fproof_final.pdf&ei=ul8uu8-dkyo9ygorsikadq&usg=afqjcngknghqzjohu_dc 2jwqwtlxopstbq&bvm=bv.61965928,d.bgq&cad=rja (2) http://docs-hoffmann.de/leastsqu16112006.pdf   given is an equation   (*) x = c r   we have two applications:   (1)  original question   x = matrix  x1 x2 ...</s><s> xm                 y1 y2 ...</s><s> ym                  z1 z2 ...</s><s> zm   m=41 values in each row for cie cmfs (color matching functions) 380nm...780nm   r = matrix  r1 r2 ...</s><s> rm                  g1 g2 ...</s><s> gm                  b1 b2 ...</s><s> bm   41 values in each row for the sensor sensitivities for red, green and blue ccd array elements   matrix c is found by solving equation (*), using the pseudoinverse.</s><s> matrix c contains the xyz-coordinates of the primaries red, green, blue as columns 1, 2 and 3.   (2) about the mathematics   x = matrix  x1 x2  ...  xm                  y1 y2 ...</s><s> ym                  z1 z2 ...</s><s> zm m=24 values for the gretagmacbeth colorchecker   r = matrix  r1 r2 ...</s><s> rm                   g1 g2 ...</s><s> gm                   b1 b2 ...</s><s> bm   24 values in each row for the rgb results als delivered by the camera, for instance in srgb.</s><s> matrix c contains the xyz-coordinates of the effective primaries(including srgb)  red, green, blue as columns.   (2) explains the principle of the pseudoinverse for overdetermined systems of linear equations.</s><s> (1) explains the application for the identification of camera primaries for given sensor sensitivities.   unfortunately, the whole concept will fail, if the camera sensor sensitivities (cmfs) are not linear combinations of the cie cmfs x-bar, y-bar, z-bar.</s><s> in this case, a camera does not have primaries, but the computational result can be used as an approximation.   cmf = color matching function (cie)   i regret –it cannot be explained 'for the layman'.   best regards --gernot hoffmann
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6175549</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 3, 2014 1:17 PM">
+<s>hi gernot, 
+</s><s>i've also found some articles and with the addition of yours, i need some time to read and digest all of them.</s><s> thanks a lot for all your helps. 
+i have some math background, but i'm not so interested in the math side of this subject.</s><s> i just want to understand it at the conceptual level. 
+</s><s>can we not summarize what is happening at this stage in 4-5 sentences? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6178084</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="G.Hoffmann" timestamp="Mar 4, 2014 9:34 AM">
+<s>hello alper tonga,   let me begin with a recommendation: please read papers diagonally, where sabine süsstrunk is author or co-author.</s><s> this guarantees excellent quality.</s><s> for instance this one: http://infoscience.epfl.ch/record/182538/files/egpaper_final.pdf   if we refer to a certain document, i might be able to explain this and that.</s><s> please ask here.   the issue cannot be summarized in a few sentences, but trying this isn't wasted time:   an input device, camera or scanner, contains three types of color sensors, one for r, one for g and one for b. each sensitivity function (versus wavelength) looks like a narrow gaussian bell.</s><s> these shapes may overlap or not.</s><s> probably this sounds very reasonable – and it is, for instance, if we had to reproduce once and for ever offset prints.</s><s> this 'densitometric device' could be calibrated by test images for this application.   for real world photos this doesn't work.</s><s> the scene shows colors which can be uniquely described by cie xyz.</s><s> the camera should be able to reproduce these colors in xyz.</s><s> the only accurate solution to this problem was discovered by luther, the luther condition: original: http://docs-hoffmann.de/luther1927.pdf translation into english: http://www.google.de/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja& ved=0cduqfjab&url=http%3a%2f%2fiscc.org%2fpdf%2fluthercolorstimmetrics .pdf&ei=y5yvu7ryiqq8ygo73ykica&usg=afqjcnhgvmof2mywfbsy-zxcovnf33eola& bvm=bv.62286460,d.bgq the luther condition: the three sensitivity functions have to be the cie color matching functions (cmfs), or linear combinations of those.</s><s> x-bar, y-bar and z-bar are all positive, thus they can be used for sensors, but it turned out, that this choice leads to severe inaccuracies (the sensor covers the whole horseshoe diagram area, the x-bar and y-bar curves are widely overlapping and the transformation into common rgb-spaces suffers from noise).</s><s> linear combinations have mostly negative lobes.</s><s> as a compromise, these are clipped and the remaining behaviour isn't exactly colorimetric, but altogether not bad.</s><s> in any case it's nearer to the luther idea  than the densitometric solution.</s><s> therefore it's possible to solve this mentioned equation x = c r for c and extract the three columns as approximations for the primaries in xyz, or, how i would say now, calculate the three pseudoprimaries.   just this is explained in the article by sabine süsstrunk.     best regards --gernot hoffmann
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6178544</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 4, 2014 10:35 AM">
+<s>i've just come back to home and i was reading your first post and looking at the articles with more attention.</s><s> i think i get the idea, but need to read all the referenced materials here before saying anything.</s><s> thank you so much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6185957</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 6, 2014 12:03 PM">
+<s>my summary is here )) of course, it needs your corrections / confirmations / answers. 
+</s><s>the digital cameras are another type of animal and so they have different spectral sensitivities from human, they see the world different from us a little bit.</s><s> we need to map from their color vision to human vision which is specified by cie colorimetry. 
+</s><s>there are two species of this animal. 
+1.</s><s> if we have a camera whose spectral sensitivities are absolutely linear combinations of human cmfs, then with a 3x3 conversion matrix, we can exactly calculate its primaries with the help of some patches whose lab values are known previously.</s><s> in this case, is it possible to derive the coefficients of the conversion matrix from a single patch? 
+2.</s><s> if we have a camera whose spectral sensitivities are not linear combinations of human cmfs, then again with a 3x3 conversion matrix, we can not exactly calculate but we can estimate its primaries approximately with the help of some patches whose lab values are known previously.</s><s> but, in this case we need more patches for approximating the coefficients of the conversion matrix by the least squares technique.</s><s> the more patches, the more correct mapping. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6192566</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="G.Hoffmann" timestamp="Mar 9, 2014 12:23 AM">
+<s>i would like to confirm your opinion – you're right. 
+</s><s>if the spectral sensitivities are linear combinations of the cmfs, then the conversion matrix is the exact solution, as you said.</s><s> but this matrix contains 9 unknowns, which are not correlated.</s><s> therefore one needs at least 9 patches. 
+</s><s>if the conversion matrix is only an approximation, quite normal for commercial cameras, one needs more patches.</s><s> gmb colorchecker has 24 patches.</s><s> as shown in one of my documents the linear approach isn't very fruitful, whereas a nonlinear camera color calibration by gmb profilemaker delivered rather good results for the reproduction of paintings (opposed to 3d real scenes, where a single target isn't of great value, in my opinion). 
+</s><s>best regards --gernot hoffmann 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6167006-6193152</DOCNO>
+<TEXT>
+<subject>Camera calibration tab and camera color space</subject>
+<post author="Alper%20Tonga" timestamp="Mar 9, 2014 10:14 AM">
+<s>one more point is clear for me now.</s><s> thank you.</s><s> 
+</s><s>i would like to ask a specific question about the camera calibration tab, found in lr and acr and also found in dng profile editor. 
+</s><s>there are hue and saturation sliders on this tab and it is obvious that these sliders are there for fine tuning the estimated camera primaries. 
+</s><s>i'm playing with these sliders for some time and when the saturation sliders are all set to the left end (to the zero saturation point), i expect to get a grayscale image.</s><s> but when the saturation sliders are set to left end for all primaries, i've realized that i'm always getting a little bit blue-magenta tint on my photos. 
+</s><s>can there be any colorimetric reason for this behaviour? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-1423407</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 4:17 AM">
+<s>hi: 
+</s><s>did install the cr 8.4 beta.</s><s> can now preview .</s><s>nef files taken with the nikon d4s in photoshop and bridge, however in lightroom this is not working.</s><s> any idea why this is?</s><s> is there a workaround or a solution? 
+</s><s>thx 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6190962</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="b2martin_a" timestamp="Mar 8, 2014 6:28 AM">
+<s>camera raw is not a plugin for lightroom.</s><s> a new version of lightroom is required to get the new updates available in camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191290</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 9:02 AM">
+<s>to my knowledge lightroom uses the cr-engine of photoshop. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191469</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 10:32 AM">
+<s>you've installed the adobe camera raw 8.4 plug-in for photoshop. 
+</s><s>the term camera raw also refers to the version of internal programming, a coyp of which is included in the plug-in and in lightroom, and in the dng converter, although each has its own copy. 
+</s><s>updating the photoshop acr 8.4 plug-in that contains the cr engine 8.4 doesn't change lightroom 5.3 which contains the copy of the cr engine 8.3, still. 
+</s><s>what we're waiting for is the next version of lightroom to be released, likely called lr 5.4, which has its copy of the camera raw engine 8.4. 
+</s><s>the dng converter 8.4 beta has also been released and you can use it to create dngs from your new camera's raw files that will open in the older lightroom, but i'd only do that experimentally, and not delete your original raws, in case something is changed by the time of the final release. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191668</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="station_two" timestamp="Mar 8, 2014 12:52 PM">
+<s><quote>
+<s>murseblonder wrote: 
+to my knowledge lightroom uses the cr-engine of photoshop. 
+</s></quote>
+</s><s>you need to update your knowledge then.</s><s> lightroom uses a very similar (identical?</s><s>) engine to the one used by acr; but in no way does lightroom use the acr plug-in you install in photoshop. 
+</s><s>there is no way of updating lightroom raw support other than by waiting for each successive dot release of lightroom itself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191776</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="station_two" timestamp="Mar 8, 2014 12:53 PM">
+<s>didn't get to read ssprengel's post until after i had posted my reply (#4). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191926</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 2:30 PM">
+<s>thx!</s><s> let's wait then! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191927</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 2:31 PM">
+<s>apparently, tough luck! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6192145</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="John%20Waller" timestamp="Mar 8, 2014 4:53 PM">
+<s><quote>
+<s>murseblonder wrote: 
+apparently, tough luck! 
+</s></quote>not really. 
+</s><s>while we're waiting for lr 5.4, use the free dng 8.4 rc converter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-1423407</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 4:17 AM">
+<s>hi: 
+</s><s>did install the cr 8.4 beta.</s><s> can now preview .</s><s>nef files taken with the nikon d4s in photoshop and bridge, however in lightroom this is not working.</s><s> any idea why this is?</s><s> is there a workaround or a solution? 
+</s><s>thx 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6190962</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="b2martin_a" timestamp="Mar 8, 2014 6:28 AM">
+<s>camera raw is not a plugin for lightroom.</s><s> a new version of lightroom is required to get the new updates available in camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191290</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 9:02 AM">
+<s>to my knowledge lightroom uses the cr-engine of photoshop. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191469</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="ssprengel" timestamp="Mar 8, 2014 10:32 AM">
+<s>you've installed the adobe camera raw 8.4 plug-in for photoshop. 
+</s><s>the term camera raw also refers to the version of internal programming, a coyp of which is included in the plug-in and in lightroom, and in the dng converter, although each has its own copy. 
+</s><s>updating the photoshop acr 8.4 plug-in that contains the cr engine 8.4 doesn't change lightroom 5.3 which contains the copy of the cr engine 8.3, still. 
+</s><s>what we're waiting for is the next version of lightroom to be released, likely called lr 5.4, which has its copy of the camera raw engine 8.4. 
+</s><s>the dng converter 8.4 beta has also been released and you can use it to create dngs from your new camera's raw files that will open in the older lightroom, but i'd only do that experimentally, and not delete your original raws, in case something is changed by the time of the final release. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191668</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="station_two" timestamp="Mar 8, 2014 12:52 PM">
+<s><quote>
+<s>murseblonder wrote: 
+to my knowledge lightroom uses the cr-engine of photoshop. 
+</s></quote>
+</s><s>you need to update your knowledge then.</s><s> lightroom uses a very similar (identical?</s><s>) engine to the one used by acr; but in no way does lightroom use the acr plug-in you install in photoshop. 
+</s><s>there is no way of updating lightroom raw support other than by waiting for each successive dot release of lightroom itself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191776</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="station_two" timestamp="Mar 8, 2014 12:53 PM">
+<s>didn't get to read ssprengel's post until after i had posted my reply (#4). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191926</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 2:30 PM">
+<s>thx!</s><s> let's wait then! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6191927</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="Murseblonder" timestamp="Mar 8, 2014 2:31 PM">
+<s>apparently, tough luck! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6190812-6192145</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 not working in Lightroom 5</subject>
+<post author="John%20Waller" timestamp="Mar 8, 2014 4:53 PM">
+<s><quote>
+<s>murseblonder wrote: 
+apparently, tough luck! 
+</s></quote>not really. 
+</s><s>while we're waiting for lr 5.4, use the free dng 8.4 rc converter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191013-1423501</DOCNO>
+<TEXT>
+<subject>Problem opening Samsung NX1100 SRW files in CS6 and Lightroom 4</subject>
+<post author="tatianna.v" timestamp="Mar 8, 2014 12:44 PM">
+<s>i bought a samsung nx1100 and want to shoot in raw format.</s><s> my cs6 bridge and photoshop will not open the srw files though.</s><s> i downloaded the lightroom 4 that came with the camera and that will not read the srw files either.</s><s> how do i access my srw files? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191013-6191709</DOCNO>
+<TEXT>
+<subject>Problem opening Samsung NX1100 SRW files in CS6 and Lightroom 4</subject>
+<post author="John%20Waller" timestamp="Mar 8, 2014 12:45 PM">
+<s>the nx1100 was first supported in camera raw 7.4 and lightroom 4.4. http://helpx.adobe.com/creative-suite/kb/camera-raw-plug-supported-cam eras.html 
+cs6 shipped with camera raw 7.0 http://helpx.adobe.com/x-productkb/global/camera-raw-compatible-applic ations.html 
+so try updating camera raw in cs6 (help > updates) to 7.4. 
+</s><s>or updating lightroom to 4.4.1 (the last version of 4 which was released) win: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5600 mac: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5599 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191013-1423501</DOCNO>
+<TEXT>
+<subject>Problem opening Samsung NX1100 SRW files in CS6 and Lightroom 4</subject>
+<post author="tatianna.v" timestamp="Mar 8, 2014 12:44 PM">
+<s>i bought a samsung nx1100 and want to shoot in raw format.</s><s> my cs6 bridge and photoshop will not open the srw files though.</s><s> i downloaded the lightroom 4 that came with the camera and that will not read the srw files either.</s><s> how do i access my srw files? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191013-6191709</DOCNO>
+<TEXT>
+<subject>Problem opening Samsung NX1100 SRW files in CS6 and Lightroom 4</subject>
+<post author="John%20Waller" timestamp="Mar 8, 2014 12:45 PM">
+<s>the nx1100 was first supported in camera raw 7.4 and lightroom 4.4. http://helpx.adobe.com/creative-suite/kb/camera-raw-plug-supported-cam eras.html 
+cs6 shipped with camera raw 7.0 http://helpx.adobe.com/x-productkb/global/camera-raw-compatible-applic ations.html 
+so try updating camera raw in cs6 (help > updates) to 7.4. 
+</s><s>or updating lightroom to 4.4.1 (the last version of 4 which was released) win: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5600 mac: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5599 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191143-1423535</DOCNO>
+<TEXT>
+<subject>Update Camera Raw 8.3</subject>
+<post author="Benito1303" timestamp="Mar 8, 2014 7:53 AM">
+<s>hallo zusammen, 
+</s><s>ich kann nicht auf camera raw 8.3 updaten ! 
+</s><s>ich habe im menue hilfe aktualisieren angeklickt und erhalte die meldung: 
+schliessen sie die folgenden anwendungen, um fortzufahren adobe photoshop cs6 (photoshop exe.</s><s>) 
+</s><s>leider wir nach dem schliessen der anwendung das update nicht ausgeführt. 
+</s><s>ich bitte um hilfe wie ich weiter vorgehen soll. 
+</s><s>vielen dank.</s><s> 
+
+</s><s>herzliche grüsse holger driesen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191143-6191165</DOCNO>
+<TEXT>
+<subject>Update Camera Raw 8.3</subject>
+<post author="kglad" timestamp="Mar 8, 2014 8:04 AM">
+<s>you can update to the latest cr 8.4 here, http://labs.adobe.com/technologies/cameraraw8-4/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191143-1423535</DOCNO>
+<TEXT>
+<subject>Update Camera Raw 8.3</subject>
+<post author="Benito1303" timestamp="Mar 8, 2014 7:53 AM">
+<s>hallo zusammen, 
+</s><s>ich kann nicht auf camera raw 8.3 updaten ! 
+</s><s>ich habe im menue hilfe aktualisieren angeklickt und erhalte die meldung: 
+schliessen sie die folgenden anwendungen, um fortzufahren adobe photoshop cs6 (photoshop exe.</s><s>) 
+</s><s>leider wir nach dem schliessen der anwendung das update nicht ausgeführt. 
+</s><s>ich bitte um hilfe wie ich weiter vorgehen soll. 
+</s><s>vielen dank.</s><s> 
+
+</s><s>herzliche grüsse holger driesen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6191143-6191165</DOCNO>
+<TEXT>
+<subject>Update Camera Raw 8.3</subject>
+<post author="kglad" timestamp="Mar 8, 2014 8:04 AM">
+<s>you can update to the latest cr 8.4 here, http://labs.adobe.com/technologies/cameraraw8-4/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6186215-1422390</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 beta Preview facility</subject>
+<post author="Hanahoe" timestamp="Mar 6, 2014 12:32 PM">
+<s>in camera raw 8.4 the three new preview buttons (mode, swap and copy), at the bottom right hand corner of the image area, enable comparison of the image before and after adjustments in acr.</s><s> however, the buttons show the accumulative changes which have resulted from the progressive use of the individual panels (ie: basic, tone curve, detail, hsl / grayscale etc).</s><s> how do i see and evaluate the specific changes which i make with regard to each individual panel: in other words, can i turn on /off the effects of each individual panel without affecting the changes i have made with the other panels?</s><s> i am aware that i can do this for local correction changes with the adjustment brush by right clicking on the relevant adjustment pin, but how do i do evaluate the adjustments i have made for each of the individual main panels? 
+</s><s>thom hanahoe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6186215-1422390</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.4 beta Preview facility</subject>
+<post author="Hanahoe" timestamp="Mar 6, 2014 12:32 PM">
+<s>in camera raw 8.4 the three new preview buttons (mode, swap and copy), at the bottom right hand corner of the image area, enable comparison of the image before and after adjustments in acr.</s><s> however, the buttons show the accumulative changes which have resulted from the progressive use of the individual panels (ie: basic, tone curve, detail, hsl / grayscale etc).</s><s> how do i see and evaluate the specific changes which i make with regard to each individual panel: in other words, can i turn on /off the effects of each individual panel without affecting the changes i have made with the other panels?</s><s> i am aware that i can do this for local correction changes with the adjustment brush by right clicking on the relevant adjustment pin, but how do i do evaluate the adjustments i have made for each of the individual main panels? 
+</s><s>thom hanahoe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-1421934</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="Chelin" timestamp="Mar 6, 2014 3:22 AM">
+<s>nikon d800 raw stills shot in live view, video mode with a dx lens (40mm mikro), preview not available in ps cc or lightroom 5.</s><s> i am trying to download new cr 8.4 update, which seems to have fixed the bug, but i'm not being successful.</s><s> grateful for help.</s><s> chelin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6184940</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="ssprengel" timestamp="Mar 6, 2014 7:13 AM">
+<s>what is the problem you're having, in more detail? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6185153</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="Chelin" timestamp="Mar 6, 2014 8:09 AM">
+<s>i shot some raw stills using video mode, liveview (not still mode) with a nikon d800 and a dx lens.</s><s> i can't import the files with lr 5 or view them with bridge or photoshop cc, i understand this bug was fixed in the latest cr 8.4 update but i am not able to update it.</s><s> when i try to update photoshop creative cloud, a message tells me that my software is up to date (although i have cr 8.0 and 8.2 in my macbook and imac, respectively).</s><s> i downloaded the update separately but i can't install it.</s><s> i hope this gives you enough information.</s><s> grateful for your help! 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6185399</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="ssprengel" timestamp="Mar 6, 2014 8:54 AM">
+<s>i understand about the video stills in dx mode not working for the d800 because i'm the one who reported that. 
+</s><s>the acr 8.4 public beta release candidate (rc) is available at adobe labs for those who have a particular interest in using it: 
+http://labs.adobe.com/ 
+once the final version is released it will be delivered via the normal cc updates process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6185405</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="Chelin" timestamp="Mar 6, 2014 8:57 AM">
+<s>great!</s><s> thank you!</s><s> 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-1421934</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="Chelin" timestamp="Mar 6, 2014 3:22 AM">
+<s>nikon d800 raw stills shot in live view, video mode with a dx lens (40mm mikro), preview not available in ps cc or lightroom 5.</s><s> i am trying to download new cr 8.4 update, which seems to have fixed the bug, but i'm not being successful.</s><s> grateful for help.</s><s> chelin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6184940</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="ssprengel" timestamp="Mar 6, 2014 7:13 AM">
+<s>what is the problem you're having, in more detail? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6185153</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="Chelin" timestamp="Mar 6, 2014 8:09 AM">
+<s>i shot some raw stills using video mode, liveview (not still mode) with a nikon d800 and a dx lens.</s><s> i can't import the files with lr 5 or view them with bridge or photoshop cc, i understand this bug was fixed in the latest cr 8.4 update but i am not able to update it.</s><s> when i try to update photoshop creative cloud, a message tells me that my software is up to date (although i have cr 8.0 and 8.2 in my macbook and imac, respectively).</s><s> i downloaded the update separately but i can't install it.</s><s> i hope this gives you enough information.</s><s> grateful for your help! 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6185399</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="ssprengel" timestamp="Mar 6, 2014 8:54 AM">
+<s>i understand about the video stills in dx mode not working for the d800 because i'm the one who reported that. 
+</s><s>the acr 8.4 public beta release candidate (rc) is available at adobe labs for those who have a particular interest in using it: 
+http://labs.adobe.com/ 
+once the final version is released it will be delivered via the normal cc updates process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6184329-6185405</DOCNO>
+<TEXT>
+<subject>D800 Live View Video stills</subject>
+<post author="Chelin" timestamp="Mar 6, 2014 8:57 AM">
+<s>great!</s><s> thank you!</s><s> 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-1418629</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="GOGNY GOUBERT" timestamp="Mar 3, 2014 2:20 PM">
+<s>i have upagraded from ps cs5 to cs6. 
+i open a file in cr, and modify the exposition.</s><s> after that, i modify the clarity: immediatly, the exposition goes back as it was before the modification ... 
+</s><s>after the work on cr, i finish the file and go back to bridge: the image is not modified !</s><s> but if i dobble click on the same image in bridge, the file is opening in cr with the modifications: so this modifications are note visble on bridge ... 
+</s><s>some body can help me ? 
+i work with the last version of br and ps cs6. 
+</s><s>thanks, 
+</s><s>michel, michel.gogny@wanadoo.fr 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-6171038</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 2, 2014 2:59 AM">
+<s>which version of acr exactly?</s><s> as the issues you describe basically do not affect photoshop itself maybe you should check out http://forums.adobe.com/community/cameraraw and http://forums.adobe.com/community/bridge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-6179192</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="adriana%20ohlmeyer" timestamp="Mar 4, 2014 1:42 PM">
+<s>if you have nik plugins installed, please check reply # 8 on this thread: http://forums.adobe.com/message/6045415#6045415 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-6182527</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="GOGNY%20GOUBERT" timestamp="Mar 5, 2014 12:13 PM">
+<s>thanks a lot, adriana, it is working !</s><s> you are right, it is the nike plugins responsibility.</s><s> everything is ok now.</s><s> 
+</s><s>salutations and many thanks from guadeloupe, french west indies 
+michel gogny-goubert 
+
+
+</s><s>le 4 mars 2014 à 17:42, adriana ohlmeyer <forums_noreply@adobe.com> a écrit : 
+<quote>
+<s>
+</s><s>re: camera raw cs6 not working properly created by adriana ohlmeyer in adobe camera raw - view the full discussion if you have nik plugins installed, please check reply # 8 on this thread: 
+http://forums.adobe.com/message/6045415#6045415 
+please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/6179192#6179192 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: camera raw cs6 not working properly to unsubscribe from this thread, please visit the message page at re: camera raw cs6 not working properly.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in adobe camera raw at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-1418629</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="GOGNY GOUBERT" timestamp="Mar 3, 2014 2:20 PM">
+<s>i have upagraded from ps cs5 to cs6. 
+i open a file in cr, and modify the exposition.</s><s> after that, i modify the clarity: immediatly, the exposition goes back as it was before the modification ... 
+</s><s>after the work on cr, i finish the file and go back to bridge: the image is not modified !</s><s> but if i dobble click on the same image in bridge, the file is opening in cr with the modifications: so this modifications are note visble on bridge ... 
+</s><s>some body can help me ? 
+i work with the last version of br and ps cs6. 
+</s><s>thanks, 
+</s><s>michel, michel.gogny@wanadoo.fr 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-6171038</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 2, 2014 2:59 AM">
+<s>which version of acr exactly?</s><s> as the issues you describe basically do not affect photoshop itself maybe you should check out http://forums.adobe.com/community/cameraraw and http://forums.adobe.com/community/bridge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-6179192</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="adriana%20ohlmeyer" timestamp="Mar 4, 2014 1:42 PM">
+<s>if you have nik plugins installed, please check reply # 8 on this thread: http://forums.adobe.com/message/6045415#6045415 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170426-6182527</DOCNO>
+<TEXT>
+<subject>Camera Raw CS6 not working properly</subject>
+<post author="GOGNY%20GOUBERT" timestamp="Mar 5, 2014 12:13 PM">
+<s>thanks a lot, adriana, it is working !</s><s> you are right, it is the nike plugins responsibility.</s><s> everything is ok now.</s><s> 
+</s><s>salutations and many thanks from guadeloupe, french west indies 
+michel gogny-goubert 
+
+
+</s><s>le 4 mars 2014 à 17:42, adriana ohlmeyer <forums_noreply@adobe.com> a écrit : 
+<quote>
+<s>
+</s><s>re: camera raw cs6 not working properly created by adriana ohlmeyer in adobe camera raw - view the full discussion if you have nik plugins installed, please check reply # 8 on this thread: 
+http://forums.adobe.com/message/6045415#6045415 
+please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/6179192#6179192 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: camera raw cs6 not working properly to unsubscribe from this thread, please visit the message page at re: camera raw cs6 not working properly.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in adobe camera raw at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6176831-1420220</DOCNO>
+<TEXT>
+<subject>Error when trying to open up files in ACR, 'could not complete your request because of a disk error'</subject>
+<post author="aluxuriousred" timestamp="Mar 4, 2014 12:47 AM">
+<s>when i try to open any file in camera raw, a window pops up that says 'could not complete your request because of a disk error.' i checked for errors on my disk drives and my computer said they were clean.</s><s> i thought my sd card might be corrupted but i get the error when trying to open files that are already on my computer that i was able to open a couple days before and i'm able to open files from that card on a different computer.</s><s> does anyone have a solution?</s><s> help would be greatly appreciated.</s><s> (i have windows 7 by the way) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6176831-6179126</DOCNO>
+<TEXT>
+<subject>Error when trying to open up files in ACR, 'could not complete your request because of a disk error'</subject>
+<post author="adriana%20ohlmeyer" timestamp="Mar 4, 2014 1:33 PM">
+<s>what version of acr do you have installed?</s><s> waht type of files are you trying to open (camera model)? -adriana 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6176831-6180091</DOCNO>
+<TEXT>
+<subject>Error when trying to open up files in ACR, 'could not complete your request because of a disk error'</subject>
+<post author="aluxuriousred" timestamp="Mar 4, 2014 7:24 PM">
+<s>thanks for responding!</s><s> i have 8.3 installed and my camera is a canon 6d. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6176831-1420220</DOCNO>
+<TEXT>
+<subject>Error when trying to open up files in ACR, 'could not complete your request because of a disk error'</subject>
+<post author="aluxuriousred" timestamp="Mar 4, 2014 12:47 AM">
+<s>when i try to open any file in camera raw, a window pops up that says 'could not complete your request because of a disk error.' i checked for errors on my disk drives and my computer said they were clean.</s><s> i thought my sd card might be corrupted but i get the error when trying to open files that are already on my computer that i was able to open a couple days before and i'm able to open files from that card on a different computer.</s><s> does anyone have a solution?</s><s> help would be greatly appreciated.</s><s> (i have windows 7 by the way) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6176831-6179126</DOCNO>
+<TEXT>
+<subject>Error when trying to open up files in ACR, 'could not complete your request because of a disk error'</subject>
+<post author="adriana%20ohlmeyer" timestamp="Mar 4, 2014 1:33 PM">
+<s>what version of acr do you have installed?</s><s> waht type of files are you trying to open (camera model)? -adriana 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6176831-6180091</DOCNO>
+<TEXT>
+<subject>Error when trying to open up files in ACR, 'could not complete your request because of a disk error'</subject>
+<post author="aluxuriousred" timestamp="Mar 4, 2014 7:24 PM">
+<s>thanks for responding!</s><s> i have 8.3 installed and my camera is a canon 6d. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6179260-1420757</DOCNO>
+<TEXT>
+<subject>I receive an error message about an unidentified developer?</subject>
+<post author="macarens" timestamp="Mar 4, 2014 4:31 PM">
+<s>hello, i need help.</s><s> i have a new nikon d7000 and the photoshop cs5.</s><s> i need the camera raw 6.3.</s><s> i followed your instructions and downloaded it from this page but didnt work.   link: http://www.adobe.com/support/downloads/detail.jsp?ftpid=4917 this is what it says when i try to install it.</s><s> i have a mac book pro os x 10.9.2
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6179260-6179632</DOCNO>
+<TEXT>
+<subject>I receive an error message about an unidentified developer?</subject>
+<post author="Romsinha" timestamp="Mar 4, 2014 3:53 PM">
+<s>hi macarens, 
+please refer the article: http://www.mcvsd.org/tips/powerteacher/osx_unidentified_developers.htm l. 
+</s><s>regards, romit sinha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6179260-1420757</DOCNO>
+<TEXT>
+<subject>I receive an error message about an unidentified developer?</subject>
+<post author="macarens" timestamp="Mar 4, 2014 4:31 PM">
+<s>hello, i need help.</s><s> i have a new nikon d7000 and the photoshop cs5.</s><s> i need the camera raw 6.3.</s><s> i followed your instructions and downloaded it from this page but didnt work.   link: http://www.adobe.com/support/downloads/detail.jsp?ftpid=4917 this is what it says when i try to install it.</s><s> i have a mac book pro os x 10.9.2
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6179260-6179632</DOCNO>
+<TEXT>
+<subject>I receive an error message about an unidentified developer?</subject>
+<post author="Romsinha" timestamp="Mar 4, 2014 3:53 PM">
+<s>hi macarens, 
+please refer the article: http://www.mcvsd.org/tips/powerteacher/osx_unidentified_developers.htm l. 
+</s><s>regards, romit sinha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6174448-1419682</DOCNO>
+<TEXT>
+<subject>Download installation</subject>
+<post author="John D, Campbell" timestamp="Mar 3, 2014 8:57 AM">
+<s>how and where do i install dng converter 7.3 as the present installed version of camera raw does not support the files from a canon eos 6d dslr 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6174448-6174706</DOCNO>
+<TEXT>
+<subject>Download installation</subject>
+<post author="Rave" timestamp="Mar 3, 2014 9:38 AM">
+<s>hi john, 
+</s><s>you can download dng converter 7.3 from : http://www.adobe.com/support/downloads/detail.jsp?ftpid=5519 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6174448-6179466</DOCNO>
+<TEXT>
+<subject>Download installation</subject>
+<post author="station_two" timestamp="Mar 4, 2014 3:07 PM">
+<s>actually, one should always download, install and run the latest version of the dng converter.</s><s> the current version is 8.3, with an 8.4rc beta also available. 
+</s><s>camera model support is always cumulative with each new version of both acr and the adobe dng converter.</s><s> once a given camera model has been supported, it will continue to be supported in all succeeding versions. 
+i see no reason whatsoever to use 7.3 at this point. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6174448-1419682</DOCNO>
+<TEXT>
+<subject>Download installation</subject>
+<post author="John D, Campbell" timestamp="Mar 3, 2014 8:57 AM">
+<s>how and where do i install dng converter 7.3 as the present installed version of camera raw does not support the files from a canon eos 6d dslr 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6174448-6174706</DOCNO>
+<TEXT>
+<subject>Download installation</subject>
+<post author="Rave" timestamp="Mar 3, 2014 9:38 AM">
+<s>hi john, 
+</s><s>you can download dng converter 7.3 from : http://www.adobe.com/support/downloads/detail.jsp?ftpid=5519 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6174448-6179466</DOCNO>
+<TEXT>
+<subject>Download installation</subject>
+<post author="station_two" timestamp="Mar 4, 2014 3:07 PM">
+<s>actually, one should always download, install and run the latest version of the dng converter.</s><s> the current version is 8.3, with an 8.4rc beta also available. 
+</s><s>camera model support is always cumulative with each new version of both acr and the adobe dng converter.</s><s> once a given camera model has been supported, it will continue to be supported in all succeeding versions. 
+i see no reason whatsoever to use 7.3 at this point. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6166466-1417625</DOCNO>
+<TEXT>
+<subject>Need to download Camera Raw</subject>
+<post author="Baseball Shooter" timestamp="Feb 28, 2014 7:33 AM">
+<s>i need to download camera raw on this computer, i have cs 6 with photoshop & camera raw on my laptop but only photoshop on this computer.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6166466-6166641</DOCNO>
+<TEXT>
+<subject>Need to download Camera Raw</subject>
+<post author="Rave" timestamp="Feb 28, 2014 8:17 AM">
+<s>hi baseball shooter, 
+</s><s>you can download it from : http://www.adobe.com/support/downloads/detail.jsp?ftpid=5391 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6166466-6179190</DOCNO>
+<TEXT>
+<subject>Need to download Camera Raw</subject>
+<post author="adriana%20ohlmeyer" timestamp="Mar 4, 2014 1:37 PM">
+<s>you can download the latest rc release from here: http://labs-staging.macromedia.com/downloads/cameraraw8-4.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6166466-1417625</DOCNO>
+<TEXT>
+<subject>Need to download Camera Raw</subject>
+<post author="Baseball Shooter" timestamp="Feb 28, 2014 7:33 AM">
+<s>i need to download camera raw on this computer, i have cs 6 with photoshop & camera raw on my laptop but only photoshop on this computer.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6166466-6166641</DOCNO>
+<TEXT>
+<subject>Need to download Camera Raw</subject>
+<post author="Rave" timestamp="Feb 28, 2014 8:17 AM">
+<s>hi baseball shooter, 
+</s><s>you can download it from : http://www.adobe.com/support/downloads/detail.jsp?ftpid=5391 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6166466-6179190</DOCNO>
+<TEXT>
+<subject>Need to download Camera Raw</subject>
+<post author="adriana%20ohlmeyer" timestamp="Mar 4, 2014 1:37 PM">
+<s>you can download the latest rc release from here: http://labs-staging.macromedia.com/downloads/cameraraw8-4.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-1418727</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark@acm.org" timestamp="Mar 1, 2014 9:06 PM">
+<s>if i use the acr 8.4 dng converter to convert a raw file from my newly acquired fuji x-t1, and i use the default compatibility option of acr 7.1, the resulting dng file causes windows explorer to crash whenever i navigate to the folder that contains the file. 
+i believe that this is happening because adobe dng codec 2.0 is trying to create a thumbnail for the file, and it is not capable of dealing with dng files that require the camera raw 7.1 demosaicing algorithm. 
+</s><s>if i convert the same raw files and ask for acr 6 compatibility, i don't have any problem navigating to the resulting folder.</s><s> however, the resulting dng files are much larger.</s><s> moreover, i understand that those files have already been demoasiced, which means that any future improvements in demosaicing algorithms will be moot. 
+</s><s>my question, then, is whether the dng codec will be updated any time soon to handle files produced by the 8.4 dng converter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6174623</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 3, 2014 9:49 AM">
+<s>hello, 
+</s><s>i am unable to reproduce the crash on windows 8.1. 
+</s><s>which version of windows are you running? 
+</s><s>can you post a sample image here that produces the crash? 
+</s><s>regards, 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6174909</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 3, 2014 10:27 AM">
+<s>i'm on windows 7 sp1, 64-bit version.</s><s> so far as i know, i'm current on windows updates. 
+a sample image can be found at https://www.dropbox.com/sh/izcl857d37fmtdc/sgj2wug3lf 
+of course, it is possible that some other codec on my computer is the cause of the crash.</s><s> however, i know for certain that 
+when i uninstall dng codec 2.0, i get no thumbnails for these images and no crash.</s><s> when i (re)install dng codec 2.0, windows explorer crashes the moment i navigate to the folder that contains these images.</s><s> i have found no problem with dng files created from other manufacturers' raw files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6175885</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 3, 2014 3:28 PM">
+<s>thank you for providng the sample image. 
+i was unable to reproduce the crash on windows 7. 
+</s><s>what does the windows crash log indicate (crash in explorer, dng, something else)? 
+</s><s>do you know off-hand which codecs you have installed in addition to dng? 
+</s><s>regards, 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6176173</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 3, 2014 5:10 PM">
+<s>it says: com surrogate has stopped working 
+problem event name: appcrash application name: dllhost.exe application version: 6.1.7600.16385 application timestamp: 4a5bca54 fault module name: stackhash_4720 fault module version: 6.1.7601.18247 fault module timestamp: 521eaf24 exception code: c0000374 exception offset: 00000000000c4102 os version: 6.1.7601.2.1.0.256.1 locale id: 1033 additional information 1: 4720 additional information 2: 4720d543f7044e62025d399a13bcfcd8 additional information 3: 9a50 additional information 4: 9a50d833928e28eee7873d9ca952fa7f 
+
+</s><s>the only other software i know about that might involve codecs is the nikon nef codec (http://www.nikonimglib.com/nefcodec/).</s><s> i also have picasa installed, but the problem persists even if i uninstall picasa. 
+</s><s>this problem occurs on two separate machines, although admittedly they are similarly configured. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6176342</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 3, 2014 7:47 PM">
+<s>oh, wait: i also have the microsoft codec pack (http://www.microsoft.com/en-us/download/details.aspx?id=26829) as well as the xiph.org open codecs package.</s><s> i believe that the latter are solely for audio and video, not for still images. 
+i also have a sony raw codec, but i can't see why it would get involved either in fuji raw files or dng files.</s><s> in any event, i unstalled it as a precaution; the crashed continued. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179117</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 4, 2014 1:11 PM">
+<s>thanks for providing the information about codecs installed on your systems. 
+i was able to reproduce a crash in the explorer (though no crash log is produced) after installing the nikon nef codec.</s><s> if i uninstall the nef codec, the crash goes away. 
+i will log a bug internally.</s><s> however, i cannot guarantee it will be addressed by the time 8.4 is officially released. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179077</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 4, 2014 1:16 PM">
+<s>that's fantastic news!</s><s> i'll see if uninstalling the nef codec makes the problem go away here.</s><s> if it does, can i assume either that adobe will fix the problem, if it's a bug in the dng codec, or that you will confer with nikon and get them to fix the problem in their codec? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179119</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 4, 2014 1:22 PM">
+<s>yes, once we have a better idea of the core cause we can determine the best way to address it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179124</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 4, 2014 1:31 PM">
+<s>thank you.</s><s> meanwhile, it appears that the nef codec is not actually necessary on my system, because my only nikon camera is a (wonderful!</s><s>) 5-year-old d700, and that camera has been around long enough that the microsoft camera codec pack supports it.</s><s> so my preliminary test shows that even if i uninstall the nikon codec, i can continue to display nef files and the crash goes away. 
+</s><s>this workaround would not help someone with a more recent nikon camera, but unfortunately for nikon, their d700 is so good that i feel no urge to replace it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-1418727</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark@acm.org" timestamp="Mar 1, 2014 9:06 PM">
+<s>if i use the acr 8.4 dng converter to convert a raw file from my newly acquired fuji x-t1, and i use the default compatibility option of acr 7.1, the resulting dng file causes windows explorer to crash whenever i navigate to the folder that contains the file. 
+i believe that this is happening because adobe dng codec 2.0 is trying to create a thumbnail for the file, and it is not capable of dealing with dng files that require the camera raw 7.1 demosaicing algorithm. 
+</s><s>if i convert the same raw files and ask for acr 6 compatibility, i don't have any problem navigating to the resulting folder.</s><s> however, the resulting dng files are much larger.</s><s> moreover, i understand that those files have already been demoasiced, which means that any future improvements in demosaicing algorithms will be moot. 
+</s><s>my question, then, is whether the dng codec will be updated any time soon to handle files produced by the 8.4 dng converter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6174623</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 3, 2014 9:49 AM">
+<s>hello, 
+</s><s>i am unable to reproduce the crash on windows 8.1. 
+</s><s>which version of windows are you running? 
+</s><s>can you post a sample image here that produces the crash? 
+</s><s>regards, 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6174909</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 3, 2014 10:27 AM">
+<s>i'm on windows 7 sp1, 64-bit version.</s><s> so far as i know, i'm current on windows updates. 
+a sample image can be found at https://www.dropbox.com/sh/izcl857d37fmtdc/sgj2wug3lf 
+of course, it is possible that some other codec on my computer is the cause of the crash.</s><s> however, i know for certain that 
+when i uninstall dng codec 2.0, i get no thumbnails for these images and no crash.</s><s> when i (re)install dng codec 2.0, windows explorer crashes the moment i navigate to the folder that contains these images.</s><s> i have found no problem with dng files created from other manufacturers' raw files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6175885</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 3, 2014 3:28 PM">
+<s>thank you for providng the sample image. 
+i was unable to reproduce the crash on windows 7. 
+</s><s>what does the windows crash log indicate (crash in explorer, dng, something else)? 
+</s><s>do you know off-hand which codecs you have installed in addition to dng? 
+</s><s>regards, 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6176173</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 3, 2014 5:10 PM">
+<s>it says: com surrogate has stopped working 
+problem event name: appcrash application name: dllhost.exe application version: 6.1.7600.16385 application timestamp: 4a5bca54 fault module name: stackhash_4720 fault module version: 6.1.7601.18247 fault module timestamp: 521eaf24 exception code: c0000374 exception offset: 00000000000c4102 os version: 6.1.7601.2.1.0.256.1 locale id: 1033 additional information 1: 4720 additional information 2: 4720d543f7044e62025d399a13bcfcd8 additional information 3: 9a50 additional information 4: 9a50d833928e28eee7873d9ca952fa7f 
+
+</s><s>the only other software i know about that might involve codecs is the nikon nef codec (http://www.nikonimglib.com/nefcodec/).</s><s> i also have picasa installed, but the problem persists even if i uninstall picasa. 
+</s><s>this problem occurs on two separate machines, although admittedly they are similarly configured. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6176342</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 3, 2014 7:47 PM">
+<s>oh, wait: i also have the microsoft codec pack (http://www.microsoft.com/en-us/download/details.aspx?id=26829) as well as the xiph.org open codecs package.</s><s> i believe that the latter are solely for audio and video, not for still images. 
+i also have a sony raw codec, but i can't see why it would get involved either in fuji raw files or dng files.</s><s> in any event, i unstalled it as a precaution; the crashed continued. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179117</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 4, 2014 1:11 PM">
+<s>thanks for providing the information about codecs installed on your systems. 
+i was able to reproduce a crash in the explorer (though no crash log is produced) after installing the nikon nef codec.</s><s> if i uninstall the nef codec, the crash goes away. 
+i will log a bug internally.</s><s> however, i cannot guarantee it will be addressed by the time 8.4 is officially released. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179077</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 4, 2014 1:16 PM">
+<s>that's fantastic news!</s><s> i'll see if uninstalling the nef codec makes the problem go away here.</s><s> if it does, can i assume either that adobe will fix the problem, if it's a bug in the dng codec, or that you will confer with nikon and get them to fix the problem in their codec? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179119</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ccastleb" timestamp="Mar 4, 2014 1:22 PM">
+<s>yes, once we have a better idea of the core cause we can determine the best way to address it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6170751-6179124</DOCNO>
+<TEXT>
+<subject>ACR 8.4RC DNG conversion can create files that crash Adobe DNG Codec 2.0</subject>
+<post author="ark%40acm.org" timestamp="Mar 4, 2014 1:31 PM">
+<s>thank you.</s><s> meanwhile, it appears that the nef codec is not actually necessary on my system, because my only nikon camera is a (wonderful!</s><s>) 5-year-old d700, and that camera has been around long enough that the microsoft camera codec pack supports it.</s><s> so my preliminary test shows that even if i uninstall the nikon codec, i can continue to display nef files and the crash goes away. 
+</s><s>this workaround would not help someone with a more recent nikon camera, but unfortunately for nikon, their d700 is so good that i feel no urge to replace it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6169066-1418219</DOCNO>
+<TEXT>
+<subject>DNG file not workung with NEF files</subject>
+<post author="Sreeshanth" timestamp="Mar 1, 2014 2:49 AM">
+<s>can't detect .</s><s>nef files taken from my nikon d800 e 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6169066-6169158</DOCNO>
+<TEXT>
+<subject>DNG file not workung with NEF files</subject>
+<post author="kglad" timestamp="Mar 1, 2014 4:58 AM">
+<s>you need camera raw 7.1 or better. 
+update your program, http://www.adobe.com/downloads/updates/ or click help>updates. 
+if you have a problem, what program (name and version) are you trying to update? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6169066-1418219</DOCNO>
+<TEXT>
+<subject>DNG file not workung with NEF files</subject>
+<post author="Sreeshanth" timestamp="Mar 1, 2014 2:49 AM">
+<s>can't detect .</s><s>nef files taken from my nikon d800 e 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6169066-6169158</DOCNO>
+<TEXT>
+<subject>DNG file not workung with NEF files</subject>
+<post author="kglad" timestamp="Mar 1, 2014 4:58 AM">
+<s>you need camera raw 7.1 or better. 
+update your program, http://www.adobe.com/downloads/updates/ or click help>updates. 
+if you have a problem, what program (name and version) are you trying to update? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-1416210</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="John D, Campbell" timestamp="Feb 26, 2014 12:59 PM">
+<s>how do i upgrade to a version of camera raw for the canon eos 6d dslr 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6160337</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="Chris57" timestamp="Feb 26, 2014 1:05 PM">
+<s>which version of ps do you use? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6161405</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="Ashutosh.Nigam" timestamp="Feb 26, 2014 8:14 PM">
+<s>canon eos 6d support came with acr 7.3 release.</s><s> please ensure you have ps cs6 for the same and help->update to latest acr version. 
+</s><s>regards, ashutosh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6175081</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="John%20D%2C%20Campbell" timestamp="Mar 3, 2014 10:59 AM">
+<s>i downloaded the dng converter pkg 7.3 for mac.</s><s> you indicated that to ensure i have ps cs6.</s><s> i have cs5 extended and all updates are current.</s><s> when i open dng 7.3. it asks if i want to do a general installation for all users or do i wish to install to a specific place such a my harddrive.</s><s> where do i go from here to upgrade the present camera raw 6.7.0.</s><s> do i need to update with 7.1 and 7.2 before updating with 7.3 o 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6175216</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="John%20D%2C%20Campbell" timestamp="Mar 3, 2014 11:25 AM">
+<s>have cs5 i 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6175265</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="JimHess" timestamp="Mar 3, 2014 11:58 AM">
+<s>if you don't have photoshop cs6 then you cannot upgrade to camera raw 7.3.</s><s> that you can download the latest dng converter, install it, and create dng copies that will run with camera raw 6.7.</s><s> 6.7 is the last version that you can use with photoshop cs5. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-1416210</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="John D, Campbell" timestamp="Feb 26, 2014 12:59 PM">
+<s>how do i upgrade to a version of camera raw for the canon eos 6d dslr 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6160337</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="Chris57" timestamp="Feb 26, 2014 1:05 PM">
+<s>which version of ps do you use? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6161405</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="Ashutosh.Nigam" timestamp="Feb 26, 2014 8:14 PM">
+<s>canon eos 6d support came with acr 7.3 release.</s><s> please ensure you have ps cs6 for the same and help->update to latest acr version. 
+</s><s>regards, ashutosh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6175081</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="John%20D%2C%20Campbell" timestamp="Mar 3, 2014 10:59 AM">
+<s>i downloaded the dng converter pkg 7.3 for mac.</s><s> you indicated that to ensure i have ps cs6.</s><s> i have cs5 extended and all updates are current.</s><s> when i open dng 7.3. it asks if i want to do a general installation for all users or do i wish to install to a specific place such a my harddrive.</s><s> where do i go from here to upgrade the present camera raw 6.7.0.</s><s> do i need to update with 7.1 and 7.2 before updating with 7.3 o 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6175216</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="John%20D%2C%20Campbell" timestamp="Mar 3, 2014 11:25 AM">
+<s>have cs5 i 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6160296-6175265</DOCNO>
+<TEXT>
+<subject>Camera Raw</subject>
+<post author="JimHess" timestamp="Mar 3, 2014 11:58 AM">
+<s>if you don't have photoshop cs6 then you cannot upgrade to camera raw 7.3.</s><s> that you can download the latest dng converter, install it, and create dng copies that will run with camera raw 6.7.</s><s> 6.7 is the last version that you can use with photoshop cs5. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6219816-1430592</DOCNO>
+<TEXT>
+<subject>CAMERA RAW</subject>
+<post author="Howard Warren" timestamp="Mar 18, 2014 5:36 AM">
+<s>i downloaded the latest version of camera raw 8.3 but i still cannot view my pictures in cs-5.</s><s> i am using windows 7 and a nikon d-7100.    i opened preference in photoshop after downloading and rebooting but i still show version 6.7.0.339.   what am i doing wrong?   howard warren
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6219816-6220928</DOCNO>
+<TEXT>
+<subject>CAMERA RAW</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 10:25 AM">
+<s>you misunderstand.</s><s> acr 8.3 will only work in cs6 and cc.</s><s> acr 6.7 is as high as it goes for cs5.</s><s> you would have to upgrade your software to use acr natively.</s><s> otherwise you will have to use the standalone dng converter to process your images and convert them to dng, tiff or jpeg which then could be opened in ps. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6219816-1430592</DOCNO>
+<TEXT>
+<subject>CAMERA RAW</subject>
+<post author="Howard Warren" timestamp="Mar 18, 2014 5:36 AM">
+<s>i downloaded the latest version of camera raw 8.3 but i still cannot view my pictures in cs-5.</s><s> i am using windows 7 and a nikon d-7100.    i opened preference in photoshop after downloading and rebooting but i still show version 6.7.0.339.   what am i doing wrong?   howard warren
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Camera-Raw/Discussions-6219816-6220928</DOCNO>
+<TEXT>
+<subject>CAMERA RAW</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 10:25 AM">
+<s>you misunderstand.</s><s> acr 8.3 will only work in cs6 and cc.</s><s> acr 6.7 is as high as it goes for cs5.</s><s> you would have to upgrade your software to use acr natively.</s><s> otherwise you will have to use the standalone dng converter to process your images and convert them to dng, tiff or jpeg which then could be opened in ps. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+

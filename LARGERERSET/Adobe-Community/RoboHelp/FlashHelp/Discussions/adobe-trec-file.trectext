@@ -1,0 +1,1754 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6222871-1431391</DOCNO>
+<TEXT>
+<subject>Why cant I see an image in flash players settings manager?</subject>
+<post author="saible60" timestamp="Mar 18, 2014 11:36 PM">
+<s>earlier i couldnt see an image in the settings manger.</s><s> i research this and found that in, internet options>advanced tab>security. to uncheck the box that reads. save image to disk. so i cleared the check box and now i have an image to clear my flash cache.</s><s> now i cant see it again. the only thing different i did was run my malwarebytes program. that shouldnt have done anything to the problem.</s><s> i checked the internet options under advanced tab again the the box is still unchecked. so why am i not seeing the image?</s><s> also, when i checked to see if i had flash player installed ( i uninstalled my copy today and reinstalled the same program, i was concerned about a faulty program) it installed correctly, it said i have the current version installed but it says i dont have any browser?</s><s> im using ie10. it said all this when i was testing my new installation.</s><s> please help.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6222871-6223764</DOCNO>
+<TEXT>
+<subject>Why cant I see an image in flash players settings manager?</subject>
+<post author="Captiv8r" timestamp="Mar 19, 2014 7:38 AM">
+<s>hi there 
+click the link below, read the page and follow the instructions you will find there. 
+</s><s>click here to view 
+best of luck to you in resolving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-1408843</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Anthony KA" timestamp="Feb 17, 2014 10:41 AM">
+<s>hello all, 
+</s><s>i have been using robohelp for some time now going all the way back to rh7.</s><s> currently using robohelp 10.</s><s> i just created a rh10 flashhelp project and i am having problems with the search results.</s><s> here is what i get. 
+</s><s>after producing flashhelp and opening localling to test search i get the following ie 9: search works correctlly firefox 26.0: search returns no results immediately, no long progress of searching almost instant return of no results.</s><s> chrome: same as firefox. 
+</s><s>hosting on iis 6 windows 2003 server r2 with service pack 2 ie9: no search results chorme: no search results firefox: no search results 
+does anyone know of possible browser or robohelp generation settings that may cause this. 
+</s><s>thank you, 
+</s><s>anthony padgett 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6129321</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Captiv8r" timestamp="Feb 17, 2014 11:01 AM">
+<s>hi anthony 
+</s><s>as you are producing flashhelp, (well, assuming you are based on this being the flashhelp forum and all) i might suspect looking at the flash player installed on your system.</s><s> note that ie, firefox and chrome implement the flash player differently.</s><s> so it's entirely possible to have perhaps version 8 of the flash player on ie and version 12 in firefox.</s><s> not sure if chrome is special or if it uses the same player as ff or ie. 
+</s><s>but that's where i'd begin looking. 
+</s><s>additionally, it might also depend on whether you are viewing the help content off your local c drive or whether you are testing after uploading to a web server. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6129720</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Anthony%20KA" timestamp="Feb 17, 2014 12:39 PM">
+<s>i am using adobe flash player 12 in all browsers. 
+i am also testing in both local c drive location and on server.</s><s> same outcome with no returned search results. 
+</s><s>this seems to be an isolated issue with one of the projects i produced.</s><s> i reproduced it and tested again and only ie on my local machine allows me to search.</s><s> after uploading to server again i get the same no returned search results in any browser. 
+</s><s>thanks for the reply tho, it is greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6129949</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Captiv8r" timestamp="Feb 17, 2014 1:37 PM">
+<s>okay, so you might want to troubleshoot this a bit further.</s><s> at least i would do it this way. 
+</s><s>i'd personally try downloading an older version of the flash player/plug in.</s><s> uninstall the version 12 player and reinstall the older version.</s><s> test.</s><s> there should be no need to re-generate the output.</s><s> just test with an older version of the flash player. 
+</s><s>the reason i suspect this is because i also have encountered issues on my own machine where i am unable to view video content after an update to the flash player. 
+</s><s>if that turns out to be the case, i'd guess your next best bet would be to abandon flashhelp and use webhelp instead. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6133252</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Anthony%20KA" timestamp="Feb 18, 2014 12:14 PM">
+<s>is there anyone out there that could tell me what are the top causes for search not working in a flashhelp produced robohelp project?</s><s> some ie browser versions work sometimes others do not, other browsers like chrome and firefox seem to really have an issue with the search functionality. 
+</s><s>any help is greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6140155</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 20, 2014 9:50 AM">
+<s>this is flashelp, so the search is probably hidden inside some flash files. 
+</s><s>for what it's worth: can you try opening the developer console in the browsers (press f12).</s><s> then see the console tab and try to search.</s><s> does the console show you any errors or warnings? 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6141224</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Anthony%20KA" timestamp="Feb 20, 2014 1:25 PM">
+<s>no errors or warnings when searching in ie, chrome, or firefox.</s><s> still only ie 9 is returning search results in left pane. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6129314-6155387</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 FlashHelp not returning search results</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 25, 2014 7:47 AM">
+<s>did the search work with an earlier version of the flash player?</s><s> perhaps the flash files are not compatible with the latest flash player. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6142623-1412071</DOCNO>
+<TEXT>
+<subject>Publishing a flash project with videos included for android and iOS.</subject>
+<post author="bonggets29" timestamp="Feb 21, 2014 12:46 AM">
+<s>i'm currently working on a project that works like a brochure.</s><s> its just a simple presentation, navigating from one page to another and instead of images i used videos and simple text.</s><s> nothing really fancy.</s><s> i'm using as3 for my scripts.</s><s> the videos are in flv formats that is loaded into flash via the flv player component.</s><s> when test publishing in my pc the project works really well with no errors.</s><s> videos and buttons all working the way it should.</s><s> but when i publish for android and after installing it on my device some of the videos will play but not all.</s><s> using a file manager, i tried looking into the installed file on my android device (mnt/asec) folder but can't really tell if all the videos are there.</s><s> the only file visible on my android device is the apk file installed.</s><s> about the same size (999mb to 1gb) as the original apk file packaged by flash.</s><s> i'm pretty sure i've included all the videos in the package.</s><s> i tried it several times but end up having the same result.</s><s> is there a way to find out if the packaged apk is indeed complete?</s><s> what might be the problem?</s><s> is there a limit to number of videos or file size of the package?</s><s> can anyone help?</s><s> thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6142623-6143277</DOCNO>
+<TEXT>
+<subject>Publishing a flash project with videos included for android and iOS.</subject>
+<post author="Captiv8r" timestamp="Feb 21, 2014 6:37 AM">
+<s>hi there 
+unfortunately i think you wandered into the wrong forum.</s><s> try clicking the link below, then on the page that appears read the text at the top of the page.</s><s> there is a link and some instructions that may help. 
+</s><s>click here to view 
+best of luck to you in solving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6142623-6145126</DOCNO>
+<TEXT>
+<subject>Publishing a flash project with videos included for android and iOS.</subject>
+<post author="bonggets29" timestamp="Feb 21, 2014 7:22 PM">
+<s>thanks for the info.</s><s> 
+</s><s>i've recently stumbled on an article on how to view the packaged file (apk) published using air 3.2 for android setting (adobe flash cs6).</s><s> all you need to do is change the extension of the file from (.apk) to (.rar) or (.zip) and extract the file as you would with any other zip or rar file.</s><s> i was able to confirm that the packaged file (apk) indeed contain all the videos for the presentation.</s><s> i have more than 80 videos in the presentation.</s><s> all videos included in the package are of the same video format and resolution (flv 320x240) but of different duration.</s><s> i intentionally included the all the videos inside the package so i can use the presentation anywhere and anytime without the need to connect to the internet.</s><s> the packaged apk file size is (1.23gb) the file includes the project's swf and xml file, the component swf and videos.</s><s> when installed to android i noticed that the package remained as an apk file.</s><s> not really sure if android temporarily unpacks it when you run the app. 
+</s><s>testing phase: i see no problem when i'm testing the project on my desktop computer.</s><s> but when packaged and installed on my device the problem arise. 
+</s><s>problem: i'm able to install and run the app on my device but wont play some of the videos included in the package.</s><s> was this due to the limited ram or processor of my android device?</s><s> i wanted to distribute the presentation to friends so i was trying to package it for easy access and installation on their device. 
+</s><s>alternative solution: i installed a third party app called swf player by bit labs.</s><s> copied all the files to my device (the project's swf and component swf with the videos).</s><s> the project worked like a charm the player (swf player) and was able to run the presentation as if it was running of my desktop.</s><s> all buttons and videos working properly.</s><s> although the alternative solution worked for me i still wanted to package the presentation for easy access and distribution to friends. 
+</s><s>please help...thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6109161-1403784</DOCNO>
+<TEXT>
+<subject>Flashhelp - Enhanced Search</subject>
+<post author="bja" timestamp="Feb 11, 2014 6:20 AM">
+<s>are the enhanced search facilities available in flashhelp in rh11.</s><s> webhelp does not work properly within ie or chrome and flashhelp does does not seem to have the enhanced search facility - help please 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6109161-6109446</DOCNO>
+<TEXT>
+<subject>Flashhelp - Enhanced Search</subject>
+<post author="Captiv8r" timestamp="Feb 11, 2014 7:46 AM">
+<s>hi there 
+i'm not exactly certain what is meant by "enhanced search", but i do not believe flashhelp skins were modified much, if at all, with the latest release. 
+</s><s>so i'm going to go out on a limb here and say this does not apply to flashhelp. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6109161-6109551</DOCNO>
+<TEXT>
+<subject>Flashhelp - Enhanced Search</subject>
+<post author="bja" timestamp="Feb 11, 2014 7:56 AM">
+<s>thanks rick...thought so.</s><s> 
+</s><s>we are happy to work with webhelp apart from the very annoying thing that they will not display properly in ie11 or in chrome! 
+</s><s>thanks again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6081528-1396976</DOCNO>
+<TEXT>
+<subject>Creating a game progress bar?</subject>
+<post author="MeganElizabeth1993" timestamp="Feb 3, 2014 11:15 AM">
+<s>everywhere i search this there are tutorials for creating a progress bar of the loading of the game.</s><s> i'm interested in creating a progress bar within game, so if an answer is answered correctly the bar increases, if it's wrong it decreases.</s><s> any help would be greatly appreciated.</s><s> if this is really simple and i'm not seeing it then sorry in advance! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6081528-6081617</DOCNO>
+<TEXT>
+<subject>Creating a game progress bar?</subject>
+<post author="Captiv8r" timestamp="Feb 3, 2014 11:30 AM">
+<s>sorry, but you aren't in the right forum.</s><s> sure, it says "flashhelp", but it's not a forum where we help with flash issues.</s><s> click the link below and follow the instructions you will see at the top of the page. 
+</s><s>click here to view 
+cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6081528-6081640</DOCNO>
+<TEXT>
+<subject>Creating a game progress bar?</subject>
+<post author="MeganElizabeth1993" timestamp="Feb 3, 2014 11:39 AM">
+<s>ah sorry i should have read it properly!</s><s> i'll go ahead and delete this 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-6024383-1382527</DOCNO>
+<TEXT>
+<subject>Animated Preloader</subject>
+<post author="Vincent Loup" timestamp="Jan 17, 2014 11:47 AM">
+<s>hi, 
+</s><s>i create an animation in after effect, and i import it to flash cs6 in a movieclip.</s><s> i want to make a preloader with this movieclip.</s><s> i need a preloader what play this animation while the next animation or the main content is loading.</s><s> after the loading is complete, the first animation is ending and the second animation will stat.</s><s> how could it's possible ? 
+</s><s>sorry for my english.</s><s> and thanks for the help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5963840-1367098</DOCNO>
+<TEXT>
+<subject>Live stream skipping</subject>
+<post author="Bomolad" timestamp="Dec 29, 2013 9:44 AM">
+<s>when watching live streaming on flash-based video it skips in time, shooting back from 'live' to an hour before, back to live, back to an hour before and so on.</s><s> i've disabled 'enable hardware accelloration' to see if that helps, but it doesn't. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5963840-5963874</DOCNO>
+<TEXT>
+<subject>Live stream skipping</subject>
+<post author="Captiv8r" timestamp="Dec 29, 2013 11:22 AM">
+<s>i suspect you are looking for some help with the flash player? 
+</s><s>click here and follow the link you see on the page that will appear. 
+</s><s>best of luck to you in resolving your issue! 
+</s><s>rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5917764-1355300</DOCNO>
+<TEXT>
+<subject>Multiple button/hyperlinks in one banner</subject>
+<post author="Pippin555" timestamp="Dec 10, 2013 10:39 AM">
+<s>i need to create a banner ad which has two different buttons on the same screen and then export as a gif?</s><s> is this possible? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5917764-5917855</DOCNO>
+<TEXT>
+<subject>Multiple button/hyperlinks in one banner</subject>
+<post author="Peter%20Grainge" timestamp="Dec 10, 2013 11:02 AM">
+<s>you are asking in the wrong place. 
+</s><s>see http://forums.adobe.com/community/robohelp/robohelp_flash 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5912632-1353904</DOCNO>
+<TEXT>
+<subject>Flash installed and up to date however flash does not run on any web browser</subject>
+<post author="flashissues" timestamp="Dec 8, 2013 7:46 PM">
+<s>i was catching up on watching a televsion show and watching it with no issues/no problems with flash before.</s><s> i went to the website below  and all of a sudden flash is not working.</s><s> i did not change any settings, run any updates.</s><s> i checked various browsers, flash content is not working on any of them.</s><s> i can view youtube videos however just about any other site i've tried, nothing and many websites will not display correctly.</s><s> i tried some of the troubleshooting suggestions in the forum however some of them i'm unable to do such as alter the flash settings, it takes me to the page but tells me i don't have flash installed.</s><s> i've tried switching user accounts on my pc as others have said flash works for them on the other account however mine is still broken.</s><s> i've actually tried a system restore, still no luck.     windows 8 (64 bit) flash version 11.9.900.152 tried web browsers ie, firefox, chrome - i've verified it is enabled active x is disabled i've ran the 'test' to verify flash is installed and it displays the video     i ran the debugger however i do not know how to interpret the data.</s><s> please help!</s><s>!     request displayed #1 - sitecatalyst image 1564 chars   friendly third party cookies om.cbsi.com report suite id(s) cnetcbscomsite, cbsicbsiall version of code h.25.4 query string beginning 1 sent from javascript file?</s><s> 1 date/time december 8, 2013 at 10:27 pm fid=30f75fa127ab1eda-2eccba4ed7b2a80f name space cbsinteractive pagename cbscom:the big bang theory - the discovery dissipation:the big bang theory:the big bang theory video the discovery dissipation cbs com:p1:video:the big bang theory:comedy:primetime current url http://www.cbs.com/shows/big_bang_theory/video/ channel primetime prop1 cbs.com evar1 d=c1 prop2 us evar2 d=c2 prop3 responsive web|||desktop evar3 d=c3 prop5 cnetcbscomsite evar5 d=c5 evar6 primetime|comedy|the big bang theory|video prop7 d=g evar7 d=g prop8 the big bang theory video - the discovery dissipation - cbs.com evar8 d=c8 prop9 d=user-agent prop10 video evar10 d=c10 prop11 primetime:video evar11 d=c11 prop12 6711 evar12 d=c12 prop13 19650 evar13 d=c13 prop20 the big bang theory video the discovery dissipation cbs com evar20 d=c20 prop21 d=c20 evar21 d=c20 prop22 d=c10 evar22 d=c10 prop30 cbscom:uqu4qwozasuaagho9yeaaaa5 evar30 d=c30 evar49 ishd evar54 less than 1 day prop60 not set evar60 d=c60 prop61 comedy evar61 d=c61 prop62 d=c60 evar62 d=c60 prop63 cbscom:10|the big bang theory evar63 d=c63 prop64 cbscom:1933e590-b255-5b32-e778-bf122477716c|the big bang theory - the discovery dissipation evar64 d=c64 prop65 7 evar65 d=c65 prop66 d=c65 evar66 d=c65 hier1 cbscom:primetime|comedy|the big bang theory|video screen resolution 1600x900 color depth 24 javascript version 1.6 javascript enabled y cookies supported y browser width 1600 browser height 814 connection type lan home page?</s><s> n query string end 1
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5912632-5912764</DOCNO>
+<TEXT>
+<subject>Flash installed and up to date however flash does not run on any web browser</subject>
+<post author="Captiv8r" timestamp="Dec 8, 2013 9:41 PM">
+<s>hi there 
+sorry, but you aren't in the right place for getting help with this.</s><s> try clicking the link below and choose a forum dedicated to adobe flash. 
+</s><s>click here 
+best of luck to you in resolving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5912380-1353823</DOCNO>
+<TEXT>
+<subject>Flash help - Shape tweening</subject>
+<post author="xxdante" timestamp="Dec 8, 2013 4:16 PM">
+<s>hello all, i was wondering if anyone could help me with an issue i am having in flash.</s><s> i made a shape using the pen tool and made it a mask.</s><s> then i inserted key frames and did a few shape tweening.</s><s> it works fine for a while and then suddenly freaks out in a couple of frames then goes back to normal and i can't figure out why.</s><s> i have the file if anyone wants to take a look, i can email or if there is any way to attach it here i can.</s><s> any help wouyld be appreciated.</s><s> thanks!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5912380-5912763</DOCNO>
+<TEXT>
+<subject>Flash help - Shape tweening</subject>
+<post author="Captiv8r" timestamp="Dec 8, 2013 9:35 PM">
+<s>hi there 
+sorry, but you aren't in the right place for getting help with this.</s><s> try clicking the link below and choose a forum dedicated to adobe flash. 
+</s><s>click here 
+best of luck to you in resolving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5803058-1325561</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' blank page get displayed.</subject>
+<post author="AnilsKale" timestamp="Oct 31, 2013 4:25 AM">
+<s>i am using, robohelp10 ie9 msvs2010 win7 tried with below option, flash help flash help pro web help pro trouble in, important to us: when we invoke flash help with respective topic, help get displayed with toc and topic page, but this topic is default topic(not the expected/requested), with &quot;allow blocked content&quot; button at the bottom.</s><s> if we click on &quot;allow blocked content&quot;, it will display only above requested topic page, without toc pane, with 'show' button.</s><s> if we click on 'show' blank page get displayed.</s><s> 1. when we are displaying content with option 'optionconstants.csh_display_context' it only show topic and it won't show me the toc along with current selected topic page.</s><s> 2. when we are displaying content with option 'optionconstants.csh_display_context' it only show topic with 'show' link.</s><s> when we click on 'show' link, blank page get display.</s><s> 3. tool gives us facitlity to publish the flash help, where we can choose the folder.</s><s> this means that it publishes correctly with the expected folder structure.</s><s> same folder structure (the published one) we are using. and on the top of that we are not getting expected result.</s><s> 4. published content does not contain any mapid/mapfile.</s><s> 5. skin we were using 'beautiful_vista_flash.fhs' 6. when we switch between two (help)button, we get proper help topic.</s><s> if we press 'show' button, how help will know who is the parent and where is the mapfile (map id) kept.</s><s> how it finds internally.</s><s> please assist to resolve it.</s><s> thanks in advance.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5803058-5854536</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' blank page get displayed.</subject>
+<post author="AnilsKale" timestamp="Nov 19, 2013 5:44 AM">
+<s>rh10 ie9/firefox win7 using -> flashhelp 
+</s><s>resolved - getting blank page and "allow blocked content" issue with the help of "flash player settings manager". 
+</s><s>all programs->controlpanel->flashplayer->"flash player settings manager"->"trusted location settings" 
+</s><s>we have added folder path of local help into the trusted content using setting manager. 
+</s><s>but for end user how it can be done?</s><s> will it be possible to do same settings programmaticaly using c#.net? 
+</s><s>thanks in advance, anil kale 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5803058-5856526</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' blank page get displayed.</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 19, 2013 2:41 PM">
+<s>can you host the help on a web server?</s><s> that way you won't have the blocked content issue. 
+</s><s>as for changing the flash player, i think you may have more luck on the flash forum.</s><s> (for example http://forums.adobe.com/community/flashplayer) but i wouldn't get my hopes up.</s><s> it would be extremely insecure if you could add a trusted location with another application.</s><s> that's just asking for malware to come in through the window 
+greet, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5835122-1333540</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' link(button), blank page get displayed</subject>
+<post author="AnilsKale" timestamp="Nov 12, 2013 4:32 AM">
+<s>i am using, 
+robohelp10 ie9 msvs2010 win7 
+tried with below option, 
+flash help -> we are working with it and has problem for our desktop/standalone wcf application.</s><s> flash help pro - > we know that rh server is req. for this option web help pro- > we know that rh server is req. for this option 
+trouble in (flash help), 1.</s><s> when we invoke flash help with respective topic id, it will not show requested topic page along with toc, it will show default topic/page, which we set at the time creating help.</s><s> also it will display "allow blocked content" button at the bottom.</s><s> if we click on "allow blocked content" it will display the above requested topic page correctly, but without toc pane.</s><s> this time we can see 'show' button(link) on the browser.</s><s> if we click on 'show', blank page get displayed. 
+2.</s><s> when we are displaying content with option 'optionconstants.csh_display_context' it only show topic and it won't show me the toc along with current selected topic page. 
+3.</s><s> when we are displaying content with option 'optionconstants.csh_display_context' it only show topic with 'show' link.</s><s> when we click on 'show' link, blank page get display. 
+4.</s><s> tool gives us facitlity to publish the flash help, where we can choose the folder.</s><s> this means that it publishes folder structure.</s><s> we are using this folder structure (the published one) and on the top of that we are not getting expected(blank page get display) result. 
+5.</s><s> published content does not contain any mapid/mapfile, if so whow it works correctly with rh development studio. 
+6.</s><s> skin we were using 'beautiful_vista_flash.fhs' 
+7.</s><s> we build rh after setting mozilla as the statup browser.</s><s> we tried with mozilla and ie but still our application opens help in ie. so not able to test in mozilla. 
+
+</s><s>please assist to resolve it. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5835122-5841240</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' link(button), blank page get displayed</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 14, 2013 12:58 AM">
+<s>hi, 
+</s><s>the problem is a security setting in ie. try enabling the 'mark of the web' setting to make it work for ie.</s><s> (in the ssl settings.</s><s>) 
+</s><s>alternatively, put the help in a web server, then it is sure to work. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5835122-5841580</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' link(button), blank page get displayed</subject>
+<post author="AnilsKale" timestamp="Nov 14, 2013 4:46 AM">
+<s>hi, 
+</s><s>may i know how it can be done. 
+-anil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5835122-5841903</DOCNO>
+<TEXT>
+<subject>RoboHelp10 - If we click on 'Show' link(button), blank page get displayed</subject>
+<post author="AnilsKale" timestamp="Nov 14, 2013 6:38 AM">
+<s>thank you for your input. 
+</s><s>working with "flashhelp" 
+</s><s>our req is files pages are deployed along with desktop(wpf) application locally and not on webserver. 
+</s><s>referred following link, 
+http://blogs.msdn.com/b/ieinternals/archive/2012/06/20/loading-local-f iles-in-enhanced-protected-mode-in-internet-explorer-10.aspx http://msdn.microsoft.com/en-us/library/ms537628%28v=vs.85%29.aspx 
+and added below one liner code, 
+------------------------------------------------ <?</s><s>xml version="1.0" encoding="utf-8" ?</s><s>> <!</s><s>doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd"> <!-- saved from url=(0014)about:internet --> <html xmlns="http://www.w3.org/1999/xhtml"> <head> ------------------------------------------------ in each pages in the 'projectmanager''s project files.</s><s> and published the content of "flashhelp".</s><s> again the same problem("allow blocked content" button apprears and blank page get displayed, as explained in option #1 of the first post) persist. 
+</s><s>if i choose page and do viewsource then it will show blank line in place of <!-- saved from url=(0014)about:internet --> code is as given below, ------------------------------------------------ <?</s><s>xml version="1.0" encoding="utf-8" ?</s><s>> <!</s><s>doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> <head> ------------------------------------------------ 
+we need to know that how to implement 'mark of the web' using rh development studio? 
+</s><s>your input are appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5767389-1316995</DOCNO>
+<TEXT>
+<subject>Creating output in RoboHelp</subject>
+<post author="jehinger" timestamp="Oct 17, 2013 8:55 AM">
+<s>upgraded recently from rh8 to rh10 and tried to create several types of output for a basic help file (flashelp, webhelp, webhelp pro) but none of them seem to work correctly. 
+</s><s>flashelp/webhelp does not work in ie (links to pdf don't do anything)...chrome the tab just keeps flashing. 
+</s><s>all layouts work ok in firefox or opera. 
+ms html help is the only one that works which is ok but was hoping for more features. 
+</s><s>i'm not a programmer but would appreciate any thoughts or ideas. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5767389-5767416</DOCNO>
+<TEXT>
+<subject>Creating output in RoboHelp</subject>
+<post author="RoboColum(n)" timestamp="Oct 17, 2013 9:01 AM">
+<s>what version of ie are you running?</s><s> is the same issue happening on other pcs?</s><s> if not, what ie version do they have? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5767389-5767545</DOCNO>
+<TEXT>
+<subject>Creating output in RoboHelp</subject>
+<post author="jehinger" timestamp="Oct 17, 2013 9:09 AM">
+<s>i am using ie10, and i tried another computer and had the same issues.</s><s> something that occurred to me that may make a difference, is i published to my local computer and opened the htm files from there, not a server.</s><s> did the same on the other pc. 
+</s><s>for a pdf link, if i right click and copy the shortcut to the document and paste it in the address bar, the document comes up.</s><s> i thought it may be something i did in rh (or forgot to do) but opera and firefox the links all work fine, so i'm assuming there is some issue with my browser settings. 
+</s><s>jim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5746805-1311893</DOCNO>
+<TEXT>
+<subject>Flash logs out when window is covered or tabbed off</subject>
+<post author="UniqueScreenNameHere" timestamp="Oct 9, 2013 12:43 AM">
+<s>1st, as new here, hope this is posted in the right place. 
+</s><s>starting a month or so ago, i noticed a new behavior with flash.</s><s> whenever i would switch to another window, the flash web application i was running (game, advertisement, whatever) would stop, leaving me with a grey window and an 'f' in the middle.</s><s> lol, so appropriate.</s><s> what's the deal?</s><s> what's the fix?</s><s> i should be able to tab to another window, minimize, or bring some other window in front of that browser page and still let the thing run "off screen" or hidden.</s><s> why does it stop?</s><s> typically i have to login again to the application or restart the demo or application that was running flash.</s><s> very annoying. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5746805-5746793</DOCNO>
+<TEXT>
+<subject>Flash logs out when window is covered or tabbed off</subject>
+<post author="Willam%20van%20Weelden" timestamp="Oct 9, 2013 12:57 AM">
+<s>hi, 
+</s><s>you're in the wrong forum as this forum is for a help format called flashhelp.</s><s> for the flash player, i think you need to look at http://forums.adobe.com/community/flashplayer?view=discussions 
+greet, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5745369-1311557</DOCNO>
+<TEXT>
+<subject>Why can't I watch youtube?</subject>
+<post author="blonde_bird" timestamp="Oct 8, 2013 12:09 PM">
+<s>so just about 30 minutes ago, i downloaded the newest version of adobe flash player.</s><s> i went to youtube and clicked a video.</s><s> it said "blocked plug-in" so i clicked that and it said "the version of 'adobe flash player' on your system does the include the latest security updates and has been blocked.</s><s> to continue using 'adobe flash player', download an updated version from adobe's website".</s><s> i've downloaded the newest already.</s><s> what is the problem?</s><s> i have a macbook air btw. what should i do to be able to watch videos again? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5745369-5745424</DOCNO>
+<TEXT>
+<subject>Why can't I watch youtube?</subject>
+<post author="Captiv8r" timestamp="Oct 8, 2013 12:21 PM">
+<s>sorry, wrong forum to ask this question in. 
+</s><s>click the link below and follow the instructions at the top of the page. 
+</s><s>click here to view 
+best of luck in solving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5720710-1305610</DOCNO>
+<TEXT>
+<subject>Adobe 11 is not working properly in Internet Explorer 10 (32 bit)</subject>
+<post author="The Shed Master" timestamp="Sep 27, 2013 9:01 PM">
+<s>>adobe seems to only work on videos.  >adobe dose not work on online games.</s><s> >it keeps saying i have to install adobe 11 (which i have) >under 'add-ons', it saying that it is using adobe 11.</s><s> >i am using internet explorer 10 default /32 bit.</s><s> >adobe 11 works fine on firefox.</s><s> >adobe is enabled in browser <>computer type: toshiba satellite with w7  (4 years old) iv looked up many sources for an answer but came up empty handed. if you have >any< idea on how to fix this please comment. all answers help.</s><s> if you have a question please ask. it might help. _____________________________________________________________________ _______________________________________________ and if you are wondering why i want internet explorer to work if my  firefox is working fine?</s><s> i use firefox's add-ons to help defend my  computer if i am downloading sum thing(which i have a lot of add-ons  that slow it down).</s><s> and i use internet explorer because it is faster.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5694976-1299392</DOCNO>
+<TEXT>
+<subject>Multiple pivot points using the bone tool?</subject>
+<post author="Venaloid" timestamp="Sep 18, 2013 8:45 PM">
+<s>how do you make multiple pivot points on a symbol using the bone tool?</s><s> i would like make this 4-bar linkage hinge at all the pin joints, including the lower-left one (so it forms a closed loop that can collapse like a parallelogram).</s><s> in the image below, it only pivots along the bone, and it won't let me link up the join in the bottom-left. 
+http://s1198.photobucket.com/user/techn01d/media/flashbonetool1.jpg.ht ml 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5694976-5694940</DOCNO>
+<TEXT>
+<subject>Multiple pivot points using the bone tool?</subject>
+<post author="Captiv8r" timestamp="Sep 18, 2013 9:03 PM">
+<s>please read the page linked below. 
+</s><s>click here to view 
+best of luck to you in solving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5667835-1292847</DOCNO>
+<TEXT>
+<subject>unblock adobe</subject>
+<post author="abu dhabi2011" timestamp="Sep 9, 2013 11:09 PM">
+<s>accidentally blocked adobe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-4976307-1131282</DOCNO>
+<TEXT>
+<subject>issues viewing output in Chrome</subject>
+<post author="edu_Kate" timestamp="Jan 7, 2013 11:25 PM">
+<s>the software that i write documentation for has recently become compatible with chrome, so i have never had to worry about testing output in this browser until now. 
+</s><s>when 'attempting' to open my generated help in chrome it is opening 2 pop-ups. 
+</s><s>one is trying to open whcsh_home.htm#id=0 (basically a blank pop-up) 
+</s><s>the other is opening an about:blank page 
+any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-4976307-4978033</DOCNO>
+<TEXT>
+<subject>issues viewing output in Chrome</subject>
+<post author="Peter%20Grainge" timestamp="Jan 8, 2013 12:16 PM">
+<s>try webhelp to see if flashhelp is the issue. 
+</s><s>if not, when you post back please include your version of rh. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-4976307-4994103</DOCNO>
+<TEXT>
+<subject>issues viewing output in Chrome</subject>
+<post author="edu_Kate" timestamp="Jan 14, 2013 7:35 PM">
+<s>hi peter 
+</s><s>i have generated the files in webhelp as you suggested and it is opening ok in this layout. 
+</s><s>we are using robohelp10. 
+</s><s>hope that you are able to help us out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-4976307-4994782</DOCNO>
+<TEXT>
+<subject>issues viewing output in Chrome</subject>
+<post author="Peter%20Grainge" timestamp="Jan 15, 2013 3:56 AM">
+<s>does the flashhelp work ok with other browsers? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-4976307-5654773</DOCNO>
+<TEXT>
+<subject>issues viewing output in Chrome</subject>
+<post author="edu_Kate" timestamp="Sep 4, 2013 11:28 PM">
+<s>i put it in the too har basket and moved to the html5 layouts ... these are m uch easier/nicer to work in 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5598828-1276621</DOCNO>
+<TEXT>
+<subject>Flash Crashes When Publishing</subject>
+<post author="283inuyasha" timestamp="Aug 15, 2013 4:05 PM">
+<s>hello.</s><s> i've had flash cs5 for maybe a year or so.</s><s> in that year or so, flash has crashed on me maybe a few times, sometimes cyrupted a file or so.</s><s> i haven't had any problems again until recently.</s><s> i was working on my project which is an opening for my anime i'm trying to get started.</s><s> i'm not to experianced in flash yet, so what i do i animate in flash and save it as a animated gif.</s><s> file and move it to sony vegas to edit.</s><s> plus another problem i have with flash is that when i try to put music in it's really picky about what music can be dropped in the program is always says " couldn't import (file name) " then the second message says " one or more files wasn't imported because there were problems reading them" so, that's another reason why i just move it to sony and edit it. -.- so, i have three layers.</s><s> and the 3rd layer was just a back up just incase i messed up on the animation in layer 2 , if not, then i would delete the frames in layer 3 and keep going.</s><s> so, i haven't done that yet, until a few days ago, i tried to delete some frames from layer 3, and it completley crashed on me!</s><s> i tried deleting layer 3 itself, it still crashes on me, but only when i try to publish it with anything missing from layer 3.</s><s> i can save it, and publish it, if i don't touch layer three, but it needs to be deleted.</s><s> even if i go into layer 3's frames and just erase them, it still crashes on me while publishing!</s><s> i tried making a new file and copying only layer 1 and layer 2, it still flippin crashes on me!</s><s> so flash is being a real butt about me taking away anything from layer three, if i delete or mess with any of the other layers, it's fine, but no matter what i do, it won't publish anymore.</s><s> i been working on my project for a few days , and i'm trying to get it finished before school starts, and i don't want there to be a deeper problem and not fix it and things get worse d; so please help me ~momo-san 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5598828-5598843</DOCNO>
+<TEXT>
+<subject>Flash Crashes When Publishing</subject>
+<post author="Captiv8r" timestamp="Aug 15, 2013 4:18 PM">
+<s>hi there 
+try clicking the link below and carefully read the information you see near the top of the page.</s><s> it should help you get where you need to be. 
+</s><s>click here 
+best of luck to you in solving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5527935-1260051</DOCNO>
+<TEXT>
+<subject>I have all layers hidden and hidden layers not publishing yet there is a "ghost button" which change</subject>
+<post author="Skarvo" timestamp="Jul 22, 2013 10:51 AM">
+<s>yeah the topic pretty much said it.</s><s> how this ghost button still exists completely baffles me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5500585-1253507</DOCNO>
+<TEXT>
+<subject>Context Sensitive Help For Merged Help Projects</subject>
+<post author="ALWINGO100" timestamp="Jul 12, 2013 12:50 PM">
+<s>i have created a merged help project.</s><s> now i need to prepare it for context sensitive help.</s><s> how can i do this if possible? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5500585-5504911</DOCNO>
+<TEXT>
+<subject>Context Sensitive Help For Merged Help Projects</subject>
+<post author="RoboColum(n)" timestamp="Jul 14, 2013 2:55 PM">
+<s>your response is over in the other forum you posted in.</s><s> please do not post in more than one forum.</s><s> for a start this is the forum for flashhelp output which i assume you are not using as you have a merged project. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5437117-1238937</DOCNO>
+<TEXT>
+<subject>Need Games Restored!!!!!</subject>
+<post author="linda anglen" timestamp="Jun 21, 2013 2:36 PM">
+<s>since installing flash player version11.7.700.224 i am having a problem with face book games !</s><s>!</s><s>!</s><s> i have enternet explorer ie9--& windows 7 pro.</s><s> they won't load all the way & 1 won't cannect to server !</s><s>!</s><s>!</s><s>!</s><s> am having candy crush withdrawals !</s><s>!</s><s>!</s><s> can someone help please !</s><s>!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5388219-1227775</DOCNO>
+<TEXT>
+<subject>Broken Sound</subject>
+<post author="chriswarren972" timestamp="Jun 7, 2013 9:40 AM">
+<s>hi guys, 
+i'm having a problem and i don't know what to do.</s><s> i'm the network admin for the five star institute, and we have some online classes that we host on moodle and run through a flash player.</s><s> the same course has been offered for three years and has never had an audio issue.</s><s> we recently hired a new employee and he's got to take the course as part of his job, the slides work, but the audio doesn't.</s><s> i know his audio works on other slides and other files but not this particular one and i'm not sure what to do.</s><s> because it was brought to me, i started trouble shooting but i can't hear the audio and neither can one of the other people that i asked to take a look.</s><s> all of the computers affected have the latest update to flash.</s><s> can anyone give me any advice here? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5388219-5388244</DOCNO>
+<TEXT>
+<subject>Broken Sound</subject>
+<post author="Captiv8r" timestamp="Jun 7, 2013 9:50 AM">
+<s>hi there 
+please click the link below and follow the information at the top of the page that will appear. 
+</s><s>click here to view 
+best of luck to you in solving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5388219-5388569</DOCNO>
+<TEXT>
+<subject>Broken Sound</subject>
+<post author="chriswarren972" timestamp="Jun 7, 2013 11:27 AM">
+<s>thank you, and i apologize. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5388219-5388704</DOCNO>
+<TEXT>
+<subject>Broken Sound</subject>
+<post author="Captiv8r" timestamp="Jun 7, 2013 12:10 PM">
+<s>nah, no aplogies needed.</s><s> it is *i* that am sorry, as you have been delayed finding your answer! 
+i really do mean it when i say "best of luck to you".</s><s> not that it will be difficult, but because i hope you get your answer in a speedy fashion! 
+</s><s>happy weekend!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5388219-5388660</DOCNO>
+<TEXT>
+<subject>Broken Sound</subject>
+<post author="chriswarren972" timestamp="Jun 7, 2013 12:12 PM">
+<s>it'd be great if the flashplayer help wasn't closed.</s><s> i can't ask a question it keeps sending me to faq's, that's why i posted it here because i saw "flashhelp" lol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5324350-1212923</DOCNO>
+<TEXT>
+<subject>Overlapping issue with the sidebar FlashHelp RH7 effecting only Asian languages?</subject>
+<post author="nuttharo" timestamp="May 15, 2013 4:29 PM">
+<s>once we build using rh7, the sidebar in this flashhelp shows overlapping in the glossary tab view. 
+</s><s>this is only an issue after clicking on the glossary tab with asian languages (japanese and chinese) and will fix itself if we resize the browser window or click on the scroll bar. 
+</s><s>below is an image showing the terms and definitions in the sidebar, as highlighted in yellow (the terms) there is overlapping in the green (definition). 
+
+
+</s><s>rdp is a term, but can be seen in the definition area. 
+</s><s>would anyone have any advice on how to fix this? 
+</s><s>we tried with rh8 and the same issue happens 
+i have the latest version installed on ie and firefox.</s><s> the version installed is 11,7,700,202 i have tried this in different browsers, on different computers with different oses (all with the same flash version) 
+</s><s>the issue remains the same.</s><s> i would think that this is not an issue with the files as the other languages work perfectly?</s><s> but since we have the latest version of flash i would be unsure whether this is a bug in flash, or a bug generated during compilation of this flashhelp since it is only affecting asian languages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5211076-1185833</DOCNO>
+<TEXT>
+<subject>Spanish Flash Player Popup</subject>
+<post author="Daniel OSullivan" timestamp="Apr 5, 2013 5:11 PM">
+<s>i run a website, and each time i open the website in mozilla, i get a popup to install adobe flash player in spanish.</s><s> i haven't clicked on anything other than to open my website.</s><s> i click the x to close and it pops back up the moment i try to activate any link in the site.</s><s> i have had two other comments from users who have the same problem. 
+</s><s>can someone tell me if they have experienced this.</s><s> my website cms is wordpress. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5211076-5211208</DOCNO>
+<TEXT>
+<subject>Spanish Flash Player Popup</subject>
+<post author="Captiv8r" timestamp="Apr 5, 2013 8:31 PM">
+<s>hi there 
+take a read of the link below: 
+click here to view 
+cheers and best of luck in finding a solution to your issue! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5211076-5268901</DOCNO>
+<TEXT>
+<subject>Spanish Flash Player Popup</subject>
+<post author="JackDraganta" timestamp="Apr 25, 2013 7:56 PM">
+<s>go to your wp-admin, and remove the widget named text.</s><s> it has a piece of code in it which includes a .js file on your site.</s><s> that .</s><s>js file causes that popup. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5201492-1183539</DOCNO>
+<TEXT>
+<subject>Adobe Air iOS live streaming</subject>
+<post author="paul055" timestamp="Apr 2, 2013 11:48 PM">
+<s>i have to make live streaming radio application for ios devices i am using adobe flash cs6 i tried 2 sets of code both the code audio played well on my computer but when i test on iphone it doesn't played please help code set 1 var connect_nc:netconnection = new netconnection(); connect_nc.connect(null); var stream_ns:netstream = new netstream(connect_nc); stream_ns.play("http://5303.live.streamtheworld.com/hitaac?streamtheworld_user=1&nobuf="); code set 2 var video:video = new video(); addchild(video); var nc:netconnection = new netconnection(); nc.connect(null); var ns:netstream = new netstream(nc); video.attachnetstream(ns); ns.play("http://5303.live.streamtheworld.com/hitaac?streamtheworld_user=1&nobuf="); ns.client = {onmetadata:ns_onmetadata, netstatusevent:ns_onplaystatus}; function ns_onmetadata(item:object):void { video.width = 50; video.height = 50; } ns.addeventlistener(netstatusevent.net_status, ns_onplaystatus); function ns_onplaystatus(event:netstatusevent):void { if(event.info.code == "netstream.play.stop") { } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5201492-5201543</DOCNO>
+<TEXT>
+<subject>Adobe Air iOS live streaming</subject>
+<post author="Captiv8r" timestamp="Apr 3, 2013 12:42 AM">
+<s>hi there 
+please view the page at the link below: 
+click here to view 
+cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5135868-1167731</DOCNO>
+<TEXT>
+<subject>?????????FMS???H.264??</subject>
+<post author="alexfsffdsaf" timestamp="Mar 9, 2013 7:59 PM">
+<s>fms???h.264???????rtmp???????????? 
+</s><s>????????????????????f4v post processor?????????????????????????????? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5135868-5136183</DOCNO>
+<TEXT>
+<subject>?????????FMS???H.264??</subject>
+<post author="Captiv8r" timestamp="Mar 10, 2013 4:53 AM">
+<s>???????????????????????????????????? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5131211-1166646</DOCNO>
+<TEXT>
+<subject>Is it possible to make a button go to 1 of 3 scenes?</subject>
+<post author="RyderSawyers" timestamp="Mar 7, 2013 6:34 PM">
+<s>is it possible to make a button go to 1 of 3 scenes?</s><s> i'm making a animation and i need it to when you click the button it send to 1 of 3 scenes for that button but it randomly chooses which scene.</s><s> i'm pretty new with actionscript 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5131211-5131461</DOCNO>
+<TEXT>
+<subject>Is it possible to make a button go to 1 of 3 scenes?</subject>
+<post author="Captiv8r" timestamp="Mar 7, 2013 9:55 PM">
+<s>hi there 
+i'm sure there is, but i'm unable to tell you how. 
+</s><s>the thing is, you are asking in the wrong forum.</s><s> while this forum says flashhelp, it's not for seeking help with adobe flash.</s><s> instead, it's dedicated to discussing issues related to a specific output type created by adobe robohelp, an adobe application you likely have never heard of. 
+</s><s>click the link below and you will see a page where you may then click a drop-down selector and navigate to the flash forum and post your question there. 
+</s><s>click here to view 
+best of luck in finding a solution to your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5061512-1150688</DOCNO>
+<TEXT>
+<subject>CRASHES & FREEZING</subject>
+<post author="ANGEL_2022" timestamp="Feb 9, 2013 8:34 PM">
+<s>flash crashes & freezes on farmville and in all the web sites i go to.</s><s> help please....</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-5061512-5061500</DOCNO>
+<TEXT>
+<subject>CRASHES & FREEZING</subject>
+<post author="Captiv8r" timestamp="Feb 9, 2013 8:51 PM">
+<s>sorry, but this isn't farmville help.</s><s> and this also isn't the place to get help with the flash player.</s><s> please click the link below and read the text presented in red.</s><s> in the text there is a link you may follow to find the flash forums. 
+</s><s>click here to view 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-481866</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv@gs" timestamp="Aug 24, 2009 9:31 AM">
+<s>i have a bunch of "see also" keywords defined in my flashhelp project using robohelp 7. out of the 20+ see also keywords that i've defined, only 1 defined displays in the see also pod list. 
+</s><s>when i access a topic and select the see also tab, i see the keyword(s) associated with the topic. 
+</s><s>if i try to add the keyword to the see also list via the entry field in the see also pod, i get a message that the keyword already exists. 
+i created the see also keywords and then associated the topics via the see also pod, i don't understand why they're no longer showing in the see also pod.</s><s> it is very hard to determine what keyword a topic belongs to if i can't see the list of all my see also keywords and associated topics via the see also pod. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200225</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 24, 2009 9:38 AM">
+<s>hi there 
+i'm thinking perhaps this will be a ticklish one for you to resolve. 
+i think i'd begin by attempting to insert a see also control in a topic.</s><s> as you are saying the keywords aren't being listed in the pod, they likely won't show in the selection box for inserting the control.</s><s> so you might just choose one of the words you see.</s><s> then edit the control to reflect the keyword you need.</s><s> assuming this works, you would then be able to click it and see which topics are using the keyword in question.</s><s> you would then be able to remove the keyword from those topics.</s><s> once the keyword was removed, perhaps robohelp would allow you to add it back in via the dialog. 
+</s><s>is the project on a network or anything?</s><s> seems odd it would suddenly just drop words from the list. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200434</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 10:48 AM">
+<s>the only problem is that the keywords are not showing in the see also pod.</s><s> project is not on the network.</s><s> also, i have 4 other projects where the keywords work fine and display in the see also pod as expected. 
+</s><s>so it is only this one project that has a problem with viewing the existing see also keywords in the "pod" view. 
+</s><s>if i check my topics, keyword appears in the selection list in the topic properties dialog.</s><s> i can also run the see also report to view all of the keywords and their associated topics. 
+</s><s>the keyword(s) also display in the selection and selected fields of the see also button that i've inserted in related topics. 
+</s><s>when i add new keywords via the see also pod, they are available for selection even after i close and re-open the project.</s><s> it is just the 24 out of the original 25 keywords and their associated topics that do not appear in the see also pod.</s><s> what is really weird is just 1 of the original 25 keywords never disappeared from the pod. 
+</s><s>i've got a feeling that i should use the see also report to create new keywords and associate topics via the see also pod band then update the see also buttons in each topic.</s><s> fortunately, there are only 151 topics in this project but i'm not pleased as this will tedious plus it adds more time to the project maintenance function. 
+
+
+
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200562</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 24, 2009 11:24 AM">
+<s>hi paula 
+</s><s>i'm a but unclear on what is being expected here.</s><s> you stated a situation.</s><s> i stated a possible workaround to fix it. 
+</s><s>is your reply simply intended to say "thanks, but i'll continue with the keywords not showing"?</s><s> or are you just wanting to grouse about the keywords not showing.</s><s> if that's the case, you are free to do that and that's cool with me and i really don't care either way. 
+</s><s>but if so, i'll mark this one off my mental watch list so i don't waste any more time with it.</s><s> of course, if you really want to resolve it, i'm happy to try and assist with that too.</s><s> i just need to know which path you are following. 
+</s><s>please advise...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200681</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 12:01 PM">
+<s>i'm grousing because i tried your suggestion about inserting a see also button (i.e., control) into a topic and then selecting an existing keyword but nothing happened in the see also pod. 
+</s><s>i've attached a screenshot of the see also pod and the list that appears when i insert a see also button.</s><s> the existing topics show the see also keyword in their topic properties.</s><s> the see also buttons work perfectly in the generated help.</s><s> it is the fact that the "pod" is not showing the existing keywords that is so frustrating because i'd like to know what see also keywords are in use and have the ability to edit the associated topics in the future. 
+</s><s>is there a data file that contains the keywords and their associated files in robohelp?</s><s> can it be re-generated based on the topic properties? 
+
+
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200645</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 24, 2009 12:13 PM">
+<s>hi again 
+i'm guessing you somehow missed the crux of what i tried to say earlier. 
+</s><s>yes, i'm fully aware that the topic properties accurately list the missing keywords.</s><s> what is the big mystery here is that although things seem to work, the words aren't listed in the see also pod.</s><s> what i proposed earlier was a process that may settle everything. 
+i do believe there is a single file that holds the see also keywords.</s><s> that file is named rhakeyword.apj and should be found in your project location.</s><s> however, given the fact things just work in the end, i'm not optimistic that editing only this file will correct things.</s><s> my educated guess tells me that since you cannot add the keyword and robohelp tells you it exists, you will see it when you edit the contents of the file. 
+</s><s>certainly you are free to try that and see.</s><s> my gut says that more is involved in this. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200691</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 12:16 PM">
+<s>rick 
+</s><s>i just checked the rhakeyword.apj in the project, i'm only seeing the 4 new keywords and the 1 original (total 5). 
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200739</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 24, 2009 12:19 PM">
+<s>hi again 
+before you do anything, i'd suggest closing the project in robohelp as you may end up confusing robohelp.</s><s> you said you see the one original and i'm not sure if that means the missing keyword is there or what exactly that means. 
+</s><s>you might try some copy/paste hokey pokey to insert any "missing" keywords.</s><s> then close and save the file and re-open the project in robohelp. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200730</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 12:23 PM">
+<s>original means "welcome section" keyword, it is the only keyword from my original entries that remained in the see also pod when i realized that there was a problem.</s><s> the 4 other keywords i've added in the last couple of days. 
+</s><s>there about 20 other keywords that were in the original project that show up in the see also button (control) selection list that are not appearing in the apj file. 
+
+
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200791</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 12:46 PM">
+<s>as you suggested, i closed out of robohelp before i edited the apj file.</s><s> i renamed the existing file before i imported the revised apj file and re-opened robohelp.</s><s> i also removed the renamed file from the project. 
+</s><s>what's weird is when i re-open robohelp project, i'm still seeing the 5 keywords.</s><s> so something in this project is clobbered in regards to the see also pod functionality 
+any other suggestions?</s><s> i could blow away the cpd file and re-open with hhp but then i'd lose all of my templates that contain the revision dates in the footer. 
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200816</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 24, 2009 12:55 PM">
+<s>hi there 
+here's the thing.</s><s> the see also keywords are stored in a few different places.</s><s> certainly they exist in the file i mentioned earlier.</s><s> but they also exist in the .</s><s>cpd file.</s><s> not only those two places but also as some code in each topic associated with keywords.</s><s> so if one item is out of sync, it's usually not as simple as fixing one location.</s><s> that's why i suggested listing all the topics assiciated with a keyword.</s><s> that's what inserting the control was intended to do.</s><s> provide a list of all topics using a specific keyword.</s><s> then you could edit each topic to eradicate the keyword reference.</s><s> once you were certain the keyword was not in use by any topic, robohelp would then likely allow you to add it back in using its own mechnaisms. 
+</s><s>robohelp projects are often like little ecosystems.</s><s> you make a change here and it affects things in other places. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200874</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 1:16 PM">
+<s>thanks i figured that's the problem.</s><s> i've been using robohelp since 1993 and i know there's lots of place where files are stored.</s><s> i figured it was worth the shot as it didn't take much time to edit the file.</s><s> i've put the original apj back into the project. 
+</s><s>can you please clarify what exactly you mean by "insert the control" - step by step?</s><s> to me, it means insert a see also button in the topic.</s><s> if you mean add a keyword to a topic's see also tab, the existing keyword(s) already display but i can add a new keyword if that's what you want me to do.</s><s> not sure how that 
+the only way i can see all of the topics associated with a keyword is to print the see also report.</s><s> i definitely can't insert any of those original 20 or so keywords into the see also pod, i get an error message that it already exists even though it is not showing in the see also pod's keyword list. 
+
+
+
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200907</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 24, 2009 1:28 PM">
+<s>hi again 
+so you have been using robohelp almost as long as i have!</s><s> lol 
+</s><s>okay, indeed what i meant was that you insert a see also control.</s><s> my thought with that was that the control dialog may have pulled from a different source than the see also pod does.</s><s> so it may have actually listed the missing keywords.</s><s> by choosing one, i didn't think it would make the see also pod begin showing the keyword.</s><s> my thought was that if you had no clue which topics were associated with the keyword, but things worked in the end, you could generate or compile and see which topics were listed when you clicked the control.</s><s> then you could work backward from there to banish the keywords (manually) from the topics.</s><s> then perhaps robohelp would finally allow you to insert the keyword. 
+</s><s>i'm wondering if it's worth making a backup copy of the project, then clobbering the cpd to see if the see also pod finally reveals the missing keywords. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2200964</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 24, 2009 1:48 PM">
+<s>yep.</s><s> i started with doc-to-help in 1991 and then moved over to robohelp, which i've been using ever since. 
+i tried what you suggested with inserting a see also and yes, the missing keywords were there.</s><s> the easiest thing for me is to the use the see also report, which does show the missing keywords and all their associated topics.</s><s> i can use that as the baseline for fixing the keywords manually through the topics or see also pod. 
+</s><s>however, i'm thinking i should try and blow away the cpd file before going through the manual process.</s><s> i just hate losing the templates because i use them to insert footers with revision dates into the topics.</s><s> however, in this project, the footers aren't as important because it is just a knowledge base and i'm not tracking edits to exist topics. 
+
+
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2203067</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="pjv%40gs" timestamp="Aug 25, 2009 10:21 AM">
+<s>rick 
+</s><s>figured out what to do to clean up the see also, it isn't pretty but it works.</s><s> it isn't too bad for me because i've got all my topics organized with process-related folders that correspond to the see also keyword. 
+i noticed that when i removed the see also keyword from all of the associated topics, it remained selected or available for selection in the see also (design-time control) button list.</s><s> so i decided to do the following, since i didn't have that many topics and i wanted to remove some of the topics that were specified as see also: 
+1 - for each topic in the folder that requires a see also keyword, access the see also tab in properties dialog and delete the "keyword." make sure that all of the keywords are deleted via the topic properties dialog and save all topics. 
+2 - open the see also pod, re-enter the keyword that you deleted from all of the topics and then re-select those topics. 
+</s><s>you don't need to worry about the re-linking via the see also button because the previously selected keyword is the same as the keyword that was added in the see also pod. 
+
+</s><s>paula valentine, consultant controllers technology project office goldman, sachs & co.</s><s> tel: (800) 323-5678, ext.</s><s> 25038 or (212) 902-5038 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2203157</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="Aug 25, 2009 10:44 AM">
+<s>hi paula 
+</s><s>kewl beanarinos!</s><s> thanks for sharing that.</s><s> it may help others that encounter a similar situation. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2825506</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="EileenPalsson" timestamp="May 19, 2010 6:55 AM">
+<s>i'm having a similar problem in a legacy help project: a-keywords show up on the see also tab of the see also properties dialog (under see also keywords in project:).</s><s> however, (1) they are not listed in the see also pod, (2) they are not listed on the see also tab of the respective topic properties, and (3) the many "see also" controls in the project (in this particular case the output is chm) are not working.</s><s> (and yes, i have run the "related topics from javascript call" script provided by praful jain.</s><s> everything works fine in a very similar project that i have for another project.</s><s> it's just this one that has lost its keywords somehow.</s><s>) 
+</s><s>the project's rhakeyword.apj file is basically empty -- as it has been for years, and the "see also" controls certainly worked then. 
+</s><s>now i understand from reading the above that "see also" keyword information is stored in several places.</s><s> does anyone know of any automatic or semi-automatic way of restoring the keywords?</s><s> this project contains 1100 topics, most of which contain (or should contain) "see also" keywords, so redoing this manually would be very much a last resort. 
+</s><s>thank you!</s><s> eileen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2825485</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="Captiv8r" timestamp="May 19, 2010 7:00 AM">
+<s>hi eileen 
+</s><s>about the only thing that comes to mind that is remotely close to a "quick fix" is to try clobbering the .</s><s>cpd file and let robohelp rebuild it.</s><s> see if that changes anything. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-2825514</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="EileenPalsson" timestamp="May 19, 2010 7:06 AM">
+<s>thanks, but yeah, that's the first thing i tried.</s><s> (i should have said so.</s><s>) /eileen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2200220-4827135</DOCNO>
+<TEXT>
+<subject>Do NOT see all of my "see also" keywords in See Also pod</subject>
+<post author="ReactionAtWork" timestamp="Nov 6, 2012 8:42 AM">
+<s>i'm having the same problem and i think i know what caused it.</s><s> i imported a load of existing robohelp html topic files into a new project.</s><s> the files contained exisiting references to see also keywords (i.e. from the old project) in their code .</s><s> the topics imported perfectly... except that robohelp didn't add the topics' seealso codes as new keywords in the see also pod.</s><s> neither did it add them to the rhakeyword.apj file, which is not surprising as i think this is just the coded copy of the see also pod.</s><s> however, it did add them to the .</s><s>cpd file, as evidenced by a full text search, where the keyword name appears in plain text amongst all the binary crap! 
+</s><s>despite the topics' see also keywords not appearing in the see also pod, the project built ok (i'm using chm help) and the see also links worked correctly. 
+</s><s>to fix the problem, i used to the "nuke-the-cpd-file" option, and the pesky 'hidden' see also keyword disappeared from the project, allowing me to recreate it the 'proper way' in the see also pod.</s><s> interestingly, after having done this, importing the topics again worked quite nicely, with robohelp correctly adding them to the matching see also keyword that i'd just recreated. 
+</s><s>so, as long as the seealso keyword already exists in the project before you import the files that reference that keyword, you'll be ok. 
+</s><s>so it seems it's just another bug in the topic import routines; i will report it formally to the robohelp bugtracker, so perhaps in a decade or so adobe might fix it. 
+? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-613965</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 9, 2010 8:02 AM">
+<s>i was able to generate a new layout no problem before but now i've added a conditional build tag and have the layout set to block it.</s><s> it wouldn't go through before so i tried removing the topics i tagged and i still can't get the output to generate when i have the tag selected. 
+
+
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2732326</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 13, 2010 8:00 AM">
+<s>as no one has replied, perhaps i am not the only one who wasn't clear about the problem.</s><s> if you haven't resolved it, please clarify. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2738283</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 15, 2010 6:21 AM">
+<s>peter, 
+</s><s>i don't know quite else how to explain.</s><s> the system can generate my layout with any problems.</s><s> if i choose to block text or pages using a conditional build tag the system freezes when it's generating a layout and never completes.</s><s> when it freezes the system says it's "updating files for flashhelp..." 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2738816</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 15, 2010 8:59 AM">
+<s>please see the stick topic, before you post.</s><s> 
+</s><s>what edition and version of robohelp are you using? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2738802</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 15, 2010 9:04 AM">
+<s>i'm not sure where stick topic is. 
+</s><s>i'm using version 7. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2738888</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 15, 2010 9:13 AM">
+<s>http://forums.adobe.com/community/robohelp/robohelp_flash 
+we now know it is rh7.</s><s> robohelp html?</s><s> 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2738874</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 15, 2010 9:17 AM">
+<s>yes sir.</s><s> html!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2739034</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 15, 2010 9:54 AM">
+<s>there was a problem with robohelp html but now that you have given me both the edition and version, i have checked and it was in fact a robohelp html 6 problem. 
+</s><s>try opening one of the sample projects and see if you get the same problem there if you generate with a tag. 
+</s><s>you will find the samples at 
+c:\program files\adobe\adobe robohelp 8\robohtml\samples\en_us 
+or 
+c:\program files\adobe\adobe technical communication suite 2\adobe robohelp 8\robohtml\samples\en_us 
+</s><s>if they are ok, create a new two topic project and block one topic with the same named tag. 
+</s><s>post back how that goes. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2739181</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 15, 2010 10:46 AM">
+<s>the tag worked in the sample project and in the new project i created.</s><s> the problem appears to be limited to my current project. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2743399</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 17, 2010 5:00 AM">
+<s>make a copy of the project and delete both the cpd and pss files.</s><s> then reopen the project and try again. 
+</s><s>if that fails post back and add how many topics use this tag, a few or many. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747182</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 19, 2010 7:57 AM">
+<s>i deleted both of those files and it's still not working.</s><s> i have no topics tagged yet because i removed the ones i did when it froze up.</s><s> i tried to generate the layout with and without having a topic tagged and both freeze up.</s><s> it works fine when i don't try to block the tags but as soon as i try to block it i can't finish generating a new layout. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747527</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 19, 2010 9:57 AM">
+<s>so now you have no topics using the tag but it still freezes if the same build expression is used.</s><s> correct?</s><s> 
+</s><s>have you checked the properties of the tags, specifically the used in tab? 
+</s><s>if that shows nothing is using those tags, delete them and create new ones with different names.</s><s> any change? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747688</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 19, 2010 10:56 AM">
+<s>i deleted the old tag and created a new one with a different name.</s><s> i attempted to generate the layout with the tag being blocked however i didn't tag any of the topics.</s><s> the system still freezes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747677</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Captiv8r" timestamp="Apr 19, 2010 10:59 AM">
+<s>hi there 
+not sure if you have tried this or not.</s><s> what about creating a new layout?</s><s> have you tried that?</s><s> in the single source layouts area, right-click and choose new layout. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747779</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 19, 2010 11:35 AM">
+<s>i just tried that and it didn't work either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747880</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 19, 2010 12:15 PM">
+<s>how big is this project zipped up?</s><s> don't send yet. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2747898</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 19, 2010 12:26 PM">
+<s>unfortunately i'm not allowed to release the files to anyone outside our company. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2748014</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 19, 2010 12:53 PM">
+<s>i wish i had placed a bet on that.</s><s> tell your management that for me this is like trying to repair your car and you refusing to bring it in to the garage.</s><s> either you become a mechanic or your car is useless.</s><s> i'm sure adobe's product manager would vouch for me if that helps you. 
+</s><s>otherwise we are down to not much left.</s><s> i would suggest searching in a different way but different tags create the same problem.</s><s> i cannot readily think of anything else except importing all your topics into a new project or the old half and half routine.</s><s> you create a copy and trash half the content, then generate.</s><s> same problem?</s><s> create another copy and trash the other half then generate.</s><s> either you will find a point at which the problem goes away so the cause is in what you just trashed or you will end up with one topic and then create another project anyway. 
+</s><s>sorry but that's about it.</s><s> please post back if you do resolve it. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2750352</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="udimer" timestamp="Apr 20, 2010 10:00 AM">
+<s>i move a large group of my files out of the project and i was able to generate the layout with tagging.</s><s> i then slowly put groups of the files back in and reran the output until i finally found the problem topic and removed it.</s><s> it's working fine now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-2724001-2750559</DOCNO>
+<TEXT>
+<subject>Generating Layout Freezes, only added Conditional tag</subject>
+<post author="Peter%20Grainge" timestamp="Apr 20, 2010 10:57 AM">
+<s>wait till you have to do that with thousands of topics. 
+</s><s>glad to hear the problem is resolved. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-206739</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 11, 2009 11:48 AM">
+<s>i've found the articles on how to edit an fla/swf file for color/size/action, but i don't see how to add a new button to the toolbar of a flash skin.</s><s> i want to add a zoomsearch button, so i: 1 - copied the existing search.fla button in the template directory and renamed it zoomsearch.fla.</s><s> 2 - i open zoomsearch.fla in adobe flash and published the corresponding zoomsearch.swf file.</s><s> 3 - i opened the fhs file in notepad and added the following section: <toolbaritem mode="btnwithicon mode" type="built-in-zoomsearch" id="5"> <name>zoomsearch</name> <wf> <swf>skin_button_tb_zoomsearch.swf</swf> <navcomponent>zoomsearch</navcomponent> </wf> <text>::??defaultwebskintext??::</text> </toolbaritem> i republish the project, but the skin doesan't show the new button.</s><s> can someone please give me a hint as to what i'm doing wrong?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1054737</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Peter%20Grainge" timestamp="Mar 11, 2009 12:31 PM">
+<s>did you tick the checkbox for the new button in the second page of the wizard?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1054744</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Ben%20Minson" timestamp="Mar 11, 2009 12:40 PM">
+<s>this probably wouldn't solve the problem, but before publishing the new flash button movie, did you somehow change the action so that it's not hte same as the old search button?</s><s> i'm not surprised that adding an entry doesn't automatically make a button appear.</s><s> one time i was experimenting, and removing an entry (the "powered by" button) didn't make that button disappear.</s><s> i do know that the toolbar frame is actually assembled using javascript.</s><s> my guess is that you would have to tweak some of the supporting javascript files that are created when you generate a flashhelp output.</s><s> if you have a javascript expert on hand, he/she could probably track down where the button display is assembled and help you put together some code that would tell the toolbar frame to display another button (along with the changes you've already made to the .fhs file). --ben
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1054754</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 11, 2009 12:47 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1054760</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Ben%20Minson" timestamp="Mar 11, 2009 12:57 PM">
+<s>i should have added "do you have access to a flash developer?" it would probably take a lot of time for a flash developer and a javascript expert to figure out what all goes on to get a flash skin to render.</s><s> i think there is a lot of hardcoding for flashhelp to work the way it is out of the box and no easy way to change it.</s><s> peter, do you happen to know if anyone who was involved in building flashhelp is still on the rh team?</s><s> it would be great to have some documentation on it that explains how the movies and javascript work together to render the skin.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1054772</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Peter%20Grainge" timestamp="Mar 11, 2009 1:11 PM">
+<s>sorry i don't.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1054775</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Ben%20Minson" timestamp="Mar 11, 2009 1:15 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1055144</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 12, 2009 6:00 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1055399</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="RoboWizard" timestamp="Mar 12, 2009 11:28 AM">
+<s>hi all does the article linked below help you ferret anything out?</s><s> click here for an adobe article on flashhelp skins cheers...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1056006</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 13, 2009 11:32 AM">
+<s>unfortunately, no. it only says how to swap buttons from template to template, change attributes like height/spacing/color.</s><s> none of the documentation that i can find or adobe can point me to tells one how to add a "custom" (zoomsearch) button.</s><s> if anyone knows of a developer that can help......
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1057246</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 16, 2009 12:23 PM">
+<s>uncle.</s><s> i give up on trying to add a zoomsearch button to a flash skin.</s><s> what next?</s><s> i am now attempting to integrate zoomsearch with webhelp.</s><s> i have a question about step 4 on merging webhelp ( http://www.grainge.org/pages/authoring/merging_webhelp/merging_method_ rh7.htm#step_4).</s><s> i have created my "project" and the child projects (each in their own subfolder) under the project folder.</s><s> what project/topic am i opening and highlighting text in?</s><s> and what "file" is the required file i am supposed to be linking to?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1057769</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Peter%20Grainge" timestamp="Mar 17, 2009 3:26 AM">
+<s>that step is about creating a link from a topic in one project to a topic in another project, nothing to do with searching.</s><s> the text you highlight is the text that will be the link and the file you browse to is the target topic.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1058670</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 18, 2009 6:38 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1058674</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2009 6:51 AM">
+<s>are you using merged help to keep the size of each project down or because you want to supply users with different pieces of the help?</s><s> step 4 is if you want a link from a topic in one project to a topic in another project.</s><s> if you don't want such a link, don't create one.</s><s> why would you target a topic you don't want the user to see?</s><s> indeed, why would the help contain such a topic?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1058730</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 18, 2009 7:58 AM">
+<s>both.</s><s> i need to keep the size down and i also will be publishing different books for different user groups.</s><s> i have already set up this project to produce merged flash (i.e., mergedproject folder that contains output of each child, etc.</s><s>).</s><s> it works to produce merged flash output.</s><s> i now just want to produce merged webhelp for this existing project.</s><s> i think i'm just publishing the child projects to the wrong output folders.</s><s> do i still need to create a "blank" page in the parent that serves as the redirect to each child project?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1058742</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2009 8:13 AM">
+<s>perhaps this is where you are getting it wrong.</s><s> do i still need to create a "blank" page in the parent that serves as the redirect to each child project?</s><s> you only create one redirect in the parent.</s><s> that goes to a topic in child one which will be an output that all users get, the common stuff.</s><s> you point that to the topic that you want the user to see when they open the help, regardless of which other children they may have.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1058745</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="hylandwriter1" timestamp="Mar 18, 2009 8:16 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/FlashHelp/Discussions-206739-1058768</DOCNO>
+<TEXT>
+<subject>Add New Toolbar Button</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2009 8:36 AM">
+<s>not sure if that means you have four redirects or not.</s><s> if that is what you are doing and it works for what you want from the merge, then that's ok.</s><s> when you get to set up zoomsearch later, you will need to run that for each configuration of the output.
+</s></post>
+</TEXT>
+</DOC>
+
+

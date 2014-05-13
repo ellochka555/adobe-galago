@@ -1,0 +1,408 @@
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-6115370-1405304</DOCNO>
+<TEXT>
+<subject>Why is the Flash Player installer crashing on OS X 10.8.5?</subject>
+<post author="Chris Campbell" timestamp="Feb 12, 2014 4:02 PM">
+<s>if you find that the flash player installer is crashing when installing on os x 10.8.5, you might be missing a critical system file required by our installer. 
+</s><s>you can verify this by looking for the file named "mach_kernel" at the root of your system hard drive.</s><s> if this file is missing or was manually deleted, we'll need to restore it to resolve this installation problem.</s><s> these steps require the usage of the utility called terminal (found in your applications/utilities folder) 
+
+1.</s><s> download the update package from apple here: http://support.apple.com/kb/dl1686 
+2.</s><s> to allow the installer to work, we need to create an empty mach_kernel file using the following terminal command: 
+sudo touch /mach_kernel 
+3.</s><s> install the osxupd10.8.5supp.pkg from the downloaded file.</s><s> it should restore the proper mach_kernel file. 
+4.</s><s> after installing the update (and before restarting) it's possible to verify that the file was installed correctly: 
+ls -l /mach_kernel 
+the output should look similar to: 
+-rw-r--r--@ 1 root wheel 8244640 sep 29 13:34 /mach_kernel 
+5.</s><s> to prevent the mach_kernel file from showing up in finder, run the command: 
+sudo chflags hidden /mach_kernel 
+6.</s><s> after rebooting, uninstall flash player using the uninstaller here: http://fpdownload.macromedia.com/get/flashplayer/current/support/unins tall_flash_player_osx.dmg 
+7.</s><s> reinstall flash player: http://get.adobe.com/flashplayer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-6115370-1405304</DOCNO>
+<TEXT>
+<subject>Why is the Flash Player installer crashing on OS X 10.8.5?</subject>
+<post author="Chris Campbell" timestamp="Feb 12, 2014 4:02 PM">
+<s>if you find that the flash player installer is crashing when installing on os x 10.8.5, you might be missing a critical system file required by our installer. 
+</s><s>you can verify this by looking for the file named "mach_kernel" at the root of your system hard drive.</s><s> if this file is missing or was manually deleted, we'll need to restore it to resolve this installation problem.</s><s> these steps require the usage of the utility called terminal (found in your applications/utilities folder) 
+
+1.</s><s> download the update package from apple here: http://support.apple.com/kb/dl1686 
+2.</s><s> to allow the installer to work, we need to create an empty mach_kernel file using the following terminal command: 
+sudo touch /mach_kernel 
+3.</s><s> install the osxupd10.8.5supp.pkg from the downloaded file.</s><s> it should restore the proper mach_kernel file. 
+4.</s><s> after installing the update (and before restarting) it's possible to verify that the file was installed correctly: 
+ls -l /mach_kernel 
+the output should look similar to: 
+-rw-r--r--@ 1 root wheel 8244640 sep 29 13:34 /mach_kernel 
+5.</s><s> to prevent the mach_kernel file from showing up in finder, run the command: 
+sudo chflags hidden /mach_kernel 
+6.</s><s> after rebooting, uninstall flash player using the uninstaller here: http://fpdownload.macromedia.com/get/flashplayer/current/support/unins tall_flash_player_osx.dmg 
+7.</s><s> reinstall flash player: http://get.adobe.com/flashplayer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-4487439-1022066</DOCNO>
+<TEXT>
+<subject>How do I revert to a previous version of Flash Player?</subject>
+<post author="Chris Campbell" timestamp="Oct 28, 2013 11:46 AM">
+<s>while we always recommend using the latest version of flash player, sometimes problems are encountered in a new release that were not present in a previous release.</s><s> if you are unable to work around these problems and they block functionality you rely on, rolling back to a previous version might be required until an update is made available.</s><s> this faq will walk you through the steps required for reverting back to a previous version of flash player. 
+</s><s>please note that google chrome provides it's own version of flash player.</s><s> for more details on this, along with instructions for using a version other than the default with chrome, please see: flash player with google chrome. 
+</s><s>windows video tutorial 
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+macintosh video tutorial 
+
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+
+1.</s><s> follow the steps in the "how do i do a clean install of flash player" faq, but stop at the end before installing the most recent version 2.</s><s> install either the latest 11.7 flash player release or download a version from the flash player archive page. 
+</s><s>if you install the latest 11.7 build, you will get a player with all known security patches applied. 
+</s><s>if downloading from the flash player archives, please note that you will be downloading a .zip file that will contain installers for all operating systems. 
+</s><s>unzip the archive and navigate into the appropriate folder (you can safely ignore the folder that ends with "_debug").</s><s> run the appropriate installer for your operating system and browser.</s><s> if installing for internet explorer, run the installer with "winax" in the file name.</s><s> for windows, running the executable that ends with .exe is recommended.</s><s> when presented with the dialog that allows you to select your update method, select "notify me to install updates". 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-4487439-1022066</DOCNO>
+<TEXT>
+<subject>How do I revert to a previous version of Flash Player?</subject>
+<post author="Chris Campbell" timestamp="Oct 28, 2013 11:46 AM">
+<s>while we always recommend using the latest version of flash player, sometimes problems are encountered in a new release that were not present in a previous release.</s><s> if you are unable to work around these problems and they block functionality you rely on, rolling back to a previous version might be required until an update is made available.</s><s> this faq will walk you through the steps required for reverting back to a previous version of flash player. 
+</s><s>please note that google chrome provides it's own version of flash player.</s><s> for more details on this, along with instructions for using a version other than the default with chrome, please see: flash player with google chrome. 
+</s><s>windows video tutorial 
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+macintosh video tutorial 
+
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+
+1.</s><s> follow the steps in the "how do i do a clean install of flash player" faq, but stop at the end before installing the most recent version 2.</s><s> install either the latest 11.7 flash player release or download a version from the flash player archive page. 
+</s><s>if you install the latest 11.7 build, you will get a player with all known security patches applied. 
+</s><s>if downloading from the flash player archives, please note that you will be downloading a .zip file that will contain installers for all operating systems. 
+</s><s>unzip the archive and navigate into the appropriate folder (you can safely ignore the folder that ends with "_debug").</s><s> run the appropriate installer for your operating system and browser.</s><s> if installing for internet explorer, run the installer with "winax" in the file name.</s><s> for windows, running the executable that ends with .exe is recommended.</s><s> when presented with the dialog that allows you to select your update method, select "notify me to install updates". 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5746090-1311734</DOCNO>
+<TEXT>
+<subject>YouTube videos have no sound</subject>
+<post author="Mike M" timestamp="Oct 8, 2013 4:10 PM">
+<s>google made a code change recently and it caused all youtube video paged to ope with the audio "muted".</s><s> this isn't a problem with flash player, nor can it be fixed by adobe.</s><s> it is a problem with google's website cocde for youtube.</s><s> the solution is to manually adjust the volume, until googlre fixes the code.</s><s> the following video shows how to do this.</s><s> hover over the "speaker icon" and the "volume slider" will appear to the right.</s><s> slide it to the desired level.</s><s> you may or may not have to repeat this for every video you watch.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5746090-1311734</DOCNO>
+<TEXT>
+<subject>YouTube videos have no sound</subject>
+<post author="Mike M" timestamp="Oct 8, 2013 4:10 PM">
+<s>google made a code change recently and it caused all youtube video paged to ope with the audio "muted".</s><s> this isn't a problem with flash player, nor can it be fixed by adobe.</s><s> it is a problem with google's website cocde for youtube.</s><s> the solution is to manually adjust the volume, until googlre fixes the code.</s><s> the following video shows how to do this.</s><s> hover over the "speaker icon" and the "volume slider" will appear to the right.</s><s> slide it to the desired level.</s><s> you may or may not have to repeat this for every video you watch.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5560631-1267823</DOCNO>
+<TEXT>
+<subject>How to perform a "clean install" of Flash Player in Mac OS X</subject>
+<post author="Mike M" timestamp="Jan 15, 2014 2:12 PM">
+<s>to start, please follow the uninstall instructions posted here: http://helpx.adobe.com/flash-player/kb/uninstall-flash-player-mac-os.h tml Ê download the offline installer here: http://fpdownload.macromedia.com/get/flashplayer/current/licensing/mac /install_flash_player_12_osx.dmg Ê if it won't download directly, right click and "save as"- and make note of the save location do not mount the installer dmg or run the installer yet!</s><s> empty the trash Ê reboot (this will "kill" all running processes) Ê quit your browser (press cmd+q - don't just close the window) Ê go to: mac hd/library/internet plugins Ê verify that the flash player.plugin file is not present.Ê if it is, trash it.</s><s> go to: mac hd/library/application support/adobe/flash player verify that the flash player install manager folder does not exist.Ê if it does, trash the whole folder Ê empty the trash Ê reboot (this will "kill" all running processes) Ê before launching any apps, mount the dmg and run the installer.</s><s> before opening any flash content in safari, open safari>preferences, and check the security tab to make sure "allow all other plugins" is checked.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5560631-1267823</DOCNO>
+<TEXT>
+<subject>How to perform a "clean install" of Flash Player in Mac OS X</subject>
+<post author="Mike M" timestamp="Jan 15, 2014 2:12 PM">
+<s>to start, please follow the uninstall instructions posted here: http://helpx.adobe.com/flash-player/kb/uninstall-flash-player-mac-os.h tml Ê download the offline installer here: http://fpdownload.macromedia.com/get/flashplayer/current/licensing/mac /install_flash_player_12_osx.dmg Ê if it won't download directly, right click and "save as"- and make note of the save location do not mount the installer dmg or run the installer yet!</s><s> empty the trash Ê reboot (this will "kill" all running processes) Ê quit your browser (press cmd+q - don't just close the window) Ê go to: mac hd/library/internet plugins Ê verify that the flash player.plugin file is not present.Ê if it is, trash it.</s><s> go to: mac hd/library/application support/adobe/flash player verify that the flash player install manager folder does not exist.Ê if it does, trash the whole folder Ê empty the trash Ê reboot (this will "kill" all running processes) Ê before launching any apps, mount the dmg and run the installer.</s><s> before opening any flash content in safari, open safari>preferences, and check the security tab to make sure "allow all other plugins" is checked.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5560620-1267821</DOCNO>
+<TEXT>
+<subject>"Why can't I install Flash Player on my Tablet?" (Kindle or Samsung Galaxy)</subject>
+<post author="Mike M" timestamp="Aug 1, 2013 10:00 PM">
+<s>your tablet (kindle or galaxy) uses the android operating system. 
+</s><s>adobe stopped all development of flash for android last year.</s><s> (july 2012) that includes kindle as well as samsung tablets.</s><s> additionally, samsung and amazon have ended support for flash in all of their newest tablet models. 
+</s><s>the following is from samsung support (07/31/2013): "beginning august 15, 2012 we will use the configuration settings in the google play store to limit continued access to flash player updates to only those devices that have flash player already installed.</s><s> devices that do not have flash player already installed are increasingly likely to be incompatible with flash player and will no longer be able to install it from the google play store after august 15th, 2012." 
+</s><s>and from kindle support (07/31/2013): "the amazon silk web browser on kindle fire 1st generation supports some, but not all, versions of flash.</s><s> adobe flash is pre-installed on a 1st generation kindle fire and is disabled by default.</s><s> if you see a message to install flash while using your kindle fire, this means that the content you're attempting to view uses flash.</s><s> if you want to view the content, you'll need to enable flash through the silk settings menu.</s><s> if a web page suffers from slow performance due to flash, or you're unable to view a web page with flash enabled, we recommend switching to mobile view when browsing a flash-heavy website to see if that solves your problem: some popular websites may also have an app available.</s><s> check amazon appstore, accessible through the apps library on your kindle fire, for availability.</s><s> the amazon silk web browser on kindle fire 2nd generation, kindle fire hd 7", and kindle fire hd 8.9" doesn't support flash.</s><s> some sites use alternative web technologies to flash in their mobile versions.</s><s> we recommend switching to mobile view when browsing a website with flash content to see if that solves your problem: some popular websites may also have an app available.</s><s> check amazon appstore, accessible through the apps or games library on your kindle fire, for availability." 
+</s><s>see: http://helpx.adobe.com/flash-player/kb/archived-flash-player-versions. html there are older versions of flash player (for android) at that link, but there are no guarantees any of them will work. 
+</s><s>see also: "how do i manually install flash player on my android device?" 
+</s><s>you can find info about "dolphin" for android at: https://play.google.com/store/apps/details?id=mobi.mgeek.tunnybrowser it seems to be the browser of choice to play flash content on an android device. 
+</s><s>also, check the android forums to see what their "gurus" recommend. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5560620-1267821</DOCNO>
+<TEXT>
+<subject>"Why can't I install Flash Player on my Tablet?" (Kindle or Samsung Galaxy)</subject>
+<post author="Mike M" timestamp="Aug 1, 2013 10:00 PM">
+<s>your tablet (kindle or galaxy) uses the android operating system. 
+</s><s>adobe stopped all development of flash for android last year.</s><s> (july 2012) that includes kindle as well as samsung tablets.</s><s> additionally, samsung and amazon have ended support for flash in all of their newest tablet models. 
+</s><s>the following is from samsung support (07/31/2013): "beginning august 15, 2012 we will use the configuration settings in the google play store to limit continued access to flash player updates to only those devices that have flash player already installed.</s><s> devices that do not have flash player already installed are increasingly likely to be incompatible with flash player and will no longer be able to install it from the google play store after august 15th, 2012." 
+</s><s>and from kindle support (07/31/2013): "the amazon silk web browser on kindle fire 1st generation supports some, but not all, versions of flash.</s><s> adobe flash is pre-installed on a 1st generation kindle fire and is disabled by default.</s><s> if you see a message to install flash while using your kindle fire, this means that the content you're attempting to view uses flash.</s><s> if you want to view the content, you'll need to enable flash through the silk settings menu.</s><s> if a web page suffers from slow performance due to flash, or you're unable to view a web page with flash enabled, we recommend switching to mobile view when browsing a flash-heavy website to see if that solves your problem: some popular websites may also have an app available.</s><s> check amazon appstore, accessible through the apps library on your kindle fire, for availability.</s><s> the amazon silk web browser on kindle fire 2nd generation, kindle fire hd 7", and kindle fire hd 8.9" doesn't support flash.</s><s> some sites use alternative web technologies to flash in their mobile versions.</s><s> we recommend switching to mobile view when browsing a website with flash content to see if that solves your problem: some popular websites may also have an app available.</s><s> check amazon appstore, accessible through the apps or games library on your kindle fire, for availability." 
+</s><s>see: http://helpx.adobe.com/flash-player/kb/archived-flash-player-versions. html there are older versions of flash player (for android) at that link, but there are no guarantees any of them will work. 
+</s><s>see also: "how do i manually install flash player on my android device?" 
+</s><s>you can find info about "dolphin" for android at: https://play.google.com/store/apps/details?id=mobi.mgeek.tunnybrowser it seems to be the browser of choice to play flash content on an android device. 
+</s><s>also, check the android forums to see what their "gurus" recommend. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5417983-1234719</DOCNO>
+<TEXT>
+<subject>Does the "Enable hardware acceleration" check box work in Google Chrome?</subject>
+<post author="Chris Campbell" timestamp="Jun 17, 2013 6:42 PM">
+<s>there have been some recent changes to the flash player "enable hardware acceleration" tab in the settings dialog on google chrome.</s><s> this tab is referenced in the how do i disable or enable hardware acceleration?</s><s> faq.</s><s> 
+
+
+</s><s>you may have noticed that this tab was recently removed but is now present once again.</s><s> we wanted to let you know that our intention for this setting on chrome is to allow you to toggle hardware video decoding on and off.</s><s> however, as of the current version of flash player (11.7.700.225) this is currently not enabled.</s><s> while the check box will allow you to check and uncheck the box, nothing is actually occurring behind the scenes.</s><s> we expect to correct this behavior in a upcoming release and will update this faq once completed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5417983-1234719</DOCNO>
+<TEXT>
+<subject>Does the "Enable hardware acceleration" check box work in Google Chrome?</subject>
+<post author="Chris Campbell" timestamp="Jun 17, 2013 6:42 PM">
+<s>there have been some recent changes to the flash player "enable hardware acceleration" tab in the settings dialog on google chrome.</s><s> this tab is referenced in the how do i disable or enable hardware acceleration?</s><s> faq.</s><s> 
+
+
+</s><s>you may have noticed that this tab was recently removed but is now present once again.</s><s> we wanted to let you know that our intention for this setting on chrome is to allow you to toggle hardware video decoding on and off.</s><s> however, as of the current version of flash player (11.7.700.225) this is currently not enabled.</s><s> while the check box will allow you to check and uncheck the box, nothing is actually occurring behind the scenes.</s><s> we expect to correct this behavior in a upcoming release and will update this faq once completed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5266110-1199361</DOCNO>
+<TEXT>
+<subject>How to close Internet Explorer and other programs running on Windows?</subject>
+<post author="Pat Willener" timestamp="May 6, 2013 11:00 PM">
+<s>in order for flash player to be installed or updated, any programs that use flash player must be closed.</s><s> this includes internet explorer or other browsers, instant messengers, skype, etc. 
+</s><s>these programs may be running in the background, not as visible windows, but need to be closed anyway. 
+</s><s>to close such programs use the windows task manager.</s><s> to start task manager, take any of the following actions: press ctrl+alt+delete, and then click task manager.</s><s> press ctrl+shift+esc.</s><s> right-click an empty area of the taskbar, and then click task manager. 
+</s><s>once the task manager is running, select the processes tab.</s><s> on older windows version you may need to click on the process name or image name header to sort the process names. 
+</s><s>now right-click on every process that the flash player installer needs to close (e.g. iexplore.exe), then select end process. 
+
+
+</s><s>it would be desirable if the flash player installer could perform that action by itself; i have therefore created an enhancement request.</s><s> if you were affected by this problem, please head over to the bugbase and vote for this request: https://bugbase.adobe.com/index.cfm?event=bug&id=3548136 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5266110-1199361</DOCNO>
+<TEXT>
+<subject>How to close Internet Explorer and other programs running on Windows?</subject>
+<post author="Pat Willener" timestamp="May 6, 2013 11:00 PM">
+<s>in order for flash player to be installed or updated, any programs that use flash player must be closed.</s><s> this includes internet explorer or other browsers, instant messengers, skype, etc. 
+</s><s>these programs may be running in the background, not as visible windows, but need to be closed anyway. 
+</s><s>to close such programs use the windows task manager.</s><s> to start task manager, take any of the following actions: press ctrl+alt+delete, and then click task manager.</s><s> press ctrl+shift+esc.</s><s> right-click an empty area of the taskbar, and then click task manager. 
+</s><s>once the task manager is running, select the processes tab.</s><s> on older windows version you may need to click on the process name or image name header to sort the process names. 
+</s><s>now right-click on every process that the flash player installer needs to close (e.g. iexplore.exe), then select end process. 
+
+
+</s><s>it would be desirable if the flash player installer could perform that action by itself; i have therefore created an enhancement request.</s><s> if you were affected by this problem, please head over to the bugbase and vote for this request: https://bugbase.adobe.com/index.cfm?event=bug&id=3548136 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5068463-1152367</DOCNO>
+<TEXT>
+<subject>Flash Player installation and update questions and answers</subject>
+<post author="Chris Campbell" timestamp="Jul 30, 2013 11:04 AM">
+<s>i've selected the automatic update option in flash player, why do i continue to get update notifications? Ê for regularly scheduled major updates (typically done once a quarter), users are presented with the flash player update dialog and given the opportunity to read about new features available in flash player. Ê Ê the automatic update mechanism is used for minor updates, security patches that address zero-day vulnerabilities and when users, who have selected to be updated automatically, have not updated within 45 days after a regularly scheduled update release of flash player. Ê Ê what should i expect when i receive notification that flash player has an update available? Ê when a major update to flash player becomes available you will be presented with a flash player update dialog Ê Ê after reviewing new features, pressing the download button will open your default browser and load the install adobe flash player page. Ê Ê clicking the "update now" button will then take you to the next page which will start the download process and give instructions for completing the flash player install. Ê Ê finally, once the installation is complete your browser will display a page confirming a successful installation. Ê Ê if you encounter installation problems, we recommend you review our windows and mac os installation help documents.</s><s> further questions and information can be found on the flash player installation forums. Ê Ê why does adobe flash player installer include the option to download additional software? Ê adobe offsets the ongoing development costs of flash player, which is made available for free, by offering users the option to download select software from adobe partners. Ê Ê what options do i have when installing or updating flash player?</s><s> you have a few different options available when updating flash player.</s><s> we recommend that you choose "allow adobe to install updates (recommended)" when initially setting up flash player Ê Ê or by going into the flash player control panel and choosing this option in the advanced tab. Ê Ê once selected, most updates will occur in the background without requiring any interaction.</s><s> for those regularly scheduled major update releases, you will be presented with an update notification dialog Ê Ê if you decide not to update, you will receive an automatic update within 45 days if you have the "allow adobe to install updates" option selected.</s><s> please note that when this update occurs, only flash player will be installed. Ê if you want to be notified about every flash player update, select "notify me to install updates" when initially installing flash player or from the advanced tab in the flash player control panel. Ê finally, if you'd prefer not to receive any updates, select "never check for updates (not recommended)".</s><s> we do not recommend this option as we believe keeping your system up to date improves both security and stability when using flash player. Ê Ê for network administrators we offer additional update options, including the ability to host your own internal flash player update server.</s><s> please see our flash player distribution page and flash player administrator guide for details.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-5068463-1152367</DOCNO>
+<TEXT>
+<subject>Flash Player installation and update questions and answers</subject>
+<post author="Chris Campbell" timestamp="Jul 30, 2013 11:04 AM">
+<s>i've selected the automatic update option in flash player, why do i continue to get update notifications? Ê for regularly scheduled major updates (typically done once a quarter), users are presented with the flash player update dialog and given the opportunity to read about new features available in flash player. Ê Ê the automatic update mechanism is used for minor updates, security patches that address zero-day vulnerabilities and when users, who have selected to be updated automatically, have not updated within 45 days after a regularly scheduled update release of flash player. Ê Ê what should i expect when i receive notification that flash player has an update available? Ê when a major update to flash player becomes available you will be presented with a flash player update dialog Ê Ê after reviewing new features, pressing the download button will open your default browser and load the install adobe flash player page. Ê Ê clicking the "update now" button will then take you to the next page which will start the download process and give instructions for completing the flash player install. Ê Ê finally, once the installation is complete your browser will display a page confirming a successful installation. Ê Ê if you encounter installation problems, we recommend you review our windows and mac os installation help documents.</s><s> further questions and information can be found on the flash player installation forums. Ê Ê why does adobe flash player installer include the option to download additional software? Ê adobe offsets the ongoing development costs of flash player, which is made available for free, by offering users the option to download select software from adobe partners. Ê Ê what options do i have when installing or updating flash player?</s><s> you have a few different options available when updating flash player.</s><s> we recommend that you choose "allow adobe to install updates (recommended)" when initially setting up flash player Ê Ê or by going into the flash player control panel and choosing this option in the advanced tab. Ê Ê once selected, most updates will occur in the background without requiring any interaction.</s><s> for those regularly scheduled major update releases, you will be presented with an update notification dialog Ê Ê if you decide not to update, you will receive an automatic update within 45 days if you have the "allow adobe to install updates" option selected.</s><s> please note that when this update occurs, only flash player will be installed. Ê if you want to be notified about every flash player update, select "notify me to install updates" when initially installing flash player or from the advanced tab in the flash player control panel. Ê finally, if you'd prefer not to receive any updates, select "never check for updates (not recommended)".</s><s> we do not recommend this option as we believe keeping your system up to date improves both security and stability when using flash player. Ê Ê for network administrators we offer additional update options, including the ability to host your own internal flash player update server.</s><s> please see our flash player distribution page and flash player administrator guide for details.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-4814038-1091501</DOCNO>
+<TEXT>
+<subject>How do I install Flash Player on Windows 8?</subject>
+<post author="Chris Campbell" timestamp="Jun 18, 2013 12:28 PM">
+<s>if you are using windows 8, flash player is now embedded into the operating system for internet explorer so there is no need to manually install.</s><s> updates will automatically be made available through the built in windows update system. 
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+if you encounter difficulties, please see the following help documents 
+help for flash player issues on windows 8 32 bit and 64 bit systems help for flash player issues on windows rt arm systems 
+for browsers other than microsoft's internet explorer and google chrome, flash player can be downloaded and installed from get.adobe.com/flashplayer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-4814038-4814662</DOCNO>
+<TEXT>
+<subject>How do I install Flash Player on Windows 8?</subject>
+<post author="chris.campbell" timestamp="Jun 18, 2013 12:28 PM">
+<s>when using the metro version of internet explorer, not all flash content will appear.</s><s> this can be corrected by switching to the desktop version using these simple steps. 
+
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+
+1.</s><s> hit the windows + z key or right click anywhere in the browser to bring up the ie controls and then click the tools button 
+
+
+2.</s><s> in the menu that appears, select "view on the desktop" 
+
+
+</s><s>internet explorer will relaunch in desktop mode and all flash content should appear. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-4814038-1091501</DOCNO>
+<TEXT>
+<subject>How do I install Flash Player on Windows 8?</subject>
+<post author="Chris Campbell" timestamp="Jun 18, 2013 12:28 PM">
+<s>if you are using windows 8, flash player is now embedded into the operating system for internet explorer so there is no need to manually install.</s><s> updates will automatically be made available through the built in windows update system. 
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+if you encounter difficulties, please see the following help documents 
+help for flash player issues on windows 8 32 bit and 64 bit systems help for flash player issues on windows rt arm systems 
+for browsers other than microsoft's internet explorer and google chrome, flash player can be downloaded and installed from get.adobe.com/flashplayer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-4814038-4814662</DOCNO>
+<TEXT>
+<subject>How do I install Flash Player on Windows 8?</subject>
+<post author="chris.campbell" timestamp="Jun 18, 2013 12:28 PM">
+<s>when using the metro version of internet explorer, not all flash content will appear.</s><s> this can be corrected by switching to the desktop version using these simple steps. 
+
+
+</s><s>please click here for an html5 version of this video: youtube html5 hd link 
+
+1.</s><s> hit the windows + z key or right click anywhere in the browser to bring up the ie controls and then click the tools button 
+
+
+2.</s><s> in the menu that appears, select "view on the desktop" 
+
+
+</s><s>internet explorer will relaunch in desktop mode and all flash content should appear. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-3859117-890491</DOCNO>
+<TEXT>
+<subject>Is there a way to be automatically notified when a new Flash Runtime release is made?</subject>
+<post author="Chris Campbell" timestamp="Aug 3, 2012 6:11 PM">
+<s>just subscribe to the following feed and you'll be kept up to date with both the current releases and beta versions of flash player and air. 
+</s><s>adobe flash runtime announcements feed 
+</s><s>you can also receive email notifications by logging into the forum, visiting the flash runtime announcements forum and clicking the "receive email notifications" link on the far right. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-3859117-890491</DOCNO>
+<TEXT>
+<subject>Is there a way to be automatically notified when a new Flash Runtime release is made?</subject>
+<post author="Chris Campbell" timestamp="Aug 3, 2012 6:11 PM">
+<s>just subscribe to the following feed and you'll be kept up to date with both the current releases and beta versions of flash player and air. 
+</s><s>adobe flash runtime announcements feed 
+</s><s>you can also receive email notifications by logging into the forum, visiting the flash runtime announcements forum and clicking the "receive email notifications" link on the far right. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-3854689-889580</DOCNO>
+<TEXT>
+<subject>Where can I find direct downloads of Flash Player 11.7 for Windows or Macintosh?</subject>
+<post author="Chris Campbell" timestamp="Mar 5, 2014 10:24 AM">
+<s>***************************************************************** flash player announcement: 
+</s><s>beginning may 13th, 2014 we will be updating the version of our "extended support release" to flash player 13 for mac and windows.</s><s> flash player 13 will replace version 11.7 as the extended support version that will continue to receive security updates.</s><s> for full details, please see this blog post: 
+upcoming changes to flash player's extended support release ***************************************************************** 
+
+</s><s>we recommend that you download flash player from our main page, but if you encounter difficulties and require the 11.7 release, here are direct links to the installers. 
+</s><s>windows flash player 11.7 for internet explorer flash player 11.7 for other browsers 
+macintosh flash player 11.7 for supported browsers 
+please note: by default, flash player's auto update system is enabled which can cause an update to occur within an hour.</s><s> to stay on the 11.7 release, you will need to change this update mechanism to either "notify me to install updates" or "never check for updates (not recommended)".</s><s> this can be done at the time of installation or later via the flash player control panel's advanced tab. 
+</s><s>once changed, we strongly recommend that you monitor our flash player announcements forum so that you can be made aware of security updates that are made available.</s><s> please see the faq below for more details. 
+</s><s>is there a way to be automatically notified when a new flash runtime release is made? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Flash-Player-FAQs/Discussions-3854689-889580</DOCNO>
+<TEXT>
+<subject>Where can I find direct downloads of Flash Player 11.7 for Windows or Macintosh?</subject>
+<post author="Chris Campbell" timestamp="Mar 5, 2014 10:24 AM">
+<s>***************************************************************** flash player announcement: 
+</s><s>beginning may 13th, 2014 we will be updating the version of our "extended support release" to flash player 13 for mac and windows.</s><s> flash player 13 will replace version 11.7 as the extended support version that will continue to receive security updates.</s><s> for full details, please see this blog post: 
+upcoming changes to flash player's extended support release ***************************************************************** 
+
+</s><s>we recommend that you download flash player from our main page, but if you encounter difficulties and require the 11.7 release, here are direct links to the installers. 
+</s><s>windows flash player 11.7 for internet explorer flash player 11.7 for other browsers 
+macintosh flash player 11.7 for supported browsers 
+please note: by default, flash player's auto update system is enabled which can cause an update to occur within an hour.</s><s> to stay on the 11.7 release, you will need to change this update mechanism to either "notify me to install updates" or "never check for updates (not recommended)".</s><s> this can be done at the time of installation or later via the flash player control panel's advanced tab. 
+</s><s>once changed, we strongly recommend that you monitor our flash player announcements forum so that you can be made aware of security updates that are made available.</s><s> please see the faq below for more details. 
+</s><s>is there a way to be automatically notified when a new flash runtime release is made? 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,1602 @@
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-1430722</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Eric T Arroyo" timestamp="Mar 18, 2014 7:15 AM">
+<s>hello todd, for the past few years i've been reading through many of your posts as well as harm millaard's posts about how to properly set up and upgrade your pc while keeping everything balanced.</s><s> i followed the advice of upgrading the processor to an i7-3930k and oc'd it to 4.5+ghz as well as achieved 500+mb/s transfer rates for my media and scratch disks on separate hard drives and i'm almost done maxing out my ram.</s><s> with all that said i am now at the last piece to the build.</s><s> the gpu.</s><s> 
+</s><s>i've spent a crazy amount of hours reading through as many articles as i possibly can as well as posting in multiple forums to shine some light on this decision and have narrowed it down to either the gtx 770 (4gb) or the gtx 780 (not the ti).</s><s> most people would say to just get the gtx 780 if cost isn't an issue, but here is my dilemma, i frequently use many high polycount 3d bodies in my work.</s><s> either ray-traced right in ae or with the element 3d plugin. 
+</s><s>the question that no one can seem to answer is "what does ae do when my vram fills up?" or, "how does ae use vram?" if ae switches to just processing on the cpu once the vram fills up then getting the 770 with 4gb of vram makes more sense because i'll be able to push through more of the scene without a sudden and drastic slowdown.</s><s> however, if ae loads a single frame or even a handful of frames into vram, does it's calculations, then spits it out to the ram before grabbing the next frame/s then 3gb of vram would be more than sufficient for the work i do and the gtx 780 will be a significantly better choice due to it's increased bandwidth and cuda cores.</s><s> if you know the answer to this question, or if you could direct me to someone who does it would be an enormous help. 
+ps: if anyone other than todd happens to be positive on how ae uses vram because they spoke to an adobe employee who told them, or if you happen to be an adobe employee then feel free to add what you know 
+one more clarification.</s><s> this isn't a gtx770 vs gtx780 question, it's a "more vram or more processing power" question that can be applied to any two video cards either now or in the future. 
+</s><s>regards, -eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6220397</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 8:21 AM">
+<s>i'm obviously not todd, but as someone who knew opengl since the days when it only was available on sgi irix workstations, let me try to alleviate your confusion at least a bit.</s><s> <quote>
+<s>"what does ae do when my vram fills up?" 
+</s></quote>
+</s><s>this, by all means, should never happen.</s><s> while in particular opengl is a "greedy" processing model that will consume resources until they may run out, the combination of a client program's own intelligence, the graphics driver and the cards own safeguards built into the chips and firmware should just not allow it. whenever it happens, these are bugs somewhere in that chain.</s><s> otherwise the program is supposed to simply revert to emulated opengl (if available) or other fallback options or at least exit gracefully, if it can't work without opengl.</s><s> this is even in parts defined in the spec itself.</s><s> cuda and opencl work differently and are more complex processing models that offer more detailed control about gpu and memory usage, but in a sense function similarly - even opencl functions have to be anchored and defined in the hardware driver that manages the whole show. 
+</s><s>in turn this means that whenever ae falls back to cpu only modes it does so because one of the aformentioned requirements is not met and the program has the good sense of not forcing the issue and crash.</s><s> the same would be true for element 3d - if it refuses to work then something is afoot and, contrary to your thinking, just using excessive amounts of vram may not at all be the solution to the problem.</s><s> unless you use large textures it wouldn't matter, anyway.</s><s> mere geometry handling is relatively light weight and before you could cram a 20million polygon model into element 3d it would have crashed for other reasons.</s><s> the same would be true for raytrace 3d or other plug-ins like freeform pro: the tesseleation is unlikely to ever reach a complexity that would exhaust all vram, but adding an 8k reflection texture might because it would have to be kept in memory all the time. 
+</s><s>conversely all other places where ae uses gpu acceleration would primarily be affected by how large pixel buffers are because that's the real crunch here - ae does not support tiled or multi-res image formats nor similar rendering techniques, so it often needs to keep data around even if only part of it is visible.</s><s> furthermore of course the various options for decoding and encoding certain formats may use gpu functions as do some things like drawing stuff in the 3d tracker interface for instance. 
+</s><s>so to sum it up and return to your original: more vram does not necessarily mean more rendering power.</s><s> it's much more important to have a well-tuned overall setup. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6220404</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Todd_Kopriva" timestamp="Mar 18, 2014 8:40 AM">
+<s>the main thing that more vram over a certain minimum amount gets you in after effects is the ability to hold more large textures in vram without needing to swap them out as often.</s><s> this can matter when, for example, using an animated environment map layer; things can slow down if the environment needs to be loaded and unloaded on every frame. 
+</s><s>element 3d has some crashing problems when you try to use overly complex models on systems with little vram, so more vram can increase stability in some contexts, too. 
+</s><s>also, note that many other applications---photoshop, web browsers, etc---and just having a second large monitor connected use a lot of vram, so having more allows you to use the applications and features while using a program like after effects. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6220420</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Rick%20Gerard" timestamp="Mar 18, 2014 8:47 AM">
+<s>speaking of optimizing your system, spend an hour on this on demand event presented by todd and you'll learn more about optimizing your system than you will in a full day of poking around forums. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6221049</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Eric%20T%20Arroyo" timestamp="Mar 18, 2014 11:19 AM">
+<s>this is all great info guys!</s><s> mylenium, so basically you are saying that while having some vram is important it is unlikely that i would run into the issue that todd mentioned where after effects would have to keep swapping large texture files in and out of the vram because the texture files would have to indeed be very large.</s><s> so if i did frequently work with huge textures and things that need to be stored in vram like the 8k reflection texture you mentioned then it would be more important to have more vram without sacrificing too much bandwidth.</s><s> but to your point, it is indeed unlikely that i'll be using 8k reflections for the type of work i do so the difference between 3gb and 4gb of vram isn't too significant for me... unless i wanted to do transformers level 3d modeling... which would be fun, but i doubt i'll ever work on a project that requires that much detail.</s><s> am i on track with what you're saying? 
+</s><s>thanks for the response todd!</s><s> it seems that you are erring on the side of having more vram on setups with multiple monitors (which i have) while also using other applications (which i frequently do).</s><s> granted i'm only using two 23" 1920 x 1080 monitors which i'm sure is significantly less taxing than 27" 4k monitors.</s><s> what if the project is only using relatively basic 3d models with a modest poly count and lower res textures?</s><s> am i correct in assuming that the total vram available becomes less important such that having a higher bandwidth would allow for closer to real-time model manipulation than a card with more vram, but less bandwidth?</s><s> or is hard drive speed the limiting factor there?</s><s> i guess that all depends on how ae handles it's 3d models for ray-traced and element 3d. are the models only stored on the hard drive or are they pulled onto the gpu while you are working on them? 
+</s><s>thinking about what get's pulled onto the gpu, here's another question.</s><s> if you run a ram preview does the gpu unload everything into the ram after it finishes its calculations?</s><s> the reason i ask is because if it does unload it to the ram when it finishes it's calculations then i'm assuming that means i'd only need as much vram as a single frame of my scene requires.</s><s> or does the vram store more than just the current frame's worth of information? 
+i think the answer to this question would help clear even more up.</s><s> what types of things stay in vram regardless of what frame you are viewing and what types of things are only in vram for that one frame?</s><s> from what i understand it sounds like global effects such as lighting, textures, reflection maps, shadows, and similar effects remain in vram provided you have enough space.</s><s> then the 3d objects that the global effects act on are only stored in vram for the current frame you are looking at.</s><s> then when you scrub through to another frame the software checks to see if the objects in the new frame are currently in vram.</s><s> if they are the gpu runs it's calculations for all of the global effects on the objects and displays the updated image.</s><s> however, if a different object appears in the new frame then it finds the object on your hard drive and, if there is enough room, loads that into the vram as well.</s><s> if there isn't enough room it unloads anything that might not be in the frame anymore to make room for the new object.</s><s> if it can't remove something to fit the new object then i'm assuming the processing for the new object then gets handled by the cpu?</s><s> or maybe it processes the object that is already in vram, moves that object to ram, then pulls the new object in and processes that one? 
+</s><s>after all that i suppose the only thing left to determine is how much space is required for effects like 8k reflections, lighting, etc. if it's only 1 to 2gb to store those types of effects then we'd know that someone who uses a given set of effects would need 1 to 2gb plus the collective size of the raw 3d models they are working with.</s><s> all of which can be calculated providing you have enough vram to test individual parameters.</s><s> for example.</s><s> start with an empty project and look at vram usage.</s><s> then add a 3d cube with flat faces and see how much the vram usage goes up.</s><s> that will give a rough estimate of the 3d cube size (in mb).</s><s> now add an effect like an 8k reflection or a light and see how much the vram usage goes up again.</s><s> i'm assuming this will give at least a ballpark idea of how much space different effects take up in vram.</s><s> i'll be running this test myself once i get a new gpu.</s><s> i can't now because i currently only have about 600mb available for ae to use which fills up too quick to accurately measure anything. 
+</s><s>sorry for the very technical questions.</s><s> as an electrical engineer it's my job to find the best solution possible without wasting resources or skimping on resources that may benefit a specific design under special circumstances.</s><s> everything can be quantified and broken down into relatively basic math.</s><s> while choosing a gpu is a subjective matter that changes based on a person's uses i do believe that, given enough information, a definitive answer can be found when applying the learned principles to user specific needs.</s><s> i did a study on ram for the exact same reason a while back.</s><s> it took a decent amount of research, but i was able to put together a few equations that would determine which speed vs cas latency would yield the best results for any given hardware.</s><s> while it's obviously unrealistic to break these calculations down all the way to poly count, reflection resolutions and the like i believe that with a bit more technical info a generalized guide can be put together to help anyone determine what the best card is for them personally regardless of whether they are shopping for cards now or a year from now. 
+</s><s>rick, thanks for that link.</s><s> i'll definitely be watching that in the near future! 
+</s><s>thanks for all the help so far guys!</s><s> it's definitely getting me much closer to the bottom of this! 
+</s><s>regards, -eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-1430722</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Eric T Arroyo" timestamp="Mar 18, 2014 7:15 AM">
+<s>hello todd, for the past few years i've been reading through many of your posts as well as harm millaard's posts about how to properly set up and upgrade your pc while keeping everything balanced.</s><s> i followed the advice of upgrading the processor to an i7-3930k and oc'd it to 4.5+ghz as well as achieved 500+mb/s transfer rates for my media and scratch disks on separate hard drives and i'm almost done maxing out my ram.</s><s> with all that said i am now at the last piece to the build.</s><s> the gpu.</s><s> 
+</s><s>i've spent a crazy amount of hours reading through as many articles as i possibly can as well as posting in multiple forums to shine some light on this decision and have narrowed it down to either the gtx 770 (4gb) or the gtx 780 (not the ti).</s><s> most people would say to just get the gtx 780 if cost isn't an issue, but here is my dilemma, i frequently use many high polycount 3d bodies in my work.</s><s> either ray-traced right in ae or with the element 3d plugin. 
+</s><s>the question that no one can seem to answer is "what does ae do when my vram fills up?" or, "how does ae use vram?" if ae switches to just processing on the cpu once the vram fills up then getting the 770 with 4gb of vram makes more sense because i'll be able to push through more of the scene without a sudden and drastic slowdown.</s><s> however, if ae loads a single frame or even a handful of frames into vram, does it's calculations, then spits it out to the ram before grabbing the next frame/s then 3gb of vram would be more than sufficient for the work i do and the gtx 780 will be a significantly better choice due to it's increased bandwidth and cuda cores.</s><s> if you know the answer to this question, or if you could direct me to someone who does it would be an enormous help. 
+ps: if anyone other than todd happens to be positive on how ae uses vram because they spoke to an adobe employee who told them, or if you happen to be an adobe employee then feel free to add what you know 
+one more clarification.</s><s> this isn't a gtx770 vs gtx780 question, it's a "more vram or more processing power" question that can be applied to any two video cards either now or in the future. 
+</s><s>regards, -eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6220397</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 8:21 AM">
+<s>i'm obviously not todd, but as someone who knew opengl since the days when it only was available on sgi irix workstations, let me try to alleviate your confusion at least a bit.</s><s> <quote>
+<s>"what does ae do when my vram fills up?" 
+</s></quote>
+</s><s>this, by all means, should never happen.</s><s> while in particular opengl is a "greedy" processing model that will consume resources until they may run out, the combination of a client program's own intelligence, the graphics driver and the cards own safeguards built into the chips and firmware should just not allow it. whenever it happens, these are bugs somewhere in that chain.</s><s> otherwise the program is supposed to simply revert to emulated opengl (if available) or other fallback options or at least exit gracefully, if it can't work without opengl.</s><s> this is even in parts defined in the spec itself.</s><s> cuda and opencl work differently and are more complex processing models that offer more detailed control about gpu and memory usage, but in a sense function similarly - even opencl functions have to be anchored and defined in the hardware driver that manages the whole show. 
+</s><s>in turn this means that whenever ae falls back to cpu only modes it does so because one of the aformentioned requirements is not met and the program has the good sense of not forcing the issue and crash.</s><s> the same would be true for element 3d - if it refuses to work then something is afoot and, contrary to your thinking, just using excessive amounts of vram may not at all be the solution to the problem.</s><s> unless you use large textures it wouldn't matter, anyway.</s><s> mere geometry handling is relatively light weight and before you could cram a 20million polygon model into element 3d it would have crashed for other reasons.</s><s> the same would be true for raytrace 3d or other plug-ins like freeform pro: the tesseleation is unlikely to ever reach a complexity that would exhaust all vram, but adding an 8k reflection texture might because it would have to be kept in memory all the time. 
+</s><s>conversely all other places where ae uses gpu acceleration would primarily be affected by how large pixel buffers are because that's the real crunch here - ae does not support tiled or multi-res image formats nor similar rendering techniques, so it often needs to keep data around even if only part of it is visible.</s><s> furthermore of course the various options for decoding and encoding certain formats may use gpu functions as do some things like drawing stuff in the 3d tracker interface for instance. 
+</s><s>so to sum it up and return to your original: more vram does not necessarily mean more rendering power.</s><s> it's much more important to have a well-tuned overall setup. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6220404</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Todd_Kopriva" timestamp="Mar 18, 2014 8:40 AM">
+<s>the main thing that more vram over a certain minimum amount gets you in after effects is the ability to hold more large textures in vram without needing to swap them out as often.</s><s> this can matter when, for example, using an animated environment map layer; things can slow down if the environment needs to be loaded and unloaded on every frame. 
+</s><s>element 3d has some crashing problems when you try to use overly complex models on systems with little vram, so more vram can increase stability in some contexts, too. 
+</s><s>also, note that many other applications---photoshop, web browsers, etc---and just having a second large monitor connected use a lot of vram, so having more allows you to use the applications and features while using a program like after effects. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6220420</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Rick%20Gerard" timestamp="Mar 18, 2014 8:47 AM">
+<s>speaking of optimizing your system, spend an hour on this on demand event presented by todd and you'll learn more about optimizing your system than you will in a full day of poking around forums. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6220156-6221049</DOCNO>
+<TEXT>
+<subject>How does After Effects use VRAM? (question for Todd Kopriva)</subject>
+<post author="Eric%20T%20Arroyo" timestamp="Mar 18, 2014 11:19 AM">
+<s>this is all great info guys!</s><s> mylenium, so basically you are saying that while having some vram is important it is unlikely that i would run into the issue that todd mentioned where after effects would have to keep swapping large texture files in and out of the vram because the texture files would have to indeed be very large.</s><s> so if i did frequently work with huge textures and things that need to be stored in vram like the 8k reflection texture you mentioned then it would be more important to have more vram without sacrificing too much bandwidth.</s><s> but to your point, it is indeed unlikely that i'll be using 8k reflections for the type of work i do so the difference between 3gb and 4gb of vram isn't too significant for me... unless i wanted to do transformers level 3d modeling... which would be fun, but i doubt i'll ever work on a project that requires that much detail.</s><s> am i on track with what you're saying? 
+</s><s>thanks for the response todd!</s><s> it seems that you are erring on the side of having more vram on setups with multiple monitors (which i have) while also using other applications (which i frequently do).</s><s> granted i'm only using two 23" 1920 x 1080 monitors which i'm sure is significantly less taxing than 27" 4k monitors.</s><s> what if the project is only using relatively basic 3d models with a modest poly count and lower res textures?</s><s> am i correct in assuming that the total vram available becomes less important such that having a higher bandwidth would allow for closer to real-time model manipulation than a card with more vram, but less bandwidth?</s><s> or is hard drive speed the limiting factor there?</s><s> i guess that all depends on how ae handles it's 3d models for ray-traced and element 3d. are the models only stored on the hard drive or are they pulled onto the gpu while you are working on them? 
+</s><s>thinking about what get's pulled onto the gpu, here's another question.</s><s> if you run a ram preview does the gpu unload everything into the ram after it finishes its calculations?</s><s> the reason i ask is because if it does unload it to the ram when it finishes it's calculations then i'm assuming that means i'd only need as much vram as a single frame of my scene requires.</s><s> or does the vram store more than just the current frame's worth of information? 
+i think the answer to this question would help clear even more up.</s><s> what types of things stay in vram regardless of what frame you are viewing and what types of things are only in vram for that one frame?</s><s> from what i understand it sounds like global effects such as lighting, textures, reflection maps, shadows, and similar effects remain in vram provided you have enough space.</s><s> then the 3d objects that the global effects act on are only stored in vram for the current frame you are looking at.</s><s> then when you scrub through to another frame the software checks to see if the objects in the new frame are currently in vram.</s><s> if they are the gpu runs it's calculations for all of the global effects on the objects and displays the updated image.</s><s> however, if a different object appears in the new frame then it finds the object on your hard drive and, if there is enough room, loads that into the vram as well.</s><s> if there isn't enough room it unloads anything that might not be in the frame anymore to make room for the new object.</s><s> if it can't remove something to fit the new object then i'm assuming the processing for the new object then gets handled by the cpu?</s><s> or maybe it processes the object that is already in vram, moves that object to ram, then pulls the new object in and processes that one? 
+</s><s>after all that i suppose the only thing left to determine is how much space is required for effects like 8k reflections, lighting, etc. if it's only 1 to 2gb to store those types of effects then we'd know that someone who uses a given set of effects would need 1 to 2gb plus the collective size of the raw 3d models they are working with.</s><s> all of which can be calculated providing you have enough vram to test individual parameters.</s><s> for example.</s><s> start with an empty project and look at vram usage.</s><s> then add a 3d cube with flat faces and see how much the vram usage goes up.</s><s> that will give a rough estimate of the 3d cube size (in mb).</s><s> now add an effect like an 8k reflection or a light and see how much the vram usage goes up again.</s><s> i'm assuming this will give at least a ballpark idea of how much space different effects take up in vram.</s><s> i'll be running this test myself once i get a new gpu.</s><s> i can't now because i currently only have about 600mb available for ae to use which fills up too quick to accurately measure anything. 
+</s><s>sorry for the very technical questions.</s><s> as an electrical engineer it's my job to find the best solution possible without wasting resources or skimping on resources that may benefit a specific design under special circumstances.</s><s> everything can be quantified and broken down into relatively basic math.</s><s> while choosing a gpu is a subjective matter that changes based on a person's uses i do believe that, given enough information, a definitive answer can be found when applying the learned principles to user specific needs.</s><s> i did a study on ram for the exact same reason a while back.</s><s> it took a decent amount of research, but i was able to put together a few equations that would determine which speed vs cas latency would yield the best results for any given hardware.</s><s> while it's obviously unrealistic to break these calculations down all the way to poly count, reflection resolutions and the like i believe that with a bit more technical info a generalized guide can be put together to help anyone determine what the best card is for them personally regardless of whether they are shopping for cards now or a year from now. 
+</s><s>rick, thanks for that link.</s><s> i'll definitely be watching that in the near future! 
+</s><s>thanks for all the help so far guys!</s><s> it's definitely getting me much closer to the bottom of this! 
+</s><s>regards, -eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-1430222</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 17, 2014 2:28 PM">
+<s>i can't render my project, getting this error: "after effects error: motion tile cannot allocate a buffer larger then 30000 pixels in either dimension.</s><s> (516) (25 :: 56)." please help!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218192</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Rick%20Gerard" timestamp="Mar 17, 2014 2:35 PM">
+<s>you have run out of memory.</s><s> what are your composition settings?</s><s> what are the composition>advanced>samples per frame and adaptive sample limit settings?</s><s> when do you get the crash?</s><s> what codec are you using to render?</s><s> there are a lot of questions that need to be answered before i can give you any more suggestions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218156</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 17, 2014 2:39 PM">
+<s>in addition to rick's questions, what assets are in your project?</s><s> any large jpeg's, psd's, etc.</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218283</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 17, 2014 2:57 PM">
+<s>samples per frame: 16 adaptive sample limit: 128 my project is 50 second long.</s><s> ae renders only 20 seconds of it and then gives the error.</s><s> i am using a quick time apple prores 422 (lt) codec 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218284</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 17, 2014 3:00 PM">
+<s>and yes, i am also using some jpegs and mov. files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218490</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Todd_Kopriva" timestamp="Mar 17, 2014 3:50 PM">
+<s>what exact version of after effects?</s><s> what operating system (with exact version number)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220015</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 18, 2014 7:14 AM">
+<s>i am using ae cc in mac os x version 10.9.2 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220379</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 8:12 AM">
+<s>what exact version number of ae cc? 
+</s><s>also, what size are your jpegs?</s><s> specifically, what size are the jpegs to which you've applied the motion tile effect and what were that effect's settings? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220505</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 18, 2014 8:44 AM">
+<s>sorry, i am not using any jpegs, only 11 quick time movie files (as big as 91,708,695 bytes (91.7 on disk)).</s><s> also, one mp3 file (2.7 mb on disck) and bunch of shapes and texts.</s><s> ae cc version i have is 12.2.1.5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220421</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 8:50 AM">
+<s>i was more interested in the pixel dimensions of the various files. 
+</s><s>what assets have you applied the motion tile effect to?</s><s> what are the pixel dimensions of those assets?</s><s> and what were the settings you used in the motion tile effect? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220579</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 18, 2014 9:16 AM">
+<s>dude, if i knew all this, i wouldn't be asking the question i asked.</s><s> thanks for the "help". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220806</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Rick%20Gerard" timestamp="Mar 18, 2014 10:19 AM">
+<s>size of your jpegs means pixel dimensions not file size.</s><s> that's what matters.</s><s> it sounds to me like you are using images that are way bigger than they need to be. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220808</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 10:21 AM">
+<s><quote>
+<s>vsafe wrote: 
+dude, if i knew all this, i wouldn't be asking the question i asked.</s><s> thanks for the "help". 
+</s></quote>wait, you don't know how to see what effects you've applied in your project? 
+</s><s>did you create this project or is this a template that you purchased? 
+</s><s>if you don't know which layers have the motion tile effect, you can click on the layers to see what effects are applied.</s><s> in the effects panel, you can also see the settings for that effect.</s><s> if you don't know what size your videos are, the project panel will tell you that information when you click on the videos therein. 
+</s><s>although, if you don't know how to look at what effects have been applied and you don't even know how to tell what size your videos are, you really need to start here to learn the basics of after effects. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-1430222</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 17, 2014 2:28 PM">
+<s>i can't render my project, getting this error: "after effects error: motion tile cannot allocate a buffer larger then 30000 pixels in either dimension.</s><s> (516) (25 :: 56)." please help!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218192</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Rick%20Gerard" timestamp="Mar 17, 2014 2:35 PM">
+<s>you have run out of memory.</s><s> what are your composition settings?</s><s> what are the composition>advanced>samples per frame and adaptive sample limit settings?</s><s> when do you get the crash?</s><s> what codec are you using to render?</s><s> there are a lot of questions that need to be answered before i can give you any more suggestions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218156</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 17, 2014 2:39 PM">
+<s>in addition to rick's questions, what assets are in your project?</s><s> any large jpeg's, psd's, etc.</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218283</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 17, 2014 2:57 PM">
+<s>samples per frame: 16 adaptive sample limit: 128 my project is 50 second long.</s><s> ae renders only 20 seconds of it and then gives the error.</s><s> i am using a quick time apple prores 422 (lt) codec 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218284</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 17, 2014 3:00 PM">
+<s>and yes, i am also using some jpegs and mov. files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6218490</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Todd_Kopriva" timestamp="Mar 17, 2014 3:50 PM">
+<s>what exact version of after effects?</s><s> what operating system (with exact version number)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220015</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 18, 2014 7:14 AM">
+<s>i am using ae cc in mac os x version 10.9.2 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220379</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 8:12 AM">
+<s>what exact version number of ae cc? 
+</s><s>also, what size are your jpegs?</s><s> specifically, what size are the jpegs to which you've applied the motion tile effect and what were that effect's settings? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220505</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 18, 2014 8:44 AM">
+<s>sorry, i am not using any jpegs, only 11 quick time movie files (as big as 91,708,695 bytes (91.7 on disk)).</s><s> also, one mp3 file (2.7 mb on disck) and bunch of shapes and texts.</s><s> ae cc version i have is 12.2.1.5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220421</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 8:50 AM">
+<s>i was more interested in the pixel dimensions of the various files. 
+</s><s>what assets have you applied the motion tile effect to?</s><s> what are the pixel dimensions of those assets?</s><s> and what were the settings you used in the motion tile effect? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220579</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Vsafe" timestamp="Mar 18, 2014 9:16 AM">
+<s>dude, if i knew all this, i wouldn't be asking the question i asked.</s><s> thanks for the "help". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220806</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Rick%20Gerard" timestamp="Mar 18, 2014 10:19 AM">
+<s>size of your jpegs means pixel dimensions not file size.</s><s> that's what matters.</s><s> it sounds to me like you are using images that are way bigger than they need to be. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6218164-6220808</DOCNO>
+<TEXT>
+<subject>Rendering Error</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 10:21 AM">
+<s><quote>
+<s>vsafe wrote: 
+dude, if i knew all this, i wouldn't be asking the question i asked.</s><s> thanks for the "help". 
+</s></quote>wait, you don't know how to see what effects you've applied in your project? 
+</s><s>did you create this project or is this a template that you purchased? 
+</s><s>if you don't know which layers have the motion tile effect, you can click on the layers to see what effects are applied.</s><s> in the effects panel, you can also see the settings for that effect.</s><s> if you don't know what size your videos are, the project panel will tell you that information when you click on the videos therein. 
+</s><s>although, if you don't know how to look at what effects have been applied and you don't even know how to tell what size your videos are, you really need to start here to learn the basics of after effects. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-1430568</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="d_millsip" timestamp="Mar 18, 2014 5:03 AM">
+<s>been trying to import music, but when i do it gives me this chip munk effect. can someone tell me whats the problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6219814</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 5:18 AM">
+<s>you have not provided a shred of technical info like what version of ae, system specs, specs of the audio file,audio device settings and a million other things.</s><s> the pitch changing probably means it is an odd sample rate and the file may need to be run through a proper audio processing app. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6219898</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="d_millsip" timestamp="Mar 18, 2014 5:53 AM">
+<s>sorry, im new to all of this..</s><s> i have mac os x 10.6.8 and have after effects cs5 been trying to upload regular mp3/wav files but when i hit ram preview it gives me this chip munk effect... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6220390</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 8:21 AM">
+<s>what is the sample rate of the file you're trying to import?</s><s> what are your audio settings in ae's preferences? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6220417</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Rick%20Gerard" timestamp="Mar 18, 2014 8:44 AM">
+<s>convert your mp3/s to .wav files using something like audition or adobe media encoder.</s><s> the .wav files should be 48khz 16 bit stereo uncompressed. 
+</s><s>ezpz and your audio problems in ae should go away completely. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6220408</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Todd_Kopriva" timestamp="Mar 18, 2014 8:46 AM">
+<s>in addition to what the others have said: make sure that you've installed the most recent updates, which solve a lot of problems: http://adobe.ly/dva_updates 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-1430568</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="d_millsip" timestamp="Mar 18, 2014 5:03 AM">
+<s>been trying to import music, but when i do it gives me this chip munk effect. can someone tell me whats the problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6219814</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 5:18 AM">
+<s>you have not provided a shred of technical info like what version of ae, system specs, specs of the audio file,audio device settings and a million other things.</s><s> the pitch changing probably means it is an odd sample rate and the file may need to be run through a proper audio processing app. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6219898</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="d_millsip" timestamp="Mar 18, 2014 5:53 AM">
+<s>sorry, im new to all of this..</s><s> i have mac os x 10.6.8 and have after effects cs5 been trying to upload regular mp3/wav files but when i hit ram preview it gives me this chip munk effect... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6220390</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Szalam" timestamp="Mar 18, 2014 8:21 AM">
+<s>what is the sample rate of the file you're trying to import?</s><s> what are your audio settings in ae's preferences? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6220417</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Rick%20Gerard" timestamp="Mar 18, 2014 8:44 AM">
+<s>convert your mp3/s to .wav files using something like audition or adobe media encoder.</s><s> the .wav files should be 48khz 16 bit stereo uncompressed. 
+</s><s>ezpz and your audio problems in ae should go away completely. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-6219772-6220408</DOCNO>
+<TEXT>
+<subject>importing audio</subject>
+<post author="Todd_Kopriva" timestamp="Mar 18, 2014 8:46 AM">
+<s>in addition to what the others have said: make sure that you've installed the most recent updates, which solve a lot of problems: http://adobe.ly/dva_updates 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-485174</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Andrew Yoole" timestamp="Aug 31, 2009 8:39 AM">
+<s>what features would you like to see implemented in after effects?</s><s> new ideas for plugins?</s><s> interface changes?</s><s> post 'em here!</s><s> let's keep bug identification to individual posts, as these will probably be addressed more readily.</s><s> let's use this thread for specific ideas about ways that ae can be improved and expanded.</s><s> these forums are for users, not adobe employees, so don't forget to also fill in an adobe feature request form.</s><s> to view the wish list posts prior to september 2009, look here.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220658</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="tbsaad" timestamp="Sep 2, 2009 7:25 AM">
+<s>hi!</s><s> i was wondering when we'll have the new 3d camera preset - the one that people use those glasses to "see things getting close".</s><s> i believe that if we work on our compositions always in a 3d space using that camera, it can output the image sequence already set for these technology.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220737</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="yenaphe" timestamp="Sep 2, 2009 7:31 AM">
+<s>what you are talking about is called stereoscopy, and cannot be acheived that simply.</s><s> but know that it's already possible to do it in ae,and that the process have been simplified by a free script available on the web, or a pay plugin available on the toolfarm online store. 
+</s><s>it's not new "3d preset" or 3d camera, the stereoscopy involves the use of 3 cameras in the same 3d world, one of each eye, linked together. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220739</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="tbsaad" timestamp="Sep 2, 2009 7:35 AM">
+<s>hi!</s><s> thanks for the fast response.</s><s> hey, that's the name!</s><s> stereoscopy!</s><s> i'm from brazil and wasn't sure how it was called in english.</s><s> can you provide the names of those tools (the free script and the plugin)?</s><s> i'd like to try that feature asap.</s><s> thanks again! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220892</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="yenaphe" timestamp="Sep 2, 2009 8:16 AM">
+<s>here is the link for the plugin: http://www.toolfarm.com/2009/09/new-product-noise-industries-dashwood. html and for the script: http://vimeo.com/5918877 
+enjoy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2226565</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="dansch37" timestamp="Sep 4, 2009 8:38 AM">
+<s>1) swatches 2) scale tool to work like ai, id and pshop 3) ability to import/export precomps (or share from a database of linked precomps) rather than a collect and import.</s><s> 4) all layer styles to be moved to the effects pallette.</s><s> i find it laborious to access layer styles in ae 
+thanks for asking! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2251306</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 15, 2009 3:43 PM">
+<s>it would be great if ae could interpret images with more than one alpha channel.</s><s> for instance, cinema 4d places the depth map and object buffers in the alpha channels.</s><s> however, ae only reads the first alpha channel and interprets that as transparency.</s><s> it would be great if ae could read the other alphas and let me decide which one (if any) is transparency.</s><s> or if i just wanted to import alpha #5 from an image, it would let me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2251334</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="yenaphe" timestamp="Sep 15, 2009 4:00 PM">
+<s>as a workaround, you can export your animation and passes as an exr sequence, and import it inside ae and then use the extractor plugin to select the pass you wanna use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2253302</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 16, 2009 11:25 AM">
+<s>thanks for the info. c4d doesn't support layered exrs yet.</s><s> so layered tiff and psd are the main way to get 32-bpc hdr multi-layer multipass images out of cinema. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2253312</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 16, 2009 11:38 AM">
+<s>i don't know the political nature of the different cs divisions at adobe, but it would be super keen if you and the photoshop team could get on the same page. 
+</s><s>ae is always a version behind in supporting the latest psd features (like cs4's vibrance adjustment).</s><s> would be also great if you could make some of the adobe raw controls available as 32-pbc ae plug-ins -- such as white balance, recovery, fill light, blacks, clarity, and the aforementioned vibrance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2253346</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 16, 2009 11:43 AM">
+<s>this one is pretty simple, and like 64-bitness, hopefully already on the books.</s><s> but every ae plug-in needs to work in 32pbc color.</s><s> there's really no excuse for some plugs to support only 8-bit color in 201x (whenever cs5 comes out). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2261475</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="joshtownsend" timestamp="Sep 20, 2009 1:31 PM">
+<s>my #1 request: please give us an nle in after effects (a simplified premiere rt panel or whatever). 
+i find it amazing that 90% of ae plug-ins work in premiere if just stick them in the common-mediacore folder.</s><s> if i could have real bezier masks, track mattes and adjustment layers in premiere there would be very little need to even go into ae for most film/movie oriented projects.</s><s> this makes me thing that a merge wouldn't be that out of the question or that hard. 
+</s><s>either that or fix ae so when you import a premiere pro project or it knows what the ae dynamic linked files are and where they are.</s><s> it's backwards to have the premiere cs4 'replace with ae' function clippled because it has no idea what to do with ae projects. 
+</s><s>mainly this is related to adobe having complete film/tv workflow.that isn't such a pain.</s><s> if you have dynamic linked media in your .prproj then import it into ae wouldn't you think ae would know the ae file is? 
+</s><s>beside the obvious (native 64bit, real 3d space and 3d model import, 3d text at least) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2261476</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="joshtownsend" timestamp="Sep 20, 2009 1:33 PM">
+<s>also whay can;t we have photoshops brilliant curve/hue sat picker in ae? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2267469</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Andy%20Bay" timestamp="Sep 23, 2009 8:16 AM">
+<s>here's my two cents: 
+1.</s><s> disc preview. 
+</s><s>this would work as the opposite for ram preview, so that ae would basically render the comp in to a temp folder in order to be able to run the preview in real time.</s><s> this would be useful in situations in which there is not enough memory for a complete ram preview.</s><s> i know about disc cache and have it turned on, but many times ae won't use disc cache since it thinks it's faster to use ram.</s><s> it's frustrating in situations in which you don't get disc cache but you don't get a full ram preview either.</s><s> basically this could work simply as a way to force ae to render something in to disc cache. 
+i know i can always render the movie out to preview it like this, but instead of specifying output module settings, file locations and then opening the rendered file in a video player software, it would be so much easier to just hit a keyboard shortcut and let ae take care of everything, similarly to what premiere does when you render the timeline.</s><s> i want to make clear that this shouldn't in any way replace ram preview, but simply be available as an option for those situations in which ram preview doesn't cut it. 
+
+2. timeline folders. 
+</s><s>the ability to organize layers in the timeline into folders, in order to make the timeline easier to navigate.</s><s> we have folders in the project window and they are great, why not extend that functionality in to the timeline too?</s><s> i bet that in most projects the timeline has much more items than the project window does, which makes it very important to be able to keep the timeline tidy.</s><s> a timeline folder would simply be a visual way to group layers inside folders.</s><s> this way a 100 layers could be displayed as a single folder layer if necessary.</s><s> vertical screen estate is very valuable in the days of wide screen displays, and this would help make better use of it. 
+3.</s><s> spatial snapping. 
+</s><s>we have the ability to snap the cti in the timeline and we have the ability to snap layers to the grid.</s><s> i think it would be great if there were an option to snap objects geometrically in to each others too (in the comp window).</s><s> smart guides and snapping similar to adobe illustrator would be fantastic! 
+</s><s>thank you and keep developing the greatest software in the world! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2277794</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="noel_d3" timestamp="Sep 28, 2009 2:40 AM">
+<s>being able to easily convert 3d motion from a camera movements in 2d motion.</s><s> 3d softwares allows to export camera and null but compositions are usually 2d.   best regards,   léon
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2278217</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="noel_d3" timestamp="Sep 28, 2009 7:44 AM">
+<s>3d softwares allow to export camera and nulls for 3d compositions but we need 2d motion for link null to masks, effects, stockshots etc ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2280889</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="bogiesan-gyyClL" timestamp="Sep 29, 2009 7:37 AM">
+<s>> what features would you like to see implemented in after effects?</s><s> new ideas for plugins?</s><s> interface changes?</s><s> post 'em here!</s><s> < 
+</s><s>my projects have grown in complexity, 30-50 layers now instead of 10-20, and i find it difficult to stay oriented as my eyes move from left to right, trying to keep track of which keyframes are attached to which effect in which layer. 
+</s><s>mostly i just wish adobe would dedicate more development energy to fixing everything that's broken, doesn't quite work as promised, or is too complex to be used by most users.</s><s> perfect after effects and streamline the existing systems instead of adding more complex stuff to satisfy niche users. 
+bogiesan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2282138</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="gnokka" timestamp="Sep 29, 2009 3:13 PM">
+<s>i'd like a shorcut to select all layer above/below.</s><s> i suggest   ctrl + alt + shift + up    
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2289606</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Oct 2, 2009 4:23 PM">
+<s>i'd like to see growl support on the mac. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2294166</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="santororock" timestamp="Oct 5, 2009 1:44 PM">
+<s>at our studio we would love scripting access to more options of the render que items!</s><s> we've got several work arounds right now, such as importing projects with the rendersettings and outputmodual presets saved, or saving the same presets on all of our farm machines....but if we could access the output file types, qualities, and other aspects of rendering with scripts we would explode with happiness! 
+-anthony 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2295592</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Cillas" timestamp="Oct 6, 2009 6:48 AM">
+<s>1. coloured marks 2. more than 99fps comps 3. the ability 2 import more than 32k pics and an improvement in time 4. better dynamic link support.</s><s> (not just importing hole comps, complete functionally as example: change the pp made cut in ae) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2296787</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="gnokka" timestamp="Oct 6, 2009 1:14 PM">
+<s>i would like to read the work area length in a field on the center of it. 
+http://img14.imageshack.us/img14/2751/aefx.gif 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302374</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="matsjacob" timestamp="Oct 8, 2009 1:46 PM">
+<s>i would like to be able to open/fold out a precomp within a composition as if it was a folder tree. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302507</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="matsjacob" timestamp="Oct 8, 2009 2:29 PM">
+<s>i would also like easy access buttons close to the timeline to make new solids, text, shapes, nulls, and adjustment layers, lights and cameras. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302568</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Todd_Kopriva" timestamp="Oct 8, 2009 3:01 PM">
+<s><quote>
+</quote>
+</s><s>are you aware that theyre are keyboard shortcuts for all of these? 
+</s><s>new solid layer ctrl+y command+y new null layer ctrl+alt+shift+y command+option+shift+y new adjustment layer ctrl+alt+y command+option+y new text layer ctrl+alt+shift+t command+option+shift+t new light ctrl+alt+shift+l command+option+shift+l new camera ctrl+alt+shift+c command+option+shift+c 
+
+</s><s>see "keyboard shortcuts". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302993</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Arivl" timestamp="Oct 8, 2009 9:09 PM">
+<s>i would love to see some development put into optimizing ae for color correction.</s><s> i truly think it's fundamentally good enough to compete with apple color and win, but some interface work has to be done to get it there.</s><s> here are a few things that occurred to me: 
+increase the size of the interface element for curves, levels, hue saturation, etc. each of these filters has a custom interface element in the effects controls which exists at a fixed size.</s><s> this can be very frustrating.</s><s> the curves box in particular is far too small, but the hue-saturation one is not a whole lot better. 
+</s><s>give the color correction effects access to masks.</s><s> some other effects do this, and it would simplify color-correction worlflow greatly to not have to make multiple copies of a layer, or a number of adjustment layers.</s><s> a simple drop-down menu at the bottom of each of these effects that said something like "limit effect to" and then a menu to select a mask and an "invert mask" checkbox.</s><s> easy, and very helpful. 
+</s><s>invent a key command for "match in- and out points to..." in other words: lets say i make an adjustment layer, but i'd like it to have the same in and out points as the layer below it.</s><s> i can frame over to the first frame and hit opt-{ then frame over to the last frame and hit opt-} or use shift drag.</s><s> neither of these methods are fast or reliable.</s><s> may i suggest option-clicking, a paradigm similar to the option-drag "replace layer" feature from the project window to the timeline.</s><s> in other words, if you select the adjustment layer in the timeline and option-click any other layer, it will match its in and out points to that layer. 
+</s><s>beef up hue/saturation.</s><s> when you get a chance, check out apple color's "secondaries" tab, specifically the "hue curve" "luma curve" and "sat curve" tabs within it.</s><s> these three are roughly equivalent to the hue & saturation filter within ae, but the combination of curves-style control and much bigger interface elements makes for a more powerful and more efficient tool.</s><s> i wouldn't be at all unhappy if adobe straight-up copied apple's implementation of this for a better hue/saturation filter. 
+</s><s>scopes: yes, i know color finesse has them.</s><s> however, cf is quite limiting in that its interface cuts you off from the rest of ae, which can make it unusable for many things (matching, for example).</s><s> vectorscope, multichannel histogram, and waveform monitor would be great.</s><s> i'd love them all in a separate interface tab like, but separate from, the effects controls, all automatically looking at whatever is in the comp window at the moment. 
+</s><s>"take a snapshot" & "show last snapshot" on steroids: this might be better suited to a dedicated "color correction" module within ae a la brainstorm, but what i'd like is the ability to store and play back multiple snapshots, do side by side comparisons, adjust the split screen, move the comparisons around.</s><s> in this respect, don't shoot for apple color.</s><s> their implementation is more flexible but more time consuming.</s><s> the trick is that in order to be useful, it has to be flexible and fast.</s><s> i think the best reference in this respect is dedicated color correction systems.</s><s> the best implementation i've seen thus far is on the baselight. 
+</s><s>apparently, ae not have a 3-way color-corrector built in?</s><s> cf does, but again, accessing it means essentially leaving much of ae behind.</s><s> i'd love to get those three little wheels in the effects control window.</s><s> cf's "simplified interface" would be a great place to do it, but at the moment, it's all text. 
+</s><s>one media-specific one: put the red controls somewhere other than in the "interpret footage" panel where they're removed from everything else.</s><s> personally, i'd love 'em as an effect.</s><s> effects>>color correction>>red raw controls.</s><s> it would have a little drop down menu a-la adobe camera raw which defaults to "as shot" and sets the sliders accordingly. 
+</s><s>this last one is more complicated, and again this might be better suited to a dedicated cc module, but i'd love a way to lock the position of footage in the timeline without losing the ability to add or modify filters, masks, etc. during color correction, it is easy to accidentally change the in- and out-points of footage while setting in- and out- points for multiple adjustment layers simultaneously. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303071</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Arivl" timestamp="Oct 8, 2009 9:28 PM">
+<s>one other color-correction related feature request: 
+i'd love to have an adjustable sample size for the color sampler in the info palette.</s><s> it would probably be sufficient to simply shove a few options in the contextual menu for the tab. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303089</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Todd_Kopriva" timestamp="Oct 8, 2009 9:49 PM">
+<s>> i'd love to have an adjustable sample size for the color sampler in the info palette.   good request.   in the meantime, you can press ctrl (windows) or command (mac os) to sample a 5x5 area.   and, if you want to change these values, you can change the numbers in the text preferences file:       "eye dropper sample size no modifier" = "1"     "eye dropper sample size with modifier" = "5"
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303076</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Arivl" timestamp="Oct 8, 2009 10:15 PM">
+<s>actually that does it just fine for me!</s><s> thanks todd.</s><s> 
+</s><s>now...got a secret way to increase the size of the curves interface box that i don't know about? :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303131</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="matsjacob" timestamp="Oct 8, 2009 10:24 PM">
+<s><quote>
+<s>todd_kopriva wrote: 
+<quote>
+</quote>
+</s><s>are you aware that theyre are keyboard shortcuts for all of these? 
+</s><s>new solid layer ctrl+y command+y new null layer ctrl+alt+shift+y command+option+shift+y new adjustment layer ctrl+alt+y command+option+y new text layer ctrl+alt+shift+t command+option+shift+t new light ctrl+alt+shift+l command+option+shift+l new camera ctrl+alt+shift+c command+option+shift+c 
+
+</s><s>see "keyboard shortcuts". 
+</s></quote>yes, i'm aware of them, but they're not really one hand user friendly and not very easy to remember along with all the other shortcuts you use.</s><s> when working in the timeline i always have one hand on the mouse and the other on the keyboard, therefore easy acces buttons would be great! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2304505</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Bob%20Currier" timestamp="Oct 9, 2009 10:50 AM">
+<s>
+</s><s>>scopes: yes, i know color finesse has them.</s><s> however, cf is quite >limiting in that its interface cuts you off from the rest of ae, which >can make it unusable for many things (matching, for example).</s><s> >vectorscope, multichannel histogram, and waveform monitor would be >great.</s><s> i'd love them all in a separate interface tab like, but separate >from, the effects controls, all automatically looking at whatever is in >the comp window at the moment. 
+</s><s>have you checked out our test gear product?</s><s> it gives you just what you're describing, all within standard ae-style dockable windows.</s><s> demo version is available for download. 
+>apparently, ae not have a 3-way color-corrector built in?</s><s> cf does, but >again, accessing it means essentially leaving much of ae behind.</s><s> i'd >love to get those three little wheels in the effects control window.</s><s> >cf's "simplified interface" would be a great place to do it, but at the >moment, it's all text. 
+</s><s>the color finesse simplified ui does have the wheels: twirl open parameters, twirl closed hsl, and then twirl open hue offset and you'll see them.</s><s> curves are also available in the simplified ui, in addition to all those *&%$!</s><s> sliders.</s><s> unfortunately ae cs4 twirls everything open by default, so it can be hard to see everything that's available. 
+</s><s>bob currier synthetic aperture 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2332937</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Oct 22, 2009 10:09 AM">
+<s>how about faster scanning of the initializing animation presets sequence?</s><s> it currently takes my ae an additional 30 seconds to initialize every time i launch or when i import a project into another project.</s><s> couldn't this cached somehow? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2333169</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Andy%20Bay" timestamp="Oct 22, 2009 11:10 AM">
+<s>it would be handy to be able to choose the lenght of a composition quickly from the timeline -without the need to open the composition settings dialog box.   i see two ways of doing this: one would be to have a number display similar to the cti time display (that is located on the top left side of the timeline window) located in the right side of the timeline window.</s><s> the other way could be simply giving us handles to the timeline that one could drag to adjust the composition lenght (similar to the way that adjusting layer/clip lengths work).
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2354493</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Caseyscot" timestamp="Oct 30, 2009 5:11 AM">
+<s>this may be considered a bug - but if it was abolished it would most definately be the single greates improvement adobe could make to after effects! 
+</s><s>please please please adobe - get rid of this plague of an error. 
+</s><s>after effects has been the keystone of my creative career for over a decade and i have encountered the "unable to allocate space for a a x b image buffer" for the best part of that period. 
+</s><s>but i have always managed to get round the issue by tweaking the memory and cache settings - right through to ae cs3 
+but now with cs4 - it has returned - and the preferences dialogue has changed - so i can't make the same adjustments - why why why?</s><s>?</s><s>?</s><s>?</s><s>?</s><s> 
+</s><s>and now i can't render projects that worked fine in cs3 
+please - can't adobe just resolve this issue once and for all and get rid of it. 
+</s><s>here's hoping. 
+</s><s>casey 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2354903</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Todd_Kopriva" timestamp="Oct 30, 2009 7:59 AM">
+<s>casey, we recently announced that the next major version of after effects will be a 64-bit application.</s><s> that has a lot of ramifications for getting rid of the image buffer error that you're referring to, since a64-bit application can address as much memory as you can install.</s><s> (see "future versions of after effects will be 64-bit only".</s><s>) 
+</s><s>regarding the changes to the memory & multiprocessing preferences for after effects cs4: the changes were intended to make adjusting the preferences easier.</s><s> most people had a hard time understanding the old preferences. 
+</s><s>if you're having trouble, please bring the question over to a thread in this forum other than the wish list thread.</s><s> be sure to tell us what os you're using, whether you've updated to after effects cs4 (9.0.2), how much ram you have installed, and what frame sizes you're working with (and other factors that affect ram usage). 
+</s><s>first, check to make sure that render multiple frames simultaneously is off and ram to leave for other applications is set to a very low number.</s><s> you want to give a single rendering process of after effects all of the ram that it can take so that it can render the frame that is giving you the error. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2361351</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="s.poertner" timestamp="Nov 2, 2009 9:33 AM">
+<s>open/fold out a precomp within a composition as if it was a folder tree. so i can see the changes right in the already open viewport rather than having to open 2 composites. timing things in a precomp to elements of the main comp would be sooo much easier then. it should work just like the layers in photoshop. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2377966</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="John%20Stanowski" timestamp="Nov 8, 2009 6:19 PM">
+<s>color, color, color.</s><s> i would love to see more... wait "more?"... right now there's none at all.</s><s> i would like to see some new features which would let us choose better colors like the swatch books and the color guide from adobe illustrator.</s><s> there's no way in ae to pick good colors and color relationships.</s><s> it would be fantastic if we had swatch book schemes like illustrator's middle ages, earthtones and ancient swatches to choose from.</s><s> to be able to make our own custom swatch books.</s><s> and it would be mind boggling to have an ae version of illustrator's color guide letting us generate colors based on a primary color and a scheme like complimentary, triad, shades, etc. don't bring up synthetic aperture's test gear 2, that doesn't really cut it.</s><s> don't know what else to say about it.</s><s> i feel like repeating myself and shouting i!</s><s>.</s><s> why on earth wouldn't ae have any kind of color tools? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2401371</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Nov 17, 2009 4:26 PM">
+<s>how about import support of rtf styled text? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2401842</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="moobootoot" timestamp="Nov 17, 2009 10:02 PM">
+<s>i have always always wanted to have an output to video from the composition window.</s><s> the reason for this is to align different matts and also when i distorting images that i'm going to use as projections you need some kind of output to know what is happening.</s><s> i do understand that it would only play still frames or rendered sequences in ram but this would be fine.</s><s> oh the time it would save me as at present i have to make a small distortion the render it out as a movie or still and then project it calculate how far off it is and repeat again and again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2402120</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Skivling" timestamp="Nov 18, 2009 2:02 AM">
+<s>i second that emotion.</s><s> when i came to work this morning, all my renders from last night (deadline today) had failed due to this highly irritating "bug".</s><s> its just plain crazy that i cant trust the software to do what i tell it to do, dispite avalable workarounds.</s><s> i don't want to babysit my render que all night.</s><s> i hope adobe is taking this seriously.</s><s> i mean this issue has been around for a while and it's not like it has improved.</s><s> please, please, pretty please fix now!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-485174</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Andrew Yoole" timestamp="Aug 31, 2009 8:39 AM">
+<s>what features would you like to see implemented in after effects?</s><s> new ideas for plugins?</s><s> interface changes?</s><s> post 'em here!</s><s> let's keep bug identification to individual posts, as these will probably be addressed more readily.</s><s> let's use this thread for specific ideas about ways that ae can be improved and expanded.</s><s> these forums are for users, not adobe employees, so don't forget to also fill in an adobe feature request form.</s><s> to view the wish list posts prior to september 2009, look here.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220658</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="tbsaad" timestamp="Sep 2, 2009 7:25 AM">
+<s>hi!</s><s> i was wondering when we'll have the new 3d camera preset - the one that people use those glasses to "see things getting close".</s><s> i believe that if we work on our compositions always in a 3d space using that camera, it can output the image sequence already set for these technology.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220737</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="yenaphe" timestamp="Sep 2, 2009 7:31 AM">
+<s>what you are talking about is called stereoscopy, and cannot be acheived that simply.</s><s> but know that it's already possible to do it in ae,and that the process have been simplified by a free script available on the web, or a pay plugin available on the toolfarm online store. 
+</s><s>it's not new "3d preset" or 3d camera, the stereoscopy involves the use of 3 cameras in the same 3d world, one of each eye, linked together. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220739</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="tbsaad" timestamp="Sep 2, 2009 7:35 AM">
+<s>hi!</s><s> thanks for the fast response.</s><s> hey, that's the name!</s><s> stereoscopy!</s><s> i'm from brazil and wasn't sure how it was called in english.</s><s> can you provide the names of those tools (the free script and the plugin)?</s><s> i'd like to try that feature asap.</s><s> thanks again! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2220892</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="yenaphe" timestamp="Sep 2, 2009 8:16 AM">
+<s>here is the link for the plugin: http://www.toolfarm.com/2009/09/new-product-noise-industries-dashwood. html and for the script: http://vimeo.com/5918877 
+enjoy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2226565</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="dansch37" timestamp="Sep 4, 2009 8:38 AM">
+<s>1) swatches 2) scale tool to work like ai, id and pshop 3) ability to import/export precomps (or share from a database of linked precomps) rather than a collect and import.</s><s> 4) all layer styles to be moved to the effects pallette.</s><s> i find it laborious to access layer styles in ae 
+thanks for asking! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2251306</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 15, 2009 3:43 PM">
+<s>it would be great if ae could interpret images with more than one alpha channel.</s><s> for instance, cinema 4d places the depth map and object buffers in the alpha channels.</s><s> however, ae only reads the first alpha channel and interprets that as transparency.</s><s> it would be great if ae could read the other alphas and let me decide which one (if any) is transparency.</s><s> or if i just wanted to import alpha #5 from an image, it would let me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2251334</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="yenaphe" timestamp="Sep 15, 2009 4:00 PM">
+<s>as a workaround, you can export your animation and passes as an exr sequence, and import it inside ae and then use the extractor plugin to select the pass you wanna use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2253302</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 16, 2009 11:25 AM">
+<s>thanks for the info. c4d doesn't support layered exrs yet.</s><s> so layered tiff and psd are the main way to get 32-bpc hdr multi-layer multipass images out of cinema. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2253312</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 16, 2009 11:38 AM">
+<s>i don't know the political nature of the different cs divisions at adobe, but it would be super keen if you and the photoshop team could get on the same page. 
+</s><s>ae is always a version behind in supporting the latest psd features (like cs4's vibrance adjustment).</s><s> would be also great if you could make some of the adobe raw controls available as 32-pbc ae plug-ins -- such as white balance, recovery, fill light, blacks, clarity, and the aforementioned vibrance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2253346</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Sep 16, 2009 11:43 AM">
+<s>this one is pretty simple, and like 64-bitness, hopefully already on the books.</s><s> but every ae plug-in needs to work in 32pbc color.</s><s> there's really no excuse for some plugs to support only 8-bit color in 201x (whenever cs5 comes out). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2261475</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="joshtownsend" timestamp="Sep 20, 2009 1:31 PM">
+<s>my #1 request: please give us an nle in after effects (a simplified premiere rt panel or whatever). 
+i find it amazing that 90% of ae plug-ins work in premiere if just stick them in the common-mediacore folder.</s><s> if i could have real bezier masks, track mattes and adjustment layers in premiere there would be very little need to even go into ae for most film/movie oriented projects.</s><s> this makes me thing that a merge wouldn't be that out of the question or that hard. 
+</s><s>either that or fix ae so when you import a premiere pro project or it knows what the ae dynamic linked files are and where they are.</s><s> it's backwards to have the premiere cs4 'replace with ae' function clippled because it has no idea what to do with ae projects. 
+</s><s>mainly this is related to adobe having complete film/tv workflow.that isn't such a pain.</s><s> if you have dynamic linked media in your .prproj then import it into ae wouldn't you think ae would know the ae file is? 
+</s><s>beside the obvious (native 64bit, real 3d space and 3d model import, 3d text at least) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2261476</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="joshtownsend" timestamp="Sep 20, 2009 1:33 PM">
+<s>also whay can;t we have photoshops brilliant curve/hue sat picker in ae? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2267469</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Andy%20Bay" timestamp="Sep 23, 2009 8:16 AM">
+<s>here's my two cents: 
+1.</s><s> disc preview. 
+</s><s>this would work as the opposite for ram preview, so that ae would basically render the comp in to a temp folder in order to be able to run the preview in real time.</s><s> this would be useful in situations in which there is not enough memory for a complete ram preview.</s><s> i know about disc cache and have it turned on, but many times ae won't use disc cache since it thinks it's faster to use ram.</s><s> it's frustrating in situations in which you don't get disc cache but you don't get a full ram preview either.</s><s> basically this could work simply as a way to force ae to render something in to disc cache. 
+i know i can always render the movie out to preview it like this, but instead of specifying output module settings, file locations and then opening the rendered file in a video player software, it would be so much easier to just hit a keyboard shortcut and let ae take care of everything, similarly to what premiere does when you render the timeline.</s><s> i want to make clear that this shouldn't in any way replace ram preview, but simply be available as an option for those situations in which ram preview doesn't cut it. 
+
+2. timeline folders. 
+</s><s>the ability to organize layers in the timeline into folders, in order to make the timeline easier to navigate.</s><s> we have folders in the project window and they are great, why not extend that functionality in to the timeline too?</s><s> i bet that in most projects the timeline has much more items than the project window does, which makes it very important to be able to keep the timeline tidy.</s><s> a timeline folder would simply be a visual way to group layers inside folders.</s><s> this way a 100 layers could be displayed as a single folder layer if necessary.</s><s> vertical screen estate is very valuable in the days of wide screen displays, and this would help make better use of it. 
+3.</s><s> spatial snapping. 
+</s><s>we have the ability to snap the cti in the timeline and we have the ability to snap layers to the grid.</s><s> i think it would be great if there were an option to snap objects geometrically in to each others too (in the comp window).</s><s> smart guides and snapping similar to adobe illustrator would be fantastic! 
+</s><s>thank you and keep developing the greatest software in the world! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2277794</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="noel_d3" timestamp="Sep 28, 2009 2:40 AM">
+<s>being able to easily convert 3d motion from a camera movements in 2d motion.</s><s> 3d softwares allows to export camera and null but compositions are usually 2d.   best regards,   léon
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2278217</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="noel_d3" timestamp="Sep 28, 2009 7:44 AM">
+<s>3d softwares allow to export camera and nulls for 3d compositions but we need 2d motion for link null to masks, effects, stockshots etc ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2280889</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="bogiesan-gyyClL" timestamp="Sep 29, 2009 7:37 AM">
+<s>> what features would you like to see implemented in after effects?</s><s> new ideas for plugins?</s><s> interface changes?</s><s> post 'em here!</s><s> < 
+</s><s>my projects have grown in complexity, 30-50 layers now instead of 10-20, and i find it difficult to stay oriented as my eyes move from left to right, trying to keep track of which keyframes are attached to which effect in which layer. 
+</s><s>mostly i just wish adobe would dedicate more development energy to fixing everything that's broken, doesn't quite work as promised, or is too complex to be used by most users.</s><s> perfect after effects and streamline the existing systems instead of adding more complex stuff to satisfy niche users. 
+bogiesan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2282138</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="gnokka" timestamp="Sep 29, 2009 3:13 PM">
+<s>i'd like a shorcut to select all layer above/below.</s><s> i suggest   ctrl + alt + shift + up    
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2289606</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Oct 2, 2009 4:23 PM">
+<s>i'd like to see growl support on the mac. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2294166</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="santororock" timestamp="Oct 5, 2009 1:44 PM">
+<s>at our studio we would love scripting access to more options of the render que items!</s><s> we've got several work arounds right now, such as importing projects with the rendersettings and outputmodual presets saved, or saving the same presets on all of our farm machines....but if we could access the output file types, qualities, and other aspects of rendering with scripts we would explode with happiness! 
+-anthony 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2295592</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Cillas" timestamp="Oct 6, 2009 6:48 AM">
+<s>1. coloured marks 2. more than 99fps comps 3. the ability 2 import more than 32k pics and an improvement in time 4. better dynamic link support.</s><s> (not just importing hole comps, complete functionally as example: change the pp made cut in ae) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2296787</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="gnokka" timestamp="Oct 6, 2009 1:14 PM">
+<s>i would like to read the work area length in a field on the center of it. 
+http://img14.imageshack.us/img14/2751/aefx.gif 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302374</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="matsjacob" timestamp="Oct 8, 2009 1:46 PM">
+<s>i would like to be able to open/fold out a precomp within a composition as if it was a folder tree. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302507</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="matsjacob" timestamp="Oct 8, 2009 2:29 PM">
+<s>i would also like easy access buttons close to the timeline to make new solids, text, shapes, nulls, and adjustment layers, lights and cameras. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302568</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Todd_Kopriva" timestamp="Oct 8, 2009 3:01 PM">
+<s><quote>
+</quote>
+</s><s>are you aware that theyre are keyboard shortcuts for all of these? 
+</s><s>new solid layer ctrl+y command+y new null layer ctrl+alt+shift+y command+option+shift+y new adjustment layer ctrl+alt+y command+option+y new text layer ctrl+alt+shift+t command+option+shift+t new light ctrl+alt+shift+l command+option+shift+l new camera ctrl+alt+shift+c command+option+shift+c 
+
+</s><s>see "keyboard shortcuts". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2302993</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Arivl" timestamp="Oct 8, 2009 9:09 PM">
+<s>i would love to see some development put into optimizing ae for color correction.</s><s> i truly think it's fundamentally good enough to compete with apple color and win, but some interface work has to be done to get it there.</s><s> here are a few things that occurred to me: 
+increase the size of the interface element for curves, levels, hue saturation, etc. each of these filters has a custom interface element in the effects controls which exists at a fixed size.</s><s> this can be very frustrating.</s><s> the curves box in particular is far too small, but the hue-saturation one is not a whole lot better. 
+</s><s>give the color correction effects access to masks.</s><s> some other effects do this, and it would simplify color-correction worlflow greatly to not have to make multiple copies of a layer, or a number of adjustment layers.</s><s> a simple drop-down menu at the bottom of each of these effects that said something like "limit effect to" and then a menu to select a mask and an "invert mask" checkbox.</s><s> easy, and very helpful. 
+</s><s>invent a key command for "match in- and out points to..." in other words: lets say i make an adjustment layer, but i'd like it to have the same in and out points as the layer below it.</s><s> i can frame over to the first frame and hit opt-{ then frame over to the last frame and hit opt-} or use shift drag.</s><s> neither of these methods are fast or reliable.</s><s> may i suggest option-clicking, a paradigm similar to the option-drag "replace layer" feature from the project window to the timeline.</s><s> in other words, if you select the adjustment layer in the timeline and option-click any other layer, it will match its in and out points to that layer. 
+</s><s>beef up hue/saturation.</s><s> when you get a chance, check out apple color's "secondaries" tab, specifically the "hue curve" "luma curve" and "sat curve" tabs within it.</s><s> these three are roughly equivalent to the hue & saturation filter within ae, but the combination of curves-style control and much bigger interface elements makes for a more powerful and more efficient tool.</s><s> i wouldn't be at all unhappy if adobe straight-up copied apple's implementation of this for a better hue/saturation filter. 
+</s><s>scopes: yes, i know color finesse has them.</s><s> however, cf is quite limiting in that its interface cuts you off from the rest of ae, which can make it unusable for many things (matching, for example).</s><s> vectorscope, multichannel histogram, and waveform monitor would be great.</s><s> i'd love them all in a separate interface tab like, but separate from, the effects controls, all automatically looking at whatever is in the comp window at the moment. 
+</s><s>"take a snapshot" & "show last snapshot" on steroids: this might be better suited to a dedicated "color correction" module within ae a la brainstorm, but what i'd like is the ability to store and play back multiple snapshots, do side by side comparisons, adjust the split screen, move the comparisons around.</s><s> in this respect, don't shoot for apple color.</s><s> their implementation is more flexible but more time consuming.</s><s> the trick is that in order to be useful, it has to be flexible and fast.</s><s> i think the best reference in this respect is dedicated color correction systems.</s><s> the best implementation i've seen thus far is on the baselight. 
+</s><s>apparently, ae not have a 3-way color-corrector built in?</s><s> cf does, but again, accessing it means essentially leaving much of ae behind.</s><s> i'd love to get those three little wheels in the effects control window.</s><s> cf's "simplified interface" would be a great place to do it, but at the moment, it's all text. 
+</s><s>one media-specific one: put the red controls somewhere other than in the "interpret footage" panel where they're removed from everything else.</s><s> personally, i'd love 'em as an effect.</s><s> effects>>color correction>>red raw controls.</s><s> it would have a little drop down menu a-la adobe camera raw which defaults to "as shot" and sets the sliders accordingly. 
+</s><s>this last one is more complicated, and again this might be better suited to a dedicated cc module, but i'd love a way to lock the position of footage in the timeline without losing the ability to add or modify filters, masks, etc. during color correction, it is easy to accidentally change the in- and out-points of footage while setting in- and out- points for multiple adjustment layers simultaneously. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303071</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Arivl" timestamp="Oct 8, 2009 9:28 PM">
+<s>one other color-correction related feature request: 
+i'd love to have an adjustable sample size for the color sampler in the info palette.</s><s> it would probably be sufficient to simply shove a few options in the contextual menu for the tab. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303089</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Todd_Kopriva" timestamp="Oct 8, 2009 9:49 PM">
+<s>> i'd love to have an adjustable sample size for the color sampler in the info palette.   good request.   in the meantime, you can press ctrl (windows) or command (mac os) to sample a 5x5 area.   and, if you want to change these values, you can change the numbers in the text preferences file:       "eye dropper sample size no modifier" = "1"     "eye dropper sample size with modifier" = "5"
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303076</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Arivl" timestamp="Oct 8, 2009 10:15 PM">
+<s>actually that does it just fine for me!</s><s> thanks todd.</s><s> 
+</s><s>now...got a secret way to increase the size of the curves interface box that i don't know about? :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2303131</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="matsjacob" timestamp="Oct 8, 2009 10:24 PM">
+<s><quote>
+<s>todd_kopriva wrote: 
+<quote>
+</quote>
+</s><s>are you aware that theyre are keyboard shortcuts for all of these? 
+</s><s>new solid layer ctrl+y command+y new null layer ctrl+alt+shift+y command+option+shift+y new adjustment layer ctrl+alt+y command+option+y new text layer ctrl+alt+shift+t command+option+shift+t new light ctrl+alt+shift+l command+option+shift+l new camera ctrl+alt+shift+c command+option+shift+c 
+
+</s><s>see "keyboard shortcuts". 
+</s></quote>yes, i'm aware of them, but they're not really one hand user friendly and not very easy to remember along with all the other shortcuts you use.</s><s> when working in the timeline i always have one hand on the mouse and the other on the keyboard, therefore easy acces buttons would be great! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2304505</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Bob%20Currier" timestamp="Oct 9, 2009 10:50 AM">
+<s>
+</s><s>>scopes: yes, i know color finesse has them.</s><s> however, cf is quite >limiting in that its interface cuts you off from the rest of ae, which >can make it unusable for many things (matching, for example).</s><s> >vectorscope, multichannel histogram, and waveform monitor would be >great.</s><s> i'd love them all in a separate interface tab like, but separate >from, the effects controls, all automatically looking at whatever is in >the comp window at the moment. 
+</s><s>have you checked out our test gear product?</s><s> it gives you just what you're describing, all within standard ae-style dockable windows.</s><s> demo version is available for download. 
+>apparently, ae not have a 3-way color-corrector built in?</s><s> cf does, but >again, accessing it means essentially leaving much of ae behind.</s><s> i'd >love to get those three little wheels in the effects control window.</s><s> >cf's "simplified interface" would be a great place to do it, but at the >moment, it's all text. 
+</s><s>the color finesse simplified ui does have the wheels: twirl open parameters, twirl closed hsl, and then twirl open hue offset and you'll see them.</s><s> curves are also available in the simplified ui, in addition to all those *&%$!</s><s> sliders.</s><s> unfortunately ae cs4 twirls everything open by default, so it can be hard to see everything that's available. 
+</s><s>bob currier synthetic aperture 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2332937</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Oct 22, 2009 10:09 AM">
+<s>how about faster scanning of the initializing animation presets sequence?</s><s> it currently takes my ae an additional 30 seconds to initialize every time i launch or when i import a project into another project.</s><s> couldn't this cached somehow? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2333169</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Andy%20Bay" timestamp="Oct 22, 2009 11:10 AM">
+<s>it would be handy to be able to choose the lenght of a composition quickly from the timeline -without the need to open the composition settings dialog box.   i see two ways of doing this: one would be to have a number display similar to the cti time display (that is located on the top left side of the timeline window) located in the right side of the timeline window.</s><s> the other way could be simply giving us handles to the timeline that one could drag to adjust the composition lenght (similar to the way that adjusting layer/clip lengths work).
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2354493</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Caseyscot" timestamp="Oct 30, 2009 5:11 AM">
+<s>this may be considered a bug - but if it was abolished it would most definately be the single greates improvement adobe could make to after effects! 
+</s><s>please please please adobe - get rid of this plague of an error. 
+</s><s>after effects has been the keystone of my creative career for over a decade and i have encountered the "unable to allocate space for a a x b image buffer" for the best part of that period. 
+</s><s>but i have always managed to get round the issue by tweaking the memory and cache settings - right through to ae cs3 
+but now with cs4 - it has returned - and the preferences dialogue has changed - so i can't make the same adjustments - why why why?</s><s>?</s><s>?</s><s>?</s><s>?</s><s> 
+</s><s>and now i can't render projects that worked fine in cs3 
+please - can't adobe just resolve this issue once and for all and get rid of it. 
+</s><s>here's hoping. 
+</s><s>casey 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2354903</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Todd_Kopriva" timestamp="Oct 30, 2009 7:59 AM">
+<s>casey, we recently announced that the next major version of after effects will be a 64-bit application.</s><s> that has a lot of ramifications for getting rid of the image buffer error that you're referring to, since a64-bit application can address as much memory as you can install.</s><s> (see "future versions of after effects will be 64-bit only".</s><s>) 
+</s><s>regarding the changes to the memory & multiprocessing preferences for after effects cs4: the changes were intended to make adjusting the preferences easier.</s><s> most people had a hard time understanding the old preferences. 
+</s><s>if you're having trouble, please bring the question over to a thread in this forum other than the wish list thread.</s><s> be sure to tell us what os you're using, whether you've updated to after effects cs4 (9.0.2), how much ram you have installed, and what frame sizes you're working with (and other factors that affect ram usage). 
+</s><s>first, check to make sure that render multiple frames simultaneously is off and ram to leave for other applications is set to a very low number.</s><s> you want to give a single rendering process of after effects all of the ram that it can take so that it can render the frame that is giving you the error. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2361351</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="s.poertner" timestamp="Nov 2, 2009 9:33 AM">
+<s>open/fold out a precomp within a composition as if it was a folder tree. so i can see the changes right in the already open viewport rather than having to open 2 composites. timing things in a precomp to elements of the main comp would be sooo much easier then. it should work just like the layers in photoshop. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2377966</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="John%20Stanowski" timestamp="Nov 8, 2009 6:19 PM">
+<s>color, color, color.</s><s> i would love to see more... wait "more?"... right now there's none at all.</s><s> i would like to see some new features which would let us choose better colors like the swatch books and the color guide from adobe illustrator.</s><s> there's no way in ae to pick good colors and color relationships.</s><s> it would be fantastic if we had swatch book schemes like illustrator's middle ages, earthtones and ancient swatches to choose from.</s><s> to be able to make our own custom swatch books.</s><s> and it would be mind boggling to have an ae version of illustrator's color guide letting us generate colors based on a primary color and a scheme like complimentary, triad, shades, etc. don't bring up synthetic aperture's test gear 2, that doesn't really cut it.</s><s> don't know what else to say about it.</s><s> i feel like repeating myself and shouting i!</s><s>.</s><s> why on earth wouldn't ae have any kind of color tools? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2401371</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Navarro%20Parker" timestamp="Nov 17, 2009 4:26 PM">
+<s>how about import support of rtf styled text? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2401842</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="moobootoot" timestamp="Nov 17, 2009 10:02 PM">
+<s>i have always always wanted to have an output to video from the composition window.</s><s> the reason for this is to align different matts and also when i distorting images that i'm going to use as projections you need some kind of output to know what is happening.</s><s> i do understand that it would only play still frames or rendered sequences in ram but this would be fine.</s><s> oh the time it would save me as at present i have to make a small distortion the render it out as a movie or still and then project it calculate how far off it is and repeat again and again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/After-Effects/Discussions-2215702-2402120</DOCNO>
+<TEXT>
+<subject>AFTER EFFECTS WISHLIST</subject>
+<post author="Skivling" timestamp="Nov 18, 2009 2:02 AM">
+<s>i second that emotion.</s><s> when i came to work this morning, all my renders from last night (deadline today) had failed due to this highly irritating "bug".</s><s> its just plain crazy that i cant trust the software to do what i tell it to do, dispite avalable workarounds.</s><s> i don't want to babysit my render que all night.</s><s> i hope adobe is taking this seriously.</s><s> i mean this issue has been around for a while and it's not like it has improved.</s><s> please, please, pretty please fix now!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

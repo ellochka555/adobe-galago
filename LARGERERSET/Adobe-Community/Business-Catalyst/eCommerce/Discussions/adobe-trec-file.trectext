@@ -1,0 +1,2698 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6196926-1424975</DOCNO>
+<TEXT>
+<subject>styling the {tag_relatedproductslist}</subject>
+<post author="flippdesigns" timestamp="Mar 10, 2014 1:56 PM">
+<s>hi, how do i style the {tag_relatedproductslist} so that the related products displayed have the same layout as the small products in the catalog?</s><s> at the minute they are just displaying the images and i want it to display the product name, image, qty and add to cart button 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6196926-6232985</DOCNO>
+<TEXT>
+<subject>styling the {tag_relatedproductslist}</subject>
+<post author="Bengeri" timestamp="Mar 21, 2014 10:48 PM">
+<s>hi, 
+</s><s>if you want to show related products in same layout use {tag_relatedproducts} instead of {tag_relatedproductslist} 
+</s><s>cheers!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-1433052</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="snarzom12" timestamp="Mar 20, 2014 8:57 PM">
+<s>hi i have a client who want to extend the item count drop down further than 50 can this be modified to allow say 150 or more items on a page. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-6229847</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="Liam%20Dilley" timestamp="Mar 20, 2014 9:17 PM">
+<s>hi there, not at the moment no. are they just browsing product quick info using the list?</s><s> or are they trying to use that to seach for a certain product?</s><s> if searching then it is easier to use the dynamic search box in the to right.</s><s> if they are just browsing, pretty has an app coming on the app store any day now which will allow more paging of products as means to browse them.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-6229781</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="snarzom12" timestamp="Mar 20, 2014 9:26 PM">
+<s>will your app allow browsing and editing?</s><s> its just they have several hundred products and dont like the limited pagination. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-6229852</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="Liam%20Dilley" timestamp="Mar 20, 2014 9:29 PM">
+<s>just browsing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-6229783</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="snarzom12" timestamp="Mar 20, 2014 9:33 PM">
+<s>cheers thank you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-6229853</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="Liam%20Dilley" timestamp="Mar 20, 2014 9:35 PM">
+<s>if you think of all the info to edit on a product and how important it is.</s><s> if you had a list you could view, click edit and by mistake etc...</s><s> bit risky and what would you show and what would you edit?</s><s> can not fit all the info in one list. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6229777-6229890</DOCNO>
+<TEXT>
+<subject>Item count in BC eCommerce product list</subject>
+<post author="snarzom12" timestamp="Mar 20, 2014 9:40 PM">
+<s>thats ok, they just asked if the maximum of 50 could be increased to 150 + to make searching and updating easier.</s><s> i think the search works fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6222768-1431305</DOCNO>
+<TEXT>
+<subject>Is it always the case that the product list view will be nested in ul or table?</subject>
+<post author="ushanbb" timestamp="Mar 18, 2014 10:01 PM">
+<s>there seems to always be unordered list or table markup around the small product mark up using the module_productfeaturelist or tag_productlist. 
+i.e.</s><s> there is no way to edit the unordered list html?</s><s> is there a work around to remove the ul (or add custom classes to the existing) html? 
+</s><s>so in short, the small product list template code will always be constrained by uneditable table or unordered list html? 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6222768-6222776</DOCNO>
+<TEXT>
+<subject>Is it always the case that the product list view will be nested in ul or table?</subject>
+<post author="Ryan_Thom" timestamp="Mar 18, 2014 11:25 PM">
+<s>hey ushan!</s><s> i'm not entirely sure how else they would have setup the product lists.</s><s> why would you want to remove the ul?</s><s> catalyst should be assigning classes to your tags: ul=("productfeaturelist") and li =("productitem"), which are fully editable via css.</s><s> any other customization to your product layouts would be done through your small product template.</s><s> what are you trying to accomplish exactly? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6222768-6222893</DOCNO>
+<TEXT>
+<subject>Is it always the case that the product list view will be nested in ul or table?</subject>
+<post author="ushanbb" timestamp="Mar 19, 2014 12:10 AM">
+<s>thanks for the answer. 
+i was hoping to be able to add classes to the li for use in the isotope plug in. 
+</s><s>cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6222768-6223267</DOCNO>
+<TEXT>
+<subject>Is it always the case that the product list view will be nested in ul or table?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 19, 2014 4:22 AM">
+<s>do not need classes to be added to the li for that to work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6216618-1429697</DOCNO>
+<TEXT>
+<subject>Personalised Product</subject>
+<post author="kleynzscot" timestamp="Mar 17, 2014 7:59 AM">
+<s>hi there, 
+i am interested to know if it's possible to personalise a product. 
+</s><s>if a customer wanted to buy a product (let's say a tshirt) and then after choosing what size they wanted... they could then choose to have their name printed on the back of the tshirt.</s><s> i'd like for them to enter their name into a field whilst on the product page.</s><s> i guess it's like adding a web form to a page but to a product instead.</s><s> is this possible? 
+</s><s>thanks for your time 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6216618-6220822</DOCNO>
+<TEXT>
+<subject>Personalised Product</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 18, 2014 10:01 AM">
+<s>hi, 
+</s><s>yes you'll need to add the "capture details" option within the product details. 
+
+</s><s>then go into your product layout and add the "{tag_capturedetails}" via site manager > module template > online shop > individual product - large. 
+
+
+</s><s>here's an old article but the concept remains the same. http://kb.worldsecuresystems.com/000/bc_10.html 
+hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6216618-6221439</DOCNO>
+<TEXT>
+<subject>Personalised Product</subject>
+<post author="kleynzscot" timestamp="Mar 18, 2014 12:30 PM">
+<s>thanks so much for this information!</s><s> such a great help. 
+</s><s>kind regards, kirsty 
+
+</s><s>on tue, mar 18, 2014 at 5:02 pm, sidney mitchell 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6199806-1425643</DOCNO>
+<TEXT>
+<subject>Timing of orders is inaccurate!</subject>
+<post author="Brinaland" timestamp="Mar 11, 2014 9:57 AM">
+<s>in our ecom shop... under orders in crm, the 'create date' of the last several orders is off.</s><s> for example, i just ran a test purchase this morning, and it's showing up as being made, yesterday afternoon...</s><s> my order is also being listed before another customer, who i know made their purchase 16 hours before me. 
+</s><s>we also haven't received a purchase (other than the test one i just made) in over 16 hours.</s><s> when our usual ordering traffic/pace is one every 1-2 hours.</s><s> albeit my test purchase just went through fine (despite the time glitch), so am scratching my head.</s><s> could it be coincidence?</s><s> weird and concerning. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6199806-6203004</DOCNO>
+<TEXT>
+<subject>Timing of orders is inaccurate!</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 8:38 AM">
+<s>hi!</s><s> 
+</s><s>what's the timezone of the website and from what time-zone was the order created (and at what time)?</s><s> you can find out what timezone you're on by starting a new campaign. the delivery time will show the timezone of the website: http://prntscr.com/3061wc 
+kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6199806-6206716</DOCNO>
+<TEXT>
+<subject>Timing of orders is inaccurate!</subject>
+<post author="Brinaland" timestamp="Mar 13, 2014 10:10 AM">
+<s>hi alex - 
+</s><s>thank you for your reply!</s><s> the timezone of our site is gmt.</s><s> (i just checked on the email campaign page, as you advised) 
+i placed the order at 9:15 a.m.</s><s> mst, on tuesday march 11.</s><s> as soon as i placed it, and then viewed the orders list- the create date listed my order at 4:38 p.m., on monday march 10. 
+</s><s>whereas in the past, when an order is placed, and we look at the create date, the timing matches. 
+</s><s>sabrina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6199806-6219899</DOCNO>
+<TEXT>
+<subject>Timing of orders is inaccurate!</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 18, 2014 5:36 AM">
+<s>hi sabrina 
+</s><s>the default timings of the orders panel should match the time-zone of the site, please raise a ticket, we'll take a closer look at what's happening in your case. 
+</s><s>kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6199806-6221436</DOCNO>
+<TEXT>
+<subject>Timing of orders is inaccurate!</subject>
+<post author="mario_gudelj" timestamp="Mar 18, 2014 12:26 PM">
+<s>the create time it's when the product was added to the cart and not when you check out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6218716-1430289</DOCNO>
+<TEXT>
+<subject>e-commerce for photography</subject>
+<post author="PROSPECTLTD" timestamp="Mar 17, 2014 5:17 PM">
+<s>best way to set up e-commerce for a photography studio 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6218716-6220719</DOCNO>
+<TEXT>
+<subject>e-commerce for photography</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 18, 2014 9:52 AM">
+<s>hi, 
+</s><s>i don't have an example but prehaps checking out some of our partner's templates may give you an idea and insight. 
+- http://www.tribevita.com/adobe-business-catalyst-templates - http://www.bcgurus.com/templates 
+hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6218359-1430255</DOCNO>
+<TEXT>
+<subject>Country Detection for URL redirect (Shopping Cart)</subject>
+<post author="Brendon Coetzer" timestamp="Mar 17, 2014 3:30 PM">
+<s>i want have two domain names   www.demo.com.au www.demo.co.nz   if a viewer from new zealand (nz) visits the australian site (.com.au), i want the website to detect that they are from new zealand and redirect them to the nz domain.    i found this javascript code on the business catalyst kb, however it seems to loop over and over again, even though there are breaks included in the script.   <script language="javascript"> var country = '{module_visitorcountrycode}'; // e.g. var country = us; switch (country) { case 'us': document.location = 'http://us.yourcompany.com'; break; default: document.location = 'http://www.yourcompany.com'; break; }; </script>   i've read that i should use cookies but i'm not sure how to implement that with the above script.   any help would be much appreciated.    kind regards brendon
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6218359-6218451</DOCNO>
+<TEXT>
+<subject>Country Detection for URL redirect (Shopping Cart)</subject>
+<post author="Liam%20Dilley" timestamp="Mar 17, 2014 3:46 PM">
+<s>that is only a core element brendon.</s><s> you need to do a combination of a redirect, conditional statement to check on their location and cookies.</s><s> there are a few threads on this on the forum already with code, if you do a search you should find one of them i think. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6218359-6218917</DOCNO>
+<TEXT>
+<subject>Country Detection for URL redirect (Shopping Cart)</subject>
+<post author="Brendon%20Coetzer" timestamp="Mar 17, 2014 8:03 PM">
+<s>thanks liam.</s><s> maybe something more along these lines then"? 
+
+<script language="javascript"> var country = '{module_visitorcountrycode}'; // e.g. var country = nz; var countrycookie = document.getcookie(countrycode); if countrycookie == 'nz'; 
+
+switch (country) { case 'nz': document.location = 'http://www.google.com';http://www.demosite.com.au'; // current page; break; 
+
+default: document.location = 'http://www.demosite.co.nz'; // page to be redirected to; break; }; </script> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5140305-1168764</DOCNO>
+<TEXT>
+<subject>Adding modules to a product description</subject>
+<post author="studiomigo" timestamp="Mar 11, 2013 5:24 PM">
+<s>hi guys just wondering why is it not possible to add a module (such as an image gallery or media downloads) to a product description area? 
+</s><s>see screenshot. there is no module toolbox.</s><s> thanks micha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5140305-5140394</DOCNO>
+<TEXT>
+<subject>Adding modules to a product description</subject>
+<post author="Matt%20(Business%20Catalyst)" timestamp="Mar 11, 2013 6:03 PM">
+<s>hey studiomigo, 
+it is possible to use modules in the product description.</s><s> it's true that no toolbox is available when viewing the product description, however just place the appropriate module tag into the layout and it should render when viewing the product on the front end.</s><s> the module tags can be found in the following article: http://kb.worldsecuresystems.com/134/bc_1345.html.</s><s> or alternatively, navigate to a page, insert the module then copy the code inserted into the page onto the product description. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5140305-5140315</DOCNO>
+<TEXT>
+<subject>Adding modules to a product description</subject>
+<post author="studiomigo" timestamp="Mar 11, 2013 6:09 PM">
+<s>thanks.</s><s> 
+</s><s>i guess i should have tried this before posting.</s><s> so it's just a bc user interface problem i guess. 
+</s><s>cheers micha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5140305-6205220</DOCNO>
+<TEXT>
+<subject>Adding modules to a product description</subject>
+<post author="Fubals" timestamp="Mar 12, 2014 11:45 PM">
+<s>module toolbox on product pages would be a great update if bc can add it onto the development roadmap. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5140305-6205473</DOCNO>
+<TEXT>
+<subject>Adding modules to a product description</subject>
+<post author="Liam%20Dilley" timestamp="Mar 13, 2014 3:07 AM">
+<s>not really fubals, they could do with putting this way off a beaten track.</s><s> those content areas are for content, the more you set up well your layouts and templates and keep modules etc out of those content areas the better, the easier it is for clients ot manage their content and also not easily destory layouts.</s><s> pressing delete on some paragraphs and accidentally deleting a module or removing a div wrapping a module with certain class etc. 
+i and pretty do complex site layotus and designs and features and avoid doing this so this certanly does not limit what you want to do. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6179084-1420731</DOCNO>
+<TEXT>
+<subject>Pricing Structure Question</subject>
+<post author="mustangmele" timestamp="Mar 4, 2014 1:06 PM">
+<s>this is our customers website (bc hosted): http://www.originaltwisles.com/twis-les-8-ft    on the website we have set up 5 cords for $40.00.  that only works if a person buys 5 of the same color.  if they buy, for example, 2 red and 3 blue then they would not receive the discount (5 for $40).</s><s> is there we can set them up 5 for $40 regardless of the colors chosen?</s><s> the same thing happens on the wholesale part of the website too.    thanks!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6176923-1420236</DOCNO>
+<TEXT>
+<subject>Price Formatting of {tag_attributes}</subject>
+<post author="Sébastien1979" timestamp="Mar 4, 2014 3:15 AM">
+<s>i want the price formatting of the {tag_attributes} to be like that: chf300.00, i.e. including a point and two zeroes after the amount (usual price formatting here in switzerland). 
+</s><s>using the backend bc administration, i am unfortunately not able to achieve this. 
+</s><s>when entering "ch/300.00" i get "chf30000" (i.e.</s><s> 100 times more... it seems that bc first accepts the formatting, but then removes the point resulting in chf30000), when entering "ch/300,00" i get an error message from the system saying that the price formatting would be incorrect.</s><s> the last despite the fact that bc mentions as a price sample "uk/19,95"...</s><s> only entering "ch/300" works, leading to "chf300" but, as said, not complying with the price formatting i would like to have and being consistent with all other prices correctly shown on the page by tags such as {tag_discountprice} and the like. 
+</s><s>is there any fix or workaround for this? 
+</s><s>thank you!</s><s> 
+
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6176923-6177102</DOCNO>
+<TEXT>
+<subject>Price Formatting of {tag_attributes}</subject>
+<post author="Liam%20Dilley" timestamp="Mar 4, 2014 3:23 AM">
+<s>the odd thing is the . for 19.95 on the uk is a comma, this may be to do with the language setting of the site?</s><s> try 300,00 - does that now work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6176923-6177370</DOCNO>
+<TEXT>
+<subject>Price Formatting of {tag_attributes}</subject>
+<post author="S%C3%A9bastien1979" timestamp="Mar 4, 2014 5:47 AM">
+<s>not sure whether i understood you correctly.</s><s> following your suggestion, i also tried "300,00" but this - as was the case for "ch/300,00" (see above) - results in an error message.</s><s> the only thing i can do is "ch/300.00", being accepted for a few seconds but then very oddly converted by the system into "ch30000"... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6174030-1419493</DOCNO>
+<TEXT>
+<subject>How to setup worldwide shipping</subject>
+<post author="flippdesigns" timestamp="Mar 10, 2014 12:21 PM">
+<s>hello, i am trying to provide a client with a 'rest of the world' shipping option. the products are light and easily packaged so can be sent anywhere, therefore he wants to be able to sell to anyone.</s><s> how do i create two drop down options from the shipping options list?</s><s> gb - free shipping rest of the world - £x.xx 
+</s><s>do i really have to register the domain name in each country he wants to be able to ship to?</s><s>?</s><s> seriously?</s><s> all i need is just two drop down options one gives free shipping to uk customers and charges everybody else £9.99 surely this can be done cant it? 
+</s><s>message was edited by: flippdesigns 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5992743-1374538</DOCNO>
+<TEXT>
+<subject>How to setup an automatic discount on quantity?</subject>
+<post author="heshy c" timestamp="Jan 8, 2014 8:30 AM">
+<s>im setting up a website that offers discounts when buying more quantity, for example; if you buy four products its $10 off, six products for $15 off, how do i set that up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5992743-5995073</DOCNO>
+<TEXT>
+<subject>How to setup an automatic discount on quantity?</subject>
+<post author="Matt%20(Business%20Catalyst)" timestamp="Jan 8, 2014 8:30 PM">
+<s>hi heshy c, 
+it's possible to set up volume discounts for a particular product so that when a certain quantity is purchased, a discount will be applied: http://screencast.com/t/rv7ud2opr. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5992743-5996409</DOCNO>
+<TEXT>
+<subject>How to setup an automatic discount on quantity?</subject>
+<post author="heshy%20c" timestamp="Jan 9, 2014 7:33 AM">
+<s>as it seems to me that only works when purchasing quantity from one product, how will in work when purchasing from multiple products, (example; someone buys any four products on the site) how can i set the discount? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5992743-5998830</DOCNO>
+<TEXT>
+<subject>How to setup an automatic discount on quantity?</subject>
+<post author="Matt%20(Business%20Catalyst)" timestamp="Jan 9, 2014 4:11 PM">
+<s>unfortunately it's not possible to set up volume discounts that would apply across multiple products that a customer may add to their cart.</s><s> i believe what you have outlined does already exist as a feature request and therefore what i will do here is add a vote against the existing request in order to increase its priority. 
+</s><s>cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5992743-6000835</DOCNO>
+<TEXT>
+<subject>How to setup an automatic discount on quantity?</subject>
+<post author="heshy%20c" timestamp="Jan 10, 2014 9:26 AM">
+<s>thanks matt for your vote. 
+</s><s>about how long can it take for a feature request to be implanted?</s><s> i'm in middle on building a chinese auction website, and the discount feature is very important for the pricing.</s><s> here is how the pricing works, if you buy 1 ticket its $10 there is a verity of about 20 prizes, if you spend above $30 in total, you get a $5 discount, if you spend above $50 you get a $10 etc. what would be the best solution for this type of website? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5992743-6172816</DOCNO>
+<TEXT>
+<subject>How to setup an automatic discount on quantity?</subject>
+<post author="DandyDahlia" timestamp="Mar 2, 2014 5:40 PM">
+<s>hi matt, can you please add our vote to it too.</s><s> we've been asking for it for 2 years and it's a really important feature (in our opinion!</s><s>) 
+</s><s>we've been looking at many other websites and platforms and they all seem to have this feature - e.g buy 3 or more t-shirts and pay only $20 each where the list/individual price is $25 etc. 
+
+
+</s><s>is there any work around in the meantime you can suggest? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6172271-1419058</DOCNO>
+<TEXT>
+<subject>Link to remove Product from Cart in Product list/detail views</subject>
+<post author="Adam (Logo Pogo)" timestamp="Mar 2, 2014 2:21 PM">
+<s>i'm wondering if it would be possible to construct a link/button to remove a product from the cart (assuming it's in the cart) from within the product list or detail views.</s><s> much like the 'remove' link on the shopping cart page.</s><s> anyone done this or have any ideas as to how it might be done? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-1029920</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Jun 27, 2012 11:57 AM">
+<s>how can i format my invoices so that lists of purchased item details match up, unlike the photo below?</s><s> our invoices are almost impossible to read when more than a few items are listed.</s><s> but it appears that each bc tag under the order summary creates its own vertical list without reference to other details of the same item.</s><s> i know my way around css and html, and manage with javascript, but i don't see a way to style this to make it more coherent. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4524895</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Jun 27, 2012 3:40 PM">
+<s>the workflow uses the invoice layout, the same as the email invoice.</s><s> so under system emails - invoice.</s><s> you can work on the structure and style in there.</s><s> you can of course access it via ftp too.   as you probably know you do inline styles for emails, no javascript of course   you can adjust the quanitity td's to have less width, maybe drop the font in a few places too.   another option is to re-do the whole workflow notification layout, it has a restricted width so if it is an issue for you when getting orders, you can redo the whole thing to have a more fluid with or horizontal paper print format if you like.</s><s> you need to do it in a way that for other forms it looks fine still as well.</s><s> it is up to you really, depends on what your after exactly and have a play with the code to get it how you need.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4529546</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Jun 29, 2012 3:19 PM">
+<s>thanks for the response, liam.</s><s> adobe support basically dismissed my problem as a css/html issue outside their purview and suggested that i take a look at this thread.</s><s> funny.</s><s> but i don't know if it is essentially a css/html issue.</s><s> if it is, i can't figure a way around it.</s><s> it has more to do with the way bc tags are parsed into html.</s><s> here is my response to support's reply.</s><s> if i am missing something obvious, maybe someone can point it out: 
+i would say this isn't so much about html/css as it is about the way that bc parses the tags on the invoice template.</s><s> the invoice places each of the tags in a single table td, but when it parses those tags for several items, it appears to spit out lists into each single td rather than keeping each list item as a separate td in a single table row.</s><s> so the detail columns and rows of the purchased items don't match up. 
+</s><s>i've tried every way that i can think of to work around this using html and css, but nothing seems to work.</s><s> furthermore the process is frustrating as i can't even view how bc actually parses the code.</s><s> when i look at the source of the invoice and workflow emails generated, it appears encrypted, so i can't actually see how it is behaving. 
+</s><s>in addition, there does not seem to be a way to preview the template changes without generating an actual sale.</s><s> this is less than ideal, as i have to keep making purchases on my own credit card to test the changes, and then go through the process of refunding all those sales. 
+</s><s>as i can neither see the code generated by the invoice template when parsing actual lists of sale items, nor test the process without making actual purchases, even if it were an html/css issue and not a function of the bc tags, it would still be cumbersome to say the least. 
+</s><s>if you look at my invoice template, and the list that results (the example in my first post above) you will see the problem.</s><s> i need to have the results of the {tag_productname}, {tag_custom1}, {tag_productextaxamount}, {tag_productquantity}, and {tag_producttotalextax} tags line up in coherent rows in a list of purchased items. 
+</s><s>surely i can't be the only one with this problem.</s><s> if so, i must be missing something obvious. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4529726</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Jun 29, 2012 5:25 PM">
+<s>the email is not encrypted, thats the data the email is sent as.</s><s> there are several plugins for thunderbird for example to view the html of an invoice.</s><s> you can also go into the admin and to an order and when you view the invoice there for printing, it is the same layout being used. 
+</s><s>in terms of preview, accessing the layout via the preview in my coda for example, works just fine as another check too.</s><s> ultimatly you do need to email and do the process and see how it looks though, you wil always, and also for different email clients too. 
+</s><s>for me, i do what i want and have got these looking very nice, by default the invoice is not bad anyway.</s><s> you not shown any examples of your code so it is hard to say what your doing or not doing on that front but it can be done and is done by others. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4534587</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Jul 2, 2012 3:31 PM">
+<s>thanks, liam.</s><s> your tip about going to the order section of admin and choosing print was very helpful.</s><s> that allows me to see both the layout of the invoice as it will be rendered by bc and the source html.</s><s> great!</s><s> 
+</s><s>however, the basic problem still remains.</s><s> i can't style the output for the purchased item list details of the invoice because the html i need to style is not generated by the invoice template but by the bc tags inserted into the template (such as {tag_productname}, {tag_custom1}, {tag_productextaxamount}, {tag_productquantity}, and {tag_producttotalextax}). 
+</s><s>each of these tags generates a series of divs like <div class="productitemcell">item detail</div> that are placed vertically into a single td in my table.</s><s> but many of our inventory items have text strings (title, author) that are long and will flow over onto a second line within the div.</s><s> so when the content of the table is generated, i end up with a single row of several tds, one for each bc tag, each of which contains the series of divs generated by the given tag, some of which flow over onto second lines.</s><s> so the item details in the table do not line up horizontally for any given item.</s><s> as in the original picture above. 
+</s><s>here is the relevant code from the invoice template: 
+<table width="100%" cellspacing="0" cellpadding="6" class="border"> <tbody> <tr> <td valign="top" style="width: 45%;"><span style="text-decoration: underline;">title</span></td> <td valign="top" style="width: 20%;"><span style="text-decoration: underline;">author</span></td> <td valign="top" style="width: 5%;"><span style="text-decoration: underline;">price</span></td> <td valign="top" style="width: 5%;"><span style="text-decoration: underline;">quantity</span></td> <td valign="top" style="width: 5%;"><span style="text-decoration: underline;">total</span></td> </tr> <tr class="text"> <td valign="top" style="width: 45%;">{tag_productname}</td> <td valign="top" style="width: 20%;">{tag_custom1}</td> <td valign="top" style="width: 5%;">{tag_productextaxamount}</td> <td valign="top" style="width: 5%; text-align: center;"> {tag_productquantity}</td> <td valign="top" style="width: 5%;"> {tag_producttotalextax}</td> </tr> </tbody> </table> 
+</s><s>and here is what gets generated when there are several items in the invoice: 
+<table width="100%" cellspacing="0" cellpadding="6" class="border"> <tbody> <tr> <td valign="top" style="width: 45%;"><span style="text-decoration: underline;">title</span></td> <td valign="top" style="width: 20%;"><span style= "text-decoration: underline;">author</span></td> <td valign="top" style="width: 5%;"><span style= "text-decoration: underline;">price</span></td> <td valign="top" style="width: 5%;"><span style= "text-decoration: underline;">quantity</span></td> <td valign="top" style="width: 5%;"><span style= "text-decoration: underline;">total</span></td> </tr> <tr class="text"> <td valign="top" style="width: 45%;"> <div class="productitemcell">american indians and the law</div> <div class="productitemcell">a song for the horse nation - horses in native american cultures</div> <div class="productitemcell">the porcupine year</div> <div class="productitemcell">a nation within a nation - voices of the oneidas in wisconsin</div> <div class="productitemcell">art in our lives - native women artists in dialogue</div> <div class="productitemcell">native american clothing : an illustrated history</div> <div class="productitemcell">greet the dawn: the lakota way</div> </td> <td valign="top" style="width: 20%;"> <div class="productitemcell">n.</s><s> bruce duthu</div> <div class="productitemcell">national museum of the american indian</div> <div class="productitemcell">louise erdrich</div> <div class="productitemcell">l.</s><s> gordon mclester iii and laurence m.hauptman</div> <div class="productitemcell">cynthia chavez lamar and sherry farrell racette (eds)</div> <div class="productitemcell">theodore brasser</div> <div class="productitemcell">s.</s><s> d. nelson</div> </td> <td valign="top" style="width: 5%;"> <div class="productitemcell">$21.95</div> <div class="productitemcell">$14.95</div> <div class="productitemcell">$5.99</div> <div class="productitemcell">$34.95</div> <div class="productitemcell">$30.00</div> <div class="productitemcell">$65.00</div> <div class="productitemcell">$18.95</div> </td> <td valign="top" style="width: 5%; text-align: center;"> <div class="productitemcell">1</div> <div class="productitemcell">1</div> <div class="productitemcell">1</div> <div class="productitemcell">1</div> <div class="productitemcell">1</div> <div class="productitemcell">1</div> <div class="productitemcell">1</div> </td> <td valign="top" style="width: 5%;"> <div class="productitemcell">$21.95</div> <div class="productitemcell">$14.95</div> <div class="productitemcell">$5.99</div> <div class="productitemcell">$34.95</div> <div class="productitemcell">$30.00</div> <div class="productitemcell">$65.00</div> <div class="productitemcell">$18.95</div> </td> </tr> </tbody> </table> 
+</s><s>as both {tag_productname} and {tag_custom1} can generate longer strings of text, i need a way either to line up the lists of divs created by the tags in the td columns so that the name, author, price, quantity and total of each purchased item align horizontally across the page or i need a way to limit the height of <div class="productitemcell"> cutting off any text that would flow to the next line. 
+</s><s>gmail accepts only inline styles.</s><s> any css placed in the head of the email will be ignored.</s><s> but i can't style <div class="productitemcell"> because those divs don't even exist until they are generated by the bc tags when the invoice is created.</s><s> and as these invoices are sent as emails, i need to limit the width of the item table to about 600px. 
+</s><s>do you see the problem? 
+</s><s>so it is a css/html problem, but it is a problem generated by the bc tags.</s><s> reverting to the invoice template default doesn't change the basic issue.</s><s> and i am not seeing a workable solution. 
+</s><s>adobe ticket support is no use.</s><s> they suggest using js and css, which are "outside the scope of support", and then offer links to css basics tutorials.</s><s> as you mentioned, javascript is irrelevant for emails, and i am not seeing a way to apply an inline style to a div that doesn't exist in the invoice template.</s><s> maybe there is another way to do this that i am overlooking. 
+</s><s>any further suggestions are greatly appreciated! 
+. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4537177</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="mario_gudelj" timestamp="Jul 3, 2012 5:40 PM">
+<s>this is indeed a problem with the way the invoice and the cart are rendered and there is no way around it, at least for the invoice.</s><s> the way it's rendered is somewhat incorrect.</s><s> each product should be inside its own tr so that you can style it better.</s><s> but there's no way to render the invoice like that at this stage.</s><s> and as you have mentioned, any styles placed inside the invoice will be removed by certain email clients, such as gmail. 
+</s><s>i'm sorry to say this but i don't think there's anything you can do, other than specifying that set height on those productitemcell classes so that it will at least work for those clients which don't strip your css. 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4537195</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Jul 3, 2012 6:00 PM">
+<s>thanks for confirming this problem, mario.</s><s> indeed, each product should be in its own tr.</s><s> i will just have to live with it for now, unless i can come up with some creative workaround. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4537266</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Jul 3, 2012 7:17 PM">
+<s>you are right the output is not ideal and some issues can occur but we have invovices going on our sites look really sharp, you can adjust the inline styles etc to get a good layout.</s><s> i do not run into the level of issues you seem to have and sorry can not help on making that better 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4537288</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Jul 3, 2012 7:29 PM">
+<s>i think our invoices look sharp overall, i am just running into this one issue of product details misaligning because i can't apply an inline style to the relevant divs.</s><s> so any invoice tag output that flows over into a second line in the div messes up the overall product list layout. 
+</s><s>if you can post examples of how you get around this on your invoices, i would love to see them!</s><s> perhaps there is some way of reconstructing the product list table that is escaping me. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4537355</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Jul 3, 2012 8:02 PM">
+<s>you can do head css and target them, of course that does not work for every email client but it does for most. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4807614</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Jim%26Stella" timestamp="Oct 29, 2012 4:54 AM">
+<s>mario, ok, some email clients will strip the embedded css from the invoice.</s><s> i might be able to live with that, but i just found out that bc webmail does the same thing!</s><s> surely bc should be able to do something about that!</s><s> the bc invoice should at least be compatible with bc webmail!</s><s> wouldn't you agree with that?</s><s> or am i going to have to embarrass myself and tell my client that they are not compatible? 
+- jim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4807694</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Oct 29, 2012 5:25 AM">
+<s>hi jim, no, inline css is what you do to be most compatable.</s><s> style in the head is not read by a number of email clients.</s><s> if full text only has been forced by the user in the client no html will render.</s><s> invoices i do come out great even in bc webmail.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4809178</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Jim%26Stella" timestamp="Oct 29, 2012 3:11 PM">
+<s>liam, thanks for your help, but this issue cannot be resolved with inline css.</s><s> the following html is system generated and cannot be modified with inline css:- 
+<div class="productitemcell"> 
+</s><s>the <td> tag below can be modified as it is part of the static html in the invoice template, but makes no difference. 
+<td valign="top" style="width: 5%; text-align: center;"> 
+</s><s>if your bc invoices look ok in bc webmail, then it is probably because your product names are short and do not wrap around to occupy two lines. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4809253</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Oct 29, 2012 3:40 PM">
+<s>i do not style it much.</s><s> an invoice is something to be printed so i have created an invoice that can be branded at the top, has information at the bottom per company but prints out and looks great in both the email and print.</s><s> there is always the case for doing to much with it considering what it is.</s><s> in terms of what you mentioned with the product names - nope, fixed this issue too like i said, the invoice is formed to fit right great. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4809327</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Oct 29, 2012 3:48 PM">
+<s>that is great, liam. 
+</s><s>so how did you form the invoice so that long product names do not wrap around to occupy two lines?</s><s> would you please show us an example? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4809393</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Liam%20Dilley" timestamp="Oct 29, 2012 4:44 PM">
+<s>lots of wasted space and width for elements like the stock amount, pricing that are too big, reducing those and tweaking it heaps to give maximum space.</s><s> i follow up with non inline css as well to make it even better for the clients that do read it, but even without its readable and printable.</s><s> your not far off.</s><s> things like author though, that really needed on an invoice?</s><s> unit price can be less width, quanity you can make qty and less width by heaps for example.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-4813601</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="n8love" timestamp="Oct 31, 2012 9:26 AM">
+<s>@liam.</s><s> so your strategy is to try to make it all fit in terms of width, not that you have discovered a way to style the automatically generated <div class="productitemcell">.</s><s> i don't think that will work for us as we primarily sell books and many of them have rather long titles.</s><s> glad it is working for you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-5206591</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="BE%20Web%20Team" timestamp="Apr 4, 2013 8:25 AM">
+<s>thanks to liam for the idea of using the print preview as a way to get an idea of what the invoice was going to look like.</s><s> this issue was also bothering me and i kind of worked around it by putting a height and line-height on the .productitemcell class.</s><s> i added it to the other styles embedded in the layout already.</s><s> it seems to have worked for our use but not ideal.</s><s> it would be nice if bc would address it and set each item to be on a row of it's own.</s><s> but putting it in a tr might not be ideal for users who don't want to use a table to display their data.</s><s> generating a list might be an option.</s><s> at least then we could manipulate the list item to try and get the various categories to line up.</s><s> it wouldn't be much different than the class used now but an idea. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4524355-6165322</DOCNO>
+<TEXT>
+<subject>Format Invoice</subject>
+<post author="Madeleine101" timestamp="Feb 27, 2014 8:41 PM">
+<s>hi, 
+</s><s>is there any plan to fix this soon so each line item is within its own <tr>? 
+</s><s>this is causing lots of problems for me and displaying an image at the correct height in the invoice. 
+</s><s>thanks 
+</s><s>madeleine 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6055020-1390337</DOCNO>
+<TEXT>
+<subject>Postpone and adjust Payment or just take payment information for processing later</subject>
+<post author="JohnSSmith" timestamp="Jan 26, 2014 7:03 PM">
+<s>i am wondering if it is possible with little manual adjustment. 
+</s><s>products to be sold will be based on the amount sold in bulk for many people. 
+</s><s>in other words, people may only purchase 1 item, but the idea is to get a co-operative, so many people group together to buy the one product, and there will be a discount based on the number of people. 
+</s><s>so unfortunately until we know the number of orders, we wont know the price. 
+</s><s>can the ecommerce cater for - (in order) taking buyers information, including credit card (in say 2 weeks time) we adjust the price.</s><s> we process the buyers information. 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6055020-6087827</DOCNO>
+<TEXT>
+<subject>Postpone and adjust Payment or just take payment information for processing later</subject>
+<post author="Silviu%20Ghimpo" timestamp="Feb 5, 2014 3:33 AM">
+<s>hi john 
+</s><s>you can use offline processing , then edit the order after 2 weeks and charge the credit cards 
+here is an article about offline processing http://kb.worldsecuresystems.com/kb/collecting-credit-card-details-off line.html 
+regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6055020-6157431</DOCNO>
+<TEXT>
+<subject>Postpone and adjust Payment or just take payment information for processing later</subject>
+<post author="JohnSSmith" timestamp="Feb 25, 2014 5:47 PM">
+<s>thanks - unfortunately for 100's of payments, that would be way to time consuming. 
+i suppose i was really looking for more of a batch process, to process all at one time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6156754-1415307</DOCNO>
+<TEXT>
+<subject>Product Attribute Fields</subject>
+<post author="Kristen Szy" timestamp="Feb 25, 2014 1:28 PM">
+<s>hello all.</s><s> 
+</s><s>looking for some way to have some control over the product attributes area of code. 
+i would like to use jquery code to have a product attribute show up or not dependant on the first dropdown menu attribute. 
+i am curious to see if anyone has done this or know who i can implement code on the product attributes section. 
+</s><s>any help would be soooo apprecaited. 
+http://www.roadkilltshirts.com/i-dont-get-drunk-i-get-awesome-t-shirt- p11836.aspx example of what i am trying to do, see the side drop down menus. 
+
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6145257-1412643</DOCNO>
+<TEXT>
+<subject>Setting Up Paypal Website Payments Pro Payment Gateway</subject>
+<post author="Tricia Littlefield" timestamp="Feb 21, 2014 3:36 PM">
+<s>hello, 
+</s><s>my customer is using paypal standard and the setup was straightforward and easy. 
+</s><s>now we are looking at using paypal website payments pro payment gateway because we want to accept paid events bookings. 
+</s><s>my two questions: 
+the instructions to set up the paypal payment gateway look straightforward.</s><s> after i upgrade my paypal account, i add the username, password, api signature into my business catalyst website.</s><s> is that it?</s><s> will our shopping cart will continue to function like it has?</s><s> or are things more complicated than that?</s><s> or will i have to make other changes for the shopping cart system to work?</s><s> there is mention of setting up cardinal centinel.</s><s> (we are not using recurring billing).</s><s> i'm not really sure what the cardinal centinel is all about.</s><s> is that an important part of the setup of paypal's payment gateway? 
+</s><s>i'd like to be prepared before i start down this path. 
+</s><s>any advice would be appreciated. 
+</s><s>thank you, tricia 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6145257-6151624</DOCNO>
+<TEXT>
+<subject>Setting Up Paypal Website Payments Pro Payment Gateway</subject>
+<post author="Tricia%20Littlefield" timestamp="Feb 24, 2014 8:12 AM">
+<s>some links that other people might find helpful about 3d secure. 
+http://en.wikipedia.org/wiki/3-d_secure 
+setting up 3d secure 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6144411-1412408</DOCNO>
+<TEXT>
+<subject>Business Catalyst e-commerce (allow user to cancel his subscription)</subject>
+<post author="walletfibergroup" timestamp="Feb 21, 2014 11:22 AM">
+<s>hi   my client is using e-commerce bussiness catalyst and is using adobe muse to design the website.</s><s> for the payment process my client is planning on using the built-in business catalyst e-commerce module with paypal as the payment processing gateway.my client also wants the customer to be able to cancel his own magazine subscription without having to contact him to request a cancel.</s><s> is this something that adobe bussiness catalyst is able to accomplish ?   thank you very much   just in case something was unclear here is the original message.</s><s> " we're building a site in adobe muse.</s><s> our product is a monthly subscription, with a one-time licensing fee.</s><s> we will host on adobe business catalyst.</s><s> we need a check-out solution using either paypal web standard -- or -- the built-in business catalyst e-commerce module with paypal as the payment processing gateway.</s><s> the check-out module needs 3 options: 1) charge $695 one time and also set up a monthly payment of $39 starting 30 days after the one time charge 2) charge $695 one time and also set up a monthly payment of $59 starting 30 days after the one time charge 3) a promo code field that allows the customer to start the subscription in 90 days instead of 30 (the promo code will change frequently; it needs to be easily editable by us) the customer will need to be able to cancel the subscription at any time (without contacting us)."  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6131162-1409270</DOCNO>
+<TEXT>
+<subject>Two forms on checkout registration page?</subject>
+<post author="TwiceMedia" timestamp="Feb 17, 2014 11:05 PM">
+<s>hi all, 
+</s><s>is this scenario for checkout possible?</s><s> i've been trying to implement it but keep running into issues. 
+- login field to check out as a member, check outfields are prefilled.</s><s> if you check out as a member you will not be subscribed to a secure zone (this is the main reason for having two forms.</s><s> i don't want people who already have a membership to get a redundant password reminder.</s><s>) 
+- check out as non-member, subscribe to a secure zone - otherwise all is the same as the member form. 
+</s><s>the only way i can see to do this is to have two forms on checkout and show one based on logged in/logged out criteria, and this is no problem to implement.</s><s> what is a problem is that the amount field on one of the forms just won't populate - it's completely blank.</s><s> if i delete one of the forms from the page, it begins to work again without a hitch. 
+</s><s>so i can't help thinking i'm taking the wrong approach and i just have to deal with a redundant membership details email.</s><s> or, is something going on that i'm not seeing?</s><s> any help is very very much appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6131162-6131226</DOCNO>
+<TEXT>
+<subject>Two forms on checkout registration page?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 17, 2014 11:51 PM">
+<s>hey there, you can not have two forms on the registration buy layout like that, it will not work.</s><s> you do not need anyway.</s><s> all your doing can be on one form.</s><s> value fields with modules for firstname etc will not populate if you are not logged in and if your a member of a securezone bc knows this and does not re-register you on a payment form if you are already logged in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6131162-6133527</DOCNO>
+<TEXT>
+<subject>Two forms on checkout registration page?</subject>
+<post author="TwiceMedia" timestamp="Feb 18, 2014 1:44 PM">
+<s>thanks, liam.</s><s> 
+</s><s>the second part of your answer doesn't really hold true though.</s><s> if you have a password field and have the form set to subscribe people to a secure zone on log out, it will always send users an email giving them their username and password, and telling them what zone they're subscribed to.</s><s> i understand it doesn't resubscribe them...but i want to supress this behaviour - it is undesirable.</s><s> in a nutshell: 
+i have two secure zones - one members (paid subscription), one general (bought something online). 
+</s><s>if they are a member of neither, i want them to get a general subscription on checkout. 
+</s><s>if they are a member, i don't want to subscribe them to anything. 
+</s><s>even if i have to subscribe them to the general secure zone, i'd love it if they wouldn't get notification of this. 
+</s><s>as far as i can tell, this scenario is not possible with your answer above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6131162-6134307</DOCNO>
+<TEXT>
+<subject>Two forms on checkout registration page?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 18, 2014 6:22 PM">
+<s>hey, again, not exactly accurate. 
+- bc no longer sends the password out in an email. - adding &amp;swe=false to a form action prevents the securezone email being sent out when added. 
+</s><s>just all in the setup of the form 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6131162-6134703</DOCNO>
+<TEXT>
+<subject>Two forms on checkout registration page?</subject>
+<post author="TwiceMedia" timestamp="Feb 18, 2014 10:10 PM">
+<s>yep, aware of the password.</s><s> meant general password reset link etc. 
+</s><s>thanks for the info for suppressing email.</s><s> that should solve the issue more or less. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6128563-1408638</DOCNO>
+<TEXT>
+<subject>Hide attributes based on stock level</subject>
+<post author="Jnohn Marcus" timestamp="Feb 17, 2014 7:52 AM">
+<s>how can i hide the attributes of a drop down based on their stock level?</s><s> i would like to hide all of them that are out of stock. 
+== john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6128563-6131200</DOCNO>
+<TEXT>
+<subject>Hide attributes based on stock level</subject>
+<post author="Mihai_Tica" timestamp="Feb 17, 2014 11:31 PM">
+<s>hi, 
+</s><s>you should add something along this code snippet to the end of your product large layout.</s><s> what this does is it uses the 2 tags - tag_attributes_json and tag_instock_json to work out which attributes have 0 stock, find them in the drop down and hide them.</s><s> the only thing you would need to work out is how to target the elements themselves, this may vary depending on your page structure, so $('.catprodattributeitem select option[value="' + attributes.variations[key].optionids[0] + '"]').hide() might need to be changed accordingly. 
+</s><s>here is the code snippet: 
+object.prototype.getkeybyvalue = function (value) {
+    for (var prop in this) {
+        if (this.hasownproperty(prop)) {
+            if (this[prop] === value)
+                return prop;
+        }
+    }
+}
+
+attributes = {
+    tag_attributes_json
+};
+stockers = {
+    tag_instock_json
+};
+
+for (var key in attributes.variations) {
+    if (attributes.variations.hasownproperty(key)) {
+        if (stockers.byvariation[key] == 0) {
+            console.log(attributes.variations[key].optionids[0]);
+            $('.catprodattributeitem select option[value="' + attributes.variations[key].optionids[0] + '"]').hide()
+        };
+    }
+} 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6130613-1409141</DOCNO>
+<TEXT>
+<subject>Product Search Customization</subject>
+<post author="PXManager" timestamp="Feb 17, 2014 5:59 PM">
+<s>i've done as much digging as i can do and am still a little confused about the ability to control the formatting and options for product search and search results.   after a couple of hours digging, i've successfully rerouted the main template search to search products instead of the whole site using the product search modules.</s><s> page edit mode -> right sidebar -> toolbox -> e-commerce -> products   i used both the product search form and product search results shortcodes with some tweaking to make it work with a simplified template search field,  which reroutes to a results page that also includes the more advanced product search form in a sidebar.   however, i could not find a way to customize the catalog drop down menu options.   <select name="cat_productcatalogue" id="cat_productcatalogue" class="cat_dropdown_small">{module_catalogueselect}</select>   my client has over 6500 products so far.</s><s> his customers really don't need to see every sub catalog on a search drop down.</s><s> is there a way to specify upper catalog level view only in the search drop down menu?   such options appear readily available for some modules but not others.</s><s> for example, the product search results module seems fairly straight forward - items per row, target window, total results per page, and sorting...</s><s> {module_productresults,3,_self,20,alphabetical,,,,,,true}   then again, within the productresults module, i can't figure out how to control results pagination at the bottom.</s><s> i've tried css tweaking, as well as attempted to insert the pagination tags to no success.</s><s> ideally, i could move the pagination further down on the page so that it doesn't hug the bottom of the product results, perhaps change the link color, padding of the cell, or include the arrow images.</s><s> no such luck.</s><s> anyone have any tips on customizing product search results pagination?</s><s> also, why is the pagination stuck in a table row and cell?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6126274-1408037</DOCNO>
+<TEXT>
+<subject>Change image according to selected attribute</subject>
+<post author="Asmondien" timestamp="Feb 16, 2014 11:37 AM">
+<s>hi , 
+</s><s>i know there is lot of forum post around.</s><s> i still haven't managed to get that sorted. 
+i have created a product - i have set it up and it show nice big pciture. 
+</s><s>in attributes, i have created colors : 4 images of the same product ( diffrent color ofc ) 
+</s><s>in site mangeer - module templates - shop - individual product -large 
+i have included {tag_attributes} 
+</s><s>which works fine ofc - so on my page i see the product - dropdown box for the colors. 
+next from the this page ; http://helpx.adobe.com/business-catalyst/partner/product-inventory.ht ml#id_12613 
+i use the code on the bottom of the page : 
+
+<script>
+$(function(){
+        var product = {tag_product_json};
+        var attributes = {tag_attributes_json};
+ 
+        var divid = "#catprodtd_"+product.productid;
+ 
+ 
+        $(divid).find("select").change(function (){
+ 
+                  var selected = $(this).val();
+                  var option = attributes.options[selected];
+                  if(option && option.image)
+                     $(divid).find("img").attr("src", option.image);
+ 
+        });
+ 
+});
+</script> 
+i have inserted that in the same page as i inserted the tag_attributes 
+i'm not really sure what im doing wrong. 
+i thought it could be the, name of the images, or the code should be on top of the page/bottom. 
+
+</s><s>any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-1242689</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="onlineiq" timestamp="Jun 26, 2013 5:10 PM">
+<s>i would like to customise the message in the pop up related to an order threshold not being reached prior to a discount code being applied. 
+</s><s>here is the message : http://screencast.com/t/ypx1lsnjyl 
+i have looked at the alerts which can be customised here http://forums.adobe.com/docs/doc-1808 but this message is not listed as one of the ones which can be customised. 
+</s><s>would appreciate some help here. 
+</s><s>thanks ursh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5460658</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="thetrickster888" timestamp="Jun 28, 2013 1:33 PM">
+<s>ursula, 
+</s><s>i don't think there's a workaround for that.</s><s> i think bc's cart system goes out to some ajax process and returns a string we cannot update.</s><s> the forum post that you included has a number of folks asking to support that error string. 
+</s><s>they are all doing the migration so you probably won't see any action on this soon but i think you should reiterate on the forum link above that you would like this to be included in the customizable online shop strings. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5461275</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="onlineiq" timestamp="Jun 28, 2013 5:11 PM">
+<s>hi thetrickster888, 
+thank you, that is good advice. 
+i may also post on linkedin to see if anyone there has found a workaround in the meantime.</s><s> it seems pretty deep in the structure of things though! 
+regards ursh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5468332</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="TheBCMan" timestamp="Jul 1, 2013 7:11 PM">
+<s>it is totally possible i've hooked the bc javascript ajax functions to do whatever i want, what do you want it to do? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5469589</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="onlineiq" timestamp="Jul 2, 2013 6:44 AM">
+<s>hi thebcman!</s><s> 
+</s><s>i'm wanting that text to read differently - client thinks the 'threshold' comment in the pop up is quite confusing.</s><s> she has a string of text she wants to replace it with. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5469956</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="TheBCMan" timestamp="Jul 2, 2013 8:14 AM">
+<s>i got this code from your website (the url was in the screenshot). 
+</s><s>just a warning this is not supported by bc, should bc change their backend and this function gets changed / renamed or whatever you will have to change the code. 
+</s><s>ok firstly, bc inserts the js file and the function to apply the server side discount request to this file: <script type="text/javascript" src="http://sydcdn.worldsecuresystems.com/catalystscripts/java_onlineshoppi ng.js?vs=b2054.r406705"></script> 
+</s><s>this is inserted into the <head> of the document: 
+all you need to do is later in this code add your own custom function with the same name. 
+function applydiscountcode(e,d,c){ var m='this is your new message'; var b=document.getelementbyid("catcartdetails"); if(b){ var a=cms.orderretrievev2.serversideapplydiscountcode(d,e,c); if(a.value[0]){b.innerhtml=a.value[2]} if(a.value[1].length>0){ alert(m); } } } 
+</s><s>if you want it cleaner you could hook the js function attached to the form button by changing the onchange attr of the button and running whatever code you wish, but it would take me too long to write all that up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5471334</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="thetrickster888" timestamp="Jul 2, 2013 2:32 PM">
+<s>this is a great solution, kudos.</s><s> will this type of solution work with those other ajax methods that the java_onlineshopping.js file uses?</s><s> as long as we pass in the right number of parameters for that specific function? 
+i haven't tested it and look forward to see if ursula can find if it works.</s><s> i'm sure she'll be floored. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5471570</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="onlineiq" timestamp="Jul 2, 2013 3:46 PM">
+<s>massively grateful, thank you so much. 
+cheers ursh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5471597</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="onlineiq" timestamp="Jul 2, 2013 4:10 PM">
+<s>will keep you posted 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5471729</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="TheBCMan" timestamp="Jul 2, 2013 4:57 PM">
+<s>@thetrickster888: yes you can change / remove all the annoying popup's if you wish, i have removed the "item added to cart" popup and "shipping option changed" popup to cleaner solutions.</s><s> in fact i have re-writen quite alot of bc to do what i want as you can see in some of my other posts. 
+</s><s>the only thing you have to be careful of is that bc writes both the onchange javascript in the button and the java_onlineshopping.js file to the browser so unless it is supported bc has no obligation to kept the code as is so you would have to be on your toes should bc change anything. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-5505911</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="onlineiq" timestamp="Jul 15, 2013 3:09 AM">
+<s>just letting you know we have implemented this and it works a treat! 
+thanks again! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-6106536</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="eric_413" timestamp="Feb 10, 2014 12:06 PM">
+<s><quote>
+<s>thebcman wrote: 
+it is totally possible i've hooked the bc javascript ajax functions to do whatever i want, what do you want it to do? 
+</s></quote>
+</s><s>thank you so much for all the info. i've got a client who would like custom text when the discount code is rejected. 
+</s><s>they would like it to say "thank you for your purchase.</s><s> either the code you entered is incorrect or we are no longer offering the discount.</s><s> however, go to ttha.com and sign up for our enewsletter for more exciting deals.". 
+</s><s>could you help me with that? 
+the client site is www.tthagear.com. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-6111747</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="TheBCMan" timestamp="Feb 11, 2014 5:33 PM">
+<s>much the same as above, just paste in your code near the top of your page, but after the java_onlineshopping.js bc include in the header. 
+function applydiscountcode(c, d, e) { var b = document.getelementbyid("catcartdetails"); var m='thank you for your purchase.</s><s> either the code you entered is incorrect or we are no longer offering the discount.</s><s> however, go to ttha.com and sign up for our enewsletter for more exciting deals.'; if (b) { var a = cms.orderretrievev2.serversideapplydiscountcode(d, c, e); if (a.value[0]) { b.innerhtml = a.value[2]; } if (a.value[1].length > 0) { alert(m); } } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5453841-6120561</DOCNO>
+<TEXT>
+<subject>Customised Pop Up message at checkout</subject>
+<post author="eric_413" timestamp="Feb 14, 2014 6:50 AM">
+<s>this worked like a charm!</s><s>!</s><s> thanks @thebcman 
+</s><s>the only slight problem i had was when copying the src for the js file, there is a space between the "i" and the "n" at the very end of the url. after removing the space and changing the subdomain to my site it worked great! 
+</s><s>thanks again for your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6087683-1398418</DOCNO>
+<TEXT>
+<subject>eCommerce trial</subject>
+<post author="mrcolin" timestamp="Feb 5, 2014 3:09 AM">
+<s>hello, 
+</s><s>i am new to bc and would like to test/show a client the advantages of bc ecommerce site.</s><s> would it be possible to get a 30 day trial please. 
+http://mentis01.businesscatalyst.com/index.html 
+thanks 
+colin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6087683-6087702</DOCNO>
+<TEXT>
+<subject>eCommerce trial</subject>
+<post author="Silviu%20Ghimpo" timestamp="Feb 5, 2014 3:24 AM">
+<s>hi colin 
+</s><s>you site http://mentis01.businesscatalyst.com/ is already on web commerce plan 
+you can use all the ecommerce features ,with one exception : payment gateway section .</s><s> in order to be able to set a payment gateway you will need to have a paid plan for your site 
+hope this helps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6087683-6119355</DOCNO>
+<TEXT>
+<subject>eCommerce trial</subject>
+<post author="KeyLimeWDesign" timestamp="Feb 13, 2014 4:53 PM">
+<s>hi bc team i have exactly the same situation i want to star using bc as my go to business solution and i need to show a customer how they can use ecommerce on mobile devices how can i apply for a trial version?</s><s> alexacatalog.businesscatalyst.com/phone/index.html 
+thanks in advance kl 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6087683-6119971</DOCNO>
+<TEXT>
+<subject>eCommerce trial</subject>
+<post author="Silviu%20Ghimpo" timestamp="Feb 14, 2014 12:34 AM">
+<s>hi kl   at this moment your trial site alexacatalog.businesscatalyst.com is on  webhosting plan please contact support by chat or ticketing system and we will change your site plan to webcommerce   thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6114890-1405183</DOCNO>
+<TEXT>
+<subject>Formatting Product Description</subject>
+<post author="mashak" timestamp="Feb 12, 2014 1:46 PM">
+<s>i am trying to format product description so that certain words/sentences are italic, a different color, etc. 
+i am able to change fonts and colors but for some reason italic and bold options do not function correctly.</s><s> if i change part of the text to italic, it is changed in business catalyst but the formatting is not reflected on the web page. 
+</s><s>web page after formatting is saved 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6114890-6115292</DOCNO>
+<TEXT>
+<subject>Formatting Product Description</subject>
+<post author="Liam%20Dilley" timestamp="Feb 12, 2014 3:43 PM">
+<s>there is probably know style code for bold and italic or in the design/template of site your using these are set to not render. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-1403922</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="mashak" timestamp="Feb 11, 2014 10:14 AM">
+<s>
+</s><s>i am building an online store with product attribute checkboxes.</s><s> when i add {tag_attributes}, the text is too close to checkboxes (see above).</s><s> how can i add space between the text and the checkbox?</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-6110930</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="Liam%20Dilley" timestamp="Feb 11, 2014 1:11 PM">
+<s>hi there, do you know how to do css changes? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-6111229</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="mashak" timestamp="Feb 11, 2014 2:13 PM">
+<s>hi, i have an idea but i'm not a pro by any means.</s><s> is there code i can add? 
+</s><s>thanks!</s><s> 
+</s><s>maria 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-6111443</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="Liam%20Dilley" timestamp="Feb 11, 2014 3:16 PM">
+<s>for those you need to target the input checkboxes and give them a right margin. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-6113906</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="mashak" timestamp="Feb 12, 2014 9:44 AM">
+<s>that makes sense but i am not able to target it.</s><s> what am i doing wrong? 
+</s><s>here are the steps i took: 
+1.</s><s> inspected the element: 
+2.</s><s> entered the following in bc develop > modulestylesheets.css: 
+.catprodattributeitem input.checkbox { margin-right: 10px; } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-6114657</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="Liam%20Dilley" timestamp="Feb 12, 2014 1:15 PM">
+<s>the type is not a class .checbox is a class 
+.catprodattributeitem input.</s><s> or .catprodattributeitem input[type=checkbox] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6109701-6114788</DOCNO>
+<TEXT>
+<subject>eCommerce Product Attribute Formatting</subject>
+<post author="mashak" timestamp="Feb 12, 2014 1:24 PM">
+<s>
+</s><s>beautiful!</s><s> thank you so much liam. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6112712-1404620</DOCNO>
+<TEXT>
+<subject>Shipping large items calculator Australia</subject>
+<post author="tyj00123" timestamp="Feb 12, 2014 2:20 AM">
+<s>now that the bc apps are going ahead, is anyone creating an app that will calculate shipping large items in australia?</s><s> i have a client who wants to sell paintings and ship them across australia, at the moment i cannot see a good option in bc for setting this up, without the possibility of either getting stung on the price of sending a large painting to somewhere remote or the pain of getting potential buyers to "get a quote". 
+</s><s>any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5974356-1369817</DOCNO>
+<TEXT>
+<subject>Autofill Destination State based on Shipping Option selected</subject>
+<post author="AnneGerber" timestamp="Jan 2, 2014 11:13 AM">
+<s>happy new year!</s><s>!</s><s> 
+</s><s>i'm wondering if anyone has the time to help me with some js code.</s><s> i have a local pickup shipping option available in the shopping cart for folks that order products on our website and want to pick them up at our san antonio office. 
+</s><s>what i want to do is if they select "local pickup" from id = #shippingoptions -- it will autofill the id = #shippingstate with <option value="36098">tx</option> 
+</s><s>has anyone done this? 
+
+</s><s>thanks!</s><s>!</s><s> 
+</s><s>anne 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5974356-6108110</DOCNO>
+<TEXT>
+<subject>Autofill Destination State based on Shipping Option selected</subject>
+<post author="DandyDahlia" timestamp="Feb 10, 2014 8:20 PM">
+<s>we'd love to know this too.</s><s> did you have any luck anne? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-1007082</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="May 17, 2012 5:01 PM">
+<s>here is the thread on the old forum that wasn't moved across.. http://webcache.googleusercontent.com/search?q=cache:4q0r1s26zyaj:www. businesscatalyst.com/forumretrieve.aspx%3fforumid%3d57%26topicid%3d267 8+&cd=1&hl=en&ct=clnk&gl=au&client=firefox-a 
+</s><s>how do we get rid of the destination state dropdown?</s><s> australia doesn't even have state taxes and this option is messy and confusing. 
+
+</s><s>would love to hear if anyone was able to remove this 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4424996</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="mario_gudelj" timestamp="May 21, 2012 12:32 AM">
+<s>you can't do that if you're selling to different countries.</s><s> instead you need to create nsw, vic, sa etc. as tax codes with 10% tax, so that the 10% tax is applied for customers buying from au and not applied for those outside au. 
+</s><s>cheers, 
+</s><s>mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4438538</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Always%20Interactive" timestamp="May 25, 2012 5:35 AM">
+<s>mario, you must be geting sick of having that same question asked al the time.</s><s> i se it everywhere, i continue to ask it.</s><s> is there a roadmap to improve that dropdown menu situation?</s><s> cheers - billy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4440610</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="May 25, 2012 7:22 PM">
+<s>it's just so messy.</s><s> so many people get confused and confusion results in no sale! 
+i thought bc was started in australia so the developers must be aware of this issue. 
+</s><s>it's just sad that there is no ability to hide that confusing second dropdown.</s><s> if you are an australia supplier you charge 10% gst to local customers and do not charge gst to overseas - simple. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4444007</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="mario_gudelj" timestamp="May 27, 2012 7:38 PM">
+<s>hi billy, 
+</s><s>i had a look at the roadmap but i can't see this there.</s><s> that said, i will email the product management and ask them if the tax framework can be improved. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4462808</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="Jun 4, 2012 12:31 AM">
+<s>i think i've found a bc site that has done this yaye... http://gthloungewear.businesscatalyst.com/orderretrievev2.aspx 
+but does anyone know how they did it?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4465314</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Always%20Interactive" timestamp="Jun 4, 2012 6:11 PM">
+<s>far out, it does look like they have done it.</s><s> mario can you reverse engineer that site for us to find out whats happening and if it some thing that will help out in this area? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4465446</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="Jun 4, 2012 7:15 PM">
+<s>i second that...</s><s> pretty please mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4465696</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Jen%20-%20Pixel%20Palace" timestamp="Jun 4, 2012 9:59 PM">
+<s>i think they did that by not using gst as a tax code.</s><s> so they have included gst in the product price and not used the system to calculate it. 
+</s><s>we had the same problem here and the only solution was to do what mario said as we needed to use the system to add gst for invoicing purposes. http://www.mummyiloveyou.com.au 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4477889</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="river%20east" timestamp="Jun 8, 2012 2:52 PM">
+<s>yes please change this...or at the very least have it read province/state 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4491412</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="mario_gudelj" timestamp="Jun 13, 2012 10:22 PM">
+<s>those guys don't have any tax codes.</s><s> if they did you'd see the states in the dropdown. 
+@river east - you nee to use js to chnage the text there. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4492151</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="river%20east" timestamp="Jun 14, 2012 6:27 AM">
+<s>are you talking about the alert if the shipping option is not choosen as described here http://forums.adobe.com/docs/doc-1808 (which i have done) or is there away to change the on page destination state above the dropdown ?</s><s> i just need it to say choose province if so please let me know how to accomplish this.</s><s> i am not a js guru by any means. 
+</s><s>appreciate it, thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4494243</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="mario_gudelj" timestamp="Jun 14, 2012 8:53 PM">
+<s>you'd need to jquery to targed that text with something like $('#shippingstatespan').text("destination province"); 
+see http://api.jquery.com/text/ for code examples and more options. 
+</s><s>cheers, 
+-m 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4495295</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="river%20east" timestamp="Jun 15, 2012 7:34 AM">
+<s>i'm strickly a look and feel developer.</s><s> part of the draw of business catalyst was not having to code anything but i will give it a shot. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4532585</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Greg.Tomkins" timestamp="Jul 1, 2012 10:42 PM">
+<s>the following are some details i copied out of the old onlinebusinesswiki which was so full of good stuff that has now been lost...   shipping option details monday, 20 july 2009 5:43 pm   to change how shipping options are presented / displayed - the definitive answer....   through css styling and some javascript it is possible to change which elements are displayed and to change the label text associated with each of the elements   to turn display of any element off you include <style> code at the beginning of your shopping cart template.</s><s> the elements (note: the names are case sensitive !</s><s>) that can be turned off are: shippingcountry   (the drop down field listing you country(s)) shippingcountryspan  (the label for the country drop down field) shippingspan shippingoptions shippingstate shippingstatespan   example of achieving this is shown below <style>     #shippingcountry {display:none;}     #shippingcountryspan {display:none;}     #shippingspan {display:none;} </style>   to change the value of the label associated with each element you place the following javascript code at the end of your layout selecting the relevant element being shippingcountryspan shippingspan shippinstatespan   example of how i changed the lebel on the destination state to choose type of gst in australia is </script> <script type="text/javascript"> document.getelementbyid('shippingstatespan').innerhtml = 'select gst type'; </script>   replacing shipping options with custom text <script type="text/javascript"> var sel = document.getelementbyid('shippingoptions') for(var i=sel.options.length-1;i>=0;i--) { if(sel.options[i].value == "-1") sel.options[i].text = "here goes the text of whatever you want to replace choose shipping options to"; } </script>   auto-selecting one shipping option needs to be added to the check out layout - <script type="text/javascript"> var shippingoptions = document.getelementbyid('shippingoptions'); if (shippingoptions) { shippingoptions.selectedindex = 1;   shippingoptions.onchange(); } </script>   i hope this is still relevant and helpful....   if you want to see this implimented go to www.blackandblue.com.au - we set up a single tax code called gst and have hiddent this div per above after presetting the shippingstate to the 1st (and only) choice.   in the shopping cart layout we used the following...</s><s> {tag_shippingoptions,true,true,au;nz;us} to limit our shipping to just au, nz and usa at present.</s><s> we have shipping rates set up for the 3 different zones.   the end result is that the shopping cart only applies gst if the buyer is is aust and then only asks for shipping rates in nz or us and at no time do we ask for a state or gst code.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4792718</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Tricia%20Littlefield" timestamp="Oct 22, 2012 4:36 PM">
+<s>hi greg, 
+</s><s>thank you for this post. 
+i was able to get the 'select state' to disappear by inserting <style> #shippingstatespan {display:none;} </style> into the <head></head> area of my cart template. 
+
+i am unable to get the new text to display. 
+</s><s>do i place the js code into the <head></head> area of the cart template (after the <style> tag used above)? 
+</s><s>or do i go into module templates - online shop layouts - shopping cart? 
+</s><s>is the code correct?</s><s> (i was going to replace select gst type with 'select province' and i'm guessing the words i insert can be anything i choose). 
+<script type="text/javascript"> document.getelementbyid('shippingstatespan').innerhtml = 'select gst type'; </script> 
+</s><s>i've tried this a few places but i must be doing something wrong. 
+</s><s>thank you for your help, tricia 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4824002</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="TiffanyP2010" timestamp="Nov 5, 2012 6:53 AM">
+<s>i have a customer asking for this same feature, removing destination state, and though it appears it can not be removed i found this site featured on the adobetv system that did remove it (see below).</s><s> any thoughts on how that is possible?</s><s> my client is in the us, and would prefer that tax be applied when someone enters their information on the checkout page - so we can remove the destination state on the cart page.</s><s> thanks!</s><s> 
+</s><s>www.bogsfootwear.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4825399</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="mario_gudelj" timestamp="Nov 5, 2012 3:03 PM">
+<s>you can remove the state dropdown by changing {tag_shippingoptions,true} to {tag_shippingoptions}, but there's no way to apply the tax on the registration page. 
+-m 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-4825587</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="TiffanyP2010" timestamp="Nov 5, 2012 4:52 PM">
+<s>i'm sorry, i might have misread above because i thought that if the client was selling to different counries the state drop down could not be removed.</s><s> this client will be selling to canada, us, uk and australia.</s><s> does that create a potential problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-5162664</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Madeleine101" timestamp="Mar 19, 2013 11:14 PM">
+<s>hi, 
+</s><s>any update on this? 
+i desperately need to be able to remove the destination state dropdown as it is confusing and my client does not understand why it is there (it is very hard to reason when i don't understand either!</s><s>).</s><s> 
+</s><s>i can easily hide the field but i need to be able to use javascript to auto populate if australia is selected as tax needs to be applied. 
+</s><s>can anyone please help with this? 
+</s><s>thanks 
+</s><s>madeleine 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-5232862</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Madeleine101" timestamp="Apr 13, 2013 6:05 PM">
+<s>hi suppor team, 
+are you able to provide an update on this? 
+i was told by one of your support team members that someone in the dev team would be able to post a solution in the forum. 
+</s><s>it would be great if you could get back to me asap as this is really important to my client. 
+</s><s>thanks 
+</s><s>madeleine 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-5410707</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="Jun 14, 2013 6:54 PM">
+<s>hi madeleine and everyone else 
+did anyone ever have any luck with this?</s><s> (remove destination state so tax is on for local orders and not charged for international?</s><s>) 
+</s><s>dd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-5414033</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="Madeleine101" timestamp="Jun 16, 2013 3:08 PM">
+<s>nope i never heard back from bc or anyone in the community. 
+</s><s>fingers crossed we can get a solution 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-5884096</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="Nov 28, 2013 7:02 PM">
+<s>hi everyone, 
+has there been any improvement in this 1 and a half years later?</s><s>?</s><s> 
+</s><s>also on another note if you do use the {tag_shippingoptions,true} and asign the products with tax not applicable so it only shows on the shopping cart... then if you edit/add to the order in admin or even create an order in admin then you will not be able to add any tax... i'm pulling my hair out over this as it breaches tax laws and causes a world of problems.</s><s> i've posted another forum question on this but if anyone has any advice i'd love to know as we really don't want the tax office after us! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-5884105</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="BBowyer" timestamp="Nov 28, 2013 8:26 PM">
+<s>dandydahlia, i am here simple to back you up.</s><s> this has been going for more than 1.5 years i can assure you.</s><s> i can only hope that bc recognise forum threads that get a lot of attention... and fix the issues therein. 
+</s><s>adobe bc has a track record of taking about 5 years to address anything seriously.</s><s> before adobe, the team at bc listened to partners, and got the job done... 
+i am baffled at how a juggernaut like adobe can't deliver on these kinds of things. 
+i have been a partner for over 6 years... and i miss the days before adobe. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4417819-6108027</DOCNO>
+<TEXT>
+<subject>Remove "Destination State" - anyone done this?</subject>
+<post author="DandyDahlia" timestamp="Feb 10, 2014 7:45 PM">
+<s>hi everyone, 
+</s><s>well we kept the destination state option which one seemed confuse 50% of customers but now we have a massive problem - quotes / pay later don't need to select a destination state = quotes aren't paying any tax and we can't even add it later to their quote as they didn't select it in the first place. 
+</s><s>mario can you please fix this?</s><s> or at least let us add tax to quotes?</s><s> the ato will fine us if we send goods out without gst.. 
+</s><s>any had a fix for this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6107450-1403339</DOCNO>
+<TEXT>
+<subject>Allow users to add products</subject>
+<post author="MitchMcLeodDesigns" timestamp="Feb 10, 2014 4:03 PM">
+<s>i've got a joomla site that we're looking to transfer over to business catalyst. 
+</s><s>one thing that the current site has is the ability for a user to sign up, then add in their own products to be sold through the shopping cart. 
+</s><s>is there a way for this to be done through bc?</s><s> i know you're able to do it with webapps, but not sure about the shopping cart. 
+</s><s>cheers, 
+</s><s>mitch 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-6107450-6107586</DOCNO>
+<TEXT>
+<subject>Allow users to add products</subject>
+<post author="Liam%20Dilley" timestamp="Feb 10, 2014 4:42 PM">
+<s>hi mitch, this would be a manual request.</s><s> you would create a login area, web app and submission to fill in the product information etc. say its approval because you do not want people to put up porn items etc straight up to the site anyway.</s><s> then this information can be exported via spreadsheet and imported into the product list when approved using that information. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5513401-1256576</DOCNO>
+<TEXT>
+<subject><td class="productItemNotFound">This catalog has no products.</td></subject>
+<post author="displaythis" timestamp="Jul 17, 2013 4:26 PM">
+<s>has anyone been able to change the wording of "this catalogue has no products" ? 
+</s><s>found some good references from mario http://forums.adobe.com/docs/doc-1808 
+</s><s>but does not address the above ! 
+</s><s>call out to clever js folks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5513401-5516102</DOCNO>
+<TEXT>
+<subject><td class="productItemNotFound">This catalog has no products.</td></subject>
+<post author="thetrickster888" timestamp="Jul 18, 2013 12:07 AM">
+<s>hey man-- 
+</s><s>you can do this with a simple regular expression and some jquery that looks for all text within your site or a certain element and replaces it with your own text. 
+</s><s>here's the javascript you can add to the end of your page near the closing </body> tag or in another javascript file you're already referencing.</s><s> it must be included after jquery is loaded on the page.</s><s> you can include it in the head of your page template if you wish but it must follow the jquery library reference. 
+</s><s>i'm using a site that has us (english) as the culture/language so my "catalogue" is spelled "catalog"..</s><s> just update the code below to match your version of catalogue.</s><s> also, i'm searcing the whole "body" element but you can be more specific if you wish.</s><s> you can change the references to "body" to something else like "#content" or ".shop-layout" or whatever container has your text somewhere as child text node. 
+(function($){
+    $(document).ready(function() {
+        var noproductsmessage = "your no products message";
+        // you can use html markup if you escape quotes with a backslash 
+        // or if you use single quotes in html markup
+        var nosubcatalogmessage = "your no subcatalogs message";
+        
+       // update "this catalog has no products." message
+       $("body").html(
+           $("body").html()
+           // update "this catalog has no products." message
+           .replace(/this catalog has no products\./gi, noproductsmessage)
+
+           // update "this catalog has no sub-catalogs." message
+           .replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage)
+       ); 
+    });
+})(jquery); 
+you'll notice the .replace() function uses the regular expression.. you can update what's in between the / and \./gi to match the text you want to replace.</s><s> it doesn't matter about capital letters since this regex works with all cases.</s><s> you'll also notice i'm escaping the period: \. 
+</s><s>periods are special characters in regex that means "any character" so if you just use /this catalog has no products./gi it will still match the period but i'm telling this regex to specifically match a period not any character. 
+</s><s>you can replace the variables with your messages and i added one for the "no sub-catalogs" message too since you'll likely want that as well.</s><s> if you don't want to use it-- comment out that line by throwing a // in front of that line of js. 
+</s><s>best of luck.</s><s> here's the fiddle of it in action so you can play around with it and update catalog to catalogue if you need to: http://jsfiddle.net/thetrickster/k35qv/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5513401-5518678</DOCNO>
+<TEXT>
+<subject><td class="productItemNotFound">This catalog has no products.</td></subject>
+<post author="displaythis" timestamp="Jul 18, 2013 3:07 PM">
+<s>is it a bord - is it a plane - no its super trickster888.</s><s> i will read in detail tomorrow -eyes closing 
+thanks again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5513401-5518820</DOCNO>
+<TEXT>
+<subject><td class="productItemNotFound">This catalog has no products.</td></subject>
+<post author="thetrickster888" timestamp="Jul 18, 2013 3:38 PM">
+<s>it's a bord. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-5513401-5519921</DOCNO>
+<TEXT>
+<subject><td class="productItemNotFound">This catalog has no products.</td></subject>
+<post author="displaythis" timestamp="Jul 19, 2013 2:55 AM">
+<s>sorry its was late - its the superman say - is it a bird !</s><s> is it a plane !</s><s>...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-998682</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Fortix Team" timestamp="May 3, 2012 9:10 PM">
+<s>hi, some of the products need to display "please enquire" instead of a price.</s><s> does bc do this out of the box or does it require js/jquery. 
+</s><s>thanks nik 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-4378683</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="mario_gudelj" timestamp="May 4, 2012 12:36 AM">
+<s>hey nik, 
+</s><s>you need to implement this using js. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-4378628</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Fortix%20Team" timestamp="May 4, 2012 12:55 AM">
+<s>thanks mario anybody have some code examples on this, would prefer not to reinvent the wheel on something that i would imagine pops up regulary.</s><s> should something this generic not be in the knowledge base?</s><s>!</s><s> cheers nik 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-4379360</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Chad%20-%20BCGurus.com" timestamp="May 4, 2012 8:14 AM">
+<s>hello nik, i've had this issue as well.</s><s> for my fix i just set the products that needed to be different, in your case "please enquire", to have a sale price of zero.</s><s> then i used this jquery to change the div the price was in to be something different depending on what the price was.</s><s> so if the price was 0.00 i could change it. 
+http://jsfiddle.net/chaddidthis/rjadc/2/ 
+the link above has an example of changing the text as you requested. 
+</s><s>hope this helps, chad smith | http://bcgurus.com/business-catalyst-templates for only $7 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-4379868</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Fortix%20Team" timestamp="May 4, 2012 10:54 AM">
+<s>ah thanks chad, i came up with something a little different, the only difference is mine works only if you don't add any price at all. http://jsfiddle.net/webthread/fewnq/ 
+i do like the fact you set variables which makes it more extendable if needed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-4380220</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Chad%20-%20BCGurus.com" timestamp="May 4, 2012 1:37 PM">
+<s>good work.</s><s> yeah for my example the client had uploaded all of their products with the price as 0.00. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5571193</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 6, 2013 9:22 AM">
+<s>hi guys, i am trying to follow your solutions, but i'm not quite sure where to place everything and how.</s><s> it appears that you are using onload behaviors and a link to a jquery.</s><s> i am trying to add the scripts to online shopping module> individual large template 
+here's what i have so far: on the large template i have : 
+<quote>
+<s>
+</s><s><script type="text/javascript"> $('span.noprice:empty').text('please enquire');</script> <p class="price bold"> price <span class="noprice">{tag_saleprice}</span> </p> 
+
+</s></quote>notice, it isn't in an onload function 
+on my default template where this catalog appears i've done the following in the header: 
+
+
+<quote>
+<s>
+</s><s><script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></sc ript> 
+</s></quote>i don't know if it needs to have an onload function in the default template because i don't think it would work on the catalog's online shopping template.</s><s> it would be too late.</s><s> also, maybe i have conflated your two versions and the fortix version is not a complete script?</s><s> any help deeply appreciated!</s><s>!</s><s> i've not programmed in js for 10 years!</s><s> been almost exclusively php... 
+</s><s>jeff 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5571260</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="thetrickster888" timestamp="Aug 6, 2013 9:31 AM">
+<s>you are almost there.</s><s> your jquery that manipulates the .noprice element needs to come after the html markup it's targeting.</s><s> browsers load up html and javascript as it finds it in the page from top to bottom so when the browser sees your jquery to check the .noprice element for an empty text node it cannot find it becuase the browser hasn't discovered it yet. 
+<p class="price bold"> price <span class="noprice">{tag_saleprice}</span> </p> <script type="text/javascript"> $('span.noprice:empty').text('please enquire');</script> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572307</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 6, 2013 3:14 PM">
+<s>no offense to you guys but you really need to work to not use javascript all the time for everything.</s><s> you should work on good knowledge of bc and then flow to css and html and then javascript and then api. 
+
+</s><s>all you need to do is have the button for enquire to go to a form or do a form up up (with javascript if you want) and also the buy section with buy button and stock input fields. 
+</s><s>all you need to do is either use keywords field or custom field and have that tag rendered as a class in the containing div of the product.</s><s> you can then add it in when you need to on certain products and with purce css show and hide what you want. 
+</s><s>that easy, works great, no need for javascript. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572347</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="thetrickster888" timestamp="Aug 6, 2013 3:47 PM">
+<s>not everyone knows the bc system inside and out like you, liam.</s><s> it's hard to remember all the nooks and crannies since the system isn't really predictable and organized. 
+</s><s>using keywords field is messy because if you are using that field for other seo relevant keywords and not the singular puropse of saying that a product requires enquiry then when you use the {tag_tags} tag (heh.</s><s>) for a class, you'll get: 
+class="enquiry, t-shirt, clothing" 
+</s><s>and that's not valid css and then you'll need to use javascript to clean it up at runtime. 
+</s><s>custom fields would be ok but i think we're trying to make it easier on the client in most cases and they'd have to remember to add some value to custom field 1 or if that's in use, custom field 2.</s><s> if you start using those custom fields in products for multiple stuff it's hard for the client to remember what goes where.</s><s> and we can only use 5 custom fields in total so if we have more than 5 workarounds using custom fields-- you're toast. 
+</s><s>there are probably better workaround with just css and using tags in classes, etc. in general for many instances but it's quicker sometimes to get someone a solution using javascript which we're pretty hard-wired for when trying to do workarounds in bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572484</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 6, 2013 4:36 PM">
+<s>this is pretty basic to be fair and something easily managed through the import/export spreadsheet prupose.</s><s> in terms of the keywords i use it often for new item and othe custom tags because it is easy to manage and in the import export, not like tags and tags come out rendered with commas.</s><s> it is a great tool for lots of expandability. 
+</s><s>keywords field and the tag for that does not render commas it is just spaces.</s><s> keywords field you enter...</s><s> "this that something" the full tag feature does render commas as i mentioned.</s><s> tags are different and not labeled as their admin name sake correctly so your being caught out there. 
+</s><s>considering keywords inline as a bunch of keywords to try to gain seo is black hat seo search engines will flag that.</s><s> as meta keywords this is ignored by the top search engines. 
+</s><s>so not much use there. 
+</s><s>and if being used i also mentioned custom fields. 
+</s><s>considering this native to bc, easy to manage, easy to use on bulk and pure css as well for the client it is easy, its lightweight, has no issue with the dom killing on bc features like javascript elements can have and is quicker to implement too.</s><s> far from a work around, messy javascript is more of a workaround.</s><s> these fields etc are there for this kind of thing. 
+</s><s>all the above information on this, how it works is low level css, html and bc knowledge in my view.</s><s> all it is is looking at things and scoping correctly and not over complicating a solution which a lot of people i see do.</s><s> a lot of the javascript sollutions given on the forums as well in my view can be achieved with 1/4 to 1/2 the code as well so its easier to follow.</s><s> just my view and i hope my css sollution @jeff helps you and is easier for you to implement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572636</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 6, 2013 6:14 PM">
+<s>liam, i am not aware of any css that can hide something like an "add to cart" button based upon a dynamic value added to a page.</s><s> for instance, if the product has an empty or $0.00 value, i want to hide the add to cart and price text and use a call for price instead.</s><s> i could do this easily enough in php, but i'm not aware of the inner code workings of bc enough to know what the heck is going on.</s><s> it would be great if you could program something like if ({tag_price} == "") then print "call for price" but i don't see any instructions on using features like this. 
+</s><s>there is something in the backend if the inventory is zero and inventory control is on, and the add to cart button is pushed a warning pops up saying it is out of stock, but i don't see where to modify that warning either...</s><s> that might be a good first step... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572638</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 6, 2013 6:21 PM">
+<s><quote>
+<s>thetrickster888 wrote: 
+you are almost there.</s><s> your jquery that manipulates the .noprice element needs to come after the html markup it's targeting.</s><s> browsers load up html and javascript as it finds it in the page from top to bottom so when the browser sees your jquery to check the .noprice element for an empty text node it cannot find it becuase the browser hasn't discovered it yet. 
+<p class="price bold"> price <span class="noprice">{tag_saleprice}</span> </p> <script type="text/javascript"> $('span.noprice:empty').text('please enquire');</script> 
+</s></quote>thanks , that works, now how do i hide the word price and the add to cart button?</s><s> <ul> <li class="cartbtn">{tag_buynow,add to cart}</li> </ul> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572742</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 6, 2013 7:08 PM">
+<s>jeff, this is just basic css and how css works, it is the same issues you have had with menus and what i showed you there. 
+<div class="myproduct {tag_tags}"> 
+</s><s>elements in here <div class="buyelements">stuff here</div> 
+</div> 
+</s><s>now in css if you have a keyword of "enquire" there then the html will be...</s><s> <div class="myproduct enquire"> 
+</s><s>elements in here <div class="buyelements">stuff here</div> 
+</div> 
+</s><s>so you simply do css like.. 
+.enquire .buyelements { display:none; } 
+.enquire .enqureelements { display:block; } 
+</s><s>that easy. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572874</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="thetrickster888" timestamp="Aug 6, 2013 8:09 PM">
+<s>i haven't been able to correctly import tags/keywords via csv import on my partner site for a while now and i know some other people are experiencing the same issue: http://forums.adobe.com/message/5503290?tstart=0 
+that's what made me give up somewhat on using the keywords/tags feature in products.</s><s> i wouldn't personally use the keywords/tags for seo purposes but you know that some people on bc will.</s><s> my point is that the main goal should be making it easier for the end client to manage a product that needs to be quoted and having them use keywords and/or custom fields is not the best solution.</s><s> they'll have a much easier time remembering to set the product to $0.00 for the quote functionality to take effect than to enter some keyword or custom field data. 
+</s><s>i'd rather error on the side of making it easier for the client to remember how to trigger products for quoting even if that means we need to use javascript for the workaround. 
+</s><s>also, i just tested the {tag_tags} and it just outputs the value of that field so if you enter keywords as "clothing men upscale" it will output that but i know i would definitely enter "clothing, men, upscale" since that's usually the way you enter keywords in most use cases for the web. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5572876</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="thetrickster888" timestamp="Aug 6, 2013 8:18 PM">
+<s>jefferis--   to hide the cart button and "price", this:   <script type="text/javascript"> $('span.noprice:empty').text('please enquire');</script>   becomes:   <script type="text/javascript"> if ( $('.noprice').text().trim() === ""  ) {     $('.noprice').text('please enquire');     $('.price').html($('.price').html().replace("price", ""));     $(".cartbtn").hide();   }   </script>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5573044</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 6, 2013 11:25 PM">
+<s>keywords import export - fine.</s><s> tags as i mentioned are not in there.</s><s> several ecommerce clients - lots of products using keywords for a few things all managing fine - some really complex things they just mark up easily and do cool stuff - all good there.   again - {tag,tags} is keywords - that is the thing that trips people up.</s><s> not the functionality.</s><s> output is no commas and just the raw field output.   the actual tag system and its own tags is no import export and comes out with commas.   in terms of you comments on the main goal - have to disagree quite strongly - this way is easier, no dom issues, no seo render issues and easier to get their head around.</s><s> considering the ecommerce and booking stuff i build in bc going way beyond bc - this is simple.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5573980</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 7, 2013 7:35 AM">
+<s>thanks, that worked perfectly!</s><s> i appreciate the help.</s><s> in php the values are determined before the output.</s><s> i didn't realize that js would work after the print :-0 thanks again. 
+btw, my client has had really bad results with import and export too.</s><s> i am wondering if placing commas in the tags or keyword fields is causing this problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5574053</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 7, 2013 7:49 AM">
+<s>i'm sorry liam, i'm not sure i'm following.</s><s> using keywords or the tags column to call a function in css?</s><s> although i've been using css for a long, long time (before it was even tolerated on ie and wasn't cross browser compatible in the least) , i must admit, i've never seen until now the use of a keyword in a class definition before.</s><s> i didn't know css even had that capability.</s><s> so, i'm not sure how that works or why.</s><s> and so, i'm not following your example.</s><s> also, to work, the item would have to display block if the enquire tag was missing.</s><s> the client only has a few items that are not priced.</s><s> but also, as you see, i need to hide other elements as well (price word which is straight html, and add to cart buttom) , which are outside the class and then display other stuff when it is present.</s><s> to me, the javascript seems much simpler... 
+</s><s>jeff 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5574055</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 7, 2013 7:49 AM">
+<s>you do not need commas in kewword field if your not using it for seo.</s><s> as a not again on that google does not read the keywords meta so that has no effect on your seo in terms of google. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5574738</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 7, 2013 10:49 AM">
+<s>okay, now here is where keywords and css might come in very handy...</s><s> it is a lot harder to modify the overall catalog layout.</s><s> i've another client where he has mixed items on the same page, some have prices and not others.</s><s> i created a code that works, sort of, but the problem is that it removes price and qty on all items not just the ones that are missing a price. 
+http://bendannie2.businesscatalyst.com/sale 
+i modified the individual product small to work and needed to use the li.noprice and li.price styles to get it to work, but it worked too well.</s><s> it hid everything but the tag_saleprice .</s><s> i think that the repeating table is preventing the script from functioning properly. 
+<div class="shop-product-small"> <div class="image">{tag_smallimage}</div> <h5>{tag_name}</h5> <ul> <li class="price">price: <strong><span class="noprice">{tag_saleprice}</span></strong></li> <li class="quantity">qty: <strong>{tag_addtocartinputfield}</strong> {tag_addtocart}</li> <script type="text/javascript"> 
+if ( $('li.noprice').text().trim() === "" ) { $('li.noprice').text('call for price'); $('li.price').html($('li.price').html().replace("price:", "")); $("li.quantity").hide(); 
+} </script> </ul> </div> 
+
+</s><s>sure would be a lot easier if, when you left a sales price field blank, it would give you a display option in bc... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5575551</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 7, 2013 3:30 PM">
+<s>hi jeff, the bc tag has nothing to do with css really.</s><s> tags render output, it could be a custom field the price the stock etc. you can even use the stock value to display things differently if out of stock. 
+</s><s>all you are doing is putting bc tags as classes in your html and then you use css as normal to target the items.</s><s> what are you not following in the example?</s><s> you do not need to target the items directly in css, like with the menu stuff a parent has children and you can target the children via the parent. 
+div.thisclass div.divwithprice { display:none; } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5575895</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 7, 2013 6:41 PM">
+<s>liam, what i'm not following is the conditionals.</s><s> my training is to think in terms of if { then} else { the something else } 
+</s><s>if i understand you correctly, you are displaying all the tags (keywords column?</s><s>) of an item here: <div class="myproduct {tag_tags}"> and it is important that these keywords are not separated by commas.</s><s> say then one of my keywords is "zagat" and the client adds that keyword to every item where he wants to display "call for price" instead of price: empty value. 
+</s><s>so then the css class in the layout.css file is going to be .myproduct zagat {display:none;} and then every item that does not have zagat as a keyword will display normally? 
+</s><s>but what happens if you have more than one keyword?</s><s> what if you have 10?</s><s> i have listed another question regarding multi-multi categories and catalogs for items where i'm running into a problem.</s><s> i can't use just one tag in the keyword column.</s><s> i'll need many.</s><s> so if tag_tags displays all keywords, i'll have something like .myproduct zagat rings cartier gold and that is going to be useless. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5576234</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 7, 2013 8:50 PM">
+<s>there are no conditionals. 
+a tag renders something.</s><s> take custom field for example.</s><s> {tag_custom1} 
+</s><s>if it is empty it renders nothing.</s><s> if you put "dog" in there it will say that.</s><s> if you say "fish" then it is a fish. 
+</s><s>as a class or html5 data element this can then mean you can target things differently with javascript and css. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5582232</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 9, 2013 4:39 PM">
+<s>okay, i'm tried to test this but it doesn't seem to be working: 
+<div class="hproduct"> <div class="photo">{tag_productcode}{tag_smallimage}</div> <h3 class="fn {tag_custom2}"> <a href="http://joden.businesscatalyst.com/#">{tag_name}</a></h3> <p> <span class="price">price:{tag_saleprice}</span></p> {tag_addtocart,add to cart} </div> 
+i added this style to the styles.css page: 
+.</s><s>noprice .price {display: none;} 
+</s><s>and i tested the tag and when this particular item has noprice in custom2 (it does because it will print if i place the tag on the page....</s><s> ) 
+</s><s>it has no effect.</s><s> according to your example, it should work. http://joden.businesscatalyst.com/diamond-jewelry/diamond-earrings?pag e=2&items=12 
+it doesn't work if i place a div class price around the paragraph tag either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5583157</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 10, 2013 5:55 AM">
+<s>hey jeff.</s><s> your css and targeting is way off there the method defiantly does work as i have used this and similar and more advanced stuff all the time. 
+.</s><s>noprice.price would be the same element with two classes...</s><s> it would be if you had... 
+<h3 class="noprice price"> 
+</s><s>classes should be kept lowercase as well. 
+</s><s>also you shoudl put the tag class on your main container.</s><s> so...</s><s> 
+</s><s><div class="hproduct {tag_custom2}"> <div class="photo">{tag_productcode}{tag_smallimage}</div> <h3>{tag_name}</h3> <p class="price">price:{tag_saleprice}</p> {tag_addtocart,add to cart} </div> 
+</s><s>if your doing this in the small product layout the product tag name renders its product link already so you will have invalid html if you are doing the code you have. 
+</s><s>now you can target anything under your main container.. 
+.</s><s>no-price .price { display:none; } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5583231</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 10, 2013 7:01 AM">
+<s>thank you liam.</s><s> that worked perfectly! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5584290</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 10, 2013 6:19 PM">
+<s>do you understand the css flow and relationships better etc now jeff? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5584304</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Aug 10, 2013 7:28 PM">
+<s>yes, thanks.</s><s> i was trying to avoid the use of keywords updating hundreds of records with a custom value for only the x number of files that don't have a price was going to be very time consuming.</s><s> a js answer is easier for already populated values.</s><s> but i do appreciate the help and the js won't work on overall catalogs.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5584446</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="Liam%20Dilley" timestamp="Aug 10, 2013 10:05 PM">
+<s>again jeff you only need to add that value to the ones that you want the change.</s><s> you do not have to include one word for one option and another for something else.</s><s> if it is blank or not the right keyword then what you set in your css wont run.</s><s> you got the import export of products and such an updated is easy to manage.</s><s> depending on how you coded your javascript if you add to cart you may notice that breaks due to how the bc code works.</s><s> you also add more load and decrease the perfomance of your site the more you add snippets of code all over the place which will harm the sales performance of the site.</s><s> this is css and native bc, wont break and will be smooth as butter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4378485-5656581</DOCNO>
+<TEXT>
+<subject>Please Enquire instead of price</subject>
+<post author="jefferis" timestamp="Sep 5, 2013 10:56 AM">
+<s>okay, i'm working on another site where the client doesn't want to be bothered to add in a no price custom tag, so i'm trying to get the javascript to work on the individual small item template.</s><s> this is what i had so far, the problem is that the if condition is not working.  if the span not price is empty, the prices are removed from all instances in the catalog as well as the add to cart buttons for the ones with prices.</s><s> <div id="popuphover" ><div class="shop-product-small {tag_custom2}"> <div class="image"> {tag_smallimage}  </div> <h5>{tag_name}</h5> <ul>     <li class="price">price: <span class="noprice">{tag_saleprice}</span>  </li>     <li class="quantity">qty: <strong>{tag_addtocartinputfield}</strong> {tag_addtocart}</li> </ul>      <script type="text/javascript"> if ( $('.span.noprice:empty')) {   $('span.noprice').text('call for price');    $('.price').html($('.price').html().replace("price:", ""));   $(".quantity").hide();   }</script> </div></div> i tried several scripts including using li.price and simply .price.</s><s> now what works  is        <script type="text/javascript">   $('span.noprice:empty').text('call for price'); </script>   however it does not hide the other li elements   but this script from above was definitely not working:     <script type="text/javascript"> if ( $('.noprice').text().trim() === ""  ) {     $('.noprice').text('please enquire');     $('.price').html($('.price').html().replace("price", ""));     $(".quantity").hide();   }   </script> it didn't work even if i specified span.noprice and /or li.price ...</s><s> i mean it would put in please enquire, but it would not replace price or hide quantity.   i don't think css only will work if there is simply an empty value ?   it requires the custom tag from what liam said..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-1084917</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="DandyDahlia" timestamp="Oct 18, 2012 9:28 PM">
+<s>has anyone had success in people paying paypal after an order? 
+
+</s><s>we have paypal set up perfectly for checkout.</s><s> customer pay then they come back to our website and see they have paid. 
+</s><s>but if the customer gets an order and then logs in online to pay it (e.g http://bit.ly/uc85r5), paypal will take them to their payment page, take the payment but when it takes them back to our site an error message comes up: error: an unknown error occurred.</s><s> this is most likely due to the merchant profile not being set up correctly.</s><s> please contact your system administrator for help. 
+</s><s>the payment works though, it's just the redirect page confirming their payment.</s><s> i think the reason for the error is something to do with the code. https://ourwebsite.worldsecuresystems.com/paymentprocess.aspx?paypal=success&tx=2d355607h4466902t&st=completed&amt=0.02&cc=aud&cm=1 3031601|ff02efc9-0d08-47f6-8465-da202fadf4f5|eedcf84b-ce7e-4ea6-a8d1-8 ed23da22f35|10%2f17%2f2012%2003%3a35%3a49&item_number=1817147 
+all paypal settings are fine and as per business catalyst knowledge base. 
+
+
+- the only thing i can think to do is create an item called "payment" and send the customers the payment link to pay for their order - ie adding the payment item to a new cart and checking out like that.</s><s> any advice? 
+</s><s>best, dd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4786924</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Sidney%20Mitchell" timestamp="Oct 19, 2012 9:34 AM">
+<s>hi dd, 
+</s><s>usually when seeing the "merchant profile" error there is a mismatch with your paypal credentials. 
+</s><s>please double check this with paypal and also you are using the primary email address associated with your paypal account. 
+</s><s>if still no luck i would recommend submitting a support case to us and providing your details so we can verify the details and your set-up. 
+http://helpx.adobe.com/contact/index.html 
+kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4790512</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="DandyDahlia" timestamp="Oct 21, 2012 8:59 PM">
+<s>hi sidney, yes email is primary (and the only one).</s><s> thank you for your reply, will lodge a case. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4931301</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Dec 18, 2012 12:41 PM">
+<s>hi dd 
+</s><s>did you resolve this?</s><s> i have the exact same issue.</s><s> any tips? 
+</s><s>thanks simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4932663</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="DandyDahlia" timestamp="Dec 19, 2012 1:01 AM">
+<s>hi simon, 
+</s><s>no - it just doesn't look possible - but the payment does go through it's just a horrible error message that displays. 
+</s><s>what we do now is have a normal checkout then a get a quote button down the bottom and people can then pay paypal direct. http://tinyurl.com/cgl84t9 
+when i first looked into this there were 10 people in a week wanting to pay later etc, now it's dropped down a lot so until bc fixes the returning url error page we are just going to leave as is.</s><s> plus now we create a unique item (for special product customers) then they can just go and order it and paypal normally then. 
+</s><s>hope that helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4932704</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2012 1:22 AM">
+<s>sidney, this paypal standard they using?</s><s> if it is then if you get a quote to pay later it will never work unless it is a seamless payment gateway as it is now outside the ecommerce payment environment process and more like a payment form.</s><s> am i correct? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4933624</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Sidney%20Mitchell" timestamp="Dec 19, 2012 9:07 AM">
+<s>correct liam we do not have an option for non-seamless gateways. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4934020</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2012 11:13 AM">
+<s>so my question to dandy is - are you using paypal standard?</s><s> if so then quote payments will not work.</s><s> only with a seamless payment gateway. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4934095</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Dec 19, 2012 11:29 AM">
+<s>hi liam and sidney 
+</s><s>thanks for chipping in.</s><s> to be clear, is it that paypal standard does not work in bc with the e-commerce option in standalone forms? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4934125</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Sidney%20Mitchell" timestamp="Dec 19, 2012 11:31 AM">
+<s>correct simon.</s><s> 
+</s><s>standalone forms can only use "seamless" gateways so paypal payflow is an example of a gateway that will work.</s><s> paypal standard is considered "non-seamless" because it requires to redirect customers to paypal to complete transaction. 
+</s><s>hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-4934337</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2012 12:55 PM">
+<s>and at this time non seamless will only work in the ecommerce with the payment occuring there and then.</s><s> so having a form to take quote payments indeed needs to have a seamless payment gateway. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5162459</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Min%20Park" timestamp="Mar 19, 2013 8:03 PM">
+<s>it's bit shame that it processes money fine via paypal but gives error on return page and when you insert payment option in webform it inserts paypal option as if it should work. 
+a lot of people doing simple one page purchases thesedays and bc is missing this, so i was trying to replicate the "simple buy" process using standalone webform then faced this problem. 
+</s><s>are we expecting to see this in the future ?</s><s> a lot of things were added to feature request list over last couple of years but i don't see anything happening yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5162491</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Mar 19, 2013 8:19 PM">
+<s>i agree with min that this is a feature we could use, particuarly as bc is geared more to small business users (it's admin user limits and email user limits for example).</s><s> small business users need that simple paypal option to collect and process payments. 
+</s><s>seamless gateways are fine for full-on stores, but if a client is collecting a fee for service or subscription for a small number of customers, then it's hard to justify the cost of setting up and processing seamless gateway payments. 
+</s><s>also note that outside the us there are countries were a seamless gateway is not available or very complex for novice clients to arrange. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5162478</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="DandyDahlia" timestamp="Mar 19, 2013 8:30 PM">
+<s>hi min & simon, 
+</s><s>sad it's still not working! 
+</s><s>we've also noticed that customers aren't being sent back to our page on normal checkout - our settings in paypal show they should be sent back but aren't.</s><s> have you noticed this too? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5162499</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Mar 19, 2013 9:40 PM">
+<s>@dandy... it's an issue with bc, the way they have designed it, at this time it does not work with paypal standard.</s><s> there's no issue it seems with paypal.</s><s> put the hard word on bc to enable full paypal support.</s><s> seems important that bc support the world's most popular payment method. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5163886</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 20, 2013 9:15 AM">
+<s>hi guys, 
+to clarify our paypal standard (non-seamless) gateway integration is working fine.</s><s> if you are having some sort of redirection error or seeing any error in general please either submit an official case for further investigation or reach out to our direct chat support. 
+</s><s>this includes the the pay later option when selected. 
+- http://helpx.adobe.com/contact.html 
+all other feature besides this is a feature request unfortunately.</s><s> please let us know if you have any further question but if having problems with the current set-up please contact us via case or live chat so we can help resolve accoridingly. 
+</s><s>thanks, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5164447</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Min%20Park" timestamp="Mar 20, 2013 11:37 AM">
+<s>@dandy, 
+
+</s><s>i think it's beyond this conversation and the paypal standard should work fine on normal check out using base ecommerce functionality.</s><s> (registraion - buy) 
+</s><s>regardless the auto return url you inserted in paypal, users are redirected to www.yourdomain.com/paymentprocess.aspx 
+make sure the auto return and payment data transfer are on then also make sure the payment data transfer token is correctly are set up in bc payment gateway. 
+</s><s>this should work fine then unless there's a particular server issue ( i doubt it ) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5164715</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Mar 20, 2013 1:00 PM">
+<s>@ sidney 
+</s><s>to be clear, are your saying that the issue first raised (above) by dandydahlia is resolved? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5164790</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 20, 2013 1:07 PM">
+<s>@simon - redirection when using paypal standard is not a current issue.  so this could be that the return url is applied incorrectly as min suggested or the domain set-up is not properly correct.  which is why i recommend reaching direct support via chat or submitting a case for further investigation of the set-up within the site.   there's no issue with paypal standard set-up as the feature to collect payment from customer or to record payment at a later time are both working normally at the moment.  all other requests are feature requests otherwise.</s><s> min park wrote:   ...</s><s>paypal standard should work fine on normal check out using base ecommerce functionality.</s><s> (registraion - buy)  regardless the auto return url you inserted in paypal, users are redirected to www.yourdomain.com/paymentprocess.aspx make sure the auto return and payment data transfer are on then also make sure the payment data transfer token is correctly are set up in bc payment gateway.   hope this clarifies. -sidney
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5165009</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Liam%20Dilley" timestamp="Mar 20, 2013 2:08 PM">
+<s>hey sidney, confusion here simon. 
+</s><s>paypal or any other non seamless payment gateway will not work with custom web forms!</s><s> if you have ecommerce and you take payments on products with paypal and also offer on order or recuring order as well - this will not work.</s><s> because you need a custom web form to take those payments. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5165054</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 20, 2013 2:19 PM">
+<s>apologies as liam is correct....thanks for clearing that up. 
+</s><s>the only option is to use a seamless gateway at this stage if needing to use custom form.</s><s> there's no other options unfortunately. 
+</s><s>all other functionality with non-seamless gateways when used within the shop layout is working as normal. 
+</s><s>thanks, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5165341</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Min%20Park" timestamp="Mar 20, 2013 3:39 PM">
+<s>@dandy, 
+</s><s>as liam and sidney stated, this discussion was originally regarding use of the paypal standard with standalone webform payment collection so you may contact support team if the problem still occurs on shop layout (product -> cart -> purchase) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5165445</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Min%20Park" timestamp="Mar 20, 2013 4:07 PM">
+<s>back to initial enquiry, it would be great for us if bc development team give us just rough information on new features being implemented. 
+</s><s>say "paypal standard on standalone webform" is at considered as "to be implemeneted" then you can at least let us know it's "being considered" because at this stage we don't know whether each request is being considered or disregarded. 
+</s><s>in addition to simon's word, small business or individuals like us try to stick to one platform (bc here) and some time it's hard to manage jobs.</s><s> we dropped quite few bc websites and chose other ecommerce platform for because of bc's lack of basic function (i still think bc is a great platform and that's why we stick to it but some time it still doesn't make sense to be honest) 
+</s><s>for instance, a customer wanted forum functionality on bc for their staff communication & project sharing.</s><s> it's there but it's not usable.</s><s> it's too out dated, reply function doesn't make sense and forum editor is hopeless.</s><s> i've contacted bc support over few months and every time i get told that "it's been added to feature request." now i have no word to tell my client other than "impossible" so we planning to move the entire bc website to some other.</s><s> it's quite big loss for us, the client and bc as well.</s><s> i hope the "wishlist" comes back (not as anybody can add them but somehow as a "feature request" status board ?</s><s>) 
+</s><s>anyway, these days a lot of people come to us requesting modern & simple purchasing style but it cannot be done via the shop layout so i guess this might need to be answered soon.</s><s> otherwise we need to move (in australia) to payflow.</s><s> set up fee is $300 and there's $45 monthly fee as well, why so different from us free payflow account?</s><s> this is australia then we will need to cancel current payment gateway plan and maybe existing merchant account as well, what a pain it could be ! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5165465</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Liam%20Dilley" timestamp="Mar 20, 2013 4:47 PM">
+<s>with the infustructure work being done this year and not much on the bc side of things for a while, maybe at the end of the year but more likely not till next year. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5197089</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Todd%20H%26M" timestamp="Apr 1, 2013 1:41 PM">
+<s>i'm all for bringing back the 'wishlist' so that feature request are logged and viewed by bc partners.</s><s> i understand that bc itself can't give us exact dates on when a feature would be coming but they could at least show us what they see as a priority on the list.</s><s> the old wish list seem like a good way to do this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5589554</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Katrina%20Lees" timestamp="Aug 12, 2013 10:23 PM">
+<s>i'm having the same issue with this error message appearing after processing a successful event sale/ticket. 
+</s><s>what i find absolutely frustrating is that 
+a/ taking payments for booking/events is as cluncky as it is b/ that nowhere does it say that non-seamless gateways are not compatible on webforms c/ despite numerous support tickets to bc - none of this has been brought to my attention and instead (and typically) bc palm the issue off as an issue with paypal.</s><s> does anyone know if reverting the return url in paypal to a normal webpage will work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5589551</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Aug 12, 2013 10:35 PM">
+<s>i think i tried that without success. 
+</s><s>it's frustrating, and kind of dumb too when you consider customers would simply expect it to work like other shopping experiences. 
+</s><s>other gateway options are not always practical or economical for small business users, especicially outside the us. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5589556</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Katrina%20Lees" timestamp="Aug 12, 2013 10:41 PM">
+<s>the next thing i am about to try is to turn off paypal auto return all together, and set the booking webform to 'redirect after submit'. 
+</s><s>hopefully that overrides sending the customer to /paymentprocess.aspx page? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/eCommerce/Discussions-4785932-5589673</DOCNO>
+<TEXT>
+<subject>Paypal redirect error - redirect ok for checkout but not for pay later invoices</subject>
+<post author="Liam%20Dilley" timestamp="Aug 13, 2013 1:00 AM">
+<s>hi katrina, a- bookings is one of the older parts of the bc system b - several places in the documention and the bc website it states payment on custom web forms is seamless only.</s><s> c- more often then not it is paypal setup issues.</s><s> personally the amount of people blaming bc for payment gateway setups 90% of them if not more are incorect details entered into bc or setup incorectly on the payment gateway side.</s><s> so you will get those 1st level support requests to go through all that very carefully. 
+
+@todd - the wishlist was decomissioned as it was not a really useful tool.</s><s> it did not really reflect the actual requirements or sollutions that need to happen in the right orders to achieve what we all need.</s><s> many people want something but not sure on how the solution should be done to achieve that.</s><s> most of the top end of the wishlist were things that should not have been there. 
+</s><s>booking system is a bit crap and that is why i build more often then not with web apps or the ecommerce. 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,544 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-851475</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="May 12, 2011 3:53 PM">
+<s>using sdk 4.5.0.20967 the error is thrown on line 3182: 
+<quote>
+<s>
+</s><s>while (containerlistindex == -1 && floatindex > 0) { floatindex--; floatinfo = _composedfloats[floatindex - 1]; containerlistindex = _floatsincontainer.indexof(floatinfo.graphic); } 
+
+</s></quote>floatindex is 1 when it enters the loop, then it is decresed to 0, then null gets assigned to floatinfo - when it is looking for: _composedfloats[-1] then it throws an error when it tries to access a property on floatinfo - which is set to null 
+here is the error: 
+<quote>
+<s>
+</s><s>typeerror: error #1009: cannot access a property or method of a null object reference. at flashx.textlayout.container::containercontroller/http://ns.adobe.com/textlayout/internal/2008::updategraphics()[c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flas hx\textlayout\container\containercontroller.as:3182]  
+
+</s></quote>
+
+i am not sure exactly how i am triggering this - i am trying to discern that - but if you have any thoughts - please let me know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3674330</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="May 12, 2011 6:01 PM">
+<s>here is an example of the bug, the yellow box in the textflow is an inlinegraphicelement.</s><s> click the red box at the bottom of the flow to start adding text.</s><s> it crashes once the inlinegraphicelement is pushed out of the visible area of the container. http://www.theyrule.net/test/tlf_images/singlecontainertest.swf this was published using the sdk 4.5.0.20967 
+</s><s>here is the same file published with hero - which still has the other inlinegraphic alignment problem - but does not have the runtime error: http://www.theyrule.net/test/tlf_images/singlecontainertesthero.swf 
+here is the source: 
+
+<quote>
+<s>package { 
+import flash.display.sprite; import flash.display.stagealign; import flash.display.stagescalemode; import flash.events.event; import flash.events.mouseevent; import flash.system.system; import flash.text.textfield; import flash.text.textformat; 
+import flashx.textlayout.container.containercontroller; import flashx.textlayout.container.scrollpolicy; import flashx.textlayout.edit.editmanager; import flashx.textlayout.elements.divelement; import flashx.textlayout.elements.inlinegraphicelement; import flashx.textlayout.elements.paragraphelement; import flashx.textlayout.elements.spanelement; import flashx.textlayout.elements.textflow; import flashx.textlayout.formats.textlayoutformat; import flashx.textlayout.formats.verticalalign; import flashx.textlayout.tlf_internal; import flashx.undo.undomanager; 
+use namespace tlf_internal; 
+[swf (width="500", height="700", backgroundcolor="#ffffff")] 
+public class singlecontainertest extends sprite { 
+protected var tf:textflow; protected var em:editmanager; protected var um:flashx.undo.undomanager protected var _bg:sprite; protected var _spr:sprite; protected var _cc:containercontroller protected var _init_fmt:textlayoutformat; protected var _btn:sprite; protected var _playing:boolean = false; protected var _count:int = 0; 
+protected var _graph:sprite; protected var _print_out:textfield; protected var _last_time:date = new date(); protected var _last_five:array = []; 
+public function singlecontainertest() { 
+stage.scalemode = stagescalemode.no_scale; stage.align = stagealign.top_left; 
+var cw:number = 200; // the container width var ch:number = 600; // the container height 
+_bg = new sprite(); _bg.graphics.linestyle(.25, 0); _bg.graphics.drawrect(0,0,cw,ch); addchild(_bg); 
+_spr = new sprite(); addchild(_spr); 
+_graph = new sprite(); _graph.x = cw + 10; _graph.y = 250; addchild(_graph); 
+_print_out = new textfield(); var fmt:textformat = _print_out.defaulttextformat; fmt.font = "_sans"; _print_out.wordwrap = true; _print_out.multiline = true; _print_out.width = stage.stagewidth - (10 + _graph.x); _print_out.x = _graph.x; _print_out.y = _graph.y + 10; addchild(_print_out); 
+//define textflow and manager objects tf = new textflow(); um = new undomanager(); em = new editmanager(um); tf.interactionmanager = em; 
+//compose textflow to display _cc = new containercontroller(_spr,cw,ch); //_cc.verticalalign = verticalalign.bottom; //_cc.verticalscrollpolicy = scrollpolicy.on; tf.flowcomposer.addcontroller(_cc); tf.flowcomposer.updateallcontrollers(); 
+//make a button to add inline graphic elements _btn = new sprite(); _btn.graphics.beginfill(0xff0000,1); _btn.graphics.drawrect(0,0,120,30); addchild(_btn); _btn.addeventlistener(mouseevent.click, btnclicked); _btn.y = 600; 
+addmessage("1"); addmessage("2"); addmessage("3", true); } 
+public function addmessage(msg:string, add_image:boolean = false):void { //define elements to contain text var d:divelement = new divelement(); var p:paragraphelement = new paragraphelement(); var s:spanelement = new spanelement(); s.text = msg; //add these elements to the textflow p.addchild(s); d.addchild(p); if(add_image){ var sp:sprite = new sprite(); sp.graphics.beginfill(0xffcc00); sp.graphics.drawrect(0,0,100,20); var i:inlinegraphicelement = new inlinegraphicelement(); i.source = sp; i.width = 100; i.height = 20; p.addchild(i); } tf.addchild(d); tf.flowcomposer.updateallcontrollers(); _cc.verticalscrollposition = _cc.getcontentbounds().height; tf.flowcomposer.updateallcontrollers(); } 
+protected function btnclicked(e:mouseevent):void { _playing = !_playing; removeeventlistener(event.enter_frame, onenterframe); if(_playing){ addeventlistener(event.enter_frame, onenterframe); } } 
+protected function onenterframe(e:event):void { _count++; 
+if(_count > 100){ tf.removechildat(0); } 
+addmessage("message number: " + _count + " " + randomstring()); printout() } 
+protected function printout():void { var now:date = new date(); var tm:number = (now.gettime() - _last_time.gettime()); _last_five.push(tm); if(_last_five.length > 10) _last_five.shift(); var avg_tm:number = 0; for(var i:int = 0; i < _last_five.length; i++) avg_tm += _last_five[i]; avg_tm = math.round(avg_tm/_last_five.length); var elapsed_str:string = "message: \t\t\t"+_count + "\ntime: \t\t\t\t" + tm + "ms" + "\navg of last 10:\t\t" + avg_tm +"ms"; //trace(elapsed_str ); _print_out.text = elapsed_str; _last_time = now; drawgraph(tm); } 
+protected function drawgraph(tm:number):void { if(_count % 5 == 0){ _graph.graphics.beginfill(0x0); _graph.graphics.drawrect(_count/10,-math.round(tm/10),1,1); _graph.graphics.beginfill(0xff0000); _graph.graphics.drawrect(_count/10,-math.round(system.totalmemory/1000 000),1,1); } } 
+protected function randomstring():string { var chars:string = "abcdefghijklmnopqrstuvwzyz "; var chars_len:number = chars.length; var random_str:string = ""; var num_chars:number = math.round(math.random() * 100); for (var i:int =0; i < num_chars; i++){ random_str = random_str + chars.charat(math.round(math.random() * chars_len)); } return random_str; } } } 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3674759</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="May 13, 2011 12:46 AM">
+<s>it can be reproduced with sdk 4.5 (tlf 2.0.232 in it).</s><s> but your code works well without any runtime error when compiled with tlf 3.0.5 on my machine, which is not released officially to the outside of adobe.</s><s> i'm not sure when flex team will add tlf 3.0 into their sdk.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3674764</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="May 13, 2011 1:03 AM">
+<s>i will ask my workmate whether we can release a 3.0 tlf on https://sourceforge.net/adobe/tlf/home/ next week.</s><s> i'm not sure the time point is all right.</s><s> pls wait for the reply. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3676048</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="May 13, 2011 12:50 PM">
+<s>thanks, will this fix be back ported into tlf 2.x?</s><s> we are looking for a stable version of tlf 2 to get out our next release, scheduled for june 1.</s><s> we would also like to make use of a common rsl swz file such as: http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textlayout_2.0.0.232 .swz 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3679853</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="May 15, 2011 7:54 PM">
+<s>i'm trying to connect with flex guys.</s><s> but i'm not sure of the result. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3686577</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="May 18, 2011 11:49 AM">
+<s>i can not find a work around to this bug.</s><s> i have updated our code to use tlf 2 - but cannot deploy it because of this.</s><s> we are in a bind.</s><s> there are a growing number of complaints in this forum about this bug - i suspect it will be widespread.</s><s> there is no version of tlf 2 available which is usable - i think it would be a great mistake not to back-port the fix for this bug into tlf 2.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3687949</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="May 19, 2011 12:26 AM">
+<s>we have realized our mistake and want to back port the fix to the the old version of tlf.</s><s> it need a lot of tests and processes.</s><s> and we cannot control the time point when flex team will pick up our build.</s><s> tlf and flex are not the same team.</s><s> we are begging flex team to pick up new tlf build these days...picking up new build also need a lot of test. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3689057</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="May 19, 2011 9:47 AM">
+<s>thank you so much, that is good news. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3785864</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="Jul 7, 2011 6:21 PM">
+<s>has there been any progress on this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3790669</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Jul 10, 2011 8:34 PM">
+<s>tlf 2.1 has been released with several bug fixes but without new features.</s><s> flex sdk may pick up it this autumn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3791804</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="Jul 11, 2011 10:11 AM">
+<s>imho it should be a priority to get the fixes to the runtime errors included in the sdk.</s><s> i will try the 2.1 update as sson as i can. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3801876</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="talkingcat" timestamp="Jul 15, 2011 2:54 PM">
+<s>does tlf 2.1 fix this bug?</s><s> where can i find tlf2.1? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3804470</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Jul 17, 2011 7:44 PM">
+<s>1. yes.</s><s> 2. tlf 2.1 will be on http://sourceforge.net/projects/tlf.adobe/files this week. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3890885</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="Aug 29, 2011 6:36 PM">
+<s>thanks i see the latest tlf 2.1 files.</s><s> it still hasn't been included in the flex sdk - is there any indication that it will be?</s><s> also i could not find an adobe hosted swz file at: http://fpdownload.adobe.com/pub/swz/tlf/2.1.0.006/textlayout_2.1.0.006 .swz i came up with that url from the build and branch numbers in the textlayoutversion class - which correspond in the 2.0 builds e.g: http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textlayout_2.0.0.232 .swz is there any indication when tlf 3.0 will be included in the flex sdk or in the ide?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3891115</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Aug 29, 2011 10:54 PM">
+<s>tlf 2.1 won't be included.</s><s> tlf 3.0 will probably be in flex sdk next year. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3892649</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="Aug 30, 2011 12:28 PM">
+<s>can you put up a signed swz file for tlf 2.1 - so that users can cache it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3893463</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Aug 30, 2011 11:41 PM">
+<s>i uploaded a swz to https://sourceforge.net/projects/tlf.adobe/files/2.1/6/ 
+ps: i don't think sourceforge.net can be rsl server, because it redirects you to a new link when downloading and there is time stamp within the redirection link.</s><s> you may want to find a server for yourself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3902465</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="Sep 5, 2011 10:34 AM">
+<s>no free service will tolerate hosting this file - we have a 1 gigabit per second connection which would be saturated by this.</s><s> i understood that the point of hosting these files on the flash player server was that adobe was treating these swz files much like the player itself.</s><s> something that can be downloaded once and cached and is useful for multiple third parties.</s><s> one of the reasons that we adopted tlf in the first place was because despite the fact that it had a large actionscript overhead - that code would be centrally hosted by adobe and used by many third party sites. 
+</s><s>is there anyway that you can have this swz hosted at the regular location: http://fpdownload.adobe.com/pub/swz/tlf/... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3903212</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Sep 5, 2011 8:10 PM">
+<s>usually, flex sdk pick up one build of tlf and then upload the swz to that server.</s><s> we will have a try. 
+</s><s>but i prefer to upload a tlf 3.0 swz, because i think for now using 2.1 is meaningless.</s><s> 1. there is still rte found in 2.1, but which cannot be reproduced in 3.0.</s><s> 2. in 3.0, there are only one simple feature, performance enhancement and dozens of bug fixes.</s><s> we did not change the framework and apis.</s><s> since both 2.1 and 3.0 have never go through the tests of flex sdk, why not to choose 3.0.</s><s> 3. we are focusing on and sell our 3.0 and don't plan to make any changes on 2.1. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3916457</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="josh_on" timestamp="Sep 13, 2011 12:00 PM">
+<s>do you know when the earliest date that the 3.0 swz will be uploaded?</s><s> could that happen before next year? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3917066</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Sep 13, 2011 7:04 PM">
+<s>we are trying to get the access to upload rsl on that server.</s><s> if we got the access, rsl will be there soon.</s><s> but i cannot promise you the time.</s><s> i will tell you here if state changes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3924538</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="bogdan_cs4" timestamp="Sep 19, 2011 5:36 AM">
+<s>hi.</s><s> 
+</s><s>i've noticed that tlf 3.0 was launched on sourceforge.</s><s> my question is: how can i update my flex sdk to use the new tlf?</s><s> i've copied the new folders of tlf 3.0 over the old ones but that does not help. 
+</s><s>any help is apreciated.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3925020</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="rr404" timestamp="Sep 19, 2011 9:21 AM">
+<s>i'd like to +1 the questions about integrating the tlf 2.1 (waiting for the 3.0swz) to my project. 
+
+</s><s>in flashbuilder i have 3 projects: 
+
+2 library projects representing my appframework (core and utils) 1 appproject 
+
+</s><s>in my libraries projects the framework linkage is external.</s><s> i tried to remove textlayout.swc from the flex4.5 linkage and add the one provided here:http://sourceforge.net/projects/tlf.adobe/files/2.1/6/textlayoutbuild. zip (the libs/textlayout.swc file) i also tried to replace the swc file in my flex lib : flex4.5\frameworks\libs 
+
+</s><s>in parallele in my app project i changed the rsl and crossdomain url to one of my server's url where i uploaded the swz you linked http://sourceforge.net/projects/tlf.adobe/files/2.1/6/textlayout_2.1.0 .</s><s>6.swz tried with and without the verify rsl digest option. 
+
+</s><s>so far no luck 
+
+i also tried in a release build i did to savagely paste textlayout_2.1.0.6.swz and rename it like the 2.0... one i had (i thought it worked for a second but unfortunatly didn't) 
+
+</s><s>any hints on a way to use the fixed lib instead of the 2.0 ? 
+
+</s><s>thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3926675</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Sep 20, 2011 3:07 AM">
+<s><quote>
+<s>in my libraries projects the framework linkage is external.</s><s> i tried to remove textlayout.swc from the flex4.5 linkage and add the one provided here:http://sourceforge.net/projects/tlf.adobe/files/2.1/6/textlayoutbuild. zip (the libs/textlayout.swc file) i also tried to replace the swc file in my flex lib : flex4.5\frameworks\libs 
+
+</s><s>in parallele in my app project i changed the rsl and crossdomain url to one of my server's url where i uploaded the swz you linked http://sourceforge.net/projects/tlf.adobe/files/2.1/6/textlayout_2.1.0 .</s><s></s><s>6.swz tried with and without the verify rsl digest option. 
+</s></quote>1. rsl libraries in frameworks\libs are just copies of the libraries on the server.</s><s> they are not linked in your runtime.</s><s> 2. it should work that you change link configuration of sdk.</s><s> but http://sourceforge.net/projects/tlf.adobe/files/2.1/6/textlayout2.0.0.</s><s> 6.swz will be redirect to another place when you try to download the that swz...so the link showed on sourceforge cannot work.</s><s> url for swz should always be a direct link.</s><s> please wait for the rsl library on adobe hosted server or you put rsl libraries on your own server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3926676</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Sep 20, 2011 3:11 AM">
+<s><quote>
+<s>bogdan_cs4 wrote: 
+hi. 
+</s><s>i've noticed that tlf 3.0 was launched on sourceforge.</s><s> my question is: how can i update my flex sdk to use the new tlf?</s><s> i've copied the new folders of tlf 3.0 over the old ones but that does not help. 
+</s><s>any help is apreciated.</s><s> thanks 
+</s></quote>if you set project as merge-into-code, just place the textlayout.swc in folder \frameworks\libs.</s><s> if set as runtime-shared-library, you need to change the url in configuration file frameworks\flex-config.xml. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3928992</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="bogdan_cs4" timestamp="Sep 21, 2011 12:06 AM">
+<s>i've copied the textlayout.swc file into the \frameworks\libs folder but i keep getting the same error.</s><s> only now i can't see the content of the containercontroller class.</s><s> the stack trace only indicates that the error comes from the updategraphics method. 
+</s><s>are you certain that there isn't anything else to do in order to make the tlf 3.0 work in the flex sdk?</s><s> is there an ant build neccesary? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3929101</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Sep 21, 2011 12:52 AM">
+<s>i'm sure.</s><s> pls pay attention to my last reply and your configuration.</s><s> did you set framework linkage of project as merge-into-code?</s><s> have you cleaned your project and re-compile? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3929119</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="bogdan_cs4" timestamp="Sep 21, 2011 1:21 AM">
+<s>sorry for that.</s><s> my project is set to runtime-shared-library.</s><s> what url in particular do i have to modify? 
+<!-- textlayout swc --> <runtime-shared-library-path> <path-element>libs/textlayout.swc</path-element> <rsl-url>http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textlayout_2.0.0.232 .swz</rsl-url> <policy-file-url>http://fpdownload.adobe.com/pub/swz/crossdomain.xml</policy-file-url> <rsl-url>textlayout_2.0.0.232.swz</rsl-url> <policy-file-url></policy-file-url> </runtime-shared-library-path> 
+</s><s>is it here somewhere?</s><s> i'm new to flex so please bare with my silly questions.</s><s> i really appreaciate your help jin. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-3931022</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Sep 21, 2011 6:23 PM">
+<s>for now, there is no available rsl-url for 3.0 rsl library.</s><s> we are applying for the access of http://fpdownload.adobe.com to upload 3.0 rsl library.</s><s> if you have your own server, you can put 3.0 swz on it and use your own url.</s><s> the url must be direct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4329312</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="zyatkov" timestamp="Apr 12, 2012 2:32 AM">
+<s>jin-huang thank you too much for your help.</s><s> could you please help me.</s><s> i have made chat where i used component textlayout.</s><s> i had issue with freezing scrollbar.</s><s> then i downloaded textlayout 3.0 and issue was fixed.</s><s> but then i had new issue at some point chat is blank, wipe and doesn't write any message.</s><s> before this happens i catch error: typeerror: error #1009: cannot access a property or method of a null object reference. 
+at flashx.textlayout.container::containercontroller/http://ns.adobe.com/textlayout/internal/2008::updategraphics()[c:\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\co ntainer\containercontroller.as:3461] 
+at flashx.textlayout.container::containercontroller/http://ns.adobe.com/textlayout/internal/2008::updatecompositionshapes()[c:\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\co ntainer\containercontroller.as:3152] 
+at flashx.textlayout.compose::standardflowcomposer/updatecompositionshap es()[c:\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\ compose\standardflowcomposer.as:616] 
+at flashx.textlayout.compose::standardflowcomposer/updatetocontroller()[ c:\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\compo se\standardflowcomposer.as:559] 
+at flashx.textlayout.container::containercontroller/updateforscroll()[c: \vellum\dev\output\opensource\textlayout\src\flashx\textlayout\contain er\containercontroller.as:1191] 
+at flashx.textlayout.container::containercontroller/set verticalscrollposition()[c:\vellum\dev\output\opensource\textlayout\s rc\flashx\textlayout\container\containercontroller.as:1057] 
+at flashx.textlayout.container::containercontroller/autoscrollifnecessar yinternal()[c:\vellum\dev\output\opensource\textlayout\src\flashx\text layout\container\containercontroller.as:1899] 
+at flashx.textlayout.container::containercontroller/autoscrollifnecessar y()[c:\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\c ontainer\containercontroller.as:1869] 
+at flashx.textlayout.container::containercontroller/mousemovehandler()[c :\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\contai ner\containercontroller.as:2297] 
+at flashx.textlayout.container::containercontroller/http://ns.adobe.com/textlayout/internal/2008::rootmousemovehandler()[c:\vellum\dev\output\opensource\textlayout\src\flashx\textlayout\co ntainer\containercontroller.as:2305]  i used flex builder 4.5.0.</s><s> i am sure that i set all properties correct (merge-into-code etc).</s><s> so can i take source code this library?</s><s> maybe should i update flex builder etc. please help us. thank you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4329956</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Apr 12, 2012 7:44 AM">
+<s>http://sourceforge.net/projects/tlf.adobe/files/3.0/ you can download the source code from the link above.</s><s> copy the .as file into your project and remove the swc (i mean you compile your application with tlf code, not swc), you will know exactly which line failed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4471334</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Kevinsoffice" timestamp="Jun 6, 2012 1:12 PM">
+<s>in many of your post you keep saying that you can just host the libaray on your own server.</s><s> ive been trying to do that and i keep getting the following error... 
+</s><s>flex error #1001: digest mismatch with rsl http://www.domain.com/test/textlayout.swf.</s><s> redeploy the matching rsl or relink your application with the matching library. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4472216</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Jun 6, 2012 9:59 PM">
+<s>without special settings, application can only take advantage of rsl with adobe certificate, not test certificate.</s><s> on sourceforge.net, rsls are all with test certificate.</s><s> you can try the rsl on adobe server http://download.macromedia.com/pub/swz/tlf/3.0.0.29/textlayout_3.0.0.2 9.swz http://download.macromedia.com/pub/swz/tlf/3.0.0.29/textlayout_3.0.0.2 9.swf 
+i just uploaded them.</s><s> there is a delay.</s><s> maybe you want to wait for several hours. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4473527</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Kevinsoffice" timestamp="Jun 7, 2012 8:54 AM">
+<s>i want to clarify, ive seen you mention a few times about the test certificate.</s><s> but what does that exactly mean? 
+</s><s>are you saying that all textlayout version 3 and higher are only compiled using a test certificate which will never work in a production environment? 
+</s><s>if i download the .swz from the link above and host it on my server with my applet.swf the general public still can not run the applet? 
+</s><s>if that is true, if it is not possible to use textlayout version 3 in a completed production ready applet then why is it even being offered for use?</s><s> granted it was nice of your team to fix the bugs and get a new version ready but if we cant use it...</s><s> i feel frustrated because our project has already been coded using text flow v3 but if we cant offer it to the public then what was the point?</s><s> all of that development was wasted as now we will need to downgrade back to mx components. 
+</s><s>you jin huang have been helpful so dont take it personal, my frustration is towards the adobe company and their inefficient structure. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4473530</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Kevinsoffice" timestamp="Jun 7, 2012 8:59 AM">
+<s>by the way...</s><s> 11 hours after you have uploaded the files they are still not available.</s><s> i also do not understand how there is a "delay" in the uploading process.</s><s> did you physically upload the files to the server or did you submit the files to someone else who will upload to the server? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4475856</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Jun 8, 2012 2:54 AM">
+<s>i have also uploaded the rsl to http://sourceforge.net/projects/tlf.adobe/files/3.0/current/rsl/.</s><s> do remember that the link of sourceforge.net cannot be the link for rsl in the configuration file, because there is a re-direction on that website.</s><s> for http://download.macromedia.com issue, i have communicated with related colleagues.</s><s> sorry for that delay.</s><s> that server is an adobe hosted server.</s><s> it needs to be really cautious to upload something onto adobe hosted server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4476565</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Kevinsoffice" timestamp="Jun 8, 2012 8:33 AM">
+<s>thank you for the 2nd upload location, i was able to download the files.</s><s> yes my intention is to host the files myself as i would not expect my project to rely on the servers of someone else outside of my control. 
+</s><s>however i am still wanting to know about the code signing issue.</s><s> are these files signed with only test certificates?</s><s> is the swf and swz able to be used by the general public's version of flash player? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4476687</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Kevinsoffice" timestamp="Jun 8, 2012 9:25 AM">
+<s>omg, im about to go postal...</s><s> i just tried running my project using the new textlayout_3.0.0.29.swz and the error is back.</s><s> the same error that exsisted in tlf2 which was fixed in version 3 is now back when using the swz.</s><s> how did that happen?</s><s> was build 29 swz accidently compiled with version 2 code? 
+</s><s>the error is when using textflow in a spark textarea.</s><s> if you include an image with editmanager.insertinlinegraphic() an error happens once the graphic scrolls out of the visible area and into the scroll buffer.</s><s> if i do not use textlayout_3.0.0.29.swz and only use the textlayout.swc from http://sourceforge.net/projects/tlf.adobe/files/3.0/current/textlayout _build.zip/download the error does not happen. 
+</s><s>why do you think the error happens with the swz but not when using the build 29 source directly?</s><s> was there a mistake in building the swz?</s><s> how can this be fixed?</s><s> however, depending on your answer about if build 29 swz was compiled with a test certificate or not, all of this might not matter if we can not use the swz at the production level. 
+
+
+---------- error given in flash builder ---------- 
+typeerror: error #1009: cannot access a property or method of a null object reference. at flashx.textlayout.container::containercontroller/http://ns.adobe.com/textlayout/internal/2008::updategraphics()[c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flas hx\textlayout\container\containercontroller.as:3182] at flashx.textlayout.container::containercontroller/http://ns.adobe.com/textlayout/internal/2008::updatecompositionshapes()[c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flas hx\textlayout\container\containercontroller.as:3080] at flashx.textlayout.compose::standardflowcomposer/updatecompositionshap es()[c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\fl ashx\textlayout\compose\standardflowcomposer.as:616] at flashx.textlayout.compose::standardflowcomposer/updatetocontroller()[ c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flashx\ textlayout\compose\standardflowcomposer.as:559] at flashx.textlayout.compose::standardflowcomposer/updateallcontrollers( )[c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flash x\textlayout\compose\standardflowcomposer.as:517] at flashx.textlayout.container::textcontainermanager/updatecontainer()[c :\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flashx\t extlayout\container\textcontainermanager.as:1343] at spark.components::richeditabletext/updatedisplaylist()[e:\dev\4.y\fra meworks\projects\spark\src\spark\components\richeditabletext.as:2974] at mx.core::uicomponent/validatedisplaylist()[e:\dev\4.y\frameworks\proj ects\framework\src\mx\core\uicomponent.as:8999] at mx.managers::layoutmanager/validateclient()[e:\dev\4.y\frameworks\pro jects\framework\src\mx\managers\layoutmanager.as:1033] at mx.core::uicomponent/validatenow()[e:\dev\4.y\frameworks\projects\fra mework\src\mx\core\uicomponent.as:8077] at main::chatwindow$/displaychattext()[c:\users\user\flash projects\chatbroadcast\src\main\chatwindow.as:38] at main::serverlistener$/msgfromuser()[c:\users\user\flash projects\chatbroadcast\src\main\serverlistener.as:20] at main::remoteclient$/msgfromuser()[c:\users\user\flash projects\chatbroadcast\src\main\remoteclient.as:12] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/Text-Layout-Framework/Discussions-3674136-4476825</DOCNO>
+<TEXT>
+<subject>Getting a runtime error in ContainerController</subject>
+<post author="Jin-Huang" timestamp="Jun 8, 2012 9:42 AM">
+<s>firstly, those newly uploaded swz & swf are signed with adobe certificate.</s><s> so they are able to be used by the general public's version of flash player.</s><s> for the error, i think it's your fault.</s><s> "c:\vellum\branches\v2\2.0\dev\output\opensource\textlayout\src\flas hx\textlayout\container\containercontroller.as" is definitely the absolute path on your pc, right?</s><s> you are compiling with 2.0 code.</s><s> please search in the forum for rsl configurations.</s><s> you are supposed to change flex-config.xml, replace the swc and swf in sdk, replace the link for swz, and so on. 
+</s></post>
+</TEXT>
+</DOC>
+
+

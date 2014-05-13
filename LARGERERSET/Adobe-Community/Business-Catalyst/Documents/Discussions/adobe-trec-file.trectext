@@ -1,0 +1,1093 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6233011-1433779</DOCNO>
+<TEXT>
+<subject>SEO Metadata options not display in admin panel issue.</subject>
+<post author="Kalpesh" timestamp="Mar 21, 2014 11:36 PM">
+<s>seo metadata options not display in admin panel issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6233011-6233229</DOCNO>
+<TEXT>
+<subject>SEO Metadata options not display in admin panel issue.</subject>
+<post author="Liam%20Dilley" timestamp="Mar 22, 2014 5:05 AM">
+<s>hi there, not much information or detail there.</s><s> if the new meta option on pages is what you are refering to then the site in question is likely not been upgraded to that beta feature.</s><s> only partners who have access to beta options under settings can access that to upgrade. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-1074264</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Justin Brock" timestamp="Sep 29, 2012 7:04 PM">
+<s>i've successfully added ecommerce tracking for google analytics to my business catalyst sites.</s><s> i haven't found any [free] definitive guides out there, so i thought i'd share.</s><s> business catalyst files for the tracking script, the business catalyst file you need to have opened is /layouts/onlineshop/order_receipt-us.html.</s><s> however, you also need to add the google analytics script - with out the ecommerce modification - to all the pages on your site.</s><s> i recommend putting in the <head> of your page templates.   google analytics ecommerce tracking to start tracking business catalyst ecommerce transactions with google analytics, here are the steps you need to take.</s><s> log into google analytics and navigate to the profile settings page for the business catalyst site.</s><s> under "ecommerce settings" select "yes, this is an e-commerce site".</s><s> while still in analytics, go to the "tracking code" tab under your profile.</s><s> don't grab the code from the standard tab.</s><s> instead, select "advanced".  when someone goes through the cart on a business catalyst site, the domain switches to *.worldsecuresystems.com.</s><s> so you need to select "multiple top-level domains".</s><s> i would also select the check boxes for adwords campaigns, doubleclick data and track online ad campaigns from other providers the script google shows you on this page is what you should put on all your page templates.</s><s> now you're ready to grab that code and modify it for ecommerce tracking.</s><s> the code given in google analytics should go on all the pages of your website.</s><s> the easiest way to accomplish that is to put it on all your templates.</s><s> however, there's one more step.</s><s> you then need to modify the code for your receipt page as shown below.</s><s> finally, place that modified code on the /layouts/onlineshop/order_receipt-us.html page.</s><s> here's what it should look like modified.</s><s> [you'll need to close the script tags, of course.</s><s>]     
+            
+        script type="text/javascript"
+        var _gaq = _gaq || [];
+        _gaq.push(['_setaccount', 'ua-*******-*']);  // your google analytics profile id
+        _gaq.push(['_setdomainname', 'example.com']); // your domain name - not *.worldsecuresystems.com, but the domain you've chosen for your site
+        _gaq.push(['_setallowlinker', true]);
+        _gaq.push(['_trackpageview']);
+        _gaq.push(['_addtrans', "{tag_orderid}", // order id
+                   "", // affiliation
+                   "{tag_amount}", // total
+                   "", // tax
+                   "", // shipping
+                   "", // city
+                   "", // state
+                   "" // country
+                  ]);
+        _gaq.push(['_tracktrans']);
+        
+        (function() {
+            var ga = document.createelement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getelementsbytagname('script')[0];
+            s.parentnode.insertbefore(ga, s);
+        })();
+    /script result you won't see all the details about the purchase in google analytics.</s><s> that's because business catalyst does not pass all the needed variables to the order receipt page.</s><s> [perhaps that's a feature request.</s><s>]   however, it's still valuable to know the order id and revenue in google analytics - knowing which sources drive your revenue is critical.</s><s> it's also pretty easy to grab the order id [under ecommerce > transactions in google analytics] and look in your business catalyst site for the order.</s><s> here's a screenshot of the results i saw on the first day.   
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4741846</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="mario_gudelj" timestamp="Oct 1, 2012 5:47 PM">
+<s>i love this article, j!</s><s> is it ok if a convert it to a document?</s><s> please post your site here so that i can link it on the bottom and give you a proper credit for it. 
+</s><s>thanks for sharing your knowledge with the community! 
+-m 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4741914</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Oct 1, 2012 6:53 PM">
+<s>thanks.</s><s> you can link to http://brockms.com/.</s><s> but i'd want to make it a bit more thorough before you turn it into a document.</s><s> would that be something i send you in a message? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4742019</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="mario_gudelj" timestamp="Oct 1, 2012 8:34 PM">
+<s>yes.</s><s> please pm me once you're happy with it. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4765333</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="mattbennell" timestamp="Oct 10, 2012 7:15 PM">
+<s>fantastic - thanks for your efforts brockms - was doing my head in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4779596</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="monikart" timestamp="Oct 16, 2012 3:10 PM">
+<s>how/where do i access/open this page: /layouts/onlineshop/order_receipt-us.html 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4779671</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="SproutCreatives" timestamp="Oct 16, 2012 3:24 PM">
+<s>you can either navigate in the bc backend: site manager > module templates > online shop layouts > recipt - buy 
+or through dreamweaver 
+root > layouts > onlineshop > order_receipt-us.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4781830</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="monikart" timestamp="Oct 17, 2012 10:52 AM">
+<s>thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4796507</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Marius_Andreiana" timestamp="Oct 24, 2012 4:49 AM">
+<s>justin, thanks a lot for sharing. 
+</s><s>you mentioned that's because business catalyst does not pass all the needed variables to the order receipt page 
+would you please list what else bc should make available in order to make it possible to produce the desired ga reports?</s><s> we will look at adding those. 
+</s><s>and what are the reports you're usually looking at in ga for your bc sites? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4796640</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Oct 24, 2012 5:54 AM">
+<s>google analytics could collect the following if business catalyst passed it to the order_receipt-us.html page. order id - necessary to associate item with transaction sku/code - required product name - necessary to associate revenue with product category or variation unit price - required quantity - required affiliation or store name total - required tax shipping cost shipping city shipping state or province shipping country 
+these two articles should get business catalyst developers a long way toward enabling this https://developers.google.com/analytics/devguides/collection/gajs/gatr ackingecommerce https://developers.google.com/analytics/devguides/collection/gajs/meth ods/gajsapiecommerce 
+it would be nice if this were a simple site setting option in the admin console.</s><s> i built a wordpress store once, for instance, that only required my google analytics profile id (the 'ua-*******-*' number).</s><s> once i entered it, analytics worked site wide and transactions showed up, too. 
+</s><s>in google analytics, i look at a number of reports.</s><s> i'll use the reports under the advertising tab to evaluate my return on ad spend.</s><s> i also use the reports under the conversions tab to work backwards from purchases and completed goals to sources or site changes that impacted them. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4796621</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Marius_Andreiana" timestamp="Oct 24, 2012 6:07 AM">
+<s>thanks justin.</s><s> 
+</s><s>we're aiming to make ga fully work with bc as easily as providing your profile id, and the information you provided here helps us in this direction. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4796636</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Oct 24, 2012 6:09 AM">
+<s>that's wonderful!</s><s> thank you and let me know if i can help in any other way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4821544</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Nov 3, 2012 8:04 PM">
+<s>marius, 
+</s><s>what's missing is the transactional data for each product. 
+</s><s>we have to do a massive cookie workaround to pass each of the products purchased across so we can get a complete picture of the order processed.</s><s> not just the total. 
+</s><s>like justin said, you've got access to google's dev code so it's pretty self explanatory what we need. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4821546</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Nov 3, 2012 8:06 PM">
+<s>justin, i'd like to get you a hand with this doco.</s><s> i've got a few tips i can share. 
+</s><s>for example if you put the {tag_amount} into a variable you can re-use it for things like event tracking. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4828535</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="DandyDahlia" timestamp="Nov 6, 2012 4:42 PM">
+<s>thanks justin!</s><s> you are a super star for sharing this.</s><s> just what i was looking for 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-4828611</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="DandyDahlia" timestamp="Nov 6, 2012 5:28 PM">
+<s>just wanted to check - i've only got the tracking code in the default template so do i paste the full code again in the receipt-buy section (even though it uses the default template) or is it ok to just at the below to the default template? 
+_gaq.push(['_addtrans', "{tag_orderid}", // order id "", // affiliation "{tag_amount}", // total "", // tax "", // shipping "", // city "", // state "" // country ]); _gaq.push(['_tracktrans']); 
+sorry if a silly question 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-5279891</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="djtetsu1" timestamp="Apr 30, 2013 9:50 AM">
+<s>doesn't work?</s><s>?</s><s> it stops tracking when it goes to the world secure systems.</s><s> no listing of any pages when they go to that site.</s><s> i double checked everything, the code is on all pages, and on the receipt page it should be correct. 
+btw the code listed shows doubleclick.net versus google.com (but neither i think works). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-5565941</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Jonathan%20%40%20OLCT" timestamp="Aug 4, 2013 6:16 PM">
+<s>this guide will help you get around the *.worldsecuresystem.com problem   http://www.itbusiness.com.au/_blog/blog/post/business_catalyst_vs_goog le_analytics_cross_domain_tracking/   - jonathan from http://www.olct.co/
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-5995060</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Pebble%20Design" timestamp="Jan 8, 2014 7:56 PM">
+<s>thank you for this.</s><s> i am able to get this working by setting the domain name to 'none'. 
+</s><s>to dandydahlia and any others having this issue: i created a separate template for the receipt layout and removed the default analytics code from this. 
+</s><s>cheers, klaye 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6034426</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Jan 20, 2014 9:08 PM">
+<s>if anyone is interested with cross domain revenue tracking for products with bc's ecommerce module drop me a line. gary@itbusiness.com.au 
+currently you can only track the complete order but i've developed a method to now also track individual products as well. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6035006</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Jan 21, 2014 3:30 AM">
+<s>we would all like to know that, gary. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6038080</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Jan 21, 2014 5:02 PM">
+<s>yeah ..</s><s> i'm working on trying to standardise the process to make it easier to install as it's a bit more complicated than a cut and paste job; and if not installed correctly it will break the ordering process which is why i'm hesitant to write up a tutorial.</s><s> but i'll definately look at putting up some notes on my website when i'm confident of a diy install! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6083768</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="anuragvis" timestamp="Feb 4, 2014 1:36 AM">
+<s>awesome post sir..my ecommerce tracking is working perfectly in the analytic..but why it is showing (direct) / (none) under source / medium in my google analytic dashboard and also if you can let me know the exact thanks page after successful payment please. 
+</s><s>please see the screen shot : 
+
+
+</s><s>thanks !</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6084385</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Feb 4, 2014 6:40 AM">
+<s>you're showing (direct) / (none) under source/medium because the purchases that have been made so far came through direct traffic. 
+</s><s>as other sources send you converting traffic, you'll see other source/medium combinations: google / organic google / paid example.com / referral ... and so on. 
+</s><s>here's google's article on how to make sense of traffic sources: https://support.google.com/analytics/answer/1033173 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6084487</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="anuragvis" timestamp="Feb 4, 2014 6:45 AM">
+<s>but other sources are seen under bc dashboard and not under google analytics..any suggestions please? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6084649</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Feb 4, 2014 7:24 AM">
+<s>i've noticed a discrepancy between the two analytics before, as well.</s><s> i tend to trust google analytics more because i've had more experience with it.</s><s> plus, i'm pessimistic, and google shows fewer visits. :-) 
+</s><s>but in terms of your specific stats, make sure your date range only includes the time google analytics has been installed.</s><s> then make sure the business catalyst report only includes sources that resulted in purchases.</s><s> other than that, i'd need to look over your shoulder with a screen sharing tool to be of any use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6086538</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Feb 4, 2014 3:18 PM">
+<s>direct/none actually contains a lot more traffic sources than just from the website.</s><s> it's because google have been increasing "protecting" search privacy.</s><s> if you're logged into your gmail account and you are conducting searches google will encrypyt some of your search data which in turn doesn't always display correctly in analytics, hence the increase over the past couple years with direct/none traffic. 
+http://googleblog.blogspot.com.au/2011/10/making-search-more-secure.ht ml 
+there is not much you can do with this data other than try and run targeted campaigns 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6089983</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="justinbrock" timestamp="Feb 5, 2014 1:41 PM">
+<s>actually, that's not quite accurate.</s><s> google has increased secure search - it's nearly 100% on my site - but that doesn't alter how direct traffic is reported in google analytics. 
+</s><s>organic traffic, on the other hand, does report differently.</s><s> instead of seeing the keyword phrase someone searched on, you'll see (not provided) in the keyword column. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-4737785-6222459</DOCNO>
+<TEXT>
+<subject>How to set up Google Analytics Ecommerce Tracking for BC</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Mar 18, 2014 7:29 PM">
+<s>hi guys, i've been working for quite some time on a simple way to get this working and i'm now in the last stage of finishing a bc app for google analytics ecommerce product revenue tracking with business catalyst. 
+i want to beta test it before i release it on the app store so if anyone's interested please let me know.</s><s> there's a small setup fee, just to cover my time to manually install, so i can make any needed bug fixes.</s><s> or customise the app to handle more customised shopping carts. 
+</s><s>i've tried my best to make it work with any bc site, especially existing sites, which has been the main hurdle. 
+</s><s>currently it's running on over a dozen sites with good results. 
+</s><s>the app handles cross domain revenue tracking, tracks individual products, product attributes and product ids, order shipping locations, transation order & invoice ids, and now also handles orders from paypal transactions. 
+</s><s>currently i'm only supporting asynchronous tracking (not universal) but if you have universal installed, it will still work, but it's not loading the universal tracking script as google haven't release it out of beta.</s><s> if your google account is reliant on the additional features of universal tracking, we'll have a chat about it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6198606-1425293</DOCNO>
+<TEXT>
+<subject>How do i set a page as a template page?</subject>
+<post author="SureKB" timestamp="Mar 11, 2014 3:27 AM">
+<s>hi, 
+</s><s>i've tried copying the html coding from my page to a template page, but this isn't working. 
+</s><s>why is this not working and how can i fix this? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6198606-6198805</DOCNO>
+<TEXT>
+<subject>How do i set a page as a template page?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 11, 2014 5:46 AM">
+<s>hi there, you can not just copy html to a template page.</s><s> a template requires {tag_pagecontent} to run as a template, this renders layouts, page content etc. some info in the documentation for you here:http://helpx.adobe.com/business-catalyst/using/control-sites-look-feel .html#id_1911 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6198606-6198892</DOCNO>
+<TEXT>
+<subject>How do i set a page as a template page?</subject>
+<post author="SureKB" timestamp="Mar 11, 2014 6:23 AM">
+<s>hi liam, 
+</s><s>where would the {tag_pagecontent} have to appear in the html?</s><s> the information in the link doesn't really tell me. 
+i created my template in muse, but i'd like to set templates for my system pages, which i can't edit in muse. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6198606-6198934</DOCNO>
+<TEXT>
+<subject>How do i set a page as a template page?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 11, 2014 6:26 AM">
+<s>where your main content area will be.</s><s> that is up to you in terms of the build.</s><s> if you built a template in muse that is slightly different, probably already set up, i dont touch muse so i am not to sure how it works fully.</s><s> if you have a template though and you want to apply it to pages you need to log into your bc website, go to a web page and set the template to use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6197427-1425076</DOCNO>
+<TEXT>
+<subject>Domain Transfer</subject>
+<post author="VCM PRODUCTIONS" timestamp="Mar 10, 2014 3:55 PM">
+<s>how do i transfer my domain from a diferrent provider to adobe? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6197427-6197436</DOCNO>
+<TEXT>
+<subject>Domain Transfer</subject>
+<post author="Liam%20Dilley" timestamp="Mar 10, 2014 3:58 PM">
+<s>adobe does not manage domain hosting. you will need to keep your domain with your provider or move it to another if your not happy with them.</s><s> adobe bc handles your website and the all in one sollution with hosting.</s><s> you can setup and manage your domains in bc but you still need to have a domain registra with your domain. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6128708-1408669</DOCNO>
+<TEXT>
+<subject>Problem adding email accounts</subject>
+<post author="StephenLasko" timestamp="Feb 17, 2014 8:13 AM">
+<s>i own my domain name, purchased from network solutions years ago.</s><s> i redelegated it to the business catalyst server.</s><s> i upgraded to webbasics+ so i could add my own email accounts when i try to change the email settings i get an error message: "domain already exists.</s><s> please delete all recored associated with this domain before re-adding it." 
+</s><s>do i delete the default url and then re-add it?</s><s> do i delete the "forwards to" domain also? 
+</s><s>right now, i have no e-mail! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6128708-6130233</DOCNO>
+<TEXT>
+<subject>Problem adding email accounts</subject>
+<post author="Matt%20(Business%20Catalyst)" timestamp="Feb 17, 2014 3:13 PM">
+<s>hi stephenlasko,   can you please reach out to the support team via your admin console > help & support and they will be able to assist further.</s><s> otherwise, please post the domain name you are referring to in this forum thread and i will investigate further.   thanks, matt.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6128708-6130241</DOCNO>
+<TEXT>
+<subject>Problem adding email accounts</subject>
+<post author="StephenLasko" timestamp="Feb 17, 2014 3:32 PM">
+<s>thanks matt - that's what i did and i got the issue resolved.</s><s> i was working from the older lasko-design.businesscatalyst.com site instead of the updated/upgraded lasko-design.com site on the bc server.</s><s> once i figured that out, everything worked out well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6072558-1394577</DOCNO>
+<TEXT>
+<subject>Can I get ".businesscatalyst.com" off from a domain name?</subject>
+<post author="SJ91" timestamp="Jan 31, 2014 6:11 AM">
+<s>hello, 
+</s><s>i am a newbie to bussines catalyst and i can't find an answer of this matter: if i create an website "something.businesscatalyst.com" and i want to have "something.cz"(czech domain) what i have to do?</s><s> thanks for a reply in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6072558-6073541</DOCNO>
+<TEXT>
+<subject>Can I get ".businesscatalyst.com" off from a domain name?</subject>
+<post author="Gaurav.S" timestamp="Jan 31, 2014 10:06 AM">
+<s>hi, 
+</s><s>you need to follow these 3 steps 1.</s><s> purchase domain 2.</s><s> point your domain to bc 3.</s><s> add your domain to your bc site. 
+</s><s>here is the detailed article which provides all the necessary details and step to achieve this, http://helpx.adobe.com/business-catalyst/using/change-site-domain.html 
+hope this helps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6072558-6074351</DOCNO>
+<TEXT>
+<subject>Can I get ".businesscatalyst.com" off from a domain name?</subject>
+<post author="SJ91" timestamp="Jan 31, 2014 2:06 PM">
+<s>thank you very much, it really helped me.</s><s> i have yet one question - can i link my domain and bc if i have a webhosting?</s><s> in my admin section i haven't find any dns to change... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6072558-6074464</DOCNO>
+<TEXT>
+<subject>Can I get ".businesscatalyst.com" off from a domain name?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 31, 2014 2:17 PM">
+<s>you do not purchase your domain in bc. you need to work out which domain registra is good for you in your location and a decent price.</s><s> you purchase that domain (no hosting, just a domain) and then you set up things that end and then set up bc for that domain in the domain manager. http://helpx.adobe.com/business-catalyst/partner/going-live-guide.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6072558-6074602</DOCNO>
+<TEXT>
+<subject>Can I get ".businesscatalyst.com" off from a domain name?</subject>
+<post author="SJ91" timestamp="Jan 31, 2014 3:05 PM">
+<s>ok, i have a webhosting, where my old site is running and problem is i want the same domain.</s><s> can i create a new site using bc and replace it for the old one on my webhosting server? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6072558-6075676</DOCNO>
+<TEXT>
+<subject>Can I get ".businesscatalyst.com" off from a domain name?</subject>
+<post author="Gaurav.S" timestamp="Feb 1, 2014 3:48 AM">
+<s>hi, 
+</s><s>bc is a web hosting with multiple features, so if you are going to use bc in future, you dont have to use your current hosting.</s><s> all you need the same domain.</s><s> you should login to your domain management provided by your you registrar and update the name servers as given in the article above.</s><s> that should be all. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6064191-1392547</DOCNO>
+<TEXT>
+<subject>Issue with Product Layout, Large Image Blocking Product Description</subject>
+<post author="mystro95" timestamp="Jan 29, 2014 3:49 AM">
+<s>the website i am currently creating is http://shopatjem.businesscatalyst.com/   i am using muse for the overall site layout, and merge bc with muse has been a royal headache.</s><s> i have found that the issues are typically easy fixes but are hard to figure out due to the lack of information found on the internet.   on the specific product page, i have found that the 'large image' blocks the product description.</s><s> i was hoping it would be a simple fix on how the tags are layed out, as my knowledge in css is not professional.   you can view the issue at this link: http://shopatjem.businesscatalyst.com/garden/10-litre-power-washer   does anyone have any secrets, tips or advice that could help me solve this challenge.   any help would be a greatly appreciated.</s><s> kind regards erik m.   ---- i found out that this was a catalog template issue.</s><s> but i am not sure where in the code to make an edit.   the code is: <!</s><s>doctype html> <html class="html"> <head>       <meta http-equiv="content-type" content="text/html;charset=utf-8"/>   <meta name="generator" content="7.2.232.244"/>   <link rel="shortcut icon" href="/images/master-b-favicon.ico?3995779763"/>   <title>gardent_temp</title>   <meta name="image-hide-from-external-url" content="true"/>   <meta name="image-hide-location" content="true"/>   <!-- css -->   <link rel="stylesheet" type="text/css" href="/css/site_global.css?4231049081"/>   <link rel="stylesheet" type="text/css" href="/css/master_master-b.css?3809496658"/>   <link rel="stylesheet" type="text/css" href="/css/gardent_temp.css?4110180605" id="pagesheet"/>   <!-- other scripts -->   <script type="text/javascript">    document.documentelement.classname += ' js'; var __adobewebfontsappname__ = "muse"; </script>   <!-- js includes -->   <script type="text/javascript">    document.write('\x3cscript src="' + (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//webfonts.creativecloud.com/source-sans-pro:n4:all;asap:n7:all;paci fico:n4:all.js" type="text/javascript">\x3c/script>'); </script>    </head> <body>       <div class="clearfix" id="page"><!-- column -->    <div class="position_content" id="page_position_content">     <div class="clearfix colelem" id="pu69"><!-- group -->      <div class="browser_width grpelem" id="u69"><!-- group -->       <div class="clearfix" id="u69_align_to_page">        <a class="nonblock nontext clearfix grpelem" id="u75-4" href="/blog"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u75"><p>blog</p></div></a>        <a class="nonblock nontext clearfix grpelem" id="u73-4" href="/about-us.html"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u73"><p>about us</p></div></a>        <a class="nonblock nontext clearfix grpelem" id="u71-4" href="/help.html"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u71"><p>help</p></div></a>        <a class="nonblock nontext clearfix grpelem" id="u74-4" href="/contact.html"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u74"><p>contact</p></div></a>        <div class="clip_frame grpelem" id="u91"><!-- image -->         <img class="block" id="u91_img" src="/images/facebook.png" alt="" width="40" height="40" ice:editable="image" ice:muse_uid="u91" ice:muse_src="/images/facebook.png"/>        </div>        <div class="clip_frame grpelem" id="u101"><!-- image -->         <img class="block" id="u101_img" src="/images/pinterest.png" alt="" width="40" height="40" ice:editable="image" ice:muse_uid="u101" ice:muse_src="/images/pinterest.png"/>        </div>       </div>      </div>      <div class="clip_frame grpelem" id="u96"><!-- image -->       <img class="block" id="u96_img" src="/images/twitter.png" alt="" width="40" height="40" ice:editable="image" ice:muse_uid="u96" ice:muse_src="/images/twitter.png"/>      </div>     </div>     <div class="clearfix colelem" id="u211"><!-- group -->      <a class="nonblock nontext clearfix grpelem" id="u146-4" href="/index.html"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u146"><p>jem</p></div></a>      <a class="nonblock nontext clearfix grpelem" id="u153-4" href="/index.html"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u153"><p>shop</p></div></a>     </div>     <ul class="menubar clearfix colelem" id="menuu3644"><!-- horizontal box -->      <li class="menuitemcontainer clearfix grpelem" id="u4226"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4227" href="/index.html"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4229-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4229"><p>featured</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4233"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4234" href="http://shopatjem.businesscatalyst.com/gadgets"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4236-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4236"><p>gadgets</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4240"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4241" href="http://shopatjem.businesscatalyst.com/garden"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4242-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4242"><p>garden</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4247"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4248" href="http://shopatjem.businesscatalyst.com/gifts"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4249-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4249"><p>gifts</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4254"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4257" href="http://shopatjem.businesscatalyst.com/health-beauty"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4260-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4260"><p>health &amp; beauty</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4261"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4262" href="http://shopatjem.businesscatalyst.com/househo-ld"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4263-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4263"><p>homeware</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4268"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4271" href="http://shopatjem.businesscatalyst.com/motoring"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4274-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4274"><p>motoring</p></div></div></a>      </li>      <li class="menuitemcontainer clearfix grpelem" id="u4275"><!-- vertical box -->       <a class="nonblock nontext menuitem menuitemwithsubmenu clearfix colelem" id="u4276" href="/special-offers.html"><!-- horizontal box --><div class="menuitemlabel nowrap clearfix grpelem" id="u4279-4"><!-- content --><div ice:editable="html" ice:options="disableimageresize,none,clickable" ice:muse_uid="u4279"><p>special offers</p></div></div></a>      </li>     </ul>     <div class="colelem" id="u3594"><!-- custom html -->      {tag_pagecontent} </div>     <div class="verticalspacer"></div>     <div class="browser_width colelem" id="u843"><!-- group -->      <div class="clearfix" id="u843_align_to_page">       <div class="clearfix grpelem" id="pu1868-4"><!-- column -->        <div class="clearfix colelem" id="u1868-4"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1868">          <p>products</p>         </div>        </div>        <div class="clearfix colelem" id="u1874-13"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1874">          <p><a class="nonblock" href="/special-offers.html">specia</a>l offers</p>          <p><a class="nonblock" href="/product-page-2.html">new items</a></p>          <p>on sale</p>          <p>clearance</p>         </div>        </div>       </div>       <div class="clearfix grpelem" id="pu1870-4"><!-- column -->        <div class="clearfix colelem" id="u1870-4"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1870">          <p>help &amp; support</p>         </div>        </div>        <div class="clearfix colelem" id="u1871-14"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1871">          <p><a class="nonblock" href="/contact.html">customer service</a></p>          <p><a class="nonblock" href="/contact.html">returns</a></p>          <p><a class="nonblock" href="/contact.html">promo codes</a></p>          <p><a class="nonblock" href="/help.html">shipping questions</a></p>         </div>        </div>       </div>       <div class="clearfix grpelem" id="pu1866-4"><!-- column -->        <div class="clearfix colelem" id="u1866-4"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1866">          <p>find us socially</p>         </div>        </div>        <div class="clearfix colelem" id="u1875-14"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1875">          <p><a class="nonblock" href="/about-us.html">pinterest</a></p>          <p><a class="nonblock" href="/about-us.html">facebook</a></p>          <p><a class="nonblock" href="/about-us.html">twitter</a></p>          <p><a class="nonblock" href="/about-us.html">instagram</a></p>         </div>        </div>       </div>       <div class="clearfix grpelem" id="pu1877-4"><!-- column -->        <div class="clearfix colelem" id="u1877-4"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1877">          <p>corporate info</p>         </div>        </div>        <div class="clearfix colelem" id="u1878-17"><!-- content -->         <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1878">          <p><a class="nonblock" href="/contact.html">advertise with jem</a></p>          <p>list your products with jem</p>          <p>work with jem</p>          <p>privacy policy</p>          <p>cookies policy</p>          <p>terms</p>          <p>site map</p>         </div>        </div>       </div>      </div>     </div>     <div class="browser_width colelem" id="u1881"><!-- group -->      <div class="clearfix" id="u1881_align_to_page">       <div class="clearfix grpelem" id="u1880-4"><!-- content -->        <div ice:editable="html" ice:options="disableimageresize,none" ice:muse_uid="u1880">         <p>© 2013 jem marketing &amp; fulfilment services ltd</p>        </div>       </div>      </div>     </div>    </div>   </div>   <!-- js includes -->   <script type="text/javascript">    if (document.location.protocol != 'https:') document.write('\x3cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3c/script>'); </script>   <script type="text/javascript">    window.jquery || document.write('\x3cscript src="/scripts/jquery-1.8.3.min.js" type="text/javascript">\x3c/script>'); </script>   <script src="/scripts/museutils.js?242733602" type="text/javascript"></script>   <script src="/scripts/jquery.tobrowserwidth.js?152985095" type="text/javascript"></script>   <script src="/scripts/jquery.musemenu.js?32367222" type="text/javascript"></script>   <script src="/scripts/jquery.watch.js?4199601726" type="text/javascript"></script>   <!-- other scripts -->   <script type="text/javascript">    $(document).ready(function() { try { muse.utils.transformmarkuptofixbrowserproblemspreinit();/* body */ $('.browser_width').tobrowserwidth();/* browser width elements */ muse.utils.prephyperlinks(true);/* body */ muse.utils.initwidget('.menubar', function(elem) { return $(elem).musemenu(); });/* unifiednavbar */ muse.utils.fullpage('#page');/* 100% height page */ muse.utils.showwidgetswhenready();/* body */ muse.utils.transformmarkuptofixbrowserproblems();/* body */ } catch(e) { muse.assert.fail('error calling selector function:' + e); }}); </script>    </body> </html>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-6004105-1377417</DOCNO>
+<TEXT>
+<subject>Business Catalyst and Adobe CC</subject>
+<post author="Pitbull Lover" timestamp="Jan 11, 2014 5:44 PM">
+<s>how to get a business catalyst account using my adobe id?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5993351-1374705</DOCNO>
+<TEXT>
+<subject>How do I get the BC product modules to point to different pages?</subject>
+<post author="Branding Lab" timestamp="Jan 8, 2014 11:17 AM">
+<s>if i design my own product page is it possible to get the product module to point to that page?</s><s> it seems like the module points to standard template pages such as single product etc. is it possible to setup my own single product template? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5993351-5993788</DOCNO>
+<TEXT>
+<subject>How do I get the BC product modules to point to different pages?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2014 1:06 PM">
+<s>hi there, that is now how the ecommerce works.</s><s> the list small product view will go to the detail view.</s><s> you can of course create manual links to manual pages but why would you?</s><s> what would be the need to go to a single page? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5938456-1360446</DOCNO>
+<TEXT>
+<subject>Web Form Validation Message Language Setting at Runtime when work in multi lingual environment</subject>
+<post author="Imran Lakhani" timestamp="Dec 17, 2013 9:48 AM">
+<s>business catalyst use the default culture language to display web form validation message.   when we are in multi lingual environment and not using subdoamin to handle multilingual sites, we found that the validation message did appear in the default culture setting.</s><s> to make this work, we need to add the below script in our template.   <script type="text/javascript"> $(document).ready(function(){                var head= document.getelementsbytagname('head')[0]; var script= document.createelement('script'); script.src= '/bcjslang/validationfunctions.aspx?lang=fr'; script.charset = 'utf-8'; script.type= 'text/javascript'; head.appendchild(script); });           </script>   assuming the template is in french.</s><s> you can change the lang parameter in the script according to your language.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5937179-1360097</DOCNO>
+<TEXT>
+<subject>how do I change the value culture from English to italy</subject>
+<post author="Giorgio Gatti" timestamp="Dec 17, 2013 1:04 AM">
+<s>hi, does anyone know how do i change the value culture from english to italy 
+thank!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5927367-1357671</DOCNO>
+<TEXT>
+<subject>Should I build this app in Business Catalyst or Flex?</subject>
+<post author="Gary Sharp2" timestamp="Dec 13, 2013 7:44 AM">
+<s>i have to build an app where the user is able to build a sandwich by selecting items and have the item appear on the sandwich as it is selected.</s><s> i am not a developer and would really like to do this in business catalsyst web apps but i am not sure how to get it started.</s><s> the concept is similar to this game. http://www.puffgames.com/daily_games/burger_chef/ 
+would i be better off trying to build it in flex/flash keeping in mind that it has to be a mobil app as well as a web app. 
+</s><s>any help would be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5927367-5934038</DOCNO>
+<TEXT>
+<subject>Should I build this app in Business Catalyst or Flex?</subject>
+<post author="Gary%20Sharp2" timestamp="Dec 16, 2013 5:02 AM">
+<s>can anyone please help me with this.</s><s> i have to have the app built by the end of the month. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5921935-1356249</DOCNO>
+<TEXT>
+<subject>I need help in customizing our blog</subject>
+<post author="wesonthenet" timestamp="Dec 11, 2013 1:10 PM">
+<s>this started out with a simple request... can you add a bulleted list and indent it in the blog?</s><s> my partner, who is not html/css savy tried using the design window and the italics, bold, ul and ol commands did not function.</s><s> i had added a template that called for open sans font which is outside of the scope of their design window and that may hae something to do with some of it.</s><s> so i went to the blog post details layout" stylesheet and added some more css for ul and li elements.</s><s> and it was not being recognized.</s><s> am i in the right area?</s><s> i don't want to alter the global css which is called on for the blog and i don't think i add css to the template page css either... any help woudl be great. 
+</s><s>thanks 
+</s><s>wes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5849356-1337147</DOCNO>
+<TEXT>
+<subject>Adding Alt text to prducts catalog images...</subject>
+<post author="andre.perreault" timestamp="Nov 17, 2013 10:14 AM">
+<s>i cannot find information on how to add alt text to my product images in the catalogs.</s><s> can anyone help? 
+</s><s>thanks, 
+</s><s>andre www.e-speakers.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5849356-5849606</DOCNO>
+<TEXT>
+<subject>Adding Alt text to prducts catalog images...</subject>
+<post author="Liam%20Dilley" timestamp="Nov 17, 2013 1:20 PM">
+<s>if you use {tag_largeimage_path} that gives you the raw url of the large image for example and you can then set this up in your own html with alt tag of say the product name or title. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5840251-1334832</DOCNO>
+<TEXT>
+<subject>How do I set up processing for recurring donations?</subject>
+<post author="petersonrw" timestamp="Nov 13, 2013 3:15 PM">
+<s>i'm using authorize.net as my gateway. 
+i also want the user to specify the amount they want to pay. 
+</s><s>i've already set up secure zones and forms to enter and modify their accounts. 
+</s><s>my main question has to do with the fact that i don't want to tie a fixed amount to the secure zones.</s><s> i just want a (variable) monthly options and a one time option. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5818753-1329367</DOCNO>
+<TEXT>
+<subject>Business Catalyst Migration</subject>
+<post author="Bretto" timestamp="Nov 5, 2013 10:06 PM">
+<s>please advise me on how to change my a records to enable my website to be migrated 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5818753-5818986</DOCNO>
+<TEXT>
+<subject>Business Catalyst Migration</subject>
+<post author="Liam%20Dilley" timestamp="Nov 6, 2013 1:26 AM">
+<s>does your site still work?</s><s> this was already completed.</s><s> if your site does not work now you can find the informaiton on the bc blog.</s><s> i take it this is an au dc site?</s><s> http://www.businesscatalyst.com/bc-blog/phase-2-australian-datacenter- migration-october-19th-2013 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5803028-1325590</DOCNO>
+<TEXT>
+<subject>e-commerce Sales Tracking is not working in magento (ver 1.7.0.2)</subject>
+<post author="Vimlesh maurya" timestamp="Oct 31, 2013 6:01 AM">
+<s>hi, 
+</s><s>e-commerce sales tracking is not working in magento for my website - [link removed], i implemented remarketing tag (dc.js ) with it.</s><s> please help me find out the problem. 
+</s><s>thanks vimlesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5803028-5803241</DOCNO>
+<TEXT>
+<subject>e-commerce Sales Tracking is not working in magento (ver 1.7.0.2)</subject>
+<post author="Liam%20Dilley" timestamp="Oct 31, 2013 6:01 AM">
+<s>this is adobe business catalyast, this is not the magento forums and that is not an adobe product.</s><s> i suggest you go try over there for help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5638774-1285931</DOCNO>
+<TEXT>
+<subject>Any methods for developing more complex sites with BC, like server-side functionality?</subject>
+<post author="patrickstinson" timestamp="Aug 29, 2013 3:35 PM">
+<s>i am trying to assess bc's potential from a developer's perspective and am having a lot of trouble finding my way through the available documentation and forums since the resources are relatively fragmented.   for example, what do you do when a client comes to us wanting a more dynamic web app that requires a more involved database than the web app features can provide, or dynamically interacts with the db on the server, or needs to interface with external systems in a secure way without putting auth info right in the javascript when bc doesn't provide access to the server outside of the limited soap api.</s><s> i'm seeing only contacts, orders, and cases in the soap api?</s><s> it looks like a "web app" is the only way to store data in a database on the website, but there is no api for accessing that data, even from the javascript on the same origin domain.</s><s> we are already invested in bc enough to want to stick with it, but is there anyone out there that is finding creative ways to fill bc's feature gap?</s><s> maybe some hybrid between bc and a more conventional server-side setup hosted elsewhere?</s><s> thanks!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5638774-5639145</DOCNO>
+<TEXT>
+<subject>Any methods for developing more complex sites with BC, like server-side functionality?</subject>
+<post author="TheBCMan" timestamp="Aug 29, 2013 6:16 PM">
+<s>agreed on alot of your points above, the documentation is extremely fragmented imo, to answer your question, it depends on what your customer is asking regarding server side stuff, there is quite alot of things ajax, css and javascript can do with bc, rewriting pages, redisplaying pages, moving things around etc. 
+</s><s>with regards to the api, yes nothing we can do about webapps data currently, i have stored data before as part of cases (database) api and used the api to pull that data down.</s><s> you can also store all your data in json (text) into large text fields as part of cases, but it starts to get a little messy in the admin tool. 
+</s><s>what sort of things are you looking to do and i'm sure we can suggest some ways to work with bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5592718-1275230</DOCNO>
+<TEXT>
+<subject>List my web app items from newest</subject>
+<post author="Nanoucab" timestamp="Aug 13, 2013 8:24 PM">
+<s>i want to list all my web app not just the last 10 from newst to oldest this {module_webapps,111111,a,,,,,100000,,1,date} doesn't sort by date this {module_webapps,111111,l,,,,,100000,,1}only show the last 10 
+</s><s>also how can a user delete its own submission when logged in on a web page the {tag_delete} doesn't produce any code? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5545997-1264520</DOCNO>
+<TEXT>
+<subject>Database Ajax Requests</subject>
+<post author="skinneejoe2" timestamp="Jul 28, 2013 3:22 PM">
+<s>hi all, 
+</s><s>this is probably answered elsewhere in the forums but i'm having a difficult time finding it or knowing what to search for.</s><s> does business catalyst allow for me to access data in a database using javascript ajax calls? 
+i don't suppose it's possible to host a third party database in bc like mysql or couchdb, is there? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5545997-5546113</DOCNO>
+<TEXT>
+<subject>Database Ajax Requests</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 4:27 PM">
+<s>you do not have access to the server side code so you can not put in 3rd party databases etc. you do not have many ajax calls to bc, you can submit a web form with json and a few things like that but your 3rd party access comes through the soap api. 
+http://kb.worldsecuresystems.com/635/bc_635.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5545997-5546189</DOCNO>
+<TEXT>
+<subject>Database Ajax Requests</subject>
+<post author="skinneejoe2" timestamp="Jul 28, 2013 4:30 PM">
+<s>ok, so essentially if i have an application that relies on a third party database then i need to host it externally, correct? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5545997-5546658</DOCNO>
+<TEXT>
+<subject>Database Ajax Requests</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 10:36 PM">
+<s>yep and api sync that information with bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5545997-5549684</DOCNO>
+<TEXT>
+<subject>Database Ajax Requests</subject>
+<post author="TheBCMan" timestamp="Jul 29, 2013 6:46 PM">
+<s>you can pull the data via a standard get request but because bc outputs html embed in javascript rather than json or jsonp hosting anything external you run into cross site browser sandboxes and it wont work. 
+i don't recommend this because you are re-inventing the wheel but if you wanted to call bc remotely and pull in content you would have to do it on an externally hosted solution server side and setup your bc (hosted) templates to only output the data you requested (rather than a full html page). 
+</s><s>you could also use the api, but it is not build for real time events and it is slow and cumbersome, more build for syncing and queries that don't require a quick reply. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5549445-1265269</DOCNO>
+<TEXT>
+<subject>Add To Cart is redirecting to an un-styled almost blank page.</subject>
+<post author="JoshQuillin" timestamp="Jul 29, 2013 5:21 PM">
+<s>the add to cart button has all of a sudden started to, after clicked, redirect to a nearly blank page with just the photo of the item and price.</s><s> i've added a link to the site below. 
+i added a bit of java to auto redirect after it hits that odd blank page, but i am having a really difficult time figuring out why it's re-directing to that almost blank page. 
+</s><s>any thoughts? 
+</s><s>thanks in advance for the help! 
+http://designcoversstore3.businesscatalyst.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5538048-1262562</DOCNO>
+<TEXT>
+<subject>How do I set up a pdf form to submit from a website</subject>
+<post author="gaylehabitat" timestamp="Jul 25, 2013 9:17 AM">
+<s>we are trying to set up a document to be completed on our website and to then be submitted via email to our email address.</s><s> now my question is do we need to link the actual document on our website. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5538048-5539071</DOCNO>
+<TEXT>
+<subject>How do I set up a pdf form to submit from a website</subject>
+<post author="Liam%20Dilley" timestamp="Jul 25, 2013 2:44 PM">
+<s>do you have access to web forms?</s><s> people fill out forms which go into your crm and emails you with bc. depends on the plan you have as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5449179-1241649</DOCNO>
+<TEXT>
+<subject>Godaddy pro reseller vs. Partner with BC</subject>
+<post author="careyonadobe" timestamp="Jun 25, 2013 2:10 PM">
+<s>i'm in the building process of my little web studio, but since i have the cc subscription maybe it would make a lot more sense to move everything over to bc. 
+</s><s>just need a push. thanks in advance, steve 703-314-3010 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5449179-5449417</DOCNO>
+<TEXT>
+<subject>Godaddy pro reseller vs. Partner with BC</subject>
+<post author="thetrickster888" timestamp="Jun 25, 2013 2:56 PM">
+<s>hey steve, 
+</s><s>it really depends on your clientele.</s><s> bc is great for building a business' first website and to incorporate things like email campaigns, in-context site editing, secure zones and ecommerce. 
+</s><s>if your client has a very specific ecommerce setup that isn't covered in the bc ecommerce suite then since bc is a proprietary system and you cannot code server-side processes to customize a lot of it, you might need to use another solution for ecommerce. 
+</s><s>if i were you i would try to adapt most of your clients to bc since using bc will cut your development and design time over a traditional php development setup.</s><s> but in order to do some advanced things on bc sometimes we need to have a subdomain off the main domain for a client that is a standard php setup. 
+</s><s>i've been using heroku's free php hosting for some of my client sites for those cases so i'm not paying for it but if it's a highly frequented site you might have to pay heroku so that your php hosting doesn't crash (the free account has limited resources). 
+</s><s>you could also do a reseller account too and have a bc account and reseller account but i don't recommend godaddy for hosting.</s><s> their domain name services are great but i would use a reseller account elsewhere.</s><s> i used a place called http://railsplayground.net before and i can say they have great support and uptime.</s><s> for $20 - $25 a month you can have a very substantial reseller setup using the standard cpanel/whm to manage your account. 
+</s><s>if you do plan to use bc for clients you need to be a paid partner.</s><s> paid partners get to have a partner portal where they can setup their own billing prices, create new customer sites and rebrand the whole bc solution for their customer's admin areas. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5449179-5450995</DOCNO>
+<TEXT>
+<subject>Godaddy pro reseller vs. Partner with BC</subject>
+<post author="careyonadobe" timestamp="Jun 26, 2013 4:57 AM">
+<s>thank u for taking the time and providing great food for thought.</s><s> i think i will give bc a go. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5370384-1223611</DOCNO>
+<TEXT>
+<subject>Want to put Google translator plugin/LOGO at different locations in my website.</subject>
+<post author="Bennyagarwal123456789" timestamp="May 31, 2013 11:31 PM">
+<s>hello , i am making a website and using a bc template , i want to add google translator logo on my website , i already manage to add google translator logo in the left hand  corner of website but i want this logo also in the top centre and top  right hand corner and also few places on my website ,.</s><s> i do have the html code but i don't know how to put this code in the template html formate so that it can appear exactly i want.</s><s> i made few screenshots of the website and put the tranlator logo  to explain it in a good way.</s><s> can please someone help me here.  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5370384-5370912</DOCNO>
+<TEXT>
+<subject>Want to put Google translator plugin/LOGO at different locations in my website.</subject>
+<post author="thetrickster888" timestamp="Jun 1, 2013 8:51 AM">
+<s>hey benny- 
+</s><s>i'm going to suggest against having that many translate widgets.</s><s> a) it does not increase the usability of the widget by having it everywhere you look.</s><s> b) aesthetically it takes away from your clean design. 
+i realize this is an important utility but just having it appear once on every page of your site should get the job done.</s><s> also, is your site responsive?</s><s> if so, are you going to have six widgets on your responsive, mobile view of the site too? 
+</s><s>it's a bad idea. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5370384-5376845</DOCNO>
+<TEXT>
+<subject>Want to put Google translator plugin/LOGO at different locations in my website.</subject>
+<post author="TheBCMan" timestamp="Jun 3, 2013 7:25 PM">
+<s>agreed on the widget, machine translation is far from accurate, for an example just put a few sentences into google translate, translate it to japanese for example, copy the text and translate it back to english and you will see what i am talking about. 
+</s><s>if you care about the user experence don't use machine translate it just does not work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5351935-1219304</DOCNO>
+<TEXT>
+<subject>Hyperlinks not working on smartphone.</subject>
+<post author="HarvTruck" timestamp="May 25, 2013 8:59 AM">
+<s>i've uploaded a pdf to the phone section on my bc site.</s><s> the file was created in indesign and it opens onto a table of contents with hyperlinks to other pages within the file.</s><s> in site manager i can preview the file and navigate the hyperlinks.</s><s> when i dowload the file to my smartphone, only the table of contents page downloads and the hyperlinks are gone.</s><s> any ideas?</s><s> thanks!</s><s> harv 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5350490-1218948</DOCNO>
+<TEXT>
+<subject>E-mail signup web form - Error message</subject>
+<post author="azuretechs" timestamp="May 24, 2013 12:39 PM">
+<s>my index page has a newsletter signup web form.</s><s> the workflow attached works, but when a user enters their e-mail and clicks "submit" they get an error message.</s><s> i used a bc gurus template and this is the one thing i cannot find, how to change the link of the submit button or fix the confirmation. url is thesoleconnectionllc.com 
+i'm stumped, help would be greatly appreciated!</s><s>!</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5290201-1205015</DOCNO>
+<TEXT>
+<subject>How do I access my BC Acc't so I can upload Wordpress?</subject>
+<post author="DrLarsen" timestamp="May 4, 2013 7:56 AM">
+<s>i've found how to upload muse websites to bc but i don't know how to access the dashboard for my bc acc't so i can get the information i need to upload a wordpress site.</s><s> i'm kinda dumb at this, so a "by the numbers" cookbook listing of steps is most helpful. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5290201-5290894</DOCNO>
+<TEXT>
+<subject>How do I access my BC Acc't so I can upload Wordpress?</subject>
+<post author="Liam%20Dilley" timestamp="May 4, 2013 6:16 PM">
+<s>hi there, you cant upload a wordpress site.</s><s> wordpress is php based and you can not install such systems on bc.</s><s> bc is not just hosting, it is the website cms, crm and more to build websites and online businessess. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5251290-1195833</DOCNO>
+<TEXT>
+<subject>refresh previous page with {module_goback}</subject>
+<post author="kunikoala" timestamp="Apr 19, 2013 10:09 AM">
+<s>hi 
+</s><s>would like to add {module_goback} to system pages instead of {module_breadcrumbs}, but for user-submitted content (with form and list of submitted items), would like to 1) avoid just-submitted data from being visible on form 2) make just-submitted content visible on list of submitted items 
+any suggestions on how to refresh previous page when {module_goback} is triggered? 
+</s><s>many thanks in advance mls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5202229-1183776</DOCNO>
+<TEXT>
+<subject>How to manage large amounts of info so it can be searched and easily found?</subject>
+<post author="cretam" timestamp="Apr 3, 2013 5:49 AM">
+<s>hi, i have a client that has 100 technical documents and i currently have them divided up on separate pages in their categories in one long list on the page.</s><s> ie http://www.sheepconnectsa.com.au/sheep_management i can easily add the search function to the homepage which will help the customer find the info by using the search.</s><s> is there any other way you could display the information on the homepage or make it easier for the customer to see this site has a large resource of technical notes when they first arrive at the site? 
+</s><s>cheers, tammy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5202169-1183744</DOCNO>
+<TEXT>
+<subject>Hard Bounces from Email Campaigns</subject>
+<post author="cretam" timestamp="Apr 3, 2013 5:40 AM">
+<s>hi, is anyone else experiencing problems with hard bounces when sending a campaign to a large database?</s><s> ie 1000 recipients 
+is there an easier way to invite them to double opt in than clicking on each person individually and sending it? 
+</s><s>i've also noticed the live feed is not accurate when sending out email campaigns. 
+</s><s>thanks, tammy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Documents/Discussions-5021548-1141425</DOCNO>
+<TEXT>
+<subject>Changing the search graphic</subject>
+<post author="Pixelbud" timestamp="Jan 25, 2013 12:06 AM">
+<s>hi there 
+i changed the grphic to the search button.</s><s> i did the folowing as suggested by the catalyst help files. 
+<input class="searchbutton" value="search" type="submit"> to: <input name="submit" class="cat_button" src="/images/button.gif" type="image"> where /images/button.gif is the path to your image. 
+</s><s>the image wont line up and now the submit on the button won't work.</s><s> i contacted support but they told me its an issue at my end.</s><s> i am not o coder so not really sure how i can argue with that ********.</s><s> i added the code changed it as suggested and now it wont work, can someone please help me. 
+this is the code i have in the template. 
+<table align="center" style="width: 966px; background-image: url(http://www.skillingaustralia.com/menu.jpg);" cellspacing="0" cellpadding="0"> <tbody> <tr> <td style="width: 10px; height: 50px;"> </td> <td style="width: 606px; height: 50px; text-align: left; vertical-align: top;"><br /> {module_menu,1215761}</td> <td style="width: 360px; height: 50px; text-align: left; vertical-align: middle;"> <form name="catsearchform29693" action="/default.aspx?sitesearchid=-1&amp;pageid={module_oid}" method="post"> <div class="search-box"> <input name="cat_search" class="cat_textbox_small" id="cat_search" type="text"></input><a href="/search-results"><input name="submit" class="cat_button" type="image" src="/search.png"></input></a></div> <a href="/search-results"> </a> </form> <a href="/search-results"> </a></td> </tr> </tbody> </table> 
+when i change the code back to the system button it works again.</s><s> support tell me that shows there is an issue with what i have done. can someone please help me out. 
+</s><s>thanks al 
+</s></post>
+</TEXT>
+</DOC>
+
+

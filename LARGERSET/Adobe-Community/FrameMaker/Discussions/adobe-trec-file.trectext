@@ -1,0 +1,1536 @@
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-1430652</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="puzzled but hoping" timestamp="Mar 18, 2014 6:12 AM">
+<s>is it possible to define the width of columns in a format for tables in fm 11 in order to change all tables in a file rather than to have to go through the painstaking task of setting each value for each column of each table... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6220167</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 7:33 AM">
+<s>if fm had this capbility, this wouldn't exist: http://www.frameexpert.com/plugins/tablecleaner/resizetablecolumns.htm i've not used it myself. 
+</s><s>even via mif hacking, changing column widths is not trivial, because the size presented to you is apt to be rounded compared to the precise n-digit value actually stored, and all sorts of other random stuff in a mif can easily have the same numeric string (so you have to parse tags, sometimes on adjacent lines, to be sure) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6220234</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="puzzled%20but%20hoping" timestamp="Mar 18, 2014 7:40 AM">
+<s>great, - i shall try that tool!, much appreciated.   also thanks for the tiny insight into the realm of fm code difficulties - same root problem it seems i mine with changing tables too late for a stressfree workflow - forever elvolving structures are always more difficult to handle than those that have a beginning and an end.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-1430652</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="puzzled but hoping" timestamp="Mar 18, 2014 6:12 AM">
+<s>is it possible to define the width of columns in a format for tables in fm 11 in order to change all tables in a file rather than to have to go through the painstaking task of setting each value for each column of each table... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6220167</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 7:33 AM">
+<s>if fm had this capbility, this wouldn't exist: http://www.frameexpert.com/plugins/tablecleaner/resizetablecolumns.htm i've not used it myself. 
+</s><s>even via mif hacking, changing column widths is not trivial, because the size presented to you is apt to be rounded compared to the precise n-digit value actually stored, and all sorts of other random stuff in a mif can easily have the same numeric string (so you have to parse tags, sometimes on adjacent lines, to be sure) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6220234</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="puzzled%20but%20hoping" timestamp="Mar 18, 2014 7:40 AM">
+<s>great, - i shall try that tool!, much appreciated.   also thanks for the tiny insight into the realm of fm code difficulties - same root problem it seems i mine with changing tables too late for a stressfree workflow - forever elvolving structures are always more difficult to handle than those that have a beginning and an end.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-1430651</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="puzzled but hoping" timestamp="Mar 18, 2014 6:09 AM">
+<s>is there any way to import an svg image into a fm document and use any text information in the svg (on an extra "unlocked layer whilst all others are locked" ) interactively e.g. for referencing purposes or like a hotspot feature? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220158</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 7:17 AM">
+<s>doubtful, but you can: set the svg object's run-around properties to none draw a text frame over the svg text replicate that text in the text box (or any text, really) create a hypertext marker in that fm text make the fm text non-visible: - via font color assigned & color views, or - just send to back   fm can probably "see" the contents of an svg for purposes of polluting the color catalog (if the svg is indexed color), but probably cannot see the text.   what's the output workflow, and does the svg vector content (if any) and text survive as vector & text into that?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220232</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="puzzled%20but%20hoping" timestamp="Mar 18, 2014 7:33 AM">
+<s>thanks for the reply.</s><s> the idea with the varuoious single text boxes is quite a work around, not sorry to say - neither really elegant nor really suitable for the task.   i had recalled a feature in a tool called "catalog creator" which boasts a so-called "hot spot editor": "...</s><s>the  graphics can be edited, hotspotted and then saved in the interactiv svg format.</s><s> svg is a w3c web standard and is characterised by a high quality at extreme compression ratio.</s><s>[...</s><s>] the hotspots can be detected due to existing layers, fonts, colors, textsizes or other available attributes.</s><s> hotspots are not limited to text and geometries, you can also use contour lines to define a hotspot. ..." the idea was to use the data on the text layer that may be referenced as any other formatted text in fm.</s><s> so if it is possible to use script (i am just your average fm user, nothing truely fancy) to extract that info then it might be done.</s><s> since frame maker doesn't work with layers, it might be able to "use" the layer feature in one of the other adobe products such as photoshop or illustrator.</s><s> and if others can do it (see cc) - why shouldn't adobe itself offer that (some day).</s><s> (maybe i should post this in the "wish list" section)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220264</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 8:08 AM">
+<s>> the idea with the various single text boxes is quite a work around, not sorry to say - neither really elegant nor really suitable for the task. 
+</s><s>it's the legacy way of doing it in fm. 
+</s><s>the current version of fm may have newer tools for this, depending on workflow and target delivery format. 
+i still use fm7 for most work, have fm9 available, but have only explored it for issues of concern to our shop (which includes almost no hot-spotting, as we're using an entirely different xml tool for parts catalogs). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-1430651</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="puzzled but hoping" timestamp="Mar 18, 2014 6:09 AM">
+<s>is there any way to import an svg image into a fm document and use any text information in the svg (on an extra "unlocked layer whilst all others are locked" ) interactively e.g. for referencing purposes or like a hotspot feature? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220158</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 7:17 AM">
+<s>doubtful, but you can: set the svg object's run-around properties to none draw a text frame over the svg text replicate that text in the text box (or any text, really) create a hypertext marker in that fm text make the fm text non-visible: - via font color assigned & color views, or - just send to back   fm can probably "see" the contents of an svg for purposes of polluting the color catalog (if the svg is indexed color), but probably cannot see the text.   what's the output workflow, and does the svg vector content (if any) and text survive as vector & text into that?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220232</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="puzzled%20but%20hoping" timestamp="Mar 18, 2014 7:33 AM">
+<s>thanks for the reply.</s><s> the idea with the varuoious single text boxes is quite a work around, not sorry to say - neither really elegant nor really suitable for the task.   i had recalled a feature in a tool called "catalog creator" which boasts a so-called "hot spot editor": "...</s><s>the  graphics can be edited, hotspotted and then saved in the interactiv svg format.</s><s> svg is a w3c web standard and is characterised by a high quality at extreme compression ratio.</s><s>[...</s><s>] the hotspots can be detected due to existing layers, fonts, colors, textsizes or other available attributes.</s><s> hotspots are not limited to text and geometries, you can also use contour lines to define a hotspot. ..." the idea was to use the data on the text layer that may be referenced as any other formatted text in fm.</s><s> so if it is possible to use script (i am just your average fm user, nothing truely fancy) to extract that info then it might be done.</s><s> since frame maker doesn't work with layers, it might be able to "use" the layer feature in one of the other adobe products such as photoshop or illustrator.</s><s> and if others can do it (see cc) - why shouldn't adobe itself offer that (some day).</s><s> (maybe i should post this in the "wish list" section)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220264</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 8:08 AM">
+<s>> the idea with the various single text boxes is quite a work around, not sorry to say - neither really elegant nor really suitable for the task. 
+</s><s>it's the legacy way of doing it in fm. 
+</s><s>the current version of fm may have newer tools for this, depending on workflow and target delivery format. 
+i still use fm7 for most work, have fm9 available, but have only explored it for issues of concern to our shop (which includes almost no hot-spotting, as we're using an entirely different xml tool for parts catalogs). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219102-1430450</DOCNO>
+<TEXT>
+<subject>MIF Reference manuals for FM11 & 12 available</subject>
+<post author="Arnis Gubins" timestamp="Mar 17, 2014 10:36 PM">
+<s>mif reference manuals are now available for fm11 and fm12.</s><s> they are currently only direct links: 
+http://help.adobe.com/en_us/framemaker/mifreference/mifref.pdf http://help.adobe.com/en_us/framemaker/11.0/mifreference/mifref.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219102-1430450</DOCNO>
+<TEXT>
+<subject>MIF Reference manuals for FM11 & 12 available</subject>
+<post author="Arnis Gubins" timestamp="Mar 17, 2014 10:36 PM">
+<s>mif reference manuals are now available for fm11 and fm12.</s><s> they are currently only direct links: 
+http://help.adobe.com/en_us/framemaker/mifreference/mifref.pdf http://help.adobe.com/en_us/framemaker/11.0/mifreference/mifref.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-1429738</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="kim.utesch" timestamp="Mar 17, 2014 7:53 AM">
+<s>why can't i use these features any more? 
+i also can't use the launch photoshop or launch illustrator features.</s><s> i use the adobe master collection 6 for those products. 
+</s><s>adobe captivate is also grayed out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6216640</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="Art_Campbell" timestamp="Mar 17, 2014 8:03 AM">
+<s>unless you installed fm as part of tcs5, it's unlikely fm 12 knows the software locations and has tied into the other programs. 
+</s><s>since you just installed, i'd call adobe support for help because they do free installation troubleshooting. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6216642</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="kim.utesch" timestamp="Mar 17, 2014 10:26 PM">
+<s>thank you for the reply.</s><s> i did install fm as part of the tcs5.</s><s> i guess i will have to give them a call. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6218179</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="Mike%20Wickham" timestamp="Mar 17, 2014 2:28 PM">
+<s>one of the features in the ws utilities plugin allows creation of easy menu entries for edit with illustrator and edit with photohop. http://www.weststreetconsulting.com/wsc_utils.htm 
+you might also want to post in the framemaker extendscript forum to see if anyone has created a script to add these menu items.</s><s> it seems like it would be a common request. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-1429738</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="kim.utesch" timestamp="Mar 17, 2014 7:53 AM">
+<s>why can't i use these features any more? 
+i also can't use the launch photoshop or launch illustrator features.</s><s> i use the adobe master collection 6 for those products. 
+</s><s>adobe captivate is also grayed out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6216640</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="Art_Campbell" timestamp="Mar 17, 2014 8:03 AM">
+<s>unless you installed fm as part of tcs5, it's unlikely fm 12 knows the software locations and has tied into the other programs. 
+</s><s>since you just installed, i'd call adobe support for help because they do free installation troubleshooting. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6216642</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="kim.utesch" timestamp="Mar 17, 2014 10:26 PM">
+<s>thank you for the reply.</s><s> i did install fm as part of the tcs5.</s><s> i guess i will have to give them a call. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6218179</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="Mike%20Wickham" timestamp="Mar 17, 2014 2:28 PM">
+<s>one of the features in the ws utilities plugin allows creation of easy menu entries for edit with illustrator and edit with photohop. http://www.weststreetconsulting.com/wsc_utils.htm 
+you might also want to post in the framemaker extendscript forum to see if anyone has created a script to add these menu items.</s><s> it seems like it would be a common request. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6217360-1429948</DOCNO>
+<TEXT>
+<subject>Why am I getting configuration error 16 in FM11 after sucsessful using the product for few months.</subject>
+<post author="ianach" timestamp="Mar 17, 2014 11:09 AM">
+<s>after reinstalling the product it works fine for a period of time and suddenly this error appears again. what is the reason for that?</s><s> i am working on windows 7, fm 11. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6217360-6217449</DOCNO>
+<TEXT>
+<subject>Why am I getting configuration error 16 in FM11 after sucsessful using the product for few months.</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 17, 2014 11:30 AM">
+<s>all patched up?</s><s> what are you doing that results in the error?</s><s> have you submitted it to adobe techs? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6217360-1429948</DOCNO>
+<TEXT>
+<subject>Why am I getting configuration error 16 in FM11 after sucsessful using the product for few months.</subject>
+<post author="ianach" timestamp="Mar 17, 2014 11:09 AM">
+<s>after reinstalling the product it works fine for a period of time and suddenly this error appears again. what is the reason for that?</s><s> i am working on windows 7, fm 11. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6217360-6217449</DOCNO>
+<TEXT>
+<subject>Why am I getting configuration error 16 in FM11 after sucsessful using the product for few months.</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 17, 2014 11:30 AM">
+<s>all patched up?</s><s> what are you doing that results in the error?</s><s> have you submitted it to adobe techs? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-1429666</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="bowen192" timestamp="Mar 17, 2014 6:46 AM">
+<s>hello , 
+</s><s>i am trying to create a tab at the bottom of each page of a document which displays the first and last paragraph number on the page. 
+</s><s>my paragraph numbers are made up of the section number and a sequential number. 
+</s><s>on a previous project i have definitley created something that cross-references a final paragraph, i just can't remember how. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6216386</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 7:27 AM">
+<s>does this tab/xref reside in a background text frame from a master page, or just something in flow a (such as a text frame in an anchored frame set to bottom of column). 
+</s><s>the variables and building blocks available are different for each. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6216605</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="bowen192" timestamp="Mar 17, 2014 8:05 AM">
+<s>sorry, the tab/xref does currently reside in a background text frame from a master page but i do have the luxury of moving it if need be. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6217203</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 10:24 AM">
+<s>according to the fm7 help, the variables for background text frame use might be: <$paranumonly[paratag]> to pick up the first instance on a page, and <$paranumonly[+,paratag]> to pick up the last. 
+</s><s>the "+," bit is the key.</s><s> i've never tried it myself. 
+</s><s>this presumably also assumes that the paras of interest all have the same format name. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6221449</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="ReneSteph" timestamp="Mar 18, 2014 12:38 PM">
+<s>i think you'll have to modify one of the system running h/f variables in the master page view to have the aforementioned definition, and then place and format that running h/f variable in the background frame.</s><s> using a cross-reference format won't change it from one page to the next when in the body view; but using the running h/f system variable will. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-1429666</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="bowen192" timestamp="Mar 17, 2014 6:46 AM">
+<s>hello , 
+</s><s>i am trying to create a tab at the bottom of each page of a document which displays the first and last paragraph number on the page. 
+</s><s>my paragraph numbers are made up of the section number and a sequential number. 
+</s><s>on a previous project i have definitley created something that cross-references a final paragraph, i just can't remember how. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6216386</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 7:27 AM">
+<s>does this tab/xref reside in a background text frame from a master page, or just something in flow a (such as a text frame in an anchored frame set to bottom of column). 
+</s><s>the variables and building blocks available are different for each. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6216605</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="bowen192" timestamp="Mar 17, 2014 8:05 AM">
+<s>sorry, the tab/xref does currently reside in a background text frame from a master page but i do have the luxury of moving it if need be. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6217203</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 10:24 AM">
+<s>according to the fm7 help, the variables for background text frame use might be: <$paranumonly[paratag]> to pick up the first instance on a page, and <$paranumonly[+,paratag]> to pick up the last. 
+</s><s>the "+," bit is the key.</s><s> i've never tried it myself. 
+</s><s>this presumably also assumes that the paras of interest all have the same format name. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6221449</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="ReneSteph" timestamp="Mar 18, 2014 12:38 PM">
+<s>i think you'll have to modify one of the system running h/f variables in the master page view to have the aforementioned definition, and then place and format that running h/f variable in the background frame.</s><s> using a cross-reference format won't change it from one page to the next when in the body view; but using the running h/f system variable will. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210660-1428254</DOCNO>
+<TEXT>
+<subject>How to view non-printing marks</subject>
+<post author="TpowellCAE_Healthcare" timestamp="Mar 14, 2014 1:41 PM">
+<s>in framemaker 10 , can you view non-printig marks?</s><s> in ms word, you can show all paragraph marks and it will show the little dots between words, for exapmle.</s><s> does framemaker have this?</s><s> (all i found was view text symbols, but that does not show the spacing marks).</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210660-6216586</DOCNO>
+<TEXT>
+<subject>How to view non-printing marks</subject>
+<post author="K.Daube" timestamp="Mar 17, 2014 7:53 AM">
+<s>with textsymbols on you will see tabs, nl and ¶ as well as others - but there is no way to make spaces more visible than they are ...</s><s> since all other "white space characters" than blank are made visible by a special font, you are certain that blanks are just that. 
+</s><s>hth klaus daube 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210660-1428254</DOCNO>
+<TEXT>
+<subject>How to view non-printing marks</subject>
+<post author="TpowellCAE_Healthcare" timestamp="Mar 14, 2014 1:41 PM">
+<s>in framemaker 10 , can you view non-printig marks?</s><s> in ms word, you can show all paragraph marks and it will show the little dots between words, for exapmle.</s><s> does framemaker have this?</s><s> (all i found was view text symbols, but that does not show the spacing marks).</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210660-6216586</DOCNO>
+<TEXT>
+<subject>How to view non-printing marks</subject>
+<post author="K.Daube" timestamp="Mar 17, 2014 7:53 AM">
+<s>with textsymbols on you will see tabs, nl and ¶ as well as others - but there is no way to make spaces more visible than they are ...</s><s> since all other "white space characters" than blank are made visible by a special font, you are certain that blanks are just that. 
+</s><s>hth klaus daube 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-1428086</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="pdhlm" timestamp="Mar 14, 2014 10:58 AM">
+<s>how do i get conditional text to print as black? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210144</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 11:01 AM">
+<s>what version of fm?</s><s> in my fm11 copy, you can edit the conditional text attributes via the conditional text panel and click on the little pen icon to edit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210129</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="pdhlm" timestamp="Mar 14, 2014 11:14 AM">
+<s>fm10.</s><s> i don't want to change the color of the conditional text (red, blue, etc.</s><s>).</s><s> i want it to print as black. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210325</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 12:11 PM">
+<s>just checked the bible – i'm not seeing how you can print in color but not print conditional text in black. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215655</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="FieryPantone" timestamp="Mar 17, 2014 12:15 AM">
+<s>i have occasionally used conditions to keep track of content myself and speed up searches; there, i simply left the style, colour and background settinsg "as is".</s><s> is that the sort of thing op is looking for? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215544</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Winfried%20Reng" timestamp="Mar 17, 2014 1:14 AM">
+<s>hi, 
+</s><s>i do not know, if i understand you correctly.</s><s> in the "show/hide condtiional text" pod there is the option "show condition indicators".</s><s> just deactivate this option.</s><s> then your condtional text is shown as if it would not have any condition applied.</s><s> your text will have the colour of your paragraph or character format. 
+</s><s>this is for framemaker 11, but this option existed also in earlier versions. 
+</s><s>best regards 
+winfried 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215888</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 4:15 AM">
+<s>> ...</s><s> "show condition indicators".</s><s> just deactivate this option.   and if that's unsatisfactory, and the color is unique to the condition, simply use the book menu, with all component files selected: view > color > definitions re-define the color to be black.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-1428086</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="pdhlm" timestamp="Mar 14, 2014 10:58 AM">
+<s>how do i get conditional text to print as black? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210144</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 11:01 AM">
+<s>what version of fm?</s><s> in my fm11 copy, you can edit the conditional text attributes via the conditional text panel and click on the little pen icon to edit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210129</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="pdhlm" timestamp="Mar 14, 2014 11:14 AM">
+<s>fm10.</s><s> i don't want to change the color of the conditional text (red, blue, etc.</s><s>).</s><s> i want it to print as black. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210325</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 12:11 PM">
+<s>just checked the bible – i'm not seeing how you can print in color but not print conditional text in black. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215655</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="FieryPantone" timestamp="Mar 17, 2014 12:15 AM">
+<s>i have occasionally used conditions to keep track of content myself and speed up searches; there, i simply left the style, colour and background settinsg "as is".</s><s> is that the sort of thing op is looking for? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215544</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Winfried%20Reng" timestamp="Mar 17, 2014 1:14 AM">
+<s>hi, 
+</s><s>i do not know, if i understand you correctly.</s><s> in the "show/hide condtiional text" pod there is the option "show condition indicators".</s><s> just deactivate this option.</s><s> then your condtional text is shown as if it would not have any condition applied.</s><s> your text will have the colour of your paragraph or character format. 
+</s><s>this is for framemaker 11, but this option existed also in earlier versions. 
+</s><s>best regards 
+winfried 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215888</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 4:15 AM">
+<s>> ...</s><s> "show condition indicators".</s><s> just deactivate this option.   and if that's unsatisfactory, and the color is unique to the condition, simply use the book menu, with all component files selected: view > color > definitions re-define the color to be black.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-1428243</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:14 PM">
+<s>hello, the first page of each chapter in a fm 11 book has a few cross-references to sections within the chapter.</s><s> each of these few cross-reference entries is preceded by a diamond-shaped bullet.</s><s> they are all dark purple.</s><s> i cannot for the life of me figure out how to change them to black.</s><s> our printer is charging color prices because of these purple cross-ref bullets.</s><s> thanks for all the always-great input. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210585</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 1:17 PM">
+<s>do they involve a character or paragraph style that you can edit? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210445</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:21 PM">
+<s>not that i've found yet, no. both the paragraph style and the character style it's set to black.</s><s> the format of the cross reference does not appear to have any color seeing to it... just "default font". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210448</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:23 PM">
+<s>i suppose i could try to determine what that "default font" is for cross references.</s><s> maybe that's where the people is coming from? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210591</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 1:26 PM">
+<s>can you post a screen shot of the page & maybe the reference page?</s><s> (use the camera icon in the web interface) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210647</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:38 PM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210713</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 2:16 PM">
+<s>here are the refernce pages.</s><s> (4) 
+
+
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6212045</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 15, 2014 7:40 AM">
+<s>i figured it out.</s><s> the diamond-shaped bullets are a separate font, in my case it is a dingbat.</s><s> the text is adobe garamond pro.</s><s> if i get the cross-reference entry selected, i have to change the color of the dingbat character from "blue violet" to black and apply it to all.</s><s> but that makes the text of the entry become the dingbat font as well, which must separately be changed back to adobe garamond pro.</s><s> now, to find a way to apply the change to all of these entries throughout the book, instead of chapter by chapter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-1428243</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:14 PM">
+<s>hello, the first page of each chapter in a fm 11 book has a few cross-references to sections within the chapter.</s><s> each of these few cross-reference entries is preceded by a diamond-shaped bullet.</s><s> they are all dark purple.</s><s> i cannot for the life of me figure out how to change them to black.</s><s> our printer is charging color prices because of these purple cross-ref bullets.</s><s> thanks for all the always-great input. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210585</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 1:17 PM">
+<s>do they involve a character or paragraph style that you can edit? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210445</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:21 PM">
+<s>not that i've found yet, no. both the paragraph style and the character style it's set to black.</s><s> the format of the cross reference does not appear to have any color seeing to it... just "default font". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210448</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:23 PM">
+<s>i suppose i could try to determine what that "default font" is for cross references.</s><s> maybe that's where the people is coming from? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210591</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 1:26 PM">
+<s>can you post a screen shot of the page & maybe the reference page?</s><s> (use the camera icon in the web interface) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210647</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:38 PM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210713</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 2:16 PM">
+<s>here are the refernce pages.</s><s> (4) 
+
+
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6212045</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 15, 2014 7:40 AM">
+<s>i figured it out.</s><s> the diamond-shaped bullets are a separate font, in my case it is a dingbat.</s><s> the text is adobe garamond pro.</s><s> if i get the cross-reference entry selected, i have to change the color of the dingbat character from "blue violet" to black and apply it to all.</s><s> but that makes the text of the entry become the dingbat font as well, which must separately be changed back to adobe garamond pro.</s><s> now, to find a way to apply the change to all of these entries throughout the book, instead of chapter by chapter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210242-1428172</DOCNO>
+<TEXT>
+<subject>Problems importing PDF comments</subject>
+<post author="larocpt" timestamp="Mar 14, 2014 11:31 AM">
+<s>hello, 
+</s><s>i've read the previous discussions regarding this issue and have not found any answers.</s><s> i have fm 11 and acrobat 10.</s><s> i am not changing the source file after creating the tagged pdf but fm states that the source file has changed and insists on only placing markers randomly in the fm document instead of importing the comments.</s><s> i work with multiple users and this feature would greatly help our team since converting from word to frame and back is nearly impossible.</s><s> please help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210242-6210327</DOCNO>
+<TEXT>
+<subject>Problems importing PDF comments</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 12:13 PM">
+<s>in pre-fm12, even a save (or auto-save in the background) counted as a change, so you really have to be extra careful if you want to get this working.</s><s> fm12 has improved it immeasurably. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210242-1428172</DOCNO>
+<TEXT>
+<subject>Problems importing PDF comments</subject>
+<post author="larocpt" timestamp="Mar 14, 2014 11:31 AM">
+<s>hello, 
+</s><s>i've read the previous discussions regarding this issue and have not found any answers.</s><s> i have fm 11 and acrobat 10.</s><s> i am not changing the source file after creating the tagged pdf but fm states that the source file has changed and insists on only placing markers randomly in the fm document instead of importing the comments.</s><s> i work with multiple users and this feature would greatly help our team since converting from word to frame and back is nearly impossible.</s><s> please help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210242-6210327</DOCNO>
+<TEXT>
+<subject>Problems importing PDF comments</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 12:13 PM">
+<s>in pre-fm12, even a save (or auto-save in the background) counted as a change, so you really have to be extra careful if you want to get this working.</s><s> fm12 has improved it immeasurably. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6209898-1428111</DOCNO>
+<TEXT>
+<subject>Multiple Flows of Same Name in One File</subject>
+<post author="max_drawdown" timestamp="Mar 14, 2014 10:08 AM">
+<s>(fm11 on win7) 
+</s><s>the compare documents utility reports that the same file has multiple flows of the same name, and so does not compare the files.</s><s> doh!</s><s> 
+</s><s>the report from the utility seems accurate.</s><s> i see two end-of-flow markers in the file, one on the second page and another on the final page.</s><s> the flow tag names of the text frames on the body pages are identical: bodytext.</s><s> the autoconnect box on each is selected. 
+i still want to compare the files, so i try this: 
+when i do view > master pages and then go back to view > body pages, fm says some body pages in the file override their master page layout.</s><s> do i want to override?</s><s> i say yes.</s><s> i go to the body pages.</s><s> everything looks the same.</s><s> i try compare documents again.</s><s> same message. 
+</s><s>so how do i join those two flows, even though they apparently are already autoconnected and have the same name? 
+</s><s>or, as an alternative, how do gain the benefits of a compare documents operation in a file that contains two flows of the same name? 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6209898-1428111</DOCNO>
+<TEXT>
+<subject>Multiple Flows of Same Name in One File</subject>
+<post author="max_drawdown" timestamp="Mar 14, 2014 10:08 AM">
+<s>(fm11 on win7) 
+</s><s>the compare documents utility reports that the same file has multiple flows of the same name, and so does not compare the files.</s><s> doh!</s><s> 
+</s><s>the report from the utility seems accurate.</s><s> i see two end-of-flow markers in the file, one on the second page and another on the final page.</s><s> the flow tag names of the text frames on the body pages are identical: bodytext.</s><s> the autoconnect box on each is selected. 
+i still want to compare the files, so i try this: 
+when i do view > master pages and then go back to view > body pages, fm says some body pages in the file override their master page layout.</s><s> do i want to override?</s><s> i say yes.</s><s> i go to the body pages.</s><s> everything looks the same.</s><s> i try compare documents again.</s><s> same message. 
+</s><s>so how do i join those two flows, even though they apparently are already autoconnected and have the same name? 
+</s><s>or, as an alternative, how do gain the benefits of a compare documents operation in a file that contains two flows of the same name? 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-1427523</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="max_drawdown" timestamp="Mar 13, 2014 2:29 PM">
+<s>got a trailhead for this? 
+</s><s>the symptom is intermittent.</s><s> it happens after changing many exhibits and then file > import > file operations, or text inset properties > update operations, in a fairly short time, a time of intense updates during a review cycle. 
+i try to link in a graphic file or inset, but fm seems to use a prior version of the graphic or inset when generating a pdf.</s><s> i can open the graphic or inset file in its native app (sometimes fm) and the expected change is present.</s><s> the wysiwyg shows one thing and the pdf another.</s><s> reminds me of the days before wysiwyg. 
+a quick surf of the forum shows plenty of stuff pertaining to "cache" and "font," but the fonts in the pdf look fine. 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-6208914</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 4:47 AM">
+<s>what version of fm?</s><s> are you saving between each of these operations? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-6209818</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="max_drawdown" timestamp="Mar 14, 2014 9:56 AM">
+<s>@jeff, 
+</s><s>fm11.</s><s> sorry to omit that earlier. 
+</s><s>yes, saving each time, in the source app and in the fm container file. 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-1427523</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="max_drawdown" timestamp="Mar 13, 2014 2:29 PM">
+<s>got a trailhead for this? 
+</s><s>the symptom is intermittent.</s><s> it happens after changing many exhibits and then file > import > file operations, or text inset properties > update operations, in a fairly short time, a time of intense updates during a review cycle. 
+i try to link in a graphic file or inset, but fm seems to use a prior version of the graphic or inset when generating a pdf.</s><s> i can open the graphic or inset file in its native app (sometimes fm) and the expected change is present.</s><s> the wysiwyg shows one thing and the pdf another.</s><s> reminds me of the days before wysiwyg. 
+a quick surf of the forum shows plenty of stuff pertaining to "cache" and "font," but the fonts in the pdf look fine. 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-6208914</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 4:47 AM">
+<s>what version of fm?</s><s> are you saving between each of these operations? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-6209818</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="max_drawdown" timestamp="Mar 14, 2014 9:56 AM">
+<s>@jeff, 
+</s><s>fm11.</s><s> sorry to omit that earlier. 
+</s><s>yes, saving each time, in the source app and in the fm container file. 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-1292602</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 9, 2013 1:04 PM">
+<s>hi, 
+</s><s>i have had a few blue screens recently on my old windows xp system with frame 7.2 and 3 gb ram. 
+</s><s>now i see that my color palette is scrambled in one large manual.</s><s> only the basic colors are there and a long list of entries like rgb 017,013,010 are inthe palette.</s><s> they don't do anything and i can't delete them via view > color > definitions. 
+</s><s>the manual is 482 pages, 52 mb, with scores of graphics and photos imported by reference. 
+</s><s>as a workaround, i copies the contents into a new file and that fixed the problem, but a few hours later, the color palette is corrupted again. 
+</s><s>has anyone seen this before and is there a more sure workaround? 
+</s><s>yours, 
+</s><s>michael f 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5666767</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 9, 2013 1:35 PM">
+<s>see: how do i remove colors from the tools palette 
+in a nutshell, you can't.</s><s> you need to find the indexed color import causing it, and fix that (convert it to vector, contone or bitmap). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5666849</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Arnis%20Gubins" timestamp="Sep 9, 2013 1:38 PM">
+<s>the rgb colours come frrom importewd graphics that use indexed colours, typically pngs or gifs.</s><s> you should convert these to use 24-bit colours.</s><s> you can delete the rgb colours more easily in a mif file.</s><s> the colours will be re-created by fm whenever you import one of these indexed-colour files, so no "corruption" is taking place. 
+</s><s>you might want to have a look at silicon prairie's colortools (http://www.siliconprairiesoftware.com/products.html) if this is a persistent problem and/or you have a lot of these problematic images. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5668976</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 8:14 AM">
+<s>arnis, 
+</s><s>thank you for the suggestions.</s><s> i'm relieved that my manual is not corrupted. 
+</s><s>let me see if i understand you. 
+1.</s><s> "convert graphics to use 24-bit colours." 
+</s><s>in photoshop i can see under image -> mode that each photo is set to indexed color.</s><s> if i change it to rgb color or cmyk color, then i can choose only 8 bits/channel or 16 bits/channel from the menu.</s><s> i don't know how to get 24-bits. 
+btw, a graphics co-worker has recommended that i set photos to rgb color rather than cmyk color since they are primarily used in pdf files.</s><s> does that sound right? 
+
+2.</s><s> "delete the rgb colours more easily in a mif file." 
+</s><s>what do i look for in the mif file and what exactly do i delete?</s><s> are the colors all in one place or part of each image? 
+</s><s>should i fix the color mode of all the graphics first and then edit the mif file and remove the odd color names? 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669089</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 10, 2013 8:26 AM">
+<s>>...</s><s> i can choose only 8 bits/channel or 16 bits/channel from the menu.</s><s> i don't know how to get 24-bits. 
+8 bits/channel is 24 bits (8 bits each for r, g and b), aka contone. 
+> btw, a graphics co-worker has recommended that i set photos to rgb > color rather than cmyk color since they are primarily used in pdf files.</s><s> > does that sound right? 
+</s><s>usually.</s><s> we use srgb as our color space for this reason. 
+>> 2.</s><s> "delete the rgb colours more easily in a mif file." 
+</s><s>even once you eliminate all the indexed color imports, it may take some effort to delete all those rgb definitions.</s><s> doing it in mif is trivial (well, as trivial as mif mucking ever gets, anyway). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669079</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 8:26 AM">
+<s>arnis and error, 
+</s><s>one more detail.</s><s> i originally saved all the images from a word 10 file as png files.</s><s> word 10 seems to have added a save as picture option to the popup menu. 
+</s><s>if i save them as jpeg files and replace the png files, will that eliminate the odd colors in the color palette?</s><s> will there be any improvement in screen resolution? 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669183</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 10, 2013 8:54 AM">
+<s>> ... originally saved all the images from a word 10 file ... 
+</s><s>are these natural world photos, or screenshots? 
+> ... as png files. 
+</s><s>png can do indexed color and contone.</s><s> i'll bet ms provides no control over that at save. 
+> word 10 seems to have added a save as picture option to the popup menu.</s><s> > if i save them as jpeg files and replace the png files, will that eliminate the > odd colors in the color palette? 
+</s><s>that's two separate questions: 1.</s><s> will they save as 24-bit contone?</s><s> 2. will reimporting them as contone clean up the color catalog?</s><s> answers: 1. maybe 2. probably not automatically (but is necessary to allow clean-up) 
+</s><s>jpeg, alas, can also support indexed color (we've had trouble due to that).</s><s> what ms is doing is anyone's guess, because: a. they never give us control (we're too stupid), and b. they never tell us what they are doing (we don't need to know). 
+> will there be any improvement in screen resolution? 
+</s><s>hard to say.</s><s> it depends on how mr.bill saves, and whether your current zoom level affects that.</s><s> jpeg will introduce artifacts - "ringing" at edges where the curve-match algorithm (dct) runs out of gas.</s><s> and since this is ms, you probably don't get to specify the jpeg compression level. 
+</s><s>the ideal situation is to go back to the raw original art. 
+</s><s>any chance word can save as tiff? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669170</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Arnis%20Gubins" timestamp="Sep 10, 2013 8:58 AM">
+<s>michael, 
+</s><s>jpgs are only meant to be used for photographic images (not any form of screen captures).</s><s> so unless you are actually dealing with photos, disregard this format (it will introduce unwanted artifacts, especially around text and straight lines). 
+</s><s>if by word 10 you actually mean word 2010, then the graphics can be direcly obtained from the file.</s><s> the word .docx format is just a zip container.</s><s> so simply crate a copy of the file with a .zip extension and use any zip program to open this..</s><s> you will find the graphics in their original state and can adjust them as required, rather than relying on microsoft's filtering. 
+</s><s>in the mif file, look for the "<colorcatalog" entry, which is the start of the color catalog.</s><s> then there will bee a series of < color entries, each looking something like this: 
+<color <colortag 'black'> <colorcyan 0.000000> <colormagenta 0.000000> <coloryellow 0.000000> <colorblack 100.000000> <colorattribute colorisblack> <colorattribute colorisreserved> > # end of color 
+the first 16 colors (ending at "salmon") are system reserved colours and should be left as is.</s><s> the subsequent rgbxxxxx color tag entries can all be deleted. 
+</s><s>be careful not to delete the closing ">" for the "<colorcatalog" entry after the last "<color" entry. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669443</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 10:22 AM">
+<s>arnis and error, 
+</s><s>thanks for all that great information.</s><s> i had no idea you could turn word 2010 files into zip files and then extract all the graphics in one subfolder.</s><s> that in itself is a great time-saver since it eliminates the need to save them one at a time.</s><s> the files were extracted as png files so i'll convert them to 8 bit rgb and save them as jpegs since they are all photos (i don't know how or when the photos were converted from jpeg to png.</s><s> the doc file is four years old.</s><s>) 
+</s><s>i looked at a mif file and found the color tags.</s><s> as error said, that's an easy bit of mif mucking.</s><s> i also noticed a few unrelated instances of duplicate color names i had used in a condition tag (purple vs. purple) and cleaned those up. 
+</s><s>thanks to you both for helping me fix the problems and give me a better way to handle the graphics. 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-6209245</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="ReneSteph" timestamp="Mar 14, 2014 7:16 AM">
+<s>great tip about the docx files.</s><s> i had been searching for each graphic, then reset to size at insertion, save as web page (filtered) and grabbing the images that way.</s><s> your zip method is a tremendous timesaver.</s><s> love it!</s><s> 
+</s><s>so, in fm12.0.1.331 i'm finding this same rgb situation: all the referenced graphics are png, but they were screen shots taken with snagit, rather than harvested from word.</s><s> i ran the latest version of silicon prarie's color tools (hat tip to steve@sps), then saved as mif.</s><s> verified the rgb clutter was gone from the list.</s><s> opened the mif, saved as fm, still looked fine.</s><s> made some edits, saved the fm file, and the blasted rgb clutter returned. 
+</s><s>it's been a few versions (maybe fm7.0?</s><s>) since i've seen that kind of stubborn attachment to the rgb clutter from png files.</s><s> thought that was fixed.</s><s> do i need to take a different approach?</s><s> i have a batch graphic conversion utility, could move them all from png to jpg, i guess, but then there's the reinsertion time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-1292602</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 9, 2013 1:04 PM">
+<s>hi, 
+</s><s>i have had a few blue screens recently on my old windows xp system with frame 7.2 and 3 gb ram. 
+</s><s>now i see that my color palette is scrambled in one large manual.</s><s> only the basic colors are there and a long list of entries like rgb 017,013,010 are inthe palette.</s><s> they don't do anything and i can't delete them via view > color > definitions. 
+</s><s>the manual is 482 pages, 52 mb, with scores of graphics and photos imported by reference. 
+</s><s>as a workaround, i copies the contents into a new file and that fixed the problem, but a few hours later, the color palette is corrupted again. 
+</s><s>has anyone seen this before and is there a more sure workaround? 
+</s><s>yours, 
+</s><s>michael f 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5666767</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 9, 2013 1:35 PM">
+<s>see: how do i remove colors from the tools palette 
+in a nutshell, you can't.</s><s> you need to find the indexed color import causing it, and fix that (convert it to vector, contone or bitmap). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5666849</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Arnis%20Gubins" timestamp="Sep 9, 2013 1:38 PM">
+<s>the rgb colours come frrom importewd graphics that use indexed colours, typically pngs or gifs.</s><s> you should convert these to use 24-bit colours.</s><s> you can delete the rgb colours more easily in a mif file.</s><s> the colours will be re-created by fm whenever you import one of these indexed-colour files, so no "corruption" is taking place. 
+</s><s>you might want to have a look at silicon prairie's colortools (http://www.siliconprairiesoftware.com/products.html) if this is a persistent problem and/or you have a lot of these problematic images. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5668976</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 8:14 AM">
+<s>arnis, 
+</s><s>thank you for the suggestions.</s><s> i'm relieved that my manual is not corrupted. 
+</s><s>let me see if i understand you. 
+1.</s><s> "convert graphics to use 24-bit colours." 
+</s><s>in photoshop i can see under image -> mode that each photo is set to indexed color.</s><s> if i change it to rgb color or cmyk color, then i can choose only 8 bits/channel or 16 bits/channel from the menu.</s><s> i don't know how to get 24-bits. 
+btw, a graphics co-worker has recommended that i set photos to rgb color rather than cmyk color since they are primarily used in pdf files.</s><s> does that sound right? 
+
+2.</s><s> "delete the rgb colours more easily in a mif file." 
+</s><s>what do i look for in the mif file and what exactly do i delete?</s><s> are the colors all in one place or part of each image? 
+</s><s>should i fix the color mode of all the graphics first and then edit the mif file and remove the odd color names? 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669089</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 10, 2013 8:26 AM">
+<s>>...</s><s> i can choose only 8 bits/channel or 16 bits/channel from the menu.</s><s> i don't know how to get 24-bits. 
+8 bits/channel is 24 bits (8 bits each for r, g and b), aka contone. 
+> btw, a graphics co-worker has recommended that i set photos to rgb > color rather than cmyk color since they are primarily used in pdf files.</s><s> > does that sound right? 
+</s><s>usually.</s><s> we use srgb as our color space for this reason. 
+>> 2.</s><s> "delete the rgb colours more easily in a mif file." 
+</s><s>even once you eliminate all the indexed color imports, it may take some effort to delete all those rgb definitions.</s><s> doing it in mif is trivial (well, as trivial as mif mucking ever gets, anyway). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669079</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 8:26 AM">
+<s>arnis and error, 
+</s><s>one more detail.</s><s> i originally saved all the images from a word 10 file as png files.</s><s> word 10 seems to have added a save as picture option to the popup menu. 
+</s><s>if i save them as jpeg files and replace the png files, will that eliminate the odd colors in the color palette?</s><s> will there be any improvement in screen resolution? 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669183</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 10, 2013 8:54 AM">
+<s>> ... originally saved all the images from a word 10 file ... 
+</s><s>are these natural world photos, or screenshots? 
+> ... as png files. 
+</s><s>png can do indexed color and contone.</s><s> i'll bet ms provides no control over that at save. 
+> word 10 seems to have added a save as picture option to the popup menu.</s><s> > if i save them as jpeg files and replace the png files, will that eliminate the > odd colors in the color palette? 
+</s><s>that's two separate questions: 1.</s><s> will they save as 24-bit contone?</s><s> 2. will reimporting them as contone clean up the color catalog?</s><s> answers: 1. maybe 2. probably not automatically (but is necessary to allow clean-up) 
+</s><s>jpeg, alas, can also support indexed color (we've had trouble due to that).</s><s> what ms is doing is anyone's guess, because: a. they never give us control (we're too stupid), and b. they never tell us what they are doing (we don't need to know). 
+> will there be any improvement in screen resolution? 
+</s><s>hard to say.</s><s> it depends on how mr.bill saves, and whether your current zoom level affects that.</s><s> jpeg will introduce artifacts - "ringing" at edges where the curve-match algorithm (dct) runs out of gas.</s><s> and since this is ms, you probably don't get to specify the jpeg compression level. 
+</s><s>the ideal situation is to go back to the raw original art. 
+</s><s>any chance word can save as tiff? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669170</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Arnis%20Gubins" timestamp="Sep 10, 2013 8:58 AM">
+<s>michael, 
+</s><s>jpgs are only meant to be used for photographic images (not any form of screen captures).</s><s> so unless you are actually dealing with photos, disregard this format (it will introduce unwanted artifacts, especially around text and straight lines). 
+</s><s>if by word 10 you actually mean word 2010, then the graphics can be direcly obtained from the file.</s><s> the word .docx format is just a zip container.</s><s> so simply crate a copy of the file with a .zip extension and use any zip program to open this..</s><s> you will find the graphics in their original state and can adjust them as required, rather than relying on microsoft's filtering. 
+</s><s>in the mif file, look for the "<colorcatalog" entry, which is the start of the color catalog.</s><s> then there will bee a series of < color entries, each looking something like this: 
+<color <colortag 'black'> <colorcyan 0.000000> <colormagenta 0.000000> <coloryellow 0.000000> <colorblack 100.000000> <colorattribute colorisblack> <colorattribute colorisreserved> > # end of color 
+the first 16 colors (ending at "salmon") are system reserved colours and should be left as is.</s><s> the subsequent rgbxxxxx color tag entries can all be deleted. 
+</s><s>be careful not to delete the closing ">" for the "<colorcatalog" entry after the last "<color" entry. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669443</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 10:22 AM">
+<s>arnis and error, 
+</s><s>thanks for all that great information.</s><s> i had no idea you could turn word 2010 files into zip files and then extract all the graphics in one subfolder.</s><s> that in itself is a great time-saver since it eliminates the need to save them one at a time.</s><s> the files were extracted as png files so i'll convert them to 8 bit rgb and save them as jpegs since they are all photos (i don't know how or when the photos were converted from jpeg to png.</s><s> the doc file is four years old.</s><s>) 
+</s><s>i looked at a mif file and found the color tags.</s><s> as error said, that's an easy bit of mif mucking.</s><s> i also noticed a few unrelated instances of duplicate color names i had used in a condition tag (purple vs. purple) and cleaned those up. 
+</s><s>thanks to you both for helping me fix the problems and give me a better way to handle the graphics. 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-6209245</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="ReneSteph" timestamp="Mar 14, 2014 7:16 AM">
+<s>great tip about the docx files.</s><s> i had been searching for each graphic, then reset to size at insertion, save as web page (filtered) and grabbing the images that way.</s><s> your zip method is a tremendous timesaver.</s><s> love it!</s><s> 
+</s><s>so, in fm12.0.1.331 i'm finding this same rgb situation: all the referenced graphics are png, but they were screen shots taken with snagit, rather than harvested from word.</s><s> i ran the latest version of silicon prarie's color tools (hat tip to steve@sps), then saved as mif.</s><s> verified the rgb clutter was gone from the list.</s><s> opened the mif, saved as fm, still looked fine.</s><s> made some edits, saved the fm file, and the blasted rgb clutter returned. 
+</s><s>it's been a few versions (maybe fm7.0?</s><s>) since i've seen that kind of stubborn attachment to the rgb clutter from png files.</s><s> thought that was fixed.</s><s> do i need to take a different approach?</s><s> i have a batch graphic conversion utility, could move them all from png to jpg, i guess, but then there's the reinsertion time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-315610</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="(Len_Fridman)" timestamp="Aug 21, 2008 7:59 AM">
+<s>i need to track changes from draft to draft and would like to use different change bar colors for this purpose.</s><s> is this possible using framemaker?</s><s> thanks in advance,
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-1235664</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Art%20Campbell" timestamp="Aug 21, 2008 8:36 AM">
+<s>i'm not positive you can do it just with change bars, but the track changes capability in fm 8 should allow you to juggle colors and revs at will by altering the conditions it applies automatically.</s><s> so you could have one color set for first draft, another color set for second, and so on.</s><s> art
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208105</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Krazy%20Glew" timestamp="Mar 13, 2014 6:26 PM">
+<s>while "track changes" helps, it does not work wekll in a document that makes extensive use of conditional text, where the edits need to add/remove conditional text. 
+</s><s>i.e,. it would be nice to have different change bar typesm in addition. 
+</s><s>as it is, i find track changes not very useful.</s><s> so i am resorting to turning change bars on and off.</s><s> which loses, because then i lose change bars prior to the new set. 
+</s><s>by the way: i can get multiple changebars easily in latex. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208536</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="FieryPantone" timestamp="Mar 14, 2014 12:18 AM">
+<s>fwiw, i've always used conditions for track changes and never even considered turning track changes on – i found it far too easy to end up with an unreadable document.</s><s> i agree, though, that change bars that picked up the colour of the font could be a nifty enhancement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208918</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 4:49 AM">
+<s>get out your requests here - https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-315610</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="(Len_Fridman)" timestamp="Aug 21, 2008 7:59 AM">
+<s>i need to track changes from draft to draft and would like to use different change bar colors for this purpose.</s><s> is this possible using framemaker?</s><s> thanks in advance,
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-1235664</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Art%20Campbell" timestamp="Aug 21, 2008 8:36 AM">
+<s>i'm not positive you can do it just with change bars, but the track changes capability in fm 8 should allow you to juggle colors and revs at will by altering the conditions it applies automatically.</s><s> so you could have one color set for first draft, another color set for second, and so on.</s><s> art
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208105</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Krazy%20Glew" timestamp="Mar 13, 2014 6:26 PM">
+<s>while "track changes" helps, it does not work wekll in a document that makes extensive use of conditional text, where the edits need to add/remove conditional text. 
+</s><s>i.e,. it would be nice to have different change bar typesm in addition. 
+</s><s>as it is, i find track changes not very useful.</s><s> so i am resorting to turning change bars on and off.</s><s> which loses, because then i lose change bars prior to the new set. 
+</s><s>by the way: i can get multiple changebars easily in latex. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208536</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="FieryPantone" timestamp="Mar 14, 2014 12:18 AM">
+<s>fwiw, i've always used conditions for track changes and never even considered turning track changes on – i found it far too easy to end up with an unreadable document.</s><s> i agree, though, that change bars that picked up the colour of the font could be a nifty enhancement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208918</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 4:49 AM">
+<s>get out your requests here - https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207154-1427444</DOCNO>
+<TEXT>
+<subject>two paragraph styles in one line</subject>
+<post author="ed.hawley@adm.idaho.gov" timestamp="Mar 13, 2014 12:25 PM">
+<s>i am using fm 9p255.</s><s> i am trying to put two paragraph styles in one line, one will go the the table of contents and the other will stay as body text.</s><s> i saw something years ago and now i can't find it at all.</s><s> does this make sense or not?</s><s>?</s><s> thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207154-6207193</DOCNO>
+<TEXT>
+<subject>two paragraph styles in one line</subject>
+<post author="Art_Campbell" timestamp="Mar 13, 2014 12:52 PM">
+<s>yeah, it's a standard feature.</s><s> set the pagination properties of the left side paragraph tag to run in head.</s><s> you can use a punctuation mark thee at the end of the tag or not; if not just use a space. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+
+</s><s>on thu, mar 13, 2014 at 3:25 pm, ed.hawley@adm.idaho.gov < 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207154-6207466</DOCNO>
+<TEXT>
+<subject>two paragraph styles in one line</subject>
+<post author="ed.hawley%40adm.idaho.gov" timestamp="Mar 13, 2014 1:58 PM">
+<s>that is just what i am looking for.</s><s> thank you for all your help.</s><s> ed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207154-1427444</DOCNO>
+<TEXT>
+<subject>two paragraph styles in one line</subject>
+<post author="ed.hawley@adm.idaho.gov" timestamp="Mar 13, 2014 12:25 PM">
+<s>i am using fm 9p255.</s><s> i am trying to put two paragraph styles in one line, one will go the the table of contents and the other will stay as body text.</s><s> i saw something years ago and now i can't find it at all.</s><s> does this make sense or not?</s><s>?</s><s> thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207154-6207193</DOCNO>
+<TEXT>
+<subject>two paragraph styles in one line</subject>
+<post author="Art_Campbell" timestamp="Mar 13, 2014 12:52 PM">
+<s>yeah, it's a standard feature.</s><s> set the pagination properties of the left side paragraph tag to run in head.</s><s> you can use a punctuation mark thee at the end of the tag or not; if not just use a space. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+
+</s><s>on thu, mar 13, 2014 at 3:25 pm, ed.hawley@adm.idaho.gov < 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207154-6207466</DOCNO>
+<TEXT>
+<subject>two paragraph styles in one line</subject>
+<post author="ed.hawley%40adm.idaho.gov" timestamp="Mar 13, 2014 1:58 PM">
+<s>that is just what i am looking for.</s><s> thank you for all your help.</s><s> ed 
+</s></post>
+</TEXT>
+</DOC>
+
+

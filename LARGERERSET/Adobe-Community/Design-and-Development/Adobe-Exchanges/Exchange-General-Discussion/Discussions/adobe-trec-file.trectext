@@ -1,0 +1,1092 @@
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-1239870</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jun 23, 2013 10:01 AM">
+<s>i just installed cc products yesterday (ps,id,ai,pr,fl,dw,lr,ae,exchange,and a few others).</s><s> upon successful download and install, nothing in the extensions panels will load.</s><s> granted i only have kuler and exchange at the moment but, neither will connect in any product.</s><s> the exchange product will connect seperatley but the extension will not.</s><s> below is a screen-cap of the window.</s><s> any suggestions?</s><s> i have already checked that the "allow exchange to connect" button is checked in all applicable products. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5441962</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="Rick%20Gerard" timestamp="Jun 23, 2013 6:00 PM">
+<s>i am not even getting the exchange pannel in dreamweaver, photoshop, others....</s><s> the cs6 exchange panel is visible in the extension panel. 
+i am also not getting kuler. 
+</s><s>macbookpror osx 10.8.4 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5445037</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="Ken%20G.%20Rice" timestamp="Jun 24, 2013 1:32 PM">
+<s>moved from the creative cloud to the exchange forum.</s><s> they will be able to help you here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5456907</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="fgregor" timestamp="Jun 27, 2013 1:59 PM">
+<s>hi rick, 
+</s><s>just to clarify - are you saying that the exchange panel is working correctly in cs6, but in cc the panel is not listed in the extensions menu? 
+</s><s>the first thing to check would be whether or not there is a process running called cepservicemanager - e.g.</s><s> (in terminal), 
+</s><s>ps -e | grep cepservicemanager 
+thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5457059</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="fgregor" timestamp="Jun 27, 2013 2:02 PM">
+<s>hi djlotus, 
+the first thing to check would be how your computer connects to the internet.</s><s> do you connect via a proxy or vpn?</s><s> and do you have any "internet security" type software running which may be blocking the exchange panel's access to the internet? 
+</s><s>thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5462098</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jun 29, 2013 7:45 AM">
+<s>fgregor, 
+i do not connect using a vpn or proxy.</s><s> i have checked my firewall settings and all adobe cc applications are allowed to communicate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5463457</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jun 29, 2013 8:14 PM">
+<s>seriously?</s><s> a week and no suggestions?</s><s> so since i decided to update to cc i am just out of luck? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5463964</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="Rick%20Gerard" timestamp="Jun 30, 2013 5:58 AM">
+<s>i just uninstalled dreamweaver cc and re-installed from the creative cloud app and now everything is just fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5464030</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jun 30, 2013 7:19 AM">
+<s>i just installed all the programs on my laptop and the exchange panel works fine.</s><s> i guess i will reinstall all the programs on my desktop and see what happens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5464518</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jun 30, 2013 12:33 PM">
+<s>just did a fresh install of all programs and exchange panel still not working.</s><s> same error messeges. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5465707</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="fgregor" timestamp="Jul 1, 2013 3:22 AM">
+<s>thanks rick, glad you're up and running.     hi djlotus,   ok, thanks for ruling-out the vpn/proxy/firewall issues.</s><s> just to make doubly-sure that some other software on your computer isn't blocking internet access for unknown programs, can you check what antivirus software is currently running, and check whether you have any third-party internet security software installed?   given that you're seeing this behaviour in several products, it suggests that some system-wide component is failing to get online.</s><s> we need to work out exactly which component is the problem, so could you please share these logs with us?   /users/<username>/library/preferences/adobe/exchange/adobeexchange.log /users/<username>/library/logs/pdapp.log /users/<username>/library/logs/amt3.log   c:\users\<username>\appdata\local\temp\amt3.log c:\users\<username>\appdata\local\temp\pdapp.log c:\users\<username>\appdata\roaming\adobe\exchange\adobeexchange.log   (feel free to email them to fgregor at adobe dot com.</s><s>)   also, it looks like there may be a setting which has somehow disabled internet access for extensions.   launch the registry editor: for windows xp, choose start > run and type regedit then press return to open the registry editor, or...</s><s> for windows 7/vista, choose start, type regedit, and press return when the registry editor appears in the results.</s><s> look for the following key.</s><s> if it's there, please tell us the value: for 32-bit systems: hkey_local_machine\software\adobe\adobeonlinedefault.</s><s> for 64-bit systems: hkey_local_machine\software\wow6432node\adobe\adobeonlinedefault ...or on mac, open the apple property list editor (supplied with the apple skd) or other property list editor application..</s><s> open the file [startup disk]/library/preferences/com.adobe.adobeonlinehelp.plist.</s><s> select root to see the subentries.</s><s> locate the string object adobeonlinedefault, and tell us the value.   regards, fraser
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5481584</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jul 6, 2013 9:40 AM">
+<s>just noticed this response.</s><s> i will do that now and get right back to you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5481585</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jul 6, 2013 9:47 AM">
+<s>as far as the registry, the value is 0. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5481587</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jul 6, 2013 9:59 AM">
+<s>/users/<username>/library/preferences/adobe/exchange/adobeexchange.log - does not exist /users/<username>/library/logs/pdapp.log - does not exist /users/<username>/library/logs/amt3.log - does not exist 
+others are in email being sent now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5485505</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="fgregor" timestamp="Jul 8, 2013 6:52 AM">
+<s>hi djlotus, 
+i received your email, but unfortunately there was no zip file attached. 
+</s><s>however - the fact that your adobeonlinedefault registry value is set to 0 is very likely to be the problem. 
+</s><s>setting this value to 0 tells adobe extensions "do not connect to the internet" - and setting it to 1 allows extensions to connect to the internet.</s><s> it's very odd that this value was set to 0 in your registry - perhaps another extension on your machine previously set this property to 0 without intending to affect other extensions.</s><s> can you try changing this value to 1, restarting your computer, and then opening the exchange panel again? 
+</s><s>if this still doesn't work, please try resending the logs to me and i'll investigate further. 
+</s><s>thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5485831</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jul 8, 2013 8:22 AM">
+<s>thanks for the response.</s><s> weird about the .zip not going through.</s><s> if needed i will try again.</s><s> i will try changing the value as you suggest and let you know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5499454</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="djlotus" timestamp="Jul 12, 2013 6:54 AM">
+<s>that appears to have fixed the issue with both kuler and exchange.</s><s> i appreciate your help in getting this matter resolved. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5499591</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="fgregor" timestamp="Jul 12, 2013 7:37 AM">
+<s>fantastic, glad to hear it. 
+</s><s>thanks for letting me know! 
+</s><s>fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5679785</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="rarosewall" timestamp="Sep 13, 2013 10:21 AM">
+<s>i am having a similar issue  - exchange cannont find the internet - running my laptop as well and it works fine.</s><s> both pcs running photoshop cc.</s><s> i cannot find this entry in my registry on the desktop computer though: for 64-bit systems: hkey_local_machine\software\wow6432node\adobe\adobeonlinedefault   i do have this folder: hkey_local_machine\software\wow6432node\adobe\extensionmanager
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5441114-5686161</DOCNO>
+<TEXT>
+<subject>Exchange and Kuler extensions unable to connect in fresh install of CC products</subject>
+<post author="fgregor" timestamp="Sep 16, 2013 9:58 AM">
+<s>hi rarosewall,   i think the fact that you cannot find "adobeonlinedefault" anywhere is probably a good sign - indicating that this is still set to its default value.   can you tell me a little more about your problem?</s><s> what steps do you take, and what do you see?</s><s> are you seeing exactly the same error message as in the screenshot in the first post, and are you able to verify whether any other extensions are able to connect to the internet?   also, the obvious questions: do you connect via a proxy or vpn?</s><s> and do you have any "internet security" type software running which may be blocking the exchange panel's access to the internet?   many thanks, fraser
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5711805-1303426</DOCNO>
+<TEXT>
+<subject>Can't install latest Exchange Extension for Photoshop CC</subject>
+<post author="Geordie Moffatt" timestamp="Sep 25, 2013 3:13 AM">
+<s>hi, i've been trying for a while now to just get the exchange extension working in photoshop cc. 
+1.</s><s> first photoshop needed to be updated, did that.</s><s> 2. then i installed extension manager, did that.</s><s> 3. then apparently had to update both, did that.</s><s> 4. then tried to open the exchange extension in ps cc, it tells me to "click update for the latest features." i clicked update...</s><s> 5. another dialog in the extension pops up and says "a newer version of the exchange panel is available.</s><s> would you like to install it?" i click yes...</s><s> 6. it then downloads the extension, about 14mb 7. then it tries to install it, but says "adobe extension manager is required to install this extension.</s><s> do you want to launch extension manager now?".</s><s> i click yes... 
+</s><s>the panel just sits there spinning the wait wheel.</s><s> it sat there for 5 mins before i killed the panel. 
+
+</s><s>so then i thought i'll just get the latest version of the panel from http://www.adobeexchange.com/ 
+1.</s><s> went to http://www.adobeexchange.com/ and clicked the "download" button 2.</s><s> i chose download for cc.</s><s> 3.</s><s> i waited for it to download, then doublie clicke the zxp which opened extension manager cc.</s><s> extension manager cc then pops up a dialog saying it's installing the extension. 
+</s><s>extension manager then pops up a message: "the entension 'adobeexchange' does not contain a valid signature.</s><s> the extnesion will not be installed." 
+
+</s><s>so now i'm up to 10 steps just to try and get the exchange extension installed.</s><s> i'm on win 7 and the trial version of photoshop cc. 
+</s><s>anyone have any problems with this? 
+</s><s>tnks, 
+</s><s>g 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5711805-5711851</DOCNO>
+<TEXT>
+<subject>Can't install latest Exchange Extension for Photoshop CC</subject>
+<post author="lesavage" timestamp="Sep 25, 2013 3:24 AM">
+<s>hi,   apologies that you are experiencing such issues!</s><s> firstly can i ask you to complete your final 3 steps but with logging enabled for extension manager?</s><s> to set up logging please complete the following steps:   create a file called 'exmancoreliblog.yes' and place it in the following location: win: c:\users\<username>\appdata\roaming\adobe\extension manager cc\log\exmancoreliblog.yes mac: /users/<username>/library/application support/adobe/extension manager cc/log/exmancoreliblog.yes 2.</s><s> then create a file named 'exmanlog.yes' and place it at: win: c:\program files (x86)\adobe\adobe extension manager cc\exmanlog.yes mac: /applications/adobe extension manager cc/adobe extension manager cc.app/contents/macos/exmanlog.yes 3.</s><s> the logs files are generated and saved in the following location: win: c:\users\<username>\appdata\roaming\adobe\extension manager cc\log mac: /users/<username>/library/application support/adobe/extension manager cc/log could you then send the log files to me at lesavage at adobe dot com. could you also send me the adobe exchange log file so that i can investigate the issues being experienced in your first set of steps: win: c:\documents and settings\<user>\appdata\roaming\adobe\exchange\adobeexchange.log mac: : /users/<user>/library/preferences/adobe/exchange/ thanks in advance, lea
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5711805-5711811</DOCNO>
+<TEXT>
+<subject>Can't install latest Exchange Extension for Photoshop CC</subject>
+<post author="Rambutan!!!" timestamp="Sep 25, 2013 3:29 AM">
+<s>this was in the log: [debug] wed sep 25 18:20:39 2013 [.</s><s>38] (..\source\control\owlfrontcontroller.cpp,139) -----------------air request to c++ end-------------------------------------------------- [error] wed sep 25 18:20:42 2013 [.</s><s>16] (..\source\control\installextensioncommand.cpp,415) -cinstallexcommand::execute: exmaninstallextension() failed, status = -402!</s><s> [trace] wed sep 25 18:20:42 2013 [.</s><s>17] (..\source\control\installextensioncommand.cpp,482) -cinstallexcommand::setresponse: install extension c:\users\geordie.moffatt\downloads\adobeexchange.zxp finished 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5711805-5711814</DOCNO>
+<TEXT>
+<subject>Can't install latest Exchange Extension for Photoshop CC</subject>
+<post author="Rambutan!!!" timestamp="Sep 25, 2013 3:33 AM">
+<s>sorry i just posted that after you replied, i'll do waht you said and send you the log files.</s><s> i just got this working in a hacky way, i disabled internet access in extension manager and then installed the exchange extension then enabled internet access.</s><s> it installed fine and seems to work fine in photoshop cc.</s><s> searching etc works in the exxhange extension so it's seeing the internet fine. 
+</s><s>could this be related to intranet/firewall issues similar to this thread?</s><s> http://forums.adobe.com/thread/1235641 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5711805-5730540</DOCNO>
+<TEXT>
+<subject>Can't install latest Exchange Extension for Photoshop CC</subject>
+<post author="lesavage" timestamp="Oct 2, 2013 1:29 AM">
+<s>hi geordie moffatt, 
+</s><s>i am delighted that you found a workaround, however just to let you know that i did not receive the log files so please don't hesitate to forward them on if you still experience issues. 
+</s><s>kind regards, lea 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-284799</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(David_5_Hatch)" timestamp="May 17, 2007 6:32 PM">
+<s>hi all, a redesign of the adobe exchange has been released.</s><s> thanks to all who have participated in discussions over the past many months reviewing comps, schematics, and beta versions.</s><s> with this release we believe we have fixed the major inconveniences users have reported over the past months.</s><s> clearly there is more work to be done and we will continue to be in communication about where we can next take this experience.</s><s> some release notes: there are "empty" stars next to the existing (pre-may, 17) comments in the comments section of the item detail page.</s><s> in the new version of the exchange we have the ability to show a rating next to comments in each commenters post.</s><s> but since this data relationship did not exist in the prior version, all comments already in the system as of may 17, 2007 have a set of blank stars next to them (but dont worry; the rating each person submitted before is still in the system and goes into the current aggregate rating of the exchange item).</s><s> in other words, no data is lost.</s><s> we have just created a way to display ratings attached to comments for all subsequent comments.</s><s> authors/contributors are listed in orange we did this to raise the visibility of contributors.</s><s> whenever you see an authors name, if you click it you will go to a page of exchange items uploaded by that author.</s><s> in some cases exchange items have long urls in the description.</s><s> if the urls are long enough they have the possibility of breaking the layout of the page.</s><s> if you, as an author/contributor, see this happening in a exchange item that belongs to you, you can go edit that item to massage the text to fix the problem.</s><s> if you need help please shout.</s><s> please go ahead and note any bugs you find in this forum.</s><s> we will be checking this regularly!</s><s> i hope this release allows your participation in this lively environment to be much more smooth.</s><s> i look forward to hearing from you.</s><s> david hatch, chief information architect, adobe web team
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077627</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="Tom%20Murray%201" timestamp="May 17, 2007 10:16 PM">
+<s>quick look.</s><s> much better.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077628</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Jim_Deitzel)" timestamp="May 18, 2007 2:55 AM">
+<s>interesting that you call it beta.</s><s> this looks more to me like you reverted back to the way it was years ago, when it worked well.</s><s> i always disliked the previous flash based format.</s><s> thanks for the update.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077629</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(SuperMacGuy)" timestamp="May 18, 2007 7:39 AM">
+<s>i am trying to search for some items i submitted but can't find them.</s><s> i am trying "image catalog" in the indesign section or "font catalog" and nothing shows up.</s><s> it's actually "id image catalog" by "couponboy".</s><s> shows up in listing of all items but not when i search it.</s><s> other items with "image catalog" in the name show up when i search.</s><s> do i need to re-edit my submission?</s><s> or is it really a search problem?</s><s> also, when i looked at my item in detail, the name had "vcs" added to it.</s><s> what is that information?</s><s> i see another item that has that.</s><s> i like the direct download link, the speed seems good so far, easy to read.</s><s> i can change font size, yay!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077630</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(SuperMacGuy)" timestamp="May 18, 2007 7:46 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077631</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Alex_July)" timestamp="May 18, 2007 8:24 AM">
+<s>first of all: thank you very much for the hard work!</s><s> the html format is much more useful.</s><s> you can now print and search the text on a page.</s><s> "back" button works much better too.</s><s> hopefully extensions' description can now be indexed by search engines (the way it worked before the flash interface was implemented a few years ago)- so they are easier to find.</s><s> couple of quirks i have found with the beta: something is really slowing down interaction with the pages.</s><s> for example when the page loads after the search it feels like i have to wait for some invisible elements to load before i can start interacting with the page.</s><s> it feels like there is a script that is constantly running on the page and slows down the interaction.</s><s> i have tested on three different computers and had the same experience.</s><s> more importantly the search functionality seems to be downgraded from the previous version: it looks like search is conducted only within the titles of the extensions and not within the description or other fields.</s><s> in many cases in order to find an extension i have to enter its exact name!</s><s> i really hope this can be fixed!</s><s> another usability point: the default value for the category dropdown in the search should be "all" so user can search the entire exchange without an extra click.</s><s> once again, thank you for your efforts.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077632</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Kevin_L.)" timestamp="May 18, 2007 9:48 AM">
+<s>extension search is broken!</s><s>!</s><s>!</s><s> try this: in the extension search box enter a common word such as "browser","validation","popup","form" and hit search button.</s><s> it doesn't find anything.</s><s> no extensions for "form validations" or anything with "browser" functionality?</s><s>?</s><s>?</s><s> that's not right.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077633</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Alexey_Yakovenko)" timestamp="May 18, 2007 10:57 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077634</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="jimhere" timestamp="May 18, 2007 11:19 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077635</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="Trez.Hane" timestamp="May 18, 2007 4:03 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077636</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Daniel_Rodney)" timestamp="May 18, 2007 4:33 PM">
+<s>sooo much better than the flash exchange.</s><s> but here's an issue: when uploading/editing an indesign script, the compatibility only lists indesign cs and cs2.</s><s> cs3 is not listed.</s><s> can you please add it?</s><s> i want to update my script listings to say they are cs3 compatible, but currently i can't.</s><s> thanks and keep up the good work.</s><s> this is a great step in the right direction to making this a good resource again.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077637</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="Michael_H._Phillips-25llKp" timestamp="May 19, 2007 5:20 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077638</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Daniel_Rodney)" timestamp="May 19, 2007 9:37 PM">
+<s>here are a few ideas to consider.</s><s> it would be nice to be able to filter by platform.</s><s> i'd like to find only mac scripts for instance.</s><s> reduces the amount of useless stuff i have to root through.</s><s> the email window that pops up looks horrible.</s><s> (you get this window when viewing a script and you click email: contributor name) the spacing in safari is very strange.</s><s> there is no space on the left, the text hits the side of the window.</s><s> right side spacing has the same issue.</s><s> shouldn't be hard to fix.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077639</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Karl_S)" timestamp="May 21, 2007 7:40 AM">
+<s>well!</s><s> when david said, "very, very soon" to me, he meant it!</s><s> so, i've had a chance to look over the changes so far, and i'll offer my feedback on what is up there now.</s><s> first off, the positive: the biggest improvement imo is that the site is now much, much faster and more responsive!</s><s> no more waiting forever for that flash whirly-ma-gig just so you can see a simple page.</s><s> it is actually possible to stay on the site and navigate to where you want to go without becoming frustrated/bored/mummified.</s><s> the site is snappy now -- and congrats on moving way from flash into html/css, which actually works effectively!</s><s> good job!</s><s> also very nice to the update is that you can actually do effective searches!</s><s> it is very nice to be able to sort the master lists and categories by downloads, rating and date, especially.</s><s> the "filtering" feature works fine, although i believe it could be combined effectively with the broader and more comprehensive "advanced search" feature.</s><s> don't you?</s><s> in addition, it's nice to get back the capability to have the ratings attatched with the reviews!</s><s> it helps to see who rated what and why.</s><s> thank you.</s><s> the loss of (old) individual star rating info is unfortunate, but i'll live with it.</s><s> also, a new feature -- you can add ratings and reviews without having to open another page!</s><s> yay!</s><s> other nice things include getting back 300x200 previews on the description pages, the ability to contact the contributor via e-mail (although the interface for this needs tweaking **see below**), favorites and alerts.</s><s> these are a few starting steps in making the exchange interactive and user friendly.</s><s> now for areas which still need fixing/improvement: when i do a search, some weird things happen!</s><s> first of all, the results seem to be very random!</s><s> for instance, if i search for an author or name of a contribution, the results are not ordered alphabetically, by date, by rating, downloads, or any other discernible method!</s><s> why not?</s><s>?</s><s>?</s><s> also, the search results are not sortable by these methods like everything else!</s><s> it makes it difficult to find what you want or see things in an orderly manner when you get more than 2 results from your search.</s><s> this needs to be fixed/changed.</s><s> keeping on the subject of search... the "publish date" feature in the "advanced search" needs some attention.</s><s> the options available are simply not sufficient.</s><s> the maximum value you can search for is "1 year".</s><s> anything older than that simply cannot be searched for with the publish date feature.</s><s> given that there are many submissions on the exchange from 1999, 2000, etc., this needs to be changed!</s><s> there should be a "more than 1 year ago" option, or even more specific, a year-by-year option.</s><s> the "show all reviews" option on the pages needs to be implemented better imo.</s><s> as it is, it shows 5 reviews by default, and clicking "show all reviews" then shows 10 reviews, with arrows to view the next 10, etc.</s><s> i believe that if you have a link on a page that says "show all reviews" it should actually show all reviews!</s><s> it's still to hard to see them all.</s><s> alternatively, or in addition, the default contribution page should show 10 reviews by default, with arrows already in place to see the next 10 reviews.</s><s> the preview images on the list pages are still quite miniscule (sp?</s><s>).</s><s> it would certainly be nice to have these even just a little bigger (50-100%).</s><s> however, i realize that this poses another problem - horizontal page space.</s><s> let me just say that an 800x600 optimized layout for this type of a site seems rather small, don't you think?</s><s> especially on the list pages, content is "long and skinny".</s><s> i realize that the entire adobe site is built around an 800x600 layout, and this probably makes things difficult, but 1024x768 could sure make this thing nicer!</s><s> (btw - why is adobe still optimized for 800x600?</s><s>?</s><s> you can't tell me that there are people out there buying cs3 and using 800x600 resolution!</s><s> note: cnet.com, yahoo.com, etc.</s><s>) one thing that i'm disappointed not to see here (and i hope we'll see it soon) is a contributor listing and contributor profiles.</s><s> the "old" exchange had a contributor listing.</s><s> it would be nice to have that back, with sortable options for "most contributions", "highest rated", "most downloaded", most d/ls per contribution" just to name a few.</s><s> also, a contributor profile page would be really nice.</s><s> a personal page where users could see information such as contributors' website, favorite uploads, hobbies, interests, "about myself", etc., etc. speaking of contributors' websites...</s><s> i've looked for a place to add that to my uploads, and i can't find it anywhere!</s><s> some people have it, but how do i add it?</s><s> i would like the option to add it globally to all my uploads (this would make it user-friendly).</s><s> the "email author" link currently brings up a new window with a small form.</s><s> this window desperately needs just a little bit of css love applied to it.</s><s> the text is left justified with no spacing from the edge of the window, and the form boxes stretch the entire way across.</s><s> give this baby a little formatting! :-) on the individual contribution pages, the "download" box currently contains some basic information about the contribution.</s><s> i believe it should also contain the "compatible products" info, as this is something very basic that people look for, and it is too hard to find on the pages as is (also, is the "language" option necessary?</s><s> and can i enter "actionscript" or "html" as needed? :-p) the entire "additional extension information" section might be able to be done away with and the information melded into other areas of the page.</s><s> just an idea there.</s><s> this may be a little pet peeve of mine... but we used to have a little feature on the old exchange called "downloads per day" that kept a running list of the most popular new submissions.</s><s> it was an easy way to tell what the best new stuff was.</s><s> i'd like to have that back.</s><s> i did a test to try and update one of my old submissions with a new "preview" url.</s><s> the submission is still "pending" in my "uploads" list (which, btw, would be nice to have ordered sensibly and sortable), however it is still "live" on site and available for download.</s><s> in addition, the new url is also live!</s><s> now, personally, i think this is great!</s><s> i don't have to wait on some "approval" process to change something that has already been approved!</s><s> on the updates, even if the old file was still live until the approval of the update was done, that would be nice.</s><s> however, i'm wondering where the discrepancy is, since my "uploads" list says it is still awaiting approval.</s><s> on this note, i want to mention my last "negative" observation of the new exchange.</s><s> this "beta" (and thank you for calling it that, btw) went live several days ago, and there still have been no new submissions approved.</s><s> why not?</s><s>?</s><s>?</s><s> i still maintain that there needs to be someone approving these things daily (at least every business day)!</s><s>!</s><s>!</s><s> once a month will absolutely never do!</s><s> i don't know what it takes on the business end to allocate someone's time to make this happen, but if we're going to have an exchange, it needs to happen.</s><s> daily approvals keep people coming back.</s><s> monthly approval makes people forget. -------------------------- anyway, in conclusion... it's good to see the updates.</s><s> several key areas were addressed, and the exchange is at least usable again.</s><s> on the other side of the coin, i'm glad this is still in "beta" stage, as there are many improvements that still can/need to be made.</s><s> keep up the hard work, and keep in touch!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077640</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Karl_S)" timestamp="May 21, 2007 12:30 PM">
+<s>uh oh!</s><s> it's been so long since i've actually tried to browse around the exchange...</s><s> i just noticed.</s><s> what happened to the subcategories under photoshop actions?</s><s>?</s><s> there used to be "image effects", "text effects", "aclets", etc. now there's just "actions".</s><s> i'd really rather not sort through 5000 plus actions just to find some cool "image effects".</s><s> please bring the subcategories back!</s><s> thank you.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077641</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Jim-S)" timestamp="May 21, 2007 2:18 PM">
+<s>karl s has made some great points.</s><s> i can't disagree with any of his findings and he certainly took a lot of time to give a very detailed review.</s><s> as one of the contributors who has always been highly respected and ranked, his opinions should carry great weight.</s><s> i imagine the search field is still being tweaked, i notice a couple of grayed out drop down lists.</s><s> his second post regarding the categories of actions - i can't believe i didn't notice that before.</s><s> one of karl's actions - beams of light (http://www.adobe.com/cfusion/exchange/index.cfm?event=extensiondetai l&extid=1040733) was actually the first action i ever downloaded.</s><s> i used it in a project at the lab i used to own and that graphic is in use today.</s><s> i would like to second karl's comment about clicking "show all reviews" should mean show all reviews.</s><s> i do like the 25-per-page listing, i wouldn't mind having the option to bring that to 50-per-page.</s><s> but certainly not a critical request or even an important one.</s><s> and some descriptions seem to just end in mid sentence.</s><s> look at karl's frozen text action for one example.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077642</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(zakusha)" timestamp="May 22, 2007 3:36 PM">
+<s>this version is much better than previous that worked on flash, but still not so easy-to-use as old one.</s><s> the pics in the list of items are too small - 48x32px is insufficient for preview.</s><s> also in the old version was the possibility to browse all items in one page, in the current version the number of displayed items is fixed.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077643</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Colleen_Welch)" timestamp="May 30, 2007 10:04 PM">
+<s>i cant seem to download anything.</s><s> i'm not sure what i'm overlooking.</s><s> i've set my firewall to allow from this site, turned off the pop-up blocker, and done 100 different things to try and make it work all to no avail.</s><s> i'm running xp home with a mcafee secondary firewall.</s><s> any ideas would be greatly appreciated, i'm missing out on loads of cool stuff!</s><s> thanks colleen
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077644</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Erik_Nanstiel)" timestamp="May 31, 2007 4:31 AM">
+<s>i am wondering how the traffic is on the redesigned exchange.</s><s> is it even an appreciable fraction of the former exchange?</s><s> will dave hatch and his team take that into consideration?</s><s> maybe swallow their pride and do a new version of the original design?</s><s> i am still scratching my head over how they thought that throwing away a brilliant user-friendly design would be a good idea?</s><s> the traffic (or lack thereof) will be the indicator.</s><s> i haven't used the exchange since they killed it.</s><s> i played with the new one, but still hate it.</s><s> and it's awful quiet around here.</s><s> more evidence that people just aren't interested.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077645</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="Ram%C3%B3n%20G%20Casta%C3%B1eda" timestamp="Jun 2, 2007 3:57 PM">
+<s>>i haven't used the exchange since they killed it.</s><s> i played with the new one, but still hate it.</s><s> ditto.</s><s> >it's awful quiet around here.</s><s> more evidence that people just aren't interested.</s><s> it was clear that permanent damage was done months ago.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077646</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(stacie_kimrey)" timestamp="Jun 6, 2007 5:26 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077647</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(xch1114)" timestamp="Jun 11, 2007 9:25 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077648</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(xch1114)" timestamp="Jun 11, 2007 9:25 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077649</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Enkar_Loong)" timestamp="Jun 11, 2007 7:24 PM">
+<s>is this really a beta?</s><s> it looks more like alpha to me!</s><s> what's up with the exchange *search*?</s><s> what are those blank dropdowns?</s><s> the results are always inconsitent.</s><s> there is no indication of the products the extension is for.</s><s> not a good job at all adobe!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077650</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Erik_Nanstiel)" timestamp="Jun 13, 2007 4:05 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077651</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Colleen_Welch)" timestamp="Jun 14, 2007 6:22 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077652</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Neville_Caines)" timestamp="Jun 16, 2007 2:28 PM">
+<s>i have been trying now for 30 minutes to purchase a copy of photoshop elements.</s><s> i live in bermuda and for some reason cannot find a store that will accept my country of origin in order to allow me to purchase.</s><s> it is extremely disappointing that a multi-national such as adobe cannot get it right.</s><s> please advise of the hold up and why this appears so difficult for adobe?</s><s> regards neville
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077653</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="Ram%C3%B3n%20G%20Casta%C3%B1eda" timestamp="Jun 16, 2007 11:51 PM">
+<s>neville, hmmm how did you ever land here in a user to user forum dedicated to discussing the moribund adobe studio exchange, a site to download photoshop actions and such?</s><s> and why would you bury your post in a thread which is totally unrelated to your issue?</s><s> you need to contact adobe customer service, not your fellow users here who can do nothing for you.</s><s> use the contact button at the top of this page.</s><s> c :\
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077654</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="GeofferyH" timestamp="Jun 20, 2007 9:32 AM">
+<s>can anyone tell me how to get back to a particular page?</s><s> for instance, say i'm in the photoshop actions page(s), i start from page 1 and go to the page that says "326-350 of 5008', and i close out of the page.</s><s> now, later in the day i want to start back where i left off, i.e., 326-350 of 5008.</s><s> how do i get to the page without having to click through all the previous pages?</s><s>?</s><s>?</s><s> geoff
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077655</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(dsfds)" timestamp="Jun 28, 2007 6:33 AM">
+<s>we thebannersonline.com creating the images using the adobe photo shop.</s><s> our professional designers are expert in adob photo shop.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077656</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Jim-S)" timestamp="Jun 28, 2007 1:40 PM">
+<s>wow - a spammer who can't spell "adobe" in his second sentence, and who creates an embedded link that goes back to this page instead of to his own website.</s><s> yeah, i really want to do business with this zero.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077657</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(SteveMS)" timestamp="Jun 29, 2007 9:07 AM">
+<s>i'm a cs2 user trying to download a set of actions from the exchange and my windows xp computer will not start the download.</s><s> i get a beep sound when the window indicating the download should begin shortly appears.</s><s> clicking 'here' yields the same result.</s><s> does anyone know why this is might be happening and how to get the download to work?</s><s> steve
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077658</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Wayne_Moore)" timestamp="Jul 20, 2007 12:08 PM">
+<s>just looked at the new exchange for the first time in a long time...</s><s> i have to say that i liked the old exchange much, much better.</s><s> i used to enjoy browsing the different categories, now i find it boring and sterile and not particularly useful.</s><s> i am bummed.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077659</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Erik_Nanstiel)" timestamp="Jul 24, 2007 8:26 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077660</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(jacques_albis)" timestamp="Jul 25, 2007 11:50 PM">
+<s>i was back to the exchange studio today.</s><s> at least, it works!</s><s> but although this forum says the site has been redesigned since may 07, how come the indesign section offers scripts that date back to november 06?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077661</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Erik_Nanstiel)" timestamp="Aug 1, 2007 4:57 AM">
+<s>the difference between the old exchange and the new one is like the difference between macintosh and windows.</s><s> one is a pleasure to use... and the other is well... functional.</s><s> but not the vibrant community center it once was.</s><s> this one is incapable of sparking the same inspiration the old one did.</s><s> i still can't get over it.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077662</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="Ram%C3%B3n%20G%20Casta%C3%B1eda" timestamp="Aug 2, 2007 12:07 AM">
+<s>> the difference between the old exchange and the new one is like the difference between macintosh and windows.</s><s> you are being way too kind, erik.</s><s> your post may very well reassure those responsible for this fiasco and give them comfort in the thought that they are as good as windows.</s><s> i'm one of those users without the necessary skills to produce anything worthwhile to contribute to the exchange.</s><s> as such, i very often benefited from the offerings at the exchange.</s><s> ever since the disappearance of the old exchange, i have not downloaded a single thing.</s><s> it's very sad.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077663</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Erik_Nanstiel)" timestamp="Aug 6, 2007 9:37 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077664</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(GrantF)" timestamp="Aug 13, 2007 1:34 PM">
+<s>hi david, i recently uploaded to the photoshop exchange and days afterward, i recieved some negitive comments from members here that never downloaded the product.</s><s> my question after searching for the answers is, what steps is this system taking to insure that unwarrented negiitve comments like these are prevented?</s><s> thanks!</s><s> grant
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-1077626-1077665</DOCNO>
+<TEXT>
+<subject>Exchange redesign</subject>
+<post author="(Mary_Jo_S)" timestamp="Sep 10, 2007 8:27 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-1291469</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 7, 2013 6:10 PM">
+<s>i cannot launch the adobe exchange panel in photoshop or illustrator.  the option to launch this extension is not available in my menu.  in photoshop "extensions is grayed out".  in illustrator it is not grayed out but it is simply not populated.  i have tested this on my laptop and it works just fine there.   i have pasted the above paragraph from a separate thread in a different forum.  i was directed to this forum by an adobe staff member.   thanks in advance for any help with this as the forums are the only support adobe provides for this issue.  i think the issue may be a corruption in my extension manager somewhere in the windows registry.  using windows 7 64-bit sp1
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5664325</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="fgregor" timestamp="Sep 9, 2013 12:27 AM">
+<s>hi markerline, 
+can i ask where you obtained photoshop cc from?</s><s> were you part of any prerelease program? 
+</s><s>can you please check these folders: c:\program files (x86)\common files\adobe\cepservicemanager4\extensions c:\users\<username>\appdata\roaming\adobe\cepservicemanager4\extension s 
+and tell us if either one (or both) contains a folder called "adobeexchange", and whether it contains anything. 
+</s><s>it seems obvious, but please install any updates for photoshop available in the creative cloud application.</s><s> i believe there have been a few cc updates released so far - so it would be worthwhile restarting your computer to force a fresh check for updates to make sure you have them all. 
+</s><s>something to try would be downloading the exchange panel as a zxp from here: https://www.adobeexchange.com/ 
+and then installing the panel using extension manager cc.</s><s> note that extension manager cs6 will not install the exchange panel for cc applications - it needs to be extension manager cc. 
+</s><s>let us know how you get on. 
+</s><s>thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665544</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 9, 2013 8:16 AM">
+<s>fgregor, 
+</s><s>it's a shame that adobe only supports exchange panels through the forums and not over the phone because i have tried all of the troubleshooting steps you mentioned.</s><s> all of them. 
+</s><s>the only thing i did not try was the folder check.</s><s> i checked one of the folders but not the one with the "username" in it.</s><s> that one did not contain a folder called cepservicemanager4 which must explain why the exchange panel and other extensions that i try to install do not work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665716</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="fgregor" timestamp="Sep 9, 2013 8:56 AM">
+<s>hi markerline,   sorry for suggesting things you'd already tried - this kind of problem can be tricky to diagnose so i wanted to rule the obvious things out first.   when you install the latest adobeexchange.zxp from www.adobeexchange.com using extension manager cc, it should now be installed to:   c:\users\<username>\appdata\roaming\adobe\cepservicemanager4\extension s   out of the box, the exchange panel from the "common files" location will be loaded in apps such as photoshop, but after the exchange panel is updated they will use the newer version (stored in the user-specific "username" location).   if the problem still exists, what happens when you try to install the exchange panel in extension manager cc?</s><s> do you get an error, and do the contents of either of these folders change?   thanks for your perseverance.   fraser
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665745</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 9, 2013 9:03 AM">
+<s>i never knew about the "username" folder contents in troubleshooting.</s><s> so i can't say whether the contents were there previously and disappeared when i updated extension manager cc.</s><s> all i know is that there is no folder called cepservicemanager4 nor an extensions folder inside of that. 
+</s><s>how do i change my registry or other settings on the computer so that this folder becomes available? 
+i get an error that says "this extension can not be installed, it requires illustrator 32 version in range4 of inclusively between 16.0 and 16.9" .</s><s> i think this exchange panel is cs6.</s><s> i do not have a link for exchange panel cc since that is supposed to automatically install and as far as i know does not have a separate installer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665748</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 9, 2013 9:06 AM">
+<s>i just went to adobeexchange.com and i now see that cc is an option for download.</s><s> that was not the case before.</s><s> i will try to use it now and let you know how it goes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665749</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 9, 2013 9:11 AM">
+<s>i have tried to install the cc exchange panel but it is still unavailable in illustrator.</s><s> i imagine it is unavailable in photoshop and other apps as well.</s><s> the folder is now available in "username" but it does not make a difference in terms of usability in the cc apps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665812</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="fgregor" timestamp="Sep 9, 2013 9:29 AM">
+<s>ok - thank you for the update.</s><s> this suggests that this is not a problem with adobe exchange or extension manager. 
+</s><s>when you are in photoshop or illustrator, can you please check your windows task manager and tell me if there exists a process called cepservicemanager.exe or "adobe cep service manager"?</s><s> (right click on the taskbar and click "task manager" to see this.</s><s>) 
+</s><s>are there any log files in the following location?</s><s> c:\users\<username>\appdata\roaming\adobe\cepservicemanager4\logs 
+</s><s>if there are, could you please email them to me (fgregor at adobe dot com)? 
+</s><s>many thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665858</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 9, 2013 9:41 AM">
+<s>there are no such processes in my task manager nor is there a logs folder or logs file in the location you printed above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5665992</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="fgregor" timestamp="Sep 9, 2013 10:11 AM">
+<s>ah, it could be that you don't have logging turned-on. 
+</s><s>could you try this in regedit.exe?: 
+hkey_current_user>software>adobe>csxs.4 
+increase the loglevel to 6.</s><s> the log file will then be generated in: c:\users\<username>[appdata]\local\temp.</s><s> as you are in photoshop the log file will have the filename csxs4-phsp.log 
+repeat your steps again by restarting photoshop and attempting to open adobe exchange. 
+</s><s>if that doesn't work, please try setting the property hkey_current_user>software>adobe>csxs.4>playerdebugmode to 1 .</s><s> this allows unsigned extensions to run for development/testing purposes, so don't try to run any untrusted extensions, but this should hopefully allow you to see adobeexchange in your window > extensions menu. 
+</s><s>thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5666087</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 9, 2013 10:25 AM">
+<s>the first option in regedit worked but the second operation failed.</s><s> i still do not see exchange panel in my window>extensions menu in illustrator 64-bit cc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5670149</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="markerline" timestamp="Sep 10, 2013 1:29 PM">
+<s>dear mr. gregor, after following your sound advice to uninstall and reinstall the entire set of adobe cc apps that i had on my computer i can so far say that the exchange panel shows up, which was the troubleshooting step i had to take in order to make sure that one of my extensions in adobe illustrator cc would install properly.</s><s> and the extension did install.</s><s> let's hope it continues to work.</s><s> sorry i was being such a pest on the private emails. 
+</s><s>sincerely, markerline 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5662122-5671559</DOCNO>
+<TEXT>
+<subject>adobe exchange panel does not load in cc applications</subject>
+<post author="fgregor" timestamp="Sep 11, 2013 1:02 AM">
+<s>hi markerline, 
+</s><s>thank you for letting us know the outcome - i'm glad you got up and running eventually.</s><s> for the benefit of anyone else reading this thread, the problem was that the folder cepservicemanager4 (c:\program files (x86)\common files\adobe\cepservicemanager4) somehow had several missing files, including cepservicemanager.exe.</s><s> uninstalling, using the creative cloud cleaner tool http://www.adobe.com/support/contact/cscleanertool.html, then reinstalling the installed cc apps seems to have solved the problem. 
+</s><s>best wishes, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-1236998</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="nathanalf" timestamp="Jun 19, 2013 2:35 PM">
+<s>so, the problem is that nomatter what app i try openening the exchange panel from, it always starts using 100% of the cpu power to the point where i can't even shut down the app or the computer.</s><s> everything just stops responding entirely.</s><s> i can reproduce this in photoshop, dreamweaver, indesign, and illustrator. 
+</s><s>i've tried uninstalling the exchange panel, uninstalling the entire cc suite, tried deleting everything using the cc cleaner tool, and nothing seems to work.</s><s> i am on a macbook pro running 10.8.4 and have updated all of the cc apps.</s><s> the thing that confuses me is that on my home computer (macbook air) it runs absolutely fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5457145</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="fgregor" timestamp="Jun 27, 2013 2:29 PM">
+<s>hi nathanalf, 
+thanks for getting in touch. 
+</s><s>firstly - could you try closing the creative cloud desktop app (click the cog weel in the corner and quit), then locating this file and moving it to your desktop or somewhere else that software won't be looking for it: /users/user_name/library/application support/adobe/opm.db 
+then try reopening photoshop or another product and see if the exchange panel behaves better (you should be prompted to login if you click my stuff). 
+</s><s>if the problem persists, please share these files with me fgregor at adobe dot com: 
+/users/<username>/library/preferences/adobe/exchange/adobeexchange.log /users/<username>/library/logs/pdapp.log /users/<username>/library/logs/amt3.log 
+thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5462205</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="tomfirestone" timestamp="Jun 29, 2013 7:51 AM">
+<s>does anyone know what this warning is and how to fix it?</s><s> only started recieveing this warning from drive genius after i upgraded to cc and replaced my graphics card from ati radeon 5870 to nvidia gtx 680.</s><s> these changes may not be the issue, but thought i should mention. 
+</s><s>the preferences file at '/users/tomfirestone1/library/preferences/adobe/exchange/exmanmac/_ma cosx/contents/frameworks/adobe_caps.framework/versions/a/resources/._i nfo.plist' may be corrupted.</s><s> corrupted files can cause application crashes and shutdowns. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5465652</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="fgregor" timestamp="Jul 1, 2013 1:37 AM">
+<s>hi tomfirestone, 
+i'm trying to work out whether the warning message you're seeing is related to nathanalf's crashing problem or if it's unrelated.</s><s> if your problem is totally separate - could you please post it in a separate thread so discussions are easy to follow? 
+</s><s>otherwise, what actions are you taking to cause that warning message to appear?</s><s> is it immediately after launching the adobe exchange panel? 
+</s><s>many thanks, fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5465820</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="tomfirestone" timestamp="Jul 1, 2013 3:06 AM">
+<s>hi fraser, 
+</s><s>thanks for the response. 
+</s><s>these warnings just happen.</s><s> i have no idea why- please see the attached screen grab - does any of this/these path warnings mean anything to you?</s><s> and they are getting worse and more frequent.</s><s> i tried moving the file ( adobe exchange.log ) to the desktop to see that would help, but it did not.</s><s> it's not immediate after opening an exchange panel in ai or ps. it's when i wake up and there is a "pulse" problem with my machine as detected by drive genius's verify preferences. 
+</s><s>can you point me in the right direction to post this in a forum?</s><s> i did it once before, but for some reason i can't figure out how to post again.</s><s> i type my question in and then there's no where to actually post it. 
+</s><s>thanks, tom 
+
+
+
+
+</s><s>www.tomfirestone.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5465802</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="fgregor" timestamp="Jul 1, 2013 4:09 AM">
+<s>hi tom, 
+</s><s>if you go to the list of threads in "exchange general discussion", in the right sidebar there should be an option to "start a discussion": 
+http://forums.adobe.com/community/design_development/exchange/post!inp ut.jspa?containertype=14&container=3241 
+are you always getting errors around that same file? 
+</s><s>it should be safe to remove the folder /users/tomfirestone1/library/preferences/adobe/exchange by moving it to your desktop or elsewhere.</s><s> i imagine your "drive genius" software may still complain about the moved file, but you should be able to delete it later once it has been automatically recreated.</s><s> next time you open an adobe product and launch the exchange panel, this folder should be rerecreated, including a new (hopefully not corrupted!</s><s>) info.plist file. 
+</s><s>fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5465954</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="tomfirestone" timestamp="Jul 1, 2013 4:29 AM">
+<s>thank you.</s><s> do you mean removing the folder "exchange" in preferences?</s><s> or just the .log file with the log path messages... 
+</s><s>do i need to install the actual app exchange?</s><s> i haven't because it appears to be built into these other apps, and it seems like lots of people are having issues with exchange, so i didn't want to download and install yet. 
+</s><s>here's my latest warning path: 
+the preferences file at '/users/tomfirestone1/library/preferences/adobe/exchange/exmanmac/_ma cos/logtransport2.app/contents/macos/hlcrashprocessor.app/contents/._i nfo.plist' may be corrupted.</s><s> corrupted files can cause application crashes and shutdowns. 
+</s><s>thanks, tom 
+</s><s>www.tomfirestone.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5465923</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="fgregor" timestamp="Jul 1, 2013 4:37 AM">
+<s>yes, you should be able to remove the folder "exchange" and everything inside it. 
+</s><s>then, you should install any available updates in your creative cloud app (which will automatically update the adobe exchange panel for you to the latest version), and then open the adobe exchange panel (window > extensions > adobe exchange) in your cc product. 
+</s><s>you do not need to do anything to install adobe exchange itself; it is automatically installed with cc products. 
+</s><s>fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5465963</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="tomfirestone" timestamp="Jul 1, 2013 4:44 AM">
+<s>okay.</s><s> thank you.</s><s> 
+</s><s>for my cs6 products- do you think i should have the cs6 exchange installed- ? 
+</s><s>all adobe cc is up to date as well. 
+</s><s>tom 
+</s><s>www.tomfirestone.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5466203</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="fgregor" timestamp="Jul 1, 2013 6:27 AM">
+<s>the exchange panel is not installed automatically with cs6 products, but it should not cause a problem for cc products if you already have the exchange panel in cs6.</s><s> (they are installed to two separate locations and should not interfere with each other). 
+</s><s>feel free to install the adobe exchange zxp from www.adobeexchange.com using extension manager cs6 if you would like to use it in cs6 prooducts. 
+</s><s>fraser 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5479598</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="nathanalf" timestamp="Jul 5, 2013 10:16 AM">
+<s>email sent! 
+</s><s>moving the opm.db didn't work and still crashed the system.</s><s> i couldn't find the amt3.log in that location though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5481301</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="tomfirestone" timestamp="Jul 6, 2013 6:55 AM">
+<s>hello, 
+</s><s>i am still having these issues/warnings coming from my hd ssd via drive genius.</s><s> everyday it scans my hd and reports these many potential crash warnings.</s><s> i believe this started when i installed adobe cc, but not 100% sure.</s><s> i run "repair permissions" and all that and the same warnings pop up the next morning when i wake up. 
+i would appreciate some help and a fix/work around for this because i have invested $8,000 in hardware and software into my machine and it bothers me to have these crash warnings. 
+</s><s>attached is a screen grab again of what this looks like.</s><s> it appears it is solely related to adobe exchange.</s><s> at the minimum, can some confirm that this is a 100% adobe exchange malfunction? 
+</s><s>thanks, tom 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Adobe-Exchanges/Exchange-General-Discussion/Discussions-5428101-5485500</DOCNO>
+<TEXT>
+<subject>Exchange panel crashes OS (CC update)</subject>
+<post author="fgregor" timestamp="Jul 8, 2013 6:37 AM">
+<s>@nathanalf - i've replied to your email - let me know if it doesn't arrive.   hi tomfirestone,   these files all start with dot underscore (._) - they are actually metadata files, created by os x to store file information that would otherwise go into an extended attribute on the hfs+ file system.</s><s> this means that it's true that they aren't valid plist files (hence why they're being flagged-up by your third party software), but they are actually metadata files relating to the real plists.   they are currently included in adobe exchange for backward-compatibility with older versions of os x, but they will be removed in the next update.   for now, if you want to get rid of these files -   delete the folder /users/tomfirestone1/library/preferences/adobe/exchange   download the following file: download and overwrite the file at /library/application support/adobe/cepservicemanager4/extensions/adobeexchange/assets/exma nmac.zip   note - this will mean that the digital signature check will fail for adobe exchange, so it will not be loaded in any adobe products.</s><s> if you would like to temporarily disable digital signature checking so that you can use the exchange panel in the meantime before we issue an update to remove these metadata files, you can follow these steps:   open terminal and type:   sudo plutil -convert xml1 ~/library/preferences/com.adobe.csxs.4.plist open -a textedit ~/library/preferences/com.adobe.csxs.4.plist   - a blob of xml should pop up in textedit which looks something like this:   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <!</s><s>doctype plist public "-//apple//dtd plist 1.0//en" "http://www.apple.com/dtds/propertylist-1.0.dtd"> <plist version="1.0"> <dict>                 <key>lastsmsupdatecheck</key>                 <string>1373273718</string>                 <key>loglevel</key>                 <string>1</string>                 <key>smsmanifestbaseurl</key>                 <string>http://serviceupdates.adobe.com/cep4/smsmanifest.xml</string>                 <key>smsupdatecheckinterval</key>                 <string>7200</string> </dict> </plist>   please add the following two lines to the xml:                 <key>playerdebugmode</key>                 <string>1</string>   -so that it looks more like this:   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <!</s><s>doctype plist public "-//apple//dtd plist 1.0//en" "http://www.apple.com/dtds/propertylist-1.0.dtd"> <plist version="1.0"> <dict>                 <key>lastsmsupdatecheck</key>                 <string>1373273718</string>                 <key>loglevel</key>                 <string>1</string>                 <key>smsmanifestbaseurl</key>                 <string>http://serviceupdates.adobe.com/cep4/smsmanifest.xml</string>                 <key>smsupdatecheckinterval</key>                 <string>7200</string>                 <key>playerdebugmode</key>                 <string>1</string> </dict> </plist>   (if there's already a key called playerdebugmode, please just change the string value beneath it to 1).   save your changes to the file.   then back in terminal, sudo plutil -convert binary1 ~/library/preferences/com.adobe.csxs.4.plist   let me know if this solves the problem for you.   regards, fraser
+</s></post>
+</TEXT>
+</DOC>
+
+

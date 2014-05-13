@@ -1,0 +1,538 @@
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-1097663</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Caveatttt" timestamp="Nov 20, 2012 11:08 AM">
+<s>when will the software available from the adobe lws (licensing website) be available for download with updated certificate?</s><s> they are currently (at least the last time i checked) still signed with the compromised certificate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4842032</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Laurence%20Hawkins" timestamp="Nov 12, 2012 2:00 PM">
+<s>i was under the impression that we'd put the re-signed builds on the lws site already.</s><s> most about a month ago, although some more recently.</s><s> which specific software did you download with the compromised certificate and when did you do so? 
+</s><s>thanks, larry manager, tier 3 tech support 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4843090</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Caveatttt" timestamp="Nov 13, 2012 3:28 AM">
+<s>hi laurence, 
+</s><s>i have done two downloads this morning just to double check, design standard cs6 and indesign 8, both still have evidence of being signed with the verisign rsa certificate with fingerprint fdf01dd3f37c66ac4c779d92623c77814a07fe4c. 
+</s><s>regards, tim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4845433</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="JainAjay" timestamp="Nov 13, 2012 6:30 PM">
+<s>hi tim, 
+</s><s>the thumbprint mentioned above is indeed the same that the revoked certificate has, we are currently investigating this case. 
+</s><s>in the meantime, can you try running the "customer response tool" and observe (and let us know) the results reported by the tool on your machine 
+http://helpx.adobe.com/x-productkb/global/certificate-updates.html 
+tool is located under the section "desktop products with updates". 
+</s><s>thanks ajay jain 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4845989</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Caveatttt" timestamp="Nov 14, 2012 1:08 AM">
+<s>hi jainajay, 
+</s><s>thank you for confirming the certificate found in newly downloaded software from the lws is the one that has been revoked by adobe. 
+</s><s>unfortunately i work in an environment where the use of the reporting tool is not allowed by the organisation.</s><s> i am therefore unable run the customer response tool against a production machine with installed software.</s><s> i would be happy however to download and test other products and share with you the results of scanning those for the certificate.</s><s> if this would be of use please let me know. 
+</s><s>in the meantime i look forward to hearing the results of your investigation. 
+</s><s>kind regards, tim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4846891</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Todd%20Heckel" timestamp="Nov 14, 2012 8:39 AM">
+<s>hi tim - i've been looking into this and downloaded a couple products from the lws site and i'm unable to reproduce the issue you are seeing.</s><s> can you provide me with a few more details?</s><s> i'm specifically looking for information on how you're inspecting these binaries to determine they are signed with the revoked certificate. can you tell me which files you are looking at or what your doing to show this?</s><s> if we could pick one product to focus on that would help us narrow this down.</s><s> you mentioned indesign was exhibitng this.</s><s> let's focus on that - can you share the details of the binaries you have - date/time stamps, file size, etc. you can also email me directly at toddh@adobe.com if that is more convienient. 
+</s><s>thanks, todd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4849034</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Caveatttt" timestamp="Nov 15, 2012 1:48 AM">
+<s>hi todd, 
+</s><s>thanks for your response.</s><s> for the benefit of the thread i used the analyzepesig tool from didier stevens to initially scan the files to identify the security ceritifcates, then confirmed the certificates' details by simply interrogating them in explorer.</s><s> i will send you the results of analyzepesig and a sample screenshot of the certificate directly. 
+</s><s>kind regards, tim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4840538-4852751</DOCNO>
+<TEXT>
+<subject>Why do some Adobe Licensing Website downloads have the same certificate?</subject>
+<post author="Todd%20Heckel" timestamp="Nov 16, 2012 8:43 AM">
+<s>the certificate that was compromised was only revoked for binaries that were signed after 7/10/12.Ê so even though the binaries you are seeing here have the same certificate, they will not be impacted as they were all signed prior to 7/10. Ê this is noted in the blog post regarding this: "the revocation of the impacted certificate for all code signed after july 10, 2012 is planned for 1:15 pm pdt (gmt -7:00) on thursday october 4, 2012.</s><s> to determine what this means for current installations and what corrective steps (if any) are necessary, please refer to the support page on adobe.com.</s><s> the certificate revocation itself will be included in the certificate revocation list (crl) published by verisign; no end user or administrator action is required to receive the updated crl." Ê you can find the complete blog post here:Ê http://blogs.adobe.com/asset/2012/09/inappropriate-use-of-adobe-code-s igning-certificate.html Ê this software is safe to use and has valid certificates & binaries Ð just a nuance in the revocation policy. Ê thanks, todd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4757608-1078632</DOCNO>
+<TEXT>
+<subject>Hash Rules - Adobe signed virus files</subject>
+<post author="teckchick72" timestamp="Oct 8, 2012 6:58 AM">
+<s>
+</s><s>in order to create a hash rule, you must use the hash as determined by the software restriction policy software.</s><s> you can't just import a hash that was calculated by another software component, even if the hash matches and uses the same hash algorithm.</s><s> what is the suggested recommendation for including the 3 virus files that were signed with adobe certs if manually entering the hash is not an option? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4757608-4775661</DOCNO>
+<TEXT>
+<subject>Hash Rules - Adobe signed virus files</subject>
+<post author="Kirsti-CA" timestamp="Oct 15, 2012 11:31 AM">
+<s>we have confirmed that you do need the original source file in order to generate the hash value.</s><s> our engineering team has generated the hash value and extracted it from the ms rule. 
+</s><s>i've attached the file.</s><s> please let us know if it helps! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4757608-4776032</DOCNO>
+<TEXT>
+<subject>Hash Rules - Adobe signed virus files</subject>
+<post author="teckchick72" timestamp="Oct 17, 2012 9:08 AM">
+<s>hello, i assume the registry key attached was meant to prohibit the registry changes made by the malware by creating a registry path rule for the software?</s><s> example path:%hkey_local_machine\software\microsoft\windows nt\currentversion\systemroot\xxx% 
+there is no real use case for this problem, so no rush but i am curious how this is meant to work. 
+i was hoping to know the actual path and the hash values.</s><s> i had imported this into my personal machine hoping i could then search for the values in order to verify and test.</s><s> ( pwdump, libeay32.dll & mygeeksmail.dll ) i had no luck with that plan.</s><s> i am looking for other solutions and will send updates if i have any luck. 
+</s><s>thank you, lori wolcott | systems engineer 
+</s><s>direct (716)805-2545 
+
+mobile +17166019879 
+
+e-mail lwolcott@moog.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4757608-4781549</DOCNO>
+<TEXT>
+<subject>Hash Rules - Adobe signed virus files</subject>
+<post author="Kirsti-CA" timestamp="Oct 17, 2012 9:09 AM">
+<s>those are the corresponding registry settings for a software restriction policy hash rule.</s><s> although, it only provides signatures for two of the files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4747484-1076309</DOCNO>
+<TEXT>
+<subject>Problem with Flash Player ActiveX MSI file</subject>
+<post author="jennsmetana" timestamp="Oct 4, 2012 5:01 PM">
+<s>seeing an issue with the source and links for flash.</s><s> site shows 11.4.402.278 but when i download the link below i get the 11.4.402.267 msi.</s><s> please advise since this is needed asap. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4747484-4753306</DOCNO>
+<TEXT>
+<subject>Problem with Flash Player ActiveX MSI file</subject>
+<post author="Kirsti-CA" timestamp="Oct 14, 2012 9:54 PM">
+<s>update:Ê the flash player team has posted an updated flash player installer file for ie for enterprise with the correct version number on monday, october 8, 2012.</s><s> we have found the problem.Ê unfortunately, a couple of msi package properties were not updated to version 11.4.402.278.Ê therefore when you install from the file "install_flash_player_11_active_x.msi", the version number in the windows control panel displays 11.4.402.267 (see below). Ê however, you can confirm that you have the latest version (11.4.402.278) by checking on the flash player help hub, as shown below.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4765320-1080302</DOCNO>
+<TEXT>
+<subject>errors code 1069</subject>
+<post author="lexigator2" timestamp="Oct 10, 2012 5:54 PM">
+<s>what do i do 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4765320-4767786</DOCNO>
+<TEXT>
+<subject>errors code 1069</subject>
+<post author="Kirsti-CA" timestamp="Oct 11, 2012 5:34 PM">
+<s>hi, lexigator2, 
+you can help us be able to answer your question by providing some further info: product you're using product version what you were doing when the error appeared code snippet, if applicable 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4742382-1075232</DOCNO>
+<TEXT>
+<subject>AAMEE Created MSIs</subject>
+<post author="mancity1966" timestamp="Oct 3, 2012 4:55 PM">
+<s>right i have used aamee 3.0 to create msis for cs6 web premium - all components, these have been deployed via sccm to about 30 users in the last 3 months.will they be affected ? - can going into photoshop and help\update fix the problems ?</s><s> thanks 
+
+</s><s>editor's note: aamee is adobe application manager enterprise edition 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4742382-4747146</DOCNO>
+<TEXT>
+<subject>AAMEE Created MSIs</subject>
+<post author="David__B" timestamp="Oct 3, 2012 4:51 PM">
+<s>hi mancity1966, Ê you will want to download the latest version of aamee, 3.1 as referenced in this doc http://helpx.adobe.com/x-productkb/global/guidance-administrators-cert ificate-revocation.html Ê we recommend that you recreate the cs6 web premium msi's for future deployments if products in your current msi's are affected. Ê here is a list of impacted products and links to updates for them: http://helpx.adobe.com/x-productkb/global/certificate-updates.html#mai n-pars_header_5 Ê i recommend downloading any updates directly from that page versus using help>updates Ê -dave
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4742382-4751445</DOCNO>
+<TEXT>
+<subject>AAMEE Created MSIs</subject>
+<post author="mancity1966" timestamp="Oct 5, 2012 1:12 AM">
+<s>thanks dave 
+</s><s>sean 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4749760-1076824</DOCNO>
+<TEXT>
+<subject>Is Photoshop Elements affected?</subject>
+<post author="sctcat" timestamp="Oct 4, 2012 10:35 AM">
+<s>photoshop elements wasn't listed, but it uses air within the package.</s><s> is it affected? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4749760-4749825</DOCNO>
+<TEXT>
+<subject>Is Photoshop Elements affected?</subject>
+<post author="Kirsti-CA" timestamp="Oct 4, 2012 10:35 AM">
+<s>not to worry!</s><s> photoshop elements is not on the list is because adobe didn't post an update for it during the affected period of time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4749760-4749778</DOCNO>
+<TEXT>
+<subject>Is Photoshop Elements affected?</subject>
+<post author="sctcat" timestamp="Oct 4, 2012 10:38 AM">
+<s>thanks for the quick response. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4744392-1075689</DOCNO>
+<TEXT>
+<subject>When can I download Flash Player?</subject>
+<post author="mobilemouse9296" timestamp="Oct 7, 2012 4:58 PM">
+<s>i am setting up home free tv and do not have any versions of adobe flashplayer software on my computer.</s><s> the getadobe.com/flashplayer is downloading without a publisher therefore my system will not accept it.</s><s> does anybody know when it will be available? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4744392-4745889</DOCNO>
+<TEXT>
+<subject>When can I download Flash Player?</subject>
+<post author="AllDayDev" timestamp="Oct 3, 2012 7:28 AM">
+<s>hi, mobilemouse9296. 
+</s><s>flash player is fully available to download and install, so we need to find out what is going on at your end that is preventing you from downloading/installing it. 
+
+i assume you mean http://get.adobe.com/flashplayer ? 
+- if so, which version of flash player for which browser did you download? 
+i tested several different downloads from the above page, and all showed a valid digital signature with adobe systems incorporated as the signer. 
+
+</s><s>when you say that your "system will not accept it" are you getting an error?</s><s> or what are you encountering exactly? - please include a screenshot of any error messages you are receiving. 
+</s><s>when you say that flash player "is downloading without a publisher" where are you seeing that? - please include a screenshot, if applicable, of this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4739791-1074703</DOCNO>
+<TEXT>
+<subject>SCCM & Certificate Revocation</subject>
+<post author="Stephen@UOP" timestamp="Oct 1, 2012 3:21 AM">
+<s>hi, 
+</s><s>what is the behavior for reader/flash/shockwave updates signed with the revoked certificate after the 4th october that are normally deployed to computers using sccm software updates.</s><s> will these fail?</s><s> normally updates via sccm 'bypass' uac.</s><s> are you saying that these updates will now not automatically install and the user will see a uac prompt or will they simply just result in a failure to install without any user notification? 
+</s><s>thanks, stephen.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4739791-4740296</DOCNO>
+<TEXT>
+<subject>SCCM & Certificate Revocation</subject>
+<post author="David__B" timestamp="Oct 1, 2012 8:54 AM">
+<s>hi stephen, 
+</s><s>please use the latest versions of reader/flash/shockwave for sccm updates.</s><s> these products are not reliant on the certificate so will automatically install. 
+-dave 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4739791-4741114</DOCNO>
+<TEXT>
+<subject>SCCM & Certificate Revocation</subject>
+<post author="Stephen%40UOP" timestamp="Oct 1, 2012 12:56 PM">
+<s>thanks but im trying to understand the effect with the versions we already have.</s><s> wk these prompt the user via uac or just fail if they are automatically deployed? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4739791-4744336</DOCNO>
+<TEXT>
+<subject>SCCM & Certificate Revocation</subject>
+<post author="Kirsten%20Harris" timestamp="Oct 2, 2012 3:11 PM">
+<s>these will prompt the user via uac, but mostly will continue to launch.</s><s> if applocker is installed, for some applications you may be unable to launch after the uac warning. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4739791-4745290</DOCNO>
+<TEXT>
+<subject>SCCM & Certificate Revocation</subject>
+<post author="Stephen%40UOP" timestamp="Oct 3, 2012 2:14 AM">
+<s>thank you kirsten 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4737697-1074242</DOCNO>
+<TEXT>
+<subject>How do we affirmatively distrust your certificate?</subject>
+<post author="rebecca.menessec" timestamp="Sep 29, 2012 3:39 PM">
+<s>nothing in your faq and nothing i can find with google search appears to provide an example of your now known-compromised code-signing certificate(s).</s><s> as windows admins, some of us need to find out which certificates were affected, and we need easily imported copies of the certificates so they can be placed in the windows "untrusted certificates" list and/or other lists of affirmatively distrusted certificates. 
+</s><s>and we needed this starting when the news broke, if not earlier. 
+</s><s>your assertion that "are there other security risks to you?</s><s> we have strong reason to believe that this issue does not present a general security risk" ( http://helpx.adobe.com/x-productkb/global/certificate-updates.html ) is false, and creates the risk that people will believe all they need to do, if anything, is install updated versions of your software. 
+</s><s>if you're merely planning to issue revocation via crl and/or ocsp, that is extremely dangerous.</s><s> crl and ocsp revocation are known to be completely unreliable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4737697-4740394</DOCNO>
+<TEXT>
+<subject>How do we affirmatively distrust your certificate?</subject>
+<post author="David__B" timestamp="Oct 1, 2012 9:17 AM">
+<s>hi rebecca, 
+</s><s>this document has some additional info: 
+http://www.adobe.com/support/security/advisories/apsa12-01.html 
+</s><s>the issue has been reported to mapp as mentioned in the article. 
+-dave 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4737697-4741942</DOCNO>
+<TEXT>
+<subject>How do we affirmatively distrust your certificate?</subject>
+<post author="Kirsten%20Harris" timestamp="Oct 1, 2012 7:13 PM">
+<s>the code signing certificate that will be revoked is described in detail here: 
+http://www.adobe.com/support/security/advisories/apsa12-01.html serial number: 15 e5 ac 0a 48 70 63 71 8e 39 da 52 30 1a 04 88 sha1 thumbprint: fd f0 1d d3 f3 7c 66 ac 4c 77 9d 92 62 3c 77 81 4a 07 fe 4c 
+</s><s>regarding your statement that as a it admin you need copies of the certificates so they can be placed in the windows "untrusted certificates" list and/or other lists of affirmatively distrusted certificates, adobe does not recommend the untrusted store in this situation.</s><s> the asset blog post contains the following paragraph on the topic: 
+http://blogs.adobe.com/asset/2012/09/inappropriate-use-of-adobe-code-s igning-certificate.html 
+</s><s>"our internal testing indicates that moving the impacted adobe certificate to the windows untrusted certificate store does not block threat actors from executing the malicious utilities on a victim machine.</s><s> however, this configuration does have a negative impact on the user experience and execution of valid adobe software signed with the impacted certificate.</s><s> adobe does not recommend using the untrusted certificate store in this situation." 
+</s><s>something that we do recommend is evaluating srp / applocker restrictions based on the hash sums of the known bad files.</s><s> again from the asset blog post: 
+</s><s>"in addition to working with your security vendors to ensure you have the latest updates containing protections against these utilities, system administrators for managed desktop windows os environments can create a software restriction policy (srp"via group policy) that disallows the execution of the malicious utilities and blocks them on the basis of the individual file hashes." 
+</s><s>even without these steps, we have shared the samples with all the major security vendors via mapp, so you can work with your security vendor/provider to determine if protections are already in place for your environment. 
+
+</s><s>only one instance of the signed malicious utilities have been identified worldwide.</s><s> the nature of the utilities and manner in which they are generally used supports our assessment that the vast majority of users of adobe software are not at risk. 
+</s><s>the adobe certificate will be revoked for all binaries signed since july 10, 2012 and the certificate revocation will be published on the verisign crl effective october 4, 2012.</s><s> we agree that the code signing and pki world is full of inefficiencies and plan to talk more about our lessons learned in a few weeks.</s><s> (see the last paragraph of the asset blog post.</s><s>) watch the asset blog for more details. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4740609-1074871</DOCNO>
+<TEXT>
+<subject>Certificate Revocation - October 4th and beyond</subject>
+<post author="Jim Morrill" timestamp="Oct 1, 2012 10:32 AM">
+<s>i work for a very large enterprise.</s><s> we have flash player and shockwave installed on the workstations.</s><s> what will the end user impact be if we do not have the latest version(s) of the software installed?</s><s> will the software function as it did before?</s><s> does this affect the browser plugin for ie and firefox as well?</s><s> or do we only need to be concerned about installations of flash and shockwave that occur after the certificate has been revoked on october 4th?</s><s> to me it looks like a silent install/packaged version of the software may prompt to "accept software from a untrusted publisher" during install but software already installed on our machines should be ok.</s><s> please veriify. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4740609-4741533</DOCNO>
+<TEXT>
+<subject>Certificate Revocation - October 4th and beyond</subject>
+<post author="Kirsten%20Harris" timestamp="Oct 1, 2012 3:06 PM">
+<s>we recommend that you update the flashplayer and shockwave player already installed on your enterprise computers.</s><s> they will continue to run after october 4th, but in some situations may trigger a warning "publisher unknown, are you sure you want to run this software". 
+</s><s>any adobe reader already installed on users' machines doesn't need to be updated.</s><s> if you have a standalone reader as part of your it managed image, we recommend that you either update it with the latest reader, or better, use the distributable version of reader.</s><s> the reason is that the standalone version of reader has an installation helper file which is be impacted by the certificate revocation.</s><s> already installed reader versions are not impacted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4735629-1073816</DOCNO>
+<TEXT>
+<subject>Documents inconsistent; Action necessary? [AIR, Flash, Reader, Shockwave]</subject>
+<post author="dever23b" timestamp="Sep 28, 2012 12:08 PM">
+<s>hello!</s><s> 
+</s><s>i am in charge of software distribution for my networks.</s><s> i was reading through the various documents published regarding the certificate revocation to occur on oct 4. the documents appear to contradict each other, and i'm interested to know whether i need to do anything for my network.</s><s> we use air, flash, reader, and shockwave.</s><s> 
+</s><s>on [security certificate updates: http://helpx.adobe.com/x-productkb/global/certificate-updates.html], the verbiage toward the top states that no action is necessary for flash and reader; however, lower down on the page there are links for updates.</s><s> it also directs it administrators to another page [guidance for it administrators | adobe certificate revocation: http://helpx.adobe.com/x-productkb/global/guidance-administrators-cert ificate-revocation.html#id_15988] that would seem to direct us to obtain an update.</s><s> notwithstanding, for air, is the actual distributable affected or only the three noted air applications?</s><s> what about shockwave? 
+</s><s>what's the verdict?</s><s> do we need to deploy updates or not for the above listed products? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4735629-4736400</DOCNO>
+<TEXT>
+<subject>Documents inconsistent; Action necessary? [AIR, Flash, Reader, Shockwave]</subject>
+<post author="Kirsti-CA" timestamp="Sep 28, 2012 4:58 PM">
+<s>hi, dever23b, 
+thanks for catching this discrepancy.</s><s> adobe does recommend deploying an updated flash player if you're not using the latest version. 
+</s><s>we've updated the security certificates updates page to clearly state this. 
+</s><s>kirsti adobe community help & learning team 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4735025-1073703</DOCNO>
+<TEXT>
+<subject>Certificate revocation questions about Shockwave and SCCM</subject>
+<post author="hitesh.n.patel" timestamp="Oct 7, 2012 4:59 PM">
+<s>it turns out that we have an sccm package containing shockwave installer that was released after july 10, 2012.</s><s> we are currently working on updating our sccm packages with the latest version from adobe.</s><s> the faq suggests that it is not necessary to update existing users that already have installed and are running affected adobe products. - please confirm that we do not need redploy to exisiting users with an updated shockwave install package. 
+</s><s>more broadly; - when the affected certificate is revoked, what will be the behavior of sccm packages that contain adobe product installers signed with the affected certificate? 
+- the serial number of the affected certificate appears to also match the certificate serial numbers of installers that we obtained from adobe prior to july, 2012.</s><s> how is it that these products would not be affected while those released after july 10, 2012, with what appears to be the same certificate, are affected? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4735025-4735277</DOCNO>
+<TEXT>
+<subject>Certificate revocation questions about Shockwave and SCCM</subject>
+<post author="Todd%20Heckel" timestamp="Sep 28, 2012 9:51 AM">
+<s>hi - - for users that actually installed shockwave prior to the signature being revoked, there is no impact - shockwave will continue to function as expected and is signed with valid certificates. - for users to have not yet installed, shockwave, and the certificate has been revoked, when they install shockwave via your sccm packages, they will see a uac security warning notifying them that the software published is "unknown".</s><s> the user can continue and the install will complete but they will see this warning. 
+
+for your second point, can you share an example where you're seeing something signed prior to july 2012 with the same signature serial?</s><s> you can email me directly - toddh@adobe.com 
+thanks, todd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4734760-1073642</DOCNO>
+<TEXT>
+<subject>Impact when your leaked certificate is revoked</subject>
+<post author="pssara" timestamp="Sep 28, 2012 7:00 AM">
+<s>????i have installed several adobe products that are signed with the certificate that will be revoked (including adobe flash).</s><s> what would be the impact on the end users, if i font upgrade those products, when the certificate is revoked?</s><s> please describe particularly what would happen with the flash plugin in the browsers?</s><s> will the users be able to still use the software or the os will prevent it from lunching? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4734760-4734928</DOCNO>
+<TEXT>
+<subject>Impact when your leaked certificate is revoked</subject>
+<post author="David__B" timestamp="Sep 28, 2012 8:25 AM">
+<s>hi pssara, 
+</s><s>products which are affected should be updated.</s><s> not doing so may result in an error about the application being from an unknown publisher on launch, although the application should still launch.</s><s> the flash player plug-in in browsers is not affected.</s><s> this document might be helpful for you too. 
+http://helpx.adobe.com/x-productkb/global/certificate-updates.html 
+-dave 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4733908-1073399</DOCNO>
+<TEXT>
+<subject>Adobe code signing certificate revocation and SCCM</subject>
+<post author="hitesh.n.patel" timestamp="Sep 27, 2012 9:08 PM">
+<s>we have many install packages for different adobe products in sccm 2007 but nothing that would have been obtained or downloaded from adobe since july 10, 2012.</s><s> does that mean we don't have to do anything?</s><s> is that a correct interpretation of your statements about the adobe code signing certificate revocation issue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Security-Certificates/Discussions-4733908-4734040</DOCNO>
+<TEXT>
+<subject>Adobe code signing certificate revocation and SCCM</subject>
+<post author="Kirsti-CA" timestamp="Sep 27, 2012 10:37 PM">
+<s>yes.</s><s> that's correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+

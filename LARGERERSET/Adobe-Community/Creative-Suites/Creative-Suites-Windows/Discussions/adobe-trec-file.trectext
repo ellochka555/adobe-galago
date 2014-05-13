@@ -1,0 +1,794 @@
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-314363</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="Alex DeJesus" timestamp="Aug 24, 2008 10:50 AM">
+<s>i am looking for some kind of hard drive/server kit for hosting my own videos.</s><s> i want send my clients links to their projects at certain stages, but not through youtube.</s><s> i have no idea how to set that up.</s><s> i saw an ethernet/usb2/what-have-you buffalo drive that i could supposedly serve from and store my archive files.</s><s> is that the way to go or is it better or more cost-effective to go with an online service?</s><s> by the way, i could not get clip notes to work.</s><s> in fact, it crashed my computer (or premiere anyway).</s><s> i should be able send direct from the timeline, correct?</s><s> it didn't do that.</s><s> instead i had to send it to myself first - save to hard drive, and then email it to whomever.</s><s> i don't see how it could work anyway.</s><s> i can't email a 20 mb or bigger pdf file, can i?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-1229390</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="MichaelKazlow" timestamp="Aug 24, 2008 11:04 AM">
+<s>depending upon your isp serving pages from work or home could violate your service agreement.</s><s> additionally, you'll have to configure your router to allow access to the device (not hard), but will make it available to attacks.</s><s> there are plenty of cheap cheap places to host your own site for giving people access to files.</s><s> there are also places that will allow you to share certain files with certain people and only those people--some for free, but then you'll subject people to advertising you have no control over.</s><s> if you are getting to the point of needing web services, i'd recommend you look at hosting companies that will do what you want.</s><s> it can be cheap from less than $10/month to more depending upon your needs.</s><s> i use aplus which has several plans (some windows based, some unix based), but most do.</s><s> what is most important is service and uptime.</s><s> check out cnet they frequently rate host service providers.</s><s> most will offer a free domain name---how does alexdejesus.com sound?</s><s> mike
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-1229391</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="aldeco" timestamp="Aug 24, 2008 12:42 PM">
+<s>i don't know if there is an issue with my isp (cox communications cablemodem) i definitely want a clean, professional page setup with no pop-up ads or any other garbage.</s><s> in other words, not that 'free' look.</s><s> do you mind sending me a link to your host page?</s><s> if i were to setup a server from my own home business site, where would i find instructions for doing so?</s><s> i have a cablemodem, a hard-wired router, and my computers.</s><s> if i got a server type hard drive, what are the steps?</s><s> what is port-forwarding?</s><s> i imagine i would set up my storage outside of the firewall somehow.</s><s> how do i deal with security issues?</s><s> most importantly, how does adobe cs3 fit into the mix?</s><s> can i communicate with clients from within cs3?</s><s> clip notes?</s><s> btw, i took a look at the aplus site.</s><s> it will take some time to go through all their plans.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-1229392</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="ratnikh" timestamp="Aug 24, 2008 3:00 PM">
+<s>running your own server would probably be much harder than setting up a page through a commercial-grade provider.</s><s> first and foremost you would need to set up a server-class os and webserver system (such as apache running on a linux kernel).</s><s> security becomes a big issue as you almost certainly *will* come under fire by bots looking for servers to infect.</s><s> so, you'll need to learn apache, setting up cgi, perl and other scripts and firewalls to protect your investment.</s><s> then you still would need to set up a page with a secure entry shell to allow your clients in without letting others in (to protect nda protected material and preventing other clients from "peering over your hsoulder" as it were).</s><s> also, if you have internet provided by comcast or verizon (or similar end-user broadband), those plans *explicitly* disallow use as a server and they most likely would shut you down if they detected the presence of incoming http routing on port 80, and doubly-so if you are running a commercial website for the benefit of your business.</s><s> they have specific "enterprise class" broadband packages but they are typically more expensive (often twice as much as "home" packages) as they provide more consistent and reliable speeds and are usually synchronous rather than the typical end-user asynchronous broadband (ie end-user is 2mbs down and 300kbs up, where enterprise class would be 4mbs down *and* up).</s><s> the benefit being that people visiting your server are getting full speed *from* you as well as *to* you, and also they typically provide more robust mail packages.</s><s> serving your own content from home is typically an expensive and extremely labor-intensive prospect, as you will almost certainly need to learn linux/unix as well as apache, and maybe also a robust ftp client and mail server.</s><s> serving from windows xp or vista is highly discouraged due to enormous security problems and downtime issues.</s><s> learning cgi, perl and so forth is daunting at first and (if you're like me) you probably want to work on graphical content more than laboring over server duties and security details.</s><s> subscribing to an enterprise-class hosting service can provide you with a robust, professional-looking website with almost no knowledge of html, css, perl, cgi or other technology, and most provide a wide array of "extras" like secure password-protected content for individual users, cgi bins, mail hosting, extensive arrays of scripts to use (such as blogs, forums, online updating, user statistics, traffic analyses, etc) and many also provide simple tools for setting up your site with easy-to-use templates and so forth.</s><s> i have used 1-and-1 hosting and they provide excellent service with highly-rated uptime and security as well as a ton of tools and software for site building.</s><s> typical packages for decently rated monthly bandwidth can be had for around $10 to $20 a month which is a fantastic value, compared to spending upwards of $100 a month for hosting your own server and the countless hours of set-up and daily maintenance.</s><s> depending on the services you subscribe to with a provider, many probably have compatible systems for allowing you to publish directly to your website via common protocols and tools (using ftp or vpns (virtual private network allowing for remotely mounted network drives)).</s><s> you may need to do some research and homework, but the end result would be a very seamless work environment where you can share results with clients quickly and easily, and also allow them to comment, share notes and upload assetts for you to utilize if necessary. -mark
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-1229393</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="aldeco" timestamp="Aug 24, 2008 4:16 PM">
+<s>mark, thank you for that very extensive advice.</s><s> i truly cannot spend the time to learn all that stuff and constantly worry about security.</s><s> i just want my site to look professional and provide easy access to my files.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-1229394</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="MichaelKazlow" timestamp="Aug 24, 2008 4:47 PM">
+<s>alex, i use aplus.net.</s><s> they got good reviews several years ago when i signed on.</s><s> i have had no issue, i cannot say the same for everyone i know.</s><s> really check out the reviews available on cnet and elsewhere.</s><s> its easy to startup its harder to move.</s><s> mike
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-1229389-1229395</DOCNO>
+<TEXT>
+<subject>Link to online web service or set up my own? Clip Notes Problems</subject>
+<post author="aldeco" timestamp="Aug 26, 2008 11:37 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-1131001</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="SuOCar" timestamp="Jan 7, 2013 1:27 PM">
+<s>i am running win 7 
+i was pointed at a link for a free version of cs2. http://www.free-stuff.co.uk/free_adobe_cs2_creative_suite_download_lin ks.php 
+i assume it is a valid free offer.</s><s> there is no indication at the adobe site link. 
+</s><s>there is a pdf that describes how to install and, although, the file names mentioned are not exactly the same as those that are downloaded they appear to correspond and everything downloaded correctly (there is a slight problem with the disk 3 link, with a superfluous backslash at the end but that is easy to get over). 
+i did as specified, i.e. run the disk 2,3 and extras files to expand the content then i ran the disk 1 file and everything appears to be ok until it gets to the stage of requiring disk 2 and doesn't find it. 
+</s><s>unfortunately, there is no opportunity to point it at the (correct location on the) hard drive (whether it is looking there or at the cd drive i don't know).</s><s> so, essentially, i am stuck at a message saying "please insert cd 2 to continue installation".</s><s> any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4975091</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="BobLevine" timestamp="Jan 7, 2013 1:29 PM">
+<s>it is not a valid free offer: 
+http://indesignsecrets.com/adobe-is-not-giving-away-cs2.php 
+bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4975162</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="SuOCar" timestamp="Jan 7, 2013 1:41 PM">
+<s>oh, thanks for that.</s><s> i'm not one for using software illegally. 
+</s><s>on the other hand i thought cs2 might be a bit more advanced than my current software and it offered an opportunity to become familiar with ps (at least) rather than shelling out a usurious amount for software that probably doesn't offer any more functionality than a lot of free stuff on the market.</s><s> i had already downloaded the time-limited cs6 and it didn't help me any more than my illustrator 9 and coreldraw 9 do. 
+</s><s>thanks for the response anyway. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4975800</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="Community%20Admin" timestamp="Jan 11, 2013 6:36 PM">
+<s>effective december 13, adobe disabled the activation server for cs2 products and acrobat 7 because of a technical glitch.</s><s> these products were released over 7 years ago and do not run on many modern operating systems.</s><s> but to ensure that any customers activating those old versions can continue to use their software, we issued a serial number directly to those customers.</s><s> the software is not free, and is only being made available for those who already purchased a valid license. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4976903</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="neckcarfan" timestamp="Jan 8, 2013 5:57 AM">
+<s>bob, 
+</s><s>i was drawn into this offer also, same situation as suocar and i wish to uninstall and when i go to control panel to uninstall i get message "missing or invalid personalization information missing resources library i am running windows prof 7 - how can i uninstall? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4977273</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="PILOU75" timestamp="Jan 8, 2013 8:15 AM">
+<s>hello.</s><s> i have cs since yesterday but i need the key licence.</s><s> i don't find it on internet or else. 
+</s><s>on my adobe account, nothing on the download screen. 
+</s><s>what can i do ?</s><s> can you help me.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4978134</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="bkwater" timestamp="Jan 8, 2013 12:38 PM">
+<s>i am having the same "insert cd 2..." problem - my download was legally provided by adobe as a replacement for my earlier version of cs which does not run on windows 7. please provide instructions for dealing with this - thanks.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4979048</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="alex-ccs" timestamp="Jan 8, 2013 6:20 PM">
+<s>double click on the cd2.exe file when prompt for extraction folder, use the same folder as cd1. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4979405</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="SuOCar" timestamp="Jan 8, 2013 11:16 PM">
+<s>well, except that isn't the instruction in the accompanying pdf.</s><s> as in my original post, it says to extract cd 2,3 and extras prior to extracting 1.</s><s> of course, you can specify the same folder when extracting 1 as you specified for 2 but it still doesn't work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4979917</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="secretagentmole" timestamp="Jan 9, 2013 5:15 AM">
+<s>first run an unistaller like revo uninstaller it is free, select everything adobe it drags up and then follow this procedure!   1.</s><s> right-click each file (.exe file) 2.</s><s> select properties then go to the compatibility tab.</s><s> 3. put a check on the "run this program in compatibility mode for" then select the previous os which do you think it worked.</s><s> for your case select windows xp with service pack 3 4.</s><s> then under privilege level, place a check on "run this program as administrator" 5.</s><s> click apply then ok.     ignore disk 1 (we will come back to this)     click disk 2 - but change the save files in folder destination to c:\creative suite cs2\adobe creative suite 2.0\     be default it goes to the wrong folder of c:\creative suite\adobe creative suite 2.0\ - this later brings up an error of insert disk 2.     if it says unable to create the specified output folder! - just click ok     click next     --------------------- click disk 3 - making sure the address is c:\creative suite cs2     click next     --------------     install the extra files if you want to     --------------     now click disk 1 - destionation folder - c:\creative suite cs2 ignore quicktime 6 message accept agreement enter serial - 1130-1414-7569-4457-6613-5551 now you need to change the location as c:\program files (x86)\adobe is not valid change it to c:\progra~2\adobe     if the next button stays greyed out, click back then go forward with the next button.</s><s> all should now be good     install the entire suite or just the components you require.     select do not register on drop down on the registration page   it works, i have done it and it works fine on windows 7
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-4980474</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="Garwynn01" timestamp="Jan 9, 2013 8:35 AM">
+<s>dear adobe staff & community admin,   while you may have intended this for only customers who had purchased this before... removing the license check and replacing with a version using a fixed serial number in the html fully available - without login - i really wonder how this can legally be enforced at this point.  sure, you could shut down the serial with a patch, but the versions are far beyond their sdlc and probably would cost far more to do that than it is now worth.   for example: after the info was passed on to me by another i downloaded it and installed it.  no notice on the link i was given or the page that this required previous purchase or license... just download links and serials.  not even randomized - fixed in html.  whoever did this must have had approval to do so - you guys are a huge corporation!  now what - we now all have to uninstall or face legal action?  logistically how could you even prove the difference of someone who has the cd in a box and wanted a digital download copy or a person thinking they just got something awesome from you guys?  what about for us "measly" folks that only need a few things for which cs2 will still go above and beyond our needs?   respectfully i hope that you guys review what's going on and come out with a public statement... and soon.  not a forum response, a press release - something that will be seen by more than just people lurking the forums.  what is the story with cs2?  are you going to enforce the threat that don said and now put thousands or more at risk of legal action?  pr wise that would be a nightmare... just letting cs2 go at this point not only looks good for you but will probably generate even more interest by users where you may end up with new sales of current products after people get familiar with this one!  why let this be a lose-lose when it could be a great win-win for both the public and adobe - and generate great buzz for you in 2013?   thank you for your time.   sincerely, garwynn (@xdagarwynn on twitter)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-5031964</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="elfdude0" timestamp="Jan 29, 2013 11:58 AM">
+<s>as alex-ccs posted, when it prompts you for "cd 2", extract the cd 2 files to the same location that cd 1 was extracted into.</s><s> in my case, this was: 
+c:\creative suite cs2\adobe creative suite 2.0\ 
+then click "ok" on the cd insert prompt, and the installer will continue with the process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-5057538</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="Quananana" timestamp="Feb 8, 2013 1:38 AM">
+<s>if you're already at the 'insert cd2' stage just move the contents of c:\creative suite\adobe creative suite 2.0 to c:\creative suite 2.0\adobe creative suite 2.0 and then click ok - just worked for me after reading this thread - thanks everyone - i'd achieved swearing stage before this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-5319905</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="Cystar" timestamp="May 14, 2013 11:37 AM">
+<s>installing cs2 on a windows 8 64bit systems worked for me using the instructions below, followed to a "t".   "be aware, this won't be for everyone.</s><s> these are old programs, intended for use on windows 2000/ xp and mac os x v.10.2.8–v.10.3.8 (powerpc® g4 or g5 processor).</s><s> we've managed to install cs2 on a 64-bit windows 7 system, but this is unsupported and there's no telling what issues might crop up.   if you'd like just to try, though, here's what to do.</s><s> follow the download link to open a page at the adobe site, and at a minimum download creativesuitecs2disc1.exe, creativesuitecs2disc2.exe and creativesuitecs2disc3.exe from the links at the top of the page (that's a bulky 1.07gb in total, so choose a system with a fast internet connection).   run creativesuitecs2disc3.exe, make a note of the default extraction folder (it was c:\creative suite cs2 for us), and click next > finish.   run creativesuitecs2disc2.exe, change the default extraction folder name to whatever it was for the previous file, and click next > finish.   run creativesuitecs2disc1.exe.</s><s> the extraction folder should be the same as it was for the disc3 file, but change it if not, and click next.</s><s> (the aim of all this being that all the cs2 content should end up in the same folder.</s><s>)   the installer will appear.</s><s> click next and accept the licence agreement.   the "personalization" screen then asks for your registration details.</s><s> enter your name, (optionally) company, and the serial number 1130-0412-8377-1896-9751-5759 (you can paste this from the clipboard).   next, the installer asks where to install creative suite 2.</s><s> by default this was c:\program files (x86)\adobe on our windows 7 x64 system, but it immediately complained that "the path your selected for installation contains unsupported characters".</s><s> this is misleading; the real problem is just that the installer is using a long file name.</s><s> manually enter c:\progra~1\adobe as the folder name on 32-bit windows, c:\progra~2\adobe on a 64-bit system, press tab > next and all should be well.   read more: http://www.pcadvisor.co.uk/downloads/3328873/adobe-creative-suite-2/#i xzz2ti45rp5z   you then get to choose to install some, or all of the suite's components.</s><s> your options are adobe illustrator cs2 (600mb), adobe indesign cs2 (400mb), adobe photoshop cs2 and adobe imageready cs2 (450mb), and adobe version cue cs2 (300mb).   we opted for the "entire suite" option, and clicked next.   a summary screen appears listing all the choices you've made so far.</s><s> if there's a mistake, click "back" and change it, otherwise click install.   if a message appears telling you to "insert cd 2 to continue installation", open explorer, and switch to the default extraction folder (we'll assume it's c:\creative suite cs2).</s><s> manually copy the c:\creative suite cs2\adobe indesign cs2 and c:\creative suite cs2\adobe version cue cs2 folders and their contents to c:\creative suite cs2\adobe creative suite 2.0.</s><s> switch back to the installer, click ok and it should now continue.   once installation is complete (which should only take 3 or 4 minutes, not the "up to 20" suggested by the setup program) a registration dialog will appear.</s><s> there's no need to bother registering, really - these are free tools, you're not going to get any support running them on modern pcs anyway - so the best option is probably to choose the "do not register" option, and click next > done.   and with any luck, you should now have installed cs2.</s><s> the issues may not end there, but you should at least now be able to launch and try out its various applications.   read more: http://www.pcadvisor.co.uk/downloads/3328873/adobe-creative-suite-2/#i xzz2ti3v0ap3"
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-5344524</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="valerieab" timestamp="May 22, 2013 3:10 PM">
+<s>danke beaucoup to secretagentmole!</s><s> i had tried and failed three times to get this thing installed.</s><s> your instructions finally did the trick. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-5511521</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="peterbrzy" timestamp="Jul 16, 2013 3:07 PM">
+<s>i am having fits with this. 
+i actually own a license to cs2 but it won't let me install my version; had to go through the download and install prodecures as shown -- very similar to what adobe recommends but with some differences, such as the installation folder re-name. 
+</s><s>however...</s><s> 
+</s><s>i go through the whole process, get to the personalization screen, enter the serial number, select the programs i want to install... 
+</s><s>and the install flashes very quickly, says finished but nothing is installed at all. 
+
+</s><s>would greatly appreciate assistance.</s><s> i follow these instructions exactly, uninstalling completely before trying again and again. 
+</s><s>i'm on windows 8, 64-bit.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-4975155-5511660</DOCNO>
+<TEXT>
+<subject>Free version of CS2 - unable to install - please insert CD 2</subject>
+<post author="BobLevine" timestamp="Jul 16, 2013 3:14 PM">
+<s>cs2 is totally unsupported on anything later than windows xp.</s><s> you're on your own i'm afraid. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-628980</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Kboelsen" timestamp="Apr 30, 2010 10:56 PM">
+<s>i've downloaded the trial (no problems) and went installing.</s><s> after only 3% the installation is shut down (exit code 7) with an impressive error log of 12 fatal errors, 144 errors and 135 warnings.</s><s> am running english (ie) win7 64-bit (no additioanl language packs installed), quad core 3,23 ghz, 8 gb ram, 2* 1024 mb ati hd5770 graficcards (crossfire enabled) the computer is actually just a few days old, all updates installed.</s><s> the installation is run as administrator.   i tried installing the microsoft vc80 and 90 files (in payload) - no result, it did not matter if i just ran the trial installation or provided a license code (genuine).   any ideas?     exit code: 7 -------------------------------------- summary -------------------------------------- - 12 fatal error(s), 144 error(s), 135 warning(s) warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure warning: payload cannot be installed due to dependent operation failure error: 2 unable to delete file copy at "c:\program files (x86)\common files\adobe\ape\3.1\adbeapecore.dll" error 5 access is denied.</s><s> error: 2 error rolling back command arkmovefilecommand error: 1 unable to restore file at "c:\program files (x86)\common files\adobe\ape\3.1\adbeapecore.dll" from backup at "c:\adobetemp\backup\adobetmp00018116" error 5 access is denied.</s><s> error: 1 error rolling back command arkdeletefilecommand error: the following payload errors were found during install: error:  - adobe onlocation cs5 royalty content wrapper: install failed error:  - adobe csxs infrastructure cs5: install failed error:  - adobe media player: install failed error:  - sitecatalyst netaverages: install failed error:  - firefox plugin cs5: install failed error:  - adobe linguistics cs5 x64: install failed error:  - adobe photoshop cs5 support: install failed error:  - adobe indesign cs5 common language files_adobeindesign7commonlang-en_us: install failed error:  - adobe bridge cs5: install failed error:  - adobe encore cs5 third party royalty content: install failed error:  - microsoft_vc80_atl_x86: install failed error:  - recommended common fonts installation x64: install failed error:  - adobe flash cs5_adobeflash11-en_uslanguagepack: install failed error:  - adobe toolhints cs5: install failed error:  - adobe fireworks cs5: failed due to language pack installation failure error:  - adobe flash builder: install failed error:  - adobepdfl x64 cs5: install failed error:  - adobe encore cs5 royalty codecs installer wrapper: install failed error:  - devicecentral_devicecentral3lp-en_gb: install failed error:  - microsoft_vc80_mfcloc_x86_x64: install failed error:  - adobe after effects cs5 third party royaltycontent wrapper: install failed error:  - adobe premiere pro cs5 third party content wrapper: install failed error:  - adobe flash cs5_adobemobileextension_flash11-en_us: install failed error:  - adobe indesign cs5 application language files_adobeindesign7applang-en_gb: install failed error:  - creative suite 5 master collection: install failed error:  - adobe xmp panels cs5: install failed error:  - adobe player for embedding: install failed error:  - air2 for adobe flash pro: failed due to language pack installation failure error:  - adobe premiere pro cs5_adobepremierepro5en_uslanguagepack: install failed error:  - photoshop camera raw: install failed error:  - adobecolorcommonsetcmyk: install failed error:  - adobehelp: install failed error:  - camera profiles installer: install failed error:  - adobe buzzword cs5: install failed error:  - adobe after effects cs5 third party content wrapper: install failed error:  - adobe flash player 10 plugin: install failed error:  - adobe mini bridge cs5: install failed error:  - microsoft_vc80_crt_x86_x64: install failed error:  - ie plugin cs5: install failed error:  - adobe soundbooth cs5 codecs wrapper: install failed error:  - adobe sing cs5: install failed error:  - adobecolorja cs5: install failed error:  - adobe reviewpanel cs5: install failed error:  - adobe indesign cs5 icon handler x64: install failed error:  - adobe premiere pro cs5 third party royalty content: install failed error:  - adobe flash cs5_adobemobileextension_flash11-mul: install failed error:  - adobe media encoder cs5 dolby x64: install failed error:  - adobe browserlab cs live: install failed error:  - photoshop camera raw (64 bit): install failed error:  - iphone publishing: install failed error:  - adobe after effects cs5 support: install failed error:  - csxs story extension: install failed error:  - adobe photoshop cs5 core_x64: failed due to language pack installation failure error:  - adobe contribute cs5_adobecontribute6en_gblanguagepack: install failed error:  - adobe media encoder cs5 x64: install failed error:  - adobe after effects cs5_adobeaftereffects10en_uslanguagepack: install failed error:  - suite shared configuration cs5: install failed error:  - adobe premiere pro cs5 third party royalty content wrapper: install failed error:  - adobe linguistics cs5: install failed error:  - pdf settings cs5: install failed error:  - devicecentral: failed due to language pack installation failure error:  - adobetypesupport cs5: install failed error:  - adobecolorvideoprofilescs cs5: install failed error:  - adobe onlocation cs5_adobeonlocation5en_uslanguagepack: install failed error:  - adobe flash fonts1: install failed error:  - adobe onlocation cs5 royalty content: install failed error:  - adobecolorcommonsetrgb: install failed error:  - adobe player for embedding x64: install failed error:  - office plugin cs5: install failed error:  - adobe photoshop cs5 core: failed due to language pack installation failure error:  - adobe flash player 10 activex: install failed error:  - required common fonts installation x64: install failed error:  - adobe indesign cs5 common base files: install failed error:  - microsoft_vc90_atl_x86_x64: install failed error:  - adobe photoshop cs5 international english language pack_adobephotoshop12-en_gb: install failed error:  - adobe csxs extensions cs5: install failed error:  - microsoft_vc80_atl_x86_x64: install failed error:  - adobeoutputmodule: install failed error:  - microsoft_vc90_crt_x86_x64: install failed error:  - air2 for adobe flash pro_air2_flash11-en_us: install failed error:  - adobe indesign cs5 common language files_adobeindesign7commonlang-en_gb: install failed error:  - adobecmaps x64 cs5: install failed error:  - adobetypesupport x64 cs5: install failed error:  - adobe illustrator cs5: failed due to language pack installation failure error:  - adobe media encoder cs5 pci wrapper x64: install failed error:  - adobe encore cs5: failed due to language pack installation failure error:  - microsoft_vc90_mfc_x86_x64: install failed error:  - adobe photoshop cs5 international english language pack_x64_adobephotoshop12-en_gb_x64: install failed error:  - adobecolorvideoprofilesae cs5: install failed error:  - dynamiclinksupport: install failed error:  - adobe onlocation cs5: failed due to language pack installation failure error:  - adobe soundbooth cs5 royalty codecs wrapper: install failed error:  - adobe winsoft linguistics plugin cs5: install failed error:  - adobe winsoft linguistics plugin cs5 x64: install failed error:  - adobecoloreu cs5: install failed error:  - adobe encore cs5_adobeencore5en_uslanguagepack: install failed error:  - adobe premiere pro cs5 third party content: install failed error:  - adobepdfl cs5: install failed error:  - hil help search: install failed error:  - adobecmaps cs5: install failed error:  - adobecolorna cs5: install failed error:  - adobe after effects cs5 third party content: install failed error:  - adobe premiere pro cs5: failed due to language pack installation failure error:  - adobe dreamweaver cs5: failed due to language pack installation failure error:  - microsoft_vc80_mfc_x86_x64: install failed error:  - ph: install failed error:  - required common fonts installation: install failed error:  - adobe soundbooth: failed due to language pack installation failure error:  - adobe after effects cs5 presets: install failed error:  - adobe after effects cs5 third party royalty content: install failed error:  - americanenglishspeechanalysismodels: install failed error:  - adobe switchboard 2.0: install failed error:  - adobe flash cs5: failed due to language pack installation failure error:  - adobe illustrator cs5_adobeillustrator15en_gblanguagepack: install failed error:  - adobecolorphotoshop cs5: install failed error:  - pixel bender toolkit: install failed error:  - adobe after effects cs5: failed due to language pack installation failure error:  - adobe soundbooth cs5 codecs: install failed error:  - adobe contribute cs5: failed due to language pack installation failure error:  - adobe indesign cs5 application base files2: install failed error:  - players for adobe flash pro: install failed error:  - recommended common fonts installation: install failed error:  - adobe dreamweaver cs5_adobedreamweaver11en_uslanguagepack: install failed error:  - adobe indesign cs5 icon handler: install failed error:  - adobe extension manager cs5: install failed error:  - adobejre: install failed error:  - adobe soundbooth_adobesoundbooth3en_uslanguagepack: install failed error:  - adobe flash catalyst cs5: install failed error:  - adobe extendscript toolkit cs5: install failed error:  - tlf for adobe flash pro: install failed error:  - adobe soundbooth cs5 royalty codecs: install failed error:  - adobemotionpicture cs5: install failed error:  - adobe fireworks cs5_adobefireworks11en_gblanguagepack: install failed error:  - adobe air: install failed error:  - adobe premiere pro cs5 support: install failed error:  - adobe media encoder cs5 dolby wrapper x64: install failed error:  - adobe indesign cs5 application base files: failed due to language pack installation failure error:  - adobe media encoder cs5 pci x64: install failed error:  - adobe indesign cs5 application feature set files: install failed fatal error: cannot copy template databse file from c:\users\kerstin\appdata\local\adobe\oobe\pdapp\dwa\resources\uninsta ll\uninstall.db to c:\program files (x86)\common files\adobe\installers\uninstall\{2f6b67f4-a2bb-45d7-a80c-25ff646cc1c 5}.db fatal error: cannot set file attributes to normal for file c:\program files (x86)\common files\adobe\installers\uninstall\{2f6b67f4-a2bb-45d7-a80c-25ff646cc1c 5}.db fatal error: uninstallation database file does not exist at c:\program files (x86)\common files\adobe\installers\uninstall\{2f6b67f4-a2bb-45d7-a80c-25ff646cc1c 5}.db fatal error: cannot copy template databse file from c:\users\kerstin\appdata\local\adobe\oobe\pdapp\dwa\resources\uninsta ll\uninstall.db to c:\program files (x86)\common files\adobe\installers\uninstall\{e5dd149f-8370-48f9-a32c-2e3dc776cff b}.db fatal error: cannot set file attributes to normal for file c:\program files (x86)\common files\adobe\installers\uninstall\{e5dd149f-8370-48f9-a32c-2e3dc776cff b}.db fatal error: uninstallation database file does not exist at c:\program files (x86)\common files\adobe\installers\uninstall\{e5dd149f-8370-48f9-a32c-2e3dc776cff b}.db fatal error: cannot copy template databse file from c:\users\kerstin\appdata\local\adobe\oobe\pdapp\dwa\resources\uninsta ll\uninstall.db to c:\program files (x86)\common files\adobe\installers\uninstall\{3f023875-4a52-4605-9db6-a88d4a813e8 d}.db fatal error: cannot set file attributes to normal for file c:\program files (x86)\common files\adobe\installers\uninstall\{3f023875-4a52-4605-9db6-a88d4a813e8 d}.db fatal error: uninstallation database file does not exist at c:\program files (x86)\common files\adobe\installers\uninstall\{3f023875-4a52-4605-9db6-a88d4a813e8 d}.db fatal error: cannot copy template databse file from c:\users\kerstin\appdata\local\adobe\oobe\pdapp\dwa\resources\uninsta ll\uninstall.db to c:\program files (x86)\common files\adobe\installers\uninstall\{6b485102-4593-43f6-ba45-f14d690b0c6 4}.db fatal error: cannot set file attributes to normal for file c:\program files (x86)\common files\adobe\installers\uninstall\{6b485102-4593-43f6-ba45-f14d690b0c6 4}.db fatal error: uninstallation database file does not exist at c:\program files (x86)\common files\adobe\installers\uninstall\{6b485102-4593-43f6-ba45-f14d690b0c6 4}.db ---------------------------------------------------------------------- ---------------
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776165</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="jdmDRpower" timestamp="May 1, 2010 2:49 AM">
+<s>yes same problem similar hardware 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776144</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Ekranik" timestamp="May 1, 2010 2:52 AM">
+<s>open add remove programs and find search old version cs5 like photoshop or other software cs5 eg,.</s><s> master collection cs5 
+</s><s>sory my bad english 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776132</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="artistpavel" timestamp="Apr 29, 2011 1:43 PM">
+<s>same here, fresh windows 7 64 install just for this.</s><s> if i can't solve this, i will have to roll back to cs4, because i have to work. 
+btw this thread shows up first in google search, so there's better be a solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776211</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="artistpavel" timestamp="May 1, 2010 4:22 AM">
+<s>ok, this is a windows security issue, was able to install by logging in as "real" administrator.</s><s> this is how to: 
+
+</s><s>1. click start, right-click computer, and select manage.</s><s> 2. select local users and groups, and open the users list.</s><s> 3. right-click administrator and select properties.</s><s> uncheck account is disabled and click ok.</s><s> 4. log off or switch users; then log on as administrator (which now appears on the welcome screen).</s><s> 5. press ctrl+alt+del, and click change a password. 
+
+</s><s>install cs5.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776409</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="hellwind" timestamp="May 1, 2010 6:03 AM">
+<s>same hardware, same problem! 
+i7 3,2 ghz 12gb ram ... but vista 64 bit... the admin trick dosnt work for me.</s><s> the installation file is fine i test it already on my notebook. 
+</s><s>isn't possibel to run after effects cs4 and cs5 on one system?</s><s> ... have some plug-ins only for cs4 
+any other idea?</s><s> thx pat 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776393</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 6:09 AM">
+<s>the admin trick didn't do anything for me either.</s><s> i am working on windows 7 64-bit with cs4 installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776424</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 6:11 AM">
+<s>just wondering if everyone here installed their version of the web. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776423</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="hellwind" timestamp="May 1, 2010 6:29 AM">
+<s>i think this admin trick makes the same as: right click on installation file --> run as administrator 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776438</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 6:30 AM">
+<s>but still not working for me 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776527</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="eyvindr" timestamp="May 1, 2010 8:46 AM">
+<s>had the same problem with the trial, found that unchecking fireworks in the list of programs that is going to be installed made it work.     edit: weird issue, and might be a fluke of luck that made it work for me.</s><s> other things to try, but i dunno if they will give any results at all. not letting the files be within to many directories, put the trial install folder on the root of the drive. jiggle around in the installer, unchecking and checking the programs. should probably always try and run as admin as stated earlier.   best of luck.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776553</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="MasterK" timestamp="May 1, 2010 7:48 AM">
+<s>i had a simillar error but in 32bit windows.   i did the following to get it to work.   1. click start, right-click computer, and select  manage.</s><s> 2. select local users and groups, and  open the users list.</s><s> 3. right-click administrator  and select properties.</s><s> uncheck account is disabled and click ok.</s><s> 4. log off or switch users; then log on as administrator (which  now appears on the welcome screen).</s><s> 5. disable any anti-virus software.   install cs5.   after install go back and disable the admin accout as a full login account.   i tried run as administrator many times and it never worked until i did it this way.   good luck.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776649</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Aubinwan" timestamp="May 1, 2010 8:10 AM">
+<s>nearly the same issue here.</s><s> i have win 7 64 bit on a dell precision 6400 mobile workstation with 8 gig ram.</s><s> trying to install production premium cs5 from the web download.</s><s> it ins talls all but the programs i really need: premiere, after effects, ps 64bit and soundbooth.</s><s> i get loads of errors like this: 
+warning: os requirements not met for {33a3f995-8333-4676-8d6f-ab7674bb52ea} 
+i am going to try the administrator idea posted below.</s><s> right-clicking and choosing run as administrator did not work. 
+</s><s>side note: about three months ago, i installed flash cs4 and photoshop cs4 64 bit.</s><s> both gave similar problems.</s><s> i found a thread on the web somewhere suggesting that google desktop was the culprit.</s><s> i do not have google desktop installed, but in desperation i uninstalled google toolbar and that did the trick.</s><s> i was able to install.</s><s> so this time i tried uninstalling it again, but no luck.</s><s> i only mention in the interst of providing as much data as possible.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776650</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="hellwind" timestamp="May 1, 2010 8:11 AM">
+<s>thx guys!</s><s> but it still not works ... the erorr apears also if i only install photoshop or after effects 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2776715</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="PaulFAubin" timestamp="May 1, 2010 8:47 AM">
+<s>me too.</s><s> nothing works.</s><s> i tried downloading just the premiere tryout.</s><s> when i tried to install it, it installed encore or soundbooth, i am now not sure which one i was part of my four above.</s><s> but same error when it got to premiere.</s><s> i tried enabling the admin account like the posters above suggest, tried installing, (this time shows only three uninstalled products: pr, ae, ps) but still nothing. 
+</s><s>cs5 just refuses to see my windows 7 as a 64bit os.</s><s> very frustrating. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777017</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="artistpavel" timestamp="May 1, 2010 11:19 AM">
+<s>ok i discovered the reason for my situation, the admin trick was not necessary.</s><s> what happened was - i moved my documents folder to a different drive and then changed the drive letter, so cs5 installer couldn't find my documents.</s><s> since this was a fresh install, i reinstalled win 7 and got all drive letters sorted out.</s><s> this is probably different from your situation, but just letting you know, the admin rights was not the reason. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777030</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 11:30 AM">
+<s>my documents folder is on another drive but i mapped it right.</s><s> gave up for now and reinstalled standalone version of premiere.</s><s> have to work 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777085</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="jabloomf1230" timestamp="May 1, 2010 11:38 AM">
+<s>this error is showing up for a lot of people with windows 7 x64.</s><s> basically, the setup program can't find the payloads (the files used to install the various components).</s><s> it doesn't matter whether you have a fresh install or whether you log on with a "true" administrator account.</s><s> the setup is broken and adobe needs to fix it.</s><s> the same problem occurs with ae cs5 and ppro cs5 and it doesn't matter whether you install as a trial or an upgrade either.</s><s> i suggest that everyone file support tickets with adobe, like i did and maybe they can figure out the commonality. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777059</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 11:43 AM">
+<s>how do you open a ticket? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777094</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="cyaneyed_uk" timestamp="May 1, 2010 11:47 AM">
+<s>try moving it to the drive root.</s><s> i had my trial copy nested all the way in my downloads folder and kept getting the same error.</s><s> i moved it to the root of another drive, so the folder path was e:\adobe cs5 and it installed all the way through, problem free. 
+</s><s>hope that helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777064</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 11:50 AM">
+<s>but i am installing from a dvd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777147</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="jabloomf1230" timestamp="May 1, 2010 12:14 PM">
+<s>to file a support ticket, click on the support link on this page's main menu.</s><s> there are phone numbers there.</s><s> the level of support, depends on your product and whether either you or your organization have paid adobe for a more comprehensive support plan.   the other thing that i noticed is that the install fails almost immediately.</s><s> if you look in the various install logs (c:\users\username\appdata\local\temp), the microsoft installer has this error:   error 1402.could not open key: unknown\components\da42bc89bf25f5bd0af18c3b9b1a1ee8\27b4b248f8e926943 b1cc124a2c54443.  system error 5.  verify that you have sufficient access to that key, or contact your support personnel.</s><s> property(s): diskprompt = [1] property(s): upgradecode = {662366d8-8ff7-4ea3-92a8-c7fea8ac8032} property(s): producttoberegistered = 1 property(s): sourcedirproduct = {92d58719-bbc1-4cc3-a08b-56c9e884cc2c} property(s): sourcedir = z:\temp\adobe cs5\payloads\microsoft_vc80_crt_x86\     since that's a ms visual c library that needs to be installed, apparently, everything else after that fails.</s><s> the cs5 installer is trying to modify a key in the windows registry and it either can't find it or it doesn't have permission to modify it.</s><s> i checked the info in the error code and that key number in my registry (the big long number) does correspond to that specific ms visual c library.</s><s> why the error says "unknown" instead of the exact key name may also be a problem.</s><s> in any case, it's a bug in the installer.</s><s> btw, installing the library manually works, so it's something that adobe is doing.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777181</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Wade_Zimmerman" timestamp="May 1, 2010 12:32 PM">
+<s>you guys are disabling your anti virus software and firewalls? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777186</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 12:37 PM">
+<s>of course 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777173</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Wade_Zimmerman" timestamp="May 1, 2010 12:43 PM">
+<s><quote>
+<s>amitzi wrote: 
+of course 
+</s></quote>well as we know the of course does not always mean what it appears to mean. 
+</s><s>hw about running the uninstaller for the trial and then cleaning you stuff in the application support folders, cache, and so on. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777212</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 12:46 PM">
+<s>it appears to be a problem with the installation of microsoft_vc80_crt_x86. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777202</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="jabloomf1230" timestamp="May 1, 2010 1:10 PM">
+<s><quote>
+<s>wade_zimmerman wrote: 
+<quote>
+<s>amitzi wrote: 
+of course 
+</s></quote>well as we know the of course does not always mean what it appears to mean. 
+</s><s>hw about running the uninstaller for the trial and then cleaning you stuff in the application support folders, cache, and so on. 
+</s></quote>i've tried every possible combination, including what you suggested and it does nothing.</s><s> there is also a cs5 cleanup program available.</s><s> i've run that and it does nothing also.</s><s> my guess is that the cs5 installer is making some assumption about windows 7 x64 installations that is not universally correct.</s><s> i sent my cs5 installer log files to adobe with the adobe support advisor, so i think we will just have to wait and see what adobe support can figure out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777390</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Kboelsen" timestamp="May 1, 2010 2:15 PM">
+<s>i've pretty much tried it all by now disable firewall/virus protection, run as adminstrator, log in as administrator, disable fireworks, install the mentioned microsoft vc files manually pre-isntalltion attempt.</s><s> then i did a complete clean install cleaner than this, the system won't be.</s><s> there is not much software to kill for me: i've bought this pc just 3 days ago, except for acrobat pro extended i've had no other adobe software on it yet.</s><s> i've also had a go at the cs4 master collection and lo and behold: the initializing installing ends after 90 % to never resume again. 
+i have done pretty much everything i can think of, checked the common files which were mentioned a lot in the error log - everything looks fine.</s><s> the admin has the rights it should have....</s><s> right now i just feel extremely stupid of having invested in a new system in order to fully utilize the cs5 mc and not even the cs4 will install under 64 bit.</s><s> logged a case to support with a variety of error logs and support keys generated by the support advisor.</s><s> there must be a solution to this . 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777415</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="amitzi" timestamp="May 1, 2010 2:28 PM">
+<s>it's some sort of an installer error because the standalone premiere installation works well and installs all the packages without a hitch. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777538</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="PaulFAubin" timestamp="May 1, 2010 3:37 PM">
+<s>not for me.</s><s> i tried to install stand-alone premiere as well and got the same errors. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777554</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="FAHD_KSA" timestamp="May 1, 2010 3:53 PM">
+<s>hi guys 
+i found a sloution 
+
+go to 
+set-up.exe 
+right click then properties then compatibly ten tick in run this program choice win vista also tick in run as administrate 
+
+
+
+sorry for the english 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777577</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="PaulFAubin" timestamp="May 1, 2010 4:21 PM">
+<s>i give up for now.</s><s> i have submitted a case with tech support, but since they work m - f, i will have to wait till then.</s><s> i have tried administrator, turn off firewall, turn off av, run in compatibility, move to c drive, install just one product, download just stand-alone premiere, etc.</s><s> etc.</s><s> 
+</s><s>nothing works.</s><s> it simply refuses to install.</s><s> so i think the earlier poster that said it is an adobe issue is probably right. 
+</s><s>however, i am about to try one last thing.</s><s> i have another machine in here that i just bought win 7 for.</s><s> so i am going to go try and install it there and see what happens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777886</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="hellwind" timestamp="May 1, 2010 7:54 PM">
+<s>i have 4 pc and only one makes troubles with my cs5 file... the bad thing is just that one is my working pc *g* 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777907</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Wade_Zimmerman" timestamp="May 1, 2010 8:04 PM">
+<s>font corruption more than likely or plug in no matter how much you don't want this to be true it just might be. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2777862</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="FlyDocPete" timestamp="May 1, 2010 9:44 PM">
+<s>i'm also not able to install a download of master collection.</s><s> i get to "checking configuration" and get an "error(20)" code.</s><s> i'm wondering if despite my best efforts to assemble the folder structure as intended from the multiple downloads, i'm getting it wrong.</s><s> would someone who has successfully installed the full cs5 master collection from download kindly post a screen shot of the decompressed setup folder structure? 
+</s><s>my setup: win 7 64 bit on a 980x, 12gb ram.</s><s> previously had cs4 mc (uninstalled and cleaned) and a vendor prerelease of cs5 mc (uninstalled and cleaned).</s><s> i even rolled back to a system image from before the prerelease. 
+</s><s>thanks in advance for any help. 
+</s><s>edit: success!</s><s> at least somewhat...by moving each piece of the suite (core apps and various content packs), i got a basic install to work. the core suite setup went without any apparent errors, whereas the content packs warned that windows had an impending reboot.</s><s> i'd seen that in the vendor prerelease version and ignored it; the content seemed to install fine from there. 
+</s><s>would still like adobe (or anyone) to clarify the proper, most efficient way to organize and install files, though.</s><s> maybe i'm missing the boat, but it does seem that we are left to figure out a multi-gig install on our own.</s><s> the suite install pdf was pretty generic in its description of the process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2778630</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="PaulFAubin" timestamp="May 2, 2010 7:53 AM">
+<s>how would you troubleshoot font corruption or plugin corruption?</s><s> plugin to what?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2778631</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="PaulFAubin" timestamp="May 2, 2010 8:02 AM">
+<s>success on my other computer.</s><s> still nothing on my primary computer. 
+</s><s>my other computer in the house is a dell xps 420.</s><s> i purchased a new hd, in stalled it in the extra bay and installed windows 7 64bit on this drive creating a dual boot machine.</s><s> i only installed windows, ms office and roxio cd software on this os.</s><s> i did all the patches and updates. 
+</s><s>time to install cs5 production premium.</s><s> i turned of av, fw, right-clicked the installer and told it to install as xp-spiii and administrator and copied install files to local c drive first.</s><s> (don't know if i needed all of that, but i wanted to be sure).</s><s> then i held my breath, and double-clicked the installer. 
+</s><s>away it went.</s><s> after a while the screen came up success!</s><s> no errors.</s><s> just like it should be right? 
+</s><s>soooo, i have it working on one machine.</s><s> but still would really like to figure out how to make it work on my primary machine.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2778700</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="nightmarebr" timestamp="May 2, 2010 8:40 AM">
+<s>the solution!</s><s>!</s><s>!</s><s> 
+</s><s>try install all .</s><s>msi files 
+
+</s><s>if you receive this error: 
+go to regedit, hkey_local_machine\software\microsoft\windows\currentversion\installe r\userdata\s-1-5-18\components, find de key error, that case, da42bc89bf25f5bd0af18c3b9b1a1ee8, 
+right click in key, and click in permissions 
+click, advanced: 
+click in add 
+click advanced: 
+click find now, and select de first option, administrator, and click ok: 
+select fullcontrol, ad clique ok. 
+
+</s><s>and, click apply 
+
+</s><s>if receive any questions, click yes. 
+</s><s>do it for all .msi, that you received error. 
+</s><s>done it, install adobe photoshop cs5 normally. 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2778716</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Wade_Zimmerman" timestamp="May 2, 2010 8:48 AM">
+<s>that is what i think it is a conflict of some kind and perhaps plug ins was he wrong word. 
+</s><s>third party software that interacts or alters the way the system works. perhaps you have font manager that has some alter effect on the system. 
+</s><s>do you understand what i mean.</s><s> you might all be using software for a similar reason that does something to the system that was not encountered previously. 
+</s><s>trouble shooting fonts would be to turn them all off except the necessary ones and then try to install but unless you have different fonts than you do on the computer you were successful with then i would say that is not the issue. 
+i woud think it is something different from one computer to the other and you pointed out you only loaded a certain number of other software. 
+i think you have found the problem but have not pinpointed the culprit, although the culprit might be totally innocent. 
+</s><s>but knowing what is causing the conflict will help you install it as well as for adobe and or the other developer to do something about it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Creative-Suites/Creative-Suites-Windows/Discussions-2775913-2778717</DOCNO>
+<TEXT>
+<subject>Can't install CS5 Master collection engl Win 7 64- bits</subject>
+<post author="Wade_Zimmerman" timestamp="May 2, 2010 8:50 AM">
+<s>cross posted but that is what i meant. 
+</s></post>
+</TEXT>
+</DOC>
+
+

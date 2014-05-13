@@ -1,0 +1,1345 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-6129731-1408972</DOCNO>
+<TEXT>
+<subject>Problems with Times Std Font</subject>
+<post author="adobe468" timestamp="Feb 17, 2014 1:20 PM">
+<s>i recently purchased the adobe times std font (roman, italic, bold, bold italic) and the bold italic lowercase "s" character does not print correctly from word or preview (see attached images -- one correct and one not).</s><s> it will only print correctly from adobe acrobat, but that isn't a solution since i do most of my printing from word.</s><s> i'm thinking it's a problem with the font file... 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-6129731-6133040</DOCNO>
+<TEXT>
+<subject>Problems with Times Std Font</subject>
+<post author="egmtype" timestamp="Feb 18, 2014 11:19 AM">
+<s>i am unable to replicate this issue.</s><s> do you have any additional info on your system?</s><s> i used windows 7 and pulled down the current shipping data (should be exactly what you received), but it looks fine to me in sample and word.</s><s> ernie, adobe type qe.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-6129731-6134253</DOCNO>
+<TEXT>
+<subject>Problems with Times Std Font</subject>
+<post author="adobe468" timestamp="Feb 18, 2014 5:54 PM">
+<s>thanks, ernie.</s><s> i'm using mac os 10.9.1.</s><s> at first i thought the problem might be with mac's pdf maker, but that wouldn't explain the problem with word.</s><s> are there otf/adobe font compatability issues with macs? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-6129731-6136227</DOCNO>
+<TEXT>
+<subject>Problems with Times Std Font</subject>
+<post author="egmtype" timestamp="Feb 26, 2014 6:45 PM">
+<s>no, we worked hard to get everyone on the same page when we rolled otfs out.</s><s> the whole point is that one file is cross-platform; it's the same exact file with the same exact outlines.Ê i tried it on my 10.9.1 setup and it was fine in word and preview.</s><s> i thought maybe it was the system times (/system/library/fonts) but the one on my system seems fine, too.</s><s> this is puzzling.</s><s> from the image you posted, it looks like the entire lc s outline is wonky, not just that lower left corner.</s><s> if you've checked fontbook to see that you don't have any duplicates lying around, check the version on the file - it should be 2.125.</s><s> you could also try clearing your font caches; open a terminal window and type 'sudo atsutil databases -remove' and then return/enter and then reboot your mac.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-6129731-6139322</DOCNO>
+<TEXT>
+<subject>Problems with Times Std Font</subject>
+<post author="adobe468" timestamp="Feb 20, 2014 5:52 AM">
+<s>thanks, ernie.</s><s> i tried all of your suggestions but still have the same problem.</s><s> could i download an older version of the bold italic font and see if that resolves the issue?</s><s> the one i have -- wherever the problem originates -- isn't functional as is. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-6129731-6139461</DOCNO>
+<TEXT>
+<subject>Problems with Times Std Font</subject>
+<post author="egmtype" timestamp="Feb 20, 2014 6:56 AM">
+<s>email me directly at emarch@adobe.com and i'll send you a few versions and we'll see which one works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-5561397-1267973</DOCNO>
+<TEXT>
+<subject>Help! Font Folio 9.0 mac installation disc unreadable</subject>
+<post author="vbreeze12" timestamp="Aug 2, 2013 7:19 AM">
+<s>hi, 
+</s><s>i have adobe font folio 9.0 which came with two disc, one for windows and one for mac.</s><s> my company has completely converted all pcs into mac and i need to install the mac font, but the disc is unreadable (in multiple mac) and when i called adobe customer support, they told me they neither have a replacement cd nor download link available. 
+</s><s>could someone send me an image file (dmg/iso) of mac version of ff 9.0 so that i can burn and install with the license that i own? 
+</s><s>many thanks in advance. 
+hahn_david (at) hotmail 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-5561397-5562032</DOCNO>
+<TEXT>
+<subject>Help! Font Folio 9.0 mac installation disc unreadable</subject>
+<post author="MiguelSousa" timestamp="Aug 2, 2013 2:10 PM">
+<s>send us your original disk for us to verify that it's indeed not working and we'll send you back a new one.</s><s> please contact me off-line. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-5561397-5563318</DOCNO>
+<TEXT>
+<subject>Help! Font Folio 9.0 mac installation disc unreadable</subject>
+<post author="vbreeze12" timestamp="Aug 3, 2013 7:43 AM">
+<s>thanks!</s><s> 
+</s><s>i can gladly send you the defective original disc and a copy of my license key for your verification.</s><s> where should i send the disc to? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-5475027-1247664</DOCNO>
+<TEXT>
+<subject>font convert from otf to afm (japanese font)</subject>
+<post author="yukiichi1103" timestamp="Jul 3, 2013 4:42 PM">
+<s>i want to afm font. already i got otf font(heisei mincho stdn w3), bat don't use otf font on unix server's enscript.</s><s> i want to download afm font(heisei mincho stdn w3) or convert otf font to afm font. how to please ask me... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-5006839-1138035</DOCNO>
+<TEXT>
+<subject>Subset OTF</subject>
+<post author="Broly_A" timestamp="Jan 19, 2013 9:08 AM">
+<s>2 all, 
+</s><s>i'm newbie ti font so if my questions r stupid please forgive 
+i trying to parse and subset otf (cff) and i have some questions: 
+1.</s><s> if you have a character, how can you find out all of glyf data related to this character? 
+2.</s><s> as i know so far, glyf data's only stored in charstringindex.</s><s> if that's true, what's global subrs and local subrs for? 
+3.</s><s> when i supset otf font. what data must be subsetted? 
+</s><s>i'm looking forwards to seeing answer/discuss from u guys 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-1110173</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="dasimonx" timestamp="Dec 5, 2012 5:40 AM">
+<s>hi i want to convert ttf font to otf font (i need cff table to create swf font in as3 beacause i use tlf) with makeotfexe.exe trought commanline... is it possible ?</s><s> if not how to build cff table with the glyf and loca table of the ttf font in as3... thanks simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4899906</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="MiguelSousa" timestamp="Dec 5, 2012 3:48 PM">
+<s>simon, makeotf can't convert between font formats.</s><s> there's no fdk tool that you can use for that.</s><s> also, keep in mind that if these are fonts that you licenced, you should make sure that the license allows you to do such conversions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900641</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="dasimonx" timestamp="Dec 6, 2012 12:30 AM">
+<s>hi miguel, i work for a book editor who have built the font licence for all support (print, web...</s><s>), do you know a way to create the cff table with the glyf and loca table ?</s><s> thanks simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900646</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="MiguelSousa" timestamp="Dec 6, 2012 12:58 AM">
+<s>you'll need to use a font editor or a font converter app. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900700</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="dasimonx" timestamp="Dec 6, 2012 1:19 AM">
+<s>i need to do that in runtime with as3... it seems to be hard to do that in pure as3 code but i can use a exe file and communicate with it with nativeprocess class, but i can't find a font converter standalone exe... do u know one ?</s><s> thanks simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900740</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="MiguelSousa" timestamp="Dec 6, 2012 1:26 AM">
+<s>i guess i didn't quite understand what you're trying to do.</s><s> you want to convert a whole tt font to ot/cff font at runtime?</s><s> why do you need to do that?</s><s> tlf supports both ttf and otf.</s><s> what it doesn't support is type 1 fonts. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900706</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="dasimonx" timestamp="Dec 6, 2012 1:32 AM">
+<s>tlf dont support ttf because ttf doesn't have cff table, tlf need a definefont 4 font definition with the cff table, otf (opentype) have cff table but ttf (truetype) doesn't have this table, the glyph is describe in ttf with glyf and loca table.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900867</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="MiguelSousa" timestamp="Dec 6, 2012 3:28 AM">
+<s>i'll admit that my knowledge on definefont4 and using fonts in flash is a bit rusty, but i think you're wrong.</s><s> i'm 99% sure that tlf supports truetype fonts. Ê have you considered embedding the fonts?</s><s> here's a code example: embedding fonts in actionscript the part of most importance to you is probably this one: Ê [embed(source='../assets/myriadwebpro.ttf', fontname='mymyriadfont', mimetype='application/x-font', embedascff='true' )] // you do not use this variable directly.</s><s> it exists so that // the compiler will link in the font. private var font1:class; Ê the embedascff value is what will determine if the font is embedded as definefont3 (false) or definefont4 (true).</s><s> as you may know, tlf components require df4.</s><s> this is valid for truetype (.ttf) and opentype (.otf) fonts alike, despite the 'cff' letters in the keyword.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4900811</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="dasimonx" timestamp="Dec 6, 2012 3:35 AM">
+<s>you're right but when you embed a font like that in flex, it convert the font in swf with flex-fontkit.jar, that create the cff table with java.</s><s> i can't use this because i need to convert the font when the air application run and not when i create the air application. if you got an idea... thanks simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4903277</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="MiguelSousa" timestamp="Dec 6, 2012 10:52 PM">
+<s>ok, i guess you're looking for a way to generate low-level font data in as3.</s><s> i can tell you that there's no native solution.</s><s> you may be able to find a library somewhere that does it, but i don't know of any. 
+</s><s>if you want to pursue the approach of running a font converter from the command line, i think you could try fontforge. 
+</s><s>good luck! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-4898004-4903327</DOCNO>
+<TEXT>
+<subject>ttf to otf</subject>
+<post author="dasimonx" timestamp="Dec 7, 2012 12:17 AM">
+<s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786473-395796</DOCNO>
+<TEXT>
+<subject>Arabic fonts</subject>
+<post author="(hend_gomaa)" timestamp="Jan 22, 2003 5:36 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786473-1786474</DOCNO>
+<TEXT>
+<subject>Arabic fonts</subject>
+<post author="Thomas%20Phinney" timestamp="Jan 26, 2003 3:35 PM">
+<s>probably the version of photoshop you have does not support arabic.</s><s> i don't know if there is one that does, actually.</s><s> check out winsoft (http://www.winsoft.com); they make and sell arabic versions of adobe software.</s><s> t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786473-1786475</DOCNO>
+<TEXT>
+<subject>Arabic fonts</subject>
+<post author="(Adam_Twardoch)" timestamp="Jan 27, 2003 3:12 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786473-1786476</DOCNO>
+<TEXT>
+<subject>Arabic fonts</subject>
+<post author="Thomas%20Phinney" timestamp="Jan 28, 2003 1:25 PM">
+<s>yes, indesign 2.0 me does add significantly to the opentype support for arabic typesetting.</s><s> t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-395647</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="Thomas Phinney" timestamp="Jan 12, 2005 1:20 PM">
+<s>attached is an fdk feature file for bickham script pro (2004 revision).</s><s> the same code should be informative for fontlab and other applications that use the adobe opentype feature language, particularly when it comes to coding of contextual substitutions.</s><s> note 1: this should only be used as a reference for feature construction, and not for glyph names.</s><s> the feature file uses "friendly names" which are often changed for final font output.</s><s> note 2: this is not the same as bickham script standard, which is an earlier and much less complicated typeface.</s><s> the main advantage of looking at the original feature file rather than decompiling in fontlab is that any glyph classes retain their original names.</s><s> fontlab does an amazing job of decompiling features, but it has to invent names for glyph classes, and these are generally less clear than what was originally used in development.</s><s> this feature file is "warts and all," so there's even a comment on a bug i found, when going through the feature file.</s><s> however, we wanted to leave the code intact so it matches what we shipped.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-1785904</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="(Adam_Twardoch)" timestamp="Jan 12, 2005 11:33 PM">
+<s>awesome!</s><s> i completely agree, the comments and human-readable classes are a great advantage.</s><s> adam
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4133594</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="hottype1" timestamp="Jan 11, 2012 12:25 PM">
+<s>were the .fea files for bickham script pro & minion pro ever reposted?</s><s> i found a reference to them at typophile and tracked down your original posts of them.</s><s> but i can't find any attachment to either post.</s><s> my attempt to seach for them using the adobe forums search machine failed.</s><s> can they be reposted? 
+
+
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4134020</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="MiguelSousa" timestamp="Jan 11, 2012 3:01 PM">
+<s>here it is again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4139956</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="hottype1" timestamp="Jan 14, 2012 6:35 AM">
+<s>repost of bickham script feature file sample much appreciated.</s><s> i will put it to good use as a tutorial.</s><s> any chance of a repost for the minion pro feature file? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4139930</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="hottype1" timestamp="Jan 14, 2012 6:37 AM">
+<s>repost of bickham script feature file sample much appreciated.</s><s> i will put it to good use as a tutorial. 
+</s><s>any chance of a repost for the minion pro feature file?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4144417</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="MiguelSousa" timestamp="Jan 16, 2012 11:51 AM">
+<s><quote>
+<s>any chance of a repost for the minion pro feature file? 
+</s></quote>see feature file sample: minion pro (2004 rev) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4151612</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="hottype1" timestamp="Jan 19, 2012 6:10 AM">
+<s>many thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785903-4151604</DOCNO>
+<TEXT>
+<subject>Feature file sample: Bickham Script Pro (11/2004)</subject>
+<post author="hottype1" timestamp="Jan 19, 2012 6:11 AM">
+<s>many thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785899-395646</DOCNO>
+<TEXT>
+<subject>Feature file sample: Minion Pro (2004 rev)</subject>
+<post author="Thomas Phinney" timestamp="Aug 17, 2004 9:53 PM">
+<s>(edited 8/18 to add information) attached is an fdk feature file for minion pro (2004 revision).</s><s> the same code should be informative for fontlab and other applications that use the adobe opentype feature language.</s><s> note: this should only be used as a reference for feature construction, and not for glyph names.</s><s> the feature file uses "friendly names" which are often changed for final font output.</s><s> the main advantage of looking at the original feature file rather than decompiling in fontlab is that any glyph classes retain their original names.</s><s> fontlab does an amazing job of decompiling features, but it has to invent names for glyph classes, and these are generally less clear than what was originally used in development.</s><s> additionally, this feature file represents the very latest, not-even-released-yet revision to minion pro.</s><s> so it shows our most current thinking in various areas, which may be instructive.</s><s> even once this version is shipping, not all users will have it.</s><s> enjoy!</s><s> t thomas phinney program mgr fonts & core technologies adobe systems
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785899-1785900</DOCNO>
+<TEXT>
+<subject>Feature file sample: Minion Pro (2004 rev)</subject>
+<post author="(Adam_Twardoch)" timestamp="Aug 18, 2004 5:29 AM">
+<s>to fontlab users: if you own a copy of minion pro regular (which ships with many adobe cs applications or can be purchased separately), you can open the font in fontlab, and then import adobe's original opentype feature definition file using the opentype panel.</s><s> this will replace the .fea code decompiled by fontlab with the original adobe code.</s><s> using this code, you can have a "behind the scenes" look at opentype font development at adobe.</s><s> you may use it as reference for "state of the art" opentype font development.</s><s> of course, you can look at the minion pro feature definition code even without owning the actual font.</s><s> thanks to the guys at adobe for making this available!</s><s> note that fontlab ltd. offers a complete opentype font that can be used for reference (freefont pro): http://www.pyrus.com/downloads/freefontpro.zip the current version of freefont pro is usable, but we at fontlab ltd. are working on an updated version that better reflects glyph naming and feature definition recommendations.</s><s> microsoft offers two reference opentype fonts (for indic and arabic) as part of the microsoft volt package: http://groups.msn.com/microsoftvoltuserscommunity the feature definitions of mangal indic and arabic typesetting cannot be directly used in fontlab.</s><s> we recommend developers who create arabic or indic opentype fonts to draw the glyphs and prepare the final font without features in fontlab, and then add the features in microsoft volt.</s><s> regards, adam twardoch fontlab ltd.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785899-1785901</DOCNO>
+<TEXT>
+<subject>Feature file sample: Minion Pro (2004 rev)</subject>
+<post author="Thomas%20Phinney" timestamp="Aug 18, 2004 9:41 AM">
+<s>the main advantage of looking at the original feature file rather than decompiling in fontlab is that any glyph classes retain their original names.</s><s> fontlab does an amazing job of decompiling features, but it has to invent names for glyph classes, and these are generally less clear than what was originally used in development.</s><s> additionally, this feature file represents the very latest, not-even-released-yet revision to minion pro.</s><s> so it shows our most current thinking in various areas, which may be instructive.</s><s> even once this version is shipping, not all users will have it.</s><s> regards, t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785899-1785902</DOCNO>
+<TEXT>
+<subject>Feature file sample: Minion Pro (2004 rev)</subject>
+<post author="(Chris_Lozos)" timestamp="Nov 4, 2005 8:05 AM">
+<s>thanks thomas!</s><s> to you and adobe.</s><s> this is a godsend.</s><s> oh, and adam, can't wait for os-x version of fl5--let me know when i have pestered you enough about it :-) chrisl
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785899-4134022</DOCNO>
+<TEXT>
+<subject>Feature file sample: Minion Pro (2004 rev)</subject>
+<post author="MiguelSousa" timestamp="Jan 11, 2012 3:03 PM">
+<s>the original attachment seems to have been lost.</s><s> here it is again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3942186-907406</DOCNO>
+<TEXT>
+<subject>making/converting ttf 2 otf Open type? can help me anyone in this matter?</subject>
+<post author="ik_sajid70" timestamp="Sep 28, 2011 1:35 AM">
+<s>
+</s><s>i am new user concerning open type fonts.</s><s> i don't know about much features.</s><s> but after some learning i have produced a unicode basic latin & arabic supported ttf unicode font 
+with fontcreator 6.0.</s><s> i have added open type arabic features by ms volt.</s><s> my font is working correctly with arabic & basic latin features as a ttf unicode font.</s><s> but i want that 
+my font work as open type & its has icon as that of an open type ttf font.</s><s> please guide me that can i convert my this ttf font into open type font or i have to remake the font from scratch.</s><s> if i have to make it from scratch please guide that what are 
+basic features tables of open type and how can i add them?</s><s> i have downloaded adobe fdk but i cannot uderstand how to use it.</s><s> what is difference between open type ttf & open type 
+cff fonts?</s><s> i will be very thankful to you if you provide me basic step by step instructions in this regard. 
+
+ik_sajid70 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3783493-874224</DOCNO>
+<TEXT>
+<subject>where can i get a .abf file?</subject>
+<post author="zjb447" timestamp="Jul 8, 2011 1:57 PM">
+<s>"abf" is short for adobe binary screen font format, which is not so common now.</s><s> while i need some .abf cases to test my project, and i really don't have any ideas about where to find a abf file.</s><s> i have tried google, wikipedia, etc. and not even one file can be found.</s><s> anybody can help? 
+touch me: [email address removed by host] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3639332-843797</DOCNO>
+<TEXT>
+<subject>Class is not dispatching Event without timer of 1 second. Why?</subject>
+<post author="Anil Bakshi" timestamp="Apr 26, 2011 10:45 PM">
+<s>hi all, 
+</s><s>i have created a class called classa and classa creates a instance of classb and adds the listener to classb.</s><s> then after some processing classb dispatches the event. 
+</s><s>issue:- classb is only able to dispatch the event if i call the dispatchevent(new event(event.complete)) function in classb by giving the 1 second interval otherwise it is not sending any event. 
+</s><s>question-could someone explain this behaviour? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3639332-3641051</DOCNO>
+<TEXT>
+<subject>Class is not dispatching Event without timer of 1 second. Why?</subject>
+<post author="MiguelSousa" timestamp="Apr 27, 2011 1:31 PM">
+<s>hi, 
+</s><s>i think you got the wrong forum.</s><s> did you mean to post to the flex sdk forum? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3639332-3641962</DOCNO>
+<TEXT>
+<subject>Class is not dispatching Event without timer of 1 second. Why?</subject>
+<post author="aneelbakshi" timestamp="Apr 27, 2011 10:27 PM">
+<s>i didnt understand why u suggest flex sdk fourm.</s><s> i am using flash cs3 and actionscript 3. other classes are dispatching events but one class in same project is not dispatching. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3639332-3642049</DOCNO>
+<TEXT>
+<subject>Class is not dispatching Event without timer of 1 second. Why?</subject>
+<post author="MiguelSousa" timestamp="Apr 27, 2011 11:08 PM">
+<s>then you should probably post the question in the actionscript 3 forum. 
+</s><s>this forum is for opentype font development kit questions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3639332-3644716</DOCNO>
+<TEXT>
+<subject>Class is not dispatching Event without timer of 1 second. Why?</subject>
+<post author="aneelbakshi" timestamp="Apr 28, 2011 9:40 PM">
+<s>okies i will do the same.</s><s> i didnt find any way to delete this form here.</s><s> please let me know if it could be.</s><s> by the way thanks for your support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-395720</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="barup" timestamp="May 10, 2005 7:02 AM">
+<s>hi forum i hope this is the right forum, but here goes.</s><s> i receive documents from different sources, mainly word document using tt font, all of the documents contain different kinds of extended glyphs like cyrillic chars.</s><s> i want all documents to use an opentype font instead (helvetica neue lt pro), but it seems that selecting all text and change font will fail, likely because mapping of the glyphs are different from tt to opentype.</s><s> so is there a workaround or am i missing the obvious?</s><s> kind regards lars
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-1786191</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="(Adam_Twardoch)" timestamp="May 10, 2005 8:16 AM">
+<s>the obvious may be that helvetica neue lt pro does not include cyrillic glyphs at all.</s><s> first of all, note that there are two opentype formats: opentype ps and opentype tt.</s><s> more about it at http://www.myfonts.com/info/opentype-flavors-ps-tt/ there are several opentype versions of helvetica around: 1.</s><s> "helvetica linotype" in opentype tt format, developed at linotype.</s><s> only 4 basic weights (roman, oblique, bold, bold oblique) but a huge character set: a large set of western and central european diacritics, award-winning new designs for greek and cyrillic, plus hebrew and arabic.</s><s> also, well-hinted for the screen and altogether a workhorse for text in office and publishing aplications.</s><s> 2.</s><s> "helvetica neue lt pro" in opentype ps format, developed at linotype.</s><s> a family with many styles but the character sets only cover latin-based diacritics for western and central europe.</s><s> 3.</s><s> "helvetica lt std" in opentype ps format, developed at adobe.</s><s> a family with less styles than the "neue" clan.</s><s> most styles have only western european diacritics, but a few also have cyrillic (but no central european).</s><s> if you already own the helvetica neue lt pro, i recommend also getting helvetica linotype from: http://www.linotype.com/48344/helveticalinotype-family.html you can combine these two, using helvetica linotype for body text and when multilingual texts are necessary, while using helvetica neue lt pro for display purposes and when the additional styles are required.</s><s> regards, adam twardoch - myfonts.com typographic consultant - fontlab scripting products and marketing manager - linotype font technology consultant
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-1786192</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="barup" timestamp="May 10, 2005 8:50 AM">
+<s>hi adam well i had checked if the font contained cyrillic glyphs and yes it does (it's the pro font set and we have the entire family of styles) ;-) if i use the font in indesign with different keyboard layouts, i have access to both centrale european and cyrillic as well as special nordic (like icelandic) glyphs.</s><s> i did an additional test on a pc (winxp pro) and have the same problem as on the mac.</s><s> initially the document looks fine with the tt font chosen, but trying to change it to the opentype makes everything unreadable.</s><s> note that the standard charset a-z, a-z will look okay. regards lars
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-1786193</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="(Adam_Twardoch)" timestamp="May 10, 2005 9:39 AM">
+<s>i'm quite surprised to hear that helvetica neue lt pro contains cyrillic glyphs.</s><s> at least the version i have does not.</s><s> the linotype website also does not show any cyrillic characters in this font: http://www.linotype.com/36741187/neuehelveticapro55roman-charactermap. html note that the windows character map utility cheats when displaying character sets of opentype ps fonts (it shows arial glyphs for the glyphs missing from the font.</s><s>) your problem might be also that you're using an old version of word.</s><s> word 2000 and word xp had a bug in handling non-western characters in opentype ps fonts (opentype tt worked fine).</s><s> basically, these characters are not accessible.</s><s> this bug was fixed in word 2003.</s><s> adam
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-1786194</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="barup" timestamp="May 10, 2005 10:09 PM">
+<s>hi adam you are a life/time saver!</s><s>!</s><s>!</s><s>!</s><s> you are right, neuehelvetica doesn't contain cyrillic glyphs, how on earth could i miss that one.</s><s> the strange thing is that the keyboard viewer on the mac was happily showing cyrillic chars for neuehelveticapro55roman, but trying to use the font in indesign would fail.</s><s> and you are also right about the winxp issues.</s><s> i don't know why i thought that a pro opentype font should contain all glyphs, well i'll just have to hunt down one that actually have them all. regards, and thanks again lars
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-1786195</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="(Adam_Twardoch)" timestamp="May 11, 2005 6:27 AM">
+<s>at linotype and adobe, the "pro" suffix denotes mutlilingual european support.</s><s> this means that a font with western + central european diacritics will have a "pro" suffix.</s><s> the font can also contain greek, cyrillic, hebrew etc., but that's not a rule.</s><s> fonts that do not contain support for central european languages are called "std".</s><s> such fonts sometimes contain a huge multitude of swashes, small caps, alternates etc.</s><s> (like poetica std) but all of them only support western languages.</s><s> in rare cases, opentype fonts from the adobe type library have western and cyrillic glyphs but no central european.</s><s> in this case, they're also "std", not "pro", since they lack ce.</s><s> regards, adam twardoch
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-3609744</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="PalakAK" timestamp="Apr 12, 2011 1:25 PM">
+<s>hi everybody, 
+i am new to editing documents.</s><s> i have a pdf which has helvetica neue roman (true type) fonts, and i have helvetica neue lt pro roman (open type) in my pc (windows).</s><s> is there any way to edit that pdf using lt pro fonts? 
+</s><s>what does 55 means in helvetica neue 55 roman? 
+</s><s>when i view the properties on any pdf, in the fonts list why it shows helvetica neue roman and not helvetica neue 55 roman? 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-3609971</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="Dov%20Isaacs" timestamp="Apr 12, 2011 2:48 PM">
+<s>please do not hijak old threads with new topics.</s><s> please start a new thread. 
+</s><s>but to answer your question, the fonts are different.</s><s> your ability to edit text in pdf via acrobat depends on whether the original font that was embedded has the "editability" option or whether it is embedded only for "preview and print." if the latter the answer is definitely no. the question then is whether helvetica neue lt pro font also is set for editability embedding.</s><s> if it isn't (as i believe the case is), you cannot edit in acrobat. 
+</s><s>you would be best off to edit the original document in its native application. 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786190-3612767</DOCNO>
+<TEXT>
+<subject>Truetype to Opentype conversion</subject>
+<post author="PalakAK" timestamp="Apr 13, 2011 4:25 PM">
+<s>@ dov, 
+</s><s>thank you so much for the reply.</s><s> i will definitely start a new thread from now if i have any questions. 
+</s><s>sincerely, palak 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3473058-792354</DOCNO>
+<TEXT>
+<subject>flash calculation bug!</subject>
+<post author="Anil Bakshi" timestamp="Feb 16, 2011 2:38 AM">
+<s>59.99 + 10 = 69.99 is true as a general math calculation. but if we trace it with flash as bellow trace(59.99 + 10 == 69.99) it says false. is the above condition is an exception?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786267-395740</DOCNO>
+<TEXT>
+<subject>Installing Font Folio 9</subject>
+<post author="glennchung" timestamp="May 29, 2006 11:51 PM">
+<s>i have nowhere to turn to... this may be a most relevant forum i can find on adobe.com.</s><s> how can i install all the fonts simultaneously?</s><s> i have to go into each fold and add fonts from the atm deluxe 4.1. would take me hours to click thru each folder.</s><s> what to do?</s><s> help!</s><s> glenn
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786267-1786268</DOCNO>
+<TEXT>
+<subject>Installing Font Folio 9</subject>
+<post author="(L._Nichols)" timestamp="Jun 2, 2006 8:48 AM">
+<s>hi glenn, i don't think there really is an easy way to do this.</s><s> certainly it's not a feature of font folio.</s><s> as a work-around, i'm wondering if you might pop in the cd, then use windows' search to search the cd for *.pfm and *.pfb, this would eventually list all the .pfm and .pfb files in the search window, where you could then select them all and copy them into a new folder on your desktop (or elsewhere).</s><s> once you'd done that, you could then go into atm and browse to that desktop folder to install everything in one fell swoop.</s><s> option 2 would be to simply install individual font families from the cd as you want/need them.</s><s> font folio has a lot of fonts, you certainly wouldn't want them all active in any case--if only for the sheer annoyance of picking the font you want from a never-ending list.</s><s> l.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786267-3439228</DOCNO>
+<TEXT>
+<subject>Installing Font Folio 9</subject>
+<post author="Eric%20Wilde" timestamp="Jan 31, 2011 2:11 PM">
+<s>note that there are more recent installation instructions for font folio.</s><s> please see here: 
+
+http://www.adobe.com/type/browser/fontinstall/instructions_english.htm l 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3349604-767419</DOCNO>
+<TEXT>
+<subject>Myriad and Minion provided by Adobe Reader</subject>
+<post author="LordProtector2" timestamp="Dec 18, 2010 12:35 PM">
+<s>hello, 
+</s><s>am i allowed to use the fonts myriad and minion provided by adobe reader for my bachelor thesis which will be available in a printed and in a digital form?</s><s> i can not find anything about this in the liceses. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3165614-729426</DOCNO>
+<TEXT>
+<subject>Parsing CFF blocks but getting different width from bounding box</subject>
+<post author="Mopaxian" timestamp="Sep 27, 2010 8:11 AM">
+<s>hi, 
+</s><s>i'm writing an opentype parser, and right now while parsing cff blocks using adobe's kozuka mincho pro r font, version 4.001, i am getting strange results: the width values that i find for glyphs based on the charstring appear to be the right values, but when i do a quick svg verification, making a rectangle with the glyph's width and then drawing the glyph inside it, the width of the bounding box for the character and the indicated glyph width do not match. 
+</s><s>for instance, the glyph for plain lowercase latin 'j', index 75, has the follow charstring according to "tx": 
+[tx -6 -g 75 kozminpror.otf] 
+
+## glyph[tag] {cid,ifd,languagegroup,path} glyph[75] {75,12,0, 266 width ... endchar} 
+
+</s><s>when i fetch the data associated with this letter, my parser gives me the following data: 
+
+{"letter":"j", "width": 266, "height": 970, "baseline" : 880, "bounds" : [-107,-268,189,702], "path" : "m139 702c-29 0-50-25-50 -64c0-39 21-63 50-63c29 0 50 24 50 63c0 35-18 64-50 64m46-194l-10 6c-45-26-78-38-142-47l0-24c70 0 74-1 74-68l0-339c0-115-6-269- 87-269c-21 0-37 12-51 39c-13 25-23 41-47 41c-18 0-29-12-29-30c0-41 57-85 125-85c149 0 167 163 167 310"} 
+
+</s><s>in this result, "path" is simply a compacted svg path string based on the path instructions in the type2 charstring, and the "bounds" array is derived from simply running through the path and recording min/max bound values for x/y.</s><s> ("height" is based on the bounds, "baseline" is the vertoriginy from the vorg table associated with the character's glyph index). 
+</s><s>for this glyph, the indicated width is actually smaller than the width of the vector drawing that results from interpreting the outline data. 
+</s><s>if i open photoshop, and write the letter "j" using the kozuka mincho pro font, with weight "r", at a pointsize 1000 (to match the quad size for this font) then the width as indicated by the text cursor is 266 pixels, but the bounding box for the character when picking "free transform" has a width of 374 pixels.</s><s> where are these 108 pixels recorded in the font? 
+</s><s>i'm currently using {fontdict->nominalwidth + charstring diff. with nominal} for width (or if there is no width value in the charstring, the fontdict's default width value) and base the glyph's bounding box on the vector-trace of the outline data - am i forgetting something in order to get the correct width/bounds? 
+- mike "pomax" kamermans nihongoresources.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3165614-3166848</DOCNO>
+<TEXT>
+<subject>Parsing CFF blocks but getting different width from bounding box</subject>
+<post author="MiguelSousa" timestamp="Sep 27, 2010 2:25 PM">
+<s>mike, 
+</s><s>is this question different from the one you posted to the opentype list?</s><s> the answer you got there was to use the -dcf option of tx and to run the command "tx -dcf -h" to get more information.</s><s> do you still need more info beyond that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3165614-3167749</DOCNO>
+<TEXT>
+<subject>Parsing CFF blocks but getting different width from bounding box</subject>
+<post author="Mopaxian" timestamp="Sep 27, 2010 11:05 PM">
+<s>no, this question is very different. 
+</s><s>i'm getting all the charstring information correctly, my interpretation matches what tx claims the interpretation should be, but somehow the width value derived from the charstring is not enough.</s><s> there's an extra 108 pixels somewhere that determines the visual width, and i don't know where they're located.</s><s> if i use max(charstring width, boundingbox width) then i still don't get to the width that adobe's type manager gives when doing a free transform of the letter in photoshop. 
+charstring width: 266 units bounding box width: 296 units (already wider than the glyph width indicates) full width according to type manager: 374 units 
+note that this real width exists even in the absence of other characters, so it's not derived from a specific kerning pair. 
+
+(red is charstring width, blue is bounding box width, black is full width) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3165614-3167887</DOCNO>
+<TEXT>
+<subject>Parsing CFF blocks but getting different width from bounding box</subject>
+<post author="Mopaxian" timestamp="Sep 28, 2010 1:04 AM">
+<s>or the reason is obvious and i've been staring at it so long i completely missed it several times.</s><s> it's of course {charstring width - bounding.minx}, which is 266 - (-107) = 373 
+</s><s>sorry for wasting some time with that one (don't you hate it when this happens =_=) 
+- mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3165614-3167888</DOCNO>
+<TEXT>
+<subject>Parsing CFF blocks but getting different width from bounding box</subject>
+<post author="Mopaxian" timestamp="Sep 28, 2010 1:05 AM">
+<s>marked as answered - i simply missed the obvious. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-3165614-3169319</DOCNO>
+<TEXT>
+<subject>Parsing CFF blocks but getting different width from bounding box</subject>
+<post author="MiguelSousa" timestamp="Sep 28, 2010 10:43 AM">
+<s>glad to see you got it.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-2996093-686200</DOCNO>
+<TEXT>
+<subject>Open Type scripting trouble</subject>
+<post author="grayhood1" timestamp="Jul 23, 2010 8:18 AM">
+<s>this is my first attempt at creating an open type font in font lab 4.</s><s> i thought i would start with the simplest feature i could think of, but already having trouble. any idea what i am doing wrong?</s><s>?</s><s>?</s><s> thank you to anyone who can help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-2996093-2997087</DOCNO>
+<TEXT>
+<subject>Open Type scripting trouble</subject>
+<post author="MiguelSousa" timestamp="Jul 23, 2010 2:19 PM">
+<s>i can't spot anything wrong with the code.</s><s> fontlab 4 is a really old version.</s><s> you may be running into old bugs.</s><s> i suggest you post at http://forum.fontlab.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-2792882-633327</DOCNO>
+<TEXT>
+<subject>Sonata Std turns to Myriad !</subject>
+<post author="jantinmikko" timestamp="May 6, 2010 2:05 PM">
+<s>i have a serious problem?</s><s>?</s><s> everytime i use type tool in illustrator cs4 and choose sonata std font as a direct font for use and start typing, illustrator switches this font to myriad pro.</s><s> ok !</s><s> i can get the symbols from glyphs by clicking the symbol but it is not the same thing.</s><s> it is very "slow" way to write musical symbols into my work. 
+
+y: mikko 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-2381163-521205</DOCNO>
+<TEXT>
+<subject>Can i ship afm fonts downloaded from adobe with my application</subject>
+<post author="Sachin@Persistent" timestamp="Nov 10, 2009 4:49 AM">
+<s>hi everyone, 
+i am new to fonts and other stuffs related to fonts.</s><s> i am trying to creates some pdf document with itext(a pdf generation tool).</s><s> i am using some afm font files for supporting fonts.</s><s> my problem is; when i load those afm files , entries gets overlapped.</s><s> ie ...if a entry has value "test" then all the characters are overlapped in pdf.</s><s> after some initial analysis i found that my afm files were missing an "entry -encodingscheme ".</s><s> when i manually put this entry "encodingscheme standardencoding or adobestandardencoding" in afm file ,all works fine. 
+</s><s>but there are so many afm files and i cannot do it manually for all fonts as i got to know that this entry - "encodingscheme" varies for font to font.</s><s> please correct me if i am wrong. 
+i got a link over internet on adobe site..where a lots of afm files are available to download.</s><s> i checked one or more files from there and they had the above mentioned entry in them. 
+</s><s>my question is if i download afm files from adobe download link then can i ship them with my application or do i require some license for shipping them with my application. 
+</s><s>please reply it soon.. 
+</s><s>regards, sachin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-2381163-2383738</DOCNO>
+<TEXT>
+<subject>Can i ship afm fonts downloaded from adobe with my application</subject>
+<post author="Sachin%40Persistent" timestamp="Nov 10, 2009 9:38 PM">
+<s>hi everyone, 
+request you to tell me where can i get the required information. 
+</s><s>regards, sachin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786337-395758</DOCNO>
+<TEXT>
+<subject>Convert</subject>
+<post author="(Simon_P_Cooper)" timestamp="Nov 15, 2007 4:25 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786337-1786338</DOCNO>
+<TEXT>
+<subject>Convert</subject>
+<post author="(Adam_Twardoch)" timestamp="Nov 15, 2007 4:43 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786337-1947437</DOCNO>
+<TEXT>
+<subject>Convert</subject>
+<post author="gastroboy" timestamp="May 7, 2009 1:13 PM">
+<s>try fontxchange from morrison software. 
+</s><s>it seems to convert very quickly and mostly without problems, although some fonts seem to have baseline shifted.</s><s> a fault i think with how they were created. 
+</s><s>you would have to test whether there was any variation in layout against the original font.</s><s> i have not done that because i do not want to use them retrospectively. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785976-395667</DOCNO>
+<TEXT>
+<subject>Cmaps and characters code</subject>
+<post author="(mostafa_mohamed)" timestamp="Apr 2, 2009 1:27 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785976-1785977</DOCNO>
+<TEXT>
+<subject>Cmaps and characters code</subject>
+<post author="Thomas%20Phinney" timestamp="Apr 2, 2009 7:32 PM">
+<s>yes, a character code may appear in multiple cmap subtables.</s><s> see the opentype spec: http://www.microsoft.com/typography/otspec/cmap.htm which cmap subtable you would use to access the character would depend on your particular needs.</s><s> what kind of codepoint are you trying to look up the glyph with?</s><s> you say "cmap0" and "cmap4" but you don't specify whether the 0 and 4 refer to platform, encoding, or format.</s><s> i'm going to guess that you are referring to format 0 and format 4.</s><s> first, i would say that one would normally pick a cmap based first on platform/encoding, and only secondarily on format.</s><s> cmap format 0 is an old apple format, limited to 256 encoded glyphs, seen in conjunction with platform=specific encoding(s), notably macroman.</s><s> format 4 is one of several ways of representing unicode codepoints, with the limitation that it can only deal with codepoints in the basic multilingual plane or bmp.</s><s> cheers, t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785958-395661</DOCNO>
+<TEXT>
+<subject>hi i want purchase this font type</subject>
+<post author="(tayfunttfire)" timestamp="Jan 4, 2009 4:50 PM">
+<s>hi i want this font type but i dont know the name. please help me. http://www.vbulletin.org/forum/images/cstyle/blue/vblogo.gif
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785958-1785959</DOCNO>
+<TEXT>
+<subject>hi i want purchase this font type</subject>
+<post author="Thomas%20Phinney" timestamp="Mar 19, 2009 7:05 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785958-1785960</DOCNO>
+<TEXT>
+<subject>hi i want purchase this font type</subject>
+<post author="(Herb_V_B)" timestamp="Mar 19, 2009 9:47 PM">
+<s>the link (posted 2? months ago, by the way) worked well - it's to a fairly small black and white word in the upper left hand corner of the page.</s><s> but it would have been easier if the op had just posted the link to the main page.</s><s> he's looking for the text of the logo "vbulletin.org" meanwhile, this is the wrong forum.</s><s> adobe typography is the appropriate adobe forum.</s><s> other places for font id's include www.whatthefont.com and www.identifont.com - herb
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785958-1785961</DOCNO>
+<TEXT>
+<subject>hi i want purchase this font type</subject>
+<post author="(Herb_V_B)" timestamp="Mar 19, 2009 9:48 PM">
+<s>sorry tom - i didn't notice that it was you who'd replied ... -- herb
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785974-395666</DOCNO>
+<TEXT>
+<subject>Some adobe font OpenType are not supported by dot net framwork 2</subject>
+<post author="(Nahed)" timestamp="Feb 11, 2009 9:19 PM">
+<s>we have problem that some adobe' fonts (opentype) are not supported by dot net framework 2.0 . we have font adobe arabic it is installed correctly into font folder as well as appearing in other application like microsoft word . but is not appearing from microsoft visual studio net evenrionment and also not appearing when start designing dot net window form , which display only the fonts supported by dot net framework 2.0 can you please recommend us ?</s><s> regards
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785974-1785975</DOCNO>
+<TEXT>
+<subject>Some adobe font OpenType are not supported by dot net framwork 2</subject>
+<post author="Thomas%20Phinney" timestamp="Feb 14, 2009 10:20 PM">
+<s>do *any* opentype cff fonts work with dot net 2.0?</s><s> t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785972-395665</DOCNO>
+<TEXT>
+<subject>Rotis Semi Serif Std Regular - Italic?</subject>
+<post author="renee__" timestamp="Feb 4, 2009 12:05 AM">
+<s>hi there, i want to purchase this font, but need to know that i can use the italic also... does anyone know?</s><s> thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785972-1785973</DOCNO>
+<TEXT>
+<subject>Rotis Semi Serif Std Regular - Italic?</subject>
+<post author="(Bob_Tremallo)" timestamp="Feb 4, 2009 2:31 AM">
+<s>sorry to say there's no italic.</s><s> regards, bob
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785966-395664</DOCNO>
+<TEXT>
+<subject>OpenType Fonts NOT Activating in Windows x64 with a Few Font Managers</subject>
+<post author="(fcastro)" timestamp="Jan 14, 2009 2:24 AM">
+<s>hi all, can't figure where else to post this problem.</s><s> new setup running windows xp x64 and i have tried a few font manager solutions.</s><s> suitcase 11 and fontagent pro 4 both fail to activate fonts.</s><s> fontagent pro 4 actually puts the shortcut of the otf file in the windows/fonts folder but it doesn't show up in my adobe applications.</s><s> all the fonts are otf fontfolio 11 btw. anyone have any insight on this one?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785966-1785967</DOCNO>
+<TEXT>
+<subject>OpenType Fonts NOT Activating in Windows x64 with a Few Font Managers</subject>
+<post author="(Herb_V_B)" timestamp="Jan 14, 2009 10:11 AM">
+<s>this is not fdk-related.</s><s> there is a long thread in the adobe.atm.type.windows forum, with a link to an article by tom phinney about similar problems.</s><s> for your convenience, here's the link - but i'd strongly suggest reading that thread - many of the problems are related to nvidea drivers.</s><s> the subject of the thread is "unable to install type 1 fonts in windows xp" http://www.thomasphinney.com/2008/12/19/no-font-install - herb
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785966-1785968</DOCNO>
+<TEXT>
+<subject>OpenType Fonts NOT Activating in Windows x64 with a Few Font Managers</subject>
+<post author="(fcastro)" timestamp="Jan 14, 2009 1:59 PM">
+<s>herb thank you very much!</s><s> sorry for the incorrect section post.</s><s> post number 65 on the thread you mentioned fixed the problem.</s><s> i'd also like to point out that i am on an ati video card. thanks again :)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785966-1785969</DOCNO>
+<TEXT>
+<subject>OpenType Fonts NOT Activating in Windows x64 with a Few Font Managers</subject>
+<post author="Thomas%20Phinney" timestamp="Jan 16, 2009 11:59 PM">
+<s>the video driver problem actually can occur with both nvidia and ati cards, but it is specific to windows xp.</s><s> you say the fonts fail to show up in adobe applications.</s><s> which ones?</s><s> do the fonts show up in other applications?</s><s> regards, t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785966-1785970</DOCNO>
+<TEXT>
+<subject>OpenType Fonts NOT Activating in Windows x64 with a Few Font Managers</subject>
+<post author="(fcastro)" timestamp="Jan 17, 2009 12:06 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785966-1785971</DOCNO>
+<TEXT>
+<subject>OpenType Fonts NOT Activating in Windows x64 with a Few Font Managers</subject>
+<post author="Thomas%20Phinney" timestamp="Jan 18, 2009 2:24 AM">
+<s>that's very interesting, because the word from hp/nvidia was that the problem was specific to xp.</s><s> so apparently that is not the case, since that fix worked for you on vista x64.</s><s> t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785963-395663</DOCNO>
+<TEXT>
+<subject>Zero Width Joiner in ligatures</subject>
+<post author="(John_D._Smith)" timestamp="Jan 11, 2009 11:30 PM">
+<s>some fonts i am working on contain a number of digraphs with diacriticals applying to the digraph as a whole.</s><s> for example, one glyph consists of a "k" followed immediately by an "h", with an underscore running under both letters.</s><s> as far as i can see, the best way to represent this in unicode is "k" + zero width joiner (uni200d) + "h" + combining macron below (uni0331).</s><s> (the choice of uni0331 rather than, say, combining low line (uni0332) is not in my hands.</s><s>) but when i place things like this in my liga file, nothing happens: sub k uni200d h uni0331 by k_uni200d_h_uni0331 i have tried various approaches to work round this, but without success.</s><s> it almost seems as if ligatures containing zero width joiner have been disabled.</s><s> can anyone help/enlighten me?</s><s> i am running the latest makeotf on a macbook pro.</s><s> by the way, i am currently in india, and it will be difficult to consult this forum frequently.</s><s> it would be a great kindness if any replies could be copied to my email address: jds10 at cam dot ac dot uk.</s><s> john smith
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785963-1785964</DOCNO>
+<TEXT>
+<subject>Zero Width Joiner in ligatures</subject>
+<post author="(Read_Roberts)" timestamp="Jan 15, 2009 11:01 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785963-1785965</DOCNO>
+<TEXT>
+<subject>Zero Width Joiner in ligatures</subject>
+<post author="(John_D._Smith)" timestamp="Jan 17, 2009 2:20 AM">
+<s>this is extremely helpful -- it explains why things weren't working, and gives a much better approach.</s><s> i've tried it, and it works.</s><s> thanks from a very satisfied customer.</s><s> john smith
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785962-395662</DOCNO>
+<TEXT>
+<subject>Best app to view and manage a few thousand Adobe Open Type fonts</subject>
+<post author="(Andy_Chen)" timestamp="Jan 6, 2009 10:10 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785956-395660</DOCNO>
+<TEXT>
+<subject>Font name length limitation...</subject>
+<post author="(vishalmoharikar)" timestamp="Dec 28, 2008 9:07 PM">
+<s>hello all, i have a serious problem related with .</s><s>pfb font files.</s><s> is there any relation between font name length; i checked and if font name length is more than 30 characters i am getting an error that "the requested file c:\....\....pfm,c:\....\....pfb was not a valid font file".</s><s> although i am using the same way to install all fonts.</s><s> please help me and give me any solution.</s><s> please let me know if there any limitation with windows xp, or its a limitation of type 1 fonts.</s><s> thanks in advance and pardon my english.</s><s> thanks........</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785956-1785957</DOCNO>
+<TEXT>
+<subject>Font name length limitation...</subject>
+<post author="Thomas%20Phinney" timestamp="Dec 31, 2008 11:07 PM">
+<s>i believe the answer is "both" for practical purposes.</s><s> although, my recollection would have been that the limit was 31 characters, not 30.</s><s> regards, t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785913-395650</DOCNO>
+<TEXT>
+<subject>The requested file was not a valid font file</subject>
+<post author="(dzoge)" timestamp="Mar 11, 2008 4:03 AM">
+<s>i have a serius problem with otf fonts shipped with cs3 collection.</s><s> i had to reinstall windows to solve this issue a couple of months ago and now it's bugging me again.</s><s> when i double click on minion (or other adobe otf fonts) in fonts (control panel) i get this error: "the requested file c:\windows\fonts\minionpro-boldcn.otf was not a valid font file" and the worst thing is that the fonts are not being listed in any of the applications.</s><s> i opened my project today and i got an error saying that minion pro bold was not found.</s><s> i was working on that project yesterday. what could have heppened since then?</s><s> please help me asap.</s><s> thank you.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785913-1785914</DOCNO>
+<TEXT>
+<subject>The requested file was not a valid font file</subject>
+<post author="(dzoge)" timestamp="Mar 11, 2008 5:09 AM">
+<s>i found out what the problem was.</s><s> i switched the /3gb switch of windows xp and after that the it started bugging.</s><s> i witched it off now and it's working now.</s><s> wierd itsn't it?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785913-1785915</DOCNO>
+<TEXT>
+<subject>The requested file was not a valid font file</subject>
+<post author="(alice12345)" timestamp="Jul 27, 2008 7:27 PM">
+<s>chinese arabic or russian?</s><s> i hope some one can help me.</s><s> it's not like my life depends on knowing this or not but i would really like to know what this clock is saying.</s><s> it came in the mail from china a week ago and i have not been able to figure it out.</s><s> i would guess because this ldu company business is in china that it is chinese, but you never know, maybe the clock was made in china for russians?</s><s> the website is www.lducompany.com and the link to the sega sonic the hedgehog clock is on this page http://www.liangdianup.com/clocks_1.htm there is a video on thier website on the sonic hedgehog clock page and you can hear what the clock is saying.</s><s> if some one could tell me exactly what it is saying i would appreciate it.</s><s> thank you :)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785913-1785916</DOCNO>
+<TEXT>
+<subject>The requested file was not a valid font file</subject>
+<post author="(Markinboone)" timestamp="Sep 4, 2008 1:17 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785913-1785917</DOCNO>
+<TEXT>
+<subject>The requested file was not a valid font file</subject>
+<post author="(Frank_Stiner)" timestamp="Dec 19, 2008 8:36 AM">
+<s>i had the same problem.</s><s> i tried the /3gb switch, but did not succeed.</s><s> i solved my problem with an older version of my nvidia geforce 9600gt driver - i installed version 6.14.11.7116 from asus.com and everything works fine right now.</s><s> it seems, that nvidia has made some changes in the driver that did cause this problem.</s><s> when i installed win xp 6 month ago, everything worked fine.</s><s> until i installed the new driver from nvidia.</s><s> i hope, this will help others too.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785913-1785918</DOCNO>
+<TEXT>
+<subject>The requested file was not a valid font file</subject>
+<post author="(vishalmoharikar)" timestamp="Dec 28, 2008 9:06 PM">
+<s>hello all, i have a serious problem related with .</s><s>pfb font files.</s><s> is there any relation between font name length; i checked and if font name length is more than 30 characters i am getting an error that "the requested file c:\....\....pfm,c:\....\....pfb was not a valid font file".</s><s> although i am using the same way to install all fonts.</s><s> please help me and give me any solution.</s><s> please let me know if there any limitation with windows xp, or its a limitation of type 1 fonts.</s><s> thanks in advance and pardon my english.</s><s> thanks........</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785954-395659</DOCNO>
+<TEXT>
+<subject>Font identification.</subject>
+<post author="drjchamberlain" timestamp="Dec 18, 2008 2:05 PM">
+<s>dear members: i am not sure if this is the right forum to post this question but i couldn't find another one (in adobe's forum page) that related to fonts so i decided to post my questions here.</s><s> i am trying to identify a few fonts.</s><s> would it be possible to post a few png or jpeg files here with images of these fonts in order to get your help in identifying them ?</s><s> in case this is possible how would i post an image to this forum ?</s><s> in case this is not the right place would you please refer me to what would be the right forum to post these questions ?</s><s> thank you in advance for your help.</s><s> joseph chamberlain
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1785954-1785955</DOCNO>
+<TEXT>
+<subject>Font identification.</subject>
+<post author="(Herb_V_B)" timestamp="Dec 18, 2008 9:04 PM">
+<s>a more suitable adobe forum is adobe.typography.</s><s> you can't attach, but you can upload images to flickr or rapidshare or any number of other free file hosting sites.</s><s> there's also www.whatthefont.com, which leads to both an on-line automatic identifier and a forum.</s><s> at www.identifont.com you answer a series of questions about the font, and responds with possible matches.</s><s> you can also access the usenet goup comp.fonts via google groups, where you'd also have to upload your samples to a website.</s><s> there's a different subset of the font community there.</s><s> typophile.com also has a font identification forum. - herb
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786511-395807</DOCNO>
+<TEXT>
+<subject>Opentype features problem</subject>
+<post author="(David_Philpott)" timestamp="Feb 20, 2003 2:28 PM">
+<s>hi, i am having some difficulty with getting two opentype layout features to work in indesign 1.5 and photoshop 6.</s><s> the liga feature works perfectly, but dlig and clig don't (though they preview correctly in fontlab 4.5.1).</s><s> i have generated the font as a cff-flavoured otf font using either macintosh, windows ansi or fl's standard encoding but the problem remains.</s><s> yet all the glyphs are available under indesign's "insert character" dialog box.</s><s> when i opened the generated font in fontlab, the features work as expected.</s><s> putting all the lookups in the liga feature didn't solve the problem either (and every glyph has a unicode number attached to it).</s><s> do the alternate glyphs need to be named according to their unicode index?</s><s> i am using macos 9.2 with atm deluxe 4.6.1. regards, david philpott feature files: feature clig{ # contextual ligatures # latin sub t h by thlig; sub t t by ttlig; sub t e by telig; sub c o by co; sub c i by ci; sub l a by la; } clig; feature dlig{ # discretionary ligatures # latin sub c t by ct; sub s t by st; sub g i by gi; sub g n by gn; sub g r by gt; sub g t by gt; sub g y by gy; sub t i by ti; sub t r by tr; sub t t by tt; sub t u by tu; sub t y by ty; } dlig;
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786511-1786512</DOCNO>
+<TEXT>
+<subject>Opentype features problem</subject>
+<post author="Thomas%20Phinney" timestamp="Feb 22, 2003 3:40 PM">
+<s>the problem is simply that indesign 1.x and photoshop 6 (and 7) do not support those features.</s><s> indesign 2.0 does support these features, however.</s><s> to find out more about what features are supported by which application versions, read adobe's user guide for opentype, which can be downloaded from http://www.adobe.com/type/opentype regards, t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786511-1786513</DOCNO>
+<TEXT>
+<subject>Opentype features problem</subject>
+<post author="(David_Philpott)" timestamp="Feb 22, 2003 4:10 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-395726</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="levonk" timestamp="Sep 8, 2005 2:52 AM">
+<s>i am designing an armenian ot font in fontlab, and i want to add some features.</s><s> i did most of the usual features like liga, clig, ordn, etc. but i am having problems with vkrn.</s><s> i want to raise the marks when they are over capitals.</s><s> when i use vkrn, the ot preview panel raises the mark and all subsequent glyphs.</s><s> plus, when i generate the font and install it, all other features work but the vkrn does not.</s><s> is there any way to make this work?</s><s> maybe something other than vkrn would be better.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786214</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="John_Nolan-ylAnVM" timestamp="Sep 12, 2005 3:21 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786215</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="levonk" timestamp="Sep 12, 2005 11:07 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786216</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="John_Nolan-ylAnVM" timestamp="Sep 12, 2005 3:11 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786217</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="(Read_Roberts)" timestamp="Sep 13, 2005 7:49 AM">
+<s>the adobe fdk and features file format do not support what you want.</s><s> the opentype font format does allow what you want to do, which is a a pair positioning statement to adjust the placement of the accent glyph up or down, and then also specify that the y-advance of the accent glyph be adjusted to counteract the placement shift so as to leave the current drawing point on the base-line.</s><s> you should look at the mcirosoft volt tool, which i hope does allow this kind of adjustment.</s><s> the adobe fdk feature file does specify the necessary syntax (see "pair pos format a") but it is not yet implemented.</s><s> this is supposed to happen in fdk 2.0, currently scheduled for summer 2006.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786218</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="levonk" timestamp="Sep 13, 2005 1:50 PM">
+<s>thanks read, but the problem is that volt works with tt flavored fonts and i am exporting ps flavored.</s><s> i know there is a method to use volt for otf cff, but the questions now is: is that method efficient or is hand coding faster and easier?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786219</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="(Read_Roberts)" timestamp="Sep 14, 2005 7:26 AM">
+<s>to work with volt and cff fonts: - build the ps font in fontlab.</s><s> make sure you can build an otf font without the glyph order changing;the otf-building process will force the glyphs with adobe standard names into a standard order.</s><s> the easiest way to avoid glyph order changes may be to save the otf font, and then re-import it. - use fontlab to convert the font to truetype, and save it as a tt font - use volt to build all the featurs for this font - use the otftableeditor tool to copy the gsub and gpos tables from the ttf font to the otf font.</s><s> note that these tables reference the glyph by glyph index.</s><s> this is why it is important that the glyph order in the ttf font be exactly the same as in the otf font.</s><s> this is all prety clunky, but i don't know a better way.</s><s> i would be very interested to know how to hand-code gsub/gpos features.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Type/Open-Type-FDK/Discussions-1786213-1786220</DOCNO>
+<TEXT>
+<subject>OTF feature</subject>
+<post author="levonk" timestamp="Sep 16, 2005 9:50 AM">
+<s>thanks read.</s><s> i tried volt, it is a bit complicated and i would need to work on two different machines, after i buy the pc.</s><s> i know hand-coding seems much more complicated and you don't see the results as you work, but once you get everything setup it is as fast as copy/paste/type.</s><s> there is a program that converts the font tt or cff to xml and back, it is called ttx you can find it at http://www.letterror.com/code/ttx/ i will need to spend some time learning the syntax and all, but i believe i can do it.
+</s></post>
+</TEXT>
+</DOC>
+
+

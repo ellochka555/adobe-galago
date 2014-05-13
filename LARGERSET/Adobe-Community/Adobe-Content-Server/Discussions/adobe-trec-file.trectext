@@ -1,0 +1,296 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6158323-1415762</DOCNO>
+<TEXT>
+<subject>Vendor ID documentation</subject>
+<post author="KoulSlou" timestamp="Feb 26, 2014 4:44 AM">
+<s>hello, 
+</s><s>where i can find documentation about vendor id usage? 
+i have the following situation.</s><s> we have website where we sell digital books.</s><s> for storing book files we use adobe content server 4.</s><s> for opening books we recommend to use adobe digital editions.</s><s> my question is will using of vendor id make user experience better?</s><s> i don't understand very well how vendor id should be used. 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6158323-6208463</DOCNO>
+<TEXT>
+<subject>Vendor ID documentation</subject>
+<post author="Dominic%20Michael" timestamp="Mar 13, 2014 10:36 PM">
+<s>please refer to http://blogs.datalogics.com/2013/01/07/vendor-id-part-1-overview/ .</s><s> hope this helps you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6158323-1415762</DOCNO>
+<TEXT>
+<subject>Vendor ID documentation</subject>
+<post author="KoulSlou" timestamp="Feb 26, 2014 4:44 AM">
+<s>hello, 
+</s><s>where i can find documentation about vendor id usage? 
+i have the following situation.</s><s> we have website where we sell digital books.</s><s> for storing book files we use adobe content server 4.</s><s> for opening books we recommend to use adobe digital editions.</s><s> my question is will using of vendor id make user experience better?</s><s> i don't understand very well how vendor id should be used. 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6158323-6208463</DOCNO>
+<TEXT>
+<subject>Vendor ID documentation</subject>
+<post author="Dominic%20Michael" timestamp="Mar 13, 2014 10:36 PM">
+<s>please refer to http://blogs.datalogics.com/2013/01/07/vendor-id-part-1-overview/ .</s><s> hope this helps you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5435752-1238691</DOCNO>
+<TEXT>
+<subject>Have packaging update issue after ACS upgrade.</subject>
+<post author="miles_harrison" timestamp="Jun 21, 2013 8:54 AM">
+<s>hi all, we have an issue post upgrade to acs   e_pack_database /packaging/package duplicate entry   we have changed the the action attribute to its own node: <package xmlns="http://ns.adobe.com/adept"> <action>replace</action   & have remove the thumbnail because of a thumnbnail conflict and have   in packaging config /              com.adobe.adept.packaging.allowurlcollisionsonreplace=true but we don't seem to be able to change content.</s><s> was fine before the upgrade.   under the hood we seem to be getting a mysql integrity violation - i suspect a duplicate key on insert but can't prove as much: 21 jun 2013 16:38:01,791 trace adeptservlet: xml request content [83.170.101.143]: <?</s><s>xml version="1.0"?</s><s>> <package xmlns="http://ns.adobe.com/adept">   <action>replace</action>   <resource>urn:uuid:b8e62d5c-51e6-48f5-9753-97330a51dd05</resource>   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">     <dc:title>huck finn</dc:title>     <dc:language>en</dc:language>     <dc:publisher>stison dev</dc:publisher>     <dc:format>application/pdf</dc:format>   </metadata>   <permissions>     <display/>     <excerpt/>     <print/>   </permissions>   <datapath>/home//media_to_package/statement_s001268(1).pdf</datapath>   <expiration>2013-06-21t17:38:01+01:00</expiration>   <nonce>mtk2mzg0njcwnq==</nonce>   <hmac>o6wwfvxzfuftaymzfiaadpzvcuq=</hmac> </package>     21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection: select distid, nonce, expiration from distusednonce where (distusednonce.distid = ?</s><s>) and (distusednonce.nonce = ?</s><s>) 21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection:   obj 1 = [b@3db158db 21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection:   obj 2 = [b@4640b181 21 jun 2013 16:38:01,793 trace defaultsqldatabaseconnection: insert into distusednonce(distid, nonce, expiration) values(?, ?, ?</s><s>) 21 jun 2013 16:38:01,793 trace defaultsqldatabaseconnection:   obj 1 = 00000000-0000-0000-0000-000000000001 21 jun 2013 16:38:01,794 trace defaultsqldatabaseconnection:   obj 2 = [b@4640b181 21 jun 2013 16:38:01,794 trace defaultsqldatabaseconnection:   obj 3 = fri jun 21 17:38:01 bst 2013 21 jun 2013 16:38:02,139 trace defaultsqldatabaseconnection: select resourceid, voucherid, encryptionkey, permissions, defaultitem from resourcekey where resourcekey.resourceid = ?</s><s> 21 jun 2013 16:38:02,139 trace defaultsqldatabaseconnection:   obj 1 = [b@4e0a2a38 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection: insert into resourceitem(resourceid, item, description, title, publisher, creator, language, identifier, thumbnailurl, format, src, downloadtype, modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</s><s>) 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 1 = b8e62d5c-51e6-48f5-9753-97330a51dd05 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 2 = 0 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 3 = null 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 4 = huck finn 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 5 = stison dev 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 6 = 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 7 = en 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 8 = null 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 9 = null 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 10 = application/pdf 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 11 = /media/b8e62d5c-51e6-48f5-9753-97330a51dd05.pdf 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 12 = simple 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 13 = thu jun 13 18:56:32 bst 2013 21 jun 2013 16:38:02,329 error defaultsqldatabaseconnection: com.mysql.jdbc.exceptions.jdbc4.mysqlintegrityconstraintviolationexce ption: duplicate entry '¸ae-\qaehõ?s?3 q?^e-0' for key 1 21 jun 2013 16:38:02,525 error adeptservlet: request error [83.170.101.143]: e_pack_database /packaging/package duplicate+entry+%27%c2%b8%c3%a6-%5cq%c3%a6h%c3%b5%e2%80%94s%e2%80%943 %0aq%c3%9d%05-0%27+for+key+1 21 jun 2013 16:38:02,525 trace adeptservlet: request end /packaging/package
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5435752-6177220</DOCNO>
+<TEXT>
+<subject>Have packaging update issue after ACS upgrade.</subject>
+<post author="uwe%20fr" timestamp="Mar 4, 2014 4:51 AM">
+<s>hi, i have exactly the same problem right, though it does not affect all updates.</s><s> did you find a solution? 
+</s><s>also, in case this is not just a typo in your post, acs4 properties are case sensitive: com.adobe.adept.packaging.allowurlcollisionsonreplace (incorrect) is not the same as com.adobe.adept.packaging.allowurlcollisionsonreplace (correct) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5435752-1238691</DOCNO>
+<TEXT>
+<subject>Have packaging update issue after ACS upgrade.</subject>
+<post author="miles_harrison" timestamp="Jun 21, 2013 8:54 AM">
+<s>hi all, we have an issue post upgrade to acs   e_pack_database /packaging/package duplicate entry   we have changed the the action attribute to its own node: <package xmlns="http://ns.adobe.com/adept"> <action>replace</action   & have remove the thumbnail because of a thumnbnail conflict and have   in packaging config /              com.adobe.adept.packaging.allowurlcollisionsonreplace=true but we don't seem to be able to change content.</s><s> was fine before the upgrade.   under the hood we seem to be getting a mysql integrity violation - i suspect a duplicate key on insert but can't prove as much: 21 jun 2013 16:38:01,791 trace adeptservlet: xml request content [83.170.101.143]: <?</s><s>xml version="1.0"?</s><s>> <package xmlns="http://ns.adobe.com/adept">   <action>replace</action>   <resource>urn:uuid:b8e62d5c-51e6-48f5-9753-97330a51dd05</resource>   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">     <dc:title>huck finn</dc:title>     <dc:language>en</dc:language>     <dc:publisher>stison dev</dc:publisher>     <dc:format>application/pdf</dc:format>   </metadata>   <permissions>     <display/>     <excerpt/>     <print/>   </permissions>   <datapath>/home//media_to_package/statement_s001268(1).pdf</datapath>   <expiration>2013-06-21t17:38:01+01:00</expiration>   <nonce>mtk2mzg0njcwnq==</nonce>   <hmac>o6wwfvxzfuftaymzfiaadpzvcuq=</hmac> </package>     21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection: select distid, nonce, expiration from distusednonce where (distusednonce.distid = ?</s><s>) and (distusednonce.nonce = ?</s><s>) 21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection:   obj 1 = [b@3db158db 21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection:   obj 2 = [b@4640b181 21 jun 2013 16:38:01,793 trace defaultsqldatabaseconnection: insert into distusednonce(distid, nonce, expiration) values(?, ?, ?</s><s>) 21 jun 2013 16:38:01,793 trace defaultsqldatabaseconnection:   obj 1 = 00000000-0000-0000-0000-000000000001 21 jun 2013 16:38:01,794 trace defaultsqldatabaseconnection:   obj 2 = [b@4640b181 21 jun 2013 16:38:01,794 trace defaultsqldatabaseconnection:   obj 3 = fri jun 21 17:38:01 bst 2013 21 jun 2013 16:38:02,139 trace defaultsqldatabaseconnection: select resourceid, voucherid, encryptionkey, permissions, defaultitem from resourcekey where resourcekey.resourceid = ?</s><s> 21 jun 2013 16:38:02,139 trace defaultsqldatabaseconnection:   obj 1 = [b@4e0a2a38 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection: insert into resourceitem(resourceid, item, description, title, publisher, creator, language, identifier, thumbnailurl, format, src, downloadtype, modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</s><s>) 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 1 = b8e62d5c-51e6-48f5-9753-97330a51dd05 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 2 = 0 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 3 = null 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 4 = huck finn 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 5 = stison dev 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 6 = 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 7 = en 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 8 = null 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 9 = null 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 10 = application/pdf 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 11 = /media/b8e62d5c-51e6-48f5-9753-97330a51dd05.pdf 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 12 = simple 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 13 = thu jun 13 18:56:32 bst 2013 21 jun 2013 16:38:02,329 error defaultsqldatabaseconnection: com.mysql.jdbc.exceptions.jdbc4.mysqlintegrityconstraintviolationexce ption: duplicate entry '¸ae-\qaehõ?s?3 q?^e-0' for key 1 21 jun 2013 16:38:02,525 error adeptservlet: request error [83.170.101.143]: e_pack_database /packaging/package duplicate+entry+%27%c2%b8%c3%a6-%5cq%c3%a6h%c3%b5%e2%80%94s%e2%80%943 %0aq%c3%9d%05-0%27+for+key+1 21 jun 2013 16:38:02,525 trace adeptservlet: request end /packaging/package
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5435752-6177220</DOCNO>
+<TEXT>
+<subject>Have packaging update issue after ACS upgrade.</subject>
+<post author="uwe%20fr" timestamp="Mar 4, 2014 4:51 AM">
+<s>hi, i have exactly the same problem right, though it does not affect all updates.</s><s> did you find a solution? 
+</s><s>also, in case this is not just a typo in your post, acs4 properties are case sensitive: com.adobe.adept.packaging.allowurlcollisionsonreplace (incorrect) is not the same as com.adobe.adept.packaging.allowurlcollisionsonreplace (correct) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-830875</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Marino_nja" timestamp="Mar 29, 2011 10:15 AM">
+<s>is there an adobe-id sdk.</s><s> for acs operator (or the distributor) to create and manage the adobe-id ? 
+</s><s>best regards, marinó 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-3583251</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Jim%20Lester" timestamp="Mar 30, 2011 11:21 AM">
+<s>'vendorid' allows you to create and manage ids that are not adobeids.</s><s> however this is best used when you have your own devices/software based on rmsdk so that you can control the login screen. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-3583945</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Marino_nja" timestamp="Mar 30, 2011 4:18 PM">
+<s>thank you for your response.</s><s> i'm interested, can you guide me further.</s><s> i need more information on vendorid.</s><s> i'm not finding anything on google on this subject! 
+</s><s>best regards marinó 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-6158322</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="KoulSlou" timestamp="Feb 26, 2014 4:18 AM">
+<s>jim, i have a question about vendor id.</s><s> we have a site wich sell digital books.</s><s> for storing books we use adobe content server.</s><s> for opening book files we recommend to use adobe digital edition.</s><s> will using of vendorid make user experience more seamless and easier in our case? 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-830875</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Marino_nja" timestamp="Mar 29, 2011 10:15 AM">
+<s>is there an adobe-id sdk.</s><s> for acs operator (or the distributor) to create and manage the adobe-id ? 
+</s><s>best regards, marinó 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-3583251</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Jim%20Lester" timestamp="Mar 30, 2011 11:21 AM">
+<s>'vendorid' allows you to create and manage ids that are not adobeids.</s><s> however this is best used when you have your own devices/software based on rmsdk so that you can control the login screen. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-3583945</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Marino_nja" timestamp="Mar 30, 2011 4:18 PM">
+<s>thank you for your response.</s><s> i'm interested, can you guide me further.</s><s> i need more information on vendorid.</s><s> i'm not finding anything on google on this subject! 
+</s><s>best regards marinó 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-6158322</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="KoulSlou" timestamp="Feb 26, 2014 4:18 AM">
+<s>jim, i have a question about vendor id.</s><s> we have a site wich sell digital books.</s><s> for storing books we use adobe content server.</s><s> for opening book files we recommend to use adobe digital edition.</s><s> will using of vendorid make user experience more seamless and easier in our case? 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-1052857</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="MangalVarshney" timestamp="Aug 21, 2012 6:51 AM">
+<s>hello, 
+</s><s>is there any way to stop expiration of gblink created for download the encrypted ebook, the default expiration time is 6 hrs. 
+</s><s>is this possible that gblink never expire, i mean client can download the book whenever he/she want to download after purchase?</s><s> currecntly we extent it by 7 days but some of client download their purchased books after two / three month. 
+</s><s>with regards, 
+</s><s>mangal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-4753294</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="vjppi_kumar" timestamp="Oct 5, 2012 4:36 PM">
+<s>as far i know it is 24 days maximum limit for expiration. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-6128905</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="chingyue87" timestamp="Feb 17, 2014 8:59 AM">
+<s>this may have been fixed in acs version 4.1.2.</s><s> please refer to the release note: 
+a fix for an issue with generating urllink.acsm files with very long expiration periods.</s><s> previously, attempting to generate the urllink.acsm file with an expiration period of greater than approximately 29 days would result in an already expired urllink.acsm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-1052857</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="MangalVarshney" timestamp="Aug 21, 2012 6:51 AM">
+<s>hello, 
+</s><s>is there any way to stop expiration of gblink created for download the encrypted ebook, the default expiration time is 6 hrs. 
+</s><s>is this possible that gblink never expire, i mean client can download the book whenever he/she want to download after purchase?</s><s> currecntly we extent it by 7 days but some of client download their purchased books after two / three month. 
+</s><s>with regards, 
+</s><s>mangal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-4753294</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="vjppi_kumar" timestamp="Oct 5, 2012 4:36 PM">
+<s>as far i know it is 24 days maximum limit for expiration. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-6128905</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="chingyue87" timestamp="Feb 17, 2014 8:59 AM">
+<s>this may have been fixed in acs version 4.1.2.</s><s> please refer to the release note: 
+a fix for an issue with generating urllink.acsm files with very long expiration periods.</s><s> previously, attempting to generate the urllink.acsm file with an expiration period of greater than approximately 29 days would result in an already expired urllink.acsm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6128038-1408581</DOCNO>
+<TEXT>
+<subject>Bug - Equals operator does work with Boolean, UUID and EUID</subject>
+<post author="Marcos Passos" timestamp="Feb 17, 2014 7:37 AM">
+<s>dear sirs, 
+the acs api has a serious bug that does not allow us search using the equals operator when the column type is boolean, uuid or euid.</s><s> it is a serious api inconsistency, once the result returns empty even when you have records matching the criteria.</s><s> a workaround is to use the "contains" operator, but it's dangerous and may bring some unexpected results. 
+</s><s>this problems seems to be caused by the com.adobe.adept.util.predicateutil, line 177, due the lack of use of the method "sqltextutil.getsearchablefieldexpression" that makes the "contains", "startswith" and "endswith" work for the previously cited cases. 
+</s><s>do you know whether there is any prevision to fix this bug? 
+</s><s>thanks in advance, marcos 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6128038-1408581</DOCNO>
+<TEXT>
+<subject>Bug - Equals operator does work with Boolean, UUID and EUID</subject>
+<post author="Marcos Passos" timestamp="Feb 17, 2014 7:37 AM">
+<s>dear sirs, 
+the acs api has a serious bug that does not allow us search using the equals operator when the column type is boolean, uuid or euid.</s><s> it is a serious api inconsistency, once the result returns empty even when you have records matching the criteria.</s><s> a workaround is to use the "contains" operator, but it's dangerous and may bring some unexpected results. 
+</s><s>this problems seems to be caused by the com.adobe.adept.util.predicateutil, line 177, due the lack of use of the method "sqltextutil.getsearchablefieldexpression" that makes the "contains", "startswith" and "endswith" work for the previously cited cases. 
+</s><s>do you know whether there is any prevision to fix this bug? 
+</s><s>thanks in advance, marcos 
+</s></post>
+</TEXT>
+</DOC>
+
+

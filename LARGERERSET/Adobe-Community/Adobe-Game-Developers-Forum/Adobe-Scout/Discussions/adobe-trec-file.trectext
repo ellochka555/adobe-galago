@@ -1,0 +1,1761 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5027604-1142889</DOCNO>
+<TEXT>
+<subject>Scout works but no display list rendering stats/stack traces despite advanced telemetry enabled</subject>
+<post author="Razinkov" timestamp="Jan 28, 2013 5:17 AM">
+<s>hello!</s><s> im developing ipad game with air and wish to use scout for profiling.</s><s> unfortunately it is not working as advertised - i am using flash builder 4.7 with air sdk 3.4 on mac os 10.7.5 - i downloaded scout and gaming sdk and replaced air 3.4 sdk (bundled with fb4.7) with air 3.5, so i see "this project usinf air3.5" in project properties - i checked "use advanced telemetry" option in project compiler settings - i installed scout companion on ipad and successfully enabled scout - it correctly see scout on mac (updating new session options from it) - but when i'm building and running my program on ipad (or air simulator) scout shows new session with only basic telemetry. panels with actionscript/display list rendering just empty. of course in new session options i enabled everything exept stage 3d. - i tryed to: 1) uncheck "build with telemetry" option in compiler settings -> build and run -> scout started new session and shows "enable telemetry compiler options" lines in actions script/displayrendering panels.</s><s> 2) i checked "build with telemetry" again -> build and run -> scout started new session and no warnings about compiler in panels, but no info either 
+what i am doing wrong?</s><s> please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5027604-5027605</DOCNO>
+<TEXT>
+<subject>Scout works but no display list rendering stats/stack traces despite advanced telemetry enabled</subject>
+<post author="Razinkov" timestamp="Jan 28, 2013 5:18 AM">
+<s>screenshot of not usable scout... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5027604-5050438</DOCNO>
+<TEXT>
+<subject>Scout works but no display list rendering stats/stack traces despite advanced telemetry enabled</subject>
+<post author="krangGAMES" timestamp="Feb 5, 2013 2:46 PM">
+<s>i'm having this exact same problem, any help?</s><s> debugging on an actionscript level would be awesome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5027604-5050615</DOCNO>
+<TEXT>
+<subject>Scout works but no display list rendering stats/stack traces despite advanced telemetry enabled</subject>
+<post author="krangGAMES" timestamp="Feb 5, 2013 3:41 PM">
+<s>found a sort-of solution.</s><s> i downloaded the swf-scout-enabler by renaun erickson, which ended up working fine: http://renaun.com/blog/2012/12/enable-advanced-telemetry-on-flex-or-ol d-swfs-with-swf-scount-enabler/ 
+however it looks like the reason it didn't work for me is because i'm using flash professional cs6, and i don't think .</s><s>swfs published from flash pro by default have the -advanced-telemetry option enabled, which is necessary for thoroughly debugging the .swf.</s><s> why it didn't for ^razinkov i'm not sure, as it sounded like you enabled advanced telemetry in flash builder.</s><s> i hope this works for you 
+anyway, having the ability to enable/disable advanced-telemetry straight in flash pro would be great.</s><s> dragging it into an .air app every time i want to debug is a mildly annoying inconvenience.</s><s> and scout is an awesome useful tool! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5027604-6227439</DOCNO>
+<TEXT>
+<subject>Scout works but no display list rendering stats/stack traces despite advanced telemetry enabled</subject>
+<post author="tugted" timestamp="Mar 20, 2014 8:01 AM">
+<s>i'm hoping this thread isn't completely dead. 
+</s><s>did you ever find a solution to this?</s><s> i'm in an idenical solution except i'm using sdk air 3.9 (which you probably are now too). 
+</s><s>would love to have the advanced telemetry feedback.</s><s> but, alas, despite me clicking that little box, all i have is the basic. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5027604-6230026</DOCNO>
+<TEXT>
+<subject>Scout works but no display list rendering stats/stack traces despite advanced telemetry enabled</subject>
+<post author="Razinkov" timestamp="Mar 20, 2014 11:40 PM">
+<s>no, i just started to optimize without scout, manually controlling memory/sprite usage, fps spikes, etc buggy tools are not worth frustration imho.</s><s> may be later.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6142601-1412082</DOCNO>
+<TEXT>
+<subject>Need Help: Large Inactive Time Spikes occasionally?</subject>
+<post author="eggsamurai" timestamp="Feb 21, 2014 2:11 AM">
+<s>our developers, and also many users, report that our app occasionally freezes for one second.</s><s> this happens randomly but quite frequently.</s><s> since our app is a fast paced platformer game, the one second freeze often times results in an instant fail for our players, which is a big problem for us. 
+i looked at frames where these freezes happen in adobe scout.</s><s> the inactive time is very high (more than 1000).</s><s> the cpu usage on these same frames, most of the time, is very low, and sometimes even 0, so the inactive time spike does not seem be related to cpu usage.</s><s> (i used scout on a release version of the swf). 
+</s><s>all of our games are built with starling, and all of them experience this same issue.</s><s> this issue has been observed on both windows 8 and windows 7, and in several different browsers (chrome, firefox, ie). 
+</s><s>any insight into what might be causing these inactive spikes will be very helpful and much appreciated! 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6142601-6228180</DOCNO>
+<TEXT>
+<subject>Need Help: Large Inactive Time Spikes occasionally?</subject>
+<post author="Gavin%20Peacock" timestamp="Mar 20, 2014 11:02 AM">
+<s>scout is showing you that these delays are not happening inside the flash runtime.</s><s> since the cpu is not busy, and you aren't waiting on the gpu, the most likely cause would be something in the browser, but not in flash.</s><s> the browser could be waiting on some system resource, such as file or screen access. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6210566-1428267</DOCNO>
+<TEXT>
+<subject>How to select a range of frames</subject>
+<post author="seattledoug" timestamp="Mar 14, 2014 1:24 PM">
+<s>is there any way to select a range of frames in scout beyond dragging the little handles in the "frame timeline window" or using "ctrl-a" to select all? 
+</s><s>for a large trace having to drag the handles is very tedious if it's across a minute's worth of frames, but we don't want to select them all. 
+</s><s>what we're looking for is like the "goto frame" option in the menu, but to select a start and end frame that way.</s><s> not just jump to the frame.</s><s> or the ability to click in the frame timeline window to set the start/end frame, without grabbing and dragging a handle (which may be way off screen). 
+</s><s>is there some way to do this? 
+</s><s>or is there any way to select a frame range in the overall frame summary window above the timeline? 
+</s><s>thanks, 
+</s><s>doug 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6082044-1397066</DOCNO>
+<TEXT>
+<subject>Finding a memory leak</subject>
+<post author="Royi Bernthal" timestamp="Feb 3, 2014 1:30 PM">
+<s>hi, 
+</s><s>i'm trying to find objects that are left in memory (allocated - deallocated), and organize them by class name, to see what objects weren't garbage collected. 
+</s><s>seeing allocated alone and deallocated alone is really troublesome when dealing with many objects, so i'd just like to see what objects are currently occupying the memory. 
+</s><s>something like this: 
+classnamea: 56 (objects in memory at the moment, weren't garbage collected) classnameb: 78 ... 
+</s><s>is such a thing possible to do with adobe scout? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6082044-6184306</DOCNO>
+<TEXT>
+<subject>Finding a memory leak</subject>
+<post author="Terry%20Nguyen" timestamp="Mar 6, 2014 2:08 AM">
+<s>i think flash builder built-in profiler can analysis the information you need, but it's rather slow, memory-consuming. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6179687-1420871</DOCNO>
+<TEXT>
+<subject>Can Scout CC make games for PC?</subject>
+<post author="El Nicò" timestamp="Mar 4, 2014 4:11 PM">
+<s>hello!</s><s> i was wondering if scout cc could make games for pc as well as ios, android, etc. because lately i've been wanting to make a game for steam!</s><s> so i would like if someone could answer my question!</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6179687-6184304</DOCNO>
+<TEXT>
+<subject>Can Scout CC make games for PC?</subject>
+<post author="Terry%20Nguyen" timestamp="Mar 6, 2014 2:05 AM">
+<s>hello, i think you have been mistaken.</s><s> adobe scout is a profiling tool, not a programming tool.</s><s> a profiler can only analysis how good a game's performance is, it cannot be used to make a game.</s><s> hope it help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6184210-1421915</DOCNO>
+<TEXT>
+<subject>Closure & Gabage Collector</subject>
+<post author="Terry Nguyen" timestamp="Mar 6, 2014 1:28 AM">
+<s>hi everybody, 
+i've been profiling my game with scout recently and i encountered a problem that i cannot understand.</s><s> why does my function memorypool.pop() trigger gc as closure objects?</s><s> it seems to me a normal function, not a closure. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6150999-1414006</DOCNO>
+<TEXT>
+<subject>Animation</subject>
+<post author="supergulembo" timestamp="Feb 24, 2014 4:03 AM">
+<s>hi; i would like to know which program is easy for 12 years old kid for animation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6150999-6183789</DOCNO>
+<TEXT>
+<subject>Animation</subject>
+<post author="Preran" timestamp="Mar 5, 2014 8:28 PM">
+<s>hi supergulembo, 
+welcome to adobe forums.</s><s> sorry for the late response.</s><s> this article should provide you with an insight on your question 
+http://www.onextrapixel.com/2013/11/21/8-great-2d-and-3d-animation-sof tware-for-beginners-to-professionals/ 
+thanks, preran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6181074-1421177</DOCNO>
+<TEXT>
+<subject>Remote Profiling from a Linux machine to a Windows Machine</subject>
+<post author="mehdirazeghin" timestamp="Mar 5, 2014 6:37 AM">
+<s>hi, 
+</s><s>i want to use the remote profiling option to send data from a swf running on linux to the scout cc running on win.</s><s> swf is running inside the chrome on linux.</s><s> i created a telemetry.cfg file as follows: displayobjectcapture = true scriptobjectallocationtraces = true cpucapture = true telemetryaddress = 172.19.3.100:7934 stage3dcapture = true samplerenabled = true 
+172.19.3.100 is the ip address of win machine.</s><s> my problem is that there is no guidline about where the telemetry.cfg file should be placed in linux machine.</s><s> there are guidlines for mac and win platform in http://www.adobe.com/devnet/scout/articles/adobe-scout-getting-started .html, but no guide exists for linux.</s><s> i would appreciate it if someone helps me. 
+</s><s>thanks, mehraz 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6127909-1408482</DOCNO>
+<TEXT>
+<subject>Adobe Scout issue: not starting a new session for loaded SWFs</subject>
+<post author="Radu N" timestamp="Feb 17, 2014 2:07 AM">
+<s>we have an issue with adobe scout.</s><s> it does not listen (doesn't start a new session like it sould) for a swf loaded by another (main) swf.</s><s> the swfs have advanced telemetry enabled and the setup is correct as described in http://www.adobe.com/devnet/scout/articles/adobe-scout-getting-started .html.</s><s> please help 
+
+</s><s>thank you 
+
+</s><s>i am using win 7 64-bit, the latest versions of adobe scout and flash player, chrome 32 / ie 11. also i have made sure that the scout server is listening, as descibed in the article linked above: verify that the scout server listening.</s><s> open scout, and then type localhost:7934 into your web browser.</s><s> it should respond quickly with "server dropped connection", "no data received", or something similar (since scout is not an http server).</s><s> scout should show the error message "can't start a session because the telemetry data isn't valid".</s><s> if the browser stalls for a long time, and then comes back with "server not found" or something similar, then the socket isn't working. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6127909-6145782</DOCNO>
+<TEXT>
+<subject>Adobe Scout issue: not starting a new session for loaded SWFs</subject>
+<post author="imbert.thibault" timestamp="Feb 21, 2014 10:27 PM">
+<s>hi radu, 
+</s><s>yes, this behavior is expected.</s><s> you need the swf hosting the loaded swf to have telemetry enabled too.</s><s> if not, the loaded swf won't be profilable. 
+</s><s>thibault 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6128588-1408672</DOCNO>
+<TEXT>
+<subject>How to tell if swf has Detailed Telemetry and Enable Sampler</subject>
+<post author="swfisgood" timestamp="Feb 17, 2014 7:28 AM">
+<s>hi, in scout if i run a swf and it is showing my function names, does that mean everything is enabled properly for scout in that published swf? 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6128588-6145781</DOCNO>
+<TEXT>
+<subject>How to tell if swf has Detailed Telemetry and Enable Sampler</subject>
+<post author="imbert.thibault" timestamp="Feb 21, 2014 10:26 PM">
+<s>hi there, 
+yes, this is correct.</s><s> that means your swf is properly enabled for scout profiling. 
+</s><s>thibault 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6141664-1411852</DOCNO>
+<TEXT>
+<subject>Adobe Scout not opening any session</subject>
+<post author="purweli" timestamp="Feb 20, 2014 4:13 PM">
+<s>i have adobe scout cc 1.1.3 installed and following configuration in my machine.   running windows air runtime 3.5 flash player 11.8   i am running an air application on my machine.</s><s> not a single session get started in scout.</s><s> when i run localhost:7934 it shows as explained in http://www.adobe.com/devnet/scout/articles/adobe-scout-getting-started .html#articlecontentadobe_numberedheader_8   however when i run my air app i get "can't open file because the telemetry data isn't valid".</s><s> i changed the port as well but no change.</s><s> nothing come in scout.</s><s> it would be great help if you have suggestions to solve this.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6091907-1399573</DOCNO>
+<TEXT>
+<subject>Scout doesn't appear in Creative Cloud</subject>
+<post author="Amidos" timestamp="Feb 6, 2014 2:21 AM">
+<s>i tried a lot to download adobe scout from website but it opens the apps tab in creative cloud.</s><s> i searched for scout in it and its not there.</s><s> a friend of mine in another country have scout downloaded from creative cloud lend me his username and password but the same the scout application didn't appear. 
+</s><s>here an image from creative cloud apps 
+
+i use chrome browser and windows 7 machine and i live in egypt hope any of these information helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6091907-6117092</DOCNO>
+<TEXT>
+<subject>Scout doesn't appear in Creative Cloud</subject>
+<post author="Preran" timestamp="Feb 13, 2014 7:12 AM">
+<s>hi amidos, 
+</s><s>did you try logging into http://creative.adobe.com, and see if the software is listed in the download center?</s><s> also, check out the system requirements for adobe scout http://gaming.adobe.com/technologies/scout/ 
+thanks, preran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6080475-1396683</DOCNO>
+<TEXT>
+<subject>"-useLegacyAOT no" parameter disables ActionScript Sampler</subject>
+<post author="timoisalive" timestamp="Feb 3, 2014 6:31 AM">
+<s>i'm trying to profile my app with scout on ios but having trouble getting the actionscript sampler enabled. 
+</s><s>if i use the legacy aot to compile, the sampler is enabled, but if i want to compile faster, the sampler is disabled even if i have it set in the launch parameters. 
+am i doing something wrong, is this a bug or is this a known feature..</s><s>?</s><s> 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6080475-6104975</DOCNO>
+<TEXT>
+<subject>"-useLegacyAOT no" parameter disables ActionScript Sampler</subject>
+<post author="Jarrod%2012345" timestamp="Feb 10, 2014 5:16 AM">
+<s>i've got this exact same problem timoisalive.</s><s> the faster aot compiler seems to break the sampler. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5705179-1301940</DOCNO>
+<TEXT>
+<subject>Advanced telemetry for iOS applications (IPA)</subject>
+<post author="SumeetSinghal" timestamp="Sep 23, 2013 12:05 AM">
+<s>scout shows a sad face with release ipa build with advanced telemetry enabled (with -sampler option), stating that its a debug swf. 
+</s><s>however, since i am making a release build (by using the option export release build), is should not be a debug swf. 
+</s><s>it works fine with web-application.</s><s> does enabling telemetry always make a debug swf for ipa files (ios applications) ? 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5705179-5714568</DOCNO>
+<TEXT>
+<subject>Advanced telemetry for iOS applications (IPA)</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Sep 25, 2013 8:31 PM">
+<s>the --sampler option doesn't make it a debug swf - the actionscript sampler has a slightly higher overhead on ios than for other platforms (you shouldn't leave it on when you deploy your app), but it's not as high an overhead as being a debug swf. 
+</s><s>as far as i'm aware, flash player/air will only tell scout that it's a debug swf if it encounters the enabledebugger swf tag.</s><s> it's possible that the latest version of air is reporting this incorrectly, but i'd double check to be on the safe side (you can use swfinvestigator to take a look inside your swf).</s><s> if you're sure that you packaged your ipa correctly, then i wouldn't worry about this message. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5705179-5743946</DOCNO>
+<TEXT>
+<subject>Advanced telemetry for iOS applications (IPA)</subject>
+<post author="JohannesFuglefjellet" timestamp="Oct 8, 2013 3:40 AM">
+<s>it might also be something in the way you packaged your ipa.</s><s> if you used the adl tool to make your ipa via command-line, you might have used a package type that makes your release a "debug" application.</s><s> i would check if you have "-target ipa-debug" switch in your command line, for example, because i think that package type will be considered a "debug" version. 
+</s><s>to make a "release" ipa for local testing, use the "-target ipa-ad-hoc" or "-target ipa-test" switches 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5705179-6080477</DOCNO>
+<TEXT>
+<subject>Advanced telemetry for iOS applications (IPA)</subject>
+<post author="timoisalive" timestamp="Feb 3, 2014 6:37 AM">
+<s>i have this same problem, scout tells me my swf type is debug, although my compiler has "-target ipa-ad-hoc" parameter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6049312-1388818</DOCNO>
+<TEXT>
+<subject>Can you point remote telemetry data to more than one computer running Scout?</subject>
+<post author="jpmediajar" timestamp="Jan 24, 2014 11:26 AM">
+<s>if more that one person on a team wants to profile something, it seems there are 3 choices, run scout on the same test machine (this is not always possible or desirable) remote profile using a single, designated computer running scout manually edit "telemetryaddress" to point to the person's computer wanting to do a test 
+is it possible to point the telelemtry to more than one remote machine? 
+</s><s>for example can the flag entry in teleletry.cfg have multipe remote ip's?</s><s> something like telemetryaddress=192.168.1.20:7934, 192.168.1.55:7934 
+</s><s>it appears not.</s><s> what's your say? 
+</s><s>my current setup: i have a low end test computer on which i run the flash content (i.e.</s><s> scout is not installed/doesn't run on this computer).</s><s> following the instructions given under "remote profiling for desktop content", the ".telemetry.cfg" file points all telemetry data to a remote computer running scout. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6049312-6066084</DOCNO>
+<TEXT>
+<subject>Can you point remote telemetry data to more than one computer running Scout?</subject>
+<post author="Gavin%20Peacock" timestamp="Jan 29, 2014 11:58 AM">
+<s>telemetry in the flash player only supports connecting to one tcp/ip address at a time.</s><s> scout can listen to any number of connections from different flash players - on other machines or other browsers, but the core flash player in each browser can only have one active telemetry session.</s><s> you could probably write a proxy to listen to the telemetry session and forward it to multiple instances of scout but i've never tried that.</s><s> of course you can also save a session and view it in multiple instances of scout. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6063779-1392446</DOCNO>
+<TEXT>
+<subject>What's new in Scout CC 1.1.3?</subject>
+<post author="Norio Kawamura" timestamp="Jan 28, 2014 11:12 PM">
+<s>i have updated scout cc to 1.1.3. what's new in scout cc 1.1.3 from 1.1.2? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-1134290</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="ZEGMAN" timestamp="Jan 12, 2013 10:31 PM">
+<s>hello, when i start scout now it says: "thanks for trying scout.</s><s> this version has expired.</s><s> to continue using scout, you must upgrade to a new version." 
+</s><s>so i click the upgrade button in the message box which brings me to: https://www.adobe.com/products/gaming/tools.html 
+where i download the scout setup exe again and reinstall.</s><s> after reinstalling it says the same thing still, i've tried removing all the scout files and dlls, as well as restarting. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-4990915</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="imbert.thibault" timestamp="Jan 13, 2013 4:00 PM">
+<s>hi zegman, 
+</s><s>sorry to hear this.</s><s> can you provide more details?</s><s> which version of windows are you running? 
+</s><s>have you been using scout when it was still called "monocle"?</s><s> in other words have you been using prerelease versions of scout? 
+</s><s>let us know. 
+</s><s>thibault imbert sr.</s><s> product manager | adobe scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-4990990</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="ZEGMAN" timestamp="Jan 13, 2013 4:53 PM">
+<s>thanks for the reply, trying the redownload again today seemed to fix it.</s><s> i'm using windows 7 and i did use the prerelease. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6030525</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="SpeedyS" timestamp="Jan 19, 2014 10:07 PM">
+<s>i have the same problem, i just downloaded and installed adobe scout from creative cloud but it shows the message "thanks for trying scout.</s><s> this version has expired.</s><s> to continue using scout, you must upgrade to a newer version.</s><s> the upgrade button brings me to https://creative.adobe.com/products/scout after several webpage transitions.</s><s> and i clicked download scout again but nothing happened.</s><s> in the cc it shows my scout is aleady the latest version. 
+i have re-installed both scout and cc but the problem remains still. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6030533</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="davy%20zhang" timestamp="Jan 20, 2014 12:16 AM">
+<s>same problem here 
+i am using macos with scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6030724</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Osoker" timestamp="Jan 20, 2014 12:57 AM">
+<s>same problem here now, i'm using win7 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6030797</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Zwhite" timestamp="Jan 20, 2014 2:09 AM">
+<s>here is the same problem.</s><s> i'm using win7 and i have re-installed both cc and scout, but it still not work
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6030940</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="iKoala" timestamp="Jan 20, 2014 3:24 AM">
+<s>i got the same problem.</s><s> adobe scout asked me to update when i open it and direct me to the download page.</s><s> then i used adobe cc to update adobe scout but it still told me my scout expired and direct me to download page again.</s><s> i tried to remove scout and download it again with adobe cc but it is still the same. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6030950</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="SirProf" timestamp="Jan 20, 2014 3:21 AM">
+<s>same problem, macos 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6031139</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="web_job" timestamp="Jan 20, 2014 4:39 AM">
+<s>same here.</s><s> i am on win7.</s><s> reinstalling did not help.</s><s> and i used prereleased version too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6031157</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="PercyPea" timestamp="Jan 20, 2014 4:45 AM">
+<s>not an ideal solution, but on osx (tested on both mountain lion and mavericks) if you set your computers date back to a few days/week ago, scout will work again.</s><s> (i've randomly set mine to 9th jan) not sure if this works for windows, though i'm guessing it will.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6031070</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="SirProf" timestamp="Jan 20, 2014 4:51 AM">
+<s>adobe the best! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6031162</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="PercyPea" timestamp="Jan 20, 2014 4:51 AM">
+<s>ooo, it does also seem if once the application is open, you can then set the clock/date back to the correct date and it will continue working. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6031144</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="web_job" timestamp="Jan 20, 2014 5:03 AM">
+<s>yes, this works.</s><s> hope adobe will fix this soon. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6032533</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Peter%20Str%C3%B8mberg" timestamp="Jan 20, 2014 11:15 AM">
+<s>glad to know i'm not the only one with this issue.</s><s> also win7.</s><s> have tried re-installing with no luck. 
+</s><s>cheers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6032634</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="imbert.thibault" timestamp="Jan 20, 2014 11:19 AM">
+<s>hi guys, 
+for info, we are following up on this issue.</s><s> we have a fix coming up soon and will be pushing an update very soon.</s><s> i keep you posted here. 
+</s><s>thanks for the patience and really sorry for the inconvenience. 
+</s><s>thibault 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6033043</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="zeh" timestamp="Jan 20, 2014 12:56 PM">
+<s>same.</s><s> scout was running perfectly yesterday.</s><s> gives me an error message today.</s><s> windows 7, cc subscription user.</s><s> no amount of reinstalling helps. 
+</s><s>perfect timing, i'd say, as i'm just profiling a release version of some embedded application.</s><s> the date/time workaround seems to work, but i'd like to have something, err, less weird. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6033856</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="jeff.as3.ncr.dev" timestamp="Jan 20, 2014 4:38 PM">
+<s>i have the same issue to where scout has locked me out.</s><s> thank you adobe for looking into this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6034699</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="FBX%20Ehelier" timestamp="Jan 21, 2014 12:35 AM">
+<s>same here on win7.</s><s> i tried with both a free creative cloud account, and a licensed one without success.</s><s> even on a brand new pc where i never installed a prerelease version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6034880</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Oldes_Amanita" timestamp="Jan 21, 2014 2:07 AM">
+<s>thanks thibault.. at least we know, how helpful scout is, when we don't have it suddenly ;-) looking forward to have it back soon. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6035225</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="davidko" timestamp="Jan 21, 2014 4:54 AM">
+<s>maybe if you would have used scout debugger to check your scout debugger to... 
+
+
+</s><s>seriously though, i am desparate to get it back. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6036920</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="flexengineer" timestamp="Jan 21, 2014 12:34 PM">
+<s>lol while your comment made me laugh outloud for the whole office to hear, scout is not a debugging tool but a profiling tool, and i doubt the current issue has anything to do with software performance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6037030</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Anton%20Azarov" timestamp="Jan 21, 2014 12:34 PM">
+<s>temporary solution - roll back system time to 2013 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6037089</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="flexengineer" timestamp="Jan 21, 2014 12:34 PM">
+<s>yeah, tell that to my skype team chat room and to my svn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6038732</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Justin%20M%20Mclean" timestamp="Jan 21, 2014 9:56 PM">
+<s>hi, 
+</s><s>just run into exactly the same issue - when the expected fix going to be pushed out? 
+</s><s>thanks, justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6038772</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="imbert.thibault" timestamp="Jan 21, 2014 10:01 PM">
+<s>hi justin, 
+</s><s>as we speak, we are working on a new build, it is being tested now and should be pushed asap.</s><s> i am working with the creative cloud team to get this out asap.</s><s> i will provide continuous update here guys. 
+</s><s>thibault 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6038734</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Justin%20M%20Mclean" timestamp="Jan 21, 2014 10:04 PM">
+<s>hi thibault, 
+</s><s>thanks for the update - good to know it's been worked on. 
+</s><s>thanks, justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6039400</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="ARGHHHHH!!!!" timestamp="Jan 22, 2014 5:16 AM">
+<s>great to hear that.</s><s> have the exact same problem here and have a deadline to meet next week. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6041852</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jan 22, 2014 1:34 PM">
+<s>hi everyone, 
+we've pushed out an update.</s><s> there are still a few issues with the creative cloud installer, and the download link from the creative cloud website, so you need to: 
+1) uninstall scout 2) restart the creative cloud desktop app (quit it, then reopen it).</s><s> 3) click 'install' next to scout cc in the creative cloud desktop app. 
+</s><s>we're really sorry for the terrible experience, and the time it's taken to release a fix.</s><s> if you encounter any problems following the above steps, please let us know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6042071</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="zeh" timestamp="Jan 22, 2014 2:31 PM">
+<s>thanks for the update michael and adobe.</s><s> i can confirm this version as working as intended in my system. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6043295</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="FBX%20Ehelier" timestamp="Jan 23, 2014 12:08 AM">
+<s>working here also when following the 3 steps.</s><s> thank you for the quick fix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4989826-6053784</DOCNO>
+<TEXT>
+<subject>Scout Locked Out</subject>
+<post author="Peter%20Str%C3%B8mberg" timestamp="Jan 26, 2014 8:31 AM">
+<s>working perfectly again here, thanks for the speedy fix 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6036036-1385632</DOCNO>
+<TEXT>
+<subject>Re-Install Scout CC when it has been removed</subject>
+<post author="ymichel" timestamp="Jan 21, 2014 8:38 AM">
+<s>hi, 
+</s><s>i removed scout cc from my applications folder on my mac.</s><s> it still appears installed in the creative cloud widget and i'm not able to launch it to force the re-installation evenf if i click on the "download" button (scout downloading webpage). 
+</s><s>how can i remove the app from the creative cloud ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6036036-6039073</DOCNO>
+<TEXT>
+<subject>Re-Install Scout CC when it has been removed</subject>
+<post author="ymichel" timestamp="Jan 22, 2014 2:04 AM">
+<s>today, it's not displayed in the creative cloud tool.</s><s> i install it and i launch it : a popup saying me the app (scout cc) has expired ?</s><s>!</s><s>!</s><s> scout is an awesome app for as3-developers but please adobe make your installation workflow easy to use and understand. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6036036-6041854</DOCNO>
+<TEXT>
+<subject>Re-Install Scout CC when it has been removed</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jan 22, 2014 1:36 PM">
+<s>hi ymichel, 
+this is a bug on our part, and we've now pushed out an update.</s><s> there are still a few issues with the creative cloud installer, and the download link from the creative cloud website, so you need to: 
+1) uninstall scout 2) restart the creative cloud desktop app (quit it, then reopen it).</s><s> 3) click 'install' next to scout cc in the creative cloud desktop app. 
+</s><s>we're really sorry for the terrible experience, and the time it's taken to release a fix.</s><s> if you encounter any problems following the above steps, please let us know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6036036-6043444</DOCNO>
+<TEXT>
+<subject>Re-Install Scout CC when it has been removed</subject>
+<post author="ymichel" timestamp="Jan 23, 2014 1:15 AM">
+<s>everything is working well now.</s><s> thank you very much michael. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-1243016</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="verdave" timestamp="Jun 27, 2013 6:16 AM">
+<s>hey there. 
+your updater just interrupted my workflow with the following message: "thanks for trying scout. this version has expired.</s><s> to continue using scout, you must upgrade to a newer version." 
+</s><s>scout is no longer usable.</s><s> please make this update optional, dont force a damn modal popup window on me. 
+</s><s>the last time i downloaded scout, it was a standalone dmg/exe file.</s><s> is there still a working standalone (offline) installer ? 
+</s><s>thanks.</s><s> v.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5465338</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jun 30, 2013 10:07 PM">
+<s>to continue to use scout, you'll need to upgrade to the latest version - this is still free, but you need to sign up for a (free) creative cloud account, and download it through the creative cloud application manager.</s><s> there is no longer a standalone installer for scout, however once you make this change, it'll be much easier to update in future. 
+</s><s>you'll have noticed over the last few weeks that there was a notification in scout telling you that there was an update available.</s><s> we do expire older versions of scout, because they contain bugs that are fixed in newer versions, and they may not work correctly with the latest version of flash player.</s><s> new versions of scout are always backwards-compatible, so you can still open any flm files that you have saved. 
+</s><s>you can download adobe scout cc, here: 
+https://creative.adobe.com/products/scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5465599</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="verdave" timestamp="Jul 1, 2013 12:58 AM">
+<s>thank you for answering - i thought so. 
+</s><s>can i expect other adobe products to behave a similar intrusive way ? 
+</s><s>if so, how does an application know its expired ?</s><s> is it a build-in / hardcoded date or does it get the shutdown command from a remote server ? 
+</s><s>in other words: does blocking internet access for adobe products and a harddisk clone ensure i always have working copy of my cs6 pro suite ? 
+i just want to be able to update when i think its the right time (e.g. in the evening), and not when the updater forces me to (during a meeting with the client) and basically renders the application unusable. 
+v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5465758</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jul 1, 2013 3:16 AM">
+<s>i can't comment on the specifics of our licensing mechanism, but i can assure you that you'll never be forced to upgrade a creative cloud product, if that upgrade would break backwards compatibility.</s><s> cs6 is not part of creative cloud, so you won't receive any updates to your software other than bug fixes.</s><s> i don't know the specifics of this upgrade mechanism, but i'm pretty sure they don't force you to update. 
+</s><s>with scout, the switch from a standalone installer to creative cloud is disruptive, and i apologise for the inconvenience.</s><s> however, once you've made this switch then subsequent updates will be very quick and easy. 
+</s><s>adobe scout cc is released as a free preview, and we have to concentrate our efforts on providing the features that developers need to build better flash content.</s><s> we don't have the resources to support multiple versions of scout, which is why we made the decision to force users to update, after a certain grace period.</s><s> i hope that the inconvenience of updating will be more than compensated for by the new features and bug fixes in the new version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5495603</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="AmitChorge123" timestamp="Jul 11, 2013 5:35 AM">
+<s>michael, this is no way useful for me as i am unable to connect with your adobe creative cloud from office network.</s><s> it says no network connection gives back a error.</s><s> unless i do that i can no way use scout.</s><s> this is getting difficult.</s><s> can you do my life easy by helping me use atlest the older scout version or providing me with a offline installer 
+saying tht scout is free and impoising so many restrictions is not goona help me 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5497853</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jul 11, 2013 4:01 PM">
+<s>you don't need an internet connection to use adobe scout cc (or any other creative cloud cloud products - even the paid ones only require internet access every few months, to validate your subscription).</s><s> you just need the connection to install it. 
+</s><s>this should not be a problem for most users, but if you have specific corporate needs, then we have enterprise creative cloud solutions that give you much more flexibility over installing/managing software in your company: 
+http://www.adobe.com/products/creativecloud/enterprise.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5516425</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Ascanio2" timestamp="Jul 18, 2013 2:09 AM">
+<s>dear michael, 
+</s><s>i guess you think you addressed the corporate needs with the enterprise page.</s><s> but things are never black and white.</s><s> i work for a large enterprise, so large in fact, that a simple task such as having our firewalls setup to let me use cc is practically impossible. 
+i need scout, i need it back now.</s><s> and this whole cc thing is just making my life miserable.</s><s> i can not get cc to go online, we have pac policy files for internet access, and outbound data is capped to 4.9kb (anything over that will trigger a network error) per message (not per packet). 
+i need a standalone installer.</s><s> i need it now.</s><s> all the bs regarding the "cloud" stuff is hurting me and my business. 
+</s><s>if it were a perfect world, everything would be cool.</s><s> but it's seldom straightforward.</s><s> and i have to deal with a network that is as closed as it can be. 
+</s><s>please, give me (and other people) a break!</s><s>!</s><s> we need solutions, not problems. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5542420</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Jonathan%20A%20Dunlap" timestamp="Jul 26, 2013 3:23 PM">
+<s>verdave, amitchorge123, ascanio2-   thank for being patient, and i hope we can provide you with an acceptable long term solution.</s><s> we understand and feel for your frustration in not being able to access scout because of your company's internet policies that are in place.</s><s> i've personally felt this difficulty with other software because of the same reasons but did find similar solutions that i'll propose below.  to be earnest and clear, this is our policy now for our software releases and there are good reasons why the installation workflow works the way that it does.   solution a: communicate with your it and management divisions to discover out how the creative cloud can be put on a whitelist for its internet connection, as the software is required for your productivity.</s><s> solution b: if your employer can't allow such an exception, a custom solution can be designed for your particular situation.</s><s> this is the creative cloud enterprise route, which is a fancy way of saying that we can put a proper workflow into place for meeting your particular situation.  phone: 888-649-2990      contact form:  http://www.adobe.com/products/creativecloud/enterprise.html
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5548225</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="dvdgsng" timestamp="Jul 29, 2013 10:47 AM">
+<s>this is horrible.</s><s> updating a standalone-scout to a cc-scout should not be necessary, it has been working great for the last few months as it is.</s><s> so, tell us, why is cc now required to use scout?</s><s> why isn't there a standalone version available?</s><s> it really shouldn't be such a big deal, you don't even make money with that (great) product. 
+</s><s>oh, and btw, cc does not work here as well, and, frankly, i really don't want to use it - at all. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5548620</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Ascanio2" timestamp="Jul 29, 2013 12:27 PM">
+<s>thank you for your message.</s><s> in fact i was able to pull down a good proxy address from the pac file and get the installer working. 
+</s><s>unfortunately i work in a large enterprise (fiat group automobiles), and it is all but frustrating to get such things as a firewall update.</s><s> the fact that we work in a closed environment where outbound data traffic is capped at 5kb per request makes it impossible to use even simple forms online! 
+</s><s>thank you for you time anyway!</s><s> very appreciated.</s><s> have a nice one. 
+
+btw, your online community framework doesn't allow me to reply to a message from my iphone.</s><s> you should look into that 
+
+
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-5548650</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Jonathan%20A%20Dunlap" timestamp="Jul 29, 2013 12:28 PM">
+<s>all of our software efforts are offerings bundled under either free or paid creative cloud membership.</s><s> because of this membership to free accounts, adobe scout is able to continue as an active product for you to enjoy.</s><s> there's little needed to continue using scout: a free cc signup and the ability to download/connect the software.</s><s> if this is not possible for your company's network or simply unacceptable, solution b above allows us to provide full support for your unique situation.</s><s> hope this helps! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-6036267</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="molotowitzz" timestamp="Jan 21, 2014 9:27 AM">
+<s>hello, i just got this "thanks for trying scout. this version has expired.</s><s> to continue using scout, you must upgrade to a newer version." message today with upgrade and exit buttons.</s><s> i have a valid paid cc subscription and scout stopped working (was working a few days ago though).</s><s> it is installed only on one machine (there are two machines where i use my cc applications as license terms allow). 
+</s><s>my creative cloud application is a (probably) latest version 1.3.0.322.</s><s> i have uninstalled and downloaded scout again through cc and it is still not working with the same result.</s><s> i have tried logging out and into cc again. 
+i need it for my work (just now, of course..</s><s>).</s><s> thank you 
+</s><s>ps: this machine had scout installed previously (some months ago) when it was free, then i switched to cc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-6039034</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Mihalache" timestamp="Jan 22, 2014 12:16 AM">
+<s>i got the same problem, adobe scout has expired and i cant use it.</s><s> cc says scout is up to date.</s><s> did you manage to fix this in the meantime? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-6039287</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="konsnos" timestamp="Jan 22, 2014 4:04 AM">
+<s>i too got the same problem as molotowitzz and mihalache.</s><s> i have a free account and windows 7 x64.</s><s> uninstalled scout and reinstalled it and i got the same problem.</s><s> scout keeps asking me for an upgrade.</s><s> i don't know if it is related but when i click on the upgrade i get a notify to reset my password, which i have done. 
+</s><s>edit: there's another forum thread for this problem here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-6039976</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="molotowitzz" timestamp="Jan 22, 2014 7:09 AM">
+<s>no, i have not figured any fix.</s><s> my scout is still not working. 
+i have not changed my password recently. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-6040147</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Mihalache" timestamp="Jan 22, 2014 7:52 AM">
+<s>like konsos said above, there is another forum thread about this problem.</s><s> it seems that you can temporarly fix this scout problem by changing the computer;s year back to 2013, then start scout, then change the year back to 2014.</s><s> i did this and it workes for me...... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5455241-6041853</DOCNO>
+<TEXT>
+<subject>Adobe scout without cc ?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jan 22, 2014 1:35 PM">
+<s>hi everyone, 
+we've pushed out an update.</s><s> there are still a few issues with the creative cloud installer, and the download link from the creative cloud website, so you need to: 
+1) uninstall scout 2) restart the creative cloud desktop app (quit it, then reopen it).</s><s> 3) click 'install' next to scout cc in the creative cloud desktop app. 
+</s><s>we're really sorry for the terrible experience, and the time it's taken to release a fix.</s><s> if you encounter any problems following the above steps, please let us know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5620344-1281562</DOCNO>
+<TEXT>
+<subject>Other Bitmap Memory greater than Task manager one</subject>
+<post author="davide fonta" timestamp="Aug 23, 2013 6:34 AM">
+<s>hi, profiling my air application, i noticed other bitmap memory growing over and over.</s><s> more specifically, every time i open a popup (through popupmanager.createpopup) a 10mb step seems to be added and never released.</s><s> after some try, i reached 500mb of other bitmap memory (745mb of total memory), but looking as win task manager i found my application was using only 270mb. 
+
+
+</s><s>so, is other bitmap memory actually released even if scout doesn't see it?</s><s> (i'm trying to identify leeks in my application, but this seems a scout problem) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5620344-5628649</DOCNO>
+<TEXT>
+<subject>Other Bitmap Memory greater than Task manager one</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Aug 26, 2013 4:35 PM">
+<s>it's certainly possible that the memory allocated by the popupmanager isn't being tracked correctly - we'd need to look into it to be able to say what's going on.</s><s> if you can send me an example of your content, or a smaller example that reproduces the issue, i'll get someone to look into it (michsmit@adobe.com). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5620344-6036103</DOCNO>
+<TEXT>
+<subject>Other Bitmap Memory greater than Task manager one</subject>
+<post author="dhann" timestamp="Jan 21, 2014 9:11 AM">
+<s>hi, 
+</s><s>can you just give me a short info if there is such a problem with incorrect tracking of 'other bitmap memory'?</s><s> looks like i am observing this also.</s><s> was there some cause for this problem identified? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6028098-1383610</DOCNO>
+<TEXT>
+<subject>To whom may ever can answer this.</subject>
+<post author="P.O.40WATER" timestamp="Jan 18, 2014 8:33 PM">
+<s>i have a samsung i677 windows phonep and i need help trying to load adobe 12 flash player on it help!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-6015867-1380513</DOCNO>
+<TEXT>
+<subject>When was flash.utils.Telemetry changed to flash.profiler?</subject>
+<post author="imagenesis media" timestamp="Jan 15, 2014 9:41 AM">
+<s>i am interested in knowing which flash player version this change was made. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5573299-1270764</DOCNO>
+<TEXT>
+<subject>Adobe Scout does not exist in the apps list of Creative Cloud Desktop to install</subject>
+<post author="memoconq" timestamp="Aug 7, 2013 2:12 AM">
+<s>how can i install?</s><s> when i click download through the web page, it redirects to the desktop application.</s><s> but adobe scout doesn't exist in the apps list. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5573299-5573323</DOCNO>
+<TEXT>
+<subject>Adobe Scout does not exist in the apps list of Creative Cloud Desktop to install</subject>
+<post author="jordan%20enchev" timestamp="Aug 7, 2013 2:41 AM">
+<s>hi, i had simmilar problem few days ago , probably you have 32 bit oprating system , and scout is 64 bit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5573299-5988001</DOCNO>
+<TEXT>
+<subject>Adobe Scout does not exist in the apps list of Creative Cloud Desktop to install</subject>
+<post author="Lukasz%20Grela" timestamp="Jan 7, 2014 12:20 AM">
+<s>is there 32b version or going to be? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5970057-1368745</DOCNO>
+<TEXT>
+<subject>What next after download?</subject>
+<post author="flyingfalcon" timestamp="Dec 31, 2013 2:37 PM">
+<s>after i downloaded the adobe scout i was not sure what to do next?</s><s> any help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5970057-5985327</DOCNO>
+<TEXT>
+<subject>What next after download?</subject>
+<post author="Preran" timestamp="Jan 6, 2014 9:52 AM">
+<s>hi flyingfalcon, 
+welcome to adobe forums.</s><s> see http://www.adobe.com/devnet/scout/articles/adobe-scout-getting-started .html for information on getting started with adobe scout. 
+</s><s>thanks, preran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5919651-1355741</DOCNO>
+<TEXT>
+<subject>I can't download Scout</subject>
+<post author="tamaii megusta" timestamp="Dec 10, 2013 11:34 PM">
+<s>i reinstalled several time creative cloud desk app. 
+</s><s>but, still can't see scout app on the list. 
+
+so, i clicked download button on the scout web page (adobe product page) it seemed creative cloud activate. but, it's not working at all. 
+</s><s>i'm using window 7 and chrome. 
+</s><s>is there any other way to download scout? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-1335844</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="thx1138" timestamp="Nov 14, 2013 8:57 PM">
+<s>i can't download adobe scout.</s><s> when i try i get this window.</s><s> i click ok and a window starts to open and then crashes. 
+</s><s>if i try again i get this message.</s><s> whichever option i choose the program that opens crashes right away. 
+
+</s><s>i'm sick of this.</s><s> is there a direct link to scout? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5863620</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Nov 21, 2013 1:33 PM">
+<s>you'll have to download the creative cloud desktop app, which is basically an updated version of the application manager: 
+https://creative.adobe.com/products/creative-cloud 
+i would also uninstall adobe application manager first, since it looks like it's got into a corrupt state. 
+</s><s>sorry about your bad download experience; i'm afraid this is outside the control of the scout team. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5888998</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="filou77.eu" timestamp="Dec 1, 2013 6:32 AM">
+<s>hi, i have not exactly the same symptoms, but i can't get scout either. 
+i have downloaded and installed creative cloud (desktop access), i was able to download and install gamink sdk 1.3 (as shown in the below screenshot).</s><s> but when i try to download/install scout, i get absolutly nothing.</s><s> no error message.</s><s> the creative cloud application does not show any reaction ... 
+</s><s>what i am doing wrong ? 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5905116</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="thx1138" timestamp="Dec 5, 2013 3:38 PM">
+<s>i downloaded the desktop app and it installed scout successfully.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5906087</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="electroteque1" timestamp="Dec 6, 2013 12:32 AM">
+<s>i'm having the same problem although mine is stuck in a "up to date" state.</s><s> i had migrated to the new osx and it believes i still have it installed.</s><s> there is no uninstaller for scout.</s><s> the documentation is totally flawed, removing the db did not work.</s><s> the cc clear tool uninstalled everything apart from flash builder and the creative cloud client is still running and can't close.</s><s> it removed all uninstallers so flash builder can't be uninstalled.</s><s> just madness.</s><s> if it's a free tool won't mess people around with such buggy software.</s><s> is there a direct download ?</s><s> i need to get it up and running again to fix a memory leak. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5906089</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="electroteque1" timestamp="Dec 6, 2013 12:39 AM">
+<s>lol yes the creative cloud client is still in the toolbar but not even able to be force quit.</s><s> back to the drawing board i reckon really bad. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5906092</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="electroteque1" timestamp="Dec 6, 2013 12:46 AM">
+<s>confirming it's stuck in a state and cannot be removed as there is no uninstaller and no documentation to remove it.</s><s> i need to reinstall. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5906096</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="electroteque1" timestamp="Dec 6, 2013 12:59 AM">
+<s>completely removing all adobe files in application support and preferences did nothing.</s><s> account has crapped out.</s><s> this is hilariously bad.</s><s> it's a free app why do this ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5844240-5906097</DOCNO>
+<TEXT>
+<subject>Can't download Scout</subject>
+<post author="electroteque1" timestamp="Dec 6, 2013 1:06 AM">
+<s>a different account does nothing.</s><s> crock of ****.</s><s> and this is suppose to encourage people to buy products ?</s><s> i doubt it.</s><s> i'm on a deadline to fix something i will have to download this elsewhere until it's provided in the correct manner. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5875607-1344074</DOCNO>
+<TEXT>
+<subject>AS3 global functions creating Function objects which do not get GC'd</subject>
+<post author="SumeetSinghal" timestamp="Nov 26, 2013 5:11 AM">
+<s>
+</s><s>scout shows the function objects are created by the as3 global functions (http://help.adobe.com/en_us/flashplatform/reference/actionscript/3/pac kage.html).</s><s> why is it so ?</s><s> i do not see any reason why an xml or string object create a function object. 
+</s><s>also, i removed all the typecasts of xml() and instead replaced it with "as xml" to avoid calling the global function, but there is no impact on the function objects being created by xml.<class initializer>, code in global scope.</s><s> it still creates 1700-odd function objects. 
+</s><s>any idea what might be wrong with my understanding or any way to figure out whats creating these function objects ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5839809-1334695</DOCNO>
+<TEXT>
+<subject>Stage3D Rendering Crashes (Reproduceable)</subject>
+<post author="apellerano-kong" timestamp="Nov 13, 2013 1:00 PM">
+<s>i'm using scout cc for stage3d recording and all my recordings crash scout cc. 
+</s><s>here's a link to my flm file where the crash is reproduceable.</s><s> open the flm, go to frame 107, and switch to the stage3d rendering tab.</s><s> crash.</s><s> 
+</s><s>https://www.dropbox.com/s/rquboo2jnabo2a0/stage3d_display_crash.flm 
+i'm on win7 x64. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5839809-5839994</DOCNO>
+<TEXT>
+<subject>Stage3D Rendering Crashes (Reproduceable)</subject>
+<post author="apellerano-kong" timestamp="Nov 13, 2013 1:48 PM">
+<s>i confirmed that this also crashes scout cc on a mac using a colleague's computer.</s><s> he can load frame 107 and open the stage3d rendering tab, but if he clicks far enough down the list of gpu operations it will crash. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5839809-5863630</DOCNO>
+<TEXT>
+<subject>Stage3D Rendering Crashes (Reproduceable)</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Nov 21, 2013 1:51 PM">
+<s>thanks for reporting this!</s><s> i can reproduce that the crash does indeed happen in the latest version of scout. 
+</s><s>i've filed a bug report, so it can get on the backlog of things to fix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-1114767</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="mSantirso" timestamp="Dec 13, 2012 7:34 AM">
+<s>we tried today the scout profiler and it seems very promising.</s><s> however, it didn't provide helpful results in our case because 55% percent of the frame time is categorized under the non-informative "other overhead" category.</s><s> what's that?</s><s> how can we reduce that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-4919290</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Mark%20E.%20Shepherd" timestamp="Dec 13, 2012 12:35 PM">
+<s>we try to measure and report any significant flash player activity.</s><s> "other overhead" is time spent in flash player activities that we don't explicitly measure because they are not usually significant.</s><s> however we realize that there are areas of the player that do not yet report enough details.</s><s> try the 2 ideas below, and let us know if it helped.</s><s> if you are stillseeing the high "other overhead", we'll try to investigate further. 
+</s><s>here are 2 possible causes of high "other overhead" 
+1. you're using an older version of flash player.</s><s> for best results you need to use flash player 11.5 or air 3.5.</s><s> 2. you're using stage3d and displaylist recording in an app that does a lot of graphics.</s><s> this can result in higher cpu times for "runtime overhead", so make sure these 2 recording options are turned off when you need accurate activity times. 
+</s><s>regards, mark shepherd scout engineering 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-4998950</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="skipper7333" timestamp="Jan 16, 2013 10:29 AM">
+<s>i spent today trying to use the scount profiler on an android air app and i have a similar problem every 5 frames or so is recorded as "other overhead" and on further inspection it seems they are "runtime overhead" 93%.</s><s> this really doesn't help much and i am using air 3.5 and have disabled stage3d and displaylist recording.</s><s> attached is a screenshot of the mobile profile session.</s><s> i am using starling 1.3 - as it is so regular could it be a render event or something?</s><s> any ideas? 
+</s><s>cheers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5000842</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Jason%20Moore" timestamp="Jan 17, 2013 2:43 AM">
+<s>i would be interested if your high overhead was measured off an ios device. 
+</s><s>when we ran our application on both desktop and ipad, the ipad showed a far greater "other overhead." further experiments seemed to indicate that this overhead on the ipad was directly linked to the number of actionscript objects we had.</s><s> when we pushed in a large number of actionscript objects we actually got to the point where the "other overhead" was taking 100% of the frame budget. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5000999</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="skipper7333" timestamp="Jan 17, 2013 3:56 AM">
+<s>no it was a samsung galaxy ii. in terms of actionscript objects i am not sure how many but even for a basic splash screen i still get the above "runtime overhead" spikes.</s><s> i am not using fb 4.7 but fb 4.6 and air 3.5. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5046324</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Jason%20Moore" timestamp="Feb 4, 2013 8:49 AM">
+<s>more info on "other overhead"... 
+</s><s>we've been going through our code to try and find the cause of the other overhead and have found that use of file classes seem to significantly increase it in mobile applications.</s><s> in our case we were able to almost completely remove this overhead by storing paths to files as strings, then only covert them temporarily to a file object when we wanted to open a filestream.</s><s> i would'nt have though that the file class would have such a continous impact on overhead. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5131611</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Mar 7, 2013 11:35 PM">
+<s>there's a bug in a certain version of flash player/air where the cpu usage computation was really expensive.</s><s> i think this might be the problem - try turning off cpu usage in the settings for new sessions, and see if the problem goes away.</s><s> we fixed this issue some time ago, but you might be using an older build. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5131758</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Jason%20Moore" timestamp="Mar 8, 2013 12:58 AM">
+<s>i don't believe the cpu monitoring was the issue in our case.</s><s> as far as i remember we did'nt have cpu monitoring on , and we were using the latest build. 
+</s><s>we could actually see the slowdown in our app and when we removed the file objects you could actually see the app becomming more responsive.</s><s> it effected ios more than anything else , desktop was'nt so noticable..</s><s> when i get moment i'll put togeather a test application just to make sure i'm not going mad.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5131888</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Jason%20Moore" timestamp="Mar 8, 2013 2:57 AM">
+<s>i've created a quick test bed.</s><s> a mini application that adds 100 file objects to a vector every time a button is pressed.</s><s> compiled using air 3.6 and exported to ios as adhoc ( so not debug ), run on an ipad 3.</s><s> run and watched in scout as i pressed the button every second or so to generate 3000 file objects. 
+
+</s><s>as you can hopefully see from the screenshot, by the time we get to 3000 files, the "other overhead" was getting to the point of using almost all of the frame budget.</s><s> when we first saw this overhead in our project, you'll appreciate that we did'nt know it was the file objects at the time.. so there was much scratching of heads as to what this other overhead might have been ! 
+</s><s>heres the test bed code.... 
+<?</s><s>xml version="1.0" encoding="utf-8"?</s><s>>
+</s><s><!-- //////////////////////////////////////////////////////////////////////////////// // // viewnavigator application // ios file objects test // // description: // /////////////////////////////////////////////////////////////////////////////--> <s:application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" applicationdpi="160"> <fx:script> <!</s><s>[cdata[ private var fileobjectarray:vector.<file> = new vector.<file>; protected function runtest_clickhandler(event:mouseevent):void { //loop and create 100 file objects for(var i:int = 0; i< 100;i++) { fileobjectarray.push( file.applicationstoragedirectory.resolvepath( math.random().tostring()) ); } fileobjectscount.text = this.fileobjectarray.length.tostring(); } ]]> </fx:script> <fx:declarations> <!-- place non-visual elements (e.g., services, value objects) here -->
+    </fx:declarations>
+    
+    <s:button id="runtest" label="add 100 file objects" horizontalcenter="0" verticalcenter="0" click="runtest_clickhandler(event)" />
+    <s:label id="fileobjectscount" text="ready" horizontalcenter="0" verticalcenter="100" />
+              
+</s:application> 
+i do think there are issues with the file handling in air when packaging for ios... its an area which needs looking at.</s><s> there is a long outstanding bug with asyncronous filehandling that causes crashes on ios, which i've been deperately trying to get fixed to for a couple of years now.. https://bugbase.adobe.com/index.cfm?event=bug&id=3496074 ...</s><s> i thought i'd mention it here as its vaguely related and i'm trying to get it publicity and votes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5132984</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Mar 8, 2013 9:53 AM">
+<s>hi jason, 
+</s><s>thanks for sharing your experience - my comment was referring to skipper7333's problem, and the attached screenshot; clearly your problem is something completely different. 
+i agree that this bug ought to be fixed.</s><s> on the scout side, we've tried our best to categorise everything that takes a significant time, i.e. to keep the "other overhead" category as small as possible - it looks like this is a case where we could use an additional metric in flash player, to measure this activity! 
+</s><s>in the meantime, since the problem is only with async file opens, you might want to try using a worker thread to do a sync file open - even if it's a bit of an ugly solution, this should fix the problem without impacting your ui. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5137819</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Jason%20Moore" timestamp="Mar 11, 2013 2:02 AM">
+<s>hi michael, 
+</s><s>no problem giving feedback..</s><s> i must say overall scout is excellent. 
+</s><s>just one last final comment....</s><s> the asyc file handling thing is a seperate bug bear ( see what i did there ... heh) ...</s><s> if you look at my test code you see that i'm not actually opening any files whatsoever, all i'm doing is creating file references with the file object to create this other overhead.</s><s> perhaps i need to register this in the bug base too! 
+</s><s>thanks 
+</s><s>jason.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5265868</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="leejk" timestamp="Apr 24, 2013 7:45 PM">
+<s>hello, i am seeing the same thing here when profiling on android.</s><s> the "other overhead" category is huge, so there is no way for me to discern what the problem is.</s><s> are there plans to fix this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5275610</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="VaVaVooooooom" timestamp="Apr 29, 2013 2:19 AM">
+<s>i'm also having a similar problem when profiling my project using scout.</s><s> on the desktop everything seems normal (flash running in browser).</s><s> i get minimal "other overheads" which doesn't affect performance.</s><s> however, when i run the same project on a windows 8 tablet (dell xps 10), the "other overheads" category is significantly higher resulting in performance issues (very low fps) 
+i know this is to be expected for a tablet, but it would be very beneficial if we can find out what other overheads/runtime overheads include so that i know what i should be optimising.... 
+</s><s>thanks in advanced! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5277809</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Apr 29, 2013 3:24 PM">
+<s>thanks for the feedback!</s><s> we'd definitely like to reduce the amount of time in "runtime overhead", and we'll hopefully be adding new data in future versions of flash player/scout that'll better let you see what's going on.</s><s> in the case of windows 8, it's quite likely that there are costly code paths that we haven't instrumented, since this is a new target for flash player. 
+</s><s>bear in mind that there is some finer-grained data in the "other overhead" category - if you look in the top activities and activity sequence panels, you can see a more detailed breakdown of what's going on.</s><s> but "runtime overhead" is just a catch-all activity for anything we're not explicitly measuring, so if your problem is there, it means we need to improve the instrumentation.</s><s> if you have any specific content you're able to share, that illustrates this, it would be helpful if you could send it to us!</s><s> (you can contact me at michsmit@adobe.com). 
+</s><s>as an aside, remember when you're profiling performance to start by turning off all the settings for new sessions except for basic telemetry.</s><s> some of these settings have high overhead, especially on mobile, and this could be giving you misleading results (we don't currently categorise telemetry overhead, so this would appear under generic "runtime overhead"). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4918441-5859205</DOCNO>
+<TEXT>
+<subject>Meaning of "Other Overheads"?</subject>
+<post author="flashSpec" timestamp="Nov 20, 2013 10:46 AM">
+<s>in my case using "embed" to load in the graphics created this "other overhead".</s><s> using a costum file loader fixed this. 
+</s><s>using starling 1.3, nape 2.0 for web and mobile games. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-1109381</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="Ukie" timestamp="Dec 3, 2012 8:30 PM">
+<s>will adobe scout always be part of creative cloud for paid members, or is it something that will be sold seperatly? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-4894760</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="imbert.thibault" timestamp="Dec 4, 2012 12:49 AM">
+<s>hi ukie, 
+</s><s>that is correct.</s><s> adobe scout will be part of creative cloud for paid members.</s><s> we are actually providing scout for free right now so that you can use it and and see how you like it. 
+</s><s>thibault imbert sr.</s><s> product manager | adobe scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-4967768</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="sgtechsl" timestamp="Jan 4, 2013 7:34 AM">
+<s>hello - pardon me for tagging a question onto this a month later, but i just want to confirm since the language being used on the website is a bit confusing: it says that "for a limited time", scout and the developer tools are available free to creative cloud subscribers.</s><s> this seems to imply that at some point it will no longer be free to creative cloud subscribers - as in, it will at some point be removed from creative cloud and become a separate, standalone, paid product.</s><s> can you confirm that scout will always be part of creative cloud for subscribers? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-4967862</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="imbert.thibault" timestamp="Jan 4, 2013 7:46 AM">
+<s>hi sgtechsl, 
+</s><s>yes, that is correct.</s><s> scout will always be part of creative cloud.</s><s> during a limited period, scout is available for free through a free creative cloud membership.</s><s> after this period, scout will only be available through a paid creative cloud membership. 
+</s><s>thibault imbert sr product manager | adobe scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-4967881</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="sgtechsl" timestamp="Jan 4, 2013 7:51 AM">
+<s>hello thibault, thanks very much for the quick response! 
+</s><s>so if i'm understanding correctly, there's a free trial period for creative cloud, and for now, scout can be obtained as part of this free trial, but when the model changes, it will not be available through the creative cloud free trial period and will only "kick in" when a membership is fully paid? 
+</s><s>in any event, i'm fully paid and plan to remain so indefinitely, so as long as that means scout isn't going to disappear on me or become something i need to pay extra for beyond my paid creative cloud membership, i'm happy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-4967901</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="imbert.thibault" timestamp="Jan 4, 2013 8:06 AM">
+<s>no, you are all good.</s><s> you won't have to pay an additional fee.</s><s> if you have a full membership, scout will always be available to you :) 
+</s><s>thibault imbert sr product manager | adobe scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-4967940</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="sgtechsl" timestamp="Jan 4, 2013 8:08 AM">
+<s>excellent, thanks very much 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-5157545</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="thx1138" timestamp="Mar 18, 2013 10:16 AM">
+<s>what about users who want to purchase adobe scout separately but do not want to purchase a creative cloud?</s><s> i do not have internet connection oftens so creative cloud is not as relevant to me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-4894463-5838343</DOCNO>
+<TEXT>
+<subject>Adobe Scout Pricing</subject>
+<post author="SHIP" timestamp="Nov 13, 2013 6:06 AM">
+<s>we would also like to know the answer to this.</s><s> our corporate network is offline, and disconnected from the internet.</s><s> we need physical copies of our software to do development and cannot subjugate to an online-only, rent-based model. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-1236384</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="spilgamesc" timestamp="Jun 19, 2013 5:21 AM">
+<s>hi, 
+</s><s>i just installed adobe scout (via creative cloud) to profile a flash game, but i am getting an error when i run it. 
+i have tried restarting my computer, as well as uninstalling and reinstalling the application. 
+</s><s>the error is: "the application was unable to start correctly (0xc000007b).</s><s> click ok to close the application." 
+</s><s>how can i resolve this so i can use adobe scout? 
+best regards, spilgamesc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-5427074</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="Sedat%20Akkus" timestamp="Jun 19, 2013 11:16 AM">
+<s>hi, 
+</s><s>could you please provide some details about your os?</s><s> also did you have the scout 1.0 installed before installing the new version? 
+</s><s>thanks, -sedat akkus software engineer, adobe scout 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-5428643</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jun 19, 2013 5:10 PM">
+<s>it sounds like your system files might be messed up - scout expects a 64-bit version of msvcr100.dll, so it won't work if it's been replaced with a 32-bit version.</s><s> possibly you installed something that altered this file.</s><s> see the discussion here: 
+http://social.msdn.microsoft.com/forums/vstudio/en-us/96035692-9a50-40 d4-a7d3-48bda87d11ec/the-application-was-unable-to-start-correctly-0xc 000007b-click-ok-to-close-the-application-when 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-5429644</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="spilgamesc" timestamp="Jun 20, 2013 12:49 AM">
+<s>hi, 
+@sedat akkus: my os is windows 7 enterprise (service pack 1) 64 bit.</s><s> 
+</s><s>i did not have any previous version of scout installed.</s><s> the only other adobe software i have installed is adobe reader and a debug version of the latest flash player. 
+@michael j.a.</s><s> smith: my first google searches also turned up some suggestions that there was a problem with 64bit systems/installs.</s><s> i located my msvcr100.dll, there is one in both c:\windows\system32 and c:\windows\syswow64. 
+</s><s>so, what would you suggest i do?</s><s> i do not have previous versions of the dll, but my intuition would say since i have both 32 and 64 bit versions it shouldn't be a problem. 
+thanks, spilgamesc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-5431906</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="Michael%20J.A.%20Smith" timestamp="Jun 20, 2013 11:05 AM">
+<s>ironically, system32 is where the 64-bit dlls are located.</s><s> try the following: 
+1) uninstall scout 2) rename c:\windows\system32\msvcr100.dll to msvcr100_old.dll 3) install scout again 
+scout will install this dll if it isn't present, so doing this will ensure that you get the correct dll.</s><s> if this doesn't work, then at least we can rule that out as the cause of the problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-5443347</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="spilgamesc" timestamp="Jun 24, 2013 7:16 AM">
+<s>hi, 
+</s><s>thanks for your suggestion, however i have solved the problem another way. 
+a colleague of mine had downloaded an adobe scout installer .exe from a previous version of the adobe website, before cc was required.</s><s> i uninstalled creative cloud, installed the old version and now it works. 
+thanks, spilgamesc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Game-Developers-Forum/Adobe-Scout/Discussions-5425213-5446289</DOCNO>
+<TEXT>
+<subject>The application was unable to start correctly (0xc000007b)</subject>
+<post author="Chillau" timestamp="Jun 24, 2013 8:23 PM">
+<s>okay, i have solved the 0xc000007b problem for my adobe elearning package after many, many hours of googling solutions.</s><s> yay!  for those who may experience the same issue, here's the root cause and the steps i followed to fix it.   the problem stemmed from the ilivid program i had downloaded onto my pc.</s><s> if you google this program you'll see that it is known to cause many issues so don't install it!</s><s>!</s><s>!</s><s> it hates adobe and causes other computer problems too!   step 1: firstly i had to uninstall ilivid using the standard windows uninstall steps.</s><s> this program is notorious for not uninstalling completely so i then ran 2 programs to make sure it was fully removed from my system.</s><s> for this i used regclean pro and ccleaner.</s><s> i ran these several times, rebooting my pc between each 'cleaning' session.</s><s> step 2: after i was pretty sure evil ilivid had been fully removed, i downloaded the two missing .dll files that ilivid had somehow deleted from my system.</s><s> i found this youtube video with the dll's attached to download the video explains how to fix the 0xc000007b error for lightroom - but the dll's worked for all my non-functioning 64bit adobe elearning progs too (captivate, media encoder, presenter video, etc).</s><s> after i unzipped them, i copied and pasted the two .dll's into each of the prog files that were not working (oddly ps 64bit had not been impacted).</s><s> on my pc the 64bit progs were installed here c:\program files\adobe - not in the program (x86) folder.   after following these steps i rebooted my pc and now - at last! - everything works fine.</s><s> whew!   hope this helps others who have the same problem
+</s></post>
+</TEXT>
+</DOC>
+
+

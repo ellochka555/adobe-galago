@@ -1,0 +1,988 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-6190678-1423431</DOCNO>
+<TEXT>
+<subject>Where to buy Adobe Output Designer</subject>
+<post author="Kiran.V" timestamp="Mar 8, 2014 1:52 AM">
+<s>hi all, 
+</s><s>i'm kiran from india.</s><s> at my company, we require "adobe output designer" for style sheets development.</s><s> however i'm not able to purchase the license from any of the adobe vendors in india. 
+</s><s>can anyone let me know how to procure this software ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-6120067-1406486</DOCNO>
+<TEXT>
+<subject>How to share a object library</subject>
+<post author="de25KMC" timestamp="Feb 14, 2014 2:04 AM">
+<s>dear adobe community, 
+</s><s>i am using the adobe (jetform) output designer version 5.4.0.</s><s> 130 as we are working in a team on several forms (ifds), which include some objects from a object library, we would like to share the same library within the team.</s><s> i could not find any option to export / import objects from one library to another one. 
+</s><s>is there a possibility to share the same library with multiple users, for example on a network-share-drive?</s><s> if yes, how can we implement this? 
+</s><s>thanks in advance for your input. 
+</s><s>best regards 
+jan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-1370645-343700</DOCNO>
+<TEXT>
+<subject>Rotate Text Box</subject>
+<post author="(Kathy_Z_Vance)" timestamp="Apr 15, 2006 9:19 PM">
+<s>i am new to output designer.</s><s> is that any way i could rotate a text box upside down (180 degree) or rotate whole subform?</s><s> i use overflow to make a text box, so that the string could be shown in a multiple lines.</s><s> if not in the form level, could we set a printer to print the text upside down?</s><s> thanks in advance.</s><s> kathy
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-1370645-1370646</DOCNO>
+<TEXT>
+<subject>Rotate Text Box</subject>
+<post author="(Tom_Warfield)" timestamp="Apr 17, 2006 8:09 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-1370645-1370647</DOCNO>
+<TEXT>
+<subject>Rotate Text Box</subject>
+<post author="(Kathy_Z_Vance)" timestamp="Apr 17, 2006 8:21 AM">
+<s>sorry i should not use the term of text box in my first note.</s><s> yes, it was a field and i used overflow to make it multiple lines.</s><s> the data was from a xml file and it was a long sigle line string only.</s><s> when we rotate a field, output designer would convert a multiple lines into a single line and rotate it.</s><s> after rotation, i would not be able to format the field.</s><s> could you explain me how to use !</s><s>format to rotate a multiple-lines field?</s><s> i tried and it would not work.</s><s> thanks, kathy
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-1370645-1370648</DOCNO>
+<TEXT>
+<subject>Rotate Text Box</subject>
+<post author="(Terry_Dark)" timestamp="Apr 21, 2006 10:16 PM">
+<s>hi kathy, is the field you want to rotate (in multiple lines) in a fixed position in the page?</s><s> terry
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-1370645-6079719</DOCNO>
+<TEXT>
+<subject>Rotate Text Box</subject>
+<post author="skimraan" timestamp="Feb 2, 2014 10:01 PM">
+<s>hi, it's very simple to rotate text box in adobe acrobat, please follow the below steps to rotate the text box.   first      : -         rotate the page, go to "document/rotate/clockwise 90 degrees" then enter second : -         create the text box, go to "tools/comments & markup/text box tool" then type your text in box third     : -         again rotate the page, go to "document/rotate/counterclockwise 90 degrees" then enter                         that's it.     maybe this reply helpful.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5994578-1375025</DOCNO>
+<TEXT>
+<subject>How to display value of other field if the value in the first field is blank or null</subject>
+<post author="laDeedee" timestamp="Jan 8, 2014 3:56 PM">
+<s>i have been trying different ways to do the following, but unable to do exactly what i wanted.</s><s> so, any advise will be much appreciated.</s><s> i use the format event to check if field a is blank.</s><s> if it is blank, then display the value from field b, else trim and display the value from field a. this is my code: 
+@(if(("@cust_info_inv_chg__txt_rev_rep_inv."==""),"@cust_info_inv_chg_ _re_dt.","@(substr ("@cust_info_inv_chg__txt_rev_rep_inv.", 57, 9))")) 
+i was able to get it to display if the field is not blank.</s><s> however if it is blank then the system provided me this result: @cust_info_inv_chg__re_dt. instead of the value of this field.</s><s> please help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5994578-5994579</DOCNO>
+<TEXT>
+<subject>How to display value of other field if the value in the first field is blank or null</subject>
+<post author="laDeedee" timestamp="Jan 8, 2014 3:58 PM">
+<s>fyi, i use adobe output designer version 5.7. thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5968790-1368358</DOCNO>
+<TEXT>
+<subject>Address lines</subject>
+<post author="Buuldawg" timestamp="Dec 31, 2013 7:27 AM">
+<s>i am designing a new form letter and am having an issue with the address lines (5) moving up if one or more are blank.</s><s> i have many form letters that the following code works with but this letter has two additional address lines and i can't determine why it is not working.</s><s> i know it has to be something small that i am missing but it is taking me too long to figure it out.</s><s> my preamble is the following: ^define group:testa!fldnotavail @(if ("@add1." == "", "", "\groupsuba\fieldadd1.@add1.")) ^define group:testb!fldnotavail @(if ("@add2." == "", "", "\groupsubb\fieldadd2.@add2.")) ^define group:testc!fldnotavail @(if ("@add3." == "", "", "\groupsubc\fieldadd3.@add3.")) ^define group:testd!fldnotavail @(if ("@add4." == "", "", "\groupsubd\fieldadd4.@add4.")) ^define group:teste!fldnotavail @(if ("@add5." == "", "", "\groupsube\fieldadd5.@add5.")) 
+
+</s><s>my tdf is as follows: 
+#startscript * ^page 1 #comment ---- imbc ---- ^field imbc @imbc #comment ---- ind ---- ^field ind @ind[,--] #comment ---- add1 ---- ^global add1 @add1[,--] #comment ---- testa ---- ^field testa @testa #comment ---- add2 ---- ^global add2 @add2[,--] #comment ---- testb ---- ^field testb @testb #comment ---- add3 ---- ^global add3 @add3[,--] #comment ---- testc ---- ^field testc @testc #comment ---- add4 ---- ^global add4 @add4[,--] #comment ---- testd ---- ^field testd @testd #comment ---- add5 ---- ^global add5 @add5[,--] #comment ---- teste ---- ^field teste @teste #comment ---- salutation ---- ^field salutation @salutation[,--] #comment ---- reissue ---- ^field reissue @reissue[,--] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5875300-1343985</DOCNO>
+<TEXT>
+<subject>output variable as a literal</subject>
+<post author="gpholman" timestamp="Nov 26, 2013 3:21 AM">
+<s>i'm using jetforms 5.3 and have the following question: 
+a .tdf file has a #startscript section which outputs various stuff.</s><s> in this section i want to output a global variable name as a literal but jetforms always outputs it as the contents of the variable. 
+e.g. 
+@myvar contains the string 'test'. 
+i want literally the string '@myvar' to be output, not it's contents - 'test'. 
+</s><s>i've tried quoting, escaping, putting @myvar as a string into another variable and then outputing this, but it always gets expanded into its contents. 
+</s><s>possible?</s><s> 
+</s><s>many thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5875300-5875473</DOCNO>
+<TEXT>
+<subject>output variable as a literal</subject>
+<post author="gpholman" timestamp="Nov 26, 2013 3:59 AM">
+<s>solved!</s><s> solution: 
+@at.myvar 
+@at. is a special command to output '@' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5826282-1331212</DOCNO>
+<TEXT>
+<subject>CODEBAR 2D DataMatrix ECC200</subject>
+<post author="u27940" timestamp="Nov 8, 2013 7:59 AM">
+<s>hello, 
+</s><s>we are using output central 5.6 with output designer 5.6, we want insert some codebar 2d in forms 2d datamatrix ecc200 " (error check correction). 
+</s><s>it seems these feature is not integrated in this version of the product, is there someone who has already done ? 
+</s><s>thanks for your help (sorry for my level in english) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5802726-1325531</DOCNO>
+<TEXT>
+<subject>Converting PDF to XFT and importing to Output designer</subject>
+<post author="Slider" timestamp="Oct 31, 2013 12:16 AM">
+<s>i am desigining forms in adobe output designer.</s><s> i need to convert a pdf to xft format to import to adobe output designer.</s><s> apart from form brige tool any suggestions to achieve it?</s><s> is it possible to convert pdf-->xml and then xml-->xft ?</s><s> if so how to do it.</s><s>?</s><s> or any other option using adobe reader plugin ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5735922-1309313</DOCNO>
+<TEXT>
+<subject>QR code in Accelio.</subject>
+<post author="Leandro Renato BR" timestamp="Oct 4, 2013 5:49 AM">
+<s>hello everyone, 
+</s><s>i need to add a qr code in one accelio form and i could not locate an option for that :s...</s><s> has someone faced a similar situation ?</s><s> is that possible to add qr code in output designer ?</s><s> if yes... can someone please provide an example . 
+i'm currently usign output designer 5.4.1 
+</s><s>really appreciate any help. 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5532077-1261089</DOCNO>
+<TEXT>
+<subject>Visual Transformation Editor 5.7 scripting</subject>
+<post author="jonibrasco" timestamp="Jul 23, 2013 1:11 PM">
+<s>how do you change the scripting sequence.</s><s> i have a field that needs to move to the top of the scripting seqence.</s><s> i dont see any way to do this.</s><s> thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5532077-5728690</DOCNO>
+<TEXT>
+<subject>Visual Transformation Editor 5.7 scripting</subject>
+<post author="exictos192" timestamp="Oct 1, 2013 9:46 AM">
+<s>edit the tdf file with any text editor, and move it.</s><s> save the file after that.</s><s> you should move the #comment also 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5149717-1170835</DOCNO>
+<TEXT>
+<subject>Reset the page number</subject>
+<post author="UT1234" timestamp="Mar 14, 2013 5:06 PM">
+<s>hi, hopping anyone out there knows how to re-set "$page." .</s><s> i have it at the header of the page to plot the page number for multipage document and it works fine as a single document.</s><s> however when this document is in the package it wouldn't re-set (to start with 1 again) and continue on with the current number.</s><s> i need to find a way to re-set it back to 1 when this particular doc gets printed in the package.</s><s> please help.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5149717-5718942</DOCNO>
+<TEXT>
+<subject>Reset the page number</subject>
+<post author="TiG17" timestamp="Sep 27, 2013 7:49 AM">
+<s>you can made one counter by switchpage and reset the value in last subform onentry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5149717-5728686</DOCNO>
+<TEXT>
+<subject>Reset the page number</subject>
+<post author="exictos192" timestamp="Oct 1, 2013 9:43 AM">
+<s>hi, 
+</s><s>you can use at beginning of each document in data file, the command ^$page 1 this will reset the counter to 1. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-1088528</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="soccercheez" timestamp="Oct 25, 2012 2:39 PM">
+<s>i need to add a character to a field formatted as a barcode.</s><s> the character will help route the information to the correct users. 
+</s><s>i've tried formatting the barcode using the !</s><s>format event field but i'm not getting good results.</s><s> i need to add an "e" to one barcode and a "3" to another 
+i've tried e@_$_. and other variations.</s><s> anybody have suggestions?</s><s> these are global fields in the dat file. 
+using output designer 5.5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-4802034</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="Stale%20Sodal" timestamp="Oct 26, 2012 12:15 AM">
+<s>one way of doing this is to use the ^defineresolveglobal command in your preamble.</s><s> will look something like this: 
+^define group:barcode1 \defineresolveglobal:barcode,"e@ barcode". ^define group:barcode2 \defineresolveglobal:barcode,"3@ barcode". 
+</s><s>be aware that this editor insist on turning e@barcode into a link so i had to put a space after the @ to get the syntax right - so remove this blank in your preamble.</s><s> hope this works for you 
+ståle sødal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-4802897</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="soccercheez" timestamp="Oct 26, 2012 8:27 AM">
+<s>thank you for the answer, but i'm not able to get it to work. 
+</s><s>each field appears twice on the page, once as a data field, and once as a barcode data field.</s><s> the barcode data fields need the e or the 3 in front, the data fields don't. 
+</s><s>here is what i put in the preamble, and i did remove the space after the @ symbol. 
+^define group:barcode1 \defineresolveglobal:field_01,"e@ field_01". ^define group:barcode2 \defineresolveglobal:field_02,"3@ field_02". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5653431</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="MKlineGF" timestamp="Sep 4, 2013 12:59 PM">
+<s>hello, 
+</s><s>i was trying to do something similar with a form that i have, but cannot seem to get it to work.</s><s> i have a field called po_number on my form twice.</s><s> it's human readable in one field, and in the other, it's formatted as a bar-code.</s><s> i want to add a prefix to that barcoded field of "p".</s><s> am i able to do this since the fields are coming from the same data field, just one is formatted as a barcode?</s><s> i can post the jfpreamble_1 from my form if that would help. 
+</s><s>thanks in advance for your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5654757</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="Stale%20Sodal" timestamp="Sep 4, 2013 11:35 PM">
+<s>since the data is passed as a global it will populate both your fields with the same data and if you redefine the value it will have impact on both fields i.e. the global value is changed for both fields.the best thing to do is to rename your barcode version of the field into maybe po_number_bar and then define a new global value for this field. 
+^define global:po_number_bar p@po_number 
+if renaming the barcode field is not an option then you should look at !</s><s>onentry and !</s><s>fldused to format the barcode version of the field 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5659055</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="MKlineGF" timestamp="Sep 6, 2013 10:33 AM">
+<s>i was able to do what you said on one field and it worked.</s><s> when i tried the same thing on a different field adding q as a prefix (quantity to quantity_bar), instead i have the actual word qquantity now rather than a q then the number.</s><s> the po number still works though.</s><s> do i need to do something different if there's more than 1 field i need to do this to?</s><s> i did want to mention that the po number field is alpha-numeric, whereas the quantity is just numeric.</s><s> not sure if that has any bearing on this or not. 
+</s><s>thanks in advance for your help.</s><s> i'm almost there! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5664394</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="Stale%20Sodal" timestamp="Sep 8, 2013 11:54 PM">
+<s>this sounds as if you have forgotten to refer to quantity as a variable.</s><s> if so you will only have the name of the variable printed. 
+^define global:quantity_bar qquantity (this will print qquantity) ^define global:quantity_bar q@quantity ( this will print q1234567...</s><s>) 
+</s><s>if this is not the case then please send me the preamble and i will help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5664854</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="MKlineGF" timestamp="Sep 9, 2013 4:46 AM">
+<s>hi, thanks for responding.</s><s> the po number works fine with the prefix of 2k...but still, the quantity shows the prefix q, but then just the word quantity, not the actual number itself.</s><s> thank you again for your help! 
+
+</s><s>this is the jfpreamble: 
+^comment ********************************************************************* *************** ^comment * note.</s><s> because the custom properties jfpreamble_n ^comment * will be overwritten when you compile you should ^comment * apply your preamble overrides to the jfpreamble ^comment * custom property following the reference to the ^comment * ^file docvar:jfpreamble_1 dictionary below. ^comment ********************************************************************* *************** ^file docvar:jfpreamble_1 dictionary ^comment * preamble overrides... 
+
+^define global:quantity_bar q@quantity ^define global:po_number_bar 2k@po_number 
+
+
+</s><s>after compiling, this is the jfpreamble_1: 
+^inline on ^comment ********************************************************************* ****************** ^comment * note.</s><s> the jfpreamble_n custom properties will be overwritten ^comment * when you compile the form. ^comment * ^comment * preamble changes should be made to the jfpreamble ^comment * custom property. ^comment ********************************************************************* ****************** ^comment ^comment --------------------------------------------------------------------- ------------------------------ ^comment this variable will be called by all the onbof event handlers. ^comment --------------------------------------------------------------------- ------------------------------ ^define group:switchpage \page1\field$position. ^comment ^comment ----------------------------------------------------------------- ^comment header subform: (header) ^comment ----------------------------------------------------------------- ^define group:d_header \positionabsolute,"0.200","0.250",in\subformheader. ^define group:g_header @group:d_header. ^comment ^define group:header!fldnotavail \groupg_header\fieldheader. ^define group:header!fldused \groupg_header\fieldheader. ^define group:g_header!onbof @group:switchpage. ^comment ^comment ----------------------------------------------------------------- ^comment trailer subform: (totalcount) ^comment ----------------------------------------------------------------- ^define group:d_totalcount \field$position\reserve"0.800",in\subformtotalcount. ^define group:g_totalcount @group:d_totalcount. ^comment ^define group:partnumber!fldnotavail \groupg_totalcount\fieldpartnumber. ^define group:partnumber!fldused \groupg_totalcount\fieldpartnumber. ^define group:quantity!fldnotavail \groupg_totalcount\fieldquantity. ^define group:quantity!fldused \groupg_totalcount\fieldquantity. ^define group:itemname!fldnotavail \groupg_totalcount\fielditemname. ^define group:itemname!fldused \groupg_totalcount\fielditemname. ^define group:po_number!fldnotavail \groupg_totalcount\fieldpo_number. ^define group:po_number!fldused \groupg_totalcount\fieldpo_number. ^define group:quantity_bar!fldnotavail \groupg_totalcount\fieldquantity_bar. ^define group:quantity_bar!fldused \groupg_totalcount\fieldquantity_bar. ^define group:po_number_bar!fldnotavail \groupg_totalcount\fieldpo_number_bar. ^define group:po_number_bar!fldused \groupg_totalcount\fieldpo_number_bar. ^define group:totalcount!fldnotavail \groupg_totalcount\fieldtotalcount. ^define group:totalcount!fldused \groupg_totalcount\fieldtotalcount. ^define group:g_totalcount!onbof @group:switchpage. ^comment ^comment ********************************************************************* ***** ^comment * end of adobe output designer generated preamble. ^comment ********************************************************************* ***** 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5664793</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="Stale%20Sodal" timestamp="Sep 9, 2013 5:09 AM">
+<s>your definitions do not have any impact on preamble_1 so that is not any help.</s><s> just to make sure: is quantity a global value?</s><s> do you complete your ^define lines with a .</s><s> (dot)?</s><s> 
+</s><s>if both quantity and po_number are global values the below should work: 
+^define global:quantity_bar q@quantity. ^define global:po_number_bar 2k@po_number. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4801172-5665438</DOCNO>
+<TEXT>
+<subject>Add character to barcode field</subject>
+<post author="MKlineGF" timestamp="Sep 9, 2013 8:14 AM">
+<s>that's what it was.....i didn't have quantity defined as a global value and i should have. duh.... 
+</s><s>thank you very much for your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5650232-1288604</DOCNO>
+<TEXT>
+<subject>Output Designer 5.7 Errors - Error 1804 Unable to open configuration file</subject>
+<post author="Sweca" timestamp="Sep 3, 2013 12:46 PM">
+<s>??hi...receiving error messages on accessing newly installed output designer 5.7. installed on new win7 laptop. 
+</s><s>error # 5903 - you must select a printer before saving.</s><s> error # 1804 - unable to open configuration file "....\config\pdf.icf" 
+</s><s>the last error, error # 1804, closes out the application.</s><s> file does not exist within the path.</s><s> tried uninstalling and reinstalling with the same result. 
+</s><s>any help would be greatly appreciated! 
+</s><s>thanks, elena.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5650232-5650818</DOCNO>
+<TEXT>
+<subject>Output Designer 5.7 Errors - Error 1804 Unable to open configuration file</subject>
+<post author="Romsinha" timestamp="Sep 3, 2013 4:09 PM">
+<s>moving discussion to adobe output designer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5650232-5651800</DOCNO>
+<TEXT>
+<subject>Output Designer 5.7 Errors - Error 1804 Unable to open configuration file</subject>
+<post author="Stale%20Sodal" timestamp="Sep 4, 2013 3:27 AM">
+<s>hi elena 
+</s><s>this is most likely caused by missing admin rights on win 7.</s><s> i have seen this problem within my company.</s><s> when installing adobe output designer it will be placed in %programfiles% which is your c:\program files folder. 
+</s><s>in subfolder c:\program files\adobe\output designer 5.7\config there are many configuration files that controls your printer drivers (presentment targets).</s><s> dependent on what user type you are in win 7 you might not have write access to files in this folder.</s><s> when you cannot write to this folder you cannot make changes to your printer drivers or install new ones and you are pretty much stuck. 
+</s><s>solution: create folder c:\myprograms and install adobe output designer here. 
+</s><s>ståle 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5650232-5654476</DOCNO>
+<TEXT>
+<subject>Output Designer 5.7 Errors - Error 1804 Unable to open configuration file</subject>
+<post author="Sweca" timestamp="Sep 4, 2013 7:23 PM">
+<s>hi stale....thanks!</s><s> your suggestion worked! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5186474-1179393</DOCNO>
+<TEXT>
+<subject>Adding a new field and new data item breaks layout</subject>
+<post author="Agamem" timestamp="Mar 28, 2013 8:44 AM">
+<s>i am adding a new field to a subform and populating it form a .dat unfortunatly adding this field is causing data outputed to the subform below it to shift down one line on the page when outputted.</s><s> this new field is outputted at the top of the form and and the line being shifted are below this.</s><s> below is the field details and the field as it is in the .dat file.   field:f_po_number [1]                                 lines: 1  characters: 20  angle: 0   in subform : main_page   options   : global   ^command jfpage_start ^undefine global:~^page 1 ^define global:sequence \pic"num999999",@d:numpagesprinted../\pic"num99",@$page../\pic"num99" ,@:jfpage_page_of.. ^define global:jfpage \pic"num99",@$page.. of \pic"num99",@:jfpage_page_of.. ^global email coll_tel_num~12345678~^reformat off ^global f_currency_code gbp ^field f_po_number   ^comment r_remit_customer ^field f_remit_to_concatenated address ^comment m_invoice_hdr_box1 ^global f_trx_type invoice   now the weird party is if i move the new field in the .dat as below it fixes things and the everything lines up like it should do.   ^command jfpage_start ^undefine global:~^page 1 ^define global:sequence \pic"num999999",@d:numpagesprinted../\pic"num99",@$page../\pic"num99" ,@:jfpage_page_of.. ^define global:jfpage \pic"num99",@$page.. of \pic"num99",@:jfpage_page_of.. ^global email coll_tel_num~12345678~^reformat off ^global f_currency_code gbp     ^comment r_remit_customer ^field f_remit_to_concatenated address ^comment m_invoice_hdr_box1   ^field f_po_number   ^global f_trx_type invoice ^field f_trx_number i hoping someone might have an idea of why this is the case as i'm at a loss regarding why its happening.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5186474-5493864</DOCNO>
+<TEXT>
+<subject>Adding a new field and new data item breaks layout</subject>
+<post author="PVerdieck" timestamp="Jul 10, 2013 2:56 PM">
+<s>i may not hit on it exactly, but this sounds like adobe's processing order.</s><s> it wants to process the fields in the order they are in the dat file. 
+i have a similar problem with an overflow field, that isnt last in the dat file, read this here: 
+http://forums.adobe.com/message/2298283#2298283 
+now that may not be exactly your issue, but i think its the same inherent problem, adobes processing order for the fields/subforms. 
+i am still trying to resolve my issue, but found the ^field command in the reference manual (print agent), and am wondering if i can use it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5422385-1235718</DOCNO>
+<TEXT>
+<subject>Function delimiters?</subject>
+<post author="PVerdieck" timestamp="Jun 19, 2013 8:42 AM">
+<s>i am substringing a description field to print it on two lines, one above the other.</s><s> 99 times out of 100 the decription field wont exceed 62 chars, but when it does, i want to print the rest of it below the 1st portion. 
+@(substr("@_$_.",0,62)) @(substr("@_$_.",62,62)) 
+</s><s>the field in question is a text field.</s><s> it can have quotation marks in it, usually for describing a length. 
+</s><s>this results in garbage output like: 
+@(substr("mecmp25 25" small megaphone-navy", 0, 26) 
+</s><s>so the compiler is puking because of the extra " and just displaying everything.</s><s> wow.</s><s> this is like programming 101, being able to handle embedded quotes. :-( 
+
+</s><s>are there any other chars that can be used in a function?</s><s> it doesnt look like it, if designer accepts what i put there, i end up with garbage in the output, or rather the entire !</s><s>format event command and the text. 
+</s><s>if not (which i suspect), what options do i have?</s><s> i would think that an extra step to substring the field into 2 other fields would fail for the same reason? 
+</s><s>do i have to do something like left justify the top field, then right justify the bottom one, and make sure the field only displays 62 chars? 
+</s><s>is there a way to use masks here? 
+</s><s>is there another way to specify the global variable?</s><s> looking at the help, it looks like the substr() expects either the global variable in quotes, or a text value in quotes.</s><s> why it cant accept just the name of the variable/field/whatever like most programming languages seems limiting. 
+</s><s>is there a way to substitute/modifiy a char inside a global variable, the quotation marks, with special chars to allow processing.</s><s> like most other languages withere you can do '"' (surround the double quote with single) so the interpreter ignores it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5422385-5427347</DOCNO>
+<TEXT>
+<subject>Function delimiters?</subject>
+<post author="PVerdieck" timestamp="Jun 19, 2013 12:03 PM">
+<s>i just had another thought.</s><s> there may be another way to do this. 
+</s><s>as i said above, i have a large text field that is being printed on two lines, right above each other. 
+</s><s>is it possible to just increase (double) the height of the data field, and then have it "wrap" so that it will print out the rest of the text on the lower portion?</s><s> or does this just end up as wasted space given a font size that requires only half the height of the data field? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5388707-1227915</DOCNO>
+<TEXT>
+<subject>PDF vs Printer</subject>
+<post author="PVerdieck" timestamp="Jun 7, 2013 12:23 PM">
+<s>i have been reworking our purchase orders. 
+</s><s>the cycle was to modify the form in output designer 5.7, do a test presentment, and print from the test presentment.</s><s> rinse and repeat. 
+</s><s>once i had the document "finalized" i recompiled it for hp 4000 series, dropped the mds in the forms directory on our output server, then tossed some docs at it to see how it looked. 
+i am seeing big discrepancies between printing from the pdf preview and the output server printed version. 
+</s><s>when i switch back and for the the test presentment target, when i switch to the hp, i get a dark grey border about 2/10 of an inch around the document.</s><s> stuff in that "border" is cut off.</s><s> the same border doesnt exist when the test presetnment is for pdf, and it prints from the pdf view fine. 
+i ended up moving things around to get everything where i wanted it, and not cut off. 
+i also lost my color.</s><s> i have been printing to either an oce color printer or the laserjet. 
+i added a light blue box for some column headers and other things, it printed fine from the pdf view, either color on the color printer or grey on the laserjet. 
+</s><s>now when i set target to the hp, and use either printer, i only get solid black.</s><s> the greyscale is gone. 
+</s><s>any ideas here? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5388707-5399481</DOCNO>
+<TEXT>
+<subject>PDF vs Printer</subject>
+<post author="PVerdieck" timestamp="Jun 11, 2013 3:03 PM">
+<s>oops, it was me.</s><s> 
+</s><s>my bad.</s><s> 
+</s><s>the hp i was compiling for was under monochrome.</s><s> doh!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5359319-1221142</DOCNO>
+<TEXT>
+<subject>Error Message #100 Cannot open file</subject>
+<post author="jnixon78" timestamp="May 28, 2013 1:02 PM">
+<s>when double-clicking on an mdf file, i'm getting the following error: 
+cannot open file 'y:\shared\lending\cfp.ifd' 
+any idea what is causing this?</s><s> this cfp.ifd file isn't even the file i'm trying to open, and as far as i know it doesn't exist.</s><s> i'm able to open the mdf file with file>open with no errors. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5136545-1167912</DOCNO>
+<TEXT>
+<subject>How to handle Column with Adobe Output Designer 5.7 ??</subject>
+<post author="SylvainA" timestamp="Mar 10, 2013 9:37 AM">
+<s>hello, 
+</s><s>i have to handle lists of articles with 2 columns pages.</s><s> 1 article = 1 title + 1 text.</s><s> when the data has filled up column 1 on page 1, it will go to the top of column 2, on page 1.</s><s> when the fist page is filled then it goes to page2 column 1. 
+i tryed to modify the preamble but i 'm not able which is the best option : - group !</s><s>onoverflow - intelligent pagination commands : \position - group!onbof - group!onentry - group!onexit 
+it doesn't work !</s><s>!</s><s>!</s><s> 
+</s><s>could you help me ?</s><s>?</s><s> 
+</s><s>thanks in advance 
+</s><s>sylvain 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4921395-1115423</DOCNO>
+<TEXT>
+<subject>border around page messing up my ruler</subject>
+<post author="mick862" timestamp="Dec 14, 2012 8:44 AM">
+<s>hi, i'm trying to use the ruler for exact placement of fields on the screen so that they print in the exact location on the form.</s><s> i can't because there is some kind of border around the page that impacts my ruler measurements.</s><s> is there a way tell the ruler to ignore the border or get the rid of the border so that 1" from the left is really 1" from the left when it prints out.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4921395-5087707</DOCNO>
+<TEXT>
+<subject>border around page messing up my ruler</subject>
+<post author="Stale%20Sodal" timestamp="Feb 20, 2013 5:59 AM">
+<s>make sure you have defined your page the correct size (format->page).</s><s> the border you see is determined by your page size.</s><s> also make sure you have the 'snap-to-grid' measurement set as preferred (view->grid) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4912382-1113369</DOCNO>
+<TEXT>
+<subject>T&C on back of first page only on preprinted paper</subject>
+<post author="AndMah" timestamp="Dec 11, 2012 7:48 AM">
+<s>i have done some changes to the preamble and the ifd to achieve this, but now i still have the following problem. 
+</s><s>the first page prints with the header and details of an invoice.</s><s> the terms and conditions print on the backside of the first page. 
+</s><s>the logo on our pre-printed paper is nicely on the first page. 
+</s><s>when the second page is printed, the logo is on the back. 
+</s><s>here's a piece of my preamble : 
+^define group:pa2h_collilbl!onbof \groupnext. --> at the end of every group, the bottom of file group is started ^define group:jfenddata!enddata \groupnextend. --> after the laqt output, the bottom of file group is started ^define group:!onexit \groupnext. ^define group:nextend \grouptest@$page. --> group test + pagenumber is started ^define group:next \grouptest@$page\groupnewpage. --> group test + pagenumber is started and also group newpage ^define group:test1 \groupterms@lang. --> there is only a group test1 (for first page) and this starts t&c with language (global field in dat-file) ^define group:terms \$page1\page33. --> this will change the pagenumber to 1 again and then print page33 (t&c in english) ^define group:termsnl \$page1\page34. ^define group:termsfr \$page1\page35. ^define group:termsen \$page1\page36. ^define group:termsde \$page1\page37. ^define group:newpage \page1,"duplex off"\fieldnp. --> group newpage prints the header, set to simplex and starts on positioning field with the next fields 
+
+</s><s>greetings andy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4912382-4912385</DOCNO>
+<TEXT>
+<subject>T&C on back of first page only on preprinted paper</subject>
+<post author="AndMah" timestamp="Dec 11, 2012 7:52 AM">
+<s>as last line, i can change to 
+^define group:newpage \page2\page1,"duplex off"\fieldnp. 
+</s><s>but this doesn't work for me, the agent doesn't find my header anymore and just prints the data. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4912382-5087567</DOCNO>
+<TEXT>
+<subject>T&C on back of first page only on preprinted paper</subject>
+<post author="Stale%20Sodal" timestamp="Feb 20, 2013 4:29 AM">
+<s>you might want to try this method: 
+^define group:pa2h_collilbl!onbof \groupnext. ^define group:next @(if("@$page."=="1","groupterms","groupnewpage")). ^define group:terms \groupterms@lang\page1,"duplex off"\fieldnp. ^define group:newpage \page1..... 
+</s><s>as for your logo problem i can't understand why your logo should print on the back when you have preprinted stationary.</s><s> however if you have a logo placed on page1 i can understand why it will print on flip side.</s><s> if this is the issue then get rid of it.</s><s> you already have preprinted stationary. 
+</s><s>stale sodal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5071238-1153050</DOCNO>
+<TEXT>
+<subject>How to sort data in the .dat file?</subject>
+<post author="C@LA" timestamp="Feb 13, 2013 3:04 PM">
+<s>my company is using adobe output designer 5.7 runninng on window 2003 server.</s><s> the .dat file contains the information that is used to display on the adobe form.</s><s> the problem that i have is that on the .dat file the data is not in the right order.</s><s> the first line is always display at the end of file, therefore, this line number and its related data get displayed at the bottom of the adobe form instead of at the top.</s><s> what do i need to do in order for this file to display data in numerical order by the line number? 
+</s><s>here is my .dat file: 
+
+^job r_gl_bgaa -z32164_53033_bgaa_50_01763cfs3t02_1.pdf ^copies 1 ^comment ######## data object: bg_doc_hdr ######## ^field bg_doc_hdr__doc_dept_cd 50 ^field bg_doc_hdr__doc_id 01763cfs3t02 ^field bg_doc_hdr__doc_crea_usid 32551 ^field bg_doc_hdr__doc_crea_dt 2012-06-27 07:58:44.000000 ^field bg_doc_hdr__doc_last_dt 2012-06-29 10:29:05.000000 ^field bg_doc_hdr__doc_rec_dt_dc 2012-06-29 ^comment ######## data object: bg_doc_ln ######## ^field bg_doc_ln__doc_ln_ln_no 3 ^field bg_doc_ln__actn_cd 2 ^field bg_doc_ln__evnt_typ bg03 ^field bg_doc_ln__bfy 2008 ^field bg_doc_ln__fy 2012 ^field bg_doc_ln__per 12 ^field bg_doc_ln__fund_cd 298 ^field bg_doc_ln__dept_cd 50 ^field bg_doc_ln__appr_cd 50c530 ^field bg_doc_ln__bud_nm pab2-mtd construction (chiller ^field bg_doc_ln__incr_dcrs_ind 2 ^field bg_doc_ln__dscr fund swap 298-26n ^field bg_doc_ln__ln_am 412475.98 ^comment ######## data object: bg_doc_ln ######## ^field bg_doc_ln__doc_ln_ln_no 4 ^field bg_doc_ln__actn_cd 2 ^field bg_doc_ln__evnt_typ bg03 ^field bg_doc_ln__bfy 2008 ^field bg_doc_ln__fy 2012 ^field bg_doc_ln__per 12 ^field bg_doc_ln__fund_cd 298 ^field bg_doc_ln__dept_cd 50 ^field bg_doc_ln__appr_cd 50c53a ^field bg_doc_ln__bud_nm pab3-asp sprf construction ^field bg_doc_ln__incr_dcrs_ind 2 ^field bg_doc_ln__dscr fund swap 298-26n ^field bg_doc_ln__ln_am 11974066.90 ^comment ######## data object: bg_doc_ln ######## ^field bg_doc_ln__doc_ln_ln_no 5 ^field bg_doc_ln__actn_cd 2 ^field bg_doc_ln__evnt_typ bg03 ^field bg_doc_ln__bfy 2008 ^field bg_doc_ln__fy 2012 ^field bg_doc_ln__per 12 ^field bg_doc_ln__fund_cd 298 ^field bg_doc_ln__dept_cd 50 ^field bg_doc_ln__appr_cd 50c53m ^field bg_doc_ln__bud_nm pab2-mtd construction ^field bg_doc_ln__incr_dcrs_ind 2 ^field bg_doc_ln__dscr fund swap 298-26n ^field bg_doc_ln__ln_am 4850090.74 . . more lines . . ^comment ######## data object: bg_doc_ln ######## ^field bg_doc_ln__doc_ln_ln_no 2 ^field bg_doc_ln__actn_cd 2 ^field bg_doc_ln__evnt_typ bg03 ^field bg_doc_ln__bfy 2008 ^field bg_doc_ln__fy 2012 ^field bg_doc_ln__per 12 ^field bg_doc_ln__fund_cd 298 ^field bg_doc_ln__dept_cd 50 ^field bg_doc_ln__appr_cd 50c52d ^field bg_doc_ln__bud_nm pab4-data ctr design ^field bg_doc_ln__incr_dcrs_ind 2 ^field bg_doc_ln__dscr fund swap 298-26n ^field bg_doc_ln__ln_am 246624.12 ^comment ######## data object: bg_doc_alot ######## ^comment ######## data object: bg_doc_alot ######## ^comment ######## data object: bg_doc_alot ######## ^comment ######## data object: bg_doc_alot ######## ^comment ######## data object: bg_doc_alot ######## ^comment ######## data object: bg_doc_alot ######## ^comment ######## data object: bg_doc_alot ######## 
+
+
+
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-5071238-5087508</DOCNO>
+<TEXT>
+<subject>How to sort data in the .dat file?</subject>
+<post author="Stale%20Sodal" timestamp="Feb 20, 2013 3:34 AM">
+<s>hi as long as you don't have your ^field commands grouped inside a ^group the order in the .dat file is not important.</s><s> your last command ^field bg_doc_ln__ln_am 246624.12 should populate field bg_doc_ln_am wherever you place it on your form.</s><s> obviously you need to name the fields according to your ^field commands and not just use tab (move to next field).</s><s> shout if this was not what you are asking.</s><s> stale sodal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2040899-448439</DOCNO>
+<TEXT>
+<subject>JetForm Central Source Code</subject>
+<post author="CBHGpmlife" timestamp="Jun 15, 2009 12:22 PM">
+<s>is there a way to obtain the source code for jetform central version 5.7 for as400 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2040899-2042527</DOCNO>
+<TEXT>
+<subject>JetForm Central Source Code</subject>
+<post author="ChrisHicks" timestamp="Jun 16, 2009 5:21 AM">
+<s>the last version for the as400 was 5.5 and it ran under the pase environment.</s><s> the source code is not available. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2040899-4902209</DOCNO>
+<TEXT>
+<subject>JetForm Central Source Code</subject>
+<post author="Eclipse%20Corp" timestamp="Dec 6, 2012 12:45 PM">
+<s>are you still using jetform central for the as/400?</s><s> i was involved in the development of this product. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4880963-1106386</DOCNO>
+<TEXT>
+<subject>Manual/documentation output designer 5.7</subject>
+<post author="mick862" timestamp="Nov 28, 2012 10:11 AM">
+<s>hi, i am inheriting a tax application that has a ton of forms created/edited using output designer 5.7.</s><s> i understand there is help text, but is there a manual or some documentation that might be helpful to a new user? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4877293-1105657</DOCNO>
+<TEXT>
+<subject>$POSITION field prints a character on PDF output</subject>
+<post author="kd1707" timestamp="Nov 27, 2012 7:49 AM">
+<s>i have a $position field on jfmain page.</s><s> a subform on page2 is laid down at the $position field on jfmain.</s><s> target output is pdf only. $position field is formatted for no print, positioned at x=0.</s><s> when generating preview a $ appears on the left at the margin on the output pdf.</s><s> this also happens on one other template only a capital m prints instead of a $.</s><s> the same type subform is on many other templates and it does not occur on those templates.</s><s> any ideas on how to correct this are greatly appreciated. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4798345-1087897</DOCNO>
+<TEXT>
+<subject>How to calculate line amount?</subject>
+<post author="la_newbie" timestamp="Oct 24, 2012 3:54 PM">
+<s>i need help in calculating the amount column.</s><s> please advise and thank you in advanced! 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4774317-1082269</DOCNO>
+<TEXT>
+<subject>How to use many format data into a template?</subject>
+<post author="tlertthi" timestamp="Oct 15, 2012 1:57 AM">
+<s>how to design a template but it can interface from many format data? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4734673-1073633</DOCNO>
+<TEXT>
+<subject>Dynamic Form (subform to stop printing approx 5 cm from bottom of page)</subject>
+<post author="BBP3520" timestamp="Sep 28, 2012 6:05 AM">
+<s>i am creating a dynamic template in output designer.</s><s> i have subforms which are printing to the end of the page.</s><s> i would like to have the printing stop approximately 5 cm from the bottom of the page and continue on the next.</s><s> any help would be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4734673-4739507</DOCNO>
+<TEXT>
+<subject>Dynamic Form (subform to stop printing approx 5 cm from bottom of page)</subject>
+<post author="Stale%20Sodal" timestamp="Sep 30, 2012 11:22 PM">
+<s>hello this is the very basic of dynamic templates - you use events to control the page flow.</s><s> here you would use the !</s><s>onbof event (onbottomofform).</s><s> let's assume your subform contains a long number of item lines and you want to move to next page when there is only 5cm left of the page, then continue printing item lines.</s><s> here's the code you put in your preamble: 
+^define group:item \reserve"5.0",cm\fieldpos\subformitem. ^field itemline!onbof \page 1. 
+</s><s>in case you don't repeatably call group item like above but you have a subform that has a big field items that is being populated with lots of text you would need to size this field so it spands down to 5cm from bottom of page and then use the !</s><s>onoverflow event for this field to trigger a new page and continue: 
+^define group:item \fieldpos\subformitem. ^define group:items!onoverflow \page 1\subformitem\fielditems. 
+s sodal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4691697-1064553</DOCNO>
+<TEXT>
+<subject>output designer 5.5 and windows 7</subject>
+<post author="de1209" timestamp="Sep 11, 2012 6:34 PM">
+<s>hi all, 
+</s><s>we have upgraded our systems to windows 7 from xp, and i am able to open the .ifd without any issues. but when i am trying to compile the ifd it says "error while opening font idautomationc39s-w1" . 
+we are using idautomationc39s fonts for the barcodes on the notices. everything was working fine with xp. 
+i have copied idautomationc39sw1.pdt idautomationc39s.pdm files in to config folder, but is of no use.. 
+</s><s>any idea about this problem..</s><s>?</s><s> 
+</s><s>thanks in advance 
+</s><s>sri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4662153-1058318</DOCNO>
+<TEXT>
+<subject>Lexmark Optra T616 .ics file</subject>
+<post author="vykingzOR" timestamp="Aug 30, 2012 5:28 PM">
+<s>seems our .ifd files were saved and compiled for the printer mentioned in the subject.</s><s> the install from diskette does not have that jetform printer included. 
+</s><s>where would i find the .ics file for that printer?</s><s> do i have to make it by hand?</s><s> is there a way to generate the .ics file from the lexmark supplier printer driver? 
+thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4662153-4662608</DOCNO>
+<TEXT>
+<subject>Lexmark Optra T616 .ics file</subject>
+<post author="Stale%20Sodal" timestamp="Aug 30, 2012 11:36 PM">
+<s>hi, install the lexmark printer on the computer where you are running output designer and set it as your default printer, then choose windows printer as your presentment target 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4662153-4664552</DOCNO>
+<TEXT>
+<subject>Lexmark Optra T616 .ics file</subject>
+<post author="vykingzOR" timestamp="Aug 31, 2012 3:20 PM">
+<s>unfortunately i have printer macros i need to specify, and the ability to 'include soft fonts' at compile time.</s><s> these are only options when using jetforms print drivers, correct?</s><s> i am using jetform design 5.1, by the way. 
+</s><s>also, how do i convert fonts i need to have (micr for example) into the text-based formats (.l4, .pcl, etc) that it appears the .ics files need to 'see' them as? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4662153-4672300</DOCNO>
+<TEXT>
+<subject>Lexmark Optra T616 .ics file</subject>
+<post author="vykingzOR" timestamp="Sep 4, 2012 9:32 AM">
+<s>anyone?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4658857-1057647</DOCNO>
+<TEXT>
+<subject>Orphaned JetForm --HELP</subject>
+<post author="vykingzOR" timestamp="Aug 29, 2012 4:12 PM">
+<s>hi, 
+</s><s>we have a number of checks that use jetform 5.</s><s>?</s><s>?</s><s> .mdf files.</s><s> we are changing cfo's and the signature's on the checks need to change...by sep.</s><s> 7 2012.</s><s> 
+</s><s>there is no pc in our company with jetforms installed, and we do not know where the installation cd is. 
+</s><s>what do we do?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4658857-4660821</DOCNO>
+<TEXT>
+<subject>Orphaned JetForm --HELP</subject>
+<post author="vykingzOR" timestamp="Aug 30, 2012 10:10 AM">
+<s>perhaps someone here can answer this question. 
+</s><s>is 'adobe output designer' trully an upgraded and 'adobefied' version of the old jetforms software?</s><s> in other words, if we purchased a copy of 'adobe output designer' would we be able to make the .ifd file edits that we need, and compile new .mdf files, that will work as-if they were edited and compiled with the old jetform software? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4658857-4662152</DOCNO>
+<TEXT>
+<subject>Orphaned JetForm --HELP</subject>
+<post author="vykingzOR" timestamp="Aug 30, 2012 5:25 PM">
+<s>alrighty then...one of our network guys found the diskettes.</s><s> software installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-4658857-4662607</DOCNO>
+<TEXT>
+<subject>Orphaned JetForm --HELP</subject>
+<post author="Stale%20Sodal" timestamp="Aug 30, 2012 11:32 PM">
+<s>yes, it is the same software and works exactly the same way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2267559-496353</DOCNO>
+<TEXT>
+<subject>How to align fields, text, etc in a form to match a mockup.</subject>
+<post author="ofilha" timestamp="Sep 23, 2009 8:40 AM">
+<s>hello all, i am working with output designer and i am trying to align fields in a form i am working on to the mockup that is used as the model.</s><s> i tried to measure the distance between a field and a margin on the mockup and use the same measurements on my form, then i do a view and print the view.</s><s> what happens is that the alignment is way off.</s><s> i end up going and superimposing my form on the mockup against the light, and by trial and error i move my fields to the location i want, but i am finding myself doing this over and over and it is taking quite a bit of paper in order to get the fields aligned as the mockup. 
+i am wondering if anyone has any suggestions for dealing with this problem. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2267559-2267709</DOCNO>
+<TEXT>
+<subject>How to align fields, text, etc in a form to match a mockup.</subject>
+<post author="ChrisHicks" timestamp="Sep 23, 2009 9:09 AM">
+<s>there are several tools that can help you align objects.</s><s> the easiest is the "align area" tool.</s><s> select the objects that you want to align then go to "area" then "align area" and pick the alignment you want. 
+</s><s>if you are dealing with fields it will help if the fields all have the same justification (top left for example). 
+you can also scan in your model and bring it in as background so you can see what you're doing (see trace template under the tools menu). 
+</s><s>hope this helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2267559-2267696</DOCNO>
+<TEXT>
+<subject>How to align fields, text, etc in a form to match a mockup.</subject>
+<post author="ofilha" timestamp="Sep 23, 2009 9:23 AM">
+<s>thank you for the quick reply.</s><s> can you explain how i can scan the model and then bring it as a backgroun?</s><s> the model is in a pdf format.</s><s> i know that i can load up a pdf form and view it in an xdp format, but can i do the same thing with output designer. 
+i am looking at your other suggestions and thank you very much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2267559-2267698</DOCNO>
+<TEXT>
+<subject>How to align fields, text, etc in a form to match a mockup.</subject>
+<post author="ofilha" timestamp="Sep 23, 2009 9:26 AM">
+<s>i did not read your whole message.</s><s> i just saw the tools menu so i will give it a try on the scanning. 
+</s><s>thanks much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2267559-2270295</DOCNO>
+<TEXT>
+<subject>How to align fields, text, etc in a form to match a mockup.</subject>
+<post author="ofilha" timestamp="Sep 24, 2009 8:24 AM">
+<s>the model is a pdf file, when i try trace template, it asks for a tpl file, as default and i saw other choices.</s><s> what is the best extension to use when converting a pdf file?</s><s> and is there software that allows me to convert a pdf file to a tpl file? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-2267559-2270555</DOCNO>
+<TEXT>
+<subject>How to align fields, text, etc in a form to match a mockup.</subject>
+<post author="ChrisHicks" timestamp="Sep 24, 2009 9:50 AM">
+<s>the easiest thing to do would be to create a hard copy of the pdf then scan that image to create a jpg.</s><s> or you can use acrobat to convert the pdf to jpg. 
+</s><s>tpl is an outdated format so don't bother with it.</s><s> bring in a jpg.</s><s> 
+</s><s>cheers 
+chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-3766426-870580</DOCNO>
+<TEXT>
+<subject>Rightfax: Problem converting fax body or cover sheet</subject>
+<post author="Burger33" timestamp="Jun 28, 2011 1:45 AM">
+<s>we've been having this problem for a while where we cannot send pdf files via rightfax, it gives error saying "problem converting fax body or cover sheet". 
+</s><s>at first i thought it was something to do with the coversheet, but i've turned off that feature and so i've noticed it happens with both office 2007 files aswell as pdf's.</s><s> it doesn't, however, happen with .</s><s>txt files or .doc (office 2003 or earlier) files. 
+</s><s>i've tried changing the rightfax printer driver to something other than that of the pdf printer, for ex hp universal pcl 6, but it doesn't solve the problem. 
+</s><s>were currently using rightfax 9 and adobe reader 9.</s><s> i cannot find any support documents on the net whatsoever. 
+</s><s>does anyone know what the problem is or have any possible solutions for me please!</s><s>!</s><s>?</s><s>?</s><s> 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Output-Designer/Discussions-3766426-4034330</DOCNO>
+<TEXT>
+<subject>Rightfax: Problem converting fax body or cover sheet</subject>
+<post author="al90000" timestamp="Nov 18, 2011 7:31 AM">
+<s>hello, 
+</s><s>first of all, what rightfax version do you have ?</s><s> 9.3, 9.4 it's not the same.</s><s> 2nd what version of adobe standard did you install on the server ?</s><s> 3rd what version of win office did you installed on the server ?</s><s> 4th what is version of sql and windows server you are using ?</s><s> do you have hp laser4 print driver installed and a printer hp laser 4 installed ? 
+</s><s>last of all, i ask, but i suppose you do not have opentext support contract. 
+</s></post>
+</TEXT>
+</DOC>
+
+

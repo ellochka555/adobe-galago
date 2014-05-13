@@ -1,0 +1,788 @@
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6117577-1405910</DOCNO>
+<TEXT>
+<subject>PDF File with Run Length Encoding?</subject>
+<post author="tetleyforget" timestamp="Feb 13, 2014 9:29 AM">
+<s>would anyone have a pdf file containing text streams compressed in run-length encoding?</s><s> i need one to test a decompressor.</s><s> i know they are probably rare and not used anymore which is why one is so difficult to find. 
+</s><s>if you do have one could you attach it in a reply or refer me to it. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6117577-6213795</DOCNO>
+<TEXT>
+<subject>PDF File with Run Length Encoding?</subject>
+<post author="tetleyforget" timestamp="Mar 16, 2014 3:55 AM">
+<s>maybe someone can suggest how to find one of these?</s><s> is there some way of creating one with software? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6117577-6213872</DOCNO>
+<TEXT>
+<subject>PDF File with Run Length Encoding?</subject>
+<post author="Test%20Screen%20Name" timestamp="Mar 16, 2014 5:26 AM">
+<s>i think it's almost inconceivable anyone would have made one, except for a test, since run length applied to text streams would only ever make it bigger.</s><s> you might find it applied to images.</s><s> indeed acrobat distiller offers this as an option for compression of monochrome images.</s><s> you could also write an acrobat plug-in that compressed a text stream in this way.</s><s> both of course require purchase of adobe software, but our hosts probably wouldn't see that as a bad thing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6117577-1405910</DOCNO>
+<TEXT>
+<subject>PDF File with Run Length Encoding?</subject>
+<post author="tetleyforget" timestamp="Feb 13, 2014 9:29 AM">
+<s>would anyone have a pdf file containing text streams compressed in run-length encoding?</s><s> i need one to test a decompressor.</s><s> i know they are probably rare and not used anymore which is why one is so difficult to find. 
+</s><s>if you do have one could you attach it in a reply or refer me to it. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6117577-6213795</DOCNO>
+<TEXT>
+<subject>PDF File with Run Length Encoding?</subject>
+<post author="tetleyforget" timestamp="Mar 16, 2014 3:55 AM">
+<s>maybe someone can suggest how to find one of these?</s><s> is there some way of creating one with software? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6117577-6213872</DOCNO>
+<TEXT>
+<subject>PDF File with Run Length Encoding?</subject>
+<post author="Test%20Screen%20Name" timestamp="Mar 16, 2014 5:26 AM">
+<s>i think it's almost inconceivable anyone would have made one, except for a test, since run length applied to text streams would only ever make it bigger.</s><s> you might find it applied to images.</s><s> indeed acrobat distiller offers this as an option for compression of monochrome images.</s><s> you could also write an acrobat plug-in that compressed a text stream in this way.</s><s> both of course require purchase of adobe software, but our hosts probably wouldn't see that as a bad thing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6175708-1419907</DOCNO>
+<TEXT>
+<subject>Form field info not showing up, unless field is clicked? (again)</subject>
+<post author="bobhopfner" timestamp="Mar 3, 2014 2:39 PM">
+<s>we're using a pdf library called sync fusion to automate some fillable fields in a pdf but after the text has been placed it is not visible due to the form field high-lighting. 
+</s><s>so far we have tried the 3 things below but nothing has solved this issue. 
+changing the fore/background color of the fillable fields to selected colors disabling multiline fields applying "mac fix" scripts 
+anyone have any other ideas that might fix this?</s><s> we're going to try a different pdf library next. 
+thanks, bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6175708-6176014</DOCNO>
+<TEXT>
+<subject>Form field info not showing up, unless field is clicked? (again)</subject>
+<post author="khkremer" timestamp="Mar 3, 2014 3:31 PM">
+<s>could you provide a sample file? 
+</s><s>karl heinz kremer pdf acrobatics without a net pdf software development, training and more... http://www.khkonsulting.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6175708-6176020</DOCNO>
+<TEXT>
+<subject>Form field info not showing up, unless field is clicked? (again)</subject>
+<post author="lrosenth" timestamp="Mar 3, 2014 3:37 PM">
+<s>trying a different library is the correct option since this behavior only happens if the pdf filling process is invalid (aka doesn't follow the rules in the pdf standard) by not including an "appearance stream" for each field after filling. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6175708-1419907</DOCNO>
+<TEXT>
+<subject>Form field info not showing up, unless field is clicked? (again)</subject>
+<post author="bobhopfner" timestamp="Mar 3, 2014 2:39 PM">
+<s>we're using a pdf library called sync fusion to automate some fillable fields in a pdf but after the text has been placed it is not visible due to the form field high-lighting. 
+</s><s>so far we have tried the 3 things below but nothing has solved this issue. 
+changing the fore/background color of the fillable fields to selected colors disabling multiline fields applying "mac fix" scripts 
+anyone have any other ideas that might fix this?</s><s> we're going to try a different pdf library next. 
+thanks, bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6175708-6176014</DOCNO>
+<TEXT>
+<subject>Form field info not showing up, unless field is clicked? (again)</subject>
+<post author="khkremer" timestamp="Mar 3, 2014 3:31 PM">
+<s>could you provide a sample file? 
+</s><s>karl heinz kremer pdf acrobatics without a net pdf software development, training and more... http://www.khkonsulting.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6175708-6176020</DOCNO>
+<TEXT>
+<subject>Form field info not showing up, unless field is clicked? (again)</subject>
+<post author="lrosenth" timestamp="Mar 3, 2014 3:37 PM">
+<s>trying a different library is the correct option since this behavior only happens if the pdf filling process is invalid (aka doesn't follow the rules in the pdf standard) by not including an "appearance stream" for each field after filling. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-1412559</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 21, 2014 2:12 PM">
+<s>hi,   is it possible to use an indexed png's palette and accompanying transparency data to display a masked image?</s><s> i've seen enough evidence in other opensource pdf libraries  to suggest that it's possible, but am having trouble getting it working myself.   the indexed png's i've tested all contain an array of  palette data and an associated array of transparency values.   i'm able to successfully display the png in a pdf, when only using it's palette and excluding the transprancy.</s><s> the transparent parts of the image are displayed as black, as expected .</s><s> the outuput is,   17 0 obj <</type /xobject /subtype /image /width 16 /height 16 /colorspace [/indexed /devicergb 15 18 0 r] /bitspercomponent 4 /filter /flatedecode /decodeparms <</predictor 15 /colors 1 /bitspercomponent 4 /columns 16>> /length 155>> stream --------------- binary image data --------------- endstream endobj   18 0 obj << /length 48>> stream --------------- palette array values as binary --------------- endstream endobj     but as soon as i try an add the transparency array, nothing gets displayed and i get an error when opening the pdf that says 'an error exists on this page'.</s><s> the transparency values for the indexed image are as follows,   [255, 255, 192, 192, 160, 160, 128, 128, 96, 96, 64, 64, 32, 32, 0, 0]   i've followed the spec, 8.9.6.4 colour key masking, although i'm not sure if there should be a difference between 'min' and 'max' or whether it's just the same value duplicated?</s><s> from the logic i've seen in other pdf generation libraries, it appears to be the latter.   this is the non working output i get, when attempting to use the above array of transparency values as a mask,   17 0 obj <</type /xobject /subtype /image /width 16 /height 16 /colorspace [/indexed /devicergb 15 18 0 r] /bitspercomponent 4 /filter /flatedecode /decodeparms <</predictor 15 /colors 1 /bitspercomponent 4 /columns 16>> /mask [255 255 255 255 192 192 192 192 160 160 160 160 128 128 128 128 96 96 96 96 64 64 64 64 32 32 32 32 0 0 0 0 ] /length 155>> stream --------------- binary image data  --------------- endstream endobj   18 0 obj << /length 48>> stream --------------- palette array values as binary --------------- endstream endobj
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145092</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 21, 2014 2:58 PM">
+<s>i think you are making a step that the pdf reference doesn't say.</s><s> the colour mask values are in reference to values in the image colour space.</s><s> but the image colour space is indexed; you seem to be treating it as if its underlying colour space was the actual colour space, if i read the repetition correctly.</s><s> your values will need to be in the range of image colorants. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145261</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 21, 2014 3:15 PM">
+<s>thanks, but i'm not sure i understand.</s><s> do you have an example of what you mean?   i've followed through the logic of 3 seperate pdf libraries and all just strip the palette values and transparency values from a png's plte chunk and it's trns chunk and then apply them to the output to generate the pdf.   they all have the same logic to output the trns properties as a /mask property on the image object   var trns = '',   for (var i=0; i < img['trns'].length; i++)      trns += (img['trns'][i] + ' ' + img['trns'][i] + ' '); out('/mask [' + trns + ']');   which converts the input of,   [255, 255, 192, 192, 160, 160, 128, 128, 96, 96, 64, 64, 32, 32, 0, 0]   to the output of   /mask [255 255 255 255 192 192 192 192 160 160 160 160 128 128 128 128 96 96 96 96 64 64 64 64 32 32 32 32 0 0 0 0 ]
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145223</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 21, 2014 3:25 PM">
+<s>let's go back.</s><s> i'm not intimate with png.</s><s> you say the transparency values for this png image are [255, 255, 192, 192, 160, 160, 128, 128, 96, 96, 64, 64, 32, 32, 0, 0] but what does that actually mean?</s><s> how many values are there and how to read them? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145265</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 21, 2014 3:31 PM">
+<s>i appreciate your help, but if you don't understand png's, then you're probably not the best person to answer this question.</s><s> it would take a while for me to fully explain the png spec to you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145226</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 21, 2014 3:36 PM">
+<s>your choice.</s><s> but i don't need to understand png, only pdf.</s><s> you have to convert png -> understood concept -> pdf.</s><s> to start with i'd expect values in the range of 0 to 31, wouldn't you?</s><s> that's what 32000-1 says for bitspercomponent=4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6148131</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="lrosenth" timestamp="Feb 22, 2014 10:12 PM">
+<s>it's possible but it's not trivial, which is why most libraries just undo the palettization and use a full color image + mask. 
+</s><s>the reason for the complexity is due to the differences between the way png encodes the data vs. how pdf does it.</s><s> so you will need to do some fancy tricks to get the data converted.</s><s> and it's much easier (and faster) to just undo the palettes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6148375</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 23, 2014 3:35 AM">
+<s>great, thanks a lot.</s><s> i'd started to make inroads with this yesterday and slowly came to the same conclusion you've helpfully now confirmed! 
+i noticed yesterday that the majority of indexed png's i've come across usually only have an array of transparency values consisting of a single 0 with the rest being 255.</s><s> from looking at an existing pdf generator, i realised that when that's the case, you can just pass a single value (instead of the complete array) to add the /mask to an image.</s><s> with that value being the index of the position of the 0 within the png's transparency array.</s><s> this works fine for the majority of indexed pngs that i've tested, as most only elect a single (pixel) colour within their palette to represent a fully transparent pixel and the rest are fully opaque. 
+</s><s>so if the png's trn's values are as follows, 
+[255, 255, 255, 255, 255, 255, 0] 
+then the /mask would be set as 
+/mask [6, 6] 
+</s><s>after getting this to work, i'd started to think about how this might work with multiple values with varying transparency values.</s><s> but then realised that it would probably just be easier to unroll it and create an image and smask. 
+</s><s>out of interest, do you know where i might look to find an example or explanation of how to apply the non-trivial solution?</s><s> is there anything within the pdf reference? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6148557</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="lrosenth" timestamp="Feb 23, 2014 6:13 AM">
+<s>yes, that's a chroma-key mask (where you pick one color from the possible color set).</s><s> you could also do a regular stencil mask, but that's the hard one.</s><s> smask would be simpler since you could leave the palette in place but then make a full set in there - a definitely option if you are ok with adding transparency of that type to the document. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-1412559</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 21, 2014 2:12 PM">
+<s>hi,   is it possible to use an indexed png's palette and accompanying transparency data to display a masked image?</s><s> i've seen enough evidence in other opensource pdf libraries  to suggest that it's possible, but am having trouble getting it working myself.   the indexed png's i've tested all contain an array of  palette data and an associated array of transparency values.   i'm able to successfully display the png in a pdf, when only using it's palette and excluding the transprancy.</s><s> the transparent parts of the image are displayed as black, as expected .</s><s> the outuput is,   17 0 obj <</type /xobject /subtype /image /width 16 /height 16 /colorspace [/indexed /devicergb 15 18 0 r] /bitspercomponent 4 /filter /flatedecode /decodeparms <</predictor 15 /colors 1 /bitspercomponent 4 /columns 16>> /length 155>> stream --------------- binary image data --------------- endstream endobj   18 0 obj << /length 48>> stream --------------- palette array values as binary --------------- endstream endobj     but as soon as i try an add the transparency array, nothing gets displayed and i get an error when opening the pdf that says 'an error exists on this page'.</s><s> the transparency values for the indexed image are as follows,   [255, 255, 192, 192, 160, 160, 128, 128, 96, 96, 64, 64, 32, 32, 0, 0]   i've followed the spec, 8.9.6.4 colour key masking, although i'm not sure if there should be a difference between 'min' and 'max' or whether it's just the same value duplicated?</s><s> from the logic i've seen in other pdf generation libraries, it appears to be the latter.   this is the non working output i get, when attempting to use the above array of transparency values as a mask,   17 0 obj <</type /xobject /subtype /image /width 16 /height 16 /colorspace [/indexed /devicergb 15 18 0 r] /bitspercomponent 4 /filter /flatedecode /decodeparms <</predictor 15 /colors 1 /bitspercomponent 4 /columns 16>> /mask [255 255 255 255 192 192 192 192 160 160 160 160 128 128 128 128 96 96 96 96 64 64 64 64 32 32 32 32 0 0 0 0 ] /length 155>> stream --------------- binary image data  --------------- endstream endobj   18 0 obj << /length 48>> stream --------------- palette array values as binary --------------- endstream endobj
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145092</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 21, 2014 2:58 PM">
+<s>i think you are making a step that the pdf reference doesn't say.</s><s> the colour mask values are in reference to values in the image colour space.</s><s> but the image colour space is indexed; you seem to be treating it as if its underlying colour space was the actual colour space, if i read the repetition correctly.</s><s> your values will need to be in the range of image colorants. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145261</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 21, 2014 3:15 PM">
+<s>thanks, but i'm not sure i understand.</s><s> do you have an example of what you mean?   i've followed through the logic of 3 seperate pdf libraries and all just strip the palette values and transparency values from a png's plte chunk and it's trns chunk and then apply them to the output to generate the pdf.   they all have the same logic to output the trns properties as a /mask property on the image object   var trns = '',   for (var i=0; i < img['trns'].length; i++)      trns += (img['trns'][i] + ' ' + img['trns'][i] + ' '); out('/mask [' + trns + ']');   which converts the input of,   [255, 255, 192, 192, 160, 160, 128, 128, 96, 96, 64, 64, 32, 32, 0, 0]   to the output of   /mask [255 255 255 255 192 192 192 192 160 160 160 160 128 128 128 128 96 96 96 96 64 64 64 64 32 32 32 32 0 0 0 0 ]
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145223</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 21, 2014 3:25 PM">
+<s>let's go back.</s><s> i'm not intimate with png.</s><s> you say the transparency values for this png image are [255, 255, 192, 192, 160, 160, 128, 128, 96, 96, 64, 64, 32, 32, 0, 0] but what does that actually mean?</s><s> how many values are there and how to read them? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145265</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 21, 2014 3:31 PM">
+<s>i appreciate your help, but if you don't understand png's, then you're probably not the best person to answer this question.</s><s> it would take a while for me to fully explain the png spec to you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6145226</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 21, 2014 3:36 PM">
+<s>your choice.</s><s> but i don't need to understand png, only pdf.</s><s> you have to convert png -> understood concept -> pdf.</s><s> to start with i'd expect values in the range of 0 to 31, wouldn't you?</s><s> that's what 32000-1 says for bitspercomponent=4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6148131</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="lrosenth" timestamp="Feb 22, 2014 10:12 PM">
+<s>it's possible but it's not trivial, which is why most libraries just undo the palettization and use a full color image + mask. 
+</s><s>the reason for the complexity is due to the differences between the way png encodes the data vs. how pdf does it.</s><s> so you will need to do some fancy tricks to get the data converted.</s><s> and it's much easier (and faster) to just undo the palettes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6148375</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="nanoBarry" timestamp="Feb 23, 2014 3:35 AM">
+<s>great, thanks a lot.</s><s> i'd started to make inroads with this yesterday and slowly came to the same conclusion you've helpfully now confirmed! 
+i noticed yesterday that the majority of indexed png's i've come across usually only have an array of transparency values consisting of a single 0 with the rest being 255.</s><s> from looking at an existing pdf generator, i realised that when that's the case, you can just pass a single value (instead of the complete array) to add the /mask to an image.</s><s> with that value being the index of the position of the 0 within the png's transparency array.</s><s> this works fine for the majority of indexed pngs that i've tested, as most only elect a single (pixel) colour within their palette to represent a fully transparent pixel and the rest are fully opaque. 
+</s><s>so if the png's trn's values are as follows, 
+[255, 255, 255, 255, 255, 255, 0] 
+then the /mask would be set as 
+/mask [6, 6] 
+</s><s>after getting this to work, i'd started to think about how this might work with multiple values with varying transparency values.</s><s> but then realised that it would probably just be easier to unroll it and create an image and smask. 
+</s><s>out of interest, do you know where i might look to find an example or explanation of how to apply the non-trivial solution?</s><s> is there anything within the pdf reference? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6144954-6148557</DOCNO>
+<TEXT>
+<subject>Indexed png transparency using /Mask</subject>
+<post author="lrosenth" timestamp="Feb 23, 2014 6:13 AM">
+<s>yes, that's a chroma-key mask (where you pick one color from the possible color set).</s><s> you could also do a regular stencil mask, but that's the hard one.</s><s> smask would be simpler since you could leave the palette in place but then make a full set in there - a definitely option if you are ok with adding transparency of that type to the document. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-1402569</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 12:46 AM">
+<s>i extracted font form pdf(arabic text) and after i opened this font i found that there are some characters hasn't corresponding unicode although the other has!</s><s> i ask about why these characters hasn't corresponding unicode such as remaining characters?</s><s> and how pdf read these characters and display it in its file although it has't unicode?</s><s> because i can't get these characters outside pdf!</s><s>.</s><s> 
+</s><s>this image show part of font i extracted has characters with no unicode(question mark instead). 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104396</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 12:53 AM">
+<s>acrobat does not use unicode to show the characters in a pdf, so this will always work.</s><s> unicode is a layer added during text extraction, and sometimes this will fail, either because there is no mapping defined in the pdf, or because the characters have no unicode range. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104485</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 1:32 AM">
+<s>thanks for your reply, you told me that the acrobat do not use unicode to show the text,is this mean that the acrobat ignore the embeded fonts during the show text process?, if this is true so what is the use of the fonts inside the pdf. thanks in advance ,,,,,,,,,,, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104467</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 1:43 AM">
+<s>no, acrobat uses the embedded fonts.</s><s> you can clearly see this on screen by using unusual fonts. 
+</s><s>unicode is not used, and not needed, to show embedded fonts on screen.</s><s> either encoding or cmap are used to directly find characters in the font.</s><s> the pdf specification has full details. . 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104581</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 2:05 AM">
+<s>ok, now character has no unicode inside pdf or inside font(as shown in image), how can i get this character outside the pdf? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104587</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 2:23 AM">
+<s>you cannot.</s><s> probably.</s><s> many pdf files do not permit accurate text extraction. 
+a simple test is to see if acrobat can extract text accurately.</s><s> acrobat has 20 years of development in this area, so if it cannot get the text, it is probably the case that you cannot either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104718</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 3:10 AM">
+<s>how can i test that acrobat extract text accurately or not? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104720</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 3:15 AM">
+<s>1. extract text using acrobat 2. look at it or analyse it.</s><s> sorry, i know that seems an unhelpful answer but i don't understand what else you can mean. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104725</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 3:24 AM">
+<s>never mind, is it free operation? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104774</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 3:34 AM">
+<s>no, acrobat is not free, but you can do the same test with the free adobe reader, using copy/paste to extract text. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-1402569</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 12:46 AM">
+<s>i extracted font form pdf(arabic text) and after i opened this font i found that there are some characters hasn't corresponding unicode although the other has!</s><s> i ask about why these characters hasn't corresponding unicode such as remaining characters?</s><s> and how pdf read these characters and display it in its file although it has't unicode?</s><s> because i can't get these characters outside pdf!</s><s>.</s><s> 
+</s><s>this image show part of font i extracted has characters with no unicode(question mark instead). 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104396</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 12:53 AM">
+<s>acrobat does not use unicode to show the characters in a pdf, so this will always work.</s><s> unicode is a layer added during text extraction, and sometimes this will fail, either because there is no mapping defined in the pdf, or because the characters have no unicode range. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104485</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 1:32 AM">
+<s>thanks for your reply, you told me that the acrobat do not use unicode to show the text,is this mean that the acrobat ignore the embeded fonts during the show text process?, if this is true so what is the use of the fonts inside the pdf. thanks in advance ,,,,,,,,,,, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104467</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 1:43 AM">
+<s>no, acrobat uses the embedded fonts.</s><s> you can clearly see this on screen by using unusual fonts. 
+</s><s>unicode is not used, and not needed, to show embedded fonts on screen.</s><s> either encoding or cmap are used to directly find characters in the font.</s><s> the pdf specification has full details. . 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104581</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 2:05 AM">
+<s>ok, now character has no unicode inside pdf or inside font(as shown in image), how can i get this character outside the pdf? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104587</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 2:23 AM">
+<s>you cannot.</s><s> probably.</s><s> many pdf files do not permit accurate text extraction. 
+a simple test is to see if acrobat can extract text accurately.</s><s> acrobat has 20 years of development in this area, so if it cannot get the text, it is probably the case that you cannot either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104718</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 3:10 AM">
+<s>how can i test that acrobat extract text accurately or not? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104720</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 3:15 AM">
+<s>1. extract text using acrobat 2. look at it or analyse it.</s><s> sorry, i know that seems an unhelpful answer but i don't understand what else you can mean. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104725</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="baccah" timestamp="Feb 10, 2014 3:24 AM">
+<s>never mind, is it free operation? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6104436-6104774</DOCNO>
+<TEXT>
+<subject>Some characters extracted from pdf hasn't corresponding unicode in its font</subject>
+<post author="Test%20Screen%20Name" timestamp="Feb 10, 2014 3:34 AM">
+<s>no, acrobat is not free, but you can do the same test with the free adobe reader, using copy/paste to extract text. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-1392866</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="bobhopfner" timestamp="Jan 29, 2014 10:06 AM">
+<s>we're building a pre-flight tool to check page orientation and auto-rotate to consistantly build right reading books whether or not the page is landscape or portait but we're coming up with pdfs with mediabox[0 -612 792 0] and getting page height = 0 and then the tool fails.</s><s> we don't seem to be able to fix this programmatically. /rotate = 0.</s><s> most of these pdfs are 1.6 but it was noticed that in pdf version 1.6 there is no mediabox and instead just has /bbox.</s><s> is there some significance to this?</s><s> there doesn't seem to be a /rotate either.</s><s> i believe these pdfs are created programattically via some api rather than through indesign or distiller.</s><s> we're trying to find a consistent way of determinig page size to do our calculations and/or be able to repair a pdf prior manipulation. 
+</s><s>any ideas how we should go about this?</s><s> we are using a 3rd party api to do the work but this seems an issue with the actual pdf vs. the api, at least at this point. 
+thanks, bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6065656</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="olafdruemmer" timestamp="Jan 29, 2014 10:19 AM">
+<s>i can't see the problem... 
+</s><s>the mediabox' lower left corner is at 0 / -692, and the upper right is at 792 / 0 - in other words the page is 792 units wide and 692 units high. 
+</s><s>make sure you never assume that the origin of the mediabox is at 0 / 0 - it can be anywhere on teh coordinate system. 
+</s><s>for example, if you had a mediabox of 
+[-20792 -10692 -20000 -10000] 
+its size would still be 792 by 692. 
+</s><s>olaf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6066112</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="bobhopfner" timestamp="Jan 29, 2014 12:08 PM">
+<s>like i said before it's an orientation problem.</s><s> i am working with my developer to clarify but the gist is that he can pull in the orientation but that value is inconsistent - doesn't always jive with the page dimensions so that was why he went to look at page size and dimensions where "width being greater than height equals landscape" but apparently that is also inconsistent as page height is zero at times.</s><s> he's using a pdf library from syncfusion but he doesn't feel it's an issue with that api, but it could be.</s><s> we feel like we are looking for a needle in a haystack.</s><s> too many unknowns to solve for x. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6066220</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="olafdruemmer" timestamp="Jan 29, 2014 12:41 PM">
+<s>but your example does not have a page height of zero...</s><s> i must be missing something here. 
+</s><s>please make sure you understand the meainign of the values in a mediabox array correctly: it does not directly contain width or hight, just four values representing the coordinates of the lower left and upper right corners.</s><s> the width or height has to be computed by subtracting the appropriate values from each other. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067309</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="lrosenth" timestamp="Jan 29, 2014 5:40 PM">
+<s>in addition to the excellent comments from olaf - have you opened that pdf up in adobe reader (or some other pdf viewer) and seen what the page size is shown there.</s><s> seems to me that the values you are getting back this 3rd party library (that no one has ever heard of!</s><s>) is incorrect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067448</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="bobhopfner" timestamp="Jan 29, 2014 6:41 PM">
+<s>thanks, yes, i forgot that point that acrobat pro does in fact presesent a page size in either properties or the simple rollover in the corner.</s><s> it's got to be in there somewhere!</s><s> so then your statement begs a question: what is a good 3rd party library?</s><s> thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067597</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="lrosenth" timestamp="Jan 29, 2014 8:58 PM">
+<s>adobe offers its pdflibrary for license from datalogics.</s><s> of course that may too much for your needs (which we don't know anything about). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067932</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="Test%20Screen%20Name" timestamp="Jan 30, 2014 12:33 AM">
+<s>the page size presented by acrobat will derived from exactly four fields: 
+mediabox cropbox rotate userunits 
+you state that some pdfs do not have mediabox but that would be absolutely wrong.</s><s> it is always required (the others are optional).</s><s> it may not be present in the page object, however, because it may be inherited.</s><s> not all libraries will report that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-1392866</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="bobhopfner" timestamp="Jan 29, 2014 10:06 AM">
+<s>we're building a pre-flight tool to check page orientation and auto-rotate to consistantly build right reading books whether or not the page is landscape or portait but we're coming up with pdfs with mediabox[0 -612 792 0] and getting page height = 0 and then the tool fails.</s><s> we don't seem to be able to fix this programmatically. /rotate = 0.</s><s> most of these pdfs are 1.6 but it was noticed that in pdf version 1.6 there is no mediabox and instead just has /bbox.</s><s> is there some significance to this?</s><s> there doesn't seem to be a /rotate either.</s><s> i believe these pdfs are created programattically via some api rather than through indesign or distiller.</s><s> we're trying to find a consistent way of determinig page size to do our calculations and/or be able to repair a pdf prior manipulation. 
+</s><s>any ideas how we should go about this?</s><s> we are using a 3rd party api to do the work but this seems an issue with the actual pdf vs. the api, at least at this point. 
+thanks, bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6065656</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="olafdruemmer" timestamp="Jan 29, 2014 10:19 AM">
+<s>i can't see the problem... 
+</s><s>the mediabox' lower left corner is at 0 / -692, and the upper right is at 792 / 0 - in other words the page is 792 units wide and 692 units high. 
+</s><s>make sure you never assume that the origin of the mediabox is at 0 / 0 - it can be anywhere on teh coordinate system. 
+</s><s>for example, if you had a mediabox of 
+[-20792 -10692 -20000 -10000] 
+its size would still be 792 by 692. 
+</s><s>olaf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6066112</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="bobhopfner" timestamp="Jan 29, 2014 12:08 PM">
+<s>like i said before it's an orientation problem.</s><s> i am working with my developer to clarify but the gist is that he can pull in the orientation but that value is inconsistent - doesn't always jive with the page dimensions so that was why he went to look at page size and dimensions where "width being greater than height equals landscape" but apparently that is also inconsistent as page height is zero at times.</s><s> he's using a pdf library from syncfusion but he doesn't feel it's an issue with that api, but it could be.</s><s> we feel like we are looking for a needle in a haystack.</s><s> too many unknowns to solve for x. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6066220</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="olafdruemmer" timestamp="Jan 29, 2014 12:41 PM">
+<s>but your example does not have a page height of zero...</s><s> i must be missing something here. 
+</s><s>please make sure you understand the meainign of the values in a mediabox array correctly: it does not directly contain width or hight, just four values representing the coordinates of the lower left and upper right corners.</s><s> the width or height has to be computed by subtracting the appropriate values from each other. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067309</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="lrosenth" timestamp="Jan 29, 2014 5:40 PM">
+<s>in addition to the excellent comments from olaf - have you opened that pdf up in adobe reader (or some other pdf viewer) and seen what the page size is shown there.</s><s> seems to me that the values you are getting back this 3rd party library (that no one has ever heard of!</s><s>) is incorrect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067448</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="bobhopfner" timestamp="Jan 29, 2014 6:41 PM">
+<s>thanks, yes, i forgot that point that acrobat pro does in fact presesent a page size in either properties or the simple rollover in the corner.</s><s> it's got to be in there somewhere!</s><s> so then your statement begs a question: what is a good 3rd party library?</s><s> thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067597</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="lrosenth" timestamp="Jan 29, 2014 8:58 PM">
+<s>adobe offers its pdflibrary for license from datalogics.</s><s> of course that may too much for your needs (which we don't know anything about). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/PDF-Language-and-Specifications/Discussions-6065503-6067932</DOCNO>
+<TEXT>
+<subject>page height is zero</subject>
+<post author="Test%20Screen%20Name" timestamp="Jan 30, 2014 12:33 AM">
+<s>the page size presented by acrobat will derived from exactly four fields: 
+mediabox cropbox rotate userunits 
+you state that some pdfs do not have mediabox but that would be absolutely wrong.</s><s> it is always required (the others are optional).</s><s> it may not be present in the page object, however, because it may be inherited.</s><s> not all libraries will report that. 
+</s></post>
+</TEXT>
+</DOC>
+
+

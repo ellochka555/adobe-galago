@@ -1,0 +1,2012 @@
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6196534-1424920</DOCNO>
+<TEXT>
+<subject>Undo Buffer Issue</subject>
+<post author="shawnmvh5" timestamp="Mar 10, 2014 12:26 PM">
+<s>i have the thunder beta installed as a standalone installation.</s><s> i have also found this bug with thunder installed as a plugin to eclipse 
+since using thunder, i have noticed that my undo buffer is not working correctly.</s><s> i get around 25-30 undos before eclipse will no longer undo anything further.</s><s> the undo history size setting defaults to something like 200 and i have tried upping it to 1000 to see if it helped. 
+</s><s>it doesn't seem to matter what i do, but i can only undo 25 or so actions before i can not undo anything. 
+</s><s>this happens with imported projects as well as new ones.</s><s> existing cfml/cfc files as well as newly created ones. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6196534-6196646</DOCNO>
+<TEXT>
+<subject>Undo Buffer Issue</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 10, 2014 12:43 PM">
+<s>report this in the adobe bug tracker: https://bugbase.adobe.com/ so that the coldfusion/coldfusion builder team can tackle it. -carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6196534-6196864</DOCNO>
+<TEXT>
+<subject>Undo Buffer Issue</subject>
+<post author="shawnmvh5" timestamp="Mar 10, 2014 1:16 PM">
+<s>done, thank you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6196534-1424920</DOCNO>
+<TEXT>
+<subject>Undo Buffer Issue</subject>
+<post author="shawnmvh5" timestamp="Mar 10, 2014 12:26 PM">
+<s>i have the thunder beta installed as a standalone installation.</s><s> i have also found this bug with thunder installed as a plugin to eclipse 
+since using thunder, i have noticed that my undo buffer is not working correctly.</s><s> i get around 25-30 undos before eclipse will no longer undo anything further.</s><s> the undo history size setting defaults to something like 200 and i have tried upping it to 1000 to see if it helped. 
+</s><s>it doesn't seem to matter what i do, but i can only undo 25 or so actions before i can not undo anything. 
+</s><s>this happens with imported projects as well as new ones.</s><s> existing cfml/cfc files as well as newly created ones. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6196534-6196646</DOCNO>
+<TEXT>
+<subject>Undo Buffer Issue</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 10, 2014 12:43 PM">
+<s>report this in the adobe bug tracker: https://bugbase.adobe.com/ so that the coldfusion/coldfusion builder team can tackle it. -carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6196534-6196864</DOCNO>
+<TEXT>
+<subject>Undo Buffer Issue</subject>
+<post author="shawnmvh5" timestamp="Mar 10, 2014 1:16 PM">
+<s>done, thank you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6174827-1419697</DOCNO>
+<TEXT>
+<subject>Synchronization via FTP</subject>
+<post author="ccsimmons" timestamp="Mar 3, 2014 10:06 AM">
+<s>is cfbuilder dropping ftp synchronization, or is it just not part of thunder yet?</s><s> or should i install some 3rd party plugin.</s><s> yes i know ftp synchronization is old school. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6174827-1419697</DOCNO>
+<TEXT>
+<subject>Synchronization via FTP</subject>
+<post author="ccsimmons" timestamp="Mar 3, 2014 10:06 AM">
+<s>is cfbuilder dropping ftp synchronization, or is it just not part of thunder yet?</s><s> or should i install some 3rd party plugin.</s><s> yes i know ftp synchronization is old school. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6167881-1417936</DOCNO>
+<TEXT>
+<subject>Thunder Beta syntax error on transaction {}</subject>
+<post author="Aquitaine" timestamp="Feb 28, 2014 1:23 PM">
+<s>there doesn't appear to be a separate beta forum, so i'm reporting this here. 
+</s><s>testing the thunder beta, it reports the following as a syntax error: 
+
+if (thing) { transaction { dostuff; entitysave(item); } } 
+</s><s>it reports 'return statement in function' for pretty much all our cfscript transaction statements. 
+</s><s>this is the standalone install.</s><s> i haven't been able to get the eclipse plugin install working yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6167881-6167984</DOCNO>
+<TEXT>
+<subject>Thunder Beta syntax error on transaction {}</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Feb 28, 2014 1:36 PM">
+<s>you can report bugs for coldfusion builder 3 on the adobe bug tracker. -carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6167881-1417936</DOCNO>
+<TEXT>
+<subject>Thunder Beta syntax error on transaction {}</subject>
+<post author="Aquitaine" timestamp="Feb 28, 2014 1:23 PM">
+<s>there doesn't appear to be a separate beta forum, so i'm reporting this here. 
+</s><s>testing the thunder beta, it reports the following as a syntax error: 
+
+if (thing) { transaction { dostuff; entitysave(item); } } 
+</s><s>it reports 'return statement in function' for pretty much all our cfscript transaction statements. 
+</s><s>this is the standalone install.</s><s> i haven't been able to get the eclipse plugin install working yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6167881-6167984</DOCNO>
+<TEXT>
+<subject>Thunder Beta syntax error on transaction {}</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Feb 28, 2014 1:36 PM">
+<s>you can report bugs for coldfusion builder 3 on the adobe bug tracker. -carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-1184195</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 3, 2013 1:55 PM">
+<s>this is an old issue that still has not been resolved 
+when closing a file on cf builder 2 it takes a long time for the file to close.</s><s> this used to happen on windows xp.</s><s> i have a new pc with windows 7 and reinstalled cf builder 2 but the issue closing the file continues.</s><s> i have to do the following for that to stop. 
+</s><s>closed cf builder renamed the file workspace\.metadata\.plugins\com.adobe.ide.editor.cfml\foldings\foldings.data started cf builder 
+however, after few hours cf builder 2 becomes slow again when closing the files. 
+</s><s>is there any fix for this issue other than the temporary solution above? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5216850</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 8, 2013 11:11 AM">
+<s>while i have no fix, i have a suggestion: if you open the progress view (window>show view>other>progress), watch that while experiencing this "long time to close", and you may get some insight into what's amiss.</s><s> obviously, it's not supposed to take a long time; conversely, i've not heard this as being a common problem, so it's indeed odd that you experience it on 2 machines. 
+</s><s>here's another variable to consider: is this file on a network share or anything other than a local file?</s><s> is it connected to source control?</s><s> is there any other factor in your setup that may differ from others (extra plugins you've added, etc.</s><s>)?</s><s> and what about the code in the cfml itself: does it have lots of dependencies on other files, perhaps (lots of includes, or cfc calls, etc.</s><s>)?</s><s> while that should not hamper the speed of closing the file, i'm just throwing out all i can think of that might have some impact. 
+</s><s>it's indeed a shame when someone has an experience with cfb that leads them to think it's broken.</s><s> the challenge is in finding out exactly what is amiss.</s><s> it's not always that obvious. 
+
+
+/charlie 
+ps also, what about the cfbuilder/eclipse log, availble via the "about" menu?</s><s> that may give you some insight.</s><s> you can view it from, in windows, help>product details>configuration details>view error log, and on osx it's adobe coldfusion builder>about adobe coldfusion builder>configuration details>view error log. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5217070</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 8, 2013 12:23 PM">
+<s>thanks for the reply charlie. 
+</s><s>when i go to window>show view>other> there is no progress 
+it takes long to close a file no matter whether is on the network or in my local hard drive.</s><s> i have the network files on source control (vss plugin), which i thought this could be the problem, but even if the file is not in the source control it is slow closing it.</s><s> also even if the file contains code snippets is still slow closing.</s><s> the vss plugin was the only plugin i added, everything else came with the installation. 
+i looked at the log files and could not find anything that could be related to. 
+</s><s>this is still a mistery to me. 
+i had to unistall cfbuilder 2.0.0 and install the cfbuilder 2.0.1.</s><s> initially the files were closing fast but after few hours they got slow again taking about 6 seconds to close each file.</s><s> every time i delete the foldings.data file and a new one is created the files close fast, but it seems that something start building up that within few hours they again take a lot of time to close. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5232959</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 13, 2013 7:01 PM">
+<s>ah, my bad.</s><s> i was mistaken: it's not under "other" but rather under "general". 
+</s><s>but in the vein of "teaching one to fish", did you know that typing the word "progress" (without quotes) in that filter text prompt at the top of the list of views (as shown in your screenshot) would have found it for you?</s><s> that's how you can find something in cfb that you can't otherwise locate on your own. 
+</s><s>as for the growing foldings.data file, that may be an interesting clue.</s><s> have you opened that file with an editor or text file viewer?</s><s> it's got some binary data, but it may be interesting still to look at.</s><s> i just looked at mine, and it's got about 8 lines of data (and the file size is just a couple of k).</s><s> how large is yours (in lines and bytes)?</s><s> in mine i can see references to files (some currently open, others that i've long ago closed). 
+btw, while the filename "foldings.data" might suggest that this is related to the code folding feature in cfb, i confirmed that at least for one of the files listed in there, i saw no code folding in effect.</s><s> maybe someone else will know more. 
+</s><s>one other thought: when you say that it's initially faster and grows slower, are you talking over a single cfbuilder session?</s><s> if so, i wonder if you closed and reopened it, if it would also start over being "faster".</s><s> if so, then i would wonder if you may be running out of memory.</s><s> the default heap size is pretty small.</s><s> for more on changing it, see this older entry (seems adam's site is no more, so here's a tinyurl link to an archive.org copy of the page: http://tinyurl.com/ca5jwan). 
+</s><s>finally, related to that, you can also watch the heap use from within cfb via window>preferences>general>show heap status, which shows a progress bar of memory usage (and offers a widget to try a garbage collection as well). 
+</s><s>hope that helps. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5237219</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 15, 2013 12:21 PM">
+<s>charlie, thanks for your time and information responding to this issue.</s><s> they were helpful to track down what the problem is. 
+</s><s>based on the information you gave me above i noticed the following. 
+</s><s>under the progress view what i see when closing a file are messages related to building workspace as the picture below shows. 
+
+</s><s>as for folding.data file, i followed your advice and opened in a text editor.</s><s> the file content has, like you said, some binary data, but also contains the strings "file:" followed by the full path for the files that i closed.</s><s> i looked at the size of it and it was 11k with about 11 lines.</s><s> then i started to open and close some file and noticed that cfbuilder was writing the names of all the files i close to the folding.data file, which increased the file size.</s><s> now the file has 14 lines and 14k.</s><s> the previous folding.data files had size varying from 38k to 87k.</s><s> i also note that the cfbuilder was not appending the most recent files to folding.data as the path for the most recent closed files were in the middle of the file content.</s><s> it seems that cfbuilder was not only updating but re-creating the file with the previous content and the string with the new file path in a random fashion. 
+</s><s>when i said that the closing of the files is initially faster and then gets slower, i meant to say that is faster when i delete the folding.data file and cfbuilder creates a new one.</s><s> as cfbuilder starts updating the folding.data file it gets slower.</s><s> after that it continues slow even in between cfbuilder sessions.so i think that might be a threshold related to the file size that makes the process of closing files slow.</s><s> i don't think the problem is related to memory as i already had the show heap status view on display and even when there is not much use of memory closing the file is still slow. 
+</s><s>at this point what it looks like is that the process of closing a file inside cfbuilder updates the folding.data file and when that file reaches a particular size, it takes some time to actually close the file as if cfbuilder was waiting for the folding.data file to be updated.</s><s> what intrigues me is the fact that this behavior happened in w different pc's so it has to be something related to the setting of cfbulder in handling the closing of files. 
+i was wondering if there is some sort of setting related to closing files in cfbuilder. 
+</s><s>once again, thank you very much for your responses. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5237714</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 15, 2013 3:07 PM">
+<s>glad to hear that the info helped.</s><s> and yes, that info on the files is what i meant, when i said, "i can see references to files (some currently open, others that i've long ago closed)." 
+</s><s>so as for the size, i would say that these file sizes you are mentioning seem too small to be significant, but who knows.</s><s> here's a potentially interesting question: where are the files (the foldings.data file), relative to cfb?</s><s> are they in a folder on the same drive as cfb?</s><s> in another location, like a network drive, or a mapped drive that may be on the network? 
+</s><s>also, you mention the build workspace info in the progress view.</s><s> that's just the sort of thing i was talking about might explain what was amiss. 
+</s><s>related to that, you ask about features which may affect file closing, but while there is in fact a setting that affects startup and that building of workspaces (preferences>coldfusion>server settings), none of them are related to file closing. 
+i hope that perhaps someone from adobe will pick up on this and offer you more info, either based on something they may know, or other diagnostics you can undertake. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5239420</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 16, 2013 6:34 AM">
+<s>the foldings.data file is on the network on a network drive.</s><s> i have the workspace setup on the network on a mapped drive. 
+</s><s>however, if i open a file (not in a project) using the file view that is my local pc, closing that file also is slow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5244194</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 17, 2013 9:58 AM">
+<s>sure, but i wonder if your doing that could still be stored in that foldings.data on the network. 
+</s><s>try opening a new workspace, whose location is not on the network.</s><s> see if that may not make a difference.</s><s> (for most cf devs, the workspace location is not really important to how they code, so it should not hurt other than that you will lose any config settings you made.</s><s> but you can always open the original workspace to get back to that point if you prefer.</s><s>) 
+
+
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5451917</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="doncx" timestamp="Jun 26, 2013 8:36 AM">
+<s>i'm experiencing this exact problem in an evaluation version of cfb2. 
+</s><s>my workspace is indeed on a mapped network drive and that is where is should stay.</s><s> i develop against an in-house windows server. 
+</s><s>i've been using cfeclipse for years (and really like it) but am evaluating cfb2 due to non-support of that project. 
+</s><s>cfeclipse closes file in less than a heartbeat. 
+</s><s>in cfb2 it takes *forever*.</s><s> not good! 
+</s><s>there must be a fix! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5905349</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="SigmaProjects" timestamp="Dec 5, 2013 5:09 PM">
+<s>(not directly in reply to charlie, but apparenly you can't reply to the thread, it has to be to a person) 
+</s><s>this is a really annoying problem.</s><s> it only takes a few hours until closing a file takes more then a few seconds, it's very irritating.</s><s> yes, most of the time the projects are on a network drive but it should not take this long to close a file, but i could understand if it did for opening.</s><s> funny side note: it's actually faster to open files than close them. 
+</s><s>fix this in your next release adobe... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-6164227</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="mgw4jc" timestamp="Feb 27, 2014 1:12 PM">
+<s>i found this thread after experiencing the slow file closing issue at a new job where the website files are all stored on a network drive.</s><s> i realized that the workspace files are also stored on a network drive.</s><s> i'm in a windows environment where the user's files are stored on a server.</s><s> so when i installed cf builder 2, it automatically put the workspace directory in my user's directory which is on the server. 
+</s><s>after reading this thread i decided to try moving the workspace to my local c: drive.</s><s> i closed all projects and then went into windows - preferences and filtered on "works".</s><s> under startup and shutdown there is a workspace setting: "prompt for workspace on startup".</s><s> this was unchecked because i had previously told cf builder to just always use the default.</s><s> i then closed cf builder. 
+i copied the adobe coldfusion builder workspace directory from the server share to a new directory on my c: drive.</s><s> then i restarted cf builder.</s><s> it prompted for the workspace where i browsed for the new directory and again checked the "use this as default...". 
+</s><s>so far the file closing slowness has gone away.</s><s> other things such as opening and closing projects, refreshing files in a project and searching across many files seems faster.</s><s> i know this is an old thread, but perhaps it will help someone. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-1184195</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 3, 2013 1:55 PM">
+<s>this is an old issue that still has not been resolved 
+when closing a file on cf builder 2 it takes a long time for the file to close.</s><s> this used to happen on windows xp.</s><s> i have a new pc with windows 7 and reinstalled cf builder 2 but the issue closing the file continues.</s><s> i have to do the following for that to stop. 
+</s><s>closed cf builder renamed the file workspace\.metadata\.plugins\com.adobe.ide.editor.cfml\foldings\foldings.data started cf builder 
+however, after few hours cf builder 2 becomes slow again when closing the files. 
+</s><s>is there any fix for this issue other than the temporary solution above? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5216850</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 8, 2013 11:11 AM">
+<s>while i have no fix, i have a suggestion: if you open the progress view (window>show view>other>progress), watch that while experiencing this "long time to close", and you may get some insight into what's amiss.</s><s> obviously, it's not supposed to take a long time; conversely, i've not heard this as being a common problem, so it's indeed odd that you experience it on 2 machines. 
+</s><s>here's another variable to consider: is this file on a network share or anything other than a local file?</s><s> is it connected to source control?</s><s> is there any other factor in your setup that may differ from others (extra plugins you've added, etc.</s><s>)?</s><s> and what about the code in the cfml itself: does it have lots of dependencies on other files, perhaps (lots of includes, or cfc calls, etc.</s><s>)?</s><s> while that should not hamper the speed of closing the file, i'm just throwing out all i can think of that might have some impact. 
+</s><s>it's indeed a shame when someone has an experience with cfb that leads them to think it's broken.</s><s> the challenge is in finding out exactly what is amiss.</s><s> it's not always that obvious. 
+
+
+/charlie 
+ps also, what about the cfbuilder/eclipse log, availble via the "about" menu?</s><s> that may give you some insight.</s><s> you can view it from, in windows, help>product details>configuration details>view error log, and on osx it's adobe coldfusion builder>about adobe coldfusion builder>configuration details>view error log. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5217070</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 8, 2013 12:23 PM">
+<s>thanks for the reply charlie. 
+</s><s>when i go to window>show view>other> there is no progress 
+it takes long to close a file no matter whether is on the network or in my local hard drive.</s><s> i have the network files on source control (vss plugin), which i thought this could be the problem, but even if the file is not in the source control it is slow closing it.</s><s> also even if the file contains code snippets is still slow closing.</s><s> the vss plugin was the only plugin i added, everything else came with the installation. 
+i looked at the log files and could not find anything that could be related to. 
+</s><s>this is still a mistery to me. 
+i had to unistall cfbuilder 2.0.0 and install the cfbuilder 2.0.1.</s><s> initially the files were closing fast but after few hours they got slow again taking about 6 seconds to close each file.</s><s> every time i delete the foldings.data file and a new one is created the files close fast, but it seems that something start building up that within few hours they again take a lot of time to close. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5232959</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 13, 2013 7:01 PM">
+<s>ah, my bad.</s><s> i was mistaken: it's not under "other" but rather under "general". 
+</s><s>but in the vein of "teaching one to fish", did you know that typing the word "progress" (without quotes) in that filter text prompt at the top of the list of views (as shown in your screenshot) would have found it for you?</s><s> that's how you can find something in cfb that you can't otherwise locate on your own. 
+</s><s>as for the growing foldings.data file, that may be an interesting clue.</s><s> have you opened that file with an editor or text file viewer?</s><s> it's got some binary data, but it may be interesting still to look at.</s><s> i just looked at mine, and it's got about 8 lines of data (and the file size is just a couple of k).</s><s> how large is yours (in lines and bytes)?</s><s> in mine i can see references to files (some currently open, others that i've long ago closed). 
+btw, while the filename "foldings.data" might suggest that this is related to the code folding feature in cfb, i confirmed that at least for one of the files listed in there, i saw no code folding in effect.</s><s> maybe someone else will know more. 
+</s><s>one other thought: when you say that it's initially faster and grows slower, are you talking over a single cfbuilder session?</s><s> if so, i wonder if you closed and reopened it, if it would also start over being "faster".</s><s> if so, then i would wonder if you may be running out of memory.</s><s> the default heap size is pretty small.</s><s> for more on changing it, see this older entry (seems adam's site is no more, so here's a tinyurl link to an archive.org copy of the page: http://tinyurl.com/ca5jwan). 
+</s><s>finally, related to that, you can also watch the heap use from within cfb via window>preferences>general>show heap status, which shows a progress bar of memory usage (and offers a widget to try a garbage collection as well). 
+</s><s>hope that helps. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5237219</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 15, 2013 12:21 PM">
+<s>charlie, thanks for your time and information responding to this issue.</s><s> they were helpful to track down what the problem is. 
+</s><s>based on the information you gave me above i noticed the following. 
+</s><s>under the progress view what i see when closing a file are messages related to building workspace as the picture below shows. 
+
+</s><s>as for folding.data file, i followed your advice and opened in a text editor.</s><s> the file content has, like you said, some binary data, but also contains the strings "file:" followed by the full path for the files that i closed.</s><s> i looked at the size of it and it was 11k with about 11 lines.</s><s> then i started to open and close some file and noticed that cfbuilder was writing the names of all the files i close to the folding.data file, which increased the file size.</s><s> now the file has 14 lines and 14k.</s><s> the previous folding.data files had size varying from 38k to 87k.</s><s> i also note that the cfbuilder was not appending the most recent files to folding.data as the path for the most recent closed files were in the middle of the file content.</s><s> it seems that cfbuilder was not only updating but re-creating the file with the previous content and the string with the new file path in a random fashion. 
+</s><s>when i said that the closing of the files is initially faster and then gets slower, i meant to say that is faster when i delete the folding.data file and cfbuilder creates a new one.</s><s> as cfbuilder starts updating the folding.data file it gets slower.</s><s> after that it continues slow even in between cfbuilder sessions.so i think that might be a threshold related to the file size that makes the process of closing files slow.</s><s> i don't think the problem is related to memory as i already had the show heap status view on display and even when there is not much use of memory closing the file is still slow. 
+</s><s>at this point what it looks like is that the process of closing a file inside cfbuilder updates the folding.data file and when that file reaches a particular size, it takes some time to actually close the file as if cfbuilder was waiting for the folding.data file to be updated.</s><s> what intrigues me is the fact that this behavior happened in w different pc's so it has to be something related to the setting of cfbulder in handling the closing of files. 
+i was wondering if there is some sort of setting related to closing files in cfbuilder. 
+</s><s>once again, thank you very much for your responses. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5237714</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 15, 2013 3:07 PM">
+<s>glad to hear that the info helped.</s><s> and yes, that info on the files is what i meant, when i said, "i can see references to files (some currently open, others that i've long ago closed)." 
+</s><s>so as for the size, i would say that these file sizes you are mentioning seem too small to be significant, but who knows.</s><s> here's a potentially interesting question: where are the files (the foldings.data file), relative to cfb?</s><s> are they in a folder on the same drive as cfb?</s><s> in another location, like a network drive, or a mapped drive that may be on the network? 
+</s><s>also, you mention the build workspace info in the progress view.</s><s> that's just the sort of thing i was talking about might explain what was amiss. 
+</s><s>related to that, you ask about features which may affect file closing, but while there is in fact a setting that affects startup and that building of workspaces (preferences>coldfusion>server settings), none of them are related to file closing. 
+i hope that perhaps someone from adobe will pick up on this and offer you more info, either based on something they may know, or other diagnostics you can undertake. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5239420</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="JonesFC" timestamp="Apr 16, 2013 6:34 AM">
+<s>the foldings.data file is on the network on a network drive.</s><s> i have the workspace setup on the network on a mapped drive. 
+</s><s>however, if i open a file (not in a project) using the file view that is my local pc, closing that file also is slow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5244194</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="carehart" timestamp="Apr 17, 2013 9:58 AM">
+<s>sure, but i wonder if your doing that could still be stored in that foldings.data on the network. 
+</s><s>try opening a new workspace, whose location is not on the network.</s><s> see if that may not make a difference.</s><s> (for most cf devs, the workspace location is not really important to how they code, so it should not hurt other than that you will lose any config settings you made.</s><s> but you can always open the original workspace to get back to that point if you prefer.</s><s>) 
+
+
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5451917</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="doncx" timestamp="Jun 26, 2013 8:36 AM">
+<s>i'm experiencing this exact problem in an evaluation version of cfb2. 
+</s><s>my workspace is indeed on a mapped network drive and that is where is should stay.</s><s> i develop against an in-house windows server. 
+</s><s>i've been using cfeclipse for years (and really like it) but am evaluating cfb2 due to non-support of that project. 
+</s><s>cfeclipse closes file in less than a heartbeat. 
+</s><s>in cfb2 it takes *forever*.</s><s> not good! 
+</s><s>there must be a fix! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-5905349</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="SigmaProjects" timestamp="Dec 5, 2013 5:09 PM">
+<s>(not directly in reply to charlie, but apparenly you can't reply to the thread, it has to be to a person) 
+</s><s>this is a really annoying problem.</s><s> it only takes a few hours until closing a file takes more then a few seconds, it's very irritating.</s><s> yes, most of the time the projects are on a network drive but it should not take this long to close a file, but i could understand if it did for opening.</s><s> funny side note: it's actually faster to open files than close them. 
+</s><s>fix this in your next release adobe... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5204139-6164227</DOCNO>
+<TEXT>
+<subject>CF Builder 2 slow on closing files issue</subject>
+<post author="mgw4jc" timestamp="Feb 27, 2014 1:12 PM">
+<s>i found this thread after experiencing the slow file closing issue at a new job where the website files are all stored on a network drive.</s><s> i realized that the workspace files are also stored on a network drive.</s><s> i'm in a windows environment where the user's files are stored on a server.</s><s> so when i installed cf builder 2, it automatically put the workspace directory in my user's directory which is on the server. 
+</s><s>after reading this thread i decided to try moving the workspace to my local c: drive.</s><s> i closed all projects and then went into windows - preferences and filtered on "works".</s><s> under startup and shutdown there is a workspace setting: "prompt for workspace on startup".</s><s> this was unchecked because i had previously told cf builder to just always use the default.</s><s> i then closed cf builder. 
+i copied the adobe coldfusion builder workspace directory from the server share to a new directory on my c: drive.</s><s> then i restarted cf builder.</s><s> it prompted for the workspace where i browsed for the new directory and again checked the "use this as default...". 
+</s><s>so far the file closing slowness has gone away.</s><s> other things such as opening and closing projects, refreshing files in a project and searching across many files seems faster.</s><s> i know this is an old thread, but perhaps it will help someone. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6064798-1392708</DOCNO>
+<TEXT>
+<subject>Custom Mouse Buttons in CFBuilder</subject>
+<post author="sdsinc_pmascari" timestamp="Jan 29, 2014 7:46 AM">
+<s>after trying to use a stand-along version of adobe coldfusion builder 2 (built on eclipse) that was slow as molasses i am, instead, trying to run cfb as a plug-in to a standard eclipse installation.</s><s> so far so good.</s><s> however....</s><s> 
+</s><s>i have a logitech mouse with a ton of buttons i've customized with logitech's setpoint to perform common tasks such as copy, cut, paste, undo, etc.... 
+</s><s>these buttons are not working in eclipse.</s><s> i've tried messing around in the key mapping areas but it doesn't appear as if the key commands are being sent in from the mouse at all. 
+</s><s>here's the oddity: when i was using cfb as a stand-along install these buttons were working.</s><s> now, as a plug-in to eclipse they are not. 
+</s><s>is there a setting somewhere in eclipse to allow key commands from external apps like logitech setpoint? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6064798-1392708</DOCNO>
+<TEXT>
+<subject>Custom Mouse Buttons in CFBuilder</subject>
+<post author="sdsinc_pmascari" timestamp="Jan 29, 2014 7:46 AM">
+<s>after trying to use a stand-along version of adobe coldfusion builder 2 (built on eclipse) that was slow as molasses i am, instead, trying to run cfb as a plug-in to a standard eclipse installation.</s><s> so far so good.</s><s> however....</s><s> 
+</s><s>i have a logitech mouse with a ton of buttons i've customized with logitech's setpoint to perform common tasks such as copy, cut, paste, undo, etc.... 
+</s><s>these buttons are not working in eclipse.</s><s> i've tried messing around in the key mapping areas but it doesn't appear as if the key commands are being sent in from the mouse at all. 
+</s><s>here's the oddity: when i was using cfb as a stand-along install these buttons were working.</s><s> now, as a plug-in to eclipse they are not. 
+</s><s>is there a setting somewhere in eclipse to allow key commands from external apps like logitech setpoint? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6036049-1385625</DOCNO>
+<TEXT>
+<subject>I cannot uninstall MS Visual Studio Team Foundation Server Plug-in Trial Version from CFBuilder 2</subject>
+<post author="ScottH" timestamp="Jan 21, 2014 8:42 AM">
+<s>i installed the microsoft visual studio foundation server plug-in ( microsoft visual studio team foundation server plug-in for eclipse 10.0.0.201003261741 com.microsoft.tfs.client.eclipse.feature.feature.group microsoft ) 
+</s><s>i'm running windows 7 enterprise service pack 1 64-bit.</s><s> the cfbuilder version is shown in the image below. 
+and now want to install a different full version of the plug-in but cannot do that without uninstalling this one first.</s><s> however, i have been unable to uninstall the plug-in no matter what i have tried.</s><s> the "easy" way using the uninstall button is not available to ( see image below).</s><s> i have tried numerous suggestions for manual uninstall but the plug-in will not go away, and thus prevents me from installing the newer version.</s><s> upgrading is not allowed.</s><s> i have been using "run as administrator" etc to make sure i have adequate permissions. 
+</s><s>at this point i am feeling stumped and may just have to uninstall cfbuilder and start over unless someone can suggest something new to try. 
+</s><s>thank you in advance for any help/suggestions that can be offered. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6036049-1385625</DOCNO>
+<TEXT>
+<subject>I cannot uninstall MS Visual Studio Team Foundation Server Plug-in Trial Version from CFBuilder 2</subject>
+<post author="ScottH" timestamp="Jan 21, 2014 8:42 AM">
+<s>i installed the microsoft visual studio foundation server plug-in ( microsoft visual studio team foundation server plug-in for eclipse 10.0.0.201003261741 com.microsoft.tfs.client.eclipse.feature.feature.group microsoft ) 
+</s><s>i'm running windows 7 enterprise service pack 1 64-bit.</s><s> the cfbuilder version is shown in the image below. 
+and now want to install a different full version of the plug-in but cannot do that without uninstalling this one first.</s><s> however, i have been unable to uninstall the plug-in no matter what i have tried.</s><s> the "easy" way using the uninstall button is not available to ( see image below).</s><s> i have tried numerous suggestions for manual uninstall but the plug-in will not go away, and thus prevents me from installing the newer version.</s><s> upgrading is not allowed.</s><s> i have been using "run as administrator" etc to make sure i have adequate permissions. 
+</s><s>at this point i am feeling stumped and may just have to uninstall cfbuilder and start over unless someone can suggest something new to try. 
+</s><s>thank you in advance for any help/suggestions that can be offered. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6027677-1383465</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder no longer finds my cfc file</subject>
+<post author="tarossi" timestamp="Jan 18, 2014 3:54 PM">
+<s>after a couple months of building a project with no real issues, all of a sudden my pages can no longer find my "toolinvfunctions.cfc" file.</s><s> i get this error, "the specified cfc toolinvfunctions could not be found.</s><s> the path to the cfc must be specified as a full path, or as a relative path from the current template, without the use of mappings." 
+</s><s>like i said, everything has been working just fine until now and i have no idea what i may have done to start receiving this error.</s><s> here is the first line of code that fails with a call to the cfc file. 
+<cfselect name="tools" bindonload="true" bind="cfc:toolinvfunctions.findtools({processin})" display="requestedtools" value="requestedtools"> </cfselect> 
+</s><s>all of this projects files reside in the same folder and have had no trouble finding each other until today.</s><s> please help, i imagine this is probably some sort of server issue, but i'm not experienced enough to diagnose. 
+</s><s>thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6027677-6031904</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder no longer finds my cfc file</subject>
+<post author="tarossi" timestamp="Jan 20, 2014 8:26 AM">
+<s>discovered the problem for those of you who may have the same issue.</s><s> i was using nested if statements in a function to build my sql query and coldfusion apparently decided it no longer liked that.</s><s> no idea why it causes the server to no longer find the cfc file, but once i changed how the if statements worked, it all started to function again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6027677-1383465</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder no longer finds my cfc file</subject>
+<post author="tarossi" timestamp="Jan 18, 2014 3:54 PM">
+<s>after a couple months of building a project with no real issues, all of a sudden my pages can no longer find my "toolinvfunctions.cfc" file.</s><s> i get this error, "the specified cfc toolinvfunctions could not be found.</s><s> the path to the cfc must be specified as a full path, or as a relative path from the current template, without the use of mappings." 
+</s><s>like i said, everything has been working just fine until now and i have no idea what i may have done to start receiving this error.</s><s> here is the first line of code that fails with a call to the cfc file. 
+<cfselect name="tools" bindonload="true" bind="cfc:toolinvfunctions.findtools({processin})" display="requestedtools" value="requestedtools"> </cfselect> 
+</s><s>all of this projects files reside in the same folder and have had no trouble finding each other until today.</s><s> please help, i imagine this is probably some sort of server issue, but i'm not experienced enough to diagnose. 
+</s><s>thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6027677-6031904</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder no longer finds my cfc file</subject>
+<post author="tarossi" timestamp="Jan 20, 2014 8:26 AM">
+<s>discovered the problem for those of you who may have the same issue.</s><s> i was using nested if statements in a function to build my sql query and coldfusion apparently decided it no longer liked that.</s><s> no idea why it causes the server to no longer find the cfc file, but once i changed how the if statements worked, it all started to function again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6001569-1376706</DOCNO>
+<TEXT>
+<subject>Registry Directory Not Available error</subject>
+<post author="DwightAIVD" timestamp="Jan 10, 2014 12:42 PM">
+<s>i am unable to open install new software and update software in my standalone version of adobe coldfusion designer 2.0.1 if i go to help / product details / installation details i get a message that an internal error occurred fetching children of _self_ 
+details shows: an internal error occurred during: "fetching children of _self_".</s><s> registry directory not available: \\10.10.10.25\c$\www\p2\org.eclipse.equinox.p2.engine\profileregistry . 
+</s><s>the installation is looking for a registry directory on a network share.</s><s> if i use file explorer and open the share using credentials, erything works ok.</s><s> i would like to avoid this, so i deauthorized the software, did a full uninstall, rebooted and reinstalled, but the error persists, does anyone know how i can change the path the installation is using to find the registry directory? 
+</s><s>thanks 
+</s><s>dwight 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-6001569-1376706</DOCNO>
+<TEXT>
+<subject>Registry Directory Not Available error</subject>
+<post author="DwightAIVD" timestamp="Jan 10, 2014 12:42 PM">
+<s>i am unable to open install new software and update software in my standalone version of adobe coldfusion designer 2.0.1 if i go to help / product details / installation details i get a message that an internal error occurred fetching children of _self_ 
+details shows: an internal error occurred during: "fetching children of _self_".</s><s> registry directory not available: \\10.10.10.25\c$\www\p2\org.eclipse.equinox.p2.engine\profileregistry . 
+</s><s>the installation is looking for a registry directory on a network share.</s><s> if i use file explorer and open the share using credentials, erything works ok.</s><s> i would like to avoid this, so i deauthorized the software, did a full uninstall, rebooted and reinstalled, but the error persists, does anyone know how i can change the path the installation is using to find the registry directory? 
+</s><s>thanks 
+</s><s>dwight 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5993528-1374749</DOCNO>
+<TEXT>
+<subject>InstanceBeginEditable</subject>
+<post author="treadman" timestamp="Jan 8, 2014 11:57 AM">
+<s>does cf builder have a way (plugin or some setting) to not allow editting outside of the instancebegineditable and instanceendeditable tags, as it does in dw? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5993528-5994993</DOCNO>
+<TEXT>
+<subject>InstanceBeginEditable</subject>
+<post author="carehart" timestamp="Jan 8, 2014 6:34 PM">
+<s>wow, i would suspect not.</s><s> that was really a dw-specific sort of feature, and cfb was not designed really to carry forward any sort of dw-specific sort of features.</s><s> someone from adobe, or someone else with more familiarity with any dw-sort of functionality in cfb may say otherwise.</s><s> i just wanted to offer this answer for you in the meantime to say (as a pretty experienced cfb user) that i doubt you will find any such feature in cfb. 
+</s><s>that said, since cfb is based on eclipse, and eclipse is written entirely in java, it's possible someone could create an extension in cfb to support this, if in fact eclipse has anything like that sort of functionality (limiting parts of the page being edited).</s><s> i won't be surprised if it does not, at all, let alone in a way that may be customized somehow to do it based on tags. 
+</s><s>let's see if anyone knows otherwise. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5993528-1374749</DOCNO>
+<TEXT>
+<subject>InstanceBeginEditable</subject>
+<post author="treadman" timestamp="Jan 8, 2014 11:57 AM">
+<s>does cf builder have a way (plugin or some setting) to not allow editting outside of the instancebegineditable and instanceendeditable tags, as it does in dw? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5993528-5994993</DOCNO>
+<TEXT>
+<subject>InstanceBeginEditable</subject>
+<post author="carehart" timestamp="Jan 8, 2014 6:34 PM">
+<s>wow, i would suspect not.</s><s> that was really a dw-specific sort of feature, and cfb was not designed really to carry forward any sort of dw-specific sort of features.</s><s> someone from adobe, or someone else with more familiarity with any dw-sort of functionality in cfb may say otherwise.</s><s> i just wanted to offer this answer for you in the meantime to say (as a pretty experienced cfb user) that i doubt you will find any such feature in cfb. 
+</s><s>that said, since cfb is based on eclipse, and eclipse is written entirely in java, it's possible someone could create an extension in cfb to support this, if in fact eclipse has anything like that sort of functionality (limiting parts of the page being edited).</s><s> i won't be surprised if it does not, at all, let alone in a way that may be customized somehow to do it based on tags. 
+</s><s>let's see if anyone knows otherwise. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-1356885</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="richardELeach" timestamp="Dec 12, 2013 9:27 AM">
+<s>i downloaded and installed the cf builder 2 (version: 2.0.1 build: 282422) and almost daily (but not at any regular time or interval) it hangs, then i have to manually kill the process, and often lose some work.</s><s> when this happens the cpu resources get pegged at 100% or more by the coldfusion builder 2 process.</s><s> i can't identify any specific operation that appears to cause this either; i'm almost always just typing code when the freeze occurs. 
+</s><s>i'm on mac osx 10.9, 16gb ram 
+</s><s>has anyone else experienced this?</s><s> any work arounds out there? 
+</s><s>i'm going to be running out of free trial time and unfortunately there is no way i can justify paying for this product.</s><s> i was using dreamweaver (which i still like and may go back to) but has anyone else seen/used a good cfml editor? 
+</s><s>thanks in advance, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5924952</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="carehart" timestamp="Dec 12, 2013 11:43 AM">
+<s>richard, try increasing the heap size in cfb.</s><s> it has a fixed size, not varying based on your available memory.</s><s> see: 
+</s><s>http://cfmumbojumbo.com/cf/index.cfm/coding/increase-cfbuilder-perform ance/ 
+
+</s><s>as for other good cfml editors, many love sublime text.</s><s> i list still others at http://www.cf411.com/editcf 
+
+
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5925246</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="richardELeach" timestamp="Dec 12, 2013 12:55 PM">
+<s>hey charlie 
+</s><s>thanks for your reply.</s><s> i looked at the article you linked to and it said to edit a file called cfbuilder.ini but i'm on a mac, and after searching my entire disk(s) i can't seem to locate the file.</s><s> i'm looking at various other xml files in the mean time, do you happen to know where the java args are stored on the mac side of the world for cfb2? 
+</s><s>thank you again, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5926291</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="carehart" timestamp="Dec 12, 2013 7:42 PM">
+<s>in the vein of "teaching a man to fish"- 
+doing a google search for: 
+cfbuilder.ini osx 
+turned up first a result at: http://blog.mxunit.org/2009/07/speeding-up-coldfusion-builder.html 
+where charlie griefer added a comment saying: 
+for os x folks: 
+ 
+</s><s>go to your re: coldfusion builder 2 hangs\cfbuilder.app, right-click and choose "show package contents". 
+
+
+</s><s>you'll find the cfbuilder.ini under contents > macos > cfbuilder.ini 
+does that work for you, richard? 
+</s><s>if not, let's ask for clarification: are you running cfbuilder in standalone mode?</s><s> or as a plug-in atop eclipse?</s><s> if the latter, see the "mac os x" section of this page: http://help.eclipse.org/indigo/index.jsp?topic=%2forg.eclipse.platform .doc.user%2ftasks%2frunning_eclipse.htm 
+
+</s><s>let us know if any of that helps. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5926305</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="richardELeach" timestamp="Dec 12, 2013 7:52 PM">
+<s>charlie- 
+</s><s>maybe i need to try fishing with different bait ;-) 
+i did the exact google search and did not see the results you posted.</s><s> however they worked just fine and i was able to edit the settings as suggested.</s><s> i'll see if cfbuilder is anymore stable now. 
+</s><s>thanks again, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5926298</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="carehart" timestamp="Dec 12, 2013 8:10 PM">
+<s>sweet.</s><s> hope it works out. 
+i wonder, also, how it may go with no value for xmx at all.</s><s> the jvm should then use up to a certain % of available memory.</s><s> i've wondered if that may not be a better choice for adobe to use for cfb out of the box (and cf, too), rather than trying to guess what may be a good value for everyone. 
+
+
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-1356885</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="richardELeach" timestamp="Dec 12, 2013 9:27 AM">
+<s>i downloaded and installed the cf builder 2 (version: 2.0.1 build: 282422) and almost daily (but not at any regular time or interval) it hangs, then i have to manually kill the process, and often lose some work.</s><s> when this happens the cpu resources get pegged at 100% or more by the coldfusion builder 2 process.</s><s> i can't identify any specific operation that appears to cause this either; i'm almost always just typing code when the freeze occurs. 
+</s><s>i'm on mac osx 10.9, 16gb ram 
+</s><s>has anyone else experienced this?</s><s> any work arounds out there? 
+</s><s>i'm going to be running out of free trial time and unfortunately there is no way i can justify paying for this product.</s><s> i was using dreamweaver (which i still like and may go back to) but has anyone else seen/used a good cfml editor? 
+</s><s>thanks in advance, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5924952</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="carehart" timestamp="Dec 12, 2013 11:43 AM">
+<s>richard, try increasing the heap size in cfb.</s><s> it has a fixed size, not varying based on your available memory.</s><s> see: 
+</s><s>http://cfmumbojumbo.com/cf/index.cfm/coding/increase-cfbuilder-perform ance/ 
+
+</s><s>as for other good cfml editors, many love sublime text.</s><s> i list still others at http://www.cf411.com/editcf 
+
+
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5925246</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="richardELeach" timestamp="Dec 12, 2013 12:55 PM">
+<s>hey charlie 
+</s><s>thanks for your reply.</s><s> i looked at the article you linked to and it said to edit a file called cfbuilder.ini but i'm on a mac, and after searching my entire disk(s) i can't seem to locate the file.</s><s> i'm looking at various other xml files in the mean time, do you happen to know where the java args are stored on the mac side of the world for cfb2? 
+</s><s>thank you again, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5926291</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="carehart" timestamp="Dec 12, 2013 7:42 PM">
+<s>in the vein of "teaching a man to fish"- 
+doing a google search for: 
+cfbuilder.ini osx 
+turned up first a result at: http://blog.mxunit.org/2009/07/speeding-up-coldfusion-builder.html 
+where charlie griefer added a comment saying: 
+for os x folks: 
+ 
+</s><s>go to your re: coldfusion builder 2 hangs\cfbuilder.app, right-click and choose "show package contents". 
+
+
+</s><s>you'll find the cfbuilder.ini under contents > macos > cfbuilder.ini 
+does that work for you, richard? 
+</s><s>if not, let's ask for clarification: are you running cfbuilder in standalone mode?</s><s> or as a plug-in atop eclipse?</s><s> if the latter, see the "mac os x" section of this page: http://help.eclipse.org/indigo/index.jsp?topic=%2forg.eclipse.platform .doc.user%2ftasks%2frunning_eclipse.htm 
+
+</s><s>let us know if any of that helps. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5926305</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="richardELeach" timestamp="Dec 12, 2013 7:52 PM">
+<s>charlie- 
+</s><s>maybe i need to try fishing with different bait ;-) 
+i did the exact google search and did not see the results you posted.</s><s> however they worked just fine and i was able to edit the settings as suggested.</s><s> i'll see if cfbuilder is anymore stable now. 
+</s><s>thanks again, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5924366-5926298</DOCNO>
+<TEXT>
+<subject>ColdFusion Builder 2 HANGS</subject>
+<post author="carehart" timestamp="Dec 12, 2013 8:10 PM">
+<s>sweet.</s><s> hope it works out. 
+i wonder, also, how it may go with no value for xmx at all.</s><s> the jvm should then use up to a certain % of available memory.</s><s> i've wondered if that may not be a better choice for adobe to use for cfb out of the box (and cf, too), rather than trying to guess what may be a good value for everyone. 
+
+
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5848239-1336884</DOCNO>
+<TEXT>
+<subject>Mac OS X 10.9 ColdFusion Builder 2</subject>
+<post author="jaymporter" timestamp="Nov 16, 2013 6:26 PM">
+<s>i would like to know if anyone has any issues installing or using coldfusion builder 2 since the recent release of the new version of mac os x 10.9 mavericks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5848239-1336884</DOCNO>
+<TEXT>
+<subject>Mac OS X 10.9 ColdFusion Builder 2</subject>
+<post author="jaymporter" timestamp="Nov 16, 2013 6:26 PM">
+<s>i would like to know if anyone has any issues installing or using coldfusion builder 2 since the recent release of the new version of mac os x 10.9 mavericks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5826060-1331133</DOCNO>
+<TEXT>
+<subject>Using other extensions for cold fusion files</subject>
+<post author="rudyMents" timestamp="Nov 8, 2013 6:18 AM">
+<s>we have existing cf applications that use the ".html" file extension.</s><s> we can't seem to figure out how to get cf builder 2 to recognize that extension as a cf page.</s><s> is this possible, or do we have to go through the trouble of renaming all of our files to use cf builder 2? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5826060-5828071</DOCNO>
+<TEXT>
+<subject>Using other extensions for cold fusion files</subject>
+<post author="carehart" timestamp="Nov 8, 2013 8:41 PM">
+<s>you have two choices.</s><s> first, if you right-click on the file in the navigator, you can choose "open with" and then other>adobe cfml editor. 
+</s><s>or, if you mean you want it to be the default opener of such files (within cfb), see window>preferences>general>editor>fie extensions, and select *.html (or "add" it if not there), then in the "associated editor" box at the bottom, click "add" and choose "adobe cfml editor".</s><s> click "ok.</s><s> then click on that editor (if not already pre-selected) and click the "default" button. 
+</s><s>let us know how that goes for you (and please click the buttons in the web interface to mark this as this as an "answer", to help future readers). 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5826060-5828074</DOCNO>
+<TEXT>
+<subject>Using other extensions for cold fusion files</subject>
+<post author="carehart" timestamp="Nov 8, 2013 8:59 PM">
+<s>after i wrote that, i thought, "hey, that might be a cool thing to blog about, in case others might seek it, and showing pictures".</s><s> well, i found someone had....me, in 2011.</s><s> here it is: setting up cfbuilder to process htm files with the coldfusion editor 
+for anyone interested, i also link there to an entry on how to setup cf itself to process html file extensions as cfml, which i assume rudy has already done.</s><s> if the idea bothers you, i understand, and i discuss both how unusual it is and why some do it, in the entry. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5826060-1331133</DOCNO>
+<TEXT>
+<subject>Using other extensions for cold fusion files</subject>
+<post author="rudyMents" timestamp="Nov 8, 2013 6:18 AM">
+<s>we have existing cf applications that use the ".html" file extension.</s><s> we can't seem to figure out how to get cf builder 2 to recognize that extension as a cf page.</s><s> is this possible, or do we have to go through the trouble of renaming all of our files to use cf builder 2? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5826060-5828071</DOCNO>
+<TEXT>
+<subject>Using other extensions for cold fusion files</subject>
+<post author="carehart" timestamp="Nov 8, 2013 8:41 PM">
+<s>you have two choices.</s><s> first, if you right-click on the file in the navigator, you can choose "open with" and then other>adobe cfml editor. 
+</s><s>or, if you mean you want it to be the default opener of such files (within cfb), see window>preferences>general>editor>fie extensions, and select *.html (or "add" it if not there), then in the "associated editor" box at the bottom, click "add" and choose "adobe cfml editor".</s><s> click "ok.</s><s> then click on that editor (if not already pre-selected) and click the "default" button. 
+</s><s>let us know how that goes for you (and please click the buttons in the web interface to mark this as this as an "answer", to help future readers). 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5826060-5828074</DOCNO>
+<TEXT>
+<subject>Using other extensions for cold fusion files</subject>
+<post author="carehart" timestamp="Nov 8, 2013 8:59 PM">
+<s>after i wrote that, i thought, "hey, that might be a cool thing to blog about, in case others might seek it, and showing pictures".</s><s> well, i found someone had....me, in 2011.</s><s> here it is: setting up cfbuilder to process htm files with the coldfusion editor 
+for anyone interested, i also link there to an entry on how to setup cf itself to process html file extensions as cfml, which i assume rudy has already done.</s><s> if the idea bothers you, i understand, and i discuss both how unusual it is and why some do it, in the entry. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5798788-1324626</DOCNO>
+<TEXT>
+<subject>shortcut keys on Mac?</subject>
+<post author="richardELeach" timestamp="Oct 29, 2013 4:45 PM">
+<s>this one has me feeling a little silly, but for the life of me i can not get any of the coldfusion builder shortcut keys to work on my mac. 
+</s><s>i'm running cfbuilder 2.0.1 on mac osx 10.9. 
+</s><s>none of the reported shortcut keys do anything, anyone else have this problem? 
+</s><s>thanks in advance, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5798788-1324626</DOCNO>
+<TEXT>
+<subject>shortcut keys on Mac?</subject>
+<post author="richardELeach" timestamp="Oct 29, 2013 4:45 PM">
+<s>this one has me feeling a little silly, but for the life of me i can not get any of the coldfusion builder shortcut keys to work on my mac. 
+</s><s>i'm running cfbuilder 2.0.1 on mac osx 10.9. 
+</s><s>none of the reported shortcut keys do anything, anyone else have this problem? 
+</s><s>thanks in advance, 
+rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-1317655</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Ian1753" timestamp="Oct 18, 2013 7:36 AM">
+<s>the following site says that a trial version of the software can be converted to a free educational version during the registration process. 
+http://www.adobe.com/uk/products/coldfusion-builder/faq.html 
+coldfusion builder 2 is available free to all eligible education customers for learning purposes only and not for production purposes.</s><s> students, faculty, and staff can get serial numbers to activate downloadable trial versions by registering on the registration site.</s><s> during registration, you will be prompted to upload a copy of your student id, faculty id, or employee id, or you can upload a letter on institutional letterhead proving your current affiliation with an educational institution.</s><s> once validated, you will be emailed a free educational serial number for coldfusion builder 2.</s><s> it may take up to two weeks after you submit the request to receive your serial number. 
+i have been unable to reach the 'registration' page for cf builder. 
+</s><s>is the above information still valid and if so, how do i proceed to activate the product as an educational version? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5772668</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="carehart" timestamp="Oct 19, 2013 9:45 AM">
+<s>i can't remember what may trigger the reg interface in cfb itself, but if you use the help menu there, see the option for adobe coldfusion builder registration, which takes you to a web page (where you will be asked to login and then register).</s><s> let us know if that helps.</s><s> since mine is already registered, i can't see what it may look like for you if you have not yet registered.</s><s> i realize it may not offer the solution you are looking for, but it's worth a try. 
+</s><s>it could be that the option to register is shown when you startup, or that the option was offered and you may have told cfb to stop showing it.</s><s> (you can do that also with cfb's "startup page", and at least that page can be turned on again using window>preferences>coldfusion>startup, if that may help at all also.</s><s>) 
+</s><s>let us know what you find, especially if anything works, so that others finding this thread in the future can know the answer. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5772982</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Ian1753" timestamp="Oct 19, 2013 12:58 PM">
+<s>i haven't been able to register (which is a pre-requisite of submitting proof of academic status); i am still able to see the 'start up' page in cf builder.</s><s> i've tried four ways (all of which have been unsuccessful of reaching the registration page): 
+from wihin the application itself: help>adobe coldfusion builder registration - nothing happens (ie i am not taken to the registration page).</s><s> by clicking the link ('registation site') in the faq page (see my original post above) for cf builder - this results is a 404 error (page not found) i don't see any links on the startup page for registering the product.</s><s> i've telephoned 'adobe support' and 'customer services' without being able to get through to anyone. 
+</s><s>thanks for your reply 
+ian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777435</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 21, 2013 3:23 PM">
+<s>the educational register site is no longer available either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777569</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="carehart" timestamp="Oct 21, 2013 4:08 PM">
+<s>bummer.</s><s> i don't know why any of those approaches you folks are trying are failing.</s><s> let's hope that someone from adobe may see this and offer some thoughts. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777572</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 21, 2013 4:16 PM">
+<s>i think adobe is, not so subtly, trying to get people to move to v.10. just my opinion - i'm new to cf, but that is my impression: maximize the revenue stream seems to be priority number one. 
+</s><s>on oct 21, 2013, at 4:08 pm, charlie arehart <forums_noreply@adobe.com<mailto:forums_noreply@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777578</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Anit_Kumar" timestamp="Oct 21, 2013 4:39 PM">
+<s>hi all, 
+</s><s>we apologize for the inconvenience caused.</s><s> we are looking into it. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777692</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Ian1753" timestamp="Oct 21, 2013 4:50 PM">
+<s>thank you for sending your query.</s><s> we are looking into it.   thanks & regards anit kumar panda  | technical support consultant - coldfusion |  adobe coldfusion blog |  twitt @coldfusion | coldfusion forum |  coldfusion in facebook   from: ian  [sent: monday, october 21, 2013 11:31 pm to: cf install subject: registration site for coldfusion builder - the link to the registration site is not working   my objective is to register the trial download of the software on the basis of my educational student status by obtaining a serial number from adobe as per the site: http://www.adobe.com/uk/products/coldfusion-builder/faq.html?trackingi d=juegd   thanks for your help.   ian
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777772</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="carehart" timestamp="Oct 23, 2013 3:01 PM">
+<s>@pdx.tjk, i realize you're new to cf but i do feel some corrections are warranted.</s><s> first, we're talking here about cfbuilder, not coldfusion (whose newest version is the "10" you refer to). 
+</s><s>second, maximizing profitability is a primary goal for nearly any publicly held company in a capitalist economy.</s><s> that's not to say that other factors, like customer service, need to slip, or should be allowed to. 
+</s><s>finally, in that regard, good to see the later notes from folks at adobe who may be able to help with this cfb educational activation issue. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5779276</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Anit_Kumar" timestamp="Oct 22, 2013 9:08 AM">
+<s>thanks charlie.</s><s> 
+</s><s>the registrations are still available.</s><s> you can claim the free license from https://freeriatools.com/ 
+regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5779353</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 22, 2013 9:45 AM">
+<s>hi, thanks for the conciliatory note; points taken.</s><s> i thought a little poke in the ribs might help elicit a more positive response from adobe folks.</s><s> 8-) cheers, tom k 
+</s><s>on oct 21, 2013, at 6:22 pm, charlie arehart <forums_noreply@adobe.com<mailto:forums_noreply@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5779850</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 22, 2013 2:40 PM">
+<s>hi anit, there are no plugins in the adobe coldfusion builder 2 plugins directory: i'm running os x 10.8.5.</s><s> the cf builder download was coldfusionbuilder_2_wwej.dmg when i double-click on the run "alias run adobe coldfusion builder 2 plug-in" i get the message: "the operation can't be completed because the original item for "run adobe coldfusion builder 2 plug-in" can't be found." 
+i did run the uninstall shell script prior to trying to install builder 2, in fact i installed a fresh version of eclipse and still no joy. 
+thanks for any suggestions. 
+</s><s>tom 
+</s><s>message was edited by: pdx.tjk got a call from anit (adobe support) and he was very helpful.</s><s> i'm actually quite impressed by the followup. thanks! 
+</s><s>one last step was required, even though i'd run the uninstaller previously: i needed to delete the db file in /library/application\ support/adobe/uninstall and then run the cf builder 2.0.1 installer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-1317655</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Ian1753" timestamp="Oct 18, 2013 7:36 AM">
+<s>the following site says that a trial version of the software can be converted to a free educational version during the registration process. 
+http://www.adobe.com/uk/products/coldfusion-builder/faq.html 
+coldfusion builder 2 is available free to all eligible education customers for learning purposes only and not for production purposes.</s><s> students, faculty, and staff can get serial numbers to activate downloadable trial versions by registering on the registration site.</s><s> during registration, you will be prompted to upload a copy of your student id, faculty id, or employee id, or you can upload a letter on institutional letterhead proving your current affiliation with an educational institution.</s><s> once validated, you will be emailed a free educational serial number for coldfusion builder 2.</s><s> it may take up to two weeks after you submit the request to receive your serial number. 
+i have been unable to reach the 'registration' page for cf builder. 
+</s><s>is the above information still valid and if so, how do i proceed to activate the product as an educational version? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5772668</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="carehart" timestamp="Oct 19, 2013 9:45 AM">
+<s>i can't remember what may trigger the reg interface in cfb itself, but if you use the help menu there, see the option for adobe coldfusion builder registration, which takes you to a web page (where you will be asked to login and then register).</s><s> let us know if that helps.</s><s> since mine is already registered, i can't see what it may look like for you if you have not yet registered.</s><s> i realize it may not offer the solution you are looking for, but it's worth a try. 
+</s><s>it could be that the option to register is shown when you startup, or that the option was offered and you may have told cfb to stop showing it.</s><s> (you can do that also with cfb's "startup page", and at least that page can be turned on again using window>preferences>coldfusion>startup, if that may help at all also.</s><s>) 
+</s><s>let us know what you find, especially if anything works, so that others finding this thread in the future can know the answer. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5772982</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Ian1753" timestamp="Oct 19, 2013 12:58 PM">
+<s>i haven't been able to register (which is a pre-requisite of submitting proof of academic status); i am still able to see the 'start up' page in cf builder.</s><s> i've tried four ways (all of which have been unsuccessful of reaching the registration page): 
+from wihin the application itself: help>adobe coldfusion builder registration - nothing happens (ie i am not taken to the registration page).</s><s> by clicking the link ('registation site') in the faq page (see my original post above) for cf builder - this results is a 404 error (page not found) i don't see any links on the startup page for registering the product.</s><s> i've telephoned 'adobe support' and 'customer services' without being able to get through to anyone. 
+</s><s>thanks for your reply 
+ian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777435</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 21, 2013 3:23 PM">
+<s>the educational register site is no longer available either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777569</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="carehart" timestamp="Oct 21, 2013 4:08 PM">
+<s>bummer.</s><s> i don't know why any of those approaches you folks are trying are failing.</s><s> let's hope that someone from adobe may see this and offer some thoughts. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777572</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 21, 2013 4:16 PM">
+<s>i think adobe is, not so subtly, trying to get people to move to v.10. just my opinion - i'm new to cf, but that is my impression: maximize the revenue stream seems to be priority number one. 
+</s><s>on oct 21, 2013, at 4:08 pm, charlie arehart <forums_noreply@adobe.com<mailto:forums_noreply@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777578</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Anit_Kumar" timestamp="Oct 21, 2013 4:39 PM">
+<s>hi all, 
+</s><s>we apologize for the inconvenience caused.</s><s> we are looking into it. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777692</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Ian1753" timestamp="Oct 21, 2013 4:50 PM">
+<s>thank you for sending your query.</s><s> we are looking into it.   thanks & regards anit kumar panda  | technical support consultant - coldfusion |  adobe coldfusion blog |  twitt @coldfusion | coldfusion forum |  coldfusion in facebook   from: ian  [sent: monday, october 21, 2013 11:31 pm to: cf install subject: registration site for coldfusion builder - the link to the registration site is not working   my objective is to register the trial download of the software on the basis of my educational student status by obtaining a serial number from adobe as per the site: http://www.adobe.com/uk/products/coldfusion-builder/faq.html?trackingi d=juegd   thanks for your help.   ian
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5777772</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="carehart" timestamp="Oct 23, 2013 3:01 PM">
+<s>@pdx.tjk, i realize you're new to cf but i do feel some corrections are warranted.</s><s> first, we're talking here about cfbuilder, not coldfusion (whose newest version is the "10" you refer to). 
+</s><s>second, maximizing profitability is a primary goal for nearly any publicly held company in a capitalist economy.</s><s> that's not to say that other factors, like customer service, need to slip, or should be allowed to. 
+</s><s>finally, in that regard, good to see the later notes from folks at adobe who may be able to help with this cfb educational activation issue. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5779276</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="Anit_Kumar" timestamp="Oct 22, 2013 9:08 AM">
+<s>thanks charlie.</s><s> 
+</s><s>the registrations are still available.</s><s> you can claim the free license from https://freeriatools.com/ 
+regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5779353</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 22, 2013 9:45 AM">
+<s>hi, thanks for the conciliatory note; points taken.</s><s> i thought a little poke in the ribs might help elicit a more positive response from adobe folks.</s><s> 8-) cheers, tom k 
+</s><s>on oct 21, 2013, at 6:22 pm, charlie arehart <forums_noreply@adobe.com<mailto:forums_noreply@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5770322-5779850</DOCNO>
+<TEXT>
+<subject>Free Educational Activation for CF Builder</subject>
+<post author="pdx.tjk" timestamp="Oct 22, 2013 2:40 PM">
+<s>hi anit, there are no plugins in the adobe coldfusion builder 2 plugins directory: i'm running os x 10.8.5.</s><s> the cf builder download was coldfusionbuilder_2_wwej.dmg when i double-click on the run "alias run adobe coldfusion builder 2 plug-in" i get the message: "the operation can't be completed because the original item for "run adobe coldfusion builder 2 plug-in" can't be found." 
+i did run the uninstall shell script prior to trying to install builder 2, in fact i installed a fresh version of eclipse and still no joy. 
+thanks for any suggestions. 
+</s><s>tom 
+</s><s>message was edited by: pdx.tjk got a call from anit (adobe support) and he was very helpful.</s><s> i'm actually quite impressed by the followup. thanks! 
+</s><s>one last step was required, even though i'd run the uninstaller previously: i needed to delete the db file in /library/application\ support/adobe/uninstall and then run the cf builder 2.0.1 installer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-1308721</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="advancesolutionsni" timestamp="Oct 3, 2013 2:41 AM">
+<s>hi, it would seem that cf builder2 doesnt have any code assisting for cfscripting.</s><s>?</s><s> surely ive missed something here. 
+</s><s>if this is the case then im wondering whats going on as dm cc is clearly trying to discourage you from using it for coldfusion (by stripping out previous cf tools).</s><s> cf builder has no code assist for cfscript.. 
+i like to use cfscript in my components as i like the way it resembles other languages im familiar with, eg javascript, c# etc. 
+</s><s>im wondering now, why bother, just use the tags ank keep life simple? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5733506</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="carehart" timestamp="Oct 3, 2013 7:16 AM">
+<s>@advancesolutionsni: code assist absolutely does work in script.</s><s> what is an example of what's not working for you?</s><s> especially compared to something that "works" for you in tag syntax? 
+</s><s>for instance, if you maybe want arguments of a function to popup for you, that does work.</s><s> but do note that (in either tags or script) you need to click ctrl-space to make that work. 
+</s><s>same with seeing a list of available variables on a page when naming a variable on the right-side of an assignment, or seeing the list of available datasources defined in your cf admin when creating a query, or seeing the list of cfcs when doing a createobject of a component, or seeing a list of methods in a cfc when referring to an instance of one, and so on. 
+btw, those last four are things that dw never could do, and it just scratches the surface of such differences, so cfb really is much more than just "a different cf editor".</s><s> each does things the other does not.</s><s> we need to learn to use each tool to its max, and the way it works. 
+</s><s>to that end, i would point out that there is a very substantial user guide for cfb, available online 
+http://help.adobe.com/en_us/coldfusionbuilder/2.0/using/index.html 
+and there's a specific section on code assist, with more on the above, at: http://help.adobe.com/en_us/coldfusionbuilder/2.0/using/ws0ef8c004658c 1089-554789f8121af8f0c8c-7ffb.html#wsd160b5fdf5100e8f-1264b51812d55ebd a15-7ffb 
+</s><s>hth.</s><s> 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5733776</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="advancesolutionsni" timestamp="Oct 3, 2013 8:51 AM">
+<s>thanks charlie, yea i did review the documentation but i suppose i could reword this and say that maybe the code assist doesnt behave how i expected.</s><s> that expectation may not right or wrong.</s><s> im somparing to the likes of visual studios intellisense. 
+eg in my cfscript i have: myqry.addparam(name="par_theid",value= *** theid); 
+i seem to have wanted cb to pop up with the declared variable/argument listing as i reached the ** signs above. 
+maybe im being lazy -:) 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5736208</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="carehart" timestamp="Oct 4, 2013 7:49 AM">
+<s>well, to be clear, it will pop up with that (and much more), but only if you use ctrl-space. 
+</s><s>not sure why that was chosen to be required, but it's just a matter of holding one more key down, so not too onerous. 
+</s><s>the problem is that, sadly, too many don't know to do that and therefore don't realize it's an option.</s><s> still, i would think that in a very short time it would become second nature. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5769046</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="Aegis%20Kleais" timestamp="Oct 17, 2013 5:38 PM">
+<s>you know, code assist and other coding variations have always been a feature that ide's were lacking in. 
+</s><s>for example.</s><s> i always loved the look of code with aligned attributes.</s><s> like: 
+</s><s><cfinvoke component ="user" method ="getid" returnvariable ="local.returndata" /> 
+</s><s>rather than: 
+<cfinvoke component="user" method="getid" returnvariable="local.returndata" /> 
+</s><s>but you never see any ides offer that.</s><s> also, i'm praying that cfb3 has less support, but i'm betting on that it does not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-1308721</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="advancesolutionsni" timestamp="Oct 3, 2013 2:41 AM">
+<s>hi, it would seem that cf builder2 doesnt have any code assisting for cfscripting.</s><s>?</s><s> surely ive missed something here. 
+</s><s>if this is the case then im wondering whats going on as dm cc is clearly trying to discourage you from using it for coldfusion (by stripping out previous cf tools).</s><s> cf builder has no code assist for cfscript.. 
+i like to use cfscript in my components as i like the way it resembles other languages im familiar with, eg javascript, c# etc. 
+</s><s>im wondering now, why bother, just use the tags ank keep life simple? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5733506</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="carehart" timestamp="Oct 3, 2013 7:16 AM">
+<s>@advancesolutionsni: code assist absolutely does work in script.</s><s> what is an example of what's not working for you?</s><s> especially compared to something that "works" for you in tag syntax? 
+</s><s>for instance, if you maybe want arguments of a function to popup for you, that does work.</s><s> but do note that (in either tags or script) you need to click ctrl-space to make that work. 
+</s><s>same with seeing a list of available variables on a page when naming a variable on the right-side of an assignment, or seeing the list of available datasources defined in your cf admin when creating a query, or seeing the list of cfcs when doing a createobject of a component, or seeing a list of methods in a cfc when referring to an instance of one, and so on. 
+btw, those last four are things that dw never could do, and it just scratches the surface of such differences, so cfb really is much more than just "a different cf editor".</s><s> each does things the other does not.</s><s> we need to learn to use each tool to its max, and the way it works. 
+</s><s>to that end, i would point out that there is a very substantial user guide for cfb, available online 
+http://help.adobe.com/en_us/coldfusionbuilder/2.0/using/index.html 
+and there's a specific section on code assist, with more on the above, at: http://help.adobe.com/en_us/coldfusionbuilder/2.0/using/ws0ef8c004658c 1089-554789f8121af8f0c8c-7ffb.html#wsd160b5fdf5100e8f-1264b51812d55ebd a15-7ffb 
+</s><s>hth.</s><s> 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5733776</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="advancesolutionsni" timestamp="Oct 3, 2013 8:51 AM">
+<s>thanks charlie, yea i did review the documentation but i suppose i could reword this and say that maybe the code assist doesnt behave how i expected.</s><s> that expectation may not right or wrong.</s><s> im somparing to the likes of visual studios intellisense. 
+eg in my cfscript i have: myqry.addparam(name="par_theid",value= *** theid); 
+i seem to have wanted cb to pop up with the declared variable/argument listing as i reached the ** signs above. 
+maybe im being lazy -:) 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5736208</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="carehart" timestamp="Oct 4, 2013 7:49 AM">
+<s>well, to be clear, it will pop up with that (and much more), but only if you use ctrl-space. 
+</s><s>not sure why that was chosen to be required, but it's just a matter of holding one more key down, so not too onerous. 
+</s><s>the problem is that, sadly, too many don't know to do that and therefore don't realize it's an option.</s><s> still, i would think that in a very short time it would become second nature. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5733069-5769046</DOCNO>
+<TEXT>
+<subject>cfscript code assist?</subject>
+<post author="Aegis%20Kleais" timestamp="Oct 17, 2013 5:38 PM">
+<s>you know, code assist and other coding variations have always been a feature that ide's were lacking in. 
+</s><s>for example.</s><s> i always loved the look of code with aligned attributes.</s><s> like: 
+</s><s><cfinvoke component ="user" method ="getid" returnvariable ="local.returndata" /> 
+</s><s>rather than: 
+<cfinvoke component="user" method="getid" returnvariable="local.returndata" /> 
+</s><s>but you never see any ides offer that.</s><s> also, i'm praying that cfb3 has less support, but i'm betting on that it does not. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-1014975</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="signcarver" timestamp="May 31, 2012 8:53 AM">
+<s>learning tape on coldfusion builder shows an extension to auto-generate cfc components for access to database tables. 
+i can't find that function in coldfusion builder 2.</s><s> is it still available?</s><s> these are the extensions i have installed: 
+
+</s><s>this is what i see when i right click on a database table: 
+
+</s><s>thanks very much!</s><s> steve 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4475403</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="TannytheRatty" timestamp="Jun 7, 2012 9:07 PM">
+<s>i am having the same problem.</s><s> are you using the tutorail from lynda.com? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4480685</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="signcarver" timestamp="Jun 10, 2012 10:38 AM">
+<s>yes, the lynda.com tutorial. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4484348</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="TannytheRatty" timestamp="Jun 11, 2012 4:12 PM">
+<s>i found a solution!</s><s> go here: http://adobecfcgenerator.riaforge.org/ download the zip file go into cfbuilder go to the extensions tab at the bottom (same row the servers are in) click the + button (hover text should be "install extension from archive file") browse to the zip file, click open, and tada!</s><s> you have the cfc creator. 
+</s><s>hope this helps! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4487291</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="signcarver" timestamp="Jun 12, 2012 3:14 PM">
+<s>tanny... - thank you so much - worked perfectly! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-5729606</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="jahdakine" timestamp="Oct 1, 2013 2:55 PM">
+<s>when i created a server configuration, it added these files to the docroot already but the option wasn't availble.</s><s> when i tried to follow these instructions i got an "already installed" message. 
+</s><s>what worked for me was to click on the second electrical plug - "import extension from folder" button and browse to the dsired extension. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-1014975</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="signcarver" timestamp="May 31, 2012 8:53 AM">
+<s>learning tape on coldfusion builder shows an extension to auto-generate cfc components for access to database tables. 
+i can't find that function in coldfusion builder 2.</s><s> is it still available?</s><s> these are the extensions i have installed: 
+
+</s><s>this is what i see when i right click on a database table: 
+
+</s><s>thanks very much!</s><s> steve 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4475403</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="TannytheRatty" timestamp="Jun 7, 2012 9:07 PM">
+<s>i am having the same problem.</s><s> are you using the tutorail from lynda.com? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4480685</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="signcarver" timestamp="Jun 10, 2012 10:38 AM">
+<s>yes, the lynda.com tutorial. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4484348</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="TannytheRatty" timestamp="Jun 11, 2012 4:12 PM">
+<s>i found a solution!</s><s> go here: http://adobecfcgenerator.riaforge.org/ download the zip file go into cfbuilder go to the extensions tab at the bottom (same row the servers are in) click the + button (hover text should be "install extension from archive file") browse to the zip file, click open, and tada!</s><s> you have the cfc creator. 
+</s><s>hope this helps! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-4487291</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="signcarver" timestamp="Jun 12, 2012 3:14 PM">
+<s>tanny... - thank you so much - worked perfectly! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-4454216-5729606</DOCNO>
+<TEXT>
+<subject>Is the data CFC generator for RDS still available in Builder 2?</subject>
+<post author="jahdakine" timestamp="Oct 1, 2013 2:55 PM">
+<s>when i created a server configuration, it added these files to the docroot already but the option wasn't availble.</s><s> when i tried to follow these instructions i got an "already installed" message. 
+</s><s>what worked for me was to click on the second electrical plug - "import extension from folder" button and browse to the dsired extension. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5725375-1306797</DOCNO>
+<TEXT>
+<subject>CF Builder trial reinstallation issue.</subject>
+<post author="Golden Jet" timestamp="Sep 30, 2013 9:26 AM">
+<s>back in june i installed the cf builder trial on my work machine.</s><s> 2 days later i had to uninstall it due to our software compliance policies.</s><s> i *maybe* used it twice, and have been using our standard eclipse (juno) with cfeclipse plugin ide.</s><s> we are planning on migrating away from dw and will either stick with eclipse/cfeclipse or move to cf builder, if we can trial it! 
+</s><s>fast forward to last week.</s><s> all the issues have been taken care of, i'm free to install cf builder and evaluate it for possible purchase by my team.</s><s> i download latest trial install, go through installation, and am promptly told at first activation of the new install my trial period has expired! 
+</s><s>yes, i did install it over 60 days ago, but i almost immediately uninstalled it once i was notified it was a no-no and did not use it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5725375-1306797</DOCNO>
+<TEXT>
+<subject>CF Builder trial reinstallation issue.</subject>
+<post author="Golden Jet" timestamp="Sep 30, 2013 9:26 AM">
+<s>back in june i installed the cf builder trial on my work machine.</s><s> 2 days later i had to uninstall it due to our software compliance policies.</s><s> i *maybe* used it twice, and have been using our standard eclipse (juno) with cfeclipse plugin ide.</s><s> we are planning on migrating away from dw and will either stick with eclipse/cfeclipse or move to cf builder, if we can trial it! 
+</s><s>fast forward to last week.</s><s> all the issues have been taken care of, i'm free to install cf builder and evaluate it for possible purchase by my team.</s><s> i download latest trial install, go through installation, and am promptly told at first activation of the new install my trial period has expired! 
+</s><s>yes, i did install it over 60 days ago, but i almost immediately uninstalled it once i was notified it was a no-no and did not use it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5499227-1253174</DOCNO>
+<TEXT>
+<subject>CF Builder closes after Firefox preview</subject>
+<post author="CFsolar" timestamp="Jul 12, 2013 5:20 AM">
+<s>i'm using cf builder (not 2) on apache 2.2 with cf9. 
+</s><s>my project is set up just fine.</s><s> i have firefox and ie tabs set up in the ide for previewing. 
+</s><s>when i preview a cfm project in my project, the correct behavior for my site is to first require a login page to be rendered in the preview window.</s><s> after supplying uname/pw, the page i'm intending to preview *should* appear. 
+</s><s>this correct behavior happens on the ie preview.</s><s> for the firefox preview, the login page appears but then immediately after the login page is submitted, cf builder completely closes.</s><s> poof!</s><s> no error message or anything...it just shuts down. 
+</s><s>any thoughts about what might be causing this firefox-only, only-after-login-is-submitted shutdown? 
+</s><s>i've uninstalled/reinstalled cf builder, cleaned out project settings, and even reinstalled cf9.</s><s> nothing has changed this behavior. 
+</s><s>help greatly appreciated! 
+</s><s>les 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5499227-5652782</DOCNO>
+<TEXT>
+<subject>CF Builder closes after Firefox preview</subject>
+<post author="Anit_Kumar" timestamp="Sep 4, 2013 9:31 AM">
+<s>hello cfsolar, 
+</s><s>please create a new coldfusion project and then uncheck "use default location" and then browse to cf_root\projectname.</s><s> select localhost under the servers tab and then hit finish.</s><s> after creating a new coldfusionpage, please preview the page in cfb2 window and external browsers. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5499227-1253174</DOCNO>
+<TEXT>
+<subject>CF Builder closes after Firefox preview</subject>
+<post author="CFsolar" timestamp="Jul 12, 2013 5:20 AM">
+<s>i'm using cf builder (not 2) on apache 2.2 with cf9. 
+</s><s>my project is set up just fine.</s><s> i have firefox and ie tabs set up in the ide for previewing. 
+</s><s>when i preview a cfm project in my project, the correct behavior for my site is to first require a login page to be rendered in the preview window.</s><s> after supplying uname/pw, the page i'm intending to preview *should* appear. 
+</s><s>this correct behavior happens on the ie preview.</s><s> for the firefox preview, the login page appears but then immediately after the login page is submitted, cf builder completely closes.</s><s> poof!</s><s> no error message or anything...it just shuts down. 
+</s><s>any thoughts about what might be causing this firefox-only, only-after-login-is-submitted shutdown? 
+</s><s>i've uninstalled/reinstalled cf builder, cleaned out project settings, and even reinstalled cf9.</s><s> nothing has changed this behavior. 
+</s><s>help greatly appreciated! 
+</s><s>les 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5499227-5652782</DOCNO>
+<TEXT>
+<subject>CF Builder closes after Firefox preview</subject>
+<post author="Anit_Kumar" timestamp="Sep 4, 2013 9:31 AM">
+<s>hello cfsolar, 
+</s><s>please create a new coldfusion project and then uncheck "use default location" and then browse to cf_root\projectname.</s><s> select localhost under the servers tab and then hit finish.</s><s> after creating a new coldfusionpage, please preview the page in cfb2 window and external browsers. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5599340-1276720</DOCNO>
+<TEXT>
+<subject>CF Builder 2 won't play with Firefox</subject>
+<post author="the.marshall" timestamp="Aug 15, 2013 9:40 PM">
+<s>i have been running cf builder 2 on mac os 10.8.4 as a standalone.</s><s> i can preview templates in safari and chrome but not in firefox (v23).</s><s> if i set firefox as default browser in cfb2 prefs and preview a template, ff starts up and displays correctly once but any subsequent requests give me the alert "close firefox.</s><s> a copy of firefox is already open.</s><s> only one copy of firefox can be open at a time." 
+i have googled this and tried deleting lock files and profiles etc. but i doubted this was the problem any way since dreamweaver, aptana studio and eclipse with cfeclipse plug-in all launch templates in ff successfully. 
+</s><s>so i tried uninstalling all cfb2 and all of eclipse 4.2 and installed eclipse 3.7.2 and cfb2 plug-in... same problem, cf builder won't play with firefox. 
+</s><s>any answers? 
+</s><s>many thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5599340-5650903</DOCNO>
+<TEXT>
+<subject>CF Builder 2 won't play with Firefox</subject>
+<post author="Sutton%20Yamanashi" timestamp="Sep 3, 2013 5:21 PM">
+<s>i'm having a similar problem with coldfusion builder 2 (with hot fix) on mac os 10.8.4.</s><s> however, i can only preview templates in safari.</s><s> when i try to add google chrome in preferences > general > web browser, i get a message that says 'the location value is not a valid path name.'.</s><s> firefox shows up in the list of browsers, but i can't add it to the preview tab. 
+i don't have this problem on my pc. 
+</s><s>any help would be much appreciated.</s><s> cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5599340-5652703</DOCNO>
+<TEXT>
+<subject>CF Builder 2 won't play with Firefox</subject>
+<post author="Anit_Kumar" timestamp="Sep 4, 2013 9:30 AM">
+<s>hello sutton yamanashi, 
+</s><s>please create a new coldfusion project and then uncheck "use default location" and then browse to cf_root\projectname.</s><s> select localhost under the servers tab and then hit finish.</s><s> after creating a new coldfusion page, please preview the page in cfb2 window and external browsers. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5599340-1276720</DOCNO>
+<TEXT>
+<subject>CF Builder 2 won't play with Firefox</subject>
+<post author="the.marshall" timestamp="Aug 15, 2013 9:40 PM">
+<s>i have been running cf builder 2 on mac os 10.8.4 as a standalone.</s><s> i can preview templates in safari and chrome but not in firefox (v23).</s><s> if i set firefox as default browser in cfb2 prefs and preview a template, ff starts up and displays correctly once but any subsequent requests give me the alert "close firefox.</s><s> a copy of firefox is already open.</s><s> only one copy of firefox can be open at a time." 
+i have googled this and tried deleting lock files and profiles etc. but i doubted this was the problem any way since dreamweaver, aptana studio and eclipse with cfeclipse plug-in all launch templates in ff successfully. 
+</s><s>so i tried uninstalling all cfb2 and all of eclipse 4.2 and installed eclipse 3.7.2 and cfb2 plug-in... same problem, cf builder won't play with firefox. 
+</s><s>any answers? 
+</s><s>many thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5599340-5650903</DOCNO>
+<TEXT>
+<subject>CF Builder 2 won't play with Firefox</subject>
+<post author="Sutton%20Yamanashi" timestamp="Sep 3, 2013 5:21 PM">
+<s>i'm having a similar problem with coldfusion builder 2 (with hot fix) on mac os 10.8.4.</s><s> however, i can only preview templates in safari.</s><s> when i try to add google chrome in preferences > general > web browser, i get a message that says 'the location value is not a valid path name.'.</s><s> firefox shows up in the list of browsers, but i can't add it to the preview tab. 
+i don't have this problem on my pc. 
+</s><s>any help would be much appreciated.</s><s> cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5599340-5652703</DOCNO>
+<TEXT>
+<subject>CF Builder 2 won't play with Firefox</subject>
+<post author="Anit_Kumar" timestamp="Sep 4, 2013 9:30 AM">
+<s>hello sutton yamanashi, 
+</s><s>please create a new coldfusion project and then uncheck "use default location" and then browse to cf_root\projectname.</s><s> select localhost under the servers tab and then hit finish.</s><s> after creating a new coldfusion page, please preview the page in cfb2 window and external browsers. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-1287420</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="solaced" timestamp="Sep 1, 2013 11:43 AM">
+<s>just how badly could adobe make an ide for cf? 
+</s><s>in dreamweaver if you want to run an <cfif> statement with 'structkeyexists' then you get perfect code hinting.</s><s> so try typing <cfif structkeyexists( .... and dw will show you what parameters the structkeyexists function expects. 
+</s><s>now do the same in cf builder and it doesn't give you any code hinting whatsoever! 
+</s><s>getting a little tired of adobe's product team now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-5644922</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="Adam%20Cameron." timestamp="Sep 1, 2013 12:01 PM">
+<s>odd.</s><s> i've got it configured to only show up when i press ctrl-space, but it all works fine for me. 
+</s><s>are you sure you haven't got it switched off?</s><s> that is an option after all... 
+-- adam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-5645210</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="solaced" timestamp="Sep 1, 2013 3:43 PM">
+<s>yes all the code assist options are on. 
+</s><s>if i start typing <cfif... then the code assist comes up with some suggestions but then if i continue to type structkeyexists(....</s><s> i get no more assistance.</s><s> in dw it assists me fine. 
+
+</s><s>its the same when i try it with a new page.</s><s> its the same after updates. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-5646451</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="carehart" timestamp="Sep 2, 2013 7:11 AM">
+<s>@solaced, cfb does not offer that option to auto-display function arguments.</s><s> lamentable, but there it is.</s><s> but as adam noted you can get it using ctrl-space. 
+</s><s>but here is where cfb goes one better (really, much better) than dw.</s><s> not only does that display the list of function arguments (as you expected from dw), in a yellow box at the top of the list, but far more valuable (to most, i'd think) cfb then also shows you any available variables defined in that page.</s><s> dw never did that.</s><s> yes, it's a shame that you have to hit ctrl-space to see either, but i don't see any way to change it.</s><s> anyone else? 
+</s><s>now, one may wonder, "ok, that would be cool, but the variables i want to see are coming from an application.cfm/cfc, or a cfinclude, or custom tag call, or as properties in a cfc instance, or keys in a struct returned from a cfc or udf call, and so on.</s><s> if cfb only shows what variables are defined "on the calling page", then that's not as useful as you want to make it sound." 
+</s><s>well, cfb can absolutely do all those, too.</s><s> it just requires that cfb can interpret all that cfml just like cf itself would at runtime.</s><s> no small task, when you think about it, since cfcs or include files could be found via some mapping defined in the cf admin, etc. still, cfb can indeed figure all that out for you, and show even those variables in an instant. 
+</s><s>there are some caveats: you have to have opened the cf page from within a cf project (as defined in cfb), and you have to have created a (successful) server connection to your cf instance, and have connected that project to that server.</s><s> assuming all that's in order, cfb can do that. 
+</s><s>it can also show you all methods in a cfc, all cfcs defined in your application and server, all columns in a query, and lots more. 
+</s><s>this is where cfb shows itself to be more than just an editor, but is truly an ide (integrated development environment), which can help make you far more productive once you learn to use its ins and outs.</s><s> i would highly recommend spending some time with the cfbuilder user guide ( 
+</s><s>see especially the "code editing" chapter (http://help.adobe.com/en_us/coldfusionbuilder/2.0/using//ws0ef8c004658 c1089-554789f8121af8f0c8c-8000.html <http://help.adobe.com/en_us/coldfusionbuilder/2.0/using/ws0ef8c004658c 1089-554789f8121af8f0c8c-8000.html> ), and among its many sections, one on "code assist".</s><s> but there are about 3 other key chapters in that manual, so don't stop at the code editing one.</s><s> an hour or so spent perusing that will shock many at what's possible. 
+</s><s>but sometimes some things just don't work the same as they did in dw or homesite, and that trips some up.</s><s> or even if they read the manual it fails to work because some aspect is not configured right (like the project and server stuff i mentioned above).</s><s> that's covered in 2 of the other 3 chapters i pointed to. 
+</s><s>and if you still have trouble getting it working, there is both this forum and even some consultants (like myself) who can help (for a small fee) via remote access to get you over some hump.</s><s> i don't say that as a sales pitch, but just as a plea that you not give up too quickly on cfb.</s><s> with just a little help, small roadblocks can be cleared to open up whole new paths.</s><s> cfb's powers can be amazing.</s><s> it just seems few ever get to find them.</s><s> (look for the ctrl+hover feature in the docs, for how to have cfb open an include file, a cfc method, or javascript and css files, and lots more.</s><s>) 
+</s><s>hope all that's helpful. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-1287420</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="solaced" timestamp="Sep 1, 2013 11:43 AM">
+<s>just how badly could adobe make an ide for cf? 
+</s><s>in dreamweaver if you want to run an <cfif> statement with 'structkeyexists' then you get perfect code hinting.</s><s> so try typing <cfif structkeyexists( .... and dw will show you what parameters the structkeyexists function expects. 
+</s><s>now do the same in cf builder and it doesn't give you any code hinting whatsoever! 
+</s><s>getting a little tired of adobe's product team now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-5644922</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="Adam%20Cameron." timestamp="Sep 1, 2013 12:01 PM">
+<s>odd.</s><s> i've got it configured to only show up when i press ctrl-space, but it all works fine for me. 
+</s><s>are you sure you haven't got it switched off?</s><s> that is an option after all... 
+-- adam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-5645210</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="solaced" timestamp="Sep 1, 2013 3:43 PM">
+<s>yes all the code assist options are on. 
+</s><s>if i start typing <cfif... then the code assist comes up with some suggestions but then if i continue to type structkeyexists(....</s><s> i get no more assistance.</s><s> in dw it assists me fine. 
+
+</s><s>its the same when i try it with a new page.</s><s> its the same after updates. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5644902-5646451</DOCNO>
+<TEXT>
+<subject>DW wipes the floor with CF Builder for CF tasks!</subject>
+<post author="carehart" timestamp="Sep 2, 2013 7:11 AM">
+<s>@solaced, cfb does not offer that option to auto-display function arguments.</s><s> lamentable, but there it is.</s><s> but as adam noted you can get it using ctrl-space. 
+</s><s>but here is where cfb goes one better (really, much better) than dw.</s><s> not only does that display the list of function arguments (as you expected from dw), in a yellow box at the top of the list, but far more valuable (to most, i'd think) cfb then also shows you any available variables defined in that page.</s><s> dw never did that.</s><s> yes, it's a shame that you have to hit ctrl-space to see either, but i don't see any way to change it.</s><s> anyone else? 
+</s><s>now, one may wonder, "ok, that would be cool, but the variables i want to see are coming from an application.cfm/cfc, or a cfinclude, or custom tag call, or as properties in a cfc instance, or keys in a struct returned from a cfc or udf call, and so on.</s><s> if cfb only shows what variables are defined "on the calling page", then that's not as useful as you want to make it sound." 
+</s><s>well, cfb can absolutely do all those, too.</s><s> it just requires that cfb can interpret all that cfml just like cf itself would at runtime.</s><s> no small task, when you think about it, since cfcs or include files could be found via some mapping defined in the cf admin, etc. still, cfb can indeed figure all that out for you, and show even those variables in an instant. 
+</s><s>there are some caveats: you have to have opened the cf page from within a cf project (as defined in cfb), and you have to have created a (successful) server connection to your cf instance, and have connected that project to that server.</s><s> assuming all that's in order, cfb can do that. 
+</s><s>it can also show you all methods in a cfc, all cfcs defined in your application and server, all columns in a query, and lots more. 
+</s><s>this is where cfb shows itself to be more than just an editor, but is truly an ide (integrated development environment), which can help make you far more productive once you learn to use its ins and outs.</s><s> i would highly recommend spending some time with the cfbuilder user guide ( 
+</s><s>see especially the "code editing" chapter (http://help.adobe.com/en_us/coldfusionbuilder/2.0/using//ws0ef8c004658 c1089-554789f8121af8f0c8c-8000.html <http://help.adobe.com/en_us/coldfusionbuilder/2.0/using/ws0ef8c004658c 1089-554789f8121af8f0c8c-8000.html> ), and among its many sections, one on "code assist".</s><s> but there are about 3 other key chapters in that manual, so don't stop at the code editing one.</s><s> an hour or so spent perusing that will shock many at what's possible. 
+</s><s>but sometimes some things just don't work the same as they did in dw or homesite, and that trips some up.</s><s> or even if they read the manual it fails to work because some aspect is not configured right (like the project and server stuff i mentioned above).</s><s> that's covered in 2 of the other 3 chapters i pointed to. 
+</s><s>and if you still have trouble getting it working, there is both this forum and even some consultants (like myself) who can help (for a small fee) via remote access to get you over some hump.</s><s> i don't say that as a sales pitch, but just as a plea that you not give up too quickly on cfb.</s><s> with just a little help, small roadblocks can be cleared to open up whole new paths.</s><s> cfb's powers can be amazing.</s><s> it just seems few ever get to find them.</s><s> (look for the ctrl+hover feature in the docs, for how to have cfb open an include file, a cfc method, or javascript and css files, and lots more.</s><s>) 
+</s><s>hope all that's helpful. 
+/charlie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5635625-1285147</DOCNO>
+<TEXT>
+<subject>How do I add a new server when using IIS?</subject>
+<post author="Daemach2" timestamp="Aug 28, 2013 5:10 PM">
+<s>i cannot get past the server home field.</s><s> i'm using iis as a webserver, not tomcat. 
+</s><s>i've tried c:\coldfusion10, c:\coldfusion10\cfusion, c:\coldfusion10\cfusion\bin, none work.</s><s> i specified jrun on the previous page but i don't see a c:\jrun folder either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5635625-5637428</DOCNO>
+<TEXT>
+<subject>How do I add a new server when using IIS?</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Aug 29, 2013 8:30 AM">
+<s>@daemach2, 
+</s><s>you need to select "cf+tomcat bundle" for the application server if you are using cf10.</s><s> jrun is for cf9 and earlier.</s><s> then server home should be c:\coldfusion10\cfusion and document root should be c:\coldfusion10\cfusion\wwwroot. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5635625-1285147</DOCNO>
+<TEXT>
+<subject>How do I add a new server when using IIS?</subject>
+<post author="Daemach2" timestamp="Aug 28, 2013 5:10 PM">
+<s>i cannot get past the server home field.</s><s> i'm using iis as a webserver, not tomcat. 
+</s><s>i've tried c:\coldfusion10, c:\coldfusion10\cfusion, c:\coldfusion10\cfusion\bin, none work.</s><s> i specified jrun on the previous page but i don't see a c:\jrun folder either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5635625-5637428</DOCNO>
+<TEXT>
+<subject>How do I add a new server when using IIS?</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Aug 29, 2013 8:30 AM">
+<s>@daemach2, 
+</s><s>you need to select "cf+tomcat bundle" for the application server if you are using cf10.</s><s> jrun is for cf9 and earlier.</s><s> then server home should be c:\coldfusion10\cfusion and document root should be c:\coldfusion10\cfusion\wwwroot. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5637141-1285523</DOCNO>
+<TEXT>
+<subject>Selected file is not in the document root of the Server?</subject>
+<post author="alexzhu123456" timestamp="Aug 29, 2013 6:48 AM">
+<s>if the project is not in the document root, how can i create a project in document root?</s><s> normal we create a new project in navigator of cfb. and how to create a linked folder to the document root ? 
+may anyone help? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/ColdFusion-Builder/Discussions-5637141-1285523</DOCNO>
+<TEXT>
+<subject>Selected file is not in the document root of the Server?</subject>
+<post author="alexzhu123456" timestamp="Aug 29, 2013 6:48 AM">
+<s>if the project is not in the document root, how can i create a project in document root?</s><s> normal we create a new project in navigator of cfb. and how to create a linked folder to the document root ? 
+may anyone help? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

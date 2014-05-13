@@ -1,0 +1,3655 @@
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231969-1433602</DOCNO>
+<TEXT>
+<subject>Timeline size too large?</subject>
+<post author="riskowner" timestamp="Mar 21, 2014 1:02 PM">
+<s>i exported a 3:17:00 mpeg-2 dvd project from premiere.  right clicking and properties in windows reveals the total size to be: 7.83gb   within encore cs6 i have transcode set to don't transcode.  the project tab reports the size to be 7.3gb for video and 450.9mb for audio.   the timeline size however reports 8.65gb   i am looking to burn this onto a dvd-9 and would like not to have to re-epxort this at a lower bitrate.    i only have 4 pages of menus and nothing extra sitting in the project.   any ideas?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231969-6232195</DOCNO>
+<TEXT>
+<subject>Timeline size too large?</subject>
+<post author="John%20T%20Smith" timestamp="Mar 21, 2014 2:03 PM">
+<s>i don't remember the exact number, but some space is used for "overhead" for the disk setup... and there is no way to not have that space used 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231969-6232326</DOCNO>
+<TEXT>
+<subject>Timeline size too large?</subject>
+<post author="Stan%20Jones" timestamp="Mar 21, 2014 2:45 PM">
+<s>in addition to john's point, encore confuses size regarding bytes and gb.</s><s> and remember, dvd-9 is not 8.5gb it is only 7.95 gigabytes. 
+</s><s>see post 7 here: 
+http://forums.adobe.com/message/4838089#4838089 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-1433370</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="carmsr10" timestamp="Mar 21, 2014 9:05 AM">
+<s>this error occurs when trying to open a encore project.</s><s> could not creat "blu-ray ntsc 1280x720 23.976p mpeg-2.epr".</s><s> the path is not valid. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6231356</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="John%20T%20Smith" timestamp="Mar 21, 2014 10:10 AM">
+<s>right click the program icon and select run as administrator, which is not the same thing as running the computer with the administrator account, and which fixes several "odd" problems...</s><s> to create a two layer dvd or a bluray, you must have encore set to use the run as administrator option... and a mac version http://helpx.adobe.com/x-productkb/global/troubleshoot-system-errors-f reezes-mac.html .</s><s> run as administrator http://forums.adobe.com/thread/969395 (encore + "all" premiere) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6231499</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="carmsr10" timestamp="Mar 21, 2014 10:21 AM">
+<s>thank you for the response.</s><s> i selected "run as administrator" and got the same error.</s><s> i am also working with the creator of the specific encore project that i'm trying to open.</s><s> (infinite skills inc.</s><s>) no solution so far. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6231728</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="Stan%20Jones" timestamp="Mar 21, 2014 11:31 AM">
+<s>epr is a preset file.</s><s> the file is missing, or in at least two other threads, it had been renamed to add an "rej" extension (so .epr.rej).</s><s> i have no idea how such a thing would happen. 
+</s><s>one user fixed it by deleting the .</s><s>rej; another did a reinstall. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6232050</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="carmsr10" timestamp="Mar 21, 2014 1:05 PM">
+<s>thank you solving the problem.</s><s> the project now opens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6232154</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="Stan%20Jones" timestamp="Mar 21, 2014 1:30 PM">
+<s>excellent!</s><s> which fix did you use?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6232205</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="carmsr10" timestamp="Mar 21, 2014 2:07 PM">
+<s>renamed two files having .</s><s>rej on end in the presets folder.</s><s> thx 
+</s><s>sent from my iphone 5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6231047-6232324</DOCNO>
+<TEXT>
+<subject>path not valid error</subject>
+<post author="Stan%20Jones" timestamp="Mar 21, 2014 2:41 PM">
+<s>thanks for reporting.</s><s> wow; how simple.</s><s> but what could create this... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6229819-1433047</DOCNO>
+<TEXT>
+<subject>Upper field settings in Encore.</subject>
+<post author="Steveleicester" timestamp="Mar 20, 2014 9:28 PM">
+<s>is there any way to change the field settings in encore to upper field? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6229819-6230907</DOCNO>
+<TEXT>
+<subject>Upper field settings in Encore.</subject>
+<post author="SAFEHARBOR11" timestamp="Mar 21, 2014 7:47 AM">
+<s>you could try file > edit quality presets 
+i don't actually encode in encore - i create my assets using media encoder.</s><s> in that case, just use an existing mpeg-2 dvd preset and manually change to uff, and import the resulting.m2v with uff into encore.</s><s> as long as it says "don't transcode" next to it, you should be good. 
+</s><s>thanks 
+</s><s>jeff pulera safe harbor computers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6229819-6231942</DOCNO>
+<TEXT>
+<subject>Upper field settings in Encore.</subject>
+<post author="Steveleicester" timestamp="Mar 21, 2014 12:59 PM">
+<s>thank you.</s><s> but this only leaves the video in upper field.</s><s> the time line is still lower field. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6229819-6232161</DOCNO>
+<TEXT>
+<subject>Upper field settings in Encore.</subject>
+<post author="SAFEHARBOR11" timestamp="Mar 21, 2014 1:45 PM">
+<s>just tried the following. 
+</s><s>added 1080i 29.97 clips (uff) to appropriate premiere cc sequence 
+in ame, selected mpeg-2 dvd, ntsc dv wide preset.</s><s> manually changed to upper field first.</s><s> export.</s><s> 
+</s><s>import the .m2v into encore, add to new timeline, which then reports upper field first in timeline properties panel. 
+</s><s>the .m2v asset is listed as "do not transcode" in the bin, so ought to burn as an uff dvd 
+thanks 
+jeff 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6229819-6233659</DOCNO>
+<TEXT>
+<subject>Upper field settings in Encore.</subject>
+<post author="Ann%20Bens" timestamp="Mar 22, 2014 1:55 PM">
+<s>which version and what is your source. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6230425-1433205</DOCNO>
+<TEXT>
+<subject>Adobe Encore CS4 - Encore Failed</subject>
+<post author="Mikam" timestamp="Mar 21, 2014 4:02 AM">
+<s>i recently had a problem with adobe encore cs4 with finalising a project to dvd, and to make a long story short i had my computer totally wiped and reinstalled all programs.the problem i now have is, i export a hdv file from avid media cmposer and import it to encore but when i try to transcode it, i get a "encode failed" message. 
+i have tried other formats "quick time movie" and "quick time reference" which works fine, but i get a colour burst in the video which is not in the original footage and it only appears in encore. 
+i appreciate any help to solve this problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6230425-6230947</DOCNO>
+<TEXT>
+<subject>Adobe Encore CS4 - Encore Failed</subject>
+<post author="John%20T%20Smith" timestamp="Mar 21, 2014 7:52 AM">
+<s>for cs4 you must update the roxio component http://forums.adobe.com/thread/1309029 http://corel.force.com/roxio/articles/en_us/master_article/000012592-p x-engine-description-and-download 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6205844-1427132</DOCNO>
+<TEXT>
+<subject>Encore CS5.1 crashes when starting up</subject>
+<post author="JunkoKanno" timestamp="Mar 13, 2014 6:09 AM">
+<s>i am a mac user and have been able to use encore cs5.1 without problem.</s><s> after failing to burn a dvd, it started freezing everytime i try to start it up.</s><s> encore doesn't respond and i have to "force quit" to finish it. 
+</s><s>my mac is os 10.6.8.</s><s> i also use premiere pro cs5.5. 
+</s><s>any trouble shooting advices, please? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6205844-6206504</DOCNO>
+<TEXT>
+<subject>Encore CS5.1 crashes when starting up</subject>
+<post author="John%20T%20Smith" timestamp="Mar 13, 2014 9:07 AM">
+<s>i am on windows, but have a few saved mac links 
+mac and root user http://forums.adobe.com/thread/879931 -and http://forums.adobe.com/thread/940869?tstart=0 
+mac & nvidia driver http://forums.adobe.com/thread/1075592 
+troubleshooting guide for mac freeze http://helpx.adobe.com/x-productkb/global/troubleshoot-system-errors-f reezes-mac.html 
+external speakers stop playback http://forums.adobe.com/thread/1370072?tstart=0 
+osx crash http://helpx.adobe.com/creative-cloud/kb/ame-premiere-crash-launch-exp ort.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6205844-6230313</DOCNO>
+<TEXT>
+<subject>Encore CS5.1 crashes when starting up</subject>
+<post author="JunkoKanno" timestamp="Mar 21, 2014 2:53 AM">
+<s>thank you john!</s><s> i tried many things, but finally could solve the trouble!</s><s> first, i tried un-installing and re-installing, failed.</s><s> but the repair software somehow fixed the errors of preferences. http://www.digitalrebellion.com/promaintenance i appreciate another jon for posting and developing the software. 
+4.</s><s> jon chappell, 2011/07/21 10:59 in reply to davidbeisner2010 
+instead of booting into the root user account, couldn't you simply type the following into the terminal? 
+sudo /applications/adobe\ premiere\ pro\ cs5.5/adobe\ premiere\ pro\ cs5.5.app/contents/macos/adobe\ premiere\ pro\ cs5.5 
+cs repair fixes permissions problems, so that's worth a try too: http://www.digitalrebellion.com/promaintenance 
+(disclosure: i am the developer of this software) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225492-1432015</DOCNO>
+<TEXT>
+<subject>Encore cs6 issues</subject>
+<post author="tbstuckdude7" timestamp="Mar 19, 2014 3:48 PM">
+<s>i have cs6 premiere pro installed along with encore which i use for dvd authoring.</s><s> 2 times in the last month it has asked me for a serial number when i try to launch encore.</s><s> so then i install and reinstall and then it works.</s><s> i would love to bypass reinstallation and just figure out why it needs a serial number, bc i don't have a serial number.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225492-6225546</DOCNO>
+<TEXT>
+<subject>Encore cs6 issues</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 5:00 PM">
+<s>if you go to the encore forum http://forums.adobe.com/community/encore?view=discussions you will see a very recent discussion of this with the last post about 1 hour ago (as of when i post this) 
+http://forums.adobe.com/thread/1430065?tstart=0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225492-6225754</DOCNO>
+<TEXT>
+<subject>Encore cs6 issues</subject>
+<post author="JSS1138" timestamp="Mar 19, 2014 4:45 PM">
+<s>[moved to encore forum.</s><s>] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225492-6229530</DOCNO>
+<TEXT>
+<subject>Encore cs6 issues</subject>
+<post author="Ann%20Bens" timestamp="Mar 20, 2014 5:50 PM">
+<s>did you use cleaner tool before installing again?</s><s> http://www.adobe.com/support/contact/cscleanertool.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225934-1432114</DOCNO>
+<TEXT>
+<subject>The proper decoders for dynamic link in Encore</subject>
+<post author="the silver trembling man" timestamp="Mar 19, 2014 6:27 PM">
+<s>when i try to dynamically link a premiere pro project into encore a warning box tells me i need the "proper decoders" in my system to make the link happen.</s><s> i have no problem linking premiere pro with after effects so i am wondering what the "proper decoders" are that i seem to lack in my system for encore.</s><s> i am operating mavericks on a macbook pro with a 2.7 ghz processor, an intel core i7. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225934-6226074</DOCNO>
+<TEXT>
+<subject>The proper decoders for dynamic link in Encore</subject>
+<post author="Stan%20Jones" timestamp="Mar 19, 2014 9:09 PM">
+<s>what versions of encore and premiere pro? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225934-6228346</DOCNO>
+<TEXT>
+<subject>The proper decoders for dynamic link in Encore</subject>
+<post author="the%20silver%20trembling%20man" timestamp="Mar 20, 2014 11:48 AM">
+<s>i'm using premiere pro cc 7.2.1(4) and encore cs6 (6.0.1.013) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225934-6228752</DOCNO>
+<TEXT>
+<subject>The proper decoders for dynamic link in Encore</subject>
+<post author="John%20T%20Smith" timestamp="Mar 20, 2014 1:19 PM">
+<s>dynamic link does not work between versions... go to the bottom of reply page #5 in the ppro/encore tutorial list in http://forums.adobe.com/message/2276578 for more information... and a video tutorial 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225934-6229435</DOCNO>
+<TEXT>
+<subject>The proper decoders for dynamic link in Encore</subject>
+<post author="Ann%20Bens" timestamp="Mar 20, 2014 5:41 PM">
+<s>there is no dl between premiere cc and encore cs6.</s><s> they are two different versions.</s><s> dl can only excist between programs from the same version.</s><s> so, you need to export from premiere to either mpeg2-dvd or bluray.</s><s> import the files into encore, make menu and burn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6220106-1430706</DOCNO>
+<TEXT>
+<subject>Media Encoder : DVD Transcode Settings</subject>
+<post author="rlr29711" timestamp="Mar 18, 2014 7:25 AM">
+<s>hi all, 
+</s><s>i want to confirm the settings i am using are the proper settings for a dvd. 
+</s><s>my source footage was exported at source from avid media composer.</s><s> 1920x1080, 23.976. the film is 11 minutes long. 
+</s><s>when i brought it into encoder, and switched to mpeg2-dvd, it automatically selected ntsc 23.976p wide as the preset. 
+</s><s>will ntsc 23.976 play in a dvd player?</s><s> i thought dvds had to be 29.97? 
+</s><s>what is the maximum bit rate that can be safely used?</s><s> right now it is set to 7 mbps.</s><s> 
+</s><s>can i bring the quality up to 100 or will that have issues playing in all dvd players?</s><s> it is automatically set to 75. 
+</s><s>thanks! -randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6220106-6226063</DOCNO>
+<TEXT>
+<subject>Media Encoder : DVD Transcode Settings</subject>
+<post author="bigmanfontu" timestamp="Mar 19, 2014 8:30 PM">
+<s>good questions.</s><s> there is a significant loss of quality if you convert your media from 23.976 to 29.97 fps using an application like media encoder or premiere or whatever, unless you're very familiar with field orders.</s><s> the dvd player, however, will automatically convert the video from 23.967 to 29.97 without a loss of quality. 
+</s><s>bit rate can be a little more complex.</s><s> officially, the maximum video bit rate (video by itself) is 9.8 mb/s.</s><s> however, some people have reported that using the maximum bit rate can cause issues in older players.</s><s> personally, i try staying at around 8.0 mb/s for my projects.</s><s> for audio, you can go either the pcm or dolby digital (.</s><s>ac3) route.</s><s> i usually use .ac3 because you can set the bit rate of that manually and help adjust for what size you want the over all project to be. 
+i hope that helps. 
+</s><s>you may want to check out: http://www.videohelp.com/dvd if you have other questions concerning dvd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6220106-6226078</DOCNO>
+<TEXT>
+<subject>Media Encoder : DVD Transcode Settings</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 9:22 PM">
+<s>duplicate discussion with many answers in http://forums.adobe.com/thread/1430742 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225548-1432034</DOCNO>
+<TEXT>
+<subject>Menus ok but missing buttons, images, backgrounds, layer sets ...</subject>
+<post author="Nico Agosto" timestamp="Mar 19, 2014 4:01 PM">
+<s>hard drive where i previously installed crashed.</s><s> reinstalled functional content as per various online instructions all saying same thing> download and install functional content.</s><s> except it doesn't fully work.</s><s> menus are back, but the rest of the items are all missing.</s><s> please advise.</s><s> i can't even add buttons and a project is due. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225548-6225551</DOCNO>
+<TEXT>
+<subject>Menus ok but missing buttons, images, backgrounds, layer sets ...</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 4:04 PM">
+<s>if you are writing about cs6 (you should always give your version) read http://forums.adobe.com/thread/1430065?tstart=0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225548-6225553</DOCNO>
+<TEXT>
+<subject>Menus ok but missing buttons, images, backgrounds, layer sets ...</subject>
+<post author="Nico%20Agosto" timestamp="Mar 19, 2014 4:09 PM">
+<s>adobe encore cs6 6.0.1.013 imac 27" dec 2013 model w/ osx 10.8.5 adobe cs5, cs6 and cc installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225548-6225706</DOCNO>
+<TEXT>
+<subject>Menus ok but missing buttons, images, backgrounds, layer sets ...</subject>
+<post author="Nico%20Agosto" timestamp="Mar 19, 2014 4:25 PM">
+<s>hmm.</s><s> its a bit confusing.</s><s> i downloaded premierepro_6_content_ls7.dmg and ran the installers then downloaded encorecontentenglish.zip which extracted en-us.7z 3.7gb of what appears to be all menus and the buttons and like that belong to them but no buttons appear when the "button" toggle is activated, or any toggles to the right of the "menu" toggle after installing these i only see menus.</s><s> note that it wouldn't let me change the install location from the crashed drive i no longer have.</s><s> but it did create a new folder in volumes with that name.</s><s> i had to manually move the files to the encore cs6 folder in applications. 
+i must also download encorecontent_en-us.zip? 
+</s><s>seems kinda convoluted but in progress. 
+</s><s>okay i downloaded that file but it seems to be the same crap.</s><s> i will try to install it anyways. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225548-6225710</DOCNO>
+<TEXT>
+<subject>Menus ok but missing buttons, images, backgrounds, layer sets ...</subject>
+<post author="Nico%20Agosto" timestamp="Mar 19, 2014 4:35 PM">
+<s>okay.</s><s> finally after downloaded a larger packed version of the en-us.ls7 the buttons and such are there.</s><s> apparently there is a smaller packed version of the en-us encore assets that is the source of this confusion, since applying it doesn't restore the buttons and such. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6225548-6226077</DOCNO>
+<TEXT>
+<subject>Menus ok but missing buttons, images, backgrounds, layer sets ...</subject>
+<post author="Stan%20Jones" timestamp="Mar 19, 2014 9:21 PM">
+<s>glad you have the content now. 
+i don't believe there are differences in the content of the "full" downloads (small vs full size), but some users (more on macs?</s><s>) have faulty/corrupt downloads. 
+</s><s>for those looking at this thread, use this link: 
+http://helpx.adobe.com/encore/using/download-library-content.html 
+there is no 7z in the process, just one zip and put the files where they belong. 
+</s><s>the premierepro_6_content_ls7 file is an installer, and does not include more than the limited number of templates (no separate buttons etc).</s><s> i do not see any advantage in it over the encorecontent_en-us.zip at the link i just gave. 
+</s><s>there was an advantage for all cs6 install, since it put the styles, etc in the right place, but with cc installs, and full library installs, you have to place them manually. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-1251626</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="tvenice1234" timestamp="Jul 10, 2013 8:00 AM">
+<s>this is an old issue but i didn't see a solution.</s><s> does anyone know the fix for this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5492541</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="Stan%20Jones" timestamp="Jul 10, 2013 8:15 AM">
+<s>someone raised a similar version recently.</s><s> i did not see any solutions. 
+</s><s>what version(s)/suites do you have installed? 
+</s><s>and i assume a psd in windows explorer opens in photoshop? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5492613</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="tvenice1234" timestamp="Jul 10, 2013 8:36 AM">
+<s>thanks for the quick response!</s><s> i have the latest version of the creative cloud (photoshop cc and encore cs6).</s><s> my machine is a late spring 2008 mac pro running on mountain lion - os 10.8.4.</s><s> the problem appeared after i was using this work flow successfully for about a week and a half. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5492720</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="Stan%20Jones" timestamp="Jul 10, 2013 8:53 AM">
+<s>and when are you getting the error?</s><s> trying to edit a menu in photoshop, importing, building, etc. 
+</s><s>odd that it has changed? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5493401</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="tvenice1234" timestamp="Jul 10, 2013 12:28 PM">
+<s>this error occurrs when i have set up a menu in encore using the adobe menu templates and then attempt to send it to photoshop directly through encore by doing a right click and choosing the "edit menu in photoshop" option.</s><s> i have found a work around by locating the photoshop file in the encore sourses folder and opening that directly in photoshop.</s><s> that keeps things moving but it isn't the cleanest way to move between aps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5493658</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="Stan%20Jones" timestamp="Jul 10, 2013 1:41 PM">
+<s>i assume the problem is that encore cs6 expects photoshop cs6.</s><s> i assume you do not have it installed.</s><s> even if you did, it may not work as expected.</s><s> if this is a pr cc/en cs6 problem, it is just as serious, and many of us would say more serious, than the loss of dynamic link.</s><s> you should contact adobe tech support to see if they can help you sort out how to get en cs6 using "edit in photoshop" to ps cc correctly. 
+</s><s>without that, be careful editing the encore source folder file directly.</s><s> encore/photoshop creates a temp version that it uses till ps hands it back off to encore.</s><s> and you will sometimes see 3 or 4 versions of the menu even when encore is handling it all by itself.</s><s> editing it directly with encore open is asking for trouble.</s><s> and editing it with encore closed may be worse! 
+i would work with a copy of the file from the encore source folder, save it outside that directory, then "import as menu" that file.</s><s> (encore will put a new, current version into its directory.</s><s>) i would try to get every bit of the menu structure/highlilghts, etc, set.</s><s> then i would make any other changes to the menu in encore.</s><s> i would not do any significant links/navigation until the menu is set. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5502546</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="tvenice1234" timestamp="Jul 13, 2013 9:43 AM">
+<s>i found the best and safest solution is to restore photoshop cs6 to my computer.</s><s> once i did that encore looks for the cs6 version of photoshop as it did in the past.</s><s> your suggestion nailed the problem.</s><s> thanks a lot!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-5502562</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="Stan%20Jones" timestamp="Jul 13, 2013 10:02 AM">
+<s>good to know that works! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5492477-6225846</DOCNO>
+<TEXT>
+<subject>"Unable to execute script at line 0. photoshop is unidentified"</subject>
+<post author="Yach780" timestamp="Mar 19, 2014 5:49 PM">
+<s>i am using cs6 in both encore and photoshop.</s><s> certain encore projects do allow me to right click to edit in photoshop, but my more recent projects (using the same software) do not.</s><s> suggestions?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-1413634</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Highshots" timestamp="Feb 23, 2014 12:20 PM">
+<s>encore has quit and is now asking for a serial number?</s><s> how do i get back in to my software and projects? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149417</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="John%20T%20Smith" timestamp="Feb 23, 2014 12:22 PM">
+<s>http://forums.adobe.com/community/download_install_setup/creative_clou d_faq -has a link about why you are prompted to enter a serial number 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149404</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="JSS1138" timestamp="Feb 23, 2014 12:23 PM">
+<s>[moved to encore forum.</s><s>] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149335</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Abhijit%20Kr." timestamp="Feb 23, 2014 12:25 PM">
+<s>hi highshots, 
+</s><s>encore was available till cs6 so if you are a creative suite 6 user then please check whether premiere pro is working or not.</s><s> if it is not then activate premiere pro and that should fix the issue. 
+regards, abhijit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149594</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Highshots" timestamp="Feb 23, 2014 1:09 PM">
+<s>i am using cc but installed cs6/encore on the instructions of adobe when i needed encore.</s><s> all my other cc apps are working fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149678</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Stan%20Jones" timestamp="Feb 23, 2014 1:57 PM">
+<s>if encore cs6 in cloud install asks for serial number: http://helpx.adobe.com/creative-cloud/kb/ccm-prompt-serial-number.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149876</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Highshots" timestamp="Feb 23, 2014 3:16 PM">
+<s>have followed that link and gone through the list, and still have the same issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6149863</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="John%20T%20Smith" timestamp="Feb 23, 2014 3:34 PM">
+<s>next link has a "chat now" button near the bottom http://helpx.adobe.com/x-productkb/policy-pricing/activation-deactivat ion-products.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6163297</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="johnnieg" timestamp="Feb 27, 2014 9:28 AM">
+<s>i had to open premiere pro cs6 which prompted me to 'license' or 'run trial', clicked license and signed in with my adobe cc membership id.</s><s> that took care of it and encore runs fine now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6163535</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Stan%20Jones" timestamp="Feb 27, 2014 10:32 AM">
+<s><quote>
+<s>i had to open premiere pro cs6 which prompted me to 'license' or 'run trial', clicked license and signed in with my adobe cc membership id. 
+</s></quote>interesting.</s><s> that should not be necessary (according to what has been said previously), if following the regular instructions for installing en with cc, you would uninstall pr cs6 and not have that option.</s><s> thanks for mentioning the option. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6166900</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="FusionKB" timestamp="Feb 28, 2014 9:02 AM">
+<s>i had the same issue yesterday after i rebooted.</s><s> i opened up photoshop and everything was fine.</s><s> encore didn't ask for the serial number. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6166941</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="Stan%20Jones" timestamp="Feb 28, 2014 9:04 AM">
+<s>takes a whole bag of new tricks... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6183458</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="rexomus" timestamp="Mar 5, 2014 5:12 PM">
+<s>yeah, i am getting this error today.</s><s> i can not find a solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6202492</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="rexomus" timestamp="Mar 12, 2014 6:24 AM">
+<s>after several attempts and having to contact adobe tech at the right time: 5am-7pm pst (i am on the us east coast);i finally got a hold of a adobe tech via live chat.</s><s> he un-installed/re-installed and so far encore has been working for the past few days. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6205922</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="rexomus" timestamp="Mar 13, 2014 6:51 AM">
+<s>after my chat with tech, un-installing/reinstalling encore started asking for a serial number again today.</s><s> grrrr!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6214225</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="RyanWM" timestamp="Mar 16, 2014 10:21 AM">
+<s>i too had to uninstall and reinstall to get encore working and now about two weeks later the same thing happens.</s><s> very frustrating. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6214235</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="rexomus" timestamp="Mar 16, 2014 10:26 AM">
+<s>ryan, 
+</s><s>an adobe tech helped me resolve this issue.</s><s> please follow these steps: 
+the tech had me open pre pro cc and go to "help" and click "sign-out".</s><s> when you do that a pop-up appears saying that: signing out will deactivate the following software on this computer unless you sign in again; following with the icon for each adobe cc app i have installed. 
+</s><s>next the tech had me open pre pro cs6, which upon opening askes you to sign in which i did.</s><s> once pre pro cs6 was open, the tech had me check under "help" to see if the the option "deactivate" was available or greyed out.</s><s> for me, it was greyed out. 
+</s><s>next the tech had me close pre pro cs6 and open it again and check "help" to see if deactivate was still greyed out; and it was still greyed out. 
+</s><s>next the tech had me close pre pro cs6 and open pre pro cc which prompts you to sign in.</s><s> after pre pro cc launched the tech had me close it and open pre pro cs6 again too check under the "help" tab again and confirm if "deactivate" was still greyed out or black (executable).</s><s> this time "deactivate" was black. 
+</s><s>next the tech had me launch encore cs6 tto see if it still required a serial number.</s><s> this time ecore opened as it should, without requiring a serial number. 
+</s><s>hopefully this stick, or adobe includes a perminant solution in the next update. 
+i hope this helps others with this same issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6214830</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="RyanWM" timestamp="Mar 16, 2014 2:01 PM">
+<s>that worked for me as well.</s><s> lame it has to be done but better than uninstalling/reinstalling.</s><s> thanks much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6224948</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="NHerman" timestamp="Mar 19, 2014 12:43 PM">
+<s>i had a tech expert tell me this was a user issue.</s><s> i disagree condering that everyone here has also had the same issues.</s><s> when i first became a creative cloud subscriber, i installed premiere pro cs6 so that i would be able to use encore cs6 on my computer.</s><s> i later uninstalled just premiere pro cs6 because i felt like i didn't need another premiere application in addition to premiere pro cc.</s><s> encore cs6 has worked this way without problems for the past 7 months, but now only just recently this issue comes up?</s><s> i believe it's some sort of application error.</s><s> i also think that uninstalling/reinstalling should not be a permanent fix to this error. 
+</s><s>maybe i haven't found the answer to my next question, but why doesn't adobe just make encore available to download by itself in creative cloud download center?</s><s> it's ridiculous enough that i had to go around loopholes just to find adobe encore.</s><s> i expect more out of adobe with encore.</s><s> i believe encore has been far too long put off for it's own creative cloud version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6224964</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 12:52 PM">
+<s>>why doesn't adobe this is a user to user forum (with "some" adobe participation) so nobody here knows why adobe does something 
+>believe encore has been far too long put off for it's own creative cloud version never going to happen...</s><s> adobe can't sell a version after cs6 -see #8 here for why http://forums.adobe.com/thread/1337952?tstart=0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6225054</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="NHerman" timestamp="Mar 19, 2014 1:18 PM">
+<s>> never going to happen...</s><s> adobe can't sell a version after cs6 -see #8 here for why http://forums.adobe.com/thread/1337952?tstart=0 
+that's sad to hear.</s><s> i guess my feedback for adobe encore will fall on silent ears.</s><s> do you know if there is there an actual press release from adobe for this?</s><s> this is the first time i've heard about it. 
+> this is a user to user forum (with "some" adobe participation) so nobody here knows why adobe does something. 
+i understand what your saying.</s><s> i am just a little frustrated that i have to deal with an issue like this.</s><s> what i said was meant really as a statement, but sadly text does not always convey one's connotation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6225200</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 2:00 PM">
+<s>cs6 is the final encore http://www.adobe.com/products/encore/faq.html - i don't know about a "press release" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6149394-6225316</DOCNO>
+<TEXT>
+<subject>Encore asking for Serial Number</subject>
+<post author="NHerman" timestamp="Mar 19, 2014 2:15 PM">
+<s>gotcha.</s><s> thanks for letting me know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6224938-1431885</DOCNO>
+<TEXT>
+<subject>Encore cs6 error code 52400</subject>
+<post author="Angelito01" timestamp="Mar 19, 2014 12:56 PM">
+<s>i having issues trying to burn my adobe premiere project using encore cs6.</s><s> i get error 52400.</s><s> i removed all titles already, but still geting same code.</s><s> i burned same project before without any problem, but now.</s><s> any suggestions?</s><s> please help
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6224938-6225030</DOCNO>
+<TEXT>
+<subject>Encore cs6 error code 52400</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 12:59 PM">
+<s>these questions below may be for a different product... but the kind of information you need to supply is the same, for the products you use more information needed for someone to help... please click below and provide the requested information -ppro information faq http://forums.adobe.com/message/4200840 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6224938-6225063</DOCNO>
+<TEXT>
+<subject>Encore cs6 error code 52400</subject>
+<post author="Angelito01" timestamp="Mar 19, 2014 1:16 PM">
+<s>i am using a mac osx version 10.8.5/4gb, and my source footage comes from a sony avchd/h262.</s><s> i'm not using any playback engine acceleration.</s><s> as i said before, i burned same project before, using same macbook pro with same applications.</s><s> i contacted adobe customer service yesterday, i was instructed to remove all my titles.</s><s> i did and, i having same outcome error 52400. please reply is very importat for me to resolve this issue.</s><s> thank you in advance! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6224938-6225203</DOCNO>
+<TEXT>
+<subject>Encore cs6 error code 52400</subject>
+<post author="John%20T%20Smith" timestamp="Mar 19, 2014 2:02 PM">
+<s>search resulted in one other message http://forums.adobe.com/message/4290233#4290233 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-1430065</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="junction 21" timestamp="Mar 17, 2014 12:11 PM">
+<s>i have installed production preium from the cds the libary will not open in encor i have istalled the libary from the cd the drop down menue is there ie education general traval ect but no buttons menus infact nothing ihave uninstaled reinstaled up dated encor is linked to the libary i have tried on another computer but it is the same can any one help please 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6218261</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="Stan%20Jones" timestamp="Mar 17, 2014 3:02 PM">
+<s><quote>
+<s>i have istalled the libary from the cd 
+</s></quote>there is no library on the cs6 cd. 
+</s><s>wherever you got it, having a few menus means you used the premiere pro/encore content installer, but not the second step of adding the full library content. 
+</s><s>just follow the directions at this link 
+http://helpx.adobe.com/encore/using/download-library-content.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6221206</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="junction%2021" timestamp="Mar 18, 2014 11:33 AM">
+<s>the library i installed was on the third cd encor library ihave downloaded full lirary and iinstalled i it seams ok thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6221242</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="Stan%20Jones" timestamp="Mar 18, 2014 11:47 AM">
+<s>thanks for the update. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6223078</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="marty11960" timestamp="Mar 19, 2014 3:15 AM">
+<s>i downloaded the zipfile earlier, unzipped it, linked it but only have 12 menu's (4 wedding, 4 travel and 4 halloween).</s><s> what did i do wrong? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6223454</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="Stan%20Jones" timestamp="Mar 19, 2014 5:51 AM">
+<s>are you certain you don't have the crib menu in the general group? 
+</s><s>there's no way i know to get that result without doing something wrong. 
+</s><s>one possibility is that you did not download the "full" menu file, or are not actually working with that file, but the "limited" menus file. 
+</s><s>the more likely scenario is that your directories are not correct. 
+</s><s>they should look like this: 
+
+</s><s>e.g. the fles for the general library set are in that general folder. 
+</s><s>confirm that in encore, edit -> preferences -> media.the library points to: 
+c:\program files\adobe\adobe encore cs6\library 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6223552</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="marty11960" timestamp="Mar 19, 2014 6:30 AM">
+<s>hi stan, 
+</s><s>thank you for your reply!</s><s> the directories seems to be good.</s><s> otherwise i wouldn't have anything at all.</s><s> so it seems i don't have the full package.</s><s> i followed the instructions given in this forum.</s><s> is there a link that you know that has the full package?</s><s>?</s><s> thanks!</s><s>!</s><s> 
+</s><s>marty 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6223675</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="Stan%20Jones" timestamp="Mar 19, 2014 7:31 AM">
+<s>the link in post 1 is the latest and easiest: 
+http://helpx.adobe.com/encore/using/download-library-content.html 
+this provides the file encorecontent_en-us.zip which is a single zipped file and does not involve a 7z file. 
+<quote>
+<s>the directories seems to be good.</s><s> otherwise i wouldn't have anything at all. 
+</s></quote>if you used the older link for the encore missing library, you can get a partial library, and then, when you get the full content fiie, fail to put the full content in the right places. 
+</s><s>do not use the following files, but you probably went here first: 
+http://helpx.adobe.com/x-productkb/multi/library-functional-content-mi ssing.html 
+at the top of the page, that link provides the file premiereprocs6contentwin.zip which includes an installer for encore and premiere pro (and originally after effects).</s><s> that installer provides only a limited, template only library (no buttons, etc). 
+</s><s>further down that page, it has the resource central content, and the link there provides the full encore library content via the file encorecontentenglish.zip.</s><s> i have not checked recently, but originally, it included a 7z compressed file inside the zip file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6224796</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="marty11960" timestamp="Mar 19, 2014 11:53 AM">
+<s>dowmloaded it, linked it and........yes!</s><s>!</s><s>!</s><s>!</s><s> cool!</s><s>!</s><s> thanks man!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6217567-6224931</DOCNO>
+<TEXT>
+<subject>encor  cs6 libary</subject>
+<post author="Stan%20Jones" timestamp="Mar 19, 2014 12:39 PM">
+<s>you're welcome! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6022903-1382255</DOCNO>
+<TEXT>
+<subject>Playback of Encore project in VLC</subject>
+<post author="frootjooce" timestamp="Jan 17, 2014 5:48 AM">
+<s>i'm aware this is likley a vlc problem and will head over there too, but has anyone experienced this. 
+</s><s>my project has one english subtitle track for each timeline.</s><s> the timelines have a 20 second intro piece with no subtitling and when the dialogue kicks in so does the subtitling.</s><s> i've built a dvd folder and burnt that to disc with nero.</s><s> when played in vlc i get two subtitle options on the vlc menu track 1 english and track 2 when the subtitles kick in i get three an additional track 3. 
+</s><s>to view subtitles: selecting track 1 english does nothing, track 2 turns on the subtitles and so does track 3 
+</s><s>curious?</s><s>?</s><s> 
+</s><s>anyone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6022903-6023182</DOCNO>
+<TEXT>
+<subject>Playback of Encore project in VLC</subject>
+<post author="Stan%20Jones" timestamp="Jan 17, 2014 7:08 AM">
+<s>i just did a qick test with a dvd test subtitle project built as a folder.</s><s> the project has one subtitle track.</s><s> it works correctly in total media theater 5 and 6.</s><s> it does not work correcty in vlc 2.1.2. 
+</s><s>in vlc, it shows 3 subtitle tracks, the first called english (which is correct).</s><s> but that track does not play the subtitles.</s><s> tracks 2 and 3 both play the subtitles. 
+i was using the regular menu tools; i do not see a remote control simulator to test subtitles in vlc.</s><s> is there one? 
+</s><s>there are many options n the vlc preferences, but none that i think should make a difference in number of subtitle tracks. 
+i have no financial interest in tmt, and like vlc as a player.</s><s> but i found that slideshow operation and subtitles do not perform correctly (like the project does no a burned disk), and tmt does. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6022903-6023546</DOCNO>
+<TEXT>
+<subject>Playback of Encore project in VLC</subject>
+<post author="frootjooce" timestamp="Jan 17, 2014 8:41 AM">
+<s>hi stan, thanks for the response.</s><s> this is exactly what i am experiencing so at least the problem is repeatable. 
+</s><s>it would seem that as the project plays correctly in other software the problem is with vlc.</s><s> i've raised the issue on their forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6022903-6220824</DOCNO>
+<TEXT>
+<subject>Playback of Encore project in VLC</subject>
+<post author="DouglasGart" timestamp="Mar 18, 2014 10:06 AM">
+<s>i have had the same issue.</s><s> vlc has always played whatever i've thrown at it and worked very well, until now. 
+</s><s>my solution was to open my dvd image files (created in encore cs6) with explorer in windows 8.1, then play them with media player classic home cinema which correctly displays the subtitle track once enabled. 
+</s><s>you can get mpc-hc here: http://mpc-hc.org 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-1211078</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Herugrim123" timestamp="May 13, 2013 12:00 PM">
+<s>yes, i've got the dreaded meassage above.</s><s> how do i proceed from here ?</s><s> how can i find out what needs to be 'trimmed' ?</s><s> the avi video is 4.2gb.</s><s> i have been reading all the faq's and many posts suggest that the max size for a menu is 1gb. my menu is made up of a wav which is 12mb and the psd which is at max 21mb, so that wouldn't seem to be the problem.</s><s> there is also an intro mp4 which is 12mb.</s><s> the avi is close to the size available on a dvd ( 1 sided ) but i thought that the software automatically compressed all the data when authoring.</s><s> i have included ascsreen grab if it helps...</s><s> ( i am using win 7, cs5 ) 
+</s><s>regards 
+</s><s>tl.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5316842</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="May 13, 2013 12:39 PM">
+<s><quote>
+<s>the avi video is 4.2gb. 
+</s></quote>as you note later, this is irrelevant: if set to "automatic" as the transcode setting for this asset, encore will compress it when transcoded to a size that will fit. 
+<quote>
+<s>the max size for a menu is 1gb./servlet/jiveservlet/downloadimage/2-5316621-329604/sg+001.jpg 
+</s></quote>the max size for all menus and such content is one gb.</s><s> this is almost never an issue unless you have motion menus. 
+</s><s>when you say the mp4 is an into, is it a timeline? 
+</s><s>one way to fool encore and its automatic settings, is to do the timeline asset transcode before you add things to the project.</s><s> encore fills the disk, then you fill it some more, and then you are over size. 
+</s><s>on your asset, "revert to original." make sure everything is in place, particular motion menus and your intro.</s><s> since your intro is an mp4 it also has to be transcoded, so we don't know how big it will be on disk.</s><s> if it is a timeline, you're okay; just revert to original also, and make sure all your timelines are set to "automatic." 
+</s><s>that's what i would try first. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5316806</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Herugrim123" timestamp="May 13, 2013 12:49 PM">
+<s>stan, thanks for taking the time to help.</s><s> okay, the intro mp4 is a timeline.</s><s> i tried right clicking on the asset but the option revert to original is greyed out.</s><s> do i have to clear the transcoded version first ?</s><s> also, pardon my ignorance , but how do i set timeline to auto ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5317184</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="May 13, 2013 2:35 PM">
+<s>you might want to post a screenshot of your project panel. 
+</s><s>here's what we're looking for. 
+
+
+</s><s>the columns of interest are the dvd transcode status and dvd transcode settings.</s><s> with an mp4 and an avi, we assume "untranscoded" for the status.</s><s> and you "probably" already have "automatic" for the settings. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5318896</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Herugrim123" timestamp="May 14, 2013 7:00 AM">
+<s>stan, sorry for getting back so late but my machine crashed and it took me a while to get the project back up and running.</s><s> anyway, here is a screen grab of the project panel.</s><s> i am still getting the project exceeds disc capacity warning when i run a build check. 
+
+</s><s>regards, 
+</s><s>tl.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5318970</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="SAFEHARBOR11" timestamp="May 14, 2013 7:33 AM">
+<s>hi tl, 
+</s><s>don't know if this is the issue, but the 5th and 7th items in your asset list appear to be duplicated, same timeline is shown twice. 
+</s><s>appears you are using dynamic link perhaps?</s><s> i always encode my assets in adobe media encoder.</s><s> most posters on these forums seem to do the same, less headaches if you take control and not rely on everything being automated.</s><s> of course, you then need to bit-budget accordingly so that everything fits. 
+</s><s>thanks 
+</s><s>jeff pulera safe harbor computers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5319216</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="May 14, 2013 8:47 AM">
+<s>yes, two timelines for the same asset is odd.</s><s> and many users do avoid dynamic link.</s><s> but i'm assuming you are transcoding an sd asset (is the pr sequence sd?</s><s> are the source files in pr sd?</s><s>).</s><s> and dl should work okay. 
+</s><s>regarding the automatic setting and disk too full: 
+the 6th item in the project panel is the "asset" (here the dl premiere sequence).</s><s> it is transcoded.</s><s> but two other assets are not transcoded.</s><s> depending on the order in which you added them, etc, encore may not set the bitrates correctly.</s><s> right click on that sixth item, and you should be able to select "revert to original." you cannot on the other assets because they are not transcoded. 
+</s><s>make sure the menu has the audio added in the motion tab.</s><s> render that menu.</s><s> then select the 2 timeline assets (the pr sequence and the mp4) and pick "transcode now." 
+</s><s>do you still get the disk too full? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5319566</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Herugrim123" timestamp="May 14, 2013 10:22 AM">
+<s>okay, i deleted the copy of the asset.</s><s> i reverted to original item 6.</s><s> i made sure that the audio for the menu was added in the motion tab.</s><s> i selected the 2 files and hit transcode.</s><s> unfortunately, it gave me the following error message: 
+the files coming from pr pro were originally .</s><s>mov files.</s><s> now what ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5319719</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="May 14, 2013 10:49 AM">
+<s>makes no sense!</s><s> if you have a deadline, i'd go to jeff's method.</s><s> <quote>
+<s>okay, i deleted the copy of the asset. 
+</s></quote>is your screenshot of the project panel everything?</s><s> or is some cut off at the bottom?</s><s> there was a second timeline; i did not see a second asset. 
+</s><s>please post a new screenshot of the project panel after the changes you made. 
+</s><s>also post a screenshot of the flowchart and of the build panel. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5319739</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Herugrim123" timestamp="May 14, 2013 11:06 AM">
+<s>stan, here are the sdcreenshots that you asked for. 
+
+
+</s><s>regards, tl.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5320016</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="May 14, 2013 12:13 PM">
+<s>i don't see a problem that would account for that message.</s><s> yes, the disk will be full, but it should not push encore's lower bitrate limit.</s><s> it is as if somethingis not being cleared from the cache. 
+</s><s>so you can try cleaning the cache from within encore, and also deleting it outside. 
+</s><s>that doesn't always fix such things, so i would create a new project with a new name, import the pr sequence and intro as timelines.</s><s> import "as menu" your menu from the original project.</s><s> link to the chapters but do not set any overrides yet.</s><s> add the audio asset and set as the motion.</s><s> i that is pretty much everything except the overrides.</s><s> overrides can be difficult, but they look lke they may be okay.</s><s> (except you have one set on the play all that makes no sense to me.</s><s>) 
+</s><s>grab a screenshot of the flowchart and project panel.</s><s> then see if you can transcode. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5320694</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Herugrim123" timestamp="May 14, 2013 3:51 PM">
+<s>stan, i am back !</s><s> i had a couple of other 'issues' going on.</s><s> one of which was that i had lost my mercury engine playback function.</s><s> i have got that resolved including updated gpu drivers.</s><s> i mention this as it may/may not have affected other options going on.</s><s> first rule of the lab: only do one experiment at a time and log all variables !</s><s> anyway, after i got that sorted, i took your advice and manually cleared my cache - all 85gb of it.</s><s> i then went back to encore, saved the project and hit build check which was okay.</s><s> so i hit build and 90 minutes later out pops a perfect dvd !</s><s> no idea why it was suddenly okay.</s><s> could the rediculous cache i was carrying have caused that ?</s><s> it doesn't seem likely.</s><s> i have looked but cannot find an internal cache clear in encore.</s><s> as i said, i did it manually.</s><s> anyway, for the future, i think i'll take your advice and transcode individually. 
+thanks for the help and advice, 
+regards, 
+tl. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-5320841</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="May 14, 2013 5:08 PM">
+<s>excellent!</s><s> 
+</s><s>edit -> preferences -> media and pick clean. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-6217512</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="jmshrrsn" timestamp="Mar 17, 2014 11:51 AM">
+<s>in my experience with adobe encore cs6, the software will not cope with squashing the asset sizes to fit everything onto a single layer 4.7gb dvd. 
+</s><s>it complains that the assets would need a transcode bitrate setting of less than 2mbs which is against the rules so far as encore is concerned. 
+i have a full programme of assets that total 1hr 57 mins. 
+</s><s>clearly that's close to the 120 mins of "quality" video that will fit onto a standard dvd, but i thought the whole point was you can fit 6 hours of material onto a dvd if you can bare the rubbish quality. 
+</s><s>according to encore, it's more complex than we are led to believe, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-6218656</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="Mar 17, 2014 4:45 PM">
+<s><quote>
+<s>i have a full programme of assets that total 1hr 57 mins. 
+</s></quote>that does not require a very low bitrate.</s><s> is that all you're trying to put on the disk? 
+</s><s>won't encore let you put pre-transcoded assets below its floor? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-6219131</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="jmshrrsn" timestamp="Mar 17, 2014 9:59 PM">
+<s>hi stan 
+</s><s>the only way i could crack this was to do the bit rate calculations (560/120) allow for some headroom and ensure dolby audio not pcm was used for audio encoding. 
+i then encoded the assets in ame and re- import into aen. 
+</s><s>it seems happy now - but i had to do what i thought aen was meant to do, i.e., encode the assets to fit the media. 
+</s><s>it failed to do so because it would need to transcode below 2mbs which breaks it's rules. 
+</s><s>effectively i manually transcoded the assets using a setting of around 4mbs. 
+</s><s>the only other difference was reducing the number of timelines. 
+</s><s>even though i'm using the same number of assets, the more timelines you use the more space required on the disc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-6219773</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="Mar 18, 2014 5:04 AM">
+<s>sorry, i still don't understand why you believe there was an issue regarding encore's limit to how low a bitrate it will transcode.</s><s> it will happily go below 4.</s><s> and there is not a significant issue for this purpose in how many timelines you have. 
+i agree that transcoding outside of encore helps to get the lowest possible bitrate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-6220292</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="jmshrrsn" timestamp="Mar 18, 2014 7:58 AM">
+<s>it'll go below 4mbs, but encore could not transcode anything below 2mbs as the software will not transcode anything under 2mbs.</s><s> the error message said encore was not possible to go below this limit and the implication was such a bitrate was necessary in order to squeeze the material onto the disc. 
+</s><s>don't worry though - encoding outside encore seems to have fixed the problem.</s><s> i was just saying that despite all its promises of automatic transcoding to get material to fit onto the disc, it doesn't work in this case. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5316621-6220664</DOCNO>
+<TEXT>
+<subject>Project exceeds disc capacity...</subject>
+<post author="Stan%20Jones" timestamp="Mar 18, 2014 9:15 AM">
+<s>thanks for the clarification. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6219547-1430512</DOCNO>
+<TEXT>
+<subject>Envore cs4 problem with convertion project file blue ray.</subject>
+<post author="flaumen" timestamp="Mar 18, 2014 2:57 AM">
+<s>encore cs4 problem z konwersja plików cs4 projekt blue ray. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6219547-6220333</DOCNO>
+<TEXT>
+<subject>Envore cs4 problem with convertion project file blue ray.</subject>
+<post author="John%20T%20Smith" timestamp="Mar 18, 2014 8:11 AM">
+<s>for cs4 you must update the roxio component, especially with win8 http://forums.adobe.com/thread/1309029 http://corel.force.com/roxio/articles/en_us/master_article/000012592-p x-engine-description-and-download 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6218538-1430238</DOCNO>
+<TEXT>
+<subject>Mac - Encore 5 hangs when building disc at either validating media or writing files</subject>
+<post author="nahle216" timestamp="Mar 17, 2014 4:19 PM">
+<s>encore 5 hangs when building disc at either validating media or writing files on a dual layer disc.</s><s> been using encore for several years and have never had this problem.</s><s> have wasted about 6 hours trying to resolve the issue. 
+</s><s>things i have already done: - re-install software - building project from scratch - tried burning on internal and external dvd drives - tried burning project on a different computer - imported project from both another drive and the computer drive i am using 
+i've gone through about 6 or 7 blank dual layer discs.</s><s> these discs are pricey and i do not wish to keep wasting them. 
+
+</s><s>please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6218538-6218695</DOCNO>
+<TEXT>
+<subject>Mac - Encore 5 hangs when building disc at either validating media or writing files</subject>
+<post author="Stan%20Jones" timestamp="Mar 17, 2014 5:21 PM">
+<s>what version of os? 
+</s><s>build to an image, and burn that. 
+</s><s>use rewriteable for tests. 
+</s><s>if burning to image works, burn with toast. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6218070-1430128</DOCNO>
+<TEXT>
+<subject>Why does Encore CS6 quit during startup and how can I get it to stop?</subject>
+<post author="artisticweddingfilms" timestamp="Mar 17, 2014 2:00 PM">
+<s>i am using encore cs6 on mac osx 10.9.1. after spending all afternoon purchasing, researching and downloading the newest encore (because cs5 would no longer burn anything on the new operating system), every time i open encore, it unexpectedly quits.</s><s> there is no error message, it loads encore to the point where you can see all the encore windows, and before asking whether you are opening an existing project or starting a new project, the program quits.</s><s> any help would be greatly appreciated, thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6218070-6218081</DOCNO>
+<TEXT>
+<subject>Why does Encore CS6 quit during startup and how can I get it to stop?</subject>
+<post author="John%20T%20Smith" timestamp="Mar 17, 2014 2:19 PM">
+<s>encore is not supported on that os, and may not work http://www.adobe.com/products/encore/faq.html   adobe/jive have a bad title for the search this forum function   go to http://forums.adobe.com/community/encore and, in the area just under ask a question, type in   maverick or mavericks   you may now read previous discussions on this subject... be sure to click the see more results at the bottom of the initial, short list if the initial list does not answer your question   do the same at http://forums.adobe.com/community/premiere
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6218070-6218375</DOCNO>
+<TEXT>
+<subject>Why does Encore CS6 quit during startup and how can I get it to stop?</subject>
+<post author="Stan%20Jones" timestamp="Mar 17, 2014 3:14 PM">
+<s>see these threads for description of a method that has worked for some users.</s><s> specific reports have addressed encore cs5.1 and cs6.   http://forums.adobe.com/message/6109315#6109315 digital rebellion's tool and resetting prefs. user refers to cs6   http://forums.adobe.com/message/6202462#6202462 given as example for fix for en 5.1 not opening under mavericks.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-952424</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="cultureofdestruction" timestamp="Jan 20, 2012 4:53 PM">
+<s>i'm having some trouble making even basic menus this week - i'm working on a couple of projects that need simple menus on their dvds, but i can't get them to work. 
+</s><s>for one project, it's a simple menu with a photo as the background and two buttons - 'play' and 'behind the scenes'.</s><s> each button group consists of a text layer with the button title and a layer called '(=1) highlight'.</s><s> the highlight layer is a simple straight line underneath the text.</s><s> nothing is overlapping, however the line is not appearing on one of the buttons.</s><s> the group is detected as a button in encore, and works when it is linked to the timeline, but the line does not appear 
+with the other project i've been working on this week, there's a few menu pages - a main menu, and some chapter select sub menus.</s><s> these menus look a bit fancier, but the buttons are still fairly simple - they basically consist of a line of text, but this time the highlight is a rectangular outline.</s><s> i'm having what looks like the same problem with these menus - the highlights aren't displaying correctly.</s><s> most of the outlines are missing their bottom lines - so only a three-sided box is appearing. 
+</s><s>i've made plenty of menus before using the same method, and more complicated ones than this too, without running into any issues.</s><s> i haven't been able to figure out what the problem is, despite starting over and making the menus from scratch several times, and making them one step at a time, importing them into encore at every step to test.</s><s> at some point, one or more of the highlights will always stop working.</s><s> despite this systematic approach, i'm still baffled.</s><s> i'm using photoshop cs5.1 and encore cs5.1.</s><s> after running into problems on one computer i tried making menus from scratch on another computer with the same version software but had the same problem. 
+
+</s><s>has anyone got any suggestions of things i should try that might solve this problem?</s><s> i can send an example of a menu that's not working for me if anyone would like to take a look. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4155653</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="Stan%20Jones" timestamp="Jan 20, 2012 6:17 PM">
+<s>i am willing to look at the menu, but a screenshot in photoshop with the layers twirled open usually does the trick. 
+</s><s>mac or pc?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156008</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="cultureofdestruction" timestamp="Jan 21, 2012 8:31 AM">
+<s>here you go - 
+</s><s>it's the line under 'watch the show' that fails to appear in encore.</s><s> i simply drew a long horizontal line using the pencil tool, duplicated the layer, then trimmed each line to fit the text they were under.</s><s> and yet one works and one doesn't.</s><s> and that's basically the same technique i used for the boxes in the other menu - drew a box around the text using the pencil tool, then duplicated it for each button, and yet some work fine, some display without the bottom line. 
+</s><s>and it's the pc version (tried on two pcs). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156103</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="the_wine_snob" timestamp="Jan 21, 2012 10:02 AM">
+<s>it appears that you are doing a widescreen menu. 
+</s><s>what are the pixel x pixel dimensions of the menu? 
+</s><s>what par (pixel aspect ratio) did you use?</s><s> 
+</s><s>when creating a dvd menu in ps, i always start with the ps ntsc (where i live) widescreen 720 x 480 par = 1.212 w/ guides preset at new image. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156132</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="cultureofdestruction" timestamp="Jan 21, 2012 10:27 AM">
+<s>well i live in pal-land so it's 720x576, and as i've tried remaking the menus from scratch a couple of times i have tried it both ways - using square pixels and also with a par of 1.46, but the problem occurred with both aspect ratios.</s><s> that screenshot happens to be from a 720x576 menu with square pixels. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156091</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="Ann%20Bens" timestamp="Jan 21, 2012 10:33 AM">
+<s>start a new project in encore, open a blanc menu in encore.</s><s> then edit menu in photoshop (shift+ctrl+m).</s><s> make your buttons save back to encore import assets link.</s><s> see how that works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156215</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="Stan%20Jones" timestamp="Jan 21, 2012 11:04 AM">
+<s><quote>
+<s>it's the line under 'watch the show' that fails to appear in encore. 
+</s></quote>move the problem button into the center of the window (temporarily).</s><s> does it appear now? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156609</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="Ann%20Bens" timestamp="Jan 21, 2012 3:50 PM">
+<s>if the underline is the highlight it only will appear under the button that is selected unless you have 'show activated subpicture highlight' selected in the preview window. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4156751</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="Stan%20Jones" timestamp="Jan 21, 2012 6:57 PM">
+<s>i assume you're responding to me, ann.</s><s> i'm talking about moving the whole button to the middle of the frame as a test. 
+</s><s>when an encore button is moved to far to the edge, part of the highlight may not appear. 
+</s><s>when the highlight is a single, narrow underline, it may "disappear." i'm wondering if that may be at work here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4160024</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="cultureofdestruction" timestamp="Jan 23, 2012 2:17 PM">
+<s>thank you, everyone, for your continued support. 
+i have tried everything suggested here, plus lots more, since i last posted.</s><s> there are glitches no matter what i do.</s><s> i don't think it's anything to do with what i'm doing in photoshop as i've tried using some menus from the encore library and i'm having the same problem with those.</s><s> i've also tried using buttons from the encore library on my menus with the same result. 
+</s><s>but that got me to thinking - perhaps it's just a glitch with encore's previews.</s><s> so i tried actually building a dvd image, even with the menus that appeared to be broken, and they turned out to be fine.</s><s> so it must just be a glitch in the encore preview. 
+</s><s>i've also discovered another bug while doing this - if you create a menu in encore, it's always ntsc, even if the project is pal.</s><s> it makes a 4:3, 720x480 menu with a par of d1/dv ntsc 0.91.</s><s> surely, if you've set up a pal project, and you create a new menu, it should create one that's actually pal? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4160265</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="Stan%20Jones" timestamp="Jan 23, 2012 4:21 PM">
+<s>preview is but an estimate, but i don't usually see that much difference in highlights.</s><s> glad they are working. 
+</s><s>menus pulled from the library match the project type.</s><s> how did you "create a menu"? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-4160262</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="cultureofdestruction" timestamp="Jan 23, 2012 4:38 PM">
+<s>i don't usually see any difference in highlights when previewing menus either, and i'm aware that they can behave oddly if your psd is badly made (overlapping buttons, etc.</s><s>), which is why i assumed i was doing something wrong in photoshop.</s><s> but i've successfully completed the two projects i was working on now, and even though the encore preview still shows a very glitchy menu, the authored and burned dvds work fine.</s><s> i have since gone back and checked some older projects - they all preview perfectly well, it's just the ones i created at the end of last week that have caused problems. 
+i was creating a menu simply by right-clicking in the project panel and going new -> menu.</s><s> then right-clicking on the menu and selecting 'edit in photoshop'.</s><s> project is definitely pal, menu is definitely ntsc (with the above properties). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4155582-6217847</DOCNO>
+<TEXT>
+<subject>Simple button highlights in PSD menu not working properly in Encore</subject>
+<post author="jmshrrsn" timestamp="Mar 17, 2014 1:04 PM">
+<s>same problem here... this morning the highlights worked, this evening they don't.</s><s> i've no idea what i've done that can cause these things to disappear.</s><s> the menu is the same one i was working on this morning - the project is different however... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6216520-1429766</DOCNO>
+<TEXT>
+<subject>5.1 AC3 troubles..many post visited !</subject>
+<post author="zebraheart" timestamp="Mar 17, 2014 7:48 AM">
+<s>hi everyones, i have a problem with encore cs6.</s><s> i've searched on many many forum pages, but not find my solution.</s><s> so i made a movie with adobe premier, with few dolby effect.</s><s> i've read that an export without dolby surcode is not easy, so i've exported separately the audio and the video.</s><s> vido is mpg2 bluray, audio is 5.1 aac.</s><s> i've converted aac to ac3 with with winff.</s><s> i have a good 5.1 ac3 audio file with 6 channels (verified with avs audio editor..all is cool).</s><s> i create a dolby bluray (i need bluray) project with encore, i import the video file as a timeline, and the ac3 5.1 audio as asset.</s><s> i can't choose to not transcode the ac3..only auto and other transcode type are available.</s><s> when i burn the br, i have dolby stereo sound...</s><s> i've tried many things but i always have my fu### (sorry) stereo sound.</s><s> could you plzzzzzzzzzzzz help me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6203572-1426524</DOCNO>
+<TEXT>
+<subject>Blank DVDs not recognized</subject>
+<post author="jkkansal" timestamp="Mar 12, 2014 10:59 AM">
+<s>i am having issues after attempting to build a regular dvd.</s><s> it keeps saying please insert dvd media, close the tray, and click ok.</s><s> i know this has been discussed in previous threads, but i have had no luck trying those solutions.</s><s> the other dvd applications i have on my computer are cyberlink dvd pro, and dvd architect studio 5.0.</s><s> any suggestions? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6203572-6203618</DOCNO>
+<TEXT>
+<subject>Blank DVDs not recognized</subject>
+<post author="John%20T%20Smith" timestamp="Mar 12, 2014 11:37 AM">
+<s>have encore create an iso on your hard drive and use imgburn to write to disc 
+read http://forums.adobe.com/thread/1322583 for notes on installing imgburn without any toolbar add-ons 
+things and software to avoid when authoring/burning a disc .</s><s> start --> http://forums.adobe.com/thread/608660 #2 has why explained http://forums.adobe.com/thread/607390 plus http://forums.adobe.com/thread/562941 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6203572-6212133</DOCNO>
+<TEXT>
+<subject>Blank DVDs not recognized</subject>
+<post author="JSS1138" timestamp="Mar 15, 2014 8:24 AM">
+<s>use good quality blanks.</s><s> i recommend using only falcon pro media. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6205828-1427066</DOCNO>
+<TEXT>
+<subject>Exporting - Creating a digital dvd playable on PC/MAC</subject>
+<post author="mhlamezec" timestamp="Mar 13, 2014 6:53 AM">
+<s>i have an encore project that is built to be an interactive product demo.</s><s> ideally, i'd like to be able to hand this out on a thumbdrive so people can just open it on their pc or mac and view it and be able to click through as if it were in a dvd player or a disc in a computer. 
+</s><s>i've gone through a few of the exporting options.</s><s> i've done the flash export - it provides me with the swf and all the source files and the actionscript file.</s><s> i've created dvd disc images - whiche gives me the video_ts folder including .</s><s>bup, .</s><s>ifo, and .</s><s>vob files. 
+</s><s>ideally i'd like to have 1 self contained file which can be played and possible passed around without having to worry about seperating source files making in unplayable.</s><s> is there anything i can do to achieve this?</s><s> can i take that .</s><s>iso file or the .</s><s>swf and source files the flash export gave me and make what i'm describing? 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6205828-6212131</DOCNO>
+<TEXT>
+<subject>Exporting - Creating a digital dvd playable on PC/MAC</subject>
+<post author="JSS1138" timestamp="Mar 15, 2014 8:22 AM">
+<s>the closest you can come is an image file (.iso), but those aren't playable in most media players.</s><s> vlc is the only one i know of that can play .iso files as if they were the real disk.</s><s> so unless you can control the player used, you may have to go with a normal disk instead of a thumb drive. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-1281964</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Francis Breen" timestamp="Aug 23, 2013 7:33 PM">
+<s>pc running w8.</s><s> if i add chapter markers to my timeline in pr cc and export mpeg2-dvd files.</s><s> then try to import the mpeg2-dvd file as a timeline - i get an error.</s><s> i can get rid of the error by deleting the xml file and trying again.</s><s> of course i do not have the chapter markers in en and i must re-enter them. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-5622324</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="John%20T%20Smith" timestamp="Aug 23, 2013 8:50 PM">
+<s>i don't have cc, but i do have some links discussing using encore cs6 with ppro cc... which may have more information -a workaround for the cloud http://blogs.adobe.com/davtechtable/ -also http://helpx.adobe.com/encore/kb/encore-cs6-installed-cc.html -http://tv.adobe.com/watch/davtechtable/using-premiere-pro-cc-encore-cs 6-for-bluray-dvd-and-interactive-video-for-ipadatv-and-mobile-hd/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-5624482</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="neil%20wilkes" timestamp="Aug 25, 2013 6:47 AM">
+<s>what form is the "mpeg-2 dvd" file in please?</s><s> is it one file containing both audio & video, or separated elementary streams containing an .m2v file & a .wav file?</s><s> if the former (as i suspect) then you have created a program stream (usually .mpg) which is a bad idea - always feed encore (and any dvd authoring tool, for that matter) with elementary streams for the best results. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-5624781</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="flbreen" timestamp="Aug 25, 2013 9:33 AM">
+<s>there is only form of the mpeg-2 dvd that i know of from pr and it produces 3 files and one of them contains chapter data.</s><s> en writes the video file converts and writes the audio file, and it uses the xml file to specify the chapter markers set in pr.</s><s> one advantage to using this export form is that it is easier to set and anotate the chapter markers in pr than en and there is a better choice of bitrate settings etc. in pr than en.</s><s> and why convert the video to some other format, for example, mp4, to then have en convert to to mpeg2. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-5625371</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Ann%20Bens" timestamp="Aug 25, 2013 3:48 PM">
+<s>dont import your mpeg2/dvd files as a timeline but as an asset.</s><s> then make a timeline and drop the m2v and wav or ac3 on to that.</s><s> your chapter markers will show up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-5625735</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Stan%20Jones" timestamp="Aug 25, 2013 6:48 PM">
+<s><quote>
+<s>dont import your mpeg2/dvd files as a timeline but as an asset.</s><s> then make a timeline and drop the m2v and wav or ac3 on to that.</s><s> your chapter markers will show up. 
+</s></quote>fascinating.</s><s> that was not an issue in the past; either method would work. 
+i see now ann, in a different thread, you noted that dragging an asset to a menu did not work (this creates a timeine), whereas draggin an asset to a timeline did. 
+i can't image what change in cc would produce this difference, but the workaround will be welcome news. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6204656</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Dogminder" timestamp="Mar 12, 2014 4:54 PM">
+<s>just tried this ann but doesn't seem to work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6204843</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Stan%20Jones" timestamp="Mar 12, 2014 5:49 PM">
+<s>what specific versions of pr and en?</s><s> is this a consistent problem?</s><s> (i.e. all timelines have the same issue?</s><s>) 
+</s><s>if you create a 30 second test sequence with 2 chapter markers (in addition to the one automatically created at the beginning), does it show the problem? 
+</s><s>if so, can you upload the m2v, xmpses, and xmp files? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6205288</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Dogminder" timestamp="Mar 13, 2014 12:31 AM">
+<s>hi stan, 
+</s><s>i'm using premiere pro cc and ncore cs5.1. 
+i tried a test sequence and it still doesn't carry the markers across. 
+</s><s>not sure what you mean by uploading the m2v, xmpses, and xmp files, these files don't seem to show up when i import stuff into encore. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6205846</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="flbreen" timestamp="Mar 13, 2014 6:15 AM">
+<s>i am not in a position to test this right now but i am hoping that something has changed.</s><s> adobe decided that it did not need a new version of encore to go with it new version of premiere pro because producers do not need dvds anymore.</s><s> every wedding videographer needs to produce dvds and that has to be a larget part of adobe's business. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6206822</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="Dogminder" timestamp="Mar 13, 2014 10:44 AM">
+<s>can't understand it. 
+</s><s>all the tutorials say the chapter points should appear in the encore timeline exactly as they were created in premiere pro cc. 
+</s><s>but they don't!</s><s> 
+</s><s>help!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6207035</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="SAFEHARBOR11" timestamp="Mar 13, 2014 11:49 AM">
+<s>the issue i'm seeing is this - with premiere cs6, there were two kinds of markers, the regular timeline markers, and the dvd chapter markers, which looked like little discs.</s><s> not seeing any option to add dvd marks in premiere cc.</s><s> the regular "markers" in premiere are not what we need.</s><s> still using cs6 at home, but checking premiere cc at work here, that's what i'm seeing. 
+</s><s>jeff pulera safe harbor computers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5622249-6212038</DOCNO>
+<TEXT>
+<subject>Can Encore CS6 process chapter markers from Pr CC using MPEG2-DVD?</subject>
+<post author="JSS1138" timestamp="Mar 15, 2014 8:20 AM">
+<s><quote>
+<s>not seeing any option to add dvd marks in premiere cc. 
+</s></quote>
+</s><s>open the sequence marker by double clicking on it.</s><s> here you can change the type to a chapter marker. 
+</s><s>and while it's not set by default, there is a shortcut to add a chapter marker directly. 
+</s><s>also, encore cs6 does import pp cc chapter markers just fine on both my systems, no matter how you import.</s><s> (all chapters are named in pp.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-1421765</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="rexomus" timestamp="Mar 5, 2014 6:39 PM">
+<s>i am a long time and current cc subscriber.</s><s> yesterday, encore cs6 worked.</s><s> today, when i click to open encore and the program prompts me to enter a serial number or "quit".</s><s> there is no other option. 
+</s><s>all my other apps are current and work: ae, pr, ps, mu, ai, au, ect, ect.</s><s> all but encore.....</s><s> 
+</s><s>any cc subscriber knows that our subscription doesn't come with a serial number.</s><s> so i am left wondering why my program worked yesterday and today it doedsn't work.</s><s> mind you, nothing has changed between the the time i left my computer to the time i returned.</s><s> no updates, no new installs, n o t h i n g. 
+</s><s>so i follow my first instinct to search google and bing and i find that this appears to be a common problem with no soultions short of re-writing and deleting all kinds of crazy files that honestly just look unscrupulous and only meant to really screw things up worse for the person having the problem. 
+</s><s>so, next i follow the walkthrough at adobe's link here: http://helpx.adobe.com/creative-cloud/kb/ccm-prompt-serial-number.html it didn't help me because it doesn't address the problem.</s><s> all my other apps work so obviously my address, email, and payment options are up to date. 
+</s><s>next, i click live chat at 6:00pm pst and i am bounced from one guy to the next until at 7pm pst i get the message...</s><s> "sorry to hear that your application will not work.</s><s> please contact the more experienced tech team later as they are offline." what?</s><s>!</s><s>?</s><s>!</s><s>?</s><s>!</s><s> no solution, just, "your problem happend at an inconvenient time for adobe so come back later." and no mention of when that time will be.</s><s> that is not customer service.</s><s> this so not cool, moral, or right in any universe.</s><s> just leave me hanging.</s><s> i can not put in to words how upset i am right now.</s><s> adobe has really let me down. 
+</s><s>when my clients have problems, i deal with it right then and there and i don't leave until it's fixed and done.</s><s> i may jump ship on this one. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6197418</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="m.m.murphy" timestamp="Mar 10, 2014 3:45 PM">
+<s>hi rexomus, we're so sorry to hear about your technical issues.</s><s> i saw that you also posted: http://forums.adobe.com/message/6183458#6183458 - can you confirm that you tried all the solutions posted there?</s><s> if so, i can set you up with our next level of support for you.</s><s> let us know!</s><s> thanks, madison 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6202545</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="rexomus" timestamp="Mar 13, 2014 7:02 AM">
+<s>yes, i finally was able to get in contact with an adobe tech who remotely un-installed/re-installed encore and it has been working the past few days.</s><s> thank you for checking up and valuing your customers.</s><s> i appreciate it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6202965</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="Stan%20Jones" timestamp="Mar 12, 2014 9:26 AM">
+<s>rex, thanks for reporting in. 
+</s><s>to learn what we can for others, you are a cc subscriber, with encore cs6 installed under cc or is your en cs6 installed as part of a previously licensed version?</s><s> i don't know if it matters, but something is making this harder for some users to fix. 
+</s><s>for others following along, the link in rex's first post, which is the one for dealing with "cc subscriber gets request for serial number," does not include a reinstall as a fix.</s><s> it does include a link to a chat, but based on rex's experience the level of tech support it takes to deal with this is not available 24/7. 
+fyi, rex, i replied to your first response so you can edit your last post to remove the personal info. one of the downsides to replying by email with an auto-signature!</s><s> a moderator would remove this, but i don't know when! 
+</s><s>edit: thank you moderator! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6205871</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="rexomus" timestamp="Mar 13, 2014 6:40 AM">
+<s>hey, it started asking for a serial number again!</s><s>!</s><s>!</s><s> grrrr!</s><s> this is so fruststrating.</s><s> can i have the next level of support please.</s><s> thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6205932</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="rexomus" timestamp="Mar 13, 2014 7:04 AM">
+<s>after working for a few days, encore started asking for a serial number again this morning. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6206303</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="Richard%20M%20Knight" timestamp="Mar 13, 2014 8:49 AM">
+<s>i had this problem 2 days ago, i tried many things including a re-installation of cs6.</s><s> the last thing i tried was to make sure i ran encore as administrator and this worked. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6207567</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="rexomus" timestamp="Mar 13, 2014 3:13 PM">
+<s>richard, i tried "run as administrator" to no avail.</s><s> however, i was able to get in touch with a adobe tech today.</s><s> after getting passed to about 3 or 4 different techs, one was finally able to assist me. 
+</s><s>the tech had me open pre pro cc and go to "help" and click "sign-out".</s><s> when you do that a pop-up appears saying that: signing out will deactivate the following software on this computer unless you sign in again; following with the icon for each adobe cc app i have installed. 
+</s><s>next the tech had me open pre pro cs6, which upon opening askes you to sign in which i did.</s><s> once pre pro cs6 was open, the tech had me check under "help" to see if the the option "deactivate" was available or greyed out.</s><s> for me, it was greyed out. 
+</s><s>next the tech had me close pre pro cs6 and open it again and check "help" to see if deactivate was still greyed out; and it was still greyed out. 
+</s><s>next the tech had me close pre pro cs6 and open pre pro cc which prompts you to sign in.</s><s> after pre pro cc launched the tech had me close it and open pre pro cs6 again too check under the "help" tab again and confirm if "deactivate" was still greyed out or black (executable).</s><s> this time "deactivate" was black. 
+</s><s>next the tech had me launch encore cs6 tto see if it still required a serial number.</s><s> this time ecore opened as it should, without requiring a serial number. 
+</s><s>hopefully this stick, or adobe includes a perminant solution in the next update. 
+i hope this helps others with this same issue. 
+</s><s>thank you again adobe for helping me! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6207933</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="maxsited-zine" timestamp="Mar 13, 2014 4:44 PM">
+<s>i used rexomus' notes and found that all i needed to do was open premier pro cc and sign out under the help. 
+i then quit and reopened premier pro cc and signed back in.</s><s> now encore cs6 opens as it should. 
+i don't have premier cs6 installed, so i am glad this worked without it being installed. 
+</s><s>hope this helps others... 
+</s><s>thanks rexomus 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6208078</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="Stan%20Jones" timestamp="Mar 13, 2014 7:10 PM">
+<s>thanks for that detailed report! 
+i suggest you mark your post 7 as correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6209105</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="maxsited-zine" timestamp="Mar 14, 2014 6:03 AM">
+<s>you suggest i mark your post 7 as correct?</s><s> sorry, i'm not follwing you... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6183563-6211259</DOCNO>
+<TEXT>
+<subject>Encore suddenly askes current CC subscriber for serial number and doesn't work</subject>
+<post author="Stan%20Jones" timestamp="Mar 14, 2014 6:46 PM">
+<s>sorry, maxsited, it was a suggestion for rex. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6209996-1428131</DOCNO>
+<TEXT>
+<subject>Encore monitor view is horrible -- major pixelation</subject>
+<post author="ALLENT" timestamp="Mar 14, 2014 10:23 AM">
+<s>ok, i loaded an mv2 into encore, and matching ac3 file, and when i view it on the encore "monitor" it looks terrible.</s><s> what gives i have tried a number of adjustments (but i don't want any transcoding in encore) it has already been done by other programs.</s><s> just want to burn a dvd... but a very good hd video looks horrible in monitor.</s><s> i'm going to burn out anyway and see if the problem goes onto the dvd itself.</s><s> stay tuned for results!</s><s>!</s><s> please, any thoughts or comments would be helpful for those of you with alot more experience than i have w/ encore. 
+</s><s>macpro 14 ram (os 10.8.5) encore cs 6 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6209996-6210101</DOCNO>
+<TEXT>
+<subject>Encore monitor view is horrible -- major pixelation</subject>
+<post author="Richard%20M%20Knight" timestamp="Mar 14, 2014 10:56 AM">
+<s>the display in encore has always been very poor, very low rez, wrong colour and out of sync, it is only useful to tell you that you have the correct clip!</s><s> the export should be fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6209996-6210146</DOCNO>
+<TEXT>
+<subject>Encore monitor view is horrible -- major pixelation</subject>
+<post author="ALLENT" timestamp="Mar 14, 2014 11:07 AM">
+<s>results from above -- ok, it did burn out much better than the monitor was showing in encore (but still very poor quality overall) in my opinion.</s><s> i would not give this dvd to anyone, not even as a screener.</s><s> it is a color graded hd master shot on the epic...</s><s> i can assure the quality of the master and the (mv2 file) i imported into encore are of much higher quality that what is on the dvd i just burned in encore.</s><s> adobe should have went one more round (into cc) with encore if this is all the better it is.</s><s> i will be going back to dvd studio pro for my burnouts (unless i am just doing something horribly wrong) with some obscure setting in encore.</s><s> let's keep the discussion alive if possible to find a potential solution.</s><s> but right now encore seems un-usable to me... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6209996-6210314</DOCNO>
+<TEXT>
+<subject>Encore monitor view is horrible -- major pixelation</subject>
+<post author="SAFEHARBOR11" timestamp="Mar 14, 2014 11:52 AM">
+<s>highly unlikely that the dvd looks worse than the .m2v file, since it ought to be the same file on the dvd, unless encore is transcoding it for some reason.</s><s> in the encore project window, to the right of the imported .m2v clip, it should say "do not transcode".</s><s> something to definitely keep in mind is that dvd will always look "poor" when comparing to an hd master that has 5x the pixel count.</s><s> how are you viewing the result, on a computer or set-top dvd going to hdtv?</s><s> if the latter, you must use an upconverting player via hdmi.</s><s> the yellow composite output will absolutely provide nasty results on an hdtv. 
+</s><s>regarding preview quality in encore, please check the following, changing these worked for me - 
+edit > preferences > general > playback quality (set to high) 
+</s><s>edit > preferences > general > desktop display mode (accelerated gpu effects) 
+</s><s>edit > preferences > general > preview > playback quality (set to high) 
+</s><s>can you post a screen grab of the settings you exported with from media encoder? 
+</s><s>thank you 
+</s><s>jeff pulera safe harbor computers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6209996-6210383</DOCNO>
+<TEXT>
+<subject>Encore monitor view is horrible -- major pixelation</subject>
+<post author="ALLENT" timestamp="Mar 14, 2014 12:26 PM">
+<s>i am not able to post setting, as the mv2 was made at a post-house, but i've seen that m2v file on the ref dvd they sent me and it was real good quality.</s><s> just for grins i made a dvd (same files) in dvd studio pro, and when doing a comparison (however not side by side) as my tv's are not in same room.</s><s> i did 2 playback test (on both a ps3 and samsung blu-ray/dvd)... and the dvd studio pro version looked cleaner to me, and i am not an apple advocate by any means, as a matter of fact i switched my entire workflow over to adobe within the last year (and have been very happy) with the exception on burning dvd's in encore cs6.</s><s> i will try your suggestions above when i get a break...</s><s> i just refuse to think that encore is a inferior product (when that hasn't been my past experience with adobe).</s><s> all good so far!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201604-1426038</DOCNO>
+<TEXT>
+<subject>Problem with Encore Output</subject>
+<post author="lifehopesound" timestamp="Mar 11, 2014 7:42 PM">
+<s>i'm putting together a dvd for a wedding client.</s><s> everything is going pretty well except on the output of my dvd files.</s><s> here's my output settings for all the files: 
+mpeg2-dvd wide screen progressive scale to fill quality 100 cbr = 9 
+</s><s>i'm have a problem where some of my files are exporting with a thin line(it seems to be a green/red almost like there was a footage error like watching an old movie) in the video wherever a transistion occurs.</s><s> you can't see this line in adobe premiere, only in encore and the final dvd burn. 
+</s><s>the only thing i can narrow it down to, is that it seems to effect the files that are nested where i used the multi cam edit.</s><s> it's only happening during the "cross dissovle" function.</s><s> i just looked however, and it's affecting another file i have that doesn't use the nested function. 
+</s><s>would there be a reason for this?</s><s> i'm not sure exactly how to fix this.</s><s> problem is it doesn't happen to all my video clips...only some.</s><s> i've already burner 2 dvds and don't really want to waste more. 
+</s><s>any help is appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201604-6203046</DOCNO>
+<TEXT>
+<subject>Problem with Encore Output</subject>
+<post author="Andrew_S" timestamp="Mar 12, 2014 8:52 AM">
+<s>i dont have the answer to this problem, but some observations are; i never exceed 8mbps with the video, that's assuming i'm using ac3 audio at 384 kbps.</s><s> (otherwise 7mbps video with 1.5 mbps wav audio.</s><s>) too high a bit rate caused problems with some dvd players.</s><s> having said that, that was circa 10 years ago. 
+</s><s>as for testing, simply buy a dvd-rw disc.</s><s> just burn then erase, then burn then erase......... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201604-6205622</DOCNO>
+<TEXT>
+<subject>Problem with Encore Output</subject>
+<post author="lifehopesound" timestamp="Mar 13, 2014 4:24 AM">
+<s>thanks for the reply.</s><s> i don't believe this is the problem.</s><s> it's only happening during the "crossover" transition effect.</s><s> i could take the effect out, but then that would defeat the purpose of why it's there. 
+</s><s>it's not appear until it reaches encor....or until it's the the mpeg file and it's only happening with some of the files. 
+</s><s>any more help or advice is appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201604-6205624</DOCNO>
+<TEXT>
+<subject>Problem with Encore Output</subject>
+<post author="Richard%20M%20Knight" timestamp="Mar 13, 2014 4:36 AM">
+<s>do a search for 'line in transitions' in the premiere forum, there are a number of threads. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201604-6207149</DOCNO>
+<TEXT>
+<subject>Problem with Encore Output</subject>
+<post author="SAFEHARBOR11" timestamp="Mar 13, 2014 12:12 PM">
+<s>so what happens if you export the .m2v file using ame and then play/scrub that .m2v file in premiere, do you see the line at all?</s><s> because encore should not be transcoding a dvd-legal file, therefore if there is no line in the .m2v, there should be no changes when you burn the dvd then, same file. 
+</s><s>how long is the project?</s><s> in encoder, when you import the .m2v file, to the right does it say "do not transcode" or is it "automatic"? 
+i would tend to agree with andrew that the cbr 9 setting is pushing your luck.</s><s> maybe we're just old-fashioned guys (read: been at this too long, like since dvd-r was invented), but he's right about potential playback issues when maxing out the data rate.</s><s> hollywood dvds are one thing, but burned media behaves a little differently in various players.</s><s> honestly, if i encode the same video twice, using settings of 8 and 9 and show you both, are you really going to see any difference? 
+</s><s>thanks 
+</s><s>jeff pulera safe harbor computers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201604-6210057</DOCNO>
+<TEXT>
+<subject>Problem with Encore Output</subject>
+<post author="lifehopesound" timestamp="Mar 14, 2014 11:08 AM">
+<s>okay, i was able to fix it with one simple check mark. 
+</s><s>check "render at maximum depth" and no lines! 
+</s><s>thanks for all the responses! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-1426348</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="jkkansal" timestamp="Mar 12, 2014 8:35 AM">
+<s>there is no library content available for menu templetes in encore cs 6.</s><s> while there solutions posted online, none of them help me solve me problem.</s><s> i have downloaded the entire creative suite package through my schools website (who has an agreement with adobe) and do not have any downloads under my download history on the adobe website.</s><s> i therefore cannot download the additional files needed to gain access to the library.</s><s> is there any other way to solve this problem?</s><s> any suggestions would be extremely helpful and much appreciated!</s><s>!</s><s> 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-6203048</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="Andrew_S" timestamp="Mar 12, 2014 8:56 AM">
+<s>start with this web page; 
+http://helpx.adobe.com/encore/using/download-library-content.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-6203221</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="Stan%20Jones" timestamp="Mar 12, 2014 9:25 AM">
+<s>use andrew's link.</s><s> it is what you need. 
+</s><s>the library download is no longer part of the downloads in your account at adobe (and never was for cs6).</s><s> i have produced great confusion. 
+</s><s>the download you will get has the encore library (in a folder called library) and has other material (styles, templates). 
+</s><s>if you have problems, let us know; this does work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-6203467</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="jkkansal" timestamp="Mar 12, 2014 10:47 AM">
+<s>thank you so much.</s><s> this worked! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-6204090</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="Stan%20Jones" timestamp="Mar 12, 2014 1:22 PM">
+<s>excellent!</s><s> i can be useful for other seekers for you to mark andrew's answer as correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-6207039</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="SAFEHARBOR11" timestamp="Mar 13, 2014 12:03 PM">
+<s>my experience in the past with the "download library content" link is that it would only provide a very limited set of menus and buttons.</s><s> to get everything, i needed to use this link - http://helpx.adobe.com/x-productkb/multi/library-functional-content-mi ssing.html 
+and don't use the top part, scroll way down to the bottom where it says "additional solution", choose english, and follow the instructions.</s><s> the download is over 3gb as i recall. 
+</s><s>thanks 
+</s><s>jeff pulera safe harbor computers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202997-6208216</DOCNO>
+<TEXT>
+<subject>Library Content Encore CS 6</subject>
+<post author="Stan%20Jones" timestamp="Mar 13, 2014 7:15 PM">
+<s>andrew 's link is the "new" method.</s><s> the old version you are referring to used an installer and provided the limited library but also the premiere styles etc. the new link provides what used to be at bottom of the page. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-1396317</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Vitolo" timestamp="Feb 2, 2014 4:08 PM">
+<s>i got adobe cc and then instal encore cs6, by installing premiere cs6 also.</s><s> but now, when i open encore cs6 is asking by the serial number and it won't open.</s><s> so...</s><s> encore cs6 comes or not with cc?</s><s>?</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6079280</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Feb 2, 2014 5:20 PM">
+<s>http://helpx.adobe.com/creative-cloud/kb/ccm-prompt-serial-number.html may help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6080421</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Vitolo" timestamp="Feb 3, 2014 6:27 AM">
+<s>i've tryed every single topic of this link but still asking for serial. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6087460</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="neil%20wilkes" timestamp="Feb 5, 2014 12:11 AM">
+<s>it's my understanding encore cs6 does not come with cc.</s><s> it is eol.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6088259</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Stan%20Jones" timestamp="Feb 5, 2014 6:22 AM">
+<s>true, neil.</s><s> it does not come "with," but you can install and use it with your cc subscription. 
+</s><s>vitolo, use the "chat" button on the page john linked to and ask about the next step. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6088650</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Feb 5, 2014 8:14 AM">
+<s>>it's my understanding encore cs6 does not come with cc 
+not automatic, but is included with a manual install http://helpx.adobe.com/encore/kb/encore-cs6-installed-cc.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6091601</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="neil%20wilkes" timestamp="Feb 6, 2014 12:54 AM">
+<s>my apologies for duff info. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6092082</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Stan%20Jones" timestamp="Feb 6, 2014 5:09 AM">
+<s>wouldn't be our hero without being human... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6126771</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="WickPro" timestamp="Feb 16, 2014 3:01 PM">
+<s>hi, i'm having the same problem, were you able to resolve this?</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6132463</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Freddytoman" timestamp="Feb 18, 2014 9:10 AM">
+<s>i'm having the same problem here.</s><s> adobe please let us know my work depends on this !</s><s> thanks...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6132901</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="WickPro" timestamp="Feb 18, 2014 10:39 AM">
+<s>i finally got it working on my own.</s><s> i uninstalled everything even the cloud app.</s><s> then i reinstalled the cloud app and changed the language to english (international) first thing before installing anything new.</s><s> i installed prem cc and then the cs6 family, opened encore cs6 and bingo, it opened right up.</s><s> i had seen mentioning of changing the language in other threads but that didn't work for me, so i thought i would do a clean install and then change the language and it worked.</s><s> i never saw this clean install mentioned even in adobe's troubleshooting, i think they should take note and add it, could save some people a lot of guesswork. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6132832</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Stan%20Jones" timestamp="Feb 18, 2014 10:40 AM">
+<s>what were your results from each step in john's link at post 1. 
+</s><s>if you have no succeeded, there is a chat button on that page. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6132904</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="WickPro" timestamp="Feb 18, 2014 10:45 AM">
+<s>just changing the language didn't work for me.</s><s> i already had prem cc installed under english (n.</s><s> am) and when i switched, it acted like a different account, as if i didn't already have programs installed and encore still didn't work.</s><s> i even tried uninstalling cs6 family only, changing the language and then reinstalling it, no luck.</s><s> only worked for me after a clean install of everything, even the cloud app, then changing the language, then downloading and installing cs6 family. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6132962</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Feb 18, 2014 10:52 AM">
+<s>>never saw this clean install mentioned 
+these are different issues, but i have seen such mentioned 
+discussion of re-installing http://forums.adobe.com/thread/1398961?tstart=0 
+one fix for signout problems http://forums.adobe.com/thread/1408331?tstart=0 -http://helpx.adobe.com/creative-cloud/kb/unable-login-creative-cloud-2 48.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6133042</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="WickPro" timestamp="Feb 18, 2014 11:19 AM">
+<s>if it's mentioned in one of these links then that's fantastic, honestly i won't be reading them to find out, i've waisted more than enough time on this.</s><s> okay, curiosity got the best of me, i read them and they are not even addressing the same issue.</s><s> besides, video professionals need to be spending their time being productive, not spending hours sifting through obscure threads.</s><s> the problem needs to be fixed or the answers need to be more readily available.</s><s> i would suggest, at least, on this troubleshooting page, http://helpx.adobe.com/creative-cloud/kb/ccm-prompt-serial-number.html, add that if simply changing the language does not work for you, try a clean install and then change the language before re-installing.</s><s> or, i don't know this might sound crazy, make english (international) the default language, or just take one of the english choices away.</s><s> boom, simple fix and you're customers are happier, more productive and not wanting to stab themselves in the eyeball. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6133061</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Freddytoman" timestamp="Feb 18, 2014 11:38 AM">
+<s>solved !</s><s> i just spent about an hour chatting with adobe support.</s><s> the solution was to uninstall premier pro cs6 family and download it using the cc app.</s><s> it seems that the problem was that i was using encore from my old cs6 version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6183568</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="rexomus" timestamp="Mar 5, 2014 6:53 PM">
+<s>none of these solutoins work for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6183635</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Freddytoman" timestamp="Mar 5, 2014 6:58 PM">
+<s>solved !</s><s> i just spent about an hour chatting with adobe support.</s><s> the solution was to uninstall premier pro cs6 family and download it using the cc app.</s><s> it seems that the problem was that i was using encore from my old cs6 version. 
+</s><s>actually not solved, it worked for a day or so but now it still asking for it.</s><s> also my dynamic link from pp to audition doesn't work.</s><s> help !</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6183752</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Stan%20Jones" timestamp="Mar 5, 2014 7:43 PM">
+<s>rex and freddy.</s><s> i sent a note to the forum staff asking them to get someone to look at this.</s><s> normally the cloud installation issue forum would be the place to go, but i do not know if there is a special issue involved with encore.</s><s> the link at post 1 should work. 
+</s><s>the forum that may be able to help is here: 
+http://forums.adobe.com/community/download_install_setup 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6183768</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="rexomus" timestamp="Mar 5, 2014 8:06 PM">
+<s>the link at post one doesn't work.</s><s> i've tried it and it doesn't work.</s><s> all my other apps work, signing in to cc works ect.</s><s> it's just encore cs6. 
+</s><s>thanks, but the second link you just posted doesn't help either. 
+</s><s>encore cs6 worked yesterday, it's been working since i installed it over a year ago, but today it asks for a serial number, and as a current cc member i don't have a serial nor did i ever have a serial number. 
+i did a live chat with adobe tech from 8-9pm est tonight.</s><s> i got bounced around a few times and then the tech abruptly dropped me at 9 pm saying, "sorry, your app doesn't work.</s><s> you will need to contact the more experienced techs later as they are all offline." what?</s><s>!</s><s> 
+</s><s>after that lousy customer service chat, i am really disappointed and upset.</s><s> still no solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6190781</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Ken%2047" timestamp="Mar 8, 2014 2:50 AM">
+<s>i have the same problem this morning and needed to burn a blu ray with last minute changes for a friend to show a large group from his horticultural society this afternoon.</s><s> i will have to try to export the project to premiere elements to burn the dvd of let him and 100 people down.</s><s> thanks adobe.</s><s> 
+</s><s>this is exactly why there was so much opposition to the creative cloud when it was introduce.</s><s> the software is excellent but this is not the first time i and many others have been let down by not having access when they most need it. 
+i am retired and creative cloud is a is not and insignificant cost when it is for non profit hobby use.</s><s> prior to the cloud i had every version of photoshop since version 3, premiere since version 4, plus live motion, golive, audition and illustrator they were always there for me to use. 
+</s><s>when i signed up for the cloud it was on the understanding that encore was going to be fully supported like the other app's and i can't aford to pay more money on alternative authoring software.</s><s> if anyone from adobe reads this post please ensure this is fixed as a matter of urgency and please take on board that dvds and blu rays are still a major means of distributing motion pictures and need to be supported. 
+i really feel sorry for the people who are trying to make a living when they are dennied access to mission critical software they have paid to use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191153</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 8, 2014 7:57 AM">
+<s>>link at post one doesn't work 
+using win7 and internet explorer i just clicked the link i provided in reply #1 and it works perfectly for me 
+since encore cs6 "via the cloud" is activated by installing and activating ppro cs6, the only solution i know of for encore cs6 asking for a serial number is to de-and-re-activate premiere pro cs6... which may mean completely uninstalling the ppro/encore cs6 bundle 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191154</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 8, 2014 7:59 AM">
+<s>>when i signed up for the cloud it was on the understanding that encore was going to be fully supported 
+i'm sorry that you had that bad understanding (i am a member just like you, so blame adobe) but the fact is that encore cs6 is end of life http://www.adobe.com/products/encore/faq.html 
+see #8 here for why http://forums.adobe.com/thread/1337952?tstart=0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191225</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Stan%20Jones" timestamp="Mar 8, 2014 8:12 AM">
+<s><quote>
+<s>john t smith wrote: 
+>link at post one doesn't work 
+it works perfectly for me 
+</s></quote>in the context of other posts, i think rexomus is saying that the steps taken in that link do not work.</s><s> i think he was able to access it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191261</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 8, 2014 8:34 AM">
+<s>maybe... but he said the link didn't work, not that the instructions at the link didn't work... oh well... maybe what i added in #21 will help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191262</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="rexomus" timestamp="Mar 8, 2014 8:35 AM">
+<s>stan, that is exactly what i am saying.</s><s> the link works, but the task of un-installing and reinstalling is redundant and very time consuming; usually yealiding a fix for a day, only having to be done again and again. 
+i think the argument here is that a large portion of adobe clients still produce work for physical media.</s><s> everyone i know who uses adobe cc or the old cs express the same frustration as i do about abandoning encore and physical media creation. 
+</s><s>adobe killing encore doesn't make sense to me because physical media is still a viable commodity.</s><s> bestbuy, target, wal-mart all have about an acre of floor space dedicated to dvds, blu-ray, cd's and even vinyl.</s><s> amazon still offers conventional physical media in the aforementioned formats for music, movies, and videogames.</s><s> physical media is not dead.</s><s> i see the trend, i say in about 10 years physical media will be nostolgic but right now it's still in demand and profitable. 
+</s><s>most of my business are 18-35 year old brides that not only demand dvd and bluray copies of their weddings but expect; it with out question.</s><s> even a large portion of my corporate clients want the end product on a physical medium such as dvd or blu-ray.</s><s> hollywood produces hundred million dollar productions and still print to physical media such as dvd and blu-ray. 
+i enjoy my adobe cc i am a fan of the subscritpion service, it's improved the quality while lowering the cost of what i do, but i am also becoming frustrated with a few product decisions adobe has made recently: dropping encore, and not servicing the issues with premiere pro effects not playing nice with amd video cards. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191297</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 8, 2014 8:44 AM">
+<s>>adobe killing encore doesn't make sense 
+go back to #22 and click the second link i provided and read message #8 
+</s><s>adobe did not kill encore... they were not allowed to write an encore cc because the "core" modules they license from another company were killed 
+as for adobe's decision to stop upgrading encore cs6 for new operating systems...</s><s> that is an economic decision by adobe that i do not like, but it does not seem that any of us will be able to change adobe's decision 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191432</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="rexomus" timestamp="Mar 8, 2014 10:06 AM">
+<s>ok, i guess we can argue the semantics all day but at the end of the day encore is a fossil.</s><s> i just wish there was a vible alternative.</s><s> of the few disc authoring suites i used, encore was my favorite for user creative tool set and ease of use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6191442</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="John%20T%20Smith" timestamp="Mar 8, 2014 10:46 AM">
+<s>i do not use these, so have no idea if they will do what you need encore alternative http://www.sonycreativesoftware.com/dvdastudio -or http://www.deskshare.com/dvd-authoring-burning-software.aspx 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6192919</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="Ken%2047" timestamp="Mar 9, 2014 6:43 AM">
+<s>hi john, 
+</s><s>thank you for your reply. 
+</s><s>with respect it was not my bad understanding as i joined the creative cloud when the offering was cs6 before the cc release.</s><s> at that time there was no talk off encore being dropped in future releases. 
+i am not sure why you thought it necessary to say "(i am a member just like you, so blame adobe)" as i clearly said "if anyone from adobe reads this post please ensure this is fixed as a matter of urgency and please take on board that dvds and blu rays are still a major means of distributing motion pictures and need to be supported" making it obvious i blame adobe. 
+</s><s>yes of course encore is end of life but it should still work until it is officially withdrawn.</s><s> it seems strange that a few of us are having the problem within days of each other which is why i am wondering if there is something wrong system that checks our membership and allows us to us to use the products. 
+</s><s>after using adobe products since photoshop 3 please credit me with enough intelligence to have worked out that this is a user forum. 
+</s><s>regards, 
+</s><s>ken 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6202495</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="rexomus" timestamp="Mar 12, 2014 6:32 AM">
+<s>i use to use sony's dvd architect but i left sony for adobe because sony's sofware was just to unstable.</s><s> for the time being, adobe has been far more relieable and, i would say, produces a better final product. 
+</s><s>also, i was finally able to get ahold of someone at adobe tech and they remotely un-installed/re-installed encore and it has been working the past few days. 
+i do appreciate adobe's customer relations.</s><s> they have always taken care of any issues i've had. 
+</s><s>still wish encore could be carried on in new versions but as long as en cs6 still works i guess i can be "content". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6079201-6205868</DOCNO>
+<TEXT>
+<subject>Encore asking for serial number</subject>
+<post author="rexomus" timestamp="Mar 13, 2014 6:38 AM">
+<s>scratch my last post.</s><s> encore is asking for a serial number again!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> grrrr!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201831-1426131</DOCNO>
+<TEXT>
+<subject>Adobe Encore No Inicia y se Cierra Automaticamente</subject>
+<post author="CesarEsVe" timestamp="Mar 11, 2014 10:18 PM">
+<s>ayuda, no puedo iniciar esta a plicacion, es decir, al darle clic para que corra, comienza a disque cargarla, y pues no hace nada, y se cierra, pero antes aparece este dialogo....</s><s> "adobe encore dejo de funcinar correctamente por un poblema,,,.." y puffff, se cierra, como le hago para usarla, o configurarlo para que funcione.....</s><s> en verdad necesito este softtware... mi equipo es un hp g4-137ola de 64 bits..... 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201831-6202276</DOCNO>
+<TEXT>
+<subject>Adobe Encore No Inicia y se Cierra Automaticamente</subject>
+<post author="Stan%20Jones" timestamp="Mar 12, 2014 4:25 AM">
+<s>i do not understand.</s><s> the translation is not good. 
+</s><s>make sure you "run as administrator." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201831-6203259</DOCNO>
+<TEXT>
+<subject>Adobe Encore No Inicia y se Cierra Automaticamente</subject>
+<post author="John%20T%20Smith" timestamp="Mar 12, 2014 9:41 AM">
+<s>how to run as administrator http://forums.adobe.com/thread/969395 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201831-6204662</DOCNO>
+<TEXT>
+<subject>Adobe Encore No Inicia y se Cierra Automaticamente</subject>
+<post author="CesarEsVe" timestamp="Mar 12, 2014 4:20 PM">
+<s>help, i can not start this application, when i start to load it, it doesnt do anything and closes quickly, but before, this dialog appears ....</s><s> "adobe encore dejo de funcionar por un problema, ..</s><s> "and puffff, closes, what can i do to repair this problem .....</s><s> i really need this softtware ... my computers model is hp pavilion g4-1370la, and its architecture is from 64 bits........ 
+</s><s>my o.s is windows 7 ultimate 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6201831-6204669</DOCNO>
+<TEXT>
+<subject>Adobe Encore No Inicia y se Cierra Automaticamente</subject>
+<post author="CesarEsVe" timestamp="Mar 12, 2014 4:42 PM">
+<s>i think the problem was repaired..</s><s>!</s><s>!</s><s>!</s><s>!</s><s> 
+</s><s>what i did was start the aplication on troubleshoot compatibility option and run it like i was using the windows vista o.s...</s><s> and wow, what happened!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> it works!!!1 but thank u 4 ur comments and helpul!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202462-1426218</DOCNO>
+<TEXT>
+<subject>Solution for Encore not opening in Mavericks</subject>
+<post author="EdwurdAdam" timestamp="Mar 12, 2014 5:48 AM">
+<s>hi,   ever since i updated to mavericks, just like a lot of other people, my encore 5.1 would not open.</s><s> i found a solution and now encore runs fine on mavericks.   the solution, posted below.   i only had to do steps 1-4.   good luck.</s><s> i hope it works for you as well.   encore crashing on launch 1. grab digital rebellion's preference manager (free).</s><s> 2. trash encore's preferences.</s><s> 3. empty your trash and restart.</s><s> (if your trash won't empty, restart, then try again.</s><s>) 4. relaunch encore.</s><s> 5. if crashing continues, grab onyx.</s><s> 6. repair permissions, then clean system and user caches.&#8232;7.</s><s> 7. relaunch encore.</s><s> note: these steps should only happen once, not every time you use encore.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-6202462-6202971</DOCNO>
+<TEXT>
+<subject>Solution for Encore not opening in Mavericks</subject>
+<post author="Stan%20Jones" timestamp="Mar 12, 2014 8:20 AM">
+<s>thanks for confirming this works. 
+</s><s>link to original message with this method, that includes a separate process for crash on opening existing project. 
+http://forums.adobe.com/message/6109315#6109315 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-1006810</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E Baldwin" timestamp="May 17, 2012 9:13 AM">
+<s>adobe posted a solution for the missing library content for encore 6. http://helpx.adobe.com/x-productkb/multi/library-functional-content-mi ssing.html i have not treid it yet. 
+ed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4417007</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="williamhacker52" timestamp="May 17, 2012 12:06 PM">
+<s>thanks so much for posting this.</s><s> using a mac under lion, it does seem to work properly for me, very straightforward.</s><s> i'm disappointed that adobe got into this situation in the first place, which seems inexplicable to me, and i would have expected them to get the news out themselves in a more visible way, but at least the content is available now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4417068</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="DearlG" timestamp="May 17, 2012 12:31 PM">
+<s>i've just dl & installed (win 7 64 bit) per the instructions at the link.</s><s> i found it all very straight forward as well.</s><s> however, there is only menu content in the library and no sample content for the other items in the library (buttons, images, backgrounds, layer sets, text, shapes, & replacement layers.</s><s>) 
+</s><s>should there be more content? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4417092</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 17, 2012 1:09 PM">
+<s>i just downloaded and installed (win7 64x) and got the same results ...</s><s> menu contents only, no buttons....</s><s> the document was updated 2012-05-16 but apparently it did not solve the problems or it was not updated. 
+ed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4418754</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="shuchi%20shrivastava" timestamp="May 18, 2012 3:20 AM">
+<s>there will be full functional content available for download which will be containing everything - menus, buttons , backgrounds etc.</s><s> i do not know the exact date but it will be available soon. 
+- shuchi 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4418981</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="Jerry%20AustinTX" timestamp="May 18, 2012 6:05 AM">
+<s>in the interim i managed to use explorer in windows 7 and copy missing library from cs4 to cs6.</s><s> i found the library at c:\program files (x86)\adobe\adobe encore cs4\library.</s><s> cs6 64bit is in the c:\program files\folder.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4419278</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 18, 2012 7:13 AM">
+<s>as a a protection from unexpected results i run an incremental backup (acronis) at the beginning of each day and before any change.</s><s> the cs6 pp content update did not only not supply all of the cs6 encore library content it wiped oout the cs5.5 encore library.</s><s> to restore the now missing library i mounted the acronis image (virtual disk) of the os disk which i had created before the ran the cs6 install.</s><s> using wiin explorer i could copy and paste the cs5.5 encore menu library to the location of the missing library. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4421760</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="terryd1" timestamp="May 19, 2012 7:14 AM">
+<s>i did the same as you after renaming the "library" folder "libraryold", there are a few new menus in cs6 you can copy over to your backed-up folder.</s><s> you can also transfer the "styles" folder over.</s><s> i noticed that if you look through the sub-folders of the old cs5.* "library" and "styles" folders you will notice a huge amount of files with a .psdloc extension if you rename them to a .psd extension they become usable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4425746</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="Regio%20TV" timestamp="May 21, 2012 7:46 AM">
+<s>it's correct that when you rename them to a .psd extension they become usable, but i heard from adobe that the content installer was not good.</s><s> there working now for a new installer! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4426726</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 21, 2012 1:15 PM">
+<s>today adobe posted an update for the missing library content for encore 6. http://helpx.adobe.com/x-productkb/multi/library-functional-content-mi ssing.html the file sizes are the same as before so i did not install. 
+ed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4427121</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="DearlG" timestamp="May 21, 2012 1:52 PM">
+<s>groannnnnn....this is getting frustrating.</s><s> i just dl & installed this "new" content and en cs6 library content looks the same.</s><s> just a few sample menus in each set, but still no buttons, images, etc. also....pr title template selection is messed up and do not display properly in the left pane of the "new title from template" window.</s><s> once i was in there and browsing around, i could not close pr without invoking the task manager. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4427189</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="zoon_unit" timestamp="May 21, 2012 2:04 PM">
+<s>this installer is still broken.</s><s> it only installs a few menu templates and none of the other content, buttons, images, backgrounds, etc. so far, this so called latest release is identical to the broken installer that comes on the content disk of cs6 production premium. 
+</s><s>what's the deal here?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4427216</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 21, 2012 2:27 PM">
+<s>it would be very beneficial if someone from adobe would post when they expect this problem will be resolved. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4427325</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="zoon_unit" timestamp="May 21, 2012 2:32 PM">
+<s>here's a portion of the encore functional install log: 
+<quote>
+<s>extracting assets complete.</s><s> number assets: 2 beginning installation for payload at f:\adobe encore cs6 functional content\payloads\adobeencorefunctionalcontent6all\install.db evaluating condition# 1(seq 2) condition failed(seq 2) evaluating condition# 1(seq 3) condition failed(seq 3) evaluating condition# 1(seq 4) condition failed(seq 4) 
+</s></quote>these errors continue for several pages, so apparently most items in the install.db are corrupted.</s><s> some content is installed however, like a few menus. 
+</s><s>here's my question: how in the heck did the engineers at adobe miss these errors when they were "supposedly" posting updated install programs that were "supposedly" fixed?</s><s>?</s><s>?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4429018</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="dkardell" timestamp="May 22, 2012 6:11 AM">
+<s>well i finally talked to adobe.</s><s> they had me download the dmg file from solution1 of the http://helpx.adobe.com/x-productkb/multi/library-functional-content-mi ssing.html page.</s><s> this installed the menu templates for encore, but no buttons or text styles!</s><s>!</s><s>!</s><s> 
+</s><s>uggggggg 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4432497</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="terryd1" timestamp="May 23, 2012 7:38 AM">
+<s>those downloads have now disappeared they are now offering this solution with no explaination.</s><s> solution 1 - creative cloud and disc product customers #download and install the functional content for premiere pro and encore.</s><s> after effects template projects have been migrated to the after effects exchange. 
+</s><s>premiere pro and encore functional content is being migrated to a new server.</s><s> this document will be updated when those links are available. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4432904</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 23, 2012 9:12 AM">
+<s>"premiere pro and encore functional content is being migrated to a new server." let's hope they also update the content. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4443092</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="dkardell" timestamp="May 27, 2012 8:49 AM">
+<s>ok 6 days later and still "premiere pro and encore functional content is being migrated to a new server.</s><s> this document will be updated when those links are available" ?</s><s>?</s><s>?  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4443299</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="the_wine_snob" timestamp="May 27, 2012 11:06 AM">
+<s>in the us, this is a "long-weekend," and most adobe employees probably left the office early on friday, to spend some time with family and friends over the memorial day weekend. 
+</s><s>i'd give them a bit more time. 
+</s><s>also, there could be some issue with either the functional content, or perhaps with its installer (maybe above, or in another similar thread, stanley outlined how encore installs have changed, and changed back), so there could well be something, that has required more work, than initially anticipated.</s><s> personally, i would rather have everything work perfectly the first time, than have them rush to publish something, that very soon needs a rework. 
+</s><s>good luck to all, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4448520</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="Chad%20Baker" timestamp="May 29, 2012 1:24 PM">
+<s>the link in original post was just updated with new info this morning.</s><s> we've uploaded archives for both premiere pro and encore.</s><s> the encore archive is a big one, about 12gb, so you might want to employ a download manager. 
+</s><s>edit: we're aware of the problems caused by really large downloads.</s><s> we're working on splitting the file into easily digestible chunks.</s><s> stand by.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4448673</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="DearlG" timestamp="May 29, 2012 1:40 PM">
+<s>how do we employ the new dl content for premiere pro?</s><s> you have posted instructions for encore, but nothing for pr 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4448761</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="John%20T%20Smith" timestamp="May 29, 2012 2:09 PM">
+<s>this link http://helpx.adobe.com/x-productkb/multi/library-functional-content-mi ssing.html says ppro and encore 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4448912</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="zoon_unit" timestamp="May 29, 2012 3:12 PM">
+<s>chad, 
+</s><s>good grief! 
+</s><s>if the encore file is too large to download (and it is, the download bombs) then why post a link to it at all? 
+</s><s>this is getting very frustrating.</s><s> i just wish the adobe employees would quality check their posts before posting them.</s><s> so far, this so-called "fix" has only wasted the time of all encore owners. 
+</s><s>fwiw, i'll be interested to see what kind of encore content could possibly use up 12.1 gigs!</s><s> that must be some awesome content.</s><s> no wonder they couldn't fit it on a measly 4.7 gig dvd. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4448990</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="Chad%20Baker" timestamp="May 29, 2012 3:31 PM">
+<s>this upload contains multiple language packages.</s><s> we're working on breaking it into multiple language packages that can be downloaded separately, at considerably reduced size. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4448921</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="zoon_unit" timestamp="May 29, 2012 4:21 PM">
+<s>well, that is a good idea, since i just unzipped the premiere content and saw that all the languages were all mixed together.</s><s> what a mess!</s><s> i certainly don't want to go through and laboriously delete all but the english content. 
+</s><s>btw, where should the premiere content be copied?</s><s> we apparently do not have the option to point to the templates in the premiere preferences, and the issue post doesn't bother to give us install instructions for premiere. 
+</s><s>when i'm marking the issue as helpful or not, you guys need to add a third option of "he#% no!" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449143</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="Chad%20Baker" timestamp="May 29, 2012 4:48 PM">
+<s>the document now includes links broken out by language.</s><s> english is about 1.7gb now.</s><s> should be a bit more manageable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449100</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 29, 2012 5:24 PM">
+<s>anyone had any success downloading the encore english library?</s><s> i have tried several times with no success.</s><s> the download runs at ~2mb/sec and dies ~450mb. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449159</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="DearlG" timestamp="May 29, 2012 5:34 PM">
+<s>no luck here either...the encore dl is still broken and no one has addressed the premiere issue pointed out in #24 (zoon_unit) above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449231</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 29, 2012 5:47 PM">
+<s>i just tried downloading the german encore library with the same failure.</s><s> come-on adobe folks it is time to stop guessing and solve the problems.</s><s> it is not rocket science. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449397</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="Yellamokara" timestamp="May 29, 2012 7:33 PM">
+<s>the download keeps dropping at about 1.2gb for me.</s><s> maybe try when fewer people are accessing the servers? 
+</s><s>as a general observation, the adobe website and forums seem surprisingly sluggish whenever i access them. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449546</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="rpestes" timestamp="May 29, 2012 8:47 PM">
+<s>so what are the esd customers supposed to do?</s><s> we are still seeing the same procedure as before with the same file size.</s><s> has this been updated or should we be using the update feature in the software?</s><s> please make this plain, it seems everyone is confused about what is going on with size and install problems. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4449619</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="zoon_unit" timestamp="May 29, 2012 9:10 PM">
+<s>can adobe please fix this already?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s> thousands of adobe programmers can churn out some of the most complex and powerful software in the world, and they can't even set up a simple zip file download? 
+</s><s>i've spent hours today trying to download the many versions of these files with no luck.</s><s> regardless of which browser or download app i use, the encore download stops at about 460 mb's. 
+</s><s>and i still can't get an answer about the premiere files.</s><s> will there be language versions for premiere too?</s><s> if not, is there a guide as to which files to delete and which to keep if i just want english language templates?</s><s> and where do the template files go? 
+</s><s>i'm sorry guys, but any jr. programmer should be able to zip up some files and place them on a server.</s><s> i do this all the time as a web developer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452517</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="haberchad" timestamp="May 30, 2012 5:53 PM">
+<s>downloaded, unzipped and unarchived, then installed via preferences > media, but not a single file showed up in the library. 
+</s><s>help?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452581</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 30, 2012 5:58 PM">
+<s>i successfully downloaded the files today.</s><s> the encorecontentenglish unzipped into a folder of the same name containing the file en-us.7z.</s><s> the premiereprocontent unzipped in a folder of the same name containing a premiere pro cs5 data which contained a templates folder and a .ds_store file.</s><s> two questions remain: what app do i use to unzip the encore en-us.7z file to create the encore lib and where do i install the premiere pro files?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452563</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="rpestes" timestamp="May 30, 2012 6:05 PM">
+<s>adobe are you reading these comments?</s><s> instructions please!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452593</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="haberchad" timestamp="May 30, 2012 6:09 PM">
+<s>i used stuffit to expand en-us.7z.</s><s> on a mac.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452691</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="E%20Baldwin" timestamp="May 30, 2012 6:30 PM">
+<s>thanks, i will install "7 zip" in win 7 to unzip the .</s><s>7z file.</s><s> did the downloaded 7z file also include the same library contents as the library shipped with encore or did you have to install the downloaded library contents over the the top of the currntly linstalled library? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452976</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="DearlG" timestamp="May 30, 2012 9:59 PM">
+<s>the files in the extracted premiere content are still multi-lingual. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452991</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="shuchi%20shrivastava" timestamp="May 30, 2012 10:16 PM">
+<s>i think you can follow these steps to download and unzip the library content -   1)download the full functional content on your system (.</s><s>7z files) 2)download unzip utility for .</s><s>7z format 7-zip for windows ( available for download at http://www.7-zip.org/download.html) the unarchiver for mac( available for download at http://wakaba.c3.cx/s/apps/unarchiver.html) 3)extract the files to any desired location on your computer 4)launch encore and point the library to the location where you have just extracted the fc files.</s><s> for mac goto encore->preferences->media .</s><s>browse to the library folder of the fc which you have extracted.</s><s> for windows got edit->preferences->media.</s><s> browse to the library folder of the fc which you have extracted.</s><s> 5)click ok.</s><s> 6)the library files will be loaded   also, the library content contains all the files which were provided with the cs6 fc .   thanks, shuchi
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4416409-4452998</DOCNO>
+<TEXT>
+<subject>Encore CS6 Missing Library Files Update</subject>
+<post author="JZuck" timestamp="May 30, 2012 10:57 PM">
+<s>wow.</s><s> that's a lot of work.</s><s> of course, i can't seem to even unzip the zip file.</s><s> is there something special about the zip that windows can't natively unzip it?</s><s> do i need a special zip utility as well?</s><s> jonathan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5780557-1320180</DOCNO>
+<TEXT>
+<subject>Buttons disappear after burning from Disk Image.</subject>
+<post author="Marc D" timestamp="Oct 22, 2013 4:31 PM">
+<s>after saving a project in encore cs4 to disk image, when i burn this disk image to a dvd using either toast or disk utility, the menu buttons disappear.</s><s> the rest of the project is intact.</s><s> the menu background is there, the video itself is burnt correctly on the dvd.</s><s> but, the buttons and the navigation that would have come with the buttons is gone. 
+i would appreciate any clues or suggestions. 
+thanks 
+m 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5780557-5780605</DOCNO>
+<TEXT>
+<subject>Buttons disappear after burning from Disk Image.</subject>
+<post author="Stan%20Jones" timestamp="Oct 22, 2013 5:53 PM">
+<s>what mac os?</s><s> 
+</s><s>there was a problem for cs3, the workaround being using =3 instead of =1 or =2 in the menu layers.</s><s> i think it was supposed to be fixed in cs4, but .... 
+</s><s>in any event, try changing some of the =1/=2's to =3 and see if those buttons are corrected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5780557-5780636</DOCNO>
+<TEXT>
+<subject>Buttons disappear after burning from Disk Image.</subject>
+<post author="Marc%20D" timestamp="Oct 22, 2013 6:42 PM">
+<s>thanks stan.</s><s> i saved a new copy of the disk image.</s><s> that one seems to be working ok.</s><s> it would seem that when i make a duplicate and transfer it to my laptop, the process corrupts the file somehow.</s><s> anyhow, problem solved for now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5780557-5782640</DOCNO>
+<TEXT>
+<subject>Buttons disappear after burning from Disk Image.</subject>
+<post author="Stan%20Jones" timestamp="Oct 23, 2013 9:58 AM">
+<s>curious: what operating system? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5780557-5782746</DOCNO>
+<TEXT>
+<subject>Buttons disappear after burning from Disk Image.</subject>
+<post author="Marc%20D" timestamp="Oct 23, 2013 10:34 AM">
+<s>os 10.8.5 on both the desktop and laptop.</s><s> when i transfer the .iso file to the laptop from the desktop, the buttons disappear upon burning.</s><s> now, i am burning from the desktop to by-pass the problem. 
+m 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-1024884</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="jaypurcell" timestamp="Jun 17, 2012 6:08 PM">
+<s>i've been having a lot of problems getting encore cs6 to run properly.   i have a creative cloud subscription.</s><s> i have downloaded premiere pro.</s><s> premiere is installed as well as encore.</s><s> when i open encore for the first time everything works great.</s><s> once i close it and try to open it again i get an error message that says: "adobe encore cs6 cannot run in non-royalty serialized mode.</s><s> the application needs to be serialized with a royalty bearing serial number".</s><s> after this, another window opens asking me to input a serial number.</s><s> as i am a creative cloud subscriber i do not have a serial number to input here.</s><s> adobe does not provide one for creative cloud users.   (i've included screenshots of these messages below).   i've been through many forum posts and even tried to contact adobe, but no one has any solutions to this.</s><s> customer service is almost non existent.   here is what i 'think' is happening.</s><s> originally i downloaded and tried to run encore as a trial.</s><s> later i decided to subscribe via creative cloud.</s><s> i deleted encore and premiere from my mac (but didn't use the 'uninstall' option, because i didn't know that existed, i just deleted all the files).</s><s> i then downloaded premiere again following the creative cloud directions.</s><s> i'm guessing there might be some kind of hidden file or key which is telling encore not to run without a serial.</s><s> how to remove this file/key or even if this is the issue i have no idea.   i'm hoping someone here can help!   my only solution at the moment everytime i need to use encore is to uninstall and reinstall it.</s><s> that is very far from ideal!     help!  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4500389</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="John%20T%20Smith" timestamp="Jun 17, 2012 7:54 PM">
+<s>>just deleted all the files 
+i am on windows so don't know exactly how things are done on a mac... but i know that in the windows world that is a sure fire way to really cause problems 
+problems that i don't think anyone on a user to user forum is going to be able to fix 
+hopefully, someone with mac experience will post with instructions on how to fix what you did... or maybe contact apple for help with your situation 
+as far as adobe... 
+http://www.adobe.com/support/contact in the us - adobe general support 800-833-6687 m-f 5am-7pm pacific in the us - adobe install problems 800-642-3623 in the us - adobe activation 866-772-3623 open 24/7 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4500472</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="jaypurcell" timestamp="Jun 17, 2012 10:30 PM">
+<s>thanks john.</s><s> 
+</s><s>usually just deleting the app files on a mac is the way to remove them.</s><s> i should have probably used the uninstall utility here though.</s><s> yes, that's how you'd normally do it on windows. 
+</s><s>i'll try contacting adobe support again and see where i get. 
+</s><s>would be good to know if anyone else is having this same problem on the mac. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4500913</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="neil%20wilkes" timestamp="Jun 18, 2012 4:29 AM">
+<s>you will be having registry issues here.</s><s> first port of call is to adobe support, and ask them for a clean-up script (if they have one) that will sort this out for you.</s><s> essentially, you need to remove every entry in the registry pertaining to premiere pro & encore cs6. 
+</s><s>it is just possible that as you deleted the program files (and i wager the adobe common files were left alone?</s><s>?</s><s>) a good utility such as piniform's cclean might be able to get things to the point where you can safely reinstall, but i would defiunitely talk to support in the first instance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4501448</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="John%20T%20Smith" timestamp="Jun 18, 2012 8:36 AM">
+<s>>will be having registry issues here 
+so...</s><s> a mac has a registry file "similar" to the one in windows? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4501608</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="neil%20wilkes" timestamp="Jun 18, 2012 9:13 AM">
+<s><quote>
+<s>john t smith wrote: 
+>will be having registry issues here 
+so...</s><s> a mac has a registry file "similar" to the one in windows? 
+</s></quote>not that i know of - but i may be mistaken.</s><s> afaik, to delete an application from a mac you just dump it's folder in the bin - job done.</s><s> i'm pretty certain there is no registry, or equivalent.</s><s> this is why the op made the mistake he did. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4503334</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="shuchi%20shrivastava" timestamp="Jun 18, 2012 9:31 PM">
+<s>hi jaypurcell, 
+i think you are facing this issue because you did not uninstall the earlier version cleanly.</s><s> first uninstall your current version and then try to clean your machine to remove any traces of previous installation using the cleanup scripts posted by adobe here- http://helpx.adobe.com/creative-suite/kb/cs5-cleaner-tool-installation -problems.html and then install encore afresh. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4504884</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="jaypurcell" timestamp="Jun 19, 2012 10:35 AM">
+<s>thanks everyone for your useful info.</s><s> i haven't had a chance to resolve yet.</s><s> i will post here once i have tried a couple of things. 
+shuchi, yes i think you may be right about the uninstall not being done cleanly.</s><s> i'll give that tool a whirl. 
+</s><s>more soon! 
+
+</s><s>jay 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4660191</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="sean%20gw" timestamp="Aug 30, 2012 7:04 AM">
+<s>don't know if you're still having the issue (or if it's connected) but i just had a problem with photoshop cs6 thinking it needed a seriel number, despite me being a creative cloud customer. 
+</s><s>hope it helps: help: photoshop cs6 asks for serial number, after signing up for creative cloud 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4661758</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="jaypurcell" timestamp="Aug 30, 2012 2:58 PM">
+<s>thanks for the link shane, however i'm on a mac and not pc so that solution won't work for me. 
+i still have the problem, but i haven't tried out the other solutions suggested in this thread yet.</s><s> been too busy on other client work to mess around with my current adobe installs and risk not being able to complete projects!</s><s> my plan though is to uninstall all adobe software, run that cleaner tool and then try to install the cs6 apps from scratch. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-4500201-4677794</DOCNO>
+<TEXT>
+<subject>Encore CS6 Cannot Run in Non-Royalty Serialized Mode</subject>
+<post author="Kapil.Malik" timestamp="Sep 6, 2012 7:10 AM">
+<s>hi are you able to connect to https://lm.licenses.adobe.com/ and getting a message as follows: congratulations!</s><s> you have successfully connected to adobe license management server. if not please try the following: 1.</s><s> please click on "go" and navigate to /private/etc 2.</s><s> open "hosts" file and check out for any entries for adobe.com 3.</s><s> remove the entries and save the file 4. try again launching any product from cs6 thanks kapil malik 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-708142</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="ANTHONY THOMAS" timestamp="Aug 25, 2010 3:50 PM">
+<s>whenever using an expensive sony bd-re dl i have no problem burning a project.</s><s> but whenever i try the verbatim bd-r dl they always produce this error while the project is importing and not yet burning.</s><s> the error is: blue ray error:"device not ready", code: "3",note: as_storageerror = -97060.</s><s> has anyone seen this before? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3085585</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="Ann%20Bens" timestamp="Aug 26, 2010 7:55 AM">
+<s>latest firmware installed? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3088852</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="Giorgio1957" timestamp="Aug 27, 2010 9:18 AM">
+<s>is the disc ok?</s><s> have you tried with another one?</s><s> i know, this will squander your patrimony!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> sometimes this depends by disc-burner, i had a pioneer that loved tdk as deeply hated sony.</s><s> now, i have two lgs that "eat" everything without difficulties 
+ciao 
+giorgio 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3089658</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="a.thomas50%40comcast.net" timestamp="Aug 27, 2010 2:50 PM">
+<s>well the sony discs do fine and the firm ware is upto date.</s><s> i have noticed that the verbatim media says 6x and my bluray writes 8x.</s><s> i have a lg super multi blue bh08.</s><s> i am using a internal pcie card to run it however and the system doesn't call it a bh08ls20 when it is plugged in here but a sata hl-dt-stbd-re b scsi cdrom device.</s><s> maybe i will switch inputs and see what happens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3089753</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="John%20T%20Smith" timestamp="Aug 27, 2010 3:47 PM">
+<s>>verbatim media says 6x and my bluray writes 8x 
+</s><s>well, my guess would be that the speed difference of 6x-vs-8x is the problem 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3756931</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="poofyboy" timestamp="Jun 22, 2011 8:06 PM">
+<s>i get the exact same error with bd-r discs on a pioneer and the write speed option is not available.</s><s> encore 5.0.0.508 on windows 7 64-bit.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3756959</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="ram8kumar" timestamp="Jun 22, 2011 8:25 PM">
+<s>i hope these posts might be of interest here.</s><s> this might be a case of bad media. 
+
+http://forums.adobe.com/thread/867440?tstart=0 
+
+http://forums.adobe.com/thread/866831?tstart=0 
+</s><s>thanks, ramesh.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3756995</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="John%20T%20Smith" timestamp="Jun 22, 2011 9:17 PM">
+<s>also, right click the program icon and select run as administrator 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-3756986</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="poofyboy" timestamp="Jun 22, 2011 9:24 PM">
+<s>run as administrator ... check ...</s><s> i found that one a long time ago. 
+<smacks forehead> ... set up the project to create a blu-ray iso and use another program to burn the disk.</s><s> that works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-4746836</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="studiopeters" timestamp="Oct 3, 2012 11:30 AM">
+<s>creating an iso image and using third party software was the only thing that worked for me.</s><s> i think this is a bug in adobe encore since other software can burn the image perfectly well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-4747057</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="John%20T%20Smith" timestamp="Oct 3, 2012 12:28 PM">
+<s>>think this is a bug 
+1st, bug report at https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+2nd, parts of encore are from roxio, so the problem may be with the licensed roxio modules 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-4751561</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="Giorgio1957" timestamp="Oct 5, 2012 3:48 AM">
+<s><quote>
+<s>john t smith wrote: 
+>think this is a bug 
+2nd, parts of encore are from roxio, so the problem may be with the licensed roxio modules 
+</s></quote>hi john, could this mean that other bugs, like unwanted short stops during loop point menu play, will hardly be fixed?</s><s> http://www.precomposed.com/blog/2011/01/encore-blu-ray-loop-point-fix/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-3083786-4751821</DOCNO>
+<TEXT>
+<subject>Error occurs when burning to BD-R DL disc in Encore</subject>
+<post author="Stan%20Jones" timestamp="Oct 5, 2012 5:57 AM">
+<s>thanks for posting that link to jon geddes' blog.</s><s> i had not seen that latest bit. 
+</s><s>we just don't know.</s><s> while it seems the fix should be easy to code, we don't know what adobe's plans are for encore in terms of how much of the code they want to rewrite.</s><s> this does appear to be a build stage issue, which puts it in the sonic portion. 
+</s><s>but encore still seems one of the weaker apps in adobe's line, and since it is bundled with premiere, i still suspect it does not get the development dollars it needs.</s><s> but look at the credits sometime.</s><s> there are a lot of engineers out there working on it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-1170461</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="\"JP\"" timestamp="Mar 14, 2013 7:48 AM">
+<s>i found a discussion of a similar problem from back in 2010, but in that thread the only reply was suggested burning at 1x and trying different media.</s><s> there was no further correspondence so i can't tell if that suggestion resolved the issue.</s><s> i tried burning again at 1x and using different media (we're using verbatim) without success, so i ask again. 
+</s><s>the problem is with menu navigation in dvd. 
+</s><s>the main menu has the probelem.</s><s> it has four buttons arranged in a 2x2 square that send viewers to 4 submenus.</s><s> each submenu has three buttons - play without subtitles, play with subtitles, return to main menu. 
+</s><s>in any computer (we've tried it in 8: macs and pcs) navigation of the main menu works perfectly using the mouse (although not the up/down left/right buttons on the keyboard... is that normal?</s><s>).</s><s> 
+</s><s>but in the four dvd players in which we've tried it we cannot navigate to the button on the lower right using the buttons on their remote controls, although the other three buttons work just fine.this happens in our ancient $29 dvd player, in our brand new $1,000 blu-ray player and in everything in between. 
+</s><s>i've looked at the programing and cannot find any difference between the buttons that work and the one that doesn't.</s><s> the design preview perfectly and to add confusion a previous version of this disc (i had to link one timeline to new media) plays perfectly in any player. 
+</s><s>i'm stumped.</s><s> i'd be panicked except for the fact that, post sign-off, the client has decided to make just one more little change in the video, so i have another couple of days. 
+</s><s>thanks, jp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5147981</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="John%20T%20Smith" timestamp="Mar 14, 2013 8:36 AM">
+<s>please post a screen shot of your flowchart so people may see what you are doing 
+http://forums.adobe.com/thread/592070?tstart=30 explains how 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5148136</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="%22JP%22" timestamp="Mar 14, 2013 9:07 AM">
+<s>here you go.</s><s> it is the "timesheets" link at the bottom of the flowchart that doesn't work on dvd players, but works fine on computers.</s><s> btw from comments on this forum i infer that some people can tell a lot of things from a flowchart.</s><s> things like whether there or overrides and...</s><s> i don't know what.</s><s> i can't tell anything except the crude "flow, that is "what's connected to what".</s><s> is there a tutorial or document somewhere from which i can learn how to fully read a flowchart?  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5148376</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="JSS1138" timestamp="Mar 15, 2013 10:31 AM">
+<s><quote>
+<s>please post a screen shot of your flowchar 
+</s></quote>
+</s><s>for myself, i think it'd be easier to see the button routing screen.</s><s> chanes are he just doesn't have them set properly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5148409</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="Stan%20Jones" timestamp="Mar 14, 2013 10:18 AM">
+<s>like jim, i assume your most likely problem is button routing.</s><s> viewing the routing should make this obvious. 
+</s><s>encore preview can help you with this if you avoid the tempatation to just use the computer buttons for testing.</s><s> use the "remote" option in the toolbar: 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5148712</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="%22JP%22" timestamp="Mar 14, 2013 11:48 AM">
+<s>misters simon and jones - that was it !</s><s>!</s><s>!</s><s> i'm a newby and self-taught with a long way to go.</s><s> i had stumbled across this screen while working on another project weeks ago, but at that moment i was working to deadline and did not pay the least attention to it.</s><s> of course, when i tried to go back to the screen i hadn't the faintest idea where it was or what the screen/process was called and, so, had no way to look it up.</s><s> it wasn't until you said "button routing" that it clicked.</s><s> that sounded like it was exactly the problem, so i trolled help and found the answer.</s><s> thanks for the very useful stab in the dark.   my test dvd hasn't finished burning, so i'm not absolutely sure myproblem is solved, but i am very confident you have directed me to the solution.</s><s> i'm working studio production today and through the weekend, but before i go incommunicado for 4 days, i wanted to say "thanks a bunch".   jp
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5148703</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="John%20T%20Smith" timestamp="Mar 14, 2013 12:01 PM">
+<s>>newby and self-taught with a long way to go 
+the tutorial list in message #3 http://forums.adobe.com/message/2276578 may help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5151408</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="JSS1138" timestamp="Mar 15, 2013 10:32 AM">
+<s><quote>
+<s>"thanks a bunch". 
+</s></quote>
+</s><s>you're welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5151510</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="Alan%20Craven" timestamp="Mar 15, 2013 10:59 AM">
+<s>there is an auto-routing function for buttons, and you have some control over what goes on, but not much.</s><s> having had these sort of problems myself, i now always turn off auto-routing and make sure the routing is what i want by setting it manually. 
+</s><s>you can check that the routing works as you want before burning, by using the on-screen remote in the encore preview. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Encore/Discussions-5147916-5158455</DOCNO>
+<TEXT>
+<subject>Burned DVD plays in computers, but does not play in DVD players</subject>
+<post author="%22JP%22" timestamp="Mar 18, 2013 2:54 PM">
+<s>just to cap off this discussion i thought i'd say how this happened.</s><s> several weeks back i built a dvd and this menu with just three menu items - introduction & services, hiring a provider, and supervising a provider.</s><s> it worked great.</s><s> then the client decided to add "cmips" to the dvd and reissue it.</s><s> that's when the trouble began.</s><s> i infer that the auto-routing function pulled it off with the original build, but lost its way when i made the addition.</s><s> since i had managed to get along just fine for months without ever stumbling across or needing to know about "button routing," i was completely at sea when the problem cropped up.</s><s> thanks again folks.   jp
+</s></post>
+</TEXT>
+</DOC>
+
+

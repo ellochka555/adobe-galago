@@ -1,0 +1,1825 @@
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-628476</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Alexandre_Monteiro" timestamp="Apr 30, 2010 7:37 AM">
+<s>hi, 
+</s><s>i've installed flash builder 4 downloaded from adobe.com and activeted with a student license. 
+</s><s>the installation went okey, but i cannot launch the application. 
+</s><s>every time i try to run it it throws a configuration error 5: 
+
+---------------------------------------------------------------------- ----- 
+configuraion error 
+please uninstall and reinstall the product. 
+</s><s>if this problem still occurs, please contact adobe techinical support for help, and mention the error code shown at the bottom of this screen. 
+</s><s>error: 5 
+</s><s>http://www.adobe.com/supor/ 
+---------------------------------------------------------------------- ----- 
+i've already installed and unninstalled ten times, searched adobe.com support sites, i even call the support center but i can't get it to work. 
+</s><s>i'm running windows 7 64bit 
+</s><s>adobe flex builder 3 runs perfectly. 
+</s><s>thanks in advance, alexandre monteiro. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2790754</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="berkay%20unal" timestamp="May 6, 2010 3:09 AM">
+<s>i am having the same problem on cs5 master collection mac.</s><s> did you find any solution?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2791876</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Alexandre_Monteiro" timestamp="May 6, 2010 9:13 AM">
+<s>i did not find anything about it, but i got it to work by formating my pc and installing windows 7 x32... now everything works perfectly. 
+i tried to use adobe flash builder, illustrator cs4 and cs5, flash catalyst cs5 and none of them worked on windows 7 x64. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2819886</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="robin1232" timestamp="May 17, 2010 10:46 AM">
+<s>hi, i was experiencing the same problem, but i found a fix (mac only, might also work on windows): 
+- go to /library/application support/ - delete the adobe directory (completely remove it!</s><s>) - reinstall flash 
+i had photoshop too, and it gave an error too (but it still worked) and it didn't require a reinstall. 
+</s><s>flash somehow had everything backed up and all my preferences were still intact. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2820344</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="May 17, 2010 12:59 PM">
+<s>for the errors reported above, please see if you find any log files named "oobelib.log" or "amt3.log" if you look in your temp folder. 
+</s><s>on win, you can find the temp folder this way: - open a command window, and type "set" to view the environment variables - navigate to the folder defined by the envvar named tmp 
+on mac, you'll generally find the temp folder here: /private/tmp/ 
+if you find one (or both) of those log files, zip them up and attach them to this thread.</s><s> if you have any trouble attaching them, try sending them to me via private forum message instead. 
+</s><s>thanks, 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2840069</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="mbierman" timestamp="May 25, 2010 4:05 AM">
+<s>i have a similar problem.</s><s> i had cs4 installed.</s><s> i wanted to remove everything except dw, device central, and extension manager.i used the uninstaller and removed what i could but the following are left behind and i can't figure out how to get rid of them: 
+adobe drive cs4 adobe flash builder 4 adobe flash cs4 adobe illustrator cs4 adobe photoshop cs4 adobe soundbooth cs4 adobe soundbooth scores 
+also, flash cs4 won't run; which is ok, but i really want to delete all of these.</s><s> i wanted to attach the file requested previously, but i don't see how to attach the files to this thread. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2961001</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="MrStephenHarris" timestamp="Jul 9, 2010 9:35 AM">
+<s>i've installed the trial of elarning suite 2 on an i7 x64 box running win7 (brand new install) and i get the error:5 when i try to run captivate 5 from the suite.</s><s> no trouble with dw, br, psx64, sb . . .</s><s> i've unsintalled, reinstalled, uninstalled using the wincs5cleanupscript (although no trials were ever installed prior) - still get the same results.</s><s> please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-2961694</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Jul 9, 2010 1:35 PM">
+<s>one cause for this error can be permissions on the various adobe folders.</s><s> there's a kb article about that here: http://kb2.adobe.com/cps/827/cpsid_82744.html 
+that solution doesn't work for everyone though, so if you still get this error after trying those suggestions, please zip and attach the amt3.log file from your temp folder. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3103059</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="r_s_giri" timestamp="Sep 2, 2010 3:08 AM">
+<s>hi 
+</s><s>after installin the eclipse plug-in on abode flash builder 4, while launching the shortcut "adobe flash builder 4 plug-in eclipse launcher" 
+getting the error message as configuration erorr:5, 
+could you please help me how to solve this. 
+</s><s>regards r_s_giri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3103358</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Alexandre_Monteiro" timestamp="Sep 2, 2010 5:38 AM">
+<s>
+</s><s>hi, 
+</s><s>sorry, but i can't help you very much.</s><s> i've never used the plug-in for eclipse, i've always used the stand-alone version. 
+i got a similar error once, i never found the source of this but i worked around by changing my windows from x64 to x32.</s><s> in x32 every thing worked great. 
+</s><s>good day, alexadre monteiro.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3103945</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Sep 2, 2010 8:47 AM">
+<s>hi r_s_giri, 
+are you on mac or win? 
+</s><s>there's a general troubleshooting matrix by error number on this page: http://kb2.adobe.com/cps/834/cpsid_83481.html 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3106260</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="r_s_giri" timestamp="Sep 3, 2010 2:22 AM">
+<s>i am installing on windows xp. 
+</s><s>regards r.seshagiri rao workplace packaging invesco hyderabad voip 7132148918 direct +91 40 6604111 x1252 mobile +91 9177791678 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3107584</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Sep 3, 2010 11:21 AM">
+<s>one possible cause of that error is that some core libraries didn't get installed successfully. 
+</s><s>try running this subinstaller on its own, and see if that helps: c:\program files\adobe\adobe flash builder 4 plug-in\install.support\adobeflashbuilderpluginstiwrapperwin\set-up.e xe 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3112481</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="r_s_giri" timestamp="Sep 6, 2010 6:20 AM">
+<s>hi chris, 
+</s><s>thanks for reply.</s><s> i installed "adobe flash builder 4 plug-in" silently by keeping the file "installer.properties" in which i mentioned installer_ui=silent.</s><s> this was worked. 
+</s><s>now how to uninstall this plug-in silently?</s><s> please help me on this. 
+
+</s><s>regards r.seshagiri rao workplace packaging invesco hyderabad voip 7132148918 direct +91 40 6604111 x1252 mobile +91 9177791678 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3117305</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Chermayne" timestamp="Sep 8, 2010 1:59 AM">
+<s>i'm having the exact same problem ... thing is i've already used this trial a couple of times and i only have 10 days left . why is it suddenly not working ?</s><s> i use windows vista if that matters . 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3119297</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Sep 8, 2010 2:04 PM">
+<s>> now how to uninstall this plug-in silently?</s><s> please help me on this. 
+</s><s>normally, if you install silently then the uninstaller will run silently too, automatically. 
+</s><s>that can be confusing though if you double-click the uninstaller, because there will be no visual indication that anything is happening until the uninstall completes. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3119302</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Sep 8, 2010 2:09 PM">
+<s>chermayne, have you already tried using the troubleshooting matrix here? 
+http://kb2.adobe.com/cps/834/cpsid_83481.html 
+
+</s><s>if that doesn't help, please zip up those log files mentioned above, and we'll take a closer look. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3128697</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="sweezy241" timestamp="Sep 13, 2010 1:42 AM">
+<s>good moorning everybody, 
+i had the same probleme and i use flex builder 4 on window 7 64bit.</s><s> in order to remake it work i re-installed flex builder on the current intallation without disintalled this one and it work.</s><s> i hope it will work for u. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3219659</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 19, 2010 11:38 PM">
+<s>hi, i'm getting this one as well on win7 (64bit). 
+i already have flash builder 4 installed (commercial license).</s><s> then i tried installing flash professional cs5 (trial) and got the "configuration error 5" when trying to run flash after install.</s><s> i uninstalled and ran the adobe cs5 clear script.</s><s> i did this twice, same error.</s><s> i tried downloading adobe creative suite master collection instead, same result with that one. 
+i verified the permissions for both the adobe pcd folder and the slstore folder, to no avail. 
+</s><s>any other hints? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3221369</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 20, 2010 1:15 PM">
+<s>hi bjorn, 
+</s><s>the best way to isolate the error you're seeing is to capture the log files described in this kb article: http://kb2.adobe.com/cps/834/cpsid_83481.html 
+if you zip up those logs and send them, we should be able to spot the specific problem. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3222302</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 20, 2010 10:39 PM">
+<s>chris, here are the log files i found: 
+http://dev2.bybjorn.com/cs5logs.zip 
+thanks for looking into this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3224106</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 21, 2010 1:43 PM">
+<s>thanks for sending those logs bjorn. 
+i looked through those logs, and there are a lot of errors evident, so those should provide the right clues for identifying a solution.</s><s> i'm sending these logs over to my colleagues on the flash pro and licensing teams, for help with diagnosis, and will report back soon. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3224523</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 21, 2010 5:07 PM">
+<s>
+</s><s>hi bjorn, 
+</s><s>our licensing engineer replied with this info: 
+</s><s>"either there is no pcd.db, or they can't read it, or the data from the installer is not there.</s><s> can you ask for the pcd.db file?" 
+</s><s>he's asking to look at this particular database file, so if you could zip it up and post it alongside your logs, that would help.</s><s> you should find that here: c:\program files (x86)\common files\adobe\adobe pcd\pcd.db 
+
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3224892</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 21, 2010 11:46 PM">
+<s>http://dev2.bybjorn.com/pcd.zip 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3225758</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 22, 2010 8:58 AM">
+<s>thanks bjorn - i've forwarded your pcd.db file to our licensing team for diagnosis, and will keep you posted. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3226849</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 22, 2010 6:19 PM">
+<s>hi bjorn, 
+</s><s>our inside man took a look at that db file, and only found one product installed (flash builder), so if you thought that flash pro cs5 was also installed, there's something wrong there. 
+</s><s>are you sure you re-installed flash pro successfully after uninstalling it earlier? 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3227136</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 23, 2010 3:18 AM">
+<s>here's a screenshot of my start bar when searching for "flash": http://imgur.com/7u6kg.jpg 
+if i click the "adobe flash professional cs5" icon there, it will give me the error message in the title of this topic, like this: http://imgur.com/4gypu.jpg 
+so i'm sure it is installed, yes.. but it doesn't work.</s><s> are there anything else i can try here?</s><s> i know the last resolution is to reinstall win7, but i'm pretty hesitant to go there as it will cost me a days worth of work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3227950</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 25, 2010 9:10 AM">
+<s>@bjorn, 
+</s><s>reading back to your original message, i see that you already tried uninstalling/reinstalling flash pro more than once, sometimes on its own, and sometimes with the cs5 suite trial.</s><s> my hunch is that something about the suite trial installation was conflicting with the individual flash pro trial installation (or vice versa). 
+</s><s>since flash pro was still not showing up as installed in the product configuration database (pcd) you sent last week, you could give it one more try: - uninstall flash pro cs5, using the uninstall control panel - reboot, and make sure flash pro cs5 is no longer present in your program files folder - run the cs5 clean tool, and if flash pro cs5 is still showing, use the tool to remove it - install the flash pro cs5 trial on its own (not from one of the cs5 suite trials). 
+</s><s>if you still get an error trying to launch flash pro after re-installing as described above, please send me your install log.</s><s> you should find the install log under \program files (x86)\common files\adobe\installers\, if needed. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3232406</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 26, 2010 4:06 AM">
+<s>ok, uninstalled, rebooted, cs5 clean, rebooted, installed flash cs5 only, same problem. 
+</s><s>here are all logs in the \program files (x86)\common files\adobe\installers\ folder in addition to the "adobe cs5 cleaner tool.log" file: http://dev2.bybjorn.com/adobe_logs.zip 
+thank you for your continued support on this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3232470</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 26, 2010 4:16 AM">
+<s>thinking that maybe my flash builder 4 installation was causing the problems i tried to uninstall it - just to get this error: http://imgur.com/xcnrl.png 
+tried to reboot, uninstall again, but still got the error.</s><s> it says to use the cs5 clean tool - but that can't be used to remove flash builder, afaik .. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3233312</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 26, 2010 10:41 AM">
+<s>hi bjorn, 
+</s><s>yes, you can use the cs5 clean tool for removing fb4. 
+</s><s>reading back through this thread, another thing i noticed from your original post is that you're using an educational license.</s><s> normally that's fine, but i've seen a few cases where invalid sns were distributed for edu, so another thing we could check is whether your fb4 sn is valid.</s><s> if you send it to me via a private forum message, i can make sure they gave you a good one. 
+i looked through the latest install logs you posted, and flash pro cs5 is reporting a fully successful installation, with nary a warning or error.</s><s> perhaps post your latest amt3.log as well, so i can see if it's still failing in the same place, or if it's shifted at all as a result of your changes. 
+</s><s>i'm about stumped now, but will run it by the flash pro team to see if they've encountered anything like this before. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3233404</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 26, 2010 10:50 AM">
+<s>here's the latest amt3.log: http://dev2.bybjorn.com/amt3.zip 
+i'm not using an edu license .. the fb4 license is a commercial one, and i'm trying to install a trial of flash pro (ie no sn).</s><s> i'll send you the fb4 sn in a message ..</s><s> fb4 is working fine though ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3233398</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 26, 2010 11:15 AM">
+<s>oh, right.</s><s> i was confusing alexandre's original posting with yours - sorry.</s><s> since fb4 is still working fine, i won't worry about that. 
+</s><s>looking at the new amt3.log you posted, it's showing the same error with the pcd that you started with.</s><s> i thought of something we haven't tried though - sometimes win virtualization will kick in and interfere, even though we disable it.</s><s> when that happens, you can wind up with a mismatched shadow copy of the pcd in your virtual store. 
+</s><s>here's how to check that: 
+see if there's a folder like this in your virtual store: c:\users\yourusername\appdata\local\virtualstore\program files (x86)\common files\adobe\adobe pcd 
+if so, delete that folder, and then try launching flash pro cs5 again. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3233539</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 26, 2010 11:36 AM">
+<s>my c:\users\bjorn\appdata\local\virtualstore folder is empty .. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3233501</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 26, 2010 11:43 AM">
+<s>i'll ask a colleague on the flash pro team to take a look at your logs, to see if any of this looks familiar. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3233584</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 26, 2010 11:57 AM">
+<s>thanks, yeah sorry i guess i posted this in the wrong forums.</s><s> this was just the first thread that showed up when googling the error. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3234018</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 26, 2010 2:30 PM">
+<s>no worries - when we find the solution, it will probably be useful for both products. Ê i just heard back from the licensing team, after further experiments with the pcd.db file you posted last week, and here's what they recommend: Ê --- "my observation is that the pcd.db shared by the user is corrupt and in a bad state.</s><s> i replaced this pcd on my machine and ran the cs5 flash pro installer and it failed to make any entries into it.</s><s> i then ran a simple sql insert query in the domain_data table and that failed too.</s><s> given this and the fact that the user appears to have only flash builder on his machine we can ask the user to do the following uninstall fb (de-select the deactivate option as fb is already activated) delete the pcd.db (not the cache ) re-install fb and flash pro cs5" --- from your most recent posts, i think you've already uninstalled everything except flash pro, so for step 1 you'll probably want to uninstall that instead, along with any other adobe apps you may have on that machine now.</s><s> let us know how it goes, -chris
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3234054</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 26, 2010 2:45 PM">
+<s>ok, so i uninstalled all adobe software on my computer except fb4 ..</s><s> i'm not able to uninstall fb .. it still gives me the error i posted in an earlier message http://imgur.com/xcnrl.png 
+i tried to run the cs5 clean tool, but i don't see any choice to uninstall fb in it, so the closest i get is cs5 -> clean all.</s><s> done that but it makes no difference ..</s><s> fb is still installed, and clicking uninstall won't work. 
+i guess i could go through all the adobe folders and delete them manually but it seems kinda hacky. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3234136</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Oct 26, 2010 3:03 PM">
+<s>my hunch is that the corrupt pcd is what was preventing successful uninstallation too, so it's a bit of a catch-22. 
+
+
+</s><s>since you've already run "clean all" from the cs5 tool, that should be good enough.</s><s> you can manually delete the fb4 folder after that, so you'll be ready for a fresh start after removing the pcd. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2773939-3234969</DOCNO>
+<TEXT>
+<subject>Configuration Error 5</subject>
+<post author="Bj%C3%B8rn%20B%C3%B8rresen" timestamp="Oct 27, 2010 1:40 AM">
+<s>it works! :-) 
+</s><s>here is what i did to fix this: ----------------------------------- * uninstalled every adobe software on my computer in the control panel (everything; adobe acrobat, air, flash, etc.</s><s>).</s><s> flash builder could not be uninstalled though (got an error telling me to use the cs5 cleaner tool) 
+* used the cs5 clean tool and selected "clean all" http://www.adobe.com/support/contact/cs5clean.html 
+* using cygwin i deleted the following folders: - c:\program files (x86)\adobe\ - c:\program files (x86)\common files\adobe - c:\users\<myusername>\appdata\local\adobe 
+* rebooted 
+* installed cs5 master collection trial.</s><s> was able to input my existing fb sn there, so i'm running fb commercial and flash pro trial which was what i wanted. 
+</s><s>thanks a lot to chris & his colleagues for walking me through this :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-682955</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="SaurabhCheenu" timestamp="Jul 19, 2010 2:16 AM">
+<s>
+</s><s>hello, 
+</s><s>i installed flashbuilder4 trial version which is not a standalone application but rather eclipse plugin, in my latest eclipse installation which is eclipse helios 64 bit version.</s><s> the installation went on smoothly but after i restarted my eclipse instance and upon clicking the flex module from properties menu it popped up quite a few issues. 
+i did some research and came to know that adobe is not supporting 64 bit version of eclipse. 
+</s><s>my question is whether it is a problem or am i missing something.</s><s> was anyone able to make the flashbuilder4 work with eclipse helios 64 bit version.</s><s> if not is there any chance of adobe releasing the plugin which will work in eclipse 64 bit.</s><s> this is rather important for us since we are looking to port our application infrastructure to use 64 bit eclipse, jvm etc and if adobe is not supporting that it will become a show stopper for us and we have to fall upon using 2 different ide(s) as a last resort. 
+</s><s>looking forward to hear from adobe people soon with few silver linings!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> 
+</s><s>here are my system details: 
+windows xp sp2 64 bit professional edition, 8 gb ram, 2.93 ghz 
+i tried to make it work on eclipse helios jee 64 bit version with adobe flashbuilder4 trial version. 
+</s><s>here is the stacktrace that i could retrieve from my eclipse log file hope this helps: 
+!</s><s>entry org.eclipse.osgi 4 0 2010-07-06 00:39:06.330 !</s><s>message an error occurred while automatically activating bundle com.adobe.flexbuilder.project (1075).</s><s> !</s><s>stack 0 org.osgi.framework.bundleexception: exception in com.adobe.flexbuilder.project.internal.flexprojectcore.start() of bundle com.adobe.flexbuilder.project. at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundl econtextimpl.java:806) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.start(bund lecontexti mpl.java:755) at org.eclipse.osgi.framework.internal.core.bundlehost.startworker(bundl ehost.java :370) at org.eclipse.osgi.framework.internal.core.abstractbundle.start(abstrac tbundle.ja va:284) at org.eclipse.osgi.framework.util.secureaction.start(secureaction.java: 417) at org.eclipse.osgi.internal.loader.bundleloader.setlazytrigger(bundlelo ader.java: 265) at org.eclipse.core.runtime.internal.adaptor.eclipselazystarter.postfind localclass (eclipselazystarter.java:106) at org.eclipse.osgi.baseadaptor.loader.classpathmanager.findlocalclass(c lasspathma nager.java:453) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.findlocalcla ss(default classloader.java:216) at org.eclipse.osgi.internal.loader.bundleloader.findlocalclass(bundlelo ader.java: 393) at org.eclipse.osgi.internal.loader.bundleloader.findclassinternal(bundl eloader.ja va:469) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:422) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:410) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.loadclass(de faultclass loader.java:107) at java.lang.classloader.loadclass(classloader.java:248) at org.eclipse.osgi.internal.loader.bundleloader.loadclass(bundleloader. java:338) at org.eclipse.osgi.framework.internal.core.bundlehost.loadclass(bundleh ost.java:2 32) at org.eclipse.osgi.framework.internal.core.abstractbundle.loadclass(abs tractbundl e.java:1197) at org.eclipse.core.internal.registry.osgi.registrystrategyosgi.createex ecutableex tension(registrystrategyosgi.java:174) at org.eclipse.core.internal.registry.extensionregistry.createexecutable extension( extensionregistry.java:904) at org.eclipse.core.internal.registry.configurationelement.createexecuta bleextensi on(configurationelement.java:243) at org.eclipse.core.internal.registry.configurationelementhandle.createe xecutablee xtension(configurationelementhandle.java:55) at org.eclipse.core.internal.events.buildmanager.instantiatebuilder(buil dmanager.j ava:784) at org.eclipse.core.internal.events.buildmanager.initializebuilder(build manager.ja va:737) at org.eclipse.core.internal.events.buildmanager.getbuilder(buildmanager .java:482) at org.eclipse.core.internal.events.buildmanager.basicbuild(buildmanager .java:201) at org.eclipse.core.internal.events.buildmanager$1.run(buildmanager.java :255) at org.eclipse.core.runtime.saferunner.run(saferunner.java:42) at org.eclipse.core.internal.events.buildmanager.basicbuild(buildmanager .java:258) at org.eclipse.core.internal.events.buildmanager.basicbuildloop(buildman ager.java: 311) at org.eclipse.core.internal.events.buildmanager.build(buildmanager.java :343) at org.eclipse.core.internal.events.autobuildjob.dobuild(autobuildjob.ja va:144) at org.eclipse.core.internal.events.autobuildjob.run(autobuildjob.java:2 42) at org.eclipse.core.internal.jobs.worker.run(worker.java:54) caused by: java.lang.noclassdeffounderror: com/adobe/flexbuilder/utils/osnative/nativecontrol at com.adobe.flexbuilder.project.internal.playertruststore.getuserflashp layertrust folder(unknown source) at com.adobe.flexbuilder.project.internal.playertruststore.<init>(unknow n source) at com.adobe.flexbuilder.project.internal.playertruststore.getinstance(u nknown source) at com.adobe.flexbuilder.project.internal.flexprojectcore.start(unknown source) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl$1.run(bund lecontexti mpl.java:783) at java.security.accesscontroller.doprivileged(native method) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundl econtextimpl.java:774) ...</s><s> 33 more caused by: java.lang.classnotfoundexception: com.adobe.flexbuilder.utils.osnative.nativecontrol at org.eclipse.osgi.internal.loader.bundleloader.findclassinternal(bundl eloader.ja va:506) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:422) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:410) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.loadclass(de faultclass loader.java:107) at java.lang.classloader.loadclass(classloader.java:248) ...</s><s> 40 more root exception: java.lang.noclassdeffounderror: com/adobe/flexbuilder/utils/osnative/nativecontrol at com.adobe.flexbuilder.project.internal.playertruststore.getuserflashp layertrust folder(unknown source) at com.adobe.flexbuilder.project.internal.playertruststore.<init>(unknow n source) at com.adobe.flexbuilder.project.internal.playertruststore.getinstance(u nknown source) at com.adobe.flexbuilder.project.internal.flexprojectcore.start(unknown source) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl$1.run(bund lecontexti mpl.java:783) at java.security.accesscontroller.doprivileged(native method) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundl econtextimpl.java:774) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.start(bund lecontexti mpl.java:755) at org.eclipse.osgi.framework.internal.core.bundlehost.startworker(bundl ehost.java :370) at org.eclipse.osgi.framework.internal.core.abstractbundle.start(abstrac tbundle.ja va:284) at org.eclipse.osgi.framework.util.secureaction.start(secureaction.java: 417) at org.eclipse.osgi.internal.loader.bundleloader.setlazytrigger(bundlelo ader.java: 265) at org.eclipse.core.runtime.internal.adaptor.eclipselazystarter.postfind localclass (eclipselazystarter.java:106) at org.eclipse.osgi.baseadaptor.loader.classpathmanager.findlocalclass(c lasspathma nager.java:453) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.findlocalcla ss(default classloader.java:216) at org.eclipse.osgi.internal.loader.bundleloader.findlocalclass(bundlelo ader.java: 393) at org.eclipse.osgi.internal.loader.bundleloader.findclassinternal(bundl eloader.ja va:469) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:422) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:410) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.loadclass(de faultclass loader.java:107) at java.lang.classloader.loadclass(classloader.java:248) at org.eclipse.osgi.internal.loader.bundleloader.loadclass(bundleloader. java:338) at org.eclipse.osgi.framework.internal.core.bundlehost.loadclass(bundleh ost.java:2 32) at org.eclipse.osgi.framework.internal.core.abstractbundle.loadclass(abs tractbundl e.java:1197) at org.eclipse.core.internal.registry.osgi.registrystrategyosgi.createex ecutableex tension(registrystrategyosgi.java:174) at org.eclipse.core.internal.registry.extensionregistry.createexecutable extension( extensionregistry.java:904) at org.eclipse.core.internal.registry.configurationelement.createexecuta bleextensi on(configurationelement.java:243) at org.eclipse.core.internal.registry.configurationelementhandle.createe xecutablee xtension(configurationelementhandle.java:55) at org.eclipse.core.internal.events.buildmanager.instantiatebuilder(buil dmanager.j ava:784) at org.eclipse.core.internal.events.buildmanager.initializebuilder(build manager.ja va:737) at org.eclipse.core.internal.events.buildmanager.getbuilder(buildmanager .java:482) at org.eclipse.core.internal.events.buildmanager.basicbuild(buildmanager .java:201) at org.eclipse.core.internal.events.buildmanager$1.run(buildmanager.java :255) at org.eclipse.core.runtime.saferunner.run(saferunner.java:42) at org.eclipse.core.internal.events.buildmanager.basicbuild(buildmanager .java:258) at org.eclipse.core.internal.events.buildmanager.basicbuildloop(buildman ager.java: 311) at org.eclipse.core.internal.events.buildmanager.build(buildmanager.java :343) at org.eclipse.core.internal.events.autobuildjob.dobuild(autobuildjob.ja va:144) at org.eclipse.core.internal.events.autobuildjob.run(autobuildjob.java:2 42) at org.eclipse.core.internal.jobs.worker.run(worker.java:54) caused by: java.lang.classnotfoundexception: com.adobe.flexbuilder.utils.osnative.nativecontrol at org.eclipse.osgi.internal.loader.bundleloader.findclassinternal(bundl eloader.ja va:506) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:422) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:410) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.loadclass(de faultclass loader.java:107) at java.lang.classloader.loadclass(classloader.java:248) ...</s><s> 40 more 
+!</s><s>entry org.eclipse.core.resources 4 2 2010-07-06 00:39:07.611 !</s><s>message problems occurred when invoking code from plug-in: "org.eclipse.core.resources".</s><s> !</s><s>stack 0 java.lang.noclassdeffounderror: com/adobe/flexbuilder/project/internal/applicationresourcelistener$1 at com.adobe.flexbuilder.project.internal.applicationresourcelistener.re sourcechan ged(unknown source) at org.eclipse.core.internal.events.notificationmanager$2.run(notificati onmanager. java:291) at org.eclipse.core.runtime.saferunner.run(saferunner.java:42) at org.eclipse.core.internal.events.notificationmanager.notify(notificat ionmanager .java:285) at org.eclipse.core.internal.events.notificationmanager.broadcastchanges (notificat ionmanager.java:149) at org.eclipse.core.internal.resources.workspace.broadcastpostchange(wor kspace.jav a:327) at org.eclipse.core.internal.resources.workspace.endoperation(workspace. java:1181) at org.eclipse.core.internal.events.autobuildjob.dobuild(autobuildjob.ja va:157) at org.eclipse.core.internal.events.autobuildjob.run(autobuildjob.java:2 42) at org.eclipse.core.internal.jobs.worker.run(worker.java:54) caused by: org.eclipse.core.runtime.internal.adaptor.eclipselazystarter$terminat ingclassno tfoundexception: an error occurred while automatically activating bundle com.adobe.flexbuilder.project (1075). at org.eclipse.core.runtime.internal.adaptor.eclipselazystarter.postfind localclass (eclipselazystarter.java:121) at org.eclipse.osgi.baseadaptor.loader.classpathmanager.findlocalclass(c lasspathma nager.java:453) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.findlocalcla ss(default classloader.java:216) at org.eclipse.osgi.internal.loader.bundleloader.findlocalclass(bundlelo ader.java: 393) at org.eclipse.osgi.internal.loader.bundleloader.findclassinternal(bundl eloader.ja va:469) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:422) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:410) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.loadclass(de faultclass loader.java:107) at java.lang.classloader.loadclass(classloader.java:248) at org.eclipse.osgi.internal.loader.bundleloader.loadclass(bundleloader. java:338) at org.eclipse.osgi.framework.internal.core.bundlehost.loadclass(bundleh ost.java:2 32) at org.eclipse.osgi.framework.internal.core.abstractbundle.loadclass(abs tractbundl e.java:1197) at org.eclipse.core.internal.registry.osgi.registrystrategyosgi.createex ecutableex tension(registrystrategyosgi.java:174) at org.eclipse.core.internal.registry.extensionregistry.createexecutable extension( extensionregistry.java:904) at org.eclipse.core.internal.registry.configurationelement.createexecuta bleextensi on(configurationelement.java:243) at org.eclipse.core.internal.registry.configurationelementhandle.createe xecutablee xtension(configurationelementhandle.java:55) at org.eclipse.core.internal.events.buildmanager.instantiatebuilder(buil dmanager.j ava:784) at org.eclipse.core.internal.events.buildmanager.initializebuilder(build manager.ja va:737) at org.eclipse.core.internal.events.buildmanager.getbuilder(buildmanager .java:482) at org.eclipse.core.internal.events.buildmanager.basicbuild(buildmanager .java:201) at org.eclipse.core.internal.events.buildmanager$1.run(buildmanager.java :255) at org.eclipse.core.runtime.saferunner.run(saferunner.java:42) at org.eclipse.core.internal.events.buildmanager.basicbuild(buildmanager .java:258) at org.eclipse.core.internal.events.buildmanager.basicbuildloop(buildman ager.java: 311) at org.eclipse.core.internal.events.buildmanager.build(buildmanager.java :343) at org.eclipse.core.internal.events.autobuildjob.dobuild(autobuildjob.ja va:144) ...</s><s> 2 more caused by: org.osgi.framework.bundleexception: exception in com.adobe.flexbuilder.project.internal.flexprojectcore.start() of bundle com.adobe.flexbuilder.project. at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundl econtextimpl.java:806) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.start(bund lecontexti mpl.java:755) at org.eclipse.osgi.framework.internal.core.bundlehost.startworker(bundl ehost.java :370) at org.eclipse.osgi.framework.internal.core.abstractbundle.start(abstrac tbundle.ja va:284) at org.eclipse.osgi.framework.util.secureaction.start(secureaction.java: 417) at org.eclipse.osgi.internal.loader.bundleloader.setlazytrigger(bundlelo ader.java: 265) at org.eclipse.core.runtime.internal.adaptor.eclipselazystarter.postfind localclass (eclipselazystarter.java:106) ...</s><s> 27 more caused by: java.lang.noclassdeffounderror: com/adobe/flexbuilder/utils/osnative/nativecontrol at com.adobe.flexbuilder.project.internal.playertruststore.getuserflashp layertrust folder(unknown source) at com.adobe.flexbuilder.project.internal.playertruststore.<init>(unknow n source) at com.adobe.flexbuilder.project.internal.playertruststore.getinstance(u nknown source) at com.adobe.flexbuilder.project.internal.flexprojectcore.start(unknown source) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl$1.run(bund lecontexti mpl.java:783) at java.security.accesscontroller.doprivileged(native method) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundl econtextimpl.java:774) ...</s><s> 33 more caused by: java.lang.classnotfoundexception: com.adobe.flexbuilder.utils.osnative.nativecontrol at org.eclipse.osgi.internal.loader.bundleloader.findclassinternal(bundl eloader.ja va:506) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:422) at org.eclipse.osgi.internal.loader.bundleloader.findclass(bundleloader. java:410) at org.eclipse.osgi.internal.baseadaptor.defaultclassloader.loadclass(de faultclass loader.java:107) at java.lang.classloader.loadclass(classloader.java:248) ...</s><s> 40 more 
+~ saurabh 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3003697</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="C.%20Agruss%20(Adobe)" timestamp="Jul 26, 2010 6:28 PM">
+<s>hi saurabh, 
+</s><s>flash builder 4 is compatible with the 32-bit version of helios, but not with the 64-bit version. 
+-chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3099210</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="J.C.Hamlin" timestamp="Aug 31, 2010 6:59 PM">
+<s>we strongly desire to use the new 64-bit eclipse helios jee platform for our development, and plug the flash builder 4 plug-in into it.</s><s> our applicaiton is a large enterprise application with a java server-side and a flex client side.</s><s> we have about 50 engineers and 50 professional service people that use this platform.</s><s> our engineers and professional services people work on the entire code at once... switching between two different ides is a real pain.</s><s> we did that originally but then figured out how to get the flex builder 3 plug-in installed into our existing java enterprise eclipse ide and have been much happier since. 
+</s><s>we have 100+ projects, 50,000+ files, 2.5 million lines of code, and use over 150 third-party jars.</s><s> working in a 32-bit ide is now too much of a pain point.</s><s> we've hit the wall on the 32-bit jvm... we allocate 256m to permgen (just about enough) and 1024m to heap.</s><s> this is a compromise heap size: its not enough heap: compiling and validating everything is always slow and sometimes it fails or hangs thrashing near out of heap space, but it is also too much: we often get other kinds of oom errors (native memory, etc) because the heap is too large.</s><s> the 32-bit address space is just too limited for our ide needs.</s><s> thus, we absolutely need to switch to a 64-bit ide.</s><s> in our trials with the 64-bit helios, we allocate 2048m of heap and full builds builds are about 50% faster, and so far, not a single crash from other oom conditions.</s><s> problem is... the flash builder 4 plug-in will install nicely with no errors or warnings, but does not work (many of its .dlls are 32-bit dlls and it fails because it can't load the native library for bridgetalk). 
+</s><s>when will adobe release a flash builder 4 plug-in that will work with the 64-bit version of eclipse helios?</s><s> helios is the 64-bit revolution for eclipse... every package that is available (classic, java, jee, etc) is now available in both a 32-bit and a 64-bit download.</s><s> adobe should follow suit. 
+</s><s>david williams over on the eclipse.org forums answered this question with this answer: "in an ideal world, a p2 install [of flash builder 4] would automatically pick out the right platform version [32-bit or 64-bit] and you'd work with either one transparently." 
+http://www.eclipse.org/forums/index.php?t=msg&goto=545212&#msg_545212 
+thus, we'd like to officially like to request this feature.</s><s> is this the proper place ot make a feature request? 
+-j.c. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3100328</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Hamilton%2C%20Scott%20J" timestamp="Sep 1, 2010 5:45 AM">
+<s>i think this is a use case that will see more and more demand as time goes on. 
+</s><s>has adobe done any kind of loe estimation on supporting 64 bit eclipse? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3105065</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="arshorten" timestamp="Sep 2, 2010 2:31 PM">
+<s>hi, 
+</s><s>we are currently monitoring demand for 64bit support for flash builder, but do not have any information to share about availability at this time. 
+</s><s>for the time being you will need to install and run flash builder in a 32bit version of eclipse. 
+</s><s>thanks, 
+</s><s>andrew shorten, product manager, flash builder 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3131772</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="DanielRijkhof" timestamp="Sep 14, 2010 4:33 AM">
+<s>how do you monitor the demand? 
+</s><s>the company i'm working at atm, has 20 developers. about 10 made the step to 64 bit, and most of them hate not being able to use fb4 in 64 bit mode.</s><s> only 2 of the 10, are now using windows 7 with eclipse 32b + fb4.</s><s> the other 8 are using intellij.</s><s> intellij support for flex is pretty good, and free.</s><s> ofcause you'll have to pay for intellij, but the cost is about the same.</s><s> since most java programmers i know think intellij is the better ide anyway, and intellij does provide 64 binaries... it's not even a losing battle, adobe just doesn't have 64 bit flash builder. 
+i do need an ide with support for flex, i have an intellij license.</s><s> i spend over 1 day to make a big maven project work in eclipse, and now i find out i cannot move on because i used the 64 bit version of eclipse.</s><s> sorry adobe, i love eclipse, i love 64 bit, i like flashbuilder, but i guess the others are right, intellij is the way to go atm. 
+i will not uninstall my 64 bit eclipse, perhaps you guys will have a 64bit fb4 before i get used to intellij. 
+</s><s>please be quick about releasing a 64 bit version.</s><s> i really hope it's going to be today! 
+
+</s><s>daniel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3154885</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="srstclair" timestamp="Sep 22, 2010 2:30 PM">
+<s>+1 for 64 bit eclipse support... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3212659</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="yankee2003" timestamp="Oct 16, 2010 4:36 PM">
+<s>i'm also awaiting the 64bit plugin... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3223103</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Vladtn" timestamp="Oct 21, 2010 7:21 AM">
+<s>+1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3235386</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="wedgedkc" timestamp="Oct 27, 2010 5:58 AM">
+<s>+1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3245245</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="bobbyworld" timestamp="Nov 1, 2010 3:31 AM">
+<s>count my feedback and vote for 64-bit plugin.</s><s> windows 7 and 64-bit plugins seem to be more mainstream these days 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3256063</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Ted%20Moens" timestamp="Nov 5, 2010 11:47 AM">
+<s>it's good to have choices: "run two ides or run a 32 bit java".</s><s> when my kids were young, i liked to give them choices too.</s><s> like "you can eat your lima beans and liver now, or you can go to bed".</s><s> somehow having two bad choices didn't make them happy either. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3268986</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="don.obrien" timestamp="Nov 11, 2010 8:53 AM">
+<s>another vote for 64 bit fb4 here. +1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269001</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="sukachevin" timestamp="Nov 11, 2010 8:54 AM">
+<s>+1 given that 64-bit developer/designer environments are becoming the norm now-a-days. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269012</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="sagarmnm" timestamp="Nov 11, 2010 8:58 AM">
+<s>+1 for the fb4 64 bit...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269014</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="rootsounds" timestamp="Nov 11, 2010 9:00 AM">
+<s>a 64-bit flash player is on the way.</s><s> how about a development environment to go with it?</s><s> make my system happy. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3268991</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="paulmerc" timestamp="Nov 11, 2010 9:02 AM">
+<s>+1 vote for flash builder 4 64-bit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269016</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="mjondrejko" timestamp="Nov 11, 2010 9:02 AM">
+<s>+1 for the fb4 64 bit...</s><s> 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269018</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Shailesh%20Lohiya" timestamp="Nov 11, 2010 9:04 AM">
+<s>+1 for the fb4 64 bit.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269038</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Shashidhar%20Koukuntla" timestamp="Nov 11, 2010 9:07 AM">
+<s>+1 vote for 64bit support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269095</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="santoshKumar1111111" timestamp="Nov 11, 2010 9:37 AM">
+<s>+1 provide a 64-bit version of flash builder 4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269096</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="daniel_yang" timestamp="Nov 11, 2010 9:38 AM">
+<s>+1 vote for 64bit support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269139</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="pmat2010" timestamp="Nov 11, 2010 9:50 AM">
+<s>for a number of reasons very similar to those laid out by j.c.hamlin, our team is finding that fb4 is the only obstacle to moving to eclipse 64-bit.</s><s> this is not only disappointing, we're also missing out on better productivity. 
+</s><s>our organization would very much like to add our vote for this fb4 64-bit version to be made available by adobe.</s><s> the sooner the better!</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269385</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="ajdavuluri" timestamp="Nov 11, 2010 11:20 AM">
+<s>+1 vote for 64bit support. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269501</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Stephen%20Kirchner" timestamp="Nov 11, 2010 12:32 PM">
+<s>+1 
+</s><s>provide a 64-bit version of flash builder 4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3269717</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="gursesl" timestamp="Nov 11, 2010 1:32 PM">
+<s>+1 64-bit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3270428</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="susmithajacob" timestamp="Nov 11, 2010 8:37 PM">
+<s>+1 for 64 bit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3272323</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="x3xxx" timestamp="Nov 12, 2010 1:18 PM">
+<s>we need 64bit for sure. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3272384</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="flash.64" timestamp="Nov 12, 2010 1:34 PM">
+<s>+1 for 64 bit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3273003</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Jens%20Wegar" timestamp="Nov 12, 2010 9:51 PM">
+<s>+1 for 64bit flash builder.</s><s> 
+</s><s>if you have some feature request page open for this topic as well, please point us to it so we can vote there as well. 
+</s><s>don't see the point in monitoring demand at this point anymore since the demand is clearly there and will only get stronger for each new 64bit computer sold.</s><s> computer systems are not going to go back to 32bit.</s><s> more likely, we'll see 128bit or something in the future. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3273294</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="cloverfish71" timestamp="Nov 13, 2010 6:38 AM">
+<s>+1 vote for 64bit support !</s><s>!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3275818</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="asenserini" timestamp="Nov 14, 2010 10:46 PM">
+<s>+1 for 64 bit support 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3276768</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="amarseelam" timestamp="Nov 15, 2010 8:20 AM">
+<s>+1 for 64-bit support 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3277051</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="arshorten" timestamp="Nov 15, 2010 9:52 AM">
+<s>hi, 
+</s><s>if you are adding your support for a 64bit version of flash builder it would really help if you could provide some context as to why you need it - is it because of a specific issue you are currently facing in flash builder, is due to compatibility with other plug-ins you're running or something else? 
+</s><s>thanks, 
+</s><s>andrew group product manager, developer tools, adobe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3277136</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Hamilton%2C%20Scott%20J" timestamp="Nov 15, 2010 10:31 AM">
+<s>well, i would echo what j.c.</s><s> hamlin wrote (far above). 
+</s><s>we've got a very large project with a large java component as well as many flex projects.</s><s> developing in one ide is very convenient in that code refactoring, searching, deployment to the test environment, etc. is all integrated into one ide instance.</s><s> however, in our environment, the heap/memory limitations of a 32-bit jvm constrain the performance of eclipse with our projects and all the plugins that we use. 
+</s><s>we're constantly trying to balance heap, maxperm, etc. to tune, but we're totally crunched down by the 32-bit jvm 2g limit, and even below that because of windows overhead and whatever eclipse itself is doing.</s><s> when you get it wrong, sometimes eclipse will simply just die, and restoring the workspace to its former state is not always easy and quick. 
+</s><s>even more concerning is that our product as well as eclipse and our other plugin tools (including flashbuilder) is a long-lived one and continues to grow.</s><s> looking down the road, therefore, heap space will continue to be more and more of a limitation. 
+</s><s>our entire development department and many others' that i've talked with use 64-bit os versions to allow application development with fewer memory constraints.</s><s> eclipse 64-bit works great unless you must have a 32-bit-only plugin.</s><s> myeclipse 9 now supports 64-bit on windows. 
+</s><s>having flashbuilder as a 64-bit compatible plugin would not only help address this case, but also put you in line with where i would imagine the future of operating systems are eventually heading.</s><s> maybe it will take a few years, but how long before 32-bit apps are as obsolete as 16-bit ones? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3277164</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Ted%20Moens" timestamp="Nov 15, 2010 10:40 AM">
+<s>ok - why do i want it? 
+i use springsource toolsuite as my base eclipse.</s><s> sts includes a nice bit of productivity software called roo.</s><s> roo has a plugin that generates applications with flex client and java back end using blazeds in between.</s><s> i use the flashbuilder plugin to work on the client side.</s><s> i upgraded to the 64 bit sts, and as they say, "boom goes the dynamite". 
+</s><s>so no 64 bit flashbuilder => no flex roo plugin => no roo => no sts in 64bis => a bit of frustration. 
+no, i can not separate the flex client and run it in 32 bit flashbuilder because the roo plugin manages bidirectional code generation from database to the server side to the flex client code within the scope of a single project. 
+</s><s>yes i could run a 32 bit sts, but i just got a nice new machine with lots of ram and i swallowed hard and bought yet another copy of windows.</s><s> i'd kinda like to make use of it. 
+</s><s>this approach of asking "let's examine your motives" in the face of some pretty clear demand from customers may be instructive for you, but it also gives the distinct impression that customers and vendor are not seeing eye-to-eye on the issue.</s><s> this worries me.</s><s> why is adobe pushing back on this? 
+</s><s>ted 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3277165</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Daniel%20Rijkhof" timestamp="Nov 15, 2010 10:41 AM">
+<s>the need is simple, 
+we are running our production environment on a 64bit machine with 64bit os (red hat i beleave), and 64bit jre. 
+</s><s>so to get as close to the same specs, i use a 64bit os (w7) and 64bit jdk.</s><s> next step should be 64bit eclipse.... 
+</s><s>so, we cannot run 64bit eclipse because there is no flex support on 64bit eclipse.</s><s> going to 32bit eclipse means going to 32bit jre.... 
+it's just to bad.... 
+i guess it's just not a high priority for adobe, and i might even agree.... to bad that my current project doesn't work with intellij.</s><s> my last project worked perfect with intellij.</s><s> intellij support for flex is very good. 
+i still like eclipse better.</s><s> fyi currently running 32bit jdk with 32bit eclipse with fb4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3277150</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="J.C.Hamlin" timestamp="Nov 15, 2010 10:42 AM">
+<s>andrew, 
+</s><s>i think i've stated *our* reasons in a message earlier.</s><s> due to the size of our codebase and number of projects and third-party libraries, the helios 32-bit version just simple can't import, compile, and function properly.</s><s> we run out of memory (either heap space if heap is too small, or out of some other native memory resource if heap is too large).</s><s> when eclipse crashes like this, sometimes getting interrupted to get your workspace back into a usable state can be a real pain. 
+</s><s>we want to use an *integrated* development environment (the key word being integrated) which means running helios 64-bit for all of our work (java, jsp, database, etc) and flex development.</s><s> without the integration (i.e. being forced to run two ides 32-bit flash builder 4 for flex and 64-bit helios for java/jsp) refactoring, search, search and replace, svn commit/update, deployment and testing, just becomes a pain.</s><s> so, until flash builder 4 comes as a plug-in that plugs into our 64-bit helios enviornment, we're forced to run two ides and have a non-integrated development environment.</s><s> this is a real pain. 
+</s><s>i'm guessing this will be the primary concern you will hear expressed here. 
+</s><s>eclipse is wonderful, but its also a memory hog, and helios is even moreso than ever (i.e. our project used to work, barely, in 3.4.</s><s> it sort-of worked in 3.5.</s><s> it does not work in heloios [3.6] because we can't even allocate a heap large enough).</s><s> helios provides even more features than ever, it also needs more memory to function.</s><s> this problem will continue to get worse over time so that even smaller projects than ours start to bump into the 32-bit/2g limit. 
+-j.c. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3277414</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="srstclair" timestamp="Nov 15, 2010 12:00 PM">
+<s>i'll add that it's a bit awkward to have your only paid eclipse plug-in be the only plug-in that holds you back.</s><s> with fb3 it held us to ganymede, and now with fb4 it's holding us to 32 bit.</s><s> eclipse users are accustomed to (spoiled by?</s><s>) short waits between minor updates in plug-in software and not having to wait months (years?</s><s>) for compatibility updates.</s><s> i realize that fb is a very sophisticated piece of software, but it is frustrating to see subversive, m2eclipse, hibernate tools, freemarker ide, etc. handle version upgrades with no problem while fb chokes. 
+</s><s>note that fb doesn't necessarily need to be optimized for 64 bit...it just needs to survive. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-2984005-3281903</DOCNO>
+<TEXT>
+<subject>FlashBuilder4 eclipse plugin for Eclipse Helios 64 bit version</subject>
+<post author="Ali%20Sh." timestamp="Nov 17, 2010 6:48 AM">
+<s>+1 for the fb4 64-bit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-1030478</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="wraevn" timestamp="Jun 28, 2012 4:15 PM">
+<s>i just downloaded juno (eclipse 4.2 32bit) and wanted to install my fb 4.6 plugin, but the installer says "adobe flash builder requires eclipse 3.6 or later" - which is bunk, as juno is the latest and version 4. 
+</s><s>sounds like a bug w/ the installer not recognizing any eclipse versions above 3.x. 
+</s><s>how do i work around this? 
+</s><s>thanks, 
+</s><s>b 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4527728</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="Qingtom%20Xie" timestamp="Jun 28, 2012 7:12 PM">
+<s>i have the same problem~ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4528082</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="iam0815" timestamp="Jun 29, 2012 1:42 AM">
+<s>me too.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4528232</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="toshe-d-e" timestamp="Jun 29, 2012 2:57 AM">
+<s>install on eclipse 3.7 then copy the dropins folder to 4.2 installation.</s><s> the first eclipse start was slow and on the first switch to flash perspective i received nullptr.</s><s> but on the next start everything was ok.</s><s> i can debug, build gui, create new flash projects...</s><s> maybe some things will not work...</s><s> but i don't think i will need them. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4528975</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="wraevn" timestamp="Jun 29, 2012 10:20 AM">
+<s>this workaround worked for me just as explained - got the npe, then 2nd launch seemed fine.</s><s> will require more testing to be sure that everything works as expected. 
+</s><s>one note - i wasn't able to install the plug-in to v3.8 either, didn't try 3.7, just installed 3.6 and that worked. 
+i also just copied the fb-4_6-plugin-encoded.link file from the dropins folder, not the whole folder itself, but that probably makes no difference. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4534955</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="AlHolden" timestamp="Jul 2, 2012 8:19 PM">
+<s>same issue here.</s><s> the workaround seems like a royal pain, and it could be weeks or months until one discovers what didn't work by following it. 
+</s><s>it would be nice to hear from adobe on this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4543107</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="Ched%20Cheatham" timestamp="Jul 6, 2012 6:51 PM">
+<s>i can't get the perscribed work around to work on my macbook pro.</s><s> juno just crashes.</s><s> i am gonna try some other things and if i find a solution i will let everybody know what i did. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4563337</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="KenKopelson" timestamp="Jul 17, 2012 12:40 PM">
+<s>flash builder 4.6 supports installation as a plugin to an existing eclipse instance.</s><s> to do so: complete the installation process as described above.</s><s> navigate to the installed flash builder installation location and open the utilities folder.</s><s> run the executable adobe flash builder 4.6 plug-in utility.exe.</s><s> select the language and click on ok.</s><s> select the flash builder installation location if prompted.</s><s> select the eclipse folder into which you want flash builder 4.6 to be plugged into and click next.</s><s> (note: your copy of eclipse must be version 3.6/3.6.1/3.6.2/3.7, 32-bit and must contain a folder named "dropins") review the pre-installation summary and click on install 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4563421</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="wraevn" timestamp="Jul 17, 2012 1:04 PM">
+<s>this entire thread is based on the premise that doing the above doesn't work ken, which it doesn't.</s><s> you have to do toshe-de's workaround.</s><s> your own post indicates the problem - eclipse must be version 3.6, 3.7 etc., juno is v4, so your reply is basically how to repro the problem, not a solution, but it's good to have the repro steps too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4563423</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="wraevn" timestamp="Jul 17, 2012 1:06 PM">
+<s>do keep us apprised ched.</s><s> that'll be very useful! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4563608</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="KenKopelson" timestamp="Jul 17, 2012 2:20 PM">
+<s>actually, the reason i added the reference to the requirements for plugin usage is simply to point out that the instructions given by adobe do indeed work as advertised, noting the following: 
+1) software, by its nature, has compatability requirements, and in this case eclipse must be 3.6 to 3.7.</s><s> the original question stated that "it must be a bug with the installer", where that simply isn't the case.</s><s> the installer works well within the stated requirements.</s><s> the original poster is assuming that the plugin must work with post 3.7 eclipse verions, which it clearly does not. 
+2) toshe-de did indeed suggest a "workaround" to the adobe requirements, and as noted, there may be risks to this down the road.</s><s> this is just the way it is, however, when one wants to exceed a vendor's requirements or limitations.</s><s> it is quite obvious to all that eclipse is moving on, while flashbuilder is not.</s><s> apparently, adobe is not committed to continuing fb development, and so in the mean time...life goes on. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4597475</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="Barna%20Biro" timestamp="Aug 3, 2012 4:20 PM">
+<s>unfortunately no workaround i have tried so far can get flash builder 4.6 working with juno on osx lion / mountain lion.</s><s> it works fine under windows 7 with the above workarounds, but refuses to work under osx. 
+</s><s>eclipse crashes right after picking the workspace location, throwing the following message ( if i remove the .link to flash builder from dropins, eclipse functions correctly again... so it's definitely something with the plug-in ; ps: the eclipse.ini is correctly updated ): 
+<quote>
+<s>invalid memory access of location 0x10 eip=0x983c66bc bus error: 10 
+
+</s></quote>
+</s><s>totally wonderful...</s><s> also, seemingly flash builder plug-in installs without a problem on helios but it doesn't actually seem to load the plug-in at start-up.</s><s> can't create new projects / files related to flash builder.</s><s> adobe... any chances you're going to move a muscle to fix these issue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4644008</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="Barna%20Biro" timestamp="Aug 23, 2012 4:31 PM">
+<s>no one from adobe interested in looking into this issue?</s><s> your software doesn't work when installed as a plug-in on mac os x!</s><s> what on earth is this?</s><s> if i install in for helios, it doesn't recognize the plug-in at all ( can not create any flash / flex / air / actionscript related projects or anything similar ). 
+</s><s>provide answers, workarounds, whatever!</s><s> just make it work already on mac os x! 
+ps: just to avoid useless questions: it was not working on lion either and nor is it working on mountain lion.</s><s> the following is the stack i get if i run eclipse juno with -consolelog argument ( and this after dropping the flash builder 4.6 link into the "dropins" folder of juno ): 
+<quote>
+<s>!</s><s>session 2012-08-24 01:20:54.087 ----------------------------------------------- eclipse.buildid=i20120531-1500 java.version=1.6.0_33 java.vendor=apple inc. bootloader constants: os=macosx, arch=x86, ws=cocoa, nl=en_us framework arguments: -product org.eclipse.epp.package.jee.product command-line arguments: -os macosx -ws cocoa -arch x86 -product org.eclipse.epp.package.jee.product -consolelog 
+
+!</s><s></s><s>entry org.eclipse.equinox.p2.reconciler.dropins 4 0 2012-08-24 01:21:09.494 !</s><s></s><s>message frameworkevent error !</s><s></s><s>stack 0 org.osgi.framework.bundleexception: state change in progress for bundle "reference:file:plugins/org.eclipse.equinox.p2.reconciler.dropins_1.1 .</s><s></s><s>200.v20120301-2145.jar" by thread "start level event dispatcher". at org.eclipse.osgi.framework.internal.core.abstractbundle.beginstatecha nge(abstractbundle.java:1088) at org.eclipse.osgi.framework.internal.core.abstractbundle.suspend(abstr actbundle.java:564) at org.eclipse.osgi.framework.internal.core.framework.suspendbundle(fram ework.java:1207) at org.eclipse.osgi.framework.internal.core.packageadminimpl.suspendbund le(packageadminimpl.java:326) at org.eclipse.osgi.framework.internal.core.packageadminimpl.processdelt a(packageadminimpl.java:467) at org.eclipse.osgi.framework.internal.core.packageadminimpl.doresolvebu ndles(packageadminimpl.java:251) at org.eclipse.osgi.framework.internal.core.packageadminimpl$1.run(packa geadminimpl.java:174) at java.lang.thread.run(thread.java:680) caused by: org.eclipse.osgi.framework.internal.core.abstractbundle$bundlestatuse xception ...</s><s></s><s> 8 more root exception: org.eclipse.osgi.framework.internal.core.abstractbundle$bundlestatusex ception at org.eclipse.osgi.framework.internal.core.abstractbundle.beginstatecha nge(abstractbundle.java:1088) at org.eclipse.osgi.framework.internal.core.abstractbundle.suspend(abstr actbundle.java:564) at org.eclipse.osgi.framework.internal.core.framework.suspendbundle(fram ework.java:1207) at org.eclipse.osgi.framework.internal.core.packageadminimpl.suspendbund le(packageadminimpl.java:326) at org.eclipse.osgi.framework.internal.core.packageadminimpl.processdelt a(packageadminimpl.java:467) at org.eclipse.osgi.framework.internal.core.packageadminimpl.doresolvebu ndles(packageadminimpl.java:251) at org.eclipse.osgi.framework.internal.core.packageadminimpl$1.run(packa geadminimpl.java:174) at java.lang.thread.run(thread.java:680) 
+
+!</s><s></s><s>entry org.eclipse.equinox.p2.transport.ecf 2 0 2012-08-24 01:21:15.923 !</s><s></s><s>message [scr] found components with duplicated names!</s><s> details: component1 : component[ name = org.eclipse.equinox.p2.transport.ecf activate = activate deactivate = deactivate modified = configuration-policy = optional factory = null autoenable = true immediate = false implementation = org.eclipse.equinox.internal.p2.transport.ecf.ecftransportcomponent state = unsatisfied properties = {p2.agent.servicename=org.eclipse.equinox.internal.p2.repository.tran sport} servicefactory = false serviceinterface = [org.eclipse.equinox.p2.core.spi.iagentservicefactory] references = null located in bundle = org.eclipse.equinox.p2.transport.ecf_1.0.100.v20120305-0333 [313] ] component2: component[ name = org.eclipse.equinox.p2.transport.ecf activate = activate deactivate = deactivate modified = configuration-policy = optional factory = null autoenable = true immediate = false implementation = org.eclipse.equinox.internal.p2.transport.ecf.ecftransportcomponent state = unsatisfied properties = {p2.agent.servicename=org.eclipse.equinox.internal.p2.repository.tran sport} servicefactory = false serviceinterface = [org.eclipse.equinox.p2.core.spi.iagentservicefactory] references = null located in bundle = org.eclipse.equinox.p2.transport.ecf_1.0.0.v20110510 [1077] ] 
+
+!</s><s></s><s>entry org.eclipse.equinox.event 2 0 2012-08-24 01:21:15.927 !</s><s></s><s>message [scr] found components with duplicated names!</s><s> details: component1 : component[ name = org.eclipse.equinox.event activate = activate deactivate = deactivate modified = configuration-policy = optional factory = null autoenable = true immediate = false implementation = org.eclipse.equinox.internal.event.eventcomponent state = unsatisfied properties = servicefactory = false serviceinterface = [org.osgi.service.event.eventadmin] references = null located in bundle = org.eclipse.equinox.event_1.2.100.v20110502 [1038] ] component2: component[ name = org.eclipse.equinox.event activate = activate deactivate = deactivate modified = configuration-policy = optional factory = null autoenable = true immediate = false implementation = org.eclipse.equinox.internal.event.eventcomponent state = unsatisfied properties = servicefactory = false serviceinterface = [org.osgi.service.event.eventadmin] references = null located in bundle = org.eclipse.equinox.event_1.2.200.v20120522-2049 [280] ] org.eclipse.m2e.logback.configuration: the org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.</s><s> will retry after the state location is initialized. 
+
+!</s><s></s><s>entry org.eclipse.equinox.p2.reconciler.dropins 4 0 2012-08-24 01:21:16.044 !</s><s></s><s>message frameworkevent error !</s><s></s><s>stack 0 org.osgi.framework.bundleexception: exception in org.eclipse.equinox.internal.p2.reconciler.dropins.activator.start() of bundle org.eclipse.equinox.p2.reconciler.dropins. at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundlecontextimpl.java:734) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.start(bund lecontextimpl.java:683) at org.eclipse.osgi.framework.internal.core.bundlehost.startworker(bundl ehost.java:381) at org.eclipse.osgi.framework.internal.core.abstractbundle.resume(abstra ctbundle.java:390) at org.eclipse.osgi.framework.internal.core.framework.resumebundle(frame work.java:1177) at org.eclipse.osgi.framework.internal.core.startlevelmanager.resumebund les(startlevelmanager.java:559) at org.eclipse.osgi.framework.internal.core.startlevelmanager.resumebund les(startlevelmanager.java:544) at org.eclipse.osgi.framework.internal.core.startlevelmanager.incfwsl(st artlevelmanager.java:457) at org.eclipse.osgi.framework.internal.core.startlevelmanager.dosetstart level(startlevelmanager.java:243) at org.eclipse.osgi.framework.internal.core.startlevelmanager.dispatchev ent(startlevelmanager.java:438) at org.eclipse.osgi.framework.internal.core.startlevelmanager.dispatchev ent(startlevelmanager.java:1) at org.eclipse.osgi.framework.eventmgr.eventmanager.dispatchevent(eventm anager.java:230) at org.eclipse.osgi.framework.eventmgr.eventmanager$eventthread.run(even tmanager.java:340) caused by: java.lang.classcastexception: org.eclipse.equinox.internal.p2.engine.simpleprofileregistry cannot be cast to org.eclipse.equinox.p2.engine.iprofileregistry at org.eclipse.equinox.internal.p2.reconciler.dropins.profilesynchronize r.synchronize(profilesynchronizer.java:138) at org.eclipse.equinox.internal.p2.reconciler.dropins.activator.synchron ize(activator.java:461) at org.eclipse.equinox.internal.p2.reconciler.dropins.activator.start(ac tivator.java:176) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl$1.run(bund lecontextimpl.java:711) at java.security.accesscontroller.doprivileged(native method) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundlecontextimpl.java:702) ...</s><s></s><s> 12 more root exception: java.lang.classcastexception: org.eclipse.equinox.internal.p2.engine.simpleprofileregistry cannot be cast to org.eclipse.equinox.p2.engine.iprofileregistry at org.eclipse.equinox.internal.p2.reconciler.dropins.profilesynchronize r.synchronize(profilesynchronizer.java:138) at org.eclipse.equinox.internal.p2.reconciler.dropins.activator.synchron ize(activator.java:461) at org.eclipse.equinox.internal.p2.reconciler.dropins.activator.start(ac tivator.java:176) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl$1.run(bund lecontextimpl.java:711) at java.security.accesscontroller.doprivileged(native method) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.startactiv ator(bundlecontextimpl.java:702) at org.eclipse.osgi.framework.internal.core.bundlecontextimpl.start(bund lecontextimpl.java:683) at org.eclipse.osgi.framework.internal.core.bundlehost.startworker(bundl ehost.java:381) at org.eclipse.osgi.framework.internal.core.abstractbundle.resume(abstra ctbundle.java:390) at org.eclipse.osgi.framework.internal.core.framework.resumebundle(frame work.java:1177) at org.eclipse.osgi.framework.internal.core.startlevelmanager.resumebund les(startlevelmanager.java:559) at org.eclipse.osgi.framework.internal.core.startlevelmanager.resumebund les(startlevelmanager.java:544) at org.eclipse.osgi.framework.internal.core.startlevelmanager.incfwsl(st artlevelmanager.java:457) at org.eclipse.osgi.framework.internal.core.startlevelmanager.dosetstart level(startlevelmanager.java:243) at org.eclipse.osgi.framework.internal.core.startlevelmanager.dispatchev ent(startlevelmanager.java:438) at org.eclipse.osgi.framework.internal.core.startlevelmanager.dispatchev ent(startlevelmanager.java:1) at org.eclipse.osgi.framework.eventmgr.eventmanager.dispatchevent(eventm anager.java:230) at org.eclipse.osgi.framework.eventmgr.eventmanager$eventthread.run(even tmanager.java:340) org.eclipse.m2e.logback.configuration: logback config file: /users/barnabiro/desktop/workspace-juno/.metadata/.plugins/org.eclips e.m2e.logback.configuration/logback.1.0.0.20110607-2117.xml org.eclipse.m2e.logback.configuration: initializing logback org.eclipse.m2e.logback.configuration: eclipse.consolelog=true 
+
+!</s><s></s><s>entry org.eclipse.ui 2 0 2012-08-24 01:21:17.392 !</s><s></s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s></s><s>subentry 1 org.eclipse.ui 2 0 2012-08-24 01:21:17.392 !</s><s></s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+
+!</s><s></s><s>entry org.eclipse.ui 2 0 2012-08-24 01:21:17.739 !</s><s></s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s></s><s>subentry 1 org.eclipse.ui 2 0 2012-08-24 01:21:17.740 !</s><s></s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+
+!</s><s></s><s>entry org.eclipse.core.net 1 0 2012-08-24 01:21:18.396 !</s><s></s><s>message system property http.nonproxyhosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source.</s><s> this value will be overwritten using the values from the preferences 
+
+!</s><s></s><s>entry org.eclipse.jface 2 0 2012-08-24 01:21:18.738 !</s><s></s><s>message keybinding conflicts occurred.</s><s> they may interfere with normal accelerator operation.</s><s> !</s><s></s><s>subentry 1 org.eclipse.jface 2 0 2012-08-24 01:21:18.739 !</s><s></s><s>message a conflict occurred for command+shift+f12: binding(command+shift+f12, parameterizedcommand(command(org.eclipse.mylyn.tasks.ui.command.searc hfortask,search repository for task, , category(org.eclipse.ui.category.navigate,navigate,null,true), org.eclipse.ui.internal.makehandlersgo@6761e6, ,,true),null), org.eclipse.ui.defaultacceleratorconfiguration, org.eclipse.ui.contexts.window,,,system) binding(command+shift+f12, parameterizedcommand(command(com.adobe.flexbuilder.flashbridge.export .publish.movie,publish movie, publish in flash professional, category(com.adobe.flexbuilder.flashbridge.flashprocommands,&flash professional,null,true), org.eclipse.ui.internal.makehandlersgo@1eda628, ,,true),null), org.eclipse.ui.defaultacceleratorconfiguration, org.eclipse.ui.contexts.window,,cocoa,system) invalid memory access of location 0x10 eip=0x983c66bc bus error: 10 
+
+</s></quote>
+i can get flash builder working under windows buy installing it on an older version of eclipse and then copying the link to the "dropins" folder in juno, but the same thing doesn't work under os x ( it only crashes the ide shortly after startup - never goes beyond the initialization / splash screen ). 
+</s><s>the above was done on a completely new juno "install". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-4686259</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="toshe-d-e" timestamp="Sep 10, 2012 5:27 AM">
+<s>@mac users: i tried some tricks but also didn't succeed to run flash builder 4.6 on my os x partition on my macbook.</s><s> but the new flash builder will support 4.2 so if you have no problems using beta software you can download it from here: http://labs.adobe.com/technologies/flashbuilder4-7/ edit: there is also a 64-bit version for windows users. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-5449687</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="KuntalS007" timestamp="Jun 25, 2013 4:30 PM">
+<s>hii, 
+</s><s>i am using adobe flash builder 4.7 premium as a plugin in eclipse.</s><s> during the first time installation it worked properly but my flash debugger was not working so i tried to uninstall flash builder and reinstall it again but now i am not able to see the flash builder plugin in my eclipse juno 4.2 version even after installing it completely and also installing the plugin for eclipse....</s><s>?</s><s> 
+
+</s><s>if anyone having idea abt it please reply.. 
+
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-5451955</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="toshe-d-e" timestamp="Jun 26, 2013 8:52 AM">
+<s>fyi: i installed eclipse eclipse 4.3 kepler and copied the fb-4_6-plugin-encoded.link to the new dropins folder.</s><s> i can confirm that debugging, building gui, compiling, editing etc of flash builder 4.6 works!</s><s> now i saw the nullptr after switching to "flash debug" perspective but again only the first time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-5452035</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="Barna%20Biro" timestamp="Jun 26, 2013 9:01 AM">
+<s>if possible, upgrade to flash builder 4.7 or just switch to intellij idea. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4527443-5495416</DOCNO>
+<TEXT>
+<subject>How to install Flash Builder 4.6 plugin for Eclipse 4 (Juno)</subject>
+<post author="INVINCIBLEABHIJAT" timestamp="Jul 11, 2013 3:24 AM">
+<s>well for me it worked fine for eclipse juno...i neither needed to copy any folder (like dropins etc.</s><s>).</s><s> the difference is that i used adobe flex builder 4.7 premium installation and the plugin is built-in.</s><s> perhaps they had fixed it. 
+</s><s>what i did?</s><s> 
+</s><s>install adobe flex builder 4.7 premium run the plugin utility exe placed at: {installation directory like c or d}:\adobe flash builder 4.7\utilities\adobe flash builder 4.7 plug-in utility.exe provide flex and eclipse installatin directories.</s><s> done with the flex perspective installation. 
+</s><s>hope it helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-1022320</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="lawrencem49" timestamp="Jun 13, 2012 3:31 AM">
+<s>hi, 
+</s><s>i've been using fb 4.6 premium for a while and everything works fine.</s><s> then 2 days ago it started crashing every time i tried to start it up, and it always crashes when the message "loading workbench" appears at the splash screen.</s><s> the .log recorded the following: 
+!</s><s>entry org.eclipse.ui 2 0 2012-06-13 18:24:12.943 !</s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s>subentry 1 org.eclipse.ui 2 0 2012-06-13 18:24:12.943 !</s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+
+!</s><s>entry org.eclipse.core.net 1 0 2012-06-13 18:24:13.845 !</s><s>message system property http.nonproxyhosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source.</s><s> this value will be overwritten using the values from the preferences 
+can anyone decipher what's going on and how to fix it?</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4490205</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Fahad%20P" timestamp="Jun 13, 2012 12:55 PM">
+<s>can you tell the os fb installed on? 
+</s><s>have you tried flash builder pointing to a new wokspace? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4491464</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="lawrencem49" timestamp="Jun 13, 2012 10:51 PM">
+<s>i'm using os x 10.7.4, and i've tried to change the workspace path by setting the show_workspace_selection_dialog to true in the org.eclipse.ui.ide.prefs file in order to select different workspace path, but fb still crashes. 
+i now suspect it has something to do with apple's recent java update, as the same version fb on my mbp now also crashes on every startup.</s><s> the crashes started to happen right after the update. 
+</s><s>any suggestions or workarounds?</s><s> is it possible to revert osx's java to an earlier version? 
+</s><s>thanks!</s><s> 
+</s><s>message was edited by: lawrencem49 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4494702</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="JarSyr" timestamp="Jun 17, 2012 10:59 PM">
+<s>i'm experiencing exactly the same problem on osx 10.6.8. 
+
+</s><s>edited to add: 
+
+</s><s>tried to run program as admin <quote>
+<s>sudo adobe\ flash\ builder\ 4.6.app/contents/macos/adobe\ flash\ builder\ 4.6 
+</s></quote>and got the following to terminal: 
+<quote>
+<s>org.eclipse.m2e.logback.configuration: the org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.</s><s> will retry after the state location is initialized. org.eclipse.m2e.logback.configuration: logback config file: /flash builder projects/.metadata/.plugins/org.eclipse.m2e.logback.configuration/log back.1.0.0.20110607-2117.xml org.eclipse.m2e.logback.configuration: initializing logback org.eclipse.m2e.logback.configuration: eclipse.consolelog=true !</s><s></s><s>session 2012-06-15 13:34:41.791 ----------------------------------------------- eclipse.buildid=i20100608-0911 java.version=1.6.0_33 java.vendor=apple inc. bootloader constants: os=macosx, arch=x86, ws=cocoa, nl=en_us framework arguments: -keyring /users/myusername/.eclipse_keyring -showlocation command-line arguments: -os macosx -ws cocoa -arch x86 -keyring /users/myusername/.eclipse_keyring -consolelog -showlocation 
+!</s><s></s><s>entry org.eclipse.ui 2 0 2012-06-15 13:34:46.628 !</s><s></s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s></s><s>subentry 1 org.eclipse.ui 2 0 2012-06-15 13:34:46.628 !</s><s></s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+!</s><s></s><s>entry org.eclipse.core.net 1 0 2012-06-15 13:34:48.146 !</s><s></s><s>message system property http.nonproxyhosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source.</s><s> this value will be overwritten using the values from the preferences exception in thread "thread-1" org.eclipse.swt.swtexception: invalid thread access at org.eclipse.swt.swt.error(swt.java:4282) at org.eclipse.swt.swt.error(swt.java:4197) at org.eclipse.swt.swt.error(swt.java:4168) at org.eclipse.swt.widgets.widget.error(widget.java:774) at org.eclipse.swt.widgets.widget.dispose(widget.java:661) at org.eclipse.swt.widgets.shell.closewidget(shell.java:611) at org.eclipse.swt.widgets.shell.windowwillclose(shell.java:2261) at org.eclipse.swt.widgets.display.windowproc(display.java:5445) at org.eclipse.equinox.launcher.jnibridge._takedown_splash(native method) at org.eclipse.equinox.launcher.jnibridge.takedownsplash(jnibridge.java: 167) at org.eclipse.equinox.launcher.main.takedownsplash(main.java:2050) at org.eclipse.equinox.launcher.main$splashhandler.run(main.java:111) 
+</s></quote>
+</s><s>message was edited by: j@rkko reinstalling with all preferences removed did not help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4507777</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="phihochzwei" timestamp="Jun 20, 2012 8:47 AM">
+<s>got the same problem.</s><s> i anyone got a solution for this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4508051</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="phihochzwei" timestamp="Jun 20, 2012 10:06 AM">
+<s>just a question to adobe: is the fb 4.6 which is included in cs6 mc a different one, than the one you can download as a trial version ?</s><s> because after removing my mc and only installing this trial version, it is working.</s><s> reinstalling the one included in the mc did not have any effect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4508115</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 20, 2012 10:17 AM">
+<s>i also am getting this exact same error starting from cmd line..</s><s> anyone have any solutions yet? :-(: 
+!</s><s>entry org.eclipse.ui 2 0 2012-06-20 10:08:10.634 !</s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s>subentry 1 org.eclipse.ui 2 0 2012-06-20 10:08:10.634 !</s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+
+!</s><s>entry org.eclipse.core.net 1 0 2012-06-20 10:08:11.818 !</s><s>message system property http.nonproxyhosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source.</s><s> this value will be overwritten using the values from the preferences exception in thread "thread-1" org.eclipse.swt.swtexception: invalid thread access at org.eclipse.swt.swt.error(swt.java:4282) at org.eclipse.swt.swt.error(swt.java:4197) at org.eclipse.swt.swt.error(swt.java:4168) at org.eclipse.swt.widgets.widget.error(widget.java:774) at org.eclipse.swt.widgets.widget.dispose(widget.java:661) at org.eclipse.swt.widgets.shell.closewidget(shell.java:611) at org.eclipse.swt.widgets.shell.windowwillclose(shell.java:2261) at org.eclipse.swt.widgets.display.windowproc(display.java:5445) at org.eclipse.equinox.launcher.jnibridge._takedown_splash(native method) at org.eclipse.equinox.launcher.jnibridge.takedownsplash(jnibridge.java: 167) at org.eclipse.equinox.launcher.main.takedownsplash(main.java:2050) at org.eclipse.equinox.launcher.main$splashhandler.run(main.java:111) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4508017</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="phihochzwei" timestamp="Jun 20, 2012 10:22 AM">
+<s>is your fb part of cs6 mastercollection ?</s><s>?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4509133</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 20, 2012 4:44 PM">
+<s>yes!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4509209</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 20, 2012 4:50 PM">
+<s>still haven't solved this..</s><s> 2 whole days with no fb6.. 
+</s><s>lion 10.7.4 java se 6 1.6.0_33-b03-424 flash builder 6 from cs6 mastercollection (i had installed all the updates and preferences but then did a fresh install and no dice.. same result) 
+</s><s>this started happening after i updated java.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4509185</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Fahad%20P" timestamp="Jun 20, 2012 4:54 PM">
+<s>if your fb is a part of cs, then uninstall the flash builder, and download a seperate fb installer from http://www.adobe.com/cfusion/tdrc/index.cfm?product=flash_builder install it as a trial, if that makes a difference you can activate it with your cs serial key. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4509211</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Amazeotron" timestamp="Jun 20, 2012 5:02 PM">
+<s>hi fahad, 
+</s><s>i'm having the same issue--flash builder gets to the loading workbench stage, then immediately exits.</s><s> i'm running mac os 10.7.4 with fb part of cs6 master collection, and this began happening right after the java update from apple that happened on june 19. 
+i have tried the following: uninstalled and reinstalled flash builder rolled back my java jvm as far back as 1.6.0_31-b04-415, and set that version as the preferred version via java preferences.app installed jvm 1.7, and set it as the preferred version uninstalled fb, and installed the trial download instead of the version packaged with cs6 
+none of these things have worked.</s><s> please advise. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4509249</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 20, 2012 5:42 PM">
+<s>hi fahad, i uninstalled (removed preferences) and then installed as trial from the link and same result.. slightly more verbose message when starting from cmd line tho: 
+org.eclipse.m2e.logback.configuration: the org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.</s><s> will retry after the state location is initialized. org.eclipse.m2e.logback.configuration: logback config file: /users/myuser/documents/adobe flash builder 4.6/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.</s><s> 1.0.0.20110607-2117.xml org.eclipse.m2e.logback.configuration: initializing logback org.eclipse.m2e.logback.configuration: eclipse.consolelog=true !</s><s>session 2012-06-20 17:39:32.745 ----------------------------------------------- eclipse.buildid=i20100608-0911 java.version=1.6.0_33 java.vendor=apple inc. bootloader constants: os=macosx, arch=x86, ws=cocoa, nl=en_us framework arguments: -keyring /users/myuser/.eclipse_keyring -showlocation command-line arguments: -os macosx -ws cocoa -arch x86 -keyring /users/myuser/.eclipse_keyring -consolelog -showlocation 
+
+!</s><s>entry org.eclipse.ui 2 0 2012-06-20 17:39:34.798 !</s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s>subentry 1 org.eclipse.ui 2 0 2012-06-20 17:39:34.798 !</s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+
+!</s><s>entry org.eclipse.core.net 1 0 2012-06-20 17:39:35.997 !</s><s>message system property http.nonproxyhosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source.</s><s> this value will be overwritten using the values from the preferences exception in thread "thread-1" org.eclipse.swt.swtexception: invalid thread access at org.eclipse.swt.swt.error(swt.java:4282) at org.eclipse.swt.swt.error(swt.java:4197) at org.eclipse.swt.swt.error(swt.java:4168) at org.eclipse.swt.widgets.widget.error(widget.java:774) at org.eclipse.swt.widgets.widget.dispose(widget.java:661) at org.eclipse.swt.widgets.shell.closewidget(shell.java:611) at org.eclipse.swt.widgets.shell.windowwillclose(shell.java:2261) at org.eclipse.swt.widgets.display.windowproc(display.java:5445) at org.eclipse.equinox.launcher.jnibridge._takedown_splash(native method) at org.eclipse.equinox.launcher.jnibridge.takedownsplash(jnibridge.java: 167) at org.eclipse.equinox.launcher.main.takedownsplash(main.java:2050) at org.eclipse.equinox.launcher.main$splashhandler.run(main.java:111) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4509574</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="lawrencem49" timestamp="Jun 20, 2012 9:39 PM">
+<s>hi fahad, 
+</s><s>uninstalled fb 4.6 from mc.</s><s> re-install fb 4.6 from direct download as trial.</s><s> still doesn't work.</s><s> here's the log: 
+</s><s>eclipse.buildid=i20100608-0911 java.version=1.6.0_33 java.vendor=apple inc. bootloader constants: os=macosx, arch=x86, ws=cocoa, nl=en_us framework arguments: -keyring /users/lawrencem/.eclipse_keyring -showlocation command-line arguments: -os macosx -ws cocoa -arch x86 -keyring /users/lawrencem/.eclipse_keyring -consolelog -showlocation 
+!</s><s>entry org.eclipse.ui 2 0 2012-06-21 12:36:37.451 !</s><s>message warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actiondefinitions' extension points.</s><s> !</s><s>subentry 1 org.eclipse.ui 2 0 2012-06-21 12:36:37.451 !</s><s>message commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.openinfocenter ', categoryid='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.catego ry.help' 
+!</s><s>entry org.eclipse.core.net 1 0 2012-06-21 12:36:39.189 !</s><s>message system property http.nonproxyhosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source.</s><s> this value will be overwritten using the values from the preferences 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4511321</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="phihochzwei" timestamp="Jun 21, 2012 10:50 AM">
+<s>for me, it worked. 
+</s><s>uninstalled cs6 mc and removed all prefs, installed the trial fb and then reinstalled mc without fb and ios support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4512123</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 21, 2012 2:18 PM">
+<s>i don't have time to uninstall all of cs6, have to keep working..</s><s> i guess i'll have to switch to the free version of fdt or intellij until this is sorted out?</s><s>?</s><s> anyone figured this out yet?</s><s> 3 days of no fb6 and counting.. damn.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4512200</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Fahad%20P" timestamp="Jun 21, 2012 2:50 PM">
+<s>have a look at the known issues of flash builder on mac http://helpx.adobe.com/x-productkb/global/known-issues-mac-os-10.html 
+</s><s>as mentioned there, have you tried it by installing 32 bit jvm? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4512495</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 21, 2012 5:00 PM">
+<s>i have 32 bit and 64 bit jvm installed.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4512525</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Amazeotron" timestamp="Jun 21, 2012 5:10 PM">
+<s>hey loud_owl, i just tried again with a full fb uninstall, but this time removed preferences.</s><s> i also checked "enable applet plug-in and web start applications" check box in the java preferences app, and am running java se 1.6.0_33-b03-424.</s><s> i rebooted, then installed fb using the trial download, and now it's working again.</s><s> i have no idea what combination of these things made it work, but thought i'd throw it out there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4514278</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="loud_owl" timestamp="Jun 22, 2012 10:46 AM">
+<s>thanks amazeotron!</s><s> that did it!</s><s> damn.. maybe it was the restarting before re-installing?</s><s> whatever the case, thanks!</s><s>!</s><s>!</s><s>!</s><s> this does make me wonder if apple is just going to update flash builder away.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4533172</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Erwin1972" timestamp="Jul 2, 2012 5:11 AM">
+<s>i also uninstalled the cs6 version of fb, restarted, and then installed the 'trail' version.</s><s> but for me nothing changes.</s><s> the issues as mentioned re-appear.</s><s> i can't imagine the people reacting in this forum are the only people having this problem?</s><s> is adobe taking any action fixing this problem? 
+</s><s>lion 10.7.4 java se 6 1.6.0_33-b03-424 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4533116</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="lawrencem49" timestamp="Jul 2, 2012 5:23 AM">
+<s>apart from doing what amazeotron advised, the final step that made it work for me is to isntall fb in a folder other than application.</s><s> it can be a subfolder under application - just don't use the default path. 
+</s><s>message was edited by: lawrencem49 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4533222</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Erwin1972" timestamp="Jul 2, 2012 5:37 AM">
+<s>i've tried to install in an folder other that 'application'.</s><s> unfortunately no success. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4533254</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="lawrencem49" timestamp="Jul 2, 2012 5:40 AM">
+<s>erwin, are you using osx?</s><s> if so, have you tried to use the 32-bit java instead? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4533345</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Erwin1972" timestamp="Jul 2, 2012 6:28 AM">
+<s>lawrencem49, yes, i'm using osx, and i have 32-bit as well as 64-bit java installed, where 32-bit is the primairy version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4533386</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Erwin1972" timestamp="Jul 2, 2012 6:57 AM">
+<s>don't ask how (i probably did something different) but i reinstalled the trail version, and this time it worked.</s><s> i got fb46 running again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4534201</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Susan-StKate" timestamp="Jul 2, 2012 12:01 PM">
+<s>i had used the trial version of flash builder 4.6 for the full 60 days without any problems on my lenovo laptop, core i7, windows 7 ultimate-64bit, (2.5 years old).</s><s> i purchased the cs6 master collection, flash builder 4.6 worked fine for 30 days then would not open. 
+</s><s>i've spent 3 days trying to fix it, uninstalling things, rolling back the whole computer a week, updating things and reading blogs.</s><s> i had tried uninstalling cs6 and reinstalling, did not help.</s><s> i was about to roll back 6 months and if that didn't work buy a new computer. 
+</s><s>what finally worked was this ( i have no idea what change fixed the problem): 
+uninstalled all java entries (7 of them) (i didn't think of this until i happened to find this: http://www.java.com/en/download/faq/remove_olderversions.xml ) from windows control panel-programs and features-uninstall or change a program (flash builder 4.6 comes with java 1.6 so i haven't reinstalled any version or updated to 1.7) 
+</s><s>repaired all .net frameworks (right click on them in the control panel-programs and features-uninstall or change a program) select uninstall and a box will open asking to uninstall or repair. 
+</s><s>uninstalled the complete cs6 master collection 
+uninstalled all versions of flash http://helpx.adobe.com/flash-player/kb/uninstall-flash-player-windows. html 
+ran the cs6 master collection cleaner tool http://www.adobe.com/support/contact/cscleanertool.html 
+rebooted 
+re installed the complete adobe cs6 master collection 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4541635</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Pimenov-O" timestamp="Jul 6, 2012 2:10 AM">
+<s>hi !</s><s>!</s><s> 
+</s><s>no its not help.... 
+</s><s>anybody help please !</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4563783</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Shane%20Smit" timestamp="Jul 17, 2012 3:42 PM">
+<s>i just started experiencing this problem today.</s><s> it did not occur as part of a java update as far as i know.</s><s> i have tried reinstalling fb in the cs6 package and as a standalone trial with no luck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4563790</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Shane%20Smit" timestamp="Jul 17, 2012 4:12 PM">
+<s>got it to work.</s><s> reinstalled the trial to a non-default location.</s><s> then, once that worked, i decided to try uninstalling it from there, and going back to the original cs6 package version, in the default location... which worked!</s><s> so if you can get it to run once, then it seems to fix itself? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4572045</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="raynestorm" timestamp="Jul 21, 2012 1:37 PM">
+<s>i am having the same problem.</s><s> i have mc cs6 and adobe flash builder quit starting 2 day ago.</s><s> uninstalling and re-installing did not work.</s><s> os x 10.7.4. --rayne 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4572890</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Darth%20Tator" timestamp="Jul 22, 2012 9:10 AM">
+<s>where is adobe with a solution to this?</s><s>!</s><s> i simply don't have time to spend an hour every morning uninstalling and reinstalling flash builder.</s><s> these are supposedly professional tools.</s><s> why the bloody hell do they run it like it's amateur hour? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4573778</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="marzepani" timestamp="Jul 23, 2012 1:25 AM">
+<s>i do have the same problem.</s><s> i am trying everything since 2 days, but without any success. 
+</s><s>uninstalling and reinstalling from the website as trial, to a different location, didn't help, too. 
+</s><s>flash builder 4.6 still quits after showing the splash. 
+</s><s>system.log exception in thread "thread-1" org.eclipse.swt.swtexception: invalid thread access jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.swt.error(swt.java:4282) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.swt.error(swt.java:4197) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.swt.error(swt.java:4168) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.widgets.widget.error(widget.java:774) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.widgets.widget.dispose(widget.java:661) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.widgets.shell.closewidget(shell.java:611) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.widgets.shell.windowwillclose(shell.java:2261) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.swt.widgets.display.windowproc(display.java:5445) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.equinox.launcher.jnibridge._takedown_splash(native method) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.equinox.launcher.jnibridge.takedownsplash(jnibridge.java: 167) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.equinox.launcher.main.takedownsplash(main.java:2050) jul 23 10:14:29 mario [0x0-0x30030].org.eclipse.eclipse[583]: at org.eclipse.equinox.launcher.main$splashhandler.run(main.java:111) 
+i am losing a lot of time.</s><s> even worse, i can't continue to work on important projects. 
+</s><s>system: os x 10.7.4 adobe master collection cs6 flash builder 4.6 (dead now) 
+</s><s>it startet out of the blue.</s><s> i did not install any updates.</s><s> flash builder just stopped working one day.</s><s> there is only one thing that i can imagine that may have had an impact.</s><s> i made a backup with time machine.</s><s> that day the problem occured.</s><s> anyone with a similar situation? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4573849</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="marzepani" timestamp="Jul 23, 2012 2:03 AM">
+<s>after several restarts, installing and uninstalling trial from website and fb from cs6 - finally: 
+fb 4.6 works as expected. 
+i have no clue why, but i'm just happy to be able to work again. 
+</s><s>good luck to the rest of you (nerved users)! 
+@adobe: please, fix it!</s><s> thx.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4574293</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="Darth%20Tator" timestamp="Jul 23, 2012 8:19 AM">
+<s>if i uninstall and reinstall (takes just over an hour) it will run again but only once.</s><s> if i close the program i will have to reinstall it before it will run again. 
+i just spent over and hour and a half on the phone with adobe technical support.</s><s> they offer no solutions and tell me i must pay for a technical support contract before they will discuss it with me any further. 
+</s><s>this is an outrage.</s><s> simply paying for the software should be enough for it to work.</s><s> given the number of people across the net complaining about this exact same thing it is obviously a problem with fb. 
+</s><s>so how about it adobe when will you fix this obvious bug?</s><s> why should there be one price for the software, and a second price for it to actually work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4576323</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="mugdha%20choudhary" timestamp="Jul 24, 2012 10:51 PM">
+<s>hi darth,rayne please provide us the amt3.log file and oobelib.log file.</s><s> they are in /tmp folder.</s><s> if you couldnot attach here, please mail me at mchoudhaatadobedotcom -mugdha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4578544</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="mugdha%20choudhary" timestamp="Jul 25, 2012 3:50 AM">
+<s>hi all, i am posting script for collecting oobe specific log on mac below. 
+#!/bin/bash 
+################################################################# 
+echo "oobe logs will be collected in oobelogs folder created on desktop" 
+cd ~/desktop/ mkdir oobelogs cd oobelogs 
+mkdir logs cd logs cp /tmp/oobelib.log oobelib.log cp /tmp/swtag.log swtag.log cp /tmp/amt3.log amt3.log cp /tmp/aul.log aul.log cp /tmp/oobe.log oobe.log cp /library/logs/adobe/installers/*.* . cp -r ~/library/logs/pdapp.log pdapp.log 
+cd .. 
+cp -r "/library/application support/adobe/adobe pcd/" ./pcd/ cp -r "/library/application support/adobe/caps/" ./caps cp -r "/library/application support/adobe/pcf/" ./pcf cp -r "/library/application support/adobe/slcache/" ./slcache cp -r ~/library/application\ support/adobe/aamupdater/ ./aamupdater/ 
+
+system_profiler >systeminformation.txt 
+cd ../ 
+tar -cvf oobelogs.tgz oobelogs /users/labuser/library/logs 
+
+</s><s>please follow below mentioned steps to use it 1.</s><s> open the terminal and change the working directory to desktop using 'cd' command 2.</s><s> then enter vi logcollector.command on terminal.</s><s> 3. copy and paste the above written script.</s><s> further press esc key then :wq for saving and quitting.</s><s> 4. logcollector.command will be created on the desktop.</s><s> please run it.</s><s> "oobelogs" folder will be created on desktop.</s><s> it contains all the logs.</s><s> please attach those logs here in forum or mail me at mchoudhaatadobedotcom after compressing 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4579755</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="RorohikoKris" timestamp="Jul 25, 2012 1:48 PM">
+<s>hi all, 
+</s><s>a few possibly helpful additional tidbits.</s><s> i am using flash builder 4.5 (not 4.6 - i work with cs extension builder, and that works better with 4.5 than with 4.6).</s><s> i experienced the exact same symptoms as the original poster (lawrencem49).</s><s> using mac os x 10.7.4.</s><s> have also installed cs6 on the same computer. 
+</s><s>after trying all the obvious things for naught, i rolled back my computer one day based on the nightly image backups i make, and things started working again.</s><s> then a dreamweaver cs5.5 update came in through the update manager.</s><s> i allowed it to proceed, and subsequently discovered the problem was back. 
+</s><s>not sure whether the two are related, but i do remember that the same dreamweaver update came through yesterday some time before the trouble started. 
+</s><s>this morning i removed and reinstalled fb 4.5 and it works again. 
+</s><s>so i have a suspicion the dreamweaver cs5.5 update might be the culprit or at least involved in breaking things. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4581188</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="mugdha%20choudhary" timestamp="Jul 26, 2012 7:44 AM">
+<s>please try below workaround: 
+workaround: make sure you are connected to the internet.</s><s> launch a regular cs6 product other than acrobat or flash builder (for example: photoshop, after effects, premier pro, indesign, flash professional, illustrator, dreamweaver.</s><s>) click on help->deactivate .</s><s> deactivate the application.</s><s> quit application.</s><s> launch a regular cs6 product other than acrobat or flash builder (for example: photoshop, after effects, premier pro, indesign, flash professional, illustrator, dreamweaver.</s><s>) accept eula.</s><s> register trial by signing in.</s><s> let the app launch.</s><s> quit and relaunch the app.</s><s> wait for ui to come.</s><s> click on license this software button on the ui.</s><s> click on sign in .</s><s> serial number screen will come enter the serial number in the serial number screen and click next.</s><s> close the app if its still running relaunch the app while connected on the internet . 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Installing-and-activating-Flash-Builder/Discussions-4488451-4583765</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.6 crashes on startup</subject>
+<post author="cdrservices" timestamp="Jul 27, 2012 11:49 AM">
+<s>also experiencing the same issue though am on windows 7 professional 64 bit - licensed cs6 following workaround for licensing which resolved issue as posted by mugdha - jul 26, 2012 8:44 am 
+</s><s>had called adobe tech support only to be told they wanted to charge $250 for a solution.</s><s> lol...c'mon adobe...clearly you have a problem with your licensing service on this or a bug in the software!</s><s> i'm not going to pay you to fix it.</s><s> a search here fixed the issue in under 5 minutes..although i had to re-import projects into a new workspace as after this my previous workspaces would still not load.</s><s> so how about a patch to resolve this problem adobe, eh?</s><s> if this continues it's going to be a serious pain to have to de-activate/active/re-import projects just to get work done. 
+@mugdha - i should just send you the $250 huh? =) thanks for the workaround/fix.</s><s> worked like a charm! 
+</s></post>
+</TEXT>
+</DOC>
+
+

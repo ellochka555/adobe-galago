@@ -1,0 +1,184 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-1426155</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="Vibhaanshu" timestamp="Mar 12, 2014 1:31 AM">
+<s>hi, 
+</s><s>we have a java application which connects to adobe livecycle server(ver9.0) to generate pdf.</s><s> it generates pdf successfully when the pdf size is less than 4 mb. 
+</s><s>once the size exceeds 4 mb, the outputresult object is returned but when pdf is opened says 'file is damaged and could not be repaired'.</s><s> we checked the result of statusdoc function in outputresult, but there is no error.</s><s> also, in alc server no error is logged. 
+</s><s>maxinline size is 64k.</s><s> 
+</s><s>any help is greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6203954</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="WASIL" timestamp="Mar 12, 2014 12:48 PM">
+<s>are you able to convert this in livecycle adminui ? 
+-wasil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6208476</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="Vibhaanshu" timestamp="Mar 14, 2014 12:12 AM">
+<s>apologies for the late reply wasil. 
+</s><s>actually i was trying to gather more data so that i can give more clarity to this group. 
+</s><s>analysis: 
+</s><s>if the images are hardcoded in the lca file and then invoked from java, it works(pdf's with more than 4mb size gets generated).</s><s> but when xml is created dynamically and sent from java to alc, damaged pdf gets generated. 
+i see 'pdfparser.xreftrailerresolver did not found xref object pointed to by 'prev' key at position' in the log file.</s><s> this only comes when the pdf size exceeds 4 mb. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6210717</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="WASIL" timestamp="Mar 14, 2014 2:20 PM">
+<s>please confirm the api you are using in your java application e.g. http://help.adobe.com/en_us/livecycle/10.0/programlc/ws624e3cba99b79e1 2e69a9941333732bac8-7fd2.html are you using forms service to merge xml with your form template or pdf generator ? 
+-wasil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6219210</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="Vibhaanshu" timestamp="Mar 17, 2014 11:32 PM">
+<s>below is the code snippet for pdf generation: 
+properties connectionprops = new properties(); connectionprops.setproperty(serviceclientfactoryproperties.dsc_default _soap_endpoint, "<<ip address of machine where alc server is running>>"); connectionprops.setproperty(serviceclientfactoryproperties.dsc_transpo rt_protocol, serviceclientfactoryproperties.dsc_soap_protocol); connectionprops.setproperty(serviceclientfactoryproperties.dsc_server_ type, serviceclientfactoryproperties.dsc_weblogic_server_type); connectionprops.setproperty(serviceclientfactoryproperties.dsc_credent ial_username, username); connectionprops.setproperty(serviceclientfactoryproperties.dsc_credent ial_password, pswd); 
+
+</s><s>serviceclientfactory myfactory = serviceclientfactory.createinstance(connectionprops); 
+
+</s><s>outputclient outclient = new outputclient(myfactory); 
+
+</s><s>inputstream ins = new bytearrayinputstream(inputsource.getbytes());// inputsource is a string with data in xml format 
+
+</s><s>transformerfactory factory = transformerfactory.newinstance(); com.adobe.repository.infomodel.bean.resource r = repositoryclient.readresource(xsltlocation); 
+
+</s><s>source xslt = new streamsource(r.getcontent().getdatadocument().getfile()); transformer transformer = factory.newtransformer(xslt); 
+
+
+
+</s><s>source text = new streamsource(ins); bytearrayoutputstream myoutstream = new bytearrayoutputstream(); result updatedtext = new streamresult(myoutstream); 
+
+transformer.transform(text, updatedtext); document inxmdatatransformed = new document(myoutstream.tobytearray()); 
+
+</s><s>pdfoutputoptionsspec outputoptions = new pdfoutputoptionsspec(); 
+
+</s><s>renderoptionsspec pdfoptions = new renderoptionsspec(); pdfoptions.setlinearizedpdf(true); pdfoptions.setacrobatversion(acrobatversion.acrobat_9); 
+
+//create a pdf document..here templatename is the name of xdp file outputresult outputdocument = outclient.generatepdfoutput( transformationformat.pdf, templatename, templatelocation, outputoptions, pdfoptions, inxmdatatransformed );  
+
+byte[] resultbyte = outputdocument.getgenerateddoc().tostring().getbytes(); 
+
+</s><s>inputstream inputstream = outputdocument.getgenerateddoc().getinputstream(); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-1426155</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="Vibhaanshu" timestamp="Mar 12, 2014 1:31 AM">
+<s>hi, 
+</s><s>we have a java application which connects to adobe livecycle server(ver9.0) to generate pdf.</s><s> it generates pdf successfully when the pdf size is less than 4 mb. 
+</s><s>once the size exceeds 4 mb, the outputresult object is returned but when pdf is opened says 'file is damaged and could not be repaired'.</s><s> we checked the result of statusdoc function in outputresult, but there is no error.</s><s> also, in alc server no error is logged. 
+</s><s>maxinline size is 64k.</s><s> 
+</s><s>any help is greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6203954</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="WASIL" timestamp="Mar 12, 2014 12:48 PM">
+<s>are you able to convert this in livecycle adminui ? 
+-wasil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6208476</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="Vibhaanshu" timestamp="Mar 14, 2014 12:12 AM">
+<s>apologies for the late reply wasil. 
+</s><s>actually i was trying to gather more data so that i can give more clarity to this group. 
+</s><s>analysis: 
+</s><s>if the images are hardcoded in the lca file and then invoked from java, it works(pdf's with more than 4mb size gets generated).</s><s> but when xml is created dynamically and sent from java to alc, damaged pdf gets generated. 
+i see 'pdfparser.xreftrailerresolver did not found xref object pointed to by 'prev' key at position' in the log file.</s><s> this only comes when the pdf size exceeds 4 mb. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6210717</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="WASIL" timestamp="Mar 14, 2014 2:20 PM">
+<s>please confirm the api you are using in your java application e.g. http://help.adobe.com/en_us/livecycle/10.0/programlc/ws624e3cba99b79e1 2e69a9941333732bac8-7fd2.html are you using forms service to merge xml with your form template or pdf generator ? 
+-wasil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-PDF-Generator/Discussions-6202079-6219210</DOCNO>
+<TEXT>
+<subject>Damaged PDF getting generated when size exceeds 4 MB</subject>
+<post author="Vibhaanshu" timestamp="Mar 17, 2014 11:32 PM">
+<s>below is the code snippet for pdf generation: 
+properties connectionprops = new properties(); connectionprops.setproperty(serviceclientfactoryproperties.dsc_default _soap_endpoint, "<<ip address of machine where alc server is running>>"); connectionprops.setproperty(serviceclientfactoryproperties.dsc_transpo rt_protocol, serviceclientfactoryproperties.dsc_soap_protocol); connectionprops.setproperty(serviceclientfactoryproperties.dsc_server_ type, serviceclientfactoryproperties.dsc_weblogic_server_type); connectionprops.setproperty(serviceclientfactoryproperties.dsc_credent ial_username, username); connectionprops.setproperty(serviceclientfactoryproperties.dsc_credent ial_password, pswd); 
+
+</s><s>serviceclientfactory myfactory = serviceclientfactory.createinstance(connectionprops); 
+
+</s><s>outputclient outclient = new outputclient(myfactory); 
+
+</s><s>inputstream ins = new bytearrayinputstream(inputsource.getbytes());// inputsource is a string with data in xml format 
+
+</s><s>transformerfactory factory = transformerfactory.newinstance(); com.adobe.repository.infomodel.bean.resource r = repositoryclient.readresource(xsltlocation); 
+
+</s><s>source xslt = new streamsource(r.getcontent().getdatadocument().getfile()); transformer transformer = factory.newtransformer(xslt); 
+
+
+
+</s><s>source text = new streamsource(ins); bytearrayoutputstream myoutstream = new bytearrayoutputstream(); result updatedtext = new streamresult(myoutstream); 
+
+transformer.transform(text, updatedtext); document inxmdatatransformed = new document(myoutstream.tobytearray()); 
+
+</s><s>pdfoutputoptionsspec outputoptions = new pdfoutputoptionsspec(); 
+
+</s><s>renderoptionsspec pdfoptions = new renderoptionsspec(); pdfoptions.setlinearizedpdf(true); pdfoptions.setacrobatversion(acrobatversion.acrobat_9); 
+
+//create a pdf document..here templatename is the name of xdp file outputresult outputdocument = outclient.generatepdfoutput( transformationformat.pdf, templatename, templatelocation, outputoptions, pdfoptions, inxmdatatransformed );  
+
+byte[] resultbyte = outputdocument.getgenerateddoc().tostring().getbytes(); 
+
+</s><s>inputstream inputstream = outputdocument.getgenerateddoc().getinputstream(); 
+</s></post>
+</TEXT>
+</DOC>
+
+

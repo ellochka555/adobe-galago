@@ -1,0 +1,1681 @@
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6231298-1433425</DOCNO>
+<TEXT>
+<subject>Problem with jquery .load and cfinclude</subject>
+<post author="TlalocW2" timestamp="Mar 21, 2014 9:43 AM">
+<s>another programmer has created a captcha file that's in a global directory so all we have do is call it with a cfinclude, however, he did not build any kind of refresh into it.</s><s> so i created a work-around thusly: 
+<div id="captchadiv"><cfinclude template="/cfincludes/captcha.cfm"></div> <a id="refreshcaptcha" href="">refresh</a> 
+</s><s>clicking the refresh link activates the following code: 
+$(document).ready(function() { $.ajaxsetup ({ // disable caching of ajax responses cache: false }); 
+
+$("#refreshcaptcha").click(function(e) { $("#captchadiv").load("/ajax/captchainclude.cfm?_="+math.round(math.random()*10000)); e.preventdefault(); }); }); 
+since i can't reload a cfinclude directly in an ajax call, i call /ajax/capthcainclude.cfm, a local file in the website directory, that repeats the original cfinclude code that calls the global captcha 
+<cfinclude template="/cfincludes/captcha.cfm"> 
+</s><s>on loading the page the first time, the captcha will work fine if you put in the right code.</s><s> however, if you can't read it and have to reload it, it will not work.</s><s> in playing with it, i also loaded my local /ajax/captchainclude.cfm file via jquery and got rid of the cfinclude, and when i did that, it wouldn't work the first time either. 
+</s><s>any ideas on what the problem is?</s><s> thanks for your help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6223892-1431610</DOCNO>
+<TEXT>
+<subject>Can't apply hotfix due to applet error</subject>
+<post author="Balance" timestamp="Mar 19, 2014 8:12 AM">
+<s>i'm trying to apply this hotfix http://helpx.adobe.com/coldfusion/kb/coldfusion-security-hotfix-apsb13 -03.html but when i go to system info > update file, i get a jre security related error.</s><s> i've tried chrome, safari, ff on pc and mac without avail.</s><s> is there any other way to apply the hotfix without having some stupid applet?</s><s> ugh.</s><s> tia 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6223892-6224784</DOCNO>
+<TEXT>
+<subject>Can't apply hotfix due to applet error</subject>
+<post author="BKBK" timestamp="Mar 19, 2014 12:03 PM">
+<s><quote>
+<s>balance wrote: when i go to system info > update file, i get a jre security related error. 
+</s></quote>i assume you are on coldfusion 10. then you mean surely: server update > updates in the coldfusion administrator. 
+</s><s>if you are indeed on 10, make sure you install the mandatory update first.</s><s> that is crucial!</s><s> you can do this manually by downloading the jar file, and running the command: java -jar <jar-file-name>. 
+</s><s>you could solve the java security problem by relaxing java's security level on your machine.</s><s> i am on windows, and can lower java security settings in the control panel. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6223892-6225011</DOCNO>
+<TEXT>
+<subject>Can't apply hotfix due to applet error</subject>
+<post author="Anit_Kumar" timestamp="Mar 19, 2014 12:59 PM">
+<s>@bkbk: they seems to be on coldfusion 9. 
+</s><s>here is what you can try:- 
+instead of clicking on thge browse button, click within the textbox and type the complete location including the file name.</s><s> for e.g.</s><s> c:\users\adobe\downloads\cf902.zip\cf902\lib\updates\hf902-00003.jar and then press submit. 
+</s><s>the hotfix would be applied successfully. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6223892-6231284</DOCNO>
+<TEXT>
+<subject>Can't apply hotfix due to applet error</subject>
+<post author="Balance" timestamp="Mar 21, 2014 9:13 AM">
+<s>all i had to do was copy the updates to lib/updates i'm running cf 9.01, btw. thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6231092-1433308</DOCNO>
+<TEXT>
+<subject>CF10 Java 7.51 - "Missing required permissions manifest attribute"</subject>
+<post author="christopher.ford" timestamp="Mar 21, 2014 8:21 AM">
+<s>our clients are reporting that after they update to java 7.51 they are now getting the following error: 
+</s><s>"missing required permissions manifest attribute in main jar: cfide/classes/cfapplets.jar" 
+</s><s>is this something adobe is supposed to fix? 
+</s><s>having my users add an exception to their browsers is not an option for us. 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6231089-1433306</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 does not appear to use all 8 cores (2 physical cpu on physical hardware)</subject>
+<post author="christopher.ford" timestamp="Mar 21, 2014 8:12 AM">
+<s>our coldfusion 10 standard server does not ever spike higher than 25%. 
+i have a hard time believing we write such incredibly excellent code to have over a hundred users never make our server spike above 25%... 
+</s><s>how do i check to see how many cpu's coldfusion is using or the maximum number of cpus it will use? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6229645-1432983</DOCNO>
+<TEXT>
+<subject>ColdFusion and docx4j</subject>
+<post author="rhpt" timestamp="Mar 20, 2014 7:35 PM">
+<s>i've been looking into creating "native" word documents via cf10, and it looks like the best (free) option is docx4j.</s><s> however, i can't seem to find many cf and docx4j examples.</s><s> does anyone here have experience using docx4j and coldfusion that can point me in the right direction? 
+
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-1427279</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 13, 2014 10:00 AM">
+<s>please bear with me as i am primariliy a systems and network admin as opposed to a developer.   we are in the process of migrating our code from cf8 to cf10, and the inhouse developers are complaining about one error they cant figure out.  we have a page that uses cfgrid to call a cfc.   this cfc throws an error about a request variable being undefined, however i do se that it is defined in the debigging information of the parent page.    error invoking cfc at /todynamic/display/admin sitecampuses.cfc : element fuseboxosname is undefined in request.   i know we are using an older version of fusebox, but it would be a monstrous task to upgrade it at this point.   any suggestions?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6207148</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 13, 2014 12:34 PM">
+<s>it appears that the cfc is somehow calling fbx_settings.cfm, however it is not calling index.cfm which sets request.fuseboxosname. 
+</s><s>since we have no application.cfm file, how could the cfc call fbx_settings.cfm?</s><s> i cant get my head around this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6220853</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 10:10 AM">
+<s>is there an application.cfm/.cfc file in a parent directory above where the cfc resides?</s><s> coldfusion will traverse the directory tree upward to the webroot to find an application.cfm/.cfc.</s><s> if there is one, you might try creating a minimal application.cfm/.cfc in the same directory as your cfc to short-circuit that process and guarantee a clean execution of your cfc. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6220897</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 10:20 AM">
+<s>no, there is no application.cfm in or anywhere above.</s><s> there are a couple instances of application.cfm off to side directories, but none that would call fusebox includes like the fbx_settings.cfm file.</s><s> we have also tried adding a blank application.cfm, which did not make any difference.</s><s> the only thing that would call these files is the index.cfm file from two directories above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6220995</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 10:30 AM">
+<s>how about in your template cache?</s><s> have you cleared it from cf administrator to make sure no old code from deleted files might be lingering around.</s><s> last resort, you might need to clear out the .class files that coldfusion has generated here: c:\coldfusion10\cfusion\wwwroot\web-inf\cfclasses.</s><s> then stop and restart coldfusion and see if that helps. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221024</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 10:38 AM">
+<s>yes, we manually cleared template caching, and disabled any cache settings we could find.</s><s> i dont think it would be a cached issue, since it never worked in that manner before. 
+</s><s>the code was brought directly over from cf8 where it worked.</s><s> this is a new development server to test the codebase before we roll out to production. 
+</s><s>it seems to me that that ajax binding is somehow calling index.cfm in an above directory, when it should only be calling the cfc alone. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221182</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 11:30 AM">
+<s>can you post the full error message/stack trace? 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221582</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 1:06 PM">
+<s>ok here is the error: here is the debugging info from the page that loads the ajax / cfgrid.       debugging information coldfusion server standard 10,0,13,287689 template /index.cfm time stamp 18-mar-14 04:00 pm locale english (us) user agent mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/33.0.1750.154 safari/537.36 remote ip 10.10.2.231 host name 10.10.2.231     execution time total time avg time count template 64 ms 64 ms 1 /var/www/html/dynamic/index.cfm 63 ms 63 ms 1 /var/www/html/dynamic/fbx_fusebox30_cf50.cfm 34 ms 34 ms 1 /var/www/html/dynamic/circuits/admin/fbx_switch.cfm 19 ms 19 ms 1 /var/www/html/dynamic/fbx_settings.cfm 17 ms 17 ms 1 /var/www/html/dynamic/circuits/admin/prep_siteconfig.cfm 15 ms 15 ms 1 /var/www/html/dynamic/display/admin/siteconfig.cfm 9 ms 9 ms 1 /var/www/html/dynamic/app_globals.cfm 9 ms 9 ms 1 /var/www/html/dynamic/display/admin/siteconfig_tab5.cfm 7 ms 7 ms 1 /var/www/html/dynamic/app_globalrequests.cfm 4 ms 4 ms 1 /var/www/html/dynamic/model/site/get_sites.cfm 3 ms 3 ms 1 /var/www/html/dynamic/model/site/get_site.cfm 2 ms 2 ms 1 /var/www/html/dynamic/circuits/admin/qry_addtrackaction.cfm 2 ms 1 ms 2 /var/www/html/dynamic/model/site/get_sourceoneconfigs.cfm 2 ms 2 ms 1 /var/www/html/dynamic/model/site/get_site_bydomain.cfm 1 ms 1 ms 1 /var/www/html/dynamic/circuits/admin/fbx_settings.cfm 1 ms 1 ms 1 /var/www/html/dynamic/circuits/admin/qry_allactions.cfm 1 ms 1 ms 1 /var/www/html/dynamic/model/inventory/get_inventories.cfm 1 ms 1 ms 1 /var/www/html/dynamic/model/site/get_pricingfiles.cfm 1 ms 1 ms 1 /var/www/html/dynamic/model/site/get_sitetaxoninvoice.cfm 1 ms 1 ms 1 /var/www/html/dynamic/model/user/get_distinctusertypes.cfm 1 ms 1 ms 1 /var/www/html/dynamic/sites/admin/layout.cfm 1 ms 1 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(pricing, , index.cfm?action=admin.siteconfig&siteid=5&tab=7) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 1 ms 1 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | draw() ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms 0 ms 1 /var/www/html/dynamic/display/admin/dsp_logout.cfm 0 ms 0 ms 1 /var/www/html/dynamic/display/footer-admin.cfm 0 ms 0 ms 1 /var/www/html/dynamic/display/header-admin.cfm 0 ms 0 ms 1 /var/www/html/dynamic/fbx_circuits.cfm 0 ms 0 ms 1 /var/www/html/dynamic/fbx_layouts.cfm 0 ms 0 ms 1 /var/www/html/dynamic/model/creditcards/dummy_test.cfm 0 ms 0 ms 1 /var/www/html/dynamic/model/site/get_siteaccountexecutives.cfm 0 ms 0 ms 1 /var/www/html/dynamic/model/user/get_sessionuser.cfm 0 ms 0 ms 1 /var/www/html/envconfigsettings.cfm 0 ms 0 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(addresses/contacts, , index.cfm?action=admin.siteconfig&siteid=5&tab=5) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms 0 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(configurations, , index.cfm?action=admin.siteconfig&siteid=5&tab=2) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms 0 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(general, , index.cfm?action=admin.siteconfig&siteid=5&tab=1) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms 0 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(integrations/properties, , index.cfm?action=admin.siteconfig&siteid=5&tab=6) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms 0 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(options/etextbook, , index.cfm?action=admin.siteconfig&siteid=5&tab=4) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms 0 ms 1 cfc[ /var/www/html/dynamic/tabcontrol/tabcontrol.cfc | addtab(shipping/printing, , index.cfm?action=admin.siteconfig&siteid=5&tab=3) ] from /var/www/html/dynamic/tabcontrol/tabcontrol.cfc 0 ms startup, parsing, compiling, loading, & shutdown 64 ms total execution time red = over 250 ms average execution time exceptions 16:00:24.024 - missinginclude exception - in /var/www/html/dynamic/fbx_fusebox30_cf50.cfm : line 276          could not find the included template circuits/admin/fbx_layouts.cfm.   sql queries getbuybackpaymentmethods (datasource=absmysql, time=0ms, records=4, cached query) in /var/www/html/dynamic/app_globalrequests.cfm @ 16:00:24.024      select buybackpaymethod, group_concat(distinct cast(siteid as char(20))) sites_list from sites where isactive = 1 and buybackpaymethod is not null group by buybackpaymethod getnopriceonvoucher (datasource=absmysql, time=0ms, records=1, cached query) in /var/www/html/dynamic/app_globalrequests.cfm @ 16:00:24.024      select value from rules r where rulesid = 1; getccisites (datasource=absmysql, time=0ms, records=1, cached query) in /var/www/html/dynamic/app_globalrequests.cfm @ 16:00:24.024 select  group_concat(distinct cast(siteid as char(20))) sites_list from abs.sites where picksite like '6677%'; site_q (datasource=absmysql, time=2ms, records=1) in /var/www/html/dynamic/model/site/get_site_bydomain.cfm @ 16:00:24.024      call getsiteinfopropertiesbydomain('admin.absbook.cf10'); distinctusertypes (datasource=absmysql, time=1ms, records=19) in /var/www/html/dynamic/model/user/get_distinctusertypes.cfm @ 16:00:24.024 select distinct usertype from staff srconesiteconfig_q (datasource=absmysql, time=1ms, records=1) in /var/www/html/dynamic/model/site/get_sourceoneconfigs.cfm @ 16:00:24.024     select * from abs.srconesiteconfig where siteid = 17 getmaintenancestatus (datasource=absmysql, time=0ms, records=0) in /var/www/html/dynamic/fbx_settings.cfm @ 16:00:24.024     select * from sitemaintenancemessage where status = 1 and sitetype = 'admin' and siteid in (0,17) and (allowedips is null or allowedips not like '%|10.10.2.231|%') order by siteid desc limit 1; addtrackaction (datasource=absmysql, time=1ms, records=1) in /var/www/html/dynamic/circuits/admin/qry_addtrackaction.cfm @ 16:00:24.024      insert into trackaction (userid,ip,role,sessionid,siteid,fuseaction,datetimecreated,details) values ( ? , ?, ?, ?, ?, ?, ?, ?</s><s> ) query parameter value(s) - parameter #1(cf_sql_integer) = 785 parameter #2(cf_sql_varchar) = 10.10.2.231 parameter #3(cf_sql_varchar) = admin parameter #4(cf_sql_varchar) = cfid=5322&cftoken=67623367f12e627b-638c1afa-b72a-0529-4f207faff15fffe4 parameter #5(cf_sql_integer) = 17 parameter #6(cf_sql_varchar) = admin.siteconfig parameter #7(cf_sql_timestamp) = 2014-03-18 16:00:24.31 parameter #8(cf_sql_longvarchar) = siteid=5&tab=5|session=| allactions (datasource=absmysql, time=0ms, records=124) in /var/www/html/dynamic/circuits/admin/qry_allactions.cfm @ 16:00:24.024 select      distinct s.fuse from     admin_sub s site_q (datasource=absmysql, time=2ms, records=1) in /var/www/html/dynamic/model/site/get_site.cfm @ 16:00:24.024      call getsiteinfo('5'); get_pricingfiles (datasource=absmysql, time=0ms, records=1) in /var/www/html/dynamic/model/site/get_pricingfiles.cfm @ 16:00:24.024 select * from pricingfiles where siteid = 5 srconesiteconfig_q (datasource=absmysql, time=1ms, records=1) in /var/www/html/dynamic/model/site/get_sourceoneconfigs.cfm @ 16:00:24.024     select * from abs.srconesiteconfig where siteid = 5 siteaccountexecs_q (datasource=absmysql, time=0ms, records=1) in /var/www/html/dynamic/model/site/get_siteaccountexecutives.cfm @ 16:00:24.024      select siteid , primaryaccountexec , primaryaccountexecemail , min(paes.staffid) as primaryaccountexecstaffid , secondaryaccountexec , secondaryaccountexecemail , min(saes.staffid) as secondaryaccountexecstaffid , primaryprojectmanager , primaryprojectmanageremail , min(pms.staffid) as primaryprojectmanagerstaffid from siteaccountmanager sam left outer join staff paes on paes.email = sam.primaryaccountexecemail left outer join staff saes on saes.email = sam.secondaryaccountexecemail left outer join staff pms on pms.email = sam.primaryprojectmanageremail where sam.siteid = 5 group by primaryaccountexec, primaryaccountexecemail, secondaryaccountexec, secondaryaccountexecemail, primaryprojectmanager, primaryprojectmanageremail; sitetax_q (datasource=absmysql, time=0ms, records=1) in /var/www/html/dynamic/model/site/get_sitetaxoninvoice.cfm @ 16:00:24.024      select case when z.siteexists = 0 then 1 else 0 end as issitetaxoninvoice from (select count(*) as siteexists from sitestaxdonotpay where siteid = 5) as z shippingvaluesset (datasource=absmysql, time=0ms, records=0) in /var/www/html/dynamic/circuits/admin/prep_siteconfig.cfm @ 16:00:24.024             select shippingoptions.*, sitestoshippingoptions.shippingmarkup from shippingoptions inner join sitestoshippingoptions on sitestoshippingoptions.shippingoptionsuniqueid = shippingoptions.uniqueid where sitestoshippingoptions.siteid = 5 inventories_q (datasource=absmysql, time=0ms, records=156) in /var/www/html/dynamic/model/inventory/get_inventories.cfm @ 16:00:24.024 select      inventoryid, inventoryname, inventorytype from      inventories order by inventoryname sites_q (datasource=absmysql, time=3ms, records=487, cached query) in /var/www/html/dynamic/model/site/get_sites.cfm @ 16:00:24.024      select * from sites s order by s.sitename getshippingvalues (datasource=absmysql, time=1ms, records=5) in /var/www/html/dynamic/display/admin/siteconfig.cfm @ 16:00:24.024      select * from shippingoptions order by shippingvalue personlist (datasource=absmysql, time=1ms, records=7) in /var/www/html/dynamic/display/admin/siteconfig_tab5.cfm @ 16:00:24.024 select min(staffid) as staffid , case instr(fullname, ' ') when 0 then fullname else concat( substr(s.fullname, length(s.fullname) - instr(reverse(s.fullname), ' ')+2, length(s.fullname)) , ', ' , substr(s.fullname, 1, length(s.fullname) - instr(reverse(s.fullname), ' ')) ) end as displayname , email as email from staff s where usertype in ('kgfinn', 'kgfinn_admin', 'projectmanager') and email not in ('inactive@old.com', '') group by email order by displayname;   stored procedures sp_getnonpurchasesites (datasource=absmysql, time=4ms) in /var/www/html/dynamic/app_globalrequests.cfm @ 16:00:24.024     parameters type cfsqltype value variable dbvarname     resultsets name resultset nonpurchasesites 1     scope variables application variables: applicationname=ambassador cgi variables: auth_password= auth_type= auth_user= cert_cookie= cert_flags= cert_issuer= cert_keysize= cert_secretkeysize= cert_serialnumber= cert_server_issuer= cert_server_subject= cert_subject= cf_template_path=/var/www/html/dynamic/index.cfm content_length=0 content_type= context_path= gateway_interface= https=off https_keysize= https_secretkeysize= https_server_issuer= https_server_subject= http_accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8 http_accept_encoding=gzip,deflate,sdch http_accept_language=en-us,en;q=0.8 http_connection=keep-alive http_cookie=cfadmin_lastpage_admin=%2fcfide%2fadministrator%2fsettings%2fversion%2ecfm; cfid=5322; cftoken=67623367f12e627b-638c1afa-b72a-0529-4f207faff15fffe4; cfauthorization_componentutils=ywrtaw4ny29tcg9uzw50dxrpbhmnmtm5nte3mjy4odg5oa1bnznemzi4que2ntczmjex http_host=admin.absbook.cf10 http_referer=http://admin.absbook.cf10/index.cfm?action=admin.siteconfig&siteid=5&tab=1 http_user_agent=mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/33.0.1750.154 safari/537.36 path_info= path_translated=/var/www/html/dynamic/index.cfm query_string=action=admin.siteconfig&siteid=5&tab=5 remote_addr=10.10.2.231 remote_host=10.10.2.231 remote_user= request_method=get script_name=/index.cfm server_name=admin.absbook.cf10 server_port=80 server_port_secure=0 server_protocol=http/1.1 server_software=apache/2.2.15 (unix) dav/2 php/5.3.3 mod_ssl/2.2.15 openssl/1.0.0-fips mod_wsgi/3.2 python/2.6.6 mod_jk/1.2.32 mod_perl/2.0.4 perl/v5.10.1 web_server_api= cookie variables: cfadmin_lastpage_admin=/cfide/administrator/settings/version.cfm cfauthorization_componentutils=ywrtaw4ny29tcg9uzw50dxrpbhmnmtm5nte3mjy4odg5oa1bnznemzi4que2ntczmjex cfid=5322 cftoken=67623367f12e627b-638c1afa-b72a-0529-4f207faff15fffe4 form fields: allowdupes=true allowscantitles=false autoprint=true bgbyvoucher=false breakoutitemsandshippingoninvoice=false buybackdiscount=40 buybackpaymethod=check campuscode= combineinventory=false contactusemail=it_qa@ambassadored.com coursebooksrequired=1 cv_contactemail= cv_id= cv_ip= cv_transactioncode= cv_ws_address= defaultspendinglimit=90000.00 displaycoursestartonvoucher=false domain=demo.ambassadorbookstores.cf10 ebookblurbtext=                                        <br><b>in electronic format.</b> if selected you will receive email instructions on how to access your e-book.</s><s> e-books have limited return privileges, unlike printed books which may be returned.</s><s> ebookcompcodedefaultduration=14 ebookdownloadtemplateid=2 ebookfromemailaddress=it@ambassadored.com ebooklicenseselection=0 ebookoffered=1 ebookpriceid=1 ebookreadytemplateid=1 ebookreplytoemailaddress=it@ambassadored.com ebookreplytoname=demo bookstore ebookselectiondefault=accept ebookvendorid=2 emailbrownsoftwarevoucher= emailstorebrandedvoucher= enableaddccchargeforexpeditedship=0 enableaddressvalidation=false enablecampuscodeoninvoice=0 enablecampusprefix=false enablecreditinvoice=0 enableitemchargeinvoice=false enableshippinginvoice=false enableshippingsummaryinvoice=false enablestudentcoursesupload=false enablestudentspending=false enabletrackinginvoice=false forceusedasdefault=false inventoryid=70 isactive=1 isautofill=false isautofillfilecumulative=0 isflatrateship=0 ismailinsertsrequired= isshowstudentid=0 isshowtotaldetailondistreport=0 issitetaxoninvoice=1 isvoucherng=1 itemizeprice=false location=0 lowinventory=2 multiqty=false nonpurchase=true offerbuybacks=true picksite=10test portalid=96 portallink=https://sourceone.ambassadorbookstores.qc/ prefix=demo pricingfile=standardc.cfm primaryaccountexecemail=dw2@ambassadored.com primaryaccountexecstaffid=20 primaryprojectmanageremail=dw1@ambassadored.com primaryprojectmanagerstaffid= printers=evchesapeakep1 evchesapeakep2 evhoustonbissonetp1 evhoustonbissonetp2 \\10.10.3.242\techprin2 evarlingtonp1 evarlingtonp2 printertype=site processmethod= programid= purchasetype=vouchersandcredit schoolid= schoollinearshippingcost=0.0000 schoolmodularshippingcost=0.0000 secondaryaccountexecemail=dw3@ambassadored.com secondaryaccountexecstaffid=19 semesterlabel=semester shippingvalue= showcountry=false showprogramoninvoice=false showquarter=false siteguid=4e94730a-e78c-102b-91fe-0015c5e724cb siteid=5 sitename=ambassador demo sitetype=virtual state=ny studentlineargroundshippingcost=0.0000 studentmodulargroundshippingcost=0.0000 tabid=1 taxrate=7.000 usedbooksdiscount=75 usedbooksflag=false usessl=false validateatlogin=true validateatvoucher=false validatefirstname=false validatelastname=false webfolder=demo webupdatetype=2 request parameters: afdir=/home/cci/ applicationtimeout=1 autofilluniqueid=0 bbcashsites=317,312,318,319,329,334,242,299,298,250,265,266,267,275,241,287,288,495,494,390,393,486,422,434,145,477,487,389,388,488,493,492,491,490,368,371,489,376,478,239,166,144,190,143,134,133,191,192,193,194,122,120,119,117,202,189,188,168,164,173,175,160,178,179,165,153,185,147,146,159,187,116,203,215,176,217,28,219,220,27,26,17,222,224,225,186,234,29,212,207,34,211,115 bbchecksites=158,155,498,451,450,391,5,479,501,470,447,161,163,502,106,497,453,468,503,37,30,127,465,70,463,462,461,460,472,484,457,455,458,238,205,332,333,204,348,350,363,198,196,367,369,377,206,210,231,252,255,256,260,262,221,278,283,218,302,313,380,381,410,411,420,427,428,216,432,433,171,437,170,169,417,403,387,394,184,398,400,384,3 bbvouchersites=467,383,392,431,7,362,456,100,181,74 ccisites=115,116,117,119,120,122,123,131,133,134,143,144,145,146,147,148,153,155,159,160,163,164,165,166,167,168,169,170,171,173,174,175,176,177,178,179,184,185,186,187,188,189,190,191,192,193,194,202,203,206,207,210,211,212,215,217,218,219,220,222,224,225,231,232,234,237,238,239,240,241,242,250,251,256,263,264,265,266,267,275,287,288,298,299,312,313,318,319,329,334,363,368,376,384,386,388,389,390,422,439,450,451,454,477,478,486,487,488,489,490,491,492,493,494,495 cla_termcode= dsn=absmysql fileuploadpath=/var/www/html/dynamic/uploads/ ftpdirectory=/home/w386vco fuseboxosname=unix griddsn=absmysql nonpurchasesites=3,4,5,7,11,12,13,17,18,20,27,28,32,33,35,38,39,41,42,46,48,50,53,55,59,60,64,65,66,70,71,78,79,80,83,84,85,86,87,90,93,96,98,103,123 nopriceonvoucher=123,256,158 onload= pricingfilelocation=/dynamic/model/site/pricing pvoucherurl=http://vouchers.ambassadored.cf10/printvoucher.cfc?method=actprint&copies=1 root=/dynamic sessiontimeout=0.0416666666667 states=ak,al,ar,az,ca,co,ct,dc,de,fl,ga,hi,ia,id,il,in,ks,ky,la,ma,md,me,mi,mn,mo,ms,mt,nc,nd,ne,nh,nj,nm,nv,ny,oh,ok,or,pa,ri,sc,sd,tn,tx,ut,va,vt,wa,wi,wv,wy,aa,ae,ap,as,pr,fm,gu,mh,mp,pw,vi subheader=dot_clear.gif subheaderh=36 subheaderw=100% vvoucherurl=http://vouchers.ambassadored.cf10/vouchergen.cfc?method=generatevoucher&outputtypecode=od server variables: coldfusion=struct (8) os=struct (5) session variables: bookstoretext_lower=bookstore bookstoretext_upper=bookstore cashbblist=317,312,318,319,329,334,242,299,298,250,265,266,267,275,241,287,288,495,494,390,393,486,422,434,145,477,487,389,388,488,493,492,491,490,368,371,489,376,478,239,166,144,190,143,134,133,191,192,193,194,122,120,119,117,202,189,188,168,164,173,175,160,178,179,165,153,185,147,146,159,187,116,203,215,176,217,28,219,220,27,26,17,222,224,225,186,234,29,212,207,34,211,115 categoryselection= cfid=5322 cftoken=67623367f12e627b-638c1afa-b72a-0529-4f207faff15fffe4 combineinventory=false coupon= couponstop=false enablecampusprefix=false enablestudentspending=false extratext= iscashbb=true item_book_text=item item_book_textplural=items item_textbook_textplural=textbooks mapstudentandcourses=false multiqty=true multishipoptions=false origsiteid=17 publicactions=home.booktext,rings.*,capsgowns.*,admin.bgprint,branded.*,buybacks.*,home.*,login.*,admin.pickport,admin.resubmitorders,admin.updateshipped,reporting.upsdownloadmail,reporting.virtbackordermail,reporting.permbackordermail,reporting.zeroquantitymail,admin.errordetails,admin.print,reporting.summarymailhourly,reporting.summarymaildaily,reporting.distribmail,reporting.shortsummarymailtoday,reporting.shortsummarymaildaily,reporting.shipsummarymail,admin.backorders,admin.poloscr,admin.polodsp,admin.procpolo,admin.expirepending,orders.cashcalc,warehouse.watchorders,reporting.distribordermail,admin.dirtest,admin.dirtestdownload,admin.coupon,nebraska.*,admin.invdspnew,admin.processstagingtable,admin.createautofillorder,admin.bulkcreateautofillorder sessionid=ambassador_5322_67623367f12e627b-638c1afa-b72a-0529-4f207faff15fffe4 shippingvalue=ground site_url=admin.absbook.cf10 sitetype=admin sso= sso_courses= studentspendingoverage= studentusedpref=sub threecosttext=these items typedstudentid= uniformtext=item urltoken=cfid=5322&cftoken=67623367f12e627b-638c1afa-b72a-0529-4f207faff15fffe4 userid=785 username=anthony sturchio usertype=admin url parameters: siteid=5 tab=5 action=admin.siteconfig debug rendering time: 60 ms                         and  if you scrape the cfc address from chrome developer tools you see     failed to load resource: the server responded with a status of 500 (element fuseboxosname is undefined in request.</s><s>) http://admin.absbook.cf10/todynamic/display/admin/siteaddresses.cfc?me thod=getsiteaddresses&_cf_ajaxproxytoken=67e4609e9e8a7f998867&returnfo rmat=json&argumentcollection=%7b%22page%22%3a1%2c%22pagesize%22%3a3%2c %22gridsortcolumn%22%3a%22%22%2c%22gridsortdirection%22%3a%22asc%22%2c %22siteid%22%3a5%7d&_cf_nodebug=true&_cf_nocache=true&_cf_clientid=0e0 9335044a83c729fd95ae3ef8aa869&_cf_rc=0         the web site you are accessing has experienced an unexpected error.</s><s> please contact the website administrator.</s><s> the following information is meant for the website developer for debugging purposes.</s><s> error occurred while processing request element fuseboxosname is undefined in request.</s><s> the error occurred in /var/www/html/dynamic/fbx_settings.cfm: line 63 61 : ---> 62 : 63 : <cfif request.fuseboxosname contains "windows"> 64 :      <cfset root = replace(getdirectoryfrompath(getbasetemplatepath()), expandpath("\"), "")> 65 :      <cfset root = "\" & rereplace(root, "\\$", "")> resources: check the coldfusion documentation to verify that you are using the correct syntax.</s><s> search the knowledge base to find a solution to your problem.   browser  mozilla/5.0 (windows nt 6.1; wow64) applewebkit/537.36 (khtml, like gecko) chrome/33.0.1750.154 safari/537.36 remote address  10.10.2.231 referrer  date/time  18-mar-14 04:05 pm stack trace at cffbx_settings2ecfm1245302153._factor5(/var/www/html/dynamic/fbx_sett ings.cfm:63) at cffbx_settings2ecfm1245302153.runpage(/var/www/html/dynamic/fbx_setti ngs.cfm:1) coldfusion.runtime.undefinedelementexception: element fuseboxosname is undefined in request. at coldfusion.runtime.cfjsppage.resolvecanonicalname(cfjsppage.java:1752) at coldfusion.runtime.cfjsppage._resolve(cfjsppage.java:1705) at coldfusion.runtime.cfjsppage._resolveandautoscalarize(cfjsppage.java:1854) at coldfusion.runtime.cfjsppage._resolveandautoscalarize(cfjsppage.java:1833) at cffbx_settings2ecfm1245302153._factor5(/var/www/html/dynamic/fbx_settings.cfm:63) at cffbx_settings2ecfm1245302153.runpage(/var/www/html/dynamic/fbx_settings.cfm:1) at coldfusion.runtime.cfjsppage.invoke(cfjsppage.java:244) at coldfusion.tagext.lang.includetag.dostarttag(includetag.java:444) at coldfusion.filter.cfincludefilter.invoke(cfincludefilter.java:65) at coldfusion.filter.cfincludefilter.include(cfincludefilter.java:33) at coldfusion.filter.applicationfilter.invoke(applicationfilter.java:352) at coldfusion.filter.requestmonitorfilter.invoke(requestmonitorfilter.java:48) at coldfusion.filter.browserdebugfilter.invoke(browserdebugfilter.java:79) at coldfusion.filter.monitoringfilter.invoke(monitoringfilter.java:40) at coldfusion.filter.pathfilter.invoke(pathfilter.java:112) at coldfusion.filter.exceptionfilter.invoke(exceptionfilter.java:94) at coldfusion.filter.clientscopepersistencefilter.invoke(clientscopepersistencefilter.java:28) at coldfusion.filter.browserfilter.invoke(browserfilter.java:38) at coldfusion.filter.nocachefilter.invoke(nocachefilter.java:58) at coldfusion.filter.globalsfilter.invoke(globalsfilter.java:38) at coldfusion.filter.datasourcefilter.invoke(datasourcefilter.java:22) at coldfusion.xml.rpc.cfcservlet.invoke(cfcservlet.java:155) at coldfusion.xml.rpc.cfcservlet.doget(cfcservlet.java:289) at javax.servlet.http.httpservlet.service(httpservlet.java:621) at javax.servlet.http.httpservlet.service(httpservlet.java:722) at coldfusion.bootstrap.bootstrapservlet.service(bootstrapservlet.java:89) at org.apache.catalina.core.applicationfilterchain.internaldofilter(applicationfilterchain.java:305) at org.apache.catalina.core.applicationfilterchain.dofilter(applicationfilterchain.java:210) at coldfusion.monitor.event.monitoringservletfilter.dofilter(monitoringservletfilter.java:42) at coldfusion.bootstrap.bootstrapfilter.dofilter(bootstrapfilter.java:46) at org.apache.catalina.core.applicationfilterchain.internaldofilter(applicationfilterchain.java:243) at org.apache.catalina.core.applicationfilterchain.dofilter(applicationfilterchain.java:210) at org.apache.catalina.core.standardwrappervalve.invoke(standardwrappervalve.java:224) at org.apache.catalina.core.standardcontextvalve.invoke(standardcontextvalve.java:169) at org.apache.catalina.authenticator.authenticatorbase.invoke(authenticatorbase.java:472) at org.apache.catalina.core.standardhostvalve.invoke(standardhostvalve.java:168) at org.apache.catalina.valves.errorreportvalve.invoke(errorreportvalve.java:98) at org.apache.catalina.valves.accesslogvalve.invoke(accesslogvalve.java:928) at org.apache.catalina.core.standardenginevalve.invoke(standardenginevalve.java:118) at org.apache.catalina.connector.coyoteadapter.service(coyoteadapter.java:414) at org.apache.coyote.ajp.ajpprocessor.process(ajpprocessor.java:204) at org.apache.coyote.abstractprotocol$abstractconnectionhandler.process(abstractprotocol.java:539) at org.apache.tomcat.util.net.jioendpoint$socketprocessor.run(jioendpoint.java:298) at java.util.concurrent.threadpoolexecutor$worker.runtask(threadpoolexecutor.java:886) at java.util.concurrent.threadpoolexecutor$worker.run(threadpoolexecutor.java:908) at java.lang.thread.run(thread.java:662)       thanks again for your help! -t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221603</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 1:23 PM">
+<s>i hope nothing that exposes security issues was in all that stuff! 
+</s><s>i'm wondering if you have some cascading errors going on.</s><s> there are three different errors shown above: the dialog error, the exception error, and then the error you see when you access the cfc directly.</s><s> the exception error: 
+exceptions 16:00:24.024 - missinginclude exception - in /var/www/html/dynamic/fbx_fusebox30_cf50.cfm : line 276 could not find the included template circuits/admin/fbx_layouts.cfm. 
+
+might be the starting point.</s><s> do you have a fbx_layouts.cfm file somewhere in your application?</s><s> is it in a different place than circuits/admin/ ?</s><s> if so, you need to update the path in the include statement in fbx_fusebox30_cf50.cfm (especially if this file is what sets the value of request.fuseboxosname. 
+i also find it strange that accessing the cfc calls /var/www/html/dynamic/fbx_settings.cfm since you don't have an application.cfm/.cfc to include additional files, unless the cfc has some <cfinclude> statements in it.</s><s> are there any in your cfc, and especially in your getsiteaddresses() method? 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221587</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 1:32 PM">
+<s>there's no client data or anything sensitive here, its simply a configuration screen.  and like i said, its a dev server on a private network - not public.   the cfcs are very simple, and do not have any includes.   so accessing them should not be calling fbx_settings.cfm or fbx_layouts.cfm.   it must be something in the way it passes the parameters.  if i pass the cfc url variables, it happily return the data correctly, without any includes (or errors)   for instance, this is broken: http://admin.absbook.cf10/todynamic/display/admin/sitecampuses.cfc?met hod=getebookpricingoptions&_cf_ajaxproxytoken=67e4609e9e8a7f998867&ret urnformat=json&argumentcollection=%7b%22ebookvendorid%22%3a%222%22%2c% 22selectedebookpricingid%22%3a%221%22%7d&_cf_nodebug=true&_cf_nocache= true&_cf_clientid=0e09335044a83c729fd95ae3ef8aa869&_cf_rc=0     this works as expected: http://admin.absbook.cf10/todynamic/display/admin/sitecampuses.cfc?met hod=getebookpricingoptions&ebookvendorid=2&selectedebookpricingid=1
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221647</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 1:43 PM">
+<s>it looks like at least part of that url is getting urlencoded() when it shouldn't be (i think everything from "argumentcollection=" up to "&_cf_nodebug" is incorrectly encoded).</s><s> is argumentcollection a coldfusion structure with key/value pairs that you are attempting to pass into the cfc? 
+</s><s>that may be causing issues when coldfusion attempts to parse the query string and extract the needed bits to populate the attributes scope of the cfc. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221718</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 1:52 PM">
+<s>i really dont know how teh developers are storing the argument collection.  from the html source it looks like some kind of json.   <script type="text/javascript">/* <!</s><s>[cdata[ */ coldfusion.ajax.initselect('ebookpriceid','priceid','formula'); /* ]]> */</script> <script type="text/javascript">/* <!</s><s>[cdata[ */ _cf_bind_init_1395173411164=function() { coldfusion.bind.register([['ebookvendorid','mainform_tab4','change'], ['selectedebookpricingid','mainform_tab4','change']],{'bindto':'ebookp riceid','bindtoattr':'value','cfc':'/todynamic/display/admin/sitecampu ses.cfc','cfcfunction':'getebookpricingoptions','_cf_ajaxproxytoken':' 67e4609e9e8a7f998867','bindexpr':[['ebookvendorid','ebookvendorid','ma inform_tab4','value'],['selectedebookpricingid','selectedebookpricingi d','mainform_tab4','value']]},coldfusion.bind.cfcbindhandler,true); };coldfusion.event.registeronload(_cf_bind_init_1395173411164); /* ]]> */</script> <script type="text/javascript">       from the cfml, i believe this is the snippet:   <cfselect name="ebookpriceid" value="priceid"                                                                 display="formula"                                                                 display="formula"                                                                 display="formula"                                                         bind="cfc:sitecampuses.getebookpricingoptions({ebookvendorid},{select edebookpricingid})" bindonload="true" tabindex="5" />           but as a sytems administrator, we have long since exhausted my knowledge of coldfusion development.   thanks for any suggestions, -t
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221849</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 2:13 PM">
+<s>hopefully someone more versed in cfajaxproxy and cfgrid can chime in (i've never used either).</s><s> i generally try to avoid using coldfusion's built-in ui stuff because it is inherently limited (only the pieces of underlying libraries that they chose to implement are available) and way behind in versions (i think the cfgrid stuff is based on a really old version of extjs). 
+i much prefer to use a modern javascript library for ui controls and use things like jquery to handle ajax - it's much simpler and you have more control that way.</s><s> there is a project on github that attempts to help people do ui without coldfusion's rather poor ui tags: https://github.com/cfjedimaster/coldfusion-ui-the-right-way, although there isn't an example yet for cfgrid (take a look at cftable though, as there's a link from there to the excellent datatables plugin for jquery).</s><s> another jquery alternative is the jqgrid plugin, and there are also grids in the extjs and dojo libraries. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221854</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 2:17 PM">
+<s>and i'm not sure that's the relevant bit of code, as the cfc error was tied to the getsiteaddresses() method, not the getebookpricingoptions() method. -carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6221842</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 2:23 PM">
+<s>youre probably correct that its the wrong bit of code.</s><s> we have three cfcs that are giving us identical errors / issues, and i could easily have swapped them in my searching. 
+</s><s>the dev guys are working to rewrite the call.</s><s> hopefully that will get it working. 
+i still find it odd that it's calling the includes even if you feed it garbage.</s><s> that the part that still bothers me.</s><s> perhapsy its literally tryingto load the url as a variable, and its calling index.cfm that way.</s><s> who knows.</s><s> im way out o fmy element. 
+</s><s>thank you very much for the help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6222981</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="BKBK" timestamp="Mar 19, 2014 1:33 AM">
+<s><quote>
+<s>guitsboy wrote: 
+it appears that the cfc is somehow calling fbx_settings.cfm, however it is not calling index.cfm which sets request.fuseboxosname. 
+</s></quote>that is as it should be.</s><s> the file fbx_settings.cfm is the first file to be processed in fusebox, and it is processed at every request.</s><s> it therefore has a lot of the responsibilities of the application file.</s><s> so, it would make for a much better design to define a request variable, for example, request.fuseboxosname, in fbx_settings.cfm instead! 
+</s><s>in fact, if you look at the code in index.cfm, you should see something like: 
+<cfset variables.fuseboxversion = replace(replace(listdeleteat(server.coldfusion.productversion,4),",", "","all")," ","","all")> <cfset request.fuseboxosname = server.os.name> <cfif variables.fuseboxversion lte 450> <cfelseif variables.fuseboxversion lt 500> <cfelseif variables.fuseboxversion lt 600> <cfelse> <cfif request.fuseboxosname contains "windows"> <cfinclude template="fbx_fuseboxxx_cfyy.cfm"> <cfelse> <cfinclude template="fbx_fuseboxxx_cfyy_nix.cfm"> </cfif> </cfif> 
+</s><s>as you can see, server.os.name is a server variable.</s><s> it isn't going to change anytime soon.</s><s> it therefore makes little design sense to store it in request scope.</s><s> unless, of course, you can justify this. 
+</s><s>however, let us put that aside, and dig deeper into the business at hand.</s><s> i would disagree with you, as i do believe that index.cfm is called.</s><s> if there is one fundamental action in fusebox, it is the call to index.cfm.</s><s> what probably happens in your case is that the index.cfm file fails to do an 'include' of the proper fusebox files. 
+</s><s>review your code and verify the lines i have italicized.</s><s> xx and yy stand for the relevant version numbers.</s><s> their values are possibly xx=30 and yy=50.</s><s> regarding fuseboxversion, i am on coldfusion 10.0.13, so the code will calculate my fuseboxversion to be 10013. 
+</s><s>now, review the code in fbx_fuseboxxx_cfyy.cfm and fbx_fuseboxxx_cfyy_nix.cfm.</s><s> ensure that each of these files does an 'include' of the appropriate fbx_settings.cfm file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6223386</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 19, 2014 6:07 AM">
+<s>thank you for the post bkbk. 
+</s><s>fusebox works perfectly fine when intentionally browsing to index.cfm, or simply going to the domain name. 
+</s><s>the weirdness we are experiencing is when we are calling a cfc directly, it seems to be including fusebox somehow.</s><s> the cfc has no includes, so we cannot figure out how fusebox is even coming into the equation.</s><s> our current best guess is that the parameters being passed to the cfc may include a url, although i am not positive of this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6224649</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="BKBK" timestamp="Mar 19, 2014 11:32 AM">
+<s>ok, so let us assume fusebox is otherwise working correctly.</s><s> what you've just said made me go back.</s><s> reconsider this url:   for instance, this is broken: http://admin.absbook.cf10/todynamic/display/admin/sitecampuses.cfc?met hod=getebookpricingoptions&_cf_ajaxproxytoken=67e4609e9e8a7f998867&re t urnformat=json&argumentcollection=%7b%22ebookvendorid%22%3a%222%22%2c % 22selectedebookpricingid%22%3a%221%22%7d&_cf_nodebug=true&_cf_nocache = true&_cf_clientid=0e09335044a83c729fd95ae3ef8aa869&_cf_rc=0 how does it come about?</s><s> how did it get to be url-encoded?   as carl has already suggested, all the trouble may be the result of a cascade of errors.</s><s> one possible cascade may occur as follows:   1) the url causes an error because it is translated or interpreted wrongly in the browser or in a calling application.</s><s> (verify, for example, by testing the effect of the decoded variant of the url: http://admin.absbook.cf10/todynamic/display/admin/sitecampuses.cfc?met hod=getebookpricingoptions&_cf_ajaxproxytoken=67e4609e9e8a7f998867&ret urnformat=json&argumentcollection={"ebookvendorid":"2","selectedebookpricingid":"1"}&_cf_nodebug=true&_c f_nocache= true&_cf_clientid=0e09335044a83c729fd95ae3ef8aa869&_cf_rc=0)   2) your application is so configured that the error in 1), or one of the settings passed in the query-string, generates a request, thereby engaging the fusebox engine.</s><s> i am thinking of an error-handler, for example.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6224745</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 19, 2014 11:37 AM">
+<s>i dont know whats causing teh url encoding, the code looks to be a cfgrid with a bind to the cfc with teh arguments. 
+</s><s>if i cleanup the url and go directly here, it return the expected results: http://admin.absbook.cf10/todynamic/display/admin/sitecampuses.cfc?met hod=getebookpricingoptions&returnformat=json&argumentcollection={"ebookvendorid":"2","selectedebookpricingid":"1"} 
+</s><s>and yes, i bleive youre correct in statement 2, that the setting sbeing passed are generating an unintended request to the index.cfm page. 
+i have relayed all this information to the dev team who will investigate.</s><s> its not my place to actually change any code.</s><s> but i needed some ammunition, since they said it was a problem with cf10 and that it was a server/systems issue, not the code. 
+</s><s>thanks again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6226797</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="BKBK" timestamp="Mar 20, 2014 4:34 AM">
+<s><quote>
+<s>guitsboy wrote: 
+i dont know whats causing teh url encoding, the code looks to be a cfgrid with a bind to the cfc with teh arguments. 
+</s></quote>i think i know.</s><s> the encoding is done by coldfusion internally.</s><s> there is definitely a bind to cfc.</s><s> might be from cfgrid, but not necessarily.</s><s> might also be from cfselect, as you yourself have pointed out, or from any tag that has bind as attribute: cfdiv, cfinput, and so on.</s><s> in fact, i have verified that the following are typical url variables that coldfusion automatically adds to the query-string when it does a bind: 
+_cf_ajaxproxytoken returnformat argumentcollection _cf_nodebug _cf_nocache _cf_clientid _cf_rc 
+if the bind is from a grid, then the argumentcollection structure will contain, in addition, the grid parameters, 
+page pagesize gridsortcolumn gridsortdirection 
+putting all this together, we can deduce from this thread that your application uses the following 2 binds: 
+<cfselect bind="cfc:sitecampuses.getebookpricingoptions({ebookvendorid},{select edebookpricingid})"> 
+<cfgrid bind="cfc:siteaddresses.getsiteaddresses({cfgridpage},{cfgridpagesize },{cfgridsortcolumn},{cfgridsortdirection}, siteid=5)"> 
+</s><s>each of these tags occurs on a cfm page.</s><s> opening that page counts as one http request, something like 'get mypage.cfm'.</s><s> the fusebox engine kicks off and handles the request in the usual manner, presumably without problems. 
+</s><s>however, in each case, there is a second request, an ajax request generated by the bind.</s><s> it is actually generated by javascript code in the original page mypage.cfm.</s><s> coldfusion had automatically embedded the javascript as part of the response to the request for mypage.cfm.</s><s> the second request is something like 'get siteaddresses.cfc?method=getsiteaddresses&_cf_ajaxproxytoken=67e4609e 9e8a7f998867&_cf_clientid=0e09335044a83c729fd95ae3ef8aa869&returnforma t=json&argumentcollection=...etc., etc'.</s><s> coldfusion includes parameters like _cf_ajaxproxytoken and _cf_clientid in the ajax code to act as unique identifiers. 
+</s><s>that is then what happens under the hood.</s><s> it seems that, in your case, the combination of coldfusion and fusebox is having trouble processing the second request.</s><s> which raises 2 questions: 
+1) what version of fusebox do you use?</s><s> different fusebox versions require different configuration techniques for processing requests involving cfcs.</s><s> 2) the following exception suggests that the essential file fbx_fusebox30_cf50.cfm was included.</s><s> this in turn suggests that its parent page, index.cfm, did run.</s><s> <quote>
+<s>16:00:24.024 - missinginclude exception - in /var/www/html/dynamic/fbx_fusebox30_cf50.cfm : line 276 could not find the included template circuits/admin/fbx_layouts.cfm. 
+</s></quote>
+</s><s>now consider the other exception: <quote>
+<s>element fuseboxosname is undefined in request.</s><s> the error occurred in /var/www/html/dynamic/fbx_settings.cfm: line 63 
+</s></quote>
+</s><s>this tells us that fbx_settings.cfm was included in fbx_fusebox30_cf50.cfm as expected.</s><s> to summarize, index.cfm includes fbx_fusebox30_cf50.cfm which in turn includes fbx_settings.cfm.</s><s> furthermore, we take it for granted that the code in index.cfm that sets the variable request.fuseboxosname occurs before the cfinclude tag.</s><s> otherwise there would have been obvious errors during normal cfm requests.</s><s> so what does this tell us? 
+</s><s>it leads me to one conclusion.</s><s> when the request generated from a bind is processed, it bypasses the code in index.cfm that sets the variable request.fuseboxosname. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6227076</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 20, 2014 6:22 AM">
+<s>thanks again bkbk.</s><s> i have forwarded yoru notes on to our dev team. 
+</s><s>this is an older version of fusebox, fusebox 3.0 i believe, intended for cf5+. 
+</s><s>what youre saying above does make sense, except for why fusebox is being called in the first place.</s><s> what i dont understand is that if i call the cfc directly, it does not seem to include any fusebox files, however if a page calls the cfc via cfgrid with url encoding, then we get the fusebox errors.</s><s> my guess is that the url encoding is breaking things, making the browser try to load the root of the domain ( admin.absbook.cf10/ ) instead of the specific path down to the cfc.</s><s> unfortunately its not a browser specific issue, as the same things hapens to chrome, firefox, ie, opera, etc. 
+</s><s>thanks again, -tony 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6229106</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="BKBK" timestamp="Mar 20, 2014 3:16 PM">
+<s>we all agree something breaks during the ajax cfc bind.</s><s> chances are that it is at the level of code.</s><s> why would coldfusion process index.cfm, yet omit the line of code - in index.cfm - that sets the variable request.fuseboxosname?</s><s> possibly because coldfusion bypasses that line of code when processing the ajax request.</s><s> the developers should look into this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6229055</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="GuitsBoy" timestamp="Mar 20, 2014 3:20 PM">
+<s>but the cfc should not be calling index.cfm at all.</s><s> its not pert of fusebox.</s><s> its a stanalone cfc. 
+</s><s>but again, i am out of my element here.</s><s> the fact that calling teh cfc directly with sanitized variables works as it should proves to me that it is not a system issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206636-6229192</DOCNO>
+<TEXT>
+<subject>Upgrade from CF8 to CF10 now CFC cant read from request scope</subject>
+<post author="BKBK" timestamp="Mar 20, 2014 3:52 PM">
+<s>guitsboy wrote:   but the cfc should not be calling index.cfm at all.  its not pert of fusebox.  its a stanalone cfc.</s><s> that is true.</s><s> but something has gone wrong and it isn't working as it should.</s><s> i am only suggesting how this might have happened.   but again, i am out of my element here.  the fact that calling teh cfc directly with sanitized variables works as it should proves to me that it is not a system issue.</s><s> you actually have your finger on the pulse.</s><s> since the code breaks, we cannot even be sure if the ajax call is interpreted as a cfc call at all!   i am curious what you will get when you open in firefox the respective files containing the cfgrid and cfselect tags discussed above, with firebug swtiched on.</s><s> in each case, click on firebug's 'net' setting.</s><s> then read off the status, url, params, headers(particularly, request) and response.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6228930-1432769</DOCNO>
+<TEXT>
+<subject>CF10, CFHTTP and SSL subject alternative names</subject>
+<post author="ericbegins" timestamp="Mar 20, 2014 2:07 PM">
+<s>i have an ssl certificate where the common name doesn't match the url, but the subject alternative name does.</s><s> the common name is the actualmachinename.subnet.subnet.mynetwork.com and the san is www.prettyurl.com.</s><s> i understand older versions of cf don't support this, but the comments regarding bug #3566218 say that cf10 does.</s><s> however, i am still getting connection failures telling me the name doesn't match. 
+</s><s>can anyone confirm this should/shouldn't work in cf10?</s><s> i have imported all of the certs via the keytool and explored all of those issues.</s><s> the only remaining issue is that the url doesn't match the cn. 
+</s><s>tia, eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6228300-1432657</DOCNO>
+<TEXT>
+<subject>Access denied on folder using CFFTP getfile</subject>
+<post author="richieBoy" timestamp="Mar 20, 2014 11:37 AM">
+<s>i'm trying to use cfftp to retrieve files from a remote ftp site to download to my local directory.</s><s> i would see the file in the local directory but with 0 kb.</s><s> wondering what was going on, i tried accessing just the directory and got an 'access is denied' error. 
+</s><s>the funny thing is that it was working fine a few weeks ago until we made some server changes.</s><s> we had some ftp sites set up but closed them.</s><s> could closing them have anything to do with it?</s><s> i'm definitely not an expert when it comes to this stuff. 
+</s><s>we're using cf9 and iis7 btw. 
+
+</s><s>can someone explain what's causing this and how do i go about fixing it?</s><s> any help would be appreicated. 
+
+<cfftp action="getfile" connection="objconnection" remotefile="s692605.frtb0001_res.dat238710" localfile="e:\inetpub\test\s692605.frtb0001_res.dat238710" stoponerror="yes" failifexists="false" passive="yes" timeout="600" transfermode="auto" /> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6227748-1432551</DOCNO>
+<TEXT>
+<subject>CF 10 and SAP Crystal Reports 2011</subject>
+<post author="zamvil" timestamp="Mar 20, 2014 10:22 AM">
+<s>hello, 
+</s><s>someones know if the cf10 can interact with reports of sap cr 2011? 
+</s><s>i'm calling the reports (rpts) with the cfreport but it displays a blank page. 
+</s><s>actually i'm migating the crystal reports to cf reports but i have a lot of reports and someones are dificult. 
+</s><s>the way that actually i'm calling the crystal reports is calling the report by url from our cr server but we have problems with the session because every time that open a report is a session and when you close the report, the session doesn't close and when we rich the 4 sessions we can not open more reports.</s><s> we have to wait until the serve kill the session automatically. 
+
+
+</s><s>someone knows a solution for this? 
+regards 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6225575-1432004</DOCNO>
+<TEXT>
+<subject>PDF Form Online</subject>
+<post author="Squiggy2" timestamp="Mar 19, 2014 3:32 PM">
+<s>i have some pdfs that contain forms, created in livecycle and acrobat pro.</s><s> ideally, i'd like the user to click on a link, have the pdf come up and after they've filled out the form on that pdf, they click a submit button and the pdf gets emailed to me (or saved to the server).</s><s> some of the forms are very specific, like 1040 tax forms, etc and some are very simple. 
+</s><s>this seems like it should be fairly simple, but i'm not finding a basic solution.</s><s> any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6225575-6225616</DOCNO>
+<TEXT>
+<subject>PDF Form Online</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 19, 2014 3:39 PM">
+<s>i'm not sure if there's enough information there for a coldfusion-based recommendation.</s><s> have you looked into adobe formscentral?</s><s> it might meet some or most of your requirements? 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6225575-6225600</DOCNO>
+<TEXT>
+<subject>PDF Form Online</subject>
+<post author="Anit_Kumar" timestamp="Mar 19, 2014 3:43 PM">
+<s>carl, 
+</s><s>squiggy2 is routed to cf forums by another user.</s><s> see this http://forums.adobe.com/thread/1413743. 
+@squiggy2 this is something managed outside coldfusion.</s><s> as, once the pdf is created (say even by cfdocument), it goes outside of coldfusion.</s><s> you may try at acrobat forum.</s><s> 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6225575-6225580</DOCNO>
+<TEXT>
+<subject>PDF Form Online</subject>
+<post author="Squiggy2" timestamp="Mar 19, 2014 3:44 PM">
+<s>thanks, carl.</s><s> i'm actually looking at formscentral right now, and seeing if it will work for my purposes.</s><s> the website is backend is all coldfusion, and i figured there would be a simple coldfusion-based way to make this happen... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6225575-6225645</DOCNO>
+<TEXT>
+<subject>PDF Form Online</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 19, 2014 3:53 PM">
+<s>i believe that there are ways in coldfusion to parse an uploaded pdf and extract the form data, but i've not done it personally.</s><s> i also think i've hear from others that you can set up a pdf form with a submit button that submits to a url, and only the form data is sent in the submit (not sure if it does it via get or post though).</s><s> hopefully someone who has actually done this can chime in. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6225575-6225632</DOCNO>
+<TEXT>
+<subject>PDF Form Online</subject>
+<post author="Squiggy2" timestamp="Mar 19, 2014 4:08 PM">
+<s>thanks again, carl.</s><s> the end result needs to be a pdf.</s><s> the only coldfusion solutions i've found require building a non-pdf form that is filled out and use cfpdfform to take the results and fill the pdf.</s><s> that could work, but some of these forms are looooong and i thought i should be able to take a pdf, put it online, have it filled out and emailed to someone without the user having to download the form and email it manually. 
+</s><s>looks like formscentral won't work, as it only sends the results of the form fields to me rather than a pdf. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6224218-1431665</DOCNO>
+<TEXT>
+<subject>Location of database IP address for Cold Fusion to connect</subject>
+<post author="userCold9" timestamp="Mar 19, 2014 9:42 AM">
+<s>hi, 
+</s><s>the web/application server where the cold fusion is located and the database servers were cloned from the production environment and installed on seperate vm servers in a protected environment. 
+</s><s>when i try to connect to the vm database server from the vm web/application (using cold fusion administration), the network traffic is showing the production ip of the database server. 
+i cannot find the production ip of the database server in the cold fusion administration screens.</s><s> (the version of cold fusion is 9 enterprise). 
+</s><s>the question i have is where on the web/application vm server would the ip address be of the production database server? 
+
+
+</s><s>thanks, 
+
+</s><s>mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6224218-6224425</DOCNO>
+<TEXT>
+<subject>Location of database IP address for Cold Fusion to connect</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 19, 2014 10:38 AM">
+<s>it should be each of the individual datasources that are connected to that server.</s><s> in cf administrator, in the left-hand navigation pane, expand "data & services".</s><s> click on "data sources".</s><s> you'll have to examine each one that lists the type of database server you use under the "driver" column to find the one(s) connected to your production server.</s><s> for each data source, click on the edit icon under the "actions" column, or click on the data source name.</s><s> this will bring up a form where you can change the name or ip address of the database server.</s><s> change the name or ip and click submit.</s><s> repeat for each datasource that needs to be updated. 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6221729-1431062</DOCNO>
+<TEXT>
+<subject>Solr search returns words like the search word, but not the search word itself</subject>
+<post author="Duncan Goss" timestamp="Mar 18, 2014 1:41 PM">
+<s>we recently upgraded from coldfusion 8 to coldfusion 10.</s><s> everything works fine except for the text search function. 
+</s><s>we manually re-created a smaller collection of html documents, and the index did appear to run.</s><s> most searches seem to work fine, but the longer word "severability" returns "several", "severally", but no "severability". 
+</s><s>we also attempted to index a larger collection, which includes pdf documents.</s><s> at first, we forgot to include pdf among the document types in the collection.</s><s> the index ran, but returned zero hits, although there are indeed html documents in the target population.</s><s> when we remembers to add in the pdf documents, the indexing process consistently returns "out of memory" errors. 
+</s><s>any help would be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6221729-6223615</DOCNO>
+<TEXT>
+<subject>Solr search returns words like the search word, but not the search word itself</subject>
+<post author="vishu%2313" timestamp="Mar 19, 2014 6:57 AM">
+<s>what is the field type, text or string?</s><s> by default solr does a fuzzy search on text field.</s><s> you need to set up your field as a string field and add no tokenizer then you'll get an exact match.   schema.xml   <field name="name"             type="string" indexed="true" stored="false" required="true" /> <field name="namestring"       type="string" indexed="true" stored="false" required="true" /> <copyfield source="name" dest="namestring"/>   solrconfig.xml   <requesthandler name="accounts" class="solr.searchhandler">     <lst name="defaults">       <str name="deftype">dismax</str>       <str name="qf">         namestring^10.0 name^5.0 description^1.0       </str>       <str name="tie">0.1</str>     </lst>   </requesthandler>   if in your collection, you have 10 pdf and 10 .html then what is the result?</s><s> the number of documents is 10 or 20?   hth   thanks vj
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6221729-6223707</DOCNO>
+<TEXT>
+<subject>Solr search returns words like the search word, but not the search word itself</subject>
+<post author="Duncan%20Goss" timestamp="Mar 19, 2014 7:21 AM">
+<s>vj -- 
+</s><s>i have to confess that your response assumes knowledge on my part that i do not have.</s><s> i have located the schema.xml and solrconfig.xml files for the collection in question, but that is about it. 
+</s><s>in the schema.xml file i see "<field name=" entries for what appear to be the fields returned by the queries, but do not know what fields i should be setting to string.</s><s> i am attempting to do a full-text search of the contents of the html documents, not on metadata. 
+</s><s>in the solrconfig.xml file i see a number of "<requesthandler" entries, but do not know if i am supposed to modify one of them to match what you sent (in which case i need to know which one), or add what you sent in its entirety. 
+</s><s>also, in an unrelated matter, i am attempting to do a query of queries search on the result of my cfsearch, but any attempt to create a "where key='xxx' " or "where key like "%xxx%' " clause fails.</s><s> i can use a "where rank='1' clause, but that isn't what i am trying to do.</s><s> is that because the key field is text where it needs to be string?</s><s> (basically, what i am attempting to do is to restrict the search to only certain subdirectories in the collection.</s><s> in coldfusion 8, with the verity search, this was fairly easy to do by adding a key field clause to the criteria string.</s><s>) 
+</s><s>finally, the collection with the pdf documents: it contains 31000 .</s><s>htm documents and 10861 .</s><s>pdf documents, and reports 41850 documents in the collection.</s><s> however, the indexing fails, as do queries against this collection.</s><s> both are seemingly due to memory size issues.</s><s> in coldfusion 8, the verity search indexing handled this size collection easily. 
+</s><s>duncan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6178182-1420550</DOCNO>
+<TEXT>
+<subject>All of my servers had the administrator username and passwords reset.</subject>
+<post author="wallawallajim" timestamp="Mar 4, 2014 9:27 AM">
+<s>all of my servers are version 10 and are in development so they are not exposed to public.</s><s> i also have a version 9 server running in production which is public.</s><s> all of the 10 servers never had a username saved, i came in this moring and all server had the username set to admin (locked in browser) and some random password.</s><s> any idea as to how all servers changed? 
+i was able to reset the development user/pass but i am at a loss as to how they were all changed.</s><s> no network intrusion was found. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6178182-6221792</DOCNO>
+<TEXT>
+<subject>All of my servers had the administrator username and passwords reset.</subject>
+<post author="Anit_Kumar" timestamp="Mar 18, 2014 2:14 PM">
+<s>hi wallawallajim, 
+while this sounds strange, this more or less sounds like a network trigger.</s><s> (i am not 100% sure although) 
+</s><s>you can have a look at the server.log 
+regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-1426423</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="Balddog4" timestamp="Mar 12, 2014 9:13 AM">
+<s>i have a local version of cf10.</s><s> i setup a new solr collection.</s><s> when i index it, it seems to run fine, however, it returns 0 files / documents indexed.</s><s> they are pdf documents i am trying to index.</s><s> anyone have any ideas on this problem? 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6203732</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="vishu%2313" timestamp="Mar 12, 2014 11:45 AM">
+<s>check the coldfusion-out.log.</s><s> you must have received some error.</s><s> share that error. 
+</s><s>also, test with the .htm/.html and observe the behavior.</s><s> if .htm works fine, then you need to check with other pdf files.</s><s> maybe the pdf is corrupted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6219366</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="relaxatraja" timestamp="Mar 18, 2014 1:22 AM">
+<s>from my site, when searching for the first time while creating collection. it will create result with 0 files.</s><s> but again searches gives me the result.</s><s> might be it return zero for the first time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6219917</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="WolfShade" timestamp="Mar 18, 2014 5:53 AM">
+<s>i worked with solr about over a year ago, and i had the same problem.</s><s> unfortunately, i cannot currently remember what the fix was, for it.</s><s> if it comes to me, i'll post it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6220342</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="Balddog4" timestamp="Mar 18, 2014 8:28 AM">
+<s>great ideas. 
+i did test with an html file, and it now shows document and file as 1.</s><s> it still didn't pickup the pdf document, but it increased the size to 2 when i ran it a second time and added .pdf to file types.</s><s> the log indicates it couldn't index the pdf file. 
+
+mar 18, 2014 11:20:48 am warning [ajp-bio-8012-exec-1] - warning: could not index c:\coldfusion10\cfusion\wwwroot\ipmcenters.org\cropprofiles\docs\vape anut2014.pdf in solr.</s><s> check the exception for more details: pdfdocexception <p/> created on sep 12, 2006 mar 18, 2014 11:20:50 am information [scheduler-2] - max threads: null current thread count: null current thread busy: null max processing time: null request count: null error count: null bytes received: null bytes sent: null free memory: 326162768 total memory: 368967680 active sessions: 0 mar 18, 2014 11:20:52 am information [ajp-bio-8012-exec-1] - user admin reloaded collection cps mar 18, 2014 11:20:56 am information [ajp-bio-8012-exec-1] - user admin reloaded collection cps mar 18, 2014 11:21:01 am information [ajp-bio-8012-exec-1] - user admin reloaded collection cps mar 18, 2014 11:21:03 am information [ajp-bio-8012-exec-1] - user admin reloaded collection cps mar 18, 2014 11:21:50 am information [scheduler-1] - max threads: null current thread count: null current thread busy: null max processing time: null request count: null error count: null bytes received: null bytes sent: null free memory: 316175760 total memory: 368967680 active sessions: 0 mar 18, 2014 11:22:50 am information [scheduler-0] - max threads: null current thread count: null current thread busy: null max processing time: null request count: null error count: null bytes received: null bytes sent: null free memory: 315518648 total memory: 368967680 active sessions: 0 mar 18, 2014 11:23:50 am information [scheduler-2] - max threads: null current thread count: null current thread busy: null max processing time: null request count: null error count: null bytes received: null bytes sent: null free memory: 314862800 total memory: 368967680 active sessions: 0 mar 18, 2014 11:24:50 am information [scheduler-2] - max threads: null current thread count: null current thread busy: null max processing time: null request count: null error count: null bytes received: null bytes sent: null free memory: 314213312 total memory: 368967680 active sessions: 0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6220655</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="WolfShade" timestamp="Mar 18, 2014 9:34 AM">
+<s>i just replied to another user having pdf/solr issues.</s><s> i finally remembered: if the pdfs are protected, this can cause the index to fail.</s><s> make sure the pdfs are not protected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6220889</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="Balddog4" timestamp="Mar 18, 2014 10:11 AM">
+<s>thank you for the reply.</s><s> i changed protected mode to 'no,' but it still isn't indexing.</s><s> that seems more like a view security mode.</s><s> i didn't see anywhere else to change the protection level. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6221165</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="vishu%2313" timestamp="Mar 18, 2014 11:40 AM">
+<s>log a bug for the same : https://bugbase.adobe.com/ however before doing so, if possible install coldfusion 10 in a different machine and test the same behavior.</s><s> download cf 10 from adobe.com, install mandatory update and then install update 13. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6203189-6221485</DOCNO>
+<TEXT>
+<subject>Solr CF10</subject>
+<post author="Balddog4" timestamp="Mar 18, 2014 12:52 PM">
+<s>i already have that update installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206509-1427301</DOCNO>
+<TEXT>
+<subject>Install problem - CF10</subject>
+<post author="DanP" timestamp="Mar 13, 2014 9:16 AM">
+<s>i had cf10 trial version installed on a windows 2008 server r2.</s><s> then administrator stopped accepting my password.</s><s> so i ran the password reset script and restarted the service.</s><s> that didn't fix it.</s><s> so i uninstalled and when i tried to reinstall, the installation program keeps saying: "the specified directory is not valid." the specified directory is c:\coldfusion10, which exists on the file tree.</s><s> i even manually selected it using the browse button in the installer.</s><s> any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6206509-6221268</DOCNO>
+<TEXT>
+<subject>Install problem - CF10</subject>
+<post author="Anit_Kumar" timestamp="Mar 18, 2014 11:50 AM">
+<s>hi danp, 
+</s><s>after you uninstalled coldfusion, did you delete the physical folder and trace outs of cf10(if any left). 
+</s><s>also, clear temp directory of windows.</s><s> restart the server, if required. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6214215-1429171</DOCNO>
+<TEXT>
+<subject>Install CF10 on Windows 8.1</subject>
+<post author="MCPGeorge" timestamp="Mar 16, 2014 9:23 AM">
+<s>just transitioned to a new pc with w8.1 developer/trial version of cf10 downloaded, but windows says it cannot be installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6214215-6215380</DOCNO>
+<TEXT>
+<subject>Install CF10 on Windows 8.1</subject>
+<post author="carl%20type3" timestamp="Mar 16, 2014 8:34 PM">
+<s>perhaps try install run as administrator?</s><s> hth, carl.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6214215-6220668</DOCNO>
+<TEXT>
+<subject>Install CF10 on Windows 8.1</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 9:24 AM">
+<s>i don't think the installers have been updated for windows 8.1. the latest windows installer was updated for windows 8. see if you can install using compatibility mode. -carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6214215-6221100</DOCNO>
+<TEXT>
+<subject>Install CF10 on Windows 8.1</subject>
+<post author="Anit_Kumar" timestamp="Mar 18, 2014 11:00 AM">
+<s>you can launch command prompt as administrator.</s><s> navigate to the installer directory and run the "coldfusion 10 win64.exe" (installer name) the command. 
+</s><s>hope this helps 
+regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6221013-1430857</DOCNO>
+<TEXT>
+<subject>CF10 standard on Linux</subject>
+<post author="baylegg" timestamp="Mar 18, 2014 10:52 AM">
+<s>does cf10 run on rhel 5.10, the last update for v5? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6221013-6220978</DOCNO>
+<TEXT>
+<subject>CF10 standard on Linux</subject>
+<post author="Anit_Kumar" timestamp="Mar 18, 2014 10:56 AM">
+<s>hi baylegg, 
+coldfusion 10 is officially supported on rhel 5.6 and 6.1.</s><s> you can install it on rhel 5.10 as well and should not face any issues. 
+</s><s>regards, anit kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6220730-1430815</DOCNO>
+<TEXT>
+<subject>How to use CFschedule?</subject>
+<post author="gwarmonger" timestamp="Mar 18, 2014 9:45 AM">
+<s>i am trying to send an email with cfschedule... from what i can tell by looking at the documentation, i am doing it right.</s><s> i am not getting any error messages but the email is not sending.</s><s> the cfschedule is the action page of a form.</s><s> when the form processed, it should set the cfschedule for another action page which sends the email.</s><s> here is the code - 
+the code that fires on a form submit (i have verified that this page is being called properly) <cfschedule
+action="update"
+task ="sendemail"
+startdate ="3/18/2014"
+enddate ="3/18/2014"
+operation = "httprequest"
+interval ="once"
+url = "sendemail.cfm"
+starttime = "10:43:00"
+> and the action page. 
+
+<cfmail 
+    from="xxxxx@xxx.xxx" 
+    to="xxxxx@xxxx.xxx" 
+    subject="your equipment test"> 
+
+</s><s>your equipment lease is due back to cie tomorrow.   
+
+</cfmail> 
+
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6220730-6220821</DOCNO>
+<TEXT>
+<subject>How to use CFschedule?</subject>
+<post author="fergusondj" timestamp="Mar 18, 2014 10:01 AM">
+<s>couple questions here... 
+</s><s>first..</s><s> why are you using cfschedule to just send an email?</s><s> this could be more easily done in the form processor. 
+</s><s>second...</s><s> if you are using the cfschedule to do it what happens if 2 people submit the form at the same time? 
+
+</s><s>as for the email, check in the undelivered folder on the server for the email.</s><s> if it was unable to be sent it would be in there. 
+</s><s>hth, 
+--dave 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6220730-6220834</DOCNO>
+<TEXT>
+<subject>How to use CFschedule?</subject>
+<post author="gwarmonger" timestamp="Mar 18, 2014 10:06 AM">
+<s>it is for an inventory system.</s><s> the form includes a return date for borrowing an item.</s><s> when they submit the form, the cfschedule will use the return date from the form variable as the enddate attribute on the cfschedule.</s><s> so...the day their equipment is due back, they recieve an email. 
+</s><s>my code does not reflect this yet, i hardcoded a date for testing purposes. 
+</s><s>and actually, i got it to work.</s><s> i had to change the url attribute to an absolute link instead of relative. 
+-sean 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6220730-6220836</DOCNO>
+<TEXT>
+<subject>How to use CFschedule?</subject>
+<post author="gwarmonger" timestamp="Mar 18, 2014 10:07 AM">
+<s>by the way....see my other comment first. - is there a better way to do what i mentioned in my other comment? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6220730-6220896</DOCNO>
+<TEXT>
+<subject>How to use CFschedule?</subject>
+<post author="fergusondj" timestamp="Mar 18, 2014 10:19 AM">
+<s>i wouldn't do it this way at all.</s><s> what happens when you have 1000 items, or even 2, due in the future?</s><s> you would have a scheduled task for each item.</s><s> this would create a management nightmare that i wouldn't want to deal with. 
+i would just run a task each day to poll for items doe that day and then send an email.</s><s> much cleaner approach and far less prone to failure.</s><s> you could easily write code to deail with issues, resend emails, and generally recover from failures with little effort. 
+</s><s>hth, 
+--dave 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6200669-1425842</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 Mappings and Apache VirtualHosts</subject>
+<post author="GuitsBoy" timestamp="Mar 11, 2014 1:05 PM">
+<s>im having a little difficulty figuring out coldfusion mappings with numerous virtualhosts in apache. 
+</s><s>it seems that cf10 handles things differently than cf8.</s><s> i used to be able to add mappings in the cfide and brose to the files directly, or in the case of a cfc, get the component info. it seems that cf10 no longer follows mappings, or at least not externally.</s><s> we have come flex apps that rely on these mappings, and they can no longer get to the cfcs.</s><s> adding aliases in apache did not fix the issue, since the cfc cannot read session variables from application.cfm when invoked that way.</s><s> does anyone have any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6200669-6220744</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 Mappings and Apache VirtualHosts</subject>
+<post author="Carl%20Von%20Stetten" timestamp="Mar 18, 2014 9:41 AM">
+<s>web services (whether used by flex or not) must be web-accessible through a url.</s><s> they can't be accessible to cf only via mappings.</s><s> if you don't want to expose the entire cfc as web-accessible, try creating a proxy cfc in a web-accessible place that can then call the methods on your non-web-accessible cfc. 
+</s><s>also, can you provide the url that flex is trying to use?</s><s> can you access that same url from a web browser (including any requisite "?</s><s>method=" stuff)?</s><s> if you can't access from a web browser, i don't think you will be able to from flex.</s><s> i think you'll need to configure apache to support whatever url you want flex to use, and it sounds to me like apache aliases might be the way to do it.</s><s> can you provide more detail on what you tried with aliases? 
+-carl v. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6200669-6220819</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 Mappings and Apache VirtualHosts</subject>
+<post author="GuitsBoy" timestamp="Mar 18, 2014 10:01 AM">
+<s>thank you for the reply carl 
+unfortunately it is a development server on an internal / private network, so there is no public access. 
+</s><s>regardless, it appears that the cf10 vs apache mappings were not the problem themselves.</s><s> we are able to access the cfc directly, and unless a method is specified, it will show the cfc explorer. 
+</s><s>the issue that is still plagung us is that the cfc seems to be including parts of the fusebox framework, though there is no application.cfm application.cfc or other automatically included page.</s><s> we cannot figure out what is causing this behavior.</s><s> anyway, i have a seperate thread for that issue here : http://forums.adobe.com/thread/1427279 
+i apologize for not closing this thread out 
+thanks again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-556690</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="etothex" timestamp="Jan 15, 2010 6:54 AM">
+<s>has anyone used solr to index a directory or directories of .doc, .xls, .pdf files?</s><s> the return from a cfindex on that collection has the document properties in the summary field and it is all together.</s><s> that is to say that the title, author, etc is not broken out like it is in a verity collection.</s><s> does anyone know how to edit the schema.xml or config.xml in a solr collection to index the files so that i can retrieve this information.</s><s> i am trying to capture all the document properties in their respective fileds and would like to add the created and modified date.</s><s> i would like to be able to search on these fields. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-3218247</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="davidmarnold" timestamp="Oct 19, 2010 10:07 AM">
+<s>have you had any luck on this?</s><s> i have a large pdf collection in verity that i would like to move over to solr, but it doesn't appear that solr will index pdf files by default.</s><s> i have not been sucessfull in getting solr to do so.</s><s> please contact me with any suggestions. 
+</s><s>thanks, david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-3218331</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="cfjedimaster" timestamp="Oct 19, 2010 10:33 AM">
+<s>pdfs are definitely supported by solr.</s><s> can you show us the cfindex tag you used? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-3218335</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="davidmarnold" timestamp="Oct 19, 2010 10:36 AM">
+<s>
+</s><s>thanks for the help. 
+</s><s>david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-3261678</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="M-Man-M" timestamp="Nov 8, 2010 2:50 PM">
+<s>hi guys 
+</s><s>has there been any progress on this, i'm experiencing the same issue, solr is not indexing the body of pdf files at all. 
+</s><s>opening up the collection direct and inspecting shows no content, just the reference to the filename. 
+i set up the collection in cf admin and have tried to index the collection there and also by using cfindex, both fail. 
+</s><s>the same collection is happy to index .xls and .doc with no issue. 
+<cfindex collection="ti_docs_collection" action="update" extensions=".pdf, .xls, .doc" key="c:\inetpub\wwwroot\ti\dsdocs" status="sreturn" type="file"> 
+</s><s>have you had any joy with this, i'm about to start pulling my own teeth out. 
+</s><s>thanks 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-3261758</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="davidmarnold" timestamp="Nov 8, 2010 3:27 PM">
+<s>mark, 
+</s><s>adobe has contacted me off forum in regards to this.</s><s> this has been logged as a bug with them, but i do not have any further update other than that. 
+</s><s>sincerely, david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-3262411</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="M-Man-M" timestamp="Nov 9, 2010 12:38 AM">
+<s>thanks for the reply david 
+well i do hope that they get it fixed soon, not being able to read/index one of their own products from another is not like them at all. 
+</s><s>ta 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-6220346</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="Balddog4" timestamp="Mar 18, 2014 8:35 AM">
+<s>i'm trying to index a pdf directly in the cf admin, and it's throwing errors.</s><s> is there a patch for this bug?</s><s> has it been fixed yet? 
+mar 18, 2014 11:20:48 am warning [ajp-bio-8012-exec-1] - warning: could not index c:\coldfusion10\cfusion\wwwroot\ipmcenters.org\cropprofiles\docs\vape anut2014.pdf in solr.</s><s> check the exception for more details: pdfdocexception <p/> created on sep 12, 2006 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-2520350-6220654</DOCNO>
+<TEXT>
+<subject>Solr indexing</subject>
+<post author="WolfShade" timestamp="Mar 18, 2014 9:32 AM">
+<s>if the pdfs have protection enabled, this can cause the indexing to fail.</s><s> check to make sure the pdfs are not in protected mode. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6220309-1430770</DOCNO>
+<TEXT>
+<subject>How to create datasource in Clustered Coldfusion Server9</subject>
+<post author="capik79" timestamp="Mar 18, 2014 8:15 AM">
+<s>hi, 
+</s><s>i have 2 web server that run cf9, both been link and clustered.</s><s> my problem now i have difficulty to add datasource. sometimes it can go thru sometomes it failed.</s><s> and if it success the connection was not stabil.</s><s> please help me... 
+</s><s>regards, shaffiq 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-1148000</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="WRC IAO" timestamp="Feb 5, 2013 10:35 AM">
+<s>i installed coldfusion 10 on a windows server 2008 r2 a couple months ago with no problems.</s><s> i have been testing the server since without it plugged into the network and have had no problems.</s><s> yesterday i plugged it into our network and everything worked like a charm with the exception of smtp.</s><s> i was troubleshooting smtp and finally realized this morning that i needed to set the smtp in coldfusion.</s><s> i tried to login to the coldfusion administrator and it said it was an "incorrect password".</s><s> i was able to successfully login to the admin yesterday multiple times but not today. 
+i have run the passwordreset.bat and selected "1" then typed in the new password and confirmed the password then the popup went away.</s><s> i restarted the coldfusion service then closed the browser and reopened the browser and typed the password and still received the "incorrect password". 
+i also went into the ?"neo-security.xml" file and changed the "admin.security.enabled" boolean value from "true" to "false" to get into the administrator without a password.</s><s> i was able to login to the administrator without a password but when i made a change and hit "submit" it didn't accept the change and it gave me an error: "there was an error accessing this page, check logs for more details. 
+</s><s>the log file showed the following error: "there was an error while verifying the token.</s><s> either the session timed out or un-authenticated access is suspected." 
+</s><s>i'm not really sure what else to do at this point besides re-install coldfusion which is my last resort on a production server.</s><s> if anyone has any possible solutions please let me know. 
+</s><s>thanks, josh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5052080</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Priyank%20Srivastava" timestamp="Feb 6, 2013 6:51 AM">
+<s>hi josh,   can you please "admin.security.enabled" boolean value from "false" to "true" and reset your currect browser, also try to access the administrator from a different browser and from the different machine.   please let me know that fixes the issue.   thanks priyank
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5052909</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="WRC%20IAO" timestamp="Feb 6, 2013 10:35 AM">
+<s>priyank, 
+</s><s>i went back in and set the value back to true then reset the browser on the server.</s><s> when i attempt to login to the cf admin from the server it still tells me the password is incorrect.</s><s> i was able to go to a workstation and access it through a browser and login successfully there.</s><s> i don't understand why i can access it via a browser on a workstation but not at the server where it actually resides. 
+</s><s>thanks, josh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5053052</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Priyank%20Srivastava" timestamp="Feb 6, 2013 11:13 AM">
+<s>thanks for your response. 
+</s><s>can you please try to access the coldfusion admin in your workstation by using the machine ip address instead of localhost or 127.0.0.1 and check if that will help. 
+</s><s>thanks priyank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5097255</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="trubel" timestamp="Feb 23, 2013 2:50 PM">
+<s>that did not work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5097677</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Shilpi%20Khariwal" timestamp="Feb 23, 2013 9:01 PM">
+<s>hi, 
+</s><s>are you trying to access this from ie10?</s><s> can you mail us request/response header? 
+</s><s>thanks, shilpi 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5106016</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="trubel" timestamp="Feb 26, 2013 8:35 PM">
+<s>at further investigation as shilpi recommended i send the network request/response.</s><s> i found that the url path i was using http://localhost:8888/cfusion/cfide/administrator/ 
+in reality. the administrator folder that use to be capitalized is not lower case "administrator" so the correct path is http://localhost:8888/cfusion/cfide/administrator/ this is a weird error since the page loads but the configuration enter.cfm can not locate sha1.js file.</s><s> since javascript is case sensitive this must be the reason. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5106044</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Shilpi%20Khariwal" timestamp="Feb 26, 2013 8:41 PM">
+<s>hi trubel, 
+</s><s>can you confirm if now administrator is working for you? 
+</s><s>thanks, shilpi 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5174928</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Proxim0o" timestamp="Mar 24, 2013 2:16 PM">
+<s>turing on "static content" under the add windows features "common http features" fixed it for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5497369</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="dhaneht" timestamp="Jul 11, 2013 1:33 PM">
+<s>i have the same problem.</s><s> tried everything above but none works. 
+</s><s>please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5497406</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Priyank%20Srivastava" timestamp="Jul 11, 2013 2:02 PM">
+<s>hi, 
+</s><s>can you please try to access the coldfusion admin from a different machine. 
+</s><s>regards, priyank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5497655</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="dhaneht" timestamp="Jul 11, 2013 2:55 PM">
+<s>i did tried on 3+ machines and all browser i can get (ie, ff, chrome, safari) with no luck. 
+</s><s>however, i solved the problem.</s><s> for some reason, i start the iis "default web site" which makes http://localhost works.</s><s> then i browse to localhost/cfide/admistrator and everything works!</s><s>!</s><s>!</s><s> but it works for localhost only, if i put the real ip or the real url, it doesn't work. 
+</s><s>anyone has any clue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5500592</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Steve%20Sommers" timestamp="Jul 12, 2013 12:50 PM">
+<s>i think the default setting in the cf 10 administration is for localhost access only and i would not recommend changing this setting.</s><s> a vast majority of cf hacks are related to cfide/administrator access.</s><s> i recommend going further and removing cfide as a virtual directory on your sites and create a new one that points to an empty directory then add a scripts virtual directory under it that points back to the original cfide/scripts directory.</s><s> there are one or more threads on this site that describe the process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5503718</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="dhaneht" timestamp="Jul 13, 2013 11:06 PM">
+<s>thank you so much.</s><s> i will do per your advise. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5762703</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="SethBienek" timestamp="Oct 15, 2013 3:55 PM">
+<s>i had the same issue accessing cfadmin from the browser on the server.</s><s> for me the issue was that the browser couldn't download and exeute the script "/cfide/administrator/sha1.js", needed for the cfadmin login form to work, due to ie running in protected mode by default on windows server. 
+</s><s>my solution was to add the server url to the "trusted sites" zone in internet explorer. 
+</s><s>hope this helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-5762666</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Aegis%20Kleais" timestamp="Oct 15, 2013 4:04 PM">
+<s>or you could just install an actual browser like google chrome. 
+</s><s>death to explorer!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-6015995</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="charleshpool" timestamp="Jan 15, 2014 10:24 AM">
+<s>thanks.</s><s> turing on "ie enhanced security configuration" was aslo preventing me from logging into the adminstrator and giving me the incorrect password message.</s><s> simply turning it off temporarily whenever i need to logon to the coldfusion administrator fixed it for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5049673-6220017</DOCNO>
+<TEXT>
+<subject>I can't access ColdFusion 10 Admin</subject>
+<post author="Yoosaf%20Abdulla" timestamp="Mar 18, 2014 7:24 AM">
+<s>os: osx maverics browser: chrome/ff 27.0.1/safari 10 coldfusion 10: installed within apache 
+i had tried all the above and went back to investigate my mod_jk after i read the post from tubel. 
+</s><s>my solution was the path to my cfide had the 'coldfusion10' spelled 'coldfusion10'.</s><s> i changed to lower case 'c' and my cf was back with a bang!</s><s>!</s><s> 
+</s><s>hope this solves problem for someone out there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-4554818-1035812</DOCNO>
+<TEXT>
+<subject>IIS7, CF9 windows authentication problem</subject>
+<post author="slevy566" timestamp="Jul 12, 2012 4:35 PM">
+<s>my setup iis7 windows 2008 r2 with coldfusion 9 on a virtual server, using windows authentication.</s><s> windows authentication worked perfectly in the previous version of iis and on a conventional server setup and coldfusion 8.</s><s> now when a person without permission requests a file in a protected folder, they are denied all files except the .cfm file.</s><s> that file displays all the text. 
+</s><s>since this is iis7 there is no "check that file exists setting" but this is supposed to be handled through the handler mappings.</s><s> the wildcard is mapped as well as the .cfm, .cfml etc specific extensions. 
+</s><s>documentation says: how does the coldfusion service interact with iis in terms of security?</s><s> cf runs as a separate service, but it also integrates with iis using an isapi extension.</s><s> the isapi extension runs in-process with iis, just like the asp engine, and when a request is received that is mapped to the file extension associated with the isapi extension (typically .cfm and .dbm, although those can be changed in the iis management console), the request is forwarded to the cf service for processing.</s><s> iis and nt security are used to determine whether the user can request the file in the first place.</s><s> this happens before the request is forwarded to the cf service.</s><s> so, you'll generally follow the same procedure for securing cf applications with acls that you would with an asp application. 
+</s><s>what am i overlooking?</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-4554818-6186559</DOCNO>
+<TEXT>
+<subject>IIS7, CF9 windows authentication problem</subject>
+<post author="tishward" timestamp="Mar 6, 2014 1:56 PM">
+<s>did you find a solution for this?</s><s> i have the same issue and cannot find an answer as to why cf is ignoring the ntfs perms. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-4554818-6220034</DOCNO>
+<TEXT>
+<subject>IIS7, CF9 windows authentication problem</subject>
+<post author="vishu%2313" timestamp="Mar 18, 2014 6:34 AM">
+<s>hi   since verify file exists" doesn't work with iis 7 so we can define "authorization rules"   let's assume you have a website name cf9 in iis which has two folders a and b. in this machine, you have two users a and b and one administrator.</s><s> the user a has access for folder a only and user b has access to folder b only log in with the administrator account and set the auhtorization rule on cf 9 as "allow all users" (allow for all users will already be there as inherited from the server).</s><s> enable windows authentication and disable all other authentications now click on folder a in iis and click on authorization rules and allow for user a and deny for user b. specify the same for folder b. allow the authorization rule for user b and deny the authorization rules for user a   windows authentication     authorization rules screenshot for folder a     authorization rules screenshot for folder b     there will be three differnet web.config in your webroot.   main web.config will look like this   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <configuration>     <system.webserver>         <handlers>             <add name="jwildcardhandler" path="*" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\2\jrun_iis6_wild card.dll" resourcetype="unspecified" requireaccess="none" />             <add name="hbmxmlhandler" path="*.hbmxml" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="cfswfhandler" path="*.cfswf" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="cfrhandler" path="*.cfr" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="cfchandler" path="*.cfc" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="cfmlhandler" path="*.cfml" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="cfmhandler" path="*.cfm" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="jwshandler" path="*.jws" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />             <add name="jsphandler" path="*.jsp" verb="*" modules="isapimodule" scriptprocessor="c:\coldfusion9\runtime\lib\wsconfig\jrun_iis6.dll" resourcetype="either" responsebufferlimit="0" />         </handlers>     <defaultdocument>             <files>                 <add value="index.cfm" />             </files>         </defaultdocument>           <staticcontent>             <mimemap fileextension=".air" mimetype="application/vnd.adobe.air-application-installer-package zip" />         </staticcontent>         <security>             <authorization>                 <remove users="*" roles="" verbs="" />                 <add accesstype="allow" users="*" />             </authorization>         </security>       </system.webserver> </configuration>   web.config  for folder a   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <configuration>     <system.webserver>         <security>             <authorization>                 <remove users="*" roles="" verbs="" />                 <add accesstype="allow" users="a" />                 <add accesstype="deny" users="b" />             </authorization>         </security>     </system.webserver> </configuration>   web.config  for folder b   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <configuration>     <system.webserver>         <security>             <authorization>                 <remove users="*" roles="" verbs="" />                 <add accesstype="allow" users="b" />                 <add accesstype="deny" users="a" />             </authorization>         </security>     </system.webserver> </configuration>   hth   thanks vj
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6211349-1428405</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 iis process restart every 900 seconds</subject>
+<post author="Lancelotling" timestamp="Mar 14, 2014 7:45 PM">
+<s>dear all cf guru,   there have been a bug that troubling me.   i have a mysql dump process as code below and it will keep restart the process around every 900 seconds.   <cfsetting requesttimeout="72000"> <cfquery name="backupdb" datasource="main"> select schema_name from information_schema.schemata where schema_name <> "information_schema" and schema_name <> "mysql" </cfquery> <cfloop query="backupdb" > <cfset dts = backupdb.schema_name> <cfset currentdirectory = "c:\dailybackup\"& dts> <cfif directoryexists(currentdirectory) eq false> <cfdirectory action = "create" directory = "#currentdirectory#" > </cfif> <cfset filename=dts&"_"&dateformat(now(),'yyyymmdd')&"_"&timeformat(now(),'h hmmss')&"_"&getauthuser()&"_daily.sql"> <cfset currentdirfile=currentdirectory&"\"&filename> <cfexecute name = "c:\program files\mysql\mysql server 5.6\bin\mysqldump"     arguments = "--user=root --password=xxxxxx #dts#" outputfile="#currentdirfile#" timeout="3600"> </cfexecute> </cfloop> <cfzip source="c:\dailybackup" action="zip" file="c:\daily_backup_#dateformat(now(),'yyyymmdd')#_#timeformat(now( ),'hhmmss')#.zip" overwrite="yes"> <cfdirectory action="delete" directory="c:\dailybackup\" recurse="yes">   as picture below, it has run the cfexecure for 4 times before the whole process end.     the process wil ltake around 1 to 2 hours and as in server monitor, it will start a new same process every 900 seconds.   the process is run through schedule task but i try with ie still facing the same issue.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6211349-6211557</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 iis process restart every 900 seconds</subject>
+<post author="BKBK" timestamp="Mar 15, 2014 5:19 AM">
+<s><quote>
+<s>lancelotling wrote: 
+the process wil ltake around 1 to 2 hours and as in server monitor, it will start a new same process every 900 seconds.</s><s> the process is run through schedule task.... 
+</s></quote>then the relevant code to examine is that of the scheduled task! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6211349-6219283</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 iis process restart every 900 seconds</subject>
+<post author="Lancelotling" timestamp="Mar 18, 2014 12:51 AM">
+<s>the code is run through coldfusion schedule task. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6211349-6219355</DOCNO>
+<TEXT>
+<subject>Coldfusion 10 iis process restart every 900 seconds</subject>
+<post author="BKBK" timestamp="Mar 18, 2014 1:19 AM">
+<s>please give us as many details of the scheduled task as possible, preferably all. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5142292-1169263</DOCNO>
+<TEXT>
+<subject>CFExchangeTask Modify Error</subject>
+<post author="chewy811" timestamp="Mar 12, 2013 11:12 AM">
+<s>getting a strange error when 'modifying' an exchange task. 
+i create tasks with the same code, except i have action as "create" and uid as "result" and it works fine.</s><s> the error i'm getting when modifying a task happens before the page loads.</s><s> the double comma's in the error message make me think this is a bug with <cfexchangetask>. 
+
+</s><s>here is the code: 
+<cfexchangetask action="modify" task="#stask#" username ="username" password="password" server="server.full.url" protocol="https" port="443" serverversion="2010" uid="#exchangeguid#"> 
+
+</s><s>here is the error: 
+
+</s><s>type template message attribute validation error for tag cfexchangetask.</s><s> detail it has an invalid attribute combination: action,password,port,protocol,server,serverversion,task,uid,username.</s><s> possible combinations are: required attributes: 'action,server,,task,uid,username'.</s><s> optional attributes: 'exchangeapplicationname,exchangeserverlanguage,formbasedauthenticati on,formbasedauthenticationurl,mailboxname,password,port,protocol,proxy host,proxyport,serverversion'.</s><s> required attributes: 'action,connection,task,uid'.</s><s> optional attributes: none. 
+
+</s><s>please help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5142292-5142613</DOCNO>
+<TEXT>
+<subject>CFExchangeTask Modify Error</subject>
+<post author="chewy811" timestamp="Mar 12, 2013 1:31 PM">
+<s>we are on cf10 enterprise, with all updates installed.</s><s> we have an urgent need to get this working, any help from adobe would be appreciated.</s><s> we just purchased the cf10e license. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5142292-6218603</DOCNO>
+<TEXT>
+<subject>CFExchangeTask Modify Error</subject>
+<post author="nhfinfan" timestamp="Mar 17, 2014 4:57 PM">
+<s>i don't have a solution but am having the exact same problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6217004-1429877</DOCNO>
+<TEXT>
+<subject>ColdFusion cluster scheduled tasks</subject>
+<post author="mikeweb85" timestamp="Mar 17, 2014 9:31 AM">
+<s>i am having issues enabling scheduled tasks in coldfusion 10.</s><s> i have go so far as to set mysql (5.1.73) to use lower case table names and be case insensitive in comparison.</s><s> after that didnt work, i dropped the databse and ran 'tables_mysql_innodb.sql' (c:\coldfusion10\cfusion\lib\quartz\scripts) and trien to enable schedule task clustering and continue to recieve this error message: 'error while creating tables for cluster setup for datasource cf_tasks.</s><s> verify the connection.</s><s> the supported databases for cluster setup are mysql, microsoft sql server and oracle'.</s><s> i didn't have the 'create tables for cluster setup' option selected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6217004-6217355</DOCNO>
+<TEXT>
+<subject>ColdFusion cluster scheduled tasks</subject>
+<post author="mikeweb85" timestamp="Mar 17, 2014 11:04 AM">
+<s>nevermind. the innodb.sql file packaged with cf10 was in complete.</s><s> combine the table struction from the myisam version with innodb and boom. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-3311271-759653</DOCNO>
+<TEXT>
+<subject>Bind issue with ckeditor</subject>
+<post author="Micah_Brown" timestamp="Dec 1, 2010 11:01 AM">
+<s>i have a drop down that calls a function to return a list of id's.</s><s> based on the id that is selected it calls another function to return something (within a <cftextarea> tag.  this works fine unless i am using ckeditor on my page which turns the textarea into an iframe which i think is whats causing the data to not populate in that textarea.  i have run the ajax debugger and there are no issues, everything is being passed as it should be. and i has run this in multiple browsers so that is not the issue.</s><s> has anyone run into this?  i googled and cannot find anything.</s><s> running coldfusion 9.0.1 thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-3311271-6214538</DOCNO>
+<TEXT>
+<subject>Bind issue with ckeditor</subject>
+<post author="jonperret" timestamp="Mar 16, 2014 1:02 PM">
+<s>i have the same exact problem.</s><s> did you ever find a fix?   this is what i get from ckeditor support, but i haven't been able to resolve the problem yet.   hi, ckeditor in fact replaced this textarea.</s><s> it set display:none for it and creates new elements.</s><s> it then uses this textarea to populate it with data and submit it to server when you want to submit page.</s><s> now if editor gets created and populated with data before bind finishes its job then it won't work.</s><s> you need to either download data to textarea and then load ckeditor or you need to load editor, set some (loading screen), download data to some other element like div (with allignment  letf:-5000px;) and once this data finishes loading (you need to know that somehow) you can use ckeditor setdata method to load it into editor.</s><s> regards, jakub ?widerski
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-3311271-6214866</DOCNO>
+<TEXT>
+<subject>Bind issue with ckeditor</subject>
+<post author="jonperret" timestamp="Mar 16, 2014 2:57 PM">
+<s>i have resolved this using jquery.</s><s> instead of using a bind, when the select changes i get the data via ajax and then populate the editor using the setdata method from ckeditor. 
+$(document).ready(function() { $(".template").change(function() { if($(this).val() != '') { var myselect=$(this).val(); $.ajax({ url: "myservice.cfc", type: "post", datatype: "json", data: {method: "mymethod", myselect: (myselect) }, success: function (data){ ckeditor.instances['myeditor'].setdata(data); }, error: function (xhr, textstatus, errorthrown){ console.log(errorthrown); } }); } }); }); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6212280-1428623</DOCNO>
+<TEXT>
+<subject>Need Help with Left Outer Join - Part II</subject>
+<post author="rickclark54" timestamp="Mar 15, 2014 9:19 AM">
+<s>i believe i am getting the hang of the left outer join, but i am not there yet.   i have the same devotional that goes out to several clients which have the option of making changes to the devotional before it goes out.</s><s> for example i have 3 clients and one of them changed the devotional.</s><s> so two of them will get the original devotional and the third company will get the modified version.</s><s> i've been able to figure out how to get the modified version to go out, but the 2 other clients are getting the modified version instead of the original.   <!--- get subscribers timezone and layout options, ie: header and color combinations ---> <cfquery name="getclients" datasource="#application.dsn#"> select * from (subscriber inner join contacts on subscriber.contact_id = contacts.contact_id) inner join layout on contacts.contact_id = layout.contact_id where subscriber.timezone = '4' </cfquery>   <!--- determine which version of the devotional is available for this day --->   <cfquery name="getdevotional" datasource="#application.dsn#">   select mobile.mob_id, mobile.display_date, mobile.title, mobile.body, mobile.scripture,edited.edit_id,edited.contact_id,edited.etitle,edite d.escripture,edited.ebody   <!--- mobile table holds the devotionals & edited table holds the altrered devotionals --->   from mobile   left outer join edited on mobile.mob_id = edited.mob_id   where mobile.display_date = <cfqueryparam value ="#dateformat(now(), "yyyy-mm-dd")#" cfsqltype="cf_sql_date">   </cfquery>     simplified output version: <cfoutput> <cfloop query="getclients"> <cfif getdevotional.edit_id gt "">#etitle#<cfelse>#title#</cfif> </cfloop> </cfoutput>   what step am i missing?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6212280-6213777</DOCNO>
+<TEXT>
+<subject>Need Help with Left Outer Join - Part II</subject>
+<post author="BKBK" timestamp="Mar 16, 2014 4:02 AM">
+<s>suggestion: 
+</s><s><!--- distinguish the columns by name ---> <cfquery name="getdevotional" datasource="#application.dsn#"> select mobile.mob_id as id, mobile.display_date as display_date, mobile.title as title, mobile.body as body, mobile.scripture as scripture, edited.edit_id as edit_id, edited.contact_id as contact_id, edited.etitle as etitle, edited.escripture as escripture, edited.ebody as ebody from mobile left outer join edited on mobile.mob_id = edited.mob_id where mobile.display_date = <cfqueryparam value ="#dateformat(now(), "yyyy-mm-dd")#" cfsqltype="cf_sql_date"> </cfquery> 
+<!--- simplify the combination of cfloop and cfoutput ---> <!--- it is ambiguous to use 'gt' for string comparison ---> <!--- shouldn't the query be getdevotional, instead of getclients? ---> <cfoutput query="getdevotional"> <cfif edit_id is not "">#etitle#<cfelse>#title#</cfif> </cfoutput> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6212280-6213871</DOCNO>
+<TEXT>
+<subject>Need Help with Left Outer Join - Part II</subject>
+<post author="rickclark54" timestamp="Mar 16, 2014 5:26 AM">
+<s>sorry bkbk, maybe i am not clear enough on the getclients query. 
+getclients query: it pulls the layout information by the contact_id, the subscribers emails, the time zone and feeds it to cfmail. 
+getdevotional query: pulls in the devotional info, title, scripture and body 
+
+<cfoutput query="getclients"> 
+<cfmail from="devotionals@mydaily-devotional.com" to="#getclients.email#" ...</s><s> > <layout table pulled from getclients> 
+<cfif getdevotional.edit_id is not "">#etitle#<cfelse>#title#</cfif>  <end layout table> </cfmail> </cfoutput> 
+</s><s>do i need to have the getdevotional.contact_id to tie into the getclients.contact_id? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6212280-6213943</DOCNO>
+<TEXT>
+<subject>Need Help with Left Outer Join - Part II</subject>
+<post author="BKBK" timestamp="Mar 16, 2014 7:19 AM">
+<s>your original question is about the devotional table, not about the client table!</s><s> <quote>
+<s>i have the same devotional that goes out to several clients which have the option of making changes to the devotional before it goes out.</s><s> for example i have 3 clients and one of them changed the devotional.</s><s> so two of them will get the original devotional and the third company will get the modified version. 
+</s></quote>
+</s><s>if you need the e-mail address, you could indeed join up the client table with the devotional table.</s><s> i can think of 2 ways to do this. 
+</s><s>firstly, you could extend the sql for getdevotional by adding a second join to either the subscriber or contacts table.</s><s> secondly, you could take the getclients query as given, and reuse it by means of query-of-a-query.</s><s> i prefer this option, as it involves reuse and is simpler.</s><s> it goes like this: 
+<cfset emailaddress = arraynew(1)> <cfset layoutinfo = arraynew(1)> <cfset index = 1> 
+<cfoutput query="getdevotional"> <!--- obtain e-mail address and layout info using a query of a query ---> <!--- i have assumed the column names in getclients are 'email' and 'layoutinfo' ---> <cfquery name="getinfo" dbtype="query"> select email, layoutinfo from getclients where contact_id = #contact_id# </cfquery> <!--- store e-mail addresses and layout info in respective arrays ---> <cfset emailaddress[index] = getinfo.email> <cfset layoutinfo[index] = getinfo.layoutinfo> </cfoutput> 
+<!--- use the array to add 2 new columns for e-mail and layout to getdevotional query. ---> <cfset colnumber = queryaddcolumn(getdevotional, "devotionalemail", "varchar", emailaddress)> <cfset colnumber = queryaddcolumn(getdevotional, "devotionallayout", "varchar", layoutinfo)> 
+<!--- send mail out ---> <cfoutput query="getdevotional"> <cfmail to="#devotionalemail#"> <!--- layout ---> </cfmail> </cfoutput> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6212280-6233592</DOCNO>
+<TEXT>
+<subject>Need Help with Left Outer Join - Part II</subject>
+<post author="rickclark54" timestamp="Mar 22, 2014 2:22 PM">
+<s>i'm sorry bkbk, by trying not to overwhelm you with information and unclear what i needed to do, i have left you in the dark about what i really need.</s><s> so, i have gone into detail about what i have and what i need.</s><s> i tried your last approach and really had no clue on how to resolve my problem.  sorry for the length, but i really need to resolve this problem:   there are 3 tables in the getinfo query which creates the layout, displays the company information, and supplies the subscribers info.   subscribers table supplies, email, firstname, timezone, and contact_id   contact table supplies the information for social links, the footer, company name, unsubscribe information contact_id, company,city,state,zip,facebook,twitter,linkedin,youtube,website   layout table 27 fields that supplies  all info for header, footer, and color combinations  for the responsive email joined by the contact_id   my first query to get all email information: <cfquery name="getclients" datasource="#application.dsn#"> select * from (subscriber inner join contacts on subscriber.contact_id = contacts.contact_id)inner join layout on contacts.contact_id = layout.contact_id where subscriber.timezone = '4' </cfquery>   there are 2 tables that supply the devotional   mobile table title, scripture, body, display_date this is the default table that supplies the daily devotional.   edited table etitle, escripture, ebody, display_date optional table that when info is  present replaces the mobile table.</s><s> a participating church can make changes to the daily devotional, where it is saved in the edited table.</s><s> when the devotional goes out, the getdevotional query searches for an edited version first.</s><s> if present, it sends out the edited version.</s><s> otherwise the default devotional will go out.   by using a left outer join in the getdevotional query, i can get the edited version to display, but it is displaying to everybody, not just the church that created the edited version.   <cfquery name="getdevotional" datasource="#application.dsn#"> select mobile.mob_id as id, mobile.display_date as display_date, mobile.title as title, mobile.body as body, mobile.scripture as scripture,edited.edit_id as edit_id,edited.contact_id as contact_id,edited.etitle as etitle, edited.escripture as escripture,edited.ebody as ebody from mobile left outer join edited on mobile.mob_id = edited.mob_id where mobile.display_date = <cfqueryparam value ="#dateformat(now(), "yyyy-mm-dd")#" cfsqltype="cf_sql_date"> </cfquery>   the output: <cfif getdevotional.edit_id neq ""> <p style="font-family: arial, helvetica, sans-serif; font-size: 14px;font-weight: bold;color: #h2_color#;margin-top: 12px;margin-bottom: 4px;padding-bottom: 0px;">#getdevotional.etitle#<br /> #getdevotional.escripture#</p> <p style="text-indent:15px;"> #paragraphformat(getdevotional.ebody)# </p>   <cfelse>   <p style="font-family: arial, helvetica, sans-serif; font-size: 14px;font-weight: bold;color: #h2_color#;margin-top: 12px;margin-bottom: 4px;padding-bottom: 0px;">#getdevotional.title#<br /> #getdevotional.scripture#</p> <p style="text-indent:15px;"> #paragraphformat(getdevotional.body)# </p>   </cfif>   thanks for your time.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6184350-1421950</DOCNO>
+<TEXT>
+<subject>CFCLIENT JS code generation - tagname, classes, attributes</subject>
+<post author="Sagar Ganatra" timestamp="Mar 6, 2014 2:43 AM">
+<s>referring to the same code mentioned in my previous post: <span class="test"> <cfclient> <cfset variable1 = 10> <cffunction name="test1"> <cfoutput>#variable1#</cfoutput> <cfset variable1 = 20> <cfoutput>#variable1#</cfoutput> </cffunction> <cfset test1()> </cfclient> </span> 
+</s><s>the code that gets generated and executed will insert a dom node into the page: 
+<span class="test"> <script type="text/javascript" src="/cfide/cfclient/cfclient_main.js"></script> <script type="text/javascript" src="/cfide/cfclient/cffunctions.js"></script> <meta name="viewport" content="width=device-width"> <script type="text/javascript">globaldivstruct=null;var _$test_func=function(){var self=this;var variables={};self.test1=function(){var localdivstruct=globaldivstruct;var __output_var="";localdivstruct.outputvar+=variable1;variable1=20;loca ldivstruct.outputvar+=variable1;return""};self.__init=function(){var localdivstruct=globaldivstruct;var __output_var="";var tmpvararray={};variable1=10;test1();return""}}; function __startpage__$test(){document.write("\x3cdiv id\x3d'__cfclient_0'\x3e\x3c/div\x3e");window.ispgbuild=false;var clientdivstruct={divid:"__cfclient_0",outputvar:""};globaldivstruct=c lientdivstruct;try{_$test=new _$test_func;_$test.__init()}catch(__earg){if(__earg!=="$$$cfclient_ab ort$$$")throw __earg;}__$cf.__flush(clientdivstruct)}__startpage__$test();function test1(){return _$test.test1()}; </script><div id="__cfclient_0">1020</div> 
+
+</span> 
+</s><s>notice that it creates a div element and with id="___cfclient_0", can i specify the tag name that has to be generated?</s><s> for example, if i want a span element or a list element then i should be able specify that.</s><s> also, one should be able to add classes to it, specify attributes (data-). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-6184350-6212118</DOCNO>
+<TEXT>
+<subject>CFCLIENT JS code generation - tagname, classes, attributes</subject>
+<post author="fergusondj" timestamp="Mar 15, 2014 8:33 AM">
+<s>first, cfclient code should be at the top of the document.</s><s> it will not output into a span like you have here.</s><s> what i would do is either have your function return the data to the caller or have the function put the data into a specified html element.</s><s> otherwise you will have no control as to the output of the data. 
+</s><s>for example... 
+<cfclient> <cfset variable1 = 10> <cffunction name="test1"> <cfargument name="invar" required="true"> document.getelementbyid('mydiv').html(invar); </cffunction> <cfset variable1 = 10> <cfset test1(variable1)> </cfclient> 
+<div id="mydiv"></div> 
+
+
+</s><s>hth, 
+--dave 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5732956-1308682</DOCNO>
+<TEXT>
+<subject>Sec-WebSocket-Protocol Issue in Chrome30</subject>
+<post author="mbram" timestamp="Oct 3, 2013 12:52 AM">
+<s>hello friends, 
+</s><s>i am in development of a web application that uses the new coldfusion html5 websockets technology.</s><s> i recently upgraded my macbook pro to chrome30 from 29 and, what do you know, the websockets magically stopped working!</s><s> after google-ing for some context on the issue, it appears that google has made changes to the way they implement the sec-websocket-protocol parameter negotiated during the socket setup.</s><s> it turns out that the client (coldfusion's tag in js) is sending the 'get /cfusion http/1.1' request with the sec-websocket-protocol key, which complies with the optional parameter defined in rfc6455.</s><s> however, when the server responds back to the client with the '...</s><s>switching protocols' response, it is passing back 'websocket-protocol.' all of the other paramaters do include the 'sec-' prefix, which does adhere to the rfc. 
+</s><s>from what i have read, the failure, "websocket connection to ws://localhost:8585/cfusion' failed: error during websocket handshake: sec-websocket-protocol mismatch"is either a result of either two things: 1) chrome is no longer following the rfc6455 4.2.2 standard, or 2).</s><s> they are now adhering strictly to the rfc and the coldfusion server's non-compliance of the parameter is breaking the handshake. 
+i have read that some developers whom are implementing ws on node.js and php, are completely removing the sec-websocket-protocol from the header to solve the problem.</s><s> luckily, i am still in development and have not experienced an outage because of the mixup.</s><s> i have reported the issue to the bug tracking system, id: 3645217. 
+</s><s>if you have also run into the issue, please make a note on the bug to help escalate to our friends at adobe.</s><s> they are working hard to make coldfusion one of the best server-side technolgies around, but we need to get their attention on this one as it is a non-starter, web-socket killer! 
+</s><s>regards, matt bram 
+</s><s>message was edited by: mbram - added link to bug. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5732956-5751842</DOCNO>
+<TEXT>
+<subject>Sec-WebSocket-Protocol Issue in Chrome30</subject>
+<post author="James22s22" timestamp="Oct 10, 2013 3:11 PM">
+<s>i've encountered this same bug.  man, what is with october and software time-bombs!  there was just a time-bomb with visual studio and ssdt that went off on oct 6th because of some bug involving an expired certificate, making it impossible to install stuff without temporarily setting back the system clock: http://social.msdn.microsoft.com/forums/sqlserver/en-us/51ef983f-1f07- 41b4-bad4-3541e93d4647/known-issue-ssdt-install-fails-validating-certi ficates?forum=ssdt&prof=required   anyway, i just moved everything to a new server and thought i had something configured wrong, until i realized i could connect from my desktop's browser, but not the one on the server.</s><s> in fact, it's chrome 30 that seems to be the culprit, because while i can connect fine on chrome 29, i can no longer connect on chrome 30.</s><s> of course, this is a javascript websocket issue, and i'm running iis 8, so i think this is strictly a chrome issue, independent of coldfusion or iis 8 (since i'm using iis8 and you're using coldfusion and we're both experiencing the problem).   the error i get is "websocket connection to 'wss://xxx.xxx.xxx.xxx/ws.ashx' failed: error during websocket handshake: sec-websocket-protocol mismatch".
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5732956-6210366</DOCNO>
+<TEXT>
+<subject>Sec-WebSocket-Protocol Issue in Chrome30</subject>
+<post author="mbram" timestamp="Mar 14, 2014 12:48 PM">
+<s>*** issue resolved *** 
+</s><s>i was completely stumped.</s><s> desperate.</s><s> the thought of re-writing 10k lines made me sick.</s><s> then, i stumbled on pure gold.</s><s> i was visiting https://groups.google.com/forum/#!topic/chicagoboss/m4fthzn6qne and i found an entry about the change in expected parameters in the websocket constructor in javascritp from old browsers to new.</s><s> adobe was adding a second parameter, "json" to the constructor and chrome did not like it as the cf server was not returning the same item.</s><s> i removed the second param and what do you know, it came alive.</s><s> people are chatting and the world makes sense!</s><s> just wanted to give you an update. 
+i am using an adapted version of the cf javascript files found in the ajax folder on the server.</s><s> however, if you run into this problem, simply go into the cfwebsocketcore.js file and look for the line: this.wsconnection=new websocket(_20d,"json"); the _20d is the url string of the server.</s><s> remove the "json" parameter from the constructor.</s><s> this should bring it up.</s><s> if you are interested, go to the w3 site at http://www.w3.org/tr/2009/wd-websockets-20090423/ and notice that the websocket constructor takes one parapeter - the uri string! 
+</s><s>regards...matt bram 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/ColdFusion/Discussions-5732956-6211556</DOCNO>
+<TEXT>
+<subject>Sec-WebSocket-Protocol Issue in Chrome30</subject>
+<post author="BKBK" timestamp="Mar 15, 2014 4:52 AM">
+<s>hi matt, nice to hear you found your answer.</s><s> to assist others, please kindly mark it as 'correct'.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

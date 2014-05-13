@@ -1,0 +1,1042 @@
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-1430453</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 1:48 AM">
+<s>i have this repetitive task of cropping pictures, on a daily basis, each in 3 different versions, a 630x515 *_large, a 274x134 *_medium and a 173x106 *_small. 
+</s><s>i'm currently working with 3 different actions (select canvas > copy > resize > paste in place) one for each size, since i need to manually free-transform it and choose an appropriate area as the visible one (source images' aspect ratio varies greatly). 
+</s><s>still, i need to check the file name and then use the correct action, which given the amount of times i do it, it is not only slow but also prone to mistakes. 
+</s><s>i'd love to have one button i can use that does the action mentioned (even if it just calls the right action) based on the file name suffix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6219968</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 6:19 AM">
+<s>are different files named with the "_large," "_medium," and "_small;" or are these the names you give the files after you run your action?</s><s> using scripting can do whatever you want to do.</s><s> you can use the scriptlistener to record playing an action, then just change the name of the action in the generated code to switch to whatever action you want.</s><s> if you want all three sized from one file, you can do this too, by creating a snapshop of the file before anything is done to it and revert back to it for each action. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6219973</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 6:43 AM">
+<s>thank you for the quick reply. 
+</s><s>yes the files already have names ending with "_large", "_medium" and "_small".</s><s> my problem is how do i make the script check what the name of the currently opened image ends at, and then use the correct action based on that. 
+</s><s>for example, when i use the script on an image named "7843_i_large" it will call the action "resizelarge".</s><s> when i use the script on an image named "9985_small" it will call the action "resizesmall", and so on.</s><s> the file name before the suffix should be irrelevant to the script. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220125</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 7:06 AM">
+<s>somthing like this might work.</s><s> you would need to edit this code and put in your actions names and the action set where indicated. 
+<quote>
+<s>#target photoshop if(app.documents.length>0){ var docref = activedocument var docname = docref.name.split('.')[0]; var docsize = docname.split('_');  switch (docsize){ case 'large': runaction('large action name');//enter action name break; case 'medium': runaction('medium action name');//enter action name break; case 'small': runaction('small action name');//enter action name break; }   };//end if 
+function runaction(actionname){ var idply = charidtotypeid( "ply " ); var desc2 = new actiondescriptor(); var idnull = charidtotypeid( "null" ); var ref1 = new actionreference(); var idactn = charidtotypeid( "actn" ); ref1.putname( idactn, actionname ); var idaset = charidtotypeid( "aset" ); ref1.putname( idaset, "your action set name" );//change this desc2.putreference( idnull, ref1 ); executeaction( idply, desc2, dialogmodes.all ); app.displaydialogs = dialogmodes.no;  };//end funcrion runaction 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220593</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 9:09 AM">
+<s>oh, thanks a ton for writing that.</s><s> i just got home and tested this. 
+</s><s>unfortunately, in photoshop nothing happens, while in the extendscript toolkit i seem to be getting result: undefined right after "switch (docsize)".</s><s> does that mean i messed up adding my actions' names in there? 
+</s><s>my actions are (quite aptly) named "large", "medium" and "small", under the "resize" set, so i replaced them as noted in those 4 lines, yet i can't seem to make it work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220598</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 9:22 AM">
+<s>um, ok i don't know anything about scripting but doing a bit of googling on the .split command i managed to fix it by adding [1] at the end of var docsize = docname.split('_').</s><s> hope this didn't mess anything else up! 
+</s><s>so i assume that number tells it to select the 2nd part of the split.</s><s> is there any simple way to make it always select the last part of the split?</s><s> so as to have it work regardless of how many underscores the file name might have. 
+</s><s>still, code works great, thank you very much csuebele. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220624</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 9:25 AM">
+<s>i made a goof in the code.  use these two lines to replace lines 4 & 5:   var docname = docref.name.split('.')[0].split('_'); var docsize = docname[docname.length-1]  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220599</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 9:29 AM">
+<s>i might not understand how it works, but it's absolutely perfect.</s><s> thank you very much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220627</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 9:32 AM">
+<s>great!</s><s> glad it works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-1430453</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 1:48 AM">
+<s>i have this repetitive task of cropping pictures, on a daily basis, each in 3 different versions, a 630x515 *_large, a 274x134 *_medium and a 173x106 *_small. 
+</s><s>i'm currently working with 3 different actions (select canvas > copy > resize > paste in place) one for each size, since i need to manually free-transform it and choose an appropriate area as the visible one (source images' aspect ratio varies greatly). 
+</s><s>still, i need to check the file name and then use the correct action, which given the amount of times i do it, it is not only slow but also prone to mistakes. 
+</s><s>i'd love to have one button i can use that does the action mentioned (even if it just calls the right action) based on the file name suffix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6219968</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 6:19 AM">
+<s>are different files named with the "_large," "_medium," and "_small;" or are these the names you give the files after you run your action?</s><s> using scripting can do whatever you want to do.</s><s> you can use the scriptlistener to record playing an action, then just change the name of the action in the generated code to switch to whatever action you want.</s><s> if you want all three sized from one file, you can do this too, by creating a snapshop of the file before anything is done to it and revert back to it for each action. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6219973</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 6:43 AM">
+<s>thank you for the quick reply. 
+</s><s>yes the files already have names ending with "_large", "_medium" and "_small".</s><s> my problem is how do i make the script check what the name of the currently opened image ends at, and then use the correct action based on that. 
+</s><s>for example, when i use the script on an image named "7843_i_large" it will call the action "resizelarge".</s><s> when i use the script on an image named "9985_small" it will call the action "resizesmall", and so on.</s><s> the file name before the suffix should be irrelevant to the script. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220125</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 7:06 AM">
+<s>somthing like this might work.</s><s> you would need to edit this code and put in your actions names and the action set where indicated. 
+<quote>
+<s>#target photoshop if(app.documents.length>0){ var docref = activedocument var docname = docref.name.split('.')[0]; var docsize = docname.split('_');  switch (docsize){ case 'large': runaction('large action name');//enter action name break; case 'medium': runaction('medium action name');//enter action name break; case 'small': runaction('small action name');//enter action name break; }   };//end if 
+function runaction(actionname){ var idply = charidtotypeid( "ply " ); var desc2 = new actiondescriptor(); var idnull = charidtotypeid( "null" ); var ref1 = new actionreference(); var idactn = charidtotypeid( "actn" ); ref1.putname( idactn, actionname ); var idaset = charidtotypeid( "aset" ); ref1.putname( idaset, "your action set name" );//change this desc2.putreference( idnull, ref1 ); executeaction( idply, desc2, dialogmodes.all ); app.displaydialogs = dialogmodes.no;  };//end funcrion runaction 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220593</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 9:09 AM">
+<s>oh, thanks a ton for writing that.</s><s> i just got home and tested this. 
+</s><s>unfortunately, in photoshop nothing happens, while in the extendscript toolkit i seem to be getting result: undefined right after "switch (docsize)".</s><s> does that mean i messed up adding my actions' names in there? 
+</s><s>my actions are (quite aptly) named "large", "medium" and "small", under the "resize" set, so i replaced them as noted in those 4 lines, yet i can't seem to make it work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220598</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 9:22 AM">
+<s>um, ok i don't know anything about scripting but doing a bit of googling on the .split command i managed to fix it by adding [1] at the end of var docsize = docname.split('_').</s><s> hope this didn't mess anything else up! 
+</s><s>so i assume that number tells it to select the 2nd part of the split.</s><s> is there any simple way to make it always select the last part of the split?</s><s> so as to have it work regardless of how many underscores the file name might have. 
+</s><s>still, code works great, thank you very much csuebele. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220624</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 9:25 AM">
+<s>i made a goof in the code.  use these two lines to replace lines 4 & 5:   var docname = docref.name.split('.')[0].split('_'); var docsize = docname[docname.length-1]  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220599</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="in.ma" timestamp="Mar 18, 2014 9:29 AM">
+<s>i might not understand how it works, but it's absolutely perfect.</s><s> thank you very much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6219238-6220627</DOCNO>
+<TEXT>
+<subject>Cropping canvas based on file name suffix (_large, _medium, _small)</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 9:32 AM">
+<s>great!</s><s> glad it works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-1429163</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 16, 2014 8:56 AM">
+<s>var doc = app.activedocument var group = layer.duplicate group.mergevisiblelayers(); 
+
+</s><s>what am i doing wrong, that the layers are not duplicating, then merging ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6215561</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 12:17 AM">
+<s>what makes you think "layer" means something useable in this line?</s><s> <quote>
+<s>var group = layer.duplicate 
+</s></quote>in the three lines you have not defined which layer is to be duplicated. 
+</s><s>and what about this? 
+<quote>
+<s>group.mergevisiblelayers(); 
+</s></quote>
+</s><s>"mergevisiblelayers" is a method of document, not layerset or layer. 
+</s><s>please start using the documentation, like estk's object model viewer, to verify if a method or property exists for the object you want to manipulate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216043</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 5:40 AM">
+<s>layer.duplicate is in the ps omv list.</s><s> i'm not selecting all the visible layers, i assume ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216118</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 5:51 AM">
+<s>"layer" is a class.</s><s> so withing the script "layer" is basically no more informative than if someone were to tell you: "noun is running." you need to define which layer it is that is to be duplicated (or whatever else).</s><s> (edited) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216185</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 5:52 AM">
+<s>i want all visible layers duplicated, while at the time time remain selected.</s><s> how do you know layer is a class is it specified in the ps omv ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216211</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 5:55 AM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216235</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 17, 2014 6:25 AM">
+<s><quote>
+<s>strongbeaver wrote: 
+i want all visible layers duplicated, while at the time time remain selected.</s><s> how do you know layer is a class is it specified in the ps omv ? 
+</s></quote>in photoshop you can stamp a composite of all visible layer into a new layer and that layer will be the current photoshop target.</s><s> there is a shortcut for this feature shift+alt+ctrl+e.</s><s> this feature does not always work it depends on the current photoshop target.</s><s> where the layer goes in the layer stack also depends on photoshop current target.</s><s> so i always add a new empty layer and move it to the top of the stack.</s><s> then use the short cut the stamp visible winds up in the layer i added and is the current target.</s><s> i do this in many of my photshop actions.</s><s> stamp visible layers are great for many things.</s><s> i do not understand what you mean by selected?</s><s> i don't understand many of your questions. 
+</s><s>if you want a script you can always use the action manager code for shift+alt+ctrl+e 
+
+// ======================================================= var idmrgv = charidtotypeid( "mrgv" ); var desc40 = new actiondescriptor(); var iddplc = charidtotypeid( "dplc" ); desc40.putboolean( iddplc, true ); executeaction( idmrgv, desc40, dialogmodes.no ); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216351</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 6:49 AM">
+<s><quote>
+<s>artlayers.add (): artlayer adobe photoshop cs5 object library adds an element. 
+</s></quote>if i want to add an artlayer to the document, instead of merging visible layers.</s><s> the artlayers.add is an object, correct ? 
+
+<quote>
+<s>var doc = app.activedocument doc.artlayers.add() 
+</s></quote>
+</s><s>the code above should add an artlayer, that is if it's an object. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216365</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 6:52 AM">
+<s>but in this case it's not written with a capitalized "a". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216798</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 17, 2014 8:45 AM">
+<s><quote>
+<s>strongbeaver wrote: 
+<quote>
+<s>
+</s><s>var doc = app.activedocument doc.artlayers.add() 
+
+</s></quote>
+
+
+</s></quote>var doc = app.activedocument var visible_layers = doc.artlayers.add() //add new empty layer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6218477</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 3:49 PM">
+<s>i'm not getting the order correct.</s><s> hrm !</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6218549</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 17, 2014 4:05 PM">
+<s>what order? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6219174</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 11:05 PM">
+<s>maybe you should, instead of trying to verbalize what you are after, show it with a mock-up/screenshots. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6219837</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 18, 2014 6:35 AM">
+<s>the order of how to lay down the code without getting errors look at this code. 
+<quote>
+<s>var note = prompt("hello"); var doc = app.activedocument var visible_layers = doc.artlayers.add() //add new empty layer visible_layers.backgroundcolor(); 
+</s></quote>i want to add a background color the current layer.</s><s> from my understanding after reading some of the docs yesterday i have to reference the active.document ? 
+</s><s>my main goal is a script that merges all visible layers into a smart object 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6220063</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 18, 2014 6:59 AM">
+<s>have you even bothered to check "backgroundcolor" in the omv?</s><s> is it a method or a property?</s><s> and of what? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222153</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 18, 2014 4:06 PM">
+<s>of course i checked, why do you assume i didn't just because i don't write what i did in each mesage ? 
+<quote>
+<s>application.backgroundcolor data type: solidcolor adobe photoshop cs5 object library the default background color (used to paint, fill, and stroke selections). 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222486</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 18, 2014 7:05 PM">
+<s>you know the two color swatches the can be changed in the tools palette. foregroundcolor and backgroundcolor!</s><s>.. /* ====================================================================================== // 2009 john j. mcassey (jjmack) http://www.mouseprints.net/ // // this script is supplied as is.</s><s> it is provided as freeware. // the author accepts no liability for any problems arising from its use. // // this script is designed to be used by a photoshop action twice // a good pratice to use when creating an actions that use this scipt is for the action // not to do a save or play some other action between its two useages of this script. // // the first time this script is used by an action photoshops current forground // and background colors are saved into the document's meta-data info instructions field. // // the second time this script used by the action the script retreives what was // saved in the meta-data during the first usage and these colors are set. // and the saved data is removed from the document's meta-data info instructions field. // // ===================================================================================== */
+ 
+ 
+/* <javascriptresource> <about>$$$/javascripts/saveandrestorecolors/about=jjmack's saveandrestorecolors.^r^rcopyright 2009 mouseprints.^r^rrun twice script utility for action.^rnote:don't play other actions between runs!^r^rfirst run records photoshops foreground and background swatch colors.^rsecond run restores the recorded colors and removes the recording.</about> <category>jjmack's action run twice utility</category> </javascriptresource> */
+ 
+ 
+if (app.documents.length > 0) { 
+          if (app.activedocument.info.instructions.indexof("<colorf>") == -1 ){ // no footprint fisrt useage 
+                    //alert("first");
+                    // retreive document information for foot print 
+                    saveforecolor = new solidcolor;
+                    saveforecolor.rgb.red = app.foregroundcolor.rgb.red;
+                    saveforecolor.rgb.green = app.foregroundcolor.rgb.green;
+                    saveforecolor.rgb.blue = app.foregroundcolor.rgb.blue;
+ 
+ 
+                    savebackcolor = new solidcolor;
+                    savebackcolor.rgb.red = app.backgroundcolor.rgb.red;
+                    savebackcolor.rgb.green = app.backgroundcolor.rgb.green;
+                    savebackcolor.rgb.blue = app.backgroundcolor.rgb.blue;
+               
+ 
+ 
+                    // put footprint in metadata info instructions
+ 
+ 
+                    app.activedocument.info.instructions = app.activedocument.info.instructions + "<colorf>" + saveforecolor.rgb.red + "," + saveforecolor.rgb.green + "," + saveforecolor.rgb.blue + "</colorf>" + "<colorb>" + savebackcolor.rgb.red + "," + savebackcolor.rgb.green + "," + savebackcolor.rgb.blue + "</colorb>"; 
+                    //alert( "saved =" + "<colorf>" + saveforecolor.rgb.red + "," + saveforecolor.rgb.green + "," + saveforecolor.rgb.blue + "</colorf>" + "<colorb>" + savebackcolor.rgb.red + "," + savebackcolor.rgb.green + "," + savebackcolor.rgb.blue + "</colorb>"); 
+ 
+ 
+ 
+ 
+          } 
+          else { 
+                    //alert("second");
+ 
+ 
+                    // retreive saved information
+                    colorfoffset = app.activedocument.info.instructions.indexof("<colorf>") + "<colorf>".length;
+                    colorflength = app.activedocument.info.instructions.indexof("</colorf") -colorfoffset; 
+                    saveforecolor = app.activedocument.info.instructions.substr(colorfoffset, colorflength);
+ 
+ 
+                    colorboffset = app.activedocument.info.instructions.indexof("<colorb>") + "<colorb>".length;
+                    colorblength = app.activedocument.info.instructions.indexof("</colorb") -colorboffset;
+                    savebackcolor = app.activedocument.info.instructions.substr(colorboffset, colorblength);
+ 
+ 
+                    //alert("colorf = " + saveforecolor + " colorb = " + savebackcolor );
+ 
+ 
+                    // restore colors
+ 
+ 
+                    app.foregroundcolor.rgb.red = saveforecolor.substr(0,saveforecolor.indexof(",")); 
+                    saveforecolor = saveforecolor.substr(saveforecolor.indexof(",") + 1,saveforecolor.length); 
+                    app.foregroundcolor.rgb.green = saveforecolor.substr(0,saveforecolor.indexof(","));
+                    saveforecolor = saveforecolor.substr(saveforecolor.indexof(",") + 1,saveforecolor.length);
+                    app.foregroundcolor.rgb.blue = saveforecolor ;
+ 
+ 
+                    app.backgroundcolor.rgb.red = savebackcolor.substr(0,savebackcolor.indexof(","));
+                    savebackcolor = savebackcolor.substr((savebackcolor.indexof(",") + 1),savebackcolor.length); 
+                    app.backgroundcolor.rgb.green = savebackcolor.substr(0,savebackcolor.indexof(","));
+                    savebackcolor = savebackcolor.substr(savebackcolor.indexof(",") + 1,savebackcolor.length);
+                    app.backgroundcolor.rgb.blue = savebackcolor ;
+ 
+ 
+ 
+ 
+                    // remove footprint from metadata info instructions
+                    before = app.activedocument.info.instructions.substr(0,app.activedocument.info.instructions.indexof("<colorf>"));
+                    afteroffset = app.activedocument.info.instructions.indexof("</colorb>") + "</colorb>".length;
+                    after = app.activedocument.info.instructions.substr(afteroffset, app.activedocument.info.instructions.length - afteroffset);
+                    //alert ("before = " + before + " after = " + after);
+                    app.activedocument.info.instructions = before + after;
+          } 
+} 
+else { alert("you must have at least one open document to run this script!"); } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222487</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 18, 2014 7:49 PM">
+<s>does this help 
+
+var doc = app.activedocument; var new_layer = doc.artlayers.add(); //add new empty layer app.activedocument.selection.selectall(); app.activedocument.selection.fill(app.backgroundcolor); new_layer.name="background color"; 
+
+</s><s>but i think you want this 
+var doc = app.activedocument; var visible_layers = doc.artlayers.add(); //add new empty top layer visible_layers.name="stamp visible layers"; // = stamp visible layers shift+ctrl+alt+e scriptlisener code = var idmrgv = charidtotypeid( "mrgv" ); var desc15 = new actiondescriptor(); var iddplc = charidtotypeid( "dplc" ); desc15.putboolean( iddplc, true ); executeaction( idmrgv, desc15, dialogmodes.no ); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222924</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 19, 2014 1:23 AM">
+<s>
+</s><s><quote>
+<s>of course i checked, why do you assume i didn't just because i don't write what i did in each mesage ? 
+</s></quote>
+</s><s>because of the way you use the items in your code. 
+<quote>
+<s>visible_layers.backgroundcolor(); 
+</s></quote>
+</s><s>"visible_layers" is a layer and layer does not have backgroundcolor, application does.</s><s> and backgroundcolor is a property, not a method, so what are the brackets supposed to achieve? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-1429163</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 16, 2014 8:56 AM">
+<s>var doc = app.activedocument var group = layer.duplicate group.mergevisiblelayers(); 
+
+</s><s>what am i doing wrong, that the layers are not duplicating, then merging ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6215561</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 12:17 AM">
+<s>what makes you think "layer" means something useable in this line?</s><s> <quote>
+<s>var group = layer.duplicate 
+</s></quote>in the three lines you have not defined which layer is to be duplicated. 
+</s><s>and what about this? 
+<quote>
+<s>group.mergevisiblelayers(); 
+</s></quote>
+</s><s>"mergevisiblelayers" is a method of document, not layerset or layer. 
+</s><s>please start using the documentation, like estk's object model viewer, to verify if a method or property exists for the object you want to manipulate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216043</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 5:40 AM">
+<s>layer.duplicate is in the ps omv list.</s><s> i'm not selecting all the visible layers, i assume ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216118</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 5:51 AM">
+<s>"layer" is a class.</s><s> so withing the script "layer" is basically no more informative than if someone were to tell you: "noun is running." you need to define which layer it is that is to be duplicated (or whatever else).</s><s> (edited) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216185</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 5:52 AM">
+<s>i want all visible layers duplicated, while at the time time remain selected.</s><s> how do you know layer is a class is it specified in the ps omv ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216211</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 5:55 AM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216235</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 17, 2014 6:25 AM">
+<s><quote>
+<s>strongbeaver wrote: 
+i want all visible layers duplicated, while at the time time remain selected.</s><s> how do you know layer is a class is it specified in the ps omv ? 
+</s></quote>in photoshop you can stamp a composite of all visible layer into a new layer and that layer will be the current photoshop target.</s><s> there is a shortcut for this feature shift+alt+ctrl+e.</s><s> this feature does not always work it depends on the current photoshop target.</s><s> where the layer goes in the layer stack also depends on photoshop current target.</s><s> so i always add a new empty layer and move it to the top of the stack.</s><s> then use the short cut the stamp visible winds up in the layer i added and is the current target.</s><s> i do this in many of my photshop actions.</s><s> stamp visible layers are great for many things.</s><s> i do not understand what you mean by selected?</s><s> i don't understand many of your questions. 
+</s><s>if you want a script you can always use the action manager code for shift+alt+ctrl+e 
+
+// ======================================================= var idmrgv = charidtotypeid( "mrgv" ); var desc40 = new actiondescriptor(); var iddplc = charidtotypeid( "dplc" ); desc40.putboolean( iddplc, true ); executeaction( idmrgv, desc40, dialogmodes.no ); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216351</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 6:49 AM">
+<s><quote>
+<s>artlayers.add (): artlayer adobe photoshop cs5 object library adds an element. 
+</s></quote>if i want to add an artlayer to the document, instead of merging visible layers.</s><s> the artlayers.add is an object, correct ? 
+
+<quote>
+<s>var doc = app.activedocument doc.artlayers.add() 
+</s></quote>
+</s><s>the code above should add an artlayer, that is if it's an object. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216365</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 6:52 AM">
+<s>but in this case it's not written with a capitalized "a". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6216798</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 17, 2014 8:45 AM">
+<s><quote>
+<s>strongbeaver wrote: 
+<quote>
+<s>
+</s><s>var doc = app.activedocument doc.artlayers.add() 
+
+</s></quote>
+
+
+</s></quote>var doc = app.activedocument var visible_layers = doc.artlayers.add() //add new empty layer 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6218477</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 17, 2014 3:49 PM">
+<s>i'm not getting the order correct.</s><s> hrm !</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6218549</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 17, 2014 4:05 PM">
+<s>what order? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6219174</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 17, 2014 11:05 PM">
+<s>maybe you should, instead of trying to verbalize what you are after, show it with a mock-up/screenshots. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6219837</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 18, 2014 6:35 AM">
+<s>the order of how to lay down the code without getting errors look at this code. 
+<quote>
+<s>var note = prompt("hello"); var doc = app.activedocument var visible_layers = doc.artlayers.add() //add new empty layer visible_layers.backgroundcolor(); 
+</s></quote>i want to add a background color the current layer.</s><s> from my understanding after reading some of the docs yesterday i have to reference the active.document ? 
+</s><s>my main goal is a script that merges all visible layers into a smart object 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6220063</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 18, 2014 6:59 AM">
+<s>have you even bothered to check "backgroundcolor" in the omv?</s><s> is it a method or a property?</s><s> and of what? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222153</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="StrongBeaver" timestamp="Mar 18, 2014 4:06 PM">
+<s>of course i checked, why do you assume i didn't just because i don't write what i did in each mesage ? 
+<quote>
+<s>application.backgroundcolor data type: solidcolor adobe photoshop cs5 object library the default background color (used to paint, fill, and stroke selections). 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222486</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 18, 2014 7:05 PM">
+<s>you know the two color swatches the can be changed in the tools palette. foregroundcolor and backgroundcolor!</s><s>.. /* ====================================================================================== // 2009 john j. mcassey (jjmack) http://www.mouseprints.net/ // // this script is supplied as is.</s><s> it is provided as freeware. // the author accepts no liability for any problems arising from its use. // // this script is designed to be used by a photoshop action twice // a good pratice to use when creating an actions that use this scipt is for the action // not to do a save or play some other action between its two useages of this script. // // the first time this script is used by an action photoshops current forground // and background colors are saved into the document's meta-data info instructions field. // // the second time this script used by the action the script retreives what was // saved in the meta-data during the first usage and these colors are set. // and the saved data is removed from the document's meta-data info instructions field. // // ===================================================================================== */
+ 
+ 
+/* <javascriptresource> <about>$$$/javascripts/saveandrestorecolors/about=jjmack's saveandrestorecolors.^r^rcopyright 2009 mouseprints.^r^rrun twice script utility for action.^rnote:don't play other actions between runs!^r^rfirst run records photoshops foreground and background swatch colors.^rsecond run restores the recorded colors and removes the recording.</about> <category>jjmack's action run twice utility</category> </javascriptresource> */
+ 
+ 
+if (app.documents.length > 0) { 
+          if (app.activedocument.info.instructions.indexof("<colorf>") == -1 ){ // no footprint fisrt useage 
+                    //alert("first");
+                    // retreive document information for foot print 
+                    saveforecolor = new solidcolor;
+                    saveforecolor.rgb.red = app.foregroundcolor.rgb.red;
+                    saveforecolor.rgb.green = app.foregroundcolor.rgb.green;
+                    saveforecolor.rgb.blue = app.foregroundcolor.rgb.blue;
+ 
+ 
+                    savebackcolor = new solidcolor;
+                    savebackcolor.rgb.red = app.backgroundcolor.rgb.red;
+                    savebackcolor.rgb.green = app.backgroundcolor.rgb.green;
+                    savebackcolor.rgb.blue = app.backgroundcolor.rgb.blue;
+               
+ 
+ 
+                    // put footprint in metadata info instructions
+ 
+ 
+                    app.activedocument.info.instructions = app.activedocument.info.instructions + "<colorf>" + saveforecolor.rgb.red + "," + saveforecolor.rgb.green + "," + saveforecolor.rgb.blue + "</colorf>" + "<colorb>" + savebackcolor.rgb.red + "," + savebackcolor.rgb.green + "," + savebackcolor.rgb.blue + "</colorb>"; 
+                    //alert( "saved =" + "<colorf>" + saveforecolor.rgb.red + "," + saveforecolor.rgb.green + "," + saveforecolor.rgb.blue + "</colorf>" + "<colorb>" + savebackcolor.rgb.red + "," + savebackcolor.rgb.green + "," + savebackcolor.rgb.blue + "</colorb>"); 
+ 
+ 
+ 
+ 
+          } 
+          else { 
+                    //alert("second");
+ 
+ 
+                    // retreive saved information
+                    colorfoffset = app.activedocument.info.instructions.indexof("<colorf>") + "<colorf>".length;
+                    colorflength = app.activedocument.info.instructions.indexof("</colorf") -colorfoffset; 
+                    saveforecolor = app.activedocument.info.instructions.substr(colorfoffset, colorflength);
+ 
+ 
+                    colorboffset = app.activedocument.info.instructions.indexof("<colorb>") + "<colorb>".length;
+                    colorblength = app.activedocument.info.instructions.indexof("</colorb") -colorboffset;
+                    savebackcolor = app.activedocument.info.instructions.substr(colorboffset, colorblength);
+ 
+ 
+                    //alert("colorf = " + saveforecolor + " colorb = " + savebackcolor );
+ 
+ 
+                    // restore colors
+ 
+ 
+                    app.foregroundcolor.rgb.red = saveforecolor.substr(0,saveforecolor.indexof(",")); 
+                    saveforecolor = saveforecolor.substr(saveforecolor.indexof(",") + 1,saveforecolor.length); 
+                    app.foregroundcolor.rgb.green = saveforecolor.substr(0,saveforecolor.indexof(","));
+                    saveforecolor = saveforecolor.substr(saveforecolor.indexof(",") + 1,saveforecolor.length);
+                    app.foregroundcolor.rgb.blue = saveforecolor ;
+ 
+ 
+                    app.backgroundcolor.rgb.red = savebackcolor.substr(0,savebackcolor.indexof(","));
+                    savebackcolor = savebackcolor.substr((savebackcolor.indexof(",") + 1),savebackcolor.length); 
+                    app.backgroundcolor.rgb.green = savebackcolor.substr(0,savebackcolor.indexof(","));
+                    savebackcolor = savebackcolor.substr(savebackcolor.indexof(",") + 1,savebackcolor.length);
+                    app.backgroundcolor.rgb.blue = savebackcolor ;
+ 
+ 
+ 
+ 
+                    // remove footprint from metadata info instructions
+                    before = app.activedocument.info.instructions.substr(0,app.activedocument.info.instructions.indexof("<colorf>"));
+                    afteroffset = app.activedocument.info.instructions.indexof("</colorb>") + "</colorb>".length;
+                    after = app.activedocument.info.instructions.substr(afteroffset, app.activedocument.info.instructions.length - afteroffset);
+                    //alert ("before = " + before + " after = " + after);
+                    app.activedocument.info.instructions = before + after;
+          } 
+} 
+else { alert("you must have at least one open document to run this script!"); } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222487</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="JJMack" timestamp="Mar 18, 2014 7:49 PM">
+<s>does this help 
+
+var doc = app.activedocument; var new_layer = doc.artlayers.add(); //add new empty layer app.activedocument.selection.selectall(); app.activedocument.selection.fill(app.backgroundcolor); new_layer.name="background color"; 
+
+</s><s>but i think you want this 
+var doc = app.activedocument; var visible_layers = doc.artlayers.add(); //add new empty top layer visible_layers.name="stamp visible layers"; // = stamp visible layers shift+ctrl+alt+e scriptlisener code = var idmrgv = charidtotypeid( "mrgv" ); var desc15 = new actiondescriptor(); var iddplc = charidtotypeid( "dplc" ); desc15.putboolean( iddplc, true ); executeaction( idmrgv, desc15, dialogmodes.no ); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6214120-6222924</DOCNO>
+<TEXT>
+<subject>Duplicate Error</subject>
+<post author="c.pfaffenbichler" timestamp="Mar 19, 2014 1:23 AM">
+<s>
+</s><s><quote>
+<s>of course i checked, why do you assume i didn't just because i don't write what i did in each mesage ? 
+</s></quote>
+</s><s>because of the way you use the items in your code. 
+<quote>
+<s>visible_layers.backgroundcolor(); 
+</s></quote>
+</s><s>"visible_layers" is a layer and layer does not have backgroundcolor, application does.</s><s> and backgroundcolor is a property, not a method, so what are the brackets supposed to achieve? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-1430070</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="ojodegato" timestamp="Mar 17, 2014 11:52 AM">
+<s>i am intersted in developing a script which will allow the user to target any layer from the document's layer panel and turn its visibility on/off with a keyboard shortcut.</s><s> can someone plase check the logic of the algorithm.</s><s> i plan on executing the script using the if else and for loop.</s><s> i am not sure if there is a better way to achive the script bhavior. many thaks 
+description: the script checks the layer panel for a sepcific layer name and toggles the visibility of the layer name on/off using a keyboard shortcut.</s><s> the script tests for the presence of at least one layer in adition of the background layer and alerts the user when the ducument does not have enough layers.</s><s> the script alerts the user if the name of the layer is incorrect. 
+</s><s>algorithm: 1-test for document with atleast one art layer 2-alert user if document does not contain any art layers 3-decalre variable for artlayername 4-decalre for loop condition for artlayername 5-pass artlayername varaible to for loop condition 6-cycle through document layers 7-if for loop condition true 8-toggle artlayername on/off 9-if for loop condition false alert user: artlayername is not present on layer panel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-6217908</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="pixxxel%20schubser" timestamp="Mar 17, 2014 1:22 PM">
+<s>hmmh?</s><s> do you really need a loop through all layers?</s><s> is your layer hierarchy so complicated?</s><s> please show a screenshot of your layers panel.   or perhaps this simple example is already good enough for you?   // http://forums.adobe.com/thread/1430070?tstart=0
+// layershoworhidebyname.jsx
+// regards pixxxelschubser
+var alayname = prompt ("layer name?", 'your layer')
+showorhidelayer ( alayname );
+function showorhidelayer ( alayname ) {
+    try {
+        alay = app.activedocument.layers.getbyname(alayname);
+        if (alay.visible == true) {
+            alay.visible = false;
+            } else {
+                alay.visible = true;
+                }
+        } catch (e) {
+            alert ("cannot find this layer: " + alayname);
+        }
+    }
+   but be sure: insert the layer name manuelly is very slow.</s><s> you can better and faster go to the your layer by right clicking directly (while move tool is active) in the picture and click on the layer name.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-6218793</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="ojodegato" timestamp="Mar 17, 2014 5:56 PM">
+<s>thank you for responding.</s><s> actually, i am not sure if i need to loop through layers is necessary.</s><s> i was thinking that cycling through the layers was necessary to find a specific layer name. 
+</s><s>what is necessary is to be able to detect a specific layer name and then turn its visibility on/off several times.</s><s> next select a different layer and turn its visibility on/off several tiems. 
+</s><s>the prompt dialog is a nice feature but it pops up every time the script runs.</s><s> this promp should popup once to specify the layer name and then not popup again until it is time to change to a different layer. 
+</s><s>question: can this be achieved with two scripts which are linked?</s><s> script 1: prompts for the layer name and passes the layer name to script 2.</s><s> script 2: toggles the visibilty the layer entered in script 1. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-6219962</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 6:03 AM">
+<s>pixxxel schubser's code is good for what you want to do, unless your layer is in a group.</s><s> then the getbyname will not work on those layers.</s><s> as to the two scripts, you can do this by writing the layer name to a csv or xml file that the other script can read and use until changed. 
+</s><s>so you would add this code to pixxxel schubser's to write the name to a file <quote>
+<s>file = new file(filename);//insert name and path  file.encoding = 'utf8'; file.open('w'); file.write(alayname); file.close(); 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-1430070</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="ojodegato" timestamp="Mar 17, 2014 11:52 AM">
+<s>i am intersted in developing a script which will allow the user to target any layer from the document's layer panel and turn its visibility on/off with a keyboard shortcut.</s><s> can someone plase check the logic of the algorithm.</s><s> i plan on executing the script using the if else and for loop.</s><s> i am not sure if there is a better way to achive the script bhavior. many thaks 
+description: the script checks the layer panel for a sepcific layer name and toggles the visibility of the layer name on/off using a keyboard shortcut.</s><s> the script tests for the presence of at least one layer in adition of the background layer and alerts the user when the ducument does not have enough layers.</s><s> the script alerts the user if the name of the layer is incorrect. 
+</s><s>algorithm: 1-test for document with atleast one art layer 2-alert user if document does not contain any art layers 3-decalre variable for artlayername 4-decalre for loop condition for artlayername 5-pass artlayername varaible to for loop condition 6-cycle through document layers 7-if for loop condition true 8-toggle artlayername on/off 9-if for loop condition false alert user: artlayername is not present on layer panel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-6217908</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="pixxxel%20schubser" timestamp="Mar 17, 2014 1:22 PM">
+<s>hmmh?</s><s> do you really need a loop through all layers?</s><s> is your layer hierarchy so complicated?</s><s> please show a screenshot of your layers panel.   or perhaps this simple example is already good enough for you?   // http://forums.adobe.com/thread/1430070?tstart=0
+// layershoworhidebyname.jsx
+// regards pixxxelschubser
+var alayname = prompt ("layer name?", 'your layer')
+showorhidelayer ( alayname );
+function showorhidelayer ( alayname ) {
+    try {
+        alay = app.activedocument.layers.getbyname(alayname);
+        if (alay.visible == true) {
+            alay.visible = false;
+            } else {
+                alay.visible = true;
+                }
+        } catch (e) {
+            alert ("cannot find this layer: " + alayname);
+        }
+    }
+   but be sure: insert the layer name manuelly is very slow.</s><s> you can better and faster go to the your layer by right clicking directly (while move tool is active) in the picture and click on the layer name.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-6218793</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="ojodegato" timestamp="Mar 17, 2014 5:56 PM">
+<s>thank you for responding.</s><s> actually, i am not sure if i need to loop through layers is necessary.</s><s> i was thinking that cycling through the layers was necessary to find a specific layer name. 
+</s><s>what is necessary is to be able to detect a specific layer name and then turn its visibility on/off several times.</s><s> next select a different layer and turn its visibility on/off several tiems. 
+</s><s>the prompt dialog is a nice feature but it pops up every time the script runs.</s><s> this promp should popup once to specify the layer name and then not popup again until it is time to change to a different layer. 
+</s><s>question: can this be achieved with two scripts which are linked?</s><s> script 1: prompts for the layer name and passes the layer name to script 2.</s><s> script 2: toggles the visibilty the layer entered in script 1. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Scripting/Discussions-6217575-6219962</DOCNO>
+<TEXT>
+<subject>algorithm check</subject>
+<post author="csuebele" timestamp="Mar 18, 2014 6:03 AM">
+<s>pixxxel schubser's code is good for what you want to do, unless your layer is in a group.</s><s> then the getbyname will not work on those layers.</s><s> as to the two scripts, you can do this by writing the layer name to a csv or xml file that the other script can read and use until changed. 
+</s><s>so you would add this code to pixxxel schubser's to write the name to a file <quote>
+<s>file = new file(filename);//insert name and path  file.encoding = 'utf8'; file.open('w'); file.write(alayname); file.close(); 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,2460 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-1011297</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Frank Branker" timestamp="May 24, 2012 5:51 PM">
+<s>where is the option to add mata date in the v3 dashboard? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4440438</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="mario_gudelj" timestamp="May 25, 2012 3:59 PM">
+<s>go to your web page under site manager > pages > page properties and enter the meta data. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4440549</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Frank%20Branker" timestamp="May 25, 2012 5:40 PM">
+<s>i still cant find it are you sure? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4443916</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="mario_gudelj" timestamp="May 27, 2012 6:53 PM">
+<s>hi frank, 
+</s><s>here's the screenshot of the button you need to click: 
+
+
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4444091</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Liam%20Dilley" timestamp="May 27, 2012 9:26 PM">
+<s>can not use it mario.</s><s> 
+</s><s>1. it's page title has no effect or difference with page title, same with products and web apps etc.</s><s> 2. using that wraps the body content in full html even if there is a template selected.</s><s> 3. if you have meta from the previous means of meta data using this will add other meta tags, not replace them so you end up duplication.</s><s> 4. if you add a description change/clear and re-add it again it keeps the existing html from the last time and just adds another meta so you end up with two meta tags the same, one with content, one with empty content. 
+</s><s>so i can not get our clients to use it due to the problems it introduces.</s><s> at one point the engineers were even going to remove this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4444533</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="mario_gudelj" timestamp="May 28, 2012 2:24 AM">
+<s>not sure i understand.</s><s> i just used that page properties box to add a description to this page http://mgtrain.businesscatalyst.com/bctest.htm and it worked.</s><s> if you look at the source it's there. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4444624</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Liam%20Dilley" timestamp="May 28, 2012 3:34 AM">
+<s>hey mate. 
+1.</s><s> add a title in there, you will see it wont change.</s><s> this causes confusion.</s><s> 2. view the page source: 
+this is not good of course when your using a template and plays havoc with custom designs in a variety of ways with how the system behaves. 
+2. delete the meta description you added, save the page and remove it again.</s><s> you will see that the system does this: 
+you can see that the system makes a blank descript and a 2nd one with the changed content.</s><s> search engines will read the first and error because you have two.</s><s> not good of course 
+3.</s><s> if you have meta added from the old meta method and a client uses this in version 3 it doubles up and you can end up with two keywords, two meta and two titles. 
+</s><s>it is a real mess.</s><s> try use it for blogs and products and you get the same problems as well as a couple of extra ones for products. 
+i sent all these situations direct to the engineers on the problems. 
+</s><s>as an aside you have title which is important right at the top on pages but then it is hidden away for products and catalogs.</s><s> if you do not add it for a product then it takes the catalogs name or title which is bad.</s><s> ok it does something but because it is hidden away actual users of sites forget to do it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4665748</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Skeggs91" timestamp="Sep 1, 2012 8:49 AM">
+<s>liam, has this been resolved?</s><s> what's the best way to add a "meta description" tag and "robots meta" tag to site pages?</s><s> can i use the v3 interface or do i need to switch back to the old interface?</s><s> i'd prefer to not make a mess of the page code if v3 does not work.</s><s> thanks, brian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4667140</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Frank%20Branker" timestamp="Sep 2, 2012 6:24 AM">
+<s>title tags & seo 
+</s><s>i worked fine for me but if you want to be sure you can put you own header information into the html in your page.</s><s> i'm going to ramble on because other people may find this information useful 
+things have change with search engines and the only thing that is important is your title information in the header and how you write it. 
+</s><s>first let's talk about meta tags.</s><s> meta elements are html or xhtml elements used to provide information about a web page for the search engines and website users. 
+</s><s>such elements must be placed as tags in the head section of a html document.</s><s> these elements are the: 
+title tag, description. 
+</s><s>keywords (no one uses these anymore and you can get spam "points" for overuse of keywords on bing and google, so just forget them.</s><s> if you have keyword stuffed "spammy" ones, you probably want to fix those.</s><s>) 
+
+
+</s><s>for now it's back to the basics with seo!</s><s> and nothing is more basically important to a site than properly written title tags.</s><s> you know the ones that used to appear in the little blue bars in your browsers.</s><s> most modern browsers try to conceal these, though that doesn't stop them being helpful! 
+</s><s>so what is a title tag?</s><s> why is it important to seo, and how do you write the darn things?</s><s> a title tag is the most important single tag in your page.</s><s> it tells the search engines what your page is about.</s><s> it is still vitally important to paid or organic seo strategy. 
+</s><s>think of title tags like the title of the chapter of a book.</s><s> it tells people and search engines what your page is about. 
+</s><s>title tags are also part of what makes people decide whether to visit your site when it shows up in the search results.</s><s> the title tag should contain important keywords to help the search engine determine what the page is about. 
+</s><s>note: every experienced seo has their own unique methods to doing this, so i'm going to give you best practices along with some of my methods 
+when you do a search on google, the information that shows up is in the title tag so you need to write title tags for humans but format them for search engines.</s><s> every page on your site has an opportunity to rank high on search engines for a particular keyword, quick checklist 
+when you're writing your title tag what do you need to know?</s><s> here's a quick checklist with some tips on how to write optimized title tags: 
+length: title tags should be a maximum of 70 characters long, including spaces. 
+</s><s>keyword placement: your most important words (keywords) need to be first in your title tag, with your least important words being last in the title tag (most to least).</s><s> keyword separation: use pipes | to separate important (keyword) phrases (no commas, underscores, dashes or any other punctuation unless the keyword is written that way). 
+</s><s>wording: keep your important phrases short and simple.</s><s> leave out words that would make it read like a sentence.</s><s> (e.g., and, if, but, then, etc.</s><s>) 
+</s><s>company name: if your company name is not part of the important (keyword) phrases, put it at the end of the title tag or leave it out.</s><s> if it is part of your important words, put it as the first words in the title tag.</s><s> some seos will tell you to leave it out.</s><s> you can leave it in for branding purposes – so people will see the brand and click.</s><s> this isn't valid for all sites. 
+</s><s>don't duplicate title tags: they must be written differently for every page.</s><s> don't mass replicate your title tags. 
+</s><s>make it relevant: title tags must be written to be descriptive of the content on the page.</s><s> (e.g., the about page would be: 
+
+
+</s><s>about | important keywords | company name 
+</s><s>or 
+</s><s>important keywords | about us | company name.</s><s> 
+</s><s>google & title tags 
+</s><s>sometimes google doesn't like your title tag.</s><s> in fact, sometimes google thinks it can pick a better one, so it will rewrite the tag for you.</s><s> there are several places it might get this information, most of them you won't prefer to one you crafted yourself. 
+
+</s><s>while there isn't any assurance your title tag won't be replaced, make sure you write a title tag that is page related, content descriptive, short and sweet, and not keyword stuffed.</s><s> this is your one defense. 
+</s><s>keyword stuffed title tags 
+</s><s>you've probably come across badly written title tags that try to rank for everything or repeat a word over and over.</s><s> keyword stuffing is the worst offense when it comes to title tags.</s><s> (you will be penalize) 
+</s><s>say your site is trying to rank for blue bells and yellow bells.</s><s> many times you will see the main keyword repeated multiple times across the title tag.</s><s> it might appear like this: 
+blue bells, yellow bells, all types of bells | bells bells and more | doors.com 
+this is bad title tag writing.</s><s> you don't need to repeatedly write the keyword.</s><s> google especially can pick up the keywords like your eyes can read them, so you would best to rewrite this as 
+blue & yellow bells | doorbells | doors.com 
+we removed the extra words, combined the products (if possible you would split these products to separate pages, a blue and a yellow, but this isn't always feasible or desirable) and added a category keyword which would appear in the middle of the title tag on all doorbell related page titles, then end it with the domain name (again this is for branding purposes – there are also good reasons to not do this, it depends on the seo). 
+</s><s>now our title tag is short, sweet, simple, and to the point.</s><s> we have also categorized it and added in branding for good measure. 
+</s><s>we also took out the word "and" and replaced it with an ampersand (&) so that you don't accidentally relate the two items and make google think you want people who are looking for blue and yellow bells. 
+</s><s>and there you go, a basic lesson in title tag writing.</s><s> this can be the most challenging and fun part of any seo's work!</s><s> or should that be "inbound marketer's" work? 
+</s><s>some title tag writing examples 
+</s><s>let's look at a few examples of writing title tags with actual examples. 
+</s><s>if your important words (keywords) were "charlie sheen" and "winning" your title tag would be written in that order: 
+charlie sheen winning 
+charlie sheen would be the first words in the tag. 
+</s><s>now what if we had more than one set of words?</s><s> what if my keywords were "charlie sheen winning" and "tiger's blood"?</s><s> your title tag would still be written with "charlie sheen winning" as the first words in the tag.</s><s> then you would add a pipe | and "tiger's blood" as the second phrase: 
+charlie sheen winning | tiger's blood 
+don't use hyphens, underscores, commas or any other type of character – just pipes. 
+</s><s>now what if we had more than one set of words and a company name we were not worried about optimizing for (the company name was not part of the reputation issue).</s><s> if my words were "charlie sheen winning" and "tiger's blood" and "cbs", you would separate these three phrases with pipes, with cbs last and farthest from the beginning, which google sees as the least important phrase: 
+charlie sheen winning | tiger's blood | cbs 
+the company name can be repeated in every title tag as long as it as not part of the important words and appears at the far right end of the title tag. 
+</s><s>what about sentences?</s><s> couldn't you just write a sentence such as "charlie sheen says winning and tiger's blood and gets cbs riled up"?</s><s> you could, but those extra words like "says", "and", and "riled", dilute your important words and make them less important to content, so best to keep it short, simple, and clear.</s><s> leave out the extra words. 
+</s><s>once you're finish with all of this its time to submit you pages to the search engines.</s><s> you will need to create an xml & html sitemap. 
+</s><s>webassist surveyor – build and submit html and xml sitemaps in dreamweaver 
+
+http://www.justdreamweaver.com/blog/2008/07/webassist-surveyor-build-h tml-and-xml-sitemaps-in-dreamweaver/ 
+don't forget to check each page ranking monthly and make the necessary tweaks to your title information as needed.</s><s> (each page needs to rank for a unique key word on your site) 
+</s><s>i'm going to stop now but that's only the start of organic search engine optimization. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4680259</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Liam%20Dilley" timestamp="Sep 7, 2012 3:41 AM">
+<s>sorry to be a negative post here but that's a lot of out dated information there. some of it wrong, some of it outdated and some of that a bit odd.</s><s> also copy and paste from a few places it seems 
+here is a statement from one of the recent seo google events just a few weeks ago: 
+often a single title might not be the best one to show for all queries for a page, so our algorithms may generate alternative titles to make it easier for our users to recognize relevant pages.</s><s> if you recently changed the content of your page and its title, it may take some time for our algorithms to notice it.</s><s> while we can't guarantee that your new title will be used, if it's descriptive, informative, there's a fair chance it will be. 
+</s><s>just as one example. 
+</s><s>you do know bc generates the sitemap in this system itself as well? ^^ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4680560</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Frank%20Branker" timestamp="Sep 7, 2012 6:33 AM">
+<s>thanks liam thanks for jumping in with you update liam.</s><s> a lot of members will benefit from this discussion.</s><s> in my opinion the business of organic seo is dynamic.</s><s> today's strategies are outdated tomorrow.</s><s> it's a cat and mouse game staying in the top 25 results with my key words.</s><s> the important site map feature is buried in the site settings.</s><s> please correct me if i'm wrong.</s><s> it only gathers information from the root of the site and avoids all the pages in my directories.</s><s> i your recent seo google event did they discuss backlinks and if so, do you have any information you can you share on the post?</s><s> thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4680551</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Liam%20Dilley" timestamp="Sep 7, 2012 6:57 AM">
+<s>hi frank, no, it is not burried away.</s><s> you have no setting for this under the new ui.</s><s> it happens autoamtically when you take a website live.</s><s> at any time you can upload your own sitemap.xml to the root and this will be used instead.</s><s> remove it and bc will re-activate the automatic one within 12 hours. 
+</s><s>you should watch the google seo channel and their documention some time.</s><s> you will see while keywords are of course a key aspect to seo it is not by far everything which you post indicated too.</s><s> in fact google keep making changes like what i quoted about the titles in that they are much more looking at the content and also making more of a fuss about site optimisation and rewarding you for well made sites as well as the content.</s><s> you do not get punished for poorly made sites of course but you benifit greatly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4680715</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Frank%20Branker" timestamp="Sep 7, 2012 7:52 AM">
+<s>thanks for the heads-up on the google channel. 
+
+######have a good weekend http://affordablecmssolutions.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4689946</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="matt_no7" timestamp="Sep 11, 2012 7:23 AM">
+<s>hi liam 
+</s><s>i had a similar problem.</s><s> have three different announcements that have the same h1 which seems to default to page title and overules the page properties title.</s><s> thanks for reporting, looking forward to this being fixed. 
+</s><s>matt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-4695266</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="DandyDahlia" timestamp="Sep 13, 2012 2:12 AM">
+<s>hi liam et al, 
+</s><s>sorry to be a bit late to the party.. i'm a bit confused aka newbie. 
+</s><s>so in conclusion...</s><s> is the best seo thing to do to add onto the "individual product large" template content. 
+< html> < head> < meta name ="description" content=" {tag_custom2}" /> ** as you can't use tag-descriptions as too long and will get penalised.</s><s> < meta name = "keywords" content =" {tag_custom1} "/> ** as there is no keyword tag < /head> < body> < h1>{tag for product name</h1> < /body> < /html> (without the extra spaces etc) 
+</s><s>so not onto the sitewide template?</s><s> but then there is no html in individual product large...sorry for my ignorance.</s><s> i've googled and read all i can find with bc seo and there are so many varying mentions... or if there is a single place to get a definite answer please let me know 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-5495162</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="thriftgirl" timestamp="Jul 11, 2013 12:50 AM">
+<s>the fastest way to rank your pages is connecting them to facebook using open graph meta tags - every object needs it's own page with it's own meta tags  this is for a simple video app i made and connected to the product page on bc and it works just fine.  the app is here:  apps.facebook.com/headlightrestoration   <!</s><s>doctype html public "-//w3c//dtd html 4.0 transitional//en" "//www.w3.org/tr/rec-html40/loose.dtd"> <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# video: http://ogp.me/ns/video#"> <meta http-equiv="content-type" content="text/html; charset=utf-8" />     <meta property="fb:app_id" content="147887761995700" />   <meta property="og:type" content="video.other" />   <meta property="og:url"  content="https://cez1.com/fbshops/index.php?id=2" />   <meta property="og:title" content="headlight restoration for safe driving at night?" />   <meta property="og:image" content="https://cez1.com/fbshops/images/logo/ez-1-chp-alert-fb.jpg" />   <meta property="og:image" content="https://cez1.com/fbshops/images/product/anti-static.jpg" />   <meta property="og:image" content="https://cez1.com/fbshops/images/product/final.jpg" />   <meta property="video:actor:id" content="100003735008066" />   <meta property="video:duration" content="65" />   or, you can go to schema.org and use the markup google, bing and yahoo all agree on...</s><s> all the information is free on google's webmaster tools and help pages.</s><s> adobe bc sites are like driving a rolls royce - everyone gets out of the way and nobody bothers you so quit worrying about seo and just be authentic and use the mark-up at schema.org and watch what happens over time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4437779-5495504</DOCNO>
+<TEXT>
+<subject>Option to Add Meta Data to Web Page on V3 dashboard</subject>
+<post author="Liam%20Dilley" timestamp="Jul 11, 2013 4:18 AM">
+<s>completly not true.</s><s> sorry but who said to you that the facebook meta does wonders for your seo?</s><s> it helps a bit in terms of exposure but the meta has no bearing on your seo in this context.</s><s> it is used to help facebook pickup what you want it to for the varius uses of facebook.   schema has merit, but its not a means to make a massive improvement to your seo, it is a means ot help pinpoint the certain content elements to save time for the crawling search bot and also remove the means for it to decide what it thinks your doing.</s><s> same with no clear heading 1 tag and opening paragraph on a page, your basically allowing a search bot to choose what it thinks it should read in this context.</s><s> could be wrong, could be something with the wrong keywords etc.   yep, you need to implement things like this to use them, but they defiantly not a means for massive seo improvements.</s><s> this is simply not true.   one phrase you will here said a fair few times if your around the right seo circles - content is king!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-980966</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Liam Dilley" timestamp="Mar 27, 2012 12:52 AM">
+<s>there is currently no reference or insertion method to obtain these very easily but it can be done.   note: this topic assumes you have already made your custom fields.   step 1: create a test page or go to a test page you may have.   step 2: launch the module manager   step 3: select the securezone options and go to insert an customer update details form.   step 4: when you click the link you will see the crm fields dropdown appear, choose the custom field set you made.   step 5: insert the form into the page.   step 6: if you click the html view and scroll to where it has inserted the custom crm fields and look at the source you will see that there is the module tag code you need.</s><s> <tr>
+      <td><label for="cat_custom_201289_72865">secondary support manager email</label><br />
+      <input type="text" class="cat_textbox" id="cat_custom_201289_72865" name="cat_custom_201289_72865" maxlength="1024" value="{module_customerfield,72865,201289}" /></td>
+ </tr>
+ {module_customerfield,72865,201289} is what your after.     step 7: copy the module code and use as you need to in your templates.</s><s> please note that these will only work when logged in and only for that person who is logged in.   so, what is this good for?</s><s> you may want to show a company logo in the template when they have logged in for example.</s><s> this is perfect for this.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-4710386</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="scottdouglas999" timestamp="Sep 19, 2012 8:07 AM">
+<s>i'm trying to get this to work to no avail...</s><s> i have ceated an extended crm field that has a series of check boxes.</s><s> i inserted the "edit customer details" form on a page.</s><s> in the custome record i just want to display the selection of the field, not the entire list of checkboxes.</s><s> i also wanted to use tis field (the selected checkbox) in the checkout form.</s><s> anyway the code looks like this: <tr> <td><label>premium seating boxes</label><br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_0" value="psb 1 - regina pats" />psb 1 - regina pats<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_1" value="psb 2 - ckck tv" />psb 2 - ckck tv<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_2" value="psb 3 - molson breweries" />psb 3 - molson breweries<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_3" value="psb 4 - coca-cola" />psb 4 - coca-cola<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_4" value="psb 5 - all-rite plumbing" />psb 5 - all-rite plumbing<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_5" value="psb 6 - dilawri group" />psb 6 - dilawri group<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_6" value="psb 7 - yara-sask ferco" />psb 7 - yara-sask ferco<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_7" value="psb 8 - leipert financial" />psb 8 - leipert financial<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_8" value="psb 9 - evraz" />psb 9 - evraz<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_9" value="psb 10 - sasktel" />psb 10 - sasktel<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_10" value="psb 11 - evraz" />psb 11 - evraz<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_11" value="psb 12 - brandt tractor ltd." />psb 12 - brandt tractor ltd.<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_12" value="psb 14 - viterra" />psb 14 - viterra<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_13" value="psb 15 - leader post" />psb 15 - leader post<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_14" value="psb 16 - the co-operators" />psb 16 - the co-operators<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_15" value="psb 17 - mosaic" />psb 17 - mosaic<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_16" value="psb 18 - harvard western insurance" />psb 18 - harvard western insurance<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_17" value="psb 19 - regina pats" />psb 19 - regina pats<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_18" value="psb 20 - bayer corp." />psb 20 - bayer corp.<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_19" value="psb 21 - fries tallman" />psb 21 - fries tallman<br /> <input type="checkbox" name="cat_custom_434349_142115" id="cat_custom_434349_142115_20" value="psb 22 - sask gaming" />psb 22 - sask gaming <script type="text/javascript">function setselectedcheckbox(radioobj,options) {optionstoselect = options.split(',');for(var i = 0; i < radioobj.length; i++) {radioobj[i].checked = false;if(optionstoselect.indexof( radioobj[i].value) != -1 ) {radioobj[i].checked = true;}}}; setselectedcheckbox(document.getelementsbyname('cat_custom_434349_142 115'),'{module_customerfield,142115,434349}');</script> </td> </tr> 
+</s><s>so i grabbed the section {module_customerfield,142115,434349} and iserted it in the form but it doesn't display anything at all.</s><s> is this because it's checkboxes?</s><s> any help on this would be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-4727389</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Matthew_Wooler" timestamp="Sep 25, 2012 5:25 PM">
+<s>this is great liam, things have slightly changed in the system since you created this but it is actually quite straight forward once the custom field is setup correctly.</s><s> i found after a while i had to attach the custom field to one of the 'entities' being contacts, companies, cases, opportunities, orders. 
+</s><s>if i created the field but not attach it then it would not show up when trying to extract the data form the 'update user details form' from within the secure zone module. 
+</s><s>once i figured this out it was great because the system now shows you the module tag code when going to apply to page so you do not actually have to go hunt for it. 
+</s><s>pitty this data code is not just made avaialve to see in the crm and save everyone hassel but this is better than nothing. 
+</s><s>good stuff. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-4727493</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Liam%20Dilley" timestamp="Sep 25, 2012 6:31 PM">
+<s>only as of today matthew with the toolbox, will update this later. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-4750629</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Matthew_Wooler" timestamp="Oct 4, 2012 3:33 PM">
+<s>actually as a slight updated i have since discovered the custom fields need to be attached to the contacts entitie in order for it to show up in cms to extract the module code.</s><s> attaching it to any other will not work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-4750676</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Liam%20Dilley" timestamp="Oct 4, 2012 3:57 PM">
+<s>that is not true matthew, i am using it for something quite extensive other then that and just double checked and working great.</s><s> it depends on the context of use though, so if incorect will not work, this is true.</s><s> the key is that it has to be the right association in regards to the person logged in.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-4750729</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Matthew_Wooler" timestamp="Oct 4, 2012 4:09 PM">
+<s>maybe i am applying it in the wrong way but i just built one this morning and went through the entire process again before responding to this.</s><s> to extract the data from the 'customer update details form' for custom fields i can only see the extended crm form if it attached to the 'contact entitie' first.</s><s> it will not appear if attached to 'companies, cases, opportunities, and or orders'.</s><s> i am sure there are other methods as well to grab the module code but this is the only way to have it appear using this specific process outlined. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-5115284</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Todd%20H%26M" timestamp="Mar 1, 2013 3:41 PM">
+<s>liam, 
+</s><s>do you know if there is a way to output web form fields from a crm case assigned to a specific user?</s><s> i would like a user to login to a secure area and be able to see the content they have previously submitted via a web form. 
+</s><s>so far i've sort of got it working but i'm only able to get some basic meta case info like the case date and number assigned to the user but not the actual unique form fields that were submitted. 
+</s><s>i've got a page that references the 'customer cases layout (detailed list).</s><s> that's allowing me to pull in the info i mention above but i've not been able to cobble together some sort of bc tag to pull in the actual details of the case. 
+</s><s>thanks, todd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-5115290</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Todd%20H%26M" timestamp="Mar 1, 2013 3:52 PM">
+<s>i think i've figured it out using {tag_subject} in the list view, now i'm exploring how to show the detailed view at the list level so the user doesn't need to go to another page to see the case details {tag_crmform}. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-5115609</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 1, 2013 7:11 PM">
+<s>you can ajax it in for example 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-5117834</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Marden-web-design" timestamp="Mar 3, 2013 6:38 AM">
+<s>this is just what i was looking for except i want to show all customers instead of the only the one who is logged in.</s><s> i am creating a auction bid site and i want to be able to show all bids on the details page of the list view webapp and detail web app.</s><s> i extended crm field to customer data and made a field called bid amount. 
+</s><s>the problem is it only shows the one bid from the customer that is logged in thru secure zone.</s><s> i want to show all bids from everyone.</s><s> how can i do that?</s><s> if you say ajax can you give me an example of how to do that please. 
+</s><s>test page to show bid http://makeoffer.mardenwebdesign.com/test 
+i want all bids to show here. http://makeoffer.mardenwebdesign.com/make-offer - list view http://makeoffer.mardenwebdesign.com/products/sealy-king-mattress - detail view 
+thanks, dennis 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4293923-5117840</DOCNO>
+<TEXT>
+<subject>How Do I output Custom CRM Fields?</subject>
+<post author="Marden-web-design" timestamp="Mar 3, 2013 7:06 AM">
+<s>it only works to the cases field for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-1002371</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="mario_gudelj" timestamp="May 10, 2012 7:27 PM">
+<s>no. you can not run server side code on bc. so, programs written in languages such as php, pear, python, .</s><s>net, etc. can not be executed on our server.</s><s> also, we do not allow direct access to the database. 
+</s><s>instead, you have to use built in modules to implement dynamic site functionality in bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4584461</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="shines" timestamp="Jul 27, 2012 8:56 PM">
+<s>hi mario, on the similar line of thinking, questions often arises, what language are these modules in busiiness catalyst written with ,is there any good docuemntation on that?</s><s> is therea plan to make it open source?</s><s> what is the best place to get an overall architectural description of business catalyst; where is the official api doc for business catalyst.</s><s> thanks ahead for throwing some light on these. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4584527</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="Liam%20Dilley" timestamp="Jul 27, 2012 10:06 PM">
+<s>hi there, the code is likely not to ever be open source.</s><s> the system is built on .</s><s>net (asp).</s><s> liquid is on the cards for a release at some point hopefully sooner then later which has more server side esk features but still not full server side access.</s><s> you wont ever get that with bc. api documentation can be found on the bc knowledgebase if you want to use the soap rest api's.</s><s> guides on using bc modules, layouts etc can also be found on the knowledgebase.</s><s> you can find the modules and tag quick reference page links on the side on the main landing overview page of these forums.</s><s> here are some links: 
+http://helpx.adobe.com/business-catalyst/kb/modules-quick-reference.ht ml http://helpx.adobe.com/business-catalyst/kb/tags---quick-reference.htm l 
+http://kb.worldsecuresystems.com/tutorials/ http://kb.worldsecuresystems.com/browse/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4585021</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="kenneth_rapp" timestamp="Jul 28, 2012 11:42 AM">
+<s>i know it will never ever happen, even when (if) liquid (ever) gets off the ground, but some kind of server-side scripting access would be amazing. 
+i mean just imagine if there was a repository for open source modules here, as with wordpress plugins, or google gadgets. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4585304</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2012 4:07 PM">
+<s>things like import export of web apps and market place have been discussed, liquid will come out and more features added but it won't be open source.</s><s> not that kind of platform.</s><s> if you want that explore other options. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4585406</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="shines" timestamp="Jul 28, 2012 8:34 PM">
+<s>i can understand where liam is coming from.</s><s> the platform itself was never designed to compete with platforms like wordpress, however given that adobe is taking bc as their main web presence platform with all that array of brilliant design tools in the backend [ps,il, etc] , i almost feel the impedance mismatch if bc is going to limit itself to webapps which the opensource community cannot tweak with- i shall wait for liquid to come out to see what direction adobe is going ,especially in keeping with html5 and javascript maturity. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4585407</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="kenneth_rapp" timestamp="Jul 28, 2012 8:51 PM">
+<s><quote>
+<s>i almost feel the impedance mismatch if bc is going to limit itself to webapps which the opensource community cannot tweak with- i shall wait for liquid to come out to see what direction adobe is going ,especially in keeping with html5 and javascript maturity. 
+</s></quote>i know...</s><s> i half expected to be able to build and compile flash apps right in the site editor or something when i heard about it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4585712</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="Liam%20Dilley" timestamp="Jul 29, 2012 4:07 AM">
+<s>nope, not what is on the cards.</s><s> just wait and see.</s><s> it wont be open source but you will get more cool toys down the line.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4587787</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="TomCuneo-MLT" timestamp="Jul 30, 2012 11:10 AM">
+<s>i just want more documentation, api examples and an affiliate based api operation lol :-) for us bc newbs figuring out how to display back api information on websites, etc is just not documented from my searches... 
+</s><s>tom 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4600296</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="mario_gudelj" timestamp="Aug 5, 2012 4:56 PM">
+<s>hi tom, 
+</s><s>bc uses soap web services and the best place to start is http://kb.worldsecuresystems.com/635/bc_635.html. 
+</s><s>there aren't many implementation examples around, though, but if you look at https://worldsecuresystems.com/catalystwebservice/catalystcrmwebservic e.asmx and https://worldsecuresystems.com/catalystwebservice/catalystecommerceweb service.asmx you'll see the web services available. 
+</s><s>affiliate program information is not available through apis though.</s><s> you'll have to use the affiliate reporting that comes in admin. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4955820</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="rhcaldwell" timestamp="Dec 29, 2012 3:21 PM">
+<s>saw this earlier post which seems pretty definitive on .</s><s>php within bc. prior to taking my adobe muse site live and while in the bc trial version, i did in fact load some .</s><s>php files for styling an embedded google calendar.</s><s> i used a small script from http://www.restylegc.com.</s><s> i got this to work perfectly.</s><s> once i converted my subscription to webbasics+ and went live, i guess your policies went into affect so now it does not work.</s><s> any update on whether this will be possible in the future? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4956490</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="Lynda%20Spangler" timestamp="Dec 29, 2012 6:29 PM">
+<s>to my knowledge bc has never and never will support php or other server side languages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4395925-4956704</DOCNO>
+<TEXT>
+<subject>Does Business Catalyst Web hosting support server side languages, such as PHP, .Net etc</subject>
+<post author="Liam%20Dilley" timestamp="Dec 29, 2012 8:06 PM">
+<s>you wont be running on bc or running php files.</s><s> like lynda said bc is .net based and does not have apache and also does not allow these files so that is not possible.</s><s> you may think you have but this will not be the case.</s><s> the server environment does not support php and the file types are not allowed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-1412011</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="efwfqwerqwr" timestamp="Feb 20, 2014 8:55 PM">
+<s>any changes made to a web form via "customise web form" are not saved.</s><s> how can this be?</s><s> come on guys be honest, how bad is bc?</s><s> it looks rubbish so far as i can tell.</s><s> things don't update, it shows blank screens in preview, and is pretty slow.</s><s> i've heard it is crap - is it worth bothering with? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6142356</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="Liam%20Dilley" timestamp="Feb 20, 2014 9:18 PM">
+<s>hi there, this is not bc's fault.</s><s> you have two core methods of inserting a form into a page or template. 
+1.</s><s> as a module.</s><s> if this was the case then what your doing would work.</s><s> 2. insert as html directly into template/page/content holder. 
+</s><s>with what your saying what will be the case is option 2. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6142359</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="efwfqwerqwr" timestamp="Feb 20, 2014 9:38 PM">
+<s>it is not bc's fault that form customisation through "customise web form" has no effect?</s><s> don't know how you figure that. 
+i created a a web form.</s><s> i customised it by changing the html.</s><s> i saved it.</s><s> i updated.</s><s> when i preview the form, however, it is an earlier version, ignoring the customisations.</s><s> when i insert it into a page, it is an earlier version, ignoring the customisations 
+so now i have given up customising the standalone form, and customised the one i inserted into page.</s><s> i can do that but there if there is a bug in such a simple thing as form creation , i hate to think how many more there are. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6142457</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="Liam%20Dilley" timestamp="Feb 20, 2014 10:24 PM">
+<s>i been building several forms on one site alone doing just that where the forms are inserted as modules on a page.</s><s> a few of them very complex.</s><s> changes applied and saved and working as expected.   not sure what your exact issue is but your using a proper code editor and just pasting in the html correctly?</s><s> or you trying to edit using the editor?   the bc editor is xhtml compliant as a note.</s><s> any changes you do that are not valid xhtml will get stripped out or modified to try and sort itself out.   the preview form option is just the basic form info, it wont render from stylesheets etc, another thing to cover is that if you add fields to a form html etc but not added them into the form itself, the system wont read that data.</s><s> without seeing exactly i am only really spitballing at the problem, but like i said, its working fine here.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6158921</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="will_in_KC" timestamp="Feb 26, 2014 7:49 AM">
+<s>i am seeing the same problem.</s><s> i added image verification to our contact us form, but it isn't showing up on the version on the web, even though it appears updated on the web form in admin view.</s><s> i've checked to make sure it is the correct form. http://www.albionfit.com/contact 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6159817</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="will_in_KC" timestamp="Feb 26, 2014 11:08 AM">
+<s>well, this is interesting: based on on a note in this documentation, web forms don't update automatically. 
+http://kb.worldsecuresystems.com/kb/create-insert-form.html <quote>
+<s>note: changes to the form in the modules section are not reflected in the pages that contain the form.</s><s> insert the modified form in the pages again. 
+
+</s></quote>maybe they used to, but this functionality was taken out? 
+i noticed that when i insert the web form now, instead of inserting {module_webform,40420} it inserts the html code. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6160394</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="Liam%20Dilley" timestamp="Feb 26, 2014 1:21 PM">
+<s>that is refering to if you insert them as html, because that is static they of course do not update.</s><s> it still does insert as a module, you will see in the popup the little tick to insert as module, when you tick that it will.</s><s> then when you change the html code on the form itself, the form will update where ever that module is used. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6162730</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="will_in_KC" timestamp="Feb 27, 2014 7:32 AM">
+<s>thanks, i see what you mean by being able to choose to insert it as a module.</s><s> however, the crazy thing is that when inserted as a module, my form doesn't reflect what is in the web form module builder.</s><s> it is as if the code for the module has been edited somewhere else, and changes made in the form module builder have no effect. 
+</s><s>maybe it is possible to edit the code of a web form outside of the web form builder, and then that disables the link between the web form builder and the module code?</s><s> (i started working on this site after it was already set up). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6162842</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="will_in_KC" timestamp="Feb 27, 2014 7:45 AM">
+<s>(i have since switched my form to using static html in case someone investigates and thinks that is the problem... back up in message #4 it was still inserted as a module) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6215568</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="family%20image%20photography" timestamp="Mar 16, 2014 10:52 PM">
+<s>i am also very frustrated using the bc webform builder.</s><s> i want to create a form with two collums.</s><s> pretty basic   eg. first name ________   last name_______ email ____________  phone __________   and it wont let me do that   also i went into customise and changed the tables background colour.</s><s> this doesnt show up in the form building preview..</s><s> (which just seems crazy) and when i got the html and pasted it into the muse page, it still didnt show the changes like background colour i had made in the customise area   im wasting hours with this thing and am very frustrated by it.   i had previously been using form central to creat contact forms which was easier, but then discovered all those contacts werent being saved in my business catalyst database!   i would love some help on this please.   brian
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6215635</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="Liam%20Dilley" timestamp="Mar 17, 2014 12:36 AM">
+<s>hey brian, what do you mean it wont let you?</s><s> it is html, you can grab that and do what ever you want with it.</s><s> you can change the tables into div's, float them, do multiple sliders, add fancy styling and functionalty...</s><s> literally open to what ever you want.</s><s> if it was more click click and limited to make it easier to drag and drop layouts it would be very off putting to someone like myself who wants to do more with it.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6215834</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="family%20image%20photography" timestamp="Mar 17, 2014 2:23 AM">
+<s>hi liam   thanks for replying.</s><s> it is meant to be an easy to use wywsiwyg editor but really you need coding knowledge to be able to create forms other than one long list   i wanted to have the same design ease as in muse or form central   i spent a long time on chat session with support and it seems the best solution is to have contact forms created with muse widget but still to use form central for things like gift voucher order forms   the contact form details can be added to an existing mailing list in bc through using reports>custom reports>add customer report> customers and cases> select the fields you want like customer name, default address type, email 1 >then choose filter 1 case subject = then type the name of the muse form you want the data from + select from custom crm form filter drop down list the same muse form you want. then his generate report.</s><s> it will give you a report of all customers who have completed that form. you can then select 'add customers to' and choose the mailing list you have created and they will be added   it is a very long process to do somethig that should integrate straight from muse forms into whatever mailing list you have pre chosen.</s><s> eg. when desiging a form in muse where it has option to choose the email address it send results to, it should also have an option to choose the bc mailing list you would like their name added to would be logical.   i hope this can be sorted out in the near future with muse as the rest of the program i do like.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6216082</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="Liam%20Dilley" timestamp="Mar 17, 2014 5:17 AM">
+<s>not when it comes to this sort of thing.</s><s> your heading into the proper realms of websites and customability and that involes coding.</s><s> thats what my job is and why i get paid 
+i am suprised support would have advised you to do that, is that because you will only use drag and drop creation, is that what you said?</s><s> they would have advised using bc to get the data in and through bc. 
+</s><s>to add a mailing list you just add that to the form and you can have that pre-selected with checked="checked" to that input checkbox. 
+</s><s>in terms of the reports, i know bc quite well, i know how they work 
+you need to understand that while muse is always improving and i appreciate the teams work and it has helped a lot of graphic designers build some form of website...</s><s> it is a point and click tool, it is not really going to build websites for you, it is only a stepping stone and there is the point where you need to start learning the trade. 
+</s><s>it is like building a house, you and i can buy all these home fancy tools that do this and that easier like nail guns etc, we can download a house plan and google etc...</s><s> does not mean we will do a good job though, proper tradies though would laugh at us and of course would do a better job million times over. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6232728</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="family%20image%20photography" timestamp="Mar 21, 2014 6:09 PM">
+<s>thanks liam 
+</s><s>i hope that the muse team will integrate a good form builder and link it to the bc in the near future as internet marketing and getting people subscribing is key to making a website work and produce a return. 
+</s><s>support did initially refer to bc for the form builder, but then realised it wasnt going to do what i needed with out altering code, so then looked at another option using a muse created form. 
+</s><s>it would be a logical simple step to have an option in muse form widgets to add the contact details entered into that form into a particular mailing list managed by bc. :-) 
+</s><s>brian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6142351-6232677</DOCNO>
+<TEXT>
+<subject>BC does not update web forms properly</subject>
+<post author="Liam%20Dilley" timestamp="Mar 21, 2014 6:15 PM">
+<s>muse team works on muse brian, they do not work on bc, seperate team.</s><s> muse using bc of course has seen a huge increase of use with its launch but the core web design and development industry is much removed from the point and click sollutions still so that it can keep pushing forward. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6227429-1432453</DOCNO>
+<TEXT>
+<subject>Where to register a domain .COM and .NO</subject>
+<post author="BoxerKiro" timestamp="Mar 20, 2014 7:52 AM">
+<s>there are many places to register a domain.com.</s><s> i will be using bc, and i will need domains .</s><s>com and .</s><s>no 
+</s><s>can you recommend me one site, please?</s><s> prices?</s><s> 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6227429-6227811</DOCNO>
+<TEXT>
+<subject>Where to register a domain .COM and .NO</subject>
+<post author="Aggarwal%2C%20Gaurav" timestamp="Mar 20, 2014 9:46 AM">
+<s>hi,   adobe business catalyst does not sell domains.</s><s> you have to purchase the domain from a domain registrar like godaddy.</s><s> then you can use the purchased domain on bc.   regards, gaurav aggarwal
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6227429-6230285</DOCNO>
+<TEXT>
+<subject>Where to register a domain .COM and .NO</subject>
+<post author="BoxerKiro" timestamp="Mar 21, 2014 2:57 AM">
+<s>thanks for answer gaurav aggarwal. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6228785-1432765</DOCNO>
+<TEXT>
+<subject>iphone 5 email setup</subject>
+<post author="arthawk459" timestamp="Mar 20, 2014 1:46 PM">
+<s>need help with iphone email setup hosted through bc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6228785-6229775</DOCNO>
+<TEXT>
+<subject>iphone 5 email setup</subject>
+<post author="snarzom12" timestamp="Mar 20, 2014 8:53 PM">
+<s>hi check this out it will help. http://kb.worldsecuresystems.com/kb/email-configuration-guide6.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-1430698</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Lahonde" timestamp="Mar 18, 2014 8:22 AM">
+<s>j'ai migré mon site vers web basic + mais comment créer des comptes mail de mon site ?</s><s> merci d'avance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6220712</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 18, 2014 9:40 AM">
+<s>pour créer votre compte e-mail, vous devez d'abord vous assurer que vous avez sélectionnez "e-mail avec bc" option si vous ajoutez votre nom de domaine.</s><s> aussi, vous devez mettre à jour votre registraire de domaine et s'assurer que tout est une nouvelle délégation au cours de la colombie-britannique.</s><s> s'il vous plaît suivez les étapes ci-dessous ... http://helpx.adobe.com/business-catalyst/using/change-site-domain.html configuration e-mail: - http://helpx.adobe.com/business-catalyst/partner/setup-pop-imap-email- accounts.html s'il vous plaît noter toute notre documentation est en anglais car nous avons seulement un soutien dans cette langue.</s><s> cordialement.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6221004</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Lahonde" timestamp="Mar 18, 2014 10:42 AM">
+<s>bonjour merci pour votre aide mais dois-je sélectionner "e-mail avec bc" ? 
+<quote>
+<s>
+</s><s>re: créer un compte de messagerie sur business catalyst created by sidney mitchell in business catalyst faq - view the full discussion pour créer votre compte e-mail, vous devez d'abord vous assurer que vous avez sélectionnez "e-mail avec bc" option si vous ajoutez votre nom de domaine.</s><s> aussi, vous devez mettre à jour votre registraire de domaine et s'assurer que tout est une nouvelle délégation au cours de la colombie-britannique. 
+</s><s>s'il vous plaît suivez les étapes ci-dessous ... 
+http://helpx.adobe.com/business-catalyst/using/change-site-domain.html 
+configuration e-mail: 
+- http://helpx.adobe.com/business-catalyst/partner/setup-pop-imap-email- accounts.html 
+s'il vous plaît noter toute notre documentation est en anglais car nous avons seulement un soutien dans cette langue. 
+</s><s>cordialement.</s><s> 
+</s><s>please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/6220712#6220712 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: créer un compte de messagerie sur business catalyst to unsubscribe from this thread, please visit the message page at re: créer un compte de messagerie sur business catalyst.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in business catalyst faq at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6221102</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 18, 2014 11:01 AM">
+<s>oui si vous prévoyez d'avoir un service de messagerie avec bc s'il vous plaît sélectionnez "e-mail avec bc".</s><s> ensuite, vous pouvez commencer à créer des comptes de messagerie pour votre site. 
+</s><s>si encore coincé s'il vous plaît fournir url de votre site afin que nous puissions vérifier votre set-up. 
+</s><s>merci!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6223290</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Lahonde" timestamp="Mar 19, 2014 4:28 AM">
+<s>bonjour merci pour votre aide, je voudrais aussi pouvoir changer mon adresse mail dans mon profile de bc impossible c'est en grisé. je ne veux plus utiliser le mail duquel je vous écris mais le suivant olivialahonde@free.fr et plus tard celui que j'aimerais créer avec mon site (nom de domaine hébergé chez 1&1) et site fait avec muse et hébergé chez business catalyst. 
+il s'agit de : www.bleucitronvo.fr 
+merci d'avance olivia lahondé 
+
+<quote>
+<s>re: créer un compte de messagerie sur business catalyst created by sidney mitchell in business catalyst faq - view the full discussion oui si vous prévoyez d'avoir un service de messagerie avec bc s'il vous plaît sélectionnez "e-mail avec bc".</s><s> ensuite, vous pouvez commencer à créer des comptes de messagerie pour votre site. 
+
+</s><s>si encore coincé s'il vous plaît fournir url de votre site afin que nous puissions vérifier votre set-up. 
+
+</s><s>merci!</s><s> 
+</s><s>please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/6221102#6221102 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: créer un compte de messagerie sur business catalyst to unsubscribe from this thread, please visit the message page at re: créer un compte de messagerie sur business catalyst.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in business catalyst faq at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6224724</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 19, 2014 11:49 AM">
+<s>ok ...</s><s> mais depuis olivialahonde@free.fr est l'utilisateur admin ce mail id utilisateur / voulez-vous remplacer ce à?</s><s> je peux ajouter le nouveau compte d'utilisateur et votre email dans ce cas.</s><s> ensuite, une fois vous ajoutez, vous pouvez simplement supprimer olivialahonde@free.fr en tant qu'utilisateur du site.</s><s> s'il vous plaît fournir la nouvelle id et je vous enverrai par message privé et le mot de passe permettra également email pour votre site.</s><s> vos paramètres dns air bien autrement.</s><s> merci!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6226504</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Lahonde" timestamp="Mar 20, 2014 1:20 AM">
+<s>c'est ok avec olivialahonde@free.fr c'est maintenant mon nouvel identifiant vous pouvez continuer le file de discussion dessus je vais vous envoyer un mail de ce compte <quote>
+<s>
+</s><s>re: créer un compte de messagerie sur business catalyst created by sidney mitchell in business catalyst faq - view the full discussion ok ... 
+</s><s>mais depuis olivialahonde@free.fr est l'utilisateur admin ce mail id utilisateur / voulez-vous remplacer ce à? 
+</s><s>je peux ajouter le nouveau compte d'utilisateur et votre email dans ce cas.</s><s> ensuite, une fois vous ajoutez, vous pouvez simplement supprimer olivialahonde@free.fr en tant qu'utilisateur du site. 
+</s><s>s'il vous plaît fournir la nouvelle id et je vous enverrai par message privé et le mot de passe permettra également email pour votre site.</s><s> vos paramètres dns air bien autrement. 
+</s><s>merci!</s><s> 
+</s><s>please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/6224724#6224724 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: créer un compte de messagerie sur business catalyst to unsubscribe from this thread, please visit the message page at re: créer un compte de messagerie sur business catalyst.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in business catalyst faq at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6226575</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Lahonde" timestamp="Mar 20, 2014 2:24 AM">
+<s>lorsque je veux attacher des mails à mon site voilà l'image que j'ai : je ne peux donc pas ajouter de mails 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6227311</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Lahonde" timestamp="Mar 20, 2014 7:34 AM">
+<s>merci pour votre aide, j'ai enfin réussi à me créer des adresses emails sur mon site, maintenant y a t-il moyen de récupérer mes nouveaux mails dans mon logiciel de mail "mail" sur mac? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6220392-6227793</DOCNO>
+<TEXT>
+<subject>créer un compte de messagerie sur business catalyst</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 20, 2014 9:26 AM">
+<s>oui s'il vous plaît consulter le guide de configuration email ci-dessous. - http://kb.worldsecuresystems.com/kb/email-configuration-guide6.html
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6221846-1431089</DOCNO>
+<TEXT>
+<subject>Blogs</subject>
+<post author="MickeyM6192" timestamp="Mar 18, 2014 2:34 PM">
+<s>can i build a blog in my bc free sites?</s><s> musegrid.com says i have to upgrade my business catalyst and then pay for a widget from musegrid.com as well.</s><s> is this the case? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6221846-6222771</DOCNO>
+<TEXT>
+<subject>Blogs</subject>
+<post author="Ryan_Thom" timestamp="Mar 18, 2014 10:36 PM">
+<s>you need at least a "web marketing" plan to set up a blog through catalyst.</s><s> check out the plans here: 
+http://businesscatalyst.com/pricing/yearly 
+i'm not sure about musegrid, as i do not use muse. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6221846-6224385</DOCNO>
+<TEXT>
+<subject>Blogs</subject>
+<post author="Aggarwal%2C%20Gaurav" timestamp="Mar 19, 2014 10:09 AM">
+<s>hi mickey,   you need to upgrade the site to webmarkeing or webcommerce plan as blogs are available with these two plans only, here is the link for detailed plan breakdown : http://helpx.adobe.com/business-catalyst/kb/detailed-plan-breakdown.ht ml   once you have upgraded the site, you can create the blogs in bc: http://kb.worldsecuresystems.com/kb/add-blog.html   then you can call the blog in muse: http://tv.adobe.com/watch/learn-business-catalyst/adding-business-cata lyst-features-to-your-muse-sites/   check around 24 mins on the above link.   hope this helps.   regards, gaurav aggarwal
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6218826-1430344</DOCNO>
+<TEXT>
+<subject>Photo strip type gallery of next and previous products in my catalogue</subject>
+<post author="Rayzor8888" timestamp="Mar 17, 2014 6:10 PM">
+<s>hello, i would like to add a photo strip type gallery of next and previous products in my catalogue and have this function on my large product layout page.</s><s> it would be like the poplet images except they woud be images of the next product in the catalogue.</s><s> does anyone know if this is possible?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6218826-6218956</DOCNO>
+<TEXT>
+<subject>Photo strip type gallery of next and previous products in my catalogue</subject>
+<post author="Ryan_Thom" timestamp="Mar 17, 2014 7:12 PM">
+<s>hi there, are you looking for something like this? 
+http://kiyuco.com/tutorials/create-product-detail-page-pagination 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6218826-6218945</DOCNO>
+<TEXT>
+<subject>Photo strip type gallery of next and previous products in my catalogue</subject>
+<post author="Rayzor8888" timestamp="Mar 17, 2014 7:47 PM">
+<s>hi ryan, yes thats great and i have used it before.</s><s> its sort of what i'm after, but i'd like to replace the poplets with a photostrip of images of my products, and move from product to product via these images. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6196496-1424818</DOCNO>
+<TEXT>
+<subject>Someone can help me? I want to add a link in this image (white tree). I think this is in a CSS file.</subject>
+<post author="rick.combi" timestamp="Mar 10, 2014 12:20 PM">
+<s>i need to know how do i add a link in this icon.</s><s> i believe it is in a css file. 
+</s><s>please help me! 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6196496-6218959</DOCNO>
+<TEXT>
+<subject>Someone can help me? I want to add a link in this image (white tree). I think this is in a CSS file.</subject>
+<post author="Ryan_Thom" timestamp="Mar 17, 2014 7:30 PM">
+<s>find this in one of your templates: <span id="hover_tree"><img alt="" src="/images/red_area_nav_bg.png" /></span> 
+replace with: <span id="hover_tree"><a href="your link here"><img alt="" src="/images/red_area_nav_bg.png" /></a></span> 
+</s><s>hope this helps! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4836599-1096662</DOCNO>
+<TEXT>
+<subject>Email Error</subject>
+<post author="JustCharlee" timestamp="Nov 9, 2012 10:29 PM">
+<s>i am adding emails to a website and when i add one particular email address, i keep recieving the following message 
+</s><s>"error account details for this user can only be updated via the site where it was first created" 
+i searched all my sites for this particular email address and it's not on any of my partner sites. 
+</s><s>how can i create this email address? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4836599-4836974</DOCNO>
+<TEXT>
+<subject>Email Error</subject>
+<post author="M%20azizi%20Mz" timestamp="Nov 10, 2012 6:43 AM">
+<s>no.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4836599-4836976</DOCNO>
+<TEXT>
+<subject>Email Error</subject>
+<post author="M%20azizi%20Mz" timestamp="Nov 10, 2012 6:44 AM">
+<s>like 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4836599-6213561</DOCNO>
+<TEXT>
+<subject>Email Error</subject>
+<post author="Chose" timestamp="Mar 16, 2014 1:36 AM">
+<s>hi!</s><s> i've the same problem with two email addresses... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4836599-6214616</DOCNO>
+<TEXT>
+<subject>Email Error</subject>
+<post author="Sanjit_Das" timestamp="Mar 16, 2014 1:13 PM">
+<s>hi 
+</s><s>please get in touch with support and they will fix the issue with email account creation. 
+</s><s>thanks, sanjit 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6173714-1419417</DOCNO>
+<TEXT>
+<subject>Hébergement intégral par BC ou faut-il BC + hébergeur ?</subject>
+<post author="FloBonni" timestamp="Mar 3, 2014 4:26 AM">
+<s>bonjour à tous, je n'arrive pas à vraiment savoir si bc propose une solution complète d'hébergement d'un site, dans ce cas, simplement acheter un nom de domaine ailleurs et tout le reste est hébergé et géré par adobe...</s><s> ou faut-il un nom de domaine + un hébergement (chez ovh par exemple) + choisir bc pour "gérer" son site ?</s><s> merci pour vos réponses 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6173714-6195320</DOCNO>
+<TEXT>
+<subject>Hébergement intégral par BC ou faut-il BC + hébergeur ?</subject>
+<post author="Gaurav.S" timestamp="Mar 10, 2014 7:32 AM">
+<s>hi 
+</s><s>just buy a domain elsewhere and everything else is hosted and managed by adobe.</s><s> get some more details about business catalyst here http://helpx.adobe.com/business-catalyst/using/getting-started-busines s-catalyst.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6173714-6198388</DOCNO>
+<TEXT>
+<subject>Hébergement intégral par BC ou faut-il BC + hébergeur ?</subject>
+<post author="FloBonni" timestamp="Mar 11, 2014 1:48 AM">
+<s>hi thanx a lot for this answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6193376-1424120</DOCNO>
+<TEXT>
+<subject>Issue when creating a new email account on Adobe BC</subject>
+<post author="designonly" timestamp="Mar 9, 2014 11:28 AM">
+<s>hi, 
+</s><s>i got a big issue when i tried to create a new email account for my site, which is a very email account to me, and i had been using that email address for over 10 years. 
+</s><s>here is the issue, when i created this email account, adobe bc keep telling me that account has been created (please see the screen shots below), but i did not see this email account on the bc's backend email account list at all.</s><s> i tried to create that email for over dozen times, it just won't work! 
+</s><s>please anyone who can help me on this, or anyone from adobe bc tech support team, please contact with me.</s><s> becasue i having hard time finding your tech support telephone numeber. 
+</s><s>thank you.</s><s> 
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6193376-6193888</DOCNO>
+<TEXT>
+<subject>Issue when creating a new email account on Adobe BC</subject>
+<post author="Tomas%20Prochazka-THEQ%20LABS" timestamp="Mar 9, 2014 4:02 PM">
+<s>hello designonly.</s><s> you are saying that you have been using that email address for over 10 years.</s><s> so you are trying to make an address which already somewhere exists? 
+</s><s>that brings me to another thing - is the dns setup made well?</s><s> in order to make email address work, you should edit the a-name & ns.</s><s> sometime even more settings (depend on domain registrar). 
+designonly, is this your first email setup? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6193376-6193939</DOCNO>
+<TEXT>
+<subject>Issue when creating a new email account on Adobe BC</subject>
+<post author="designonly" timestamp="Mar 9, 2014 4:19 PM">
+<s>there have another 4 emails set up sucessfully on bc, and these email addresses are also using over 10 years too, and they don't have this issue. 
+</s><s>so i don't think is dns relate issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6193376-6195317</DOCNO>
+<TEXT>
+<subject>Issue when creating a new email account on Adobe BC</subject>
+<post author="Gaurav.S" timestamp="Mar 10, 2014 7:30 AM">
+<s>hi, 
+</s><s>did you check this article http://forums.adobe.com/docs/doc-4002 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6184257-1421917</DOCNO>
+<TEXT>
+<subject>Créer des adresses email sur BC ou CC ?</subject>
+<post author="Lahonde" timestamp="Mar 6, 2014 1:59 AM">
+<s>mon site a été créé avec muse, mon nom de domaine acheté chez un registrar.</s><s> je l'ai bien lié dans bc. donc mon site existe bien sans le .</s><s>bc à la fin.</s><s> maintenant je voudrais créer des boites mails de mon site c'est normalement possible avec cc et bc mais comment ?</s><s> merci d'avance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6184257-6191318</DOCNO>
+<TEXT>
+<subject>Créer des adresses email sur BC ou CC ?</subject>
+<post author="Gaurav.S" timestamp="Mar 8, 2014 9:13 AM">
+<s>hi, 
+</s><s>take a look this article, http://helpx.adobe.com/business-catalyst/using/set-email.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6179844-1420888</DOCNO>
+<TEXT>
+<subject>anroid email set up</subject>
+<post author="Veetso" timestamp="Mar 4, 2014 5:51 PM">
+<s>why wont my android email set up for for bc email?</s><s> keep getting this message "unable to connect to email server to verify your account information.</s><s> no response from server." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6176069-1419972</DOCNO>
+<TEXT>
+<subject>How to regain account access with lost adobe ID</subject>
+<post author="keiths1" timestamp="Mar 3, 2014 3:31 PM">
+<s>a long time employee was fired at our small business.</s><s> they destroyed all records regarding our business catalyst services.</s><s> we are unable to log in to the control panel, web mail, or anything.</s><s> live chat support was unable to assist us. what recourse do we have? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6176069-6176364</DOCNO>
+<TEXT>
+<subject>How to regain account access with lost adobe ID</subject>
+<post author="Liam%20Dilley" timestamp="Mar 3, 2014 6:24 PM">
+<s>hi there, you will need to contact bc privatly and directly: http://www.businesscatalyst.com/contact 
+they will ask you a number of security questions and probably will want a number of validation information to ensure you are the actual owners etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6150899-1413953</DOCNO>
+<TEXT>
+<subject>admin customer limited...</subject>
+<post author="donderslouis" timestamp="Feb 24, 2014 2:17 AM">
+<s>my customer is only able to change text, and photo's in his business admin console.</s><s> there is also a news menu where he only can change the menu titles.</s><s> we'd like to be able to let him place photo's and add menu items/content. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6150899-6155863</DOCNO>
+<TEXT>
+<subject>admin customer limited...</subject>
+<post author="Sidney%20Mitchell" timestamp="Feb 25, 2014 9:57 AM">
+<s>hi, 
+</s><s>i'm not sure if i'm following your question fully but it seems like you are looking for a feature to limit this admin's access? 
+</s><s>if so you'll want to configure their "user role/permission". - http://helpx.adobe.com/business-catalyst/using/user-roles.html 
+please note reducing permissions can be limited to either allowing to edit or access which there's no further additional options otherwise. 
+</s><s>hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6150899-6158063</DOCNO>
+<TEXT>
+<subject>admin customer limited...</subject>
+<post author="donderslouis" timestamp="Feb 26, 2014 2:06 AM">
+<s>hi sidney, 
+</s><s>sorry, but my english allows me to express myself in a poor mannor.</s><s> question is: can my customers only change existing photo's or text with limitless acces on there admin console?</s><s> it seems there is no way to place photo's.</s><s> and with text there is only a way to work around it and copy text to get the same font and style.</s><s> if the heading is bold and grey and you paste anything behind that sentence you'l get the same type, color and style, but you cant change that. 
+</s><s>hope you can help me with that. 
+</s><s>this is the site: 
+http://www.maasendenatris.nl 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6150899-6159500</DOCNO>
+<TEXT>
+<subject>admin customer limited...</subject>
+<post author="Sidney%20Mitchell" timestamp="Feb 26, 2014 9:29 AM">
+<s>hi, 
+</s><s>there's really only a couple options i see here. 
+1) grant admin access to allow editing photo and text.</s><s> (only do this if you are ok with them having admin access) 
+2) create web app to allow clients to update on the frontend of your site without needing admin access. 
+</s><s>kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6157651-1415544</DOCNO>
+<TEXT>
+<subject>Does BC in browser edits update mobile/tablet versions?</subject>
+<post author="Tuanis Studios" timestamp="Feb 25, 2014 8:02 PM">
+<s>does bc in browser edits update mobile/tablet versions of the website? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6157651-6157870</DOCNO>
+<TEXT>
+<subject>Does BC in browser edits update mobile/tablet versions?</subject>
+<post author="Gaurav.S" timestamp="Feb 25, 2014 11:22 PM">
+<s>hi, 
+</s><s>if you have enabled the in-browser editing in site properties, then you should get this option.</s><s> take a look to the screenshot below 
+
+</s><s>hope this helps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6146902-1413019</DOCNO>
+<TEXT>
+<subject>Billing</subject>
+<post author="Starboard Tack" timestamp="Feb 22, 2014 10:31 AM">
+<s>how does one change your billing account information? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6146902-6147720</DOCNO>
+<TEXT>
+<subject>Billing</subject>
+<post author="Liam%20Dilley" timestamp="Feb 22, 2014 3:26 PM">
+<s>hey there, when you are logged in you can view that information when you hover over your name in the admin in the top right. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6134805-1410153</DOCNO>
+<TEXT>
+<subject>Contact Form For Web App Item Poster</subject>
+<post author="bdk6000" timestamp="Feb 18, 2014 11:20 PM">
+<s>i have a classified advertising site where people can create an account and post an ad. i've been using the refer a friend module on each web app item detail page that is customized so a website visitor can email the item's poster with a comment.</s><s> the posters are now receiving a ton of spam emails because of this form, even with the word verification.</s><s> i understand this module is outdated as well. 
+</s><s>what's the best way to create these forms at the current time?</s><s> it should just allow a site visitor to type a comment or message to the poster of the web app item. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6134805-6140077</DOCNO>
+<TEXT>
+<subject>Contact Form For Web App Item Poster</subject>
+<post author="Aggarwal%2C%20Gaurav" timestamp="Feb 20, 2014 9:08 AM">
+<s>hi,   you can go to site settings > captcha and use "harder to read, but more secure version" and also put a check on "enforce captcha validation for refer a friend". http://prntscr.com/2u8f2r   for more information please check: http://forums.adobe.com/docs/doc-2882   regards, gaurav aggarwal
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6127477-1408373</DOCNO>
+<TEXT>
+<subject>Can you use a secure zone on a site hosted using your creative cloud membership?</subject>
+<post author="RoryLawford.com" timestamp="Feb 16, 2014 9:28 PM">
+<s>can you use a secure zone on a site hosted using your creative cloud membership? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6127477-6127735</DOCNO>
+<TEXT>
+<subject>Can you use a secure zone on a site hosted using your creative cloud membership?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 16, 2014 11:55 PM">
+<s>hi there, that is availible only in higher plans. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6117812-1405916</DOCNO>
+<TEXT>
+<subject>the list of data centers cannot be obtained when publishing an Adobe Muse site</subject>
+<post author="warcraftman68" timestamp="Feb 13, 2014 10:13 AM">
+<s>i was publishing sites with adobe muse with no problems this past month, and then i went to publish and it started to work, but then it stopped and is telling me that "the list of data centers cannot be obtained". 
+</s><s>whats going on.</s><s> help please. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6117812-6117938</DOCNO>
+<TEXT>
+<subject>the list of data centers cannot be obtained when publishing an Adobe Muse site</subject>
+<post author="Sidney%20Mitchell" timestamp="Feb 13, 2014 10:45 AM">
+<s>hi, 
+</s><s>this is an odd issue which i think might be temporary.</s><s> if still experiencing this please reach out to direct support via case or live chat for further investigation. 
+</s><s>thanks, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6117812-6117981</DOCNO>
+<TEXT>
+<subject>the list of data centers cannot be obtained when publishing an Adobe Muse site</subject>
+<post author="warcraftman68" timestamp="Feb 13, 2014 10:55 AM">
+<s>i keep forgetting to shut down muse, when not using it.</s><s> just restarting fixes this problem.</s><s> thanks for the response. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-5598745-1276590</DOCNO>
+<TEXT>
+<subject>Website redesign or how do I change the whole template?</subject>
+<post author="ashabez" timestamp="Aug 15, 2013 3:39 PM">
+<s>i've been working with a client that has a website hosted on adobe bc for 3 years, but now is asking me to change and improve the whole site.</s><s> so i need to do a redesign, is it possible to change the template ?</s><s> or do i have to delete it and create another one from scratch (using the same domain name) deleting all info on the site? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-5598745-5598972</DOCNO>
+<TEXT>
+<subject>Website redesign or how do I change the whole template?</subject>
+<post author="Webmosphere.co.uk" timestamp="Aug 15, 2013 5:51 PM">
+<s>it sure is possible to make alterations to the template.</s><s> if you download the site to dreamweaver, you will find it/them in the templates folder.</s><s> if you choose to do the editing via admin, then find it under site manager>>page templates. 
+@webmosphere www.webmosphere.co.uk 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-5598745-5603825</DOCNO>
+<TEXT>
+<subject>Website redesign or how do I change the whole template?</subject>
+<post author="ashabez" timestamp="Aug 17, 2013 6:23 PM">
+<s>well dave, thanks for your response but i already knew that.</s><s> the question is if i can change the template design without deleting and creating the site again.</s><s> example: i buy a template from bcgurus and install it on the actual working site. 
+</s><s>guess is not possible.</s><s> i will have to delete the site, and then redo everything from scratch. the thing is that the template this site is using right now is obsolete.</s><s> is not even 960 px wide.</s><s> so i need to implement a whole new design. 
+</s><s>thx for the help anyway. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-5598745-5603853</DOCNO>
+<TEXT>
+<subject>Website redesign or how do I change the whole template?</subject>
+<post author="Liam%20Dilley" timestamp="Aug 17, 2013 7:10 PM">
+<s>of course you can, bc partners update, manage, change, add new features to sites all the time.</s><s> you have to create new templates, develop them in the background and then have a holding page, take down the site for a bit and apply all the new changes but it is 100% totally possible. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-5598745-6100155</DOCNO>
+<TEXT>
+<subject>Website redesign or how do I change the whole template?</subject>
+<post author="katerz247" timestamp="Feb 8, 2014 7:12 AM">
+<s>which route did you end up taking for the redesign?</s><s> i am in a similar situation.</s><s> i am going to do a redesign for a business catalyst site that is outdated.</s><s> i was thinking of purchasing a responsive site template and working it into the old site on bc. but, i am not sure how smoothly that would go.</s><s> i am also considering trying to rework the current outdated templates. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6092093-1399577</DOCNO>
+<TEXT>
+<subject>Updating a Muse site to BC</subject>
+<post author="Dynamicbarney" timestamp="Feb 6, 2014 5:16 AM">
+<s>i have a site made in muse in bc. my customer has made some changes.</s><s> they have asked me to alter the navigation which i have done in muse.</s><s> how can i update the site from muse to bc?</s><s> i have tried to publish the site again from muse but it looks like i've made another site (which i have now deleted) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6092093-6092574</DOCNO>
+<TEXT>
+<subject>Updating a Muse site to BC</subject>
+<post author="Gaurav.S" timestamp="Feb 6, 2014 7:13 AM">
+<s>hi, 
+</s><s>if you are added as admin on the site using the same email address which you are using to access muse, so when you click publish, you should get list o sites to publish the data.</s><s> you will also see the option, to publish the complete site or the updated files, there you can select the site and update it. 
+
+
+</s><s>hope this helps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6083130-1397337</DOCNO>
+<TEXT>
+<subject>Can I importing non BC themes/templates to manage a website in BC?</subject>
+<post author="Ismael Valentin" timestamp="Feb 3, 2014 6:44 PM">
+<s>hi, 
+</s><s>i would appreciate anyones input on this question. 
+i had purchased a set of htlm 5 themes on line (not a bc template) and imported one of theme (as test) into the bc create a website window.</s><s> it loaded and it seams to work proporly when i login to the site outside of bc. 
+</s><s>when i click preview in the admin panel it preview fine but when i click edit it doesn't load properly (the page images and text are compressed to the left side of the edit window) i am not able to make any edits. 
+</s><s>can any one tell me how i can get this theme to edit properly or any comments on importing non bc templates/themes. 
+
+
+</s><s>thank you for your comments. 
+</s><s>stargate49 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6083130-6084196</DOCNO>
+<TEXT>
+<subject>Can I importing non BC themes/templates to manage a website in BC?</subject>
+<post author="Florin%20Carlig" timestamp="Feb 4, 2014 4:58 AM">
+<s>hello, 
+</s><s>generally, the editor available under the edit toolbar option is for small text tweaks.</s><s> use the manage tab to go to the site's admin console and then go to site manager->pages to make changes to each page layout and design.</s><s> or use the develop tab if you're more comfortable using a code editor. 
+</s><s>hope this helps, florin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6083130-6090497</DOCNO>
+<TEXT>
+<subject>Can I importing non BC themes/templates to manage a website in BC?</subject>
+<post author="Ismael%20Valentin" timestamp="Feb 5, 2014 3:05 PM">
+<s>hi florin, 
+</s><s>thank you for your response to my question.</s><s> what you suggested i had already attempted to do.</s><s> yes, i can make edits to the text but, each page has the images, graphics and slider placed (generic icons) in them.</s><s> i don't see how i can edit efficiently the images or the slider images with their links, (i have access to the image folder). 
+</s><s>my real question is, since bc allows and promotes the importing of non bc websites, how can they be prepared or configured to be edited or modified like any other bc template.</s><s> i was under the impression that one did not need to be proficient in coding to work in the bc platform.</s><s> is there any tutorial or instructions on how to properly import websites to bc?</s><s> again thank you for your response. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6083130-6090868</DOCNO>
+<TEXT>
+<subject>Can I importing non BC themes/templates to manage a website in BC?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 5, 2014 5:25 PM">
+<s>what you done has just converted everything into flat files and your not really using the bc features like templates, modules and content hodlers.</s><s> you need to port repeated content items into things like content holders, the overal layout into templates etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6083130-6091301</DOCNO>
+<TEXT>
+<subject>Can I importing non BC themes/templates to manage a website in BC?</subject>
+<post author="Ismael%20Valentin" timestamp="Feb 5, 2014 8:46 PM">
+<s>hi liam, 
+</s><s>due you mean re-import the website or due you mean take each content item and create content holders for each and create a new template in bc. sounds like a lot of work. 
+</s><s>well what is the right way to import a clients current or non bc website into bc? 
+i appricate your suggestion, thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6083130-6091756</DOCNO>
+<TEXT>
+<subject>Can I importing non BC themes/templates to manage a website in BC?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 6, 2014 1:15 AM">
+<s>well if you just use the bc import tool, its quick and easy but not the right way.</s><s> web development = work i am affraid, if you want things to be right, easy to manage, using all the bc features, well optised and all that jaz you have to do it the right way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6047801-1388458</DOCNO>
+<TEXT>
+<subject>Workflow Notifications</subject>
+<post author="josef.lagunas" timestamp="Jan 24, 2014 5:03 AM">
+<s>hello all, let me first explain what i've done so my question is more clear and understandable. 
+i have a client that only wanted to display prices and allow visitors to place orders if they are a registrated secure zone user.</s><s> they also wanted the ability to "authorize" each user manually so what i did was add an extended crm form to a secure zone registration form that contained a dropdown list of sales representatives that the secure zone user is required to select and a hidden field that by default sets the secure zone user's "authorization" to false and once an admin logs in to the adminconsole and "authorizes" the secure zone user, then the secure zone user can view the prices and place orders. 
+</s><s>everything works as expected, but now they are requesting to send out workflow notifications to only a specific admin based on the selected sales respresentative upon registration. 
+</s><s>is this possible? 
+</s><s>here's a link to the secure zone registration form - http://www.realfeelproducts.com/users/join 
+many thanks in advance. 
+-josef 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6047801-6084133</DOCNO>
+<TEXT>
+<subject>Workflow Notifications</subject>
+<post author="Florin%20Carlig" timestamp="Feb 4, 2014 4:50 AM">
+<s>hi josef, 
+</s><s>to display prices only to registered users you can use a catalog setting - show prices only to existing users, it's available for each catalog, just expand the more details panel.</s><s> or put the catalog in the secure zone altogether, but this way you'll hide the whole thing, not just price and order placement: http://forums.adobe.com/message/6081805#6081805 
+to "moderate" the secure zone access, you can just get the user to fill in the username and password and not subscribe them to any secure zone.</s><s> then, review each enquiry and manually grant them access.</s><s> you can also choose which workflow gets executed by using this workaround: http://helpx.adobe.com/business-catalyst/partner/create-workflow-notif ication.html#id_22857 
+hope this helps, florin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6047801-6090467</DOCNO>
+<TEXT>
+<subject>Workflow Notifications</subject>
+<post author="josef.lagunas" timestamp="Feb 5, 2014 2:55 PM">
+<s>florin, thanks for the reply.</s><s> i was not aware of the method you mentioned about showing the prices only to existing users.</s><s> thanks for that, i'm going to look into the article on the workflow notification that you provided and will get back to you on that. 
+</s><s>thanks again for all your help, really appricate it. 
+-josef 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6086041-1398008</DOCNO>
+<TEXT>
+<subject>How can you move a domain name over from a competing host?</subject>
+<post author="halsteadh" timestamp="Feb 4, 2014 1:12 PM">
+<s>how can you move a domain name over from a competing host? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6086041-6086007</DOCNO>
+<TEXT>
+<subject>How can you move a domain name over from a competing host?</subject>
+<post author="Sidney%20Mitchell" timestamp="Feb 4, 2014 1:15 PM">
+<s>hi, 
+</s><s>you would just simply update the domain's dns and point records to business catalyst when ready. 
+- http://helpx.adobe.com/business-catalyst/using/change-site-domain.html 
+afterwards if you want bc to fully be your host you can simply cancel your service with the external provider. 
+</s><s>hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-1397133</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 1:59 PM">
+<s>i have been looking into adobe bc as a possible hosting solution.</s><s> i plan on building an ecommerce website for my parents and their business.</s><s> i understand that the bc webcommerce solution is the $38.88/month, does this allow me to create more than just one ecommerce website?</s><s> the reason i ask this is i may also look into making a commerce website for my father in law.</s><s> if my parents and him both needed commerce websites and both paid half the subscription cost of the bc webcommerce price would this be allowed by adobe?</s><s> or would this mean that both my parents and father in law would need to each pay for their own bc webcommerce subscription so that they can each have their own website?</s><s> i essentially am doing this for free for them while being able to provide very good software, functionality and web design that is modern and clean, which is what many other hosting solutions absolutely do not provide!</s><s> thanks for your help! 
+</s><s>bren 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6082760</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="jacksondesignz" timestamp="Feb 3, 2014 4:40 PM">
+<s>unfortunately, no you would actually have to pay the $38.88 per website. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6082890</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 4:55 PM">
+<s>bummer, so why would you have the ability to design multiple websites but not be able to use webcommerce for each one? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083041</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 3, 2014 5:53 PM">
+<s>you can have multiple domains and different payment gateways and products for pricing etc - that is what you can do there.</s><s> multiple site and domain management can be for a variety of reasons and not including ecommerce.</s><s> lots of options still. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083055</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 5:58 PM">
+<s>yea essentially i'd need one domain registered to my father in law for his website, then one domain registered to my parents.</s><s> this should be allowed right?</s><s> so i can have two seperate websites for each of them through one account that can be managed through one bc account right? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083144</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 3, 2014 6:45 PM">
+<s>yeah, but if you have a store, you will need to create generic system message layouts so they do not appear branded to one specific sites. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083063</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 6:52 PM">
+<s>oh i see, so any specific branding like emails, newsletters etc. can only be generated for essentially "one" account or one website. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083148</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 3, 2014 7:15 PM">
+<s>yeah, any sort of layout or system message is specific to just one site account.</s><s> you can style things differently based on url or different templates, etc, but your wording and some elements can not shift around.</s><s> but while you could have a set of different pages with different templates, a product layout would only be one and you would have to do things with css based on paramaters to appear differently etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083447</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Fubals" timestamp="Feb 3, 2014 9:22 PM">
+<s>hi bren, 
+</s><s>i would not recommend you do the multiple ecommerce sites within 1 ecommerce package.</s><s> especially if they are 2 different businesses.</s><s> things will get real confusing real quick once the site/s start getting customers. 
+a nightmare to manage. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083404</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 9:34 PM">
+<s>yea i see now that this would be a bad idea, ha thanks everyone.</s><s> i guess the next question i have is if i used my 5 free websites through creative cloud could i use a 3rd party shopping cart software to use on the website?</s><s> if so are there any recommended software or companies that are good with shopping cart softwares?</s><s> also when i open up these websites through creative cloud do i have to buy an ssl for each website if i were to use them, or does adobe include ssl certificates for these sites?</s><s> i have a domain name already purchased for this website.</s><s> thanks again guys. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083476</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 3, 2014 9:38 PM">
+<s>you can not integrate 3rd party sollutions on bc as your thinking.</s><s> nor can you install your own ssl.</s><s> you could iframe a store in the html etc, but then they are iframes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083493</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Fubals" timestamp="Feb 3, 2014 9:50 PM">
+<s>the 5 free creative cloud are under the webbasics plan, ie - very basic hosting no ecommerce, no ssl, not even any email accounts, and a whopping 100mb of storage!</s><s> to be fair there was a time when 100mb was more than enough for the web... ahh i miss those simple days. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083405</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 10:01 PM">
+<s>well dang, yea i guess it wouldn't make much sense to do that then.</s><s> the reason why i'm trying to figure out all these round about ways is because i'm building a website for my parents business and right now they don't have much to put towards it as they both work full time jobs etc, and i'm going to school.</s><s> they've gotten burned by a guy that just ran off with money for a website so i've been stuck trying to help make the product for the business, go to school, and work part time haha.</s><s> adobe can just make a special account for me right?</s><s> anyways thanks guys, i'll look into a full commerce catalyst account. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083496</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Fubals" timestamp="Feb 3, 2014 10:07 PM">
+<s>hey bren, 
+</s><s>i feel your pain, sorry to hear your parents got burned buy a dodgy dude with dollar signs in in his eyes. 
+</s><s>is it possible to just do them as brochure sites showing all the products, prices etc... with contact details and have your parents do the payment process manually via the phone?</s><s> or have them generate orders manually and get online payments via a paypal account or direct deposit... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083406</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 10:15 PM">
+<s>yea quite a bummer when that happened, but stuff happens and ya move on.</s><s> yea we actually have been selling them through bow shops who then sell in house to customers, we want to get into selling them directly to our customers.</s><s> they do have a credit card processor that they are paying for currently, i'm just worried people will access the website see our product and want to purchase from our website rather than having to call it in, no one has patience anymore ha.</s><s> i've also thought about building the free sites then just including paypal button links so that they can be purchased but from what you all have said, it sounds like that wouldn't work due to no ssl etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083482</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 3, 2014 10:15 PM">
+<s>sadly, that happens when you find the cheap guy online etc. this industry is really odd..</s><s> you get people who know if you buy a cheap car, or a dodgy builder your going to get something that does not run or is built right.</s><s> you would also not hire a good builder to build your new home and lecture him on how to build the house. 
+</s><s>but both those and more odd cases happen in this industry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6082208-6083410</DOCNO>
+<TEXT>
+<subject>How many websites?</subject>
+<post author="brenrasmussen" timestamp="Feb 3, 2014 10:26 PM">
+<s>it was back in early 00's i'm pretty sure, and was not cheap at all haha, dude just never contacted them, and his contact never worked.</s><s> so sadly it wasn't them trying to go cheap just one off chance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6072622-1394589</DOCNO>
+<TEXT>
+<subject>I want to turn pricing off and shopping cart off</subject>
+<post author="shellshockme63" timestamp="Jan 31, 2014 6:26 AM">
+<s>hello, i am building a site in muse but want to utilize the catalog cms in bc can i turn off pricing and the shopping cart?</s><s> just use a catalog of products? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6072622-6081805</DOCNO>
+<TEXT>
+<subject>I want to turn pricing off and shopping cart off</subject>
+<post author="Sidney%20Mitchell" timestamp="Feb 3, 2014 12:14 PM">
+<s>hi, 
+</s><s>you'll need to access your site via bc admin panel.</s><s> then go to site manager > module template > shop layout.</s><s> access the layout in question and remove the tag_saleprice or tag_retailprice to hide the pricing from the shop. 
+
+
+</s><s>additionally there another option which is to place the shop/catalog in a secure zone.</s><s> which you can set the catalog to only display pricing if the client is logged in. 
+
+
+</s><s>hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6077979-1396019</DOCNO>
+<TEXT>
+<subject>When I try to login to BC I get a Database Error</subject>
+<post author="lkwelsh" timestamp="Feb 2, 2014 8:24 AM">
+<s>when i login to business catalyst i get a screen that says error establishing a database connection if i try to publish my muse (from muse) site it just spins and says "signing in to business catalyst" 
+i do not have any options in muse to review the business catalyst settings associated with my site. 
+i did just upgrade to muse 7.2. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6077979-6081798</DOCNO>
+<TEXT>
+<subject>When I try to login to BC I get a Database Error</subject>
+<post author="Sidney%20Mitchell" timestamp="Feb 3, 2014 12:10 PM">
+<s>hi, 
+</s><s>are you also unable to login directly to the admin "yoursite.com/admin"? 
+</s><s>if still having troubles with both please reach out direct chat support so they can investigate this further. 
+http://helpx.adobe.com/contact.html 
+thanks, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6076834-1395712</DOCNO>
+<TEXT>
+<subject>how to transfer exisitng domain names to business catalyst?</subject>
+<post author="ACW100" timestamp="Feb 1, 2014 2:55 PM">
+<s>what are the requirements or what is the proccess to transfer exisitng domain names to business catalyst? 
+</s><s>your input is much appreciated. 
+ft 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6076834-6076840</DOCNO>
+<TEXT>
+<subject>how to transfer exisitng domain names to business catalyst?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 1, 2014 3:29 PM">
+<s>business catalyst does not have a domain hosting capabilities, so you can not transfer domains to bc. if you would like to point a domain to bc though you either point the a-record or ns records to your bc site: http://helpx.adobe.com/business-catalyst/partner/going-live-guide.html
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6058059-1391065</DOCNO>
+<TEXT>
+<subject>Adding a list of events in a Muse page</subject>
+<post author="carrege81" timestamp="Jan 27, 2014 1:47 PM">
+<s>hello, 
+</s><s>i would like to know the procedure to add a list of event in a muse page.</s><s> the events have been created in business catalyst.</s><s> i would like to display on a muse page the list of event for the month, so my clients will click on the link and then a second window will open with the submitting webform. 
+</s><s>if you have any idea...... 
+</s><s>thank you for you help. 
+</s><s>best regards. 
+</s><s>nicolas 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6058059-6065946</DOCNO>
+<TEXT>
+<subject>Adding a list of events in a Muse page</subject>
+<post author="Sidney%20Mitchell" timestamp="Jan 29, 2014 11:27 AM">
+<s>nicolas, 
+</s><s>after building the events in bc. you'll need to apply the event within bc admin as muse doesn't have a feature to insert. 
+- http://helpx.adobe.com/business-catalyst/partner/add-event.html 
+you typically can go into the page or template in bc and insert the event as a module tag. 
+
+
+</s><s>hope this helps! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6050553-1389108</DOCNO>
+<TEXT>
+<subject>Considering a new Web Hosting Platform</subject>
+<post author="awbrown66" timestamp="Jan 24, 2014 5:40 PM">
+<s>i am currently using office 365 and the file sharing is great, but the website capabilities are extremely limited.</s><s> i've researched muse which seems to have much more capabilities than 365, but bc is rather vague in explaining it's capabilities other than stating that it works really well with the muse software. 
+i see that bc has a form building capability, but i need more infomation.</s><s> for example, i want to have my employees sign in to a secure area online and fill out their weekly time on an online form built within bc, or muse, or whatever, and have the data saved to the bc database.</s><s> i then want another designated user to be able to access all of this saved time and be able to extract the data to a spreadsheet or xml, etc. 
+</s><s>would something like this be possible using bc?</s><s> is there a way to store documents with bc to be able to share with other employees? 
+</s><s>any help would be appreciated! 
+</s><s>thanks, allen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-6050553-6051776</DOCNO>
+<TEXT>
+<subject>Considering a new Web Hosting Platform</subject>
+<post author="Webmosphere.co.uk" timestamp="Jan 25, 2014 9:40 AM">
+<s>hi allen, 
+</s><s>you most certainly can store and share documents with employees via the media downloads module. 
+</s><s>it is also possible for you to build your own custom timesheet using web apps.</s><s> your staff can then submit new timesheets which should be easily downladable through the admin as spreasheets. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-984496</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="mario_gudelj" timestamp="Apr 4, 2012 11:55 PM">
+<s>you can not host your own certificate on business catalyst at this stage.</s><s> however, every site comes with a secure url e.g. yoursite.worldsecuresystems.com.</s><s> you can find yours listed under admin -> manage domains.</s><s> so, you get an ssl certificate without having to pay for it every year.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4394447</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="craftyalien" timestamp="May 10, 2012 9:41 AM">
+<s>did you know that ecommerce websites lose conversions when the domain name changes?</s><s> so while you say it's free, it actually comes at a cost. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4394553</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Lynda%20Spangler" timestamp="May 10, 2012 10:12 AM">
+<s>i know there has been talk of this off and on for a while now but are there any plans in the future (even distant future) to allow for custom ssl certificates for those users who would like to have custom secure domains?</s><s> ie: https://mysite.com vs mysite.https://mysite.worldsecuresystems.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4395620</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="May 10, 2012 4:40 PM">
+<s>total tosh this one, sorry if you do not design and build your websites properly, lots of factors cause this.</s><s> a smooth, easy to use cart process, going to the worldsecuresystems to make payment on the main form and then either off to the payment gateway or using seamless payment and then a nice thank you page, good options clear showing what happens and what the person will do next.</s><s> good aspects of information such as security etc. 
+no problem at all, we work hard on our ecommerce sites to do all that and bar the real issues with the bc ecommerce like some of the bugs etc our clients enjoy good sales using bc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4395596</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="craftyalien" timestamp="May 10, 2012 4:52 PM">
+<s>are you refering to what i said?</s><s> because i've done a/b testing between a domain ssl and a shared ssl going to a different domain and it was a tremendous difference in conversion rates.</s><s> same exact site, only difference was the domain switch.</s><s> afterwards, we did an extensive survey and the switch in domain does make a buyer feel less secure and, in the buyer's eyes, seems "less professional" and "shady"... their words, not mine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4395705</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="May 10, 2012 5:04 PM">
+<s>if the site has not been done in a good way, probably will.</s><s> but we have had our clients think this, do the tests and found the opposite because the experience is a lot better.</s><s> it is not one thing, do a lot of elements right and this does not matter.</s><s> the only issue we have had with it is breaking out of worldsecuresystems etc but we have that sorted these days and the bc enginers have put a few improvements on that and more to come too. 
+</s><s>you can not a/b test this on a bc site anyway because you do not have an option to not go to worldsecuresystems and have https://yourdomain.com. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4395725</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Lynda%20Spangler" timestamp="May 10, 2012 5:20 PM">
+<s>while with a good user experience can help i do have to say that with urls changing will worry some users.</s><s> i have had a case where i would not make a purchase because the domain changes.</s><s> a good user experience is great to have and can definitely help users feel secure.</s><s> however, there are still cases when a custom secure domain would be preferable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4395901</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="craftyalien" timestamp="May 10, 2012 6:53 PM">
+<s>i didn't do a/b testing on a bc site.</s><s> i did it on our live site, other host.</s><s> bc isn't live... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4777722</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="ZebraGraphics" timestamp="Oct 16, 2012 5:59 AM">
+<s>craftyalien is correct.</s><s> we have a regular hosting solution and then we also use the business catalyst solution.</s><s> we offer a storefront option for both.</s><s> when giving a client the option and explaining the differences, they always baulk at the thought of not having their own secure certificate on their site.</s><s> this is before we even design the site according to the concept you mentioned earlier.</s><s> it is the clients and site visitor's perception that counts, not the developers.</s><s> while i agree that the site is just as secure (if not more secure) the problem is the client and the user have an issue with it no matter how well the site is planned and developed.</s><s> i believe business catalyst needs to truly considering opening up to allowing ssl installations for each site. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-4783670</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Oct 18, 2012 3:08 AM">
+<s>more then one of our clients have gone from magento and other open source sollutions to our bc setup and trippling their sales.</s><s> like i said, it has a lot to do with how you build the user experience. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5119881</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="levymetal" timestamp="Mar 4, 2013 6:43 AM">
+<s>you moved your client to bc, obviously with a new design & checkout process.</s><s> and for all we know, perhaps there was some marketing involved too.</s><s> you have zero idea how the change in domain name for secure connections is affecting the sales.</s><s> no idea at all.</s><s> if and when bc allow this, take the same design, same checkout process, and a/b test it with an ssl & a redirect.</s><s> then monitor how many carts you drop, and come back & post the stats & tell us that the change in domain is irrelevant. 
+</s><s>it's been proven that when the domain name changes, trust is reduced.</s><s> when trust is reduced, sales are reduced.</s><s> that's a fact, and it's not rocket science. 
+bc really need to address this and provide a solution for customers to use an ssl on their own domain. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5120714</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 4, 2013 10:51 AM">
+<s>though correct setup of analytics and viewing the abonrates and contacting our clients on this to help improve our framework we do actually thank you.</s><s> and the difference is not there.</s><s> i have other ecommerce sites using different systems even in similar fields as the other sites.</s><s> i still strongly stand that there will be very little difference.</s><s> do you realise that even not under https a page taking payment is still used by simply putting lock icon on the form?</s><s> it is true.</s><s> https or not the same form and page got the same application rate from tests before.   your making a lot of assumptions on what i have and have not done.</s><s> i have put extensive time into the ecommerce aspect of bc and research before, after and during.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5283156</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="EricCookWSI" timestamp="May 1, 2013 11:32 AM">
+<s>i know this is an older thread and hopefully a post will "ping" those that are on it to see if this can be resurrected.</s><s> i'd like to encourage abc to offer the ability (even if this is at an additional cost to the customer) to allow us to install their own ssl certificate on the site so that we can have https://www.sitename.com. 
+i understand that by using the shared ssl cert, abc saves the customer from having to purchase their own certifcate, which is nice.</s><s> however, from a branding perspective, if a client wants to offer a https:// expeirence for their visitors across the entire site, this is not possible without making the url change (and breaking the brand) when the site loads. 
+</s><s>there could be a variety of reasons why a client would want to have https://www.sitename.com showing when the page loads.</s><s> they may be collecting user name and password information on their home page to allow members to log in to a secure zone and want to ensure that visitors informtion is protected.</s><s> the client could also be in a sensitive industry such as helathcare, insurance or banking and offer visitors (customers) the assurance that they are on a secure site.</s><s> whatver the case, it would be nice to have this as an option, and may open up an additional revenue stream for abc as i have several customers that would be willing to pay for this enhancement. 
+i do a lot of work with community banks and find the abc system is a great, easy to use and simple (yet powerful) cms that enables the marketing managers to keep their site updated.</s><s> we have got "around" the site-wide ssl issue with some internal landing pages where customers can enter login inforation to access their online banking accounts (which is on a different system, not on abc).</s><s> however, if this is a requiremnet that the bank has to be "full https" on their site, we cannot go with the abc system and end up developing on a different system.</s><s> i'd prefer to have all of my clients using abc, making it easier for me to supprot and more economical for the client. 
+</s><s>fingers crossed this can be revisited and something can be done that will create a win-win here for everone. 
+</s><s>eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5283580</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="May 1, 2013 1:47 PM">
+<s>i would not hope or expect any movement on this, this year or early next.</s><s> with the infrastructure work on the system this year and then the role out of delayed features to come after that...</s><s> this if considered would be a long way off. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5283682</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="EricCookWSI" timestamp="May 1, 2013 2:16 PM">
+<s>hi liam, 
+</s><s>while not the response i was hoping for, i understand.</s><s> just had to toss in my "two cents" here and will keep my fingers crossed. 
+</s><s>thanks, eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5377224</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="jojoejojo" timestamp="Jun 4, 2013 12:29 AM">
+<s>is there any work around to use our own ssl cert?</s><s> for example, a third-party content delivery network? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5377550</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Jun 4, 2013 3:35 AM">
+<s>nope - dont waste time going down that route.</s><s> maybe some hard work with api but will be very very costly and time consuming. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5379433</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="CraigWReillyAZ" timestamp="Jun 5, 2013 5:14 PM">
+<s>can i turn off ssl?</s><s> it is causing exchange autodiscover problems with outlook 2013 clients.</s><s> outlook first looks at (www).domain.com and then throws a certificate error.</s><s> this only happens with 2013.</s><s> but all of our desktop users are making the move to 2013. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5519991</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="RDWD" timestamp="Jul 19, 2013 3:25 AM">
+<s>hi liam 
+</s><s>just got this request to make an existing site https and found this thread. 
+i have said that the ecommerce is fine and secure ( i hope ) 
+</s><s>however not the contact forms. 
+i can see that the contact form will show on the secure domain, does this quantify as secure? 
+https://offshorenew.worldsecuresystems.com/contactus.html 
+and also i cant seem to find any bc resource that states what level of security there is for bc, can anyone point me in the right direction? 
+i would like to say that the above url is secure to this standard...blah blah 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5522122</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Jul 19, 2013 5:18 PM">
+<s>what are you doing with outlook?</s><s> if you are using the bc email and setting that up you need to follow the guides by bc for setup.</s><s> sounds like you have not set it up properly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5522124</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Jul 19, 2013 5:20 PM">
+<s>like one of the bc guys said, https is for vanity in a lot of ways.</s><s> a contact form is secure, if you just had the action https it is ok, but what you done there is fine.</s><s> bc is pci level one compliant - thats official.</s><s> you can google pci if you want. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5522196</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="CraigWReillyAZ" timestamp="Sep 25, 2013 4:46 PM">
+<s>outlook 2013 - internal exchange email with a valid cert.</s><s> outlook clients are connecting over https externally new setups and upon starting outlook with an expired password outlook searches to www first and tries to validates its certificate and it is invalid as bc does not have my name on the ssl cert. hit ok on www and no www and then finally it finds autodiscover. 
+
+
+</s><s>craig reilly 
+</s><s>[personal info removed by moderator] 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5522185</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Jul 19, 2013 6:29 PM">
+<s>bc is not a microsoft exchange server.</s><s> if your using bc email service and set up as here: http://helpx.adobe.com/business-catalyst/partner/setup-email-microsoft -outlook-express.html 
+you should not have any issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5522201</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="CraigWReillyAZ" timestamp="Sep 25, 2013 4:46 PM">
+<s>bc is my web host.</s><s> but the email is internal outlook 2013 looks at www for auto discover.</s><s> then fails.</s><s> then goes to domain without www and fails then goes to autodiscover. 
+i know bc is not exchange server but their certificate practices gum up outlook 2013 implementation. 
+
+
+</s><s>craig reilly 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5527992</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="WiseyD203" timestamp="Jul 22, 2013 11:33 AM">
+<s>i agree 100%.</s><s> i have a client right now who is adamant that the domain name not change to the worldsecuresystems url, they want to keep their own domain name throughout.</s><s> i would be more than happy to pay for the certificate just to get a consistent domain name for a website.</s><s> i've seen posts online going back as far as 2010 requesting this feature, disheartening that this is not being taken more seriously by adobe. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5670728</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="biorayinc" timestamp="Sep 10, 2013 5:17 PM">
+<s>we are new to bc and i'm shocked to find out that we are prohibited from having our own ssl certificate.</s><s> this is unacceptable and will cause us to migrate our ecommerce platform to another provider in the future.</s><s> it's frustrating because we expected this to be a standard feature and didn't learn about it until the final testing phase prior to launch.</s><s> i asked my designer, "do we need to buy a ssl certificate?" and he kept saying, "no, it's included".</s><s> but that's not right.</s><s> it's not the same thing to have purchases routed through worldsecuresystems.com 
+it is not a "vanity" thing.</s><s> it's a branding thing.</s><s> it's all about the customer experience and reinforcing trust through consistency.</s><s> also, there is no way to verify that our company is the owner domain like is offered with premium ssl domains that list the owner in the navigation bar. 
+</s><s>it's clear that i'm not the only consumer who believes this to be true.</s><s> adobe seems to belive that we should all be happy with a service that reminds me of the days when we had to use aol keywords instead of going to the www. 
+</s><s>offer this feature immediatly or we will plan our next site revision to be on a different service! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5671250</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Sep 10, 2013 9:54 PM">
+<s>i do not mean to be blunt but the system is a saas and a shared ceriifcation reduces the cost greatly for everyone and a core element to the system as it operates.</s><s> this can not change quickly or any time soon and i do not think bc has any consideration to do so anyway.</s><s> so you will need to use another service for your next site if your own ssl is what you want.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5672130</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="CraigWReillyAZ" timestamp="Sep 25, 2013 4:47 PM">
+<s>but this shared cert is also screwing up autodiscover in outlook 2013.</s><s> it's more a microsoft issue maybe... 
+
+
+</s><s>craig reilly 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5677089</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Lynda%20Spangler" timestamp="Sep 12, 2013 1:21 PM">
+<s>while i know its not anytime soon (if ever) it would be nice to have as an option.</s><s> maybe an upgrade option that cost $ extra and is not standard.</s><s> all bc plans have the included shared certificate but you can upgrade any ecommerce site to your own ssl at for extra.</s><s> that would be a nice feature for those who want this ability. 
+</s><s>just a thought. => 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5677731</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Sep 12, 2013 4:35 PM">
+<s>this would require a complete restucture not only in how bc works but how it is marketed and how you pay for it.</s><s> bc even may be more expensive as a result of a change.</s><s> you need to be fully aware of all sides to the two options here.</s><s> it is not a straightforward thing and would be a fundermental core change in bc to implement and you basically building a new version of bc for all new sites as you could not just termniate the old way as it would break every other bc site currently. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5821105</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="psolovyov" timestamp="Nov 6, 2013 1:57 PM">
+<s>why would this not be the first thing that gets fixed?</s><s> i would be ok even if i would have to get the ssl from adobe itself - but changing the domain name just to get https...hmm... 
+</s><s>most of the recent updates deal with stuff that none of the partners really use or plain users can use effectively. 
+bc is becoming sort of like a phone that is full of features, but cant make a phone call - ie, none of the core features are being fixed(crm, ssl, email delivery, seo(finally got an update only recently)). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5821230</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Nov 6, 2013 2:23 PM">
+<s>this is not a bug to be fixed.</s><s> its a core feature of the system and the platforms core concept of being afordable all in one sollution.</s><s> it would mean a massive overhall of the system and changing one of the core principles of the platform for what would be a small percentage of the people who would want it.</s><s> you saying it is like a phone that cant make calls is a bit off.</s><s> can you make a website and take secure payments?</s><s> yep.</s><s> does it save you overall cost in that year with that built in or your client?</s><s> yep.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5893875</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Min%20Park" timestamp="Dec 2, 2013 4:15 PM">
+<s>liam, i can see your point but all i (and we) ask is that "can we have our own ssl options?</s><s> or will it be available at some stage ?" 
+</s><s>i'm sorry but i have to be honest that series of your answers were bit ignorant and annoying. you are making assumption and a lot of us aren't building the website properly and that causes the concerns about the ssl ?</s><s> well, you may be right and you may be wrong.</s><s> anyway, it is true that while shared ssl greatly reduces cost for everyone it also makes ecommerce websites look less professional.</s><s> we had a client worked with external conversion managing agency that requested us to use matching domain for ssl, then we said "no we can't." sometime this can be quite frustrating and makes us look less professional. 
+</s><s>of course it won't be a "quick update" thing and it's not something to be fixed but this question has been going for a while so it'd be nice to be added at some point.</s><s> maybe you should give us more productive feedback like "yes" or "no" rather than ignoring our enquiries and depending on shared ssl. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5893910</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="Liam%20Dilley" timestamp="Dec 2, 2013 4:33 PM">
+<s>min, your reading a lot that is not there, it is quite a suprise, looking at what i have said and for you to say i am making assumptions and telling people they are not building their website properly.</s><s> i have not even come close to covering that sort of concept.</s><s> that is a very odd thing to say here when that has not even come up in the conversation, you are the only one that has raised that here. 
+</s><s>your situation is very bespoke and often will need a custom build sollution, yep i can see why you would need that but bc may not be the right fit in that case then.</s><s> i have also stated while it is a nice to have it does not appeal to the mass requirements of users.</s><s> fixing a few things on how bc handles this between domains etc are defiantly needed and will positivily effect most of bc developers but like i said, you can not just request bc to change its implementation like people have asked here.</s><s> it would be a complete uturn on a core feauture, be costly and be a very big change and a lot of people would have to change their sites and api.</s><s> bc wont do that for those reasons.</s><s> they may extend and offer a higher plan that has this ability in the future maybe, but people need to accpet that this has never been something on any roadmap by the bc team and wil likely be something that even if it happened you wont see close to any time soon. 
+</s><s>and you finish with the "yes" , "no" comment, again, looking at the thread over again, in no way what you state is what is going on in this thread, what are you reading?</s><s> confused.</s><s> be it me or anyone else, please do not just attack a person because you need a feature you want and they outline it is either not an ability of bc or would be a feature of bc. not that persons fault.</s><s> i have only stated the actual fact of things and outline the realistic nature of requests and what they would mean and what i know of what bc has said and doing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Business-Catalyst-FAQ/Discussions-4309667-5894040</DOCNO>
+<TEXT>
+<subject>Can I install my own SSL certificate for my domain?</subject>
+<post author="CraigWReillyAZ" timestamp="Dec 2, 2013 5:09 PM">
+<s>my problem is that outlook 2013 first looks at https://www.mydomain.com<http://www.domain.com> for the autodiscover to find my mail server which is not hosted by bc. when it gets there it throws up a red flag saying the domain and the certificate do not match.</s><s> very annoying to my users- and there does not seem to be a way around this. 
+
+
+
+</s><s>craig reilly | director, software development | american audio visual center<http://www.americanavc.com/> 
+</s><s>office 480-596-9880 fax 480-596-0942 mobile 480-206-5575 
+</s></post>
+</TEXT>
+</DOC>
+
+

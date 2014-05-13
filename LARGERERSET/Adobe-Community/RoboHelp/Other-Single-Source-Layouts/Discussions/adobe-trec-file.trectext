@@ -1,0 +1,2178 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-6065590-1392924</DOCNO>
+<TEXT>
+<subject>Javahelp - how to get styles to work properly</subject>
+<post author="SuzieC2014" timestamp="Jan 29, 2014 10:25 AM">
+<s>hello all, does anyone here generate javahelp 1.1.3?</s><s> i'm quite familiar with creating webhelp and epub using robohelp.</s><s> however, we have some javahelp projects i need to upgrade and the style mapping just seems random when displayed in the javahelp viewer (ie, mix of serif and sans serif fonts, even though my css has only sans serif fonts, fonts really tiny, etc).</s><s> webworks created javahelp beautifully but it would be good to use one product for our conversions.</s><s> any tips on how to get my stylesheet to work for producing javahelp?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-6065590-6068034</DOCNO>
+<TEXT>
+<subject>Javahelp - how to get styles to work properly</subject>
+<post author="Peter%20Grainge" timestamp="Jan 30, 2014 1:28 AM">
+<s>javahelp has always had issues with formatting.</s><s> what i know about it is on my site and there you will see the madcap decided not to even offer this format. 
+</s><s>typically java developers say they must have javahelp when in reality webhelp would work for them.</s><s> it's not always the case but it is worth asking. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-6065590-6068411</DOCNO>
+<TEXT>
+<subject>Javahelp - how to get styles to work properly</subject>
+<post author="SuzieC2014" timestamp="Jan 30, 2014 5:07 AM">
+<s>thanks peter.</s><s> unfortunately, this is a project that's existed for many years in this format and changing the format is not an option.</s><s> i did manage to create a webhelp sample with no problem.</s><s> i was just hoping that robohelp could do a decent job with the javahelp, at least equivalent with what we were able to do with webworks for many years.</s><s> thanks for the reply. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-6065590-6068834</DOCNO>
+<TEXT>
+<subject>Javahelp - how to get styles to work properly</subject>
+<post author="Captiv8r" timestamp="Jan 30, 2014 7:09 AM">
+<s>hi there 
+as you say that webworks did it beautifully, it would seem to imply that their css was solid.</s><s> i might ask if you tried applying the webworks css to your robohelp output?</s><s> maybe that would be all you need.</s><s> if not, one might assume it would be a fairly straightforward matter of simply identifying where the font doesn't look quite as desired and tweaking until you sort it. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-6065590-6069208</DOCNO>
+<TEXT>
+<subject>Javahelp - how to get styles to work properly</subject>
+<post author="SuzieC2014" timestamp="Jan 30, 2014 8:53 AM">
+<s>hi rick, 
+</s><s>yes, the webworks html and css is pretty clean, i have to admit.</s><s> i can't apply the same css because robohelp and webworks don't work the same way - webworks creates the lists differently in the html(uses <div> and doesn't rely on css for the alignment of those items as robohelp does.</s><s> that's just one difference. 
+i have worked with the css to create my webhelp output, but applying the same css for javahelp simply doesn't work (i found the same thing when creating epub output - the robohelp definitions for the aligning lists doesn't work for epub output.</s><s> i could be wrong, but i think that the xhtml required for epub is more strict and doesn't allow all the elements that the webhelp css uses). 
+</s><s>for the javahelp, i'm suspecting it's because of the additional items robhelp includes in the css for list alignment and such.</s><s> as well, it's hard to go through the html because robohelp does insert a lot of formatting - in other words, the html isn't that clean.</s><s> i'll keep working on it, perhaps even creating new css from scratch and redoing all the frame to robohelp mappings, but i suppose i was hoping the point of being able to output to so many formats is not having to redo all this work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5686265-1297253</DOCNO>
+<TEXT>
+<subject>Eclipse help Search field contains wingdings around the text box</subject>
+<post author="Frequentz Inc" timestamp="Sep 16, 2013 10:22 AM">
+<s>i am using rh 10 to generate eclipse help.</s><s> after reviewing the discussions re: rh 8 and downloading the .jsx file, i continue to have gobbledygook/wingding display issues.</s><s> can anyone help? 
+</s><s>thanks susan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5686265-5688587</DOCNO>
+<TEXT>
+<subject>Eclipse help Search field contains wingdings around the text box</subject>
+<post author="Peter%20Grainge" timestamp="Sep 17, 2013 4:54 AM">
+<s>have a look at the sample projects.</s><s> there is information there about creating this type of output.</s><s> perhaps that will help. 
+</s><s>click open on the robohelp starter page and then click samples in the ribbon on the left. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5685511-1297063</DOCNO>
+<TEXT>
+<subject>Broken Links in IE 8 Help!</subject>
+<post author="Ritarose" timestamp="Sep 16, 2013 6:46 AM">
+<s>output file is ssl and there are no broken links, however when putting it on the web all the hyperlinks are broken.</s><s> it's working fine in firefox!</s><s> please help!</s><s>!</s><s> very new/beginner user here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5685511-5685478</DOCNO>
+<TEXT>
+<subject>Broken Links in IE 8 Help!</subject>
+<post author="Captiv8r" timestamp="Sep 16, 2013 7:06 AM">
+<s>hi there 
+sorry, but we need more info. 
+</s><s>output file is ssl doesn't really tell us anything.</s><s> ssl simply means single source layout.</s><s> think of it as a recipe card used to create a specific dish.</s><s> we need to know what "dish" you are creating.</s><s> webhelp?</s><s> flashhelp?</s><s> compiled chm?</s><s> (known as microsoft html help), multiscreen?</s><s> (if multiscreen, is it just one of the six or so types or is it all?</s><s>), air help?</s><s> (if air help, is it browser based or desktop?</s><s>).</s><s> as you can see, there are many flavors to choose from. 
+</s><s>are all hyperlinks broken only in a specific browser?</s><s> you say things are working fine in firefox, which implies some other browser doesn't seem to work.</s><s> if so, which browser seems broken? 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-1212620</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Lady_Jag" timestamp="May 15, 2013 9:14 AM">
+<s>hi!</s><s> i'm trying to output my help system into an ebook format using rh v10, but i keep getting the error message, "failed to generate ebook (ebook).</s><s> see compilation message for more details." i check the output view, and all that is listed is: 
+</s><s>"generating epub 3 output...</s><s> epub 3 output generation failed.</s><s> internal error encountered, failed to generate ebook." 
+</s><s>this message tells me nothing.</s><s> so what gives?</s><s> do i have too many topics?</s><s> too many conditional tags?</s><s> not enough rain in the area?</s><s> too much pressure on the keyboard keys? 
+</s><s>help, please? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5322851</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Peter%20Grainge" timestamp="May 15, 2013 9:19 AM">
+<s>take a look at the sample projects as they contain information about creating this output, amongst others.</s><s> look in author info.</s><s> 
+</s><s>click open on the robohelp starter page and then click samples in the ribbon on the left.. 
+</s><s>see of that helps. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5323457</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Lady_Jag" timestamp="May 15, 2013 11:52 AM">
+<s>well, i can generate an ebook for one of the sample projects, but i continue to get the "failed to generate" error for my project.</s><s> is there a space limit or something? 
+i wish the error message was more intuitive. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5323495</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Peter%20Grainge" timestamp="May 15, 2013 12:12 PM">
+<s>first compare all the settings.</s><s> then create a very simple text only project with a couple of topics.</s><s> that will begin to prove it is content related.</s><s> post back with results. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5329462</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Lady_Jag" timestamp="May 17, 2013 8:11 AM">
+<s>i can create the file if i leave out the faq topics in my project.</s><s> i put a conditional tag on the faq topic folder, then excluded topics marked with that tag when i generated the file.</s><s> i am okay with this for the time being. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5329568</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Peter%20Grainge" timestamp="May 17, 2013 8:52 AM">
+<s>a fairly obvious guess is it is something about the formatting of those pages. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5329926</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Lady_Jag" timestamp="May 17, 2013 10:38 AM">
+<s>yes, i suspect it's the long file names for those topics.</s><s> they were imported into robohelp from our knowledgebase 2 years ago (i think they were in an excel spreadsheet), and upon import, rh automatically gave the .html file names the same names as the topics.</s><s> so there are incredibly long file names, like "i_get_an_unfortunate_occurrence_message_when_i_do_blah_and_blah_what _do_i_do.html." 
+</s><s>cleaning up the hundreds of file names is on my long list of tasks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5322873-5330671</DOCNO>
+<TEXT>
+<subject>"Failed to generate eBook (eBook). See compilation message for more details."</subject>
+<post author="Peter%20Grainge" timestamp="May 17, 2013 2:58 PM">
+<s>with file names like that, your topics don't need content. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236906-1192432</DOCNO>
+<TEXT>
+<subject>Cannot view Oracle Help output in rh10</subject>
+<post author="eipEncap" timestamp="Apr 15, 2013 11:08 AM">
+<s>i am using robohelp html on windows 7.</s><s> i am able to generate oracle help output, but i when i click on "view result", 
+
+the following window pops up: 
+i have the 1.6 and 1.7 jdk and jre's installed as well as the oracle help jdk. 
+</s><s>any suggestions?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236906-5236966</DOCNO>
+<TEXT>
+<subject>Cannot view Oracle Help output in rh10</subject>
+<post author="Peter%20Grainge" timestamp="Apr 15, 2013 11:24 AM">
+<s>what i know about this help format is on my site. 
+</s><s>do you really need this format?</s><s> it is outdated and poorly supported by oracle.</s><s> flare does not even offer this output for precisely those reasons. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236906-5237216</DOCNO>
+<TEXT>
+<subject>Cannot view Oracle Help output in rh10</subject>
+<post author="eipEncap" timestamp="Apr 15, 2013 12:37 PM">
+<s>hi, peter.</s><s> 
+</s><s>what you say about oracle's support of the oracle help format seems true.</s><s> what format would you suggest for a stand alone application written in java? 
+</s><s>dan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236906-5237232</DOCNO>
+<TEXT>
+<subject>Cannot view Oracle Help output in rh10</subject>
+<post author="Peter%20Grainge" timestamp="Apr 15, 2013 12:41 PM">
+<s>in most cases webhelp will do the job. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236906-5239393</DOCNO>
+<TEXT>
+<subject>Cannot view Oracle Help output in rh10</subject>
+<post author="eipEncap" timestamp="Apr 16, 2013 6:35 AM">
+<s>hi, peter.</s><s> 
+</s><s>as a developer how do i go about integrating webhelp with my java application?</s><s> is there something analogous to the oracle help java development kit which is used with webhelp? 
+</s><s>thank you.</s><s> 
+</s><s>dan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236906-5239478</DOCNO>
+<TEXT>
+<subject>Cannot view Oracle Help output in rh10</subject>
+<post author="Peter%20Grainge" timestamp="Apr 16, 2013 7:06 AM">
+<s>there are pages on my site about calling help.</s><s> also see willam van weelden's site at http://www.wvweelden.com 
+if you can link your app pages to specific topics using a url, that is a straightforward way but note the instructions about opening the topics with the navigation pane showing.</s><s> it's more user friendly that way. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5236918-1192434</DOCNO>
+<TEXT>
+<subject>Oracle Help search feature doesn't work with RoboHelp generated output</subject>
+<post author="eipEncap" timestamp="Apr 15, 2013 11:22 AM">
+<s>i am using robohelp html, version 10 on windows 7.</s><s> i am able to generate oracle help output and integrate it with my java application.</s><s> when i do this, the content and index tabs work fine, but the search feature does not.</s><s> regardless of what search term i try, i get no search results.</s><s> in generating the oracle help output, i used the default options throughout. 
+</s><s>any suggestions as to what is causing this problem? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5075029-1153879</DOCNO>
+<TEXT>
+<subject>Is there any way of creating a layout which is SCORM compliant?</subject>
+<post author="Alchemex" timestamp="Feb 14, 2013 11:39 PM">
+<s>i have robohelp 10. is there any way to use the content already captured in robohelp to make a scorm compliant layout? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5075029-5075061</DOCNO>
+<TEXT>
+<subject>Is there any way of creating a layout which is SCORM compliant?</subject>
+<post author="RoboColum(n)" timestamp="Feb 15, 2013 12:58 AM">
+<s>my understanding of scorm is that it is an elearning standard.</s><s> as robohelp is not an elearning tool it does not have scorm capabilitiy.</s><s> you could use adobe captivate that has scorm compliance and then embed your simulations, etc. into a robohelp topic.</s><s> maybe you could investigate this track. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5031332-1143793</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 fails to build JavaHelp Search</subject>
+<post author="jeanha" timestamp="Jan 29, 2013 8:43 AM">
+<s>when i generate javahelp with robohelp 10 i have the error below in the console: java.io.filenotfoundexception: myproject_javahelpsearch\positions (...</s><s>) at java.io.fileinputstream.open(native method) at java.io.fileinputstream.<init>(unknown source) at com.sun.java.help.search.documentlists.<init>(documentlists.java:161) at com.sun.java.help.search.documentlists.invert(documentlists.java:243) at com.sun.java.help.search.defaultindexbuilder.close(defaultindexbuilde r.java:103) at com.sun.java.help.search.indexer.compile(indexer.java:228) at com.sun.java.help.search.indexer.main(indexer.java:76) 
+</s><s>in the working directoty used for javahelp, the "myproject_javahelpsearch" sub-directory contains: docs offsets tmap 
+the error is not fatal and robohelp do generate the javahelp file.</s><s> the javahelps displays toc, index, and the project pages as expected, but when i try using the "search" tab in the generated javahelp, it does not work. 
+</s><s>if i generate a microsoft html help or webhelp, the "search" tab works fine. 
+</s><s>my project is a former robohelp 9.1 project converted to robohelp 10.</s><s> it was working fine on windows xp pro us (32 bits) + rh 9.1, i'm running now rh 10 on windows 8 pro french 64 bits. 
+</s><s>thanks in advance for any help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5031332-5031361</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 fails to build JavaHelp Search</subject>
+<post author="RoboColum(n)" timestamp="Jan 29, 2013 8:53 AM">
+<s>whoa!</s><s> that is a combination that not many people will use.</s><s> in case no one pops along with a nugget, all i can offer is this link: 
+http://www.grainge.org/pages/authoring/javahelp/javahelp.htm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-5031332-5031475</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 fails to build JavaHelp Search</subject>
+<post author="Peter%20Grainge" timestamp="Jan 29, 2013 9:37 AM">
+<s>there is nothing there about rh10 and it is not a topic i will be updating.</s><s> sorry but javahelp is not a popular output.</s><s> flare does not even offer it for reasons stated in the page on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-4440044-1011758</DOCNO>
+<TEXT>
+<subject>suppress CSS & scripts from XHTML output?</subject>
+<post author="rlauriston" timestamp="May 25, 2012 1:08 PM">
+<s>is there some way to suppress the following in robohelp 9's xhtml output? 
+<style type="text/css"> /*<!</s><s>[cdata[*/ body { background-color: #ffffff; } a:visited { color: #006699; } a:active { color: #ffcc00; } a:link { color: #006699; } /*]]>*/ </style> 
+<style type="text/css"> /*<!</s><s>[cdata[*/ table.whs1 { width: 500px; } tr.whs2 { vertical-align: top; text-align: left; } th.whs3 { vertical-align: top; text-align: left; width: 30%; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; } th.whs4 { width: 70%; padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; } td.whs5 { padding-left: 1px; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; } /*]]>*/ </style> 
+<style type="text/css"> /*<!</s><s>[cdata[*/ div.webhelppopupmenu { position: absolute; left: 0px; top: 0px; z-index: 4; visibility: hidden; } /*]]>*/ </style> 
+<script type="text/javascript" language="javascript" title="webhelpsplitcss"> //<!</s><s>[cdata[ <!-- if (navigator.appname !="netscape") { document.write("<link rel='stylesheet' href='sentrionstyle.css'>");} //--> //]]> </script> <script type="text/javascript" language="javascript" title="webhelpinlinescript"> //<!</s><s>[cdata[ <!-- function redo() { if (innerwidth != origwidth || innerheight != origheight) location.reload(); } if ((parseint(navigator.appversion) == 4) && (navigator.appname == "netscape")) { origwidth = innerwidth; origheight = innerheight; onresize = redo; } onerror = null; //--> //]]> </script> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-4440044-4450931</DOCNO>
+<TEXT>
+<subject>suppress CSS & scripts from XHTML output?</subject>
+<post author="rlauriston" timestamp="May 30, 2012 9:14 AM">
+<s>this is invalid xhtml: <script type="text/javascript" language="javascript" title="webhelpsplitcss"> 
+</s><s>the script element has no title attribute: 
+http://www.w3.org/tr/2002/wd-xhtml2-20020805/mod-scripting.html#sec_18 .</s><s>2.</s><s> 
+</s><s>this causes problems when importing into framemaker: 
+http://forums.adobe.com/message/4450794 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-4439969-1011751</DOCNO>
+<TEXT>
+<subject>generate single-page XHTML?</subject>
+<post author="rlauriston" timestamp="May 25, 2012 12:46 PM">
+<s>is it possible to configure robohelp to generate a single xhtml file for all topics instead of splitting them? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-4045836-929198</DOCNO>
+<TEXT>
+<subject>Creating JavaHelp and wanting HTML not HTM for file names</subject>
+<post author="Arunansn68" timestamp="Nov 25, 2011 5:33 AM">
+<s>i am using robohelp 7 to generate javahelp.</s><s> but the generated javahelp files are in .htm.</s><s> i want the help files to have the extension .html.</s><s> how do i change this in robohelp?</s><s> can anyone help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-4045836-4046149</DOCNO>
+<TEXT>
+<subject>Creating JavaHelp and wanting HTML not HTM for file names</subject>
+<post author="Captiv8r" timestamp="Nov 25, 2011 5:31 AM">
+<s>hi there and welcome to our community 
+first, we would appreciate it if you would take a few moments and familiarize yourself with the link below.</s><s> it's intended to help you get the best forum experience. 
+</s><s>click here to read 
+as for the issue of htm vs html, this is something you will need to manually change by editing the properties of each topic.</s><s> sorry.</s><s> the thing is, there simply is no technical reason that a page requires to be named html.</s><s> the only cases we have seen where it makes a difference are when a developer is simply being hard headed about it or when something has uniquely been set up at a company where the html file extension is actually required to make things work. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7, 8 or 9 within the day!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-204780</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="SYGP" timestamp="Feb 4, 2009 6:11 AM">
+<s>hello, i was working with robohelp 7 and created help.</s><s> now i import my files in robohelp 8 and have some problems: 1.</s><s> in design view files look just fine, but when i generate javahelp i have some unwanted characters.</s><s> at the begining of all pages and after all images in page i have ">" symbol.</s><s> what should i do to lose this unwanted characters.</s><s> 2. when i generate javahelp in output view i get exception : "building full-text-search data... java.io.ioexception: can't store document at com.sun.java.help.search.defaultindexerkit.storetoken(defaultindexerk it.java:164) at com.sun.java.help.search.defaultindexerkit.parseintotokens(defaultind exerkit.java:117) at com.sun.java.help.search.htmlindexerkit$htmlparsercallback.addcontent (htmlindexerkit.java:1092) at com.sun.java.help.search.htmlindexerkit$htmlparsercallback.addcontent (htmlindexerkit.java:1064) at com.sun.java.help.search.htmlindexerkit$htmlparsercallback.handletext (htmlindexerkit.java:411) at javax.swing.text.html.parser.documentparser.handletext(unknown source) at javax.swing.text.html.parser.parser.handletext(unknown source) at javax.swing.text.html.parser.parser.starttag(unknown source) at javax.swing.text.html.parser.parser.parsetag(unknown source) at javax.swing.text.html.parser.parser.parsecontent(unknown source) at javax.swing.text.html.parser.parser.parse(unknown source) at javax.swing.text.html.parser.documentparser.parse(unknown source) at javax.swing.text.html.parser.parserdelegator.parse(unknown source) at com.sun.java.help.search.htmlindexerkit.parse(htmlindexerkit.java:116 ) at com.sun.java.help.search.indexer.parsefile(indexer.java:259) at com.sun.java.help.search.indexer.parsefile(indexer.java:271) at com.sun.java.help.search.indexer.compile(indexer.java:219) at com.sun.java.help.search.indexer.main(indexer.java:87)" when i import my help in application search doesn't work.</s><s> how to generate help without any exceptions?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-2004650</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="Susan%20Darling" timestamp="Jun 1, 2009 2:03 PM">
+<s>hi.</s><s> i too am experiencing the same "java io exception" error when it's at the "building full-text search" part.</s><s> did you ever figure out a fix to this problem?</s><s> hope you or someone has an answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-3979307</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="Agnepal" timestamp="Oct 19, 2011 4:23 AM">
+<s>hi!</s><s> i'm still having the same problem i was hoping to find some solution, because it is really annoying.</s><s> i've noticed that this exception occurs after some minor modification in topic text (e.g. correcting a grammar mistake).</s><s> also, after generating java help and viewing the results, the topics which have "?</s><s>xml version="1.0" encoding="utf-8" ?</s><s> at the beginning, won't be displayed correctly and won't be found in the search results. 
+</s><s>so, i was not able to find the problem, although my colleague can modify the same help projects, and won't get the same exception.</s><s> so, my pc was changed, robo help installed freshly, but this problem still remains . 
+</s><s>well, any clues? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-3979283</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="Peter%20Grainge" timestamp="Oct 19, 2011 4:39 AM">
+<s>i have moved this thread to the other layouts category where it belongs as the problem is with a particular output. 
+i don't know the answer but hopefully sygp or susan darling will come back with how they solved the problem. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-3979314</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="Agnepal" timestamp="Oct 19, 2011 5:06 AM">
+<s>thanks for the reply. 
+</s><s>there are two possible workarounds in this case: 1.</s><s> import the source again and do not change a thing.</s><s> 2. extract the damaged output file and delete the "?</s><s>xml version="1.0" encoding="utf-8" line.</s><s> then compress .jar again.</s><s> neither of these are timesavers 
+i'll be still hoping to see a solution for this problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-3979371</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="Peter%20Grainge" timestamp="Oct 19, 2011 5:15 AM">
+<s>sounds like the time to report a bug. 
+</s><s>the more people who report a bug or request a feature, the more likely it is to be actioned.</s><s> please follow this link. 
+http://www.adobe.com/cfusion/mmform/index.cfm?name=wishform&product=38 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-204780-3979392</DOCNO>
+<TEXT>
+<subject>Problems with RoboHelp 8 HTM and JavaHelp</subject>
+<post author="Agnepal" timestamp="Oct 19, 2011 5:45 AM">
+<s>thank you, peter!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3943186-907634</DOCNO>
+<TEXT>
+<subject>Modifying DocBook XML Output?</subject>
+<post author="wasatech" timestamp="Sep 28, 2011 11:18 AM">
+<s>howdy., i know very little about xml, so my questions may be a bit bewildering as my old friend davy crockett used to say. 
+i am wondering how to modify what single source xml spits out.</s><s> as far as i understand at this point, it uses docbook (not sure of version). 
+</s><s>looking for it to generate something like this: 
+<data name="topic1.help" xml:space="preserve"> <value><![cdata[ <p class="helpheader"><b>topic h1 header</b></p> <p class="helpcontent">topic contend would go here.</p> <p class="helpcontent">topic contend would go here.</p> <p class="helpcontent">topic contend would go here.</p> <p class="helpcontent">topic contend would go here.</p> ]]> </value> </data> 
+
+</s><s>thanks lyle 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3943186-3944256</DOCNO>
+<TEXT>
+<subject>Modifying DocBook XML Output?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 29, 2011 12:43 AM">
+<s>hi, 
+</s><s>try tools > xml handler manager.</s><s> you should be able to create/modify custom handlers for the docbook export.</s><s> i've never used it, just seen it sitting there in the menu.</s><s> never used docbook for that matter...</s><s> perhaps another forum member used the export and xml handler manager. 
+</s><s>another method might be to use extendscript in order to modify the output to suit your needs. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-892547</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark Southee" timestamp="Aug 18, 2011 3:11 AM">
+<s>i was pleasantly surprised when doing an investigation in to outputting to epub format, that everything seemed to be transformed quite nicely, even my tables, which according to what i read don't get handled too well by the epub output. 
+</s><s>but (there's always a but!</s><s>), as seems invevitable, bulleted lists don't work, with the bullet appearing in the text, as below. 
+
+
+</s><s>all lists in my project are affected.</s><s> as this is a linked framemaker project which normally outputs to webhelp, is there anything i can to to change this? 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3869044</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Willam%20van%20Weelden" timestamp="Aug 18, 2011 3:51 AM">
+<s>hi, 
+</s><s>my guess is that this is a css issue.</s><s> try the following: 
+1.</s><s> make sure that your bulleted lists are converted to html lists on import/generation.</s><s> 2. add the following line of code to your css files: 
+ul { list-style-position: outside; } 
+</s><s>if this doesn't work, please post the html of one of those lists so i can take a look. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3905809</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark%20Southee" timestamp="Sep 7, 2011 2:45 AM">
+<s>hi willam, 
+</s><s>been on holiday and just caught up with this! 
+</s><s>my lists are converted to html lists. 
+i added the linde to my css file, but no change. 
+</s><s>below is html from a file 
+
+<body> <p class="title">getting started</p> <p class="fm_body">this section describes how to access icm and describes the functionality and navigation around the system.</p> <ul type="disc"> <li><p class="fm_bulleted"><a href="system_requirements.htm#xref_98462_system_requirements">system requirements</a></p></li> <li><p class="fm_bulleted"><a href="log_in_to_icm.htm#xref_85581_log_in_to_icm">log in to icm</a></p></li> <li><p class="fm_bulleted"><a href="layouts.htm#xref_77140_layouts">layouts</a></p></li> <li><p class="fm_bulleted"><a href="menus.htm#xref_14919_menus">menus</a></p></li> <li><p class="fm_bulleted"><a href="create_a_custom_layout.htm#xref_75406_create_a_custom">create a custom layout</a></p></li> </ul> </body> 
+
+</s><s>cheers mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3905930</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 7, 2011 4:25 AM">
+<s>hi, 
+</s><s>this is probably caused by a paragraph with a negative indent.</s><s> the strange thing is that you should also experience the same problem with webhelp. 
+</s><s>check your css file and search for p.fm_bulleted.</s><s> does this style have a negative indent such as margin-left: -20px?</s><s> if you can't find the style, please post your css and i'll take a look. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3906222</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark%20Southee" timestamp="Sep 7, 2011 7:34 AM">
+<s>hi willam, 
+</s><s>here is the style: 
+
+p.fm_bulleted { font-family: arial; margin-left: 18pt; list-style: rh-list; x-list-class: rl-p-fm_bulleted; x-list-level: 1; } 
+
+no negative indent 
+mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3906287</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 7, 2011 7:46 AM">
+<s>hi mark, 
+</s><s>can you share the project with me?</s><s> i'd like to take a look and dig around a bit.</s><s> you can contact met at contact [at] wvanweelden [dot] eu. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3906265</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Peter%20Grainge" timestamp="Sep 7, 2011 7:56 AM">
+<s>willam 
+</s><s>isn't the problem that the paragraph style is including definitions that should be in the list style? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3906363</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark%20Southee" timestamp="Sep 7, 2011 8:22 AM">
+<s>hi willam, 
+</s><s>unfortunately, due to the nda at the client, i can't send you the project. 
+i thought it strange that the list style refers to: 
+list-style: rh-list; 
+i have the conversion setting to html list (or am i misinterpreting the rh css)? 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3906817</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 7, 2011 11:17 AM">
+<s>@peter: perhaps, but not with the posted definition. epub uses xhtml 1.1 which is even stricter than the xhtml 1.0 that webhelp uses.</s><s> so the problem should also be present in webhelp...</s><s> but it certainly is worth checking out. 
+@mark: - i haven't seen the list-style: rh-list before.</s><s> it certainly isn't a valid css rule.</s><s> but that may be because this css is used as a conversion template.</s><s> how does the css look in the style sheet that is actually assigned to the topic?</s><s> are you sure you aren't converting to a robohelp multilevel list? - generate your xml layout and open the faulty topic in your browser.</s><s> how does it look then?</s><s> is the html the same as in webhelp? - too bad you can't share the project.</s><s> can you perhaps only share the css file? 
+
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3906856</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Peter%20Grainge" timestamp="Sep 7, 2011 11:30 AM">
+<s>mark 
+</s><s>you should be able to create the same problem in a new project with just a couple of topics.</s><s> garbage content will do and enable willam to help you. 
+</s><s>this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text.</s><s> this is some sample text. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3907950</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark%20Southee" timestamp="Sep 8, 2011 2:24 AM">
+<s>here is my css file.</s><s> i will put together a quick project in the next couple of days.</s><s> btw peter, have you seen the yorkshire version of lorem ipsum?</s><s> http://tlipsum.appspot.com/ 
+
+/*created with adobe robohelp 9.*/ ul { list-style-position: outside; } p.bodylevel1 { margin-left: 18.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 8.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: normal; font-size: 11.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.bodylevel2 { margin-left: 36.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 8.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: normal; font-size: 11.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.bodylevel3 { margin-left: 54.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 8.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: normal; font-size: 11.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } h1 { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 17.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 14.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } h2 { margin-left: 18.000pt; margin-right: 36.000pt; text-align: left; text-indent: 0.000pt; margin-top: 16.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 13.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } h3 { margin-left: 36.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 14.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 12.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } h4 { margin-left: 54.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 13.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 11.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.title { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 22.000pt; margin-bottom: 11.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; letter-spacing: 0.00em; font-size: 24pt; color: #f7961e; font-weight: bold; text-decoration: none; } p.authorbook { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 0.000pt; margin-bottom: 292.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 13.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.cellbody { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 0.000pt; margin-bottom: 4.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: normal; font-size: 9.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.cellheading { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 0.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 9.0pt; letter-spacing: 0.00em; color: #ffffff; text-decoration: none; } p.extract { margin-left: 18.000pt; margin-right: 18.000pt; text-align: left; text-indent: 0.000pt; margin-top: 7.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: normal; font-size: 9.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.footnote { margin-left: 12.000pt; margin-right: 0.000pt; text-align: left; text-indent: -12.000pt; margin-top: 3.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: normal; font-size: 9.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.publisherbook { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 0.000pt; margin-bottom: 0.000pt; word-spacing: 0.250em; font-family: arial; font-style: normal; font-weight: bold; font-size: 12.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } p.titlebook { margin-left: 0.000pt; margin-right: 0.000pt; text-align: left; text-indent: 0.000pt; margin-top: 0.000pt; margin-bottom: 60.000pt; word-spacing: 0.250em; font-family: arial; font-style: italic; font-weight: normal; font-size: 30.0pt; color: #000000; letter-spacing: -0.04em; text-decoration: none; } h5 { font-weight: bold; font-size: 10.0pt; x-next-type: p; font-family: arial; } h6 { font-weight: bold; font-size: 8.0pt; x-next-type: p; font-family: arial; } span.pagenumber { font-weight: bold; } span.equationvariables { font-style: italic; } span.emphasis { font-style: italic; } span.callout { font-family: arial; font-style: normal; font-weight: normal; font-size: 8.0pt; color: #000000; letter-spacing: 0.00em; } span.bulletsymbol { font-family: courier; font-style: normal; font-weight: bold; font-size: 11.0pt; color: #000000; letter-spacing: 0.00em; } span.firstlettertitle { font-family: arial; font-style: italic; font-weight: normal; font-size: 42.0pt; color: #000000; letter-spacing: -0.04em; } span.equationnumber { font-family: arial; font-style: normal; font-weight: bold; font-size: 8.0pt; color: #000000; letter-spacing: 0.00em; } span.chapternumber { font-family: arial; font-style: normal; font-weight: bold; font-size: 10.0pt; color: #000000; letter-spacing: 0.04em; } span.stepnumber { font-family: arial; font-style: normal; font-weight: bold; font-size: 8.0pt; color: #000000; letter-spacing: 0.00em; } span.webjump { } span.superscript { font-family: arial; font-style: normal; font-weight: normal; color: #000000; letter-spacing: 0.00em; } span.underline { font-style: normal; font-weight: normal; color: #000000; letter-spacing: 0.00em; } span.bold { font-style: normal; font-weight: bold; color: #000000; letter-spacing: 0.00em; } span.bluebold { font-weight: bold; color: #2e97dc; } span.white { color: #ffffff; letter-spacing: 0.00em; text-decoration: none; } span.symbol { font-family: symbol; font-style: normal; font-weight: normal; font-size: 10.0pt; color: #000000; letter-spacing: 0.00em; text-decoration: none; } span.greybold { font-family: arial; font-weight: bold; color: #3f3f3f; } span.subscript { font-family: arial; font-style: normal; font-weight: normal; color: #000000; letter-spacing: 0.00em; } table.cellborder { padding: 0px; border-top: solid 1px #000000; border-left: solid 1px #000000; x-border-spacing: 0px; } table.cellborder td { border-right: solid 1px #000000; border-bottom: solid 1px #000000; } table.colorful1 { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; x-border-spacing: 0px; x-1st-row: 1; x-1st-row-name: row1; x-1st-col: 1; x-1st-col-name: col1; } table.colorful1 tr.row1 td { background-color: #800000; padding-right: 10px; padding-left: 10px; font-weight: bold; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; color: #ffffff; } table.colorful1 td.col1 { background-color: #c0c0c0; padding-right: 10px; padding-left: 10px; font-weight: bold; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.colorful1 td { padding-right: 10px; padding-left: 10px; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.colorful2 { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; x-border-spacing: 0px; x-1st-row: 1; x-1st-row-name: row1; x-1st-col: 1; x-1st-col-name: col1; } table.colorful2 tr.row1 td { background-color: #000080; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; padding-left: 10px; font-weight: bold; color: #ffffff; } table.colorful2 td.col1 { background-color: #0000ff; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; font-weight: bold; padding-left: 10px; color: #ffffff; } table.colorful2 td { border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; padding-left: 10px; } table.colorful3 { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #ffffff; border-top-style: solid; border-top-width: 1px; border-top-color: #ffffff; x-border-spacing: 0px; x-1st-row: 1; x-1st-row-name: row1; } table.colorful3 tr.row1 td { background-color: #000080; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; padding-left: 10px; font-weight: bold; color: #ffffff; } table.colorful3 td { background-color: #c0c0c0; border-right-style: solid; border-right-width: 1px; border-right-color: #ffffff; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #ffffff; padding-right: 10px; padding-left: 10px; } table.colorful4 { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; x-border-spacing: 0px; x-1st-row: 1; x-1st-row-name: row1; x-1st-col: 1; x-1st-col-name: col1; } table.colorful4 tr.row1 td { background-color: #008000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; padding-left: 10px; font-weight: bold; color: #ffffff; } table.colorful4 td.col1 { background-color: #ffff00; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; font-weight: bold; padding-left: 10px; } table.colorful4 td { border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; padding-right: 10px; padding-left: 10px; } table.lastcolumn { x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-last-col: 1; x-last-col-name: last; text-align: right; font-size: 10pt; } table.lastcolumn tr.t1row td { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-family: arial; font-size: 10pt; } table.lastcolumn tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.lastcolumn td.last { background-color: #c0c0c0; font-family: arial; text-align: right; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-size: 10pt; } table.lastcolumn tr.t1row td.last { background-color: #c0c0c0; font-family: arial; text-align: right; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-size: 10pt; } table.lastcolumn tr.t2row td.last { background-color: #c0c0c0; font-family: arial; text-align: right; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-size: 10pt; } table.lastrow { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; x-border-spacing: 0px; x-last-row: 1; x-last-row-name: last; text-align: right; font-family: arial; font-size: 10pt; } table.lastrow td { border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-family: arial; font-size: 10pt; } table.lastrow tr.last td { text-align: right; font-family: arial; font-size: 10pt; background-color: #c0c0c0; } table.bottomrowrightcolumn { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; x-last-row: 1; x-last-row-name: last; text-align: right; font-family: arial; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-last-col: 1; x-last-col-name: last; } table.bottomrowrightcolumn td { border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.bottomrowrightcolumn tr.last td { text-align: right; font-family: arial; font-size: 10pt; background-color: #c0c0c0; } table.bottomrowrightcolumn tr.t1row td { text-align: right; font-family: arial; font-size: 10pt; } table.bottomrowrightcolumn tr.t2row td { font-family: arial; font-size: 10pt; } table.bottomrowrightcolumn td.last { text-align: right; background-color: #c0c0c0; font-family: arial; font-size: 10pt; } table.bottomrowrightcolumn tr.t1row td.last { text-align: right; background-color: #c0c0c0; font-family: arial; font-size: 10pt; } table.bottomrowrightcolumn tr.t2row td.last { text-align: right; background-color: #c0c0c0; font-family: arial; font-size: 10pt; } table.leftcolumn { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-1st-col: 1; x-1st-col-name: t1st; } table.leftcolumn tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumn tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumn td.t1st { background-color: #cccccc; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.leftcolumn tr.t1row td.t1st { background-color: #cccccc; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.leftcolumn tr.t2row td.t1st { background-color: #cccccc; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.leftcolumnalternatingcolumns { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-1st-col: 1; x-1st-col-name: t1st; x-col-pat-1: 1; x-col-pat-1-name: t1col; x-col-pat-count: 2; x-col-pat-2: 1; x-col-pat-2-name: t2col; } table.leftcolumnalternatingcolumns tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnalternatingcolumns tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnalternatingcolumns td.t1st { font-family: arial; font-size: 10pt; font-weight: bold; background-color: #cccccc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnalternatingcolumns tr.t1row td.t1st { font-family: arial; font-size: 10pt; font-weight: bold; background-color: #cccccc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnalternatingcolumns tr.t2row td.t1st { font-family: arial; font-size: 10pt; font-weight: bold; background-color: #cccccc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnalternatingcolumns td.t1col { background-color: #ccffcc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-family: arial; font-size: 10pt; } table.leftcolumnalternatingcolumns td.t2col { } table.leftcolumnrepeatingcolumns { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-1st-col: 1; x-1st-col-name: t1st; x-col-pat-1: 1; x-col-pat-1-name: t1col; x-col-pat-2: 1; x-col-pat-2-name: t2col; x-col-pat-count: 3; x-col-pat-3: 1; x-col-pat-3-name: t3col; } table.leftcolumnrepeatingcolumns tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnrepeatingcolumns tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.leftcolumnrepeatingcolumns td.t1st { background-color: #808080; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.leftcolumnrepeatingcolumns tr.t1row td.t1st { background-color: #808080; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.leftcolumnrepeatingcolumns tr.t2row td.t1st { background-color: #808080; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.leftcolumnrepeatingcolumns td.t1col { background-color: #cccccc; font-family: arial; font-size: 10pt; } table.leftcolumnrepeatingcolumns td.t2col { font-family: arial; font-size: 10pt; } table.leftcolumnrepeatingcolumns td.t3col { background-color: #ccffcc; font-family: arial; font-size: 10pt; } table.line1 { padding: 0px; border-bottom-style: solid; border-bottom-width: 3px; border-bottom-color: #008000; border-top-style: solid; border-top-width: 3px; border-top-color: #008000; x-border-spacing: 0px; x-1st-row: 1; x-1st-row-name: row1; } table.line1 tr.row1 td { border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #008000; } table.paddedcells { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-border-spacing: 2px; } table.paddedcells tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.paddedcells tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.paddedcells td { padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; } table.retro7 { x-border-spacing: 15px; x-row-pat-count: 1; x-row-pat-1: 1; x-row-pat-1-name: t1row; } table.retro7 tr.t1row td { background-color: #c0c0c0; border-top-style: groove; border-bottom-style: groove; border-left-width: 1px; border-top-color: #00ff00; border-top-width: 4px; border-right-width: 1px; border-bottom-color: #00ff00; border-bottom-width: 4px; } table.retro7 td { padding-left: 10px; padding-right: 10px; padding-top: 0px; padding-bottom: 0px; } table.shadedalternatingcolumns { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-col-pat-1: 1; x-col-pat-1-name: t1col; x-col-pat-count: 2; x-col-pat-2: 1; x-col-pat-2-name: t2col; } table.shadedalternatingcolumns tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.shadedalternatingcolumns tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.shadedalternatingcolumns td.t1col { background-color: #ccffcc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-family: arial; font-size: 10pt; } table.shadedalternatingcolumns td.t2col { background-color: #cccccc; font-family: arial; font-size: 10pt; } table.shadedalternatingrows { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; font-family: arial; } table.shadedalternatingrows tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; background-color: #0c72af; } table.shadedalternatingrows tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-color: #000000; border-right-style: solid; border-right-color: #000000; border-top-style: solid; border-top-color: #000000; border-bottom-style: solid; border-bottom-color: #000000; background-color: #ffffff; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; } table.simpleborder { padding: 0px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; x-border-spacing: 0px; } table.simpleborder td { border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprow { x-1st-row: 1; x-1st-row-name: t1st; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; } table.toprow tr.t1st td { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-family: arial; font-size: 10pt; background-color: #c0c0c0; font-weight: bold; text-align: center; } table.toprow tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprow tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowrepeatingrows { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-1st-row: 1; x-1st-row-name: t1st; x-row-pat-count: 3; x-row-pat-3: 1; x-row-pat-3-name: t3row; } table.toprowrepeatingrows tr.t1row td { font-family: arial; font-size: 10pt; background-color: #ccffcc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowrepeatingrows tr.t2row td { font-family: arial; font-size: 10pt; background-color: #cccccc; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowrepeatingrows tr.t1st td { font-family: arial; font-size: 10pt; font-weight: bold; text-align: center; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; background-color: #808080; } table.toprowrepeatingrows tr.t3row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowalternatingrows { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-1st-row: 1; x-1st-row-name: t1st; } table.toprowalternatingrows tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; background-color: #ccffcc; } table.toprowalternatingrows tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowalternatingrows tr.t1st td { text-align: center; font-family: arial; font-size: 10pt; font-weight: bold; background-color: #c0c0c0; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowleftcolumn { border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; x-border-spacing: 0px; x-row-pat-1: 1; x-row-pat-1-name: t1row; x-row-pat-count: 2; x-row-pat-2: 1; x-row-pat-2-name: t2row; x-1st-row: 1; x-1st-row-name: t1st; x-1st-col: 1; x-1st-col-name: t1st; } table.toprowleftcolumn tr.t1row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowleftcolumn tr.t2row td { font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowleftcolumn tr.t1st td { font-family: arial; font-size: 10pt; font-weight: bold; background-color: #808080; text-align: center; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; } table.toprowleftcolumn td.t1st { text-align: center; background-color: #808080; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.toprowleftcolumn tr.t1row td.t1st { text-align: center; background-color: #808080; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } table.toprowleftcolumn tr.t2row td.t1st { text-align: center; background-color: #808080; font-family: arial; font-size: 10pt; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000; font-weight: bold; } p.fm_body { font-family: arial; } p.fm_bulleted { font-family: arial; margin-left: 18pt; list-style: rh-list; x-list-class: rl-p-fm_bulleted; x-list-level: 1; } p.fm_caption { font-family: arial; } p.fm_cellbody { font-family: arial; } p.fm_cellheading { font-family: arial; color: #ffffff; font-weight: bold; } p.fm_heading1 { font-family: arial; font-weight: bold; font-size: 14pt; } p.fm_heading2 { font-family: arial; font-weight: bold; } p.fm_heading3 { font-family: arial; font-weight: bold; font-size: 12pt; } p.fm_headingrunin { font-family: arial; } p.fm_note { font-family: arial; color: #0c72af; font-weight: bold; font-style: normal; } p.fm_numbered { font-family: arial; margin-left: 18pt; list-style: rh-list; x-list-class: rl-p-fm_numbered; x-list-level: 1; } p.fm_numbered1 { font-family: arial; list-style: rh-list; x-list-class: rl-p-fm_numbered1; x-list-level: 1; margin-left: 18pt; } p.fm_tablefootnote { font-family: arial; } p.fm_title { font-family: arial; } span.fm_emphasis { font-family: arial; font-weight: bold; font-style: normal; } span.fm_hyperlink { font-family: arial; color: #0000ff; font-weight: normal; font-style: normal; text-decoration: underline; } span.fm_subscript { font-family: arial; } span.fm_superscript { font-family: arial; } span.fm_te blue { font-family: arial; } p.fm_footnote { font-family: arial; } p { margin-top: 14pt; margin-bottom: 14pt; margin-left: 0pt; margin-right: 0pt; font-family: arial; } p.fm_chapter heading no number { font-size: 24pt; color: #f7961e; font-weight: bold; } p.fm_tabletitle { font-weight: bold; color: #000000; text-align: left; } rh-list.rl-p-fm_numbered1 { x-level-count: 1; x-lvl-1-format: "<x>."; x-lvl-1-type: decimal; } rh-list.rl-p-fm_numbered { x-level-count: 1; x-lvl-1-format: "<x>."; x-lvl-1-type: decimal; } rh-list.rl-p-fm_bulleted { x-level-count: 1; x-lvl-1-format: "<x>."; x-lvl-1-type: disc; } rh-list.rl-p-fm_bulleted_indent { x-level-count: 1; x-lvl-1-format: "<x>."; x-lvl-1-type: disc; } span.fm_commandline { font-family: "courier new"; font-size: 12pt; } p.fm_bulleted_indent { margin-left: 36pt; list-style: rh-list; x-list-class: rl-p-fm_bulleted_indent; x-list-level: 1; } rh-list.rl-p-fm_bulleted_indent { x-level-count: 1; x-lvl-1-format: "<x>."; x-lvl-1-type: disc; } p.fm_bulleted { } p.fm_bulleted_indent { } p.fm_bulleted_indent { } rh-list.style1 { x-lvl-1-format: "<x>&c"; x-lvl-2-type: lower-alpha; x-lvl-2-format: "<x>&c"; x-lvl-2-margin: 20px; x-lvl-3-type: lower-roman; x-lvl-3-format: "<x>&c"; x-lvl-3-margin: 40px; x-lvl-4-type: decimal; x-lvl-4-format: "&o<x>&c"; x-lvl-4-margin: 60px; x-lvl-5-format: "&o<x>&c"; x-lvl-5-margin: 80px; x-lvl-6-type: lower-roman; x-lvl-6-format: "&o<x>&c"; x-lvl-6-margin: 100px; x-lvl-8-type: lower-alpha; x-lvl-8-margin: 140px; x-lvl-7-format: "<x>."; x-lvl-7-margin: 120px; x-level-count: 9; x-lvl-9-type: lower-roman; x-lvl-9-margin: 160px; } a.breadcrumbs { font-family: arial; font-size: 10pt; } p.fm_heading3 { } p.fm_heading2 { } p.fm_heading1 { } 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3908199</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 8, 2011 6:29 AM">
+<s>the rh-list from one of your previous posts definitely a robohelp mutilevel list.</s><s> but the html you posted is a regular html list are you 100% sure that you are converting the lists to a html list and not a robohelp multilevel list? 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3909804</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark%20Southee" timestamp="Sep 9, 2011 2:55 AM">
+<s>hi willam, 
+</s><s>yes definitely html lists.</s><s> i have, during the course of this project tried rh lists to see if it cured another issue i had (it didn't!</s><s>).</s><s> 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3909807</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 9, 2011 3:06 AM">
+<s>ok, understood.</s><s> i'll await your test project to see what's going wrong. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3868973-3909866</DOCNO>
+<TEXT>
+<subject>ePub output - bulleted lists mangled RH9</subject>
+<post author="Mark%20Southee" timestamp="Sep 9, 2011 4:20 AM">
+<s>hi willam, 
+</s><s>just sent you a sample project with the css file as posted above. 
+</s><s>thanks for having a look at this 
+mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3857910-890255</DOCNO>
+<TEXT>
+<subject>Question re ePub script - RH9</subject>
+<post author="Mark Southee" timestamp="Aug 12, 2011 6:03 AM">
+<s>i note that the script requires 7-zip to be installed.</s><s> if i have another zip tool (winzip or izarc) can that be used instead, or does it have to be 7-zip? 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3857910-3857911</DOCNO>
+<TEXT>
+<subject>Question re ePub script - RH9</subject>
+<post author="Peter%20Grainge" timestamp="Aug 12, 2011 6:10 AM">
+<s>it only has to be 7 zip if you want the script to work. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3857910-3857912</DOCNO>
+<TEXT>
+<subject>Question re ePub script - RH9</subject>
+<post author="Mark%20Southee" timestamp="Aug 12, 2011 6:11 AM">
+<s>thanks peter, that was quick 
+mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-637919</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="Rie Brenner" timestamp="May 13, 2010 8:02 AM">
+<s>hi - i'm new to this forum and a new robohelp 8 user...i have to figure things out for myself since my employer is not offering to provide funds for training. 
+
+i purchased robohelp 8 in january of this year for the purpose of creating a help system which will contain reference manuals (word format) that are associated with my company's java software package.</s><s> using robohelp 8 for word, i created a java project, imported 18 of my reference manuals, and batch generated with success (output - uncompressed javahelp with source output files).</s><s> i need the output to be "compressed javahelp" in order to create a .jar file which will ultimately be delivered to the software development team to be incorporated into the java code.</s><s> when i choose the "compressed javahelp" or "compressed javahelp with source files", i receive the following: 
+sun java 2 sdk or later is required to compress the javahelp output.</s><s> please install the latest java sdk or choose "uncompressed javahelp" as your output option.</s><s> this javahelp wizard dialog box also contains an option to "locate sun java sdk install folder" button. 
+i installed the following software packages in the in the c:\program files\java directory on my windows xp machine: jdk1.6.0_20 (latest from sun) (sdk is now jdk) jh2.0 jre6 
+after installation and rebooting machine, i repeated the steps outlined above and i still received the same error message.</s><s> this time, i chose the "locate sun java 2 sdk install folder" and navigated to to the install folder.</s><s> i received the following message: "java software development kit (java sdk) is not installed in the folder". after selecting ok, the next message is "if you want to output compressed javahelp, the output file path can not contain "!". 
+</s><s>when i attempt to view the javahelp (primary layout) from the single source layouts node, i receive the same "java 2 sdk and javahelp are required...message 
+so, i gave up on this project for 3 months and now i'm receiving a deadline to have the project completed asap.</s><s> i spent 1/2 yesterday on the phone with adobe support and after uninstalling and reinstalling jdk, jh, and jre several times, the issue is being escalted to tier 2. 
+</s><s>has anyone on this forum encountered this problem?</s><s> any information would be very much appreciated! 
+</s><s>thanks - rie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-2810694</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="Peter%20Grainge" timestamp="May 13, 2010 8:54 AM">
+<s>there is an article on creating javahelp on my site.</s><s> it is written for rh html but it may help. 
+</s><s>even though you are creating help for a java application, it is not always necessary to produce javahelp.</s><s> often webhelp can be used and does a better job with few hassles.</s><s> see the article for more. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-2811614</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="Rie%20Brenner" timestamp="May 13, 2010 1:29 PM">
+<s>thanks for the information peter. 
+
+
+</s><s>i've been referring to your document for quite some time now...i have tried everything without success.</s><s> hopefully tier 2 support will be following up with me soon. 
+</s><s>out of curiosity, i just generated my project using webhelp and it successfully created the helpfile.htm.</s><s> when i chose to view output, only one small file is present as shown below: 
+
+
+
+
+
+
+
+
+</s><s>the helpfile.log displays all 18 of my reference manuals, but does not display in navigation panel. 
+
+
+i guess i could really benefit from some classes on robohelp as this experience has been exhausting. 
+
+
+</s><s>marie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-2815316</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="Peter%20Grainge" timestamp="May 15, 2010 12:22 AM">
+<s>what illustration? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-2819231</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="Rie%20Brenner" timestamp="May 17, 2010 6:46 AM">
+<s>my apologies peter, i guess the image did not reach its destination...anyway, i found an alternate method for viewing my helpset file by using hsviewer.jar.</s><s> all my reference manuals are present and accounted for.</s><s> i know need to find a way to manually convert the helpset file (helpfile.hs) into a .jar file so i can update the existing help.jar file that is currently in the bin directory of my client machine to simulate real world environment. 
+</s><s>from a command prompt, i entered the following in the directory where the helpset file resides: jar cvfm help.jar . 
+i received the following error: 
+</s><s>"jar.exe - unable to locate component - this application has failed to start because jli.dll was not found.</s><s> re-installing the application may fix the problem". 
+
+
+</s><s>thank you for your continued support! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-2819350</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="Peter%20Grainge" timestamp="May 17, 2010 7:47 AM">
+<s>such as i know is in the article to which i pointed you.</s><s> beyond that, good luck with google.</s><s> sorry but it's not a form of help i continued to work with.</s><s> i'll leave you to work out why. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2810535-3417406</DOCNO>
+<TEXT>
+<subject>View JavaHelp (Primary Layout)</subject>
+<post author="iwaddon" timestamp="Jan 21, 2011 3:23 AM">
+<s>i hope you have resolved your problem by now. 
+</s><s>but if not or if someone else is having a similar problem: 
+copy jhall located in \\jh2.0\javahelp\lib to the following folder: \\jdk1.6.0_20\jre\lib\ext (paths relative to where these are installed on your machine; i have them under c:\program files\java 
+make sure that when you right click and select generate in the dialog box that appear the version is set to the correct version of javahelp 
+when you choose locate sun java 2 sdk install folder browse to c:\program files\java or wherever the jdk is 
+for the message "if you want to output compressed javahelp, the output file path can not contain "!" make sure that in select output folder and file name at the top of the javahelp options dialog you select a folder that does not have !</s><s> in the path; the default folder does!</s><s> i personally create a new folder under my project for the output. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3354595-768391</DOCNO>
+<TEXT>
+<subject>I thought it was aligned...</subject>
+<post author="jenlaurentate" timestamp="Dec 21, 2010 6:14 AM">
+<s>i just published this site for a friend of mine: www.paintingbydarlene.com and it looks fine in all browers on my laptop as well as my iphone, but when my friend looks at it on his computer, the aligning is off.</s><s> when i look at it in my computer at work, the aligning is off as well.</s><s> i assume it's because of the bigger screens, but how do i fix this issue so that everything shows up in the grey box in all browers, regardless of the screen size?</s><s> i added a "center" tag at the top of the coding and "/center" at the bottom, but obviously that didn't work.</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3354595-3354659</DOCNO>
+<TEXT>
+<subject>I thought it was aligned...</subject>
+<post author="Captiv8r" timestamp="Dec 21, 2010 6:30 AM">
+<s>hi there 
+what adobe product are you using?</s><s> you posted in a forum dedicated for supporting adobe robohelp and i'm doubtful that you are using robohelp. 
+</s><s>assuming you posted a legitimate question, you need to re-post this in the forum where the product you are using is discussed. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3354595-3354635</DOCNO>
+<TEXT>
+<subject>I thought it was aligned...</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 21, 2010 6:34 AM">
+<s>doesn't look like robohelp to me 
+anyway, replace the central <center> by <div id="centerplaceholder"> and add the following css: 
+
+div#centerplaceholder { width: 921px; margin: 0 auto; position: relative; } 
+
+(don't forget the </center> tag.</s><s>) you may also want to consider to turn the grey image into a css background image to improve page performance. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3354595-3354794</DOCNO>
+<TEXT>
+<subject>I thought it was aligned...</subject>
+<post author="jenlaurentate" timestamp="Dec 21, 2010 7:25 AM">
+<s>i had a really hard time finding a forum that was in line with what i needed.</s><s> i was under the impression that i was in a dreamweaver layout issues area, but now that i'm looking at the hierarchy, i can see that i am not in a dreamweaver layout issue forum..oopsies! 
+</s><s>thanks for the help, i will try that code and see what happens 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3316311-760776</DOCNO>
+<TEXT>
+<subject>Support for Oracle Help for Java 5</subject>
+<post author="mwwilso" timestamp="Dec 3, 2010 12:09 PM">
+<s>when will robohelp html 8 support oracle help for java 5? 
+</s><s>oracle help for java v5 has been out since july 2009 and is currently the only version of oracle help for java (ohj) that is available from the oracle web site.</s><s> according to the rh8 documentation, robohelp only supports oracle help through v4.1.</s><s> when i try and build an oracle help helpset from rh8 html and ask for full text search, rh asks for a pointer to the ohj installation.</s><s> when i browse to the directory containing ohj 5, it accepts the directory and beeps.</s><s> no full text search database is built.</s><s> if i ask to view the results, rh beeps once, then does nothing.</s><s> no error message.</s><s> no oracle help view.</s><s> although i can view the resulting helpset, full text search is not working. 
+</s><s>if robohelp is no longer capable of building embedded java help, i don't think i need it anymore.</s><s> adobe air is not an option as it is not supported on solaris. 
+m. wilson 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3316311-3316423</DOCNO>
+<TEXT>
+<subject>Support for Oracle Help for Java 5</subject>
+<post author="Peter%20Grainge" timestamp="Dec 3, 2010 1:11 PM">
+<s>only adobe can answer that but i wouldn't hold your breath. 
+</s><s>flare doesn't support any version for reasons given at the end of the article on my site about javahelp. 
+</s><s>we run webhelp on solaris boxes and many other systems. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-207922</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="csheets@ecisolutions.com" timestamp="Mar 9, 2009 2:39 PM">
+<s>we just upgraded to robohelp 8.</s><s> we use a style sheet that we created.</s><s> some of the styles have bullets or numbering a,b,c, and so on.</s><s> now that we are on robohelp 8, it is replacing these bullets and letters with regular numbers.</s><s> so a topic that previously was 1,2,3,a,b,c,4 is now 1,2,3,4,5,6,4 we found that we can go into every topic that is numbered with these bullets or letters and select the option bullet positioned within paragraph in bullets and numbering.</s><s> this fixes the problem but we'll have to go thru every single topic we have to find them.</s><s> we have over 14,000 topics in one of our help files so this is not an option.</s><s> there's more....when looking at the topic in design mode, the bullets appear as we styled them.</s><s> you can only find these problems in the view mode where you've click on the eyeglasses to view or the build output.</s><s> can someone help me here?</s><s> i'm ready to go back to robohelp 6.</s><s> this sucks.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2209863</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Lina_ann" timestamp="Aug 27, 2009 10:55 PM">
+<s>you are 100% right, there is a major bug in rh 8. could someone please help as i have the same problem in my rh 8. 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2209889</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Peter%20Grainge" timestamp="Aug 27, 2009 11:09 PM">
+<s>can you post the css just for the styles that are not working as designed? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2214513</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Lina_ann" timestamp="Aug 30, 2009 5:28 PM">
+<s>hi peter, 
+</s><s>thanks a lot for your reply, please find attached the .css style sheet as requested.</s><s> kind regards 
+lina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2214874</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Peter%20Grainge" timestamp="Aug 31, 2009 12:10 AM">
+<s>you didn't attach the css.</s><s> although not listed as an excluded type, maybe it is. 
+</s><s>you could just insert the relevant section in the body. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2246838</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 14, 2009 2:44 AM">
+<s>hi, 
+</s><s>what you're experiencing is not a bug.</s><s> it's the consequense of incorrect list use.</s><s> as peter said, please attach a html file and your css so we can have a look at it. 
+</s><s>also, we've discussed this problem at length, please search the robohelp forum so you'll get some more insight in what's causing this behaviour. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2247038</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Lina_ann" timestamp="Sep 14, 2009 5:05 AM">
+<s>hi, 
+</s><s>i have attached the css stylesheet and a html file.</s><s> i beleive peter was right, the pc i was using had a low ram configuration.</s><s> now i am using my laptop and i am able to generate a pdf and word document.</s><s> but now i have a new issue.</s><s> my topics are duplicating, and only the 1st chapter is showing up and duplicating 3 times.</s><s> i went through peter's website and found the issue there.</s><s> i tried the work around by attaching an inbuilt css template and it is still not working quite well.</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2247095</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 14, 2009 5:23 AM">
+<s>eeeh, 
+</s><s>are we talking about the same thing here?</s><s> my post was about lists not styling the way they should.</s><s> i think you are mistaken with another discussion. 
+</s><s>about your lists, i guess you're using the multi-level list styles in robo8.</s><s> according to your style sheet, all your lists should have the image smallbabyblue.jpg instead of numbers or bullits.</s><s> see the code: ol, ul { <-- applies to ordered lists and unordered lists font-size: 10pt; margin-left: 25px; margin-top: 6px; margin-bottom: 6px; list-style: url(smallbabyblue.jpg); <-- lists will always use this image.</s><s> when the image is not available the browsers will use the default: numbers for ordered lists and bullets for unordered lists. font-family: ; <-- empty, please remove } 
+</s><s>this styling isn't overwritten in any list item.</s><s> i'd suggest adding list style information to your multi level lists. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2247170</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Lina_ann" timestamp="Sep 14, 2009 6:12 AM">
+<s>this css was modified recently.</s><s> when i had posted the issue, i had only one level of listing, and it was not multi-level.</s><s> i had just attached one bullet image, babyblue one to that bullet.</s><s> and it as actually generating the html output differently.</s><s> thats when i had posted this message. 
+</s><s>but now i have created 2 different type of bullet listing, and i am not able to see my first level bullet which is like an arrow.</s><s> all bullets are apprearing with the style of my second level bullet listing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-2247191</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Willam%20van%20Weelden" timestamp="Sep 14, 2009 6:19 AM">
+<s>i see, try removing the bullit-type form ol,ul.</s><s> your styling requires that you use list item styles. 
+</s><s>you can set styles to the different levels of multi-level lists.</s><s> assign li.1stlevel_listing and li.2ndlevel_listing to the first and second level of your multi-level list, or define the list styles trough robo's css editor. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-3136231</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="KarenAaBakken" timestamp="Sep 15, 2010 11:41 AM">
+<s>i agree that this "enhancement" sucks.</s><s> i upgraded and all my simple bullet lists are hosed - they show numbers instead of bullets.</s><s> changing it back is not simple or intuitive at all.</s><s> i wish we had never upgraded. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-3136252</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Captiv8r" timestamp="Sep 15, 2010 11:49 AM">
+<s>please do take a moment and complete a bug report so that adobe is advised.</s><s> (link is in my sig) 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-3189541</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="swchambers" timestamp="Oct 6, 2010 10:06 AM">
+<s>i have the same problem.</s><s> has anyone found any solution?</s><s>?</s><s>?</s><s>?</s><s> i'm banging my head against a wall. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-3189608</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="KarenAaBakken" timestamp="Oct 6, 2010 10:23 AM">
+<s>our solution was to go back to robohelp 7. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-207922-3189927</DOCNO>
+<TEXT>
+<subject>Bullets/styles in Robohelp 8</subject>
+<post author="Peter%20Grainge" timestamp="Oct 6, 2010 12:19 PM">
+<s>see using robohelp 8 on my site.</s><s> there is a lot of information there about getting your lists working properly. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3183332-733454</DOCNO>
+<TEXT>
+<subject>RoboHelp 8 and Oracle help</subject>
+<post author="csheets@ecisolutions.com" timestamp="Oct 4, 2010 9:17 AM">
+<s>we started building oracle help in robohelp about 2 years ago.</s><s> the developers originally wanted us to go with sun but after researching, i got them to allow us to go with oracle instead.</s><s> personally, i really dislike the way it looks.</s><s> our styles don't translate well and the formatting is all off, etc. 
+</s><s>so my question, have there been any changes in the oracle help or translation from robohelp in the last 2 years? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3183332-3183508</DOCNO>
+<TEXT>
+<subject>RoboHelp 8 and Oracle help</subject>
+<post author="Peter%20Grainge" timestamp="Oct 4, 2010 10:22 AM">
+<s>none.</s><s> both oracle and javahelp have largely been abandoned by oracle and sun. flare decided not to even offer these outputs.</s><s> see the article on my site.</s><s> you may be able to persuade your developers to change to a different output. 
+</s><s>as well as what is covered there, maybe air help could be considered. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3183332-3183645</DOCNO>
+<TEXT>
+<subject>RoboHelp 8 and Oracle help</subject>
+<post author="csheets%40ecisolutions.com" timestamp="Oct 4, 2010 10:56 AM">
+<s>thanks, peter.</s><s> 
+</s><s>the product that we are writing for is java based so they insist on a java help.</s><s> are there other alternatives? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-3183332-3183767</DOCNO>
+<TEXT>
+<subject>RoboHelp 8 and Oracle help</subject>
+<post author="Peter%20Grainge" timestamp="Oct 4, 2010 11:37 AM">
+<s>then you need to educate them.</s><s> they can also use webhelp in most scenarios.</s><s> it is explained on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-683307</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Chotu90" timestamp="Jul 19, 2010 11:58 AM">
+<s>i want to make a *.exe file.</s><s> i have compiled the software in flash help pro.</s><s> i tried converting them into exe with compilers but they have one problem the robohelp search doesnt work once compiled.</s><s> so is there any way to compile into an exe file or is there some way to get the search to work ?</s><s> please help - chotu 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2985444</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Peter%20Grainge" timestamp="Jul 19, 2010 12:19 PM">
+<s>why would you want to convert a flashhelp pro output to an exe? 
+</s><s>it is designed to run on a server with robohelp server installed. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2985525</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Chotu90" timestamp="Jul 19, 2010 12:30 PM">
+<s>i want to run it on a cd as an autorun.</s><s> i'm not that good at compiling stuff at robohelp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2985574</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Peter%20Grainge" timestamp="Jul 19, 2010 12:48 PM">
+<s>see snippet 75 at http://www.grainge.org/pages/snippets/snippets.htm 
+you will need to generate flashhelp, not flashhelp pro as that only runs on a server as above. 
+</s><s>also i am not sure flashhelp will run from a cd without giving some warning that you may not want.</s><s> webhelp would not have that problem. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2986159</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Captiv8r" timestamp="Jul 19, 2010 5:19 PM">
+<s>hi folks 
+flash content can be made to work from cd with some additional free software and some minor modifications.</s><s> i've had to sort this with captivate projects that run from cd.</s><s> essentially the software is freeware that runs a very limited and lightweight web server.</s><s> because the flash player sees this as a web server it doesn't issue the normal errors it might otherwise issue when running outside of the software. 
+</s><s>as for creating a single exe from flashhelp, it should be possible to accomplish as follows.</s><s> i have created exes from webhelp, so i can't imagine flashhelp would be that much different.</s><s> however, it could prove problematic to work from inside the exe file.</s><s> only testing will truly tell. 
+</s><s>basically, you create the flashhelp output and package it up inside an ebook compiler to create the exe.</s><s> it's how i package many of my ebooks.</s><s> but i use webhelp and not flashhelp.</s><s> i'm happy to try and test packaging a flashhelp system as a exe file to see how it will behave but it won't be able to happen until later this week.</s><s> at the moment i'm sitting in the sanctuary of the church i attend where i'm assisting with a class.</s><s> tomorrow i'll be facilitating the second day of a captivate class.</s><s> i'm otherwise occupied most of the day on wed. if i get some time before then i'll post back with results.</s><s> otherwise, don't expect to hear anything until perhaps thursday. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2986319</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Chotu90" timestamp="Jul 19, 2010 7:01 PM">
+<s>i have tried some of the ebook compilers most of them have one problem the flashhelp search doesnt work.</s><s> i will looking forward to see what are your results 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2986400</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Captiv8r" timestamp="Jul 19, 2010 8:27 PM">
+<s>hi again 
+okay, preliminary results look promising.</s><s> see if the following laughingly basic file seems to work on your end. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2986528</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Peter%20Grainge" timestamp="Jul 19, 2010 10:56 PM">
+<s>another option might be server2go whereby what is on the cd will act as if it were on a server.</s><s> not simple but it works. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2987090</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Captiv8r" timestamp="Jul 20, 2010 5:13 AM">
+<s>yessir!</s><s> tha's precisely the software i was saying could help overcome the issue. 
+</s><s>so if this becomes a possibility, post back and i'll be happy to post the steps required to get that minimal install for the cd.</s><s> there are some files and folders you are able to pare out of the mix. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2987365</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Chotu90" timestamp="Jul 20, 2010 7:14 AM">
+<s>i'll sure give it a try thanks a lot 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2987661</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Captiv8r" timestamp="Jul 20, 2010 8:29 AM">
+<s>hi there 
+note that i just tested by running the exe.</s><s> i didn't have time to burn to cd and test that way.</s><s> i may try that at lunch today. 
+</s><s>but running the exe didn't prompt me for any flash security and the search seemed to work.</s><s> although it was a bit sluggish. 
+</s><s>in case you are interested, i used natata ebook compiler to create the exe.</s><s> i just pointed to the flashhelp output files and compiled them. 
+http://www.natata.com/ 
+cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2988002</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Captiv8r" timestamp="Jul 20, 2010 10:24 AM">
+<s>hello again 
+okay, just finished performing a small test.</s><s> i burned the exe and an autorun file to the cd and tested on a different pc.</s><s> i was surprised to discover that it seemed to work without issue.</s><s> search worked but was sluggish as reported earlier. 
+</s><s>so i believe we might safely conclude that packaging as exe does allow the single file distribution, it may run from cd and the flash security doesn't block things.</s><s> (i fully expected it to.</s><s> so this was a surprise to me) 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2988383</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Chotu90" timestamp="Jul 20, 2010 12:50 PM">
+<s>thanks but really sorry to disturb you again there seems to be some sort of error when trying to run the gold version of the natata ebook compiler.</s><s> xp is giving a message that it has encountered a problem and needs to shutdown 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2988448</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Captiv8r" timestamp="Jul 20, 2010 1:28 PM">
+<s>you probably need to contact natata for assistance with that.</s><s> i'm happy to share what i know, but it works fine for me.</s><s> so i'm at a bit of a loss to explain. 
+i do seem to recall that there was a trial version.</s><s> i was unable to unlock the trial using the credentials provided when i registered and had to use a link to download the actual gold version.</s><s> then things were okay. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links captivate wish form/bug reporting form adobe certified captivate training sorcererstone blog captivate ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2985388-2989258</DOCNO>
+<TEXT>
+<subject>Convert to .exe</subject>
+<post author="Chotu90" timestamp="Jul 20, 2010 7:35 PM">
+<s>thank you very much for that software i managed to get hold of an older gold version which seems to run fine on my pc and the ebbok works as expected 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865868-652547</DOCNO>
+<TEXT>
+<subject>Index Search does not work</subject>
+<post author="cadaustria" timestamp="Jun 3, 2010 4:03 PM">
+<s>i have created an index in my rh project with many keywords, but when i search for a keyword, it does not find it.</s><s> is there some way i'm supposed to be tagging it that will make it available for search?</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865868-2866001</DOCNO>
+<TEXT>
+<subject>Index Search does not work</subject>
+<post author="Captiv8r" timestamp="Jun 3, 2010 5:15 PM">
+<s>hi there 
+what is your output format?</s><s> does the term only exist in the index?</s><s> if so, that's why.</s><s> the term will also have to exist in the topic in order to be found by the search. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865868-2868506</DOCNO>
+<TEXT>
+<subject>Index Search does not work</subject>
+<post author="cadaustria" timestamp="Jun 4, 2010 2:45 PM">
+<s>in my topics i have words or sentences which i have tagged with bookmarks.</s><s> in general, the bookmark name is the same as the word (or words) that are bookmarked.</s><s> i created index keywords and linked them to the bookmarks.</s><s> it looks like this: 
+the index built just fine - see snapshot below.</s><s> the search function on the index doesn't work at all for these keywords - am i mis-using bookmarks as keywords?</s><s> thanks for your help! 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865868-2868613</DOCNO>
+<TEXT>
+<subject>Index Search does not work</subject>
+<post author="Captiv8r" timestamp="Jun 4, 2010 3:40 PM">
+<s>hi there 
+i think i understand what is happening now.</s><s> thanks for the pictures.</s><s> they helped tremendously. 
+</s><s>here's the deal.</s><s> there's search (with its own search tab) and there's index. 
+</s><s>in search, the area is blank until you issue a search by typing what you are searching for and clicking a button or pressing enter.</s><s> at that point the webhelp scans all the topics and returns a list of topics containing the term(s) you searched for.</s><s> you click the links and see the topics. 
+</s><s>with the index, you have a list of pre-programmed keywords.</s><s> the keywords often also exist inside the topics, but they don't have to be.</s><s> for example, perhaps you sell a product that resembles an albatross.</s><s> or maybe some special symbol in the software would resemble a happy man.</s><s> now you wouldn't necessarily have a descripton in the text that actually reads "happy man" or "albatross", but you could program some keywords that allowed the end user to find topics related to them by typing "happy man" or "albatross" into the index field. 
+</s><s>in your case you seem to be reporting that the index isn't automatically adjusting itself as you type so that the programmed keyword is listed.</s><s> using the example i cited earlier, the end user might type h a p and they see "happy man" magickally float to the top of the list.</s><s> in this case they see what they want, click the entry and off they go without having to type the full "happy man" term out. 
+</s><s>the index field actually does work like this.</s><s> but here's the twist.</s><s> this type of automatically adusting to match what you typed against the index terms in the list will only occur for "primary" level terms.</s><s> the terms you pointed to seem to be "secondary" level terms.</s><s> what you need to do in order to allow the index to work as you seem to be wanting is to also have the secondary terms listed as primary terms too. 
+</s><s>this is actually more common than you might think.</s><s> for example, i used to work as a web developer for a division of the company that employed me.</s><s> part of my job entailed using robohelp to develop and maintain knowledge bases.</s><s> one of the knowledge bases was used heavily by the field services area.</s><s> they needed to be able to find customer information easily.</s><s> they might locate using customer name, customer number or customer location.</s><s> so i had a main index reference of customer numbers.</s><s> and all the customer numbers listed as secondary terms.</s><s> but the customer numbers also existed as primary terms in the event the rep began typing a customer number into the field. 
+</s><s>hopefully i've understood the problem accurately and this better explains what is happening. 
+</s><s>cheers...</s><s> rick 
+
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865868-2873864</DOCNO>
+<TEXT>
+<subject>Index Search does not work</subject>
+<post author="cadaustria" timestamp="Jun 7, 2010 9:09 AM">
+<s>now i get it!</s><s>!</s><s> very helpful - thanks!</s><s> cheers, carol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865331-652444</DOCNO>
+<TEXT>
+<subject>Indented sentences get a default style of "none"</subject>
+<post author="cadaustria" timestamp="Jun 3, 2010 12:59 PM">
+<s>every time that i indent a sentence, the style changes from normal to none.</s><s> can you help?   here is my css file     /*created with adobe robohelp 8.*/ a.expandspot {     color: #008000;     cursor: hand;     font-style: italic;     font-family: calibri, sans-serif;     text-decoration: none; } span.expandtext {     font-style: italic;     font-weight: normal;     color: #ff0000;     font-family: calibri, sans-serif; } a.dropspot {     cursor: hand;     color: #008000;     font-style: italic;     font-family: calibri, sans-serif;     text-decoration: none; } a.glossterm {     color: #800000;     cursor: hand;     font-style: italic;     font-family: calibri, sans-serif;     text-decoration: none; } span.glosstext {     font-style: italic;     font-weight: normal;     color: #0000ff;     font-family: calibri, sans-serif; } div.droptext {     font-family: calibri, sans-serif; } h1 {     font-family: calibri, sans-serif; } li.h1 {     font-family: calibri, sans-serif; } li.kadov-h1 {     font-family: calibri; } h2 {     margin-bottom: 5pt;     font-family: calibri;     font-size: 20pt;     margin-left: 0pt;     x-next-class: ;     x-next-type: p;     margin-top: 0pt;     margin-right: 0pt;     text-decoration: none; } li.h2 {     font-family: calibri;     text-decoration: none; } li.kadov-h2 {     font-family: calibri;     text-decoration: none; } h3 {     font-size: medium;     color: #000000;     margin-left: 18pt;     margin-right: 36pt;     margin-top: 18pt;     margin-bottom: 18pt;     x-next-class: ;     x-next-type: p;     font-family: calibri;     text-decoration: none; } li.h3 {     font-size: medium;     color: #000000;     font-family: calibri;     text-decoration: none; } li.kadov-h3 {     font-size: medium;     color: #000000;     font-family: calibri;     text-decoration: none; } h4 {     font-weight: bold;     font-size: 16pt;     font-family: calibri, sans-serif;     margin-left: 0pt;     margin-top: 14pt;     margin-right: 0px;     margin-bottom: 14pt;     text-decoration: none; } li.h4 {     font-weight: bold;     font-size: 16pt;     font-family: calibri, sans-serif;     text-decoration: none; } li.kadov-h4 {     font-family: calibri; } h5 {     font-family: calibri, sans-serif;     font-size: 14pt;     margin-left: 0in;     x-next-class: ;     x-next-type: p;     margin-top: 14pt;     margin-right: 0px;     margin-bottom: 14pt; } li.h5 {     font-family: calibri, sans-serif;     font-size: 14pt; } li.kadov-h5 {     font-size: 11pt;     font-family: calibri; } h6 {     x-next-class: ;     x-next-type: p;     font-family: calibri; } li.h6 {     font-family: calibri; } li.kadov-h6 {     font-family: calibri; } p {     margin-top: 6px;     font-size: 12pt;     font-family: calibri, sans-serif;     margin-bottom: 12px;     font-weight: normal;     font-style: normal;     margin-right: 0.5in;     margin-left: 0in; } li.p {     font-weight: normal;     font-size: 12pt;     font-family: calibri, sans-serif; } li.kadov-p {     font-size: 10pt;     font-family: calibri; } a.popupspot {     font-family: calibri, sans-serif; } span.field {     font-weight: bold;     font-style: normal;     font-size: 11pt;     color: #000000;     font-family: calibri; } h3.heading7 {     font-family: calibri, sans-serif;     font-size: 18pt;     margin-left: 0pt;     x-next-class: ;     x-next-type: p;     margin-top: 14pt;     margin-right: 0pt;     margin-bottom: 14pt; } li.h3-heading7 {     font-family: calibri, sans-serif;     font-size: 18pt; } li.kadov-h3-cheading7 {     font-size: medium; } a:active {     font-family: calibri, sans-serif; } body {     font-size: 12pt;     x-next-page: page-with-header;     font-family: calibri; } ol, ul {     font-family: calibri;     margin-top: 6px;     margin-bottom: 6px; } p.breadcrumbs {     margin-left: 0px;     margin-top: 0px;     margin-right: 0px;     margin-bottom: 0px; }
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865331-2866698</DOCNO>
+<TEXT>
+<subject>Indented sentences get a default style of "none"</subject>
+<post author="RoboColum(n)" timestamp="Jun 4, 2010 1:14 AM">
+<s>to save us all having to get out our crystal ball can you provide us with some more detail.</s><s> start by reading the sticky topics at the top of the forum.   read the robocolum(n) for a tips, tricks and musings on the technical communication suite products.</s><s> follow the robocolum(n) on twitter
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865331-2866789</DOCNO>
+<TEXT>
+<subject>Indented sentences get a default style of "none"</subject>
+<post author="Peter%20Grainge" timestamp="Jun 4, 2010 2:46 AM">
+<s>i've created a css with your definitions and applied it to a topic.</s><s> clicking the indent button works fine, which is what i expected. 
+</s><s>first thing to do is try the same thing in another project including the samples.</s><s> you will find the samples at 
+c:\program files\adobe\adobe robohelp 8\robohtml\samples\en_us 
+or 
+c:\program files\adobe\adobe technical communication suite 2\adobe robohelp 8\robohtml\samples\en_us 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865331-2868331</DOCNO>
+<TEXT>
+<subject>Indented sentences get a default style of "none"</subject>
+<post author="cadaustria" timestamp="Jun 4, 2010 1:27 PM">
+<s>i apologize profusely for not wording my question correctly.</s><s> what i meant to say was: i have a sentence that uses the "normal" style font.</s><s> i press the "bullet" button, which indents the sentence and puts a bullet in the front of it.</s><s> this causes the sentence style to change to "(none)", which is different than normal style. 
+</s><s>again, my sincere apologies - i must have been tired. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865331-2868359</DOCNO>
+<TEXT>
+<subject>Indented sentences get a default style of "none"</subject>
+<post author="Captiv8r" timestamp="Jun 4, 2010 1:33 PM">
+<s>hi there 
+i'm seeing this all the time.</s><s> i've made a new habit of applying bullets, then immediately clicking the styles drop-down and choosing normal as my next step.</s><s> i created a special toolbar that i placed beneath the bullet icon for this purpose. 
+</s><s>click the image below for larger view 
+cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2865331-2868463</DOCNO>
+<TEXT>
+<subject>Indented sentences get a default style of "none"</subject>
+<post author="cadaustria" timestamp="Jun 4, 2010 2:21 PM">
+<s>great - thanks - i thought that i had messed something up in my css file.</s><s> thanks for the tip!</s><s> carol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-613285</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="cadaustria" timestamp="Apr 8, 2010 9:10 AM">
+<s>none of my fonts are underlined in the css file, but underlining appears rather randomly in some of the paragraph heading fonts in the generated output. 
+</s><s>here is an example: 
+lesson 1.4.2 - maintain requirements overview 
+can anyone point me in the direction of how to correct this?</s><s> many thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2722849</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Captiv8r" timestamp="Apr 8, 2010 5:40 PM">
+<s>hi there 
+are you able to upload the html file in question for us to examine?</s><s> if so, we might be able to tell you why it's happening. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links captivate wish form/bug reporting form adobe certified captivate training sorcerstone blog captivate ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2723280</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Apr 8, 2010 11:52 PM">
+<s>are your underlined letters/words part of a hyperlink anchor?</s><s> if you place the anchor over text, the browser will render that text as a hyperlink.</s><s> to insert an anchor, click a place in your topic, but do not select any text/images/etc.</s><s> then insert the anchor. 
+</s><s>the correct html for an anchor is <a name="myname"></a>my text 
+greet, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2724311</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="cadaustria" timestamp="Apr 9, 2010 10:00 AM">
+<s>here's the html for a test topic that i put into my project - it has the same issue.</s><s> i did not put any hyperlinks into this text - the underlining happens to every topic in my project.   <?</s><s>xml version="1.0" encoding="utf-8" ?</s><s>> <!</s><s>doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="content-type" content="text/html; charset=utf-8" /> <meta name="generator" content="adobe robohelp 8" /> <title>test</title> <link rel="stylesheet" href="../../../emtk.css" type="text/css" /> <style type="text/css"> <!-- h4.whs1 { margin-left:0.25in; margin-right:0.75in; margin-top:18px; margin-bottom:18px; } li.h4-whs1 {  } p.whs2 { margin-left:0.25in; margin-right:0.75in; margin-top:18px; margin-bottom:18px; font-weight:normal; } li.p-whs2 { font-weight:normal; } p.whs3 { font-weight:bold; margin-left:0.25in; margin-right:0.75in; margin-top:18px; margin-bottom:18px; } li.p-whs3 { font-weight:bold; } img_whs4 { border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-top-style:solid; border-top-width:1px; border-bottom-style:solid; border-bottom-width:1px; width:800px; height:516px; float:none; } --> </style> <style type="text/css"> <!-- div.webhelppopupmenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; } --> </style> <script type="text/javascript" language="javascript" title="webhelpsplitcss">//<![cdata[ <!-- if (navigator.appname !="netscape") {   document.write("<link rel='stylesheet' href='../../emtk.css'>");} //--> //]]></script> <script type="text/javascript" language="javascript">//<![cdata[ <!-- if ((navigator.appname == "netscape") && (parseint(navigator.appversion) == 4)) {   var strnss = "<style type='text/css'>";   strnss += "h4.whs1 {margin-left:1pt;margin-right:1pt; }";   strnss += "p.whs2 {margin-left:1pt;margin-right:1pt; }";   strnss += "p.whs3 {margin-left:1pt;margin-right:1pt; }";   strnss +="<\/style>";   document.write(strnss); } //--> //]]></script> <script type="text/javascript" language="javascript" title="webhelpinlinescript">//<![cdata[ <!-- function redo() {   if (innerwidth != origwidth || innerheight != origheight)      location.reload(); } if ((parseint(navigator.appversion) == 4) && (navigator.appname == "netscape")) {         origwidth = innerwidth;         origheight = innerheight;         onresize = redo; } onerror = null; //--> //]]></script> <script type="text/javascript" language="javascript1.2" src="../../../whmsg_nc.js"></script> <script type="text/javascript" language="javascript" src="../../../whver_nc.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whproxy_nc.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whutils_nc.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whtopic_nc.js"></script>   <script type="text/javascript" language="javascript" src="../../../ehlpdhtm.js"></script><style type="text/css"> <!-- div.webhelppopupmenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; } --> </style> <script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script> <script type="text/javascript" language="javascript" src="../../../whver.js"></script> <script type="text/javascript" language="javascript" src="../../../whfhost.js"></script> <script  type="text/javascript" language="javascript1.2">//<![cdata[     <!--     var linkedscrollbarstyle = "<link rel='stylesheet' href='../../../wf_topics.css'>";     if( (!</s><s>istopiconly()) &&(parent.gbfhpurehtml == null) )     {         document.write(linkedscrollbarstyle);     }     //--> //]]></script> </head>   <body><script type="text/javascript" language="javascript1.2">//<![cdata[ <!-- var strurl = document.location.href; var bc = 0; var n = strurl.tolowercase().indexof("bc-"); if(n != -1) {     document.location.href = strurl.substring(0, n);     bc = strurl.substring(n+3); }   if (window.addtocinfo) { addtocinfo("using emtk\nmission management\ntest");     addshowbutton(); }   if (window.setrelstartpage) { setrelstartpage("../../../emtk.htm");       sendtopicloaded();     var nsync = 1;     if (nsync == 1)     {         autosync();     }     sendsyncinfo();     sendaveinfo();     sendbgcolorinfo(); }   document.write("<p style=\"text-align:right\"> "); addmasterbreadcrumbs("../../../emtk.htm", "", ">", "home", "../../../0-emtk_introduction/emtk_introduction.htm"); document.write("<a href=\"../../1-0-userinterface/1-0_emtk_ui_intro.htm\">using emtk<\/a> > <a href=\"../1-4-1_maintaintargets/maintain_targets.htm\">mission management<\/a> > test<\/p>");   //--> //]]></script>   <h1 class="heading7"><b><u style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/"><span      style="text-decoration: none; ">maintain</span></u></b> <u style="x-text-underline: normal;"><span      style="text-decoration: none; "><b>requirements</b></span></u></h1> <h3 class="heading7"><b style="font-weight: bold;"><u style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/"><span      style="text-decoration: none; ">overview</span></u></b></h3> <p><b><span style="font-weight: normal;">the maintain requirements function allows you to maintain a standing requirements deck in </span></b></p> <h4>function initiation</h4> <h5>mission management &gt; maintain requirements</h5> <p>&#160;</p> <p>&#160;</p> <form method="post" action="http://www.helpcommunity.com/ehelpapi.asp?cmd=websave"          name="ehelpform" target="_top" id="ehelpform" style="display: none;"> <p style="font-weight: bold; margin-left: 64px;"><span style="font-weight: bold;"><b><span      class="pdfcharstyle3">product quality</span></b></span></p> <ol type="disc">     <li style="list-style: none; display: inline;"><ul type="disc">         <li class="p"><p style="margin-top: 6pt; margin-bottom: 6pt;">a          product is any type of image that is stored on a <a href="javascript:void(0);" onclick="bsscpopup('test_text0.htm');return false;" onmouseover="if (parseint(navigator.appversion) >= 4) bspspopuponmouseover(event);" class="popupspot" >gias</a>          library (still, reference, or motion).</p></li>         <li class="p"><p>product quality is also known to the imagery community          as <a href="javascript:void(0);" onclick="bsscpopup('test_text1.htm');return false;" onmouseover="if (parseint(navigator.appversion) >= 4) bspspopuponmouseover(event);" class="popupspot" >niirs</a></p></li>         <li class="p"><p>each niirs value is associated with a documented          product interpretability level.</s><s> for example, a &quot;visible image&quot;          niirs value of '1.0' indicates that you can detect a medium-sized          port facility and/or distinguish between taxi-ways and runways          at a large airfield.</p></li>         <li class="p"><p style="margin-top: 6pt; margin-bottom: 6pt;">typically,          niirs only applies to still images.</p></li>         <li class="p"><p>niirs values range from 0.0-9.0, with 9.0 being          the highest rating.</p></li>         <li class="p"><p style="margin-top: 6pt; margin-bottom: 6pt;">enter          a product quality range using the slider bar.</s><s> <span class="pdfcharstyle3">see</span>          <span class="pdfcharstyle3"><a href="../../1-0-userinterface/1-0-1_emtk_navigation.htm#slider bar">navigation</a>          </span><span class="pdfcharstyle3">for more instruction on using          a slider bar.</span></p></li>     </ul></li> </ol> <input type="hidden" name="data" value="2a0d021d000000496e74726f2d526571756972656d656e74204d61696e7465 6e616e6365110217000000526571756972656d656e74204d61696e74656e616e636512 021c000000526571756972656d656e74204d61696e74656e616e63652048656c701302 04000000654d544b15020d000000654d544b5f48656c702e68746d1703740100003c3f 786d6c2076657273696f6e3d22312e30223f3e0d0a3c21444f43545950452053595354 454d20226568656c706f70742e647464223e0d0a3c46494c452d4f5054494f4e532046 494c452d56455253494f4e3d2232222046494c452d4b45593d2262393139343833655f 363165665f346635385f626637615f633065313436376433653361223e0d0a3c2f4649 4c45*d4f5054494f4e533e0d0a3c4548454c502d4f5054494f4e5320464f524d41542d 56455253494f4e3d22312e30223e0d0a203c4f5054494f4e5320454e41424c45443d22 5945532220454d4245444445443d2259455322204d41494e2d57494e444f572d4f4e4c 593d224e4f2220434f4d4d554e4954592d4e4f544946593d224e4f222046495253542d 504147453d224e4f542d534554223e0d0a203c2f4f5054494f4e533e0d0a203c425554 544f4e2d4c4142454c3e5765625365617263680d0a203c2f425554544f4e2d4c414245 4c3e0d0a3c2f4548454c502d4f5054494f4e533e18010400000002000000702a" /> </form> <script type="text/javascript" language="javascript1.2">//<![cdata[ //<!--     addtopicswf();            highlightsearch(); //--> //]]></script> </body> </html>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2724355</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Captiv8r" timestamp="Apr 9, 2010 10:17 AM">
+<s>hi there   try removing the following bits: cadaustria wrote:   here's the html for a test topic that i put into my project - it has the same issue.</s><s> i did not put any hyperlinks into this text - the underlining happens to every topic in my project.   <?</s><s>xml version="1.0" encoding="utf-8" ?</s><s>> <!</s><s>doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="content-type" content="text/html; charset=utf-8" /> <meta name="generator" content="adobe robohelp 8" /> <title>test</title> <link rel="stylesheet" href="../../../emtk.css" type="text/css" /> <style type="text/css"> <!-- h4.whs1 { margin-left:0.25in; margin-right:0.75in; margin-top:18px; margin-bottom:18px; } li.h4-whs1 {  } p.whs2 { margin-left:0.25in; margin-right:0.75in; margin-top:18px; margin-bottom:18px; font-weight:normal; } li.p-whs2 { font-weight:normal; } p.whs3 { font-weight:bold; margin-left:0.25in; margin-right:0.75in; margin-top:18px; margin-bottom:18px; } li.p-whs3 { font-weight:bold; } img_whs4 { border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-top-style:solid; border-top-width:1px; border-bottom-style:solid; border-bottom-width:1px; width:800px; height:516px; float:none; } --> </style> <style type="text/css"> <!-- div.webhelppopupmenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; } --> </style> <script type="text/javascript" language="javascript" title="webhelpsplitcss">//<![cdata[ <!-- if (navigator.appname !="netscape") {   document.write("<link rel='stylesheet' href='../../emtk.css'>");} //--> //]]></script> <script type="text/javascript" language="javascript">//<![cdata[ <!-- if ((navigator.appname == "netscape") && (parseint(navigator.appversion) == 4)) {   var strnss = "<style type='text/css'>";   strnss += "h4.whs1 {margin-left:1pt;margin-right:1pt; }";   strnss += "p.whs2 {margin-left:1pt;margin-right:1pt; }";   strnss += "p.whs3 {margin-left:1pt;margin-right:1pt; }";   strnss +="<\/style>";   document.write(strnss); } //--> //]]></script> <script type="text/javascript" language="javascript" title="webhelpinlinescript">//<![cdata[ <!-- function redo() {   if (innerwidth != origwidth || innerheight != origheight)      location.reload(); } if ((parseint(navigator.appversion) == 4) && (navigator.appname == "netscape")) {         origwidth = innerwidth;         origheight = innerheight;         onresize = redo; } onerror = null; //--> //]]></script> <script type="text/javascript" language="javascript1.2" src="../../../whmsg_nc.js"></script> <script type="text/javascript" language="javascript" src="../../../whver_nc.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whproxy_nc.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whutils_nc.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whtopic_nc.js"></script>   <script type="text/javascript" language="javascript" src="../../../ehlpdhtm.js"></script><style type="text/css"> <!-- div.webhelppopupmenu { position:absolute; left:0px; top:0px; z-index:4; visibility:hidden; } --> </style> <script type="text/javascript" language="javascript1.2" src="../../../whtopic.js"></script> <script type="text/javascript" language="javascript1.2" src="../../../whutils.js"></script> <script type="text/javascript" language="javascript" src="../../../whver.js"></script> <script type="text/javascript" language="javascript" src="../../../whfhost.js"></script> <script  type="text/javascript" language="javascript1.2">//<![cdata[     <!--     var linkedscrollbarstyle = "<link rel='stylesheet' href='../../../wf_topics.css'>";     if( (!</s><s>istopiconly()) &&(parent.gbfhpurehtml == null) )     {         document.write(linkedscrollbarstyle);     }     //--> //]]></script> </head>   <body><script type="text/javascript" language="javascript1.2">//<![cdata[ <!-- var strurl = document.location.href; var bc = 0; var n = strurl.tolowercase().indexof("bc-"); if(n != -1) {     document.location.href = strurl.substring(0, n);     bc = strurl.substring(n+3); }   if (window.addtocinfo) { addtocinfo("using emtk\nmission management\ntest");     addshowbutton(); }   if (window.setrelstartpage) { setrelstartpage("../../../emtk.htm");       sendtopicloaded();     var nsync = 1;     if (nsync == 1)     {         autosync();     }     sendsyncinfo();     sendaveinfo();     sendbgcolorinfo(); }   document.write("<p style=\"text-align:right\"> "); addmasterbreadcrumbs("../../../emtk.htm", "", ">", "home", "../../../0-emtk_introduction/emtk_introduction.htm"); document.write("<a href=\"../../1-0-userinterface/1-0_emtk_ui_intro.htm\">using emtk<\/a> > <a href=\"../1-4-1_maintaintargets/maintain_targets.htm\">mission management<\/a> > test<\/p>");   //--> //]]></script>   <h1 class="heading7"><b><u style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/"><span      style="text-decoration: none; ">maintain</span></u></b> <u style="x-text-underline: normal;"><span      style="text-decoration: none; "><b>requirements</b></span></u></h1> <h3 class="heading7"><b style="font-weight: bold;"><u style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/"><span      style="text-decoration: none; ">overview</span></u></b></h3> <p><b><span style="font-weight: normal;">the maintain requirements function allows you to maintain a standing requirements deck in </span></b></p> <h4>function initiation</h4> <h5>mission management &gt; maintain requirements</h5> <p>&#160;</p> <p>&#160;</p> <form method="post" action="http://www.helpcommunity.com/ehelpapi.asp?cmd=websave"          name="ehelpform" target="_top" id="ehelpform" style="display: none;"> <p style="font-weight: bold; margin-left: 64px;"><span style="font-weight: bold;"><b><span      class="pdfcharstyle3">product quality</span></b></span></p> <ol type="disc">     <li style="list-style: none; display: inline;"><ul type="disc">         <li class="p"><p style="margin-top: 6pt; margin-bottom: 6pt;">a          product is any type of image that is stored on a <a href="javascript:void(0);" onclick="bsscpopup('test_text0.htm');return false;" onmouseover="if (parseint(navigator.appversion) >= 4) bspspopuponmouseover(event);" class="popupspot" >gias</a>          library (still, reference, or motion).</p></li>         <li class="p"><p>product quality is also known to the imagery community          as <a href="javascript:void(0);" onclick="bsscpopup('test_text1.htm');return false;" onmouseover="if (parseint(navigator.appversion) >= 4) bspspopuponmouseover(event);" class="popupspot" >niirs</a></p></li>         <li class="p"><p>each niirs value is associated with a documented          product interpretability level.</s><s> for example, a &quot;visible image&quot;          niirs value of '1.0' indicates that you can detect a medium-sized          port facility and/or distinguish between taxi-ways and runways          at a large airfield.</p></li>         <li class="p"><p style="margin-top: 6pt; margin-bottom: 6pt;">typically,          niirs only applies to still images.</p></li>         <li class="p"><p>niirs values range from 0.0-9.0, with 9.0 being          the highest rating.</p></li>         <li class="p"><p style="margin-top: 6pt; margin-bottom: 6pt;">enter          a product quality range using the slider bar.</s><s> <span class="pdfcharstyle3">see</span>          <span class="pdfcharstyle3"><a href="../../1-0-userinterface/1-0-1_emtk_navigation.htm#slider bar">navigation</a>          </span><span class="pdfcharstyle3">for more instruction on using          a slider bar.</span></p></li>     </ul></li> </ol> <input type="hidden" name="data" value="2a0d021d000000496e74726f2d526571756972656d656e74204d61696e7465 6e616e6365 110217000000526571756972656d656e74204d61696e74656e616e636512021c00000 05265717569 72656d656e74204d61696e74656e616e63652048656c70130204000000654d544b150 20d00000065 4d544b5f48656c702e68746d1703740100003c3f786d6c2076657273696f6e3d22312 e30223f3e0d 0a3c21444f43545950452053595354454d20226568656c706f70742e647464223e0d0 a3c46494c45 2d4f5054494f4e532046494c452d56455253494f4e3d2232222046494c452d4b45593 d2262393139 343833655f363165665f346635385f626637615f633065313436376433653361223e0 d0a3c2f4649 4c45*d4f5054494f4e533e0d0a3c4548454c502d4f5054494f4e5320464f524d41542 d5645525349 4f4e3d22312e30223e0d0a203c4f5054494f4e5320454e41424c45443d22594553222 0454d424544 4445443d2259455322204d41494e2d57494e444f572d4f4e4c593d224e4f2220434f4 d4d554e4954 592d4e4f544946593d224e4f222046495253542d504147453d224e4f542d534554223 e0d0a203c2f 4f5054494f4e533e0d0a203c425554544f4e2d4c4142454c3e5765625365617263680 d0a203c2f42 5554544f4e2d4c4142454c3e0d0a3c2f4548454c502d4f5054494f4e533e180104000 00002000000 702a" /> </form> <script type="text/javascript" language="javascript1.2">//<![cdata[ //<!--     addtopicswf();            highlightsearch(); //--> //]]></script> </body> </html>   give that a try and see what happens...</s><s> rick   helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2728508</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Apr 12, 2010 12:30 AM">
+<s>hi, 
+
+
+</s><s>the problem is the <u style="x-text-underline: normal; /begin!kadov{{/ text-decoration: underline; /}}end!kadov/"> tag.</s><s> what does the source file look like? 
+
+
+</s><s>greet, 
+
+
+</s><s>willam 
+</s><s>this e-mail is personal.</s><s> for our full disclaimer, please visit www.centric.eu/disclaimer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2729306</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="cadaustria" timestamp="Apr 12, 2010 8:46 AM">
+<s>if you can point me to where i can find the source file, i will let you know.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2729448</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Peter%20Grainge" timestamp="Apr 12, 2010 9:35 AM">
+<s>willam is referring to the file in your project that you edit, not the same as the file that is generated to the !</s><s>ssl!</s><s> folder. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2732299</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="cadaustria" timestamp="Apr 13, 2010 7:49 AM">
+<s>i definitely see that line in the source file - how do they get in there when i don't have underlines in my font sets?</s><s> is the only way to get rid of them a manual removal? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2734603</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Apr 14, 2010 12:06 AM">
+<s>what version and flavor of rh are you using?</s><s> the tag suggests that you're on x5, or that you're working with a legacy project. 
+</s><s>the only way i know of that makes those tags appear in your source files, is by creating inline styling (clicking the underline button).</s><s> when did that underlining first appear? 
+</s><s>greet, 
+</s><s>willam 
+</s><s>this e-mail is personal.</s><s> for our full disclaimer, please visit www.centric.eu/disclaimer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2735434</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="cadaustria" timestamp="Apr 14, 2010 8:04 AM">
+<s>i am running rh 8.0.2.208.</s><s> i imported a very old (3 yrs) project. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2735477</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Apr 14, 2010 8:12 AM">
+<s>hi, 
+
+
+</s><s>what version did you import from?</s><s> i guess that this problem didn't occur before it was updated.</s><s> is that true? 
+</s><s>if so, look up the source file in a backup from before the update.</s><s> is the -tag already present in that source file? 
+
+
+</s><s>greet, 
+
+
+</s><s>willam 
+</s><s>this e-mail is personal.</s><s> for our full disclaimer, please visit www.centric.eu/disclaimer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2735542</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="cadaustria" timestamp="Apr 14, 2010 8:41 AM">
+<s>i am not certain of the prior version, however the underline tags were not in that version.</s><s> i think i am suffering other effects of doing this import as well - my printed version fonts are not correct for certain heading styles. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2721534-2737622</DOCNO>
+<TEXT>
+<subject>Font appears underlined in output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Apr 14, 2010 11:58 PM">
+<s>hi, 
+</s><s>when you say the underline tags are not in the old version, do you mean the text was not underlined, or that the tags are not in your source files?</s><s> i want to make sure it's not some issue of conflicting styles.</s><s> i can't imagine rh adding inline styling on upgrading...</s><s> i think the following approach may be the easiest: - use a find and replace operation to delete all the underline tags from your source files (backup first) 
+</s><s>if you have multiple problems after upgrading, your upgrade might went wrong.</s><s> in that case, you're probably better of fetching a backup and upgrading that.</s><s> if you have problems with styling, that may be cause because the upgrade from html to xhtml in rh8.</s><s> if you have a list of those problems, i can tell you more. 
+</s><s>problems in print (printed documentation output?</s><s>) may be problems of your style mapping.dot.</s><s> if you don't have one, please create your own. 
+</s><s>greet, 
+</s><s>willam 
+</s><s>this e-mail is personal.</s><s> for our full disclaimer, please visit www.centric.eu/disclaimer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-599197</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="cadaustria" timestamp="Mar 18, 2010 1:43 PM">
+<s>i read on http://www.grainge.org/pages/authoring/browsers/browsers.htm that this was fixed in rh 7.0.2 - did the fix not make it into rh 8.0?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-2670087</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2010 2:17 PM">
+<s>take a look at using rh8 on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-2670253</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="cadaustria" timestamp="Mar 18, 2010 3:22 PM">
+<s>i see entries for fixed-size popups, but not for autosizing popups 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-2670934</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="Peter%20Grainge" timestamp="Mar 19, 2010 12:12 AM">
+<s>do you have the patches applied? 
+</s><s>what exactly is the problem with your autosizing popups?</s><s> can you post a screenshot? - use the camera icon to insert the image. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-2700906</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="cadaustria" timestamp="Mar 30, 2010 11:39 AM">
+<s>i am running rh 8.0.2.208 
+</s><s>the problem is fixed with some popups, but not with others.</s><s> i have no negative margins in my css file.</s><s> the popup is another topic with only an image in it. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-2716935</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="cadaustria" timestamp="Apr 6, 2010 1:38 PM">
+<s>can anyone help me with this issue?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2670031-2717073</DOCNO>
+<TEXT>
+<subject>Autosizing popups no sizing correctly in FireFox with RH 8.0</subject>
+<post author="Peter%20Grainge" timestamp="Apr 6, 2010 2:24 PM">
+<s>if you import the topic with the hotspot and the topic that is the popup into a new project, is the problem the same? 
+</s><s>if it is, send me the new project.</s><s> see the contact page on my site. 
+</s><s>doubt i can fix it but i'll understand the problem better and can see if it matches others seen. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2703779-608330</DOCNO>
+<TEXT>
+<subject>Help on creating an index</subject>
+<post author="cadaustria" timestamp="Mar 31, 2010 10:32 AM">
+<s>i am trying to create an index with keywords and subkeywords using flashhelppro as my primary layout. 
+</s><s>issue #1 when i click on a keyword in the generated index, the topic in which the keyword resides is displayed.</s><s> i was hoping that clicking on a keyword would jump to the keyword within the topic - am i doing something wrong? 
+</s><s>issue #2 when i click on a subkeyword, the location is not recognized, and the first topic is displayed by default. 
+i appreciate any help i can get.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2703779-2705463</DOCNO>
+<TEXT>
+<subject>Help on creating an index</subject>
+<post author="Peter%20Grainge" timestamp="Apr 1, 2010 1:11 AM">
+<s>keywords are not necessarily in the text of a topic as you can use any word as a keyword.</s><s> for instance you might have a topic all about clothing and assign cotton as a keyword even though it is not in the topic.</s><s> you are just wanting to point the user to a topic that might be relevant.</s><s> that is why the link just opens the topic. 
+</s><s>flashhelp pro is designed to run on a pc with robohelp server installed.</s><s> is that the case here?</s><s> if not, maybe that explains why sub-keywords are not working.</s><s> i am doubtful of that but it is possible.</s><s> try flashhelp (not pro) and webhelp to test. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2701871-607790</DOCNO>
+<TEXT>
+<subject>Back and Forward Buttons disabled</subject>
+<post author="cadaustria" timestamp="Mar 30, 2010 5:24 PM">
+<s>i am running rh 8.0.2.208.</s><s> i generated my help using flashhelppro. 
+</s><s>in my output, the back/forward buttons are disabled (see pic) - what do i need to do to enable them?</s><s> thanks 
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2701871-2702295</DOCNO>
+<TEXT>
+<subject>Back and Forward Buttons disabled</subject>
+<post author="Peter%20Grainge" timestamp="Mar 30, 2010 10:46 PM">
+<s>they are browse sequence backward/forward buttons and are only enabled when the topic displayed is in a browse sequence.</s><s> they are not backward/forward buttons as in a browser history. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2701871-2703737</DOCNO>
+<TEXT>
+<subject>Back and Forward Buttons disabled</subject>
+<post author="cadaustria" timestamp="Mar 31, 2010 10:21 AM">
+<s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-599181</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="cadaustria" timestamp="Mar 18, 2010 1:00 PM">
+<s>my bullets appear just fine in ie: 
+text text text bullet bullet sub-bullet 
+
+
+
+</s><s>but not in firefox: 
+</s><s>text text text bullet bullet in other words, the bullet is far separated from the text, and it indents too far to the left - past the text that it comes after.</s><s> is there something wrong with my style, or is rh broken in firefox? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-2670088</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2010 2:19 PM">
+<s>bullets are different in ff, not broken by rh.</s><s> that too is covered in the browsers article on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-2670382</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="cadaustria" timestamp="Mar 18, 2010 4:02 PM">
+<s>ok, through fiddling with the ol and ul settings i was able to get the bullets to look like this:          text        text   how do i get them to look like they do in ie: text text   ?</s><s>?   i don't see anything that says "padding" for ol and ul except under borders and shading, and it's set to 0px for both
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-2670932</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="Peter%20Grainge" timestamp="Mar 19, 2010 12:09 AM">
+<s>first of all you need to be editing the css in notepad or similar. 
+</s><s>second, you won't see that line, that's why i say add the line... 
+</s><s>finally you need to set whatever margins you do want. 
+</s><s>try that.</s><s> if stuck, post your ul code here. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-2697337</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="cadaustria" timestamp="Mar 29, 2010 9:52 AM">
+<s>i put this in my css file:   ol {     font-family: calibri;     padding: 0px; } ul {     font-family: calibri;     padding: 0px; }   ...and my bullets and numbers disappeared altogether - what am i doing wrong?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-2698177</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="cadaustria" timestamp="Mar 29, 2010 2:12 PM">
+<s>never mind - i fixed both issues by deleting ol and ul from the css 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669891-2699270</DOCNO>
+<TEXT>
+<subject>bullets not appearing correctly in FireFox</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 30, 2010 1:01 AM">
+<s>hi, 
+</s><s>if you post the html code of a list, i'll take a look. 
+</s><s>greet, 
+</s><s>willam 
+</s><s>this e-mail is personal.</s><s> for our full disclaimer, please visit www.centric.eu/disclaimer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669710-599128</DOCNO>
+<TEXT>
+<subject>Applying Style Sheets to all Project Topics</subject>
+<post author="cadaustria" timestamp="Mar 18, 2010 12:01 PM">
+<s>currently i have topics that use different style sheets (there are 5 listed, although i only created one).</s><s> i want all topics to use the same style sheet.</s><s> is there any way to apply a style to all project topics? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2669710-2669734</DOCNO>
+<TEXT>
+<subject>Applying Style Sheets to all Project Topics</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2010 12:09 PM">
+<s>welcome to the forum. 
+</s><s>go to the topic list and select all topics, then right click and select properties.</s><s> you can assign the new css there.</s><s> any style names in your topics not included in the new css will of course be broken and need to be assigned to whatever style you choose. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2638462-590462</DOCNO>
+<TEXT>
+<subject>COULDN'T CONNECT SQLDEVELOPER AND ORACLE 10G</subject>
+<post author="canadamohan" timestamp="Mar 5, 2010 9:07 AM">
+<s>i would like to connect oracle and sqldeveloper, i got this error message, can anyone help me? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Other-Single-Source-Layouts/Discussions-2638462-2638727</DOCNO>
+<TEXT>
+<subject>COULDN'T CONNECT SQLDEVELOPER AND ORACLE 10G</subject>
+<post author="Captiv8r" timestamp="Mar 5, 2010 10:53 AM">
+<s>hi there 
+does your issue pertain in any way whatsoever to the adobe robohelp application? 
+</s><s>if not, you are asking for help in the wrong place. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,1031 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-2824580-641735</DOCNO>
+<TEXT>
+<subject>How to modify the metadata of already packaged epub/pdf without replacing or repackage the file?</subject>
+<post author="MangalVarshney" timestamp="May 18, 2010 10:21 PM">
+<s>hi jim, 
+</s><s>how to modify the metadata (title, author, publisher etc) of already packaged epub/pdf without replacing or repackage the file?</s><s> is this possible?</s><s> if yes please explain me. 
+i am waiting your reply. 
+</s><s>with regards, mangal varshney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-2824580-2859555</DOCNO>
+<TEXT>
+<subject>How to modify the metadata of already packaged epub/pdf without replacing or repackage the file?</subject>
+<post author="ejholmgren" timestamp="Jun 1, 2010 2:36 PM">
+<s>i'd like to know the answer to this as well.</s><s> can one simply issue an update request to the manageresourceiteminfo servlet with the new metadata?</s><s> this would obviously only affect fulfillments that occur after the change. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-2824580-2861902</DOCNO>
+<TEXT>
+<subject>How to modify the metadata of already packaged epub/pdf without replacing or repackage the file?</subject>
+<post author="ejholmgren" timestamp="Jun 2, 2010 10:42 AM">
+<s>it appears that the metadata is not editable after packaging.</s><s> any attempt to do so results in the following error: <error xmlns="http://ns.adobe.com/adept" data="e_adept_internal http://<server>/admin/manageresourceitem update%20may%20not%20change%20metadata%20information"/> 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-2824580-2861919</DOCNO>
+<TEXT>
+<subject>How to modify the metadata of already packaged epub/pdf without replacing or repackage the file?</subject>
+<post author="MangalVarshney" timestamp="Jun 2, 2010 10:51 AM">
+<s>yes, you are right! 
+i did lot of r&d but not able to update the metadata, the only way to update the metadata is repackage the already packaged file with updated metadata. 
+</s><s>regards, 
+</s><s>mangal varshney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-2824580-3611984</DOCNO>
+<TEXT>
+<subject>How to modify the metadata of already packaged epub/pdf without replacing or repackage the file?</subject>
+<post author="McBubsey" timestamp="Apr 13, 2011 10:53 AM">
+<s>in a previous post, jim said this was possible through the use of admin apis.</s><s> <quote>
+<s>> it's possible to edit a book item on admin console ?</s><s></s><s> editing the metadata stored about the book (ie title, author) in acs4 is not possible through the admin console, but is possible thorugh use of the admin apis. 
+
+</s></quote>does anyone know where i can find the admin api's jim lester speaks of? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-2824580-6230273</DOCNO>
+<TEXT>
+<subject>How to modify the metadata of already packaged epub/pdf without replacing or repackage the file?</subject>
+<post author="Talklly" timestamp="Mar 21, 2014 2:46 AM">
+<s>you can try vibosoft epub editor master program or coolmuster signpub to eidt your metadata of epub files, 
+http://www.vibosoft.com/ebook/how-to-add-cover-to-epub-file.html 
+http://www.coolmuster.com/epub/epub-metadata-editor.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6158323-1415762</DOCNO>
+<TEXT>
+<subject>Vendor ID documentation</subject>
+<post author="KoulSlou" timestamp="Feb 26, 2014 4:44 AM">
+<s>hello, 
+</s><s>where i can find documentation about vendor id usage? 
+i have the following situation.</s><s> we have website where we sell digital books.</s><s> for storing book files we use adobe content server 4.</s><s> for opening books we recommend to use adobe digital editions.</s><s> my question is will using of vendor id make user experience better?</s><s> i don't understand very well how vendor id should be used. 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6158323-6208463</DOCNO>
+<TEXT>
+<subject>Vendor ID documentation</subject>
+<post author="Dominic%20Michael" timestamp="Mar 13, 2014 10:36 PM">
+<s>please refer to http://blogs.datalogics.com/2013/01/07/vendor-id-part-1-overview/ .</s><s> hope this helps you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5435752-1238691</DOCNO>
+<TEXT>
+<subject>Have packaging update issue after ACS upgrade.</subject>
+<post author="miles_harrison" timestamp="Jun 21, 2013 8:54 AM">
+<s>hi all, we have an issue post upgrade to acs   e_pack_database /packaging/package duplicate entry   we have changed the the action attribute to its own node: <package xmlns="http://ns.adobe.com/adept"> <action>replace</action   & have remove the thumbnail because of a thumnbnail conflict and have   in packaging config /              com.adobe.adept.packaging.allowurlcollisionsonreplace=true but we don't seem to be able to change content.</s><s> was fine before the upgrade.   under the hood we seem to be getting a mysql integrity violation - i suspect a duplicate key on insert but can't prove as much: 21 jun 2013 16:38:01,791 trace adeptservlet: xml request content [83.170.101.143]: <?</s><s>xml version="1.0"?</s><s>> <package xmlns="http://ns.adobe.com/adept">   <action>replace</action>   <resource>urn:uuid:b8e62d5c-51e6-48f5-9753-97330a51dd05</resource>   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">     <dc:title>huck finn</dc:title>     <dc:language>en</dc:language>     <dc:publisher>stison dev</dc:publisher>     <dc:format>application/pdf</dc:format>   </metadata>   <permissions>     <display/>     <excerpt/>     <print/>   </permissions>   <datapath>/home//media_to_package/statement_s001268(1).pdf</datapath>   <expiration>2013-06-21t17:38:01+01:00</expiration>   <nonce>mtk2mzg0njcwnq==</nonce>   <hmac>o6wwfvxzfuftaymzfiaadpzvcuq=</hmac> </package>     21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection: select distid, nonce, expiration from distusednonce where (distusednonce.distid = ?</s><s>) and (distusednonce.nonce = ?</s><s>) 21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection:   obj 1 = [b@3db158db 21 jun 2013 16:38:01,792 trace defaultsqldatabaseconnection:   obj 2 = [b@4640b181 21 jun 2013 16:38:01,793 trace defaultsqldatabaseconnection: insert into distusednonce(distid, nonce, expiration) values(?, ?, ?</s><s>) 21 jun 2013 16:38:01,793 trace defaultsqldatabaseconnection:   obj 1 = 00000000-0000-0000-0000-000000000001 21 jun 2013 16:38:01,794 trace defaultsqldatabaseconnection:   obj 2 = [b@4640b181 21 jun 2013 16:38:01,794 trace defaultsqldatabaseconnection:   obj 3 = fri jun 21 17:38:01 bst 2013 21 jun 2013 16:38:02,139 trace defaultsqldatabaseconnection: select resourceid, voucherid, encryptionkey, permissions, defaultitem from resourcekey where resourcekey.resourceid = ?</s><s> 21 jun 2013 16:38:02,139 trace defaultsqldatabaseconnection:   obj 1 = [b@4e0a2a38 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection: insert into resourceitem(resourceid, item, description, title, publisher, creator, language, identifier, thumbnailurl, format, src, downloadtype, modified) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?</s><s>) 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 1 = b8e62d5c-51e6-48f5-9753-97330a51dd05 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 2 = 0 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 3 = null 21 jun 2013 16:38:02,326 trace defaultsqldatabaseconnection:   obj 4 = huck finn 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 5 = stison dev 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 6 = 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 7 = en 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 8 = null 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 9 = null 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 10 = application/pdf 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 11 = /media/b8e62d5c-51e6-48f5-9753-97330a51dd05.pdf 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 12 = simple 21 jun 2013 16:38:02,327 trace defaultsqldatabaseconnection:   obj 13 = thu jun 13 18:56:32 bst 2013 21 jun 2013 16:38:02,329 error defaultsqldatabaseconnection: com.mysql.jdbc.exceptions.jdbc4.mysqlintegrityconstraintviolationexce ption: duplicate entry '¸ae-\qaehõ?s?3 q?^e-0' for key 1 21 jun 2013 16:38:02,525 error adeptservlet: request error [83.170.101.143]: e_pack_database /packaging/package duplicate+entry+%27%c2%b8%c3%a6-%5cq%c3%a6h%c3%b5%e2%80%94s%e2%80%943 %0aq%c3%9d%05-0%27+for+key+1 21 jun 2013 16:38:02,525 trace adeptservlet: request end /packaging/package
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5435752-6177220</DOCNO>
+<TEXT>
+<subject>Have packaging update issue after ACS upgrade.</subject>
+<post author="uwe%20fr" timestamp="Mar 4, 2014 4:51 AM">
+<s>hi, i have exactly the same problem right, though it does not affect all updates.</s><s> did you find a solution? 
+</s><s>also, in case this is not just a typo in your post, acs4 properties are case sensitive: com.adobe.adept.packaging.allowurlcollisionsonreplace (incorrect) is not the same as com.adobe.adept.packaging.allowurlcollisionsonreplace (correct) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-830875</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Marino_nja" timestamp="Mar 29, 2011 10:15 AM">
+<s>is there an adobe-id sdk.</s><s> for acs operator (or the distributor) to create and manage the adobe-id ? 
+</s><s>best regards, marinó 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-3583251</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Jim%20Lester" timestamp="Mar 30, 2011 11:21 AM">
+<s>'vendorid' allows you to create and manage ids that are not adobeids.</s><s> however this is best used when you have your own devices/software based on rmsdk so that you can control the login screen. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-3583945</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="Marino_nja" timestamp="Mar 30, 2011 4:18 PM">
+<s>thank you for your response.</s><s> i'm interested, can you guide me further.</s><s> i need more information on vendorid.</s><s> i'm not finding anything on google on this subject! 
+</s><s>best regards marinó 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3580356-6158322</DOCNO>
+<TEXT>
+<subject>Adobe-Id sdk</subject>
+<post author="KoulSlou" timestamp="Feb 26, 2014 4:18 AM">
+<s>jim, i have a question about vendor id.</s><s> we have a site wich sell digital books.</s><s> for storing books we use adobe content server.</s><s> for opening book files we recommend to use adobe digital edition.</s><s> will using of vendorid make user experience more seamless and easier in our case? 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-1052857</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="MangalVarshney" timestamp="Aug 21, 2012 6:51 AM">
+<s>hello, 
+</s><s>is there any way to stop expiration of gblink created for download the encrypted ebook, the default expiration time is 6 hrs. 
+</s><s>is this possible that gblink never expire, i mean client can download the book whenever he/she want to download after purchase?</s><s> currecntly we extent it by 7 days but some of client download their purchased books after two / three month. 
+</s><s>with regards, 
+</s><s>mangal 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-4753294</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="vjppi_kumar" timestamp="Oct 5, 2012 4:36 PM">
+<s>as far i know it is 24 days maximum limit for expiration. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4636419-6128905</DOCNO>
+<TEXT>
+<subject>How to stop GBLink Expiration?</subject>
+<post author="chingyue87" timestamp="Feb 17, 2014 8:59 AM">
+<s>this may have been fixed in acs version 4.1.2.</s><s> please refer to the release note: 
+a fix for an issue with generating urllink.acsm files with very long expiration periods.</s><s> previously, attempting to generate the urllink.acsm file with an expiration period of greater than approximately 29 days would result in an already expired urllink.acsm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6128038-1408581</DOCNO>
+<TEXT>
+<subject>Bug - Equals operator does work with Boolean, UUID and EUID</subject>
+<post author="Marcos Passos" timestamp="Feb 17, 2014 7:37 AM">
+<s>dear sirs, 
+the acs api has a serious bug that does not allow us search using the equals operator when the column type is boolean, uuid or euid.</s><s> it is a serious api inconsistency, once the result returns empty even when you have records matching the criteria.</s><s> a workaround is to use the "contains" operator, but it's dangerous and may bring some unexpected results. 
+</s><s>this problems seems to be caused by the com.adobe.adept.util.predicateutil, line 177, due the lack of use of the method "sqltextutil.getsearchablefieldexpression" that makes the "contains", "startswith" and "endswith" work for the previously cited cases. 
+</s><s>do you know whether there is any prevision to fix this bug? 
+</s><s>thanks in advance, marcos 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6044452-1387618</DOCNO>
+<TEXT>
+<subject>IDPF font obfuscation and E_PACK_ERROR</subject>
+<post author="fedeonline" timestamp="Jan 23, 2014 7:45 AM">
+<s>creating an epub file with id6 all the fonts are obfuscated (with the idpf algorithm) and included in the epub file with the encryption.xml file. 
+</s><s>the epub file is ok, it pass epubcheck with success and it reads well on every device, but when we try to package the file with drm using our acs4 server we always have this error: 
+<error xmlns="http://ns.adobe.com/adept" data="e_pack_error http://_our_server_/packaging/package file already encrypted or unexcpected font mangling algorithm: http://www.idpf.org/2008/embedding"/> 
+</s><s>so it seems that acs4 doesn't have support for idpf mangling algorithm, but this algorithm is the default for adobe indesign 6 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6044452-6128124</DOCNO>
+<TEXT>
+<subject>IDPF font obfuscation and E_PACK_ERROR</subject>
+<post author="uwe%20fr" timestamp="Feb 17, 2014 4:35 AM">
+<s>had the same issue, the only way to resolve this is to upgrade acs.</s><s> i bet you have 4.0 installed. 
+</s><s>acs4.0 does not support "http://www.idpf.org/2008/embedding", the only algorithm that is supported is "http://ns.adobe.com/pdf/enc#rc".</s><s> acs4.2 supports both. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6055808-1390562</DOCNO>
+<TEXT>
+<subject>E_ADEPT_UNKNOWN</subject>
+<post author="StefanVenter21" timestamp="Jan 27, 2014 3:03 AM">
+<s>we are setting up a test environment for acs and get the following error when trying to upload any file but the supplied sample files: 
+there was an error with the package request <error xmlns="http://ns.adobe.com/adept" data="e_adept_unknown http://domain_name:8080/packaging/package"/> 
+</s><s>the pdf files we are trying to package are all between 6mb and 30mb with the xml file: 
+<package xmlns="http://ns.adobe.com/adept"> <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/pdf</dc:format> </metadata> <permissions> <display> <device/> <until>2013-01-13t13:10:49-07:00</until> </display> <excerpt> <until>2013-01-13t13:10:49-07:00</until> </excerpt> <print> <count initial="10" max="20" incrementinterval="3600"/> <maxresolution>300</maxresolution> </print> </permissions> </package> 
+</s><s>is this because the evaluation server works only with the sample files, or are we doing something ells wrong? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6055808-6116688</DOCNO>
+<TEXT>
+<subject>E_ADEPT_UNKNOWN</subject>
+<post author="Dominic%20Michael" timestamp="Feb 13, 2014 4:17 AM">
+<s>please try the datapath method of packaging the files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6069318-1393815</DOCNO>
+<TEXT>
+<subject>ACS5 or ADE 3.0?</subject>
+<post author="Robin_R_D_" timestamp="Jan 30, 2014 9:01 AM">
+<s>hello, 
+</s><s>we have an updated install of acs5 but now we are receiving requests from users about e_adept_expired error message.</s><s> we think it is mainly related with ade 3.0 and customers in most cases are using windows 8/8.1.</s><s> urls or acsm files are not expired but users remain receiving current message and are unable to download the books.</s><s> case is apparently affecting new installs of ade 3.0, not updates over 2.1 version or users installing ade 2.1 for the first time.</s><s> perhaps issue is related with users settings on time/date/time zone but we are not sure. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6069318-6116687</DOCNO>
+<TEXT>
+<subject>ACS5 or ADE 3.0?</subject>
+<post author="Dominic%20Michael" timestamp="Feb 13, 2014 4:15 AM">
+<s>please refer to http://helpx.adobe.com/digital-editions/kb/error-e-adept-request-expir ed.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6113295-1404791</DOCNO>
+<TEXT>
+<subject>ACS4 - larger file sizes failing to upload</subject>
+<post author="Baboon99" timestamp="Feb 12, 2014 7:05 AM">
+<s>is there any restrictions on the size of file that can be uploaded to the acs4 console?</s><s> i have tried files that are 520mb, 480mb and 250mb which all lose connection (in ie/ chrome). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6113295-6116685</DOCNO>
+<TEXT>
+<subject>ACS4 - larger file sizes failing to upload</subject>
+<post author="Dominic%20Michael" timestamp="Feb 13, 2014 4:12 AM">
+<s>using the datapath method you can upload large files.</s><s> for more information, please refer to working with large file topic in quick start guide. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6110093-1403939</DOCNO>
+<TEXT>
+<subject>Packaging, DRM, digital fingerprinting epub documents</subject>
+<post author="grb_00" timestamp="Feb 12, 2014 9:43 AM">
+<s>hi, 
+</s><s>i'm new to the epub world and am trying to find out what is (probably) some basic information... unless i really am wide of the mark 
+i've been asked to investigate acs and how it handles drm but, in particular four questions: 
+which drm scheme are we going to use?</s><s> what key length is used?</s><s> what key drm settings are used (e.g copy parameters etc.</s><s>) any additional protection, e.g. digital fingerprinting 
+these are relating to the packaging of content by the packaging service in acs, but i can't find the information in the technical or user guides.</s><s> i think this should be obvious, but it's all a bit new to me at the moment. 
+</s><s>proposed answer, adobe drm provided via acs5 not sure?</s><s> i assume this is built into the packaging service but i can't tell from the documents if its confgurable or not.</s><s> would this be aes256?</s><s> don't really know what is being asked for here from the documents i have, digitial fingerprinting is not supported for pdf's, but we're primarily dealing with epub documents.</s><s> from the searches i've done, they suggest its not possible to securely do this either.</s><s> is this correct? 
+</s><s>sorry if these are daft questions - i've tried to work out the answers through internet searching but i'm a bit stuck atm. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6068189-1393527</DOCNO>
+<TEXT>
+<subject>ACS5 Mandatory Update, Deadline?</subject>
+<post author="MikeACS4Dev" timestamp="Jan 30, 2014 2:14 AM">
+<s>i've heard that acs5 is a mandatory upgrade that has to be applied.it appears to be a simple upgrade from the docs.</s><s> has anyone actually tried this yet and had any issues, i was also wondering what the actual deadline is (if there is one)? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6068189-6068998</DOCNO>
+<TEXT>
+<subject>ACS5 Mandatory Update, Deadline?</subject>
+<post author="Robin_R_D_" timestamp="Jan 30, 2014 8:48 AM">
+<s>hello, we updated to acs 5, no issues no strange things in change but we noted some issues apparently related with the new ade 3.0, more customers receiving the e_adept_expired error message, apparently due to uncorrect time zone.</s><s> are you receiving any aditional requests from users with same error message? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3645161-844996</DOCNO>
+<TEXT>
+<subject>Setting number of devices in gblink</subject>
+<post author="jarekp_az" timestamp="Apr 29, 2011 5:34 AM">
+<s>hello, 
+</s><s>i have a question concerning genarating gblink.</s><s> is there any way to narrow permission to one device during this process?</s><s> in documentation there are only listed rights like time, copy and print. 
+</s><s>is it possible that this setting can only be set at the resource (and/or distributor) level in acs itself?</s><s> let's say publisher set initialy 1 device and then changed his/her mind and set 6+1.</s><s> what about orders placed during "1 device" period?</s><s> will users suddenly be able to read bought ebook on more then one device?</s><s> the opposite case can be even worse, when someone bought 6+1 and it changed later into 1 device. 
+</s><s>i'll be grateful for any help in this matter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-3645161-6038954</DOCNO>
+<TEXT>
+<subject>Setting number of devices in gblink</subject>
+<post author="KoulSlou" timestamp="Jan 21, 2014 11:20 PM">
+<s>hello, 
+</s><s>i faced with same problem.</s><s> i would like to have ability to narrow number of allowed devices from 6 to 1 during gblink generation.</s><s> did you find any solution?</s><s> or it is impossible? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6011641-1379395</DOCNO>
+<TEXT>
+<subject>Trying to get the detail behind the ACS credit card billings</subject>
+<post author="bev57" timestamp="Jan 14, 2014 9:26 AM">
+<s>hi, we purchased an adobe content server (acs) license in 2010, before adobe handed off support to datalogics and bluefire productions.</s><s> at the time of the acs license purchase we had to provide a credit card for the monthly billing.</s><s> we still receive a monthly the monthly billing on our credit card.</s><s> a reference number for the transaction along with a phone number is posted with the charge.</s><s> the phone number is for the general customer support number which is of no use, as it does not have acs listed as one of the applications you can inquire about and you endup in the"vru circle-jerk". 
+</s><s>how do we go about getting the transaction/download detail behind the acs credit card billing? 
+</s><s>appreciate any dicrection that can be shared, bevh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6011641-6011642</DOCNO>
+<TEXT>
+<subject>Trying to get the detail behind the ACS credit card billings</subject>
+<post author="Tobias%20at%20CtrlPublishing" timestamp="Jan 14, 2014 9:31 AM">
+<s>hi, 
+</s><s>if i understand you correct, you would like to get more information about the logged transactions?</s><s> i can only speek for us, how we handle this as a acs partner to adobe, but we sending all details to our customers monthly or quarterly depending on how many transactions.</s><s> all transaction data can be requested for e.g. with the tool following with acs software package.</s><s> contact me if you need further guidance. 
+</s><s>regards tobias 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6011641-6011644</DOCNO>
+<TEXT>
+<subject>Trying to get the detail behind the ACS credit card billings</subject>
+<post author="bev57" timestamp="Jan 14, 2014 9:39 AM">
+<s>hi tobias, thank you for your response.</s><s> yes, i am looking for the logged transactions/downloads that adobe is billing monthly.</s><s> we work with bluefire productions, but they cannot provide us with the billing detail for the credit card transactions. 
+</s><s>in your response you say "all transaction data can be reqquested for e.g. with the tool following with acs software package." can you please explain how i go about getting this tool and the info required to use it? 
+</s><s>many thanks, bevh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6011641-6011650</DOCNO>
+<TEXT>
+<subject>Trying to get the detail behind the ACS credit card billings</subject>
+<post author="Tobias%20at%20CtrlPublishing" timestamp="Jan 14, 2014 9:46 AM">
+<s>there is a tool, that we as partners can use to get all transactions that have been logged for a period in time.</s><s> but as you were very early out it could be possibly for you as well.</s><s> depends on if you have created and registered your acs certificate on your own or if bluefire have done that.</s><s> if you have, then you probably can use your login to get the logs as well.</s><s> the tool you can use that follows with acs is called "operatorclient". 
+/ tobias 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-6011641-6012001</DOCNO>
+<TEXT>
+<subject>Trying to get the detail behind the ACS credit card billings</subject>
+<post author="bev57" timestamp="Jan 14, 2014 10:28 AM">
+<s>thanks tobias, since we were early adopters before the acs support/billing handoff to datalogics and bluefire productions, we should be able to use that tool.</s><s> i will chase it up from our end.</s><s> thanks you so much for providing direction.</s><s> it is greatly appreciated. 
+</s><s>bevh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-1128014</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="foxkearns" timestamp="Jan 2, 2013 4:12 AM">
+<s>hi, 
+</s><s>early in december i sucessfully set up, and packaged books with adobe content server. 
+</s><s>between then and now, work has been carried out on the server where acs is hosted, such as ports being locked down, updated security policies etc (i don't know if this is at all relevent but just to give all the information). 
+</s><s>now, when i try to log onto the admin console, i get the following: 
+http://xx.xx.xx.xx:xxxx/admin/managedistributor <request action="get" auth="builtin" xmlns="http://ns.adobe.com/adept"> <nonce> </nonce> <expiration>2013-01-02t12:33:07-00:00</expiration> <distributordata> <distributor>urn:uuid:00000000-0000-0000-0000-000000000001</distribut or> <sharedsecret> </sharedsecret> </distributordata> <hmac> </hmac> </request> 
+
+</s><s>content server error msg: e_adept_request_expired http://xx.xx.xx.xx:xxxx/admin/managedistributor 2013-01-02t04:33:07-08:00%20(1357129987000)%20is%20before%202013-01-0 2t12:02:13-08:00%20(1357156933133) 
+
+</s><s>it looks like the issue is with the expiration time, however i'm not sure how to rectify this. 
+</s><s>has anyone come across this before? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4962465</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="Jim_Lester" timestamp="Jan 2, 2013 10:00 AM">
+<s>in particular it's the timezone (-00:00) that's causing you problems.</s><s> is the timezone on the computer you are using the admin console correct, and if so did you do something to prevent flash from getting the tz information? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4962963</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="foxkearns" timestamp="Jan 2, 2013 12:47 PM">
+<s>hi jim, thanks for the reply. 
+</s><s>i'll take another look at the timezone settings when i'm back in the office tomorrow.</s><s> since i've set up the content server, there has been changes in security policies, however i'm not sure exactly what. 
+</s><s>today i did have a play around with the timezone settings mind you.</s><s> they are currently set to utc-8:00, i changed to my local timezone (ireland), however i got the same error.</s><s> if i manually change the time (experimenting), i got a clockback error on acs. 
+</s><s>out of curiosity, how does flash retrieve the tz information?</s><s> there could be something blocking this, but if i had a better idea how flash works in this respect, i could go back to my server contractor with this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4963067</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="Jim_Lester" timestamp="Jan 2, 2013 1:11 PM">
+<s>note that the admin console (and more importantly the flash runtime) will be running on the client machine that is running the browser, not your server.</s><s> so check the timezone settings of the client machine (and if possible try multiple client machines). 
+</s><s>i'm not aware of any security changes in the flash runtime that would prevent getting tz (but allow getting correct local time), but that doesn't mean as much as it should, since i haven't been paying much attention to flash lately. 
+
+</s><s>update: you may want to try distribtool or one of the other java examples to see if you can get a request through not using the admin console. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4963162</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="foxkearns" timestamp="Jan 2, 2013 1:53 PM">
+<s>nothing would have changed on my local machine regarding tz settings.</s><s> when i set up the acs, i was able to login, and package books using the java uploader tool. 
+i now cannot login to the console, getting the request_expired message.</s><s> the java uploader tool also gives errors when trying to package each book, e.g. 
+</s><s>creating package request for: c:\src/1234567891234.epub creating connection to packaging server: http://xx.xx.xx.xx:xxxx/packaging sending package request java.io.filenotfoundexception: http://xx.xx.xx.xx:xxxx/packaging/ at sun.reflect.nativeconstructoraccessorimpl.newinstance0(native method) 
+
+at sun.reflect.nativeconstructoraccessorimpl.newinstance(unknown source) 
+
+at sun.reflect.delegatingconstructoraccessorimpl.newinstance(unknown sou rce) at java.lang.reflect.constructor.newinstance(unknown source) at sun.net.www.protocol.http.httpurlconnection$6.run(unknown source) at java.security.accesscontroller.doprivileged(native method) at sun.net.www.protocol.http.httpurlconnection.getchainedexception(unkno wn source) at sun.net.www.protocol.http.httpurlconnection.getinputstream(unknown so urce) at com.adobe.adept.upload.uploadtest.sendcontent(unknown source) at com.adobe.adept.upload.uploadtest.<init>(unknown source) at com.adobe.adept.upload.uploadtest.main(unknown source) caused by: java.io.filenotfoundexception: http://xx.xx.xx.xx:xxxx/packaging/ at sun.net.www.protocol.http.httpurlconnection.getinputstream(unknown so urce) at java.net.httpurlconnection.getresponsecode(unknown source) at com.adobe.adept.upload.uploadtest.sendcontent(unknown source) ...</s><s> 2 more 
+these errors are occuring when i run the uploader tool on my local pc, however i have also tried running this tool on the same server acs is hosted on, and i got the same messages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4963358</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="foxkearns" timestamp="Jan 2, 2013 3:06 PM">
+<s>i have also just tried the admin console from another computer with the same result 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4963942</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="Jim_Lester" timestamp="Jan 2, 2013 8:09 PM">
+<s>for the packaging service name, it looks like you forgot the endpoint name: '/package' in the url.</s><s> you may also want to try the status endpoints to see if the services are up.</s><s> it's probably not the same issue. 
+i was suggesting distribtool (as opposed to uploadtest) since it goes against the admin service. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4964233</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="foxkearns" timestamp="Jan 3, 2013 1:44 AM">
+<s>hi jim, 
+</s><s>thanks for spotting the error in my url.</s><s> having fixed that, i now get the same message with the java uploader tool as i do when trying to log on to the admin console - 
+creating package request for: c:\src/9781905000000.epub creating connection to packaging server: http://xx.xx.xx.xx:xxxx/packaging/pack age sending package request there was an error with the package request <error xmlns="http://ns.adobe.com/adept" data="e_adept_request_expired http://xx.xx.xx.xx:xxxx/packaging/package 2013-01-03t01:50:33-08:00%20(1357206633000)%20 is%20before%202013-01-03t09:34:39-08:00%20(1357234479272)"/> 
+</s><s>the timezone is correct on my computer also.</s><s> i have also tested the uploader tool on the same server the acs is hosted on, and the books package successfully, so i'll have to do some more investigation into this 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4964298</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="foxkearns" timestamp="Jan 3, 2013 2:12 AM">
+<s>scratch all that jim - the timezone was set all strange on the server.</s><s> i have amended this and all is working well now.</s><s> thanks again for all your help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-4965472</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="jennyxxwithaxxsmileyface" timestamp="Jan 3, 2013 11:00 AM">
+<s>
+
+</s><s>date: thu, 3 jan 2013 02:40:53 -0700 from: forums_noreply@adobe.com to: jennai420@hotmail.com subject: re: e_adept_request_expired e_adept_request_expired 
+
+
+
+
+
+    re: e_adept_request_expired 
+
+created by foxkearns in adobe content server - view the full discussion 
+
+
+</s><s>hi jim, thanks for spotting the error in my url.</s><s> having fixed that, i now get the same message with the java uploader tool as i do when trying to log on to the admin console - creating package request for: c:\src/9781905000000.epub creating connection to packaging server: http://xx.xx.xx.xx:xxxx/packaging/pack age sending package request there was an error with the package request 
+the timezone is correct on my computer also. 
+
+
+</s><s>please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/4964233#4964233 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: e_adept_request_expired to unsubscribe from this thread, please visit the message page at re: e_adept_request_expired.</s><s> in the actions box on the right, click the stop email notifications link.</s><s>  start a new discussion in adobe content server by email or at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/message/2936746#2936746. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4961720-5998061</DOCNO>
+<TEXT>
+<subject>E_ADEPT_REQUEST_EXPIRED</subject>
+<post author="heyheyhey" timestamp="Jan 9, 2014 1:43 PM">
+<s>i work for a publishing company that uses ade, and in my experience, this error message is not generated due to a time zone issue.</s><s> it's sort of unbelievable to me that this is adobe's official diagnosis.</s><s> when our customers get this message, it's almost always because they clicked the download link prior to installing adobe digital editions.i confirmed this with an adobe rep using the help chat as well.</s><s> it seems to be a pretty fundamental flaw with the program in general, and the adobe rep told us that there's now way around that.</s><s> it's also ridiculous, because we end up having to send our customers a new file, and adobe is essentially charging us twice for the book. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5787494-1321766</DOCNO>
+<TEXT>
+<subject>Enforcing territorial rights</subject>
+<post author="jerry-p" timestamp="Oct 25, 2013 12:56 AM">
+<s>hi, 
+</s><s>i have a question about territorial rights and supporting them by acs.</s><s> is there any way that acs can help with enforcing something like that? 
+</s><s>for example let's say we have a book, which one can only sell in u.s.</s><s> can acs prevent somehow selling (or opening) this book outside of u.s. or this must be enforced only by some store mechanisms (to not sell it for someone in other country)? 
+i will appreciate any comment regarding this matter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5787494-5943039</DOCNO>
+<TEXT>
+<subject>Enforcing territorial rights</subject>
+<post author="Chris%20Anderton" timestamp="Dec 18, 2013 4:35 PM">
+<s>this might be too late to be any use, but i haven't been on here in a long time 
+to enforce territorial restrictions at the point of sale, it is the responsibility of your ecommerce platform - you could enforce based on geolocation (perhaps a bit flaky due to proxy usage) or sell it based on the credit card details/address. 
+</s><s>you cannot enforce a restriction at the adobe content server level once the content has been delivered to the device - as the content resides locally on the device. 
+</s><s>however, you could attempt to add a restriction at the point of fulfilment of the download - i.e. the first time somebody downloads to a device.</s><s> the acsm file kickstarts a download from a straight http url to the encrypted content - so you could add some geolocation filtering to requests in tomcat, or add a reverse proxy in front and do it at that level. 
+</s><s>this wouldn't necessarily surface a meaningful error message in ade/any reader apps - you would return perhaps a 500 error code (or find one more appropriate) - so while it might block a first download occuring out of territory, then it might make the user experience suck even more. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5906366-1352197</DOCNO>
+<TEXT>
+<subject>Change /admin url?</subject>
+<post author="eyalm3" timestamp="Dec 6, 2013 4:00 AM">
+<s>hi, 
+</s><s>we have acs installed in jboss.</s><s> we're already using /admin for our application.</s><s> is there a way to change the url of acs to be /admin2 (or anything else)? 
+thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5906366-5915788</DOCNO>
+<TEXT>
+<subject>Change /admin url?</subject>
+<post author="Jim_Lester" timestamp="Dec 9, 2013 7:08 PM">
+<s>if it is just avoiding the name colision, you could just deploy to a subdirectory ie /acs4/admin instead of /admin. 
+</s><s>that being said, it is not good practice to deploy the admin (or the packaging) war on your external facing production server.</s><s> you should keep admin and packaging on internally accesible servers if at all possible... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5909579-1353015</DOCNO>
+<TEXT>
+<subject>Adobe Signing Server: Not Running</subject>
+<post author="philipp.d" timestamp="Dec 7, 2013 7:27 AM">
+<s>hi 
+
+</s><s>actually it is not possible to fulfill downloads using our acs4 server via ade.</s><s> the error message given from ade is: e_adept_timeout. 
+</s><s>the status check of the acs4 server says 
+6 adobe signing server: not running 
+do you encounter similar problems or might this be a networking error in our environment? 
+
+</s><s>are there any known issues in the global asc4 infrastructure at the moment? 
+
+</s><s>thanks philipp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5909579-5909885</DOCNO>
+<TEXT>
+<subject>Adobe Signing Server: Not Running</subject>
+<post author="philipp.d" timestamp="Dec 7, 2013 10:50 AM">
+<s>it seems to me that eu signing service is not available: 
+ping on eusigningservice.adobe.com results in a timeout (eu signing service) ping on nasigningservice.adobe.com is successful (north america signing service) 
+</s><s>do you experience the same issues or received any official information about the progress resolving this issue? 
+
+</s><s>thanks philipp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5909579-5910221</DOCNO>
+<TEXT>
+<subject>Adobe Signing Server: Not Running</subject>
+<post author="philipp.d" timestamp="Dec 7, 2013 2:31 PM">
+<s>eu signing service seems to have recovered.</s><s> everything runs smooth again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5909579-5912994</DOCNO>
+<TEXT>
+<subject>Adobe Signing Server: Not Running</subject>
+<post author="Danilo%20Heiduck" timestamp="Dec 9, 2013 12:34 AM">
+<s>hello philipp, 
+</s><s>this issue seems to be persist, as the error e_lic_license_sign_error still appears (since friday afternoon). 
+</s><s>any updates on a resulution time frame? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5909579-5913032</DOCNO>
+<TEXT>
+<subject>Adobe Signing Server: Not Running</subject>
+<post author="philipp.d" timestamp="Dec 9, 2013 12:57 AM">
+<s>danilo, have you tried restarting fulfillment service and clearinig any dns cache you might be using?</s><s> yesterday everything worked as expected on our instance. 
+</s><s>philipp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5493213-1251796</DOCNO>
+<TEXT>
+<subject>ACS and DRM crackers</subject>
+<post author="baerthe" timestamp="Jul 10, 2013 11:17 AM">
+<s>i'm working on implementing adobe content server to deliver locally stored ebooks to users in my library.</s><s> many of the books that we have come with drm restrictions such as online reading only, single user, etc. anyway, we've been doing security testing and found quite a few acs drm crackers online (like epubor) that work quite well and are very simple to use, which makes us wonder if acs is even worth it.</s><s> does adobe keep up with these and actively patch against them? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5493213-5831626</DOCNO>
+<TEXT>
+<subject>ACS and DRM crackers</subject>
+<post author="MangalVarshney" timestamp="Nov 10, 2013 11:42 PM">
+<s>did you get any security patch from adobe againest acs drm crackers. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5822690-1330361</DOCNO>
+<TEXT>
+<subject>E_ADEPT_DISTRIBUTOR_AUTH when using DistribTool and QueryTool</subject>
+<post author="Patriciaf" timestamp="Nov 7, 2013 4:45 AM">
+<s>hi,   i'm getting this error when using the distribtool and querytool.     <error xmlns="http://ns.adobe.com/adept" data="e_adept_distributor_auth http://ec2-54-216-110-7.eu-west-1.compute.amazonaws.com:8080/admin/man agedistributionrights urn:uuid:00000000-0000-0000-0000-000000000001"/>   not sure if it's some issue with the password cause it works with the upload jar.</s><s> if what i'm using is my login password for the admin console, am i doing it right or that's not always the case?     many thanks, patricia
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5617645-1280915</DOCNO>
+<TEXT>
+<subject>How to support ACS format into an ebook reader</subject>
+<post author="MauleDev" timestamp="Aug 22, 2013 10:12 AM">
+<s>hi, 
+</s><s>we are developing an ebook reader for iphone and ipad (using xcode) and we have already implemented functions for reading free epub and pdf files. 
+</s><s>we'd like to add support for acs files. 
+</s><s>where can we find technical informations about this task? 
+</s><s>kind regards. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5617645-5620689</DOCNO>
+<TEXT>
+<subject>How to support ACS format into an ebook reader</subject>
+<post author="Jim_Lester" timestamp="Aug 23, 2013 8:14 AM">
+<s>you will want to be looking at the reader mobile sdk: http://www.adobe.com/devnet/readermobile.html 
+this is the client side code that works with acs4 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5617645-5620880</DOCNO>
+<TEXT>
+<subject>How to support ACS format into an ebook reader</subject>
+<post author="MauleDev" timestamp="Aug 23, 2013 9:21 AM">
+<s>hi jim, 
+</s><s>thank for your answer.</s><s> i agree with you we need the adobe® reader mobile software development kit (sdk). 
+</s><s>how could we get the sdk? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5617645-5621337</DOCNO>
+<TEXT>
+<subject>How to support ACS format into an ebook reader</subject>
+<post author="Jim_Lester" timestamp="Aug 23, 2013 11:49 AM">
+<s>the resellers are listed at the bottom of the page i linked to, and you will need to contact them.</s><s> i can personally recommend the folks at bluefire, but you should also check with whoever you are getting acs4 from. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5617645-5629606</DOCNO>
+<TEXT>
+<subject>How to support ACS format into an ebook reader</subject>
+<post author="MauleDev" timestamp="Aug 27, 2013 1:52 AM">
+<s>him jim, 
+</s><s>adobe reader mobile software development kit costs $30,000 for the first year and $10,000 for next years... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4356753-994358</DOCNO>
+<TEXT>
+<subject>How a user can to read an ebook with DRM in Ubuntu</subject>
+<post author="jesusglz" timestamp="Apr 24, 2012 3:48 AM">
+<s>i want to know how a user can read an ebook with drm in ubuntu.</s><s> does ade exists for linux? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-4356753-5481074</DOCNO>
+<TEXT>
+<subject>How a user can to read an ebook with DRM in Ubuntu</subject>
+<post author="dirk1231231" timestamp="Jul 6, 2013 2:24 AM">
+<s>apparently not.</s><s> some company just lost me as a customer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5466525-1245613</DOCNO>
+<TEXT>
+<subject>E_ADEPT_SIGNIN_ERROR</subject>
+<post author="pksinghlinux" timestamp="Jul 1, 2013 8:08 AM">
+<s>hi all 
+</s><s>i am totally new in acs filed, as per my company requirement, i have setup my acs4 server, but when i try to activate my device using vendor user/password, it shows me error e_adept_signin_error. 
+i want to know that, what this error means ?, what things i need to check ?, how i resolve this issue ? 
+</s><s>thanks, for you help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5443427-1240369</DOCNO>
+<TEXT>
+<subject>Removing book from Adobe Content Server</subject>
+<post author="KoulSlou" timestamp="Jun 24, 2013 7:23 AM">
+<s>hello.</s><s> 
+</s><s>i would like to remove book from adobe content server.</s><s> i used answers from that thread http://forums.adobe.com/thread/621994 .</s><s>i successfully removed book from distributor inventory but can not remove it from operator (built-in distributor) inventory.</s><s> i got this error: 
+data="e_adept_database http://acs.authorcloudware.com:8080/admin/manageresourcekey cannot delete or update a parent row: a foreign key constraint fails ('adept'.'fulfillmentitem', constraint 'fulfillmentitem_ibfk_2' foreign key ('resourceid') references 'resourcekey' ('resourceid'))" 
+</s><s>how can i delete data from 'fulfillmentitem' table from php script? 
+</s><s>best regards, tamara. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5036741-1144973</DOCNO>
+<TEXT>
+<subject>Selling ebooks in a country without credit cards</subject>
+<post author="nathanwells" timestamp="Jan 31, 2013 1:39 AM">
+<s>hello, 
+</s><s>i am exploring options on how to help a local book publisher in cambodia be able to sell their books electronically and i came across adobe content server (used adobe products for years, but never heard of this). 
+</s><s>here's the situation: the books are in khmer unicode (so that limits the devices - but pdf's would work).</s><s> people in cambodia do not have credit cards readily available we want to sell the electronic books, but make it so they are linked to a specific device (plain password protection won't work because then people could just share the password with their friends and then no one would buy the book) 
+</s><s>so is there a way people could pay cash at the publisher's office, and then the publisher could give them a link or something to download the ebook to their device that would be only activated for that one device?</s><s> i am not totally sure how adobe content server works, so that's why i am asking. 
+</s><s>thanks, nathan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5036741-5039457</DOCNO>
+<TEXT>
+<subject>Selling ebooks in a country without credit cards</subject>
+<post author="Tobias%20CtrlPublishing" timestamp="Jan 31, 2013 10:36 PM">
+<s>hi, i would answer yes on your question.</s><s> to integrate adobe content server you basicly create links/urls to send to a customer that have bought a book from your webstore.</s><s> so this could also be done by an website where the book store go in and creates a new url for the customer that buying the book and printing it out on a plan paper to the customer.</s><s> please get back to me if you need more information and you will find more information on our website, http://www.ctrlpublishing.com/acs. 
+/tobias 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5036741-5039552</DOCNO>
+<TEXT>
+<subject>Selling ebooks in a country without credit cards</subject>
+<post author="nathanwells" timestamp="Jan 31, 2013 10:57 PM">
+<s>that is great that it is possible - but i hadn't looked at pricing until seeing your website. $10,000 is way outside our price-range (this is a local cambodian company and they would probably sell fewer than 500 ebooks per year), so this seems more like a solution for very big corperations.</s><s> thanks for your time! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5036741-5435836</DOCNO>
+<TEXT>
+<subject>Selling ebooks in a country without credit cards</subject>
+<post author="miles_harrison" timestamp="Jun 21, 2013 9:03 AM">
+<s>http://www.stison.com/ebook_manager 
+or use social drm such as http://www.booxtream.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5291007-1205254</DOCNO>
+<TEXT>
+<subject>hello Everybody</subject>
+<post author="deborjackson" timestamp="May 4, 2013 10:13 PM">
+<s>i have recently joined this community so welcome to all.i hope all of you are getting interest by reading the threads on this forum community.i want to distribute ebooks and i need license of adobe content server to become a part of market so suggest me some solution to get the license? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5291007-5435757</DOCNO>
+<TEXT>
+<subject>hello Everybody</subject>
+<post author="miles_harrison" timestamp="Jun 21, 2013 9:00 AM">
+<s>if you don't want to purchase a your own instance stison offer a shared version that may be of use? 
+http://www.stison.com/ebook_manager 
+there are also some book distributors that do similar. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5419783-1235148</DOCNO>
+<TEXT>
+<subject>Non-latin text disappears from DRM-protected pdf file</subject>
+<post author="vitali_kviatkouski" timestamp="Jun 18, 2013 5:54 AM">
+<s>hi, i'm facing with following issue - when i package pdf with non-latin data (for example, arabian characters), they are not shown in ade.</s><s> adobe content server: 4.2 client: ade 2.0, dl reader 2.4.7 (android), bluefire reader 1.5.7 
+</s><s>screenshot of 3rd page of document in ade 
+
+
+</s><s>pdf file is here - http://engineering-scratch-copyright-com.s3.amazonaws.com/nonproductio n/acs/arabic.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5357732-1220735</DOCNO>
+<TEXT>
+<subject>Replace eBook in Adobe Content Server</subject>
+<post author="Tayyab.Shah_007" timestamp="May 28, 2013 5:36 AM">
+<s>i am facing one issue to replace the already uploaded ebook in acs. 
+</s><s>scenario: have uploaded one book and later noticed that this uploaded book has wrong contents.</s><s> now, have to replace that wrongly uploaded ebook with the new one's having updated contents.</s><s> but unable to update/replace the ebook.</s><s> trying the following code sample: 
+<package action="replace" xmlns="http://ns.adobe.com/adept"> <resource>urn:uuid:bce848cb-80a5-4e05-a11f-3e0f43884788</resource> <action>replace</action> <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">  <dc:format>application/pdf</dc:format> <dc:title>test book - 3</dc:title> <dc:creator>test</dc:creator> <dc:publisher>test</dc:publisher> </metadata> <datapath>d:\book2\test_book.pdf</datapath> </package> 
+</s><s>also tried with 
+<package xmlns="http://ns.adobe.com/adept"> <resource>urn:uuid:bce848cb-80a5-4e05-a11f-3e0f43884788</resource> <action>replace</action> <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">  <dc:format>application/pdf</dc:format> <dc:title>test book - 3</dc:title> <dc:creator>test</dc:creator> <dc:publisher>test</dc:publisher> </metadata> <datapath>d:\book2\test_book.pdf</datapath> </package> 
+</s><s>any help related to repalcing book in acs would be highly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5354933-1220085</DOCNO>
+<TEXT>
+<subject>Book update in ACS</subject>
+<post author="Rameez.Raja" timestamp="May 27, 2013 3:20 AM">
+<s>i have uploaded a pdf book in acs.</s><s> but if i try to update this book with an other pdf.</s><s> it has no effect.</s><s> on the other hand if i upload epub book instead of pdf then it updates successfully.</s><s> then if i upload epub it has no effect.</s><s> any help would be highly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5339780-1216580</DOCNO>
+<TEXT>
+<subject>Do not receive notifications</subject>
+<post author="SabineGuerry" timestamp="May 21, 2013 9:42 AM">
+<s>hi   we have acs set up in one set of servers, running tomcat, and the main webserver elsewhere, running apache.</s><s> we need the notifications sent to the webserver.</s><s> i have set the notifyurl to be correct and also the setting com.adobe.adept.fulfillment.customnotifyurl in fulfillment.conf   however we do not receive any notification posts on this url (or anything at all, from acs)   the tomcat server can definitely see the url and the url is definitely correct.</s><s> there are no firewall issues.</s><s> the only thing is, it's a https url.</s><s> i have made sure that inbound and outbound port 443 is open on each set of servers.</s><s> i have the url set to log everything that hits it.</s><s> i can go to the url in a browser and this connection is logged but nothing from acs is logged and nothing from any user's ade either.   i can see in tomcat's logs that the notification xml is apparently being sent (i can see the xml in the log) however it never reaches the webserver.</s><s> we really need the fulfillment xml !   any suggestions?   thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Content-Server/Discussions-5339780-5343469</DOCNO>
+<TEXT>
+<subject>Do not receive notifications</subject>
+<post author="SabineGuerry" timestamp="May 22, 2013 10:00 AM">
+<s>ok well thanks for the overwhelming response.</s><s> i don't suppose anyone from adobe actually reads this? 
+</s><s>anyway, the problem is that acs doesn't seem able to send fulfillment notifications via https.</s><s> changing the url to a http version solved the problem. 
+i eliminated a firewall as being at fault here, but what i haven't eliminated is whether java or tomcat are at fault rather than adobe's completely bug-free software.</s><s> in any case, using http instead of https solves the problem.</s><s> hope that's useful to anyone else who encounters this! 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,1064 @@
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6104516-1402672</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.7 crashes on start up constantly. Mac OSX 10.9</subject>
+<post author="richard231288" timestamp="Mar 12, 2014 7:33 AM">
+<s>i am having many issues using flash builder at the moment.</s><s> i am using flash builder 4.7 on mac osx 10.9 (mavericks).</s><s> my java version is version 7 update 51.</s><s> the jre is 1.7 
+</s><s>the first problem is that the program has begun to crash on start up.</s><s> the workspace opens for a second or two and then crashes with no error or log.</s><s> this is now happening constantly. 
+</s><s>on the occasions when it does start up within around 5 minutes i receive an 'unexpected character.</s><s> " is not allowed here'.</s><s> there are no characters at all at the point the error suggests. 
+</s><s>the problems tab says that the unexpected character is on the last line, there is only a } and then nothing following.</s><s> it doesn't matter what code i am working on, this error happens on all of them.</s><s> it also gives multiple sets of these errors.</s><s> on one occasion there were 169 errors relating to the unexpected character. 
+</s><s>with these errors, flash builder is currently unusable.</s><s> i would appreciate any assistance that can be given. 
+i noticed on the system requirements that osx mavericks is not listed, does anyone know if there will be an update to flash builder soon? 
+</s><s>regards 
+</s><s>richard 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6104516-6202719</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.7 crashes on start up constantly. Mac OSX 10.9</subject>
+<post author="richard231288" timestamp="Mar 12, 2014 7:35 AM">
+<s>is there anyone from adobe that can help?</s><s> i am finding it very difficult to get a response from anyone at adobe.</s><s> it seems unfair to be asked to purchase a support package when the software is currently unusable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6104516-6205470</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.7 crashes on start up constantly. Mac OSX 10.9</subject>
+<post author="satyaram" timestamp="Mar 13, 2014 2:43 AM">
+<s>i have the same problem on mac.</s><s> the falsh builder close itself as i start the application. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6104516-6209159</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.7 crashes on start up constantly. Mac OSX 10.9</subject>
+<post author="Hoverdog" timestamp="Mar 14, 2014 6:10 AM">
+<s>i am having these issues too.</s><s> brand new macbook pro running mavericks.</s><s> everything updated.</s><s> flash builder is just very unstable. 
+</s><s>adl keeps crashing whenever i run a test multiple times and let it sit for a few minutes.</s><s> flash builder does not like the new file system.</s><s> for some reason it is trying to open folders on the system that don't exist, like when i try to import an .swc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6104516-6232450</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.7 crashes on start up constantly. Mac OSX 10.9</subject>
+<post author="VMCC" timestamp="Mar 21, 2014 4:05 PM">
+<s>flash builder 4.7 on osx requires java version 1.6.</s><s> mavericks comes with java version 1.7, so you'll need to install the older version. 
+</s><s>you may also want to bump the specs in the "adobe flashbuilder 4.7.ini" file. 
+</s><s>more information in this thread. http://forum.starling-framework.org/topic/flash-builder-47-crashes-on- mavericks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6225463-1431919</DOCNO>
+<TEXT>
+<subject>How to stream stereo mp3 (bufferTime=0) and use enhancedMicrophone together, playback is distorted</subject>
+<post author="Sam_Caldwell" timestamp="Mar 19, 2014 3:31 PM">
+<s>i am trying to playback streaming mp3 stereo audio as a live stream while using echo cancellation features of the enhancedmicrophone. 
+</s><s>the mp3 stereo stream is a server-side modified stream of conference participants' audio input.</s><s> it is routed through ams.</s><s> the codec can be modified. 
+</s><s>each participant's audio is generated using the available features of the flash client and transmitted via netstream. 
+</s><s>the goal is to enable echo cancellation on each of the clients. 
+</s><s>using a normal microphone works, but no echo cancellation. 
+</s><s>setting the mp3 netstream buffertime > 0 provides great playback, but no echo cancellation of the stereo audio stream. 
+</s><s>any other suggestions? 
+i would be excited to have access to the client's raw microphone data prior to shipping it via the netstream as it would allow me to enable my own aec algorithms. 
+</s><s>thanks!</s><s> 
+</s><s>sam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6225463-6232490</DOCNO>
+<TEXT>
+<subject>How to stream stereo mp3 (bufferTime=0) and use enhancedMicrophone together, playback is distorted</subject>
+<post author="fB3" timestamp="Mar 21, 2014 3:53 PM">
+<s>try using something like this on the client side. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6227278-1432418</DOCNO>
+<TEXT>
+<subject>Difference between Export Release Build… and setting -debug=false</subject>
+<post author="slash851" timestamp="Mar 20, 2014 7:43 AM">
+<s>what is the difference between using export release build and setting compiler argument -debug=false.</s><s> size of file is the same but export release build takes around 20-30sec for my project when compilig with -debug=false is instant.</s><s> both binaries are optimized according to the explenation from adobe help:   http://help.adobe.com/en_us/flex/using/ws2db454920e96a9e51e63e3d11c0bf 69084-7a92.html   does export release buid do any additional things when create binary?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6226855-1432329</DOCNO>
+<TEXT>
+<subject>Help importing example</subject>
+<post author="ciganarija" timestamp="Mar 20, 2014 5:17 AM">
+<s>i tried importing xyz corporation example using fb 4.5 and wampserver.</s><s> i get this error when i run it and it does not read data from database nor i can add data to it.</s><s> help ?</s><s> pictures included http://i57.tinypic.com/ic4nj8.jpg 
+paths i put when importing http://i57.tinypic.com/alovno.jpg 
+also data/services is not connected to database before i run it, i get some error when i try to http://i60.tinypic.com/2vbmsf8.jpg i think the import paths arent correct 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5386686-1227462</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.5 can't start with Error 3</subject>
+<post author="IED Penny" timestamp="Jun 6, 2013 7:11 PM">
+<s>flash builder 4.5 can't start with error 3 occurred "please uninstall and reinstall the product".</s><s> it is fine after those are done, but this problem occurred again and again after some days.</s><s> it is very annoying, please help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5386686-6226751</DOCNO>
+<TEXT>
+<subject>Flash Builder 4.5 can't start with Error 3</subject>
+<post author="matteosistisette" timestamp="Mar 20, 2014 3:57 AM">
+<s>for god's sake will anybody from adobe say something about this?</s><s> i'm having the same issue and it's f***ing annoying. 
+</s><s>"please uninstall and reinstall the product" is not an acceptable error message. 
+</s><s>please provide a workaround. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6225485-1432011</DOCNO>
+<TEXT>
+<subject>No respect from Adobe for pure-AS3 projects?</subject>
+<post author="alex0816" timestamp="Mar 19, 2014 3:11 PM">
+<s>i'm in the middle of upgrading my pure-as3 projects (ie, no mxml, no flex framework).</s><s> when i did the work in flex builder 3, i used flash cs3 to package up all the uicomponents into a swc, to be used in my fb3 projects.</s><s> i did this because it was my understanding that the mx components cannot be used in pure-flash projects. 
+</s><s>so now with fb4.7, it seems that i have to make a choice of going with mx or spark components.</s><s> i want to continue with the flashpro-based components, but now it seems i'm going to have a bloated architecture with a framework that i don't need?</s><s> is this a subtle hint from adobe to force you to use mx or spark, or am i missing something? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6222715-1431319</DOCNO>
+<TEXT>
+<subject>4.7 actionscript project with two .as files</subject>
+<post author="ggiannis" timestamp="Mar 18, 2014 10:54 PM">
+<s>hi, using fb 4.7 to make actionscript project with two .as file: main.as and gfx.as.</s><s> there are variable in gfx that main cannot access.</s><s> what do i need to do to the gfx.as file to make the variables it declares readable by main.as? 
+</s><s>thanks greg 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6222552-1431312</DOCNO>
+<TEXT>
+<subject>flash builder 4.7 as plugin won't display asdoc</subject>
+<post author="charlesg99" timestamp="Mar 18, 2014 8:43 PM">
+<s>hi, 
+</s><s>on windows 7 x64, i just installed flash builder 4.7 x64 on my existing eclipse 4.2 x64 (using "the adobe flash builder 4.7 plug-in utility") and the asdoc popup won't display anything but the current element.</s><s> if i start the standalone flash builder, using the same workspace and same project, it works fine.</s><s> do i need to configure something else so it works as a plugin? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-977263</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="iBr3nt" timestamp="Mar 19, 2012 11:05 AM">
+<s>adobe et al, 
+</s><s>with the new ipad 3 we now have a ton more pixels to utilize.</s><s> i'm familiar with and have already successfully tested the air 3.1+ commandline compiler option (-platformsdk) to get retina display on the new ipad.</s><s> in actionscript mobile projects the content is rendered beautifully on the new ipad.</s><s> but with flex mobile projects, something is happening that causes it to render incorrectly.</s><s> it's retina display alright, but the size is way too small. 
+</s><s>below is an image without the -platformsdk build tag, that causes the app to be pixel doubled to fit on the new ipad: 
+
+</s><s>notice that it's scaled proportionally, even though the text and components are slightly pixelated.</s><s> not a big deal, but noticeable on the device. 
+</s><s>this image is taken with the app rendering in retina display (setting the -platformsdk pointing to ios 5.1 sdk): 
+
+
+</s><s>as you can see, the text/components are rendered really clear, but the scale is way off.</s><s> obviously it's getting the width of 2048x1536 from the device, but it's way too small. 
+</s><s>how do i fix this?</s><s> i've tried changing the applicationdpi, but it doesn't fix it.</s><s> setting a width/height of 1024x768 does nothing either.</s><s> it seems we need to overrride a behavior that causes it to fit everything in so small. 
+a little help? 
+</s><s>thanks, 
+</s><s>ibrent 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4278040</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="iBr3nt" timestamp="Mar 20, 2012 8:54 AM">
+<s>can anyone tell me if they're looking into this?</s><s> the biggest problem is that it essentially renders flex useless for ipad apps.</s><s> i realize adobe has dropped flex, but this is a concern with the existing 4.6 sdk, and it would great to get a resolution to this problem before jumping to apache flex to find a solution.</s><s> (did you see what i said there, "resolution" to the problem) ;-) 
+ibrent 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4278409</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="alexus.one" timestamp="Mar 20, 2012 10:46 AM">
+<s>i see same issue, would be nice to see solution... we still using flash as base so we would manually adjust grapics 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4278558</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="kevinkorngut" timestamp="Mar 20, 2012 11:49 AM">
+<s>richard lord posted a blog yesterday using the ipad retina display with adobe air and one of the things i noticed is that the new ipad returns a dpi of 132, the specs say the device is 264 ppi.</s><s> i don't have one of the new ipads, so i can't test this, but it sounds as though this is just a case of the device returning the wrong dpi which is something that has happened before.</s><s> i'd check the section on this page entitled "override the default dpi" and see what happens if the device were to return 240 when running on the new ipad. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4279411</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="alexus.one" timestamp="Mar 20, 2012 6:55 PM">
+<s>i will ask my devlopers to try that and see if element will get right size on the screen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4280690</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="iBr3nt" timestamp="Mar 21, 2012 10:25 AM">
+<s>alright, kevinkorngut's answer was the right one.</s><s> it appears that even though air 3.x can render high resolution apps, it still returns the incorrect dpi for the new ipad.</s><s> in a flex mobile project you have to override the dpi using the method mentioned above. 
+</s><s>here are the results i got: 
+
+
+</s><s>using the runtimedpiprovider property on the tabviewapplication tag (works for any of the three project types) i created a class that extends runtimedpiprovider.</s><s> to detect which ipad i was on, i used the following code: 
+override public function get runtimedpi():number { var os:string = capabilities.os; 
+if(os.indexof("ipad") != -1) { if(capabilities.screenresolutionx > 2000 || capabilities.screenresolutiony > 2000) { return dpiclassification.dpi_320; } else { return dpiclassification.dpi_160; } } else { return capabilities.screendpi; } } 
+</s><s>i'm returning a dpi of 320 as this gives the best result that matches the proportions of the device.</s><s> in other words, even though the ipad dpi is 264, setting the app to 320 gives the correct size at the new retina display. 
+</s><s>in order for this to work, you must compile the app with the -platformsdk flag pointing to ios 5.1 sdk, and currently that means you need a mac running lion with xcode 4.3.1.</s><s> here's the adt command i used: 
+adt -package -target ipa-test -storetype pkcs12 -keystore ~/desktop/ios_devcert.p12 -provisioning-profile ~/desktop/ios_devprofile.mobileprovision newipadtest.ipa newipadtest-app.xml newipadtest.swf -platformsdk /applications/xcode.app/contents/developer/platforms/iphoneos.platfor m/developer/sdks/iphoneos5.1.sdk 
+also, the -app.xml descriptor file must have the <requesteddisplayresolution>high</requesteddisplayresolution> within the <iphone> tags. 
+</s><s>thanks everyone for their replies! 
+ibrent 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4283136</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="alexus.one" timestamp="Mar 22, 2012 8:37 AM">
+<s>nice, thanks a lot! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4532924</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="bluesquid" timestamp="Jul 2, 2012 1:49 AM">
+<s>hi, i just followed the procedure .</s><s>i set the applicationdpi as 160 and it shows all the ui elements perfectly in both ipad2 and 3. but there is an issue in localtoglobal() .</s><s> this method returns different values for ipad 2 and 3 and makes so many issues on screen.</s><s> did any one else experienced the same behavior..?please can some one verify it.. 
+</s><s>any implementation of localtoglobal or globaltolocal will replicate the issue.(tried localtoglobalcontent as well with the same result) 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-4920129</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="Gaius%20Coffey" timestamp="Dec 13, 2012 5:55 PM">
+<s>not sure whether globaltolocal / localtoglobal bug could be anything to do with this?</s><s> https://bugs.adobe.com/jira/browse/fb-35856 g 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-6215290</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="srbick2" timestamp="Mar 17, 2014 8:28 AM">
+<s>i'm facing the same issue updating an existing application to display properly on an ipad mini with retina display ios 7.0.4 the application appears to use the full resolution of the device (no stretching or scaling - high resolution) however the ui elements are rendering small similar to the screenshots above.   a test revels that capabilities.screenresolutionx and capabilities.screenresolutiony return 768 x 1024.</s><s> screendpi is returning 132.   i'm compiling on a mac and have tried using ios 7.0, 6.0 and 5.1 - no changes.</s><s> i've tried air 3.7 and air 4.0 (which, air 4.0 is now a requirement for an app approval by apple).</s><s> i've tried flashbuilder and the commandline compiler (with no errors/warnings).   using: requesteddisplayresolution: high            uidevicefamily 1 and 2 (both iphone and ipad support)   since capabilities.screenresolution is returning the incorrect values runnin on the device, i'm not able to override the runtimedpi as suggested above.   here is my test code: https://www.dropbox.com/s/u072ou6enxa54k9/src.zip   thanks for any help or suggestions!   steve   output from app running on ipad mini w/ retina display: capabilities.screenresolutionx: 768 capabilities.screenresolutiony: 1024 capabilities.screendpi: 132 stage.stagewidth: 1024 stage.stageheight: 768 stage.fullscreenwidth: 1024 stage.fullscreenheight: 768      
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-6220591</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="srbick2" timestamp="Mar 18, 2014 9:06 AM">
+<s>as a test for just the ipad mini, i forced get runtimedpi() to return dpiclassification.dpi_320.</s><s> this improved the layout however the fonts i speicifed in the css were locked into the font size specified for @media (application-dpi: 160).</s><s> that leads me to belive that the css styles are not dereived from get runtimedpi(). 
+</s><s>regardless, if i can get the ipad mini w/ retina to correctly return the capabilities for screendpi and resolution - my problem would be solved. 
+</s><s>is there any additional information i can provide in order to help udnerstand what's going on? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-4276097-6222205</DOCNO>
+<TEXT>
+<subject>Flex Mobile project scaling with Retina display iPad (3rd gen).</subject>
+<post author="srbick2" timestamp="Mar 18, 2014 5:04 PM">
+<s>just came across this note in the apache flex 4.12 sdk change log: 
+https://dist.apache.org/repos/dist/release/flex/4.12.0/release_notes 
+- changed dpi to be 160 for ipad/ipad mini and 320 for ipad retina/ipad mini retina. 
+</s><s>this will likely not be a solution i can use since the app must use one of the adobe sdks. 
+</s><s>so the question still remains - why is the ipad mini w/ retina reporting the screen resolution capabilities of 768x1024 and a dpi of 132?</s><s> if the capabilities were reporting correctly, i could override the dpi as brent mentioned above.</s><s> i'm not sure if that would solve the css dpi selector issue. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6219424-1430503</DOCNO>
+<TEXT>
+<subject>How can i enable WTP tools in Flash Builder 4.7 for create mixed project java/flex ?</subject>
+<post author="ccavelier" timestamp="Mar 18, 2014 2:08 AM">
+<s>hello, 
+</s><s>i would like create a java/flex project with blazeds support.</s><s> i'm using flash builder 4.7 but i'm not able to add wtp tools (dependency error during installation process). 
+</s><s>to workaround this issue, i would like use a regular eclipse installation with a full set of tool (wtp, subclipse, ;..</s><s>) and add flash builer 4.7 plugin.</s><s> but i'm not able to found the download like for the plugin version of flash builder 4.7. 
+</s><s>please give me the right procedure. 
+</s><s>regards 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6219424-6219810</DOCNO>
+<TEXT>
+<subject>How can i enable WTP tools in Flash Builder 4.7 for create mixed project java/flex ?</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 5:05 AM">
+<s>ask in the fb forum. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6219424-6220931</DOCNO>
+<TEXT>
+<subject>How can i enable WTP tools in Flash Builder 4.7 for create mixed project java/flex ?</subject>
+<post author="Jeff%20A%20Wright" timestamp="Mar 18, 2014 10:28 AM">
+<s>moving this discussion to the using flash builder forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6211111-1428345</DOCNO>
+<TEXT>
+<subject>Has anyone implemented Facebook SSO on Android using Adobe AIR ANE?</subject>
+<post author="Kizzang" timestamp="Mar 14, 2014 4:42 PM">
+<s>has anyone implemented facebook sso on android using adobe air ane? 
+</s><s>all help would be appreciated 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6144354-1412399</DOCNO>
+<TEXT>
+<subject>How can I really associate ActionScript .as file with Flash Builder in Windows 8?</subject>
+<post author="flashdictionary" timestamp="Feb 21, 2014 11:13 AM">
+<s>how can i really associate actionscript .as file with flash builder in windows 8? 
+</s><s>in windows 7 you go to preferences - flash builder - file associations, etc. but the file associations option does not exist in the windows 8 version: (see image) 
+</s><s>adobe made a web page that says that you must use windows explorer to associate .as files with flashbuilder.exe, but this doesnt work:http://helpx.adobe.com/flash-builder/kb/unable-set-default-file-associ ations.html flashbuilder.exe does not support opening an .as file like that.</s><s> flash builder attempts to launch a new process and requires another workspace to be able to open a file from windows.</s><s> so either adobe needs to add windows 8 file association support in flash builder, or there needs to be a setting that prevents flash builder from opening a second process instance. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6144354-6148154</DOCNO>
+<TEXT>
+<subject>How can I really associate ActionScript .as file with Flash Builder in Windows 8?</subject>
+<post author="Darcey76" timestamp="Feb 22, 2014 9:35 PM">
+<s>not sure if this will work in win8 as i don't have it but when i want to associate files with certain programs i do the following: 
+1.</s><s> browse to file 2.</s><s> right click it 3.</s><s> choose open with 4.</s><s> which opens another menu (a list of programs) but at the bottom is an option "choose default program" which i then select 5.</s><s> then select / browse to the program that you want to use (tick the box "always use the selected program to open this kind of file" 6.</s><s> press ok 
+
+</s><s>d 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6144354-6210062</DOCNO>
+<TEXT>
+<subject>How can I really associate ActionScript .as file with Flash Builder in Windows 8?</subject>
+<post author="flashdictionary" timestamp="Mar 14, 2014 10:45 AM">
+<s>no unfortunately it doesnt work that way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6144354-6210265</DOCNO>
+<TEXT>
+<subject>How can I really associate ActionScript .as file with Flash Builder in Windows 8?</subject>
+<post author="flashdictionary" timestamp="Mar 14, 2014 11:45 AM">
+<s>i figured out a solution.</s><s> i used a windows 7 machine that has the proper file association and observed the windows registry keys using regedit.exe.</s><s> i exported the keys and made a .reg file and copied it to my windows 8 machine.</s><s> after installing the registry keys, the file association didnt work immediately because windows 8 has this user choice key that still associates .as files with flash professional.</s><s> so after installing the below keys, then i used windows explorer to associate .as files with flash builder and my file associations are working as expected.</s><s> this is an adobe specific integration issue that needs to be fixed on adobe's end in order to support file associations in windows 8. 
+</s><s>successful steps: 1) install the registry keys below 2) use windows explorer to always associate .as file with flashbuilder.exe 
+
+====================================================================== ================== copy the below to a file with the .reg extension.</s><s> then use the windows explorer "merge" command to install into registry ====================================================================== ================== 
+windows registry editor version 5.00 
+[hkey_classes_root\.as] @="flashbuilder.actionscript" 
+
+[hkey_classes_root\.as\shellnew] "nullfile"="" 
+
+[hkey_classes_root\flashbuilder.actionscript] 
+
+[hkey_classes_root\flashbuilder.actionscript\defaulticon] @="c:\\program files\\adobe\\adobe flash builder 4.7 (64 bit)\\eclipse\\plugins\\com.adobe.flexbuilder.ui_4.7.0.349722\\icons\ \fb_as.ico" 
+
+[hkey_classes_root\flashbuilder.actionscript\shell] 
+
+[hkey_classes_root\flashbuilder.actionscript\shell\open] 
+
+[hkey_classes_root\flashbuilder.actionscript\shell\open\command] @=hex(2):22,00,43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,6 d,00,20,\ 00,46,00,69,00,6c,00,65,00,73,00,5c,00,41,00,64,00,6f,00,62,00,65,00, 5c,00,\ 41,00,64,00,6f,00,62,00,65,00,20,00,46,00,6c,00,61,00,73,00,68,00,20, 00,42,\ 00,75,00,69,00,6c,00,64,00,65,00,72,00,20,00,34,00,2e,00,37,00,20,00, 28,00,\ 36,00,34,00,20,00,42,00,69,00,74,00,29,00,5c,00,46,00,6c,00,61,00,73, 00,68,\ 00,42,00,75,00,69,00,6c,00,64,00,65,00,72,00,2e,00,65,00,78,00,65,00, 22,00,\ 20,00,2d,00,6e,00,61,00,6d,00,65,00,20,00,22,00,46,00,6c,00,61,00,73, 00,68,\ 00,20,00,42,00,75,00,69,00,6c,00,64,00,65,00,72,00,22,00,20,00,2d,00, 2d,00,\ 6c,00,61,00,75,00,6e,00,63,00,68,00,65,00,72,00,2e,00,6f,00,70,00,65, 00,6e,\ 00,46,00,69,00,6c,00,65,00,20,00,22,00,25,00,31,00,22,00,00,00 
+
+[hkey_local_machine\software\.as] @="flashbuilder.actionscript" 
+
+[hkey_local_machine\software\.as\shellnew] "nullfile"="" 
+
+[hkey_local_machine\software\flashbuilder.actionscript] 
+
+[hkey_local_machine\software\flashbuilder.actionscript\defaulticon] @="c:\\program files\\adobe\\adobe flash builder 4.7 (64 bit)\\eclipse\\plugins\\com.adobe.flexbuilder.ui_4.7.0.349722\\icons\ \fb_as.ico" 
+
+[hkey_local_machine\software\flashbuilder.actionscript\shell] 
+
+[hkey_local_machine\software\flashbuilder.actionscript\shell\open] 
+
+[hkey_local_machine\software\flashbuilder.actionscript\shell\open\comm and] @=hex(2):22,00,43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,6 d,00,20,\ 00,46,00,69,00,6c,00,65,00,73,00,5c,00,41,00,64,00,6f,00,62,00,65,00, 5c,00,\ 41,00,64,00,6f,00,62,00,65,00,20,00,46,00,6c,00,61,00,73,00,68,00,20, 00,42,\ 00,75,00,69,00,6c,00,64,00,65,00,72,00,20,00,34,00,2e,00,37,00,20,00, 28,00,\ 36,00,34,00,20,00,42,00,69,00,74,00,29,00,5c,00,46,00,6c,00,61,00,73, 00,68,\ 00,42,00,75,00,69,00,6c,00,64,00,65,00,72,00,2e,00,65,00,78,00,65,00, 22,00,\ 20,00,2d,00,6e,00,61,00,6d,00,65,00,20,00,22,00,46,00,6c,00,61,00,73, 00,68,\ 00,20,00,42,00,75,00,69,00,6c,00,64,00,65,00,72,00,22,00,20,00,2d,00, 2d,00,\ 6c,00,61,00,75,00,6e,00,63,00,68,00,65,00,72,00,2e,00,6f,00,70,00,65, 00,6e,\ 00,46,00,69,00,6c,00,65,00,20,00,22,00,25,00,31,00,22,00,00,00 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6209077-1427930</DOCNO>
+<TEXT>
+<subject>Library project errors and imports of projects using them</subject>
+<post author="TrickeyDee" timestamp="Mar 14, 2014 6:01 AM">
+<s>so this is something that i have put up with in fb for a long time now, but i decided to try doing some research today to see if there is a workaround as it is very annoying.</s><s> unfortunately i couldn't find anything.   i attempted to file a bug/feature request, but it turns out that for some unknown reason fb is the only adobe application that gives a link to another url (http://bugs.adobe.com/flex/) and, today at least, the link is dead so i have to post here instead.   the problem is with library projects (which i love by the way).</s><s> i use them a great deal and for more than just creating standalone apis.</s><s> as do many others, i like to have the core of many of my cross-platform projects in a library so that i can create other 'harness' projects for different runtimes and use the same bulk code.</s><s> this way i can just write code in each master project that is particular to that runtime be it air or web or whatever - this is a great bit of functionality that i would really miss were it not there.   as a result of this workflow however, i am often working in the library project directly in order to update all versions of a project.</s><s> the problem arises when there is an error in the library project.</s><s> when this happens, all the projects reading from the library lose all linkages to the swc and as a result the problem tab fills up with hundreds of problems that don't exist, because as far as those projects are now concerned the swc no longer exists.   now i understand why this happens but surely fb could be made to understand what is going on and override (what i assume is) the compiler's behaviour, and just not display these errors.   this whole thing is exacerbated by (and may not even be that big a problem where it not for) the fact that i am forced to turn off 'build automatically' due to the 4.7 crash bug that has been reported here numerous times.</s><s> because of this i tend to write large chunks of code between each compile so i don't instantly know what has broken.</s><s> please save the feature that i enjoy so much by either getting fb to deal with the situation better or by fixing the crash bug so i can use 'build automatically' again- or god forbid- fix both!</s><s>!</s><s> i can dream.</s><s> j if anyone has any good tips regarding this please let me know.</s><s> many thanks, james
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6206098-1427204</DOCNO>
+<TEXT>
+<subject>Appearance Theme</subject>
+<post author="jfb00" timestamp="Mar 13, 2014 7:49 AM">
+<s>hi, i installed a theme importing a epf file from: http://eclipsecolorthemes.org/?</s><s>view=theme&id=1855 i don't like the colors, how can i revert or uninstall this theme?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6205882-1427118</DOCNO>
+<TEXT>
+<subject>My flash builder is ridiculously unstable</subject>
+<post author="CSRicky" timestamp="Mar 13, 2014 6:52 AM">
+<s>my flash builder is ridiculously unstable.</s><s> nearly everything i click, flash builder throws an exception.</s><s> i have the tfs plug-in which doesn't work 90% of the time.</s><s> it hardly ever checks items out when i edit them, it doesn't commit changes properly so my colleagues can see them, i usually have to re-commit them and it always insists i have conflicts on items i have never touched when getting the latest version of the whole project.</s><s> as for flash builder, i can't move, rename, delete files in the package explorer, these all throw refactoring exceptions.</s><s> i can't use the 'high light occurrences' tool this always throws a null pointer exception resulting in me not being able to click anywhere on the text editor until i turn it off.</s><s> the functionalities of this abysmal piece of software are slowly dying over time the more i use it (i've been using it for the past 6 months, it was fine when i first installed it), i'm fairly confident the software will be unusable within the next few months.</s><s> not to mention the infamous memory leak, so that it eventually saps all of my ram and restricts me from doing anything else.</s><s> so i thought, maybe if i search for software updates, some of these issues would have been fixed.</s><s> but again, you guessed it, this throws an exception... 
+</s><s>all that a side, i think i could have dealt with it all if you provided a reinstall tool, or a fix tool so i could get a fresh install like most software- but it doesn't.</s><s> so, i'm wondering how i can get a fresh install of flash builder that i am going to be able to enter my current product key, or somehow reinstall my current version so i don't have to worry about or waste more money getting a new license?</s><s>?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6205740-1427058</DOCNO>
+<TEXT>
+<subject>Need some help building app</subject>
+<post author="ciganarija" timestamp="Mar 13, 2014 5:47 AM">
+<s>i need someone to build a simple app w/ php database storing employee names,phones,address,email something similar[img]http://files.zend.com/help/flash-builder-for-php/help/web_app_php.png[/img] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5705445-1302000</DOCNO>
+<TEXT>
+<subject>FB 4.7 crashes on Building workspace (usually at 40%)</subject>
+<post author="timoisalive" timestamp="Sep 23, 2013 3:15 AM">
+<s>happens several times a day, after saving a file when fb starts "building workspace". 
+</s><s>i'm on windows 8.</s><s> 
+</s><s>any ideas, anyone? 
+</s><s>cheers!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5705445-5802109</DOCNO>
+<TEXT>
+<subject>FB 4.7 crashes on Building workspace (usually at 40%)</subject>
+<post author="halfjust" timestamp="Oct 30, 2013 4:26 PM">
+<s>same problem ... 
+any success? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5705445-5802727</DOCNO>
+<TEXT>
+<subject>FB 4.7 crashes on Building workspace (usually at 40%)</subject>
+<post author="timoisalive" timestamp="Oct 31, 2013 12:31 AM">
+<s>still the same problem, unfortunately.</s><s> windows 8.1 update didn't help. 
+</s><s>could anyone at adobe maybe comment on this? 
+</s><s>what's the status with fb updates anyways?</s><s> is this software still alive or is it quietly being forgotten..</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5705445-5965693</DOCNO>
+<TEXT>
+<subject>FB 4.7 crashes on Building workspace (usually at 40%)</subject>
+<post author="TrickeyDee" timestamp="Dec 30, 2013 4:41 AM">
+<s>anyone find a way round this?</s><s> if i delete the .snap file it seems to help but the file just appears again.</s><s> i also tryed increasing the memory alocation in the .ini files.</s><s> this doesn't seem to happen on the mac version at all. 
+</s><s>come on adobe!</s><s> this is ridiculous!</s><s> at least respond!</s><s>!</s><s> 
+</s><s>from what i can see fb and flash are the only way you are currently monetizing the huge amout of cross-platform air apps being made.</s><s> you're really in danger of loosing more of those people to other tools! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5705445-6202312</DOCNO>
+<TEXT>
+<subject>FB 4.7 crashes on Building workspace (usually at 40%)</subject>
+<post author="timoisalive" timestamp="Mar 12, 2014 4:59 AM">
+<s>i've fixed this problem by unchecking the build automatically option in the general/workspace preferences! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-5705445-6202509</DOCNO>
+<TEXT>
+<subject>FB 4.7 crashes on Building workspace (usually at 40%)</subject>
+<post author="TrickeyDee" timestamp="Mar 12, 2014 6:34 AM">
+<s>yeah, thats what we all had to do too. 
+i wouldn't call disabling a main feature of flash builder a fix though.</s><s> it's like removing the wheels of your car to avoid a puncture. 
+</s><s>please sort it out adobe!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6202463-1426219</DOCNO>
+<TEXT>
+<subject>profiler does not work</subject>
+<post author="slongshum" timestamp="Mar 12, 2014 5:48 AM">
+<s>hi.</s><s> when i use the profiler to check the memory usage of my app, there is nothing shown in the live objects list, and used memory is returned as zero, which is clearly not the case.</s><s> everything works fine on macos, the trouble is only with windows. 
+windows 7 x64 flash builder 4.7 air sdk 4.7.0.349722 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6202315-1426189</DOCNO>
+<TEXT>
+<subject>Using the "-swf-version" compiler argument</subject>
+<post author="timoisalive" timestamp="Mar 12, 2014 5:15 AM">
+<s>i'd like to understand when does one need to use this additional compiler argument. 
+</s><s>is it necessary for swf's running in browser only, or does it also make a difference when working on a mobile air project (packaging for ios/android) 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6198162-1425262</DOCNO>
+<TEXT>
+<subject>Url in flash</subject>
+<post author="Vector Inspector" timestamp="Mar 10, 2014 11:03 PM">
+<s>i'd like ot make some basic animated flash and am wondering if i can add a url in the animation? 
+</s><s>its a basic 3d home that i want to add a components featured url's for parts of the house.</s><s> is it even possible? 
+
+http://www.tampa-home-inspectors.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6196273-1424842</DOCNO>
+<TEXT>
+<subject>Flash Builder crashes when searching for .swc</subject>
+<post author="Hoverdog" timestamp="Mar 10, 2014 11:19 AM">
+<s>as the title states, anytime i use flash builder to open a finder dialog to search for files, flash builder crashes. 
+i have uninstalled fb and reinstalled. 
+i have changed my default finder to open to a different directory instead of seeing 'all my files'. 
+i have updated to air 4.0. 
+</s><s>my crash log, 
+process: adobe flash builder 4.7 [896] path: /applications/adobe flash builder 4.7/adobe flash builder 4.7.app/contents/macos/adobe flash builder 4.7 identifier: org.eclipse.eclipse version: 4.7 (4.7) code type: x86-64 (native) parent process: launchd [157] responsible: adobe flash builder 4.7 [896] user id: 501 
+
+</s><s>date/time: 2014-03-10 13:19:33.102 -0500 os version: mac os x 10.9.2 (13c64) report version: 11 anonymous uuid: be47340d-ba2e-7583-a6d0-b478e98a447e 
+
+</s><s>sleep/wake uuid: 9631b369-82aa-4555-9434-b89c9fe05558 
+
+</s><s>crashed thread: 0 dispatch queue: com.apple.main-thread 
+
+</s><s>exception type: exc_bad_access (sigsegv) exception codes: exc_i386_gpflt 
+
+</s><s>application specific information: objc_msgsend() selector name: _surface java information: exception type: bus error (0xa) at pc=7fff9338a097 
+java vm: java hotspot(tm) 64-bit server vm (20.65-b04-462 mixed mode macosx-amd64) 
+</s><s>current thread (107001000): javathread "main" [_thread_in_native, id=1999016720, stack(7fff5f400000,7fff5fc00000)] stack: [7fff5f400000,7fff5fc00000] java frames: (j=compiled java code, j=interpreted, vv=vm code) j org.eclipse.swt.internal.cocoa.os.objc_msgsend_bool(jjjj)z+0 j org.eclipse.swt.internal.cocoa.nsrunloop.runmode(lorg/eclipse/swt/int ernal/cocoa/nsstring;lorg/eclipse/swt/internal/cocoa/nsdate;)z+31 j org.eclipse.swt.widgets.display.sleep()z+36 j org.eclipse.jface.window.window.runeventloop(lorg/eclipse/swt/widgets /shell;)v+30 j org.eclipse.jface.window.window.open()i+49 j com.adobe.flexbuilder.project.ui.utils.flexclasspathcontrol$13.widget selected(lorg/eclipse/swt/events/selectionevent;)v+387 j org.eclipse.swt.widgets.typedlistener.handleevent(lorg/eclipse/swt/wi dgets/event;)v+1080 j org.eclipse.swt.widgets.eventtable.sendevent(lorg/eclipse/swt/widgets /event;)v j org.eclipse.swt.widgets.display.sendevent(lorg/eclipse/swt/widgets/ev enttable;lorg/eclipse/swt/widgets/event;)v+24 j org.eclipse.swt.widgets.widget.sendevent(lorg/eclipse/swt/widgets/eve nt;)v+9 j org.eclipse.swt.widgets.widget.sendevent(ilorg/eclipse/swt/widgets/ev ent;z)v+73 j org.eclipse.swt.widgets.widget.sendevent(ilorg/eclipse/swt/widgets/ev ent;)v+4 j org.eclipse.swt.widgets.widget.notifylisteners(ilorg/eclipse/swt/widg ets/event;)v+19 j org.eclipse.swt.widgets.display.rundeferredevents()z+96 j org.eclipse.swt.widgets.display.readanddispatch()z+125 j org.eclipse.jface.window.window.runeventloop(lorg/eclipse/swt/widgets /shell;)v+23 j org.eclipse.jface.window.window.open()i+49 j com.adobe.flexbuilder.editors.derived.ui.navigator.flexpackageexplore rpropertydialogaction.run()v+10 j org.eclipse.jface.action.action.runwithevent(lorg/eclipse/swt/widgets /event;)v+1 j org.eclipse.jface.action.actioncontributionitem.handlewidgetselection (lorg/eclipse/swt/widgets/event;z)v+354 j org.eclipse.jface.action.actioncontributionitem.access$2(lorg/eclipse /jface/action/actioncontributionitem;lorg/eclipse/swt/widgets/event;z) v+3 j org.eclipse.jface.action.actioncontributionitem$5.handleevent(lorg/ec lipse/swt/widgets/event;)v+60 j org.eclipse.swt.widgets.eventtable.sendevent(lorg/eclipse/swt/widgets /event;)v j org.eclipse.swt.widgets.display.sendevent(lorg/eclipse/swt/widgets/ev enttable;lorg/eclipse/swt/widgets/event;)v+24 j org.eclipse.swt.widgets.widget.sendevent(lorg/eclipse/swt/widgets/eve nt;)v+9 j org.eclipse.swt.widgets.widget.sendevent(ilorg/eclipse/swt/widgets/ev ent;z)v+73 j org.eclipse.swt.widgets.widget.sendevent(ilorg/eclipse/swt/widgets/ev ent;)v+4 j org.eclipse.swt.widgets.widget.notifylisteners(ilorg/eclipse/swt/widg ets/event;)v+19 j org.eclipse.swt.widgets.display.rundeferredevents()z+96 j org.eclipse.swt.widgets.display.readanddispatch()z+125 j org.eclipse.ui.internal.workbench.runeventloop(lorg/eclipse/jface/win dow/window$iexceptionhandler;lorg/eclipse/swt/widgets/display;)v+9 j org.eclipse.ui.internal.workbench.runui()i+555 j org.eclipse.ui.internal.workbench.access$4(lorg/eclipse/ui/internal/w orkbench;)i+1 j org.eclipse.ui.internal.workbench$7.run()v+55 j org.eclipse.core.databinding.observable.realm.runwithdefault(lorg/ecl ipse/core/databinding/observable/realm;ljava/lang/runnable;)v+12 j org.eclipse.ui.internal.workbench.createandrunworkbench(lorg/eclipse/ swt/widgets/display;lorg/eclipse/ui/application/workbenchadvisor;)i+18 j org.eclipse.ui.platformui.createandrunworkbench(lorg/eclipse/swt/widg ets/display;lorg/eclipse/ui/application/workbenchadvisor;)i+2 j com.adobe.flexbuilder.standalone.flashbuilderapplication.start(lorg/e clipse/equinox/app/iapplicationcontext;)ljava/lang/object;+130 j org.eclipse.equinox.internal.app.eclipseapphandle.run(ljava/lang/obje ct;)ljava/lang/object;+135 j org.eclipse.core.runtime.internal.adaptor.eclipseapplauncher.runappli cation(ljava/lang/object;)ljava/lang/object;+103 j org.eclipse.core.runtime.internal.adaptor.eclipseapplauncher.start(lj ava/lang/object;)ljava/lang/object;+29 j org.eclipse.core.runtime.adaptor.eclipsestarter.run(ljava/lang/object ;)ljava/lang/object;+149 j org.eclipse.core.runtime.adaptor.eclipsestarter.run([ljava/lang/strin g;ljava/lang/runnable;)ljava/lang/object;+183 v ~stubroutines::call_stub j sun.reflect.nativemethodaccessorimpl.invoke0(ljava/lang/reflect/metho d;ljava/lang/object;[ljava/lang/object;)ljava/lang/object;+0 j sun.reflect.nativemethodaccessorimpl.invoke(ljava/lang/object;[ljava/ lang/object;)ljava/lang/object;+87 j sun.reflect.delegatingmethodaccessorimpl.invoke(ljava/lang/object;[lj ava/lang/object;)ljava/lang/object;+6 j java.lang.reflect.method.invoke(ljava/lang/object;[ljava/lang/object; )ljava/lang/object;+161 j org.eclipse.equinox.launcher.main.invokeframework([ljava/lang/string; [ljava/net/url;)v+211 j org.eclipse.equinox.launcher.main.basicrun([ljava/lang/string;)v+126 j org.eclipse.equinox.launcher.main.run([ljava/lang/string;)i+4 v ~stubroutines::call_stub 
+java threads: ( => current thread ) 118031800 javathread "com.apple.appkit-heartbeat" daemon [_thread_in_native, id=334688256, stack(113eaf000,113f2f000)] 118241000 javathread "[threadpool manager] - idle thread" daemon [_thread_blocked, id=437968896, stack(11a0ae000,11a1ae000)] 117997000 javathread "java indexing" daemon [_thread_blocked, id=462426112, stack(11b801000,11b901000)] 1179fc800 javathread "worker-6" [_thread_blocked, id=392765440, stack(117592000,117692000)] 110bf2000 javathread "worker-4" [_thread_blocked, id=390643712, stack(11738c000,11748c000)] 115864000 javathread "worker-2" [_thread_blocked, id=324579328, stack(11348b000,11358b000)] 11825a000 javathread "com.google.common.base.internal.finalizer" daemon [_thread_blocked, id=334151680, stack(113dac000,113eac000)] 1158be800 javathread "thread-6" [_thread_in_native, id=332816384, stack(113c66000,113d66000)] 115abf800 javathread "bundle file closer" daemon [_thread_blocked, id=331755520, stack(113b63000,113c63000)] 110b19000 javathread "worker-1" [_thread_blocked, id=317091840, stack(112d67000,112e67000)] 110af4800 javathread "worker-jm" [_thread_blocked, id=308166656, stack(1124e4000,1125e4000)] 10b92f800 javathread "[timer] - main queue handler" daemon [_thread_blocked, id=307023872, stack(1123cd000,1124cd000)] 110952000 javathread "framework event dispatcher" daemon [_thread_blocked, id=302481408, stack(111f78000,112078000)] 1070e7800 javathread "start level event dispatcher" daemon [_thread_blocked, id=301420544, stack(111e75000,111f75000)] 10710e000 javathread "state data manager" daemon [_thread_blocked, id=300359680, stack(111d72000,111e72000)] 10710d000 javathread "framework active thread" [_thread_blocked, id=299298816, stack(111c6f000,111d6f000)] 10781e000 javathread "low memory detector" daemon [_thread_blocked, id=295735296, stack(111909000,111a09000)] 107085000 javathread "c2 compilerthread1" daemon [_thread_blocked, id=294674432, stack(111806000,111906000)] 10b803000 javathread "c2 compilerthread0" daemon [_thread_blocked, id=293613568, stack(111703000,111803000)] 107084800 javathread "signal dispatcher" daemon [_thread_blocked, id=292552704, stack(111600000,111700000)] 107083800 javathread "surrogate locker thread (concurrent gc)" daemon [_thread_blocked, id=291491840, stack(1114fd000,1115fd000)] 110874000 javathread "finalizer" daemon [_thread_blocked, id=290430976, stack(1113fa000,1114fa000)] 107806800 javathread "reference handler" daemon [_thread_blocked, id=289370112, stack(1112f7000,1113f7000)] =>107001000 javathread "main" [_thread_in_native, id=1999016720, stack(7fff5f400000,7fff5fc00000)] other threads: 10b802800 vmthread [stack: 1111f4000,1112f4000] [id=288309248] 107097000 watcherthread [stack: 111a0c000,111b0c000] [id=296796160] 
+</s><s>vm state:not at safepoint (normal execution) vm mutex/monitor currently owned by a thread: none 
+heap par new generation total 64768k, used 7781k [7b0000000, 7b4640000, 7b5330000) eden space 57600k, 13% used [7b0000000, 7b07994e0, 7b3840000) from space 7168k, 0% used [7b3840000, 7b3840000, 7b3f40000) to space 7168k, 0% used [7b3f40000, 7b3f40000, 7b4640000) concurrent mark-sweep generation total 503040k, used 25639k [7b5330000, 7d3e70000, 7f0000000) concurrent-mark-sweep perm gen total 117152k, used 70330k [7f0000000, 7f7268000, 800000000) 
+</s><s>code cache [108101000, 108382000, 10b101000) total_blobs=1094 nmethods=569 adapters=486 free_code_cache=47813824 largest_free_block=36544 
+virtual machine arguments: jvm args: -xms512m -xmx1024m -xx:maxpermsize=256m -xx:permsize=64m -xdock:name=flash builder -xdock:icon=../resources/fb_app.icns -xstartonfirstthread -dorg.eclipse.swt.internal.carbon.smallfonts -declipse.product=com.adobe.flexbuilder.standalone.producte36 -declipse.application=com.adobe.flexbuilder.standalone.flashbuilderap plication -dfile.encoding=utf-8 java command: <unknown> launcher type: generic physical memory: page size = 4k, total = 8192m, free = 3728m 
+
+
+</s><s>thread 0 crashed:: dispatch queue: com.apple.main-thread 0 libobjc.a.dylib 0x00007fff9338a097 objc_msgsend + 23 1 com.apple.appkit 0x00007fff8fee70a4 -[nsscrollview _isconcurrentscrollingcompatible] + 255 2 com.apple.appkit 0x00007fff8fee6d83 -[nsscrollview _shoulduseinclusivelayersautomatically] + 75 3 com.apple.appkit 0x00007fff8fee6cc8 -[nsscrollview _updateautomaticinclusivelayersupport] + 71 4 libdispatch.dylib 0x00007fff92ea51d7 _dispatch_call_block_and_release + 12 5 libdispatch.dylib 0x00007fff92ea22ad _dispatch_client_callout + 8 6 libdispatch.dylib 0x00007fff92ea9f03 _dispatch_main_queue_callback_4cf + 333 7 com.apple.corefoundation 0x00007fff8d368679 __cfrunloop_is_servicing_the_main_dispatch_queue__ + 9 8 com.apple.corefoundation 0x00007fff8d323954 __cfrunlooprun + 1636 9 com.apple.corefoundation 0x00007fff8d3230b5 cfrunlooprunspecific + 309 10 com.apple.foundation 0x00007fff89d05adc -[nsrunloop(nsrunloop) runmode:beforedate:] + 253 11 libswt-pi-cocoa-3738.jnilib 0x00000001122e9cab java_org_eclipse_swt_internal_cocoa_os_objc_1msgsend_1bool__jjjj + 58 12 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 13 ?</s><s>?</s><s>?</s><s> 0x0000000108106a82 0 + 4430260866 14 ?</s><s>?</s><s>?</s><s> 0x0000000108106a82 0 + 4430260866 15 ?</s><s>?</s><s>?</s><s> 0x0000000108106a82 0 + 4430260866 16 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 17 ?</s><s>?</s><s>?</s><s> 0x0000000108106e48 0 + 4430261832 18 ?</s><s>?</s><s>?</s><s> 0x0000000108106d34 0 + 4430261556 
+
+</s><s>thread 1:: dispatch queue: com.apple.libdispatch-manager 0 libsystem_kernel.dylib 0x00007fff8e9fe662 kevent64 + 10 1 libdispatch.dylib 0x00007fff92ea443d _dispatch_mgr_invoke + 239 2 libdispatch.dylib 0x00007fff92ea4152 _dispatch_mgr_thread + 52 
+
+</s><s>thread 2: 0 libsystem_kernel.dylib 0x00007fff8e9fde6a __workq_kernreturn + 10 1 libsystem_pthread.dylib 0x00007fff8aa36f08 _pthread_wqthread + 330 2 libsystem_pthread.dylib 0x00007fff8aa39fb9 start_wqthread + 13 
+
+</s><s>thread 3:: java: exception handler thread 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libsystem_kernel.dylib 0x00007fff8e9f9613 mach_msg_server + 544 3 libclient64.dylib 0x000000010646c2e5 0x106458000 + 82661 4 libclient64.dylib 0x000000010646c2a9 0x106458000 + 82601 5 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 6 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 7 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 8 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 4:: java: gang worker#0 (parallel gc threads) 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 7 libclient64.dylib 0x00000001068d2110 0x106458000 + 4694288 8 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 9 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 10 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 11 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 5:: java: gang worker#1 (parallel gc threads) 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 7 libclient64.dylib 0x00000001068d2110 0x106458000 + 4694288 8 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 9 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 10 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 11 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 6:: java: gang worker#2 (parallel gc threads) 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 7 libclient64.dylib 0x00000001068d2110 0x106458000 + 4694288 8 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 9 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 10 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 11 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 7:: java: gang worker#3 (parallel gc threads) 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 7 libclient64.dylib 0x00000001068d2110 0x106458000 + 4694288 8 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 9 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 10 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 11 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 8:: java: concurrent mark-sweep gc thread 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 5 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 6 libclient64.dylib 0x000000010675a617 0x106458000 + 3155479 7 libclient64.dylib 0x000000010675a8b5 0x106458000 + 3156149 8 libclient64.dylib 0x000000010675a4a5 0x106458000 + 3155109 9 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 10 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 11 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 12 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 9:: java: vm thread 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 5 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 6 libclient64.dylib 0x00000001064edd24 0x106458000 + 613668 7 libclient64.dylib 0x00000001064eda57 0x106458000 + 612951 8 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 9 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 10 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 11 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 10:: java: reference handler 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 12 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 13 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 14 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 15 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 16 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 17 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 18 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 19 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 20 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 21 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 11:: java: finalizer 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 12:: java: surrogate locker thread (concurrent gc) 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b516 0x106458000 + 79126 7 libclient64.dylib 0x000000010674252b 0x106458000 + 3056939 8 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 9 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 10 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 11 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 12 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 13 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 13:: java: signal dispatcher 0 libsystem_kernel.dylib 0x00007fff8e9f9a56 semaphore_wait_trap + 10 1 libclient64.dylib 0x000000010650b803 0x106458000 + 735235 2 libclient64.dylib 0x000000010650b2d0 0x106458000 + 733904 3 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 4 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 5 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 6 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 7 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 8 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 14:: java: c2 compilerthread0 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b516 0x106458000 + 79126 7 libclient64.dylib 0x0000000106511865 0x106458000 + 759909 8 libclient64.dylib 0x000000010650c64f 0x106458000 + 738895 9 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 10 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 11 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 12 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 13 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 14 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 15:: java: c2 compilerthread1 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b516 0x106458000 + 79126 7 libclient64.dylib 0x0000000106511865 0x106458000 + 759909 8 libclient64.dylib 0x000000010650c64f 0x106458000 + 738895 9 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 10 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 11 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 12 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 13 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 14 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 16:: java: low memory detector 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x00000001065179ee 0x106458000 + 784878 5 libclient64.dylib 0x00000001065178fd 0x106458000 + 784637 6 libclient64.dylib 0x000000010646b5af 0x106458000 + 79279 7 libclient64.dylib 0x000000010650f03e 0x106458000 + 749630 8 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 9 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 10 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 11 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 12 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 13 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 17:: java: vm periodic task thread 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x0000000106510c20 0x106458000 + 756768 5 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 6 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 7 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 8 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 18:: java: framework active thread 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x000000010652d721 0x106458000 + 874273 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x0000000108106d34 0 + 4430261556 11 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 12 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 13 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 14 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 15 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 16 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 17 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 18 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 19 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 20 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 21 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 19:: java: state data manager 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x0000000106661142 0x106458000 + 2134338 4 libclient64.dylib 0x000000010660f06c jvm_sleep + 191 5 libjvmlinkage.dylib 0x000000010079265e jvm_sleep + 62 6 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 7 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 8 ?</s><s>?</s><s>?</s><s> 0x0000000108106d34 0 + 4430261556 9 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 10 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 11 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 12 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 13 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 14 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 15 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 16 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 17 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 18 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 19 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 20:: java: start level event dispatcher 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 21:: java: framework event dispatcher 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 22:: java: [timer] - main queue handler 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x000000010652d721 0x106458000 + 874273 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x0000000108106d34 0 + 4430261556 11 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 12 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 13 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 14 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 15 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 16 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 17 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 18 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 19 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 20 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 21 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 23:: java: worker-jm 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 11 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 12 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 13 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 14 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 15 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 16 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 17 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 18 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 19 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 20 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 24:: java: worker-1 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x000000010652d721 0x106458000 + 874273 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 25: 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 com.apple.corefoundation 0x00007fff8d324155 __cfrunloopservicemachport + 181 3 com.apple.corefoundation 0x00007fff8d323779 __cfrunlooprun + 1161 4 com.apple.corefoundation 0x00007fff8d3230b5 cfrunlooprunspecific + 309 5 com.apple.appkit 0x00007fff8ff3a16e _nseventthread + 144 6 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 7 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 8 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 26:: java: bundle file closer 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 27: 0 libsystem_kernel.dylib 0x00007fff8e9fda3a __semwait_signal + 10 1 libsystem_c.dylib 0x00007fff86e7fdc0 nanosleep + 200 2 libbridgetalk.jnilib 0x0000000112ec904b scobjects::thread::sleep(unsigned int) + 59 3 libbridgetalk.jnilib 0x0000000112ec38e3 scobjects::bridgetalkthread::run() + 163 4 libbridgetalk.jnilib 0x0000000112ec9146 scobjects::thread::go(void*) + 166 5 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 6 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 7 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 28:: java: thread-6 0 libsystem_kernel.dylib 0x00007fff8e9fda3a __semwait_signal + 10 1 libsystem_c.dylib 0x00007fff86e7fdc0 nanosleep + 200 2 libbridgetalk.jnilib 0x0000000112ead126 mysleep(unsigned long) + 70 3 libbridgetalk.jnilib 0x0000000112ead9ea java_com_adobe_flexide_nativelibs_bridgetalk_waitformessages + 106 4 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 5 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 6 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 7 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 8 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 9 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 10 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 11 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 12 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 13 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 14 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 15 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 16 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 29:: java: com.google.common.base.internal.finalizer 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 30:: com.apple.nsurlconnectionloader 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 com.apple.corefoundation 0x00007fff8d324155 __cfrunloopservicemachport + 181 3 com.apple.corefoundation 0x00007fff8d323779 __cfrunlooprun + 1161 4 com.apple.corefoundation 0x00007fff8d3230b5 cfrunlooprunspecific + 309 5 com.apple.foundation 0x00007fff89d03967 +[nsurlconnection(loader) _resourceloadloop:] + 348 6 com.apple.foundation 0x00007fff89d0376b __nsthread__main__ + 1318 7 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 8 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 9 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 31:: javascriptcore::blockfree 0 libsystem_kernel.dylib 0x00007fff8e9fd716 __psynch_cvwait + 10 1 libsystem_pthread.dylib 0x00007fff8aa37c3b _pthread_cond_wait + 727 2 com.apple.javascriptcore 0x00007fff8db099c5 jsc::blockallocator::blockfreeingthreadmain() + 261 3 com.apple.javascriptcore 0x00007fff8dafec5f wtf::wtfthreadentrypoint(void*) + 15 4 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 5 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 6 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 32:: javascriptcore::marking 0 libsystem_kernel.dylib 0x00007fff8e9fd716 __psynch_cvwait + 10 1 libsystem_pthread.dylib 0x00007fff8aa37c3b _pthread_cond_wait + 727 2 com.apple.javascriptcore 0x00007fff8db0a437 jsc::gcthread::waitfornextphase() + 119 3 com.apple.javascriptcore 0x00007fff8db0a2c8 jsc::gcthread::gcthreadmain() + 88 4 com.apple.javascriptcore 0x00007fff8dafec5f wtf::wtfthreadentrypoint(void*) + 15 5 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 6 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 7 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 33:: javascriptcore::marking 0 libsystem_kernel.dylib 0x00007fff8e9fd716 __psynch_cvwait + 10 1 libsystem_pthread.dylib 0x00007fff8aa37c3b _pthread_cond_wait + 727 2 com.apple.javascriptcore 0x00007fff8db0a437 jsc::gcthread::waitfornextphase() + 119 3 com.apple.javascriptcore 0x00007fff8db0a2c8 jsc::gcthread::gcthreadmain() + 88 4 com.apple.javascriptcore 0x00007fff8dafec5f wtf::wtfthreadentrypoint(void*) + 15 5 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 6 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 7 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 34:: javascriptcore::marking 0 libsystem_kernel.dylib 0x00007fff8e9fd716 __psynch_cvwait + 10 1 libsystem_pthread.dylib 0x00007fff8aa37c3b _pthread_cond_wait + 727 2 com.apple.javascriptcore 0x00007fff8db0a437 jsc::gcthread::waitfornextphase() + 119 3 com.apple.javascriptcore 0x00007fff8db0a2c8 jsc::gcthread::gcthreadmain() + 88 4 com.apple.javascriptcore 0x00007fff8dafec5f wtf::wtfthreadentrypoint(void*) + 15 5 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 6 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 7 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 35:: java: worker-2 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x000000010652d721 0x106458000 + 874273 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 36:: java: worker-4 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x000000010652d721 0x106458000 + 874273 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 37:: java: worker-6 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517ad5 0x106458000 + 785109 3 libclient64.dylib 0x000000010652d326 0x106458000 + 873254 4 libclient64.dylib 0x000000010652d721 0x106458000 + 874273 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x00000001081069b3 0 + 4430260659 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 38:: java: java indexing 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x0000000108106d34 0 + 4430261556 12 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 13 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 14 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 15 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 16 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 17 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 18 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 19 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 20 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 21 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 22 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 39:: java: [threadpool manager] - idle thread 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 libclient64.dylib 0x0000000106517a43 0x106458000 + 784963 3 libclient64.dylib 0x000000010646b9a0 0x106458000 + 80288 4 libclient64.dylib 0x000000010652d717 0x106458000 + 874263 5 libclient64.dylib 0x000000010652d466 0x106458000 + 873574 6 libclient64.dylib 0x00000001064fb6a3 jvm_monitorwait + 156 7 libjvmlinkage.dylib 0x0000000100791b0b jvm_monitorwait + 59 8 ?</s><s>?</s><s>?</s><s> 0x0000000108111eee 0 + 4430307054 9 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 10 ?</s><s>?</s><s>?</s><s> 0x000000010810685a 0 + 4430260314 11 ?</s><s>?</s><s>?</s><s> 0x0000000108101438 0 + 4430238776 12 libclient64.dylib 0x00000001064eeef4 0x106458000 + 618228 13 libclient64.dylib 0x00000001064fb22e 0x106458000 + 668206 14 libclient64.dylib 0x00000001064fb120 0x106458000 + 667936 15 libclient64.dylib 0x00000001064fb0c0 0x106458000 + 667840 16 libclient64.dylib 0x00000001064faf5e 0x106458000 + 667486 17 libclient64.dylib 0x00000001064fad6f 0x106458000 + 666991 18 libclient64.dylib 0x000000010646b41a 0x106458000 + 78874 19 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 20 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 21 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 40:: cvdisplaylink 0 libsystem_kernel.dylib 0x00007fff8e9fd716 __psynch_cvwait + 10 1 libsystem_pthread.dylib 0x00007fff8aa37c77 _pthread_cond_wait + 787 2 com.apple.corevideo 0x00007fff87fab464 cvdisplaylink::waituntil(unsigned long long) + 244 3 com.apple.corevideo 0x00007fff87faa998 cvdisplaylink::runiothread() + 496 4 com.apple.corevideo 0x00007fff87faa78f startiothread(void*) + 147 5 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 6 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 7 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 41: 0 libsystem_kernel.dylib 0x00007fff8e9fde6a __workq_kernreturn + 10 1 libsystem_pthread.dylib 0x00007fff8aa36f08 _pthread_wqthread + 330 2 libsystem_pthread.dylib 0x00007fff8aa39fb9 start_wqthread + 13 
+
+</s><s>thread 42: 0 libsystem_kernel.dylib 0x00007fff8e9fde6a __workq_kernreturn + 10 1 libsystem_pthread.dylib 0x00007fff8aa36f08 _pthread_wqthread + 330 2 libsystem_pthread.dylib 0x00007fff8aa39fb9 start_wqthread + 13 
+
+</s><s>thread 43: 0 libsystem_kernel.dylib 0x00007fff8e9fde6a __workq_kernreturn + 10 1 libsystem_pthread.dylib 0x00007fff8aa36f08 _pthread_wqthread + 330 2 libsystem_pthread.dylib 0x00007fff8aa39fb9 start_wqthread + 13 
+
+</s><s>thread 44: 0 libsystem_kernel.dylib 0x00007fff8e9fde6a __workq_kernreturn + 10 1 libsystem_pthread.dylib 0x00007fff8aa36f08 _pthread_wqthread + 330 2 libsystem_pthread.dylib 0x00007fff8aa39fb9 start_wqthread + 13 
+
+</s><s>thread 45: 0 libsystem_kernel.dylib 0x00007fff8e9fde6a __workq_kernreturn + 10 1 libsystem_pthread.dylib 0x00007fff8aa36f08 _pthread_wqthread + 330 2 libsystem_pthread.dylib 0x00007fff8aa39fb9 start_wqthread + 13 
+
+</s><s>thread 46:: com.apple.appkit-heartbeat 0 libsystem_kernel.dylib 0x00007fff8e9f9a1a mach_msg_trap + 10 1 libsystem_kernel.dylib 0x00007fff8e9f8d18 mach_msg + 64 2 com.apple.coregraphics 0x00007fff91963a1b _cgssynchronizewindowbackingstore + 97 3 com.apple.coregraphics 0x00007fff918e5830 _cgslockwindow + 3765 4 com.apple.coregraphics 0x00007fff918e4743 cgsdevicelock + 240 5 librip.a.dylib 0x00007fff872a4487 ripd_lock + 43 6 librip.a.dylib 0x00007fff872aa9b4 riplayerbltimage + 296 7 librip.a.dylib 0x00007fff872aa6aa ripc_renderimage + 262 8 librip.a.dylib 0x00007fff872b7efb ripc_endlayer + 1295 9 com.apple.coregraphics 0x00007fff919431b5 cgcontextendtransparencylayer + 53 10 com.apple.appkit 0x00007fff900f315f -[nsbuttoncell(nsdefaultbuttonindicatorprivate) heartbeat:] + 2937 11 com.apple.appkit 0x00007fff900f2545 -[nswindow(nswindow_theme) heartbeat:] + 300 12 com.apple.appkit 0x00007fff8fffdd2d -[nsuiheartbeat _heartbeatthread:] + 868 13 com.apple.foundation 0x00007fff89d0376b __nsthread__main__ + 1318 14 libsystem_pthread.dylib 0x00007fff8aa35899 _pthread_body + 138 15 libsystem_pthread.dylib 0x00007fff8aa3572a _pthread_start + 137 16 libsystem_pthread.dylib 0x00007fff8aa39fc9 thread_start + 13 
+
+</s><s>thread 0 crashed with x86 thread state (64-bit): rax: 0x00000001003f5eb0 rbx: 0x00000001003f6710 rcx: 0x00007fff905cc600 rdx: 0x0000000000000000 rdi: 0x00000001003f5eb0 rsi: 0x00007fff907e8b43 rbp: 0x00007fff5fbfc6c0 rsp: 0x00007fff5fbfc698 r8: 0x0000000000000001 r9: 0x0000000000000001 r10: 0x00007fff907e8b43 r11: 0xd000000000000000 r12: 0x00007fff77efbdd0 r13: 0x0000600000c71300 r14: 0x00000001003f5eb0 r15: 0x00007fff9338a080 rip: 0x00007fff9338a097 rfl: 0x0000000000010246 cr2: 0x0000608000a7e000 
+</s><s>logical cpu: 3 error code: 0x00000000 trap number: 13 
+
+
+
+</s><s>binary images: 0x100000000 - 0x100003fff +org.eclipse.eclipse (4.7 - 4.7) <951e0416-90c6-c3b4-c42f-c4611750f7cd> /applications/adobe flash builder 4.7/adobe flash builder 4.7.app/contents/macos/adobe flash builder 4.7 0x1000dc000 - 0x1000e5fff +eclipse_1406.so (?</s><s>?</s><s>?</s><s>) <76031737-38ec-3667-20aa-a98f3cc7e516> /applications/adobe flash builder 4.7/*/eclipse_1406.so 0x10040a000 - 0x10040aff3 +cl_kernels (?</s><s>?</s><s>?</s><s>) <296b819e-5023-4f6f-a73c-5d4279d72622> cl_kernels 0x100419000 - 0x10041afeb +cl_kernels (?</s><s>?</s><s>?</s><s>) <559796ce-ecf1-441b-96a9-db436023cdcc> cl_kernels 0x10041f000 - 0x100420ffa +cl_kernels (?</s><s>?</s><s>?</s><s>) <ad0be70a-a058-46db-ae22-c285fd184745> cl_kernels 0x100425000 - 0x100426fe6 +cl_kernels (?</s><s>?</s><s>?</s><s>) <66d31a2d-3198-42e6-ae21-7e9774734664> cl_kernels 0x100428000 - 0x100443ff9 com.apple.security.csparser (3.0 - 55471.14) <5d9ac0e2-2f0d-3d39-9991-df2c1d4dd0cf> /system/library/frameworks/security.framework/plugins/csparser.bundle /contents/macos/csparser 0x10045b000 - 0x10045ffff com.apple.qldisplay.generic (5.0 - 622.7) <f9ed257d-2c3b-3738-ac0a-4031d5a17617> /system/library/frameworks/quartz.framework/versions/a/frameworks/qui cklookui.framework/versions/a/plugins/generic.qldisplay/contents/macos /generic 0x100778000 - 0x10077dfff com.apple.javavm (14.9.0 - 14.9.0) <67bd63c5-d82f-3a31-bc43-c8810356d524> /system/library/frameworks/javavm.framework/javavm 0x100785000 - 0x10078afff javalaunching (1) <528dea76-b869-36b5-87a6-d9b722968e16> /system/library/privateframeworks/javalaunching.framework/versions/a/ javalaunching 0x100791000 - 0x100798fff libjvmlinkage.dylib (1) <b9b0cf65-39c3-3727-88b1-4f5f51ac9a21> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/libraries /libjvmlinkage.dylib 0x1007cf000 - 0x1007d7ff7 libverify.dylib (1.0 - 1.0) <5d7b9277-8506-3dfc-8a9e-d45e14c5e8cc> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/libraries /libverify.dylib 0x1007dd000 - 0x1007e7fff javanativefoundation (1) <10006281-5a71-3a5e-bec6-22f7bb31cf81> /system/library/frameworks/javavm.framework/versions/a/frameworks/jav anativefoundation.framework/versions/a/javanativefoundation 0x104037000 - 0x104040ff7 com.apple.java.javaruntimesupport (14.9.0 - 14.9.0) <ab4f1817-a2de-36f2-8052-3cd334906f79> /system/library/frameworks/javavm.framework/versions/a/frameworks/jav aruntimesupport.framework/versions/a/javaruntimesupport 0x10404f000 - 0x10405cff7 libzip.jnilib (1) <f65fa31b-53cc-31cd-be0f-f29ef7e39e47> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/libraries /libzip.jnilib 0x106458000 - 0x106a8bfff libclient64.dylib (1) <8e334318-9e23-3e43-a51c-5878cced301d> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/home/bund le/libraries/libclient64.dylib 0x106b5c000 - 0x106b7cfff libjava.jnilib (1) <3ae5b8b7-766a-379f-8db8-4f177f86623d> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/libraries /libjava.jnilib 0x110632000 - 0x110633fff +libunixfile_1_0_0.jnilib (?</s><s>?</s><s>?</s><s>) /users/user/documents/*/libunixfile_1_0_0.jnilib 0x110649000 - 0x11064aff7 +libamt_jnilib.jnilib (1) <9ef76f98-e44e-d705-c1b7-9802af2ba8ad> /applications/adobe flash builder 4.7/*/libamt_jnilib.jnilib 0x11064e000 - 0x110651fff +libcrashreporterjni.jnilib (1) <bb4fcf56-131f-830d-7452-ba535fbed5d9> /applications/adobe flash builder 4.7/*/libcrashreporterjni.jnilib 0x111b32000 - 0x111b32feb +cl_kernels (?</s><s>?</s><s>?</s><s>) <056fc6a2-7f0b-436d-b31b-e13ee9e52ef9> cl_kernels 0x111bac000 - 0x111badff9 +cl_kernels (?</s><s>?</s><s>?</s><s>) <482506c9-d26e-460b-a6b3-7adb0a263178> cl_kernels 0x111c24000 - 0x111c24ff6 +cl_kernels (?</s><s>?</s><s>?</s><s>) <85079e42-8431-4e43-8d75-ada22a720827> cl_kernels 0x111c34000 - 0x111c35fe2 +cl_kernels (?</s><s>?</s><s>?</s><s>) <8d24e763-d48c-440b-bd2d-ae6ad1be7b2d> cl_kernels 0x111c51000 - 0x111c5efff libnet.jnilib (1) <963fe51e-a35c-3f6f-be1f-b48587382ab1> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/libraries /libnet.jnilib 0x111c64000 - 0x111c68fff libnio.jnilib (1) <d55e350a-e8e4-3b36-8696-c03d3cb42d32> /system/library/java/javavirtualmachines/1.6.0.jdk/contents/libraries /libnio.jnilib 0x1120fa000 - 0x1120fafe7 +cl_kernels (?</s><s>?</s><s>?</s><s>) <ae1357ec-2e77-4e53-ab68-00d9238c8a87> cl_kernels 0x112130000 - 0x112130ff7 +libjnitonativebridge.jnilib (1) <af8c8ebb-93a4-5a86-5b92-202c576b0ace> /applications/adobe flash builder 4.7/*/libjnitonativebridge.jnilib 0x11213e000 - 0x11213ffef +cl_kernels (?</s><s>?</s><s>?</s><s>) <88f7be28-d3e2-459a-bc58-7571af35b48f> cl_kernels 0x1121ac000 - 0x1121adfee +cl_kernels (?</s><s>?</s><s>?</s><s>) <ccf298ba-f234-4880-a61f-3f15382a28a7> cl_kernels 0x112241000 - 0x112242ffa +cl_kernels (?</s><s>?</s><s>?</s><s>) <cc353dc2-6ba2-4b41-900f-4dfef69393a1> cl_kernels 0x112258000 - 0x112258fec +cl_kernels (?</s><s>?</s><s>?</s><s>) <3b293b5f-bfbf-4a58-a924-d74e8c3c6190> cl_kernels 0x112287000 - 0x1122c0fff +libswt-cocoa-3738.jnilib (?</s><s>?</s><s>?</s><s>) <bfdf4c6b-e2ec-1b0e-cefa-d970bfe6a3ec> /users/user/documents/*/libswt-cocoa-3738.jnilib 0x1122d4000 - 0x1122fafff +libswt-pi-cocoa-3738.jnilib (?</s><s>?</s><s>?</s><s>) <3d96eb35-a45b-a4bb-d784-954355811400> /users/user/documents/*/libswt-pi-cocoa-3738.jnilib 0x1123b5000 - 0x1123b5fff +cl_kernels (?</s><s>?</s><s>?</s><s>) <6f81bd18-d453-41fe-a808-331032be8f77> cl_kernels 0x112eac000 - 0x112eeaff7 +libbridgetalk.jnilib (1) <dea9795a-b528-b126-a71d-0151ffe13271> /applications/adobe flash builder 4.7/*/libbridgetalk.jnilib 0x1133e2000 - 0x11345bfef +com.adobe.adobe_caps (adobe_caps 5.0.11.0 - 5.0.11.0) <24c4f136-9d5e-c3e3-9c10-b4ae0865a9aa> /applications/adobe flash builder 4.7/*/adobe_caps.framework/adobe_caps 0x11346a000 - 0x113470fff +libheadlights.jnilib (1) <71454b51-1569-45e3-5548-0f4a853debea> /applications/adobe flash builder 4.7/*/libheadlights.jnilib 0x113475000 - 0x113479fff com.apple.agl (3.2.3 - agl-3.2.3) <e0ed4789-9dbc-3c88-95f7-ca79e196b4be> /system/library/frameworks/agl.framework/versions/a/agl 0x113480000 - 0x113484ff7 +com.adobe.adobecrashreporter (6.0 - 6.0.20120720) <a6b1f3bd-5db0-fee5-708a-b54e5ca80481> /applications/adobe flash builder 4.7/*/adobecrashreporter.framework/versions/a/adobecrashreporter 0x1153df000 - 0x1154c3fe7 +com.adobe.amtlib (amtlib 6.0.0.75 - 6.0.0.75) <07a3e1e1-55c3-ba5b-a0b0-60250809ed61> /applications/adobe flash builder 4.7/*/amtlib.framework/versions/a/amtlib 0x115557000 - 0x11559dfff +com.adobe.aam.adobeupdaternotificationframework (updaternotifications 6.0.0.24 - 6.0.0.24) <58c40eb9-2f38-2479-e710-344cab0cefb7> /applications/adobe flash builder 4.7/*/updaternotifications.framework/versions/a/updaternotifications 0x1155b7000 - 0x11560ffeb +com.adobe.headlights.logsessionframework (2.1.2.1263) <3ccec733-bc2d-63d5-7dd6-fa2616c67b9e> /applications/adobe flash builder 4.7/*/logsession.framework/versions/a/logsession 0x116000000 - 0x116042fef +com.adobe.pip (5.5.0.1265) <d81c0ce8-05d5-6072-e1ce-0edd333d009d> /applications/adobe flash builder 4.7/*/adobepip.framework/adobepip 0x1170f7000 - 0x1171ddfef unorm8_bgra.dylib (2.3.58) <6e7397ef-cc78-3c15-8b21-05e7fb47f645> /system/library/frameworks/opencl.framework/versions/a/libraries/imag eformats/unorm8_bgra.dylib 0x11eb06000 - 0x11ebebfe7 unorm8_argb.dylib (2.3.58) <756ecd49-7245-38fa-81f5-79f614156a6c> /system/library/frameworks/opencl.framework/versions/a/libraries/imag eformats/unorm8_argb.dylib 0x123400000000 - 0x123400435ff7 com.apple.driver.appleintelhd5000graphicsgldriver (8.24.11 - 8.2.4) <8a2f184c-3855-3597-9eb5-49db5a9b81f8> /system/library/extensions/appleintelhd5000graphicsgldriver.bundle/co ntents/macos/appleintelhd5000graphicsgldriver 0x7fff657af000 - 0x7fff657e2817 dyld (239.4) <2b17750c-ed1b-3060-b64e-21897d08b28b> /usr/lib/dyld 0x7fff866c5000 - 0x7fff86717ff7 com.apple.suggestions (3.0 - 137.1) <163a32de-1e1d-3ebb-9f20-cf64774cf5a6> /system/library/privateframeworks/suggestions.framework/versions/a/su ggestions 0x7fff86718000 - 0x7fff8671bffc com.apple.iosurface (91 - 91) <812f4d48-6fd4-3dcb-8691-b077ebf981d7> /system/library/frameworks/iosurface.framework/versions/a/iosurface 0x7fff86729000 - 0x7fff8673aff7 libsystem_asl.dylib (217.1.4) <b983ca60-f418-317b-b142-48a6376564fc> /usr/lib/system/libsystem_asl.dylib 0x7fff8673b000 - 0x7fff8688eff7 com.apple.audio.toolbox.audiotoolbox (1.10 - 1.10) <3511abfe-22e1-3b91-b86a-5e3a78ce33fd> /system/library/frameworks/audiotoolbox.framework/versions/a/audiotoo lbox 0x7fff86dbc000 - 0x7fff86e03fff libfontregistry.dylib (127) <a77a0480-aa5d-3cc8-8b68-69985cd546dc> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/ats.framework/versions/a/resources/libfontregistry.dylib 0x7fff86e04000 - 0x7fff86e8dff7 libsystem_c.dylib (997.90.3) <6fd3a400-4bb2-3b95-b90c-be6e9d0d78fa> /usr/lib/system/libsystem_c.dylib 0x7fff86e8e000 - 0x7fff86e93fff libmacho.dylib (845) <b2be3c25-cf1f-309b-ab99-1f0b54621445> /usr/lib/system/libmacho.dylib 0x7fff86ed5000 - 0x7fff86edefff com.apple.displayservicesfw (2.8 - 360.8.14) <abee3950-3024-3741-ad4f-cc405ebee89e> /system/library/privateframeworks/displayservices.framework/versions/ a/displayservices 0x7fff86edf000 - 0x7fff86edffff com.apple.coreservices (59 - 59) <67a369ba-2326-383f-995b-853dad7bff43> /system/library/frameworks/coreservices.framework/versions/a/coreserv ices 0x7fff86f75000 - 0x7fff86f7cff3 libcopyfile.dylib (103) <6453487a-eda5-353c-8351-1aabb3c7777c> /usr/lib/system/libcopyfile.dylib 0x7fff86f7d000 - 0x7fff86fcbfff libcorecrypto.dylib (161.1) <f3973c28-14b6-3006-bb2b-00dd7f09abc7> /usr/lib/system/libcorecrypto.dylib 0x7fff86fe4000 - 0x7fff87047ff7 com.apple.systemconfiguration (1.13 - 1.13) <63b985ed-e7e4-3095-8d12-63c9f1db0f3d> /system/library/frameworks/systemconfiguration.framework/versions/a/s ystemconfiguration 0x7fff87048000 - 0x7fff87096fff com.apple.opencl (2.3.59 - 2.3.59) <8c2accc6-b0ba-3fe7-98a1-5c67284dea4e> /system/library/frameworks/opencl.framework/versions/a/opencl 0x7fff87097000 - 0x7fff870cbfff libssl.0.9.8.dylib (50) <b15f967c-b002-36c2-9621-3456d8509f50> /usr/lib/libssl.0.9.8.dylib 0x7fff870df000 - 0x7fff871cdfff libjp2.dylib (1042) <01d988d4-e36f-3120-8ba4-ef6282ecb010> /system/library/frameworks/imageio.framework/versions/a/resources/lib jp2.dylib 0x7fff871ce000 - 0x7fff871fbff2 com.apple.frameworks.coredaemon (1.3 - 1.3) <9f8ac160-145f-3b35-954f-655aaec05356> /system/library/privateframeworks/coredaemon.framework/versions/b/cor edaemon 0x7fff871fc000 - 0x7fff87220fff libxpc.dylib (300.90.2) <ab40cd57-f454-3fd4-b415-63b3c0d5c624> /usr/lib/system/libxpc.dylib 0x7fff87230000 - 0x7fff8725cff7 com.apple.framework.systemadministration (1.0 - 1.0) <6fd03ef6-32b6-397d-b9d7-d68e89a462f5> /system/library/privateframeworks/systemadministration.framework/vers ions/a/systemadministration 0x7fff8725d000 - 0x7fff8729bff7 libglimage.dylib (9.6) <dcf2e131-a65e-33b2-b32d-28ff01605ab1> /system/library/frameworks/opengl.framework/versions/a/libraries/libg limage.dylib 0x7fff8729c000 - 0x7fff872c4ffb librip.a.dylib (599.20.11) <d79461a6-2e24-3531-ada2-eac972384a7d> /system/library/frameworks/coregraphics.framework/versions/a/resource s/librip.a.dylib 0x7fff872c5000 - 0x7fff872c7fff libradiance.dylib (1042) <b91d4b97-7bf3-3285-bcb7-4948baac23ee> /system/library/frameworks/imageio.framework/versions/a/resources/lib radiance.dylib 0x7fff872c8000 - 0x7fff872cafff com.apple.efilogin (2.0 - 2) <84014f35-7e0e-3270-819a-48eccada687e> /system/library/privateframeworks/efilogin.framework/versions/a/efilo gin 0x7fff872cb000 - 0x7fff8762bff7 com.apple.finderkit (1.2.2 - 1.2.2) <ddfa6886-82dc-32f4-bc8f-09bfd8eb5b85> /system/library/privateframeworks/finderkit.framework/versions/a/find erkit 0x7fff8762c000 - 0x7fff87637fff libkxld.dylib (2422.90.20) <ef476345-7a69-3ac0-95ed-0196fb8910cb> /usr/lib/system/libkxld.dylib 0x7fff87638000 - 0x7fff8763ffff libcompiler_rt.dylib (35) <2a890004-0a78-3e33-9ac5-a7d63bd4f879> /usr/lib/system/libcompiler_rt.dylib 0x7fff876a3000 - 0x7fff876caffb libsystem_info.dylib (449.1.3) <395d8cd6-616a-3bd3-a195-c6d68eb9ab22> /usr/lib/system/libsystem_info.dylib 0x7fff876cb000 - 0x7fff876cbfff com.apple.accelerate (1.9 - accelerate 1.9) <cfef9cbe-4a1a-33fd-9174-d44314bb28f3> /system/library/frameworks/accelerate.framework/versions/a/accelerate 0x7fff876cc000 - 0x7fff8792dfff com.apple.imagekit (2.5 - 774) <aacde16e-ed9f-3b3f-a792-69ba1942753b> /system/library/frameworks/quartz.framework/versions/a/frameworks/ima gekit.framework/versions/a/imagekit 0x7fff8792e000 - 0x7fff87936fff libmatch.1.dylib (19) <021293ab-407d-309a-87f5-8e782f46753e> /usr/lib/libmatch.1.dylib 0x7fff87937000 - 0x7fff87e5afff com.apple.quartzcomposer (5.1 - 319) <8b90921f-911b-3240-a1d5-3c084f3e6a36> /system/library/frameworks/quartz.framework/versions/a/frameworks/qua rtzcomposer.framework/versions/a/quartzcomposer 0x7fff87e5b000 - 0x7fff87e65ff7 com.apple.appsandbox (3.0 - 1) <9f27dc25-c566-3aef-92d3-dcfe7836916d> /system/library/privateframeworks/appsandbox.framework/versions/a/app sandbox 0x7fff87e66000 - 0x7fff87e66fff com.apple.cocoa (6.8 - 20) <1482e95b-0c26-38af-9a44-50ade6c0876c> /system/library/frameworks/cocoa.framework/versions/a/cocoa 0x7fff87efa000 - 0x7fff87f46ffe com.apple.coremediaio (407.0 - 4561) <bc8222a6-516c-380c-ab7d-de78b23574dc> /system/library/frameworks/coremediaio.framework/versions/a/coremedia io 0x7fff87f47000 - 0x7fff87f4afff com.apple.tcc (1.0 - 1) <f25b5875-081a-3877-b70e-374d54b54c5f> /system/library/privateframeworks/tcc.framework/versions/a/tcc 0x7fff87f4b000 - 0x7fff87f54ffb com.apple.commonauth (4.0 - 2.0) <70fdda03-7b44-37ec-b78e-3ec3c8505c76> /system/library/privateframeworks/commonauth.framework/versions/a/com monauth 0x7fff87fa3000 - 0x7fff87fa6ff7 libdyld.dylib (239.4) <cf03004f-58e4-3bb6-b3fd-be4e05f128a0> /usr/lib/system/libdyld.dylib 0x7fff87fa7000 - 0x7fff87fa8fff libunc.dylib (28) <c3737c9a-c06f-310c-b78c-7d8d882a35de> /usr/lib/system/libunc.dylib 0x7fff87fa9000 - 0x7fff87fceff7 com.apple.corevideo (1.8 - 117.2) <fe12553a-9b5a-337e-92bd-ea8a8194c91a> /system/library/frameworks/corevideo.framework/versions/a/corevideo 0x7fff87fcf000 - 0x7fff8806cfff com.apple.imcore (10.0 - 1000) <df924e35-74ab-389c-9279-1828518218f8> /system/library/privateframeworks/imcore.framework/versions/a/imcore 0x7fff8806d000 - 0x7fff88154ff7 libxml2.2.dylib (26) <a1dadd11-89e5-3de4-8802-07186225967f> /usr/lib/libxml2.2.dylib 0x7fff88155000 - 0x7fff881acfff com.apple.viewbridge (1.0 - 46.2) <4af3cb98-7691-39a2-8dc3-abe5cc55ce7f> /system/library/privateframeworks/viewbridge.framework/versions/a/vie wbridge 0x7fff881ad000 - 0x7fff881aeff7 libsystem_sandbox.dylib (278.11) <5e5a6e09-33a9-391a-ab34-e57d93bb1551> /usr/lib/system/libsystem_sandbox.dylib 0x7fff881af000 - 0x7fff882a0ff9 libiconv.2.dylib (41) <bb44b115-ac32-3877-a0ed-aec6232a4563> /usr/lib/libiconv.2.dylib 0x7fff882a1000 - 0x7fff882f2ff3 com.apple.audio.coreaudio (4.2.0 - 4.2.0) <eac1821b-cd20-30e3-bf95-c1839ca97bf7> /system/library/frameworks/coreaudio.framework/versions/a/coreaudio 0x7fff886cf000 - 0x7fff886d3fff com.apple.ioaccelerator (98.14 - 98.14) <13ee735b-bd43-3e9b-9908-e423a17c4517> /system/library/privateframeworks/ioaccelerator.framework/versions/a/ ioaccelerator 0x7fff886d4000 - 0x7fff886dcff3 libcgcms.a.dylib (599.20.11) <bb1e8d63-9fa1-3588-ac5d-1980576ed62c> /system/library/frameworks/coregraphics.framework/versions/a/resource s/libcgcms.a.dylib 0x7fff886dd000 - 0x7fff886deffb libremovefile.dylib (33) <26266e3f-fddc-3cfc-b27f-78b49bdc9bdc> /usr/lib/system/libremovefile.dylib 0x7fff886df000 - 0x7fff88b12ffb com.apple.vision.facecore (3.0.0 - 3.0.0) <30fd8146-d6eb-3588-a7e5-adc3110b3dcc> /system/library/privateframeworks/facecore.framework/versions/a/facec ore 0x7fff88b13000 - 0x7fff88b15ff7 com.apple.diagnosticlogcollection (10.0 - 1000) <91ab5132-38e3-3976-8b54-d2e9a079d955> /system/library/privateframeworks/diagnosticlogcollection.framework/v ersions/a/diagnosticlogcollection 0x7fff88b16000 - 0x7fff88b1bff7 libunwind.dylib (35.3) <95d4d118-3368-3474-989d-271de18c8365> /usr/lib/system/libunwind.dylib 0x7fff88b1c000 - 0x7fff88ba5fff com.apple.colorsync (4.9.0 - 4.9.0) <e7e0d542-d77a-3e32-b146-4d0feaf282d3> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/colorsync.framework/versions/a/colorsync 0x7fff88ba6000 - 0x7fff88bcfff7 libc++abi.dylib (49.1) <21a807d3-6732-3455-b77f-743e9f916df0> /usr/lib/libc++abi.dylib 0x7fff88bd0000 - 0x7fff88d5dff7 glengine (9.6) <51d58f76-b9b3-3b4f-b65a-f6d213c2eed7> /system/library/frameworks/opengl.framework/versions/a/resources/glen gine.bundle/glengine 0x7fff88d5e000 - 0x7fff88d64fff com.apple.addressbook.contactsfoundation (8.0 - 1369) <a5d1d494-2f84-3a97-a229-04db308d4481> /system/library/privateframeworks/contactsfoundation.framework/versio ns/a/contactsfoundation 0x7fff88d65000 - 0x7fff88d96fff com.apple.mediakit (15 - 709) <4ac5b9d8-7204-3cf2-ab58-69efcdd964fc> /system/library/privateframeworks/mediakit.framework/versions/a/media kit 0x7fff88db1000 - 0x7fff88e24fff com.apple.securityfoundation (6.0 - 55122.1) <1939de0b-bc38-3e50-8a8c-3471c8ac4cd6> /system/library/frameworks/securityfoundation.framework/versions/a/se curityfoundation 0x7fff88e25000 - 0x7fff88e27ff7 com.apple.securityhi (9.0 - 55005) <405e2bc6-2b6f-3b6b-b48e-2fd39214f052> /system/library/frameworks/carbon.framework/versions/a/frameworks/sec urityhi.framework/versions/a/securityhi 0x7fff88e28000 - 0x7fff88e28ffd libopenscriptingutil.dylib (157) <19f0e769-0989-3062-9afb-8976e90e9759> /usr/lib/libopenscriptingutil.dylib 0x7fff88e5d000 - 0x7fff88fcbff7 libblas.dylib (1094.5) <d862e2b7-91fa-3704-8f62-c1b65d381a84> /system/library/frameworks/accelerate.framework/versions/a/frameworks /veclib.framework/versions/a/libblas.dylib 0x7fff88fcc000 - 0x7fff88fcefff com.apple.mangrove (1.0 - 1) <e588d4de-2498-33ee-9227-8773db65767f> /system/library/privateframeworks/mangrove.framework/versions/a/mangr ove 0x7fff89368000 - 0x7fff89452fff libsqlite3.dylib (158) <447aa928-bcf7-3779-a7e5-210f264e0316> /usr/lib/libsqlite3.dylib 0x7fff89453000 - 0x7fff89467fff com.apple.aps.framework (4.0 - 4.0) <23bc5746-0914-3102-b84f-beab31a77aec> /system/library/privateframeworks/applepushservice.framework/versions /a/applepushservice 0x7fff8948b000 - 0x7fff89496ff7 com.apple.directoryservice.framework (10.9 - 173.90.1) <a9866d67-c5a8-36d1-a1db-e2fa60328698> /system/library/frameworks/directoryservice.framework/versions/a/dire ctoryservice 0x7fff89497000 - 0x7fff894d3ff7 com.apple.ids (10.0 - 1000) <632f7192-0399-34c8-b6bb-463d2f4370e0> /system/library/privateframeworks/ids.framework/versions/a/ids 0x7fff896eb000 - 0x7fff89751fff com.apple.framework.corewifi (2.0 - 200.21.1) <977c796d-e8d7-3378-a76a-2e71a65df389> /system/library/frameworks/corewifi.framework/versions/a/corewifi 0x7fff89a8a000 - 0x7fff89a91fff com.apple.netfs (6.0 - 4.0) <d4fe0f16-3085-34af-b860-3d46b98fad2a> /system/library/frameworks/netfs.framework/versions/a/netfs 0x7fff89a92000 - 0x7fff89a98ff7 libcgxcoreimage.a.dylib (599.20.11) <a787f160-6963-38b5-af86-d5541e0492f1> /system/library/frameworks/coregraphics.framework/versions/a/resource s/libcgxcoreimage.a.dylib 0x7fff89a9e000 - 0x7fff89aa1ffa libcgxtype.a.dylib (599.20.11) <c0b41dde-0988-3652-b03b-9e5eb0dabaeb> /system/library/frameworks/coregraphics.framework/versions/a/resource s/libcgxtype.a.dylib 0x7fff89aa2000 - 0x7fff89b2aff7 com.apple.corepdf (4.0 - 4) <5b7def8b-0c3c-3450-899c-71ed8820d523> /system/library/privateframeworks/corepdf.framework/versions/a/corepd f 0x7fff89b2b000 - 0x7fff89b52ff7 com.apple.shortcut (2.6 - 2.6) <73feba7b-f371-3d1c-8e42-08580de241a7> /system/library/privateframeworks/shortcut.framework/versions/a/short cut 0x7fff89b53000 - 0x7fff89b5bffc libgfxshared.dylib (9.6) <e276d384-3616-3511-b5f2-92621d6372d6> /system/library/frameworks/opengl.framework/versions/a/libraries/libg fxshared.dylib 0x7fff89b5c000 - 0x7fff89c8cff7 com.apple.desktopservices (1.8.2 - 1.8.2) <76d6ed93-9d5a-3941-8b88-a1773290ae74> /system/library/privateframeworks/desktopservicespriv.framework/versi ons/a/desktopservicespriv 0x7fff89c8d000 - 0x7fff89c91fff libpam.2.dylib (20) <a63d4da2-06a4-3fb8-ac3f-bdd69694ee5e> /usr/lib/libpam.2.dylib 0x7fff89c92000 - 0x7fff89c92fff com.apple.quartzframework (1.5 - 1.5) <f66337f6-cc0a-3008-bb23-080282e917c9> /system/library/frameworks/quartz.framework/versions/a/quartz 0x7fff89c93000 - 0x7fff89c94ff7 libdiagnosticmessagesclient.dylib (100) <4cdb0f7b-c0af-3424-bc39-495696f0db1e> /usr/lib/libdiagnosticmessagesclient.dylib 0x7fff89c95000 - 0x7fff89c9cff7 com.apple.phonenumbers (1.1.1 - 105) <c31e978d-c4ce-39cd-9e19-a43698ecc466> /system/library/privateframeworks/phonenumbers.framework/versions/a/p honenumbers 0x7fff89c9d000 - 0x7fff89f9bfff com.apple.foundation (6.9 - 1056.13) <2ee9ab07-3ea0-37d3-b407-4a520f2cb497> /system/library/frameworks/foundation.framework/versions/c/foundation 0x7fff89f9c000 - 0x7fff8a04cff7 libvmisc.dylib (423.32) <049c0735-1808-39b9-943f-76cb8021744f> /system/library/frameworks/accelerate.framework/versions/a/frameworks /veclib.framework/versions/a/libvmisc.dylib 0x7fff8a04d000 - 0x7fff8a49bfff com.apple.videotoolbox (1.0 - 1273.49) <27177077-9107-3e06-adad-92b80e80cdcd> /system/library/frameworks/videotoolbox.framework/versions/a/videotoo lbox 0x7fff8a49c000 - 0x7fff8a528ff7 com.apple.ink.framework (10.9 - 207) <96a56eac-b4ac-3c9a-8c40-64e6196753cc> /system/library/frameworks/carbon.framework/versions/a/frameworks/ink .framework/versions/a/ink 0x7fff8a549000 - 0x7fff8a577ff7 com.apple.securityinterface (9.0 - 55047) <e64a6994-0176-39a1-866a-ab27f6a0034b> /system/library/frameworks/securityinterface.framework/versions/a/sec urityinterface 0x7fff8a578000 - 0x7fff8a848ffc com.apple.coreimage (9.2.7) <bf88a02e-994e-3970-ac62-04248ca8dc46> /system/library/frameworks/quartzcore.framework/versions/a/frameworks /coreimage.framework/versions/a/coreimage 0x7fff8a849000 - 0x7fff8a87effc com.apple.ldapframework (2.4.28 - 194.5) <4add0595-25b9-3f09-897e-3fb790ad2c5a> /system/library/frameworks/ldap.framework/versions/a/ldap 0x7fff8a87f000 - 0x7fff8a8aefd2 libsystem_m.dylib (3047.16) <9d96aacd-5870-3a5c-b849-7f9c0f6ebb09> /usr/lib/system/libsystem_m.dylib 0x7fff8a97a000 - 0x7fff8aa33fff libcrypto.0.9.7.dylib (106) <bfe87bfa-7971-37dc-9b20-55f04e509a80> /usr/lib/libcrypto.0.9.7.dylib 0x7fff8aa34000 - 0x7fff8aa3bff7 libsystem_pthread.dylib (53.1.4) <9da50fd0-d9ac-3051-ad4b-ba0d745bc49c> /usr/lib/system/libsystem_pthread.dylib 0x7fff8aa3c000 - 0x7fff8aa4cfff libbsm.0.dylib (33) <2cac00a2-1352-302a-88fa-c567d4d69179> /usr/lib/libbsm.0.dylib 0x7fff8aa73000 - 0x7fff8ad1dff5 com.apple.hitoolbox (2.1 - 697.4) <df5635dd-c255-3a8e-8b49-f6d2fb61ff95> /system/library/frameworks/carbon.framework/versions/a/frameworks/hit oolbox.framework/versions/a/hitoolbox 0x7fff8ad3a000 - 0x7fff8ad43ff7 libcldcpuengine.dylib (2.3.58) <c8785704-6195-3129-86ca-20f0f3c20f15> /system/library/frameworks/opencl.framework/versions/a/libraries/libc ldcpuengine.dylib 0x7fff8ad44000 - 0x7fff8ae85fff com.apple.qtkit (7.7.3 - 2826.17) <ada1ef77-57d2-3e7e-8526-8f0b732c1218> /system/library/frameworks/qtkit.framework/versions/a/qtkit 0x7fff8ae86000 - 0x7fff8ae9fff7 com.apple.kerberos (3.0 - 1) <59427e11-37d6-34c9-95bb-d4438bfaca5b> /system/library/frameworks/kerberos.framework/versions/a/kerberos 0x7fff8aea0000 - 0x7fff8af05ff5 com.apple.heimdal (4.0 - 2.0) <523ec6c4-bd9b-3840-9376-e617ba627f59> /system/library/privateframeworks/heimdal.framework/versions/a/heimda l 0x7fff8af10000 - 0x7fff8af11ff7 libsystem.b.dylib (1197.1.1) <a75bb8cd-ce51-3df7-bcf4-8bde25fa7f0c> /usr/lib/libsystem.b.dylib 0x7fff8af4d000 - 0x7fff8af75ffb libxslt.1.dylib (13) <c9794936-633c-3f0c-9e71-30190b9b41c1> /usr/lib/libxslt.1.dylib 0x7fff8af76000 - 0x7fff8af76ffd com.apple.audio.units.audiounit (1.10 - 1.10) <486a97cd-c1f7-324d-87bc-b07f7a415b68> /system/library/frameworks/audiounit.framework/versions/a/audiounit 0x7fff8afe2000 - 0x7fff8afecfff libcommoncrypto.dylib (60049) <79b8e80f-e596-3302-8243-ec479b9546ca> /usr/lib/system/libcommoncrypto.dylib 0x7fff8afed000 - 0x7fff8affaff4 com.apple.librarian (1.2 - 1) <2f677b44-bca3-313b-881e-ee322e865100> /system/library/privateframeworks/librarian.framework/versions/a/libr arian 0x7fff8affb000 - 0x7fff8b004ff3 libsystem_notify.dylib (121) <31f9fef5-2897-328a-8441-b7bdfedb10d4> /usr/lib/system/libsystem_notify.dylib 0x7fff8b005000 - 0x7fff8b007ff3 libsystem_configuration.dylib (596.13) <b51c8c22-c455-36ac-952d-a319b6545884> /usr/lib/system/libsystem_configuration.dylib 0x7fff8b03a000 - 0x7fff8b03bff7 libsystem_blocks.dylib (63) <fb856cd1-2aea-3907-8e9b-1e54b6827f82> /usr/lib/system/libsystem_blocks.dylib 0x7fff8b03c000 - 0x7fff8b040ff7 libheimdal-asn1.dylib (323.15) <b8bf2b7d-e913-3544-aa6d-cac119f81c7c> /usr/lib/libheimdal-asn1.dylib 0x7fff8b041000 - 0x7fff8b042fff com.apple.addressbook.contactsdata (8.0 - 1369) <baf434ec-32b6-3f1c-8abe-4419a15829ff> /system/library/privateframeworks/contactsdata.framework/versions/a/c ontactsdata 0x7fff8b043000 - 0x7fff8b04bff7 com.apple.applesrp (5.0 - 1) <abc7f088-1fd5-3768-b9f3-847f355e90b3> /system/library/privateframeworks/applesrp.framework/versions/a/apple srp 0x7fff8b1b3000 - 0x7fff8b1dcfff com.apple.dictionaryservices (1.2 - 208) <a4e4ea9e-08a1-3f77-8b57-a5a1add70b52> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/dictionaryservices.framework/versions/a/dictionaryservices 0x7fff8b1e6000 - 0x7fff8b1eeff7 com.apple.speech.recognition.framework (4.2.4 - 4.2.4) <a816d8b1-6b7b-3e5b-9fae-cbda70192e7e> /system/library/frameworks/carbon.framework/versions/a/frameworks/spe echrecognition.framework/versions/a/speechrecognition 0x7fff8b1ef000 - 0x7fff8b1effff com.apple.accelerate.veclib (3.9 - veclib 3.9) <f8d0cc77-98ac-3b58-9fe6-0c25421827b6> /system/library/frameworks/accelerate.framework/versions/a/frameworks /veclib.framework/versions/a/veclib 0x7fff8b1f0000 - 0x7fff8b1f2fff com.apple.marco (10.0 - 1000) <c8b6533a-a248-3a83-90e1-f308dadc5bd7> /system/library/privateframeworks/marco.framework/versions/a/marco 0x7fff8b1f3000 - 0x7fff8b209fff com.apple.coremediaauthoring (2.2 - 947) <c8e92f35-7f4c-38cf-890a-6462d59b9d0f> /system/library/privateframeworks/coremediaauthoring.framework/versio ns/a/coremediaauthoring 0x7fff8b20a000 - 0x7fff8b217ff0 libbz2.1.0.dylib (29) <0b98ac35-b138-349c-8063-2b987a75d24c> /usr/lib/libbz2.1.0.dylib 0x7fff8b218000 - 0x7fff8b224ff7 com.apple.opendirectory (10.9 - 173.90.1) <e5ef8e1a-7214-36d0-af0d-8d030df6c2fc> /system/library/frameworks/opendirectory.framework/versions/a/opendir ectory 0x7fff8b225000 - 0x7fff8b47eff9 com.apple.security (7.0 - 55471.14) <3f7100a0-fe46-333d-9a4b-396580f1b4fe> /system/library/frameworks/security.framework/versions/a/security 0x7fff8b507000 - 0x7fff8b508ff7 com.apple.print.framework.print (9.0 - 260) <c4c40e2e-6130-3d73-b1ef-97ff3f70cf2c> /system/library/frameworks/carbon.framework/versions/a/frameworks/pri nt.framework/versions/a/print 0x7fff8b509000 - 0x7fff8b566fff com.apple.imfoundation (10.0 - 1000) <7de171bb-f8af-3e6b-84ed-235937dace7e> /system/library/privateframeworks/imfoundation.framework/versions/a/i mfoundation 0x7fff8b567000 - 0x7fff8b56dff7 libsystem_platform.dylib (24.90.1) <3c3d3da8-32b9-3243-98ec-d89b9a1670b3> /usr/lib/system/libsystem_platform.dylib 0x7fff8b56e000 - 0x7fff8b59dff7 com.apple.coreavchd (5.7.0 - 5700.4.3) <e8190181-8f08-3dc3-9290-3aadbcebb1f3> /system/library/privateframeworks/coreavchd.framework/versions/a/core avchd 0x7fff8b59e000 - 0x7fff8b5acfff com.apple.commercecore (1.0 - 42) <398e733a-c4f6-3ecf-805c-a4887c16679e> /system/library/privateframeworks/commercekit.framework/versions/a/fr ameworks/commercecore.framework/versions/a/commercecore 0x7fff8b5ad000 - 0x7fff8b638fff libcorestorage.dylib (380) <d431a980-5cef-32da-8955-ec34b3da64d9> /usr/lib/libcorestorage.dylib 0x7fff8b639000 - 0x7fff8b642fff com.apple.speech.synthesis.framework (4.7.1 - 4.7.1) <383fb557-e88e-3239-82b8-15f9f885b702> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/speechsynthesis.framework/versions/a/speechsynthesis 0x7fff8b643000 - 0x7fff8b672ff5 com.apple.gss (4.0 - 2.0) <62046c17-5d09-346c-b08e-a664dbc18411> /system/library/frameworks/gss.framework/versions/a/gss 0x7fff8b686000 - 0x7fff8b8ceff7 com.apple.coredata (107 - 481.01) <da339795-5d97-35b5-9b04-629830013720> /system/library/frameworks/coredata.framework/versions/a/coredata 0x7fff8b8cf000 - 0x7fff8b9b3fff com.apple.coreui (2.1 - 231) <a7942bee-e6ba-3a68-8ea0-57a8a9066b2d> /system/library/privateframeworks/coreui.framework/versions/a/coreui 0x7fff8b9b4000 - 0x7fff8ba03ff7 com.apple.framework.internetaccounts (2.1 - 210) <d7175985-03a5-315b-b788-fbdc0019b0ea> /system/library/privateframeworks/internetaccounts.framework/versions /a/internetaccounts 0x7fff8ba04000 - 0x7fff8ba43fff libglu.dylib (9.6) <ee4907ca-219c-34bd-a84e-b85695f64c05> /system/library/frameworks/opengl.framework/versions/a/libraries/libg lu.dylib 0x7fff8ba44000 - 0x7fff8bd2efff com.apple.coreservices.carboncore (1077.17 - 1077.17) <3a2e92fd-dee2-3d45-9619-11500801a61c> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/carboncore.framework/versions/a/carboncore 0x7fff8bd2f000 - 0x7fff8bd67ff7 com.apple.remoteviewservices (2.0 - 94) <b17faa76-61db-33d0-90b7-4117a72a2b28> /system/library/privateframeworks/remoteviewservices.framework/versio ns/a/remoteviewservices 0x7fff8bd82000 - 0x7fff8be46ff7 com.apple.backup.framework (1.5.2 - 1.5.2) <a3c552f0-670b-388f-93fa-d917f96ace1b> /system/library/privateframeworks/backup.framework/versions/a/backup 0x7fff8be47000 - 0x7fff8be55fff com.apple.opengl (9.6.0 - 9.6.0) <709f4a02-73a0-303c-86b5-85c596c8b707> /system/library/frameworks/opengl.framework/versions/a/opengl 0x7fff8be56000 - 0x7fff8c12afc7 com.apple.vimage (7.0 - 7.0) <1ddb8ab7-03d5-3d20-9d77-c69074c6fd26> /system/library/frameworks/accelerate.framework/versions/a/frameworks /vimage.framework/versions/a/vimage 0x7fff8c12b000 - 0x7fff8c14fff7 libjpeg.dylib (1042) <33648f26-a1da-3c30-b15b-e9ffd41db25c> /system/library/frameworks/imageio.framework/versions/a/resources/lib jpeg.dylib 0x7fff8c150000 - 0x7fff8c208ff7 com.apple.discrecording (8.0 - 8000.4.6) <fcbb5558-a702-3658-aee4-7d129afbf350> /system/library/frameworks/discrecording.framework/versions/a/discrec ording 0x7fff8c221000 - 0x7fff8c2a1fff com.apple.coresymbolication (3.0 - 141) <37087fdb-874d-3fe2-9874-b047cc9be910> /system/library/privateframeworks/coresymbolication.framework/version s/a/coresymbolication 0x7fff8c2c6000 - 0x7fff8c319fff com.apple.scalableuserinterface (1.0 - 1) <19d73c6d-ca0a-3230-9644-7f01364137ed> /system/library/frameworks/quartzcore.framework/versions/a/frameworks /scalableuserinterface.framework/versions/a/scalableuserinterface 0x7fff8c31a000 - 0x7fff8c35ffff libcurl.4.dylib (78.90.1) <818543d6-0cce-3f18-9bf1-4d18b81018f3> /usr/lib/libcurl.4.dylib 0x7fff8c3ac000 - 0x7fff8c3ddff7 libtidy.a.dylib (15.12) <bf757e3c-733a-3b6b-809a-a3949d46466e> /usr/lib/libtidy.a.dylib 0x7fff8c3f8000 - 0x7fff8c40aff7 com.apple.multitouchsupport.framework (245.13 - 245.13) <d5e7416d-45ab-3690-86c6-cc4b5fcea2d2> /system/library/privateframeworks/multitouchsupport.framework/version s/a/multitouchsupport 0x7fff8c44a000 - 0x7fff8c48cff7 libauto.dylib (185.5) <f45c36e8-b606-3886-b5b1-b6745e757ca8> /usr/lib/libauto.dylib 0x7fff8c48d000 - 0x7fff8c5c3ff6 com.apple.webkit (9537 - 9537.74.9) <ca0c0387-8a66-34d4-8b1c-f5cddbda76bb> /system/library/frameworks/webkit.framework/versions/a/webkit 0x7fff8c606000 - 0x7fff8c665fff com.apple.framework.corewlan (4.3.2 - 432.47) <ae6fae44-918c-301c-a0aa-c65cab6b5668> /system/library/frameworks/corewlan.framework/versions/a/corewlan 0x7fff8c666000 - 0x7fff8c6b3ff2 com.apple.print.framework.printcore (9.0 - 428) <a2f7b9d2-7907-31d8-8462-e2e2e7c3af2e> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/printcore.framework/versions/a/printcore 0x7fff8cbe0000 - 0x7fff8cbf3ff7 com.apple.appcontainer (3.0 - 1) <bd342039-430e-39fe-bc2d-8f97b557548e> /system/library/privateframeworks/appcontainer.framework/versions/a/a ppcontainer 0x7fff8cbf4000 - 0x7fff8cc42ff9 libstdc++.6.dylib (60) <0241e6a4-1368-33be-950b-d0a175c41f54> /usr/lib/libstdc++.6.dylib 0x7fff8cc43000 - 0x7fff8cda9fff libglprogrammability.dylib (9.6) <8807fad2-11e2-3293-89d8-397b87334138> /system/library/frameworks/opengl.framework/versions/a/libraries/libg lprogrammability.dylib 0x7fff8ce25000 - 0x7fff8cef6ff1 com.apple.diskimagesframework (10.9 - 371.1) <d456ed08-4c1d-341f-bab8-85e34a7275c5> /system/library/privateframeworks/diskimages.framework/versions/a/dis kimages 0x7fff8cf1e000 - 0x7fff8cf59fff com.apple.bom (14.0 - 193.1) <ef24a562-6d3c-379e-8b9b-fae0e4a0ef7c> /system/library/privateframeworks/bom.framework/versions/a/bom 0x7fff8cf5a000 - 0x7fff8cf5cffb libutil.dylib (34) <dac4a6cf-a1bb-3874-9569-a919316d30e8> /usr/lib/libutil.dylib 0x7fff8cf5f000 - 0x7fff8d295fff com.apple.mediatoolbox (1.0 - 1273.49) <ab8ed666-6d15-3367-a033-f4a8ad33c4e0> /system/library/frameworks/mediatoolbox.framework/versions/a/mediatoo lbox 0x7fff8d296000 - 0x7fff8d29bfff com.apple.diskarbitration (2.6 - 2.6) <a4165553-770e-3d27-b217-01fc1f852b87> /system/library/frameworks/diskarbitration.framework/versions/a/diska rbitration 0x7fff8d29c000 - 0x7fff8d2a7fff libgl.dylib (9.6) <a2ef4e15-ea08-396d-a1d4-29e1ced6876a> /system/library/frameworks/opengl.framework/versions/a/libraries/libg l.dylib 0x7fff8d2a8000 - 0x7fff8d2b2ff7 com.apple.crashreportersupport (10.9 - 538) <e4da588f-c75a-39f6-9d2b-7b79f0245d39> /system/library/privateframeworks/crashreportersupport.framework/vers ions/a/crashreportersupport 0x7fff8d2b3000 - 0x7fff8d498fff com.apple.corefoundation (6.9 - 855.14) <617b8a7b-fab2-3271-a09b-c542e351c532> /system/library/frameworks/corefoundation.framework/versions/a/corefo undation 0x7fff8d499000 - 0x7fff8d4a8ff8 com.apple.langanalysis (1.7.0 - 1.7.0) <2777524a-e7ef-3b7b-b15d-f58cdeefc736> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/langanalysis.framework/versions/a/langanalysis 0x7fff8d4a9000 - 0x7fff8d4deffb com.apple.datadetectors (5.0 - 246.0) <1c4c33fe-f364-3dba-a1bc-4a53e594cfd3> /system/library/privateframeworks/datadetectors.framework/versions/a/ datadetectors 0x7fff8d52f000 - 0x7fff8d530fff com.apple.trustevaluationagent (2.0 - 25) <334a82f4-4ae4-3719-a511-86d0b0723e2b> /system/library/privateframeworks/trustevaluationagent.framework/vers ions/a/trustevaluationagent 0x7fff8d596000 - 0x7fff8d5fdff7 com.apple.coreutils (2.0 - 200.34.4) <e53b97fe-e067-33f6-a9c1-d4ec2a20fb9f> /system/library/privateframeworks/coreutils.framework/versions/a/core utils 0x7fff8d5fe000 - 0x7fff8d605ff8 liblaunch.dylib (842.90.1) <38d1ab2c-a476-385f-8ea8-7ab604ca1f89> /usr/lib/system/liblaunch.dylib 0x7fff8d606000 - 0x7fff8d84cfff com.apple.addressbook.framework (8.0 - 1369) <3d1a8d58-6a9e-366c-bdb8-ecc6f279db24> /system/library/frameworks/addressbook.framework/versions/a/addressbo ok 0x7fff8d84d000 - 0x7fff8d858ff7 com.apple.netauth (5.0 - 5.0) <c811e662-9ec3-3b74-808a-a75d624f326b> /system/library/privateframeworks/netauth.framework/versions/a/netaut h 0x7fff8d859000 - 0x7fff8d95fff7 com.apple.imageio.framework (3.3.0 - 1042) <6101f33e-cacc-3070-960a-9a2ea4bc5f44> /system/library/frameworks/imageio.framework/versions/a/imageio 0x7fff8d960000 - 0x7fff8d963fff com.apple.help (1.3.3 - 46) <6d71c959-d421-372b-a160-5317b4921f4d> /system/library/frameworks/carbon.framework/versions/a/frameworks/hel p.framework/versions/a/help 0x7fff8d964000 - 0x7fff8d993fff com.apple.debugsymbols (106 - 106) <9f66640e-277c-317e-a01e-a1e5b13e2592> /system/library/privateframeworks/debugsymbols.framework/versions/a/d ebugsymbols 0x7fff8d994000 - 0x7fff8d9b0fff libresolv.9.dylib (54) <11c2c826-f1c6-39c6-b4e8-6e0c41d4fa95> /usr/lib/libresolv.9.dylib 0x7fff8d9b1000 - 0x7fff8d9b5ff7 libcache.dylib (62) <8c1efc4f-3f51-3de9-a973-360b461f3d65> /usr/lib/system/libcache.dylib 0x7fff8d9b6000 - 0x7fff8da51fff com.apple.pdfkit (2.9.1 - 2.9.1) <f4dff4f2-6da3-3b1b-823e-d9ed271a1522> /system/library/frameworks/quartz.framework/versions/a/frameworks/pdf kit.framework/versions/a/pdfkit 0x7fff8da99000 - 0x7fff8dac3ff7 libsandbox.1.dylib (278.11) <9e5654bf-dcd3-3b15-9c63-209b2b2d2803> /usr/lib/libsandbox.1.dylib 0x7fff8dac4000 - 0x7fff8daf4fff com.apple.iconservices (25 - 25.17) <36811973-8777-3211-863a-76b2c20b0ed0> /system/library/privateframeworks/iconservices.framework/versions/a/i conservices 0x7fff8daf5000 - 0x7fff8de6cffa com.apple.javascriptcore (9537 - 9537.74.4) <0942fe6b-3152-30fc-b92a-92a1c29c5295> /system/library/frameworks/javascriptcore.framework/versions/a/javasc riptcore 0x7fff8df01000 - 0x7fff8df1dfff com.apple.frameworks.preferencepanes (16.0 - 16.0) <68bcf160-f85e-3f71-bd4e-8661dacdbe69> /system/library/frameworks/preferencepanes.framework/versions/a/prefe rencepanes 0x7fff8df1e000 - 0x7fff8e04dfef com.apple.mediacontrolsender (2.0 - 200.34.4) <fc24ec8d-2e46-3f76-af63-749f30857b96> /system/library/privateframeworks/mediacontrolsender.framework/versio ns/a/mediacontrolsender 0x7fff8e075000 - 0x7fff8e306ff7 com.apple.aoskit (1.06 - 176) <a5d6ec71-51e2-3d0d-8da6-1927ac519277> /system/library/privateframeworks/aoskit.framework/versions/a/aoskit 0x7fff8e307000 - 0x7fff8e3f6fff libfontparser.dylib (111.1) <835a8253-6ab9-3aab-9cbf-171440dec486> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/ats.framework/versions/a/resources/libfontparser.dylib 0x7fff8e3f7000 - 0x7fff8e967fff com.apple.coreauc (6.22.08 - 6.22.08) <d7f7d85d-896e-35d6-9fc4-daf7920e38bb> /system/library/privateframeworks/coreauc.framework/versions/a/coreau c 0x7fff8e968000 - 0x7fff8e969ff7 libodfde.dylib (20) <71c1001f-044f-3c0f-ba95-eac080176a16> /usr/lib/libodfde.dylib 0x7fff8e995000 - 0x7fff8e999ff7 libgif.dylib (1042) <c57840f6-1c11-3273-b4fc-956950b94034> /system/library/frameworks/imageio.framework/versions/a/resources/lib gif.dylib 0x7fff8e99a000 - 0x7fff8e9e1ff7 libcups.2.dylib (372.2) <37802f24-bcc2-3721-8e12-82b29b61b2aa> /usr/lib/libcups.2.dylib 0x7fff8e9e8000 - 0x7fff8ea04ff7 libsystem_kernel.dylib (2422.90.20) <20e00c54-9222-359f-bd98-cb79abed769a> /usr/lib/system/libsystem_kernel.dylib 0x7fff8ea05000 - 0x7fff8ea06fff liblangid.dylib (117) <9546e641-f730-3ab0-b3cd-e0e2fdd173d9> /usr/lib/liblangid.dylib 0x7fff8ea07000 - 0x7fff8ea0dff7 com.apple.xpcservice (2.0 - 1) <7545ef91-bb7b-3df3-bf87-f55309da5838> /system/library/privateframeworks/xpcservice.framework/versions/a/xpc service 0x7fff8ea3b000 - 0x7fff8ea3efff com.apple.applesysteminfo (3.0 - 3.0) <61fe171d-3d88-313f-a832-280aec8f4ab7> /system/library/privateframeworks/applesysteminfo.framework/versions/ a/applesysteminfo 0x7fff8ea3f000 - 0x7fff8ea5cff7 com.apple.framework.apple80211 (9.3.1 - 931.58) <d5b2dd15-3dcc-31f6-9320-3a20a887c5d5> /system/library/privateframeworks/apple80211.framework/versions/a/app le80211 0x7fff8ea5d000 - 0x7fff8eb28fff libvdsp.dylib (423.32) <3bf732be-dde0-38eb-8c54-e4e3c64f77a7> /system/library/frameworks/accelerate.framework/versions/a/frameworks /veclib.framework/versions/a/libvdsp.dylib 0x7fff8eb29000 - 0x7fff8eb2bff7 libquarantine.dylib (71) <973be51d-6465-392f-9099-d4ab21bf0d25> /usr/lib/system/libquarantine.dylib 0x7fff8eb36000 - 0x7fff8eb54fff com.apple.facetimeservices (10.0 - 1000) <ded6a966-df0e-3e58-bd34-d85ed82a99d7> /system/library/privateframeworks/ftservices.framework/versions/a/fts ervices 0x7fff8eb77000 - 0x7fff8eb92ff7 libcrfsuite.dylib (34) <ffae75fa-c54e-398b-aa97-18164cd9789d> /usr/lib/libcrfsuite.dylib 0x7fff8ebb7000 - 0x7fff8ebb7fff com.apple.applicationservices (48 - 48) <f250170a-8805-3731-9097-78cad04481f0> /system/library/frameworks/applicationservices.framework/versions/a/a pplicationservices 0x7fff8ebb8000 - 0x7fff8fa06fff com.apple.webcore (9537 - 9537.74.11) <9683ba7c-a04b-3e33-b195-dcf1c2cabf95> /system/library/frameworks/webkit.framework/versions/a/frameworks/web core.framework/versions/a/webcore 0x7fff8fa07000 - 0x7fff8fa11ff7 libcsfde.dylib (380) <48c0e3ba-ece7-3337-918c-e65b4a5f0593> /usr/lib/libcsfde.dylib 0x7fff8fa12000 - 0x7fff8fbcaff3 libicucore.a.dylib (511.31) <167ddd0a-a935-31af-b5b9-940268ec3a3c> /usr/lib/libicucore.a.dylib 0x7fff8fbcb000 - 0x7fff8fbddfff com.apple.imagecapture (9.0 - 9.0) <d9269440-8e56-3c03-88f5-f8ad662d17db> /system/library/frameworks/carbon.framework/versions/a/frameworks/ima gecapture.framework/versions/a/imagecapture 0x7fff8fbde000 - 0x7fff8fc42fff com.apple.datadetectorscore (5.0 - 354.3) <b92e87d1-2045-3ab2-ae3f-8f948b30518a> /system/library/privateframeworks/datadetectorscore.framework/version s/a/datadetectorscore 0x7fff8fd1c000 - 0x7fff8fd75fff libtiff.dylib (1042) <51d02eec-0d0c-34c1-91c8-d316473a3fea> /system/library/frameworks/imageio.framework/versions/a/resources/lib tiff.dylib 0x7fff8fd76000 - 0x7fff908ecfff com.apple.appkit (6.9 - 1265.19) <12647f2f-3fe2-3d77-b3f0-33efaff2cea7> /system/library/frameworks/appkit.framework/versions/c/appkit 0x7fff909a3000 - 0x7fff909e4fff com.apple.performanceanalysis (1.47 - 47) <784ed7b8-fae4-36ce-8c76-b7d300316c9f> /system/library/privateframeworks/performanceanalysis.framework/versi ons/a/performanceanalysis 0x7fff909e5000 - 0x7fff909e5fff com.apple.aosmigrate (1.0 - 1) <6909d700-6e8a-3bfd-9b5d-fa94c1150e6e> /system/library/privateframeworks/aosmigrate.framework/versions/a/aos migrate 0x7fff909e6000 - 0x7fff90a01ff7 libpng.dylib (1042) <36ff1dda-9804-33c5-802e-3fca9879f0e6> /system/library/frameworks/imageio.framework/versions/a/resources/lib png.dylib 0x7fff90a02000 - 0x7fff90a07ff7 com.apple.mediaaccessibility (1.0 - 43) <ddb8a42d-89d8-34f1-aa35-75d7659616c9> /system/library/frameworks/mediaaccessibility.framework/versions/a/me diaaccessibility 0x7fff90a08000 - 0x7fff90a15ff7 libxar.1.dylib (202) <5572aa71-e98d-3fe1-9402-bb4a84e0e71e> /usr/lib/libxar.1.dylib 0x7fff90a16000 - 0x7fff90a1efff libsystem_dnssd.dylib (522.90.2) <a0b7cf19-d9f2-33d4-8107-a62184c9066e> /usr/lib/system/libsystem_dnssd.dylib 0x7fff90bde000 - 0x7fff90caffff com.apple.quicklookuiframework (5.0 - 622.7) <13841701-34c2-353d-868d-3e08d020c90f> /system/library/frameworks/quartz.framework/versions/a/frameworks/qui cklookui.framework/versions/a/quicklookui 0x7fff90cb0000 - 0x7fff90cd9fff glrendererfloat (9.6) <16871296-2eb9-3ff6-ab00-3e2e55a45a63> /system/library/frameworks/opengl.framework/versions/a/resources/glre ndererfloat.bundle/glrendererfloat 0x7fff90cda000 - 0x7fff90e4aff8 com.apple.cfnetwork (673.2.1 - 673.2.1) <ae407146-ccf2-33dd-aaea-6887fd6f45ba> /system/library/frameworks/cfnetwork.framework/versions/a/cfnetwork 0x7fff90eb5000 - 0x7fff90edcff7 libsystem_network.dylib (241.3) <a499d688-9165-3776-8c8e-c018897b5b13> /usr/lib/system/libsystem_network.dylib 0x7fff90edf000 - 0x7fff9113cffd com.apple.rawcamera.bundle (5.03 - 731) <99c18399-b160-3c4a-aedc-a2fd4944fcc6> /system/library/coreservices/rawcamera.bundle/contents/macos/rawcamer a 0x7fff911c8000 - 0x7fff911d3fff libgpusupportmercury.dylib (9.6) <3e5636db-5eed-3c31-8b6d-8cbfe965bc12> /system/library/privateframeworks/gpusupport.framework/versions/a/lib raries/libgpusupportmercury.dylib 0x7fff911d4000 - 0x7fff91264fff com.apple.metadata (10.7.0 - 800.23) <bfee576f-d779-300b-b685-26a3a008710a> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/metadata.framework/versions/a/metadata 0x7fff91265000 - 0x7fff9127dff7 com.apple.openscripting (1.4 - 157) <b3b037d7-1019-31e6-9d17-08e699af3701> /system/library/frameworks/carbon.framework/versions/a/frameworks/ope nscripting.framework/versions/a/openscripting 0x7fff9127e000 - 0x7fff912cbfff com.apple.applevaframework (5.0.27 - 5.0.27) <484d6b2e-237d-34d8-9394-771f2f2294b8> /system/library/privateframeworks/appleva.framework/versions/a/applev a 0x7fff9130b000 - 0x7fff91330ff7 com.apple.chunkinglibrary (2.0 - 155.1) <b49408cd-ece8-3785-84a4-45b03882574a> /system/library/privateframeworks/chunkinglibrary.framework/versions/ a/chunkinglibrary 0x7fff913c8000 - 0x7fff91437ff1 com.apple.applicationservices.ats (360 - 363.3) <546e89d9-2ae7-3111-b2b8-2366650d22f0> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/ats.framework/versions/a/ats 0x7fff91438000 - 0x7fff9143efff com.apple.aosnotification (1.7.0 - 760.3) <307d35a7-c2cb-3024-bfe1-288a0198c003> /system/library/privateframeworks/aosnotification.framework/versions/ a/aosnotification 0x7fff9143f000 - 0x7fff9144fffb libsasl2.2.dylib (170) <c8e25710-68b6-368a-bf3e-48ec7273177b> /usr/lib/libsasl2.2.dylib 0x7fff91450000 - 0x7fff9147cfff com.apple.coreservicesinternal (184.9 - 184.9) <4dea54f9-81d6-3edb-aa3c-1f9c497b3379> /system/library/privateframeworks/coreservicesinternal.framework/vers ions/a/coreservicesinternal 0x7fff9147d000 - 0x7fff91494ffa libavfaudio.dylib (32.2) <c77a6482-46fa-3a17-b357-bbea380b4e6c> /system/library/frameworks/avfoundation.framework/versions/a/resource s/libavfaudio.dylib 0x7fff91495000 - 0x7fff91499fff com.apple.commonpanels (1.2.6 - 96) <5744a1f1-1fa5-35dd-b924-f8983e81fc76> /system/library/frameworks/carbon.framework/versions/a/frameworks/com monpanels.framework/versions/a/commonpanels 0x7fff914a0000 - 0x7fff91500fff com.apple.issupport (1.9.9 - 57) <87137cf3-fe6a-3345-a2ec-95d73a15cc3a> /system/library/privateframeworks/issupport.framework/versions/a/issu pport 0x7fff91501000 - 0x7fff9151cff7 libsystem_malloc.dylib (23.10.1) <a695b4e4-38e9-332e-a772-29d31e3f1385> /usr/lib/system/libsystem_malloc.dylib 0x7fff9151d000 - 0x7fff9163fff1 com.apple.avfoundation (2.0 - 651.12) <5261e6ea-7476-32b2-a12a-d42598a9b2ea> /system/library/frameworks/avfoundation.framework/versions/a/avfounda tion 0x7fff91640000 - 0x7fff9164aff7 com.apple.bsd.servicemanagement (2.0 - 2.0) <9556885c-22dd-3392-accb-2b413434d8d3> /system/library/frameworks/servicemanagement.framework/versions/a/ser vicemanagement 0x7fff9164b000 - 0x7fff916a6ffb com.apple.ae (665.5 - 665.5) <3558cc9a-fd30-3dad-ab40-fe6828e76fe1> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/ae.framework/versions/a/ae 0x7fff916ff000 - 0x7fff9170cfff com.apple.sharing (132.2 - 132.2) <3dfb1133-8fd3-3b60-8e9c-0fe62aacfd7b> /system/library/privateframeworks/sharing.framework/versions/a/sharin g 0x7fff9170d000 - 0x7fff91737ff7 libpcap.a.dylib (42) <91d3ff51-d6fe-3c05-98c9-1182e0ec3d58> /usr/lib/libpcap.a.dylib 0x7fff91738000 - 0x7fff917faff5 com.apple.coretext (352.0 - 367.19) <24848df1-67ec-3d41-9548-1f14c6dfbbf9> /system/library/frameworks/coretext.framework/versions/a/coretext 0x7fff917fb000 - 0x7fff91865ff7 com.apple.framework.iokit (2.0.1 - 907.90.2) <a779de46-bb7e-36fd-9348-694f9b09718f> /system/library/frameworks/iokit.framework/versions/a/iokit 0x7fff91872000 - 0x7fff91872ff7 libkeymgr.dylib (28) <d7045f25-bfa4-3840-847d-af95df8b6cca> /usr/lib/system/libkeymgr.dylib 0x7fff91873000 - 0x7fff918cbff7 com.apple.symbolication (1.4 - 129) <16d42516-7b5e-357c-898a-faa9ee7642b3> /system/library/privateframeworks/symbolication.framework/versions/a/ symbolication 0x7fff918cc000 - 0x7fff921ebaf3 com.apple.coregraphics (1.600.0 - 599.20.11) <06212100-8069-31a1-9c44-f6c4b1695230> /system/library/frameworks/coregraphics.framework/versions/a/coregrap hics 0x7fff9226b000 - 0x7fff92283ff7 com.apple.generationalstorage (2.0 - 160.2) <dc0236cc-a0f7-31da-a201-09d4319be96e> /system/library/privateframeworks/generationalstorage.framework/versi ons/a/generationalstorage 0x7fff92284000 - 0x7fff92295ff7 libz.1.dylib (53) <4c5fa1a5-4471-398e-9543-2e54d46e63e9> /usr/lib/libz.1.dylib 0x7fff92296000 - 0x7fff922a7fff com.apple.idsfoundation (10.0 - 1000) <d3e6646b-4118-30d3-b4f7-da9a28b396e4> /system/library/privateframeworks/idsfoundation.framework/versions/a/ idsfoundation 0x7fff929f8000 - 0x7fff92ad7fff libcrypto.0.9.8.dylib (50) <09dceddf-2892-32b8-b689-cbe31a549f2b> /usr/lib/libcrypto.0.9.8.dylib 0x7fff92af4000 - 0x7fff92b45fff com.apple.quicklookframework (5.0 - 622.7) <17685cec-c94b-3f83-ade1-b24840b35e44> /system/library/frameworks/quicklook.framework/versions/a/quicklook 0x7fff92c45000 - 0x7fff92e35ffd com.apple.webkit2 (9537 - 9537.74.9) <3f7b257f-d0da-3aa8-be8b-0c5474fe9806> /system/library/privateframeworks/webkit2.framework/versions/a/webkit 2 0x7fff92e36000 - 0x7fff92e7bffe com.apple.hiservices (1.22 - 467.2) <b7fcf008-c241-3862-bc63-e6ef4006a6e4> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/hiservices.framework/versions/a/hiservices 0x7fff92e7c000 - 0x7fff92e7efff com.apple.seccodewrapper (3.0 - 1) <de7ca981-2b8b-34ac-845d-06d5c8f10441> /system/library/privateframeworks/seccodewrapper.framework/versions/a /seccodewrapper 0x7fff92e89000 - 0x7fff92ea0ff7 com.apple.cfopendirectory (10.9 - 173.90.1) <38a25261-c622-3f11-bfd3-7affc44d57b8> /system/library/frameworks/opendirectory.framework/versions/a/framewo rks/cfopendirectory.framework/versions/a/cfopendirectory 0x7fff92ea1000 - 0x7fff92ebbfff libdispatch.dylib (339.90.1) <f3cbfe1b-fce8-3f33-a53d-9092ab382dbb> /usr/lib/system/libdispatch.dylib 0x7fff92ebc000 - 0x7fff92f07fff com.apple.imagecapturecore (5.0 - 5.0) <605a78db-e529-3e36-9667-a7e9973198b6> /system/library/frameworks/imagecapturecore.framework/versions/a/imag ecapturecore 0x7fff92f08000 - 0x7fff92f2afff com.apple.framework.familycontrols (4.1 - 410) <7964b5ae-f6c7-3e5c-a619-4efe70d2d0c8> /system/library/privateframeworks/familycontrols.framework/versions/a /familycontrols 0x7fff92f2b000 - 0x7fff9330cffe liblapack.dylib (1094.5) <7e7a9b8d-1638-3914-bae0-663b69865986> /system/library/frameworks/accelerate.framework/versions/a/frameworks /veclib.framework/versions/a/liblapack.dylib 0x7fff9330d000 - 0x7fff93356fff com.apple.coremedia (1.0 - 1273.49) <d91ec90a-bff1-300d-a353-68001705811c> /system/library/frameworks/coremedia.framework/versions/a/coremedia 0x7fff9337e000 - 0x7fff93380fff libcvmspluginsupport.dylib (9.6) <ffda2811-060e-3591-a280-4a726aa82436> /system/library/frameworks/opengl.framework/versions/a/libraries/libc vmspluginsupport.dylib 0x7fff93381000 - 0x7fff93384fff libcorevmclient.dylib (58.1) <ebc36c69-c896-3c3d-8589-3e9023e7e56f> /system/library/frameworks/opengl.framework/versions/a/libraries/libc orevmclient.dylib 0x7fff93385000 - 0x7fff93532f27 libobjc.a.dylib (551.1) <f21c5742-7b9c-31f1-bbae-1717bc6c2f1b> /usr/lib/libobjc.a.dylib 0x7fff93604000 - 0x7fff9367bfff com.apple.coreservices.osservices (600.4 - 600.4) <80e7b419-a0d5-373b-b2b5-88e6a8cd3ae6> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/osservices.framework/versions/a/osservices 0x7fff9367c000 - 0x7fff93688ff7 com.apple.helpdata (2.1.4 - 90) <546d6b21-cdce-35c0-86f2-c38a4789f4ee> /system/library/privateframeworks/helpdata.framework/versions/a/helpd ata 0x7fff93689000 - 0x7fff9368dff7 libsystem_stats.dylib (93.90.3) <1a55af8a-b6c4-3163-b557-3ad25da643a8> /usr/lib/system/libsystem_stats.dylib 0x7fff9369b000 - 0x7fff936a7ff3 com.apple.applefscompression (56 - 1.0) <1ebcfc91-734d-338b-8796-4b93bdc53014> /system/library/privateframeworks/applefscompression.framework/versio ns/a/applefscompression 0x7fff936a8000 - 0x7fff936c1ff7 com.apple.ubiquity (1.3 - 289) <664f5b33-708d-33e9-81e1-c45cbe9aab6e> /system/library/privateframeworks/ubiquity.framework/versions/a/ubiqu ity 0x7fff936c2000 - 0x7fff936c2fff com.apple.carbon (154 - 157) <14069023-0bbb-3925-9ba9-eb2c9e9b8c75> /system/library/frameworks/carbon.framework/versions/a/carbon 0x7fff936c3000 - 0x7fff936e7fff com.apple.quartzfilters (1.8.0 - 1.7.0) <c45c3d45-ccb2-3661-a390-959e556b14b4> /system/library/frameworks/quartz.framework/versions/a/frameworks/qua rtzfilters.framework/versions/a/quartzfilters 0x7fff93fac000 - 0x7fff93fafff7 com.apple.loginuicore (3.0 - 3.0) <1ecbda90-d6ed-3333-83eb-9c8232dfad7c> /system/library/privateframeworks/loginuikit.framework/versions/a/fra meworks/loginuicore.framework/versions/a/loginuicore 0x7fff93fb0000 - 0x7fff94079fff com.apple.launchservices (572.26 - 572.26) <ef8a4a15-0861-35c5-9744-5e1bc5c26dd9> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/launchservices.framework/versions/a/launchservices 0x7fff9407a000 - 0x7fff940e7fff com.apple.searchkit (1.4.0 - 1.4.0) <33298263-5b12-340d-bb9d-d52303849561> /system/library/frameworks/coreservices.framework/versions/a/framewor ks/searchkit.framework/versions/a/searchkit 0x7fff940ea000 - 0x7fff94286ff3 com.apple.quartzcore (1.8 - 332.3) <80f1068f-4a34-34fb-9e05-a2dc0700d2f2> /system/library/frameworks/quartzcore.framework/versions/a/quartzcore 0x7fff94287000 - 0x7fff942d9fff libc++.1.dylib (120) <2cb96d10-1e3e-39b1-b90d-c56c3818321e> /usr/lib/libc++.1.dylib 0x7fff94377000 - 0x7fff943b0ff7 com.apple.qd (3.50 - 298) <5343278d-47b7-3af2-9b4b-4b8b0f942cd1> /system/library/frameworks/applicationservices.framework/versions/a/f rameworks/qd.framework/versions/a/qd 
+
+</s><s>external modification summary: calls made by other processes targeting this process: task_for_pid: 2 thread_create: 0 thread_set_state: 0 calls made by this process: task_for_pid: 0 thread_create: 0 thread_set_state: 0 calls made by all processes on this machine: task_for_pid: 1889 thread_create: 1 thread_set_state: 0 
+
+</s><s>vm region summary: readonly portion of libraries: total=245.9m resident=122.1m(50%) swapped_out_or_unallocated=123.8m(50%) writable regions: total=2.7g written=267.3m(10%) resident=335.9m(12%) swapped_out=0k(0%) unallocated=2.4g(88%) 
+</s><s>region type virtual =========== ======= cg backing stores 40.8m cg image 2812k cg raster data 300k cg shared images 180k coreanimation 2200k coreanimation (reserved) 112k reserved vm address space (unallocated) coreimage 52k foundation 4k iokit 14.7m image io 2916k js jit generated code 256.0m js jit generated code (reserved) 768.0m reserved vm address space (unallocated) js vm register file 4096k js garbage collector 2816k java 328.6m java (reserved) 1.0g reserved vm address space (unallocated) kernel alloc once 8k malloc 216.9m malloc (admin) 48k malloc_large (reserved) 4096k reserved vm address space (unallocated) mach message 8k memory tag 241 120k memory tag 242 12k memory tag 251 16k opencl 144k opengl glsl 1664k sqlite page cache 256k stack guard 56.2m stack 45.9m vm_allocate 16.8m webkit malloc 5560k __data 31.5m __image 528k __linkedit 68.1m __text 177.8m __unicode 544k mapped file 77.7m shared memory 68k =========== ======= total 3.1g total, minus reserved vm space 1.3g 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6196273-6196367</DOCNO>
+<TEXT>
+<subject>Flash Builder crashes when searching for .swc</subject>
+<post author="Hoverdog" timestamp="Mar 10, 2014 11:27 AM">
+<s>screenshot of what flash builder tries to do before it crashes.</s><s> searching for swc's in a non-existant folder? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6195632-1424652</DOCNO>
+<TEXT>
+<subject>Adobe ANE stageAd is not working in App Store</subject>
+<post author="a-r-d" timestamp="Mar 10, 2014 8:46 AM">
+<s>i am using com.adobe.ane.stagead package with starling game i made (gravityescape - it is an ipad game approved and released in store).</s><s> here is my problem, i am trying to show banner ads but they will not work. 
+a) in development test ads did show.</s><s> i thought everything was fine.</s><s> b) i am approved to use iad.</s><s> contracts enabled, iad is "live" in the dashboard.</s><s> c) iad dashboard shows no requests?</s><s> why?</s><s> 
+</s><s>if anybody else has the no requests issue please let me know.</s><s> i can find no documentation other than the autogenerated stuff here- http://www.adobe.com/devnet-docs/gamingsdk/anedocs/ 
+
+</s><s>here is my code i am using on app init: 
+if( stagebannerad.issupported ){ # ad = new stagebannerad(); # ad.showonlyifloaded = false; # ad.stage = this.stage; # ad.addeventlistener(stageadevent.ad_load_complete, adloadstart); # ad.addeventlistener(stageadevent.ad_load_fail, adloadend); # trace("iad init"); # } else { # trace("iad is not supported"); # } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6189809-1423211</DOCNO>
+<TEXT>
+<subject>Help & OSMF - Getting In-line Help to Work....</subject>
+<post author="bs9999" timestamp="Mar 7, 2014 1:58 PM">
+<s>im new to flash builder and osmf.</s><s> i have the osmf.swc attached but hovering over any osmf class, property, or method reveals nothing for help.</s><s> hovering over flex classes is a bit better but it would be nice to click an icon to jump to the full help page, which it does not for me. 
+</s><s>what can i do to include any form of help into flash builder to make the experience less annoying? 
+</s><s>thanks.</s><s> 
+</s><s>i am using fb 4.6 on windows 7. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6079851-1396429</DOCNO>
+<TEXT>
+<subject>Next Flash Builder when ?</subject>
+<post author="Habdulmalak" timestamp="Feb 3, 2014 12:34 AM">
+<s>guys, does anybody know when approximately the new flash builder will be released? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6079851-6154777</DOCNO>
+<TEXT>
+<subject>Next Flash Builder when ?</subject>
+<post author="Habdulmalak" timestamp="Feb 25, 2014 5:00 AM">
+<s>anybody alive?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6079851-6187706</DOCNO>
+<TEXT>
+<subject>Next Flash Builder when ?</subject>
+<post author="%E8%8F%9C%E7%93%9C%E5%BC%9F%E5%BC%9F" timestamp="Mar 7, 2014 1:24 AM">
+<s>?????? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6187616-1422667</DOCNO>
+<TEXT>
+<subject>Req for help on flex programming API</subject>
+<post author="vj_mvk_dev" timestamp="Mar 6, 2014 11:43 PM">
+<s>hello guys, do anyone have the api(application programming interface like java api) for flex applications(mobile and web).</s><s> so that i can learn efficiently and work on it?</s><s> i am really a very beginner for flex and getting a lots of issues/errors while coding based on the the namespaces and tags (ex:mx:script, fx:script, s:array......etc) one tag is not compatible with other so i would like to have a clear knowledge on which tag can be used with what...</s><s> so plaease get back with an answer.</s><s> thankyou....</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6185930-1422289</DOCNO>
+<TEXT>
+<subject>FB autocomplete w/ Tab key</subject>
+<post author="bobslingblade" timestamp="Mar 11, 2014 6:51 AM">
+<s>how do i make flash builder autocomplete with the tab key? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6184454-1421982</DOCNO>
+<TEXT>
+<subject>Trigger popup when iOS app is suspended?</subject>
+<post author="LindsayAtTheFusionWorks" timestamp="Mar 6, 2014 3:55 AM">
+<s>i have an app that is suspended on an ipad home button being pressed so it doesn't exit completely. 
+i would like the app to be able to trigger a popup on the ipad every few hours if some action is pending.</s><s> is that possible?</s><s> i know how to trigger push notifications from a server if connected but what i am after is if the app goes into suspend mode (home button has been hit) and some action hasn't occured yet then the user gets a daily reminder that they need to do something.</s><s> this is if the ipad has no connection to the outside world so needs to be triggered from the suspended app rather than using the push notification from a server? 
+</s><s>any ideas on how to achieve this would be greatly recieved, 
+cheers, 
+lins. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6184123-1421894</DOCNO>
+<TEXT>
+<subject>Profiling application but component does not appear in Live Objects</subject>
+<post author="RandomReado" timestamp="Mar 6, 2014 1:02 AM">
+<s>i have built an application using flash builder 4.6 and flex sdk 4.6, which consists of many custom-built components, some of which are vast and contain lots of code.</s><s> when i run the application, one of the components which loads using popupmanager is causing the memory usage in task manager to increase and despite closing/reopening the component, the memory usage never goes down, only up.</s><s> eventually the process runs out of memory and crashes. 
+</s><s>so i'm trying to profile the application.</s><s> when i run the profiler, i can see all the classes opening into the live objects window.</s><s> however when i load the component which is eating the memory, it appears in my application but does not appear in live objects, nor does any of its children. 
+</s><s>what would cause this to occur? 
+</s><s>also am i doing the right thing by using components or should i be using modules instead? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6181061-1421222</DOCNO>
+<TEXT>
+<subject>I need to buy a license for Flex Builder 2.0 as I do?</subject>
+<post author="fabiovalerio74" timestamp="Mar 5, 2014 6:32 AM">
+<s>i need to buy a license for flex builder 2.0 as i do? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6181060-1421221</DOCNO>
+<TEXT>
+<subject>I need to buy a license for Flex Builder 2.0 as I do?</subject>
+<post author="fabiovalerio74" timestamp="Mar 5, 2014 6:30 AM">
+<s>i need to buy a license for flex builder 2.0 as i do? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-1397323</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="a-r-d" timestamp="Feb 3, 2014 5:34 PM">
+<s>hi all,   i was trying to submit to itunes connect today via application loader on osx 10.8.5 application loader version 2.9 (439) and got the following message:     error itms-9000: "this bundle is invalid.</s><s> new apps and app updates submitted to the app store must be built with xcode 5 and ios 7 sdk." at softwareassets/softwareasset (mzitmspsoftwareassetpackage)     does anyone know the solution?</s><s> i am getting desperate here.   i compiled the app with air 4.0, flex 11 (newest sdk on apache flex website as of last weekend).  i have successfully submitted this application before, this is just an update.</s><s> i also tried with the older air 3.9 compiler and got the same message
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6083068</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="a-r-d" timestamp="Feb 3, 2014 7:12 PM">
+<s>the fix was to go here and get the beta version of flex sdk and overlay on top of the old one. http://labs.adobe.com/downloads/air.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6083304</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="KieranCMG" timestamp="Feb 3, 2014 8:23 PM">
+<s>hmm that didn't work - i am also getting that error even with the beta version overlay?</s><s> perhaps i am implimenting it wrong. @ a-r-d are you able to provide more details or a link to the step by step work around in case i am missing something? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6084328</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="a-r-d" timestamp="Feb 4, 2014 6:13 AM">
+<s>you can look at this so post, it has a link to a blog that gives you more details: 
+http://stackoverflow.com/a/21518949 
+if you have never done the flex / air sdk overlay you should read that post.</s><s> the only thing i have to add is to use the beta version that is marked "for flex developers" and not the other beta sdk. 
+i will note that i was able to submit to itunes connect successfully last night after compiling with the beta air 4.0 sdk release. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6085085</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="spinlight" timestamp="Feb 4, 2014 10:03 AM">
+<s>i'm running into this same error today.</s><s> i posted a file last friday without issue.</s><s> i submitted several updates last week actually.</s><s> something changed very recently i think. 
+</s><s>edit: just grabbed the 4.0 beta from the lab.</s><s> that allowed me to submit to apple without error.</s><s> (air 4.0.0.1619) for ios.</s><s> 
+</s><s>edit 2: i cannot export from flash to a 3gs (probably not ipad 1 either, but don't have one handy for testing).</s><s> i'm fine with dropping support for these older devices, but can anyone confirm this is the case? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6095528</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="Dan%20Zen" timestamp="Feb 6, 2014 8:45 PM">
+<s>would like to know how we should be dealing with older devices - i heard about there being two versions.</s><s> etc. supported by apple.  what are people doing?  - so that relates to spinlight's edit 2.    also... what happened to the uploading process?  why can't we upload to itunes with air 3.9?  are we cutting it that close?  any comments from adobe? - that relates to spinlight's first edit.   thanks, dan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6097374</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="Dan%20Zen" timestamp="Feb 7, 2014 9:46 AM">
+<s>well... tried uploading with air 4.0 sdk from http://www.adobe.com/devnet/air/air-sdk-download.html - got it yesterday.</s><s> i overlayed the new air files in flash builder 4.7 on pc (as i have a dozen times before), changed the namespace and recompiled adjusting my version numbers to match in the app.xml and itunes.</s><s> i published with a distribution certificate and matching distribution provisioning profile.</s><s> the app uses the in-app purchasing ane from the adobe gaming sdk.</s><s> it was all working when i tested with a test account, etc. 
+</s><s>so i copy the file over to the mac. in the past i have had to unzip the ipa and get the app file out of the payload folder.</s><s> i then zip this app file up and save it as the myappname.ipa.</s><s> then using the application loader that i got from the bottom of the manage apps page on itunes i choose my app version to upload - i see that fine, then i send the myappname.ipa that i made.</s><s> and i still get the error that it is an invalid package.</s><s> 
+</s><s>anybody have an idea about what i might be missing.</s><s> this is an actionscript mobile project in flash builder 4.7 on pc running air 4.0 then trying to upload with a mac. 
+</s><s>any thoughts from the adobe side?</s><s>?</s><s>?</s><s> 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6097433</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="Colin%20Holgate" timestamp="Feb 7, 2014 10:08 AM">
+<s>you should go to the page that a.r.d. said to go to: 
+http://labs.adobe.com/downloads/air.html 
+in the bottom part of that page is the flex compatible version of the sdk.</s><s> don't go to the release page where you went yesterday, that version is several weeks old. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6098152</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="Dan%20Zen" timestamp="Feb 7, 2014 12:36 PM">
+<s>oh - thanks - i see the difference now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6099267</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="Dan%20Zen" timestamp="Feb 7, 2014 9:34 PM">
+<s>submitted successfully .</s><s> also - when rezipping on the mac i forgot that you zip the payload folder not just the app file inside the payload folder as i had said in my earlier description. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Using-Flash-Builder/Discussions-6082927-6158123</DOCNO>
+<TEXT>
+<subject>itunes connect submission failure</subject>
+<post author="SunilRana_Gateway" timestamp="Feb 26, 2014 2:27 AM">
+<s>submitted and application is approved by apple with new adobe air sdk 13. 
+
+with regards, sunil 
+</s></post>
+</TEXT>
+</DOC>
+
+

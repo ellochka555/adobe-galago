@@ -1,0 +1,11 @@
+<DOC>
+<DOCNO>Adobe-Community/JRUN/Jrun-and-Web-Service/Discussions-3871050-892951</DOCNO>
+<TEXT>
+<subject>IIS7 with jrun4 on windows server2008(64 bit)</subject>
+<post author="astha_agarwal88" timestamp="Aug 19, 2011 1:14 AM">
+<s>hi, i have windows server 2008(64 bit) with jrun4 updater 7 installed.</s><s> i want to use iis 7 with these. when i launch webserver configuration to add iis,foll happens: 1.i get a window with values:host:localhost , server:default , webserver:iis iis website:greyed out. so i close this and again click on add.</s><s> 2.this time webserver is all so i click on ok.</s><s> i get "error creating iis application extensions for website all {0}" 3.when i close the error window and again add the same server i get a new error: "c;\jrun4\lib\wsconfig\1\jrun_iis6_wildcard.dll(the system cannot find the path specified)" please suggest a solution.</s><s> p.s.</s><s> 1.</s><s> i have tried manually configuring external web server by creating foler wsconfig\1 and adding dll/ini file. but it didn't help.</s><s> also, in doing this i'm not sure of the proxy ports to use.</s><s> my jrun.xml says 51000 and i gave the same in bootstrap=127.0.0.1:51000 2.i have 3 servers in jlauncher: admin,default and samples 3.when i'm adding the iis server, if i go to advanced settings, there is only a "use application mapping" radio.</s><s> there is no isapi radio.</s><s> please please help.... 
+</s></post>
+</TEXT>
+</DOC>
+
+

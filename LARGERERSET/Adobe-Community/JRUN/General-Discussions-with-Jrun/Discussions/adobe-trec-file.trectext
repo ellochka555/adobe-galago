@@ -1,0 +1,112 @@
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-4448324-1013588</DOCNO>
+<TEXT>
+<subject>classpath issue with JSPC</subject>
+<post author="Joop Kaashoek" timestamp="May 29, 2012 11:32 AM">
+<s>when using jspc to pre-compile jsp pages, it does not appear to use the classpath environment variable and hence the compilation fails.</s><s> how can the classpath for jspc be set/controlled? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3385952-774724</DOCNO>
+<TEXT>
+<subject>jrun server thread dump...... how to interpret?</subject>
+<post author="snickerbooz" timestamp="Jan 7, 2011 8:14 AM">
+<s>i cannot find a good link any hwere on this subject..... which means i am not looking in the right place.</s><s> if anyone knows of a tutorial or somthing that can help pleas let me know... 
+thanks, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-693906</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="oconnorc" timestamp="Aug 4, 2010 12:46 PM">
+<s>i have installed jrun4 on windows server 2007 (64-bit).</s><s> it starts, and when you go to the jrun share, you can load and use the website.</s><s> so it appears as thought jrun is working correctly. 
+</s><s>however, when i try to tie it in to iis, the tool shows "none" as the only option in the "iis web site" field of web server properties (as seen below).</s><s> in the past, the options were "all" or the specific websites. 
+</s><s>has anyone else run into this?</s><s> is there a resolution i am overlooking? 
+</s><s>thank you, chris 
+</s><s>chris 
+</s><s>message was edited by: oconnorc - added screen capture 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-3442861</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="AnnShinoy" timestamp="Feb 2, 2011 3:18 AM">
+<s>even i am facing the same issue.</s><s> is there any solution for this problem 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-3468516</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="andrewjackson123" timestamp="Feb 14, 2011 9:46 AM">
+<s>please can someone post an answer to this thread.</s><s> i find myself in the exact same situation. 
+i am running iis 6.1 on windows 7 home premium.</s><s> also running coldfusion 8 (thinking of upgrading to 9.0.1 to see if the problem persists) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-3878664</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="CowboyCooler" timestamp="Aug 23, 2011 11:23 AM">
+<s>
+</s><s>i too am encountering the same issue.</s><s> great support, almost 20 days and not even an acknowledgment of the issue. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-3878666</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="CowboyCooler" timestamp="Aug 23, 2011 12:12 PM">
+<s>try giving the iis users/groups (iusr, iis_iusrs) full control over your jrun folder (c:\jrun4\lib\wsconfig) 
+</s><s>the configuration tool is trying to set iis_wpg permissions on this folder which is for server 2003, not 2008 (or vista, or windows 7). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-4537749</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="VulInd" timestamp="Jul 4, 2012 5:26 AM">
+<s>i'm not sure if this will help you.</s><s> but my issue was fixed just by running the web server configuration tool "as administrator" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/JRUN/General-Discussions-with-Jrun/Discussions-3026393-6161788</DOCNO>
+<TEXT>
+<subject>Web Server Configuration Tool does not see IIS Website</subject>
+<post author="philmunro" timestamp="Feb 27, 2014 1:08 AM">
+<s>none of the above worked for me. 
+</s><s>appreciate that that cf9 is old hat, but software doesn't suddenly stop being used just because the next version is out. 
+i would try the cf9.01 update too, however it crashes on win 8.1 
+</s><s>is the answer to drop cf9? 
+</s></post>
+</TEXT>
+</DOC>
+
+

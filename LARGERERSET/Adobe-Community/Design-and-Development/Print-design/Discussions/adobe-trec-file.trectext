@@ -1,0 +1,2344 @@
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-953122</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="generalbatzorig" timestamp="Jan 23, 2012 5:34 AM">
+<s>hello, i need an advise on how to print a very deep blue color on offset printing.</s><s> i am doing a catalog for an artist who uses very nice deep blue color.</s><s> his technique of applying the color is very special, so when seen with human eye it is very illuminating.</s><s> professional photo can capture the effect decently, but numerous trials on different publications show that offset printing can't get anywhere close to the original color by the artist.</s><s> sometimes it gets muddy grayish blue, but sometimes it gets more to the purple side with a lot of magenta in it.</s><s> if you are curious what kind of art i am talking about, you may visit www.chimeddorj.com the reason is that cyan, magenta and a bit of black can't really create a pure cobalt blue.</s><s> so i was thinking if there was a way to add an additional printing separation for a pure blue color from pantone.</s><s> that way the spot pantone blue that is closest to the artist's color will act as a base and cmyk color will add necessary shades depending on the situation.</s><s> does it sound reasonable?</s><s> does any one think it will work?</s><s> i need your opinions or expertises.</s><s> also, do you know any other web sites with forums specifically dedicated to commercial print topics? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4160447</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="John%20Danek" timestamp="Jan 23, 2012 6:01 PM">
+<s>the best thing you can do is use printed color reference guides, whether it be pantone or toyo.</s><s> use an actual guide book swatch to compare which pantone ( or whatever specialty ink supplier ) color comes closest to the artists actual print ( not the monitor ).</s><s> you are correct in recommending a spot color instead of process color on press.</s><s> however, process inks on press are semi-transparent and spot colors are opaque.</s><s> so, they cannot be mixed on press without creating a real mess. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4160566</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="generalbatzorig" timestamp="Jan 23, 2012 7:58 PM">
+<s>thanks for the reply.</s><s> it is good to know that spot colors are opaque.</s><s> the artists blue color medium is also semi-transparent.</s><s> so i wondered if i could find a specialty ink that is cobalt blue with semi-transparent quality.</s><s> do you know links for specialty ink suppliers?</s><s> it is also a good idea to match with the color books.</s><s> i have pantone solid color books. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4161716</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="John%20Danek" timestamp="Jan 24, 2012 8:39 AM">
+<s>window > swatch libraries > toyo > trumatch > visibone2 ; are three possibles found in ai ( illustrator ).</s><s> you could also do a web search using keywords like: offset printing specialty inks.</s><s> there is a slim possibility that you might have some luck by doing a double strike or triple strike on the process cyan ( i.e., instead of one layer of cyan, you could experiment with 2 or 3 layers to see if the blue's intensity gets to where you want it; however, you'd be hard pressed to find a print vendor willing to experiment ).</s><s> then, you could add in some black if need be.</s><s> that's why i say you'd be better off finding a spot color that comes close to the artist's cobalt blue.</s><s> at least you'd have some predictability. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4215575</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="vdivito1" timestamp="Feb 18, 2012 3:01 PM">
+<s>spot colors are usually not opaque.</s><s> in fact nearly all pantone colors are transparent.</s><s> if you are looking to increase color depth you may want to look into adding a "bump" color which is sometimes referred to as a touch color.</s><s> you can print your normal cmyk and, where you need extra depth, you would hit that area with a 5th color.</s><s> the would be done with a plate that contains a fifth separation.</s><s> the color should be a light version of a pms group which matches what you are trying to obtain.</s><s> this is often done on high end product brochures and annual reports.</s><s> you can read a bit about it here: http://www.printindustry.com/newsletters/newsletter-53.aspx 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4215847</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="generalbatzorig" timestamp="Feb 18, 2012 8:12 PM">
+<s>thanks a lot.</s><s> this article is more like what i had in mind at first.</s><s> so when the chance comes, i will ask the printer to try this method out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4221339</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="John%20Danek" timestamp="Feb 21, 2012 6:42 PM">
+<s>no. pantone spot colors are not transparent.</s><s> i disagree.</s><s> some are actually mixed with opaque white.</s><s> the newsletter posted above refers to adding a fifth color "touch" pass...not a mix of process and pantone spot colors.</s><s> there is a risk of consistency when you create a special "mix" of colors, which is not the same as mixing 4-c process inks with premixed pantone spot color.</s><s> they are incompatable...for good reason.</s><s> no one wants anyone mixing colors willy nilly.</s><s> so, in order to proceed, you would need to create a fifth color channel and print that in addition to the process color.</s><s> which is what i was talking about in the first place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4350800</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="generalbatzorig" timestamp="Apr 20, 2012 8:59 PM">
+<s>hi, i am back after quite a long time.</s><s> i am still considering to make the fifth color on the book that i am designing.</s><s> as you read from the previous posts, the main reason for the fifth color is to imitate the artist's color and technique as closely as possible.</s><s> you may see the sample images here. Ê http://www.flickr.com/photos/batzorig/sets/72157629499492596/ Ê if you notice, the blue color of each painting is different from others.</s><s> although the painters original canvases use more consistent shade of blue, the photos were taken by different people in different environments.</s><s> so the blues look a lot different than they really are.</s><s> and rgb color represents these blues a little better than offset printing.</s><s> so my main concern was how to print the blue color as close to the original as possible.</s><s> one of the strength of this artist is his blue color.</s><s> and if i don't show his blue effect on the catalog, i am not representing him correctly.</s><s> the blue colors in the paintings are not made of solid application but with a technique that makes it translucent like watercolor with delicate nuances with much more strength than watercolor. Ê my main question is: in your opinion, how should i separate the fifth color?</s><s> i am guessing i need to do it myself in photoshop.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4402493</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="printisnotdead" timestamp="May 13, 2012 12:50 AM">
+<s>these are really good pieces.</s><s> what techniques have you been using for the separation of colors?</s><s> maybe you can recycle the techniques a bit.</s><s> here, i found a something that might be of use to you: http://www.confessionsofaphotoshopnerd.com/blog/2011/1/27/how-to-separ ate-colours-in-photoshop.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-4422818</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="generalbatzorig" timestamp="May 19, 2012 6:16 PM">
+<s>thanks for the reply.</s><s> these pictures were straight from the camera.</s><s> they are only resized and cropped for posting on the web.</s><s> actually the photos are done by ameteurs.</s><s> the artist himself paints with a very nice colors which makes them look good even on bad photos.</s><s> after reading the link that you gave me, i got an idea that color separation is just a way of tweaking colors to my taste.</s><s> initially i was thinking that color separation is a different thing only practiced in the printing presses.</s><s> well, i am looking to learn more about it.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-5937630</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="generalbatzorig" timestamp="Dec 17, 2013 5:58 AM">
+<s>dear john danek, 
+</s><s>i hope everything is well with you.</s><s> i know that you are one of the most active participants of the adobe forums.</s><s> i would like to ask your help on a pretty complicated photoshop problem.</s><s> i thought you may have some experience printing in solid colors and separating them into channels.</s><s> i am trying to print a book using two solid colors in addition to the 4 process colors.</s><s> but the solid colors will not be applied just plainly.</s><s> the photographic images will have certain areas printed in solid colors that will diffuse smoothly with other 4 colors.</s><s> if you would like to get a better understanding of my problem, you could visit my previous post on adobe forums under these links.</s><s> you have added your entry on the second link almost a year ago. http://forums.adobe.com/message/5929818#5929818 http://forums.adobe.com/thread/953122 
+i found a printer who made me a test print with my channel separated files.</s><s> although the saturation and overall color quality has improved a lot, the test came out quite bad because i didn't separate the channels right.</s><s> i want the solid color to diffuse smoothly with other 4 colors.</s><s> so i need to learn to make the separations in a right way.</s><s> if you are willing to take a look at my sample print and the color separated ps files, i can send them to you in a link.</s><s> i have a high expectancy that this is going to work eventually.</s><s> for now it is just a matter of separating the colors in a right way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-5940091</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="jdanek" timestamp="Dec 17, 2013 6:44 PM">
+<s>try attaching a composite image here, i can split the channels on my end.</s><s> adobe tries to keep everyone's info private.</s><s> if you want to try, you could write you e-mail here and i could respond to it, but that might not fly either.</s><s> you could use a third party upload site and just send the link here.</s><s> i am glad to hear you are a bit closer on-press.</s><s> let's discuss. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-5951116</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="Jacob%20Bugge" timestamp="Dec 22, 2013 4:37 AM">
+<s>i believe it is better to exchange email addresses through private messages than to reveal them in the forums, to avoid less pleasant things. 
+</s><s>just click the avatar of the intended receiver, then click send private message under actions at the top right and take it from there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-6226465</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="jonathbenz" timestamp="Mar 20, 2014 2:31 AM">
+<s>i would like to measure the quality of a printed material in an offset.</s><s> in terms of spatial resolution, the analogue of dpi in offset printing is lines or not..</s><s>?</s><s>?</s><s> 
+
+</s><s>printing services singapore 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4158594-6227932</DOCNO>
+<TEXT>
+<subject>Offset Printing Question</subject>
+<post author="jdanek" timestamp="Mar 20, 2014 10:10 AM">
+<s>dpi = output resolution; many direct-to-plate imaging devices use 5080 dpi to image a halftone screen.</s><s> means dots-per-inch. 
+</s><s>lpi = lines-per-inch; usually refers to a halftone screen frequency.</s><s> there are ways to discover how many lines per inch were used to image an offset print. 
+</s><s>typically, there are no "lines" referenced in dpi ( dots per inch ).</s><s> your question is a little vague.</s><s> if you need more information, be a little more specific.</s><s> what do you mean by "spatial resolution"? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-1262209</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="ChristieJohann" timestamp="Jul 25, 2013 12:14 AM">
+<s>hi everyone!</s><s> i just designed this business card for my business place called sticker deals, a printing company.</s><s> i used some condensed text and some tactics in ps and ai.</s><s> let me know what do you think about it! 
+</s><s>waiting for your words! 
+</s><s>christie 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5537417</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="OldBob1957" timestamp="Jul 25, 2013 5:54 AM">
+<s>i can't tell if the text on the right is actually white, or ligt blue, but either way; depending on printing method i might be a little concerned about those thin strokes possibly closing up and getting lost.</s><s> but that's just me; i always worry about that with thin white (or light-colored) text. 
+</s><s>other than that, i like it. 
+--ob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5537985</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="John%20Danek" timestamp="Jul 25, 2013 8:46 AM">
+<s>i agree with old bob...the small text is too fine and could fill-in.</s><s> aside from that, it is difficult to read.</s><s> the pattern in the background is also a distraction and perhaps a bit too light.</s><s> a more simplified approach overall could heighten the graphics and improve readability.</s><s> a few ideas: 
+1.</s><s>) wrap the text elements along the curvature of the stripe; 
+2.</s><s>) put the tagline alone across either the top or bottom of the card, allowing you to enlarge the logo and put focus on the company name; 
+3.</s><s>) reduce the amount of condensation on the text elements and remove the word "address". 
+</s><s>have you thought about paper and spot colors?</s><s> i hope this is not another cmyk process color job.</s><s> f you use spot colors, then the text elements will hold up better.</s><s> you may want to look at another font, so the entire design does not over-use condensed typeface.</s><s> when working with a small fone, try a semi-bold...especially using white.</s><s> have you assembled a branding guide for the company?</s><s> is your design part of the look and feel of the company and is planned for use in such things as uniforms, truck graphics, signage, and stationery?</s><s> design a letterhead and envelope to match the business card and let us see the whole package. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5540787</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="John%20Danek" timestamp="Jul 26, 2013 7:16 AM">
+<s>i normally do not get involved with alternate layouts, but i wanted to show you what i meant to say in my post...visually.</s><s> while re-working your design, i came up with an additional solution for the text elements.</s><s> because the address line is the longest line in the paragraph, i put it as the first line which gives your card some distinction.</s><s> i also used 9pt font on the address lines and would not go any smaller than that.</s><s> food for thought. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5546642</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="ChristieJohann" timestamp="Jul 28, 2013 10:14 PM">
+<s>i liked your pattern.</s><s> you're right address is the longest text so it suits pretty much up there and fonts also looks cool!</s><s> but i was considering to use steelfish font!</s><s> what do you think about it because i love that font!</s><s> i normally deisgn most of of work on steelfish i 'm on the verge of designing my card accoring to your recommendations!</s><s> once it is done i would love to share with you guys but i appreciate all of you guys fo helping me out and pointing out my errors!</s><s> hope you guys will help me in future as you did like this 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5549703</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="John%20Danek" timestamp="Jul 29, 2013 7:01 PM">
+<s>be careful you do not over-use a certain font.</s><s> typography is a huge element in graphic design.</s><s> typography "sets the table" for communicating and communications.</s><s> i bet you used "steelfish" for the logo "stickerdeals".</s><s> that's okay.</s><s> you could reserve that branding font for headlines, but would you use it for body copy?</s><s> beware of readibility.</s><s> i recommended a second font that could put emphasis on other messages, adding some contrast to the look and feel.</s><s> try to keep thinking outside-the-box ( so to speak ).</s><s> you've done a fairly decent job on your business card.</s><s> when working on a project, try 3-4 different layouts.</s><s> print them and post them on the wall where other people can see them.</s><s> ask some of your co-workers to stop by and take a look at what you've come up with for concepts.</s><s> take notes on what the others have to say.</s><s> this will help you make improvements ( if necessary ) and will give you valuable feedback before the actual card is printed and put into use. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5549856</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="ChristieJohann" timestamp="Jul 29, 2013 8:47 PM">
+<s>alright now what do you think guys? 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-5562516</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="John%20Danek" timestamp="Aug 2, 2013 5:34 PM">
+<s>let's see 2 more alternates.</s><s> for your latest iteration, try to keep the fonts a good distance away from the trim.</s><s> the address font is too thin and is filling-in on your jpg.</s><s> when working with reverse type, use a semi-bold and maybe even something with a serif.</s><s> go ahead and place the logo in a different location and see how that looks.</s><s> like i recommended in my last post, show multiple layouts and show them to get feedback. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5536803-6083331</DOCNO>
+<TEXT>
+<subject>Need Reviews For My Business Cards</subject>
+<post author="jessicajohn" timestamp="Feb 3, 2014 8:40 PM">
+<s>it is really nice one but i think you need to put your contact information at bottum becasue your content information is too much prominent you try to cover your brand name on contact's place.</s><s> i created one card and i would like to share it with you, here is the example 
+
+
+</s><s>here i put the contact information at the bottum, you should cover your logo, your official names and company slogan on top then cover your contact information. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5966713-1367826</DOCNO>
+<TEXT>
+<subject>What software do you use?</subject>
+<post author="Zo‘ Woodworth" timestamp="Dec 30, 2013 10:43 AM">
+<s>say you're creating a print ad for a magazine.</s><s> you want to combine one or more photos with text and vector logos.</s><s> you will need to manipulate the photos so they work will with the text.</s><s> your final output will be a pdf which you will deliver to the publisher.</s><s> what software do you use? 
+i feel like it is not considered a best practice to use photoshop exclusively for designing print materials.</s><s> i have tried creating ads in illustrator and indesign, but it doesn't feel as efficient from a workflow perspective; there is a lot of going back and forth between those programs and photoshop.</s><s> if it can all be done within photoshop and a pdf can be generated from there, why not just do that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5966713-5966750</DOCNO>
+<TEXT>
+<subject>What software do you use?</subject>
+<post author="Dov%20Isaacs" timestamp="Dec 30, 2013 10:59 AM">
+<s>since you need to manipulate the photos, you must use an image editor for at least part of your work. 
+</s><s>if you need to manipulate vector objects (beyond simply sizing and rotating, you need software that do such manipulation. 
+</s><s>although you can conceivably create an advertisement exclusively in photoshop, it could be akin to using a screw driver as a hammer.</s><s> photoshop is great at image manipulation but has very limited vector object handling.</s><s> nor is photoshop recommended for any significant amount of text handling. 
+</s><s>generally speaking, at adobe we would recommend that you use photoshop for image preparation and manipulation.</s><s> the resultant images would then be placed into either an illustrator or indesign document which would provide a much better environment for dealing with text and vector.</s><s> in terms of choice of illustrator or indesign, much depends on your specific needs.</s><s> illustrator has much more extensive and powerful vector manipulation tools.</s><s> indesign is a much more powerful layout tool, especially when dealing with multiple color spaces and multiple pages.</s><s> many users use indesign for the overall document (whether an advertisement - partial page, full page, or even multiple page - or a more complete document) and use photoshop for image preparation and illustrator for or complex vector artwork prepation, placing the resultant images (as pdf, tiff, or jpeg) and vector artwork (as pdf) into the indesign document. 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5966713-5970412</DOCNO>
+<TEXT>
+<subject>What software do you use?</subject>
+<post author="jdanek" timestamp="Dec 31, 2013 6:20 PM">
+<s>i'd start with a layout, a concept if you will.</s><s> people tend to forget that software is just a tool to get the job done.</s><s> if your objective is to be as efficient as you can, photoshop is not the ideal layout tool, but instead one piece of the tool kit ( per isaac dov's post above ).</s><s> personally, i use illustrator for magazine ads ( i see no point in the additional nonsense of placing a pdf, an .ai or .eps file in indesign ).</s><s> i do agree that indesign or quarkxpress are appropriate for multi-page layouts ( catalogs, books, magazines, etc.</s><s> ).</s><s> but, anything one page wiill be appropriate using illustrator, very efficient.</s><s> for me, anyway.</s><s> if you want to use photoshop, use photoshop ( i just don't recommend it ). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5966713-5976582</DOCNO>
+<TEXT>
+<subject>What software do you use?</subject>
+<post author="Danny%20Whitehead." timestamp="Jan 3, 2014 5:30 AM">
+<s>raster/photographic image manipulation in photoshop, usually saved in psd format.</s><s> vector art (logos and/or illustrations) in illustrator, usually saved in ai format.</s><s> files that are common to multiple jobs (like logos) will be saved into a particular folder for each client or brand.</s><s> bring it all together for layout, typesetting and final pdf creation in indesign. 
+</s><s>basically, the conventional way.</s><s> design applications have grown to encroach on one another's capabilities, but there's still a most appropriate tool for each job.</s><s> there are situations where it's a choice between id or ai for the layout, and i have a bias (probably not an entirely objective one) towards using id.</s><s> i only set type in ps when it's raster-effect-laden or part of a photographic image. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5865608-1341397</DOCNO>
+<TEXT>
+<subject>CMYK values different on 2 machines?</subject>
+<post author="Mark \"Shoe\" Warman" timestamp="Nov 22, 2013 7:12 AM">
+<s>we have got 2 apple imacs both running 10.9 and creative suite both have colour settings synced via bridge to euro pre-press 3, when we convert a spot pantone colour to cmyk we are getting a different colour split to each other, illustrator and photoshop are ok it is only indesign?</s><s>?</s><s> all settings are the same on both macs, the colour we are testing is pantone 2607c Ê on one machine we are getting the following: illustrator: c85.94 m100 y18.39 k6.59 photoshop: c86 m100 y18 k6 indesign: c85.94 m100 y18.39 k6.59 Ê on one machine we are getting the following: illustrator: c85.94 m100 y18.39 k6.59 photoshop:Ê c86 m100 y18 k6 indesign: c87.1 m100 y22.6 k9.96 Ê the only problem is in indesign!</s><s>!</s><s>!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5865608-5865925</DOCNO>
+<TEXT>
+<subject>CMYK values different on 2 machines?</subject>
+<post author="jdanek" timestamp="Nov 22, 2013 8:57 AM">
+<s>you say you have bridge sync'd on both machines.</s><s> have you gone through the indesign color settings: "use black point compensation" and "rendering intent"?</s><s> also, go through the indesign preferences file on the imac that shows the shift.</s><s> "appearance of black" may be set to something different than the others.</s><s> and, check the display settings to see if something there is out of whack.</s><s> have you run test proofs to see if there are deviates there ( ouput ) that are obvious? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-1335466</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="RaeRae79" timestamp="Nov 14, 2013 10:51 AM">
+<s>hi there, Ê please help!</s><s> i have been asked by a client to design a leaflet for his business, it's pretty standard and he wanted colours that are used in his l Ê his logo was designed in photoshop and i asked for the original file but he only had a high res jpeg and a flattened psd.</s><s> i asked for the pantone or cmyk values but was just given web values so i colour matched the colours used in the logo and transported the jpeg into indesign and just carried on laying the leaflet out as i normally would using the cmyk colour match values.</s><s> i sent him the proof and he said he wanted the colours changed as they weren't bright enough.</s><s> when i looked at the photoshop file again he was right, the original colour is much brighter.</s><s> changed the colour profile i was working in (which was rgb) to cmyk.</s><s> the colour in the logo immediately looked brighter so i matched that colour and it matched to an rgb colour so i changed all the colours to the rgb colour (even though i wanted to work in cmyk) which looked much more like the original logo colour.</s><s> however when i proof the colours it turns back to the duller colour.</s><s> does anyone know what is causing this problem?</s><s> i have never encountered it before?</s><s> is it because it was designed using web values or am i working in the wrong profile?</s><s> how do i change it so that the colour looks the same on the print document as it does on the psd logo? Ê i need a quick turn around on this and am out of my depth at the moment!</s><s> i have just set up freelance as i was made redundant from my last job and i haven't ever encountered this before.</s><s> hoping one of you knows how to help.....i'm working in cc Ê looking forward to hearing your replies, Ê many thanks in advance
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5843091</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="jdanek" timestamp="Nov 14, 2013 12:02 PM">
+<s>when you open the reference file, is there an embedded profile ( i.e., srgb, prophoto rgb, etc.</s><s> )?</s><s> this subject is very technical, but i will try to help you along.</s><s> i understand your frustration because your situation ( should not be ) is somewhat typical where client has unrealistic expectations.</s><s> because you are working in an ultimately print workflow, the file will eventually be printed and the result will be a reflective color environment based on lighting and paper.</s><s> client has been seeing his logo in a transmissive color environment ( i.e., web browsers ).</s><s> this is ***-backwards ( pardon my french ).</s><s> you are going to have to squeeze all of the color gamut out of that reference file and try to retain as much of it as possible.</s><s> i would attempt this by opening the original reference file and assign a fairly wide gamut to it ( i.e., adobe rgb ).</s><s> in indesign use all best color presets you can get your hands on.</s><s> save a copy of the original reference file saved with a decent profile and convert a copy to an appropriate cmyk color space profile.</s><s> what are your application color settings?</s><s> it could be that the reference file was saved in srgb color space, which looks good in a web browser, but gets clipped dramatically upon conversion and/or print.</s><s> once you have opened in adobe rgb and converted to cmyk, you can ( as an option ) adjust the color curves to get better color. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5843145</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="RaeRae79" timestamp="Nov 14, 2013 12:07 PM">
+<s>thank you for your reply.</s><s> after further research yes the logo was originally created in rgb for web and a sign (signs use ral colours or something similar i think so might have been able to get a better match) i cannot seem to get a better match than the one i already have but i have a disappointed client now and as the logo was created by someone who wasn't thinking of print considerations the client has seen his colour on screen and assumes that he can have the same colour in print.</s><s> i will try your suggestion.</s><s> thank you very much again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5844473</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="RaeRae79" timestamp="Nov 15, 2013 1:33 AM">
+<s>when i open the source file (psd) and look at 'assign profiles' it says 'don't colour manage this document' that is the option that is checked.</s><s> the rgb profile is adobe rgb 1998 how would i look for any embedded profiles?</s><s> the client says that he has had business cards printed with accurate colour match so it must be possible but i was up for hours last night trying to work it out with no success. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5845226</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="jdanek" timestamp="Nov 15, 2013 8:06 AM">
+<s>it's difficult to recommend anything without seeing the file.</s><s> if possible, attach the .psd to your post.</s><s> indesign has application color settings.</s><s> if you have adobe bridge, you can synch all of your application color settings there.</s><s> i am concerned about an obvious shift where it is obvious to the customer.</s><s> he says the business cards match, but in reality they may not.</s><s> the way things are going, he will continue to run into problems matching color further on even if he does business with someone else.</s><s> when you open the psd in photoshop, assign the adobe rgb there and save it under a new name so you know in the furture it is adobe rgb.</s><s> forget the jpeg ( use it for web only ).</s><s> i am assuming the file is psd because it needs to be psd for whatever reason.</s><s> in indesign, set your cmyk workspace to an appropriate profile ( like swop coated v2 ).</s><s> now, if the file is so dulled down that it is noticeable, then you could adjust the "cmyk" curves to brighten it a bit.</s><s> this is an excellent opportunity to gain some more work ( if possible ) with this client.</s><s> that will require educating him/her in the proper logo production techniques.</s><s> no way should a logo be produced in photoshop and especially rgb color space.</s><s> you've been in the business long enough to know what the proper procedures are.</s><s> if they are unwilling to invest in a rock solid solution, then it may be better to reject their business and move on.</s><s> client is basicly blaming you for their mistakes.</s><s> the frustration is that the client likes monitor color which is an illusion.</s><s> at this point, client has to be more cooperative and lead you to their business card printer so you can investigate what they received from said client as a file and in what color space using what profile.</s><s> if printer accepted an rgb based file, ask them for their workflow requirements and file parameters.</s><s> this should give you a little more background so you can beging to build a solid foundation for said client's corporate identity.</s><s> if their vendor, along with themselves, refuse to cooperate, then forget them.</s><s> it's in their best interest to supply you with everything you need to accomplish whatever outlandish color they were able to achieve. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5845298</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="jdanek" timestamp="Nov 15, 2013 8:22 AM">
+<s>when you open the ( psd ) file in photoshop, use the eyedropper tool to get a read on some of the areas of the logo ( enlarge it on screen to do this ).</s><s> have your info palette open and check the cmyk and rgb colors for out-of-gamut color ( usually you will see a triangle with an exclamation point next to the read ).</s><s> let me know what you find when you do that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5845377</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="RaeRae79" timestamp="Nov 15, 2013 8:45 AM">
+<s>hi, thank you so much for responding.</s><s> i have tried what you suggested and have got the best colour possible, it is still duller than the original but i'm sure it's the best that can be achieved.</s><s> i contacted my printers who basically said the same as you, that this is a common problem with the colour they are trying to achieve as cmyk is a smaller colour space than rgb.</s><s> i forwarded the email to the client and he has agreed to go for the adjusted colour, which is a relief.</s><s> i would really like to redesign the logo for him to be honest but i know he likes the brighter colour and has already used it on his sign so i think he will keep that one and just have to accept that the duller colour will have to be used in print material.</s><s> he has asked me to do some more work for him after christmas so i will work on the same principle then.</s><s> it is frustrating as i don't know who designed the logo but you're right it should never have been designed in photoshop or in rgb/hex it and i am a kind of a branding purist, i am very particular about consistency accross a brand.</s><s> thank you very much for your help.</s><s> i am not very technical and like i said i haven't encountered this problem before, if nothing else this has been a learning experience for me, thank you for explaining clearly, i thought at first it was me doing something wrong!</s><s> thanks again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5842817-5845423</DOCNO>
+<TEXT>
+<subject>HELP! Colour Profiles</subject>
+<post author="jdanek" timestamp="Nov 15, 2013 9:13 AM">
+<s>i get a sense the logo is a little more complicated than it should be.</s><s> sign shop can do very nice work, but it is their responsibility to attain accurate color where possible.</s><s> client is winging-it.</s><s> by accurate color i mean standard color reproduction.</s><s> if client wants you to do more work it is time for a sit-down.</s><s> you have to plead your case that he must trust you to deliver optimum results.</s><s> forget about the problems with the logo, they probably will be turned-off by that.</s><s> instead, walk them through the power of their brand and the ability to maintain consistency in all media.</s><s> otherwise they will continue to have misrepresentations n the marketplace.</s><s> i assume you've done this before, so i will not outline what is required to do that.</s><s> however, explain to said client that a brand guide would solve a slew of problems in their marketing communications.</s><s> i also get a sense that client is small and may not see the value of investing time and money in investing in a rock solid foundation.</s><s> if so, their building will continue to fall down. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5832416-1332802</DOCNO>
+<TEXT>
+<subject>Is it recommended to link an illustrator file within another illustrator file?</subject>
+<post author="Izubikarai" timestamp="Nov 11, 2013 7:36 AM">
+<s>considering best practices for design reproduction... and that the linked file will contain a linked photoshop image. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5832416-5836075</DOCNO>
+<TEXT>
+<subject>Is it recommended to link an illustrator file within another illustrator file?</subject>
+<post author="jdanek" timestamp="Nov 12, 2013 10:12 AM">
+<s>i believe once you link an image, wherever it goes goes the image, too.</s><s> things get dicey when you move the image from where it was linked from, but if you have not moved the image and it shows it is still linked in the links palette of the first illustrator file ( which is placed into a new illustrator document ), then the image remains linked.</s><s> so, to answer your question, no need to link again in the second file ( unless the link was somehow broken ). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5795368-1323738</DOCNO>
+<TEXT>
+<subject>Logo breaking apart when turned into an EPS</subject>
+<post author="Dalal Nizam" timestamp="Oct 28, 2013 4:03 PM">
+<s>hello all Ê i'm experiencing a problem with a client's logo that is becoming increasingly annoying and making it difficult to reproduce via printing.</s><s> each time i turn the logo into an eps for printing it breaks apart.</s><s> i've included a dropbox link to show you what i mean.</s><s> lines appear throughout the logo, i first thought perhaps it was the pdf glitching but when printed, those lines came through. Ê i've overcome this problem temporarily by going into photoshop, flattening the logo according to the dimensions i need it in and bringing it back into the document but it doesnt turn out as crisp and clear as it would as an eps Ê i'm not sure if there is something in the settings that is causing it to break apart, or i'm doing something wrong or the file is corrupted but i'd really like to know why this is happening. Ê here is the link: https://dl.dropboxusercontent.com/u/23734571/cra_logo_breaking_apart.p df Ê doesn't seem to be breaking apart as horribly as it would in this instance but the screen shot provided on the second page should show you what happens in illustrator and indesign when its introduced as an eps.</s><s> all other formats are fine. Ê any advice anyone can give me would be extremely helpful. Ê cheers,
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5795368-5795618</DOCNO>
+<TEXT>
+<subject>Logo breaking apart when turned into an EPS</subject>
+<post author="jdanek" timestamp="Oct 28, 2013 6:14 PM">
+<s>that doesn't appear to be the original artwork.</s><s> my guess it is a regenerated version of a pdf opened and saved in illustrator.</s><s> when you save it as an eps, the file is rendered and flattened.</s><s> see if you can get your hands on the original file, which could be a layered .ai file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5795368-5795727</DOCNO>
+<TEXT>
+<subject>Logo breaking apart when turned into an EPS</subject>
+<post author="Dalal%20Nizam" timestamp="Oct 28, 2013 7:21 PM">
+<s>that would make sense, i'm not sure which is the original file.</s><s> i only started working with cra this year and the logo was created 10 years ago from my understanding.</s><s> is there any way to find the original without saving them as an eps and seeing which one doesn't break apart?</s><s> is there anything i can do with the existing files that could stop it from breaking apart? 
+</s><s>also, if you don't mind me asking, how did you know that?</s><s> has this problem happened with you before? 
+</s><s>thank you so much for your reply, it's really helped shed some light on this issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5795368-5797355</DOCNO>
+<TEXT>
+<subject>Logo breaking apart when turned into an EPS</subject>
+<post author="jdanek" timestamp="Oct 29, 2013 9:15 AM">
+<s>no. typically i never see that type of "rendering" or re-interpretation.</s><s> it's my guess as to what is going on with the artwork you are working with.</s><s> rarely i will get a second generation vector file that has some type of gradient mesh applied to it and the original file was never "expanded".</s><s> when re-opened, illustrator redraws the gradients using multiple paths.</s><s> the danger i doing it that way is illustrator might be using the preview data to interpret the artwork because the original artwork is not available.</s><s> and, somewhere along the way a pdf was produced from the original artwork and now is being redrawn.</s><s> this is all my hunch.</s><s> it could also be the riginal was created on a pc and is now reinterpreted on a mac or vice versa.</s><s> take a look at the layers of all of the files you have.</s><s> check, too, if there are any missing bitmap links.</s><s> you are now an official forensic software investigator. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5795368-5811994</DOCNO>
+<TEXT>
+<subject>Logo breaking apart when turned into an EPS</subject>
+<post author="Dalal%20Nizam" timestamp="Nov 3, 2013 7:45 PM">
+<s>hey! Ê ha, i've upgraded from graphic designer to forensic software investigator, i'm okay with this!</s><s> i didn't realise second generation vector files could do this but in saying that, i found the original which was an eps vector.</s><s> however, the emblem-like graphic (the circular graphic, not sure what to call it) is half vector, half photoshop.</s><s> the green dna-looking structure was made in illustrator.</s><s> the shadow that embodies the circle was created in photoshop.</s><s> the 2 have been combined and brought into an illustrator file but the emblem-like graphic has been linked in from photoshop. Ê either way, the logo still breaks apart even with the original files. Ê any further advice or are you as stumped as me?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5795368-5813170</DOCNO>
+<TEXT>
+<subject>Logo breaking apart when turned into an EPS</subject>
+<post author="jdanek" timestamp="Nov 4, 2013 7:53 AM">
+<s>do you have the original layered file?</s><s> my guess is the logo was not created properly.</s><s> there should be no need to use a photoshop shadow file.</s><s> i would try to simplify each layer using some of the pathfinder tools like merge, intersect, etc. all of the sectioning is happening in the flattening process when you do the save as > eps.</s><s> you may have to rebuild the file ( i.e., photoshop shadow ) and, in the process, simplify the parts.</s><s> it is going to take some experimentation to get a clean version of the logo.</s><s> i am not "stumped", but would proceed as i've indicated here.</s><s> you could post in the illustrator forum and see what others have to say about it.</s><s> as far as logos go, it is not an ideal piece of art.</s><s> vendors should not have any problems putting a logo into production.</s><s> but, this is a clear case of an overly complicated application of what is supposed to be a simple graphic. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5792196-1323011</DOCNO>
+<TEXT>
+<subject>Document size for a (8x6 meters) banner</subject>
+<post author="Leen26" timestamp="Oct 27, 2013 12:27 PM">
+<s>hello, i'm designing a big banner (8x6 meters) using photoshop, what document size should i work on and what resolution and dpi should i use for a good printout?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5792196-5793095</DOCNO>
+<TEXT>
+<subject>Document size for a (8x6 meters) banner</subject>
+<post author="Imranma" timestamp="Oct 27, 2013 11:29 PM">
+<s>hello leen that is 800cm by 600cm and you can use 72-100 dpi 
+</s><s>regards imran ma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5792196-5796571</DOCNO>
+<TEXT>
+<subject>Document size for a (8x6 meters) banner</subject>
+<post author="OldBob1957" timestamp="Oct 29, 2013 4:43 AM">
+<s>a lot depends on final viewing distance.</s><s> below are two good articles on the subject -- though the first one is aimed more at fine art prints. 
+http://www.digitalphotopro.com/technique/workflow/the-right-resolution 
+http://www.northlight-images.co.uk/article_pages/print_viewing_distanc e.html 
+--ob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4239176-969578</DOCNO>
+<TEXT>
+<subject>offset printing of watercolor art</subject>
+<post author="generalbatzorig" timestamp="Aug 17, 2012 10:53 AM">
+<s>i am a young designer with little experience in book publishing.</s><s> currently i am working on a catalog of an artist.</s><s> it consists of oil paintings and water colors.</s><s> but preparing the cmyk images for watercolors is a bit tricky for me.</s><s> there are many watercolors with very subtle tints of color wash, and from my previous experience these light watercolors tend to lose their luminosity after printed.</s><s> so, i wanted to get a little extra advice on how to prepare the best images for printing watercolors in book.</s><s> there are several different adjustment tools in photoshop such as brightness/contrast, levels, curves, exposure, and vibrance etc. but i don't know which one is more suitable to make the punch the colors a little more and add a little more contrast.</s><s> if you know any other links in this topic, i will be happy to read more. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4239176-4240703</DOCNO>
+<TEXT>
+<subject>offset printing of watercolor art</subject>
+<post author="John%20Danek" timestamp="Mar 1, 2012 4:23 PM">
+<s>i wonder if you've ever heard of hexogram printing?</s><s> you will never be able to replicate a painter's palette using cmyk alone.</s><s> printing presses are limited to the amount of ink they can lay down, but i tend to think you are trying to match some pastel type variants in press.</s><s> there are also certain types of paper you might consider.</s><s> paper that will absorb the ink and have some tooth to it.</s><s> you do not mention how the images are captured.</s><s> are they digital pics or scans?</s><s> i've read your post and i think you need to look beyond photoshop, a little outside the box, if you will.</s><s> there are specialty printers, book printers who specialize in archival type work and do a phenominal job reproducing fine art.</s><s> of course, there are tools in photoshop that can enhance an image.</s><s> you should get dan margulis' "photoshop lab color" and "professional photoshop".</s><s> very, very good references to optimizing images and they have several different approaches to some common problems. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4239176-5784529</DOCNO>
+<TEXT>
+<subject>offset printing of watercolor art</subject>
+<post author="JamesJocky" timestamp="Oct 24, 2013 2:22 AM">
+<s>how are the paintings getting onto the computer?</s><s> are they being photographed or scanned up?</s><s> what kind of scanner is being used?</s><s> some painting companies photographs better than scanned and vice versa, but usually how the image is uploaded to the computer is a big factor in how it looks on the computer.</s><s> other than that all you can really do is adjust the settings in photoshop.</s><s> if you had an example i might be able to help you out a bit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5760348-1315301</DOCNO>
+<TEXT>
+<subject>Printing info</subject>
+<post author="CoGordo4" timestamp="Oct 14, 2013 10:01 PM">
+<s>hi, 
+</s><s>i am graphic designer for small digital printer.</s><s> i am constantly running into issues making my rip software( fiery cws) and printer(xerox 700) properly print art my customers and i have created.</s><s> i am pretty versed in the full creative suite (atleast indesign, illustrator and photoshop) but i am have real trouble finding good info on how intergrate it properly into a professional setting.</s><s> judging by all the terribly set up files i see on a daily basis i am not the only one.</s><s> does any one know of any good resources for finding good information for printing professional in regards to adobe products?</s><s> anything would help. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5760348-5779905</DOCNO>
+<TEXT>
+<subject>Printing info</subject>
+<post author="jdanek" timestamp="Oct 22, 2013 12:34 PM">
+<s>check out adobe's print publishing guide ( do a search on the web ).</s><s> the key to consistency is calibrating your hardware and setting up correct application color settings.</s><s> have you read the rip operator's manual?</s><s> since it sounds like you are in a "closed loop" work environment, you should definitely get all of the applications and your hardware calibrated in order to optimize ouput and retain consistency.</s><s> xerox may be able to help as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5760348-5780082</DOCNO>
+<TEXT>
+<subject>Printing info</subject>
+<post author="Jacob%20Bugge" timestamp="Oct 22, 2013 2:25 PM">
+<s>john, 
+</s><s>am i right in believing that you have stopped being you usual self after an encounter with the new sign in? 
+</s><s>if so, i believe a private message to madison may be the fastest way to become your own self again, http://forums.adobe.com/people/m.m.murphy.</s><s> others have been helped back by her. 
+
+</s><s>cogordo, 
+</s><s>i apologize for this ot post. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5760348-5780698</DOCNO>
+<TEXT>
+<subject>Printing info</subject>
+<post author="jdanek" timestamp="Oct 22, 2013 5:52 PM">
+<s>you are very perceptive.</s><s> to be frank, i really could care less about points or number of posts.</s><s> so, getting back the old me?</s><s> please.</s><s> if i were you, i'd be more concerned about the direction the entire adobe cloud is going and has gone.</s><s> user personal information was never as vulnerable as it is right this second, as i type this message.</s><s> security breaches will continue to happen because of the great misconception that commerce can be done via the internet.</s><s> yes, i know we've been doing it for a long time now.</s><s> but i value brick and mortar storefronts where we can buy software without giving away the kitchen sink.</s><s> but, as far as i'm concerned, the security announcement and the so-called fix is a joke, just like the cloud is.</s><s> the only reason i re-up'd my sign-in was so i could help fellow users.</s><s> but, this may be on a limited time basis because now i am getting dupe messages in my email in-box.</s><s> what a pain. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5760348-5781624</DOCNO>
+<TEXT>
+<subject>Printing info</subject>
+<post author="Jacob%20Bugge" timestamp="Oct 23, 2013 4:59 AM">
+<s>john, 
+</s><s>i apologize.</s><s> other natives caught in it have been happy to become their old selves again.</s><s> i hope you are aware that most of those labelled mvps are just common natives like you and i (having no clue who made the decision or why).</s><s> i know no more about the cloud or the inner workings of the forums than do you, i just care about friends and people in need, and carry on as i have always done since some time round the turn of the millennium, trying to do something about what i may do something about. 
+</s><s>with regard to the email notifications, you may try the suggestions here, if you decide to hang in here, http://forums.adobe.com/thread/416458 
+i for one should be sorry to see you leave for good, after witnessing how well you have helped so many. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5760348-5782545</DOCNO>
+<TEXT>
+<subject>Printing info</subject>
+<post author="CoGordo4" timestamp="Oct 23, 2013 9:18 AM">
+<s>thanks jdanek, 
+i will check out the adobes print publishing guide.</s><s> hopfully it will fill in some of the blanks between fiery's tec. support and my general knowledge of cs6.</s><s> i am shocked there isn't more books and tutorials about these things.</s><s> as a digital printer i am constantly given nearly unprintable ( or atleast things that arn't going to look anything like the designer thought) documents.</s><s> it's frustrating.</s><s> i think it is discusting that many graphic design schools don't teach anything about producing art that can be printed.</s><s> i know my bfa program at colorado state didn't cover it at all.</s><s> it makes printing so much harder when you have to fix every file that comes your way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5778444-1319653</DOCNO>
+<TEXT>
+<subject>How to make the same shadow in Photoshop CS6</subject>
+<post author="kristapswaits" timestamp="Oct 22, 2013 4:01 AM">
+<s>blue is what i need to digitalize and black is old one and i need to make a digital version from that.</s><s> font is the same, but i cannot get the same shadow.</s><s> pls help.</s><s> thanks in advance 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5778444-5779813</DOCNO>
+<TEXT>
+<subject>How to make the same shadow in Photoshop CS6</subject>
+<post author="jdanek" timestamp="Oct 22, 2013 12:28 PM">
+<s>you're in photoshop?</s><s> it looks like all you need to do is modify a few areas ( outline thickness, open areas vs. closed areas ).</s><s> but i wonder if the font has another weight to be considered, because it does not match.</s><s> see if you can get your hands on the original font(s). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5707610-1302493</DOCNO>
+<TEXT>
+<subject>How to automate "Change Case To Title Case"</subject>
+<post author="KARTGuy" timestamp="Sep 23, 2013 3:19 PM">
+<s>i have word files that the titles are in all upper case.</s><s> i want the titles to be in tile case.</s><s> i am flowing them into indesign cc and am having to manually select them then change them to "title case".</s><s> all of the titles are done with the same character color, so i can find them using the find/change command in indesign, but i still have to manually select the change to title case command.</s><s> this is 900 pages worth of documents with 2-3 titles per page.</s><s> here is a few ideas i have explored.</s><s> doing a script - i am not familiar with scripting.</s><s> the findchangeallcaptotitlecase.jsx script is erroring out on me.</s><s> it would nice to have a "record actions" command like photoshop does" use find/change, but then have a " make title case" command.</s><s> i can not find just a command.</s><s> automator workflow?</s><s> 
+</s><s>does anyone have any options to pursue?</s><s> thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5707610-5707680</DOCNO>
+<TEXT>
+<subject>How to automate "Change Case To Title Case"</subject>
+<post author="Jacob%20Bugge" timestamp="Sep 23, 2013 3:33 PM">
+<s>kartguy, 
+</s><s>i believe this is one for the relevant indesign forum, 
+http://forums.adobe.com/community/indesign 
+such as the indesign scripting forum, 
+http://forums.adobe.com/community/indesign/indesign_scripting 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5666771-1292569</DOCNO>
+<TEXT>
+<subject>Die Cut Printing?</subject>
+<post author="danldurall" timestamp="Sep 9, 2013 1:48 PM">
+<s>i'm looking for a good resource to print custom sized bookmarks with two rounded corners (die cut).</s><s> it's been surprisingly difficult find anyone that will do this.</s><s> i'm hoping someone can point me in the right direction. 
+</s><s>these would be relatively low-quantity prints. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5666771-5667408</DOCNO>
+<TEXT>
+<subject>Die Cut Printing?</subject>
+<post author="John%20Danek" timestamp="Sep 9, 2013 5:45 PM">
+<s>start with some of your local print shops who may or may not have something in-house that could do the job.</s><s> if not, they have vendors who sub-contract that type of work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5666771-5668616</DOCNO>
+<TEXT>
+<subject>Die Cut Printing?</subject>
+<post author="danldurall" timestamp="Sep 10, 2013 6:29 AM">
+<s>hi john, 
+</s><s>this was my first direction.</s><s> fedex/kinkos and a few local print shops later the best i found were these little hand-operated, spring-loaded machines that used a curved blade cut the rounded corners.</s><s> the problem is you have to do this by eye, the corners do not taper well back into the edge of the paper, and the blade never cuts in the same place twice.</s><s> basically, it looks really sloppy.</s><s> they never mentioned anything about sub-contracting but, a few vendors in the internet have offered this with no-go limitations. 
+</s><s>i'd prefer to talk to / work with a die-cutter / printer directly, and was hoping someone would know where to go. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5666771-5668953</DOCNO>
+<TEXT>
+<subject>Die Cut Printing?</subject>
+<post author="John%20Danek" timestamp="Sep 10, 2013 7:48 AM">
+<s>right.</s><s> i bet kinko people have no idea what a stamp and die vendor is.</s><s> i guess it depends on where you are located and the resources that are available on a local level.</s><s> all the more reason to contact local print shops ( not staples, fedex, etc.</s><s> ).</s><s> some larger shops will have cutting equipment that can do the job.</s><s> smaller ones send the job out to stamp + die specialists. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5666771-5672266</DOCNO>
+<TEXT>
+<subject>Die Cut Printing?</subject>
+<post author="OldBob1957" timestamp="Sep 11, 2013 7:32 AM">
+<s>in addition to print shops, try your local sign shops. 
+--ob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5655278-1289816</DOCNO>
+<TEXT>
+<subject>Lock aspect ratio of a logo?</subject>
+<post author="amkhairat" timestamp="Sep 5, 2013 4:37 AM">
+<s>how can i lock and save the aspect ratio of a logo so that users cannot change it?</s><s> i need to lock it so users do not distort logo when resizing - can it be done in photoshop/illustrator? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5655278-5660811</DOCNO>
+<TEXT>
+<subject>Lock aspect ratio of a logo?</subject>
+<post author="Jacob%20Bugge" timestamp="Sep 7, 2013 3:04 AM">
+<s>amkhairat, 
+you can never prevent disproportionate rescaling unless you deliver in print. 
+i believe ready versions in foreseeable sizes of use and instructions are your only hope(s). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5655278-5669806</DOCNO>
+<TEXT>
+<subject>Lock aspect ratio of a logo?</subject>
+<post author="amkhairat" timestamp="Sep 10, 2013 11:56 AM">
+<s>thank you jacob for answering my question. 
+i was hoping there might be a way around it, apparently not , though... 
+</s><s>thanks 
+</s><s>alia 
+</s><s>sent from my iphone, may contain numerous errors... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5655278-5670231</DOCNO>
+<TEXT>
+<subject>Lock aspect ratio of a logo?</subject>
+<post author="Jacob%20Bugge" timestamp="Sep 10, 2013 2:10 PM">
+<s>you are welcome, alia. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-1210615</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="AnnieG_416" timestamp="May 12, 2013 8:45 PM">
+<s>i'm designing a brochure in illustrator that contains several logos and photos.</s><s> (yes, i know, illustrator...</s><s> i've read several forums and know that indesign may be a better program for this, but i completely underbid this project and really need to stick with something i know for cost efficiency.</s><s>) 
+</s><s>i need to resize several images in photoshop to place in illustrator and i'm wondering if i should save them as cmyk jpegs, or tiffs, etc.</s><s> i need the file to be the smallest it can be for upload to the printer.</s><s> i need the basics on different file types and their pros and cons. 
+</s><s>also, when i'm sending out the proof to the customer, any tips on saving the pdf so the images aren't too blurry and the file is still sendable? 
+</s><s>please help!</s><s>!</s><s> any other information or tips on how to prepare my file as a print ready would be great.</s><s> i love to learn and really need some great resources. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5315113</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="Jacob%20Bugge" timestamp="May 13, 2013 2:41 AM">
+<s>annie, 
+</s><s>there is nothing wrong in using illustrator for a brochure, especially with few pages. 
+</s><s>when you say resize, do you mean invasive operations like changing the quality of the image or just non invasive operations like changing the outer dimensions or cropping off parts? 
+</s><s>if the latter, you can just place the images, including the photos as they are, as linked files in the ai document and resize or use clipping paths to object>clipping mask>make, then print to or save (a copy) as pdf when you are done. 
+</s><s>with that there is no need to worry about file file types or blurriness. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5315641</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="John%20Danek" timestamp="May 13, 2013 7:32 AM">
+<s>how many pages are we talking about?</s><s> the key to file efficiency is placing images at their final size, so you are on the right track.</s><s> let me try to help... 
+</s><s>"i need to resize several images in photoshop to place in illustrator and i'm wondering if i should save them as cmyk jpegs, or tiffs, etc.</s><s> i need the file to be the smallest it can be for upload to the printer.</s><s> i need the basics on different file types and their pros and cons." 
+-do not save as jpg.</s><s> the compression artifacts will show up in print.</s><s> just place cmyk .tiffs or .psd's without sizing in illustrator.</s><s> another thing to keep in mind is "linking" the image files instead of "embedding" them.</s><s> you have a little more control saving your page files as eps before creating the final pdf. 
+</s><s>"also, when i'm sending out the proof to the customer, any tips on saving the pdf so the images aren't too blurry and the file is still sendable?" 
+-there are a few different ways you can create a pdf viewable as a softproof.</s><s> you could send the final as a standard pdf using defaults.</s><s> don't forget to embed the fonts and leave color unchanged.</s><s> what i do is export > rgb tif @ 150ppi > open the .tiff in photoshop and save-as photoshop pdf with a jpg compression of 8.</s><s> you could do that for each page and then reassemble using acrobat for one assembled, final pdf optimized. 
+</s><s>"please help!</s><s>!</s><s> any other information or tips on how to prepare my file as a print ready would be great.</s><s> i love to learn and really need some great resources." 
+-get adobe's print publishing guide.</s><s> it has enough information in it to help you wade through all of the disinformation out there.</s><s> get in touch with a couple of local print shops and have them take a look at your files.</s><s> good shops can spot problems and give you some handy tips.</s><s> not all shops will take the time, so finding one can be tricky. 
+</s><s>thanks!</s><s> 
+-you're welcome.</s><s> let us know how it all shakes out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5315647</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="AnnieG_416" timestamp="May 13, 2013 7:51 AM">
+<s>thanks jacob.</s><s> i do mean things like changing the dimensions, color correction, and cropping.</s><s> i had read that resizing things in illustrator instead of using at their final size was what increases file size.</s><s> right now i'm at 44 mb in illustrator.</s><s> the brochure has 16 images.</s><s> is that too ridiculous of a size to send to a printer? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5315650</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="AnnieG_416" timestamp="May 13, 2013 7:56 AM">
+<s>thanks john.</s><s> we are talking about 16 images in a 2 page brochure, with the biggest image size at 1" x 1".</s><s> if i do some things in photoshop, like crop and maybe an adjustment layer, my photoshop file size ends up being around 4.7 mb instead of the 1.7 mb i could do with a .jpeg.</s><s> will that increase my illustrator file tremendously?</s><s> i definitely won't do the .jpeg if i'll be losing any information.</s><s> what does "compression artifacts" mean? 
+</s><s>also, some of the images that i was sent are already saved as .png files.</s><s> are those okay to use as is? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5317599</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="John%20Danek" timestamp="May 13, 2013 7:04 PM">
+<s>something does not sound right to me.</s><s> i just prep'd a photoshop cmyk file, saved it as a .psd and it is only 748k, not even a megabyte.</s><s> that's a 1" square @ 300ppi.</s><s> illustrator places a low res proxy when you save as .eps with the file linked.</s><s> so, no need to compress the files from photoshop.</s><s> whenever you create a jpeg, it is compressed depending on the setting you use for compression.</s><s> if you look at the channels of a jpeg file, you will see artifacts in some of the areas of the jpeg, usually in low density areas.</s><s> png files are also compressed for web use, just not as much as jpeg files.</s><s> you are better off using either .tiff or .psd for print. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5321972</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="OldBob1957" timestamp="May 15, 2013 4:40 AM">
+<s><quote>
+<s>annieg_416 wrote: 
+what does "compression artifacts" mean? 
+</s></quote>have you ever looked closely at a small image downloaded from a website and seen things like weird color blobs in areas that should be smooth color (like a sky)?</s><s> those are compression artifacts.</s><s> data has actually been lost. 
+--ob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5669925</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="AHRx" timestamp="Sep 10, 2013 12:27 PM">
+<s>help....</s><s> 
+</s><s>i do not know how to use adobe illustrator my designer is out of the country and i need to change a phone number on my business card i have the file and the program creative cloud how do i change the phone number and then make it a print ready with all those colors and lines around it like the back of my card ?</s><s>?</s><s> thank you rick r 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5314637-5670145</DOCNO>
+<TEXT>
+<subject>Placing images in Illustrator for print ready files</subject>
+<post author="John%20Danek" timestamp="Sep 10, 2013 1:39 PM">
+<s>you will need the font ( unless the text has been outlined ).</s><s> if the text is "live" ( meaning you can edit it ), then it's just a matter of selecting the text with the text tool and typing the new phone number.</s><s> if, for some reason, you do not have the font, you will have to purchase a license from a font resource like myfonts.com.</s><s> if you are in a jam, just give the file to a print shop and they will make the edit for you.</s><s> your question is a little confusing.</s><s> if you have the file, there's nothing to build.</s><s> just do whatever changes on a copy of the original so you always have the original to fall back on in the future. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5656263-1290039</DOCNO>
+<TEXT>
+<subject>Problem with turning 4 color black into gray scale black for print.</subject>
+<post author="Pharris1985" timestamp="Sep 8, 2013 3:03 PM">
+<s>i working with a print company for a news paper magazing, and the print company says they have a problem with the documents being in 4 color black.</s><s> they want all the files to be in grey scale black, and the only way it seems that i can change the files to gray scale black is by redsigning, what can be redesign, of the ads in indesign and creating tons more work.</s><s> for me to design the ads to be proofed, i have to use photoshop and then inport the ads in as pdf's into indesign.</s><s> does anyone know an easier way to convert 4 color black in full color file to grey scale black? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5656263-5663710</DOCNO>
+<TEXT>
+<subject>Problem with turning 4 color black into gray scale black for print.</subject>
+<post author="MichaelKazlow" timestamp="Sep 8, 2013 3:05 PM">
+<s>this can be done in acrobat using the print production tools using the convert color tool 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5656263-5663740</DOCNO>
+<TEXT>
+<subject>Problem with turning 4 color black into gray scale black for print.</subject>
+<post author="Pharris1985" timestamp="Sep 8, 2013 3:18 PM">
+<s>i've tried and its still is 4 color black when previewed under the color seperation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5656263-5669112</DOCNO>
+<TEXT>
+<subject>Problem with turning 4 color black into gray scale black for print.</subject>
+<post author="John%20Danek" timestamp="Sep 10, 2013 8:50 AM">
+<s>i wonder if the "print company" can convert the color in the rip when they make the plates?</s><s> indesign has a preference setting that you can select for viewing and printing black accurately ( but, i'm not sure if that can be applied after the fact in a psuedo conversion op ).</s><s> the other option is to go into the original files and do a global swatch color flip ( something like select > same fill and stroke ) manually. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5654552-1289643</DOCNO>
+<TEXT>
+<subject>Anyone know what these are called?</subject>
+<post author="SecretYellowstone" timestamp="Sep 4, 2013 8:33 PM">
+<s>hi.</s><s> i am working on a book in indesign and would like to add these little....tabs to the sides of the pages to help readers find different sections quicker than having to leaf through the pages. Ê so i have two questions.</s><s> anyone know what these blue and gold tabs on the page edges are called, and/or instructions on how to create them in indesign?</s><s> i don't think they'd be too hard to figure out, so i'm really more concerned with what they're called than anything else at this point.</s><s> any help would be appreciated, however.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5654552-5654634</DOCNO>
+<TEXT>
+<subject>Anyone know what these are called?</subject>
+<post author="Sachinji" timestamp="Sep 8, 2013 3:06 PM">
+<s>hi, 
+</s><s>it is called thumb. 
+</s><s>there are two ways to do it in indesign.</s><s> manual on the document pages.</s><s> second using master pages.</s><s> if you will give details of the thumb (like a, b, c,...</s><s> 1, 2, 3, ....</s><s> etc.</s><s>) i will make .indd for you. 
+
+</s><s>regards, sachin pradhan [signature deleted by host] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5646385-1287802</DOCNO>
+<TEXT>
+<subject>Printing specs for a magazine asking to do a "Flight check for Web press" -- what does this mean?</subject>
+<post author="BekkyBurton" timestamp="Sep 2, 2013 6:58 AM">
+<s>so, i'm dealing with printing specs for a few different magizines. 
+</s><s>it was highlighed that all artwork must be "flight checked for word press" in one printing spec that i recieved. 
+</s><s>i've asked the question to the company, but no answer - _-; 
+what does this mean?</s><s> and how is it done? 
+</s><s>thanks :b 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5646385-5646720</DOCNO>
+<TEXT>
+<subject>Printing specs for a magazine asking to do a "Flight check for Web press" -- what does this mean?</subject>
+<post author="John%20Danek" timestamp="Sep 2, 2013 9:01 AM">
+<s>the publisher just wants you to be sure to a.</s><s>) include fonts; b.</s><s>) include images; c.</s><s>) double check knockouts and overprints, d.</s><s>) confirm document color space is cmyk; e.</s><s>) assign swop v2 web profile.</s><s> ask the publishers for a preflight checkoff list ( if they have one ).</s><s> how are you delivering the file(s)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5646385-5646657</DOCNO>
+<TEXT>
+<subject>Printing specs for a magazine asking to do a "Flight check for Web press" -- what does this mean?</subject>
+<post author="BekkyBurton" timestamp="Sep 2, 2013 9:10 AM">
+<s>i suppose if i wanted to include images/fonts i would just package up the file in indesign ?</s><s> what is swop v2 web profile? 
+</s><s>i've already sent across the file. all it was was a re-size of an exsisting ad(from like a4 to a5) - and all they wanted was a hi-res pdf - i didnt even send over fonts/images - they said all was fine. so fingers crossed it looks alright when printed!</s><s> (havent worked with indesign so much :l so a bit of a newbie when designing for mag ads ...</s><s> i just always use illustrator for all my designs.... 
+</s><s>thanks :b 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5642040-1286669</DOCNO>
+<TEXT>
+<subject>Bridge, Lightroom, InDesign workflow question</subject>
+<post author="chirrchirr" timestamp="Aug 30, 2013 6:01 PM">
+<s>hey everyone, i've been using adobe indesign cs5 and apple's aperture software together (on a mac) to do design projects over the past year and a half or so.</s><s> i'd never been that interested in adobe's other applications until recently, when i got a creative cloud membership, and now am reveling in the bounty of creative possibilities.</s><s> recently i've been interested in integrating bridge into my workflow and transitioning away from aperture to lightroom (as i imagine many other people are considering/in the process of doing right now).</s><s> i've been taking some video tutorials on lynda.com and recently came across terry white's "bridge cc vs. lightroom" youtube screencast (http://www.youtube.com/watch?v=vd8xlyg8a0s#t=20).</s><s> while i really appreciated terry's perspectives and find them helpful, i think he polarized the "design" (bridge) and "photography" (lightroom) paradigms that he used to distinguish the programs: bridge is a file browser for working numerous file types across creative cloud applications, whereas lightroom is a tool for photographers to do powerful non-destructive edits. 
+</s><s>part of what i've liked about using aperture with indesign is that (however buggy this feature is) i can directly access my aperture library from within the os x open dialog box, thus allowing me to use files that i've edited and keeping all my work in one library.</s><s> however, from what i've learned so far, and what terry's video didn't (directly) address is what are some good practices for using edited photographs within an application such as indesign.</s><s> it seemed in the video he simply exported image files from lightroom into folders, and then i suppose you could use mini-bridge to browse that folder.</s><s> but i'm wondering if there isn't a better or simpler way to do this, and i'm wondering if i could solicit opinions from folks as to how they work between everything i've tried to do in my workflow is minimize steps and keep track of the proliferation of images i work with.</s><s> as much as i see that lightroom is a better maintained tool than aperture, it sure is nice to be able to directly access those image files from within indesign- 
+very new to all of this.</s><s> thanks in advance for everyone's help. 
+</s><s>quin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5580602-1272402</DOCNO>
+<TEXT>
+<subject>Fiery Features Go Missing When I use CC</subject>
+<post author="pedley_s" timestamp="Aug 9, 2013 7:07 AM">
+<s>running mac osx 10.6.8 
+</s><s>print to a konica bizhubpro 6501 
+
+</s><s>in creative suite 6.0, when i go to print (i print mostly out of indesign), i have an option for "fiery features" after clicking "printer" in the "print" box.</s><s> that lets me select trays and duplex and other assorted, important options. 
+</s><s>upgraded to cc on tuesday.</s><s> when i got to the same location in the "print" box, i only have "printer features" which is a more generic set of options.</s><s> if i switch back to 6.0, "fiery features" is there.</s><s> so this is something cc specific, but i don't know what. 
+i went ahead and deleted the printer (in printer and fax settings in the systems preferences, and added the queue back in.</s><s> i uninstalled all my fiery software and reinstalled it and built the printer queue again.</s><s> i've restarted the computer. 
+</s><s>printer service tech confirms we are running up-to-date fiery software, and he installed the most up to date printer driver, but it didn't make a difference. 
+i need those fiery features to be able to set up jobs correctly to print.</s><s> i can work around it by sending jobs to process and hold and then use my fiery command workstation to set them up, but that's a big step backward in productivity, which isn't what i was hoping for when i upgraded. 
+</s><s>and i'm not sure what to try next - any help would be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5580602-5594896</DOCNO>
+<TEXT>
+<subject>Fiery Features Go Missing When I use CC</subject>
+<post author="John%20Danek" timestamp="Aug 14, 2013 11:43 AM">
+<s>you're still in snow leopard and, i'm guessing, cs6 was more compatable with that os and cc is nixing your snow leopard operating system which, in apple theory, would force you to upgrade to osx8 ( not sure and not interested in what the bleep the latest version is ).</s><s> there is nothing wrong with staying with a system that works, at least until the two can cohabitate together.</s><s> my recommendation is you return the cc crapware and retain the muscle machine you had before.</s><s> that's just me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5580602-5594903</DOCNO>
+<TEXT>
+<subject>Fiery Features Go Missing When I use CC</subject>
+<post author="pedley_s" timestamp="Aug 14, 2013 12:04 PM">
+<s>abandoning cc is not an option - i work for a commercial printer and we have to be able to open the customers files - since they have adopted the new software, we will, too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5580602-5595224</DOCNO>
+<TEXT>
+<subject>Fiery Features Go Missing When I use CC</subject>
+<post author="John%20Danek" timestamp="Aug 14, 2013 1:26 PM">
+<s>then you are left with upgrading the os in hopes that that is contributing to the problem.</s><s> however, it may still happen after you upgrade.</s><s> it seems to be the nature of the chain-gang mentality of constantly updating in hopes of reaching some panacea ( not your case in that you are being forced to ride the wave in order to be able to work with customer files ).</s><s> it's too bad that these problems occur and loyal customers like yourself are faced with more down-time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5563037-1268364</DOCNO>
+<TEXT>
+<subject>Best printers for home design business</subject>
+<post author="RaeRae79" timestamp="Aug 3, 2013 4:20 AM">
+<s>can anyone recommend the best printer to use for a home business where i plan to produce a6 cards double sided, will be using a hp laptop probably with cs6 design standard.</s><s> i am setting up freelance and will primarily be creating diagrams and pictures for bids but would like to run a sideline in cards to top up income so would need to be very high quality, double sided and fairly economic to run if possible, quality is the most important thing though, are there any that print to edge effectively?</s><s> i don't mind cost to buy, quality is most important!</s><s> i have only ever used printing companies so really not sure where to start!</s><s> any help would be great, thank you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5563037-5563088</DOCNO>
+<TEXT>
+<subject>Best printers for home design business</subject>
+<post author="RaeRae79" timestamp="Aug 3, 2013 5:16 AM">
+<s>worth mentioning they would be on matt card, maybe 170 gsm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5563037-5564405</DOCNO>
+<TEXT>
+<subject>Best printers for home design business</subject>
+<post author="John%20Danek" timestamp="Aug 3, 2013 7:19 PM">
+<s>a little heads-up on desktop printing...it's not very durable.</s><s> i'd recommend an hp designjet...one of the "z" printers or an epson stylus pro, both inkjet printers.</s><s> color lasers are ok, but consumables are more expensive and the color is not always consistent.</s><s> by "durable" i mean if you get the prints wet they are toast.</s><s> i would not recommend a desktop solution for what you want to do because you would be liable and a bit vulnerable if something should happen to the cards.</s><s> i would stay with offset printing with some type of varnish or coating for protection, especially when these are items that will be "handled". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5563037-5564601</DOCNO>
+<TEXT>
+<subject>Best printers for home design business</subject>
+<post author="RaeRae79" timestamp="Aug 3, 2013 11:59 PM">
+<s>thank you john, i have had a look at the designjets, i think as i would be printing small volumes they may be a bit 'large format' for what i am looking for but i will consider it after what you have said about durability which is a point i hadn't thought of.</s><s> if i were to go for a desktop is there one you would recommend?</s><s> i was looking at the hp 7610? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5549687-1265362</DOCNO>
+<TEXT>
+<subject>Halftone Screen Printing (Rosette)</subject>
+<post author="Th3Prod1GY" timestamp="Jul 29, 2013 6:59 PM">
+<s>hey all, 
+</s><s>i'm pretty new to prepress / prepping for screen printing, and i need some help. 
+</s><s>after major searching and downloading trials of plugins, i'm stuck in finding out how to get a cmyk separation with halftone dots for printing.</s><s> we are printing on a clear plastic film, and i was asked to convert a design into a 4-color (cmyk) rosette screen for the screen printer. 
+i have tried using photoshop's inbuilt bitmap to halftone screen feature (separating the cmyk channels, then using image > mode > bitmap), but after doing all 4 channels then laying them, i don't get a rosette pattern at all.</s><s> i have tried using different angles for each separation after googling it and using what was recommended, but with no luck. 
+</s><s>all i'm looking to do is separate the cmyk, create the halftone dots, and then export each color into a seperate pdf. 
+</s><s>is photoshop the answer for this? 
+</s><s>all the plugins i've tried trials of only seem to "print" to particular epson printers, but that's not what i'm after.</s><s> i just need them exported to a pdf. 
+am i doing something wrong?</s><s> has anyone else ran into this problem using photoshop's bitmap settings? 
+</s><s>we are using photoshop cs6. 
+</s><s>any help would be greatly appreciated. 
+</s><s>cheers!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5549687-5555055</DOCNO>
+<TEXT>
+<subject>Halftone Screen Printing (Rosette)</subject>
+<post author="John%20Danek" timestamp="Jul 31, 2013 9:48 AM">
+<s>for the last few years, outputting a halftone screen has become increasingly more difficult than in the past.</s><s> for instance, in 1995 i was able to output direct via a hardware postscript level 2 rip in my desktop inkjet printer in illustrator, photoshop, pagemaker...you name it.</s><s> then, postscript level 3 was released as third party software rips and, not sure when, the ability to output screens was eliminated unless you had a film processor.</s><s> recently, if i'm not mistaken, adobe discontinued 1-bit halftone screens via photoshop.</s><s> this is troubling when you consider where we were in '95 vs. where we are today.</s><s> outputting a halftone screen now requires a fairly expensive rip mated to a fairly expensive printer.</s><s> i've read where you could ouput to a postscipt file either out of illustrator or photoshop or wherever.</s><s> you set the screen parameters when you create the postscipt file ( print > postscript file ) and then open it in acrobat and print from there.</s><s> silly endless additional steps in a procedure that could be done in one.</s><s> if you can, see if you can downgrade to photoshop cs 5 or whatever version can produce screens.</s><s> or, send the file out to a service provider that can ( still ) output to film.</s><s> this is how i understand the current situation.</s><s> if i'm wrong i'm sure someone will pipe-in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5549687-5555022</DOCNO>
+<TEXT>
+<subject>Halftone Screen Printing (Rosette)</subject>
+<post author="Dov%20Isaacs" timestamp="Jul 31, 2013 9:56 AM">
+<s>the reason why most applications and pdf workflow products have eliminated the ability to set screening information is very simple.</s><s> most modern direct pdf as well as postscript rips and dfe (digital front end - a rip for a digital press) totally ignore any screening information and do their own proprietary screening, often using unconventional techniques such as fm (frequency modulation) screening to obtain results that are perceived to provide better detail and tones. 
+</s><s>where rips still do allow conventional halftoning, they still typically ignore any embedded specifications and use only what is specified in a digital job ticket or from the system's operator console. 
+</s><s>for pdf workflows, the pdf/x specifications even preclude use of any halftoning specifications in pdf/x files. 
+- dov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5551904-1265838</DOCNO>
+<TEXT>
+<subject>I'm looking to start a coupon magazine</subject>
+<post author="DS12306" timestamp="Jul 30, 2013 10:57 AM">
+<s>about 8 pages to start and see where this goes.</s><s> i'm looking to see if any has any indesign templates or could quote me on design on a per page basis which would include the coupon design as well.</s><s> thanks !</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5531566-1260995</DOCNO>
+<TEXT>
+<subject>Searching for Reputable Offset Printer in Los Angeles</subject>
+<post author="wayne.alan" timestamp="Jul 23, 2013 10:48 AM">
+<s>hi all, 
+</s><s>i need to offset print a look book in los angeles and am looking for a reputable printer whose clients are well-known.</s><s> i have already checked out capitol printing and southwest offset printing.</s><s> thank you for your advice. 
+</s><s>cheers!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5531566-5536802</DOCNO>
+<TEXT>
+<subject>Searching for Reputable Offset Printer in Los Angeles</subject>
+<post author="ChristieJohann" timestamp="Jul 25, 2013 12:07 AM">
+<s>my uncle is doing business regarding offset printing in la but i'll let you know about confirmation in next couple of days! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5522380-1258715</DOCNO>
+<TEXT>
+<subject>Print Measurements on overall design</subject>
+<post author="CountParadox" timestamp="Jul 19, 2013 10:38 PM">
+<s>hi there, what i want to do is print my design, and include the measurements of each individial item on the design, is there a way to do this ?</s><s> for example. three squares on a white doccument, square a is labeled with width and height 'x and y'Ê and square b is labeled with 'z and w', etc. for a scale assembly guide for an art installation i have designed.</s><s> so people can see distances between artworks and the likes thanks! -count
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5522380-5523762</DOCNO>
+<TEXT>
+<subject>Print Measurements on overall design</subject>
+<post author="Jacob%20Bugge" timestamp="Jul 20, 2013 3:32 PM">
+<s>count, 
+</s><s>i am afraid you will have to use some solution that is not inbuilt in the application, such as a plugin like cadtools or a script in illustrator, or manual insertion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5522380-5526572</DOCNO>
+<TEXT>
+<subject>Print Measurements on overall design</subject>
+<post author="ChristieJohann" timestamp="Jul 22, 2013 2:43 AM">
+<s>yes i think this is possible!</s><s> but as @jacob said that you'll be needing a third party addon or some sort of software! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5518539-1257783</DOCNO>
+<TEXT>
+<subject>PDF color changing when imported into InDesign 6</subject>
+<post author="chuck300x11" timestamp="Jul 18, 2013 2:26 PM">
+<s>i am importing a customers pdf into indesign 6. when i do the import the color is changing from the original pdf colors.</s><s> the original color in the pdf is 0/95/100/29 and when imported to indesign 6 it becomes 21/98/100/12.</s><s> is there a setting i need in indesign 6 to keep the original pdf colors intact? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5518539-5520797</DOCNO>
+<TEXT>
+<subject>PDF color changing when imported into InDesign 6</subject>
+<post author="John%20Danek" timestamp="Jul 19, 2013 8:42 AM">
+<s>are you using the eye dropper tool to get those numbers?</s><s> it could be the way the original pdf was created.</s><s> i have a feeling that the original settings ere set to "adapt" to color workflows or something similar.</s><s> see if you can open the pdf in acrobat and set the file to "leave color unchanged" if you can...somewhere in the file's profile or color setting.</s><s> it could also be the preview in indesign.</s><s> if somehow there is a way to find out which color settings were applied to the pdf; you could then match those in indesign's color settings.</s><s> if it is the preview reading, then the file should proof well.</s><s> if indesign has corrupted the pdf's original color, then the file will proof bad.</s><s> i think it prudent to investigate the pdf's original color settings vs. indesign's.</s><s> try posting this question in the indesign forum and see what you get back.</s><s> i'd be curious to know what they have to say over there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5518539-5520823</DOCNO>
+<TEXT>
+<subject>PDF color changing when imported into InDesign 6</subject>
+<post author="chuck300x11" timestamp="Jul 19, 2013 9:10 AM">
+<s>used eye dropper tool in indesign and used output preview in acrobat.</s><s> another strange thing is when i made a new pdf file from the indesign file, the colors went back to the original pdf files colors. 
+</s><s>sent from my iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5518539-5521015</DOCNO>
+<TEXT>
+<subject>PDF color changing when imported into InDesign 6</subject>
+<post author="John%20Danek" timestamp="Jul 19, 2013 10:26 AM">
+<s>good!</s><s> it was probably the preview color numbers via your monitor's ( system ) rgb profile.</s><s> i'd recommend avoiding any eye dropper color reads ( except for photoshop )...</s><s>a little misleading at best.</s><s> but, i'm glad to hear the original numbers were honored and is the way it should be. 
+</s><s>message was edited by: john danek 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5517874-1257652</DOCNO>
+<TEXT>
+<subject>Array of Images - What is the best adobe programm?</subject>
+<post author="ole nordmann" timestamp="Jul 18, 2013 10:54 AM">
+<s>hallo everybody, 
+i'm new to this forum and this is my first post.</s><s> may someone can help me: i have got 12 images (jpg) of the same size and i want to do an random array of these for a high quality ditigtal print.</s><s> for more variation the images should be mirrored.</s><s> what is the best adobe product to do that?</s><s> is there a way for automating? 
+</s><s>here is a quick concept drawing: 
+
+thanks for help 
+cheers ole 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5517874-5517982</DOCNO>
+<TEXT>
+<subject>Array of Images - What is the best adobe programm?</subject>
+<post author="MichaelKazlow" timestamp="Jul 18, 2013 11:22 AM">
+<s>you might be able to do this using framemaker and framescript (a non-adobe scripting program).</s><s> do you really want the array to be truly random?</s><s> you should know that having the images mirrored will produce less variation rather than more. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5517874-5518043</DOCNO>
+<TEXT>
+<subject>Array of Images - What is the best adobe programm?</subject>
+<post author="ole%20nordmann" timestamp="Jul 18, 2013 11:42 AM">
+<s>hi michael, 
+</s><s>thanks for the fast reply.</s><s> yes, i want an random array of the images.</s><s> why do i get less variation by mirroring the images? 
+</s><s>cheers ole 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-1153133</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="generalbatzorig" timestamp="Feb 13, 2013 6:46 PM">
+<s>hi, i am a graphic designer (with relatively little experience).</s><s> when printing books and catalogs, sometimes the images turn out quite unsatisfactory.</s><s> now i am trying to learn about "prepairing images for press" because i think it is very important part of the design that i didn't really give much attention before.</s><s> even a nice photo can turn ugly without the proper preparation.</s><s> but it seems like a hit and miss chance when i think about why sometimes the printing turns out fine but sometimes quite opposite.</s><s> i was reading photoshop help menu about prepairing images for press.</s><s> it says, "if you know the characteristics of the press, you can specify the highlight and shadow output to preserve certain details." but if i go talk with the printer i don't know what i need to ask to find out their printing characteristics.</s><s> i know that most pinters require 300 dpi cmyk.</s><s> but other than that what do i need to know to prepaire my images for optimum result?</s><s> i have seen many great publications and ugly publications supposedly printed on similar technology.</s><s> it is certain that there is a lot of skill required for a good color separation.</s><s> can you tell me what i need to find out from each printers before i send my file?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-5073146</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="John%20Danek" timestamp="Feb 14, 2013 9:01 AM">
+<s>there's not enough space here to explain everything you need to know.</s><s> but, there are some things you can do to improve your situation.</s><s> one major problem with the computer is the deception of the color monitor and what is shows you vs. what you get back from the printer.</s><s> most people starting out work with this deception and disappointment. 
+</s><s>"if you know the characteristics of the press, you can specify the highlight and shadow output to preserve certain details." 
+</s><s>this is important, but it is only one piece to the puzzle.</s><s> other important things to consider are the type of paper to be used on that press.</s><s> what adobe is saying in the quote is, some presses can hold a 2% dot ( highlight ) and a 93% dot ( shadow ).</s><s> your color setting in photoshop controls dot gain which is also important.</s><s> other things to look for in photoshop images is the file's original rgb profile.</s><s> most printers want you to color correct and convert the images to cmyk.</s><s> this is also important because you can minimize such things as color casts, low contrast, and total ink limits. 
+</s><s>there is also the seduction of sending rgb files and letting the rip do the conversions.</s><s> somewhat mediocre attempt at automating the process.</s><s> i recommend against any type of automated workflow.</s><s> as a designer you've become the point person on production ( whether you like it or not ).</s><s> you are responsible ( you knew that already, i know ) for the final product getting to the customer the way they expect it and in most cases, beyond their expectations.</s><s> here's what i would recommend at this point: 
+1.</s><s> get "adobe print publishing guide"; it will give you some of the parameters i mentioned above and also discusses other print methods. 
+2.</s><s> you cannot, in some cases, pre-determine the press characteristics on every job.</s><s> the key is predictability of your workflow.</s><s> sorry to say, but approving a "soft-proof" on screen is not part of predictability.</s><s> so, at a minimum, calibrate your monitor ( if you haven't already ).</s><s> first and foremost, do not rely on your monitor, even a calibrated one. 
+3.</s><s> get a contract proofer in-house.</s><s> this is a major investment that allows you to proof image files before they go to the printer and also are used as part of the file turnover process working with the printer.</s><s> if the print vendor receives a contract proof with the disk, many questions can and will be answered upfront and will save you money. 
+4.</s><s> get used to the terms dpi and ppi.</s><s> dpi refers to output resolution.</s><s> a good direct-to-plate output device will require a 5080 dpi as standard.</s><s> ppi refers to image resolution and raster resolution.</s><s> typical file ppi = 72ppi ( low ); 150ppi ( med ); and 300ppi ( high ) resolution. 
+5.</s><s> there is also a belief that cmyk is the only print process.</s><s> on the contrary.</s><s> take a look at silk screen and spot color printing technologies. 
+</s><s>do not become overwhelmed with all of this information at once.</s><s> it takes years of experience to become fully capable of producing catalogs, magazines, and other printed products successfully.</s><s> add to that that many print vendors do not have the answers.</s><s> you have to find them on your own.</s><s> find a local shop that will allow you to intern a few hours a week.</s><s> this will prove very valuable in that you will learn quickly what is required to get the job done right the first time.</s><s> the key is finding a good shop that has a really good prepress department that really know what they are doing.</s><s> hope this helps, let me know either way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-5074581</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="John%20Danek" timestamp="Feb 14, 2013 5:42 PM">
+<s>in addition to what i've already posted, see if you can attach screen shots of your color settings ( either bridge settings or individual application color settings.</s><s> that way, i'll be able to see if those are in line with a good workflow or if you need to make some adjustments.</s><s> getting back to the file prep., you could test your own workflow by taking a raw photo ( hopefully a known good one ) and save individual versions in each rgb profile ( i.e., colormatch, prophoto, adobe rgb, and srgb.</s><s> then convert each one to swop sheetfed v2 cmyk.</s><s> then have those, both the rgb and the converted cmyk printed on a fairly decent proofer or whatever you are using.</s><s> see how each one prints on the same paper using its .icc profile ( if you have one in the driver ).</s><s> let me know if you see any differences between the different profiles. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-5075703</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="generalbatzorig" timestamp="Feb 15, 2013 6:38 AM">
+<s>first of all, thank you very much for the very valuable lesson.</s><s> reading your post, there are some things that i agree with you and some things that i need to ask a little more in detail.</s><s> i have to ask for apologies for not being able to spend much time at the moment.</s><s> i am making a flight to another country for a week and before that i have a lot of errands to finish up (if i can make it).</s><s> i will reply after i come back.</s><s> i am sorry for not being able to do this now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-5504212</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="generalbatzorig" timestamp="Jul 14, 2013 8:42 AM">
+<s>dear john danek, 
+</s><s>a few months ago you replied to one of my posts and i would like to ask you some more questions again.</s><s> recently i saw a book printed in germany.</s><s> the book had a very nice image quality.</s><s> i took a magnifying glass and took a closer examination.</s><s> to my astonishment, it had a different printing pattern than most other offset publications.</s><s> it had a lot smaller dots with denser raster effect or dpi.</s><s> the dots were 4 times smaller than normal 300 dpi publications, and the pattern of the dots was quite different than standard print.</s><s> in standard prints, the dot placement has predictable pattern and placements of the dots.</s><s> but the book that i am talking about had a printing pattern quite organic and random.</s><s> i am sure that it is a different kind of offset printing technology and it must have a name or term for it.</s><s> if you know about this technology, i would like to find out about it and explore my possibility to cooperate with such printing company. 
+</s><s>thanks very much for support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-5504684</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="Jacob%20Bugge" timestamp="Jul 14, 2013 12:48 PM">
+<s>general, 
+<quote>
+<s>i am sure that it is a different kind of offset printing technology and it must have a name or term for it. 
+</s></quote>
+</s><s>stochastic screening or fm screening. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5071671-5505291</DOCNO>
+<TEXT>
+<subject>Targeting images for press</subject>
+<post author="John%20Danek" timestamp="Jul 14, 2013 6:36 PM">
+<s>yes, that could be stochastic screening.</s><s> very sophisticated press and paper combination...probably a waterless process as well.</s><s> it could also be random dot screening or variable dot screening. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-1227575</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="CRATEDESIGN" timestamp="Jun 7, 2013 1:15 AM">
+<s>
+
+</s><s>i am a designer (print/digital) and this is my new business..</s><s> "crate design" 
+</s><s>i have been looking at this for a few hours and its time to get a fresh perspective from someone else.. like you! 
+</s><s>please let me know what you think and any ideas on what you would change if anything.. 
+</s><s>any feedback much appreciated.. 
+</s><s>cheers!</s><s>!</s><s> 
+</s><s>j 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-5408413</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="ChristieJohann" timestamp="Jun 14, 2013 4:55 AM">
+<s>it's looking fantabulous man!</s><s> but don't you think it's kinda blurry?</s><s> i mean i had it coming after glance? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-5474047</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="Aldon%20Stewart" timestamp="Jul 3, 2013 10:23 AM">
+<s>amazing design!</s><s> as the logo name starts with "c".</s><s> i would like to say "creative". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-5474112</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="JennaSenso" timestamp="Jul 3, 2013 10:49 AM">
+<s>hello!</s><s> overall i like your logo for your business.</s><s> there is just one tiny thing that is buggin me when i look at it, (feels like somebody is poking my eyes haha) and thats the general shape of the "c".</s><s> i think the ends of the "c" are too close together and i think it is competing with the rest of the text thus pulling away focus from the overall design.</s><s> it also seems a bit "heavy" in compared to the other characters. 
+i am a graphic designer as well and just like fonts, we are all unique.</s><s> if you like it the way it is, then thats how it should be! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-5498992</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="toughmedia" timestamp="Jul 12, 2013 3:19 AM">
+<s>i pretty much like the colors and fonts.</s><s> the "e" of crate is not so visible.</s><s> good luck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-5499076</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="Imranma" timestamp="Jul 12, 2013 3:55 AM">
+<s>cool how about the black and white version 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5387085-5499071</DOCNO>
+<TEXT>
+<subject>What do you think of my logo design???</subject>
+<post author="ChristieJohann" timestamp="Jul 12, 2013 4:00 AM">
+<s>i love black and white version! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5472268-1247032</DOCNO>
+<TEXT>
+<subject>What Tool You Like The Most To Use In Adobe Photoshop 6?</subject>
+<post author="ChristieJohann" timestamp="Jul 2, 2013 11:10 PM">
+<s>hi guys, 
+</s><s>i was looking to ask a question about ps 6!</s><s> it could kinda silly but i found it interesting!</s><s> give me your words about what tool you like the most to use in adobe photoshop 6? 
+</s><s>additions would be highly appreciated! 
+</s><s>christie!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5472268-5474041</DOCNO>
+<TEXT>
+<subject>What Tool You Like The Most To Use In Adobe Photoshop 6?</subject>
+<post author="Aldon%20Stewart" timestamp="Jul 3, 2013 10:17 AM">
+<s>hi christie!</s><s> 
+</s><s>actually the thing is that when we are so eager about designing and start using ps then it's hard to tell that what tool we use the most and what tool we like the most to use!</s><s> besides my personnal opinion is to use lasso tool would be my favorite 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-5472268-5475681</DOCNO>
+<TEXT>
+<subject>What Tool You Like The Most To Use In Adobe Photoshop 6?</subject>
+<post author="ChristieJohann" timestamp="Jul 3, 2013 11:30 PM">
+<s>hi aldon, 
+</s><s>thanks for appreciation!</s><s> yeah you are right that when we are so indulged in photoshop it's hard to tell what tool we use and what we like the most!</s><s> but i was just asking by the way 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-285195</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="(IanGregson)" timestamp="Dec 21, 2008 1:41 AM">
+<s>hi there, i wonder if anyone can comment on the size of a font you use for a business card and the font?</s><s> i know this can depend on the font...</s><s> but i have been reading that for the address it should be around 7 point and the name of the person should be one point up .. in this case 8 point.</s><s> what about the company name, i presume 10 point?</s><s> can anyone recommend what is the best font / types of fonts to use for business cards, again i know this can depend.</s><s> i was thinking along these lines, that serif fonts are great for documents but sans-serif would be better for a modern business card because it is missing the serif.</s><s> futura, verdana, optima and century gothic - anything else?</s><s> you trying to get a feel for what is good to get me started if anyone can comment, i would be really grateful.</s><s> thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080426</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 21, 2008 8:46 AM">
+<s>ian, a business card has to communicate clearly and unabiguously.</s><s> otherwise what's the point?</s><s> and not everyone has 20/20 vision.</s><s> so, in general, i'd be very cautious about any information smaller than about 8 pt with typical high x-height fonts.</s><s> 7 pt?</s><s> no, not unless you want something that may be pretty, but largely unusable.</s><s> phone and fax numbers, email addresses and company urls are hard enough to decipher clearly in larger point sizes.</s><s> on the other hand, for most cards, 11-12 point generally looks too large.</s><s> (i generally use 8-9 point for the bulk of information on cards.</s><s>) i also would not be mixing a lot of fonts or type size for a business card.</s><s> keep it simple.</s><s> maybe one size for the company name or person's name, and a point size or two down for the other info. that's two sizes, maximum.</s><s> maybe bold for the company and person names.</s><s> watch your logo size as well.</s><s> white space or unadorned negative space is important in creating a professional looking, respectable, inviting card.</s><s> nothing wrong with serif fonts as long as they are not used too small and you choose wisely.</s><s> and forget verdana.</s><s> it was designed for and is optimized for screen and web use and there are certainly more interesting fonts to choose from.</s><s> optima is ok, but to my eyes a bit dated.</s><s> it had its heyday a several decades ago, so it would have to fit the persona of the company.</s><s> >can anyone recommend what is the best font / types of fonts to use for business cards, again i know this can depend.</s><s> there is no such thing.</s><s> which brings me to the next and most critical point...too many new (and not-so-new) designers fall into the trap of thinking of business cards as an end to a means, instead of the other way around.</s><s> a business card (and logo) should never be designed in a vacuum.</s><s> this should be a part of a well-considered corporate identification program, that includes other stationery items, and possibly signage, advertising, website, packaging, etc., etc.-- however the mark and fonts might ever conceivably be used.</s><s> choice of color and stock should work harmoniously as part of the overall design choices, and are as important as determining factors as typeface choices (yes, you should be exploring different paper choices for weight, grade, finish, and "hand", and suitable colors etc.</s><s>).</s><s> and it doesn't matter whether you are designing for a fortune 500 company, or the pizza shop on the corner -- although different in scale, the basic process is the same.</s><s> my point is, that we cannot choose a font for you, any more than we could choose a good logo or colors without knowing some background.</s><s> you are the one who understands (or should understand) the business and persona of the business you are designing this for and choose appropriately.</s><s> that's why there are literally tens of thousands of typefaces to consider and choose from.</s><s> you are the designer and it is your job to research, digest, and analyse all factors i've discussed beyond fonts before putting pen to paper (or mouse to screen).</s><s> so perhaps if you can give us some general information about the company and industry, and how the company perceives itself, and what, kind of competition there is, we can offer some ideas.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080427</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 21, 2008 8:49 AM">
+<s>ian, a business card has to communicate clearly and unabiguously.</s><s> otherwise what's the point?</s><s> and not everyone has 20/20 vision.</s><s> so, in general, i'd be very cautious about any information smaller than about 8 pt with typical high x-height fonts.</s><s> 7 pt?</s><s> no, not unless you want something that may be pretty, but largely unusable.</s><s> phone and fax numbers, email addresses and company urls are hard enough to decipher clearly in larger point sizes.</s><s> on the other hand, for most cards, 11-12 point generally looks too large.</s><s> (i generally use 8-9 point for the bulk of information on cards.</s><s>) i also would not be mixing a lot of fonts or type size for a business card.</s><s> keep it simple.</s><s> maybe one size for the company name or person's name, and a point size or two down for the other info. that's two sizes, maximum.</s><s> maybe bold for the company and person names.</s><s> watch your logo size as well.</s><s> white space or unadorned negative space is important in creating a professional looking, respectable, inviting card.</s><s> nothing wrong with serif fonts as long as they are not used too small and you choose wisely.</s><s> and forget verdana.</s><s> it was designed for and is optimized for screen and web use and there are certainly more interesting fonts to choose from.</s><s> optima is ok, but to my eyes a bit dated.</s><s> it had its heyday a several decades ago, so it would have to fit the persona of the company.</s><s> >can anyone recommend what is the best font / types of fonts to use for business cards, again i know this can depend.</s><s> there is no such thing.</s><s> which brings me to the next and most critical point...too many new (and not-so-new) designers fall into the trap of thinking of business cards as an end to a means, instead of the other way around.</s><s> a business card (and logo) should never be designed in a vacuum.</s><s> this should be a part of a well-considered corporate identification program, that includes other stationery items, and possibly signage, advertising, website, packaging, etc., etc.-- however the mark and fonts might ever conceivably be used.</s><s> choice of typeface is also dependent upon the specific logo or mark the company uses.</s><s> both have to work together harmoniously.</s><s> if there is a corporate typeface already, that has to be factored into the equation.</s><s> in addition, choice of color and stock should work harmoniously as part of the overall design choices, and are as important as determining factors as typeface choices (yes, you should be exploring different paper choices for weight, grade, finish, and "hand", and suitable colors etc.</s><s>).</s><s> and it doesn't matter whether you are designing for a fortune 500 company, or the pizza shop on the corner -- although different in scale, the basic process is the same.</s><s> my point is, that we cannot choose a font for you, any more than we could choose a good logo or colors without knowing some background.</s><s> you are the one who understands (or should understand) the business and persona of the business you are designing this for and choose appropriately.</s><s> that's why there are literally tens of thousands of typefaces to consider and choose from.</s><s> you are the designer and it is your job to research, digest, and analyse all factors i've discussed beyond fonts before putting pen to paper (or mouse to screen).</s><s> so perhaps if you can give us some general information about the company and industry, and how the company perceives itself, and what, kind of competition there is, we can offer some ideas.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080428</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="(IanGregson)" timestamp="Dec 22, 2008 3:59 AM">
+<s>thank you a detailed reply, its much appreciated, yes i thought the asking of a recommended was not a good idea, oopps..</s><s> yes, if you can offer any idea on the font it would be really helpful, it might give me a bit of inspiration :-) ...</s><s> basically the company is rental service for "houses, apartments and rooms"... which is offered to professionals searching for someone to stay i have currently lower left corner - the address then a vertical line and lower right corner .. the telephone, fax and mobile number with the persons email address..</s><s> (currently all at 8 point) sort of center right i have the persons name currently at 9 point.</s><s> sort of just above the right lower (above the telephone number i have a greyscale version of the logo with opacity set at around 25% - acts as a kind of watermark then of course upper left i have the logo, the logo currently consists of a pale green with black ... all text is black..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080429</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="D.%20McCahill" timestamp="Dec 22, 2008 6:32 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080430</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 22, 2008 7:10 AM">
+<s>ian, generally, rental services are going to be fairly conservative, so you would want a conservative layout and choice of fonts that suggests a solid foundation, integrity, trust...</s><s> so, consider, how does the client perceive itself?</s><s> based upon the neighborhood(s) and the primary customer base they service, do they rent primarily to blue collar working people?</s><s> do they rent to upper middle income yuppies?</s><s> do they rent to an arty community?</s><s> luxury rentals?</s><s> transient/short term rentals?</s><s> do they rent commercial office space?</s><s> industrial space?</s><s> etc. each of these scenarios could suggest a specific look, layout, choice of colors, stock, fonts, etc. think it through.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080431</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 22, 2008 7:12 AM">
+<s>ian, generally, rental services are going to be fairly conservative, so you would probably want a conservative layout and choice of fonts that suggests a solid foundation, integrity, trust, etc. but, also consider, how does the client perceive itself?</s><s> based upon the neighborhood(s) and the primary customer base they service, do they rent primarily to blue collar working people?</s><s> do they rent to upper middle income yuppies?</s><s> do they rent to an arty community?</s><s> luxury rentals?</s><s> transient/short term rentals?</s><s> do they rent commercial office space?</s><s> industrial space?</s><s> etc. each of these scenarios could suggest a specific look, layout, choice of colors, stock, fonts, etc. think it through.</s><s> and remember to consider the other standard stationery, forms, jacket patches, and signage items that may be required to embrace the look you're developing.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080432</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="John%20Danek" timestamp="Dec 22, 2008 6:20 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080433</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Dec 23, 2008 6:20 AM">
+<s>7 pts is real tiny.</s><s> i have seen business cards with tiny sans serif light, all lower case and i can barely see it.</s><s> surprisingly, a lot of them are from design firms that won awards in the books i buy every few years to see what's happening.</s><s> inversely, don't make the mistake of making the company name some monster size like 18pt.</s><s> yuck.</s><s> same thing with the logo.</s><s> keep the scale in proportion to the text.</s><s> generally speaking, i keep company name no larger than 12 pt, principals name no larger than 10.</s><s> i prefer to go small as i can while maintaining readibility.</s><s> something else, think about what you really need on the card.</s><s> we renamed our company for 2009 and after consideration, removed the fax number from the bus card.</s><s> with email and web addresses something had to go.</s><s> i very rarely get faxes from clients so i decided to lose it to give the card some air.</s><s> not related to bus cds but a lot of the design firms (the same ones with the tiny text!</s><s>) print their envelope backflaps solid with reverse text/logo - something no client of mine has ever been willing to pay for once they find out the cost of printing flat and converting to #10. go to amazon.com and search for "graphic design" and you'll find a ton of inexpensive used and new books on design.</s><s> that's where i usually go.</s><s> search for best of stationery design or brochure design or whatever you're interested in.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080434</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 23, 2008 1:14 PM">
+<s>>a lot of them are from design firms that won awards yep...no argument.</s><s> in my opinion, there's a bit too much of that, which seems to be more designer ego-stroking than realistic problem-solving.</s><s> the bottom line is that you can't simply ram stuff down a paying client's throat and have him happy if it's just gonna cause him indigestion.</s><s> to me, good or successful creative work has to be well-grounded, realistically meeting the client's communications needs in an attractive, budget-conscious, appropriate form.</s><s> hopefully, it'll also be memorable...but in a positive way for the client.</s><s> any goal for inclusion in a design magazine that may exist is purely secondary to the needs and comfort level of the client. === >generally speaking, i keep company name no larger than 12 pt for me, that's often a bit large (depending upon the specific font used) unless the company name is short.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080435</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Dec 23, 2008 1:30 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080436</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 23, 2008 3:05 PM">
+<s>designing well for a 3.5"x2" space requiring a number of lines of type is more difficult than it it might initially appear.</s><s> a mistake that a number of designers make (in addition to using type that is just too small) is cluttering up the face of the card with graphics/logos/12-pt type.</s><s> and then spilling over onto the back additional information that they couldn't squeeze onto the front.</s><s> personally, i'm not a fan with turning a business card into some kind of marketing tool with lines of small, bulleted type, photos, and other "stuff" that is best served in a small brochure handed out with the card.</s><s> also, in my opinion, portraits, and product and plant photos do not belong on a business card.</s><s> and blank lines or underscores on a card to hand write in names or phone numbers borders on tacky.</s><s> if you can't afford genuine engraving, embossing or the very best quality thermography, stick to good ol' one- or two-color offset or to digital printing on a high quality stock with a good "hand" (feel).</s><s> and, again, to my eyes, hot-stamping on business cards often seems out of place..</s><s> i'd rather see a bit of well-printed metallic ink offset.</s><s> and fold-over and die-cut/odd shape/odd size cards leave me cold.</s><s> cards designed without any integration with other corporate stationery or graphic items are clueless.</s><s> some of the very best, most impressive cards i've seen use discrete, well-designed and placed logos balanced against simple 9-pt typography in two offset ink colors on bright white 80# vellum or wove finish stock.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080437</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 23, 2008 3:07 PM">
+<s>designing well for a 3.5"x2" space requiring a number of lines of type is more difficult than it it might initially appear.</s><s> a mistake that a number of designers make (in addition to using type that is just too small) is cluttering up the face of the card with miscellaneous graphics/big logos/big type.</s><s> and then spilling over onto the back additional information that they couldn't squeeze onto the front.</s><s> personally, i'm not a fan with turning a business card into some kind of marketing tool with lines of small, bulleted type, photos, and other "stuff" that is best served in a small brochure handed out with the card.</s><s> also, in my opinion, portraits, and product and plant photos do not belong on a business card.</s><s> and blank lines or underscores on a card to hand write in names or phone numbers borders on tacky.</s><s> save that for doctor appointment cards.</s><s> if you can't afford genuine engraving, embossing or the very best quality thermography, stick to good ol' one- or two-color offset or to digital printing on a high quality stock with a good "hand" (feel).</s><s> and, again, to my eyes, hot-stamping on business cards often seems out of place..</s><s> i'd rather see a bit of well-printed metallic ink offset.</s><s> and fold-over and die-cut/odd shape/odd size cards leave me cold.</s><s> cards designed without any integration with other corporate stationery or graphic items are clueless.</s><s> some of the very best, most impressive cards i've seen use discrete, well-designed and placed logos balanced against simple 9-pt typography in two offset ink colors on bright white 80# vellum or wove finish stock -- and lots of white space.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080438</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Dec 26, 2008 3:00 PM">
+<s>neil: i agree with almost everything you said except the bit about thermography/engraving.</s><s> outside of mds and lawyers, i never print thermography.</s><s> certainly not with 2 or more pms colors or full color.</s><s> with the advent of digital printing (hence the full color) and use/abuse of drop shadows since id was introduced, i avoid thermo unless someone insists upon it.</s><s> too many logos (not designed by me!</s><s>) have that god forsaken gradient circle or variation of the swash or (ta da) the gradient circle with a swash across it to make thermography an aesthetic option.</s><s> go browse logoworks or any of those online logo factories and you'll see immediately that thermo is not an option.</s><s> other than contractors who come off the street and want to spend less than $50, i don't bother with thermo.</s><s> occasionally, i will preprint shells with logo embossed or raised but then imporint flat.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080439</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 26, 2008 8:32 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080440</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="(JunkMailer)" timestamp="Dec 27, 2008 8:42 PM">
+<s>i'm not sure why you have such an aversion to doing 2-color thermography.</s><s> i worked for a couple of years in a shop that did nothing but thermography and i've seen a lot of great looking jobs that were 2 and sometimes even 3 or 4 colors (rare, but usually for a good reason).</s><s> in the wrong hands, complicated thermography jobs can go terribly wrong, but our shop seemed to produce consistent good results.</s><s> the trick is to know when to tell a client that their gradients will mud together, etc. we always knew when to be honest with a client where quality was a concern.</s><s> it's been several years, but i personally still have a soft spot for good thermography.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080441</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 28, 2008 7:31 AM">
+<s>thermography was originally developed as a poor-man's alternative to steel or copper engraving.</s><s> at its best, thermography can approach the appearance of genuine engraving -- even though there are enough giveaways in its appearance to keep a good eye from being fooled.</s><s> but (your company aside) a lot of thermography is of middling-to-miserable quality, with bumps and lumps making it look like some kind of skin infection.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080442</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 28, 2008 7:35 AM">
+<s>thermography was originally developed as a poor-man's alternative to steel or copper engraving.</s><s> at its best, thermography can approach the appearance of genuine engraving -- even though there are enough giveaways in its appearance to keep a good eye from being fooled.</s><s> but (your company aside) a lot of thermography is of middling-to-miserable quality, with bumps and lumps making it look like some kind of skin infection.</s><s> i would take a good two-color litho card any day over poor thermography.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080443</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Dec 28, 2008 1:42 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080444</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="(JunkMailer)" timestamp="Dec 29, 2008 7:33 AM">
+<s>usually those bumps and lumps occurred on large areas of ink coverage.</s><s> while it is near impossible to attain perfect smoothness in those situations, an experienced thermography pressman can at least deliver a consistent appearance across a large area of ink.</s><s> the process actually uses heat to "bake" the ink and it rises from the surface of the stock.</s><s> the toast never came out very tasty, but i found the process of printing business cards and stationary quite fascinating.</s><s> in response to richard, we considered companies such as bce to be competition, but we used our superior quality (not always necessarily price) as a selling point to our clients.</s><s> my company that i worked for has since gone under, so that should tell you who won the quality vs. price battle in thermography.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080445</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 29, 2008 9:09 AM">
+<s>>so that should tell you who won the quality vs. price battle in thermography.</s><s> true for a lot of things in life.</s><s> consider the mouth-watering/sub-$1000-to-low 4-figure prices of large screen hdtvs vs the more sobering (but not outrageous) pricing on similar-sized sets capable of far better pictures.</s><s> which are the ones that are going to fly off the shelves in the big box stores?</s><s> it's often difficult to sell quality over price.</s><s> if the customers' expectations are not that high, or if they don't know any better, or if they simply don't have the budget, which will they buy?</s><s> and today's economy certainly doesn't make it any easier.</s><s> sure, i love the picture quality and capabilities of sony's $2400 11" oled hdtv.</s><s> but i settled for a $200 15" hdtv set for my office desk.</s><s> i know its shortcomings (although, surprisingly, very few); but i couldn't justify the cost of the oled set.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080446</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Dec 29, 2008 10:34 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080447</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="(IanGregson)" timestamp="Dec 31, 2008 3:04 AM">
+<s>wow, this turned into a pretty long thread.. just want to thank everyone for the insight.. much appreciated..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080448</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Dec 31, 2008 6:11 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080449</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Dec 31, 2008 7:20 AM">
+<s>>when designing a logo always see how it works on a business card before designing any other collateral.</s><s> always see how it works with all conceivable media and applications that the specific entity would realistically use.</s><s> this includes various collateral, packaging, advertising, stationery, website, signage, vehicles, uniforms, tv, billboards, building graphics, et al; in color and/or black-and-white; offset litho, silkscreen, blind embossing, engraving, hot stamping, etc., all in a range of sizes.</s><s> obviously, the needs of the corner pizza shop are going to be a bit more modest than those of a fortune 500 company.</s><s> most people who "design" business cards and logos are clueless when it comes to the overall system that needs to be designed and implemented for corporate identity.</s><s> to allow a logo and a business card determine the overall persona of an entity is to allow a very small tail wag a very large dog.</s><s> >if it works aesthetically at smallest size it will work at larger size.</s><s> not always.</s><s> often graphics have to be modified to optimize and adapt them for different sizes and uses.</s><s> this includes refinements of line weights, typefaces and kerning, art complexity, color, etc. but, admittedly, more problems can crop up trying to force a logo down in size.</s><s> >i still get logos from designers ("my nephew is very talented") i think that same nephew has knocked on my door a few times over the years...</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080450</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Jan 1, 2009 11:04 AM">
+<s>neil: i've been doing this for 25 years.</s><s> the intent was more for beginners such as ian as far as logo design.</s><s> even so, i always tell my designers - especially interns and novices - to drop whatever logo they are designing into a dummy bc template.</s><s> obviously the logo has to work across all collateral but generally speaking if it works small it will work large.</s><s> not so the other way around.</s><s> it's very good advice for a beginner or someone just starting out.</s><s> i deal with tons of churches and civic organizations that do their own "design" and telling them to design small has saved all of us a lot of grief when it comes time to print their masterpiece.</s><s> i have tons of customers these days that only have a business card and a website.</s><s> nothing else.</s><s> maybe a brochure or palm card.</s><s> stationery suites are rapidly going away.</s><s> another reason for designing and testing small is all the gradients people want in logos.</s><s> again, go to a site like logoworks to see their portfolio.</s><s> can't tell you how many times i look at a graphic artist and they're building this swirly thing with gradients in cmyk at 8 x 10.</s><s> ain't gonna work when reduced to 10% to fit a biz card.</s><s> i'm probably old school (passed the 25 year mark in the biz this year) but a lot of what is supposed to be a logo on the online logo mills strikes me as cartoonish.</s><s> the ones that stick with me are few and far between.</s><s> when i get an intern in i give them these criteria when designing a logo: 2 primary pantone colors, no clip art, no gradients.</s><s> the ai file can be no larger than 3 x 3.</s><s> i want them to think a bit on their intent when starting to comp a logo.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080451</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Jan 1, 2009 4:53 PM">
+<s>richard, and i've been doing this professionally since 1965.</s><s> >generally speaking if it works small it will work large.</s><s> not so the other way around.</s><s> that's what i said.</s><s> but the key word is "generally".</s><s> it's like saying you only have to worry about a snake being poisonous if it is a rattlesnake.</s><s> many times we've had to modify the appearance of a logo to optimize it for specific sizes or media.</s><s> one size does not fit all.</s><s> i suspect that ian is relatively new to this, but i still don't want to mislead him.</s><s> so, if there will never be anything beyond a business card and other office stationery, then your advice makes sense.</s><s> but, if there is going to be collateral, newspaper or yellow pages advertising, signage, pens or leave-behinds, a proper due diligence would include exploring how a mark (whether pure logotype, symbol, or combination) works in all these environments.</s><s> and granted, much of what passes for "design" work today is clueless.</s><s> computers just make it easier to make mistaeks.</s><s> (sic) >when i get an intern in i give them these criteria when designing a logo: that's fine -- as long as there is a realization that it may not be an appropriate design in other sizes or media.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080452</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Jan 1, 2009 4:58 PM">
+<s>richard, >i've been doing this for 25 years.</s><s> and i've been doing this professionally since 1965.</s><s> >generally speaking if it works small it will work large.</s><s> not so the other way around.</s><s> that's what i said.</s><s> but the key word is "generally".</s><s> it's like saying you only have to worry about a snake being poisonous if it is a rattlesnake.</s><s> many times we've had to modify the appearance of a logo to optimize it for specific sizes or media.</s><s> one size does not fit all.</s><s> i suspect that ian is relatively new to this, but i still don't want to mislead him.</s><s> so, if there will never be anything beyond a business card and other office stationery, then your advice makes sense.</s><s> but, if there is going to be collateral, newspaper or yellow pages advertising, signage, pens or leave-behinds, a proper due diligence would include exploring how a mark (whether pure logotype, symbol, or combination) works in all these environments.</s><s> and granted, much of what passes for "design" work today is clueless.</s><s> computers just make it easier to make mistaeks.</s><s> (sic) >when i get an intern in i give them these criteria when designing a logo: that's fine -- as long as there is a realization that it may not be an appropriate design in other sizes or media.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080453</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Mr.%20Met" timestamp="Jan 2, 2009 8:03 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080454</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Jan 2, 2009 12:33 PM">
+<s>richard, >clip art and stock photography has been a tremendous drain on creativity.</s><s> we're going off on a tangent here.</s><s> clip art and stock has been around for years.</s><s> the fault lies elsewhere, starting with lazy teachers and students in mediocre graphics programs and schools that don't teach good foundations of design, typography, copywriting, production, and printing.</s><s> and since, over the years, computers have dropped to everyday commodity pricing (i paid around $22,000 for my original mac, standard peripherals and software), many clueless folks now have them and figure if they load up with photoshop, illustrator, indesign, and acrobat, they too can be good designers.</s><s> having a good camera doesn't make one a good photographer.</s><s> having a good car doesn't make one a good driver.</s><s> having a good stove doesn't make one a good cook.</s><s> having a good credit card doesn't make one a good dresser.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080425-1080455</DOCNO>
+<TEXT>
+<subject>Font Type and Size for a standard business card?</subject>
+<post author="Neil_Keller" timestamp="Jan 2, 2009 12:34 PM">
+<s>richard, >clip art and stock photography has been a tremendous drain on creativity.</s><s> we're going off on a tangent here.</s><s> clip art and stock has been around for years.</s><s> used with discretion, instead of as a crutch) can lead to some good design solutions.</s><s> the fault lies elsewhere, starting with lazy teachers and students in mediocre graphics programs and schools that don't teach good foundations of design, typography, copywriting, production, and printing.</s><s> and since, over the years, computers have dropped to everyday commodity pricing (i paid around $22,000 for my original mac, standard peripherals and software), many inexperienced folks now have them and figure if they load up with photoshop, illustrator, indesign, and acrobat, they too can be good designers.</s><s> having a good camera doesn't make one a good photographer.</s><s> having a good car doesn't make one a good driver.</s><s> having a good stove doesn't make one a good cook.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-3038327-696804</DOCNO>
+<TEXT>
+<subject>Adobe Illustrator CS5 Jpeg to Vector</subject>
+<post author="BuffaloSoldiers" timestamp="Aug 9, 2010 8:31 AM">
+<s>i would like to change a jpeg to a vector and take out the background using cs5 adobe ilustrater on windows 7 os.</s><s> could someone help with instructions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-3038327-3039352</DOCNO>
+<TEXT>
+<subject>Adobe Illustrator CS5 Jpeg to Vector</subject>
+<post author="bpylant" timestamp="Aug 9, 2010 1:37 PM">
+<s>you'll need to use the trace feature.</s><s> you may wish to post this in the illustrator forum, as you'll get more targeted responses there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-3038327-3039577</DOCNO>
+<TEXT>
+<subject>Adobe Illustrator CS5 Jpeg to Vector</subject>
+<post author="Jacob%20Bugge" timestamp="Aug 9, 2010 2:57 PM">
+<s>bs, 
+</s><s>you may use live trace, with its different options, or redraw with the pen tool.</s><s> the former may be suitable in certain cases, the latter requires some skill and knowledge, but may give you cleaner artwork. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-3038327-3042275</DOCNO>
+<TEXT>
+<subject>Adobe Illustrator CS5 Jpeg to Vector</subject>
+<post author="Imranma" timestamp="Aug 10, 2010 1:12 PM">
+<s>simple watch this http://www.adobe.com/designcenter/video_workshop/?id=vid0043 imran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-285196</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="(Heather_K)" timestamp="Dec 21, 2008 7:29 AM">
+<s>hi everyone, i am new here.</s><s> i am a novice with adobe products, but i do have the creative suite.</s><s> i have used illustrator tons and am very comfortable with it.</s><s> i used indesign once to make a pamphlet.</s><s> i am part of a charity group that often puts on events.</s><s> i will be making all the flyers.</s><s> printing budget is low and will probably consist of going to kinkos and printing on a4 paper.</s><s> so these flyers are really not all that involved, but i want to make them the very best that they can be.</s><s> now my question.</s><s> is it better to use indesign or illustrator to make the flyers?</s><s> and as a bonus, if you know of any sites that might give me inspiration to make flyers, i would appreciate it!</s><s> i try to keep my eyes peeled and learn new things all the time.</s><s> i want to give credibility to our group with the flyers, and i dont want them to look cheesy or home-made.</s><s> thanks for any tips you might have!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080457</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Dec 21, 2008 5:42 PM">
+<s>heather, welcome to these forums!</s><s> if these are single page flyers, either one.</s><s> for multipage work, indesign.</s><s> take a look at print magazine or communication arts magazine for getting creative juices going.</s><s> i've been subscribing to both for decades!</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080458</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="BobLevine" timestamp="Dec 22, 2008 5:33 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080459</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Dec 22, 2008 6:58 AM">
+<s>of course, illustrator elements can be included in an indesign document.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080460</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="John%20Danek" timestamp="Dec 22, 2008 6:09 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080461</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Dec 23, 2008 12:36 PM">
+<s>john, my point was that for multipage documents, you're generally better off with the structure and workflow afforded by indesign.</s><s> for single page documents, of course, either way can work; and illustrator-created elements work in indesign, of course.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080462</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="TrueImage" timestamp="Dec 23, 2008 1:12 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080463</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="(Heather_K)" timestamp="Dec 23, 2008 10:05 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080464</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="(Heather_K)" timestamp="Dec 23, 2008 10:09 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080465</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="D.%20McCahill" timestamp="Dec 24, 2008 6:27 AM">
+<s>> and thanks for not laughing at my question we try to never do that.</s><s> we were all beginners once as well.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080466</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Dec 24, 2008 6:50 AM">
+<s>heather, as don says.</s><s> most of us who volunteer some time here do so because we enjoy helping by sharing our knowledge and experience.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080467</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="baad2" timestamp="Mar 19, 2009 8:24 AM">
+<s>hi here's a philosophical answer: the software you are most skilled at - is the best one to use ;-)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080468</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Mar 20, 2009 9:48 AM">
+<s>baad, bad idea -- if it's the wrong software for the job.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080469</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Ian%20C.%20Matthew" timestamp="Mar 21, 2009 2:54 AM">
+<s>true.</s><s> foe example, some know their way around powerpoint and use it as a graphics app as well as a presntation tool!</s><s> not good!</s><s> ian
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080470</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="D.%20McCahill" timestamp="Mar 23, 2009 4:56 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080471</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="BobLevine" timestamp="Mar 23, 2009 5:12 AM">
+<s>> they had been doing their word processing in lotus.</s><s> i still think amipro was the best word processor.</s><s> bob
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080472</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="baad2" timestamp="Mar 23, 2009 5:28 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080473</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="garek007" timestamp="Mar 23, 2009 9:52 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080474</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Mar 23, 2009 3:20 PM">
+<s>baad, stan has it right.</s><s> >if ian knows his way around illustrator what's wrong with using a software he knows?</s><s> but that is not what you said in post #11.</s><s> even so, as i said in post #1, illustrator is fine for single- or double-sided flyers.</s><s> but the more pages, the less suitable it is.</s><s> a printer is not likely to accept a pile of single page or spread illy files for a multipage document graciously.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080475</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="MichaelKazlow" timestamp="Mar 23, 2009 4:01 PM">
+<s>this exact question came up at work today.</s><s> the person in question was ordering id, but it was on the only program available for content creation for flyers, posters, and all artwork.</s><s> i suggested that if only one program for artwork, posters, and flyers, i'd go with illy.</s><s> however, if i had my choice i'd go with the design standard package, since there are uses for illy, ps, and id (and of course acrobat).</s><s> in the end we will try to get the package, but the choice if id or illy depends upon not only what you need to do, but what other tools are available to help you out.</s><s> i'd hate to do multi-page documents in illy (or ps), but i'd also hate making id my sole artwork program as well.</s><s> mike
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080476</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Mar 23, 2009 7:30 PM">
+<s>i agree with mike on the choices.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080477</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Jim%20or%20Marion%20Jordan" timestamp="Mar 24, 2009 5:07 AM">
+<s>>but that is not what you said in post #11. neil, it appears that baad was posting the philosophical answer because heather clearly stated "i have used illustrator tons and am very comfortable with it." the answer is clear.</s><s> post #12 sent us on a tangent. ...and the comment about tokyo indicates illustrator is probably more ideal.</s><s> it is a different design market there.</s><s> i work on plenty of asian multi-page documents composed in illustrator.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080478</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="garek007" timestamp="Mar 24, 2009 7:43 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080479</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Mar 24, 2009 9:07 AM">
+<s>from experience, i've found that in china and japan, illustrator (especially a lot of older versions of illustrator) seem to be a favorite of printers.</s><s> quarkxpress and indesign are less commonly used.</s><s> it still doesn't change that it is neither designed for, nor is ideal for multipage jobs.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080480</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Jim%20or%20Marion%20Jordan" timestamp="Mar 24, 2009 9:29 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080481</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Neil_Keller" timestamp="Mar 24, 2009 11:09 AM">
+<s>i don't recall heather saying whether it was one page, two pages, or more.</s><s> if it is either of the first two, there never was an argument.</s><s> and you can attempt to argue ad infinitum about what you consider the merits or lack thereof of my prior posts.</s><s> it won't change a thing.</s><s> neil
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1080482</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="Jim%20or%20Marion%20Jordan" timestamp="Mar 24, 2009 11:27 AM">
+<s>you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-1080456-1870363</DOCNO>
+<TEXT>
+<subject>Best for making event flyers: InDesign or Illustrator?</subject>
+<post author="pbear*" timestamp="Apr 6, 2009 1:14 PM">
+<s>i'm sure there are many sources for inspriation, but i stumbled across this not too long ago: http://www.makebetterflyers.com/ 
+as for which is better, illustrator or indesign, i would not use illustrator if there were a lot of text.</s><s> as pointed out if you're comfortable with illustrator use that.</s><s> you might try doing the text in indesign though... maybe you'll find you like it better! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4818552-1092571</DOCNO>
+<TEXT>
+<subject>The best way to enlarge an image for print?</subject>
+<post author="Not_Happy_With_Adobe" timestamp="Nov 2, 2012 7:06 AM">
+<s>hello 
+</s><s>i've been designing for print for several years.</s><s> occasionally i design large display posters/banners (a0, 6-sheet, billboard etc) which use a photographic image.</s><s> assuming that the image i have is smaller at 300ppi than the final print, what is the best way to enlarge the image?</s><s> based on my experience, it seems that there are three options (to make it simple, the example here assumes that my image is exactly half the size it needs to be printed at.</s><s> i'm also assuming that the file i will supply to the printer will be a high res pdf exported from indesign): 
+1.</s><s> set up the indesign file at 100% size, place the photo and have indesign upscale the image to 200%.</s><s> export a high res pdf for print. 
+2.</s><s> set up the indesign file at 50% size, place the photo with no upscaling by indesign.</s><s> export a high res pdf and have the printer blow it up to 200%. 
+3.</s><s> set up the indesign file at 100% size, enlarge the photo in photoshop to 200%, and place the photo with no upscaling in indesign.</s><s> export a high res pdf for print. 
+i have been advised that having indesign upscale the image is not a good idea, and i never do this.</s><s> i guess that option 3 is probably best, with photoshop doing the work and the resulting pdf being the correct size.</s><s> however, it's not always possible to do this Ð some posters are huge which means that the enlarged photo and the high res pdf will both be huge files, and i think also indesign has a maximum document set up size anyway.</s><s> so sometimes i use option 2. 
+</s><s>so firstly, why is it a bad idea for indesign to upscale the image (as i say, i never do this, but i would like to know the technical reason)?</s><s> secondly, if the choice is between re-sizing myself in photoshop prior to exporting the pdf, or having the printer enlarge a high res pdf, which is better?</s><s> when i say 'better' i mean in terms of the quality/sharpness of the end result.</s><s> also, i assume that vector elements in my design will not be adversely affected in either scenario, is that assumption correct? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4818552-4819179</DOCNO>
+<TEXT>
+<subject>The best way to enlarge an image for print?</subject>
+<post author="John%20Danek" timestamp="Nov 2, 2012 10:44 AM">
+<s>this is a common question, so you're definitely not alone.</s><s> i use option #2.</s><s> i prefer to use illustrator, but indesign is ok, too.</s><s> indesign's document resolution is set in the print dialog ( if i'm not mistaken ).</s><s> you assume vector elements really do not matter.</s><s> that's not entirely true.</s><s> your document / raster resolution should be setup as high res.</s><s> this will allow you to avoid "flatness" issues that show-up in lower to mid res documents.</s><s> that aside, i setup my banner and grand format files at 25% with placed images resolution set for 300ppi ( document res set for 2540dpi ).</s><s> then, i use distiller to create a high res ( press ready ) pdf at the 25% size and indicate to the printer to enlarge the file 400% which yields an image res of 75ppi and an output res ( document ) of 635dpi.</s><s> indesign and illustrator should have images placed at the correct resolution in order to holdup to the enlargement.</s><s> i prefer to use distiller because it allows me to create my own settings.</s><s> you can probably do that in the conversion through the application.</s><s> just remember to apply enough res in the document so you do not encounter any line stepping issues, jaggies, and, you know, lines that do not render smooth ( i.e., stepping ).</s><s> recently i created a 3' x 8' banner at 12.5% ( because of image res issues ).</s><s> i placed the image at 600ppi and then enlarged the illustrator document 200% for a scaled down version at 25%.</s><s> the file will still holdup to enlargement because the pre-enlarged image file's res is 300ppi.</s><s> the original 12.5% document res was set for 5080dpi; with the 200% pre-enlarged file's new document res re-set at 2540dpi.</s><s> all of the transparency effects and typography holdup as they should. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4818552-4823595</DOCNO>
+<TEXT>
+<subject>The best way to enlarge an image for print?</subject>
+<post author="Not_Happy_With_Adobe" timestamp="Nov 5, 2012 2:45 AM">
+<s>john, thanks for the reponse.</s><s> i'm afraid you have confused me further, clearly i have gaps in my knowledge!</s><s> you talk about setting the 'document resolution' in indesign or illustrator Ð i had no idea that this was possible, and looking at both programmes, i cannot find where to define this.</s><s> i suppose i had always assumed that as dpi refers to printing, this would be determined by the printer at their end, and not specified in the document provided by me?and that as long as i provide a document with high resolution images (in terms of ppi) then there would be no problem with the printing.</s><s> obviuously, i assume too much!</s><s> perhaps it is because i'm not using distiller (i export pdfs directly from indesign) Ð you suggest that using distiller gives you more options? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Print-design/Discussions-4818552-4825727</DOCNO>
+<TEXT>
+<subject>The best way to enlarge an image for print?</subject>
+<post author="John%20Danek" timestamp="Nov 5, 2012 6:13 PM">
+<s>sorry for the added confusion.</s><s> it appears, after doing some checking in my cs2 apps ( indesign), there is no setting for dpi / output resolution.</s><s> only transparency flattener setting.</s><s> see screen shot below... 
+
+
+</s><s>if you select postscript file in the print presets, you can access resolution settings for transparency flattening there, too... 
+
+
+in the "advanced" tab dialog... 
+
+
+</s><s>but, i like having the option in illustrator 10 file > document setup where i can set the output resolution to whatever is appropriate.</s><s> in this case ( below ) i've got it set for 5080dpi / 300ppi.</s><s> you also have effect > document raster effect setting where you can select 300ppi ( see screen shot below )... 
+
+
+...and raster effects resolution setting... 
+
+
+i may have misled you because the apps i have are not cs6; but you should be able to follow along in your cs6 apps in various settings dialogs.</s><s> mainly, resolution settings can be set in the print dialog boxes. 
+</s><s>the main thing to keep in mind is, because you are enlarging upon output, the base scaled down file must have enough resolution to maintain its appearance at the final size.</s><s> in the case of 50% or 25% file resolution should be maximum ( for current apps it appears 300ppi is considered high resolution.</s><s> most apps now leave output resolution setting adjusted in the rip / print driver. 
+i still use distiller because it allows me to setup custom pdf settings and save them for future use.</s><s> you very well may be able to do that in cs6 apps; but i have a tried-and-true workflow that utilizes distiller as a personal preference. 
+</s></post>
+</TEXT>
+</DOC>
+
+

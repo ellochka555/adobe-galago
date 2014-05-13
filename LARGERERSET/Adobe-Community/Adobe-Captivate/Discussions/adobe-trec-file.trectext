@@ -1,0 +1,1707 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232868-1433813</DOCNO>
+<TEXT>
+<subject>how can i reverse the username sent from Moodle showing on the Captivate Certificate?</subject>
+<post author="matt9099" timestamp="Mar 21, 2014 8:36 PM">
+<s>cap 7.</s><s> moodle 2.6.</s><s> 
+</s><s>the certificate always shows surname,firstname.</s><s> i want it to say firstname surname. 
+</s><s>any ideas?</s><s> 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232868-6232870</DOCNO>
+<TEXT>
+<subject>how can i reverse the username sent from Moodle showing on the Captivate Certificate?</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 8:52 PM">
+<s>the variable displayed on the certificate is just pulling whatever is available from the server.</s><s> if the server sends the user as surname/firstname then that's what you'll see.</s><s> it doesn't break them up in to separate variables for you to change the order. 
+</s><s>so you'll either need to fix this as the server end, or else use some javascript to split out the variables and display them.</s><s> advanced actions has no default way to address this issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232868-6233060</DOCNO>
+<TEXT>
+<subject>how can i reverse the username sent from Moodle showing on the Captivate Certificate?</subject>
+<post author="matt9099" timestamp="Mar 22, 2014 1:51 AM">
+<s>hi rod, thanks for your help. 
+</s><s>moodle does send the username out 'surname, firstname'.</s><s> i have had this confirmed by the moodle experts. 
+</s><s>is there a good javascript forum for me to souce the code to split and display the name correctly? 
+
+</s><s>any help is greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232868-6233083</DOCNO>
+<TEXT>
+<subject>how can i reverse the username sent from Moodle showing on the Captivate Certificate?</subject>
+<post author="TLCMediaDesign" timestamp="Mar 22, 2014 4:27 AM">
+<s>put this javascript in the <head> section of your html document: 
+<script> function swapname() { var cp = document.captivate; var getname = cp.cpeigetvalue('m_varhandle.cpquizinfostudentname'); var getname = getname.split(","); getname.reverse(); var newname = getname[0]+" "+getname[1]; cp.cpeisetvalue('m_varhandle.cpquizinfostudentname', newname); } </script> 
+</s><s>then execute javascript on the enter slide before you reach the certificate. 
+swapname(); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-1417964</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Kkies88" timestamp="Feb 28, 2014 12:59 PM">
+<s>i have captivate 7 and pause will not work in video recordings?</s><s> why would this be? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6167836</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Lilybiri" timestamp="Feb 28, 2014 1:01 PM">
+<s>which pause are you talking about?</s><s> and is this a captivate hd video demo that you mean by 'video recording'? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6167784</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Kkies88" timestamp="Mar 19, 2014 5:48 PM">
+<s>i am recording a video demo in captivate demo 
+i went to file- record video demo and these are my settings: images don't survive when replying via email 
+once i click record, then if i hit pause/break during the recording, it does not work.</s><s> is there anyway to pause while doing the recording? 
+</s><s>thanks 
+</s><s>katherine kies call send sms add to skype you'll need skype creditfree via skype 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6167943</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Russ_E" timestamp="Feb 28, 2014 1:30 PM">
+<s>do you mean when you are recording and try to pause the recording for a moment?</s><s> if so, i had the same problem and it turned out that the shortcut for pause/resume was assigned to a key i didn't have on my keyboard. 
+</s><s>hope that helps.</s><s> russ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6167988</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Kkies88" timestamp="Mar 19, 2014 5:49 PM">
+<s>yes- this is exactly what i mean, but it would not let me change the key it was assigned to.</s><s> it says it is assigned to "pause" which i do have but it does not work. 
+i changed it to another key and it still will not work.</s><s> any other ideas? 
+</s><s>katherine kies call send sms add to skype you'll need skype creditfree via skype 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6223001</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="MikeYang" timestamp="Mar 19, 2014 2:39 AM">
+<s>exactly the same issue that i have now.</s><s> any solution? 
+</s><s>thanks, mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6225538</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Kkies88" timestamp="Mar 19, 2014 4:14 PM">
+<s>hi 
+</s><s>sort of - i followed the instructions here -http://help.adobe.com/en_us/captivate/cp/using/wsc1b83f70210cd101-4491 9a111c993bd3a1-8000.html 
+</s><s>to change the shortcut key and then it worked.</s><s> however, it is not easy to tell when it is paused.</s><s> the box in the task bar will just have a little grey circle on it, so you have to be vigilant! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6225901</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Captiv8r" timestamp="Mar 19, 2014 6:02 PM">
+<s>hi there 
+are you by chance on a mac?</s><s> i ask because it may actually behave differently on a mac than it does on a pc. 
+i think the confusion here stems from the fact that the preferences dialog is presented differently depending on how you opened it.</s><s> for example, if you are working in a typical cptx project or with no project open, clicking edit > preferences reveals this: 
+
+
+</s><s>notice the key to pause a recording may be configured. 
+</s><s>but if you have selected a video demo recording and you are either editing that recording or if you open the preferences from the recording window, you see this: 
+
+
+</s><s>note the absence of any ability to configure a key to pause.</s><s> thus, there is no ability to pause recording in a video demo, at least there isn't for me, using a pc.</s><s> mac may be different.</s><s> i'm a mac ignoramous. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6232601</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="sshepler01" timestamp="Mar 21, 2014 5:07 PM">
+<s>nope, i don't have a mac.</s><s> i've already tried what you've noted, but while i'm recording, the key i'm using does not pause the recording.</s><s> i've tried changing the key also.</s><s> i know it's not pausing because i'm listening to the recording afterwards.</s><s> very frustrating. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6232656</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 5:26 PM">
+<s>hi there 
+are you recording in video demo mode?</s><s> if you are, that's the whole point.</s><s> there is no pausing functionality built into that mode of recording.</s><s> that's what i was attempting to show in the dialog images. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6232715</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="sshepler01" timestamp="Mar 21, 2014 5:45 PM">
+<s>hi rick; i've uploaded a pp deck, right clicked on one of the slides, and went to audio > record from there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6167821-6232864</DOCNO>
+<TEXT>
+<subject>I have captivate 7 and pause will not work in video recordings? Why would this be?</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 8:12 PM">
+<s>lol, okay.</s><s> we are comparing spiders to hedgehogs here.</s><s> you are talking about pausing during audio recording.</s><s> what this thread is about is pausing during the process of a video recording.</s><s> two completely different things.there is no pause for recording audio.</s><s> there is only "do over". 
+</s><s>rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231751-1433489</DOCNO>
+<TEXT>
+<subject>Can't change quiz Interaction ID in v7.</subject>
+<post author="priestrond" timestamp="Mar 21, 2014 11:33 AM">
+<s>i'm new to v7 and cannot change the quiz interaction id.</s><s> in previous versions i could change, but even with reporting features turned on, i cannot change the id.</s><s> version problem or operator issue? 
+</s><s>ron 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231751-6232789</DOCNO>
+<TEXT>
+<subject>Can't change quiz Interaction ID in v7.</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 6:53 PM">
+<s>if you're trying to change the interaction ids and captivate is not retaining or saving the changes you make, it seems to be related to the fact that it thinks the id number is already in use.</s><s> change the id number to something else.</s><s> usually changing it by just one digit is all that is needed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231026-1433361</DOCNO>
+<TEXT>
+<subject>Captivate 6 - trouble with pieces of the next slide displaying/bleeding through on current slide</subject>
+<post author="lgssowd" timestamp="Mar 21, 2014 8:36 AM">
+<s>similar to this thread - http://forums.adobe.com/message/4734635 - where unfortunately no resolution was posted. 
+</s><s>i'm using captivate 6 and i'm having trouble with pieces of the next slide, after the current one, displaying/bleeding through on the current slide. 
+</s><s>this can only be seen when published. 
+</s><s>there are no transitions on any slides. 
+</s><s>it's published as a scorm file, but the error also exists on the pdf when it's published as that. 
+</s><s>any advice on how to correct this please? 
+</s><s>please see screenshot below.</s><s> thanks.</s><s> 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231026-6231670</DOCNO>
+<TEXT>
+<subject>Captivate 6 - trouble with pieces of the next slide displaying/bleeding through on current slide</subject>
+<post author="ZimboJanet" timestamp="Mar 21, 2014 11:23 AM">
+<s>we have encountered this issue quire often when working with software simulation type projects that contain a lot of recorded slides.</s><s> some of things we have found that have helped: 
+1.</s><s> deleting all unused objects out of the library 2.</s><s> setting the slide quality to "optimized" in the properties panel - it defaults to "low 8-bit" for recorded slides and we haven't found how to change that preference for recording 3.</s><s> often i've found that just going back and clicking each slide in the filmstrip seems to help it figure itself out! 
+</s><s>if noneof the above help - then we try closing the project and clearing the project cache... 
+</s><s>that's my 2 cents' worth.</s><s> would be itnerested to hear if anybody else has better solutions.</s><s> we have recently moved to captivate 7 and am hoping this might behave better! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231026-6232787</DOCNO>
+<TEXT>
+<subject>Captivate 6 - trouble with pieces of the next slide displaying/bleeding through on current slide</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 6:40 PM">
+<s>turn off compression options in preferences one by one and republish until you see results.</s><s> it's usually the advanced project compression option that's responsible. 
+</s><s>see the section on this page about project preferences: http://www.infosemantics.com.au/adobe-captivate-troubleshooting/how-to -set-up-preferences 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230748-1433178</DOCNO>
+<TEXT>
+<subject>Inconsistent scrollbars in Captivate 6</subject>
+<post author="HelpAngel" timestamp="Mar 21, 2014 6:56 AM">
+<s>why do scrollbars appear or disappear in my published captivate 6 project? 
+</s><s>operating system: win7 original resolution and recording: 1024 x 768 rescaled and published at: 800x600 
+</s><s>my client is concerned because the new size for 800x600 looks good on her laptop in chrome, in ie there is still a small scrollbar on the right and bottom, but if she opens the browser window in full screen mode with f11 it looks fine. 
+</s><s>thanks for your help with this! 
+</s><s>angel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230748-6232786</DOCNO>
+<TEXT>
+<subject>Inconsistent scrollbars in Captivate 6</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 6:32 PM">
+<s>browsers do differ in how they display content.</s><s> is this content set up to be opened in a new window?</s><s> if so, perhaps you need to set the link that opens the window to do so at a slightly larger size.</s><s> ie may be taking into account something that chrome does not and therefore thinks the content is slightly larger for some reason.</s><s> hence the scrollbars. 
+</s><s>is there an lms involved at all?</s><s> if so, you may need to change the settings that open the window there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229337-1432907</DOCNO>
+<TEXT>
+<subject>Project file size too large</subject>
+<post author="gaarapata" timestamp="Mar 20, 2014 4:23 PM">
+<s>hi again, i just have a question that i hope someone can shed light on.</s><s> i created a project with an audio file (mp3).</s><s> my concern is that the project file is very large (200+mb) even if the mp3 file is only around 10-15mb in size.</s><s> the project only has a few slides containing a few texts and a single picture.</s><s> though the published file is only around 7mb, my concern is the project file size.</s><s> i already checked library tab and clicked on unused files and it didn't find any.</s><s> is this normal? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229337-6229476</DOCNO>
+<TEXT>
+<subject>Project file size too large</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 5:45 PM">
+<s>what version of captivate an os are you on? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229337-6230683</DOCNO>
+<TEXT>
+<subject>Project file size too large</subject>
+<post author="gaarapata" timestamp="Mar 21, 2014 7:08 AM">
+<s>hi rodward, i'm using adobe capativate 7, version 7.0.1.237.</s><s> i just checked if there were any updates just a few minutes ago and it said that i had the most updated version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229337-6232784</DOCNO>
+<TEXT>
+<subject>Project file size too large</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 6:29 PM">
+<s>was this project upgraded from an earlier version of cp or created from scratch in cp? 
+</s><s>you may be seeing the early stages of some file corruption.</s><s> i would suggest copying your slides from this project into a new blank project shell of the same dimensions to see if that pulls out the bloat. http://www.infosemantics.com.au/adobe-captivate-troubleshooting/basic- troubleshooting-techniques 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232565-1433688</DOCNO>
+<TEXT>
+<subject>Publishing issue</subject>
+<post author="broneill62" timestamp="Mar 21, 2014 4:15 PM">
+<s>i am unable to publish a project in captivate 5.5. whenever i try, i get a 0kb file that is useless.</s><s> i am trying to publish the flash as a zip file.</s><s> it also doesn't publish the word handouts either.</s><s> it says, "publish failed". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232565-6232706</DOCNO>
+<TEXT>
+<subject>Publishing issue</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 6:26 PM">
+<s>check the suggestions here: http://www.infosemantics.com.au/adobe-captivate-troubleshooting/basic- troubleshooting-techniques 
+especially #8 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232018-1433575</DOCNO>
+<TEXT>
+<subject>Split Project file Size</subject>
+<post author="Canada_Mac" timestamp="Mar 21, 2014 1:20 PM">
+<s>my client created a large project: 940 slides - 118 mb 
+we now want to split it into 15 separate cptx files to make it more manageable.</s><s> we will then use the aggregator to "stitch them together" into one project. 
+</s><s>the first cptx contains the initial 3 slides of the presentation (937 slides deleted and the library was cleared of unused items).</s><s> "save as" was used to create the first split out cptx file. 
+</s><s>problem.</s><s> the newly created cptx which has only 3 slides (no audio/video) is 23 mb even though 99% or the slides were removed. 
+</s><s>the same occurs with the next cptx file which has only 6 slides - again over 23mb. 
+</s><s>at this rate, the 15 broken out projects will be way larger that the original single project which was 118 mb. 
+</s><s>anyone else have this bloated file size issue? 
+</s><s>shaun 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232018-6232705</DOCNO>
+<TEXT>
+<subject>Split Project file Size</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 6:23 PM">
+<s>try this: open the main project in captivate.</s><s> create a new blank project (only a single blank slide) that is the same height and width as the main project.</s><s> select slides from your main project and copy them.</s><s> paste these slides into the new blank project.</s><s> save and close the newer project with whatever name relates to the slides copied in.</s><s> rinse and repeat for other groups of slides from the main project. 
+</s><s>then how big are your projects?</s><s> since you're only copying in a few slides each time, only the graphics or sound files for those specific slides will end up in the new project.</s><s> so it's file size should not be bloated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232591-1433719</DOCNO>
+<TEXT>
+<subject>unable to pause while recording in Captivate 6</subject>
+<post author="sshepler01" timestamp="Mar 21, 2014 4:32 PM">
+<s>i've tried the pause / break button, it does not work to pause while recording.</s><s> i've also followed directions to go into edit > properties, but the i'm unaable to change option for the global preferences > to pause / resumre recording button. 
+</s><s>any suggestions appreciated!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232591-6232558</DOCNO>
+<TEXT>
+<subject>unable to pause while recording in Captivate 6</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 4:59 PM">
+<s>hi there 
+see if the thread linked below helps to explain it. 
+</s><s>click here to view 
+cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232155-1433618</DOCNO>
+<TEXT>
+<subject>When will Aggregator be updated?</subject>
+<post author="Mr. Zogg" timestamp="Mar 21, 2014 1:33 PM">
+<s>among the multiple problems with this supplemental application: the "custom icon" function of aggregator does not place the specified .ico into the resulting windows .exe, aggregator .exe files built on a mac just don't work, and aggregator on mac won't open its own .aggr files. 
+</s><s>so, i can only assume the captivate team is hard at work correcting these major functional shortcomings.</s><s> my question is, when will a working version of aggregator be released? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6232155-6232120</DOCNO>
+<TEXT>
+<subject>When will Aggregator be updated?</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 1:45 PM">
+<s>lol, i'd probably say "don't hold your breath".</s><s> i say that because of the history for things like aggregator. 
+</s><s>when captivate first appeared, there was nothing like the aggregator.</s><s> then a bright young man named jesse warden created a way to sort of package together some captivate movies.</s><s> it was called the "captivate player".</s><s> then it was either macromedia or adobe (can't remember which) that created the predecessor to aggregator.</s><s> it was called "menubuilder".</s><s> and finally we now see "aggregator". 
+i hate to sound like the voice of doom and gloom, but there likely isn't that much actual demand for aggregator projects.</s><s> i don't believe they work for a lms (not sure why anyone would want to use them for a lms as i believe lms has its own similar functions).</s><s> and because they point at and use swf content, they don't work in that html 5 world for iphones and ipads. 
+</s><s>aside from easily packaging something for plopping on a cd or dvd, i can't really see where adobe would perceive a huge benefit by upgrading it. 
+</s><s>but those are just my own observations.</s><s> perhaps your needs are different.</s><s> i'm guessing they are as you are asking about it being upgraded. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231428-1433386</DOCNO>
+<TEXT>
+<subject>Adobe Captivate - Web Objects</subject>
+<post author="dlmojo22" timestamp="Mar 21, 2014 10:18 AM">
+<s>im having a problem publishing web objects in a captivate project.</s><s> when creating, the web objects are working in the preview mode, but show blank after publishing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231428-6231853</DOCNO>
+<TEXT>
+<subject>Adobe Captivate - Web Objects</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 12:18 PM">
+<s>i am assuming you are referring to web object interaction here.</s><s> upload your course to a web server or scorm cloud and check if you still get the same error. 
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-1432493</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Jess79" timestamp="Mar 20, 2014 9:03 AM">
+<s>i use version 5.5. 
+</s><s>when i record an assessment simulation, those slides are automatically set as a master slide.</s><s> therefore i can't use those slides to edit them and copy to the master slide that i have create for the project. 
+</s><s>of course i want to copy all the interactions done during the recording.</s><s> specially the ones text entry boxes, where i might want the user to enter itself. but i also have a problem with those text entry boxes, as i can't edit them either, and enter the score i expect from the user by doing this interaction.</s><s> it is not editable, is like belongs to the master slide. 
+</s><s>any help with this?</s><s> as i have a huge project to deliver during this year where i have to create minimum 30 cbt's with simulations. 
+</s><s>thanks very much.</s><s> rgrds jessica.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6228054</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 10:32 AM">
+<s>something is not making sense here.</s><s> how can a simulation slide get automatically set as a master slide? 
+</s><s>new capture slides are normally added right after the currently selected slide in the filmstrip.</s><s> is it possible that you may be in the master slide panel with a master slide selected at the time you opt to do a simulation capture, and this is why your sim slides end up being master slides? 
+</s><s>try making sure that you are not looking at the master slide tab first.</s><s> go to the filmstrip view of the main slides, select one of them and then do a simulation capture.</s><s> where do these sim slides end up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231077</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Jess79" timestamp="Mar 21, 2014 8:15 AM">
+<s>hi, thanks for your answer.</s><s> actually i am sorry, i think i didn't explain myself with the correct wording.</s><s> as to be honest i am not  very expert on captivate, but i need to find a solution for my team projects.</s><s> let me explain again: 1- i record an assessment simulation 2- when i get all the recorded slides for the project, those slides can't be editable any longer, as it would be an image that you paste in captivate.</s><s> the recorded slides become as background.   for instance, if i do a screenshot, and paste it on a slide of captivate, i can move that image around the slide as i wish.</s><s> that's what i want to be able to do with the screens which it comes from a recording, i want to transform them to an image, that it keeps all the interactions recorded for each screen.   3- then i need to add following background template to those slides.</s><s> and the recorded screen needs to be moved to the rectangle on the right side (the big one)   then i paste the image over the background and would look like this: hope is more clear now what i need to do.</s><s> thanks for your help.</s><s> jessica.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231080</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 8:19 AM">
+<s>i suspected this was what you wanted, but it was indeed explained in a very confusing way... 
+</s><s>it is not readily done in captivate.</s><s> long time ago i explained a possible workaround with a 'knockout master slide' (i'm bit creative about new terms): http://blog.lilybiri.com/create-and-use-a-knockout-master-slide 
+lilybiri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231199</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Jess79" timestamp="Mar 21, 2014 8:51 AM">
+<s>hi, 
+</s><s>i already did that as well by rescaling the project.</s><s> and kind of worked, but still too complicate for all the projects i need to create.</s><s> as i actually want to select the full slide and copy/paste it to another project to substitute the excercise but keep other interactions from the old project, and the subtitles as well of the original slide.</s><s> and this option doesn't allow me to do that. 
+</s><s>is not available with captivate 5.5., neither with version 7? 
+very bad... that we can't do that, it would have really save my team lot and lot of time for the projects. 
+thanks very much for your help anyways.</s><s> jessica.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231390</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="armoorefam" timestamp="Mar 21, 2014 9:40 AM">
+<s>i am not sure if this is closer to what you are wanting or not, but i offerit just in case it is.</s><s> i needed to create software training for our teachers that would be using collaborate, but frustratingly at the time they always came out with new versions in the middle of summer training.</s><s> we just couldn't wait to start training after the new version came out.</s><s> what i ended up doing was using image pieces and parts of the interface that i used to make the interface of the software.</s><s> i was able to create the training to get our staff started but then it was easy to just change impacted ui pieces and add a few new slides in for new features when the new version came out to continue using nearly the same training for the rest of the summer.</s><s> from version 11 to 12 for instance, only 1 small ui element changed.</s><s> the updating took me a mere 15 minutes compared to having to make a whole new training because that one tiny ui element was different.</s><s> this has a large up front time investment, but is saves time in the long run when software is updated. 
+</s><s>your mention of movable images of the ui and screen parts makes me wonder if you are loooking for something similar.</s><s> would designing not with a simulation recording but more as a regular project and parts of the software ui as individual images that you can manipulate with the timeline, effects, and interactions be what you need?</s><s> if so, i can post a link to the captivate file i used for our porject so you can see how i did that one. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231377</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 9:39 AM">
+<s>no real change.</s><s> i have been begging, pleading to include such a knockout master slide, and make it possible to embed captures in such a master slide with a much less cumbersome work flow.</s><s> but if there are not more users who ask for such a feature (have answered similar questions multiple times on the forums), it will never become a priority.</s><s> the message is: please, log a feature request. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231627</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 11:05 AM">
+<s>lol, i cringe when i see the term "knockout" related to anything.</s><s> a "knockout master slide" conjures images of someone not knowing what they want so they create this "super duper" bright and full of gratuitous animation slide hoping to "be a *knockout* (as in "knocking your socks off")". 
+</s><s>wouldn't it be better described as a "masking master"?</s><s> because it sounds to me as if you are wanting to apply a mask and only reveal specific areas. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227676-6231790</DOCNO>
+<TEXT>
+<subject>Edit Assessment Simulation mode slides</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 11:55 AM">
+<s>sorry, rick, that is a term i got again from other applications.</s><s> think you can find it even in captivate, with the text styles.... 
+</s><s>it is indeed sort of a mask, but i needed a more 'striking' title for that blog post, and it had success! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-1433119</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="salu" timestamp="Mar 21, 2014 2:52 AM">
+<s>hi 
+</s><s>i'm creating a set of slides in captivate 7 that contain buttons with links to urls.</s><s> i've figured out how to make the button and link it to the url, and this is working fine in the preview.</s><s> however, when i click on the button and the url pops up in another window, the captivate presentation then automatically moves on to the next slide.</s><s> i can't work out how to prevent it from doing this.</s><s> i want users to be able to stay on the slide until they click on the 'next' button which i have set the action for moving on. 
+</s><s>does anyone know what i'm missing? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6230260</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 2:58 AM">
+<s>make sure that you have deselected the continue playing the project check box. 
+
+
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6230316</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="salu" timestamp="Mar 21, 2014 3:09 AM">
+<s>brilliant.</s><s> thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6230705</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="llaferte" timestamp="Mar 21, 2014 6:42 AM">
+<s>i'm having the same problem.</s><s> but my drop-down does not offer a "continue playing the project" check box.</s><s> running captivate 7.0.1.237 
+</s><s>i have an image to share but when i try to 'insert image' i just see a big grey/brown pop-up that says insert image on the left and a 'close' red x on the right.</s><s>?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6230820</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 7:11 AM">
+<s>perhaps try again and give it some time?</s><s> i believe sometimes it may take a few moments before the web page fully loads. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6230726</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="llaferte" timestamp="Mar 21, 2014 7:21 AM">
+<s>let's try this with firefox... 
+
+</s><s>ok, so ff works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6230961</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 7:59 AM">
+<s>what version of cp are you using? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6231050</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="armoorefam" timestamp="Mar 21, 2014 8:19 AM">
+<s>there are two types of actions in captivate.</s><s> the standard actions listed in the popreties panel will release the playhead on success. 
+</s><s>what you are wanting in this instance is the other type of action: advanced action.</s><s> these do not release the playhead (unless you want it to) and it is the way to get an interaction to do more than one thing from that single click.</s><s> these are easy to jump in to as well, so don't worry about the word advanced in the name. 
+</s><s>go to project in the top menu bar along the top and select "advanced actions ..." 
+</s><s>all this one will need is a type called standard action and that is what the panel will default to, so you are set to give your action a name.</s><s> you will enter it into the "action name" field.</s><s> there are a few finicky rules about naming your actions such as not starting out with a number as the first character and no spaces (you can use underscore though), but let's just get you started with a name goto_url_1. 
+</s><s>double-click in the second column of the table.</s><s> it should open up a drop down with the same options that you normally see in the actions section of the properties panel.</s><s> just as in that drop down you have used before, select "open url or file".</s><s> you will be prompted to put the url in and decide what sort of window you want it to open in just as upi had when you did it as a standard action. 
+</s><s>save your action by clicking on the "save as action" button in the bottom right of that window and then close it. 
+</s><s>now, back in your porject view you can click on your button and this time from tha actions section in the properties panel select advanced action and look for the action you just created.</s><s> slect it and you are ready to test it out. 
+i always like to give ideas on ways you can take the next step.</s><s> if you feel up to it, try this.</s><s> go back in to your advanced action panel and click the drop down for the existing actions and select your advanced action that you made a bit ago.</s><s> double click in the second column but the next row down from your jump to url command.</s><s> locate "play audio".</s><s> if you don't have any audio in the audio library yet, click on "import" and bring in an mp3 or wav audio file from your hard drive or from the varies sound effects that you can find in your captivate/gallery/sound folder.</s><s> captivate comes with about 30 sound effects for you that you can bring in to your project.</s><s> once you pick one, click ok.</s><s> then save the update to your action and close the advanced action window.</s><s> now try it out.</s><s> not only will the url open up and the playhead stay where it is supposed to, but you now have a sound too. 
+</s><s>advanced actions are like having a bag of cookies or potato chips.</s><s> once you realize that you can make more than one thing happen from a single event and hold that timeline still you will keep reaching your hand in for more and more.</s><s> you can make some pretty complex custom interactions and serious (not arcade) games.</s><s> i had a subject area adventure game in my mind from before i ever even bought captivate.</s><s> that desire to be able to build it really provided incentive to start digging in to advanced actions and i have had such a good time seeing what can be done with them.</s><s> i am totally hooked!</s><s> every day i cannot wait to dig in to my captivate projects.</s><s> i bet you will love it too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6231119</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="llaferte" timestamp="Mar 21, 2014 8:26 AM">
+<s>i'm using captivate 7.0.1.237 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6231257</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="llaferte" timestamp="Mar 21, 2014 9:11 AM">
+<s>thanks tammy.</s><s> this info is great, and a great intro to advanced actions; but i couldn't get it to work. 
+i had no problem creating the advanced action (go_to_url_1) just as you described. 
+</s><s>when i got back into the project i was able to create both a text link, and a button link - both pointing to the advanced action "go_to_url_1." when i "previewed" the project (f4) and clicked either link the website opened, but the project immediately started up and went to the next slide. 
+</s><s>again, i did not see any "continue playing the project" check box, to uncheck.</s><s> should i have? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6231374</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 9:36 AM">
+<s>@tammy: http://blog.lilybiri.com/why-choose-standard-over-simple-action 
+perhaps a video: simple vs standard action 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230312-6231733</DOCNO>
+<TEXT>
+<subject>How to stop moving to next slide when clicking a button</subject>
+<post author="armoorefam" timestamp="Mar 21, 2014 11:41 AM">
+<s>thanks, lilibiri.</s><s> for the life of my i couldn't remember the third term used for those.</s><s> i kept remembering the conditional and standard, but simple was just not coming up in my mind.</s><s> liliberi has great tutorials and articles.</s><s> it is well worth digging in at her site to learn a ton about captivate. 
+</s><s>if in addition to the video and article liliberi gave, you would like to see a captivate file that has a click to open a url/file in it that is pausing properly i posted one for you on our server.</s><s> i hope that by seeing a captivate file you may spot the key difference in setup that you need for your project.</s><s> in our project, our graphics on that start page vary a bit from lesson to lesson, so i use a click box instead of a button for the url.</s><s> it makes it faster to set up different graphics for that start page vs updating an image button.</s><s> if a button keeps giving you trouble, perhaps trying a clickbox over a graphic, text, or smartshape could accomplish what you need. 
+</s><s>you can try out the interaction at http://www.virtualhomeschoolgroup.com/file.php/1/temporary_troubleshoo ting_files/slides_pause_after_url_button_clicked/w_clickbox_for_url/pu blished/multiscreen.html see if the the first page properly pauses for you as it does for me.</s><s> if it doesn't, then perhaps it is a specific browser that is 'disobeying' the pause. 
+</s><s>you can download the captivate file to compare how i did it with what you are doing at http://www.virtualhomeschoolgroup.com/file.php/1/temporary_troubleshoo ting_files/slides_pause_after_url_button_clicked/w_clickbox_for_url/ca ptivate/slide_pause_after_url_click.cptx in the captivate file you can download, the note-taking and contact me graphics are the one that goes to a url. if you click on the note-taking click box and look in the actions/on success you will see it linking to the advanced action i named download_notes.</s><s> the open url or file command is there.</s><s> the next button has a pause at 3.5 seconds holding the playback until it is clicked.</s><s> you wil the original countdown that we would normally is there in the timeline a bit below the button.</s><s> if you want to explore the option of just giving the participant time via a countdown to get a file or open a url instead of a full pause until clicked, just take out the button and you will see it the way we usually do them. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231543-1433455</DOCNO>
+<TEXT>
+<subject>Changing the button fill color in Captivate 7?</subject>
+<post author="LearnItAwl" timestamp="Mar 21, 2014 10:35 AM">
+<s>i am pretty sure that when i used captivate 6 and i created a button, there was an option in the properties pane to allow me to change the fill color of the button.</s><s> i am using captivate 7 now, and i no longer see this option.</s><s> under the "general" tab, it allows me to change the button type, caption, make it transparent, or allows me to see button widgets.</s><s> did they remove the ability to simply change the fill color of a button? 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231543-6231618</DOCNO>
+<TEXT>
+<subject>Changing the button fill color in Captivate 7?</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 10:52 AM">
+<s>try clicking the drop-down for button type and changing from a text button to a transparent button and you should see options. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231543-6231635</DOCNO>
+<TEXT>
+<subject>Changing the button fill color in Captivate 7?</subject>
+<post author="LearnItAwl" timestamp="Mar 21, 2014 11:20 AM">
+<s>i tried the different button types, including the transparent one, but i still don't see anything.</s><s> am i missing something? 
+</s><s>edit: i know i can create a smart shape and "use as button;" there is a color fill option there.</s><s> but i was pretty sure that i remembered that color fill option being there for buttons as well. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231543-6231688</DOCNO>
+<TEXT>
+<subject>Changing the button fill color in Captivate 7?</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 11:33 AM">
+<s>i'm wondering if this is something that was maybe added in a service release.</s><s> either that or you may need to reset your preferences. 
+</s><s>mine has a section titled fill & stroke as shown below. 
+
+
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231543-6231649</DOCNO>
+<TEXT>
+<subject>Changing the button fill color in Captivate 7?</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 11:36 AM">
+<s>change the style to default transparent button style.</s><s> 
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231753-1433550</DOCNO>
+<TEXT>
+<subject>Apply to all items no longer working in Captivate 7</subject>
+<post author="ZimboJanet" timestamp="Mar 21, 2014 11:35 AM">
+<s>i have recently upgraded to captivate 7 (from 6) and have encountered a little issue that seems to be a regression as far as i can see. 
+</s><s>here's the workflow we were using in captivate 6: 
+recorded slides for a software simulation.</s><s> we have found that the click boxes on those slides are always set to "include in quiz" (in the reporting section of the properties panel) and have not been able to find any setting that will change this default behavior.</s><s> so, the workaround was to select one of the click boxes, uncheck the "include in quiz" checkbox, and then use the "apply to all items of this type" feature to make this change to all of the many click boxes generated during the software recording. 
+
+</s><s>enter captivate 7...</s><s> same default setting for recorded slides - cannot find a way to generate click boxes that do not get included in quiz.</s><s> but now, when we try to uncheck "include in quiz" for a single click box, and then apply to all itmes of this type, the apply to all no longer works.</s><s> we have to go to every single click box and uncheck the "include in quiz". 
+</s><s>why on earth would adobe remove this functionality?</s><s> anybody got a workaround - or can shed light on what i am missing here? 
+</s><s>thank-you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231418-1433464</DOCNO>
+<TEXT>
+<subject>Captivate 7 - problem with mouse movements jumping</subject>
+<post author="NeedsHelp_37" timestamp="Mar 21, 2014 10:32 AM">
+<s>i just upgraded from captivate 5.5 to 7. when i pull in a 5.5 project and upgrade it to 7, many of the mouse movements play correctly on the screen with the play button at the bottom.</s><s> but when i click preview, the mouse movements are wrong. they jump all over the place.</s><s> this problem also happens if i generate a video or html5 output.</s><s> (i haven't tried flash output because we aren't using that anymore.</s><s>) 
+</s><s>is this a bug?</s><s> this is a huge problem for me.</s><s> no one will sign off on my projects if it's going to do this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-1433239</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 7:30 AM">
+<s>in powerpoint i have set all the slide transitions with the "on click" checked off.</s><s> i have imported them into captivate 6 with high fidelity turned on as well as automatically selected.</s><s> i have placed a navigation button in the top right corner set to pause until user clicks yet the user can click anywhere on the screen and the slide advances.</s><s> i am seeing this in two courses that we are building.</s><s> any help would be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6230878</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 7:46 AM">
+<s>hello and welcome, 
+could you please post a screenshot of the timeline of such a slide?</s><s> you can use the small still camera icon in the browser version of this forum, attachments are not possible. 
+</s><s>lilybiri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6230908</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 7:51 AM">
+<s>
+</s><s>navigation buttons 
+properties on navigation buttons 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6230979</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 8:05 AM">
+<s>so you have those navigation shape buttons (?</s><s>) on the master slide, right?</s><s> that means that the pause will occur at the last frame of the slide.</s><s> can you check that you are using that master slide and that the master slide objects are set on top for the slide? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231060</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 8:10 AM">
+<s>yes, they are smart shapes that are set to use as buttons.</s><s> and yes the master slide objects are set on top. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231078</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 8:16 AM">
+<s>i never use imported ppt-slides, have explored shape buttons a lot but not in that context.</s><s> the ppt slide is in reality sort of a video. 
+</s><s>could you try once the alternative work flow, just to see if it will work better?</s><s> see http://blog.lilybiri.com/why-i-like-shape-buttons-captivate-6 : 
+insert one of the shape buttons on the first slide, time it for the rest of the project and set it also on top.</s><s> now you can time the pausing (timing instead of options accordion), set it near to the end but not totally at the end.</s><s> curious myself if that would work, but since i never use ppt, don't have a file ready to try it out. 
+</s><s>lilybiri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231073</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 8:35 AM">
+<s>it still allows me to click anywhere on the screen to advance.</s><s> this is a real mystery to me.</s><s> i have been creating these for a few years now and this is the first time that i have run into this issue and not been able to fix it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231151</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 8:40 AM">
+<s>hi there 
+if you run the presentation in ppt, does it also stop on that slide?</s><s> if so, perhaps you have an animation coming in on a click that you forgot to change. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231153</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 8:46 AM">
+<s>it performs as designed in ppt.</s><s> all transitions have the "on click" unchecked. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231155</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 8:55 AM">
+<s>interesting.</s><s> i'd suggest clicking the button (in the editor) and scrutinizing your action panel.</s><s> have you by chance cleared the "infinite" check box?</s><s> if so, that will cause the exact behavior you are describing. 
+</s><s>if this is the case, clicking the infinite check box should be the solution you are seeking. 
+</s><s>note what you see in the image below: 
+
+
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231159</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 9:00 AM">
+<s>that would be true if it were a button but it is a smart shape acting as a button on a master slide.</s><s> i don't have the infinite option under action with the smart shape. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231278</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 9:26 AM">
+<s>okay, so just tested with a ppt example used in class.</s><s> sure enough, when coming from ppt a click outside the smarty pants shape does result in the slide advancing.</s><s> personally, i think it's related to the ppt converting to a swf and that being the background.</s><s> but hey ho.</s><s> 
+</s><s>i did find a way past it though.</s><s> insert another smarty pants shape on the master slide.</s><s> just a rectangle.</s><s> size it to cover the whole master slide and configure the properties so it's a button and is totally invisible with 0% fill and 0 for stroke.</s><s> then make sure you move it behind your other buttons.</s><s> finally, configure it with "no action" when it's clicked. 
+</s><s>once you have done that, the new shape should intercept the click and prevent the swf behind it from being clicked and causing the slide to advance. 
+</s><s>hope this helps...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231376</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 9:37 AM">
+<s>thanks for finding out, rick! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231364</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 9:39 AM">
+<s>yes, that seems to do the trick.</s><s> thank you for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231369</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 9:44 AM">
+<s>one last question for you.</s><s> i have the powerpoint presentation that i imported in at 1024x768 but then i have video captures done with captivate that were done in a separate project at 1024x736. reason is to leave room at the bottom of the slide for the customers footer.</s><s> when i copy and paste the video capture project into the presentation project they come in centered on the slide.</s><s> is there any way to bring them in top justified or move them once they are in so that i can have room for the footer? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231424</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="Captiv8r" timestamp="Mar 21, 2014 10:05 AM">
+<s>i think in that case i would click modify > rescale project before you copy and paste the slides.</s><s> when you do that you should have an option to force the bottom margin you want. 
+</s><s>click the image below for a larger and more detailed view. 
+
+
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230898-6231433</DOCNO>
+<TEXT>
+<subject>Slides advance on click even though it is not set to do so</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 10:23 AM">
+<s>thanks, i will give it a try. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231260-1433403</DOCNO>
+<TEXT>
+<subject>Animation from Powerpoint doesn't show when published to html5</subject>
+<post author="TinaNilssonNovo" timestamp="Mar 21, 2014 9:15 AM">
+<s>i have an elearning which is partly based on a powerpoint presentation with text slides where text section appear according to my timeschedule set up in animation in powerpoint. 
+</s><s>when i publish to both flash and html the slides shows ok on my pc but when i run this course on my ipad the animation only show the first part of the animation.</s><s> i am working with captivate 7.0. 
+</s><s>can anybody tell me how to make the animation from powerpoint work? 
+</s><s>br 
+</s><s>tina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228824-1432758</DOCNO>
+<TEXT>
+<subject>Playback dies before finishing</subject>
+<post author="bobelmore" timestamp="Mar 20, 2014 1:33 PM">
+<s>i suppose this could be considered a flash player problem, but since the content is created in captivate, i am posting it here. 
+i have created several learning activities in the past few months using captivate 7, but this is the first time i have encountered this problem. 
+i created a software simulation using my client's pc (must access their system), which runs fine in the previewer. 
+i published it (flash player 10 - i am running the latest version 12.0.0.77) and about 3/4 of the way through (windows ie), i just get a black screen.</s><s> it's like the player died.</s><s> i tried it in firefox, just to confirm, with the same problem.</s><s> i rebooted (again, just to make sure) with the same results. 
+i copied the file to my mac, loaded it into captivate 7 there, published, and it ran fine, using safari. 
+</s><s>from my mac, i loaded it to my website, and it ran just fine on the same pc where it crashed when running from the local drive. 
+i know that websites handle things a little differently, and web delivery (lms) is what matters, but i am curious as to what is happening. 
+</s><s>has anyone experienced this? 
+</s><s>this file is larger than the previous (.swf is about 17mb, lots of audio), so i suppose memory could be a factor. 
+</s><s>thanks for any ideas. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228824-6229477</DOCNO>
+<TEXT>
+<subject>Playback dies before finishing</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 5:47 PM">
+<s>please read this article: http://www.infosemantics.com.au/adobe-captivate-troubleshooting/how-to -set-up-flash-global-security 
+i believe it will explain your issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228824-6231214</DOCNO>
+<TEXT>
+<subject>Playback dies before finishing</subject>
+<post author="bobelmore" timestamp="Mar 21, 2014 8:54 AM">
+<s>thanks rod.</s><s> i am aware of the global security issues (and your site is very helpful) and i set up my main captivate directory as a trusted site, so that should not be a problem, and i don't think there is anything in my lesson that would create a problem, but i will take another look at it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228187-1432637</DOCNO>
+<TEXT>
+<subject>Quiz scope problems in Captivate 7</subject>
+<post author="I_don\'t_believe_it!" timestamp="Mar 20, 2014 11:17 AM">
+<s>i have created a project that consists of a series of slides with quiz questions interspersed.</s><s> for example: 
+slide 1 slide 2 question 1 question 2 slide 3 slide 4 question 3 question 4 slide 5 slide 6 question 5 question 6 (result slide) summary 
+if the user fails the quiz he can either retake it, or review the submitted answers and the correct ones in preparation for retaking it. 
+</s><s>if option 2 is taken the user should then be able to retake the quiz.the problem i have having is with this option (2); the questions stay in review mode even if i reload the course.</s><s> i assume this must relate to the quiz scope. 
+</s><s>having looked at the blogs etc i thought that the quiz scope started at the first question and ended with the result slide.</s><s> so i should be able to navigate to slide 1 or the summary and thereby reset the quiz.</s><s> however when i do this and then return to question 1 the quiz is still in review mode.</s><s> i must be doing something wrong and would appreciate some guidance. 
+</s><s>tia 
+</s><s>andrew 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228187-6228499</DOCNO>
+<TEXT>
+<subject>Quiz scope problems in Captivate 7</subject>
+<post author="Lilybiri" timestamp="Mar 20, 2014 12:31 PM">
+<s>sorry but review/retake process for regular question slides is not as you expect (by design): if the user reviews, he cannot use any other attempt on quiz level, even though he didn't exhaust his attempts. 
+</s><s>have a look at: http://blog.lilybiri.com/question-question-slides-in-captivate and http://blog.lilybiri.com/question-question-slides-part-2 
+</s><s>this is not linked with the quiz scope at all.</s><s> quiz scope's role is, when the user gets out of the scope, that quiz attempt is considered being finished.</s><s> in captivate 6 and later, the quiz scope has become dynamic if you use remediation feature. 
+</s><s>lilybiri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228187-6230276</DOCNO>
+<TEXT>
+<subject>Quiz scope problems in Captivate 7</subject>
+<post author="I_don't_believe_it!" timestamp="Mar 21, 2014 2:57 AM">
+<s>thanks as always lieve.</s><s> it is a shame i was not told this by adobe because when trialling captivate i asked this question and was told that reloading the project in the lms would reset it.</s><s> it does not. 
+</s><s>in your example quiz review is only available once the attempts have been exhausted, so unless i can program the project to reset the quiz i cannot use a model that enables the student to review the answers and then re-take the quiz with the question distractors randomised.</s><s> since i base course completion on completion of the topics and passing the quiz a student who fails the quiz and then selects review would never be able to pass.</s><s> is that correct? 
+</s><s>andrew 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6228187-6231143</DOCNO>
+<TEXT>
+<subject>Quiz scope problems in Captivate 7</subject>
+<post author="I_don't_believe_it!" timestamp="Mar 21, 2014 8:51 AM">
+<s>the answer to my own question is yes; once you have enabled quiz review the user cannot retake the quiz.</s><s> so the model i have been using will not work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230585-1433252</DOCNO>
+<TEXT>
+<subject>Best Practises ?Repurposing videos with Captivate and export as SCORM</subject>
+<post author="llaferte" timestamp="Mar 21, 2014 6:18 AM">
+<s>i'm new to captivate and scorm.  i have a series of 6 basic video lessons (mp4s) which make-up one course.  lerners must complete (pass a summary quiz) each lesson before they can move on to the next.  we want to repurpose these files to create a more immersive ux.  i'm looking for a "best practices" suggestion for this work.   currently the plan looks like this: re-edit existing videos into sets of smaller clips.</s><s> create captivate project/s using the edited clips and adding other captivate tools/features e.g. navigation, quizzes etc. the captivate project/s will be exported/saved as scorm package/s.</s><s> we will up-load the scorm package/s to moodle.   i'm very new to this, i've not yet created a scorm-based moodle project, and am not clear on how they "work," but that's for the moodle forums.   should i create one large "course" with captivate that contains all of the content from all 6 mp4s?  this will require us to rely on captivate's functions to control access to each lesson.  each lesson has a summary quiz; learners must pass each quiz before they can move to the next lesson.  this one scorm package is than imported into one moodle course.   should i create six smaller "lessons" with captivate that contain only the content from one mp4?  this will require us to rely on captivate's functions to control progress through only one lesson.  the summary quiz will be 'administered' by captivate/scorm.  when the learner passes the summary quiz the lesson is complete.  we will rely on moodle's access control functionality to then provide access to the next scorm package.   if anyone has experience with this sort of project, or can offer some advise i would appreciate it.   thanks larry
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230585-6231212</DOCNO>
+<TEXT>
+<subject>Best Practises ?Repurposing videos with Captivate and export as SCORM</subject>
+<post author="armoorefam" timestamp="Mar 21, 2014 8:51 AM">
+<s>while i cannot claim enough expertise to state these are best practices, i offer them as food for thought as you work out your implementation.</s><s> we use moodle and captivate in combination.</s><s> we do kindergarten to grade 12 curriculum and we realized that there is a huge number of lessons that can be repurposed for multiple grade levels and we also have more than one copy of many of our courses. 
+</s><s>what we decided to do was to use what would be equivalent to a repository for the lessons portions.</s><s> these have interactives in them for practice of the new concept but they are not scored.</s><s> our many courses that use a particular lesson can then link to the one instance of the lesson from the repository.</s><s> this saves us a lot of disk space, development time in new course builds, and if we need to fix or update the lesson we merely have to do it once.</s><s> those are huge benefits. 
+</s><s>anything that will score to the grade book runs inside a course so the scorms can 'talk' to the course the student is in, so homework, quizzes, and tests are housed inside moodle courses. 
+</s><s>we can place links to the repository lessons easily into the scorm final landing pages of after the pretest or provide the ability to link to the lesson as feedback if a student is having trouble with a particular question. 
+</s><s>we are also starting a project of building interactive walkthroughs for each problem that will be housed in the reporitory.</s><s> if students get stuck, they can be linked out to the walk through.</s><s> this is a great way to do these because their homework will not have to be weighted down with a walk through for every problem.</s><s> that will make them faster to load, but yet when they do need a walk through we can link them out from the scorm to the deep and interactive added support for just what they need. 
+</s><s>so far, this setup has worked well for us. we are not expecting any major changes such as a new domain name on the repository.</s><s> if your repository domain name or server structure for your repository is likley to be in flux, then this setup is not ideal. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229915-1433065</DOCNO>
+<TEXT>
+<subject>Printing slides</subject>
+<post author="jay fresno" timestamp="Mar 20, 2014 10:57 PM">
+<s>i want to print captivate slides, and it seems like handouts would be the most logical choice.</s><s> however, no matter how few slides per page that i choose, the slides are so tiny in the word document that they are not readable.</s><s> if anyone knows a way to print slides at a readable size, i'd love to know about it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229915-6230473</DOCNO>
+<TEXT>
+<subject>Printing slides</subject>
+<post author="RodWard" timestamp="Mar 21, 2014 5:25 AM">
+<s>try deselecting the option box to use tables in the handout output. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229915-6231141</DOCNO>
+<TEXT>
+<subject>Printing slides</subject>
+<post author="jay%20fresno" timestamp="Mar 21, 2014 8:48 AM">
+<s>thanks, mark.</s><s> that helped. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231116-1433339</DOCNO>
+<TEXT>
+<subject>HTML Progress Bar and Information Button in Captivate 7 HTML Presentation</subject>
+<post author="Jmark334" timestamp="Mar 21, 2014 8:44 AM">
+<s>i have a course in my lms that i have 12 modules for, i placed 12 captivate presentations with the each module.</s><s> when a student goes through a presentation i want to indication whether or not they actually went through the presentation and how much time was spent on each slide. 
+</s><s>also i would like to add an information button that displays on each slide that connects to a page or another slide to display the course instructions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6231006-1433342</DOCNO>
+<TEXT>
+<subject>Unexpectedly we are getting an error about deleting slides from PPT that are being used in Captivate</subject>
+<post author="BrianBarnes48017" timestamp="Mar 21, 2014 8:21 AM">
+<s>
+</s><s>this is the error that we are getting.</s><s> i understand what the error is and when it appears but the problem is we are getting this error even though we are not deleting any slides.</s><s> in addition, if we go in and make a change to a linked presentation, again without deleting any slides, we sometimes get this error.</s><s> if we click yes, it clears out all the slides that you check to update and adds the changed slides to the end of the presentation. if we click no, nothing happens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230707-1433256</DOCNO>
+<TEXT>
+<subject>Exit and save in LMS</subject>
+<post author="IreneMeijer" timestamp="Mar 21, 2014 6:50 AM">
+<s>hello, 
+</s><s>i am having problems saving the results in our lms after closing the quiz.</s><s> i have seen several solutions pass, but so far none seem to work. 
+- i've set the end action to close project. - after the quiz created another slide with a button, which i gave the action on succes 'exit'. - i've changed the code in utilities.js to 
+function docpexit() { var win=window.open("","_top","","true"); win.opener = true; win.close(); } 
+and 
+function docpexit() { finish(); } 
+and 
+function docpexit() { lmsfinish(); } 
+</s><s>but those dont seem to work either.</s><s> it does not matter how i close the quiz, the close button of the browser, the close button in the captivate playbar, the back button of the browser, i keep getting errors and no results or attempts are saved. 
+i am using captivate 7 and publish in scorm 1.2. 
+</s><s>any advice on how to make our users exit the content and save the attempts and results? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230640-1433218</DOCNO>
+<TEXT>
+<subject>Internal server reporting not working in Cap 7.0.1</subject>
+<post author="Colin H" timestamp="Mar 21, 2014 6:13 AM">
+<s>i am running captivate 7.0.1 on a mac and am having problems with the internal server reporting option. 
+i have a project that is published as both an swf and html5 output file.</s><s> when i view the published project via swf, the project reports fine.</s><s> when i view the exact same project via html5, i get an "unknown error", and the internal server sees nothing from the project. 
+</s><s>again - this is the exact same published project, and the swf version works, so it's not an error with any of the information i entered into the internal server reporting dialog. 
+</s><s>is there a troubleshooting guide for this issue?</s><s> if not, can someone please help me figure out how to fix this problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-1432549</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="tharkins52" timestamp="Mar 20, 2014 10:21 AM">
+<s>i've published three courses in cp7 (ver.</s><s> 7.0.1.237) to swf and html5.</s><s> i've uploaded the courses to both scorm cloud and the lms that our clients are using.</s><s> on scorm cloud the courses work fine on both the swf and html5 version.</s><s> they bookmark properly throughout the course and quiz and i'm able to pick up where i left off with no issues. 
+</s><s>but, when i upload them to the lms we're working with, the html5 version of the course only bookmarks when it gets to the quiz.</s><s> if the learner were to exit before starting the quiz, they would have to restart the course upon re-entry.</s><s> the weird part is that when they reach the quiz, the bookmarking works fine and they're able to pick up at the question they left off.</s><s> the swf version works fine and bookmarks properly throughout the course and quiz. 
+i have "send data on every slide" and "escape version and session id" checked.</s><s> "never send resume data" and "set exit to normal after completion" are bot un-checked in all three courses. 
+</s><s>i've contacted the lms for support, stating the above information about the courses working on scorm cloud, but they are "not sure why it's not working." obviously this is very frustrating and really unacceptable for us because now we're left with tyring to figure it out. 
+</s><s>i've seen mention of maxslide, but outside of that thread, i'm not able to find any more information about maxslide and how to implement it into our courses. 
+</s><s>for the experts out there; would maxslide be a viable work around?</s><s> if so, could someone be nice enough to elaborate on it's use and implementation? 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-6228051</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 10:28 AM">
+<s>i would first be checking with your lms vendor on the html5 status of their scorm player.</s><s> quite a few lmss are still using older scorm players that have not been rebuilt to be completely html5 compatible.</s><s> if your lms version is any older than a year or two, it's highly unlikely their player is completely html5-compatible.</s><s> ask the vendor to confirm. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-6228077</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="tharkins52" timestamp="Mar 20, 2014 10:34 AM">
+<s>i never thought about that, but i'll pose the question to them.</s><s> thanks for the idea rod. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-6228135</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="TLCMediaDesign" timestamp="Mar 20, 2014 10:54 AM">
+<s>the maxslide solution was because of the way captivate uses the lesson location and suspend data.</s><s> a user's progress is stored in the suspend data and their last location is stored in the cmi.location.</s><s> if you want the user to enter the course to their furthest point, not where they exited, this is where you would use the maxslide user variable. 
+</s><s>the theory is you create a variable in captivate v_maxslide, which will get stored in the suspend data.</s><s> you will need to hijack the scorm call which sets the cmi.location if you don't want to set up and advanced action on every slide.</s><s> the lesson location get's stored as "slide_1" and so on.</s><s> there are several ways to do it but one would be: you'll need to compare the value of cmi.location to the value of the argument sent into the function.</s><s> if the new location is less, exit the function so the new value is not written.</s><s> or in the function set up a counter and store that in the captivate v_maxslide, then when captivate restarts, on the first slide run an advanced action to get that variable and jump to that slide. 
+</s><s>what version of scorm are you publishing to? 
+i can whip up a script and tell you where to put it.</s><s> also sounds like i just got my next blog topic! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-6228682</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="tharkins52" timestamp="Mar 20, 2014 1:10 PM">
+<s>so the lms folks are saying that the scorm player is html5 compatible, but they still don't know what's happening.</s><s> so frustrating. 
+</s><s>thanks tlc.</s><s> if you could come up with a script that would be really awesome.</s><s> i'll be honest, alot of your second paragraph went over my head the first few times i read it. 
+</s><s>and we're publishing to scorm 1.2. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-6229479</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 5:56 PM">
+<s>i would be putting more pressure on your lms vendor to resolve this issue instead of dumping it in your lap.</s><s> if the captivate content works perfectly on scorm cloud in both htm/swf and html5 output, then that pretty much says there's nothing wrong with the cp output.</s><s> the issue must be with the lms.</s><s> but unless you jump and down a bit they will in all likelihood do nothing about it. 
+</s><s>lms vendors hate being adversely compared to scorm cloud.</s><s> that's your best weapon here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6227937-6230439</DOCNO>
+<TEXT>
+<subject>HTML5 Bookmarking Issue</subject>
+<post author="TLCMediaDesign" timestamp="Mar 21, 2014 5:20 AM">
+<s>you really need to see the debugger in your lms so you can what calls are being made and if the lesson location is being populated and read.</s><s> just got a huge project dumped in my lap, i'll check a script this weekend. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-1433115</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 2:36 AM">
+<s>hello, 
+</s><s>occasionally files with these extensions appear in the folders where i keep my .cptx files. 
+
+1. what are they?</s><s> .cpbackup sounds promising, but how do i open it, or what do i do with it?</s><s> 2. are they ok to delete? 
+
+
+</s><s>thanks for any help!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230254</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 2:44 AM">
+<s>.cpbackup is the backup file of your cptx file.</s><s> if your cptx gets corrupt, you can use that to recover till the last saved version. 
+</s><s>don't know about others. 
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230142</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 2:45 AM">
+<s>thanks sreekanth, 
+</s><s>how do i open it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230256</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 2:53 AM">
+<s>you can just change the extension to cptx and open it. 
+</s><s>if you are looking for more info on recovering corrupt files, check these out: 
+adobe blog: http://blogs.adobe.com/captivate/2010/09/recovering-the-project.html 
+rod's blog post: http://www.infosemantics.com.au/adobe-captivate-troubleshooting/recove r-corrupt-project 
+sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230340</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 3:13 AM">
+<s>thanks sreekanth!</s><s>!</s><s> 
+</s><s>btw its such a different experience reading about what to do about crashed files when you dont have a problem. : ) so much better. : ) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230342</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 3:20 AM">
+<s>i take it .bak was replaced by .cpbackup at some point?</s><s> these blog posts talk about chaning the .bak file, which i don't have, to .cptx... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230345</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 3:34 AM">
+<s>yes.</s><s> even my backup files are .cpbackup and i have cp5.5+ versions.</s><s> so, i guess it is pre-cp5 era files. 
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230346</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 3:37 AM">
+<s>ok.</s><s> got it.</s><s> thanks again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230416</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 3:40 AM">
+<s>sreekanth and ryan, 
+</s><s>the other files are 'dump' files, created when captivate or the project crashed.</s><s> they have information for the team, in case they want to explore the cause of crashes. 
+</s><s>i'm smiling now, because i have already sent quite a bunch of those files to the team, i'm one of their fav 'crashing' users. 
+</s><s>lilybiri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230347</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 3:43 AM">
+<s>ok.</s><s> good to know..</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230349</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 3:48 AM">
+<s>thanks lilybiri.</s><s> 
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230351</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 3:52 AM">
+<s>do either of you have experience with the dcache application?</s><s> for some reason, it says my cache folder is empty although it isnt... 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230458</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="Sreekanth_S" timestamp="Mar 21, 2014 4:45 AM">
+<s>it is working fine for me..</s><s> have you tried clicking browse here and selecting the cache folder? 
+</s><s>at the end of the adobe blog post, they say "note: this workaround may not work always." i guess you are in that situation now. 
+</s><s>sreekanth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6230138-6230365</DOCNO>
+<TEXT>
+<subject>.dmp, .dmp.txt, .cpbackup -- what are these files?</subject>
+<post author="rscharfer" timestamp="Mar 21, 2014 5:01 AM">
+<s>yea, it doesn't matter what folder i select when i browse, the "..." remain there, and it says the folder is empty.</s><s> maybe something went wrong in the installation process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229162-1432848</DOCNO>
+<TEXT>
+<subject>Text Entry Box variable only displaying part of the previous TEB entry</subject>
+<post author="NicoleSOS" timestamp="Mar 20, 2014 3:43 PM">
+<s>hi all, i have a text entry box on one slide and am using the variable $$variablename$$ to display results of that entry on a later slide (so learners can reflect on their previous answer), however for some reason, it will not display everything they type in.</s><s> that is, it only displays the first few characters of what was previously entered.</s><s> has anyone come across this before?</s><s> i am using captivate 7. thanks!</s><s> nicole 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229162-6229472</DOCNO>
+<TEXT>
+<subject>Text Entry Box variable only displaying part of the previous TEB entry</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 5:41 PM">
+<s>delete the variable from displaying in the caption and re-insert it again using the icon in the format accordion.</s><s> this time make sure to specify a generous number of display characters. 
+</s><s>in cp7 the default number is now 50, but in earlier versions the default number was only 15 characters.</s><s> the only way you get to specify this number is when inserting the variable via the icon in the format accordion.</s><s> if you've beein in the habit of just typing $$ signs at each end of a variable name then you're seriously missing out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229162-6229544</DOCNO>
+<TEXT>
+<subject>Text Entry Box variable only displaying part of the previous TEB entry</subject>
+<post author="NicoleSOS" timestamp="Mar 20, 2014 5:50 PM">
+<s>hi rod, thanks for the reply!</s><s> admittedly though, i'm not familar with that icon - any chance of a screen shot of where you mean please?</s><s> i only learned the $$ by searching forums, i didn't know another option existed.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229162-6229563</DOCNO>
+<TEXT>
+<subject>Text Entry Box variable only displaying part of the previous TEB entry</subject>
+<post author="RodWard" timestamp="Mar 20, 2014 6:14 PM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229162-6229557</DOCNO>
+<TEXT>
+<subject>Text Entry Box variable only displaying part of the previous TEB entry</subject>
+<post author="NicoleSOS" timestamp="Mar 20, 2014 7:12 PM">
+<s>perfect - thank you.</s><s> it is now working - although i do wish it allowed more than 50characters...</s><s>!</s><s> nicole 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6229162-6230208</DOCNO>
+<TEXT>
+<subject>Text Entry Box variable only displaying part of the previous TEB entry</subject>
+<post author="Lilybiri" timestamp="Mar 21, 2014 2:18 AM">
+<s>it allows up to 256 characters, maximum for what can be stored in each variable.</s><s> you can edit the number '50' when inserting the variable.</s><s> you can try to put it even higher, but 256 is the maximum length for each variable. 
+</s><s>lilybiri 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6158300-1415744</DOCNO>
+<TEXT>
+<subject>Cannot insert characters</subject>
+<post author="sneguro4ka" timestamp="Feb 26, 2014 3:37 AM">
+<s>hi everybody!</s><s> i wonder if anyone has ever managed to fix the following character issue: whenever we select characters on the insert menu, a dialog box containing the characters does not appear.</s><s> we have a required folder characters in c:\users\<user_name>\documents\adobe\elearning assets\characters.</s><s> we're currently using adobe captivate 6.0 (version 6.0.1.240). 
+</s><s>does anyone know the most possible reason of this issue?</s><s> as we know characters are included in the standard package, they should work but they don't.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6158300-6158800</DOCNO>
+<TEXT>
+<subject>Cannot insert characters</subject>
+<post author="Captiv8r" timestamp="Feb 26, 2014 7:13 AM">
+<s>hi there 
+when you try to insert a character and the dialog box does not appear, if you click on captivate does it appear to lock up captivate until you perhaps press the esc key? 
+</s><s>if it does, maybe the characters window is actually trying to display but is out of view.</s><s> and if this happens, you will likely need to reset your captivate preferences to get the window back.</s><s> either that or try connecting a second monitor and ensure your desktop is extended. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6158300-6158975</DOCNO>
+<TEXT>
+<subject>Cannot insert characters</subject>
+<post author="Lilybiri" timestamp="Feb 26, 2014 7:48 AM">
+<s>crossing my fingers that rick's answer let you find the solution to your problem. 
+</s><s>have no idea for another possible cause, but you can also insert the characters directly from the folder you are pointing at, in the subfolder images of each category. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6158300-6223176</DOCNO>
+<TEXT>
+<subject>Cannot insert characters</subject>
+<post author="sneguro4ka" timestamp="Mar 19, 2014 3:41 AM">
+<s>thank you very much for your reply!</s><s> when i try to insert a character and the dialog box does not appear, captivate is not locked up, i can access it.</s><s> are there any other possible reasons why i can't open the dialog box?</s><s> thank you:) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6158300-6229934</DOCNO>
+<TEXT>
+<subject>Cannot insert characters</subject>
+<post author="sneguro4ka" timestamp="Mar 20, 2014 10:38 PM">
+<s>hi everybody again, does anyone have any clue what to do here: 
+>>> when you try to insert a character and the dialog box does not appear, if you click on captivate does it appear to lock up captivate until you perhaps press the esc key?</s><s> if it does, maybe the characters window is actually trying to display but is out of view.</s><s> and if this happens, you will likely need to reset your captivate preferences to get the window back.</s><s> either that or try connecting a second monitor and ensure your desktop is extended. 
+
+>>> when i try to insert a character and the dialog box does not appear, captivate is not locked up, i can access it.</s><s> are there any other possible reasons why i can't open the dialog box?</s><s> thank you:) 
+</s><s>thanks a lot!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Captivate/Discussions-6158300-6230000</DOCNO>
+<TEXT>
+<subject>Cannot insert characters</subject>
+<post author="Mayank_M" timestamp="Mar 21, 2014 12:26 AM">
+<s>hi there, 
+</s><s>did you tried resetting the preferences for captivate yet? 
+</s><s>please try to recreate the preferences of adobe captivate 6 .</s><s> close captivate.</s><s> 
+</s><s>for windows- 
+</s><s>for captivate 6 64 bit- go to c drive > program files > adobe > adobe captivate 6 x64 > utils > run the cleanpreferenceswin.bat file by double clicking on it. 
+</s><s>for captivate 6 32 bit- go to c:\program files (x86)\adobe\adobe captivate 6 (32 bit)\utils > run the cleanpreferenceswin.bat file by double clicking on it. 
+</s><s>for mac os- on finder > go > go to folder > type- ~/library go to preferences and rename adobe captivate 6.0 folder to adobe captivate 6.0_old. 
+</s><s>relaunch captivate and try again to insert the characters. 
+
+</s><s>regards, mayank 
+</s></post>
+</TEXT>
+</DOC>
+
+

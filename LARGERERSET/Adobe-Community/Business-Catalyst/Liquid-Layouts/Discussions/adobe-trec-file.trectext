@@ -1,0 +1,342 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4317257-986049</DOCNO>
+<TEXT>
+<subject>Liquid Layouts has not been released yet</subject>
+<post author="Liam Dilley" timestamp="Apr 19, 2012 2:45 AM">
+<s>please note discussions or information provided in this forum section at this time is discussing a feature of business catalayst that will be released in the near future. Ê you can not use this feature on your live sites just yet.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-1129819</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="Spencer_wes" timestamp="Jan 5, 2013 5:56 AM">
+<s>hi there, 
+i need to show a form when an item is out of stock on the product details page.</s><s> with the grouping function it was easy class="stockout-{tag_instock}" would call a class to hide ("stockout-1") or to display ("stockout-0"). 
+</s><s>however, with attributes you need to use the {tag_instock, true} tag which doesn't simply output a 0 or 1!</s><s> it however outputs the number of stock items within <span> tags.</s><s> this prevents me from using this css trick to show and hide content. 
+eg: <span class="catinstock catinstock_6190581">0</span> 
+</s><s>i've explored various options ranging from jquery to content holders but nothing seems to work.</s><s> if you could suggest anything i would be really grateful! 
+
+</s><s>maybe a json script? 
+
+</s><s>kind regards, wes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4970139</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="BCTemple" timestamp="Jan 5, 2013 7:35 AM">
+<s>hey wes. Ê you could hide the span using css, then tell javascript/jquery to also hide the form if the span has a 0, if it has any other number leave as is?</s><s> javascript numerics is pretty handy, you can do all sorts with it. Ê kind regards, justin
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4970534</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="Spencer_wes" timestamp="Jan 5, 2013 10:40 AM">
+<s>hi justin, 
+</s><s>thanks for the response!</s><s> i did try the following script: 
+<div id="stock">{tag_instock, true}</div> <div id="slave1">sold out</div> 
+<script> $(document).ready(function(){ 
+var n = $("#stock").text(); $("#slave1").css("display", (n < 1) ? "inline" : "none"); $("#slave2").css("display", (n < 1) ? "inline" : "none"); 
+}); </script> 
+excuse my syntax, i'm still a novice at javascript.</s><s> problem was that if you change the attribute the script wouldn't react to it.</s><s> in other words the script would only react to the default stock value the page loads with. 
+any ideas?</s><s> wes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4971396</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="BCTemple" timestamp="Jan 5, 2013 7:50 PM">
+<s>hi wes, Ê this is untested, but you could check initially on page load as well as each time the add to cart button is clicked. Ê you really just need to re-run the code whenever the value changes. Ê something like this perhaps: http://jsfiddle.net/m6gzb/ Ê you can manually test it by changing the span value then pressing run.</s><s> i have not tested this live in bc to make sure it works with the add to cart button.</s><s> bc is known for killing dom in ecommerce. Ê i've also made a couple of assumptions like your add to cart button being the standard bc image and inside the quantity ul li.Ê you might need to adjust a couple of things to make it work with your setup. Ê replace the span in jsfiddle with {tag_instock,true} when you test it in bc. Ê let me know if that works for you. Ê cheers, justin
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4971546</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="Spencer_wes" timestamp="Jan 5, 2013 11:25 PM">
+<s>hey justin, 
+</s><s>thanks again mate for your help!</s><s> i've put your script into the product details page of my site: 
+http://www.kiph.co.za/all-products/save-water-graphic-tee 
+if the product loads an initial stock value of 0 the script works perfectly, however if i change the attribute variation to eg: "small" size nothing happens. 
+unlike the product grouping dropdown, the new attribute dropdown doesn't refresh the page... 
+</s><s>regards, wes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4973264</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="BCTemple" timestamp="Jan 6, 2013 7:10 PM">
+<s>hey wes, Ê of course, i forgot about the new inventory control!</s><s> so you need the code to run when the <select> is clicked. Ê since you're going straight to cart when you buy a product you don't really need the code running when the add to cart button is pressed so replace the last line with: Ê $('.catprodattributeitem select').click(displayslaves) Ê cheers, justin
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4973531</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="Spencer_wes" timestamp="Jan 6, 2013 10:47 PM">
+<s>justin you beauty!</s><s> thanks champ! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4970058-4973708</DOCNO>
+<TEXT>
+<subject>Hide content with {tag_instock, true}</subject>
+<post author="BCTemple" timestamp="Jan 7, 2013 1:33 AM">
+<s>no worries, glad it worked! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4706950-1067758</DOCNO>
+<TEXT>
+<subject>drop down menu</subject>
+<post author="ianben" timestamp="Sep 18, 2012 4:29 AM">
+<s>for the basic web site can i set up a dropdown menu item as part of the menu content holder?</s><s> i did try this but got in a helluva mess. very new to this by the way 
+ian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4706950-4709942</DOCNO>
+<TEXT>
+<subject>drop down menu</subject>
+<post author="Asad%206SM" timestamp="Sep 19, 2012 4:55 AM">
+<s>ianben, 
+</s><s>i am no way a expert in this but can i ask why you would want a menu in a content holder? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4706950-4709944</DOCNO>
+<TEXT>
+<subject>drop down menu</subject>
+<post author="ianben" timestamp="Sep 19, 2012 4:58 AM">
+<s>well, it seems you have to have a content holder to contain the menu - at least that's the way i'm reading it, but i might have it all wrong. 
+</s><s>ian 
+--- ian bennett lecturer department of communication, film and media, anglia ruskin university, east road, cambridge cb1 1pt 
+</s><s>ian.bennett@anglia.ac.uk 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4706950-4709984</DOCNO>
+<TEXT>
+<subject>drop down menu</subject>
+<post author="Asad%206SM" timestamp="Sep 19, 2012 5:13 AM">
+<s>hi ian 
+</s><s>do you have a link to where it is your trying to put the menu into? 
+</s><s>here is my setup: <div class="header-panel"> {module_menu, version="2", menuid="1372571 ", moduletemplategroup="default"}</div> </div> <div id="main"> <div class="main-frame"> <!-- templatebegineditable name="contentarea" -->{tag_pagecontent}<!-- templateendeditable --> </div> the underlined is my menu that i have created using the dynamic menu option within catalyst. 
+</s><s>if you have a link of the website you are creating i may be able to help. 
+</s><s>thanks 
+</s><s>asad 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4706950-4709995</DOCNO>
+<TEXT>
+<subject>drop down menu</subject>
+<post author="Asad%206SM" timestamp="Sep 19, 2012 5:29 AM">
+<s>ian, 
+</s><s>also in order to get the menu to appear in a certain place, you have to secure it using div tags and then specify where that div tag is supposed to go in the css. 
+</s><s>drop me a email asad.ali@6sm.co.uk if you need any more help. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4706950-4716735</DOCNO>
+<TEXT>
+<subject>drop down menu</subject>
+<post author="Liam%20Dilley" timestamp="Sep 21, 2012 8:18 AM">
+<s>read the online docs, really.</s><s> check out the docs i have wrote on these forums as well.</s><s> really do.</s><s> when you make a menu item there is an option to choose a parent item to create drop downs.</s><s> this is as standard and layout wise be it default, css html only or using the version 2 layouts will create a layout with those links.</s><s> the latter two it will be a ul inside an li with an a. how you present this is entirely up to you through css and any javascript to enhance it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4555734-1035937</DOCNO>
+<TEXT>
+<subject>Shop language with liquid markup</subject>
+<post author="GenieCorp" timestamp="Jul 13, 2012 6:12 AM">
+<s>hi 
+</s><s>i am currently working on a shop for a client, with liquid markup.</s><s> everything is fine and haven't had big problems with liquid markup, it seems really great. 
+</s><s>now i have a small problem.</s><s> the client would like the "succes (1) items added to cart" and son messages to be in danish.</s><s> i tried to overwrite the script with another .js file wich has worked before but with no luck. 
+i talked to the support who told me that because of liquid markup this solution doesn't work.</s><s> is there any way to edit these messages with liquid markup? 
+</s><s>best regards 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4465279-1017398</DOCNO>
+<TEXT>
+<subject>Wiki for liquid markup</subject>
+<post author="Peter Appleyard" timestamp="Jun 4, 2012 5:46 PM">
+<s>liam, 
+</s><s>thanks for the liquid overview yesterday.</s><s> i cant wait to be able to use it. 
+</s><s>in your talk you mentioned that the engineers are putting together a wiki of liquid, is this wiki public? 
+you also mentioned that you give feedback of broken functionality and bugs. is there a channel for this? 
+</s><s>here is the shopify liquid wiki if anyone else is about to get seriously stuck in to learning this stuff http://wiki.shopify.com/usingliquid 
+bc - i would love a roadmap on this.</s><s> last october according to bogdan's blog this was due mid 2012. 
+</s><s>"we aim to finalize the liquid markup implementation for all of business catalyst (web apps included) by mid-2012.</s><s> i have asked marius andreiana, one of my product owners, take on the lead role for this project.</s><s> let's wish him good luck in achieving this and expect more updates from him on this blog!" 
+where are we at with this? 
+</s><s>cheers pete 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4465279-4513014</DOCNO>
+<TEXT>
+<subject>Wiki for liquid markup</subject>
+<post author="sharifer007" timestamp="Jun 22, 2012 12:06 AM">
+<s>does anyone have an update on liquid markup?</s><s> i was also expecting this feature by mid 2012 we still don't have a clear roadmap. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4465279-4513455</DOCNO>
+<TEXT>
+<subject>Wiki for liquid markup</subject>
+<post author="Liam%20Dilley" timestamp="Jun 22, 2012 5:25 AM">
+<s>adobe double down on bc with the creative cloud so things are all change.</s><s> there is already the documentation for liquid with bc which is a bit different to that of shoplift.</s><s> nothing is final and everything subject to change. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-989955</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="Daryl Barnes" timestamp="Apr 14, 2012 9:20 PM">
+<s>has there been any indication from bc as to when liquid layouts is going to be ready to use on real sites?</s><s> i've played around with it about a month or so ago but too much hadn't been completed yet on the ecommerce side to be able to use it on customer sites.</s><s> we watched the platform vision video by alexandru and i don't remember him mentioning anything about liquid layouts specifically. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-4335603</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="Liam%20Dilley" timestamp="Apr 14, 2012 11:02 PM">
+<s>hey daryl.</s><s> just like a number of things, do not expect to see it any time soon :( 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-4336768</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="mario_gudelj" timestamp="Apr 15, 2012 5:34 PM">
+<s>hi daryl, 
+</s><s>we don't have the exact date for you yet.</s><s> i'm sure this info will be posted on the bc blog once they're out, so please montior that space. 
+</s><s>cheers, 
+-mario 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-4341482</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="Daryl%20Barnes" timestamp="Apr 17, 2012 10:38 AM">
+<s>thanks mario.</s><s> we don't need a specific date, week, or even month.</s><s> just a general time frame.</s><s> i am in the early stages of planning a project that would start in about 2 months.</s><s> there are certain things we would like to do that need the liquid features to be able to be done but without having any idea at all on the timeframe, it is extremely difficult to plan.</s><s> i have the flexibility to push the project back a couple of months or maybe begin certain parts of the project and then switch to the part that would involve the ecommerce functionality and liquid later.</s><s> but i need to know the full scope and the possibilites ahead of time to plan like that. 
+</s><s>is it slated for a couple months from now?</s><s> end of year?</s><s> first quarter of 2013?</s><s> second half of 2013?</s><s> i really have no clue at all and would like some insight. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-4342259</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="Liam%20Dilley" timestamp="Apr 17, 2012 3:11 PM">
+<s>they wont give any dates daryl because they do not know themselves just yet. 
+</s><s>it defiantly wont be 3-5 months time, thats a given.</s><s> not with creative cloud and other stuff.</s><s> end of the year? - maybe, but again do not rely on that.</s><s> first quater of 2013 - probably, but again do not rely on that. 
+</s><s>your official response wont be any more then that too. 
+</s><s>and while i am sure it will come out, always note that us long timers with bc have seen and been shown things, even said they were coming in the next realease (new ecommerce revamp for example that was going to happen once) got pulled and never happened. 
+bc is pretty much - when its out.</s><s> you will see "whats coming next" blog posts for the next release and a number of those elements have been delayed by 1-3 releases or not at all (some of the seo updates for example as a recent example of nothing still). 
+</s><s>so run on - only when it actually is out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-4347917</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="Daryl%20Barnes" timestamp="Apr 19, 2012 2:49 PM">
+<s>thanks liam.</s><s> that's disappointing to hear but the bc team needs to realize that they are working with business owners and we would rather get a firm date that is further off but real rather than continued delays and broken promises or worse...</s><s> no date given at all to resolve long standing issues and important improvements needed. 
+</s><s>it's disappointing because at max, liquid markup was in our opinion the most promising new feature revealed.</s><s> it can potentially solve a lot of problems with being able to solve client requirements without a bunch of hacky workarounds and save gobs of time.</s><s> from the outside it looked like they were close to finishing it.</s><s> i guess we'll just have to wait. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Liquid-Layouts/Discussions-4335533-4415675</DOCNO>
+<TEXT>
+<subject>When Will Liquid Layouts Be Ready?</subject>
+<post author="Dreams%20Creative" timestamp="May 17, 2012 5:06 AM">
+<s>liquid markup is the only good thing bc has bought out for a while...</s><s> it's a pitty it's been place on the back burner.</s><s> we thought adobe buying off bc would have increase the numbers of developers & staff, so features will come out faster.</s><s> yet it doesn't seem to be the case.</s><s> please bring out the webapp liquid markup asap!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

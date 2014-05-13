@@ -1,0 +1,1691 @@
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-1430162</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="alex0816" timestamp="Mar 17, 2014 1:39 PM">
+<s>i just upgraded my fb3 flash project to fb4.7, and saw that my 9-slice symbols (which i exported from an fla to a swc) have stopped working.</s><s> that is, the whole graphic is now getting stretched.</s><s> if i use the exact same swc and the exact same code in my fb3 environemt all is well. 
+</s><s>the code is really basic: 
+
+
+
+var spr:myroundedrect = new myroundedrect(); // myroundedrect comes from the fla with 9slice scaling spr.scalex = 4; spr.scaley = 3; addchild(spr); 
+am i missing something?</s><s> i this a known bug in flex builder 4.7?</s><s> anyone else ever encounter this?</s><s> right now, i feel like going back to flex builder 3, where the world seemed a better place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6218307</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="Amy%20Blankenship" timestamp="Mar 17, 2014 3:47 PM">
+<s>hm, i haven't had this problem...but then again when i use fb i am not using the mxmlc compiler.</s><s> instead, flash pro is still compiling (for flash 10.2).</s><s> can you give more details of how your project is set up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220165</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="alex0816" timestamp="Mar 18, 2014 7:30 AM">
+<s>i'm using flash builder 4.7 for a pure flash project (ie, no mxml) & all my graphics objects are in a swc that was exported from an fla. 
+</s><s>i've made some progress with that issue.</s><s> if i explicitly assign the scale9grid dimensions in the code, it seems to work: 
+obj.scale9grid = new rectangle(x,y,w,h) 
+...but having to do that is a real productivity killer.</s><s> would be nice to use the 9-slice guide setting in the fla 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220263</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="Amy%20Blankenship" timestamp="Mar 18, 2014 8:02 AM">
+<s>sorry...i find writing the manual code to create, position and add things to the stage so tedious that if my swf involves visible assets, i create it on the timeline.</s><s> so the only thing i get from swcs is audio.</s><s> i don't know for sure what to tell you, but you could try specifying the 3.6a sdk which will allow you to target a lower player.</s><s> it's unlikely to be flash builder itself--it's only running the mxmlc compiler or flash pro as a compiler. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220271</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="alex0816" timestamp="Mar 18, 2014 8:28 AM">
+<s>thanks amy, well this next question will probably reveal my ignorance of flash/flex...</s><s> how do you set fb's compiler to be the same as the flashpro compiler?</s><s> when i look at the compiler properties of my project, it only says "this project will use air sdk 3.4" - and there doesn't seem to be an option to change it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220529</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="Amy%20Blankenship" timestamp="Mar 18, 2014 8:50 AM">
+<s>i had forgotten about that with as only projects (i only have 4.7 on one computer due to the fact that it doesn't play well with flexunit and older flash player).</s><s> you might want to try the workaround posted in the last message of this thread. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-1430162</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="alex0816" timestamp="Mar 17, 2014 1:39 PM">
+<s>i just upgraded my fb3 flash project to fb4.7, and saw that my 9-slice symbols (which i exported from an fla to a swc) have stopped working.</s><s> that is, the whole graphic is now getting stretched.</s><s> if i use the exact same swc and the exact same code in my fb3 environemt all is well. 
+</s><s>the code is really basic: 
+
+
+
+var spr:myroundedrect = new myroundedrect(); // myroundedrect comes from the fla with 9slice scaling spr.scalex = 4; spr.scaley = 3; addchild(spr); 
+am i missing something?</s><s> i this a known bug in flex builder 4.7?</s><s> anyone else ever encounter this?</s><s> right now, i feel like going back to flex builder 3, where the world seemed a better place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6218307</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="Amy%20Blankenship" timestamp="Mar 17, 2014 3:47 PM">
+<s>hm, i haven't had this problem...but then again when i use fb i am not using the mxmlc compiler.</s><s> instead, flash pro is still compiling (for flash 10.2).</s><s> can you give more details of how your project is set up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220165</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="alex0816" timestamp="Mar 18, 2014 7:30 AM">
+<s>i'm using flash builder 4.7 for a pure flash project (ie, no mxml) & all my graphics objects are in a swc that was exported from an fla. 
+</s><s>i've made some progress with that issue.</s><s> if i explicitly assign the scale9grid dimensions in the code, it seems to work: 
+obj.scale9grid = new rectangle(x,y,w,h) 
+...but having to do that is a real productivity killer.</s><s> would be nice to use the 9-slice guide setting in the fla 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220263</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="Amy%20Blankenship" timestamp="Mar 18, 2014 8:02 AM">
+<s>sorry...i find writing the manual code to create, position and add things to the stage so tedious that if my swf involves visible assets, i create it on the timeline.</s><s> so the only thing i get from swcs is audio.</s><s> i don't know for sure what to tell you, but you could try specifying the 3.6a sdk which will allow you to target a lower player.</s><s> it's unlikely to be flash builder itself--it's only running the mxmlc compiler or flash pro as a compiler. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220271</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="alex0816" timestamp="Mar 18, 2014 8:28 AM">
+<s>thanks amy, well this next question will probably reveal my ignorance of flash/flex...</s><s> how do you set fb's compiler to be the same as the flashpro compiler?</s><s> when i look at the compiler properties of my project, it only says "this project will use air sdk 3.4" - and there doesn't seem to be an option to change it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6217995-6220529</DOCNO>
+<TEXT>
+<subject>9-Slice scaling not working in FB4?</subject>
+<post author="Amy%20Blankenship" timestamp="Mar 18, 2014 8:50 AM">
+<s>i had forgotten about that with as only projects (i only have 4.7 on one computer due to the fact that it doesn't play well with flexunit and older flash player).</s><s> you might want to try the workaround posted in the last message of this thread. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6220152-1430714</DOCNO>
+<TEXT>
+<subject>Poor spacing around GraphicElements</subject>
+<post author="ryandbair" timestamp="Mar 18, 2014 7:54 AM">
+<s>i have an app leveraging tlf and have come across a rather undesirable behavior of fte. 
+</s><s>if you have a line of text that starts with a graphicelement then followed by a space or ends with a graphicelement preceeded by a space, you end up with a space appearing where it shouldn't be.</s><s> the text is adjustable by the user, so i'd like to find an answer besides "don't do that". 
+</s><s>in the following example, i placed a little orange marker where the graphicelement is on the textline.</s><s> since this is a floated image (in tlf land) the size is put to 0x0, its just a placeholder and has no visual representation on the textline itself.</s><s> unfortunately since fte knows there is a graphicelement after the space, it renders the space leaving an ugly edge against the right margin. 
+
+
+
+</s><s>is there a way to work around this behavior? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6220152-1430714</DOCNO>
+<TEXT>
+<subject>Poor spacing around GraphicElements</subject>
+<post author="ryandbair" timestamp="Mar 18, 2014 7:54 AM">
+<s>i have an app leveraging tlf and have come across a rather undesirable behavior of fte. 
+</s><s>if you have a line of text that starts with a graphicelement then followed by a space or ends with a graphicelement preceeded by a space, you end up with a space appearing where it shouldn't be.</s><s> the text is adjustable by the user, so i'd like to find an answer besides "don't do that". 
+</s><s>in the following example, i placed a little orange marker where the graphicelement is on the textline.</s><s> since this is a floated image (in tlf land) the size is put to 0x0, its just a placeholder and has no visual representation on the textline itself.</s><s> unfortunately since fte knows there is a graphicelement after the space, it renders the space leaving an ugly edge against the right margin. 
+
+
+
+</s><s>is there a way to work around this behavior? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219280-1430483</DOCNO>
+<TEXT>
+<subject>action script flash</subject>
+<post author="alay12101992" timestamp="Mar 18, 2014 12:29 AM">
+<s>hello i have made one touch screen frame using infrared for my project i am a u.g student of electronics and communication and i have made this touch screen frame to count the coordinates so i passed my coordinates to com port and i want to pass this coordinates to flash action script game called wall pong but i dont know the flash action script as i haven't studied the action script so how can i pass this coordinates to flash i can able to pass the coordinates to net port .but from that i couldn't pass it to flash game i have download the code from the internate. but i couldn't understand. what should i do?</s><s>?</s><s>?</s><s> can any one help me out?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219280-6220046</DOCNO>
+<TEXT>
+<subject>action script flash</subject>
+<post author="moccamaximum" timestamp="Mar 18, 2014 6:56 AM">
+<s>to communicate with any kind of non-standard hardware you will have to run some kind of virtual server that listens to your device and prepares it for flash. 
+</s><s>look into wiiflash, it manages to get flash communicating with a wiimote: 
+https://code.google.com/p/wiiflash/ 
+it will certainly give you an idea how to jumpstart your won project 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219280-1430483</DOCNO>
+<TEXT>
+<subject>action script flash</subject>
+<post author="alay12101992" timestamp="Mar 18, 2014 12:29 AM">
+<s>hello i have made one touch screen frame using infrared for my project i am a u.g student of electronics and communication and i have made this touch screen frame to count the coordinates so i passed my coordinates to com port and i want to pass this coordinates to flash action script game called wall pong but i dont know the flash action script as i haven't studied the action script so how can i pass this coordinates to flash i can able to pass the coordinates to net port .but from that i couldn't pass it to flash game i have download the code from the internate. but i couldn't understand. what should i do?</s><s>?</s><s>?</s><s> can any one help me out?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219280-6220046</DOCNO>
+<TEXT>
+<subject>action script flash</subject>
+<post author="moccamaximum" timestamp="Mar 18, 2014 6:56 AM">
+<s>to communicate with any kind of non-standard hardware you will have to run some kind of virtual server that listens to your device and prepares it for flash. 
+</s><s>look into wiiflash, it manages to get flash communicating with a wiimote: 
+https://code.google.com/p/wiiflash/ 
+it will certainly give you an idea how to jumpstart your won project 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219944-1430637</DOCNO>
+<TEXT>
+<subject>Hittest triggers underlying movieclips</subject>
+<post author="Peter_Nitras" timestamp="Mar 18, 2014 5:54 AM">
+<s>hi   i also posted this on another forum.</s><s> hope this one is a bit more active still.   i can't seem to figure this one out.     i have a simple for loop that activated when a stopdrag has been triggered. this checks if my dragable object hits the part i want.</s><s> it does work however it also hittests on the movieclip that is underneath it. oddly enough if 3 clips overlap, they all trace out their name.</s><s> each movieclip, about 13 in total, overlap each other, a few don't, those who don't overlap work perfectly.</s><s> i tried mousechildren false; does anyone have an idea?</s><s> maybe i am just tired but i can't seem to grasp what is going on.</s><s> many thanks in advance. here a flint of the code where relevant       private function release(event: mouseevent): void {
+         event.target.stopdrag();
+         for (var k: int = 0; k < whichclips.length; k++) {
+            whichclips[k].mousechildren = false;
+            if (hittestmouse(whichclips[k])) {
+               trace("hittest " + whichclips[k].name);
+            }
+         }
+      }
+ 
+ 
+      public function hittestmouse(hitarea: displayobject): boolean {
+         return hitarea.hittestpoint(hitarea.stage.mousex, hitarea.stage.mousey, true);
+      }
+ 
+ 
+ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219944-6220036</DOCNO>
+<TEXT>
+<subject>Hittest triggers underlying movieclips</subject>
+<post author="moccamaximum" timestamp="Mar 18, 2014 6:32 AM">
+<s>looking over your code there appear to be some hickups: 
+1.</s><s> you most likely want to use currenttarget instead of target in any thing that deals with hit detection 2.you are using the wording "hitarea" in your hittestmouse function that is almost undistinguishable from the "native" one 
+http://help.adobe.com/en_us/flashplatform/reference/actionscript/3/fla sh/display/sprite.html#hitarea 
+this is not advised, always clearly distinguish your "created" code from the core classes/properties 
+3.read up on hittestpoint http://help.adobe.com/en_us/flashplatform/reference/actionscript/3/fla sh/display/displayobject.html#hittestpoint%28%29 
+the moment you have nested movieclips it gets messy real fast (see example) 
+i don't understand why you would choose this method over hittestobject, which will make your job way easier. 
+</s><s>also: flashs built in colllision detection has a lot of caveats, if you have many "irregular" objects you will have to go the extra mile: http://www.freeactionscript.com/2011/08/as3-pixel-perfect-collision-de tection/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219944-1430637</DOCNO>
+<TEXT>
+<subject>Hittest triggers underlying movieclips</subject>
+<post author="Peter_Nitras" timestamp="Mar 18, 2014 5:54 AM">
+<s>hi   i also posted this on another forum.</s><s> hope this one is a bit more active still.   i can't seem to figure this one out.     i have a simple for loop that activated when a stopdrag has been triggered. this checks if my dragable object hits the part i want.</s><s> it does work however it also hittests on the movieclip that is underneath it. oddly enough if 3 clips overlap, they all trace out their name.</s><s> each movieclip, about 13 in total, overlap each other, a few don't, those who don't overlap work perfectly.</s><s> i tried mousechildren false; does anyone have an idea?</s><s> maybe i am just tired but i can't seem to grasp what is going on.</s><s> many thanks in advance. here a flint of the code where relevant       private function release(event: mouseevent): void {
+         event.target.stopdrag();
+         for (var k: int = 0; k < whichclips.length; k++) {
+            whichclips[k].mousechildren = false;
+            if (hittestmouse(whichclips[k])) {
+               trace("hittest " + whichclips[k].name);
+            }
+         }
+      }
+ 
+ 
+      public function hittestmouse(hitarea: displayobject): boolean {
+         return hitarea.hittestpoint(hitarea.stage.mousex, hitarea.stage.mousey, true);
+      }
+ 
+ 
+ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219944-6220036</DOCNO>
+<TEXT>
+<subject>Hittest triggers underlying movieclips</subject>
+<post author="moccamaximum" timestamp="Mar 18, 2014 6:32 AM">
+<s>looking over your code there appear to be some hickups: 
+1.</s><s> you most likely want to use currenttarget instead of target in any thing that deals with hit detection 2.you are using the wording "hitarea" in your hittestmouse function that is almost undistinguishable from the "native" one 
+http://help.adobe.com/en_us/flashplatform/reference/actionscript/3/fla sh/display/sprite.html#hitarea 
+this is not advised, always clearly distinguish your "created" code from the core classes/properties 
+3.read up on hittestpoint http://help.adobe.com/en_us/flashplatform/reference/actionscript/3/fla sh/display/displayobject.html#hittestpoint%28%29 
+the moment you have nested movieclips it gets messy real fast (see example) 
+i don't understand why you would choose this method over hittestobject, which will make your job way easier. 
+</s><s>also: flashs built in colllision detection has a lot of caveats, if you have many "irregular" objects you will have to go the extra mile: http://www.freeactionscript.com/2011/08/as3-pixel-perfect-collision-de tection/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-1427697</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="magickailours" timestamp="Mar 13, 2014 9:00 PM">
+<s>hi!</s><s> i am totally new to as3, so i would greatly appreciate your help.</s><s> thanks!</s><s> 
+
+</s><s>i need to create a button that opens up a text box which the user can type in, but only with a specific font.</s><s> and then the user can choose another font by clicking onto another button.</s><s> the user will also be able to move the textbox whereever he wants and change the size of the text.</s><s> (just like how it works in the mobile app: typic as shown below). 
+
+may i know how do i do that?</s><s> thanks lots in advance! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6208659</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="moccamaximum" timestamp="Mar 14, 2014 2:16 AM">
+<s>what you are asking is no small task for a beginner, just be aware of that. 
+1.the button make a movieclip "btn" and add the following code on the first layer of your flash file: 
+btn.addeventlistener(mouseevent.click, opentextfield); function opentextfield(e:mouseevent):void{ //with a textinpufiled "tf" on stage tf.visible = true; } 
+2.the font thing read up on textformats here: http://www.republicofcode.com/tutorials/flash/as3text/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6208721</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="magickailours" timestamp="Mar 14, 2014 2:22 AM">
+<s>yes i am aware of that but i am willing to learn thanks for replying!</s><s> i will give it a try and let you know if i manage to get it.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6219072</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="magickailours" timestamp="Mar 17, 2014 9:14 PM">
+<s>hi moccamaximum, 
+</s><s>i have tried but there is an error message for the button bit. 
+</s><s>it says " type was not found or was not a compile-time constant: btn.</s><s> " may i know which part is wrong?</s><s> thanks much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6219907</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="moccamaximum" timestamp="Mar 18, 2014 5:59 AM">
+<s>try 
+</s><s>movieclip(btn).addeventlistener(...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-1427697</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="magickailours" timestamp="Mar 13, 2014 9:00 PM">
+<s>hi!</s><s> i am totally new to as3, so i would greatly appreciate your help.</s><s> thanks!</s><s> 
+
+</s><s>i need to create a button that opens up a text box which the user can type in, but only with a specific font.</s><s> and then the user can choose another font by clicking onto another button.</s><s> the user will also be able to move the textbox whereever he wants and change the size of the text.</s><s> (just like how it works in the mobile app: typic as shown below). 
+
+may i know how do i do that?</s><s> thanks lots in advance! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6208659</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="moccamaximum" timestamp="Mar 14, 2014 2:16 AM">
+<s>what you are asking is no small task for a beginner, just be aware of that. 
+1.the button make a movieclip "btn" and add the following code on the first layer of your flash file: 
+btn.addeventlistener(mouseevent.click, opentextfield); function opentextfield(e:mouseevent):void{ //with a textinpufiled "tf" on stage tf.visible = true; } 
+2.the font thing read up on textformats here: http://www.republicofcode.com/tutorials/flash/as3text/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6208721</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="magickailours" timestamp="Mar 14, 2014 2:22 AM">
+<s>yes i am aware of that but i am willing to learn thanks for replying!</s><s> i will give it a try and let you know if i manage to get it.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6219072</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="magickailours" timestamp="Mar 17, 2014 9:14 PM">
+<s>hi moccamaximum, 
+</s><s>i have tried but there is an error message for the button bit. 
+</s><s>it says " type was not found or was not a compile-time constant: btn.</s><s> " may i know which part is wrong?</s><s> thanks much. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6208278-6219907</DOCNO>
+<TEXT>
+<subject>Help!: How to create a button to a open textbox to type in</subject>
+<post author="moccamaximum" timestamp="Mar 18, 2014 5:59 AM">
+<s>try 
+</s><s>movieclip(btn).addeventlistener(...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219779-1430612</DOCNO>
+<TEXT>
+<subject>Truncation letter in TextField with tags i b et arial font</subject>
+<post author="snopims_" timestamp="Mar 18, 2014 4:50 AM">
+<s>hi, 
+</s><s>i created a textfield, i used : htmltext with tags b and i, a style with arial font.</s><s> some lettters truncated.</s><s> if i used verdana font, i have not problem 
+my code : var _textebox:textfield=new textfield(); _textebox.name="txt"; _textebox.type = textfieldtype.dynamic; _textebox.background = false; // pas de background _textebox.border = false; // pas de bordure _textebox.condensewhite = true; // on ne supprime pas les espaces blanc, saut de ligne... _textebox.selectable = false; // non selectionable _textebox.multiline = true; // plusieurs lignes _textebox.wordwrap = false; _textebox.autosize = textfieldautosize.left; _textebox.stylesheet = stylemanager.instance.css; _textebox.htmltext = mytexte // on passe en dynamique _textebox.wordwrap = true; _textebox.width = largeurmax; 
+htmltext (variable mytexte) contains : <b><i>azertyuiopqsdfghjklmwxcvbn</i></b> not truncate<br/> <b><i>d</i></b> d truncate<br/> <b><i>i</i></b> i truncate<br/> <b><i>i d</i></b> d truncate<br/> <b><i>d i</i></b> i truncate<br/> <b><i>d i</i></b>r i truncate<br/> 
+</s><s>my style : 
+.intitule{ font-family: arial, helvetica, sans-serif; } 
+</s><s>thanks for helpful 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219779-6219726</DOCNO>
+<TEXT>
+<subject>Truncation letter in TextField with tags i b et arial font</subject>
+<post author="kglad" timestamp="Mar 18, 2014 5:00 AM">
+<s>you need to embed your fonts and one solution is: 
+
+
+to use stylesheets. using fonts exported for actionscript with the class names used below, the following works. 
+
+var ss: stylesheet = new stylesheet(); 
+var bold: object = new object(); bold.fontweight = "bold"; bold.fontfamily = new verdanabold().fontname; bold.color = "#ff0000"; 
+var ital: object = new object(); ital.fontstyle = "italic"; ital.fontfamily = new verdanaitalic().fontname; 
+var reg: object = new object(); reg.fontfamily = new verdanareg().fontname; 
+ss.setstyle(".bold", bold); ss.setstyle(".ital", ital); ss.setstyle(".reg", reg); 
+var tf: textfield = new textfield(); tf.rotation = 3; tf.width = 500; tf.embedfonts = true; tf.stylesheet = ss; addchild(tf); 
+tf.htmltext = "<span class='bold'>this is bold text.</span><span class='ital'> this is italic.</span><span class='reg'> this is regular text.</span>"; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219779-6220239</DOCNO>
+<TEXT>
+<subject>Truncation letter in TextField with tags i b et arial font</subject>
+<post author="snopims_" timestamp="Mar 18, 2014 7:56 AM">
+<s>it's very complicated for a concept will be naitve i don't understand, why flash have this bug. 
+i think that i must change the font : arial to verdana because with verdana, i've not a problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219779-1430612</DOCNO>
+<TEXT>
+<subject>Truncation letter in TextField with tags i b et arial font</subject>
+<post author="snopims_" timestamp="Mar 18, 2014 4:50 AM">
+<s>hi, 
+</s><s>i created a textfield, i used : htmltext with tags b and i, a style with arial font.</s><s> some lettters truncated.</s><s> if i used verdana font, i have not problem 
+my code : var _textebox:textfield=new textfield(); _textebox.name="txt"; _textebox.type = textfieldtype.dynamic; _textebox.background = false; // pas de background _textebox.border = false; // pas de bordure _textebox.condensewhite = true; // on ne supprime pas les espaces blanc, saut de ligne... _textebox.selectable = false; // non selectionable _textebox.multiline = true; // plusieurs lignes _textebox.wordwrap = false; _textebox.autosize = textfieldautosize.left; _textebox.stylesheet = stylemanager.instance.css; _textebox.htmltext = mytexte // on passe en dynamique _textebox.wordwrap = true; _textebox.width = largeurmax; 
+htmltext (variable mytexte) contains : <b><i>azertyuiopqsdfghjklmwxcvbn</i></b> not truncate<br/> <b><i>d</i></b> d truncate<br/> <b><i>i</i></b> i truncate<br/> <b><i>i d</i></b> d truncate<br/> <b><i>d i</i></b> i truncate<br/> <b><i>d i</i></b>r i truncate<br/> 
+</s><s>my style : 
+.intitule{ font-family: arial, helvetica, sans-serif; } 
+</s><s>thanks for helpful 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219779-6219726</DOCNO>
+<TEXT>
+<subject>Truncation letter in TextField with tags i b et arial font</subject>
+<post author="kglad" timestamp="Mar 18, 2014 5:00 AM">
+<s>you need to embed your fonts and one solution is: 
+
+
+to use stylesheets. using fonts exported for actionscript with the class names used below, the following works. 
+
+var ss: stylesheet = new stylesheet(); 
+var bold: object = new object(); bold.fontweight = "bold"; bold.fontfamily = new verdanabold().fontname; bold.color = "#ff0000"; 
+var ital: object = new object(); ital.fontstyle = "italic"; ital.fontfamily = new verdanaitalic().fontname; 
+var reg: object = new object(); reg.fontfamily = new verdanareg().fontname; 
+ss.setstyle(".bold", bold); ss.setstyle(".ital", ital); ss.setstyle(".reg", reg); 
+var tf: textfield = new textfield(); tf.rotation = 3; tf.width = 500; tf.embedfonts = true; tf.stylesheet = ss; addchild(tf); 
+tf.htmltext = "<span class='bold'>this is bold text.</span><span class='ital'> this is italic.</span><span class='reg'> this is regular text.</span>"; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-6219779-6220239</DOCNO>
+<TEXT>
+<subject>Truncation letter in TextField with tags i b et arial font</subject>
+<post author="snopims_" timestamp="Mar 18, 2014 7:56 AM">
+<s>it's very complicated for a concept will be naitve i don't understand, why flash have this bug. 
+i think that i must change the font : arial to verdana because with verdana, i've not a problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-1002118</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:53 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4395077</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:03 PM">
+<s>are you testing with a browser?</s><s> are you testing on a server?</s><s> what you have done is correct, but sometimes testing needs to involve the browser/server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4395020</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 1:09 PM">
+<s>yes, i am testing it in a browser on my linux server.</s><s> i've even tried clearing my cache several times.. :/ 
+i'm at a loss with this one. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4395350</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 2:40 PM">
+<s>try clearing your cache - just in case it is still pulling up an old version that didn't have the "_self" in it 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4396855</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Konggraphics" timestamp="May 11, 2012 5:17 AM">
+<s>yes, as i said in my earlier post, i've cleared my cache a few times already, i also tried it in a few different browsers.</s><s> it seems to always act as _blank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4420190</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="cindershot" timestamp="May 18, 2012 11:56 AM">
+<s>i'm running into the same problem.</s><s> i have been trying to figure it out for the last three days, and i still haven't come across a solution.</s><s> i am doing everything correct while watching instruction videos, but again, the _self tag doesn't work and acts as if it's nonclickable, where as _blank works to open the link in a new tab.</s><s> but i am trying to open the flash button in the same tab.</s><s> if anyone has a solution to this problem, i would greatly appreciate it.</s><s> i have googled and searched through multiple forums, but all seem to say the same thing, and i still haven't figured out how to get it to work. 
+</s><s>this is the code snippet i am using: 
+inv_btn.addeventlistener(mouseevent.click, fl_clicktogotowebpage); 
+
+function fl_clicktogotowebpage(event:mouseevent):void { navigatetourl(new urlrequest("http://www.mydomain.com/"), "_self"); } 
+
+_blank tag works, but not _self. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-1002118</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:53 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4395077</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:03 PM">
+<s>are you testing with a browser?</s><s> are you testing on a server?</s><s> what you have done is correct, but sometimes testing needs to involve the browser/server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4395020</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 1:09 PM">
+<s>yes, i am testing it in a browser on my linux server.</s><s> i've even tried clearing my cache several times.. :/ 
+i'm at a loss with this one. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4395350</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 2:40 PM">
+<s>try clearing your cache - just in case it is still pulling up an old version that didn't have the "_self" in it 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4396855</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="Konggraphics" timestamp="May 11, 2012 5:17 AM">
+<s>yes, as i said in my earlier post, i've cleared my cache a few times already, i also tried it in a few different browsers.</s><s> it seems to always act as _blank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394894-4420190</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self links</subject>
+<post author="cindershot" timestamp="May 18, 2012 11:56 AM">
+<s>i'm running into the same problem.</s><s> i have been trying to figure it out for the last three days, and i still haven't come across a solution.</s><s> i am doing everything correct while watching instruction videos, but again, the _self tag doesn't work and acts as if it's nonclickable, where as _blank works to open the link in a new tab.</s><s> but i am trying to open the flash button in the same tab.</s><s> if anyone has a solution to this problem, i would greatly appreciate it.</s><s> i have googled and searched through multiple forums, but all seem to say the same thing, and i still haven't figured out how to get it to work. 
+</s><s>this is the code snippet i am using: 
+inv_btn.addeventlistener(mouseevent.click, fl_clicktogotowebpage); 
+
+function fl_clicktogotowebpage(event:mouseevent):void { navigatetourl(new urlrequest("http://www.mydomain.com/"), "_self"); } 
+
+_blank tag works, but not _self. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-1001983</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:51 AM">
+<s>hi guys, 
+</s><s>i'm trying to get a page to load in the same tab, instead of creating a new tab (like html target=""_self" instead of _blank) 
+</s><s>i've tried a few different things i've found on different forums, nothign seems to be working though 
+this is what i'm trying.. 
+function gotomanitoba(event:mouseevent):void { var targeturl:urlrequest = new urlrequest("http://mydomain.com/flash/?p=44"); navigatetourl(targeturl, "_self"); } mb.addeventlistener(mouseevent.click, gotomanitoba); 
+it doesn't return an error, but the link doesn't work at all as long as the "_self" is in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394313</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 9:15 AM">
+<s>try posting that again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394544</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 10:14 AM">
+<s>what?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394567</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 10:29 AM">
+<s>visit the forum to see what your posting looks like. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394601</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 11:33 AM">
+<s>the problem with your posting is most probably not of your doing, it appears to be another fluke of the currently errant forums... below is an image of what your posting looked like until i spread the window out to about 1600 pixels wide. 
+</s><s>as far as your problem using "_self" goes, are you testing on a server?</s><s> what you show is the correct way to implement it. 
+</s><s>here's why i was saying to repost... 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4394897</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Konggraphics" timestamp="May 10, 2012 11:55 AM">
+<s>oh i see..</s><s> well it doesn't look like that on my screen, this is strange.</s><s> i've reposted it here http://forums.adobe.com/message/4394894#4394894 
+but to me they both look the same, and i have my screen width at much less then 1600px wide. 
+
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Professional/ActionScript-3/Discussions-4394297-4395076</DOCNO>
+<TEXT>
+<subject>Actionscript 3 and _self</subject>
+<post author="Ned%20Murphy" timestamp="May 10, 2012 1:02 PM">
+<s>by the time i had finished replying to you, which was shortly after i brought it to the attention of those who are fiddling with the forums, i noticed the issue had gone away. 
+</s></post>
+</TEXT>
+</DOC>
+
+

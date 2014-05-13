@@ -1,0 +1,2329 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6226991-1432410</DOCNO>
+<TEXT>
+<subject>How do I turn off glossary and/or index button for Responsive HTML5?</subject>
+<post author="NeedsHelp_37" timestamp="Mar 20, 2014 6:20 AM">
+<s>i do not want to use a glossary or index, only toc and search for my help system.</s><s> can i turn off the glossary and index buttons with the responsive html5 output? 
+i deselected those two items in project set-up - windows - main - properties.</s><s> but that seems to affect web help but not responsive html5. 
+</s><s>is there a way to do this? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6226991-6227642</DOCNO>
+<TEXT>
+<subject>How do I turn off glossary and/or index button for Responsive HTML5?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 20, 2014 8:44 AM">
+<s>his requires some tinkering in the screen layout files.</s><s> in short: (a) remove the glossary and index tabs from the pages.</s><s> (b) remove the links to glossary and index for mobile device from the pages.</s><s> (c) remove the index and glossary pages from the layout. 
+</s><s>this is a bit of a bother as it is not as easy as you might want it to be.</s><s> if you like, i can post up an amended version of the layout to use.</s><s> from which layout do you need an amended version? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6226991-6227940</DOCNO>
+<TEXT>
+<subject>How do I turn off glossary and/or index button for Responsive HTML5?</subject>
+<post author="NeedsHelp_37" timestamp="Mar 20, 2014 10:00 AM">
+<s>i need it for desktop, phone, and tablet.</s><s> that would be great if i could get an amended version.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6213873-1429064</DOCNO>
+<TEXT>
+<subject>Optimization: Convert Auto-sizing, Custom-sized and text-only Popups to hyperlinks</subject>
+<post author="kmbcollie" timestamp="Mar 16, 2014 6:16 PM">
+<s>can i get a better explanation than what's available in help.</s><s> i am deploying these multiscreen profiles /outouts for apple, android, and desktop on the web.</s><s> i need them to be fully functional and i am confused on why and when i would check or uncheck these two settings. 
+</s><s>by the way - i do have popups - both image and text ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6213873-6219373</DOCNO>
+<TEXT>
+<subject>Optimization: Convert Auto-sizing, Custom-sized and text-only Popups to hyperlinks</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2014 1:36 AM">
+<s>i believe some older devices do not support popups so if you have users with such devices, a hyperlink opening another page will be better. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6213873-6223246</DOCNO>
+<TEXT>
+<subject>Optimization: Convert Auto-sizing, Custom-sized and text-only Popups to hyperlinks</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 19, 2014 3:37 AM">
+<s>the simple answer: enable them for mobile.</s><s> you can disable them on desktop. 
+</s><s>this option changes the popup to a regular hyperlink in your output only. for desktop, popups are fine.</s><s> for mobile devices, they pose a usability challenge (and not all devices respond the same.</s><s>) 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6213873-6224703</DOCNO>
+<TEXT>
+<subject>Optimization: Convert Auto-sizing, Custom-sized and text-only Popups to hyperlinks</subject>
+<post author="kmbcollie" timestamp="Mar 19, 2014 11:42 AM">
+<s>they seem to be working ok in my mobile web apps for now - perhaps it's html5 that can cause issues with popups...</s><s> html5 developers need to work on making those more standard/accessible. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6220045-1430675</DOCNO>
+<TEXT>
+<subject>Need to change color near Search bar and on Content/Index tabs</subject>
+<post author="dmagnum74" timestamp="Mar 18, 2014 6:55 AM">
+<s>hi, 
+</s><s>i've edited the mobile.css file for iphone layout.</s><s> there is a blue color near the search bar and on contents and index links that i'd like to change.</s><s> where in thh mobile.css file can i change this?</s><s> examples are below.</s><s> in the first example, i want to change the color that appears around the search bar.</s><s> i searched for background code in mobile.css, but no changes i made seemed to affect this.</s><s> i also want to change the blue color for the contents and index links. 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6220045-6223666</DOCNO>
+<TEXT>
+<subject>Need to change color near Search bar and on Content/Index tabs</subject>
+<post author="dmagnum74" timestamp="Mar 19, 2014 7:04 AM">
+<s>update.</s><s> i figured out how to change the blue or gray for contents and index links to white.</s><s> i found default rgb colors in background code and changed for li.homepagelink {, div.wtocnodeclosebook {/* closed book */  , div.wtocnodeopenbook {/* open book */ and  div.wtocnodepage {/* toc page */.   i also changed the following: ul.wtabgroup from rgb(226,233,237) 13%, rgb(246,248,250) 100%); table.searchholdertable div.widxkeyword   i basically searched for hex code colors in the mobile.css file's default colour scheme.</s><s> if i still couldn't find the colors i wanted to change, i then searched for "background" or "rgb".</s><s> i experimented with those colors to make my changes.</s><s> the following hex color code converter link was very helpful to me when trying too figure out which colors i needed to change: http://www.colorhexa.com/ i also used this link to convert rgb to hex http://www.javascripter.net/faq/rgbtohex.htm
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6198852-1425392</DOCNO>
+<TEXT>
+<subject>Can I customize default Screen Layout SLPs for iPad and iPhone?</subject>
+<post author="dmagnum74" timestamp="Mar 11, 2014 9:12 AM">
+<s>hi, 
+</s><s>i need to customize the colors and icons in screen layout for ipads and iphones.</s><s> the home slp has links to toc and index slps.</s><s> in the home page's html view, i can't find code that links to the default orange header_background.png or the icons for content, index, or glossary.(i see them in windows explorer view when i open c:\help\ipad help\helpproject\!screenlayout!\ipad_layout_test.</s><s>) how can i change header_backround.png in slp for ipad or iphone? 
+</s><s>do i need to create a new slp and can i insert our company logo into it?</s><s> i really just want to generate output that uses colors other than the ipad default gray and brown or iphone default light blue and gray screen layouts.</s><s> i'd prefer to use the default slps i see in the project set-up pod and just edit them to change colors and icons. 
+i have opened each slp under ipad layout and don't see where i can change the defaults used on the home page slp.</s><s> what am i missing?</s><s> i would like to make copies of the header and contents and index icons and change the colors and re-insert them. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6198852-6202116</DOCNO>
+<TEXT>
+<subject>Can I customize default Screen Layout SLPs for iPad and iPhone?</subject>
+<post author="Peter%20Grainge" timestamp="Mar 12, 2014 2:18 AM">
+<s>look in the css used for the screen layout. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6198852-6202157</DOCNO>
+<TEXT>
+<subject>Can I customize default Screen Layout SLPs for iPad and iPhone?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 12, 2014 2:43 AM">
+<s>as peter says, it's all in the css.</s><s> you must find the element you want to change and update the css for those elements.</s><s> normally, i give a two day course on how to do this to robohelp author's.</s><s> it requires quite some insight into the structure of the layouts and css. 
+</s><s>which elements do you need to change?</s><s> i can point you in the right direction. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6198852-6203385</DOCNO>
+<TEXT>
+<subject>Can I customize default Screen Layout SLPs for iPad and iPhone?</subject>
+<post author="dmagnum74" timestamp="Mar 13, 2014 6:06 AM">
+<s>thanks, willam.</s><s> i was able to make some changes in the mobile.css file.</s><s> i searched for certain hex color code values and changed them to what i need them to be.</s><s> i still have a question. 
+i haven't yet discovered where i can change the topic pages.</s><s> my home page, toc and index became white after i changed div.content and div.contentlight.</s><s> the topic pages still have black around them.</s><s> my sample index page is below. 
+i want to make topic pages consistent with that.</s><s> a screen shot of a topic page is also below.</s><s> i want to change black, orange and light blue/lilac elements to be white. 
+</s><s>thanks for any feedback you might have. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6198852-6206145</DOCNO>
+<TEXT>
+<subject>Can I customize default Screen Layout SLPs for iPad and iPhone?</subject>
+<post author="dmagnum74" timestamp="Mar 13, 2014 9:54 AM">
+<s>after reading http://www.wvanweelden.eu/blog/2013/10/15/change-ipadlayout-content-ba ckground-color, i set some borders to white.</s><s> however, i want to make the topic area white instead of the gray shade that it currently is. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6198852-6223244</DOCNO>
+<TEXT>
+<subject>Can I customize default Screen Layout SLPs for iPad and iPhone?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 19, 2014 3:36 AM">
+<s>you have to change both the div content as well as the div contenttopic. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6162700-1416729</DOCNO>
+<TEXT>
+<subject>Search option slider buttons missing (RH11, IE10, responsive HTML)</subject>
+<post author="kennethc" timestamp="Feb 27, 2014 7:15 AM">
+<s>i am using robohelp 11, internet explorer 10.</s><s> i generated a responsive html output using the default layout.</s><s> problem: the slider buttons for the search options: "highlight search results" and "show results that include all search words" are missing.</s><s> (see screenshot below) 
+??however, the slider buttons seem to show up when i use the "government" layout. 
+(there doesn't seem to be responsive html forum, so i posted here.</s><s>) 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6162700-6180708</DOCNO>
+<TEXT>
+<subject>Search option slider buttons missing (RH11, IE10, responsive HTML)</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 5, 2014 2:56 AM">
+<s>did you make any changes to the layout prior to generating? 
+</s><s>if you open the developer console (f12) and go to the console tab, do you see any errors or warnings?</s><s> my guess is that the browser can't find the image. 
+</s><s>also, try this: go to the layout in robohelp.</s><s> right click the default layout and choose to add a new baggage file.</s><s> then select the slider image as baggage file.</s><s> does that help? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6162700-6191906</DOCNO>
+<TEXT>
+<subject>Search option slider buttons missing (RH11, IE10, responsive HTML)</subject>
+<post author="kennethc" timestamp="Mar 8, 2014 2:53 PM">
+<s>thanks for the reply.</s><s> the only thing i changed was the @media statements in the layout css to reduce the minimum size for the desktop layout.</s><s> (is there an easier way to do that than directly editing the css?</s><s>) 
+</s><s>i didn't have time to fully try your suggestions.</s><s> on quickly looking at the developer tools console, it only mentioned two unmatched bracket (>) errors, but i'm not sure that had anything to do with it.</s><s> i also tried copying the image file into the output directory, but that didn't do anything. 
+i will take a closer look later next week and try your tips with the baggage file.</s><s> i haven't been able to recreate the error anywhere else except on my work computer, so i may also just try to start over a project from scratch. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6162700-6202164</DOCNO>
+<TEXT>
+<subject>Search option slider buttons missing (RH11, IE10, responsive HTML)</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 12, 2014 3:00 AM">
+<s>to change the media queries, you need to go into the css.</s><s> there is no other way.</s><s> (also, the html5 editor masterthemeschema.xml file must be updated, otherwise it won't recognize the updated media queries.</s><s>) 
+</s><s>first make sure that the slider image is available in the output.</s><s> if it's not, adding it as a baggage file will solve your problem. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6162700-6204194</DOCNO>
+<TEXT>
+<subject>Search option slider buttons missing (RH11, IE10, responsive HTML)</subject>
+<post author="kennethc" timestamp="Mar 12, 2014 1:56 PM">
+<s>i ended up deleting and reimporting the layout, which fixed the problem. 
+</s><s>how do i update the masterthemeschema.xml file?</s><s> i guess this is why i'm now gettting a "...</s><s>masterthemeschema.xml file has invalid data" error when i try to customize the selected layout. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6162700-6223138</DOCNO>
+<TEXT>
+<subject>Search option slider buttons missing (RH11, IE10, responsive HTML)</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 19, 2014 3:35 AM">
+<s>you can only update the xml by hand.</s><s> open with notepad and happy coding 
+if you like, i have an xsd lying around that you can use to verify whether the xml is valid and what the issues in the xml are. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6188497-1422910</DOCNO>
+<TEXT>
+<subject>Maintain Index Search Display</subject>
+<post author="abp456" timestamp="Mar 7, 2014 7:53 AM">
+<s>is there a way to maintain an index search display while viewing the assigned topics?</s><s> for example, if i search for keyword, the index will display the keyword.</s><s> if i click the keyword, rh displays all the assigned topics below it.</s><s> when i click a topic, i lose that index search.</s><s> i have to search my keyword again.</s><s> rh10-html5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6188497-6202115</DOCNO>
+<TEXT>
+<subject>Maintain Index Search Display</subject>
+<post author="Peter%20Grainge" timestamp="Mar 12, 2014 2:14 AM">
+<s>i think that depends on which screen layout you are using.</s><s> it does what you want in the desktop layouts where there is space to keep the index open. 
+i guess what you want is that the index search does not flush while the instance of the help is open.</s><s> i'll defer to willam to advise if that could be achieved. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6188497-6202123</DOCNO>
+<TEXT>
+<subject>Maintain Index Search Display</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 12, 2014 2:36 AM">
+<s>what exactly do you want to retain?</s><s> the data entered in the search form or the expanded index keyword? 
+i think both are possible, but will require quite a bit of tinkering with the layout scripts. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6188497-6202560</DOCNO>
+<TEXT>
+<subject>Maintain Index Search Display</subject>
+<post author="abp456" timestamp="Mar 12, 2014 6:27 AM">
+<s>if i use the index (not search) to look for a keyword, i want the index to maintain the aggegrated search results as i click through the associated topics for that keyword. 
+</s><s>example - i search for product a, the index displays "product a." when i click product a, i see all the topics associated with it. 
+</s><s>product a case studies product bulletin hardware spec sheet instalation guide presentation deck and so on 
+</s><s>as soon as i click one of the topics, i immediately lose the search results.</s><s> my default index displays, which means i have to search for product a again to get the list back. 
+i want the expanded keyword with its sub-keywords to display until i either click on contents or perform another search. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6188497-6223135</DOCNO>
+<TEXT>
+<subject>Maintain Index Search Display</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 19, 2014 3:34 AM">
+<s>the only way to get this done is to update the javascript for the widget itself.</s><s> you may want to request this as a new feature: https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6210470-1428263</DOCNO>
+<TEXT>
+<subject>Dynamic User-Centric Content in Responsive</subject>
+<post author="David Hurlston" timestamp="Mar 14, 2014 12:43 PM">
+<s>i see there is not yet a responsive forum so i'll try the question here... 
+</s><s>we would like to do the conditional build thing to tailor the users' views according to content specific to them.</s><s> this will work, but will produce multiple sets of compiled files 
+i am hoping there is a dynamic approach out there similar to what is described on peter grainge's site at http://www.grainge.org/pages/authoring/rh_tour/index.htm but this is for webhelp only 
+if it is not possible in responsive, then it woud be a very usefult new feature to suggest to adobe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6210470-6219434</DOCNO>
+<TEXT>
+<subject>Dynamic User-Centric Content in Responsive</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2014 1:37 AM">
+<s>david 
+</s><s>i know it has been suggested but the more people who do so direct, the more likely it is to be implemented. 
+</s><s>please follow this link. 
+http://www.adobe.com/cfusion/mmform/index.cfm?name=wishform&product=38 
+kind regards. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181779-1421364</DOCNO>
+<TEXT>
+<subject>Phone layout not displaying search icon? Responsive HTML RH11</subject>
+<post author="zandwich" timestamp="Mar 5, 2014 9:34 AM">
+<s>hello, i'm creating responsive html5 output in rh11.</s><s> i've done considerable editing of the default theme, changing colors and removing the index page and the links to it (we don't include an index).</s><s> at some point, the phone layout stopped displaying the "magnifying glass" icon next to the toc/glossary icons.</s><s> if you hover over the spot, the hovering icon does appear.</s><s> i have tried everything i can think about to fix this problem, but can't figure it out.</s><s> the regular icon is definitely present in the folder, along with the hover version.</s><s> the css correctly names the icon.</s><s> i have looked at the masterthemeschema.xml and when i fooled around with that, i got two magnifying glass icons to appear, but not one.</s><s> i have created another theme1 layout, where the search icon displays correctly, and compared the main.css and masterthemeschema.xml line by line.</s><s> i've compared the language for the toc and glossary icons, which appear correctly, to the search icon, and everything looks fine.</s><s> i've even started all over and modified the theme-1 layout from scratch.</s><s> can anyone give me other ideas to check to get the icon to appear correctly in the phone layout?</s><s> thanks, alexandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181779-6184566</DOCNO>
+<TEXT>
+<subject>Phone layout not displaying search icon? Responsive HTML RH11</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 6, 2014 5:03 AM">
+<s>did you change the filename of the image?</s><s> the icon in the phone bar (in the static banner at the bottom of the page) is set in the css. 
+</s><s>for changing the layout, did you use the htl5 editor or did you do it manually? 
+</s><s>the selector div.bar_search for mobile has the following setting: 
+background-image: url(search_buttonbar_small.png); 
+is this image available?</s><s> is this line available in the css?</s><s> what are the dimensions of the image? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181779-6184790</DOCNO>
+<TEXT>
+<subject>Phone layout not displaying search icon? Responsive HTML RH11</subject>
+<post author="zandwich" timestamp="Mar 6, 2014 6:33 AM">
+<s>hi willam, i did not change the name of the image, or its size (30x29).</s><s> the css selector is exactly as you show, above.</s><s> for changing the layout, i didn't use the rh editor because i found that it stripped out comments from the css file and made other undesirable changes.</s><s> so, i have been editing the css in notepad ++ and the layout pages in the html view.</s><s> according to everything i see, the search icon should display, yet it does not.</s><s> alexandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181779-6187889</DOCNO>
+<TEXT>
+<subject>Phone layout not displaying search icon? Responsive HTML RH11</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 7, 2014 2:36 AM">
+<s>did you add a background to the search field or change anything about the dimensions of the search? 
+</s><s>do you perhaps have a link to an example output made with the layout?</s><s> i could then take a look and see what is going on.</s><s> that's easier than trying to come up with sensible ideas.</s><s> perhaps you can generate an example project with the layout (you can export/import them).</s><s> normally, i use the developer tools in browsers to sniff out what is going on in an example output.</s><s> that's by far the easiest way to find out why browsers are not responding the way you expect. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181779-6188609</DOCNO>
+<TEXT>
+<subject>Phone layout not displaying search icon? Responsive HTML RH11</subject>
+<post author="zandwich" timestamp="Mar 7, 2014 8:18 AM">
+<s>i have figured out the problem, and the problem was - me.</s><s> i'm embarrassed to explain the cause, but just in case it helps anyone else, here goes.</s><s> i had changed the colors of the icons because the default icons had a pinkish tinge i didn't like.</s><s> by accident, i changed the color of that particular seach icon to exactly match the background color of the buttonbar.</s><s> so the icon was there, but it wasn't visible.</s><s> (smacking my head!</s><s>) sorry to have wasted anyone's valuable time and i appreciate your efforts to help, willam.</s><s> i had been trying to fix this for weeks. 
+</s><s>alexandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181779-6202166</DOCNO>
+<TEXT>
+<subject>Phone layout not displaying search icon? Responsive HTML RH11</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 12, 2014 3:01 AM">
+<s>no sweat.</s><s> i'm glad it's solved. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-1414642</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="renvette" timestamp="Feb 24, 2014 6:31 PM">
+<s>i'm using robohelp 11 and want to remove the theme.</s><s> basically, i do not want that header or search or any of that on the output.</s><s> is this possible?</s><s> also, how do i add my own header and footer?</s><s> any help is greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-6154242</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="RoboColum(n)" timestamp="Feb 25, 2014 1:05 AM">
+<s>can you start by telling us what type of output you are producing. 
+</s><s>also just so we can be clear, what do you mean ny "header and search".</s><s> my definition may be different to yours.</s><s> you can define a topic header and footer in a master page.</s><s> just to confuse things further rh11 had added functionality to allow headers and footers inside printed output. 
+</s><s>the search is handled in a separate area of rh. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-6154899</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="renvette" timestamp="Feb 25, 2014 5:57 AM">
+<s>i am producing responsive html5.</s><s> for header, i meant the bar that shows the search and print and the section where the logo and name goes.</s><s> i would like to add a header like the following: 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-6173073</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="amitjha-lt" timestamp="Mar 2, 2014 8:14 PM">
+<s>hi renvette, 
+hi have few queries to understand your requirement. 
+</s><s>is this header for any topic/page or whole help? 
+</s><s>do you have different header content for different pages? 
+</s><s>do you always want them to be visible on top in all devices?</s><s> how do you want your help to look in mobile device (real space design)? 
+</s><s>rh provides masterpage, snippet, udv and layout customization.</s><s> base on your requirement we can suggest what could be the best way to go forward. 
+</s><s>you can reach us at techcomm@adobe.com. 
+</s><s>thanks amit jha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-6183429</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="Regman2" timestamp="Mar 5, 2014 5:31 PM">
+<s>this header will be for the whole help and i need to add page numbers to it.</s><s> no different headers i would like for them to be visible for all devices.</s><s> what is real space design? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-6187595</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="amitjha-lt" timestamp="Mar 6, 2014 11:47 PM">
+<s>hi 
+</s><s>to achive something similar what you mentioned.</s><s> i modified topic.slp inside the layout (expand the layout in project setup pod ).</s><s> and inside the <div class="title"> block added following code.</s><s> i also added a variable version in project and modified the style in main.css to reduce the font size of title content for different size. 
+<div class="title"> <table cellspacing="0" width="350" align="center"> <tr > <td colspan="3" style="border: solid 1px #c0c0c0; text-align: center;"><a href="topic.slp" class="homelink"><?rh-lng-string lngname="projecttitle" lngvalue="project title" ?</s><s>></a> </td> </tr> <tr > <td style="border-left: solid 1px #c0c0c0; border-right: solid 1px #c0c0c0; border-bottom: solid 1px #c0c0c0;">version no: <?</s><s>rh-udv_start name="version" ?</s><s>>1.23<?rh-udv_end ?</s><s>></td> <td style="border-right: solid 1px #c0c0c0; border-bottom: solid 1px #c0c0c0;">details </td> <td style="border-right: solid 1px #c0c0c0; border-bottom: solid 1px #c0c0c0;">others</td> </tr> </table> </div> 
+
+
+
+i have shared the modified .slz file at https://files.acrobat.com/a/preview/47a7b37a-fbfa-4cf4-8f46-040c6c628c e1 
+just import this .slz in rh 11 and add a variable version in your project and click on preview. 
+</s><s>hope this will help you to customize the shipped layout as per your need. 
+</s><s>thanks amit jha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6153758-6188147</DOCNO>
+<TEXT>
+<subject>Remove All Themes</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 7, 2014 5:27 AM">
+<s>@peter or @rick – maybe this thread needs moving over into the html5 forum? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6195118-1424498</DOCNO>
+<TEXT>
+<subject>Do I have to use the mobile.css file with iPad and iPhone_Layout? Bullets turning into numbers.</subject>
+<post author="dmagnum74" timestamp="Mar 10, 2014 6:10 AM">
+<s>after generating ipad and iphone output using multiscreen_html5, i noticed that my bulletted lists were converted to numbered lists in the output.</s><s> if i right-click my topics, they have another .css file associated with them instead of the mobile.css file that i see under ipad_layout in the project set-up pod.</s><s> i used the css editor to add a new bulletted list style to mobile.css.</s><s> then i applied mobil.css to a topic.</s><s> however, i don't see the new bulletted list style if i click the apply style drop-down list (in the upper left corner near the change font drop-down.</s><s>)   as i workaround, i can manually apply bullets to my lists by selecting format > list > bullets and numbering, but i know this is not idea.</s><s> when i have applied mobile.css to a topic and am viewing that topic, why can't i see all the correct styles in the apply style drop-down list?</s><s> thanks.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6195118-6195377</DOCNO>
+<TEXT>
+<subject>Do I have to use the mobile.css file with iPad and iPhone_Layout? Bullets turning into numbers.</subject>
+<post author="R_Sem" timestamp="Mar 10, 2014 7:40 AM">
+<s>hi, in rh10 the list styles are not displayed in that drop down list, only paragraph and inline styles.</s><s> i'm not sure about rh11 but i assume the same will be true for that version.</s><s> you can apply the other style types via the format > styles dialog. 
+</s><s>in case there is a formatting problem that only appears in a certain html5 output, you could check to see whether the name of the style interferes with the styles in the mobile.css.</s><s> i had that problem once - a style that i created in the default.css already existed in the mobile.css. 
+</s><s>robert 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6195118-6195406</DOCNO>
+<TEXT>
+<subject>Do I have to use the mobile.css file with iPad and iPhone_Layout? Bullets turning into numbers.</subject>
+<post author="dmagnum74" timestamp="Mar 10, 2014 7:45 AM">
+<s>thanks, robert.</s><s> i see a list style under "other" in the mobile.css when i view it in the css editor.</s><s> maybe that was interfering with the bullet list style i used in my original .css. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6195118-6198561</DOCNO>
+<TEXT>
+<subject>Do I have to use the mobile.css file with iPad and iPhone_Layout? Bullets turning into numbers.</subject>
+<post author="Peter%20Grainge" timestamp="Mar 11, 2014 2:54 AM">
+<s>the css files you see in the screen layout are not intended to be used in topics.</s><s> it sounds as if your html5 layout may be specifying it for topics. 
+</s><s>make sure apply to all topics is not selected.</s><s> also tick the limit the scope... option. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6195118-6198960</DOCNO>
+<TEXT>
+<subject>Do I have to use the mobile.css file with iPad and iPhone_Layout? Bullets turning into numbers.</subject>
+<post author="dmagnum74" timestamp="Mar 11, 2014 6:31 AM">
+<s>thanks, peter.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181776-1421362</DOCNO>
+<TEXT>
+<subject>How to stop popup window using phone layout for display - Responsive HTML5, RH11</subject>
+<post author="zandwich" timestamp="Mar 5, 2014 9:25 AM">
+<s>hello, i'm using the new responsive html5 output in rh11.</s><s> for some of my hyperlinks, i want to use a pop-up to display the linked topic.</s><s> in the output, the pop-ups work, but they are automatically displayed using the phone layout, with the associated navigation buttons at the bottom, the help title, and so on.</s><s> i don't want this - i just want a plain popup window.</s><s> so, i tried to add a screen profile, set to 400 x 500 pixels exactly (thinking that this is bigger than a phone, but smaller than a tablet).</s><s> i also added a corresponding screen layout.</s><s> in the popup properties, i set the popup size to be 400 x 500 pixels.</s><s> i guess there is something else i need to do to get this to work... but i don't know what that is.</s><s> (i tried creating a new window on the project set-up tab, and i tried creating a different master page.</s><s> these things didn't work.</s><s>) can anyone tell me if what i'm trying to do with these popups is just a bad idea and it won't work well with certain browsers?</s><s> thanks!</s><s> alexandra
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181776-6183528</DOCNO>
+<TEXT>
+<subject>How to stop popup window using phone layout for display - Responsive HTML5, RH11</subject>
+<post author="Peter%20Grainge" timestamp="Mar 5, 2014 5:00 PM">
+<s>i am confused as the responsive layouts are one size fits all, that is the point of them.</s><s> you have one layout that morphs according to window size. 
+</s><s>screen profiles are only used within multiscreen html5 layouts where you can map screen profiles to different adaptive screen layouts, such as desktop, tablet and phone.</s><s> that mapping does not apply to responsive layouts. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181776-6184553</DOCNO>
+<TEXT>
+<subject>How to stop popup window using phone layout for display - Responsive HTML5, RH11</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 6, 2014 4:38 AM">
+<s>popups are always a bad idea on mobile devices. 
+</s><s>all pages in the html5 layouts always include the entire skin on all pages.</s><s> this is different from webhelp, where the skin is separate from the topics.</s><s> i would suggest enabling the optimization 'transform popups to hyperlinks' for optimal compatibility. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6181776-6184788</DOCNO>
+<TEXT>
+<subject>How to stop popup window using phone layout for display - Responsive HTML5, RH11</subject>
+<post author="zandwich" timestamp="Mar 6, 2014 6:29 AM">
+<s>ok, i guess i was trying to get the responsive html to do something it was not designed to do since it doesn't have the mapping of screen profiles and layouts.</s><s> most of our users won't be viewing our help on mobile devices, but since we want it to be possible, i will have to drop the pop-up idea.</s><s> thank you, willam and peter.</s><s> alexandra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6182403-1421492</DOCNO>
+<TEXT>
+<subject>How do I add a full-screen button to mp4 videos?</subject>
+<post author="CheebsGoat" timestamp="Mar 5, 2014 11:33 AM">
+<s>i am making a multi-screen html 5 help project.</s><s> we want to add videos.</s><s> right now the videos are mp4, but really we could convert them to anything.</s><s> i want the videos to appear on the page at a nice small specified size.</s><s> that i can do.</s><s> however, i want the user to be able to expand the video to a boarderless full-screen size, similar to youtube videos.</s><s> i can't find any option to add a full-screen button to the video player.</s><s> can it be done in robohelp?</s><s> do i have to buy an external video player? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6165827-1417493</DOCNO>
+<TEXT>
+<subject>Opening topics in a new brower tab</subject>
+<post author="MikeLavender" timestamp="Feb 28, 2014 2:47 AM">
+<s>does anyone know if it's possible to set a topic or file to open in a new browser tab?</s><s> i know you can set it to open in a new window but my users want it to open in a new tab. 
+</s><s>thanks 
+</s><s>mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6165827-6180705</DOCNO>
+<TEXT>
+<subject>Opening topics in a new brower tab</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 5, 2014 2:54 AM">
+<s>where do you want to place that link?</s><s> in the toc, or from a topic? 
+</s><s>in a topic, open the hyperlink properties.</s><s> in hyperlink options, select display in frame and choose new window from the dropdown. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6165827-6180715</DOCNO>
+<TEXT>
+<subject>Opening topics in a new brower tab</subject>
+<post author="MikeLavender" timestamp="Mar 5, 2014 3:16 AM">
+<s>hi william, 
+</s><s>thanks very much for taking the time to respond.</s><s> i did try those settings in the hyperlink properties options and they work perfectly. 
+</s><s>kind regards 
+mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6156014-1415220</DOCNO>
+<TEXT>
+<subject>Search option isnt showing up in multiscreen output once published</subject>
+<post author="kmbcollie" timestamp="Feb 25, 2014 10:18 AM">
+<s>this is random because i have others that i have developed and generated identically the same way/structure and they are ok... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6156014-6156579</DOCNO>
+<TEXT>
+<subject>Search option isnt showing up in multiscreen output once published</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 25, 2014 12:39 PM">
+<s>in order to get some idea of what is going on, here are some questions: which layouts are you creating?</s><s> what is not showing?</s><s> is the entire search bar missing, or is something not working?</s><s> is this a problem of specific layout or of all the layouts?</s><s> is this a problem of specific ssl's or only of specific ssl's? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6156014-6156659</DOCNO>
+<TEXT>
+<subject>Search option isnt showing up in multiscreen output once published</subject>
+<post author="kmbcollie" timestamp="Feb 25, 2014 12:51 PM">
+<s>in preview the search is fully functional -- but when i published to a web server...</s><s> i tried typing in a key word and no results show... this happens in all the customized mobile outputs of my latest project (ipad, iphone, android, etc)... but my other projects work fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6156014-6158331</DOCNO>
+<TEXT>
+<subject>Search option isnt showing up in multiscreen output once published</subject>
+<post author="kmbcollie" timestamp="Feb 26, 2014 4:07 AM">
+<s>after extensive troubleshooting i think i have solved the issue more or less...</s><s> when i use the chrome app browser in my up-to-date ios software, search works fine on apple devices.</s><s> i found that safari for ios and ie for desktop is browser restrictive/sensitive.....adobe/microsoft/apple need to get on the same page if these technologies are going to thrive. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6156476-1415258</DOCNO>
+<TEXT>
+<subject>Screen profile and screen resolution modification to CSS file</subject>
+<post author="dfmartinaltstar" timestamp="Feb 25, 2014 12:38 PM">
+<s>if i change the minimum screen resolution for a screen profile (i want to make the minimum desktop resolution 1000 px wide) i get a message saying i need to "managemedia queries in the styles dialog box and map undefined media queries".</s><s> i believe i need to edit a css file to do this, but which one?</s><s> if i change the minimum resolution for the desktop profile do i also need to change the maximm resolution for the tablet profile? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6156476-6158044</DOCNO>
+<TEXT>
+<subject>Screen profile and screen resolution modification to CSS file</subject>
+<post author="Peter%20Grainge" timestamp="Feb 26, 2014 12:47 AM">
+<s>i have moved this post to the multiscreen html5 forum. 
+</s><s>take a look at robohelp 10 stuff in the robohelp tour on my site. 
+</s><s>the problem you are going to hit is that many phones now meet that criteria.</s><s> also see multiscreen html5 on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-1405149</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="forhpm" timestamp="Feb 12, 2014 1:04 PM">
+<s>i've published my two layouts, phone and tablet, to a folder called /help.</s><s> when i link to /help/index.htm, that index file is supposed to "sniff" to determine which layout to present.</s><s> from the tablet, i get /help/android_tab/homepage.htm which is the first page of my project.</s><s> from the phone, i get /help/android_phone/android/welcome_to_android.htm, which is my default topic, and already three pages in from what homepage.htm should show.</s><s> from what i've read and understand here, the /help/index.htm file should feed through to /help/android_phone/homepage.htm.</s><s> when i look at the folders, android_phone has no homepage.htm file in it.</s><s> so two questions: 
+1.</s><s> where is the /android_phone/homepage.htm file? 
+2.</s><s> how does it end up at the default topic if it should be going through the /help/index.htm?</s><s> if the homepage.htm file is not there, it should give a page not found error, not actually end up on a page. 
+</s><s>thanks in advance, helen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-6116068</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="R_Sem" timestamp="Feb 13, 2014 12:24 AM">
+<s>maybe it helps to delete the existing android phone screen layout and create a new one.</s><s> when i look at my android phone layout a homepage.htm file is present and also seems to work properly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-6134417</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="forhpm" timestamp="Feb 18, 2014 6:57 PM">
+<s>thanks for the suggestion r_sem, but this didn't work.</s><s> i still don't get the android_phone/homepage.htm, instead i'm redirected to the start page.</s><s> why is it generating and publishing with the correct homepage in the android_tab folder and not in the android_phone folder?</s><s> would it work instead to make 2 multiscreen html5 sslayouts, one for the phone and one for the tab?</s><s> hmm, think i'll try that one and report back. 
+</s><s>any other suggestions would be welcomed. 
+</s><s>thanks, helen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-6135049</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="Peter%20Grainge" timestamp="Feb 19, 2014 1:11 AM">
+<s>if you do that, the sniffer page will not be able to detect the separate page.</s><s> you could try generating the one that is not working and then replace it with this new output if that does fix the problem.</s><s> i cannot see how it will though. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-6140344</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 20, 2014 10:04 AM">
+<s>i think the confusion is between what a homepage is and what the start page of your output is. 
+</s><s>the file homepage.htm is a file from the screen layout.</s><s> it is the file that holds the links to toc, index and glossary.</s><s> the file index.htm is the first page you always end up on when the help for a specific device is opened.</s><s> the sniffer redirects to this page.</s><s> always.</s><s> 
+</s><s>whether or not you go to the homepage or the default topic, depends on the settings of the screen layout: 
+
+</s><s>the page with the text (default) after it is the page that is opened when you open the help without a csh call.</s><s> this setting is unique for every screen layout.</s><s> so you can redirect tablets to the toc and phones to the index if you wanted. 
+</s><s>the homepage is only available in screen layout for mobile devices and may be called homepage.htm or home.htm.</s><s> this is just the name for the overview page with links to the toc/idx/glo.</s><s> it is not used by the sniffing mechanism or a csh call.</s><s> that is done in index.htm. 
+</s><s>if you are missing the home page, please check the screen layout to see whether it is available.</s><s> if it is missing, try removing the layout and add it again.</s><s> if the home page is there, but if it is not default, simply right click the home and set it to default. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-6147031</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="forhpm" timestamp="Feb 22, 2014 11:12 AM">
+<s>hello willam and peter, 
+</s><s>i managed to find that in one location, i had another layout associated with the publish.</s><s> so it was an 18 inch error, i.e., me.</s><s> however, i appreciate the explanation, willam, i did not know that and will be careful of it in future! 
+</s><s>now i have another issue.</s><s> don't know whether to start another question but i'll try here first.</s><s> i have an hp slate 7" tablet.</s><s> if i'm holding it in portrait mode, it brings up my phone layout for my robohelp help project.</s><s> if it is in landscape mode, it brings up the tablet layout.</s><s> same machine, just turned 90 degrees.</s><s> what setting do i change to avoid this? 
+</s><s>thanks, helen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6114735-6155396</DOCNO>
+<TEXT>
+<subject>Homepage.htm file for phone not being published in HTML 5 output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 25, 2014 7:53 AM">
+<s>that will require you to change the screen profile to also pick up the tablet in landscape mode.</s><s> this is happening because one of the screen profiles identifies the slate as a phone. 
+</s><s>the following post may help you get started: http://www.wvanweelden.eu/blog/2013/05/11/supporting-android-phones-ad obe-robohelp 
+kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6118456-1406101</DOCNO>
+<TEXT>
+<subject>RoboHelp 11 and Viewing Output</subject>
+<post author="Regman2" timestamp="Feb 13, 2014 12:48 PM">
+<s>how do i view the output of a generated output?</s><s> i have several word procedures i will be importing to publish for iphone, android, tablets and computers.</s><s> how do i view the generated output on the respective devices? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6118456-6131153</DOCNO>
+<TEXT>
+<subject>RoboHelp 11 and Viewing Output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 17, 2014 11:48 PM">
+<s>create the output and check the output folder.</s><s> there will be a folder for every specific device (screen profile to be precise).</s><s> open the folder for a profile and double click the index.htm file. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6118456-6131985</DOCNO>
+<TEXT>
+<subject>RoboHelp 11 and Viewing Output</subject>
+<post author="Regman2" timestamp="Feb 18, 2014 6:43 AM">
+<s>thanks.</s><s> so does the entire folder have to be placed on the server to view the file via mobile device? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6118456-6140288</DOCNO>
+<TEXT>
+<subject>RoboHelp 11 and Viewing Output</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 20, 2014 9:54 AM">
+<s>yes.</s><s> you need the entire folder. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6115411-1405312</DOCNO>
+<TEXT>
+<subject>Any suggestions for integrating a multi-language html5 project?</subject>
+<post author="kfc_1965" timestamp="Feb 12, 2014 4:34 PM">
+<s>i have a project containing 5 languages.</s><s> i created a separate html5 single source layout for each so that i can include translated table of contents and index.</s><s> is there a recommended technique for pointing into the resulting output given a matching locale?</s><s> what about defaulting to english in the event that there is no matching locale? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6082836-1397311</DOCNO>
+<TEXT>
+<subject>Changing the look of the Index widget</subject>
+<post author="Tatu Mbili" timestamp="Feb 3, 2014 5:12 PM">
+<s>hi, i'm working in rh10 multiscreen html5 with an android tablet layout.</s><s> i've successfully published it and am now trying to clean up little things that testers have commented on.</s><s> on the index page, my bottom entry in the index is the word "white", which should return two values when touched.</s><s> however, those two values fall below the bottom edge of the screen, with no indication to scroll down to see them, so once you've touched there does not appear to be any result to your touch. 
+</s><s>i'm trying to figure out some way to show what the toc has, with the > and >> and two down arrows (nodepage, nodeopenbook and nodepage).</s><s> is there a way for me to define additional stuff either in the index page under the android tablet layout or somewhere else in the project? 
+</s><s>perhaps my answer will have to be that i add another word to the index after white which will have only one place to go so there is no confusion like this. 
+</s><s>after touching white: 
+
+</s><s>what i want it to look like without scrolling down as it is not evident from above pic that you need to scroll down. 
+
+</s><s>thanks!</s><s> helen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6082836-6087503</DOCNO>
+<TEXT>
+<subject>Changing the look of the Index widget</subject>
+<post author="Peter%20Grainge" timestamp="Feb 5, 2014 1:07 AM">
+<s>it's not a classy solution but how about an index entry "z - end of index" linked to the help home page? 
+
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6082836-6114512</DOCNO>
+<TEXT>
+<subject>Changing the look of the Index widget</subject>
+<post author="forhpm" timestamp="Feb 12, 2014 12:06 PM">
+<s>thanks peter, 
+</s><s>sounds like a plan. 
+</s><s>helen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-1393397</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Jan 29, 2014 9:01 PM">
+<s>compilation complete.</s><s> patching package name...</s><s> patching version information...</s><s> patching app name...</s><s> updating the android app project... 
+[path to android project]>android update project --name "employeecare2" --target 1 --path .</s><s> invalid number of parameters '"c:\windows\system32\java.exe "' is not recognized as an internal or external command, operable program or batch file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6068694</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Jan 30, 2014 6:56 AM">
+<s>robohelp 11 windows server 12 r2 datacenter, although this same issue was present in windows 8.1.</s><s> my machine died, so i'm running this on an azure instance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6068825</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="Peter%20Grainge" timestamp="Jan 30, 2014 7:15 AM">
+<s>the vm should be no different if it is running a version of windows supported by rh. 
+</s><s>the problem you describe is one that i and others have hit and are working on.</s><s> there are numerous posts on the web if you search that. 
+</s><s>the instructions i have drafted so far work on the 32 bit machines that i have tried but not on 64 bit.</s><s> what is your vm? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6069042</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Jan 30, 2014 8:23 AM">
+<s>"there are numerous posts on the web if you search that." been there done that.</s><s> all day yesterday.</s><s> if you ever find me on a message board, you know i'm at the end of my rope and on the verge of being banned from google for excessive searching! 
+</s><s>it's a 64-bit machine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6069627</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Jan 30, 2014 10:19 AM">
+<s>fixed it.</s><s> i mean i got it to generate the app, i wouldn't call it fixed.</s><s> this is one of those cases where i'm convinced that i am the only person who is using a particular feature because it doesn't seem like this would have ever worked for anyone. 
+</s><s>open c:\program files (x86)\adobe\adobe robohelp 11\robohtml\multiscreenext\nativeapps\android\updateapp.bat. 
+</s><s>turn echo back on. 
+</s><s>run the script to generate a native app. 
+</s><s>check the output window when it fails.</s><s> this line >set path="c:\program files\java\jdk1.7.0_51\"bin; should be >set path=c:\program files\java\jdk1.7.0_51\bin; no quotes around the path before bin. 
+</s><s>back in updateapp.bat: i hardcoded set path=c:\program files\java\jdk1.7.0_51\bin;%3;%path%. 
+</s><s>when i run the script again, i get a different error.</s><s> i cleared the output window, so i don't remember what it was. 
+</s><s>delete everything in the output folder, run the script again. 
+i haven't tested the app, but it says and looks like it was generated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6087600</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="Peter%20Grainge" timestamp="Feb 5, 2014 1:28 AM">
+<s>where did you see that the quotes should be before bin?</s><s> i never had that in the path variable. 
+</s><s>thanks for sharing the other info. 
+</s><s>it's not that you are the only one using the feature as the setup works on 32 bit machines.</s><s> the same setup on 64 bit machines is the issue.</s><s> i can generate on the former, not the latter. 
+</s><s>did you need to make any changes for ant? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6088358</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Feb 5, 2014 7:35 AM">
+<s>"where did you see that the quotes should be before bin?" 
+</s><s>i'm saying there should not be quotes wrapping the path before bin, but they are there when i run the script.</s><s> i didn't see that was the poblem until i turned echo back on in updateapp.bat.</s><s> my workaround was to hardcode the correct path without quotes in updateapp.bat. 
+i didn't make any changes in ant. 
+i had all of this set up and working on a 64-bit machine previously but it was robohelp 10.</s><s> i remember having a lot of issues getting it to work, but i can't remember what i did or which tutorial i followed to make it work.</s><s> it certainly didn't involve editing the scripts. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6109216</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="Peter%20Grainge" timestamp="Feb 11, 2014 6:24 AM">
+<s>just to let you know that adobe are continuing to work with me on getting the script to work on a 64 bit system and the answer will be published in due course.</s><s> sorry that does not help right now. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6109899</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Feb 11, 2014 9:25 AM">
+<s>thanks.</s><s> it's great that we have access to the scripts so that we can beat it into submission if necessary!</s><s> we were able to make it work and bottom line, that's all that matters. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6110037</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="Peter%20Grainge" timestamp="Feb 11, 2014 9:50 AM">
+<s>it would help enormously if you could post what made it work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6110018</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="frontrunner-tech" timestamp="Feb 11, 2014 9:52 AM">
+<s>i did, in post #4 above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067668-6112520</DOCNO>
+<TEXT>
+<subject>Native app - Invalid number of parameters, java.exe is not recognized as an internal or external...</subject>
+<post author="Peter%20Grainge" timestamp="Feb 12, 2014 12:47 AM">
+<s>sorry.</s><s> i read the post in isolation. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-1399796</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="rebeljrs23" timestamp="Feb 6, 2014 8:01 AM">
+<s>i recently upgraded from robohelp 10 to 11.</s><s> i would like to take advantage of the new layouts, but i receive an error message when trying to generate the layouts.</s><s> robohelp actually closes as the layouts are generating.</s><s> anyone else experiencing this error? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6092817</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 6, 2014 8:03 AM">
+<s>what error message do you receive? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6092833</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="rebeljrs23" timestamp="Feb 6, 2014 8:20 AM">
+<s>thanks for the quick reply.</s><s> see screenshot. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6093405</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 6, 2014 10:10 AM">
+<s>hmm.</s><s> can you succesfully generate another ssl?</s><s> (webhelp or so?</s><s>) and what happens if you delete the current ssl and create a new one? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6093436</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="rebeljrs23" timestamp="Feb 6, 2014 10:15 AM">
+<s>yes.</s><s> i am currently maintaining a large procedures manual in webhelp.</s><s> i wanted to implement some of the enhancements included in v11.</s><s> i created a new ssl for both the multiscreen and responsive layouts and still get the error. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6109120</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="Peter%20Grainge" timestamp="Feb 11, 2014 6:19 AM">
+<s>so you can generate webhelp but not the new layouts, correct? 
+</s><s>try generating one of the new layouts from the supplied sample projects.</s><s> click open on the robohelp starter page and then click samples in the ribbon on the left. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6109255</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="rebeljrs23" timestamp="Feb 11, 2014 6:50 AM">
+<s>thanks for the input.</s><s> i was able to generate one of the sample projects.</s><s> i think i may know what's causing the problem.</s><s> i originally created this project in v10 and upgraded to v11.</s><s> do you think that the project file structure is missing certain file requirements since the project was created in an earlier version? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6092825-6109227</DOCNO>
+<TEXT>
+<subject>Responsive and Multiscreen HTML5 Error</subject>
+<post author="Peter%20Grainge" timestamp="Feb 11, 2014 7:10 AM">
+<s>doubtful and the responsive layout is new. 
+</s><s>first just delete the cpd and reopen the project to see if you can generate then. 
+</s><s>if not, create a build tag called temp and go to topic files.</s><s> select half the topics and apply that tag.</s><s> generate a layout excluding those topics.</s><s> if that works, repeat on the other half.</s><s> assuming one half fails keep repeating in that half until you isolate a rogue topic. 
+</s><s>see where that takes you. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-1041366</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="feebeegeebee" timestamp="Jul 27, 2012 7:33 AM">
+<s>hi, i'm currently evaluating the new version of rh10.</s><s> i'm trying out the new multiscreen html 5 layouts and have set up a desktop layout and am investigating configuring it for my company's look & feel.</s><s> the multiscreen settings dialog gives you the option to select a toc, index, glossary, etc of your choice, but it doesn't appear to let you opt out of using one!</s><s> how can i opt out of having a glossary?</s><s> rh8 allowed you to choose which tabs you wanted.</s><s> am i missing something?</s><s> thanks for any help.</s><s> feebeegeebee 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-4583229</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jul 27, 2012 8:05 AM">
+<s>hi, 
+</s><s>wow, the release is only a day old and we find the first html5 post 
+if you want to opt out, you must amend the screen layout so that that information is excluded.</s><s> for example the desktop layout.</s><s> now select the glossary/index/toc element so that squares around the element, such as this: 
+
+</s><s>now simply press delete to remove the tab from the output.</s><s> do this for all the pages that the glossary can be accessed.</s><s> (home page, topic and search results.</s><s>) 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-4583309</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="feebeegeebee" timestamp="Jul 27, 2012 8:07 AM">
+<s>hi willam, excellent.</s><s> thank you.</s><s> that wasn't entirely clear.</s><s> i'll give it a go!</s><s> regards, feebeegeebee 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-4980049</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Mike%20Danial" timestamp="Jan 9, 2013 6:05 AM">
+<s>feebee, 
+</s><s>i just saw this positng and wondered if the solution willam gave worked for you.</s><s> i too am trying to remove the glossary buttons 
+thanks mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-4980084</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Jeff_Coatsworth" timestamp="Jan 9, 2013 6:33 AM">
+<s>@peter - maybe this thread should be moved over to the new multiscreen html5 forum? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-6081577</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Benjamin%20H" timestamp="Feb 3, 2014 11:26 AM">
+<s>hi folks, does anyone know how to remove the glossary for the responsive html5 layout in rh11?</s><s> i'm not sure what elements to select to remove it. 
+</s><s>thanks for any suggestions, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-6081810</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 3, 2014 12:05 PM">
+<s>which layout do you want to remove the glossary?</s><s> what you need to do depends on the layout being a mobile or desktop layout. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-6081773</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Benjamin%20H" timestamp="Feb 3, 2014 12:16 PM">
+<s>hi william, i'm not sure of how to answer your question because rh11 uses the word "layout" in several places.</s><s> in the "single source layouts" pod i'm working with the "responsive html5) target.</s><s> in the "project set-up", i have a "screen layout" for this responsive html5. 
+</s><s>my goal is to eliminate the glossary from all possible outputs.</s><s> your post from july 2012 nicely explained how to remove it from the multiscreen html5, and i've done that.</s><s> but i can't figure out how to do that with my new responsive html5 (rh11). 
+</s><s>thanks for any help you can offer.</s><s> ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-6084633</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Benjamin%20H" timestamp="Feb 4, 2014 7:25 AM">
+<s>update: i've done some experimentation with deleting portions of the "topic (default)" page in the responsive layout without success.</s><s> it appears that each of the .</s><s>slp pages in the layout has several references to the glossary.</s><s> it isn't obvious what to edit or remove to get rid of the glossary throughout. 
+</s><s>ultimately, it would be nice for the responsive layout customization wizard to let me turn off components of the ui, like the glossary. 
+</s><s>any ideas greatly appreciated. 
+</s><s>best regards, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-6087483</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 5, 2014 12:18 AM">
+<s>i agree that would be nice.</s><s> but for now you'll have to do it manually: 
+1.</s><s> in all pages, remove the glossary tab and glossary content: element with id 'glotabbutto' and element with id 'glotabpane'.</s><s> 2. in all pages, remove the div with class 'bar_glossary'.</s><s> 3. remove the page glossary. 
+</s><s>that should get rid of the glossary.</s><s> this applies to both responsive layouts. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4583200-6088474</DOCNO>
+<TEXT>
+<subject>RH10 Multiscreen HTML 5 support - glossary issue</subject>
+<post author="Benjamin%20H" timestamp="Feb 5, 2014 7:24 AM">
+<s>hi william, 
+</s><s>your instructions for removing the glossary from a responsive html5 layout in rh11 are perfect.</s><s> i completed them and now have output that works for every device i've tested.</s><s> perfect!</s><s> 
+</s><s>thank you for taking the time to explain this.</s><s> very much appreciated. 
+</s><s>cheers, ben 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6072774-1394685</DOCNO>
+<TEXT>
+<subject>Problems with <title> tags in Multiscreen HTML</subject>
+<post author="Papeer Development" timestamp="Jan 31, 2014 7:16 AM">
+<s>i am currently working with robohelp 10 to generate multiscreen html help, but i am having a problem with the <title> tags of the output.</s><s> whenever i generate my help using the "multiscreen html5" ssl, all <title> tags in the output is set to the name of the project eg.</s><s> "my product help", rather than the topic title eg.</s><s> "my help topic".</s><s> all topics have titles, and these are located in the <title> tag of each topic.</s><s> i can see in the screen layout file that this contains the following line: <title>topic</title>, but in the end the output becomes <title>my product help</title> rather than <title>my help topic</title> which would be logical.</s><s> this has an adverse effect on seo because all pages end up with the same, not very descriptive, title - but i simply can't sort out how to make the output use the title tags from the actual topics.</s><s> any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067859-1393481</DOCNO>
+<TEXT>
+<subject>Breadcrumbs navigating to TOC not Topics</subject>
+<post author="edu_Kate" timestamp="Jan 29, 2014 10:41 PM">
+<s>is it possible to have the navigation of breadcrumbs (when clicked) go to the correct location in the toc? 
+</s><s>at the moment it is navigating to the first topic in that toc level. 
+</s><s>for example: (using the image below) if i click say student records breadcrumb, it is taking me to the first topic in the student records structure 
+
+i want it to go to the toc instead for that student records level (below) 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6067859-6069530</DOCNO>
+<TEXT>
+<subject>Breadcrumbs navigating to TOC not Topics</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 30, 2014 10:00 AM">
+<s>by my knowledge, breadcrumbs always point to a topic, never to a toc page.</s><s> and pointing to a specific page in the toc is hell in the html5 output: i've not found a good way to get the id of the toc page to show in html5 
+kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6021462-1381942</DOCNO>
+<TEXT>
+<subject>The TOC in my generated project is not navigating to the correct subfolders</subject>
+<post author="edu_Kate" timestamp="Jan 16, 2014 4:51 PM">
+<s>the toc in my generated project (multiscreen html5/andriod (desktop) layout) is not opening to the correct sub folders.   for example, when selecting a level 1 folder (say the one highlighted in orange), it will jump to a level 3 list of topics in a completely different level 1 structure (say the list highlighted in green)   level 1        level 2               level 3               level 3               level 3        level 2               level 3               level 3               level 3 level 1        level 2               level 3               level 3               level 3        level 2               level 3               level 3               level 3   i have looked at the toc report, everything is fine there, the toc in robohelp looks fine as far as i can see.   i have noooo idea how to fix this!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6021462-6034740</DOCNO>
+<TEXT>
+<subject>The TOC in my generated project is not navigating to the correct subfolders</subject>
+<post author="Peter%20Grainge" timestamp="Jan 21, 2014 12:40 AM">
+<s>check what is happening in webhelp.</s><s> same problem there? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6021462-6067752</DOCNO>
+<TEXT>
+<subject>The TOC in my generated project is not navigating to the correct subfolders</subject>
+<post author="edu_Kate" timestamp="Jan 29, 2014 10:31 PM">
+<s>i did not check this peter. 
+</s><s>the only way i could see to fix this was to delete the toc and start again. 
+</s><s>it's been fine since then ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6052795-1389763</DOCNO>
+<TEXT>
+<subject>Robohelp Multiscreen Output is showing random script error popups</subject>
+<post author="kmbcollie" timestamp="Jan 25, 2014 5:11 PM">
+<s>generated multiscreen output clean with no errors; however, simply browsing final output is creating these script error popups like those shown below - help - this needs to be fixed asap... 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6052795-6055508</DOCNO>
+<TEXT>
+<subject>Robohelp Multiscreen Output is showing random script error popups</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 27, 2014 12:30 AM">
+<s>i can't see which script file is causing the errors.</s><s> which file is mentioned in the error message? 
+</s><s>which browser are you testing this on?</s><s> it looks like ie8 to me.</s><s> is that correct? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6052795-6064421</DOCNO>
+<TEXT>
+<subject>Robohelp Multiscreen Output is showing random script error popups</subject>
+<post author="kmbcollie" timestamp="Jan 29, 2014 5:34 AM">
+<s>using windws 8.1 (explorer 11).</s><s> once i created multiscreen output (all profiles- iphone,android, desktop, etc), i tested each one and these scripts kept popping up...</s><s> the same project worked in tc 4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6052795-6064422</DOCNO>
+<TEXT>
+<subject>Robohelp Multiscreen Output is showing random script error popups</subject>
+<post author="kmbcollie" timestamp="Jan 29, 2014 5:36 AM">
+<s>also note-- the project compiled with no warnings, errors, or issues... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6052795-6064548</DOCNO>
+<TEXT>
+<subject>Robohelp Multiscreen Output is showing random script error popups</subject>
+<post author="Peter%20Grainge" timestamp="Jan 29, 2014 6:06 AM">
+<s>are you viewing this locally or on a web server?</s><s> there are known issues with ie11 at the moment and this could be related. 
+</s><s>try moving the help to a web server and see if it still errors.</s><s> note web server, not network server. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-1385252</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="IR-PROGNOSIS" timestamp="Jan 20, 2014 9:16 PM">
+<s>i have just started to try out the robohelp 10 multiscreen html5 format and have found a problem with merged projects. 
+i carry out the usual procedure for merged projects by adding each child project to the toc of the parent project then generate and publish each one. 
+</s><s>upon viewing the published help system, the parent project is correct with the toc showing the child topics. 
+
+</s><s>however, upon clicking on a child topic in the toc the child topic will open but shows as a standalone project, i.e. the toc/index etc no longer shows the whole merged project. 
+
+i am using the same screen layout for all projects and have tried using various other default robohelp screen layouts, all without success. 
+i can publish the exact same project using webhelp and everything works perfectly. 
+</s><s>is there an extra step somewhere for multiscreen html5? 
+</s><s>chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6034633</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="Peter%20Grainge" timestamp="Jan 21, 2014 12:37 AM">
+<s>merged help is not viable with html5 in rh10 or 11.</s><s> i am nagging adobe to make it work in rh12 but clearly that is a long way off. 
+</s><s>please follow this link. 
+http://www.adobe.com/cfusion/mmform/index.cfm?name=wishform&product=38 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6034729</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 21, 2014 12:45 AM">
+<s>such harsh words peter 
+merged help works quite different in html5 than webhelp. 
+i described the process of merging html5 on: https://www.wvanweelden.eu/blog/2012/12/27/merging-multiscreen-html5-h elp 
+kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6034745</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="Peter%20Grainge" timestamp="Jan 21, 2014 1:10 AM">
+<s>i had issues with that but will give it another go as i cannot recall what they were now. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6034809</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 21, 2014 1:40 AM">
+<s>something about the webhelp workflow being not compatible with html5 if i'm not mistaken.</s><s> the links between projects are completely different in merged multiscreen html5.</s><s> i believe that was the main issue. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6034894</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="Peter%20Grainge" timestamp="Jan 21, 2014 2:06 AM">
+<s>indeed young man with a better memory! 
+i think it was the case that all those links would need reworking in an existing project and multiple outputs you would need build tags.</s><s> throw in printed documentation and it would be a nightmare. 
+</s><s>so, possible with a new project and your workflow and possible with existing projects but you have to accept a lot of reworking if there are lots of cross project links. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6037515</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="IR-PROGNOSIS" timestamp="Jan 21, 2014 1:53 PM">
+<s>thanks peter and william.</s><s> at this stage i am not worried about cross project links, and by this i am assuming you mean manual links placed in the topic of one project to link to a topic in another project. 
+</s><s>at this time i am just attempting to build a merged project so that the toc, index etc work correctly.</s><s> to do this i have followed williams instructions, which to me appear to be the same as any webhelp project; 
+</s><s>"merging child projects into the parent project you merge the child projects through the master projects' toc.</s><s> go to the toc and click the button new merged project.</s><s> now select the xpj of the child project you want to merge. 
+</s><s>you will now find the name of the child project in the master projects' toc.</s><s> and that is all you need to do.</s><s> all further merging is automatic.</s><s> table of contents, context sensitivity, no further manual action required." 
+</s><s>however, this does not appear to work - at least for me 
+i think peter you are right, it simply doesn't work correctly.</s><s> i will complete a report to adobe. 
+</s><s>thanks guys. 
+</s><s>chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6051538</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 25, 2014 8:02 AM">
+<s>very strange.</s><s> can you open the developer console in the browser (by pressing f12)?</s><s> then load up the help.</s><s> do you get any errors on the console tab? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034390-6058060</DOCNO>
+<TEXT>
+<subject>Iam unable to get merged help to work in Multiscreen HTML5 Help</subject>
+<post author="IR-PROGNOSIS" timestamp="Jan 27, 2014 1:47 PM">
+<s>hi william, 
+</s><s>pressing f12 and selecting the console tab on my ie9 browser reveals the following information message: 
+</s><s>"html 1113: document mode restart from ie7 standards to ie9 standard". 
+i don't know what that means? 
+</s><s>anyway, adobe have come back to me asking for a copy of some project files.</s><s> i will pass these on to them and let you know if i hear anything further. 
+</s><s>thnaks for your interest. 
+</s><s>cheers, 
+</s><s>chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-5937627-1360300</DOCNO>
+<TEXT>
+<subject>Is anyone having trouble with iPhone 5?</subject>
+<post author="jj_sailing" timestamp="Dec 17, 2013 6:57 AM">
+<s>i have an html help system, already published on the web, which is showing output perfectly in android / android tablet and iphone 4 (with the exception that search results are not showing up in safari, and they do in chrome). 
+</s><s>on iphone 5, the desktop version is displayed.</s><s> i was suspecting my layouts, but since it works fine in iphone 4 (excluding the search results on safari) i'm not sure where to troubleshoot. 
+</s><s>any suggestions? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-5937627-5940517</DOCNO>
+<TEXT>
+<subject>Is anyone having trouble with iPhone 5?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 18, 2013 2:06 AM">
+<s>you probably need t update the resolution in the screen profile.</s><s> check the iphone screen profile and check whether the maximum resolution fits the iphone 5's resolution. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-5937627-5953499</DOCNO>
+<TEXT>
+<subject>Is anyone having trouble with iPhone 5?</subject>
+<post author="jj_sailing" timestamp="Dec 23, 2013 12:42 PM">
+<s>thanks william.</s><s> 
+</s><s>i tested the html5 iphone layout (same, all defaults) with a project that was only 2 topics, without changing the resolution, and it came out perfectly in ios 5. clearly there's something with my large project causing the desktop layout to appear instead of iphone. 
+</s><s>i'll let you know if i can find it! 
+</s><s>johanna 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-5937627-6034741</DOCNO>
+<TEXT>
+<subject>Is anyone having trouble with iPhone 5?</subject>
+<post author="Peter%20Grainge" timestamp="Jan 21, 2014 12:43 AM">
+<s>in the iphone profile, have you defined the iphone browser?</s><s> if not, the profile is relying on the resolution and that is what could be throwing it. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-5937627-6039654</DOCNO>
+<TEXT>
+<subject>Is anyone having trouble with iPhone 5?</subject>
+<post author="jj_sailing" timestamp="Jan 22, 2014 5:49 AM">
+<s>thank you william and peter!</s><s> i needed to change the default iphone max resolution in the screen profile properties from 320 x 480 to 640 x 1136 to account for the greater resolution in iphone 5. everything works!</s><s> (except search in safari.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-5937627-6039851</DOCNO>
+<TEXT>
+<subject>Is anyone having trouble with iPhone 5?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 22, 2014 6:44 AM">
+<s>what about the search isn't working?</s><s> can you enter search terms, but does the search button not respond? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034045-1385118</DOCNO>
+<TEXT>
+<subject>Possible to use Content Categories with one of the HTML5 layouts?</subject>
+<post author="kdeuler" timestamp="Jan 20, 2014 6:44 PM">
+<s>hi.</s><s> is it possible to use content categories in one of the html5 layouts (responsive or multiscreen)?</s><s> it seems to only be availalbe in webhelp and one or two other formats. 
+</s><s>thanks.</s><s> 
+-kurt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6034045-6034739</DOCNO>
+<TEXT>
+<subject>Possible to use Content Categories with one of the HTML5 layouts?</subject>
+<post author="Peter%20Grainge" timestamp="Jan 21, 2014 12:38 AM">
+<s>no it is not an option with html5. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6024683-1382646</DOCNO>
+<TEXT>
+<subject>Heading 1 missbehaving when using Master Pages</subject>
+<post author="CheebsGoat" timestamp="Jan 17, 2014 1:17 PM">
+<s>so here's the deal: when i make a desktop layout in multiscreen html5, the screen.css style sheet "hijacks" the first heading 1 at the top of each topic page and overwrites it with a sort of banner style.</s><s> i like it.</s><s> it looks nice.</s><s> however, if the robohelp topic page has a master page associated with it, this banner style from screen.css is never applied. 
+</s><s>the odd thing is as far as i know the master page is only defining a style sheet (we'll call it style01.css) for the assosiated topic pages, yet if i attach style01.css to topic pages manually without involving a master page, the banner works just fine. 
+i want to be able to get the banner at the top of the topic and use a master page in the project.</s><s> can this be done? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6024683-6031313</DOCNO>
+<TEXT>
+<subject>Heading 1 missbehaving when using Master Pages</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 20, 2014 5:57 AM">
+<s>your master page probably has a header, right?</s><s> the css responsible for the transformation only transforms a heading when it is the first thing on a page. 
+</s><s>what needs to be done is to change the selector that transforms the heading.</s><s> in the css, find 
+div.wtopic > h1:first-child 
+add the following selector on the line above: 
+div#header + h1, 
+(include the comma!</s><s>) now make sure that there are no paragraphs or other content between the heading and the header.</s><s> the header should now be transformed if you use the master page. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-1105709</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style Council" timestamp="Nov 27, 2012 10:25 AM">
+<s>hello, 
+</s><s>i am creating a new help project for one of our ipad apps.</s><s> this is the first time i have compiled with the multiscreen html 5 primary layout. 
+</s><s>when i compile in webhelp, i check the entire webhelp folder (...\!</s><s>ssl!\webhelp) into our svn content management system for development to get.</s><s> (with html, they just take the .chm file of course). 
+</s><s>for these ipad multiscreen builds, should i just give development the contents of ipad folder (..</s><s>!</s><s>ssl!\multiscreen_html5\ipad)?</s><s> 
+</s><s>thanks very much for the help.</s><s> i saw in another post that you can change the color shemes for the multiscreen layout, so that's good news.</s><s> i will give that a try as well. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4877981</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Peter%20Grainge" timestamp="Nov 27, 2012 11:02 AM">
+<s>it is likely that is what you will do but by no means certain.</s><s> take a look at the robohelp tour on my site.</s><s> in the robohelp 10 content i describe the options.</s><s> you may want to show that to your developers too. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4878161</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 27, 2012 12:01 PM">
+<s>you'll have to give the entire output folder to your developers.</s><s> if you have more than one layout, the root folder will contain several outputs, one for each device. 
+</s><s>the root folder contains scripts and files to direct the user to the correct output for their device.</s><s> this becomes even more important if you ever want to used merged html5 help or multiple devices. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4878162</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Nov 27, 2012 12:02 PM">
+<s>thanks very much, peter.</s><s> yes, this helps and i will pass on to the developer. 
+</s><s>one last question about multiscreen: is there a way to omit the glossary from the output and just keep the toc, index , and search? 
+</s><s>on the screen profiles tab, none is not an option for glossary.</s><s> i know in other types of rh compiles, you can do that, but i do not see an option in the rh editor for multiscreen. 
+</s><s>thanks again. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4878199</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 27, 2012 12:10 PM">
+<s>yes: remove the glossary tab from the accordion widget used in the screen layout.</s><s> just select the glossary tab and delete it. 
+
+
+</s><s>greet, 
+
+
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4878416</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Nov 27, 2012 1:30 PM">
+<s>thanks very much, william.</s><s> that was simple enough. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4879615</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="robert-sfl" timestamp="Nov 28, 2012 12:21 AM">
+<s>yes the index.htm in the root folder (/multiscreen_html5) is a sniffer.</s><s> on startup it determins which screen layout to use.</s><s> if you have only one screen leyout you can also use only the corresponding subfilder (/multiscreen_html5/android_phone or whatever) and start the index.htm in that folder. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4880112</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Nov 28, 2012 6:19 AM">
+<s>thank you all for the kind responses.</s><s> i met with development yesterday, and they're going to give it a try. 
+</s><s>in regards to the removal of the glossary, i did that, and the large button disappears, but a small "unclickable" button remains at the bottom left.</s><s> in addition, the project title is not showing up unless i click in that field (under the search field) a few times.</s><s> here's the image.</s><s> any suggestions would be much appreciated. 
+</s><s>thanks again, 
+kevin 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4880357</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 28, 2012 7:36 AM">
+<s>hi, 
+</s><s>you can best do that through the html.</s><s> select the text in the editor and switch to html mode.</s><s> delete the text and it's div-container to get rid of it. 
+</s><s>don't forget to remove the glossary page from your layout. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4905051</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 7, 2012 2:09 PM">
+<s>william, 
+</s><s>thanks again.</s><s> i do occasionally go into the html tab in the editor and change text; however, in this example i'm not sure how to do that.</s><s> the project name that is missing is not found in an individual topic (htm file), and the tiny glossary button is not, either.</s><s> sorry to sound completely dense, but where would the text for the blank name and the small glossary button on the ipad's home page shown in the previous screenshot be in the html?</s><s> i'm probably just missing something obvious here.</s><s> i did remove my glossary page from the layout. 
+</s><s>sorry for the follow-up but any suggestions are welcomed.</s><s> thanks.</s><s> 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4906016</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 8, 2012 7:58 AM">
+<s>hi, 
+</s><s>that explains the deformed tile.</s><s> to get rid of the glossary tile altogether, go to html mode and delete the following html: 
+<div class="homepagebutton"> <a href="glossary.slp" class="homepage_glossary"><?rh-lng-string lngname="glossary" lngvalue="glossary" ?</s><s>></a> </div> 
+</s><s>(the <a> tag has probably been deleted already.</s><s>) 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4909296</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 10, 2012 6:14 AM">
+<s>william, 
+</s><s>that trick indeed got the tiny glossary button to disappear.</s><s> thanks.</s><s> 
+</s><s>however, the title still only appears if you click in its field (on the home page).</s><s> is there any chance i would need to edit something in the mobile.css file or would that be used only for colors? 
+</s><s>here is the portion of the xml i probably messed up somehow concerning the title. 
+</s><s>thank you very much.</s><s> i apologize for all of the questions, but i really do appreciate the help.</s><s> this ipad help is new territory. 
+</s><s>kevin 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4909410</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 10, 2012 6:55 AM">
+<s>william, 
+</s><s>i believe i figured it out by changing a color in the mobile.css file.</s><s> the name now appears in the generated ipad project in robohhelp.</s><s> thanks for all of your help on this one. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4928226</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 17, 2012 12:25 PM">
+<s>hello william or anyone interested in this question.</s><s> the mobile.css file has been no problem tweaking with just one exception. 
+</s><s>in the code, i've tried changing the search results font to black, and it seems like i have tried so everywhere that it might work, but i am striking out more than dave kingman circa 1978.</s><s> i just want to get the results to be black and stay black when highlighted (or a color otehr than white.</s><s> i'd even use the orange i have elsewhere in the file - just not white. 
+</s><s>if anyone knows where in the mobile.css file or elsewhere the settings are for this, i'd love to know.</s><s> obviously, i went to the search results area part of the file and replaced some of the color settings but still haven't been able to change the color. 
+</s><s>thanks for any help and sorry for all of the html5 issues. 
+</s><s>kevin 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4928260</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 17, 2012 12:35 PM">
+<s>hi, 
+</s><s>exactly what colour do you want to change?</s><s> the highlight colour in the text or the highlight color of the links on the search results page?</s><s> or smething completely different? 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4928468</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 17, 2012 1:44 PM">
+<s>william, 
+</s><s>really just the topic results color (list of topics).</s><s> in the example, i'd be fine with application settings appearing in black font with and without it being highlighted.</s><s> as of now, the selected highlight color is a grey, so the black would show up either way. 
+</s><s>incidentally, i'm feeling much like charlie brown in the "everything i touch gets ruined" sense.</s><s> now the background for the topics has gone black.</s><s> it's not for the toc, or index, or search but the topics themselves.</s><s> i tried changing code at the beginning of the mobile.css file, but i only proceded in figuring out how to change the background color on the toc, index, and search pages, which is handy to know but not what i was looking for. 
+</s><s>sigh, 
+</s><s>kevin 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4933359</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 19, 2012 7:46 AM">
+<s>hi, 
+</s><s>the css selector for the results text preview is span.wsearchcontext and span.wsearchcontextsmallscr.</s><s> the topic background is set in div.wtopic. 
+</s><s>tinkering with the html5 layouts is no walk in the park.</s><s> i will publish a couple of articles about this in the coming weeks.</s><s> stay tuned to my site! 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4934609</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 19, 2012 2:02 PM">
+<s>thanks very much, willam. 
+</s><s>to begin with, sorry for misspelling your name this whole time.</s><s> there is no phantom, second "i." poor editing job on my part for a tech writer. 
+</s><s>we had our developer take a look at this html5 help today, and the ipad style, my default layout, works with an android phone and android tablet, but, ironically, not on an ipad itself.</s><s> so, i contacted adobe regarding this.</s><s> the look and feel needs to be consistent but as of now it's not.</s><s> here's what our developer wrote in an e-mail to those of us working on it: "robohelp is supposed to detect the device type and screen resolution and redirect to the appropriate page, but that does not appear to be working at all.</s><s> it sends the ipad to the android phone site, my android tablet to the ipad site, etc. none of it looks exactly the way it looks on kevin's preview through robohelp, even though i verified we have the same stylesheet." 
+</s><s>what he is referring to concerning my preview is that the preview i see in rh after i generate the help is not accurate.</s><s> it is not what is truly being seen in the devices themselves.</s><s> so, i've been trying to make changes to the mobile.css file basing these changes on what i'm seeing in the rh preview, which is what we now know to be inaccurate and not truly what the user will see.</s><s> we believe that has to do with me running ie9 and ie9 not fully supporting html5.</s><s> so, that is a fixable issue on our end. 
+i hope adobe can give us some guidance on the output problem, though.</s><s> when you wrote that html5 is no walk in the park, you were completely accurate. 
+</s><s>again, thanks for all of your help. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4935754</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 20, 2012 1:41 AM">
+<s>no sweat, i'm used to a slew of variations on my name 
+the question now becomes: what is different?</s><s> ie9 is supported but different devices may render a bit different.</s><s> but the css and html used in the layouts is nothing exotic that i know of. 
+</s><s>can you give some examples of what is not the same? 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4937562</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Style%20Council" timestamp="Dec 20, 2012 2:12 PM">
+<s>i did upgrade to ie10 today, and it looks like the rh preview does indeed mirror what we saw yesterday on the devices. 
+</s><s>since ipad is my default screen profile, i assumed my preview would resemble what we saw on the actual ipad.</s><s> (barring the color descrepencies from ie9, it did look similar to what we saw on the android phone and tablet.</s><s>) 
+</s><s>so, we saw the ipad layout on the android devices. 
+</s><s>but on the ipad, we saw the android layout. 
+i did contact adobe and hope to hear back soon.</s><s> maybe i'm simply not setting up something correctly in rh, but i don't think that's the case.</s><s> again, thanks for all of your help. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-4877845-4938855</DOCNO>
+<TEXT>
+<subject>Multiscreen HTML 5 - What to give to Development?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Dec 21, 2012 4:01 AM">
+<s>hi, 
+</s><s>you are seeing two different layouts.</s><s> the above is the ipad layout and the latter is the android tablet layout.</s><s> if you want all devices to use the same layout, go to your ssl setting and remove the device selectors you don't need. 
+</s><s>alternatively, select the ipad layout for all screens, although this will duplicate the output for every device. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-1379420</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="DMJ1111" timestamp="Jan 14, 2014 8:57 AM">
+<s>i need to create help for an iphone and android app using robohelp 10. which option do i choose for a new project: blank project or application help?</s><s> and, which output do i choose under "file > generate"?</s><s> i see an option for "native mobile app." but, i'm not seeing a "multiscreen html5" option. 
+</s><s>which file do i give the developer? 
+</s><s>thanks for your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6012261</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="Peter%20Grainge" timestamp="Jan 14, 2014 11:38 AM">
+<s>that's a pretty big question and you haven't given us any clues such as which version of robohelp you are using and whether it is just this form of help that is new to you or help in general. 
+</s><s>it doesn't really matter whether you choose blank project or application help as they are just starters with different default topics and you will be trashing them anyway.</s><s> for now let's say start with blank project and create your topics.</s><s> you do need to keep in mind they will be viewed on various devices.</s><s> more about that later. 
+</s><s>when that is done you start thinking about creating a suitable output.</s><s> multiscreen html5 is the output in robohelp 10.</s><s> robohelp 11 was released today and that has a new output, responsive html5.</s><s> that is simpler, especially first time out.</s><s> both of those types are intended for use where they will be viewed via a browser, be that on a desktop or a mobile device. 
+</s><s>it is not clear whether you want your company's app to access help in that way or whether the need is for the help to be an app in its own right.</s><s> the latter adds another layer of learning.</s><s> essentially after creating an html5 output, you use the script to create an app.</s><s> from the questions you ask, i suspect you will need developer assistance with that. 
+</s><s>start by viewing my page at http://www.grainge.org/pages/authoring/html5/html5.htm where you can download a project with information inside, include some ideas about how to write content. 
+
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6012262</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="Peter%20Grainge" timestamp="Jan 14, 2014 11:39 AM">
+<s>need to add, that whilst robohelp can create an apk file for android help, your developers will need to deal with creating the equivalent for ios. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6013725</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="DMJ1111" timestamp="Jan 15, 2014 7:24 AM">
+<s>thank you for the information peter. 
+i am using robohelp 10.</s><s> i will be creating help that can be viewed in an app.</s><s> i don't need to create an actual app. 
+</s><s>after i generate the "multiscreen html5" output, do i just give the apk file to the developer? 
+</s><s>also, do you recommend that i upgrade to robohelp 11? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6015214</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="Peter%20Grainge" timestamp="Jan 15, 2014 7:25 AM">
+<s>if you create multiscreen html5 (or responsive from rh11), then it needs to run in a browser.</s><s> i will be interested to learn how your developers plan to show the help within the app without the user going out to a browser. 
+</s><s>multiscreen html5 does not create an app.</s><s> it creates help that runs in a browser.</s><s> converting that to an app is what the script does.</s><s> that app is the apk file. 
+</s><s>rh11 will enable you to use responsive layouts which are simpler to set up but i think you still have some way to go to get your mind around this and then agree with your developers what is required. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6016151</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="DMJ1111" timestamp="Jan 15, 2014 7:56 PM">
+<s>thanks peter.</s><s> 
+</s><s>i wanted to view your sample source project (http://www.grainge.org/pages/authoring/html5/html5.htm).</s><s> it is telling me that it can't open, because the .xpj file is not "editable." 
+</s><s>any suggestions? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6018722</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="Peter%20Grainge" timestamp="Jan 16, 2014 4:19 AM">
+<s>you have downloaded the demo to a local drive and unzipped it, then rh will not open it.</s><s> correct?</s><s> 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6019314</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="DMJ1111" timestamp="Jan 16, 2014 7:58 AM">
+<s>peter, yes.</s><s> i downloaded the file to a local drive.</s><s> when i attempt to open the file, robohelp 10 displays an error that says "in order to execute this file, the file "employeecareus.xpj" must be "writable." then, robohelp opens and displays a blank project. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-HTML5-Layouts/Discussions-6011458-6019629</DOCNO>
+<TEXT>
+<subject>Creating Help for Iphone/Android app</subject>
+<post author="Peter%20Grainge" timestamp="Jan 16, 2014 8:56 AM">
+<s>then you need to change the attributes.</s><s> your developers will know what to do. 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,2202 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4788879-1085750</DOCNO>
+<TEXT>
+<subject>Remote SharedObject isn't synced/persisted</subject>
+<post author="Nando Vieira" timestamp="Oct 20, 2012 7:59 PM">
+<s>i'm using fms 4.0.</s><s> i'm trying to use the remote sharedobject, which i've i used in the past, but nothing seems to work.</s><s> even the most simple example doesn't work.</s><s> no events are triggered on the so instance (no netstatusevent or syncevent).</s><s> no exceptions, no nothing. 
+
+
+import flash.net.netconnection;
+import flash.net.sharedobject;
+import flash.events.netstatusevent;
+import flash.events.asyncerrorevent;
+import flash.events.syncevent;
+import flash.utils.timer;
+import flash.events.timerevent;
+
+var nc:netconnection = new netconnection();
+var so:sharedobject;
+var url:string = "rtmp://127.0.0.1/live";
+var tm:timer = new timer(1000);
+
+nc.client = {};
+
+nc.addeventlistener(netstatusevent.net_status, function(event:netstatusevent):void {
+  trace("nc netstatus event", event.info.code);
+
+  if (event.info.code !== "netconnection.connect.success") {
+    return;
+  }
+
+  so = sharedobject.getremote("settings", nc.uri, true);
+  so.client = {};
+  so.addeventlistener(asyncerrorevent.async_error, trace);
+
+  so.addeventlistener(netstatusevent.net_status, function(event:netstatusevent):void {
+    trace("so netstatus event", event.info.code);
+  });
+
+  so.addeventlistener(syncevent.sync, function(event:syncevent):void {
+    trace("so synced");
+    trace("time", so.data.time);
+  });
+
+  so.connect(nc);
+  tm.start();
+});
+
+tm.addeventlistener(timerevent.timer, function(event:timerevent):void {
+  trace("tick");
+  so.setproperty("time", new date().tostring());
+});
+
+nc.connect(url); 
+i'm using the developer license, so sharedobjects should work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4788879-4789219</DOCNO>
+<TEXT>
+<subject>Remote SharedObject isn't synced/persisted</subject>
+<post author="vijay.das" timestamp="Oct 20, 2012 9:11 PM">
+<s>use an app other than live and vod.</s><s> it seems signed apps do not allow shared object creation.</s><s> however if you need to use the live service functionality and shared objects together, you can user the main.asc script available in samples instead of the far file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6229750-1432987</DOCNO>
+<TEXT>
+<subject>Download link for "Adobe F4V Post Processor" is broken.</subject>
+<post author="Json" timestamp="Mar 20, 2014 8:36 PM">
+<s>could someone please fix it?</s><s> the download page is at: http://www.adobe.com/products/adobe-media-server-family/tool-downloads .html but clicking "download the tools" link on the page will give you a page that embeds itself.</s><s> thanks, ji 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6229750-6230489</DOCNO>
+<TEXT>
+<subject>Download link for "Adobe F4V Post Processor" is broken.</subject>
+<post author="kglad" timestamp="Mar 21, 2014 4:47 AM">
+<s>i contacted adobe support via chat and was told, you can contact our adobe technical support at 1-800-642-3623. they will be glad to help you with that 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6229750-6232756</DOCNO>
+<TEXT>
+<subject>Download link for "Adobe F4V Post Processor" is broken.</subject>
+<post author="Json" timestamp="Mar 21, 2014 6:07 PM">
+<s>thanks for the technical support number.</s><s> but i listened to the on hold music for 40 minutes, and lost patience... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5366493-1222678</DOCNO>
+<TEXT>
+<subject>live streaming-client sometimes does not recognize videoCodec h264</subject>
+<post author="tn_mw" timestamp="May 30, 2013 2:28 PM">
+<s>i am publishing a live-cam-stream with h264videostreamsettings in record-mode.</s><s> in case of no clients are connected attachcamera(null) is used.</s><s> if a client connects, the cam is attached.</s><s> almost always the clients incomingstream.netstatusevent are: netstream.play.reset, netstream.play.start and netstream.video.dimensionchange.</s><s> after the last event, incomingstream.videocodec is 7 (h.264) and everything is fine.</s><s> but sometimes no netstream.video.dimensionchange is triggered and the incomingstream.videocodec remains in the value 2048.</s><s> the receiving stream is not visible.</s><s> after restarting the client, sometimes it remains unvisible, sometimes the stream gets the netstream.video.dimensionchange-event and is visible.</s><s> its not reproducable.</s><s> it only happens to streams that are published approx.</s><s> 1 hour. 
+</s><s>is there a way to force the netstream.video.dimensionchange?</s><s> or why its sometimes not triggered? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5366493-6232101</DOCNO>
+<TEXT>
+<subject>live streaming-client sometimes does not recognize videoCodec h264</subject>
+<post author="flashdictionary" timestamp="Mar 21, 2014 1:28 PM">
+<s>i think adobe could solve many issues regarding h264 video, and adobe media server streaming issues by implementing native webrtc into adobe media server, as well as the air and flash platforms, see this post here: 
+http://forums.adobe.com/message/6232094#6232094 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6231450-1433450</DOCNO>
+<TEXT>
+<subject>EC2 Amazon AMI for Adobe media server - not able to login</subject>
+<post author="man pal" timestamp="Mar 21, 2014 10:02 AM">
+<s>manickam@manickam-aspire-5738:~$ ssh -i ~/downloads/mkm_adobe3.pem root@ec2-xxxxx.ap-southeast-1.compute.amazonaws.com permission denied (publickey,gssapi-keyex,gssapi-with-mic). manickam@manickam-aspire-5738:~$ ssh -i ~/downloads/mkm_adobe3.pem ec2-user@ec2-xxxxx.ap-southeast-1.compute.amazonaws.com permission denied (publickey,gssapi-keyex,gssapi-with-mic). manickam@manickam-aspire-5738:~$ 
+what is the user id used for login ?</s><s> looks like it is neither ec2-user nor root in this case. 
+</s><s>anybody helping, i would deeply appreciate.</s><s> it is ridiculous to get billed when not able to use the software - not even able to login. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6231344-1433406</DOCNO>
+<TEXT>
+<subject>CREATING VIDEOCONFERENCING CHATROOMS</subject>
+<post author="BOBO_CL" timestamp="Mar 21, 2014 9:28 AM">
+<s>i want to create chatrooms using flash media live 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6231001-1433341</DOCNO>
+<TEXT>
+<subject>App instances crashes when under heavy load</subject>
+<post author="Penoja" timestamp="Mar 21, 2014 7:53 AM">
+<s>hello adobe support, 
+
+</s><s>my problem is that many of our ams servers have app instance crashes when under heavy load.</s><s> we are using the biggest possible instance at amazon aws so we cant just add bigger instances. 
+</s><s>my hope is that you can help us in the right direction on solving this issue based on the log files snippets i have included below. 
+</s><s>another weird thing i see is in the admin console where the bandwidth graphs shows in/out bandwidth dropping to 0 for a couple of seconds.</s><s> this only happens during peak time. 
+</s><s>here are some logs from the time of an instance crash: 
+/var/log/messages: mar 20 14:01:51 ip-10-230-57-112 adaptor[25827]: listener started ( _defaultroot_ ) : 127.0.0.1:19350 (rtmfp-core)/v4 mar 20 14:01:51 ip-10-230-57-112 adaptor[25827]: listener started ( _defaultroot_ ) : 10.230.57.112:19350 (rtmfp-core)/v4 mar 20 14:01:51 ip-10-230-57-112 adaptor[25827]: public rtmfp-core addresses for listener _defaultroot_ are: 54.216.15.146:19350 mar 20 14:02:25 ip-10-230-57-112 adaptor[26142]: listener started ( _defaultroot_ ) : 127.0.0.1:19350 (rtmfp-core)/v4 mar 20 14:02:25 ip-10-230-57-112 adaptor[26142]: listener started ( _defaultroot_ ) : 10.230.57.112:19350 (rtmfp-core)/v4 mar 20 14:02:25 ip-10-230-57-112 adaptor[26142]: public rtmfp-core addresses for listener _defaultroot_ are: 54.216.15.146:19350 mar 20 14:02:46 ip-10-230-57-112 kernel: amscore[25947]: segfault at 0000000000000000 rip 0000000000000000 rsp 00002aaaad682f88 error 14 mar 20 14:03:00 ip-10-230-57-112 adaptor[26450]: listener started ( _defaultroot_ ) : 127.0.0.1:19350 (rtmfp-core)/v4 mar 20 14:03:00 ip-10-230-57-112 adaptor[26450]: listener started ( _defaultroot_ ) : 10.230.57.112:19350 (rtmfp-core)/v4 mar 20 14:03:00 ip-10-230-57-112 adaptor[26450]: public rtmfp-core addresses for listener _defaultroot_ are: 54.216.15.146:19350 
+
+</s><s>core logs: #date: 2014-03-20 #fields: date time x-pid x-status x-ctx x-comment 2014-03-20 14:01:51 25827 (i)2581237 starting admin app on core (25827). - 2014-03-20 14:01:51 25827 (i)2581238 core (25827) connecting to admin. - 2014-03-20 14:01:51 25827 (i)2581231 core (25827) connected to admin. - 2014-03-20 14:01:51 25827 (i)2581234 core (25827) connection to admin accepted. - 2014-03-20 14:01:51 25827 (i)2631174 listener started ( _defaultroot_ ) : 127.0.0.1:19350 (rtmfp-core)/v4 - 2014-03-20 14:01:51 25827 (i)2631174 listener started ( _defaultroot_ ) : 10.230.57.112:19350 (rtmfp-core)/v4 - 2014-03-20 14:01:51 25827 (i)2631509 public rtmfp-core addresses for listener _defaultroot_ are: 54.216.15.146:19350 - 2014-03-20 14:01:51 25827 (i)2581246 core (25827) sending register cmd to edge. - #date: 2014-03-20 #fields: date time x-pid x-status x-ctx x-comment 2014-03-20 14:01:51 23351 (i)2581247 core (23351) disconnected from edge. - 2014-03-20 14:01:51 23351 (i)2581233 core (23351) disconnecting from admin: 200. - #date: 2014-03-20 #fields: date time x-pid x-status x-ctx x-comment 2014-03-20 14:02:25 26142 (i)2581237 starting admin app on core (26142). - 2014-03-20 14:02:25 26142 (i)2581238 core (26142) connecting to admin. - 2014-03-20 14:02:25 26142 (i)2581231 core (26142) connected to admin. - 2014-03-20 14:02:25 26142 (i)2581234 core (26142) connection to admin accepted. - 2014-03-20 14:02:25 26142 (i)2631174 listener started ( _defaultroot_ ) : 127.0.0.1:19350 (rtmfp-core)/v4 - 2014-03-20 14:02:25 26142 (i)2631174 listener started ( _defaultroot_ ) : 10.230.57.112:19350 (rtmfp-core)/v4 - 2014-03-20 14:02:25 26142 (i)2631509 public rtmfp-core addresses for listener _defaultroot_ are: 54.216.15.146:19350 - 2014-03-20 14:02:25 26142 (i)2581246 core (26142) sending register cmd to edge. - 2014-03-20 14:02:04 23351 (e)2581279 assert failed in tincan/util/tcasyncio.cpp line 1948 - 2014-03-20 14:02:26 23351 (e)2581279 assert failed in tincan/server/tcmsghandler.cpp line 695 - 2014-03-20 14:02:26 23351 (e)2581279 assert failed in tincan/server/tcmsghandler.cpp line 695 - 
+
+</s><s>master logs: 2014-03-20 14:01:51 22725 (w)2581257 core (23351) _defaultroot_:_defaultvhost_:::_1 is not responding and is being restarted! - 2014-03-20 14:01:51 22725 (i)2581221 core (25827) started, arguments : -adaptor "_defaultroot_" -vhost "_defaultvhost_" -app -inst -tag "_1" -console -conf "/opt/adobe/ams/conf/server.xml" -name "_defaultroot_:_defaultvhost_:::_1". - 2014-03-20 14:02:25 22725 (w)2581257 core (25827) _defaultroot_:_defaultvhost_:::_1 is not responding and is being restarted! - 2014-03-20 14:02:25 22725 (i)2581221 core (26142) started, arguments : -adaptor "_defaultroot_" -vhost "_defaultvhost_" -app -inst -tag "_1" -console -conf "/opt/adobe/ams/conf/server.xml" -name "_defaultroot_:_defaultvhost_:::_1". - 2014-03-20 14:02:49 22725 (i)2581223 core (25827) is no longer active. - 2014-03-20 14:03:00 22725 (w)2581257 core (26142) _defaultroot_:_defaultvhost_:::_1 is not responding and is being restarted! - 2014-03-20 14:03:00 22725 (i)2581221 core (26450) started, arguments : -adaptor "_defaultroot_" -vhost "_defaultvhost_" -app -inst -tag "_1" -console -conf "/opt/adobe/ams/conf/server.xml" -name "_defaultroot_:_defaultvhost_:::_1". - 2014-03-20 14:06:23 22725 (w)2581260 core (23351) did not shutdown as expected.</s><s> killing core now. - 2014-03-20 14:06:23 22725 (w)2581434 master executing fast shutdown of core id (23351). - 2014-03-20 14:06:23 22725 (w)2581260 core (26142) did not shutdown as expected.</s><s> killing core now. - 2014-03-20 14:06:23 22725 (w)2581434 master executing fast shutdown of core id (26142). - 2014-03-20 14:06:28 22725 (e)2581395 failed to signal process condition: errno(22). - 2014-03-20 14:06:28 22725 (e)2581395 failed to signal process condition: errno(22). - 2014-03-20 14:06:38 22725 (e)2581395 failed to signal process condition: errno(22). - 2014-03-20 14:06:38 22725 (e)2581395 failed to signal process condition: errno(22). - 2014-03-20 14:06:39 22725 (i)2581223 core (23351) is no longer active. - 2014-03-20 14:06:39 22725 (i)2581223 core (26142) is no longer active. - 
+
+</s><s>edge logs: 2014-03-20 14:01:51 22835 (i)2701054 virtual host disconnecting unresponsive core latest/fr_fr_comserv (23351) after 30 seconds is not available. - 2014-03-20 14:01:51 22835 (i)2581250 edge disconnected from core (23351). - 2014-03-20 14:01:51 22835 (i)2581537 resending startcore message to master (vhost: _defaultvhost_, app: , inst: , tag: _1). - 2014-03-20 14:01:51 22835 (i)2581252 registering core (25827). - 2014-03-20 14:02:25 22835 (i)2701054 virtual host disconnecting unresponsive core latest/fr_fr_comserv (25827) after 30 seconds is not available. - 2014-03-20 14:02:25 22835 (i)2581250 edge disconnected from core (25827). - 2014-03-20 14:02:25 22835 (i)2581537 resending startcore message to master (vhost: _defaultvhost_, app: , inst: , tag: _1). - 2014-03-20 14:02:25 22835 (i)2581252 registering core (26142). - 2014-03-20 14:03:00 22835 (i)2701054 virtual host disconnecting unresponsive core latest/fr_fr_comserv (26142) after 30 seconds is not available. - 2014-03-20 14:03:00 22835 (i)2581250 edge disconnected from core (26142). - 2014-03-20 14:03:00 22835 (i)2581537 resending startcore message to master (vhost: _defaultvhost_, app: , inst: , tag: _1). - 2014-03-20 14:03:00 22835 (i)2581252 registering core (26450). - 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6198865-1425412</DOCNO>
+<TEXT>
+<subject>Peer Introductions</subject>
+<post author="clater1" timestamp="Mar 11, 2014 6:24 AM">
+<s>is it possible to configure ip addresses and ports when you distribute introductions across servers?</s><s> or to achieve this, can you use only edge or origin servers?</s><s> thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6198865-6230343</DOCNO>
+<TEXT>
+<subject>Peer Introductions</subject>
+<post author="clater1" timestamp="Mar 21, 2014 3:25 AM">
+<s>still no answers.</s><s> or, was it just a bad question? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6229958-1433086</DOCNO>
+<TEXT>
+<subject>publish camera stream to rootInstall/applications/multicast of FMS4.5 with no data?</subject>
+<post author="hxqchan" timestamp="Mar 21, 2014 1:00 AM">
+<s>i try to publish my camera stream to fms4.5 (applications/multicast) as a p2p stream on the client-side?and i get reponse?"netstream.publish.start " and "netstream.connect.success" , but the netstream info is "currentbytespersecond=0 bytecount=0 maxbytespersecond=0 audiobytespersecond=0 audiobytecount=0 ....metadata=null xmpdata=null uri=rtmfp://218.199.102.119/multicast resourcename=null islive=true" .</s><s> by the way, when i run another client to join the same group to play the video stream ,it ends with " netstream.connect.success netstream.play.reset netstream.play.start netstream.connect.success netstream.play.reset netstream.play.start netstream.multicaststream.reset " and it can't play any video,i don't know why,can someone help me?</s><s> i will very appreciate for it. 
+</s><s>here is my pubish side key code: 
+server = "rtmfp://218.199.102.119/multicast"; ... case "netconnection.connect.success": 
+groupspecifier = new groupspecifier(videoname);//???? groupspec ????groupspec ?? rtmfp ??? groupspecifier.serverchannelenabled = true; //?????????????,?????????peers????peer groupspecifier.ipmulticastmemberupdatesenabled = true; groupspecifier.multicastenabled = true;//???? groupspecifier.postingenabled = true;//?netgroup????  netgroup = new netgroup(netconnection,groupspecifier.groupspecwithauthorizations()); netgroup.addeventlistener(netstatusevent.net_status,netstatus_handler ); break; 
+case "netgroup.connect.success": trace(e.info.code); netstream = new netstream(netconnection,groupspecifier.groupspecwithauthorizations()) ; netstream.addeventlistener(netstatusevent.ne t_status,netstatus_handler); //???? trace("to publish stream: "+videoname); netstream.attachcamera(camera); netstream.publish(videoname); break; 
+case "netstream.publish.start": trace(e.info.code+" "+" ????"); trace("netstream info: "+netstream.info.tostring()); break; 
+case "netstream.connect.success": trace(e.info.code+ " p2p????"); 
+break; 
+when running the console print: connecting sever rtmfp://218.199.102.119/multicast netconnection.connect.success netgroup.connect.success to publish stream: video 1 (t306e card 1) netstream.publish.start ???? netstream info: currentbytespersecond=0 bytecount=0 maxbytespersecond=0 audiobytespersecond=0 audiobytecount=0 videobytespersecond=0 videobytecount=0 databytespersecond=0 databytecount=0 playbackbytespersecond=0 droppedframes=0 audiobufferlength=0 videobufferlength=0 databufferlength=0 audiobufferbytelength=0 videobufferbytelength=0 databufferbytelength=0 srtt=0 audiolossrate=0 videolossrate=0 metadata=null xmpdata=null uri=rtmfp://218.199.102.119/multicast resourcename=null islive=true netstream.connect.success p2p???? netgroup.neighbor.connect 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6229958-6229963</DOCNO>
+<TEXT>
+<subject>publish camera stream to rootInstall/applications/multicast of FMS4.5 with no data?</subject>
+<post author="hxqchan" timestamp="Mar 21, 2014 1:29 AM">
+<s>i traced the netstream info under case "netgroup.neighbor.connect": this time it has data "netstream info: currentbytespersecond=102558.79345603273 bytecount=2456888 maxbytespersecond=116816.66032712058 audiobytespersecond=0 audiobytecount=0 videobytespersecond=102558.79345603273 videobytecount=2456888 databytespersecond=0 databytecount=0 playbackbytespersecond=0 droppedframes=0 audiobufferlength=0 videobufferlength=0 databufferlength=0 audiobufferbytelength=0 videobufferbytelength=0 databufferbytelength=0 srtt=0 audiolossrate=0 videolossrate=0 metadata=null xmpdata=null uri=rtmfp://218.199.102.119/multicast resourcename=null islive=true". 
+but 2nd client still results with: netstream.connect.success p2p????,????...</s><s> netstream.play.reset netstream.play.start netstream.connect.success p2p????,????...</s><s> netstream.play.reset netstream.play.start netstream.multicaststream.rese 
+</s><s>twice "netstream.connect.success" and "netstream.play.reset" ,and the video still can't play .....</s><s>help......</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6229749-1432986</DOCNO>
+<TEXT>
+<subject>AMS/FMS Server tool download link broken</subject>
+<post author="Json" timestamp="Mar 20, 2014 8:30 PM">
+<s>hi, i am trying to download the fms/ams server tool, e.g. f4vpp.</s><s> however, the download link is broken.</s><s> after clicking the download link http://www.adobe.com/products/adobe-media-server-family/tool-downloads .html, it directs you to http://www.adobe.com/go/fms_tools_samples/, but there is no download. 
+</s><s>it's been broken for a long time now, could anyone please fix it?</s><s> it's urgent and i need to tool.</s><s> thanks, ji 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6226811-1432373</DOCNO>
+<TEXT>
+<subject>RTMP Multicast from VBrick 9000 series encoder</subject>
+<post author="crimsonspud" timestamp="Mar 20, 2014 5:17 AM">
+<s>hello, 
+</s><s>i'm trying to get rtmp multicast working from my vbrick 9000 encoder to my network using the adobe media server (v5.0.3).</s><s> i've used the multicast configurator tool to generate the published stream name, and have plugged that into the vbrick encoder.</s><s> i took the generated manifest file, and placed it in the multicast player folder, but am not able to view the video. 
+</s><s>i've confirmed that sending a unicast feed up to the ams server from the vbrick works without a hitch.</s><s> the logs on the ams indicate that it is receiving something from the vbrick, and is starting the multicast feed (with a netstream.publish.start message, and others indicating the multicast ip and port i've specified).</s><s> the multicast player only shows &quot;waiting for video,&quot; and none of my network gear indicates any multicast traffic is actually occurring. 
+</s><s>just for fun, i plugged in the same configuration to fmle, and the multicast feed starts up right away without any issue and is viewable in the multicast player. 
+</s><s>was wondering if anyone else has had any experience configuring the vbrick units with adobe media server, specifically for multicast. 
+</s><s>thanks, --adam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6225718-1432038</DOCNO>
+<TEXT>
+<subject>NetStream.publish() to AMS ends up with 1kb file.</subject>
+<post author="jim_houseman" timestamp="Mar 19, 2014 5:02 PM">
+<s>i'm using adobe media server 4.5 and the flex 4.6.0 sdk. 
+i have an .swf application that connects to adobe media server over rmtp, takes audio and video input from the user's webcam and mic, and does a netstream.publish() to stream the file to the server.</s><s> when the user is done, i do a netstream.stop().</s><s> on occasion, the resulting file will end up with a size of 1kb. 
+</s><s>what's causing this and how can i prevent it, or otherwise end the session and inform the user that something went wrong? 
+
+</s><s>alternatively, these forums seem dead, so does anyone know of a place where my question might be better suited? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6225426-1431979</DOCNO>
+<TEXT>
+<subject>Online Radio Station Usage</subject>
+<post author="rio38" timestamp="Mar 19, 2014 3:04 PM">
+<s>i run an online radio station and would like to use the adobe media server on amazon but am concerned about the costs racking up because i broadcast 24/7. how would the pricing work in this scenario? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6219259-1430446</DOCNO>
+<TEXT>
+<subject>Stream Live Media (HTTP) not ok via videoplayer.html</subject>
+<post author="ivantsui00" timestamp="Mar 17, 2014 11:49 PM">
+<s>
+</s><s>i am using ams 5.0 starter edition running on windows 2008 r2 sp1. 
+</s><s>from the videoplayer.html, when the stream url is "rtmp://10.40.102.91/livepkgr/livestream", no problem to get the live stream traffic via rtmp. 
+</s><s>however, when try to replaced with protocol as http as "http://10.40.102.91/hds-live/livepkgr/_definst_/liveevent/livestream.f 4m" mentioned in related doc, not able to see streaming traffic. 
+</s><s>what wrong for abve http url? 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6219259-6219813</DOCNO>
+<TEXT>
+<subject>Stream Live Media (HTTP) not ok via videoplayer.html</subject>
+<post author="Mylenium" timestamp="Mar 18, 2014 5:13 AM">
+<s>ask in the fms/ams forum. 
+</s><s>mylenium 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6219259-6220926</DOCNO>
+<TEXT>
+<subject>Stream Live Media (HTTP) not ok via videoplayer.html</subject>
+<post author="Jeff%20A%20Wright" timestamp="Mar 18, 2014 10:23 AM">
+<s>moving this discussion to the adaobe media server forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6219637-1430547</DOCNO>
+<TEXT>
+<subject>AMS stream to XBOX 360?</subject>
+<post author="Startled_Guy" timestamp="Mar 18, 2014 4:35 AM">
+<s>good morning, 
+
+i am wondering if adobe media server is capable of streaming to my xbox 360.</s><s> i could not find either a "yay" nor a "nay".</s><s> before i subscribe to this; does ams stream to my 360? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6219264-1430448</DOCNO>
+<TEXT>
+<subject>HEADERS[Malformed Packet], DATA, DATA after GET request to AMS (livestream.bootstrap)</subject>
+<post author="ivantsui00" timestamp="Mar 18, 2014 2:23 AM">
+<s>
+
+</s><s>from the wireshark taken in server installed with ams 5.0 and apache 
+
+
+when videoplayer.html with stream url as " 
+http://10.40.102.91/hds-live/livepkgr/_definst_/liveevent/livestream.f 4m but i found that the file: "livestream.bootstrap" should be in c:\program files\adobe\adobe media server 5\applications\livepkgr\streams\_definst_\livestream 
+</s><s>what is the difference between 2 directories as: - c:\program files\adobe\adobe media server 5\applications\livepkgr\streams - c:\program files\adobe\adobe media server 5\applications\livepkgr\events 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6219198-1430471</DOCNO>
+<TEXT>
+<subject>How to get stream detail</subject>
+<post author="m.yazdian" timestamp="Mar 17, 2014 11:51 PM">
+<s>hellow everyone, 
+i have some video stream in fms, when the clients connect to the fms server i send the result of video streams on the server for them. 
+</s><s>now i like add some detail of video streams in the server for clients (how long stream this video, how many client are looking this video) etc. 
+</s><s>please advice me to get this information of video streaming on the fms server. 
+</s><s>thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6216305-1429730</DOCNO>
+<TEXT>
+<subject>multi bitrate</subject>
+<post author="djronjc" timestamp="Mar 17, 2014 6:30 AM">
+<s>can anyone assist me in setting up multibitrate 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6215856-1429591</DOCNO>
+<TEXT>
+<subject>Videoplayer.html not able to http live streaming</subject>
+<post author="ivantsui00" timestamp="Mar 17, 2014 3:15 AM">
+<s>i am using xsplit to feed live streaming to ams 5.0 with "rtmp url as rtmp://localhost/livepkgr" and "stream name as: livestream?adbe-live-event=liveevent".   by using videoplayer.html from ams, ok to "rtmp://ams-ip-or-dns/livepkgr/livestream?adbe-live-event=liveevent" to retrieve live traffic very fast.   then, when i changed to use http as " http://ams-host-ip-dns/hds-live/livepkgr/_definst_/liveevent/livestrea m.f4m".    it only show "buffering ..." and could not see anything.</s><s> </body   tested with vod.</s><s> no problem when "rtmp://ams-host-ip-dnsvod/mp4:sample_720p_5m.mp4" or "http://10.40.102.91/hds-vod/sample_720p_5m.mp4.f4m"
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6215391-1429468</DOCNO>
+<TEXT>
+<subject>Stream .flv content with extension specified</subject>
+<post author="MJason" timestamp="Mar 16, 2014 8:21 PM">
+<s>hi, 
+</s><s>i have an issue with my ams 5.0.3 standard server in that .flv content will only stream if the file extension is ommitted from the url. 
+</s><s>is it possible with ams 5 to stream flv content when the extension is specified? 
+</s><s>we stream off nas and also have the same behaviour for the sample flv content that is shipped with the product. 
+</s><s>we have an in-house player that requires the extension to be specified 
+thanks 
+jason 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-44178-44178</DOCNO>
+<TEXT>
+<subject>Netstream.Publish.Badname</subject>
+<post author="leemajors" timestamp="Sep 22, 2008 6:23 PM">
+<s>if the internet connection drops for some reason i have the config set up to attempt to reconnect.</s><s> sometimes however, after a drop the connection will reestablish but with a "netstream.publish.badname" error -- for all intents and purposes however the fmencoder doesn't think there's anything wrong and continues to encode, but without publishing to the server.</s><s> usually it's fixed by either disconnecting and reconnecting again, or by stopping the encode, waiting til the network has been properly reestablished then running the encode job again.</s><s> is there anyway i can avoid getting this error?</s><s> or, if not, is there any way i can get fme to recognise the error and restart or something?</s><s> i have to have this streaming going 24/7 and if there's a network outage currently fme loses it and won't continue.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-44178-6214807</DOCNO>
+<TEXT>
+<subject>Netstream.Publish.Badname</subject>
+<post author="vayvanne" timestamp="Mar 16, 2014 2:03 PM">
+<s>the same problem with latest fme 3.2 and fms 4.5 default live app.</s><s> setting publishtimeout=-1 serverside and/or increasing reconnect interval in fme does not help.</s><s> any workaround except custom live app with shared objects? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6214661-1429285</DOCNO>
+<TEXT>
+<subject>Deploying the server</subject>
+<post author="clater1" timestamp="Mar 16, 2014 12:50 PM">
+<s>i have just installed flash media server.</s><s> the default ports are 1935 and 80.</s><s> i want the clients to establish a connection to the server and distribute peer lookup requests across multiple servers. 
+</s><s>is it possible to configure ip addresses and ports when you distribute introductions across servers using rtmfp groups?</s><s> or to achieve this, would i be required to deploy an edge/origin servers? 
+</s><s>or, is their another technique i can use? 
+</s><s>cheers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6214083-1429105</DOCNO>
+<TEXT>
+<subject>F4F to MP4</subject>
+<post author="Zeustar" timestamp="Mar 16, 2014 8:19 AM">
+<s>anyone know how to do this please ?</s><s> i tried the k-v-s script but not having much luck.</s><s> i'm quite happy to merge all these .f4f fragments, or just play it, is it possible in either way ?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6214083-6214129</DOCNO>
+<TEXT>
+<subject>F4F to MP4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Mar 16, 2014 8:30 AM">
+<s>i'd recommend using strobe media playback since it can play back f4f right out of the box. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6214083-6214092</DOCNO>
+<TEXT>
+<subject>F4F to MP4</subject>
+<post author="Zeustar" timestamp="Mar 16, 2014 9:02 AM">
+<s>really ?</s><s> can you link me please. alot of the links here direct me to broken sites.</s><s> thanks for replying. 
+</s><s>edit just read about it, that looks super difficult too, is there anything else i could try ?</s><s> maybe i should just opt to convert to mp4 ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6214083-6214295</DOCNO>
+<TEXT>
+<subject>F4F to MP4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Mar 16, 2014 10:12 AM">
+<s>open source media framework (http://osmf.org/) is the site that features the product – strobe media playback (smp). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6208509-1427678</DOCNO>
+<TEXT>
+<subject>Can't play large video(over 4100px width)</subject>
+<post author="TMan" timestamp="Mar 16, 2014 11:01 PM">
+<s>hi 
+</s><s>i try to deliver a large video from adobe media server 5.0.3 on windows server 2008 r2 over rtmp, but it doesn't work good. 
+</s><s>as a trial, i create two mp4 video files, differ by the size (4095px and 4100px in width) from a video source.</s><s> the smaller one is played normally in flash video player ,but the other one isn't. 
+</s><s>when the larger video is played, the video screen become uniformly green in spite of the elapsed time displayed counting up.</s><s> (the controllers such as play/pause button and seek bar work normally.</s><s>) 
+</s><s>i want to deliver videos over 5000px in width.</s><s> can i do it?</s><s> if there is a limits on size of video, could you tell me a reference or a help file that describe the spec. 
+</s><s>regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6206062-1427184</DOCNO>
+<TEXT>
+<subject>License for edge server</subject>
+<post author="i110" timestamp="Mar 13, 2014 7:30 AM">
+<s>hello, i'm using ams ver 5.</s><s> i want to run server-side scripted application (for custome authentication logic) and my server is origin / edge structure.</s><s> i bought ams standard licence for these servers, but i met the following error.   2014-03-12 00:11:30 12763 (e)2651379 (_defaultroot_, _defaultvhost_) : application (mylive) is not a valid signed application; loading access denied. -   then i think that i have to buy professional license.   my questions are 1. is this correct?</s><s> do i have to buy professional licenses to write custom server-side script (like main.asc)?</s><s> 2. if so, do i have to buy professional licenses not only for origins, but also for all edge servers?  in other words, does my app can run with professional license on origins, and standard licence on edges?</s><s> professional license is so expensive than standard, and i have many edge servers, so i don't want to buy professional licenses for my all servers.   thanks,  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-1424789</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="Carlos1327" timestamp="Mar 10, 2014 4:28 PM">
+<s>adobe flash media server 4.5.5 r4013 windows 2008 
+</s><s>sources: http://help.adobe.com/en_us/flashmediaserver/devguide/wsd391de4d9c7bd6 09-52e437a812a3725dfa0-8000.html http://www.adobe.com/devnet/adobe-media-server/articles/live-multi-bit rate-video-http-flash-ios.html 
+live streaming a single or multi-bitrate video over http to flash does not work.</s><s> i have followed the instructions on the 2 sources listed above repeatedly, but i can't get live streaming over http to flash to work.</s><s> live streaming to ios over http works with no problems (single and multi-bitrate streams). 
+i have tried the troubleshooting steps from the following: http://help.adobe.com/en_us/flashmediaserver/devguide/ws0432746db30523 c21e63e3d12efac195bd-8000.html troubleshoot live streaming (http) 1.</s><s> services window (windows): flash media server (fms), flash media administration server, and fmshttpd services are running. ? 2.</s><s> verified that the request url is correct. ? 3.</s><s> configured ports: a. configure apache to use port 80.</s><s> open rootinstall/apache2.2/conf/httpd.conf in a text editor.</s><s> change the line listen 8134 to listen 80.</s><s> b. configure flash media server not to use port 80. open rootinstall/conf/fms.ini in a text editor.</s><s> remove 80 from the adaptor.hostport parameter so the parameter looks like the following: adaptor.hostport = :1935 ? 
+
+4.</s><s> placed a crossdomain.xml file to the rootinstall/webroot directory. ? 5.</s><s> in flash media live encoder, select the encoding options tab, choose output from the panel options menu, and verify the following: a) the value of fms url is rtmp://fms-dns-or-ip/livepkgr.</s><s> if you're testing on the same server as flash media server, you can use the value localhost for fms-dns-or-ip. ? b) for a single stream, the value of stream is livestream?adbe-live-event=liveevent. ? c) for adaptive bitrate streaming, the value of stream is livestream%i?adbe-live-event=liveevent. ? flash media live encoder uses this value to create unique stream names.</s><s> to use another encoder, provide your own unique stream names, for example, livestream1?adbe-live-event=liveevent, livestream2?adbe-live-event=liveevent.</s><s> the encoder is showing all 3 streams being published and streaming. 
+6.</s><s> check administration console: the livepkgr application and the 3 streams are running. ? 7.</s><s> check the logs for errors.</s><s> flash media server logs are located in the rootinstall/logs folder.</s><s> the master.xx.log file and the core.xx.log file show startup failures.</s><s> apache logs are located in the rootinstall/apache2.2/logs folder.</s><s> x a) core00.log: these errors did not occur every time that i tried playing the live stream but these are the only relevant errors in the logs.</s><s> 1.</s><s> 7968 (w)2611179 warning from libf4f.dll: [utils] [livestream2] discarded all queued media messages received before first video keyframe message 2.</s><s> 7968 (w)2611179 warning from libf4f.dll: [utils] [livestream3] discarded all queued media messages received before first video keyframe message b) edge00.log: 13:33:57 4492 (w)2641213 connection rejected by server.</s><s> reason : [ server.reject ] : (_defaultroot_, _defaultvhost_) : application (hds-live) is not defined. - 
+
+c) apache-error: 1.</s><s> [warn] checking if stream is disabled but bootstrap path in event file is empty for event:livepkgr/events/_definst_/liveevent stream name:livestream 2.</s><s> [warn] bootstrap path is in event file is empty for event:livepkgr/events/_definst_/liveevent stream name:livestream1 
+as i mentioned, everything works on ios and fms seems to be creating all of the stream segments and meta files: a. the 3 streams are being created in: hd:\program files\adobe\flash media server 4.5\applications\livepkgr\streams\_definst_ b. fms is creating the following files in each stream folder (livestream1, livestream2, livestream 3): 1. livestream1.bootstrap 2. livestream1.control 3. livestream1.meta 4. .f4f segments 5. .f4x segments 
+the appropriate files are also being created in the hd:\program files\adobe\flash media server 4.5\applications\livepkgr\events\_definst_\liveevent folder, in which i have the following manifest.xml and event.xml files: 
+<manifest xmlns="http://ns.adobe.com/f4m/1.0"> <media streamid="livestream1" bitrate="200" /> <media streamid="livestream2" bitrate="500" /> <media streamid="livestream3" bitrate="1000" /> </manifest> 
+<event> <eventid>liveevent</eventid> <recording> <fragmentduration>4000</fragmentduration> <segmentduration>16000</segmentduration> <diskmanagementduration>3</diskmanagementduration> </recording> </event> 
+</s><s>i've tried clearing the contents of both streams\_definst_ and events\_definst_\liveevent (keeping the xml files) after restarting the encoder, and creating a different event definst for the streams (liveevent2 for example). 
+</s><s>we have an event in 2 weeks that we would like to stream to both flash and ios.</s><s> any help in solving this problem will be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6200227</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="Carlos1327" timestamp="Mar 11, 2014 11:44 AM">
+<s>one step closer: changed the crossdomain.xml file (more permissive settings).</s><s> changed the encoding on fmle to vp6.</s><s> working somewhat (don't know what i did to make it start streaming through hds). 
+</s><s>but at least now i can get the individual streams in the set manifest file to work: http://localhost/hds-live/livepkgr/_definst_/livevent/livestream1.f4m http://localhost/hds-live/livepkgr/_definst_/livevent/livestream2.f4m http://localhost/hds-live/livepkgr/_definst_/livevent/livestream3.f4m 
+but when i try to play the streams through the set manifest file from http://localhost/liveevent.f4m i'm getting the following error: "the f4m document contains errors url missing from media tag." i'll search the forums to see if anyone else has come across this problem. 
+i used the f4m config tool to make the file.</s><s> these are the file's contents: <manifest xmlns="http://ns.adobe.com/f4m/2.0"> <baseurl>http://localhost/hds-live/livepkgr/_definst_/liveevent/</baseurl> <media href="livestream1.f4m " bitrate="200"/> <media href="livestream2.f4m " bitrate="500"/> <media href="livestream3.f4m " bitrate="1000"/> </manifest> 
+
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6200316</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="n0risc" timestamp="Mar 11, 2014 11:51 AM">
+<s>are you adding the query string in the stream uri?</s><s> livestream1?&adbe-live-event=liveevent 
+adbe-live-event=liveevent <------ liveevent is the directory where the .stream file is located to identify the stream on inbound http request f4m <xml> file.</s><s> if you aren't specifying the querystring, then the .stream file is stored in the name of the stream. livestream1, livestream2, livestream3.. 
+</s><s>make sure you specify the query string when sending stream to rtmp address! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6200894</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="Carlos1327" timestamp="Mar 11, 2014 2:01 PM">
+<s>> are you adding the query string in the stream uri?</s><s> yes.</s><s> i'm actually using livestream%i?adbe-live-event=liveevent  for so that fms can generate the 3 multi-bitrate streams in the manifest.xml and liveevent.f4m files.   thanks for the suggestion.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6201747</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="n0risc" timestamp="Mar 11, 2014 10:24 PM">
+<s>livestream%i?adbe-live-event=liveevent is only reconizable in fmle, not other non-standard encoders.</s><s> you must specify the actual stream id for each stream. livestream1,livestream2,livestream3.</s><s> are you looking at the directory /applications/livepkgr/events/_definst_/ and seeing the actual generated .stream files? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6201748</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="n0risc" timestamp="Mar 11, 2014 10:26 PM">
+<s>also..</s><s> make sure you don't have old .stream files in this directory.</s><s> there are some buggy issues in the past, where if an application has several .stream files from other livestreams and stream id's, you'll get the errors in strobe media playback.</s><s> delete all older .stream files., and try again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6202438</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="Carlos1327" timestamp="Mar 12, 2014 5:43 AM">
+<s>hi n0risc: 
+i am calling the individual streams when playing them back (post 1: http://localhost/hds-live/livepkgr/_definst_/livevent/livestream1.f4m) and they work.</s><s> the problem is that the streaming doesn't work when they are called from the set level liveevent.f4m file that contains all 3 streams.</s><s> since i'm getting an error stating "the f4m document contains errors url missing from media tag" the problem must be related to the set level .f4m manifest file that i'm using.</s><s> i'm going to try using a .smil file to see if that works.</s><s> maybe the way that the manifest file that i'm using is being encoded (uft-8) is the source of the problem.</s><s> i'll also try to find a sample liveevent.f4m file or create one with a different program to see if that resolves the issue. 
+i am also clearing out the contents of both the streams and events folders and restarting the server each time that i stop the encoder so that the files are created again each time. 
+</s><s>http streaming to ios still works with no problems. 
+</s><s>thanks for the help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6196386-6204437</DOCNO>
+<TEXT>
+<subject>HDS live streaming to Flash not working</subject>
+<post author="Carlos1327" timestamp="Mar 12, 2014 3:21 PM">
+<s>success.</s><s> i'm not exactly sure what i did but at least live streaming to both ios and flash is now working. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6202200-1426172</DOCNO>
+<TEXT>
+<subject>Mixing videos and text when the live program is running</subject>
+<post author="m.yazdian" timestamp="Mar 12, 2014 3:06 AM">
+<s>can we for example: add a photo on one silde of a live video then send it to media server and therfore our viewers be able to see the photo on one side of live video 
+or 
+can we add one or more small videos on one silde of a live video then send it to media server and therfore our viewers be able to see the small videos on one side of live video 
+and i like to insert text messages below of the main screen when the live program is running. 
+</s><s>please advise, thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6194920-1424492</DOCNO>
+<TEXT>
+<subject>Problems with HLS streaming when HDS works</subject>
+<post author="Robin Bassett" timestamp="Mar 10, 2014 4:22 AM">
+<s>i have followed several tutorials and done several tests on our live stream but although multibitrate streams work for hds delivery in and outside our firewall having no luck delivering hls delivery to ios devices (iphone 5s) neither inside or outside our organisation.</s><s> i have set all the following : 
+h.264, aac audio at 44.1khz stereo 128kbit profile: main level:3.1 keyframe frequency: 4 seconds 3 bitrates : 150kbps at 320x240 500 at 320x240 700 at 320x240 
+encoding to our server rtmp:[server ip]/livepkgr stream : livestream%i?adbe-live-event=liveevent i have set the synchronisation parameter in fmle to true 
+on the ams server i have created two manifest files for the for f4m and m3u8 with the 3 streams as shown in several online documents using the built in tool in ams 5. 
+</s><s>all port settings are the standard ones set on installation.</s><s> i have also created a crossdomain.xml file again as explained in a online post with it set to all domains (yes i know it's not secure but i just want this thing to work!</s><s>!</s><s>) 
+</s><s>has anyone got any idea where i'm going wrong or is it just a problem associated with our firewall (which i don't control!</s><s>!</s><s>)?</s><s> the firewall/webfilter is by watchguard does anyone know if there is an issue with this or how to set the ports up if they are wrong? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6194920-6196250</DOCNO>
+<TEXT>
+<subject>Problems with HLS streaming when HDS works</subject>
+<post author="Carlos1327" timestamp="Mar 10, 2014 11:10 AM">
+<s>i'm having the opposite problem when i came across your thread.</s><s> follow the steps in the article below and see if any of the steps help: http://help.adobe.com/en_us/flashmediaserver/devguide/ws0432746db30523 c21e63e3d12efac195bd-8000.html 
+
+1.</s><s> have you configured the ports?</s><s> specifically: configure apache to use port 80 and configure flash media server not to use port 80 configure apache to use port 80.</s><s> open rootinstall/apache2.2/conf in a text editor.</s><s> change the line listen 8134 to listen 80.</s><s> restart apache.</s><s> see start and stop the server.</s><s> configure flash media server not to use port 80.</s><s> open rootinstall/conf/fms.ini in a text editor.</s><s> remove 80 from the adaptor.hostport parameter so the parameter looks like the following:adaptor.hostport = :1935 restart flash media server.</s><s> see start and stop the server. 
+
+2.</s><s> have you verified that hls streaming is working?</s><s> go to the videoplayer.html (in the samples folder) and try playing some hls files or try opening the m3u8 set manifest file from localhost on an ipad. 
+i would also try to get a single stream working first before you attempt to get the multi-bitrate live streaming working: http://help.adobe.com/en_us/flashmediaserver/devguide/wsd391de4d9c7bd6 09-52e437a812a3725dfa0-8000.html 
+</s><s>hopefully someone with more experience can help.</s><s> good luck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6194920-6202003</DOCNO>
+<TEXT>
+<subject>Problems with HLS streaming when HDS works</subject>
+<post author="Robin%20Bassett" timestamp="Mar 12, 2014 1:30 AM">
+<s>thanks carlos i tried again with the single stream and managed to get it to work at a reasonable bit rate - however if i change the output size beyond the standard 320x240 the received and encoded video is all broken up.</s><s> now that's fine until you want to use it full screen with the output at 320x240 but it then looks blurry and pixelated.</s><s> any ideas why this might be so or is it just limited hardware; the encoder is an imac with intel core 2 duo processor 4 gb ram running mountain lion and when view the output after encoding there it's all good, but may be the server which is a dell intel xeon e3120 with 4gb ram running windows 2008 r2 service pack 1. 
+</s><s>not tried the multibitrate variety yet. 
+</s><s>thanks for your help 
+robin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6201841-1426140</DOCNO>
+<TEXT>
+<subject>how to create a .f4m manifest files to play .FLV files</subject>
+<post author="gopher_49" timestamp="Mar 11, 2014 10:11 PM">
+<s>i typically use .f4v files for my on demand playback media files, however i converted a .mov to a .flv file...</s><s> how do i create a .f4m and .m3u8 manifest file that plays .flv files?</s><s> below is the code i normally use for the .f4m and .m3u8 files.</s><s> this works great with .f4v files.</s><s> i also included my player code.</s><s> what am i doing wrong?</s><s> the only difference is i'm using a .flv that i didn't use the f4vpp cleaner on..</s><s> that shouldn't give me the parse error i'm getting. 
+022714.f4m is the name of my .f4m flash manifest file.</s><s> below are the contents. 
+<manifest xmlns="http://ns.adobe.com/f4m/2.0"> <baseurl>http://ipaddress/hds-vod/</baseurl> <media href="02-27-14-640-480.f4v.f4m" bitrate="1000"/> <media href="02-27-14-320-240.f4v.f4m" bitrate="450"/> </manifest> 
+022714.m3u8 is the name of my html 5 manifest.</s><s> below are the contents. 
+#extm3u #ext-x-stream-inf:program-id=1,bandwidth=1000000 http://ipaddress/hls-vod/02-27-14-640-480.f4v.m3u8 #ext-x-stream-inf:program-id=1,bandwidth=450000 http://ipaddress/hls-vod/02-27-14-320-240.f4v.m3u8 
+</s><s>flash multi bit rate player 
+<object width="448" height="336"> <param value="http://ipaddress/strobeplayer/strobemediaplayback.swf" name="movie"> <param value="src=http%3a%2f%2fipaddress%2fvod%2f022714.f4m&amp;streamtype=r ecorded&amp;autoplay=false" name="flashvars"> <param value="true" name="allowfullscreen"> <param value="always" name="allowscriptaccess"> <param value="direct" name="wmode"><embed src="http://216.37.94.194/strobeplayer/strobemediaplayback.swf" type="application/x-shockwave-flash" flashvars="src=http%3a%2f%2fipaddress%2fvod%2f022714.f4m&amp;streamty pe=recorded&amp;autoplay=false" wmode="direct" allowfullscreen="true" allowscriptaccess="always" height="336" width="448"></object> 
+</s><s>html5 player 
+<p style="text-align: center;"><a href="http://ipaddress/vod/022714.m3u8"><img alt="" src="/portals/0/silver-play-button.jpg" style="width: 150px; height: 151px;" /> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-1058288</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="nebbb" timestamp="Aug 30, 2012 3:20 PM">
+<s>we just migrated our service to fms 4.5.</s><s> since our new server is in production, we started having the following error message in the core.log files: 
+the flv segment cache is full 
+there is very little information about this problem on the web.</s><s> the only information found is to increase the value of parameter server.flvcache_maxsize in the fms.ini file.</s><s> we tried this: 
+server.flvcache_maxsize=2000 
+increased the cache size only delayed the problem from a few hours to 1 day.</s><s> it seems that fms 4.5 is filling up the cache without cleaning anything.</s><s> note that we are doing a very high number of video recordings.</s><s> the only way to solve the issue is to restart the fms service. 
+</s><s>one week ago, we were running fms 3.5.7 on windows 2003 and we never had this issue.</s><s> fms was running with 500mb of cache and was working fine for years.</s><s> this bugs has appeared since we moved to the fms 4.5 on a windows 2008 server. 
+</s><s>coincidentally, adobe released the 4.5.3 patch that includes fix for memory problems one week ago.</s><s> but even this version has the issue. 
+i saw a similar thread here: http://forums.adobe.com/thread/913107 
+anyone can point to a solution?</s><s> this is a major bug. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-4674152</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="ShivenK" timestamp="Sep 5, 2012 12:43 AM">
+<s>hi, 
+</s><s>please go through this piece of information and configure the parameters accordingly: http://help.adobe.com/en_us/flashmediaserver/configadmin/ws5b3ccc516d4 fbf351e63e3d119f2925e64-7ff0.html#ws5b3ccc516d4fbf351e63e3d119f2925e64 -7fee 
+</s><s>also, let me know: 1.</s><s> how many streams are being published onto the server?</s><s> 2. what is the container and codec for the published streams? 
+</s><s>thanks, shiven 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-4674977</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="nebbb" timestamp="Sep 5, 2012 8:05 AM">
+<s>hello shiven, 
+</s><s>thank you for the reply.</s><s> a few days back, we increased server.flvcache_maxsize to 2500, and also found that we can clean up the memory faster by setting flvcachepurge to 1. we also figured that the old fms 3.5.7 probably would have had the same issue.</s><s> in fact, we saw that the same week we changed to our new server, we also had an increase in usage. 
+</s><s>however, this still doesn't explain that the memory fills up so quickly.</s><s> it seems that recording videos is a very heavy memory thing for fms.</s><s> here are the answers to your questions: 
+1) we had about 35,000 streams on a day that the cache filled up 2) we use standard h.263 in flv container with nellymoser mono. 
+</s><s>we actually were able to reproduce the problem on any fms version by setting server.flvcache_maxsize to 1 and doing a few recordings.</s><s> after about 5 recordings (of 30 seconds each), the cache problem appears.</s><s> by setting the flvcachepurge to 1, it's harder to reproduce as the cache is cleaned faster.</s><s> however, i would expect a cache system to clean up the oldest stream recorded no matter if the caching period is over or not.</s><s> there is certainly a major issue to look at here for your team, as we can't expect to just increase the cache size each time the problem re-appear. 
+</s><s>currently, in addition to the two changes that we did in the configuration, we also do a reboot of the fms service every night.</s><s> this is a temporary measure and we need a real solution to this issue.</s><s> we can't be rebooting fms as a final solution. 
+</s><s>ask your team to test and reproduce the cache problem following these steps: 
+a) set server.flvcache_maxsize=1 in fms.ini b) record a few stream to the fms, each of about 30 seconds c) notice that the cache generate the error and that it's impossible to record another stream until the fms service is rebooted 
+expected behavior: clear the oldest stream, no matter the time set in flvcachepurge 
+please follow-up on this thread with more explaination. 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-4783406</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="Jorge%20Maiquez%20%5BDS%5D" timestamp="Oct 17, 2012 11:41 PM">
+<s>hi nebbb, 
+</s><s>did you manage to get this problem under control?</s><s> we're seeing exactly the same problem after migrating to 4.5, and tweaking those settings has not made it go away. 
+</s><s>best regards, jorge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-4783863</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="nebbb" timestamp="Oct 18, 2012 5:27 AM">
+<s>no we did not.</s><s> we are rebooting the service daily as the solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-4790796</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="Jorge%20Maiquez%20%5BDS%5D" timestamp="Oct 22, 2012 1:38 AM">
+<s>what a pita.</s><s> good job on supporting your clients adobe! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4661882-6199891</DOCNO>
+<TEXT>
+<subject>FMS 4.5.x: The FLV segment cache is full</subject>
+<post author="jim_houseman" timestamp="Mar 11, 2014 10:12 AM">
+<s>i'm having this problem with v5.0.3 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-913107</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="zwily" timestamp="Oct 13, 2011 7:49 AM">
+<s>hello, 
+</s><s>we're using fmis 4.5 exclusively for recording streams from webcams via rtmp.</s><s> we don't have a lot of load currently, maybe a couple hundred videos being recorded every day.</s><s> every 1 or 2 days the fms starts logging "the flv segment cache is full" and refuses to record anymore until a restart.</s><s> i've adjusted the cache setting to the max for linux: 
+server.flvcache_maxsize=3000 
+i suspect that it's putting everything recorded into the cache, and refuses to record anymore when the cache is full.</s><s> why is it doing this?</s><s> the files are written to disk, why won't the data be evicted from the cache?</s><s> am i misunderstanding what's happening? 
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-3974272</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="zwily" timestamp="Oct 16, 2011 3:14 PM">
+<s>i started monitoring the cache using the api call getfilecachestats.</s><s> once "bytes" hit the flvcache_maxsize, we started getting "the flv segment cache is full" in the log again, and recording was broken. bytes_inuse was still tiny.</s><s> it looks like the cache just fills up and never evicts anything. 
+</s><s>what do i do to remedy this?</s><s> restarting the fms every couple days seems like a bad solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-3974495</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="SE_0208" timestamp="Oct 16, 2011 8:06 PM">
+<s>the message you are getting is expected when flv cache gets full but problem if i put correctly for you is why does it gets full. 
+</s><s>how much ram do you machine has?</s><s> i am asking you this question because you happen to mention 3000 is maximum setting - which is not true until unless its your hardware limitation.</s><s> it was limitation in past when fms was only 32-bit.</s><s> so if your machine has more ram - can you try higher setting and see if error goes away. 
+</s><s>secondly - whats your traffic like - you just happen to mention about publishing traffic and didnt mention anything how many clients are subscribing? 
+</s><s>see this thread: http://forums.adobe.com/message/3863804 - check if its same concurrent connections problem 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-3975054</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="zwily" timestamp="Oct 17, 2011 6:49 AM">
+<s>it's a 64-bit server with 8gb of ram, so i can increase the cache size, but it looks like it will still fill up.</s><s> we don't have a lot of traffic, only about 10 concurrent users ever max. on this graph you can see cache usage (green, left y-axis) graphed with connected users (purple line, right y-axis): 
+http://cl.ly/3f2i1b2k0u1t060q2a2e 
+we don't have any clients subscribing to the published data.</s><s> all we're using fms for is to record video/audio.</s><s> after it's recorded, the client may stream it to see if what was recorded is good, but then fms never serves it again.</s><s> nobody else will subscribe to it.</s><s> another process takes the recorded file and processes it. 
+</s><s>can you think of what i'm doing wrong here that's causing the flv cache to fill up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-4138779</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="zwily" timestamp="Jan 13, 2012 2:12 PM">
+<s>we're still running into this issue.</s><s> every couple days our flv cache fills up and stops letting people start new recordings, and we have to restart the server. 
+</s><s>is there any way to just disable the flv cache?</s><s> we are not using fms to distribute content, it's recording only.</s><s> please help me figure this out.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-4659292</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="nebbb" timestamp="Aug 29, 2012 9:06 PM">
+<s>hello, 
+</s><s>we are having the same issue with our fms server 4.5.2 on windows 2008 r2 64bits. have you found a solution to this problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3969411-6199782</DOCNO>
+<TEXT>
+<subject>FMIS used just for recording keeps getting "The FLV segment cache is full."</subject>
+<post author="jim_houseman" timestamp="Mar 11, 2014 10:12 AM">
+<s>we're having this same issue using 5.0.3.</s><s> three years later, and still no fix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-6199551-1425606</DOCNO>
+<TEXT>
+<subject>RTMP publish issue</subject>
+<post author="jim_houseman" timestamp="Mar 11, 2014 10:14 AM">
+<s>i have this application that connects to an ams instance over rtmp and, using netstream.publish, i stream a video to the server for storage and playback. 
+99% of the time this works, but every so often, a video will be saved with a size of 15kb or less.</s><s> these videos are corrupted and cannot be played back. 
+</s><s>then, suddenly, none of the videos would stream properly, and they all kept coming out with a size of 1kb.</s><s> i had to restart the server, and the issue cleared up.</s><s> all users could get net.connection.success events, so they could connect to the server just fine, they just couldn't stream their videos to the server. 
+</s><s>why does this happen?</s><s> how can i stop it? 
+
+</s><s>i'm working with adobe media server 5.3 
+</s><s>this seems to be my issue: http://forums.adobe.com/message/6199891 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-1054835</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Aug 24, 2012 7:09 AM">
+<s>i've installed flash media interactive server 4.5 and after installation i successfully streamed to ios devices.</s><s> today, streaming to ios devices, suddenly stopped working.</s><s> streaming to other flash compatible devices works just fine.</s><s> i use jwplayer to connect and that gives the following error message: 
+the video playback was aborted due to a corruption problem or because the video used features your browser did not support: http://my.fms.url/hls-live/livepkgr/_definst_/live/mystream.m3u8 
+some times, if i reload the site and try again, i do get a few seconds of playback of the live stream, then the playback stops with the same error message, and i can't seem to be able to play back the stream ever again. 
+</s><s>i've tried deleting the .stream-files generated in the applicationsfolder\livepkgr\events\_definst_\live as well as the files generated in applicationsfolder\livepkgr\streams\_definst_\mystream but that doesn't help. 
+i use adobe media live encoder 3.2 to stream to the server, using h.264 and aac.</s><s> as i mentioned, this has worked before and, as far as i remember, haven't made any configuration changes since it last worked. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4650265</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="NpComplete" timestamp="Aug 26, 2012 9:19 PM">
+<s>hi, 
+</s><s>did you made any upgrade to ios version on your device.</s><s> also, check playing vod streams ..</s><s> just to confirm whether there are some issues in live configurations or it is just player side issue.</s><s> to discard the player side issue, try playing on quicktime on imac. 
+</s><s>also try safari on i-devices.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4653177</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Aug 28, 2012 5:40 AM">
+<s>hi, 
+</s><s>i have not made any ios upgrades between the time it worked and now.</s><s> playing vod streams doesn't work either.</s><s> i thought they did, but they have stopped working as well.</s><s> the vod/live streams makes jwplayer report the error previously stated.</s><s> when i put the url in the error message directly into safari on ios i get an error saying "the operation could not be completed".</s><s> if i try playing the same url in quicktime on osx i get the same error message but it also includes "osstatus error -12936).</s><s> if i try accessing the url in a regular windows browser the m3u8 file is downloaded. 
+i have recently made some configuration changes to the fms, but i was certain hls playback worked even after those changes... now i'm not so certain any more. 
+</s><s>the changes i've made is to not have fms listen on port 80.</s><s> apache now listens on port 80 and not 8134.</s><s> i changed the applications folder in fms.ini to another folder.</s><s> i also changed the folders for the hls-live and hls-vod config in httpd.conf for apache to point to the same folder.</s><s> as far as i know, that's all the config changes i've made. 
+</s><s>edit: i'm using fms 4.5.0 r297 
+edit 2: i restarted fms earlier, and now vod streams seems to work again (though not all of them).</s><s> the live streams starts, but shows a very old live stream (not what i'm streaming at the moment) and stops after a while, never showing the current live stream.</s><s> i'm still very puzzled about this intermittent working/failing behaviour. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4653692</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="SE_0208" timestamp="Aug 28, 2012 7:05 AM">
+<s>can you paste your httpd.conf settings here?</s><s> also when you restarted server - i hope you made sure all your streams in "livepkgr" (also .stream files in events folder) were deleted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4653766</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Aug 28, 2012 7:22 AM">
+<s>i tried stopping the server and deleting the livepkgr streams and events, and when i restarted the server (and live stream) it seems to work correctly again.</s><s> i do believe my live streams problems was also present some time after having done this earlier so i'm gonna stream for a bit now, stop it, then start again tomorrow to see if i can still stream correctly. 
+</s><s>in the meantime, here's my httpd.conf as requested: 
+
+---------------------------------------------------------------- 
+# # this is the main apache server configuration file.</s><s> it contains the # configuration directives that give the server its instructions. # see <url:http://httpd.apache.org/docs/2.2/> for detailed information. # in particular, see # <url:http://httpd.apache.org/docs/2.2/mod/directives.html> # for a discussion of each configuration directive. # # please see httpd.conf.orig for the configuration of a default # (non-fms) installation of apache. 
+</s><s>listen 80 
+# if you plan to run fms as root on linux, you _must_ specify a # valid user, with access to the fms installation direction, or # apache will not run. # # if you've used the default installer, nobody (or whatever other # username you gave to the installer) will work here. # # if you're running a developer build under your own home directory, # you should use your own username. 
+</s><s>accessfilename .htaccess serversignature on usecanonicalname off hostnamelookups off 
+timeout 120 keepalive on maxkeepaliverequests 100 keepalivetimeout 15 
+</s><s>errorlog logs/error_log loglevel info logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\"" combined customlog logs/access_log combined 
+documentroot "../webroot" 
+</s><s>directoryindex index.html index.html.var index.php index.php3 index.php4 index.php5 index.py index.pl index.rb 
+<directory /> options followsymlinks allowoverride none order allow,deny allow from all satisfy all </directory> 
+<directory "../webroot"> options -indexes followsymlinks allowoverride none order allow,deny allow from all </directory> 
+</s><s>alias /documentation ../documentation/ <directory ../documentation/> options followsymlinks allowoverride none order allow,deny allow from all </directory> 
+
+</s><s>alias /icons/ "icons/" <directory "icons"> options multiviews followsymlinks allowoverride none order allow,deny allow from all </directory> 
+</s><s>alias /error/ "error/" 
+</s><s>scriptalias /cgi-bin/ "cgi-bin/" <directory "cgi-bin"> allowoverride none options none order allow,deny allow from all </directory> 
+<location /server-status> sethandler server-status order deny,allow deny from all allow from 10.0.0.0/8 allow from 172.16.0.0/12 allow from 192.168.0.0/16 allow from 127.</s><s> </location> extendedstatus on <location /server-info> sethandler server-info order deny,allow deny from all allow from 10.0.0.0/8 allow from 172.16.0.0/12 allow from 192.168.0.0/16 allow from 127.</s><s> </location> 
+
+</s><s><filesmatch "^\.ht"> order allow,deny deny from all </filesmatch> 
+<ifmodule mpm_winnt_module> threadsperchild 250 maxrequestsperchild 0 </ifmodule> <ifmodule worker_module> startservers 2 maxclients 150 minsparethreads 25 maxsparethreads 75 threadsperchild 25 maxrequestsperchild 0 </ifmodule> 
+</s><s>loadmodule actions_module modules/mod_actions.so loadmodule alias_module modules/mod_alias.so loadmodule asis_module modules/mod_asis.so loadmodule auth_basic_module modules/mod_auth_basic.so loadmodule auth_digest_module modules/mod_auth_digest.so loadmodule authn_anon_module modules/mod_authn_anon.so #loadmodule authn_dbm_module modules/mod_authn_dbm.so loadmodule authn_default_module modules/mod_authn_default.so loadmodule authn_file_module modules/mod_authn_file.so #loadmodule authz_dbm_module modules/mod_authz_dbm.so loadmodule authz_default_module modules/mod_authz_default.so loadmodule authz_groupfile_module modules/mod_authz_groupfile.so loadmodule authz_host_module modules/mod_authz_host.so loadmodule authz_user_module modules/mod_authz_user.so loadmodule autoindex_module modules/mod_autoindex.so #loadmodule cern_meta_module modules/mod_cern_meta.so <ifmodule mpm_winnt_module> loadmodule cgi_module modules/mod_cgi.so </ifmodule> <ifmodule worker_module> loadmodule cgid_module modules/mod_cgid.so </ifmodule> loadmodule dav_module modules/mod_dav.so loadmodule dav_fs_module modules/mod_dav_fs.so loadmodule deflate_module modules/mod_deflate.so loadmodule dir_module modules/mod_dir.so loadmodule env_module modules/mod_env.so #loadmodule expires_module modules/mod_expires.so #loadmodule file_cache_module modules/mod_file_cache.so #loadmodule headers_module modules/mod_headers.so loadmodule imagemap_module modules/mod_imagemap.so loadmodule include_module modules/mod_include.so loadmodule info_module modules/mod_info.so <ifmodule mpm_winnt_module> loadmodule isapi_module modules/mod_isapi.so </ifmodule> loadmodule log_config_module modules/mod_log_config.so loadmodule mime_module modules/mod_mime.so loadmodule mime_magic_module modules/mod_mime_magic.so #loadmodule proxy_module modules/mod_proxy.so #loadmodule proxy_ajp_module modules/mod_proxy_ajp.so #loadmodule proxy_balancer_module modules/mod_proxy_balancer.so #loadmodule proxy_connect_module modules/mod_proxy_connect.so #loadmodule proxy_http_module modules/mod_proxy_http.so #loadmodule proxy_ftp_module modules/mod_proxy_ftp.so loadmodule negotiation_module modules/mod_negotiation.so loadmodule rewrite_module modules/mod_rewrite.so loadmodule setenvif_module modules/mod_setenvif.so #loadmodule speling_module modules/mod_speling.so loadmodule status_module modules/mod_status.so loadmodule unique_id_module modules/mod_unique_id.so loadmodule userdir_module modules/mod_userdir.so #loadmodule usertrack_module modules/mod_usertrack.so #loadmodule vhost_alias_module modules/mod_vhost_alias.so #loadmodule ssl_module modules/mod_ssl.so loadmodule f4fhttp_module modules/mod_f4fhttp.so loadmodule hlshttp_module modules/mod_hlshttp.so loadmodule jithttp_module modules/mod_jithttp.so 
+###################################################################### ######## # the following section enables caching of just-in-time packaged content # # use htcacheclean tool to manage the amount of data that is cached on disk. # # see apache documentation for its usage. # # http://httpd.apache.org/docs/2.2/programs/htcacheclean.html # # make sure the directory specified by the cacheroot directive exists.</s><s> the # # default is a directory named cacheroot that is directly under the apache # # installation directory. # # for more information on content caching, see apache documentation # # http://httpd.apache.org/docs/2.2/caching.html # ###################################################################### ######## 
+# uncomment this to enable caching #loadmodule cache_module modules/mod_cache.so <ifmodule mod_cache.c> loadmodule disk_cache_module modules/mod_disk_cache.so <ifmodule mod_disk_cache.c> cacheenable disk /hds-vod cacheenable disk /hls-vod cacheroot cacheroot cachemaxfilesize 10000000 cachelock on </ifmodule> </ifmodule> 
+
+<ifmodule f4fhttp_module> <location /vod> httpstreamingenabled true httpstreamingcontentpath "../webroot/vod" options -indexes followsymlinks </location> 
+# map old style url to new (as of fms 4.5), more compact url redirect 301 /live/events/livepkgr/events /hds-live/livepkgr 
+<location /hds-live> httpstreamingenabled true httpstreamingliveeventpath "e:\flashmediaapplications" httpstreamingcontentpath "e:\flashmediaapplications" httpstreamingf4mmaxage 2 httpstreamingbootstrapmaxage 2 httpstreamingfragmaxage -1 options -indexes followsymlinks </location> </ifmodule> 
+<ifmodule hlshttp_module> <location /hls-live> hlshttpstreamingenabled true httpstreamingliveeventpath "e:\flashmediaapplications" httpstreamingcontentpath "e:\flashmediaapplications" hlsmediafileduration 8000 hlsslidingwindowlength 6 hlsfmsdirpath ".." hlsm3u8maxage 2 hlstssegmentmaxage -1 
+# uncomment the following directives to enable encryption # for this location. # hlsencryptionscope server # hlsencryptcipherkeyfile "../phls/liveeventkey.bin" # hlsencryptkeyuri "https://<servername>/hls-key/liveeventkey.bin" 
+</s><s>options -indexes followsymlinks </location> 
+</s><s><location /hls-vod> hlshttpstreamingenabled true hlsmediafileduration 8000 httpstreamingcontentpath "e:\flashmediaapplications" hlsfmsdirpath ".." 
+# uncomment the following directives to enable encryption # for this location. # hlsencryptionscope server # hlsencryptcipherkeyfile "../phls/vodkey.bin" # hlsencryptkeyuri "https://<servername>/hls-key/vodkey.bin" 
+</s><s>options -indexes followsymlinks </location> 
+</s><s></ifmodule> 
+
+</s><s><ifmodule jithttp_module> <location /hds-vod> httpstreamingjitpenabled true httpstreamingcontentpath "e:\flashmediaapplications" jitfmsdirpath ".." options -indexes followsymlinks 
+# uncomment the following directives to enable encryption # for this location. # encryptionscope server # protectionscheme phds </location> </ifmodule> 
+
+</s><s>typesconfig conf/mime.types mimemagicfile conf/magic defaulttype text/plain 
+addtype video/x-flv .flv addtype video/mp2t .ts 
+addtype application/x-compress .</s><s>z addtype application/x-gzip .gz .tgz addtype application/x-mpegurl .m3u8 
+
+</s><s>addhandler send-as-is asis addhandler type-map var addtype text/html .shtml addoutputfilter includes .shtml 
+<ifmodule ssl_module> sslrandomseed startup builtin sslrandomseed connect builtin </ifmodule> 
+<ifmodule userdir_module> userdir disable </ifmodule> 
+<ifmodule dav_fs_module> davlockdb tmp/dav/lockdb </ifmodule> 
+</s><s>indexoptions fancyindexing versionsort namewidth=* htmltable addiconbyencoding (cmp,/icons/compressed.gif) x-compress x-gzip addiconbytype (txt,/icons/text.gif) text/* addiconbytype (img,/icons/image2.gif) image/* addiconbytype (snd,/icons/sound2.gif) audio/* addiconbytype (vid,/icons/movie.gif) video/* addiconbytype (vid,/icons/movie.gif) application/x-shockwave-flash addicon /icons/binary.gif .bin .exe addicon /icons/binhex.gif .hqx addicon /icons/tar.gif .tar addicon /icons/world2.gif .wrl .wrl.gz .vrml .vrm .</s><s>iv addicon /icons/compressed.gif .</s><s>z .</s><s>z .tgz .gz .zip addicon /icons/a.gif .</s><s>ps .ai .eps addicon /icons/layout.gif .html .shtml .htm .pdf addicon /icons/text.gif .</s><s>txt addicon /icons/c.gif .</s><s>c addicon /icons/p.gif .pl .py addicon /icons/f.gif .for addicon /icons/dvi.gif .dvi addicon /icons/uuencoded.gif .uu addicon /icons/script.gif .conf .sh .shar .csh .ksh .tcl addicon /icons/tex.gif .tex addicon /icons/bomb.gif core addicon /icons/back.gif ..</s><s> addicon /icons/hand.right.gif readme addicon /icons/folder.gif ^^directory^^ addicon /icons/blank.gif ^^blankicon^^ defaulticon /icons/unknown.gif readmename readme.html headername header.html indexignore .</s><s>?</s><s>?* *~ *# header* readme* rcs cvs *,v *,t 
+</s><s>addlanguage ca .</s><s>ca addlanguage cs .cz .cs addlanguage da .dk addlanguage de .de addlanguage el .el addlanguage en .en addlanguage eo .eo addlanguage es .es addlanguage et .</s><s>et addlanguage fr .fr addlanguage he .he addlanguage hr .</s><s>hr addlanguage it .it addlanguage ja .ja addlanguage ko .ko addlanguage ltz .ltz addlanguage nl .nl addlanguage nn .nn addlanguage no .</s><s>no addlanguage pl .po addlanguage pt .pt addlanguage pt-br .pt-br addlanguage ru .ru addlanguage sv .sv addlanguage zh-cn .zh-cn addlanguage zh-tw .zh-tw languagepriority en ca cs da de el eo es et fr he hr it ja ko ltz nl nn no pl pt pt-br ru sv zh-cn zh-tw forcelanguagepriority prefer fallback adddefaultcharset utf-8 
+</s><s><ifmodule mod_negotiation.c> <ifmodule mod_include.c> <directory "error"> allowoverride none options includesnoexec addoutputfilter includes html addhandler type-map var order allow,deny allow from all languagepriority en es de fr forcelanguagepriority prefer fallback </directory> </ifmodule> </ifmodule> 
+</s><s>browsermatch "mozilla/2" nokeepalive browsermatch "msie 4\.0b2;" nokeepalive downgrade-1.0 force-response-1.0 browsermatch "realplayer 4\.0" force-response-1.0 browsermatch "java/1\.0" force-response-1.0 browsermatch "jdk/1\.0" force-response-1.0 browsermatch "microsoft data access internet publishing provider" redirect-carefully browsermatch "ms frontpage" redirect-carefully browsermatch "^webdrive" redirect-carefully browsermatch "^webdavfs/1.[0123]" redirect-carefully browsermatch "^gnome-vfs/1.0" redirect-carefully browsermatch "^xml spy" redirect-carefully browsermatch "^dreamweaver-webdav-scm1" redirect-carefully 
+#uncomment following for enabling https based key serving #for hls. #include conf/httpd-hls-secure.conf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4656610</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Aug 29, 2012 2:29 AM">
+<s>i did a bit of streaming live yesterday, and that worked on ios devices.</s><s> i stopped the stream and tried again this morning.</s><s> now the live stream on ios only plays the last few seconds (30 or so) from yesterday instead of showing a continous stream of todays data.</s><s> why is that? 
+</s><s>vod playback seems to work just as well today as yesterday. 
+btw, if restarting fms necessitates deleting some files on the server, how should i handle if the server is restarted outside of my control? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4656698</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="SE_0208" timestamp="Aug 29, 2012 4:26 AM">
+<s>i am getting a feeling that you are on developer edition - can you confirm the same.</s><s> if it is - then your recording would stop after 30 minutes no matter how long you are publishing.</s><s> this might be the reason why you are getting stale data. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4656864</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Aug 29, 2012 5:28 AM">
+<s>no, i'm on the interactive edition.</s><s> i haven't done any purposeful changes to actually record anything, so unless the livepkgr comes with recording enabled by default, it shouldn't be recording (i don't have a main.asc file in the livepkgr application folder). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4656903</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="SE_0208" timestamp="Aug 29, 2012 5:44 AM">
+<s>hds and hls in fms is based on f4f recording which happens in "livepkgr" (to answer your question - it does record by default and hds/hls streaming is based on that recorded f4f files) 
+</s><s>can you check your core and applications logs of fms and let me know what do you see when you try to stream hls and is getting stale data. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4657994</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="Eil%20een" timestamp="Aug 29, 2012 11:23 AM">
+<s>i have a different scenario but very similar symptoms: 
+i am seeking to stream audio-only to flash and ios players, and am also using fme3.2 fms4.5 and jwplayer. 
+</s><s>when i encode a/v aac/h.264 in fme, i can receive the live stream in both flash and ios players.</s><s> when i encode aud-only, the flash player receives fine, but the ios player plays the last segment of the (progressive download?</s><s>) previous a/v stream, and then it stops. 
+i am still using the .m3u8 extension for the ios stream, and wonder that the extension needs to change for audio-only. 
+</s><s>any ideas?</s><s> thanks, joe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4662726</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Aug 31, 2012 1:06 AM">
+<s>i was finally able to reproduce this live stream error.</s><s> yesterday i streamed successfully for several hours.</s><s> i stopped the live stream yesterday and restarted it this morning.</s><s> when i now play the live stream on an ios device i get the last seconds of yesterday's stream. 
+the following is in the core log: 
+2012-08-31 10:00:36 7772 (e)2611178 error from libf4f.dll: f4v error: 1280. - 2012-08-31 10:00:36 7772 (e)2611423 failed to record myapp (unknown error). - 
+and this is from the application log: 
+2012-08-31 10:00:26 7772 (s)2641173 f4f:myapp - netstream.publish.start - 2012-08-31 10:00:26 7772 (s)2641173 f4f:myapp- netstream.play.reset - 2012-08-31 10:00:26 7772 (s)2641173 f4f:myapp- netstream.data.start - 2012-08-31 10:00:26 7772 (s)2641173 f4f:myapp- netstream.record.start - 2012-08-31 10:00:36 7772 (s)2641173 f4f:myapp- netstream.record.noaccess - 2012-08-31 10:00:36 7772 (s)2641173 f4f:myapp- netstream.record.stop - 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4686399</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Sep 10, 2012 5:14 AM">
+<s>*bump* 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4686515</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="SE_0208" timestamp="Sep 10, 2012 5:45 AM">
+<s>you are getting old content because your recording has failed.</s><s> that is expected.</s><s> what is not expected though is the recording failure. 
+</s><s>do you change any codecs or configuration between fmle restarts and also do you have streamsyncronization on at fmle end. 
+</s><s>also if its possible please upgrade to latest version of 4.5 i.e.</s><s> 4.5.3 and see if that helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4686575</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Sep 10, 2012 6:12 AM">
+<s>no codec changes between fmle restarts.</s><s> i don't know what streamsynchronization is, so i guess that's not on (if not on by default). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4796669</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Oct 24, 2012 6:06 AM">
+<s>*bump* 
+</s><s>the playback problems got somewhat resolved... for a while.</s><s> now they're back. 
+</s><s>when playing back a live stream on an ios device the playback is blank.</s><s> just a black player.</s><s> it says it is streaming something that's live, but displays no picture. 
+</s><s>other than occasionally restarting the server and deleting the previously mentioned files, there are no changes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4801470</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="nnmk" timestamp="Oct 25, 2012 4:58 PM">
+<s>check this: http://forums.adobe.com/message/4284437#4284437 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4801472</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="nnmk" timestamp="Oct 25, 2012 5:00 PM">
+<s>and this: http://help.adobe.com/en_us/flashmediaserver/devguide/wsd391de4d9c7bd6 09-52e437a812a3725dfa0-8000.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4645199-4802286</DOCNO>
+<TEXT>
+<subject>iOS playback stopped working</subject>
+<post author="GTHvidsten" timestamp="Oct 26, 2012 3:53 AM">
+<s>the video stream is still black when i try to play it on an ios device, even after following the instructions in the last link you sent. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-869566</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="AHobbyist" timestamp="Jun 25, 2011 7:34 AM">
+<s>i appologize if this question is already answered somewhere (i did search a bit).. 
+1.</s><s> i have written a significant amount of my site using functions only available in php 5.3+ (ie not in php5.2) ( see php.net /manual/en/migration53.new-features.php ) 
+2. php (in thier infinite wisdom) have decicided that not only is there no longer a vc6 (ie apache 2.2.15 compatable) build of php 5.3.6 but they removed the 5.3.3 build and are offering only 5.2.17 in a vc6 build suitable for use with the version of apache built into fms4.</s><s> (see windows.php.net/download/ and note the lines: do not use vc9 version with apache.org binaries. and vc9 versions of apache can be fetched at apache lounge.</s><s> we use their binaries to build the apache sapis.</s><s>) 
+</s><s>3. the fms4 documentation says: (see help.adobe.com/en_us/flashmediaserver/configadmin/wse2a5a7b9-e118-496 f-92f9-e295038db7db.html#ws02f7d8d4857b1677-469e53bb12984254411-8000 the recommended approach to upgrading the apache web server is to install or build the apache server in a directory that is separate from the existing server.</s><s> then copy the contents of newly-installed directories to the existing server.</s><s> in most cases, you do not replace the existing apache configuration files with the newer versions of these files.</s><s> this is because the apache web server installation for flash media server is pre-configured with specific modules and settings.</s><s>) 
+</s><s>my question is: 
+</s><s>does this even work?</s><s> i sounds like a realy bad idea to me to instal a version of apache built to use the visual c 9 runtime and then kludge in an httpd.conf file that starts loading modules that were built to interact with a version that uses the visual c 6 library.</s><s> has anyone actually done this successfully?</s><s>?</s><s>?</s><s> 
+</s><s>i don't blame the fms developers here (well except for the really bad idea of making apache "part" of the fms package in the first place) but you a shipping with a version of apache that is incompatable with php!</s><s> (ok, the _latest versions_ of php.. but that still makes this _your_ problem.. and a big problem at that if you ask me). 
+</s><s>suggestions?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-3762603</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="Nikhil%20Kalyan" timestamp="Jun 25, 2011 1:52 PM">
+<s>hi, 
+</s><s>i am sorry but i tried to see the documentation link you provided only to see its not correct.</s><s> can you please provide the correct link , so that i can verify and if there is any modification needed to the doc, i could help in adding that. 
+</s><s>irrespective of what's there in the doc for now, personally i always felt its a good idea to have apache bundled with fms as it reduces a small effort in setting up the web server.</s><s> a very good out of the box approach ... 
+</s><s>bundling apache is for the sake of simplicity and to use it in a more convincing manner along with fms, given the new features of http dynamic streaming and the upcoming ios device support.</s><s> but this in no way mean we would hamper a custom apache functionality. 
+</s><s>you can install your own apache and fms can work seamlessly with it, you do not need to entirely copy the configurations if you feel they are not going to be compatible.</s><s> please make sure you copy the necessary modules and other files that fms expects to be on apache, change the conf files and you are good to go.</s><s> fms with its new features of hds and otherwise is fully tested with external apache installations and there should not be any problem in using them.. 
+</s><s>please give it a try and let us know if it helped.</s><s> thank you !</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-3762930</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="AHobbyist" timestamp="Jun 25, 2011 9:09 PM">
+<s>thanks for the reply nikhil..   most forums frown on live links but here's clickable versions:   http://php.net/manual/en/migration53.new-features.php http://windows.php.net/download/ http://help.adobe.com/en_us/flashmediaserver/configadmin/wse2a5a7b9-e1 18-496f-92f9-e295038db7db.html#ws02f7d8d4857b1677-469e53bb12984254411- 8000   you mention bundling apache into fms as being a time saver.. it is the exact opposite if you need the latest version(s) of php..</s><s> i am  surprised you haven't been swamped with complaints over the last month or so since the php development team stopped offering a vc6 build for php 5.3+.   the problem is that php built with the visual c version 9 runtime  is not compatable with the version of apache that is bundled with fms 4. it is compatable with the visual c version 6 runtime and up until this latest release (php 5.3.6) the php site offered both vc6 and vc9 (thread safe) variants.</s><s> with the introduction of 5.3.6 they have removed not only the 5.3.5 vc6 options and (for some undocumented reason) offer only  5.2.17 in a vc6 version (see the second link above).   the "out of the box" requirement for fms now is to d/l the vc9 compatable version of apache they refer on the php.net site from the apache lounge site (see link in my original post) and then try and take the "normal" httpd.conf file and reduce it to the completely gutted version that installs with fms..</s><s> why wouldn't the fms developers at least have left the file httpd.conf basicly the same and added/removed as little as possible?</s><s>?</s><s>?</s><s>?</s><s> it has been completely trashed and then had a bunch of undocumented module load, etc statements stuck in.</s><s> if i didn't know better i'd say the fms team deliberately made it difficult to convert a "real" apache install into a working fms configuration.   anyway i'm starting to doubt i'll get much help here if you haven't really caught the drift of my problem.. thanks anyway.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-3763035</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="Nikhil%20Kalyan" timestamp="Jun 26, 2011 1:49 AM">
+<s>thanks for the link,   you complaint about the version change was clear in your first post itself.</s><s> i just tried to convey that there can always be an external apache installation that can also seemlessly work with fms.   apache that's bundled with fms is optional.</s><s> i am not sure of each and every module load/ changes that were made but that in any way doesn't mean to reduce your capabilities.</s><s> i don't see any reason why a vanilla installation of apache won't work with fms with vc9 and your php, away from fms.   i understand your message to get the apache upgraded that comes on fms.</s><s> well, that's always a good thing to do, we should definitely have in the pipeline, i would let you know of the plans there.</s><s> thank you !</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-3775071</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="AHobbyist" timestamp="Jul 1, 2011 5:14 PM">
+<s># --------------------------------------- # this section includes everything in the apache 2.2.19 httpd.conf file's module load section. # the modules named in the fms version of the httpd.conf file are _almost_ a subset of the 2.2.19 collection but # many statements are "live" only in the fms version. # the numbers in parentheses are line numbers in the indicated httpd.conf file   # 2.2.19(60) loadmodule actions_module modules/mod_actions.so # fms(136) loadmodule actions_module modules/mod_actions.so   # 2.2.19(61) loadmodule alias_module modules/mod_alias.so # fms(137) loadmodule alias_module modules/mod_alias.so   # 2.2.19(62) loadmodule asis_module modules/mod_asis.so # fms(138) loadmodule asis_module modules/mod_asis.so   # 2.2.19(63) loadmodule auth_basic_module modules/mod_auth_basic.so # fms(139) loadmodule auth_basic_module modules/mod_auth_basic.so   # 2.2.19(64) #loadmodule auth_digest_module modules/mod_auth_digest.so # fms(140) loadmodule auth_digest_module modules/mod_auth_digest.so   # 2.2.19(65) #loadmodule authn_alias_module modules/mod_authn_alias.so   # 2.2.19(66) #loadmodule authn_anon_module modules/mod_authn_anon.so # fms(141) loadmodule authn_anon_module modules/mod_authn_anon.so   # 2.2.19(67) #loadmodule authn_dbd_module modules/mod_authn_dbd.so   # 2.2.19(68) #loadmodule authn_dbm_module modules/mod_authn_dbm.so # fms(142) #loadmodule authn_dbm_module modules/mod_authn_dbm.so   # 2.2.19(69) loadmodule authn_default_module modules/mod_authn_default.so # fms(143) loadmodule authn_default_module modules/mod_authn_default.so   # 2.2.19(70) loadmodule authn_file_module modules/mod_authn_file.so # fms(144) loadmodule authn_file_module modules/mod_authn_file.so   # 2.2.19(71) #loadmodule authnz_ldap_module modules/mod_authnz_ldap.so   # 2.2.19(72) #loadmodule authz_dbm_module modules/mod_authz_dbm.so # fms(145) #loadmodule authz_dbm_module modules/mod_authz_dbm.so   # 2.2.19(73) loadmodule authz_default_module modules/mod_authz_default.so # fms(146) loadmodule authz_default_module modules/mod_authz_default.so   # 2.2.19(74) loadmodule authz_groupfile_module modules/mod_authz_groupfile.so # fms(147) loadmodule authz_groupfile_module modules/mod_authz_groupfile.so   # 2.2.19(75) loadmodule authz_host_module modules/mod_authz_host.so # fms(148) loadmodule authz_host_module modules/mod_authz_host.so   # 2.2.19(76) #loadmodule authz_owner_module modules/mod_authz_owner.so   # 2.2.19(77) loadmodule authz_user_module modules/mod_authz_user.so # fms(149) loadmodule authz_user_module modules/mod_authz_user.so   # 2.2.19(78) loadmodule autoindex_module modules/mod_autoindex.so # fms(150) loadmodule autoindex_module modules/mod_autoindex.so   # 2.2.19(79) #loadmodule cache_module modules/mod_cache.so   # 2.2.19(80) #loadmodule cern_meta_module modules/mod_cern_meta.so # fms(151) #loadmodule cern_meta_module modules/mod_cern_meta.so   # 2.2.19(81) loadmodule cgi_module modules/mod_cgi.so # fms(152..154) <ifmodule mpm_winnt_module> loadmodule cgi_module modules/mod_cgi.so </ifmodule>   # fms(155..157) <ifmodule worker_module> loadmodule cgid_module modules/mod_cgid.so </ifmodule>   # 2.2.19(82) #loadmodule charset_lite_module modules/mod_charset_lite.so   # 2.2.19(83) #loadmodule dav_module modules/mod_dav.so # fms(158) loadmodule dav_module modules/mod_dav.so   # 2.2.19(84) #loadmodule dav_fs_module modules/mod_dav_fs.so # fms(159) loadmodule dav_fs_module modules/mod_dav_fs.so   # 2.2.19(85) #loadmodule dav_lock_module modules/mod_dav_lock.so   # 2.2.19(86) #loadmodule dbd_module modules/mod_dbd.so   # 2.2.19(87) #loadmodule deflate_module modules/mod_deflate.so # fms(160) loadmodule deflate_module modules/mod_deflate.so   # 2.2.19(88) loadmodule dir_module modules/mod_dir.so # fms(161) loadmodule dir_module modules/mod_dir.so   # 2.2.19(89) #loadmodule disk_cache_module modules/mod_disk_cache.so   # 2.2.19(90) #loadmodule dumpio_module modules/mod_dumpio.so   # 2.2.19(91) loadmodule env_module modules/mod_env.so # fms(162) loadmodule env_module modules/mod_env.so   # 2.2.19(92) #loadmodule expires_module modules/mod_expires.so # fms(163) #loadmodule expires_module modules/mod_expires.so   # 2.2.19(93) #loadmodule ext_filter_module modules/mod_ext_filter.so   # 2.2.19(94) #loadmodule file_cache_module modules/mod_file_cache.so # fms(164) #loadmodule file_cache_module modules/mod_file_cache.so   # 2.2.19(95) #loadmodule filter_module modules/mod_filter.so   # 2.2.19(96) #loadmodule headers_module modules/mod_headers.so # fms(165) #loadmodule headers_module modules/mod_headers.so   # 2.2.19(97) #loadmodule ident_module modules/mod_ident.so   # 2.2.19(98) #loadmodule imagemap_module modules/mod_imagemap.so # fms(166) loadmodule imagemap_module modules/mod_imagemap.so   # 2.2.19(99) loadmodule include_module modules/mod_include.so # fms(167) loadmodule include_module modules/mod_include.so   # 2.2.19(100) #loadmodule info_module modules/mod_info.so # fms(168) loadmodule info_module modules/mod_info.so   # 2.2.19(101) loadmodule isapi_module modules/mod_isapi.so # fms(169..171) <ifmodule mpm_winnt_module> loadmodule isapi_module modules/mod_isapi.so </ifmodule>   # 2.2.19(102) #loadmodule ldap_module modules/mod_ldap.so # 2.2.19(103) #loadmodule logio_module modules/mod_logio.so   # 2.2.19(104) loadmodule log_config_module modules/mod_log_config.so # fms(172) loadmodule log_config_module modules/mod_log_config.so   # 2.2.19(105) #loadmodule log_forensic_module modules/mod_log_forensic.so # 2.2.19(106) #loadmodule mem_cache_module modules/mod_mem_cache.so   # 2.2.19(107) loadmodule mime_module modules/mod_mime.so # fms(173) loadmodule mime_module modules/mod_mime.so   # 2.2.19(108) #loadmodule mime_magic_module modules/mod_mime_magic.so # fms(174) loadmodule mime_magic_module modules/mod_mime_magic.so   # 2.2.19(109) loadmodule negotiation_module modules/mod_negotiation.so # fms(181) loadmodule negotiation_module modules/mod_negotiation.so   # 2.2.19(110) #loadmodule proxy_module modules/mod_proxy.so # fms(175) #loadmodule proxy_module modules/mod_proxy.so   # 2.2.19(111) #loadmodule proxy_ajp_module modules/mod_proxy_ajp.so # fms(176) #loadmodule proxy_ajp_module modules/mod_proxy_ajp.so   # 2.2.19(112) #loadmodule proxy_balancer_module modules/mod_proxy_balancer.so # fms(177) #loadmodule proxy_balancer_module modules/mod_proxy_balancer.so   # 2.2.19(113) #loadmodule proxy_connect_module modules/mod_proxy_connect.so # fms(178) #loadmodule proxy_connect_module modules/mod_proxy_connect.so   # 2.2.19(114) #loadmodule proxy_ftp_module modules/mod_proxy_ftp.so # fms(180) #loadmodule proxy_ftp_module modules/mod_proxy_ftp.so   # 2.2.19(115) #loadmodule proxy_http_module modules/mod_proxy_http.so # fms(179) #loadmodule proxy_http_module modules/mod_proxy_http.so   # 2.2.19(116) #loadmodule proxy_scgi_module modules/mod_proxy_scgi.so # 2.2.19(117) #loadmodule reqtimeout_module modules/mod_reqtimeout.so   # 2.2.19(118) #loadmodule rewrite_module modules/mod_rewrite.so # fms(182) loadmodule rewrite_module modules/mod_rewrite.so   # 2.2.19(119) loadmodule setenvif_module modules/mod_setenvif.so # fms(183) loadmodule setenvif_module modules/mod_setenvif.so   # 2.2.19(120) #loadmodule speling_module modules/mod_speling.so # fms(184) #loadmodule speling_module modules/mod_speling.so   # 2.2.19(121) #loadmodule ssl_module modules/mod_ssl.so # fms(190) #loadmodule ssl_module modules/mod_ssl.so   # 2.2.19(122) #loadmodule status_module modules/mod_status.so # fms(185) loadmodule status_module modules/mod_status.so   # 2.2.19(123) #loadmodule substitute_module modules/mod_substitute.so   # 2.2.19(124) #loadmodule unique_id_module modules/mod_unique_id.so # fms(186) loadmodule unique_id_module modules/mod_unique_id.so   # 2.2.19(125) #loadmodule userdir_module modules/mod_userdir.so # fms(187) loadmodule userdir_module modules/mod_userdir.so   # 2.2.19(126) #loadmodule usertrack_module modules/mod_usertrack.so # fms(188) #loadmodule usertrack_module modules/mod_usertrack.so   # 2.2.19(127) #loadmodule version_module modules/mod_version.so   # 2.2.19(128) #loadmodule vhost_alias_module modules/mod_vhost_alias.so # fms(189) #loadmodule vhost_alias_module modules/mod_vhost_alias.so   # fms(191) loadmodule f4fhttp_module modules/mod_f4fhttp.so   # ------------------------------------------------ # this section includes items that appear in _both_ in the fms version of httpd.conf and the 2.2.19 version # the numbers in parentheses are line numbers in the indicated httpd.conf file. # in some case the lines appear identically in both versions. # in some case the changes are not simple alternatives (see mpm_winnt_module for example)   # 2.2.19(46) # listen 80 # fms(12) listen 8134   # 2.2.19(130..144) # <ifmodule !</s><s>mpm_netware_module> # <ifmodule !</s><s>mpm_winnt_module> # user daemon # group daemon # </ifmodule> # </ifmodule> # fms(123..126) <ifmodule mpm_winnt_module> threadsperchild 250 maxrequestsperchild 0 </ifmodule>   # 2.2.19(179) # documentroot "c:/apache2/htdocs" # fms(39) documentroot "../webroot"   # 2.2.19(189..194) # <directory /> #     options followsymlinks #     allowoverride none #     order deny,allow #     deny from all # </directory> # fms(43..50) <directory /> options followsymlinks allowoverride none order allow,deny allow from all satisfy all </directory>   # 2.2.19(206..234) # <directory "c:/apache2/htdocs"> #     options indexes followsymlinks #     allowoverride none #     order allow,deny #     allow from all # </directory> # fms(51..56) <directory "../webroot"> options -indexes followsymlinks allowoverride none order allow,deny allow from all </directory>   # 2.2.19(240.242) # <ifmodule dir_module> #     directoryindex index.html # </ifmodule> # fms(41) directoryindex index.html index.html.var index.php index.php3 index.php4 index.php5 index.py index.pl index.rb   # 2.2.19(248..252) # <filesmatch "^\.ht"> #     order allow,deny #     deny from all #     satisfy all # </filesmatch> # fms(118..121) <filesmatch "^\.ht"> order allow,deny deny from all </filesmatch>   # 2.2.19(261) # errorlog "logs/error.log" # fms(34) errorlog logs/error_log   # 2.2.19(268) # loglevel warn # fms(35) loglevel info   # 2.2.19(270..297) # <ifmodule log_config_module> #     logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\"" combined #     logformat "%h %l %u %t \"%r\" %>s %b" common #     <ifmodule logio_module> #       logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\" %i %o" combinedio #     </ifmodule> #     customlog "logs/access.log" common # </ifmodule> # fms(36..37) logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\"" combined customlog logs/access_log combined   # 2.2.19(299..328) # <ifmodule alias_module> #     scriptalias /cgi-bin/ "c:/apache2/cgi-bin/" # </ifmodule> # fms(77) scriptalias /cgi-bin/ "cgi-bin/"   # 2.2.19(342..347) # <directory "c:/apache2/cgi-bin"> #     allowoverride none #     options none #     order allow,deny #     allow from all # </directory> # fms(78..83) <directory "cgi-bin"> allowoverride none options none order allow,deny allow from all </directory>   # 2.2.19(358) # defaulttype text/plain # fms(196) defaulttype text/plain   # 2.2.19(360..406) # <ifmodule mime_module> #     typesconfig conf/mime.types #     #addencoding x-compress .</s><s>z #     #addencoding x-gzip .gz .tgz #     addtype application/x-compress .</s><s>z #     addtype application/x-gzip .gz .tgz #     #addhandler cgi-script .cgi #     #addhandler type-map var #     #addtype text/html .shtml #     #addoutputfilter includes .shtml # </ifmodule> # fms(194) typesconfig conf/mime.types # fms(200..201) addtype application/x-compress .</s><s>z addtype application/x-gzip .gz .tgz # fms(204..206) addhandler type-map var addtype text/html .shtml addoutputfilter includes .shtml   # 2.2.19(413) #mimemagicfile conf/magic # fms(195) mimemagicfile conf/magic   # 2.2.19(474..484) # <ifmodule ssl_module> # sslrandomseed startup builtin # sslrandomseed connect builtin # </ifmodule> # fms(208.211) <ifmodule ssl_module> sslrandomseed startup builtin sslrandomseed connect builtin </ifmodule>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-3775073</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="AHobbyist" timestamp="Jul 1, 2011 5:22 PM">
+<s># ------------------------------------ # this section contains items from the httpd.conf file that are mentioned _only_ in the fms installation version # the numbers in parentheses are line numbers in the fms httpd.conf file   # fms(24..32) accessfilename .htaccess serversignature on usecanonicalname off hostnamelookups off timeout 120 keepalive on maxkeepaliverequests 100 keepalivetimeout 15   # fms(58..64) alias /documentation ../documentation/ <directory ../documentation/> options followsymlinks allowoverride none order allow,deny allow from all </directory>   # fms(67..73) alias /icons/ "icons/" <directory "icons"> options multiviews followsymlinks allowoverride none order allow,deny allow from all </directory>   # fms(75) alias /error/ "error/"   # fms(85..93) <location /server-status> sethandler server-status order deny,allow deny from all allow from 10.0.0.0/8 allow from 172.16.0.0/12 allow from 192.168.0.0/16 allow from 127.</s><s> </location>   # fms(94) extendedstatus on   # fms(95..103) <location /server-info> sethandler server-info order deny,allow deny from all allow from 10.0.0.0/8 allow from 172.16.0.0/12 allow from 192.168.0.0/16 allow from 127.</s><s> </location>   # fms(105..109) <location /vod> httpstreamingenabled true httpstreamingcontentpath "../webroot/vod" options -indexes followsymlinks </location>   # fms(111.116) <location /live> httpstreamingenabled true httpstreamingliveeventpath "../applications" httpstreamingcontentpath "../applications" options -indexes followsymlinks </location>   # fms(127.134) <ifmodule worker_module> startservers         2 maxclients         150 minsparethreads     25 maxsparethreads     75 threadsperchild     25 maxrequestsperchild  0 </ifmodule>   # fms(198) addtype video/x-flv .flv   # fms(203) addhandler send-as-is asis   # fms(213..215) <ifmodule userdir_module> userdir disable </ifmodule>   # fms(217..219) <ifmodule dav_fs_module> davlockdb tmp/dav/lockdb </ifmodule>   # fms(221) indexoptions fancyindexing versionsort namewidth=* htmltable   # fms(222..251) addiconbyencoding (cmp,/icons/compressed.gif) x-compress x-gzip addiconbytype (txt,/icons/text.gif) text/* addiconbytype (img,/icons/image2.gif) image/* addiconbytype (snd,/icons/sound2.gif) audio/* addiconbytype (vid,/icons/movie.gif) video/* addiconbytype (vid,/icons/movie.gif) application/x-shockwave-flash addicon /icons/binary.gif .bin .exe addicon /icons/binhex.gif .hqx addicon /icons/tar.gif .tar addicon /icons/world2.gif .wrl .wrl.gz .vrml .vrm .</s><s>iv addicon /icons/compressed.gif .</s><s>z .</s><s>z .tgz .gz .zip addicon /icons/a.gif .</s><s>ps .ai .eps addicon /icons/layout.gif .html .shtml .htm .pdf addicon /icons/text.gif .</s><s>txt addicon /icons/c.gif .</s><s>c addicon /icons/p.gif .pl .py addicon /icons/f.gif .for addicon /icons/dvi.gif .dvi addicon /icons/uuencoded.gif .uu addicon /icons/script.gif .conf .sh .shar .csh .ksh .tcl addicon /icons/tex.gif .tex addicon /icons/bomb.gif core addicon /icons/back.gif ..</s><s> addicon /icons/hand.right.gif readme addicon /icons/folder.gif ^^directory^^ addicon /icons/blank.gif ^^blankicon^^ defaulticon /icons/unknown.gif readmename readme.html headername header.html indexignore .</s><s>?</s><s>?* *~ *# header* readme* rcs cvs *,v *,t   # fms(253..281) addlanguage ca .</s><s>ca addlanguage cs .cz .cs addlanguage da .dk addlanguage de .de addlanguage el .el addlanguage en .en addlanguage eo .eo addlanguage es .es addlanguage et .</s><s>et addlanguage fr .fr addlanguage he .he addlanguage hr .</s><s>hr addlanguage it .it addlanguage ja .ja addlanguage ko .ko addlanguage ltz .ltz addlanguage nl .nl addlanguage nn .nn addlanguage no .</s><s>no addlanguage pl .po addlanguage pt .pt addlanguage pt-br .pt-br addlanguage ru .ru addlanguage sv .sv addlanguage zh-cn .zh-cn addlanguage zh-tw .zh-tw languagepriority en ca cs da de el eo es et fr he hr it ja ko ltz nl nn no pl pt pt-br ru sv zh-cn zh-tw forcelanguagepriority prefer fallback adddefaultcharset utf-8   # fms(283..296) <ifmodule mod_negotiation.c> <ifmodule mod_include.c> <directory "error"> allowoverride none options includesnoexec addoutputfilter includes html addhandler type-map var order allow,deny allow from all languagepriority en es de fr forcelanguagepriority prefer fallback </directory> </ifmodule> </ifmodule>   # fms(298..309) browsermatch "mozilla/2" nokeepalive browsermatch "msie 4\.0b2;" nokeepalive downgrade-1.0 force-response-1.0 browsermatch "realplayer 4\.0" force-response-1.0 browsermatch "java/1\.0" force-response-1.0 browsermatch "jdk/1\.0" force-response-1.0 browsermatch "microsoft data access internet publishing provider" redirect-carefully browsermatch "ms frontpage" redirect-carefully browsermatch "^webdrive" redirect-carefully browsermatch "^webdavfs/1.[0123]" redirect-carefully browsermatch "^gnome-vfs/1.0" redirect-carefully browsermatch "^xml spy" redirect-carefully browsermatch "^dreamweaver-webdav-scm1" redirect-carefully
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-3762021-3775076</DOCNO>
+<TEXT>
+<subject>I Need PHP 5.3 no longer avail in a VC6 compatable with Apache 2.2.15</subject>
+<post author="AHobbyist" timestamp="Jul 1, 2011 5:29 PM">
+<s># ---------------------------------------- # this section contains items from the httpd.conf file mentioned _only_ in the version 2.2.19 installation version # the numbers in parentheses are line numbers in the apache 2.2.19 httpd.conf file # the lines commented out here are commented out in the 2.2.19 httd.conf as well. # (ie nearly everything in this section appears in the version 2.2.19 http.conf file as suggestions and/or template placeholders)   # 2.2.19(35) serverroot "c:/apache2"   # 2.2.19(163) serveradmin admin[at]example[dot]com   # 2.1.19(172) #servername www[dot]example[dot]com:80   2.2.19(330..336) <ifmodule cgid_module> #scriptsock logs/cgisock </ifmodule>   # 2.2.19(434..435) #enablemmap off #enablesendfile off   # 2.2.19(445) #include conf/extra/httpd-mpm.conf   # 2.2.19(448) #include conf/extra/httpd-multilang-errordoc.conf   # 2.2.19(451) #include conf/extra/httpd-autoindex.conf   # 2.2.19(454) #include conf/extra/httpd-languages.conf   # 2.2.19(457) #include conf/extra/httpd-userdir.conf   # 2.2.19(460) #include conf/extra/httpd-info.conf   # 2.2.19(463) #include conf/extra/httpd-vhosts.conf   # .</s><s>2.19(466) #include conf/extra/httpd-manual.conf   # 2.2.19(469) #include conf/extra/httpd-dav.conf   # 2.2.19(472) #include conf/extra/httpd-default.conf   had some problems posting :- ) .. here's the "top" of the post..   for anyone else going through the _nightmare_ of trying to figure out what the fms developers did to the apache httpd.conf file when they gutted all the apache developers hand crafted comments and then shuffled the lines around just to make life miserable for anyone trying to upgrade to a vc9 build (ie php3.3+ compatable) version of apache...</s><s> hth
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4201175-961822</DOCNO>
+<TEXT>
+<subject>CGI on FMS AWS?</subject>
+<post author="P.J. Steele" timestamp="Feb 11, 2012 7:10 PM">
+<s>i am going crazy here. 
+</s><s>on my development pc ( windows 7) i am able to create perl scripts and run them in web server included with fms, apache 2.2. 
+</s><s>on aws (centos linux), the script will not run, it just downloads as if it was a html or text file.</s><s> i've been changing the httpd.conf according to http://httpd.apache.org/docs/2.2/howto/cgi.html but no matter what i do i get the same result.</s><s> a raw listing of my script. 
+</s><s>any pointers (including another forum) would be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4201175-4201532</DOCNO>
+<TEXT>
+<subject>CGI on FMS AWS?</subject>
+<post author="pjsteele190" timestamp="Feb 12, 2012 5:25 AM">
+<s>i am a newbie to linux and apache but i got cgi's working by this change 
+#<ifmodule worker_module> loadmodule cgid_module modules/mod_cgid.so #</ifmodule> 
+</s><s>commenting out the ifmodule lines. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4201175-4799581</DOCNO>
+<TEXT>
+<subject>CGI on FMS AWS?</subject>
+<post author="maltedonay" timestamp="Oct 25, 2012 5:29 AM">
+<s>many thanks p.j.</s><s> steele !</s><s> this occurs in amazon's ams-5.0.0.8002-centos-5.5-ami-5 (ami-01b5b075) as well and kept bugging me for a while.   @adobe: you are deploying a messy config
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4201175-4835883</DOCNO>
+<TEXT>
+<subject>CGI on FMS AWS?</subject>
+<post author="vijay.das" timestamp="Nov 9, 2012 12:53 PM">
+<s>from fms 4.5.4 release notes, 
+</s><s>known issue: 2633530 cgi not supported in the flash media server apache installation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-1028704</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil Kumar" timestamp="Jun 25, 2012 5:39 AM">
+<s>hi, 
+</s><s>can anyone please tell me how can i play http live streaming from fmle 3.2 to flash player, iphone, ipdad, html5 player, android and other devices? 
+i have tried my best to play live streaming usine fmle 3.2 with help of "http://help.adobe.com/en_us/flashmediaserver/devguide/wsd391de4d9c7bd6 09-52e437a812a3725dfa0-8000.html" but not able to play video using http. 
+</s><s>when i tried to play url- "http://localhost/hds-live/livepkgr/_definst_/liveevent/livestream.f4m" even in in strobe media player it was showing "buffering" that's it.</s><s> but i can play same rtmp url in flash as3 using the netstream very fine. 
+
+</s><s>now i want to test the livepkgr content via http to flash player, html5 player (on web browser and smartphones), iphone and other devices. 
+
+</s><s>thanks 
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520496</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 25, 2012 10:23 PM">
+<s>can you just do a couple of checks for me?</s><s> 1) before you publish a stream please delete the streams folder under livestream and the .stream file under livestream/events/_definst_/liveevent, restart your server and then try.</s><s> 2) are the f4f fragments being created?</s><s> after you publish you need to check under livepkgr/streams/_definst_/livestream (if you're publishing to livestream).</s><s> 3) instead of localhost can you just try with the server ip?</s><s> 4) also what version of fms and flash player are you using? 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520453</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 25, 2012 10:37 PM">
+<s>hi apurva, 
+</s><s>thanks a lot for your response. 
+4# i am using the fms 4.5 and flash player version 11 and above. 
+
+</s><s>let me do it again as you suggested. 
+
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520526</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 25, 2012 11:06 PM">
+<s>hi apurva, 
+</s><s>i did all the things what you said but still i am not able to do it.</s><s> please check the logs snapshot also for your reference. 
+</s><s>also f4f fragments is creating but there is no .f4m and .m3u8 files over there. 
+</s><s>please suggest. 
+
+
+
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520722</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 26, 2012 1:17 AM">
+<s>hi sunil, 
+'livestream%i?adbe-live-event' is used for mbr streams, where when you publish 3 streams, fmle publishes them as livestream1, livestream2 and livestream3.</s><s> as you have only one stream selected, only livestream1 is being published.</s><s> however, when you're playing back, you're playing back as livestream instead of livestream1. 
+</s><s>try publishing as 'livestream?adbe-live-event' and then playback using "http://localhost/hds-live/livepkgr/_definst_/liveevent/livestream.f4m". 
+</s><s>let me know if this solves the problem. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520695</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 26, 2012 1:49 AM">
+<s>hi apurva, 
+</s><s>yes you are right.</s><s> but it should show the .f4m and .m3u8 file inside the foler livestream1 folder. 
+i have tested it with single stream also "livestream?adbe-live-event=liveevent" and it is not showing any .f4m and .m3u8 files inside the livestream folder. 
+
+</s><s>please help. 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520727</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 26, 2012 1:53 AM">
+<s>the .f4m and .m3u8 files are created on the disk.</s><s> they are generated on the fly as and when requests come to the server.</s><s> you can try requesting the .f4m/.m3u8 file in your browser (not player) and verify. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520777</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 26, 2012 2:19 AM">
+<s>hi apurva, 
+</s><s>i have checked all the methods but not able to see live video over http on flash in web browser also.</s><s> i don't know what is the miskatake i am doing. 
+i am sending you all the snapshot images and as3 code also so that you can check it thoroughly.</s><s> if you are not able to download the attached files then please download it from below location - 
+http://flashdivine.fav.cc/livestreaming/fms%204.5%20issue%20with%20htt p%20live.rar 
+best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520826</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 26, 2012 3:31 AM">
+<s>hi sunil, 
+</s><s>sorry typo in my previous message. .f4m and .m3u8 files are not written on the disk.</s><s> they are generated on the fly. 
+</s><s>let me have a look at the code you have sent and i'll get back to you. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520865</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 26, 2012 3:41 AM">
+<s>hi apurva, 
+</s><s>no problem, 
+please give me solution so that i can work further.</s><s> i got stuck due to this. 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520906</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 26, 2012 4:57 AM">
+<s>hi sunil, 
+</s><s>1) about playback - after following the steps i've mentioned above, can you publish and try to play the live stream in the strobe media player.</s><s> if playback is not happening can you check the apache logs (under root_install/apache2.2/logs) to see if any error is being logged.</s><s> 2) about the client, netstream class is traditionally used for rtmp playback.</s><s> netstream.play() cannot directly be used to play http streams.</s><s> i'll investigate and see how you can do this but, i would suggest you use the spark videoplayer available in adobe flex (as3 based).</s><s> it is easy to use and gives you advanced functionalities.</s><s> you can download flex from here (http://www.adobe.com/devnet/flex.html).</s><s> you can find more information about the videoplayer here (http://help.adobe.com/en_us/flex/using/wsc78f87379113c38b-669905c51221 a3b97af-8000.html) 
+</s><s>hope this helps. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4520979</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 26, 2012 5:46 AM">
+<s>hi apurva, 
+</s><s>i have checkd in strobe media player also and found it is showing "buffering.." but not playing.</s><s> as you told me to see error logs so please find the error logs below - 
+[tue jun 26 16:20:19 2012] [info] mod_unique_id: using ip addr 178.12.0.15 [tue jun 26 16:20:20 2012] [info] mod_jithttp - fms installation path: "c:/program files/adobe/flash media server 4.5/" [tue jun 26 16:20:20 2012] [info] mod_unique_id: using ip addr 178.12.0.15 [tue jun 26 16:20:21 2012] [notice] digest: generating secret for digest authentication ...</s><s> [tue jun 26 16:20:21 2012] [notice] digest: done [tue jun 26 16:20:21 2012] [notice] apache/2.2.17 (win32) dav/2 configured -- resuming normal operations [tue jun 26 16:20:21 2012] [notice] server built: oct 18 2010 01:58:12 [tue jun 26 16:20:21 2012] [notice] parent: created child process 3816 [tue jun 26 16:20:21 2012] [info] mod_jithttp - fms installation path: "c:/program files/adobe/flash media server 4.5/" [tue jun 26 16:20:21 2012] [info] mod_unique_id: using ip addr 178.12.0.15 [tue jun 26 16:20:22 2012] [info] mod_jithttp - fms installation path: "c:/program files/adobe/flash media server 4.5/" [tue jun 26 16:20:22 2012] [info] mod_unique_id: using ip addr 178.12.0.15 [tue jun 26 16:20:23 2012] [notice] digest: generating secret for digest authentication ...</s><s> [tue jun 26 16:20:23 2012] [notice] digest: done [tue jun 26 16:20:23 2012] [notice] child 3816: child process is running [tue jun 26 16:20:23 2012] [info] parent: duplicating socket 268 and sending it to child process 3816 [tue jun 26 16:20:23 2012] [notice] child 3816: acquired the start mutex.</s><s> [tue jun 26 16:20:23 2012] [notice] child 3816: starting 250 worker threads.</s><s> [tue jun 26 16:20:23 2012] [notice] child 3816: starting thread to listen on port 8134. 
+
+
+</s><s>please check the above logs. 
+</s><s>regarding using the "spark videoplayer" i will use it but are you sure it will play my live streaming video *.f4m video?</s><s> i know *.f4v is mp4 codec and it is working very well using the netstream class in flash as3 and as you gave me the url for spark video player they have used *.f4v video as a sample. 
+</s><s>humble request you you to please find out the best solution and give me that.</s><s> because i am not satisfied with any one of your answer because most of the things i have already done it. 
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4521073</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 26, 2012 6:30 AM">
+<s>hi sunil, 
+</s><s>it's difficult to debug an issue when you don't have access to the machine and you can't see what's happening, so i request you to please have a little patience. 
+</s><s>for playback just check the following steps and make sure if you have followed them : 1) delete the streams folder and any .stream file in the livepkgr 2) restart fms 3) make sure you have a crossdomain.xml under root_install/webroot 4) publish a stream from fmle as 'livestream?adbe-live-event=liveevent' 5) use this player to playback the stream : http://osmf.org/dev/2.0gm/strobemediaplayback.html?src=http://<your-ip>/hds-live/livepkgr/_definst_/liveevent/livestream.f4m 
+if there is no playback, here are some checks you can do : 1) request for the http://<your-ip>/hds-live/livepkgr/_definst_/liveevent/livestream.f4m in your browser.</s><s> you should receive an xml that looks something like this : <?</s><s>xml version="1.0" encoding="utf-8" ?</s><s>> <manifest xmlns="http://ns.adobe.com/f4m/1.0"> <id>livepkgr/events/_definst_/liveevent</id> <mimetype /> <streamtype>live</streamtype> <duration>0</duration> <bootstrapinfo profile="named" url="../../../streams/livepkgr/events/_definst_/liveevent/livestream. bootstrap" id="bootstrap7158" /> <media streamid="livestream" url="../../../streams/livepkgr/events/_definst_/liveevent/livestream" bootstrapinfoid="bootstrap7158"> <metadata>agakb25nzxrhrgf0yqgaaaaaaahkdxjhdglvbgbajuueufhrhqafd2 lkdggaqhqaaaaaaa=</metadata> </media> </manifest> 2) check the access log under apache to see if the .f4m, .bootstrap and frag files have been requested and delivered.</s><s> if a particular entry has a status code of 200 then the file has been served by fms.</s><s> you can confirm the same on the client side using a software like fiddler. 
+</s><s>coming to the player issue, a playback of *f4v via the vod directive is a progressive download, whereas playback of an *f4m file via hds-vod is http streaming.</s><s> i have personally used spark videoplayer and hence suggested the same.</s><s> you need to add a component like : <s:videoplayer width="100%" height="30%" chromecolor="#cccccc" color="#000000" fontsize="12" source="http://<your-ip>/hds-live/livepkgr/_definst_/liveevent/livestream.f4m" symbolcolor="#000000"/> 
+</s><s>let me know if any of these suggestions help. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4521689</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 26, 2012 9:40 AM">
+<s>hi apurva, 
+</s><s>thanks a lot for your help. 
+</s><s>let me do the steps as you mentioned and i will get back to you. 
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4523091</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jun 26, 2012 11:05 PM">
+<s>hi apurva, 
+</s><s>thanka a lot for your kind co-operation.</s><s> finally i can play the .f4m video in " http://osmf.org/dev/2.0gm/strobemediaplayback.html?src=http://<your-ip>/hds-live/livepkgr/_definst_/liveevent/livestream.f4m" 
+</s><s>but same time when i am trying the video in embeded video player in local page it is not working.</s><s> but it is helpful for me as of now. 
+</s><s>second we have to test the same in html5 and iphone.</s><s> can you please suggest me how can i do that?</s><s> i am using the videojs.com open source html5 player.</s><s> please suggest me for html5, android and iphone. 
+</s><s>many thanks for your help. 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4523162</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jun 26, 2012 11:29 PM">
+<s>hi sunil, 
+</s><s>gald to hear that the playback is working 
+coming to the videoplayer, can you tell me what is the problem you're facing?</s><s> if you have flex builder, then just open a new project and add this in the mxml file : <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <s:application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/mx" minwidth="955" minheight="600"> <fx:declarations> <!-- place non-visual elements (e.g., services, value objects) here --> </fx:declarations> <s:videoplayer source="http://server-ip/hds-live/liveevent/_definst_/liveevent/livestream.f4m"/> </s:application> just this much is enough to create a videoplayer and playback the stream.</s><s> you can then add functionality as you require.</s><s> let me know if this helps. 
+</s><s>on iphone you need to use a hls stream.</s><s> for the same stream being published (as this is an unencrypted stream), make a request as so in your safari browser on iphone : http://server-ip/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8 
+for android you can compile a simple player for air in flex builder and then check playback with that. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4532780</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 12:02 AM">
+<s>hi apurva, 
+</s><s>thanks a lot for your help.</s><s> it is working now as expected in strobe media player.</s><s> can you please tell me how can i play this video in html5 individual player? 
+</s><s>please suggest me and if would be better if you can give me any sample code. 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4532801</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 1:29 AM">
+<s>you can play http live streaming (hls) in html 5 by creating a html page witha video tag pointing to the m3u8.</s><s> something like this : <video src="http://,your-ip>/hls-live/livepkgr/_definst_/livestream/livestream.m3u8" controls autoplay height="640" width="360"> 
+</s><s>hope this helps. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4532937</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 2:08 AM">
+<s>i have tried this but video not playing.</s><s> instead of play it gives me option to download the video. 
+</s><s>please suggest. 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4532962</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 2:21 AM">
+<s>can you give me the piece of code you're using? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533030</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 2:43 AM">
+<s>yes, 
+</s><s>please dowload the complete set from - http://flashdivine.fav.cc/personal/video-js.rar 
+
+
+
+<!</s><s>doctype html> <html> <head> <title>video.js | html5 video player</title> 
+<!-- chang urls to wherever video.js files will be hosted --> <link href="video-js.css" rel="stylesheet" type="text/css"> <!-- video.js must be in the <head> for older ies to work. --> <script src="video.js"></script> 
+<!-- unless using the cdn hosted version, update the url to the flash swf --> <script> _v_.options.flash.swf = "video-js.swf"; </script> 
+
+</head> <body> 
+<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="http://video-js.zencoder.com/oceans-clip.png" data-setup="{}"> <source src="http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8" type='video/mp4' /> <!-- <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' /> working fine --> <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' /> <track kind="captions" src="captions.vtt" srclang="en" label="english" /> </video> 
+</body> </html> 
+
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533022</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 3:01 AM">
+<s>i'm unable to download from thw link you've provided.</s><s> but i tried a simple video playback on my end and it worked for me : <head> <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet"> <script src="http://vjs.zencdn.net/c/video.js"></script> </head> <body> <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="my_video_poster.png" data-setup="{}"> <source src="http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8" type='video/mp4'> </video> </body> 
+
+</s><s>please try this and let me know if it works for you. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533053</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 3:28 AM">
+<s>same code i am added in html page but it is not working at my end.</s><s> can you please check this link also if it is working at your end. 
+http://flashdivine.fav.cc/personal/video-js/index.html 
+please suggest which browser you are using in pc? 
+
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533028</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 3:30 AM">
+<s>i checked on the sfari browser on the ipad 2. because this is http live streaming (hls), it'll only playback on an ios machine (mac desktop or an ios device). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533004</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 3:33 AM">
+<s>ohh!</s><s> 
+</s><s>i was checking it in windows safari browser.</s><s> can you give me any emulator for windows where i can check this? 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533090</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 3:41 AM">
+<s>i have not tried an emulator myself, but you can see if this helps : http://oreilly.com/windows/archive/pearpc.html 
+thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533005</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 3:46 AM">
+<s>ok fine let me check it and will get back to you. 
+i have one more question regarding .f4m.</s><s> can you please tell me we can use http dynamic streaming over flash player or any other plateform also. 
+</s><s>request you to please tell me all devices name operating systerm if any and browser where i can use it directly. 
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533095</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 3:59 AM">
+<s>you can use http dynamic streaming over flash player.</s><s> you can download flash player from here : http://www.adobe.com/support/flashplayer/downloads.html.</s><s> you can find the details of the platforms that is supported by flash player here : http://www.adobe.com/products/flashplayer/tech-specs.html flash player on devices is not recommended.</s><s> instead use adobe air and air based applications.</s><s> read about air here : http://www.overdigital.com/2012/01/09/the-ultimate-guide-to-understand ing-advanced-video-delivery-with-air-for-mobile/ 
+thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533105</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 2, 2012 4:08 AM">
+<s>thanks a lot for your help! 
+</s><s>so it means single air application can work for all devices or we should use different different air project for different devices.</s><s> it would be better if you can give me any reference for device detection when html page load.</s><s> so that i can decice what is the current device details and accordingly i will decide the platform to play the video? 
+i am developing the application and will get back to you if i feel any issue. 
+
+</s><s>many thanks for your help and happy from your quick response. 
+
+
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4533405</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 2, 2012 6:57 AM">
+<s>a single air application will work for all your android devices.</s><s> you can similarly create an ios application for all ios devices or use html5 like above.</s><s> in actionscript you can check for the system and runtime of the client usinf the capabilities class.</s><s> see more information here : http://help.adobe.com/en_us/flashplatform/reference/actionscript/3/fla sh/system/capabilities.html 
+also you can find some basic tutorials to build android and ios apps using flex builder, that might help, here : http://www.lynda.com/flash-builder-4-5-tutorials/building-android-and- ios-applications-with-flex/80254-2.html 
+</s><s>hope this helps. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4575973</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 24, 2012 12:56 AM">
+<s>hi apurva, 
+</s><s>i just want to know about http dynamic streaming.</s><s> can you please tell me how it is switching to higher stream on the base of bandwidth. 
+</s><s>in flash fms he is checking the current bandwidth by requresting netconnection.call methods but don't know about .m3u8 for html5 player. 
+
+</s><s>request you to please tell me the how it works http dynamic streaming for html5 player and .m3u8 extention in iphone and mac. 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4576000</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Apurva%20Udaykumar" timestamp="Jul 24, 2012 2:05 AM">
+<s>hi sunil, 
+</s><s>i'm not sure i understand your question completely, so could you please elaborate? 
+</s><s>in http dynamic streaming the client player detects the bandwidth available at the client and requests the most appropriate stream for the given condition.</s><s> for multi-bitrate we need either a set-level f4m (hds) or m3u8 (hls) file that contain the urls to the stream-level manifest file and the bit rate information for each stream in a multi-bitrate set.</s><s> the client switches between streams based on the bitrate information in this file.</s><s> you can see how to create these files here : http://help.adobe.com/en_us/flashmediaserver/devguide/wseb6b7485f9649b f23d103e5512e08f3a338-8000.html#ws6296fb42d90e952e36c58a9613244a4336e- 8000 
+</s><s>hope this helps. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4576154</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Jul 24, 2012 2:57 AM">
+<s>thanks a lot.</s><s> 
+</s><s>i got it now.</s><s> 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4615327</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Aug 11, 2012 11:46 PM">
+<s>hi apurva, 
+</s><s>i need one more help!</s><s> can you please tell me how can i play http live streaming on blackberry?</s><s> request you to please give me any player sample or sample code for palyer or help tutorial where i can get complete guide. 
+i have the option of adobe air but i want to paly the video using html5 player in blackberry.</s><s> please suggest. 
+</s><s>if i am using the adobe air then how can i put it on website from where user can download and install adobe air video player for live streaming.</s><s> please help. 
+
+</s><s>humbly, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-4655139</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="bluraymakulit2" timestamp="Aug 28, 2012 1:41 PM">
+<s>33. sunil kumar 
+</s><s>hello im having issues doing what you are 
+
+i have been using jw player on my website doing live video streaming using adobe fms 4.5 and fmle 3.2 can we please talk cause i wish to have support on iphone ipad and other devices as well since flash is slowly dying my skype is bluraymakulit i would love help on how to configure this please and thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-5318133</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Nitesh%20upadhyay" timestamp="May 13, 2013 11:59 PM">
+<s>hey can you please send me the code for live video streaming from android device to adobe server...it will be a great help for me.</s><s> thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-5617689</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="pajuancho" timestamp="Aug 22, 2013 10:14 AM">
+<s>i have 2 questions. 
+1.- will .m3u8 file work inside of a html5 file 2.- what is the best way to stream to balckberry and windows phones? 
+</s><s>thanks,!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-5617738</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Aug 22, 2013 10:38 AM">
+<s>hi, 
+</s><s>can you please tell me your requirements and viewers so that i can tell you exact solution? 
+</s><s>best regards, sunil kumar 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-5617870</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="pajuancho" timestamp="Aug 22, 2013 11:04 AM">
+<s>at this point i am tasked to create a solution to reach pcs (ie 6-10) , ff, chrome, safari mac safari, ios devices, android, windows phone and blackberry 
+so i was creating an html with flash embeded object with an html5 fallback.</s><s> i was planning to use m38u for ios and hds for android flash for ie 6-8 and html5 ie 9-10 what is the best options for bberies and win phones?</s><s>?</s><s>?</s><s> 
+</s><s>by the way does fms has a html5 player like videojs.com has?</s><s>?</s><s> i am trying not to use html5 open source players.... 
+</s><s>what is your recommendation for a solution like that?</s><s> i am open to suggesstion and solutions...</s><s> thanks!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-4518336-5618107</DOCNO>
+<TEXT>
+<subject>HTTP Live streaming test in Flash Player, HTML5 player, iphone, android and other smart phones.</subject>
+<post author="Sunil%20Kumar%20Sah" timestamp="Aug 22, 2013 12:04 PM">
+<s>may i know you location please? 
+</s><s>it would be better if you can tell me your audience size.</s><s> means how many user you are expecting to connect on bb and android and other phones? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-1167108</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="WallyWestKF" timestamp="Mar 8, 2013 12:30 PM">
+<s>anyone know how i can convert a .f4f file back a regular file such as a .mp4.</s><s> on my adobe server i have a live dvr functionaility setup, and in the applications\livepkgr\streams\_definst_\ path i have .f4f files that's been cached that i would like to convert back a .mp4 for archival purposes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5144185</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Apurva%20Udaykumar" timestamp="Mar 13, 2013 3:30 AM">
+<s>hi, 
+</s><s>there is no adobe supported tool to do this.</s><s> you can try some of the tools available online.</s><s> i suggest you check ffmpeg, which i think can convert each f4f fragment to a mp4 file.</s><s> see also: http://stackoverflow.com/questions/9293671/how-to-convert-f4f-file-to- mp4 
+in future you can publish the stream to another application where you can record the stream on the server as mp4.</s><s> you'll then have both the mp4 file and f4f fragments. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5144346</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Mar 13, 2013 8:33 AM">
+<s>hello, how about using fv4postprocessor1.0?</s><s> it can convert cached .f4f files into mp4. http://www.adobe.com/products/adobe-media-server-family/tool-downloads .html - adobe media server tools 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5147682</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Apurva%20Udaykumar" timestamp="Mar 14, 2013 6:28 AM">
+<s>the f4v post processor is used for post processing of .f4v or .mp4 files created by server side recording in ams to make them compatible with tools and players like vlcplayer.</s><s> it does not convert .f4f files to mp4. 
+</s><s>thanks, apurva 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5148640</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Mar 14, 2013 11:26 AM">
+<s>i'm sorry, i meant the f4fpackager found in the {ams-install-dir}\tools directory.</s><s> i used it to convert .f4f into.mp4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5150225</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Apurva%20Udaykumar" timestamp="Mar 14, 2013 11:43 PM">
+<s>i'm sorry but can i ask how you did that?</s><s> the f4fpackager is meant to convert a mp4 file into f4f fragments and not the other way around. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5150315</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Mar 15, 2013 1:27 AM">
+<s>hello, you confused me a little bit.</s><s> like i said in my original post, it's the f4vpostprocessor (which, by the way, was erroneously named fv4postprocessor) that does f4f conversion to mp4, like this: f4vpp –i livestreamseg1.f4f –o out.mp4. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5216272</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="WallyWestKF" timestamp="Apr 8, 2013 7:57 AM">
+<s>petro bochan you are the man, the conversion worked.</s><s> but i have one other issue, the .f4f have been broken up into 10-15 second fragments.</s><s> do you know how i can stitch them together? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5216290</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Apr 8, 2013 8:32 AM">
+<s>does the split occur after or before conversion?</s><s> i mean does livepkgr do that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5217921</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="WallyWestKF" timestamp="Apr 8, 2013 5:29 PM">
+<s>the split occurs before the conversion, so i believe the livepkgr is doing this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5218174</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Apr 8, 2013 8:57 PM">
+<s>in your event.xml, do this: 
+
+
+</s><s>this would keep your recordings in a single file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5220253</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="WallyWestKF" timestamp="Apr 9, 2013 12:17 PM">
+<s>hey petro, it appears the event.xml code was not pasted or got filtered.</s><s> i'm not seeing anything in your comment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5221466</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Petro%20O.%20Bochan" timestamp="Apr 9, 2013 8:49 PM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5270548</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="WallyWestKF" timestamp="Apr 26, 2013 11:24 AM">
+<s>i get it, i'm concerened that this might affect performance though.</s><s> will the delivered stream still be in fragments even though it's written to disk as one segment?</s><s> is there a way to confirm this on the recieving end?</s><s> after all, segmented streams is suppose to be more efficient and thats why we all should be upgrading our to http hls and hds right? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5271542</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="ospn2012" timestamp="Apr 26, 2013 5:38 PM">
+<s>keep in mind that .f4f format is directly playable through many flash players on the web, also the hls-vod and hds-vod apache modules can produce the manifest and playlist .f4m and .m3u8 on the fly with the .f4f as well.</s><s> i would recommend leaving the files in .f4f as if they become corrupted, they are easily recoverable.</s><s> eseentially when you scrub a .f4f to .mp4 losslessly you are removing the interval metadata stored within the file rendering it subsceptible to not being recoverable if something would happen to the media the data is contained on. 
+</s><s>it is also a good idea to "rename" the entire contents of a /stream/_definst_/ live stream as the meta data and control files can be used to generate .m3u8 manifests when streaming over hls and future developments of software come about you will have the entire set of data of the storeed live stream.</s><s> this is essentialy what the new hls packager that is bundled with ams 5.x.x when taking .mp4 from other sources to generate your manifests and playlists .m3u8 and stream via http hls. 
+</s><s>you can essentially modify the main.asc on interactive and enterprise editions of ams to simply "rename" the stream directories, and then sym link the /stream/_definst_/ to the /application/vod/media to directly replay a live stream through rtmp vod, or hls-vod or hds-vod seamlessly.</s><s> renaming the directories is a perfect solution rather than "copying" as the main.asc if copying a large stream will render the "pkgr" application not responsive to immediately rebroadcast a stream until the contents of the directory is copied to another location.</s><s> you can then pass particular "stream id strings" in which the main.asc can parse and perfom a specific function, as by defualt "record" and "append" modes preform those fucntions as such. append meaning adding to the existing .f4f, and record meaning to erase and start over the .f4f.</s><s> you could pass a string to rename the directory to what the string parameter contains. i.e. &adbe-rename-mode=rename.to.%" 
+</s><s>hope this helps you utilize the fms & ams suites effectively in your application. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5278395</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="bobsagat123" timestamp="Apr 29, 2013 9:40 PM">
+<s>we're trying to "flatten" the f4f that gets generated by f4vpp so that a) file size is smaller b) we can serve these mp4 files via flash and allow users with slower internet connections to build buffer (like in youtube) (afaik this isn't possible with hls/hds?</s><s>) 
+</s><s>if i demux the f4f to mp4, audio gets out of sync when playing back via flowplayer or jw player (using the mp4 pseudo plugin), playing back in html5 or vlc seems to be fine.</s><s> i would have to assume its something in the file throwing flash off like it is.</s><s> also notice tons of artifacting in the resulting mp4 (what's the purpose of the f4f file having two nearly identical video tracks?</s><s> essentially doubling the file size, for a reason i can't tell...</s><s>) 
+</s><s>if anyone has suggestions, would be great. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5280365</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="N%20Tyler" timestamp="Apr 30, 2013 12:10 PM">
+<s>we needed to convert some files in wowza's format (f4v/f4a atoms) to mp4 so we could use them with ams.  here's what i did:   used this script: https://github.com/k-s-v/scripts/wiki looks like for your case you can use it to do offline processing of your f4f fragments.   this script puts the files in an flv container, but i wanted mp4 as you do.  for this i used ffmpeg to do "passthrough" re-encoding, basically rebox it in the mp4 container without any transcoding.  note - i had trouble with ffmpeg versions older than v1.0.1 with audio/video out of sync.  the newest rpm version of it was way out of date for centos so i had to manually compile/install v1.0.1.   i used this syntax and it worked for me: ffmpeg -i input_file.flv -acodec copy -vcodec copy output_file.mp4 also, if you're looking to script this, you can add "-loglevel panic" to make ffmpeg silent.  hope this helps, it took my team and i a lot of research to work this out.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5281192</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="n0risc" timestamp="Apr 30, 2013 6:22 PM">
+<s><quote>
+<s>bobsagat123 wrote: 
+we're trying to "flatten" the f4f that gets generated by f4vpp so that a) file size is smaller b) we can serve these mp4 files via flash and allow users with slower internet connections to build buffer (like in youtube) (afaik this isn't possible with hls/hds?</s><s>) 
+</s><s>if i demux the f4f to mp4, audio gets out of sync when playing back via flowplayer or jw player (using the mp4 pseudo plugin), playing back in html5 or vlc seems to be fine.</s><s> i would have to assume its something in the file throwing flash off like it is.</s><s> also notice tons of artifacting in the resulting mp4 (what's the purpose of the f4f file having two nearly identical video tracks?</s><s> essentially doubling the file size, for a reason i can't tell...</s><s>) 
+</s><s>if anyone has suggestions, would be great. 
+</s></quote>
+.f4f's are directly playable in all flash capable players.. just specificy mp4:filename.f4f in your uri.</s><s> i suggest using jwplayer for html5, and you don't have to do all these conversions on the back-end and it's cheap to purcahse a license to use it on 10 domains.</s><s> they can be played via rtmp-vod, hls-vod, and hds-vod. .f4f's do not become that much smaller when you flatten them, maybe less than 5%.</s><s> and you can use ffmpeg to flatten files larger than 2gigabytes as the f4vpp tool will not. 
+i set my disk management and duration to null in event.xml so i create 1 .f4f fragment as well to alleviate having to assemble all the fragments.</s><s> what adobe media server creates, is directly replayable..</s><s> no need to do all this worthless back-end converting. jwplayer is $150 for premium license, and hits 80% of devices right now, will hds-rollback to strobemedia player for androids is the best possible solution at the moment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5281259</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="bobsagat123" timestamp="Apr 30, 2013 6:48 PM">
+<s>you are amazing!</s><s>!</s><s>!</s><s>!</s><s> 
+</s><s>this worked *extremely* well. 
+</s><s>about 1/2 the time to generate vs f4vpp, and the resulting file remains in sync. 
+</s><s>thank you, thank you, thank you!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5619651</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="patrickmaleky" timestamp="Aug 23, 2013 12:41 AM">
+<s>idealshare videogo, the ideal f4f converter, can easily convert .f4f video files to almost all kinds of video formats like convert f4f to mp4, convert f4f to avi, convert f4f to flv, convert f4f to wmv, mkv, mov, mpg, 3gp, asf, dv, rm, ts and etc. besides converting f4f videos, it also helps to convert f4m, flv, f4v, webm, swf, gif and etc to other popular video or audio format.</s><s> moreover, this powerful f4f converter also features advanced editing functions like join f4f fragments into one, trim f4f, crop f4f, rotate f4f, add effect/watermark/subtitles to f4f video and etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5626261</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Rickluck" timestamp="Aug 26, 2013 1:04 AM">
+<s>according to adobe, f4f file is flash mp4 video fragment created and used by adobe media server for http dynamic streaming.</s><s> as f4f files are separating video clips and f4f is not a so common video format, it is incompatible with most video media players, portable devices or editing software. 
+</s><s>to improve the compatibility, it is a quite good choice to convert f4f to a more popular video format like convert f4f to mp4, convert f4f to avi, convert f4f to flv, convert f4f to mp3 and etc. the following article will show you a professional f4f converter and a step by step guide on how to convert f4f video files on mac or windows. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5871188</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="ospn2012" timestamp="Nov 24, 2013 8:55 PM">
+<s>f4f is a non-standard and not a iso mp4 container. 
+</s><s>it is very simple to remux an mp4 iso by using ffmpeg from the command line.</s><s> the latest version of ffmpeg will take the hls .m3u8 stream and convert to to iso mp4 in real time. 
+</s><s>you can have the main.asc call a php script to call ffmpeg, and start recording to a mp4 iso container on every publish to the livepkgr application. 
+</s><s>you can then complete set the server to default dismanagement and duration, as the .f4f's can be discarded, as they are merely inplace to provide a cache store for your clients to watch the live video. 
+</s><s>it is then very simple to symlink a directory store from /webroot/vod/ of the mp4 iso that is immediately replayable through the hls-vod application creating an instant on demand of the content being live streamed to fms. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Media-Server/Discussions-5133455-5995436</DOCNO>
+<TEXT>
+<subject>Convert .f4f on Adobe Media Server to another format such as .mp4</subject>
+<post author="Rohit_pathania" timestamp="Jan 9, 2014 12:36 AM">
+<s>anyone know how to download f4f videos 
+</s></post>
+</TEXT>
+</DOC>
+
+

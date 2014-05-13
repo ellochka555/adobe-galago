@@ -1,0 +1,2547 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-1262864</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 25, 2013 5:07 PM">
+<s>i have catalog & sub-catalog pages.</s><s> i would like to have unique slideshows (that i have already set up) instead of product displayed on the catalog (menu) pages.</s><s> the sub-catalog pages (sub-menus) can stay as-is, displaying product.</s><s> i have gotten around it by creating pages with slideshows & using these for the catalog pages instead of the e-commerce pages need to use e-commerce catalog pages for the site hierarchy & bredcrumbs.</s><s> is this possible please?</s><s> http://meluka.worldsecuresystems.com/livingroom-1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5540006</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 25, 2013 10:58 PM">
+<s>ok-- here's an idea.</s><s> why don't you take the slideshow you have for all your top-level catalogs and move them into content holders.</s><s> you should name the content holder exactly what the catalog name is... so move your slideshow for the bedroom catalog to a content holder called "slider-bedroom".</s><s> then, in your overall shop layout, beneath the breadcrumbs and before the products you can insert your content holder but use the {tag_name} which will output the catalog name to call your content holder by it's name. 
+</s><s>in your overall shop layout use {module_contentholder, name="slider-{tag_name}"}.</s><s> if you were looking at the bedroom catalog page and there was a content holder named "bedroom" then i think it should work.</s><s> do this for all your slideshows-- move them to a content holder with the name of the catalog they are for.</s><s> then, you don't have to use your custom pages for the catalog and you can also put your products in the right catalog so that you end up having the slideshow at the top of the main catalog page. 
+</s><s>if you don't have a content holder setup for, say, the barstools sub-category then the {module_contentholder} should fail silently if it can't find a matching content holder by name. 
+</s><s>when you've got that content holder module in your overall shop layout then you should be ok to use those top level category pages. 
+i also suppose your next objective would be to get rid of or customize the "this catalog has no products" and "this catalog has no sub-catalogs"... the following jquery can help you do that.</s><s> put it in "jquery.main.js": 
+--- 
+(function($){ $(document).ready(function() { var noproductsmessage = "your no products message"; var nosubcatalogmessage = "your no sub-catalogs message";  $("body").html( $("body").html() .replace(/this catalog has no products\./gi, noproductsmessage) .replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage) ); }); })(jquery); 
+
+--- 
+change the variables in the function above to reflect your custom message or make it an empty string: "" if you want to remove the text instead of replace it with something else. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5540047</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 25, 2013 11:41 PM">
+<s>god you're good!</s><s> thanks trickster - i'll try it & let you know how i get on.</s><s> it's going to be a long weekend as the site goes live on mon - yikes! 
+</s><s>thanks so much, glenn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5540331</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 26, 2013 2:47 AM">
+<s>trickster, 
+</s><s>yes works well - you are a genius, my friend.</s><s> in the overall shop layout, i used: 
+{module_contentholder, name="{tag_name}"} 
+& in the js changed the var to an empty message as follows: 
+(function($){ $(document).ready(function() { var noproductsmessage = "your no products message"; var nosubcatalogmessage = "your no sub-catalogs message";  $("body").html( $("body").html() .replace(/this catalog has no products\./gi, noproductsmessage) .replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage) ); }); })(jquery); 
+success!</s><s> i hope i can reciprocate & help out in some way as you-ve been a huge help.</s><s> i really appreciate your clever work. 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542252</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 26, 2013 1:46 PM">
+<s>trickster, just an update - there was conflicting js.</s><s> the product name was duplicated in the breadcrumbs on the large product page so i moved the new js to catalogue.html & it fixed the conflict. 
+</s><s>cheers, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542859</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 26, 2013 8:03 PM">
+<s>glen, get into external scripting and creating functions etc. all that goes poof. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542808</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 26, 2013 8:12 PM">
+<s>i still have a slight problem as the breadcrumbs repeat the product name on the individual large product pages but only on two of the sub-categories (livingroom/shelves & livingroom/coffee tables).</s><s> seems fine on other pages   https://meluka.worldsecuresystems.com/livingroom/shelves-1/shelves   i've added jquery to catalogue.html to hide the slideshow on the sub-catalog pages as follows:   (function($){ $(document).ready(function() { var noproductsmessage = ""; var nosubcatalogmessage = ""; $("body").html( $("body").html() .replace(/this catalog has no products\./gi, noproductsmessage) .replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage) ); }); })(jquery);   if i insert this jquery code in jquery.main.js the product name in the breadcrumbs repeats on all pages.</s><s> bit of a conundrum really...
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542952</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 26, 2013 8:54 PM">
+<s>that jquery i gave you should only replace the message that appears when you don't have sub-catalogs and products on a page.</s><s> bc by default will print a message that says "this catalog has no products." or "this catalog has no sub-catalogs." the javascript i gave you will replace that phrase with a message you want or if you leave the variables as empty strings it will remove those messages. 
+</s><s>this shouldn't have anything to do with breadcrumbs.</s><s> if you look at this page: https://meluka.worldsecuresystems.com/livingroom you'll see at the bottom the message "this catalog has no products." with my script you can replace that message... same goes with the one where it says there's no sub-catalogs. 
+</s><s>your breadcrumb issue might be something else entirely-- i don't really see what you're seeing right now or i am confused. 
+</s><s>on another note-- there are a lot of javascript errors now on your site which weren't there before.</s><s> it seems like jquery isn't loaded properly on your site but it is definitely referenced properly.</s><s> did you make any changes to any of your javascript files besides adding the script i gave you?</s><s> it looks like you are using jquery.noconflict() and i'm not sure if you were doing that before... there really isn't a need to use noconflict since you aren't using any other javsacript libraries like mootools or prototype. 
+</s><s>can you revert the changes to your javascript files that you might have made in the last 24 hours?</s><s> don't worry about my script either for now-- you can paste that into your javascript file when we know there arent't a bunch of javascript errors. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542957</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 26, 2013 9:40 PM">
+<s>thanks trickster,   i've removed the code & product name is repeated on all pages.   i haven't changed any other js.   i already had this code on the large_product.html page:   jquery(document).ready(function(){ var productname = jquery('.details h5').text(); jquery('.main-frame p.breadcrumbs').append(" : " + productname + ""); }); jquery(document).ready(function(){ jquery('#zoom img').wrap('').css('display', 'block').parent().zoom({on:'click'}); });   i appreciate your help with this,   glenn.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542959</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 26, 2013 9:49 PM">
+<s>something's messed up with your javascript-- it's almost as if jquery isn't loaded on the page-- if you hit cmd-shift-j you will see a bunch of javascript errors in red.</s><s> those weren't there yesterday when i was telling you about your slideshow issue.</s><s> you'll notice your top-level catalog slideshows don't work because of those javascript errors. 
+</s><s>you must have added something to some of your javascript files since yesterday.</s><s> some of your scripts are referencing the "jquery" variable and it's not present... 
+</s><s>did you add "jquery.noconflict();" to different places in your code since yesterday? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5542961</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 26, 2013 9:56 PM">
+<s>i'm pretty sure the problem is the javascript statement "jquery.noconflict();" that you added in the head of your page templates and also in files like jquery.main.js. 
+</s><s>here's a fiddle i came up with... you'll see i have a simple jquery function that changes the html of a div to tell you jquery is working... it works fine originally but if you uncomment out the line "jquery.noconflict();" and click the "run" button on the fiddle you'll see the jquery stops working. 
+http://jsfiddle.net/thetrickster/zxmyu/ 
+my suggestion is to comment out in your code anywhere you see "jquery.noconflict();" you can comment out a line by putting // in front of the line of javascript.</s><s> comment out every place you see that line-- in your page templates and in all your .js files you reference in your site.</s><s> if you comment it out you can uncomment it later just in case that's not the issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543011</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 26, 2013 10:37 PM">
+<s>thanks trickster - i'll try it!</s><s> 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543023</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 27, 2013 12:04 AM">
+<s>trickster,   i had a thought - i changed the html in page_content.html from:   {tag_cataloguelist,4} {tag_productlist,3,,30,,,true} to: {module_contentholder, name="{tag_name}"} {tag_cataloguelist,4,,,,hideemptymessage} {tag_productlist,3,,30,,hideemptymessage,true}   could that have affected it?   glenn.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543197</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 27, 2013 3:04 AM">
+<s>trickster, 
+</s><s>from what i can see, the line jquery.noconflict(); only appears in line 1 of the file jquery.main.js 
+i tried the fiddle but unfortunately to no avail.</s><s> i also checked out earlier versions & that line was there also.</s><s> it's confusing as i haven't added any other js apart from: 
+(function($){ 
+$(document).ready(function() { 
+var noproductsmessage = "your no products message"; 
+var nosubcatalogmessage = "your no sub-catalogs message"; 
+ $("body").html( 
+$("body").html() 
+.replace(/this catalog has no products\./gi, noproductsmessage) 
+.replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage) 
+); 
+}); 
+})(jquery); 
+
+</s><s>when i remove this code the breadcrumbs work properly.</s><s> could the conflict be with something in this code or is there another way to remove the line "this catalog has no products." from the catalog pages please" 
+</s><s>thanks for your patience! 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543509</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 27, 2013 7:19 AM">
+<s>the reason this code might be interfering with your breadcrumbs has everything to do with javascript errors.</s><s> the fiddle i showed you doesn't need to be included in your site-- it's just an example of what's going wrong with your site right now.</s><s> if you use "jquery.noconflict();" the way you are it negates the $ and jquery variables you can normally use to access jquery methods.</s><s> it's just an example of the way you are using it is actually breaking all your javascript calls to jquery. 
+</s><s>"jquery.noconflict();" is in your head element in your page templates and also on line 1 of jquery.main.js.</s><s> so on line 1 of jquery.main.js this: 
+jquery.noconflict(); 
+becomes: 
+//jquery.noconflict(); 
+and in your page templates this: 
+<script type="text/javascript"> jquery.noconflict(); jquery(document).ready(function() { jquery('.productpopletsitem a').attr('onclick','').attr('rel',''); jquery('.productpopletsitem a').click(function(e){ e.preventdefault(); jquery('.image p img').attr('src', jquery(this).attr('href')); }); }); </script> 
+</s><s>becomes: 
+</s><s><script type="text/javascript"> //jquery.noconflict(); jquery(document).ready(function() { jquery('.productpopletsitem a').attr('onclick','').attr('rel',''); jquery('.productpopletsitem a').click(function(e){ e.preventdefault(); jquery('.image p img').attr('src', jquery(this).attr('href')); }); }); </script> 
+</s><s>that should make it so your slideshows and the rest of your javascripts work again-- right now they aren't working and it doesn't really have to do with the script i provided you. 
+</s><s>but-- you don't want to add that script to your catalog.html template because it was repeating that script for every catalog-- we only need that script called once per page so you can simply add it to the end of jquery.main.js file.</s><s> trust me-- that script itself has nothing to do with the breadcrumbs acting up.</s><s> do these steps and get back to me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543888</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 27, 2013 11:25 AM">
+<s>thanks trickster, 
+</s><s>yes that's done the trick for removing the line of text under the the slide show on the catalog pages, however, whenever i include the js as per below, the product name in the breadcrumbs repeats itself.</s><s> could it have something to do with the following code (in large_product.html)? 
+jquery(document).ready(function(){ var productname = jquery('.details h5').text(); jquery('.main-frame p.breadcrumbs').append(": " + productname + ""); });  thanks, 
+glenn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543971</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 27, 2013 11:47 AM">
+<s>i can't tell why exactly that is happening twice-- the script you mentioned is the script that's updating the breadcrumbs to include the product title. 
+</s><s>just to be sure that the script i gave you to remove the empty catalog messages isn't interfering with this script, let's make a change to it so it's not so broad as to target the whole body element, but we'll point it to the elements that contain those messages specifically.</s><s> overwrite my script at the end of jquery.main.js with this new version: 
+(function($) { $(document).ready(function() { 
+
+var noproductsmessage = ""; var nosubcatalogmessage = ""; var containers = $(".productitemnotfound, .catalogueitemnotfound");  containers.each(function() { 
+
+$(this).html( $(this).html() .replace(/this catalog has no products\./gi, noproductsmessage) .replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage) );  }); 
+
+}); 
+
+})(jquery); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5543983</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 27, 2013 12:11 PM">
+<s>trickster, 
+</s><s>how is it possible for one person to know so much?</s><s> once again, you've nailed it!</s><s> yes this has stopped the product name repeating itself.</s><s> you are very clever & your effort is hugely appreciated. 
+</s><s>now i just need to get the payment gateway sorted, add the rest of the product & tidy up the pages...</s><s> site is going live tomorrow.</s><s> i have my work cut out for me. 
+</s><s>thanks again trickster - you really are a js guru.</s><s> i'll let you know how it all goes. 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544516</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 27, 2013 7:46 PM">
+<s>glen: http://forums.adobe.com/docs/doc-2964 calling the dom multiple times is not great and will also lead to loop and value problems going forward.</s><s> also, what thetrickster probably does not know with his code and heading perfomance is jquery chaining and objects.. 
+jquery('.productpopletsitem a').attr('onclick','').attr('rel',''); jquery('.productpopletsitem a').click(function(e){ e.preventdefault(); j query('.image p img').attr('src', jquery(this).attr('href')); }); 
+i would be doing as the following in this situation, but i wont confuse you with the full better sollution which is a bit simpler since this will work for you.</s><s> but to just help you get an insight on how you can improve your code further. 
+var popletlink = $j('.productpopletsitem a'); 
+popletlink.attr('onclick','').attr('rel','') ).click(function(e){ e.preventdefault(); $j('.image img').attr('src', $j(this).attr('href')); }); 
+the less your tree down interms of the html elements the better the perfomance as well.</s><s> hope this helps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544587</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 27, 2013 7:54 PM">
+<s>thanks liam, 
+</s><s>i'm totally flipping out as the site needs to go live tomorrow am - yikes! 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544520</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 27, 2013 7:56 PM">
+<s>dont worry for now, like i said - trickster is helping you have enough to get it done.</s><s> but for your next and going forward, just trying to help your code improve 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544706</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 27, 2013 10:18 PM">
+<s>thanks liam, 
+</s><s>yes trickster has been a huge help & i couldn't have done it without him. 
+</s><s>you may be able to help tho please?</s><s> i get this error when i try & process a credit card statement: there was an error processing your credit card.</s><s> please correct this and try again. 
+</s><s>error: an error occurred while processing credit card? 
+gateway response: invalid vendor account 
+?please go back and correct this. 
+i have set up payment gateway using paypal payflow payment gateway. 
+</s><s>regards, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544754</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 12:06 AM">
+<s>make sure you entered the right details into the fields.</s><s> you set this up before?</s><s> comon mistake i see is people putting in the wrong info into the fields. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544780</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 28, 2013 12:28 AM">
+<s>liam, 
+</s><s>no this is the first time for me there's just the gateway, username, password & partner.</s><s> i put the api signature in the partner box - is that correct? 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544840</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 1:07 AM">
+<s>you gone through this glen? 
+http://helpx.adobe.com/business-catalyst/partner/setting-paypal-payflo w-payment-gateway.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544791</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 28, 2013 1:34 AM">
+<s>does it need to be pro? 
+</s><s>please see attached screen grab. 
+</s><s>thanks, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544848</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 2:00 AM">
+<s>no screenshot glen, if you replying via emails you cant add images that way on these forums. 
+</s><s>in terms of the payflow, this can not be setup and used with a basic paypal account, no. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5544871</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 28, 2013 2:49 AM">
+<s>liam, 
+</s><s>what is the best plan to use please? 
+</s><s>paypal website payments pro is us, cu, uk only. 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5545220</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 8:06 AM">
+<s>confused, you said you was going with payflow a minute ago. if you have that setup, you just need to set it up correctly as per the knowledgebase link. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5545274</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="thetrickster888" timestamp="Jul 28, 2013 8:25 AM">
+<s>in the "partner" box for paypal payflow if you signed up to payflow through a reseller you put their reseller code there.</s><s> if you signed up directly at paypal.com then put "paypal" for partner. 
+</s><s>if you don't need to bill a customer recurringly or setup custom forms to accept payment or if you don't need to charge people to subscribe to secure zones-- if your only method of charging customers is through purchasing products in the online shop then you are ok with payflow and i do believe it has to be a pro account. 
+</s><s>here's a comparison of payflow pro vs payflow link: https://www.paypal.com/ca/cgi-bin/webscr?cmd=_payflow-feature-comparis on-outside 
+if you notice there's a custom checkout option which bc uses and that's not available under payflow link.</s><s> make sure on paypal's side you are signed up for a pro account and have successfully linked and verified the bank accounts for your customer. 
+i don;t think you can use paypal website payments pro since your client is in nz with a nz bank, right?</s><s> so paypal payflow pro is the way to go for you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5545983</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="sleepingcatnz" timestamp="Jul 28, 2013 3:06 PM">
+<s>trickster, 
+</s><s>thanks so much for the comprehensive answer - this explains everything.</s><s> there isn't the option in the bc payment gateway list for paypal payflow pro (just paypal payflow) - that's what i found confusing.</s><s> lack of sleep probably didn't help either...</s><s> good news is that the client has pushed back going live till mon 5th aug to sort out these niggles. 
+</s><s>huge help again. 
+</s><s>thanks, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5539358-5546177</DOCNO>
+<TEXT>
+<subject>Custom Catalog layout</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2013 4:31 PM">
+<s>ahh, you got me confused glen because you said "i have set up payment gateway using paypal payflow payment gateway." 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6209823-1428009</DOCNO>
+<TEXT>
+<subject>Using special characters in photogallery mod. description</subject>
+<post author="Motkoski" timestamp="Mar 14, 2014 9:45 AM">
+<s>when writing text into the description field for a given image in a photogallery module, you are unable to use a " as text since it closes the description text and effectively ends the description at the previous character.</s><s> i am looking for a work-around solution to acheive the use of " as text in an image description. 
+</s><s>who's got the moxy to make this work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6209823-6210962</DOCNO>
+<TEXT>
+<subject>Using special characters in photogallery mod. description</subject>
+<post author="Liam%20Dilley" timestamp="Mar 14, 2014 3:59 PM">
+<s>what you need to google is "html entities". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-1410482</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="TheGOShawMan" timestamp="Feb 19, 2014 7:52 AM">
+<s>hi guys.</s><s> 
+</s><s>help needed please.</s><s> i have set up the shopping cart so that it will accept purchases from the uk, european union, and rest of world. 
+</s><s>the eu and row are fine as they are tax free.</s><s> the uk is however subject to vat. this produces a dropdown called destination state.</s><s> i have no use for this dropdown and customers find it confusing.</s><s> how do i remove it?</s><s> any sugestions please. 
+</s><s>gary 
+</s><s>http://photonicsolutions.businesscatalyst.com/orderretrievev2.aspx?cat alogueid=193730 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6137961</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="Matt%20(Business%20Catalyst)" timestamp="Feb 19, 2014 4:55 PM">
+<s>hi thegoshawman,   instead of solely having vat as a selectable option from the 'destination state' drop-down, i recommend replacing this with a list of states/counties that exist within england.   so what you will need to do is log into the admin console of your site > ecommerce > tax codes and delete the 'vat' option.</s><s> then create a new tax option for each state in england and assign a tax rate of 20% to it.   therefore whenever a customer specifies the 'united kingdom' as their destination country, they can then select a list of states from the 'destination state' drop-down and still have a tax of 20% assigned to their order (equivalent to vat).   thanks, matt.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6138778</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="TheGOShawMan" timestamp="Feb 20, 2014 12:47 AM">
+<s>hi matt.</s><s> 
+</s><s>thank you for your advice.</s><s> my boss is adamant however, that the dropdown is removed in its entirety. 
+</s><s>any suggestions in this would be greatly appreciated. 
+</s><s>gary 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6171913</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="Momo%20Cha%20Fine%20Teas" timestamp="Mar 2, 2014 11:40 AM">
+<s>hi matt, 
+</s><s>so what do i do if some of my products have a 20% tax rate and others have a 0% tax rate? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6198630</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="Momo%20Cha%20Fine%20Teas" timestamp="Mar 11, 2014 3:24 AM">
+<s>2 weeks and no reply.</s><s> that is shameful for any company, let alone a company as big as adobe.</s><s> at this point i am just waiting for a chance to change plattforms for our website.</s><s> i don't see any value in this system and it's limitations.</s><s> i will also not recommend bc for anybody else.</s><s> what a shame.</s><s> i wish i never listened to the guy who recommended bc to us in the first place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6198807</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="Liam%20Dilley" timestamp="Mar 11, 2014 5:48 AM">
+<s>it is part of the system and can not be moved.</s><s> experienced developers with the system have, such as we at pretty have updated things to run and behave differently but this is out of the scope of bc support and while not great and yes the feature could function better is the only options you have at the moment.</s><s> it is something you cant just show you to implement as it involes high level knowledge in how bc works and coding.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6198922</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="Momo%20Cha%20Fine%20Teas" timestamp="Mar 11, 2014 6:21 AM">
+<s>thanks liam, 
+</s><s>you are doing a better job than adobe does here. 
+a shop system that can't process different tax codes properly is a clear fail.</s><s> will make my decision easier to change systems in the future and to cough up the money for it. 
+</s><s>the strange thing is, that it worked just fine until a couple of months ago.</s><s> so they had a working system but they ruined it. 
+</s><s>cheers, niels 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6135987-6198935</DOCNO>
+<TEXT>
+<subject>Hi. I am looking for help with the shopping cart.</subject>
+<post author="Liam%20Dilley" timestamp="Mar 11, 2014 6:28 AM">
+<s>well it functions with the tax codes etc, it just has a issue with the shipping in terms of places that do not have states.</s><s> this has always been an aspect of bc, it wont be something that changed a few months ago...</s><s> it's always been like this.</s><s> if there was a working solution on a site it may had custom scripting, this may be broken or as many make the mistake of not refreshing it once edits, item removals etc occur on the cart. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6054384-1390231</DOCNO>
+<TEXT>
+<subject>How to grab CSS styles from Muse and insert them into Business Catalyst Blog and News</subject>
+<post author="PeMarroquin" timestamp="Jan 26, 2014 2:16 PM">
+<s>hey guys!</s><s> i got into a problem, hope you can give me a hand! 
+a couple of months ago i saw this tutorial: http://tv.adobe.com/watch/learn-business-catalyst/adding-business-cata lyst-features-to-your-muse-sites/ where it showed how to grab css styles from muse and insert them into business catalyst to give styles to the blog and same to the news. 
+</s><s>basically what it was it's you set in muse a "mockup page" where you show with muse native text how the blog and news would look like, then you preview the page in your browser and give "inspect element" to the text body, the event text and such and such.</s><s> when "inspect element" showed you div and styles you then would grab the styles that were set to that text, the main thing is that inside the main div it would go like: <h3 id="u2526-3" class="h3-page-subheading" and then bodytext-sourcesanspro="be the best you can be".</s><s> so back in business catalyst you would go to develop tab and got to the css sheet of the modules which is: "modulestylesheet.css" and set the following: .</s><s>h3 page subheading and the css styles, saying give this styles to all subheading in the page that is h3. 
+</s><s>now muse gave you that specifications, the thing is that it doesn't give it anymore, it gives the styles but it doesn give weather it's h3 subheading or h5 heading, so i don't know how to tell business catalyst to give the styles to what class...</s><s> does anyone know how to fix this. 
+a friend of mine gave me an alternative which was modify the "styles" from the module layout, the thing is that in the module layout you can only use websafe fonts and doing it by css styles it respected if there was typekit fonts involved. 
+i really would aprecciate the help guys!</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6054384-6185889</DOCNO>
+<TEXT>
+<subject>How to grab CSS styles from Muse and insert them into Business Catalyst Blog and News</subject>
+<post author="usher357!" timestamp="Mar 6, 2014 11:45 AM">
+<s>i am trying to attempt similar...and i too am looking for answers.</s><s> if you solved it please let me know.</s><s> i have been trying to utilize the tutorial listed above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6181563-1421236</DOCNO>
+<TEXT>
+<subject>Getting around mandatory e-mail field in BC form.</subject>
+<post author="JAL Design" timestamp="Mar 5, 2014 8:21 AM">
+<s>the scenario. 
+</s><s>our database is for referring companies, not end user clients.</s><s> end users we deal with by phone and paper files, not through the system.</s><s> our industry is regulated and you have to track information carefully. 
+</s><s>we have created a simple form for our referring companies to put in their referral information. 
+</s><s>the problem is that they will never know the client's email.</s><s> how can i bypass the mandatory email field?</s><s> i know html and css but not java so if it's complicated please steer me to any resources you know about that will spell it out. 
+i was wondering if we could automatically generate a dummy email [firstname,lastname]@dummyemail.com.</s><s> this would alert us that we don't have the real e-mail but would let the file be generated.</s><s> we could then hide the field so the referring company doesn't see it. 
+</s><s>but the problem is: how? 
+</s><s>please help!</s><s> 
+</s><s>cheers all, 
+</s><s>john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6181563-6182680</DOCNO>
+<TEXT>
+<subject>Getting around mandatory e-mail field in BC form.</subject>
+<post author="Liam%20Dilley" timestamp="Mar 5, 2014 1:28 PM">
+<s>hi john, email is the primary key to crm data entries so this has to be required.</s><s> you can not use java on bc, thats a server side language, i think you mean javascript which is different, that is client side and you can use that. 
+</s><s>most if not all companies i have ever dealt with have a info@, office@, reception@ cant you just ask for this?</s><s> you do not need first and last names in bc any more, you can remove the javascript from a form to stop them being required. 
+</s><s>or javascript to form the email as you mentioned.</s><s> but could you describe what you are trying to achieve?</s><s> it does not seem right what your doing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6181563-6182892</DOCNO>
+<TEXT>
+<subject>Getting around mandatory e-mail field in BC form.</subject>
+<post author="JAL%20Design" timestamp="Mar 5, 2014 1:59 PM">
+<s>thanks liam, 
+</s><s>thank you very much for taking the time.</s><s> yes i did mean javascript. 
+i hope this makes it a little clearer. 
+</s><s>we have created a basic referral form to be used by companies to refer their client to us when their clients need our additional services.</s><s> the company referring the lead is not an online business and they will not have the emails of those whom they are referring.</s><s> we won't use our crm for these end-user clients because, as i mentioned, we have to have paper records by law.</s><s> it's just an easy way to get the information to us from the businesses that make referrals to us. we also want to link to the referral page in our e-mail marketing to these referral companies as part of the cta. 
+</s><s>the referrals will not be ongoing customers of ours once we've completed our services and we won't be marketing directly to them.</s><s> we just need a way to get them into our system with some basic information to kick off a work flow. 
+</s><s>that is why we need to fool the "email" field.</s><s> i thought of [firstname.lastname]@dummyemail.com would let us know that it was a dummy record.</s><s> i think it would be rare that we get two people with exactly the same name but we could make it even more specific.</s><s> [firstname.lastname@subscriptiondate.com. 
+</s><s>not knowing javascript i'd really appreciate some help.</s><s> is this the best way to do it?</s><s> i welcome suggestions. 
+</s><s>thanks again, 
+john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6176759-1420182</DOCNO>
+<TEXT>
+<subject>Help with tweaking blog and webform built in Adobe Muse</subject>
+<post author="justasking506" timestamp="Mar 3, 2014 9:55 PM">
+<s>hi there.</s><s> a client of mine had a 3rd party do a re-design (in adobe muse) of their current site in bc. managed to get most of the re-design all launched except for a couple of tweaks that have been giving me major headaches. 
+</s><s>firstly, is it possible to edit the site that was built in muse directly from bc itself and not muse?</s><s> i don't have a muse subscription. 
+</s><s>if so, i need help with the following that i have tried to tweak myself, but just can't find out how.</s><s> btw i am not a developer but muddle my way around editing existing code etc etc. 
+1. on the contact us page, i need to add an additional field to the webform.</s><s> a radio button question: "preferred contact method".</s><s> phone or email.</s><s> i know how to add the field to the webform in bc. apparently muse forms don't support radio buttons?</s><s> anyway, i can't figure out how to edit the source on the contact page to include the fields that i add to the webform. 
+2.</s><s> some minor tweaks to the layout of the blog page.</s><s> i need to make the horizontal and vertical lines meet up and not have a space.</s><s> also, the left column width needs to be decreased and the right column width increased.</s><s> basically i need the current live blog http://www.robertsonburns.com.au/blah-blog to look like the previously coded muse blog (which is not live) http://robertsonburns-test5.businesscatalyst.com/blah.html which it does, except for these two minor issues. 
+</s><s>would appreciate anyone's help and/or advice. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6176759-6176858</DOCNO>
+<TEXT>
+<subject>Help with tweaking blog and webform built in Adobe Muse</subject>
+<post author="Liam%20Dilley" timestamp="Mar 4, 2014 12:19 AM">
+<s>hey there, 
+yes you just go to the site either via... site.buisnesscatalyst.com/admin or livesite.com/admin 
+once you do that you can login.</s><s> it depends how it was built though.</s><s> properly a site will have content holders and templates and the pages just hold the content.</s><s> a user can go to those pages, webapps, blogs (dependng on the plan and build of the site) can edit that content. 
+</s><s>muse is not the best in terms of handling that and making updates, i am aware the team updated muse to handle fetching updates etc though but there is a note of caution on that stil though. 
+1.</s><s> what is the plan of the site?</s><s> if it is just a cc site then there is no web form manager with that plan of bc. you will have to edit and update the form built in muse.</s><s> if it is on a plan that supports web forms it also depends on how you built it.</s><s> if in muse you should be able to just update the form in muse i think and it posts into the system to update.</s><s> if not then you need to go into the admin and web form manager and edit the html to make changes.</s><s> this depends though if the form was inserted as a module, if not you need to navigate to the template or page and update it there once you have added the new fields to the form under the web form itself. 
+2.</s><s> layouts are managed via sftp under the folder layouts or in the admin under module templates in the main menu and blog layouts. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4580906-1040944</DOCNO>
+<TEXT>
+<subject>Custom Shipping Integration</subject>
+<post author="Nathan_Hill" timestamp="Jul 26, 2012 6:00 AM">
+<s>hello, 
+</s><s>i am still deciding whether to convert to bc or not and this is my major stumbling block. 
+i would like to set the shipping options to correctly set shipping prices dependent on a uk postcode entered and weight of product.</s><s> (but not using the preset integrated companies such as ups) 
+</s><s>this taken from the bc instructions: 
+the following steps describe the checkout process the customer need to take when using the integrated shipping: when your customer adds the product to the cart and goes to the shopping cart, the system will look at the product and display the shipping options that apply to that product. * your customer will then select the shipping option and if that shipping option is an integrated shipping option the system will render the zip code/postcode field.</s><s> your customer then enters the destination zip code and the system will then contact the shipping provider and retrieve the shipping options available for that destination. ** the shipping option is displayed as a radio button and the customer needs to select the radio button in order to apply the shipping to the order.</s><s> note that if the shipping provider supports all services option, such as fedex, we retrieve all options for that destination and customer can then select the appropriate radio button.</s><s> customer can then check out and finalise the purchase. 
+
+</s><s>questions: 
+</s><s>1) *is it not possible to render this postcode field when the shipping is "user defined" and not just when an integreated shipping company is chosen? 
+2) ** can we not link to a custom external file that would return the price depending on the postcode entered (i already have a php based page from a previous website that returns either zone1, zone or zone 3 - this combined with shipping weight equals the shipping price). 
+3) is bc planning on integrating with royal mail (uk postal service)? 
+4) am i being stupid?</s><s> is there an obvious way of using the existing settings? 
+</s><s>any help or advice would be greatly appreciated.</s><s> (or am i biting off more than i can chew?</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4580906-4591967</DOCNO>
+<TEXT>
+<subject>Custom Shipping Integration</subject>
+<post author="M%20R%20K%20Development%20Pty%20Ltd" timestamp="Aug 1, 2012 9:37 AM">
+<s>it is possible to make your own integrations using jsonp and an external service. 
+i did one on ladders4u.com.au for another partner. 
+</s><s>it isnt easy but it is possible.</s><s> we currently use our simplacrm software to assist in this cause it uses the api. 
+</s><s>it doesnt work for large product galleries cause the api is broken for products and catalogs when you have larger product catalogs (over 200 products) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4580906-6161732</DOCNO>
+<TEXT>
+<subject>Custom Shipping Integration</subject>
+<post author="Nathan_Hill" timestamp="Feb 26, 2014 11:49 PM">
+<s>have you had to implement any similar shipping services since this last post in 2012? 
+ie: have you come across an easier way to implement this sort of functionality?</s><s> any help would be apreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4580906-6161750</DOCNO>
+<TEXT>
+<subject>Custom Shipping Integration</subject>
+<post author="M%20R%20K%20Development%20Pty%20Ltd" timestamp="Feb 27, 2014 12:23 AM">
+<s>hi nathan - unfortunately the fundamental issue is getting attributes for products on the cart page. 
+</s><s>the only way to get this is with an external server. 
+</s><s>it would be great if adobe would enable a client side javascript object that contained what was in the cart with its attributes. 
+</s><s>currently it isnt possible to securly access these details because you need admin access to use the api. 
+</s><s>once you get these details back however - there is no problem with reading the values and making your calculation. 
+</s><s>there is no easy way to do this - sorry. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4580906-6162032</DOCNO>
+<TEXT>
+<subject>Custom Shipping Integration</subject>
+<post author="Nathan_Hill" timestamp="Feb 27, 2014 2:16 AM">
+<s>thank you for your input. 
+</s><s>it is one of the last (and major) hurdles i need to cross before i start recommending bc to my uk ecommerce clients. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6161482-1416516</DOCNO>
+<TEXT>
+<subject>workflows and javascript</subject>
+<post author="David Camerotto" timestamp="Feb 26, 2014 9:20 PM">
+<s>my client uses bc as their intranet and a requirement they have is to update certian pages at regular intervals, say 3 months after it is first published and there after. 
+</s><s>my only thought was to have an expiry date which would trigger an email to be sent to all admin users. 
+</s><s>is there a way to achieve a similar thing using a wokflow that is somehow triggered using javascript? 
+</s><s>regards david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-1021212</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="scottdouglas999" timestamp="Jun 11, 2012 10:00 AM">
+<s>i have a client which operates a group association.</s><s> they want to put their logos up for their members to download.</s><s> does anyone know how bc could track the number of downloads on each item?</s><s> i was looking into putting the logo page into secure zone but that won't tell me which logo was downloaded.</s><s> any help appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-4560717</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="thetrickster888" timestamp="Jul 16, 2012 9:58 AM">
+<s>i can't currently find a way in bc's reports area to generate a report on the number of times a literature item was downloaded.</s><s> so, if it were up to me, i'd use google analytics and their event tracking to track how many times a piece of literature is downloaded.</s><s> technically, you can't really tell if it's been downloaded officially, but you could hookup some javascript on the link that leads to the literature download. 
+</s><s>if you don't have google analytics tracking code installed, do so first.</s><s> here's some info on how to install the google analytics code: https://developers.google.com/analytics/devguides/collection/gajs/#qui ckstart 
+once you have the google analytics code installed and verified, not it's time to add the event tracking feature.</s><s> for my instructions i'm also going to assume you have jquery already loaded on your site. 
+</s><s>when you insert the media downloads/literature module into the page you should see the default markup consists of a paragraph tag with the class of "literature-container" and inside each of those paragraphs is the link to download the literature.</s><s> if we use jquery, the script should look like this: 
+<script type="text/javascript"> jquery(document).ready(function() { jquery(".literature-container a").each(function() { var litname = jquery(this).text(); litname = jquery.trim(litname); 
+
+
+jquery(this).click(function() { console.log(litname); _gaq.push(['_trackevent', 'media', 'download', litname]); }); }); }); </script> 
+</s><s>this jquery script goes and finds every literature link and when that link is clicked will push an event to the _gaq variable and track the click as an event that you can find and report on using google analytics. 
+bc's reporting tools are basic and decent but if you want anything custom, i usually look to google analytics or other analytics offerings. 
+</s><s>you can see my demo of this script in action at http://ignitemybusiness.com/demos/literature-event-tracking although technically, you cannot tell it works until the next day when you check your google analytics events report. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-4564752</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="Skeggs91" timestamp="Jul 18, 2012 6:40 AM">
+<s>is anyone using this on a live site and can you confirm that it works?</s><s> does it actually provide download analytics by "litname" in google analytics?</s><s> any feedback would be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-4564980</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="thetrickster888" timestamp="Jul 18, 2012 7:39 AM">
+<s>yup...</s><s> i can confirm my code works.</s><s> as i mentioned above, i installed it on my site on a demo page and today i checked my google analytics reports and did find that each download was tracked by "litname".</s><s> here's a screencast of what the report looks like in google analytics: https://dl.dropbox.com/u/2603799/screens/bc/literature-items-to-ga-eve nts.swf 
+you can see that it uses the "event label" to show the name of the file that was downloaded.</s><s> if you have many literature items, you can choose to rename the category from "media" to "logo" and to make other categories using javascript as well, but if it's just the logos and a few other media items then you can run with the "media" event name. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-6139521</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="Melody" timestamp="Feb 20, 2014 6:46 AM">
+<s>thank you for your post.</s><s> this was exactly what i was looking for.</s><s> the only issue i seem to be having is, in firefox and chrome, it only counts the first link i download, and ignores all others (for that day, it appears). 
+</s><s>thank you in advance, melody 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-6139527</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="thetrickster888" timestamp="Feb 20, 2014 7:05 AM">
+<s>hmmm... there's nothing in my code to suggest that it should behave that way.</s><s> when the dom is ready, the script finds all the literature links on the page and then for each link it sets up a click event that tracks the event in ga.</s><s> as long as you don't have any other javascript issues on your site (press ctrl-shift-j in chrome/pc or cmd-shift-j on chrome/mac) and don't see any red js errors it should work fine. 
+</s><s>another thing that could affect it is if you have some other js that is manipulating the dom and those library links maybe they get unhooked but that's unlikely.</s><s> i'm not sure why that's the case but try it from another computer on another network-- maybe you're ip address is not being tracked-- for our clients we have our ip addresses from the office blocked from ga reporting-- but that's probably not your case.</s><s> probably js errors.</s><s> do you have a url? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-6139634</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="Melody" timestamp="Feb 20, 2014 7:09 AM">
+<s>i do have a lot of js on the site.... and i'm not in expert at it... here is the one page i've inserted the code on...... http://www.lakos.com/lakos-documents/literature 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-6139647</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="Melody" timestamp="Feb 20, 2014 8:00 AM">
+<s>if i hit f5 to refresh and then click on another link, it will then count it... is there a way around that?</s><s> in ie it counts link downloads as it should.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-6144751</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="Melody" timestamp="Feb 21, 2014 12:47 PM">
+<s>thank you for your reply.... your code works great!</s><s> after letting 24hrs go by looks like the analytics are updating properly...</s><s> thanks again!</s><s> melody 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4483114-6157088</DOCNO>
+<TEXT>
+<subject>Tracking Literature</subject>
+<post author="Melody" timestamp="Feb 25, 2014 3:30 PM">
+<s>is there a way to insert another category for which webpage the download came from? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6140473-1411539</DOCNO>
+<TEXT>
+<subject>Application Caching Manifest</subject>
+<post author="robertliebsch" timestamp="Feb 20, 2014 10:40 AM">
+<s>i'm trying to implement caching on my bc site to enable it to be viewed offline. 
+i have done this with apache2 by adding addtype text/cache-manifest .manifest 
+to the <directory> directive for an enabled site.</s><s> then a manifest is created with what should be cached. 
+</s><s>finally, in the html for every page you want cached you indicate the page should be cached with: <html class="html" manifest:"sytoolkit.appcache"> 
+</s><s>then you can browse the site while offline. 
+</s><s>i'm working with a team to create an web application for mobile.</s><s> bc has been chosen as the back end platform because of its feature set and tight integration with adobe muse. 
+i had a live help session and i was told that this is not managable by the end user without extensive custom html and js. 
+</s><s>has anyone else done this or something similar?</s><s> robert 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6140473-6140881</DOCNO>
+<TEXT>
+<subject>Application Caching Manifest</subject>
+<post author="robertliebsch" timestamp="Feb 20, 2014 11:56 AM">
+<s>maybe this is not as simple as i had previously assumed.</s><s> i am looking into localstorage options. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6140473-6141191</DOCNO>
+<TEXT>
+<subject>Application Caching Manifest</subject>
+<post author="Liam%20Dilley" timestamp="Feb 20, 2014 1:18 PM">
+<s>hi robert.</s><s> you can not build a mobile application like that.</s><s> you also mention apache which bc does not have.</s><s> caching always occurs on a browser to a degree depending on settings etc. but you not really outlined what you really want to achieve though, your posts do not mean much at the moment.</s><s> if your just building a html5 app then what mobiles?</s><s> you can not save just files like that on ios for example without net connection you have to build a core app using something like phonegap for example. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6140473-6141494</DOCNO>
+<TEXT>
+<subject>Application Caching Manifest</subject>
+<post author="robertliebsch" timestamp="Feb 20, 2014 2:52 PM">
+<s>i mention apache just as a note of comparison. 
+</s><s>basically, the summary is: we are building a website.</s><s> we would like the website persistently cached on ios devices. 
+</s><s>the design team is really insistent we stick with bc and muse to execute on design vision, plus they are smitten with the analytics and crm (which really, we're just using that for employee database). 
+</s><s>so, looking for ways to persistently cache the site, as a webclip on ios devices, in the event someone doesn't have wifi or cell. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6140473-6141649</DOCNO>
+<TEXT>
+<subject>Application Caching Manifest</subject>
+<post author="Liam%20Dilley" timestamp="Feb 20, 2014 3:41 PM">
+<s>you wont be able to keep a persistant cache, i am guess trying to make an app without making an app or having net.   put an iphone and try to use safari at all..   load up the bc site, browse some pages then put in airaplane mode.</s><s> you will see,  (unless the person turns off caching in their settings) the site will naturally show cached.</s><s> but this of course will only work if they have already visted those pages and no data interactions will work.</s><s> and no analtitcal data will work because the person is not actually doing any live interactions.</s><s> there will be to many cases where this will fall over as well, even if you did the above apache implementation.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6136401-1410600</DOCNO>
+<TEXT>
+<subject>make rules for web form using javascript - anyone?</subject>
+<post author="Maria¿?" timestamp="Feb 19, 2014 9:26 AM">
+<s>hi - i thought business catalyst would be easier than it is.</s><s> these are the things i need from the webform: 1. to have show/hide features depending on previous answers 2. to have an "inventory" based on schedule (seats in a classroom) 
+i know basic html and css, but i dont know javascript.</s><s> can someone help?</s><s> please?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6128073-1408544</DOCNO>
+<TEXT>
+<subject>Optimizing content html and css</subject>
+<post author="jojodan90" timestamp="Feb 17, 2014 4:58 AM">
+<s>can you help me in optimizing the html and css properly in this area www dot juegos-friv-10.com is done with htacces or on the server where it is hosted 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6128073-6128136</DOCNO>
+<TEXT>
+<subject>Optimizing content html and css</subject>
+<post author="Liam%20Dilley" timestamp="Feb 17, 2014 4:57 AM">
+<s>i do not see how this relates to business catalyst.</s><s> this looks to be spam, i have removed the hyperlink from your post.</s><s> if you can explain what you mean? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6109006-1403714</DOCNO>
+<TEXT>
+<subject>How to change .swf file from black opaque to transparent in safari ?</subject>
+<post author="WndyWndy" timestamp="Feb 11, 2014 5:03 AM">
+<s>hi i have added a .swf file to my webpage.</s><s> it looks fine with transparent background in ie, chrome, firefox and opera.</s><s> however, it appears black opaque background in safari.</s><s> i am trying to get rid of this black opaque background by adding in  value=window, direct, opaque and gpu, but still there is no change at all.</s><s> my code is : <object width="540? height="30? data="http://xxx.com/wp-content/uploads/2013/12/text.swf"><param name="wmode" value="transparent" /><embed width="540? height="30? type="application/x-shockwave-flash" src="http://xxx.com/wp-content/uploads/2013/12/text.swf" wmode="transparent" /></object> anybody can resolve this for me?</s><s> thanks in advance.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6109006-6109079</DOCNO>
+<TEXT>
+<subject>How to change .swf file from black opaque to transparent in safari ?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 11, 2014 5:25 AM">
+<s>normally you need to use swf object to avoid any of these such issues: https://code.google.com/p/swfobject/downloads/list 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6109006-6115698</DOCNO>
+<TEXT>
+<subject>How to change .swf file from black opaque to transparent in safari ?</subject>
+<post author="WndyWndy" timestamp="Feb 12, 2014 6:33 PM">
+<s>thank for your advise. 
+</s><s>however, so sorry, i not really understand what is all this ? 
+i have download those zip file, and i saw one swf object and html generator....</s><s> i do not know how to use them... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6109006-6115861</DOCNO>
+<TEXT>
+<subject>How to change .swf file from black opaque to transparent in safari ?</subject>
+<post author="WndyWndy" timestamp="Feb 12, 2014 8:00 PM">
+<s>i have tested one by one, but that black opaque background is still there... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6109006-6115880</DOCNO>
+<TEXT>
+<subject>How to change .swf file from black opaque to transparent in safari ?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 12, 2014 8:12 PM">
+<s>the other issue is that with embeded video and safri and it being in 64bit mode with safari - this is a known thing if you google you will see heaps of people complaining about.</s><s> if that is not working. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6109006-6116062</DOCNO>
+<TEXT>
+<subject>How to change .swf file from black opaque to transparent in safari ?</subject>
+<post author="WndyWndy" timestamp="Feb 12, 2014 11:26 PM">
+<s>i do know people complaining about ie and safari.</s><s> i myself really frustrated with these two browers settings.</s><s> as what i know, safari brower still unable to accept code like "transparent". 
+i am thinking if worst to worst, i will change wmode="transparent" to "opaque" as it will show white or added in something like bgcolor="#xxxxxx". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6111481-1404289</DOCNO>
+<TEXT>
+<subject>Shipping Perishable Goods and UPS Prefixes</subject>
+<post author="myfullhouse" timestamp="Feb 11, 2014 3:17 PM">
+<s>i could really use the insight on figuring out this shipping issue.</s><s> if someone could please point me in the right direction to tie all of this together it would be great.</s><s> i'm working with a client who ships perishable goods and all items have to arrive within 3 business days of shipping using ups.</s><s> to do this i created a web app called zip code ranges with a field called zip prefix, which is a list of ups's 3 digit zip code prefixes from their shipping department {module_webapps,24209,a}.</s><s> i would like to slice the number prefix from the #shippingpostcode input field, compare them and if it matches a prefix from the ranges web app then remove ups ground from the #shippingoptions drop down list.</s><s> i've tried to tinker with this to the point of confusing myself since i'm not great at jquery anyway.</s><s> thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6111481-6115809</DOCNO>
+<TEXT>
+<subject>Shipping Perishable Goods and UPS Prefixes</subject>
+<post author="myfullhouse" timestamp="Feb 12, 2014 7:31 PM">
+<s>here is what i have put together so far, i had it working on occasion when you first enter information for the shipping, but doesn't work if you go back an enter a different zipcode.</s><s> i then added $('#shippingcalc option[value=53334]').remove(); and it won't work at all.</s><s> i'm not sure if it's me or a conflict with bc. any liams or marios out there for some help, i'm really not good with this stuff, but love to learn. http://thefatbeeman.ajsfullhouse.com/kits/queen-bee-kit 
+<script> var prefixes = [161, 164, 165, 260, 261, 400, 401, 402, 406, 410, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 520, 521, 522, 523, 524, 526, 527, 528, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 541, 542, 543, 544, 545, 546, 547, 549, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 624, 625, 626, 627]; 
+
+$(document).ready(function(){ $("#shippingpostcode").focus(function() { window.addeventlistener('keyup', checkzip); }); }); 
+
+function checkzip() { var zipcode = $("#shippingpostcode").val(); if (zipcode.length == 5) { prefix = $("#shippingpostcode").val().substring(0,3); zipinlist = false; for (var i = 0; i < prefixes.length; i++) { if (prefix == prefixes[i]) { zipinlist = true; break; } } if (zipinlist) { zipcodeokay(zipcode); } else { zipcodenotokay(zipcode); } } } 
+
+function zipcodeokay(zipcode) { $("#shippingpostcode").blur() removeeventlistener('keyup', checkzip); } 
+
+function zipcodenotokay(zipcode) { $("#shippingpostcode").blur() removeeventlistener('keyup', checkzip); $('#shippingoptions option[value=53334]').remove(); $('#shippingcalc option[value=53334]').remove(); alert('zip code ' + zipcode + ' requires expedited (2 or 3 day) shipping.'); } 
+
+</script> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6104711-1402704</DOCNO>
+<TEXT>
+<subject>audio player in iframe - how to keep music continuously playing?</subject>
+<post author="irenaeide" timestamp="Feb 10, 2014 3:46 AM">
+<s>hi there, 
+i am wondering if someone could help me with this.</s><s> i have created an audio player in a frame on my template, and i want the music to continuously play when folks click the different links. this is specifically a music website, and the people going to these pages are there for the music, and have requested this, (they are members), so i would love it if someone could tell me how to make the music in this iframe play when the users click the different song titles on the right hand sidebar?</s><s> (http://www.littlefolkies.com/audio) i have read some articles on the frames, versus pop-ups etc... 
+thanks kindly! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6104098-1402545</DOCNO>
+<TEXT>
+<subject>W3C Validator Errors</subject>
+<post author="JordSTi" timestamp="Feb 9, 2014 8:40 PM">
+<s>hi all, 
+</s><s>i'm going through my website code and trying to fix any validation errors that are being flagged.</s><s> see the following: 
+http://validator.w3.org/check?uri=http%3a%2f%2fwww.whsfirstaidkits.com .au%2f&charset=%28detect+automatically%29&doctype=inline&group=0&user- agent=w3c_validator%2f1.3+http%3a%2f%2fvalidator.w3.org%2fservices 
+it is for the website http://www.whsfirstaidkits.com.au 
+the 4 errors relate to the shopping cart summary module that i have within my code.</s><s> i am using the following: <div class="shopping-cart">{module_shoppingcartsummary,horizontal}</div> and bc converts that to: <div class="shopping-cart"><span id="catcartsummary" quote="false" vertical="false"><table cellspacing="0" class="cartsummarytable"><tr><td class="cartsummaryitem">shopping cart is empty.</td></tr></table></span></div> 
+</s><s>now the validator says that it is producing the following errors: 
+attribute quote not allowed on element span at this point.</s><s> attribute vertical not allowed on element span at this point.</s><s> element table not allowed as child of element span in this context.</s><s> (suppressing further errors from this subtree.</s><s>) the cellspacing attribute on the table element is obsolete.</s><s> use css instead. 
+</s><s>since bc generates this code automatically, is there a way to fix this? 
+</s><s>cheers, jordan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6062097-1392097</DOCNO>
+<TEXT>
+<subject>General search form with JQuery not working</subject>
+<post author="alexchen2013" timestamp="Jan 28, 2014 1:20 PM">
+<s>hi, i tried to use jquery to submit a search form because i need some checking before submit.</s><s> however, it did not go to search results page, but went to home page instead. 
+</s><s>here is my html: 
+<form name="catsearchform96767" id="generalsearchform" method="post"> <p><label style="opacity: 1;" for="f-search">search</label> <input type="text" name="cat_search" id="f-search" /> <button type="submit">go</button></p> </form> 
+</s><s>javascript: 
+$('#generalsearchform').submit(function(){ $(this).attr('action', '/default.aspx?sitesearchid=1060&amp;id=/search-results'); $(this).unbind().submit(); return false; }) 
+</s><s>it does not work with jquery.</s><s> but when i moved form action url from jquery to html, it worked.</s><s> any ideas?</s><s> cheers.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6051203-1389313</DOCNO>
+<TEXT>
+<subject>How to Grab email address from webform and insert into form action</subject>
+<post author="topelovely" timestamp="Jan 25, 2014 5:05 AM">
+<s>please i need help on this: i have a webform that i want its details to be submitted via email.</s><s> whcih i got right from bc knowledgebase.</s><s> but on the 'emailfrom=' line.</s><s> i want the system to grab the email address the user provides in the webform and inserts it to the 'emailfrom='.</s><s> my use case does not require users to log in since it is an administrator generated content and not a user-generated content. 
+
+</s><s>please how is this possible?</s><s> i need concise practical help.</s><s> code assistance will be appreciated.</s><s> this is my code as it is with the form. 
+<form name="catwebformform60818" method="post" onsubmit="return checkwholeform60818(this)" enctype="multipart/form-data" action="/formprocessv2.aspx?a=form&email={tag_staff email address}&subject={tag_name_nolink}&emailfrom=yourfromemail@yourdomain.compageid=%2fpricerequestsent.html&oid={module_oid}&otype={module_otype}& amp;optin=true&eid={module_eid}&cid={module_cid}"> <table class="webform" cellspacing="0" cellpadding="2" border="0"> <tr> <td>  <input type="text" name="fullname" id="fullname" class="searchweb" maxlength="255" placeholder="full name[required]" /> </td> </tr> <tr> <td>  <input type="text" name="emailaddress" id="emailaddress" class="searchweb" maxlength="255" placeholder="email address[required]" /> </td> </tr> <tr> <td>{module_ccsecurity}</td> </tr> <tr> <td>  <input type="text" name="cellphone" id="cellphone" class="searchweb" maxlength="255" placeholder="phone number[required]" /> </td> </tr> <tr> <td> <label>enter word verification in box below <span class="req">*</span>  </label> <br />{module_captchav2}</td> </tr> <tr style="display:none;"> <td> <input type="checkbox" name="campaignlist_1008" />subscribe to: real estate blog</td> </tr> <tr style="display:none;"> <td> <input type="checkbox" name="campaignlist_998" />subscribe to: real news</td> </tr> <tr> <td> <input class="submit" type="submit" value="submit" id="catwebformbutton" /> </td> </tr> </table> <script type="text/javascript" src="/catalystscripts/validationfunctions.js"></script> <script type="text/javascript"> //<!</s><s>[cdata[ var submitcount60818 = 0;  function checkwholeform60818(theform) { var why = ""; if (theform.fullname) why += isempty(theform.fullname.value, "full name"); if (theform.emailaddress) why += checkemail(theform.emailaddress.value); if (theform.cellphone) why += isempty(theform.cellphone.value, "cell phone number"); if (theform.captchav2) why += captchaisinvalid(theform, "enter word verification in box below", "please enter the correct word verification as seen in the image"); if (why != "") { alert(why); return false; } if (submitcount60818 == 0) { submitcount60818++; theform.submit(); return false; } else { alert("form submission is in progress."); return false; } } //]]> </script> </form> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5960321-1366150</DOCNO>
+<TEXT>
+<subject>Web App item list, {tag_description} & javascript</subject>
+<post author="BriceShatzer" timestamp="Dec 27, 2013 1:09 PM">
+<s>i'm trying to use this code in a web app item list template:   var obj_{tag_counter} = { name:'{tag_name_nolink}', num:'{tag_counter}', type:'{tag_type}', desc:'{tag_description}' }   unfortunately the appears to be a line break which isn't in the individual web app item's description, but is always added to the end of the string when {tag_description} is used.</s><s> this results in the following error:   any idea what i'm doing wrong?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5960321-5960514</DOCNO>
+<TEXT>
+<subject>Web App item list, {tag_description} & javascript</subject>
+<post author="Liam%20Dilley" timestamp="Dec 27, 2013 1:20 PM">
+<s>may i ask what are you trying to achieve? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5960321-5960878</DOCNO>
+<TEXT>
+<subject>Web App item list, {tag_description} & javascript</subject>
+<post author="BriceShatzer" timestamp="Dec 27, 2013 4:48 PM">
+<s>use google map's javascript api to build markers and info windows on a map (yes i am aware that web apps have this functionality somewhat baked into them already, but the address geocoding that it uses is complete garbage) 
+page content & web app item list 
+complete page 
+i was hoping to avoid having to create a generic multiline text field to duplicate how {tag_description} should behave.</s><s> the other idea i had was bringing web app items in as hidden dom elements and driving everything else off of those, but i really am not a huge fan of creating unnesscary markup. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5960321-5962462</DOCNO>
+<TEXT>
+<subject>Web App item list, {tag_description} & javascript</subject>
+<post author="Liam%20Dilley" timestamp="Dec 28, 2013 1:41 PM">
+<s>tag description will have a variety of html entities, images and more, to much for the description value so a custom field with short description will do.</s><s> you are doing inline script as well as you got the tags there, your better off with rendered data or fetched data from the web apps and if your using html 5 data-address etc is better and have your scripts in script files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5960321-6026018</DOCNO>
+<TEXT>
+<subject>Web App item list, {tag_description} & javascript</subject>
+<post author="BriceShatzer" timestamp="Jan 18, 2014 12:20 AM">
+<s>ended up rendering out hidden div's with data attributes, which were looped through to create the elements that appear on the map.</s><s> the various filters are applied by looking for the relevant data attribute values, toggling the visible data attribute for those particular items, and then reinitializing the map. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6017869-1381043</DOCNO>
+<TEXT>
+<subject>Receipt page tags not rendering?</subject>
+<post author="JimMacKay" timestamp="Jan 15, 2014 8:35 PM">
+<s>i'm implementing google analytics ecommerce tracking in the receipt page.</s><s> i need to use these tags: {tag_orderid}, {tag_amount}.</s><s> but when i view the html source from the browser, the tags are still there.</s><s> they didn't change to values.</s><s> is there any other configuration that needs to take place to make these tags render? 
+
+</s><s>how does bc know which template is the actual receipt page?</s><s> ours has been renamed: receiptbuy. 
+</s><s>thanks, jim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6017869-6018027</DOCNO>
+<TEXT>
+<subject>Receipt page tags not rendering?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 15, 2014 9:55 PM">
+<s>hi jim, two things with this.</s><s> 1. by default this wont work unless you implement the cross domain stuff as your on a different domain when you pay etc. http://forums.adobe.com/thread/1074264 
+2. these are the only tags availible on the receipt buy page: 
+{tag_amount} amount paid {tag_authorizationcode} authorization code as the payment gateway returned {tag_errormessage} error message associated with the payment {tag_invoicenumber} invoice number {tag_orderid} internal id associated with the purchase {tag_paymentstatus} status of payment (for example, success, failed, or pending) how are you using them?</s><s> they should render but they have to be on the receipt buy layout and not on a custom page or anything. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-6017869-6018612</DOCNO>
+<TEXT>
+<subject>Receipt page tags not rendering?</subject>
+<post author="JimMacKay" timestamp="Jan 16, 2014 3:44 AM">
+<s>hi liam, 
+</s><s>thanks for your feedback.</s><s> (1) yes.</s><s> i'm using the google analytics cross domain functionality.</s><s> the ecommerce tracking itself is working becuase i can see transactions coming through in ga, but without orderids or revenue attached. 
+(2) the {tag_amount} and {tag_orderid} tags are simply not converting to numbers. 
+</s><s>when i complete a transaction and get to the receipt page, i view source in my browser and still see the untouched tags sitting there: <script type="text/javascript"> ga('require', 'ecommerce', 'ecommerce.js'); ga('ecommerce:addtransaction', { 'id': "{tag_orderid}", 'revenue': "{tag_amount}" }); ga('ecommerce:send'); </script> 
+</s><s>exactly the same way i left it in the template file from site manager->page templates->receiptbuy 
+can you not add tags from the web admin console?</s><s> do i need to add tags using ftp? 
+</s><s>thanks, jim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922544-1356392</DOCNO>
+<TEXT>
+<subject>Catalog and Product changes</subject>
+<post author="Agy" timestamp="Dec 11, 2013 4:10 PM">
+<s>i am putting different products/paintings into new catalogs by genre or subject.</s><s> i also have had them organized by artist name for some time now.</s><s> one of the things i omitted in the catalogs by artist name was the artist name in each of the products, because the artist name was the name for the catalog/drop down menu.</s><s> so it was unnecessary to put it in before each painting.</s><s> example: http://www.trueafricanart.com/martin-bulinya-page-1 now i am moving products in different catalogs by genre.</s><s> naturally, becasue they are not in the artist name catalog product desciption, there are no artist names appearing to see if one wants to see more of their work.</s><s> the only thing they see is the painting title, dimensions, medium and price, not the artist name above the painting title.</s><s> example: http://www.trueafricanart.com/ghanaian-artwork is there a way to put the artist name above the painting title but below the magnifying glass in the product description for the new art genre/subject catalogs.</s><s> i was told by chat to do this by placing the artist name in the product page custom 1 in the bc console and then add the {tag_custom1} in module templates - online shop layout - individual catalogs.</s><s> i did this but it did not line up above the painting title but below the magnifying glass.</s><s> i would like it to.</s><s> also, when i inserted it the artist name, it repeated in the artist name catalog's products.</s><s> i would like the artist name to only appear in the paintings the art genre catalogs, not in the artist name catalogs.</s><s> my artist name catalogs can be found in "paintings for sale" - "artist home" (an index) or "artist a-l" "artist m-z." the new catalogs containing art by genre is labeled in "paintings for sale" - "art genre home" (an index) and any catalog beneath "art genre home" the code for my individual product code is as follows.</s><s> if you can show me how to modify it to meet the settings specified above, i would greatly appreciate it!</s><s> to warn you, i put {tag_custom1} above {tag name} and it does not line up correctly - it puts the artist name to the left of the magnifying glass, not between the magnifying glass and directly above the title of the painting.</s><s> i don't want spaces between them, i want the artist name to be directly above the painting title, with a space above the artist name for the magnifying glass to be spaced apart as the other products currently show.</s><s> thank you!</s><s> <table cellspacing="0" cellpadding="0"> <tbody> <tr> <td valign="top"> <div class="shop-product-small clear"> <h5>{tag_name} </h5> <div class="image">{tag_smallimage_nolink}</div> {tag_description} <p>{tag_attributes} </p> <ul> <li class="price" id="rrpprice_{tag_productid}">retail price: <script language="javascript"><!-- 
+
+var onsale_{tag_productid} = "{tag_onsale}"; 
+if (onsale_{tag_productid} == "0") { document.getelementbyid("rrpprice_{tag_productid}").style.display = 'none'; } 
+
+//--></script> <strong>{tag_retailprice}</strong></li> <li class="price" id="sale_{tag_productid}">sale price: <script language="javascript"><!-- 
+
+var onsale_{tag_productid} = "{tag_instock}"; 
+if (onsale_{tag_productid} == "0") { document.getelementbyid("sale_{tag_productid}").style.display = 'none'; } 
+
+//--></script> <script language="javascript"><!-- 
+
+var onsale_{tag_productid} = "{tag_instock}"; 
+if (onsale_{tag_productid} == "0") { document.getelementbyid("rrpprice_{tag_productid}").style.display = 'none'; } 
+
+//--></script> <strong>{tag_saleprice}</strong> </li> <li id="buynow_{tag_productid}"> <script language="javascript"><!-- 
+
+var onsale_{tag_productid} = "{tag_instock}"; 
+if (onsale_{tag_productid} == "0") { document.getelementbyid("buynow_{tag_productid}").style.display = 'none'; } 
+
+//--></script> {tag_buynow, add to cart} </li> </ul> </div> </td> </tr> </tbody> </table> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922544-5995149</DOCNO>
+<TEXT>
+<subject>Catalog and Product changes</subject>
+<post author="Agy" timestamp="Jan 8, 2014 8:47 PM">
+<s>could one of the bc staff or gurus please answer this question.</s><s> it's been posted for quite some time now with clarity.</s><s> appreciate it!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5994485-1374986</DOCNO>
+<TEXT>
+<subject>Is this Captcha code corrupt?</subject>
+<post author="brian2012BC" timestamp="Jan 8, 2014 3:35 PM">
+<s>i have a site that has multiple newsletter signup forms on different pages.</s><s> all were working correctly.</s><s> today my client emailed saying that the captcha wasn't working on one of the pages.</s><s> i browsed to the page and found that the captcha image was a broken link symbol.</s><s> i checked the html and found the modified form text shown below.</s><s> if you look down where the <div class="captcha"> appears the "{module_captchav2}</div>" is also missing.</s><s> you will see a div class below it "captchaimg" that i did not add and three "input id's that i did not include.</s><s> also the cdata text is different on this form.</s><s> i made the changed text green in the html below to highlight it. 
+</s><s>can anyone explain what happened? 
+</s><s>thanks for you help!</s><s> brian - - - - - - - - - - - - - - <form action="/campaignprocess.aspx?listid=20818" method="post" onsubmit="return checkwholeform95912(this)" name="catemaillistform95912"> <div class="form-holder-rtcol"> <label for="clfullname"><span style="font-size: 14px; color: #cc0033;">full name</span></label><br /> <input type="text" maxlength="255" id="clfullname" name="fullname" class="text-field" /> </div> <div> </div> <div class="form-holder-rtcol"> <label for="clemailaddress"><span style="font-size: 14px; color: #cc0033;">email address</span></label><br /> <input type="text" maxlength="255" id="clemailaddress" name="emailaddress" class="text-field" /> </div> <div class="form-holder-rtcol"> <div> </div> <label><span style="font-size: 14px; color: #cc0033;">enter word verification in box below</span></label> <div class="captcha"> <div class="captchaimg"><img src="/captchahandler.ashx?id=a5e8e5abd6b64331b29c888b99837849&amp;col or=dimgray&amp;forecolor=white&amp;width=160&amp;height=36" alt="captcha image" /></div> <input id="captchav2" class="cat_textbox" type="text" name="captchav2" style="width: 160px;" /> <input id="captchatv2" type="text" name="captchatv2" style="display: none;" /> <input id="captchahv2" type="hidden" value="a5e8e5abd6b64331b29c888b99837849" name="captchahv2" /> </div> <div class="calendar-submit-row"> <input type="submit" id="catlistbutton" value="subscribe" class="submit" /> <div style="float: left; width: 350px; font-size: 11px; margin: 3px;"> <p> <span style="vertical-align: super; font-size: 85%;">&lowast;</span>we will never release your email address to anyone.</p> <p><span style="font-size: 14px; color: #cc0033;">note: all fields of form must be completed.</span></p> </div> </div> </div> </form> <script type="text/javascript" src="/catalystscripts/validationfunctions.js"></script> <script type="text/javascript"> //<!</s><s>[cdata[ function checkwholeform95912(theform){var why = "";if (theform.emailaddress) why += checkemail(theform.emailaddress.value);if (theform.captchav2) why += isempty(theform.captchav2.value, "enter word verification in box below"); if (why != ""){alert(why);return false;}theform.submit();return false;} //]]> </script> - - - - - - - - - - - - - - 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5994485-5994686</DOCNO>
+<TEXT>
+<subject>Is this Captcha code corrupt?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2014 5:02 PM">
+<s>it is not corrupt.</s><s> the likely situaiton is someone viewed the html of a form on another page, copied the html and pasted it into there.</s><s> they may or may not have changed the form action id to match another form (you should check) but instead of the needed captcha module, because they copied the html they copied the rendered captcha module.</s><s> which of course has session image which will now have expired. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5994034-1374866</DOCNO>
+<TEXT>
+<subject>How does BC rearrange the <head> section?</subject>
+<post author="LegionK" timestamp="Jan 8, 2014 1:21 PM">
+<s>and how can i disable that or take control of it?   i've been trying to make my site 100% html5 compliant.</s><s> one of the things i need to do is place the charset declaration right after the <head> tag. in my code it looks like this:     <!</s><s>doctype html> <html lang="en">     <head>        <meta charset="utf-8" />     <title>legionkreativ - contact</title>     <link rel="icon" href="images/favicon.ico" type="image/x-icon">     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />     <meta name="description" content="commercial photography services">     <meta name="keywords" content="photographer, celebrity portraits, advertising photography, magazine photography, corporate photography, commercial photography, portraits, headshots, portrait photography, northern nsw, northern rivers, lismore, ballina, byron bay, bangalow,">     <meta name="author" content="steve rehberger">     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">     <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">     <link href='http://fonts.googleapis.com/css?family=open+sans:400,300' rel='stylesheet' type='text/css'>     <script type="text/javascript" src="javascripts/jquery.js"></script>     <script type="text/javascript" src="javascripts/superfish.js"></script>     <script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script>       <!--[if lt ie 8]>           <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=i e6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg"border="0"alt=""/></a></div>       <!</s><s>[endif]-->     <!--[if (gt ie 9)|!(ie)]><!-->     <!--<!</s><s>[endif]-->     <!--[if lt ie 9]>     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>      <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">     <link href='http://fonts.googleapis.com/css?family=open+sans:300' rel='stylesheet' type='text/css'>     <link href='http://fonts.googleapis.com/css?family=open+sans:400' rel='stylesheet' type='text/css'>   <!</s><s>[endif]-->     </head>       <body>   you'll notice that <meta charset="utf-8" /> is right at the top.</s><s> yet, when i view the source of  the page after it is served by bc it looks like this:   <!</s><s>doctype html> <html lang="en"> <!-- bc_obnw --> <head> <title>legionkreativ - main</title> <link href="/stylesheets/modulestylesheets.css" type="text/css" rel="stylesheet" /> <script type="text/javascript">var jslang='en';</script> <link rel="icon" href="img/favicon.ico" type="image/x-icon"> <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen"> <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen"> <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"> <link rel="stylesheet" href="css/touchtouch.css" type="text/css" media="screen"> <link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen"> <link href="http://fonts.googleapis.com/css?family=open+sans:400,300" rel="stylesheet" type="text/css"> <script type="text/javascript" src="javascripts/jquery.js"></script> <script type="text/javascript" src="javascripts/superfish.js"></script> <script type="text/javascript" src="javascripts/jquery.flexslider-min.js"></script> <script type="text/javascript" src="javascripts/jquery.kwicks-1.5.1.js"></script> <script type="text/javascript" src="javascripts/jquery.easing.1.3.js"></script> <script type="text/javascript" src="javascripts/jquery.cookie.js"></script> <script type="text/javascript" src="javascripts/touchtouch.jquery.js"></script> <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='javascripts/jquery.preloader.js'></"+"script>");}     </script> <script> jquery(window).load(function() {      $x = $(window).width();           if($x > 1024) {                jquery("#content .row").preloader();    }             jquery('.magnifier').touchtouch();                    jquery('.spinner').animate({'opacity':0},1000,'easeoutcubic',function (){jquery(this).css('display','none')});                    }); </script> <script>   (function(i,s,o,g,r,a,m){i['googleanalyticsobject']=r;i[r]=i[r]||func tion(){   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new date();a=s.createelement(o),   m=s.getelementsbytagname(o)[0];a.async=1;a.src=g;m.parentnode.insertb efore(a,m)   })(window,document,'script','//www.google-analytics.com/analytics.js' ,'ga');   ga('create', 'ua-24121241-1', 'legionkreativ.com');   ga('send', 'pageview'); </script> <meta charset="utf-8" /> <meta name="description" content="commercial photography services"> <meta name="keywords" content="photographer, celebrity portraits, advertising photography, magazine photography, corporate photography, commercial photography, portraits, headshots, portrait photography, northern nsw, northern rivers, lismore, ballina, byron bay, bangalow,"> <meta name="author" content="steve rehberger"> <!--[if lt ie 8]>             <div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=i e6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>       <!</s><s>[endif]--> <!--[if (gt ie 9)|!(ie)]><!--> <!--<!</s><s>[endif]--> <!--[if lt ie 9]>     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>     <link rel="stylesheet" href="css/docs.css" type="text/css" media="screen">     <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">     <link href='http://fonts.googleapis.com/css?family=open+sans:300' rel='stylesheet' type='text/css'>     <link href='http://fonts.googleapis.com/css?family=open+sans:400' rel='stylesheet' type='text/css'>   <!</s><s>[endif]--> </head> all the tags have been grouped and the meta tags have been pushed down....and i simply can't find any way to take control of or change that?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5994034-5994285</DOCNO>
+<TEXT>
+<subject>How does BC rearrange the <head> section?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2014 2:15 PM">
+<s>you can not control the head bc sorts at the moment.</s><s> change it to - <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+</s><s>and it should stay right after the head for that bit though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5994034-5994335</DOCNO>
+<TEXT>
+<subject>How does BC rearrange the <head> section?</subject>
+<post author="LegionK" timestamp="Jan 8, 2014 2:34 PM">
+<s>well that works...thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5992155-1374365</DOCNO>
+<TEXT>
+<subject>Business Catalyst and Bootstrap</subject>
+<post author="KenTPT" timestamp="Jan 8, 2014 5:05 AM">
+<s>hi all, 
+</s><s>i am updating one of my bc sites to use bootstrap as a test, as i feel responsive features are important for site visitors and bootstrap stops me having to reinvent the wheel on every site.</s><s> all is well except when trying to get the v2 menus with dropdowns to work with bootstrap (cannot change the class for dropdown <ul> list items into a bootstrap friendly class).</s><s> has anyone managed to get this working, or have a work around as it is the only thing stopping me from rolling out bootstrap on all of my customers sites. 
+</s><s>p.s. any knowledge gained will of course be shared on this thread. 
+</s><s>regards 
+</s><s>ken 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5992155-5994079</DOCNO>
+<TEXT>
+<subject>Business Catalyst and Bootstrap</subject>
+<post author="Simon%20Darby%20-%20NZ" timestamp="Jan 8, 2014 1:29 PM">
+<s>hi ken 
+</s><s>check this out: http://joe-watkins.io/articles/build-a-twitter-bootstrap-dropdown-menu -with-business-catalysts-dynamic-menu-module-and-jquery 
+cheers simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-1369157</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="buzzvick" timestamp="Jan 1, 2014 1:59 PM">
+<s>hi guys, i have several secure zones each with a custom landing page.</s><s> so when the user logs in, he/she sees his own html page with his pic, logo, custom content etc. in essence this is mini-home page for the logged in user.</s><s> if however he navigates away from the page, all is lost.</s><s> i would like to have a "go back to your landing page" link, and allow the user to go back to his page.</s><s> is there a way to do this?thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-5971938</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="Liam%20Dilley" timestamp="Jan 1, 2014 3:06 PM">
+<s>you just need to create a user menu.</s><s> this is all about your ui/ux design.</s><s> what websites are you a member of?</s><s> what do you see when you login in to those, how do you access your account pages etc?   think of those, check them out, see what they are doing and that should help you think about how it will fit in to the wesbite user interface design you have.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-5972192</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="buzzvick" timestamp="Jan 1, 2014 4:42 PM">
+<s>ok.... thats fine.</s><s> i understand all this and how the my account page works.</s><s> but the landing page is not the same for each user.</s><s> user a logs in and is redirected to.... /default.aspx?pageid=10745313; user b goes to /default.aspx?pageid=10745315 etc so it is the page id that is unique, but how do you incorporate that page id into the required link. 
+</s><s>again, this is fine if the user stays on his landing page, but if he moves away to view another page, the following link will be on each susbsequent page. 
+<a href="/default.aspx?pageid=????">click here to go back to your page {module_whosloggedin} </a> so it is the ?</s><s>?</s><s>?</s><s>?</s><s> that needs replacing with the unique id for that users page.</s><s> it sounds like i might be on the wrong track with this idea, but just need some clear answers to help out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-5972220</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="Liam%20Dilley" timestamp="Jan 1, 2014 4:58 PM">
+<s>{module_subscriptions,show_expiry,show_prices,reserved,render_json} 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-5973108</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="buzzvick" timestamp="Jan 2, 2014 3:11 AM">
+<s>thnaks liam, that works well.</s><s> i managed to display the secure zone's link as i need for now. 
+</s><s>next step for this link is to display it as something other than just the name of the zone it links to, eg "zone a" changes to "click here for admin" 
+</s><s>using {module_subscriptions,false,false,,true}, i get this on screen: 
+.</s><s> {"securezonesubscriptionlist": {"entityid": 30425224,"subscriptions": [{"zonename": "agent a","zoneid": "6317",},]}}, so i assume the zoneid number is the crucial thing here. 
+i gather a custom javascript is required to extract/parse this id, and replace this into the above "click here..." link, but i know little more than that.</s><s> can you point me in the right direction as to how i could change this to suit.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-5987493</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="buzzvick" timestamp="Jan 6, 2014 7:26 PM">
+<s>updated - a better and less cumbersome way to display customer specific data on his landing page, is to: 1.extend the crm database, 2.attach these fields to contacts, 3.</s><s> use the tag {module_customerfield,xxxxxx,yyyyyy} inserted on your landing page. 
+</s><s>these fields can contain logos, content holders, web app items, anything you want specific to that customer.</s><s> perfect for customizing your customers' "my account" pages. 
+</s><s>see this posting for details on getting the correct tag - http://forums.adobe.com/docs/doc-2217 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5971794-5987550</DOCNO>
+<TEXT>
+<subject>Getting back to a secure zone Landing Page</subject>
+<post author="Liam%20Dilley" timestamp="Jan 6, 2014 7:36 PM">
+<s>which was originally written by me, mario just made an edit and at the time the forums overid the author ^^ i would not say that is les cumbersome though, that adds a manual process thats not really needed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5593965-1275467</DOCNO>
+<TEXT>
+<subject>Is it possible to Resort Items on price?</subject>
+<post author="jefferis" timestamp="Aug 14, 2013 7:33 AM">
+<s>my client insists on having a sort function on the catalog display page, to be able for the customer to re-sort the items by price.</s><s> the search feature does not re-sort the current page, but creates a new page of results.</s><s> i am wondering if it is even possible to do, because on the overall catalog module template, there isn't an area where you can call the tag_price for the individual items in the catalog.</s><s> and then, even if you could put a sort button on the page and it could work, would it then re-sort the multiple pages of a large catalog or only the current page?</s><s> in php a dynamic call to the database allows for a resorting of the display, but javascript relies on the values of the dispayed page, and the tag_price appears on the small item template not in the catalog template... 
+
+10:19 am we are currently sorting by price {tag_productlist,4,,12, price desc,,true}, but we need the option to allow the customer to resort from low to high for the same catalog display or in search results. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5593965-5594345</DOCNO>
+<TEXT>
+<subject>Is it possible to Resort Items on price?</subject>
+<post author="Sidney%20Mitchell" timestamp="Aug 14, 2013 9:48 AM">
+<s>hi, 
+</s><s>there is an option to include a "browse panel" into your overall shop layout. 
+{tag_browsepanel} 
+</s><s>displays the browse panel for current catalogue.</s><s> (use {tag_browsepanel, hideonsale, hidepricebrackets, hidesubcatalogues} to customize) example of use: {tag_browsepanel,true,false,true} 
+
+
+
+</s><s>this will allow you to create pricing ranges within the catalog details which will display to customers on the front-end.</s><s> the system will sort based off the selected price range that the customer chooses. 
+</s><s>kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5593965-5595294</DOCNO>
+<TEXT>
+<subject>Is it possible to Resort Items on price?</subject>
+<post author="jefferis" timestamp="Aug 14, 2013 1:51 PM">
+<s>thanks sidney...</s><s> what's funny (or sad) is that every time i asked tech support with a ticket about this, they said i had to use custom js, which would not work on multi-page display.</s><s> finally, tech support pointed this out to me this morning...</s><s> !</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5593965-5987166</DOCNO>
+<TEXT>
+<subject>Is it possible to Resort Items on price?</subject>
+<post author="michaele" timestamp="Jan 6, 2014 5:00 PM">
+<s>looking for some assistance, 
+i am using the same browsepanel module and would like to adjust the sorting order the subcatalogs are displayed it, hopefully to sort it alphabetically.</s><s> is this possible?</s><s> guessing would be javascript but not competent enough yet to do that myself. 
+</s><s>thanks for your time. -michael 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5965611-1367555</DOCNO>
+<TEXT>
+<subject>Display Web App Item Based on Subscription</subject>
+<post author="buzzvick" timestamp="Dec 30, 2013 2:05 AM">
+<s>hi guys i need to build a page which displays particular web app items based on the user's secure zone access status.</s><s> the goal is for a user to log in and view only the items he is assigned to.</s><s> eg agent a views property a, agent b views property b, agent c views property c and d, etc etc. agents can be subscribed to multiple secure zones and hence see multiple properties. 
+</s><s>there are few ways i've tried but none have quite hit the mark.... 
+</s><s>option 1 add the item to it's respective secure zone.</s><s> this is fine, however the list view of the (secured) item still displays, and it isn't until the user clicks the item, that he is prompted to log in so he can view the item's detail-view.</s><s> as new properties will be continually added by the client, this is the easiest way by far, but the process really doesn't the objective the way it is.</s><s> if the list view of the item can be hidden from the (unsubribed) user, this is an ideal fix. 
+</s><s>option 2.</s><s> secure the actual page (/projects.htm) containing the list view so no properties at all are displayed until the user logs in.</s><s> as in option 1, logging in will simply display all properties, even those the agent is not subscribed to. 
+</s><s>option 3.</s><s> kiyuco tutorial re displaying content based on secure zone.</s><s> looks good but would involve the client having to add/edit snippets of javascript/css, so isn't really an ideal solution to offer. 
+</s><s>hoping someone may have asolution or work-around on this, or can help with what is the best way to approach this?</s><s> all suggestions welcomed and greatly appreciated. thanks david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5965611-5970465</DOCNO>
+<TEXT>
+<subject>Display Web App Item Based on Subscription</subject>
+<post author="buzzvick" timestamp="Dec 31, 2013 5:45 PM">
+<s>updated workaround - easiest way,although still a bit clunky, is to set up a case for each 'customer', display the {module_case } on the my account page.</s><s> the list view is displayed (tag-subject}, and when clicked the detail view page shows only the descrition/detail field.</s><s> this field contains the web app based on classification.....</s><s> ie {module_webapps,9618,c,14606 } so only displays those properties classified to the particular agent. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5965611-5970555</DOCNO>
+<TEXT>
+<subject>Display Web App Item Based on Subscription</subject>
+<post author="Liam%20Dilley" timestamp="Dec 31, 2013 8:01 PM">
+<s>when you assign a web app item to the owner and insert the web app module variation: {module_webappscustomer .... 
+</s><s>then the list will only ever show the web app items assigned to that customer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5965611-5970763</DOCNO>
+<TEXT>
+<subject>Display Web App Item Based on Subscription</subject>
+<post author="buzzvick" timestamp="Jan 1, 2014 4:10 AM">
+<s>thanks liam, that sounds like the ideal solution.</s><s> to clarify ...</s><s> customer ( agent a ) is assigned to agent a secure zone, and the item he is permitted to view is assigned to the agent a secure zone. 
+</s><s>if agent a is logged he should see the item.</s><s> however, {module_webappscustomer,9618,a} gave me a no items found message.</s><s> did i miss something with the code?</s><s> thanks again.david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5965611-5971027</DOCNO>
+<TEXT>
+<subject>Display Web App Item Based on Subscription</subject>
+<post author="Liam%20Dilley" timestamp="Jan 1, 2014 7:47 AM">
+<s>on a web app item you can assign the owner of that item, so you can specify a person and render only the ones they are assigned to.</s><s> this is different from the zone stuff.</s><s> you can see things and click and refuse access.</s><s> but if you set things up properly with the right pages, landing pages for different zones and web apps assigned to securezones and use of classifications you can render lists to be availible only to the right zone as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5965611-5971791</DOCNO>
+<TEXT>
+<subject>Display Web App Item Based on Subscription</subject>
+<post author="buzzvick" timestamp="Jan 1, 2014 1:51 PM">
+<s>thanks liam, i've gone down the track of having a log in form for multiple zones, a separate landing page for each secure zone, then displaying the items on that landing page based on classification, so it is a combo of using secure zones and classification to get the result.</s><s> ie agent a logs in, goes to agent a landing page, items displayed on this page are classified as agent a ( and of course are assigned to the secure zone a).</s><s> so its working as it should.</s><s> thanks for your insight. 
+</s><s>at this point though i still haven't made use of your original advice on the {module_webappscustomer,9618,a....</s><s>} snippett, and originally i wasn't sure how you actually assign an owner to the item - but i see this is done in the 'submitted by' field in the item's details.</s><s> i tested this and it worked as expected which is great, however, the item in this case needs to viewable by multiple agents.</s><s> as i can only assign one owner, this means the other ( agents) can't see the item when they are logged in.</s><s> is there a way around this, or am i limited to just the one owner?</s><s>... in which case this tag won't work as i'd hoped.</s><s> i do like this option as it easiest for the client to control who sees what.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5962071-1366653</DOCNO>
+<TEXT>
+<subject>jquery autocomplete with BC site search</subject>
+<post author="gripen" timestamp="Dec 28, 2013 10:25 AM">
+<s>hi, is there a way to combine the jquery autocomplete widget with the businesscatalyst site search?</s><s> so that string supplied by the autocomplete widget is the one that site search uses? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-1362210</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 12:35 PM">
+<s>i'm in need of some help.</s><s> i've setup my photo gallery, generated the xml feed.</s><s> i went to the nivo slider site, but don't see instructions of how to make it read the xml file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5945762</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2013 1:21 PM">
+<s>you probably could code in the extra javascript needed but i not seen nivo slider (or most other sliders) say they can use an xml feed.</s><s> that is not really what your supposed to do.</s><s> these run of html and normally you would do a webapp and render out the images in the format that slider needs in its documentation.</s><s> where did you see on the nivo slider it could run off an xml file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5945742</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 1:52 PM">
+<s>liam.</s><s> thanks.</s><s> as i'm researching more, i'm seeing that you are most likely correct and it's not possible.</s><s> but i also found an xml slider that does seem to do the job.</s><s> it's only $12, so i'm willing to give it a try.</s><s> does this look like something that would work? 
+http://codecanyon.net/item/advanced-slider-jquery-xml-slider/132618 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5945876</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2013 2:19 PM">
+<s>free one here - http://wowslider.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5945954</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 2:21 PM">
+<s>so this is the information that i'm using which leads me to believe i can use the xml feed to populate the slider. 
+http://forums.adobe.com/docs/doc-1780 .</s><s> you can now style this using your own css or use one of the many free, jquery-based gallery/slideshow plugins available on the web, such as galleria, the jquery cycle plugin, or innerfade. 
+</s><s>when using a seperate jquery plugin on top of this set up, make sure you place and execute the plugin script after the code we just inserted, so that our li items are generated before it attempts to process and manipulate them. 
+am i right and it just takes the proper coding? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5945955</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 2:29 PM">
+<s>thanks liam, i will give this free one a try first.</s><s> my client doesn't want anything fancy, just a simple push and a caption, so this should work.</s><s> on second thought, this one is $79 to remove the wow slider watermark.</s><s> my client definitely won't want the watermark. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5946086</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 4:04 PM">
+<s>i guess my question remains, how do i utilize these photo gallery xml results to populate these xml sliders? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5946100</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2013 4:07 PM">
+<s>your getting a bit mixed up that everything runs off that.</s><s> that is a means to build your own gallery with your own coding implementation.</s><s> yes you can get anything to work with that but you need to code this yourself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5946088</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 4:18 PM">
+<s>ok, i'm following that part liam.  which goes back in part to my original question as to where i can find a tut to help me develop that coding.   from the link i listed before:   i see in the xml slider how to write the code.</s><s> i guess the part i am mixed up on is how to connect my photo gallery xml results into the slider.   i realize i may not be expressing it properly because i'm intermediate level at this and seeking help.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5946269</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="ccolbertemg" timestamp="Dec 19, 2013 4:22 PM">
+<s>btw, thanks for your help liam, sorry for being frustrating.</s><s> just trying to figure out if this is something that is even doable or should i just scrap that element of the site. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5945586-5946259</DOCNO>
+<TEXT>
+<subject>Tutorial needed: Nivo Slider powered by Photo Gallery XML feed</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2013 4:51 PM">
+<s>well, you can google to see what people have done with what ever slider you choose to put the xml in but there is no tutorial as such. 
+</s><s>every slider is different and you need to review the callbacks they have for example.</s><s> so before load etc, what options they have, if any, for preloading images etc. then you need to code using the example in the guide from mario to loop through the xml feed, pull out the images, form the html and call, insert or what ever needs to be done for that plugin to work.</s><s> this is just mostly jquery and programing knowledge, just google nivo slider xml etc and see what people have done on things like stackoverflow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5940491-1360887</DOCNO>
+<TEXT>
+<subject>Problem styling webapp layout with css</subject>
+<post author="MaryBlight" timestamp="Dec 18, 2013 12:33 AM">
+<s>hi all (hi liam!</s><s>) 
+</s><s>i am having trouble styling a webapp layout using css.</s><s> usually i use tables, but i want to get a webapp layout working with css for this client and i have hit a roadblock. 
+</s><s>here is the webapp item on a page http://balivillas.businesscatalyst.com/our-villas 
+i want the short description text to sit on the right of the picture for the villa.</s><s> no matter what i do with the css i can't get it to do this one simple thing. 
+i have a css stylesheet governing the whole design. 
+</s><s>the css code in it for the webapp alternative and item layout is as follows in the stylesheet: 
+.webappwrapper{ float: left; width: 600px; min-height: 260px; 
+} .webappsmlpic { float: left; width: 310px; min-height: 260px; } .webappsmldesc { float: left; width: 250px; min-height: 260px; } 
+</s><s>this is the code in the item and alternate layouts for the webapp 
+<div class="webappwrapper"> <div class="webappsmlpic"> <h2>{tag_name}</h2> {tag_small pic}</div> <div class="webappsmldesc">{tag_short description}</div> </div> 
+</s><s>if i download the webapp alternative list layout to dw6 and put the code just above into it, it will not style. 
+</s><s>if i add this line linking the layout to the overall site stylesheet the webapp does style in dw: 
+<link href="/stylesheets/balivillas.css" rel="stylesheet" type="text/css" /> 
+
+</s><s>however when i put this code in the webapp layouts in the backend of bc, the layout does not style.</s><s> the text sits stubbornly below the picture and will not sit to the right of it. 
+i tried doing the css first as an id, then changed it to a class.</s><s> this made no difference. 
+i tried inserting the line referring to the stylesheet in the webapp layouts.</s><s> this made no difference. 
+i tried changing the reference in the default template to ../ before the stylesheet.</s><s> this made no difference.</s><s> (the webapp uses the default stylesheet) 
+</s><s>ok so what am i doing wrong here?</s><s> surely you can style webapp layouts using css?</s><s> that is the whole idea of flexibly layouts isn't it? 
+i know it will be something simple, but i can't work it out. 
+</s><s>thanks for your help everyone. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5940491-5943676</DOCNO>
+<TEXT>
+<subject>Problem styling webapp layout with css</subject>
+<post author="MaryBlight" timestamp="Dec 18, 2013 9:30 PM">
+<s>ok so i solved the problem on my own.</s><s> (yay for me!</s><s>)....</s><s> 
+</s><s>you have to put the css style code in the webapp layout as it does not seem to be able to reference an external stylesheet. 
+</s><s>it seems a primitive way to do it, but what to do.... 
+</s><s>so this is the code i put in the webapp list and alternative layouts to get them styled correctly: 
+<html> <head> <style> .webappwrapper{ float: left; width: 600px; min-height: 260px; } .webappsmlpic { float: left; width: 310px; min-height: 260px; } .webappsmldesc { float: left; width: 250px; min-height: 260px; } </style> </head> <body> <div class="webappwrapper"> <h2>{tag_name}</h2> <div class="webappsmlpic"> {tag_small pic}</div> <div class="webappsmldesc">{tag_short description}</div> </div> </body> </html> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922547-1356393</DOCNO>
+<TEXT>
+<subject>Making CCV field in checkout mandatory for on site credit cards, but not for getting to Pay Pal site</subject>
+<post author="Agy" timestamp="Dec 11, 2013 4:14 PM">
+<s>
+</s><s>hi.</s><s> i posted this on december 1st and am still waiting for a response after a failed attept with chat. 
+</s><s>when my clients are making an order, the ccv field, even though it is marked as required, they can actually place an order without entering the ccv.</s><s> i'd like the ccv to be required.</s><s> a chat rep said pay pal and bc don't require a ccv, but i would like it to be there for extra security.</s><s> i've put the correct webform under module tempaltes > online layouts > registration buy using both html and module insert methods to test it.</s><s> neither worked.</s><s> the rep gave me this code to put at the bottom of my web form (note this is just the bottom of the web form field code as the top and middle have nothing to do with ccv).</s><s> the bold text is the extra text that is supposed to make the ccv required. 
+</s><s>it works.</s><s> this code does render a ccv requirement for direct credit card transactions on site.</s><s> problem is, if a client selects pay pal in my checkout as their choice and clicks "place order" a pop up window appears telling them they must enter their ccv.</s><s> so its being required for direct cc on site and offsite for pay pal.</s><s> of course a ccv shouldn't needed on that screen if a client wants to pay by going to the pay pal website. 
+</s><s>so i was wondering if you could help me modify the code so that the ccv code is required for direct credit card purchases on my site, but when a client wants to use pay pal, that the ccv required field pop up does not appear and the client can be taken to pay pal to compete their order.</s><s> many thanks!</s><s> my website is trueafricanart.com and i am using the latest bc version and normally firefox, though i have tested in safari and ie 9 and 10. 
+<script type="text/javascript" src="/catalystscripts/validationfunctions.js"></script> <script type="text/javascript"> //<!</s><s>[cdata[ var submitcount44260 = 0;function checkwholeform44260(theform){var why = "";if (theform.paymentmethodtype) why += checkselected(theform.paymentmethodtype, "payment method");if (!</s><s>theform.paymentmethodtype || getradioselected(theform.paymentmethodtype) == 1) { if (theform.cardname) why += isempty(theform.cardname.value, "name on card"); if (theform.cardnumber) why += isnumeric(theform.cardnumber.value, "card number"); if (theform.amount) why += iscurrency(theform.amount.value, "amount"); } if (theform.workphone) why += isempty(theform.workphone.value, "work phone number"); if (theform.billingaddress) why += isempty(theform.billingaddress.value, "billing address"); if (theform.billingcity) why += isempty(theform.billingcity.value, "billing city"); if (theform.billingstate) why += isempty(theform.billingstate.value, "billing state"); if (theform.billingzip) why += isempty(theform.billingzip.value, ""); if (theform.billingcountry) why += checkdropdown(theform.billingcountry.value, "billing country");if (theform.cardccv) why += isnumeric(theform.cardccv.value, "ccv number");if (theform.cardccv) why += isempty(theform.cardccv.value, "ccv number"); if (theform.emailaddress) why += checkemail(theform.emailaddress.value); if (theform.firstname) why += isempty(theform.firstname.value, "first name"); if (theform.lastname) why += isempty(theform.lastname.value, "last name"); if (theform.cat_custom_511186) why += checkselected(theform.cat_custom_511186, "billing address same as shipping address?");if(why != ""){alert(why);return false;}if(submitcount44260 == 0){submitcount44260++;theform.submit();return false;}else{alert("form submission is in progress.");return false;}} //]]> </script> </form> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922547-5922563</DOCNO>
+<TEXT>
+<subject>Making CCV field in checkout mandatory for on site credit cards, but not for getting to Pay Pal site</subject>
+<post author="Liam%20Dilley" timestamp="Dec 11, 2013 4:18 PM">
+<s>have you deleted that other post? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922547-5922645</DOCNO>
+<TEXT>
+<subject>Making CCV field in checkout mandatory for on site credit cards, but not for getting to Pay Pal site</subject>
+<post author="Agy" timestamp="Dec 11, 2013 4:42 PM">
+<s>yes, as no one replied and it had been there for over a week.</s><s> what i put here is a direct copy of it in the hopes that it would be noticed - can you help please?</s><s> there is a another question of a different topic here that i also asked: http://forums.adobe.com/message/5922544#5922544 thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922547-5922721</DOCNO>
+<TEXT>
+<subject>Making CCV field in checkout mandatory for on site credit cards, but not for getting to Pay Pal site</subject>
+<post author="Liam%20Dilley" timestamp="Dec 11, 2013 5:24 PM">
+<s>i thought i had and a few others in that with the answer.</s><s> because it was a javascript issue. 
+</s><s>as i said in that other post, the code you get from the registration form has a condition on the radio options, none of the fields for credit card become required if you choose paypal. 
+eg: if (!</s><s>theform.paymentmethodtype || getradioselected(theform.paymentmethodtype) == 1) { if (theform.cardname) why += isempty(theform.cardname.value, "name on card<br>"); if (theform.cardnumber) why += isnumeric(theform.cardnumber.value, "card number<br>"); if (theform.amount) why += iscurrency(theform.amount.value, "amount<br>"); } 
+</s><s>and in there and when that case is met you put in the ccv script. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5922547-5922710</DOCNO>
+<TEXT>
+<subject>Making CCV field in checkout mandatory for on site credit cards, but not for getting to Pay Pal site</subject>
+<post author="Agy" timestamp="Dec 11, 2013 5:41 PM">
+<s>thank you.</s><s> i did not see your reply in my deleted post.</s><s> i will try this. 
+</s><s>could you please take a look at the remaining question i had here: http://forums.adobe.com/message/5922544#5922544 
+thank you... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5237352-1192489</DOCNO>
+<TEXT>
+<subject>og image not appearing in FaceBook</subject>
+<post author="6square" timestamp="Apr 15, 2013 1:17 PM">
+<s>open graph tag doesn't appear to be working.</s><s> when adding the url to a facebook post the og image is not appearing.</s><s> any help is appreciated.</s><s> thanks!</s><s> 
+</s><s>site: http://www.crowsnestnewport.com/ 
+(<meta property="og:image" content="http://crowsnestnewport.com/images/cn-logo-share.png" />) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5237352-5244222</DOCNO>
+<TEXT>
+<subject>og image not appearing in FaceBook</subject>
+<post author="6square" timestamp="Apr 17, 2013 10:35 AM">
+<s>am i not doing something correctly?</s><s> really could use some help on this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5237352-5244404</DOCNO>
+<TEXT>
+<subject>og image not appearing in FaceBook</subject>
+<post author="Lynda%20Spangler" timestamp="Apr 17, 2013 10:50 AM">
+<s>that url throws errors in facebook's debugger: 
+inferred property: the 'og:url' property should be explicitly provided, even if a value can be inferred from other tags.</s><s> inferred property: the 'og:title' property should be explicitly provided, even if a value can be inferred from other tags.</s><s> small og:image: all the images referenced by og:image should be at least 200px in both dimensions, with 1500x1500 preferred.</s><s> (maximum image size is 5mb.</s><s>) please check all the images with tag og:image in the given url and ensure that it meets the recommended specification. og:image should be larger: provided og:image is not big enough.</s><s> please use an image that's at least 200x200 and preferably 1500x1500.</s><s> (maximum image size is 5mb.</s><s>) image 'http://www.crowsnestnewport.com/images/home-images/cn-trinity-in-bloom .jpg' will be used instead. 
+
+</s><s>here is the link to the debugger: https://developers.facebook.com/tools/debug 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5237352-5281037</DOCNO>
+<TEXT>
+<subject>og image not appearing in FaceBook</subject>
+<post author="thetrickster888" timestamp="Apr 30, 2013 4:22 PM">
+<s>everything works fine for me when i share http://www.crowsnestnewport.com/ on facebook.</s><s> the problem is if you make a mistake with the open graph markup and share a url with broken og markup, facebook will save it.</s><s> just run the url through the facebook debugger which will refresh the cached open graph data for that url.</s><s> lynda and i must have both refreshed the cache by using your url in the facebook debugger at https://developers.facebook.com/tools/debug 
+maybe you also made the image bigger or something too since i used the debugger but the photo that comes up: http://www.crowsnestnewport.com/images/home-images/cn-logo-facebook.pn g is nice and big. 
+</s><s>the debugger is saying for you to include the "og:title", "og:description" and "og:url" meta tags too-- they are deriving that data from other places on your page but they are saying to include all those tags too and you'll be all set. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4975124-1130986</DOCNO>
+<TEXT>
+<subject>How do I display an input field when a specific drop down option is selected at checkout?</subject>
+<post author="eric_413" timestamp="Jan 7, 2013 1:16 PM">
+<s>hey guys, 
+i've got a "how did you hear about us" dropdown on my checkout page. 
+i would like to add the ability for useres to select "other" then type in where they heard about us. 
+</s><s>here's what i've got without the other option: 
+<label for="cat_custom">how did you hear about us?</s><s> <span class="req">*</span></label> <select name="cat_custom" id="cat_custom" class="cat_dropdown"> <option value=" ">-- please select --</option> <option value="option 1">option 1</option> <option value="option 2">option 2</option> <option value="option 3">option 3</option> </select> 
+</s><s>any help would be great.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4975124-4975222</DOCNO>
+<TEXT>
+<subject>How do I display an input field when a specific drop down option is selected at checkout?</subject>
+<post author="Liam%20Dilley" timestamp="Jan 7, 2013 2:04 PM">
+<s>hi eric, i take it you not got to much knowledge on javascript? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4975124-4975212</DOCNO>
+<TEXT>
+<subject>How do I display an input field when a specific drop down option is selected at checkout?</subject>
+<post author="eric_413" timestamp="Jan 7, 2013 2:09 PM">
+<s>that's correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4975124-4978097</DOCNO>
+<TEXT>
+<subject>How do I display an input field when a specific drop down option is selected at checkout?</subject>
+<post author="eric_413" timestamp="Jan 8, 2013 12:13 PM">
+<s>i was able to play with it enough to figure it out. 
+</s><s>here's what i did: 
+<style type="text/css"> .other-hdyh { display:none; } </style> 
+<script type="text/javascript"> $(document).ready(function() { 
+$("#myselect").bind('change', function(){ switch($(this).val()){ case "other": showother(); break; } });  function showother(){ // alert('thanks'); $( "#other-hdyh" ).toggleclass( "other-hdyh"); } }); </script> 
+
+<select name="myselect" id="myselect"> <option value=" ">-- please select --</option> <option value="1">option 3</option> <option value="2">option 2</option> <option value="3">option 1</option> <option value="other">other</option> </select> 
+
+
+
+<div id="other-hdyh" class="other-hdyh"> <label for="other">other:</label> <input type="text"/> </div> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-1257202</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Jul 17, 2013 8:49 PM">
+<s>i've made a web app slide show using nivo slider & i was very pleased with it.</s><s> however, after installing custom js to zoom the large image on the individual product pages the slide show has stopped working altogether.</s><s> can anyone offer assistance please?</s><s> currently viewable on: http://meluka.worldsecuresystems.com/home i also plan to have slide shows on the 'catalog' pages too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5516024</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Jul 17, 2013 9:28 PM">
+<s>hey again-- 
+it looks like your nivo slider might not work with the latest jquery library which you are using on your site.</s><s> typically, jquery deprecates some features/methods in newer versions and some javascript libraries like the nivo slider don't update their scripts.</s><s> in this case, nivo is trying to use the .live() jquery method which was deprecated (but you can still use it) up through jquery 1.8.3.</s><s> in jquery 1.9 and above it's completely removed from the library so any script using that method will fail. 
+</s><s>right now you are using the latest jquery version (1.10.2) by referencing: 
+<script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+in your page templates.</s><s> this might not be a good idea.</s><s> by referencing that file you'll always be using the latest stable version but jquery will also be updating that file on it's own to the latest version for you so your jquery version will change when they change that file.</s><s> i'd stick to a specific version all the time and not reference the "latest" jquery like you are using.</s><s> and, as i said, you can't use any jquery library over 1.9 since it won't have the .live() method that nivo requiers so you can probably safely switch to jquery 1.8.3 which is still pretty current and will work with the nivo slider.</s><s> update the "jquery-latest.min.js" reference to: 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
+</s><s>word of note-- keep an eye out for other scripts that might break.</s><s> most jquery dependant scripts will likely work with v1.8.3 but you can't be sure so replace your jquery library like i describe and then make sure nothing else is broken on the site. 
+</s><s>also-- side note-- you've got some 404 (file not found) errors coming up on your site which slows page load as the browser tries to load those files and they don't exist.</s><s> the files in question are: 
+/nivo-slider/themes/orman/orman.css /nivo-slider/themes/pascal/pascal.css /stylesheets/images/loading.gif 
+you've got references to the .</s><s>css files in your page templates' head element so either remove these references so there's no 404 errors for them or upload them to your site.</s><s> the loading.gif image is likely being called by the nivo slider so upload a loading.gif file to the /stylesheets/images/ folder.</s><s> you can use the one from the nivo library or grab your own from a site like http://ajaxload.info 
+in the future, you can easily see if there are javascript errors or 404 errors for images, css or javascript assets by using the javascript console in chrome's developer tools.</s><s> you should be using chrome to view/test your websites in the first place (you probably are) and you can just use these shortcuts to launch the javascript console: 
+ctrl + shift + j cmd + opt + j good luck.</s><s> sites coming along nicely. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5516008</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Jul 17, 2013 9:47 PM">
+<s>brilliant - thanks trickster.</s><s> you're a marvel!</s><s> referencing jquery 1.8.3 did the trick.</s><s> thanks for the other tips too - i'll work thru these points.</s><s> i've been using firefox/firebug to try & sort coding issues.</s><s> you are the font of knowledge!</s><s> thanks again, glenn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5539408</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Jul 25, 2013 5:07 PM">
+<s>trickster, 
+</s><s>sorry to bother you with this.</s><s> i'm on a very tight time frame & thought you may be able to help?</s><s> i've posted a question entitled: custom catalog layout 
+i have catalog & sub-catalog pages.</s><s> i would like to have unique slideshows (that i have already set up) instead of product displayed on the catalog (menu) pages.</s><s> the sub-catalog pages (sub-menus) can stay as-is, displaying product.</s><s> i have gotten around it by creating pages with slideshows & using these for the catalog pages instead of the e-commerce pages need to use e-commerce catalog pages for the site hierarchy & bredcrumbs.</s><s> is this possible please?</s><s> http://meluka.worldsecuresystems.com/livingroom-1 
+</s><s>kind regards, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5566648</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 5, 2013 2:57 AM">
+<s>the client loves the look &amp; feel of the site but has now asked for sub-sub-menus.</s><s> this is not part of the original bc oxo template.</s><s> publishing date has also now been pushed back.</s><s> how involved is the coding for sub-sub-menus? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5567207</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 5, 2013 7:22 AM">
+<s>i'm not sure i understand-- do you mean submenus in your main navigation or do you need to include products on your top-level store catalogs underneath your slideshows? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5568297</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 5, 2013 12:32 PM">
+<s>sorry trickster - yes, submenus in the main navigation menu. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5568340</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 5, 2013 12:56 PM">
+<s>it looks like you are using bc's default menu system and i don't think that supports any levels past the first two levels.  you'll have to transition your menu to use another menu framework that does support mutiple levels of submenus.  you'll have to remove the javascript after your main menu layout that bc adds in there by default so that there's no conflict.  you should be able to replace the bc javascript by going to the "develop" tab and navigating to /moduletemplates/menu/default and editing "container.html".  you can use the superfish menu framework which support multiple levels in dropdown navigation.  replace the javascript after the html markup on that page with this:   <script src="//cdnjs.cloudflare.com/ajax/libs/superfish/1.7.3/superfish.min.js"></script> <script>   jquery(document).ready(function() {      jquery("#mymenu1 > ul").addclass("sf-menu").superfish();   }); </script>     and then download and reference this css file so that your menu is using superfish's css styles: http://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.3/superfish.css   i can't guarantee that those superfish css rules won't adversely affect your current menu styles so you might need to play with your own css to fix those issues.  for docs on superfish visit: http://users.tpg.com.au/j_birch/plugins/superfish/
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5568612</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 5, 2013 2:03 PM">
+<s>thanks trickster, 
+</s><s>i'll give it a go! 
+</s><s>regards, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5568869</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="Liam%20Dilley" timestamp="Aug 5, 2013 3:08 PM">
+<s>just wanted to chime in glenn, i think there is a bit to much scripting etc going on now on that site and to many dom launching etc. get this done but defiantly look at the other stuff i have mentioned in other threads for you on the next site you do. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5570212</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 6, 2013 3:50 AM">
+<s>trickster thanks again for your helpful advice.</s><s> i may need to push the site live as i'm so far behind &amp; then trial the new main nav menu on a mirrored version of the site (as a trial site for testing). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5570213</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 6, 2013 3:51 AM">
+<s>thanks liam yes will do.</s><s> regards, glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5581061</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 9:44 AM">
+<s>trickster, i'm nearly there with this site, thanks to your help.</s><s> the client has come back with one last request before going live on mon. on each catalog page they want to show a heading and image for that catalog's sub-catalogs, similar to http://www.habitat.co.uk/categories/furniture/fcp-category/home?resetf ilters=true i'm just not sure of the best way to implement this as the catalogs &amp; sub-catalogs share the same template? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5581154</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 9, 2013 9:55 AM">
+<s>i think that functionality is native in bc. for your sub-catalogs, make sure they are set to be a child of another top-level catalog and you can add the catalog's main image in the bc admin area.</s><s> so, for example, for your "barstools" catalog, goto e-commerce > catalogs and edit your barstools catalog.</s><s> make sure you set the parent catalog to the "livingroom" catalog and then set the thumbnail image for the barstool catalog. 
+</s><s>then, in your main shop layout (page_content.html in /layouts/onlineshop/) make sure you are using the tag {tag_cataloguelist} where you want the subcatalogs to show up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5581478</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 11:58 AM">
+<s>thanks trickster - sorry to bother you with this.</s><s> i've set the thumbnail for the beds sub-category that should show on the bedroom catalog page (it's parent).</s><s> i'm not sure why it isn't.</s><s> here is the code:     [home | /] : {module_breadcrumbs, " } {module_shoppingcartsummary,horizontal} {module_contentholder, name="{tag_name}"} {tag_cataloguelist,4,,,,hideemptymessage} {tag_productlist,3,,30,,hideemptymessage,true} {tag_previouspage,!/images/gpprev.jpg|alt=|src=/images/gpprev.jpg!</s><s>} {tag_nextpage,!/images/gpnext.jpg|alt=|src=/images/gpnext.jpg!</s><s>}       </div> </div> </div> </div>   is the tag {tag_cataloguelist,4,,,,hideemptymessage} correct?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5581937</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 2:06 PM">
+<s>trickster, 
+</s><s>i'm battling my way thru it - will let you know how i go. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582361</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 9, 2013 5:21 PM">
+<s>it should just be {tag_cataloguelist,4} where "4" is the number of catalogs per row. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582363</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 5:26 PM">
+<s>trickster, i've used {tag_cataloguelist,3,,,,,true} please see: 
+http://meluka.worldsecuresystems.com/bedroom 
+i still need to format the image/text links for the sub-catalogs 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582366</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 5:28 PM">
+<s>there is a big problem tho - where there are sub-sub-catalogs, they are visible on the sub-catalog pages as they share the same template.</s><s> the client only wants the sub-catalogs to be visible on the catalog pages, and not the sub-sub-catalogs to be visible on the sub-catalog pages.</s><s> so very tricky (again!</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582389</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 5:36 PM">
+<s>trickster, 
+</s><s>for catalog, can you please see: 
+http://meluka.worldsecuresystems.com/bedroom 
+& for sub-catalog: 
+http://meluka.worldsecuresystems.com/bedroom/beds 
+as an example. 
+</s><s>thanks, glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582421</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 9, 2013 6:06 PM">
+<s>the only way currently to tell that you are on a sub-catalog page is to use some javascript to see if there are 3 or more links inside your p.breadcrumbs element.</s><s> if there are 3 or more links in there you'll be in a subcatalog so we'll check to see if there are 3 or more breadcrumb links and if so, we'll add a class via javascript to your body tag.</s><s> then, we'll write some css that says when the body has a class of "subcat" to hide the catalogue list. 
+</s><s>in your main.js file, goto the end and put this in there: 
+(function($){ $(document).ready(function() { var crumbs = $("p.breadcrumbs").find("a").length; if ( crumbs >= 3 ) { $("body").addclass("subcat"); } }); })(jquery); 
+
+</s><s>then at the bottom of your all.css file add this: 
+body.subcat .cataloguelist { display: none; } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582526</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 9, 2013 7:16 PM">
+<s>actually-- i'm adjusting the script to check for the subcatalog element first so that this doesn't happen on non catalog pages: 
+(function($){ $(document).ready(function() { var cat = $(".cataloguelist"); var crumbs = $("p.breadcrumbs").find("a").length; if ( cat && crumbs >= 3 ) { $("body").addclass("subcat"); } }); })(jquery); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582575</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 8:30 PM">
+<s>thanks again trickster - i'll try it now! 
+</s><s>regards, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582679</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 9:40 PM">
+<s>trickster, 
+
+</s><s>yes that makes perfect sense - i tried this but unfortunately it was unsuccessful.</s><s> do you know why this might be please? 
+
+</s><s>the other issue i am having is on the catalog pages as in http://meluka.worldsecuresystems.com/bedroom 
+
+
+
+
+</s><s>there is a gap on the page due to there being no product on the catalog pages.</s><s> the product is on the sub-catalog (& sub-sub-catalog pages).</s><s> i'm not sure how to remove this gap.</s><s> it has been there since the client inadvertently uploaded 1 row of product (since removed) to the kidstuff page. 
+
+</s><s>many thanks, 
+
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582694</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 9, 2013 9:55 PM">
+<s>when i first gave you some javascript to change the message for the empty catalogs and empty products i thought you'd be actually changing the message but since you are just replacing them with blank strings we don't really need that javascript anymore.</s><s> you only need that if you want to replace the text with some other text.</s><s> we can use css to hide the empty catalog or empty products message. 
+</s><s>add this line to the end of your all.css file: 
+.catalogueitemnotfound, .productitemnotfound { display: none; } 
+</s><s>as for my script to hide the catalogs on subcatalog pages-- it looks like there's an error in main.js so it's causing an error in my javascript.</s><s> go ahead and remove the script i had in main.js and then since we don't need that other script for replacing the text of the emtpy catalogs or producst, you can remove that at the end of jquery.main.js and replace it with my script for hiding the category: 
+(function($){ $(document).ready(function() { var cat = $(".cataloguelist"); var crumbs = $("p.breadcrumbs").find("a").length; if ( cat && crumbs >= 3 ) { $("body").addclass("subcat"); } }); })(jquery); 
+you should be alls et. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582716</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 10:14 PM">
+<s>thanks trickster,   that has removed the gap on catalog pages.   if i add the following js to the jquery.main.js file, it renders the slideshow invisible:   (function($){       $(document).ready(function() {          var cat = $(".cataloguelist");          var crumbs = $("p.breadcrumbs").find("a").length;          if ( cat && crumbs >= 3 ) {              $("body").addclass("subcat");          }       });   })(jquery);     & unfortunately doesn't remove the catalogs on sub-catalog pages.   the following js is in the large_product.html   jquery(document).ready(function(){ var productname = jquery('.details h5').text(); jquery('.main-frame p.breadcrumbs').append(" : " + productname + ""); }); jquery(document).ready(function(){ jquery('#zoom img').wrap('').css('display', 'block').parent().zoom({on:'click'}); });   any thoughts?   regards, glenn.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582698</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 9, 2013 10:34 PM">
+<s>don't worry about the javascript on the large product page. 
+</s><s>remove this from jquery.main.js: 
+(function($) { 
+$(document).ready(function() { 
+
+
+
+
+var noproductsmessage = ""; 
+var nosubcatalogmessage = ""; 
+var containers = $(".productitemnotfound, .catalogueitemnotfound"); 
+ 
+containers.each(function() { 
+
+
+
+
+$(this).html( 
+$(this).html() 
+.replace(/this catalog has no products\./gi, noproductsmessage) 
+.replace(/this catalog has no sub-catalogs\./gi, nosubcatalogmessage) 
+); 
+ 
+}); 
+
+
+
+
+}); 
+
+
+
+
+})(jquery); 
+
+</s><s>and add this in it's place all the way at the end of jquery.main.js 
+(function($){ 
+$(document).ready(function() { 
+var cat = $(".cataloguelist"); 
+var crumbs = $("p.breadcrumbs").find("a").length; 
+if ( cat && crumbs >= 3 ) { 
+$("body").addclass("subcat"); 
+} 
+}); 
+})(jquery); 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5582721</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 9, 2013 11:16 PM">
+<s>trickster yes that has worked.</s><s> that is exactly what we were after.</s><s> not sure how i can reciprocate but anything i can do to help on the design front please let me know.</s><s> once again, you've been a huge help.</s><s> will keep you updated with the launch on mon. 
+</s><s>thanks so much again, 
+glenn. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5584725</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 11, 2013 3:04 AM">
+<s>trickster, client is thrilled with the outcome and very grateful for your expertise.</s><s> on track to go live tomorrow evening.</s><s> i'm loathed to ask but i've scoured the code and run firebug on it but i can't for the life of me figure out why i can't get a fourth column for the sub-catalog's on the catalog pages, as in; http://meluka.worldsecuresystems.com/bedroom 
+if you're able to have a quick look that would be appreciated.</s><s> you've been a huge help already. 
+</s><s>many thanks, 
+</s><s>glenn.</s><s> 
+</s><s>sent from my ipad 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5585040</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="thetrickster888" timestamp="Aug 11, 2013 8:02 AM">
+<s>all of your catalogue items have a right margin but if we remove the right margin from the 4th item in each row it will fit.</s><s> bc adds a class for the last catalogue item in each row that we can hook onto.</s><s> in your all.css file add this css: 
+..catalogueitemlast .shop-catalogue { margin-right: 0; } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5585076</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 11, 2013 8:42 AM">
+<s>brilliant thanks trickster - that has nailed it.</s><s> please see: 
+</s><s>https://meluka.worldsecuresystems.com/bedroom 
+i just need to sort the appropriate thumbnail images. 
+</s><s>really appreciated. 
+</s><s>regards, 
+</s><s>glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5586594</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 12, 2013 2:34 AM">
+<s>trickster, 
+</s><s>the client has asked if certain product pages can be customized for the number of products & whether a "gap" can be left, instead of a product.</s><s> so he wants to split a sub-catalog into two but it's not a number of products divisible by 3 on each page (3 products per row).</s><s> can the tag_productlist settings on the page_content.html be overridden in certain circumstances or is it a global setting that affects all the product pages?</s><s> i didn't think it was possible but just wanted to run it past you.</s><s> going live tomorrow. 
+</s><s>cheers, 
+</s><s>glenn.</s><s> 
+</s><s>sent from my ipad 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5593247</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 14, 2013 2:42 AM">
+<s>we are live www.meluka.co.nz client is thrilled.</s><s> thanks so much for the invaluable help &amp; very clever solutions.</s><s> glenn.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5596252</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Aug 14, 2013 8:30 PM">
+<s>site is published - please see: http://www.meluka.co.nz 
+the client is thrilled with the result.</s><s> he has now requested a new sub-catalog.</s><s> in his words: 
+i've been giving some thought to the best way to present the modular shelving system on the website.</s><s> would it be possible to create some 'links' (like the sub-catalog links) on the modular sub-catalog page?</s><s> these links would be: 
+uprights tops/bottoms/fixed shelves (fixed shelves might have separate link) adjustable shelves cupboards drawers media shelves 
+if possible it would be great to have a slide show at top of this page with series of installations.</s><s> or if that not possible some static shots or if that not possible a further link to shots of various installations. 
+</s><s>slideshow would be fine but the problem would be with the images/links under it as the js hides catalogs if there are 3 or more links inside the p.breadcrumbs element.</s><s> any brilliant ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5707952</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="James_Jordan01" timestamp="Sep 23, 2013 5:59 PM">
+<s>hey there guys! 
+</s><s>please help me! 
+</s><s>how do i create a web app driven nivo slider, i tried it here : http://nivo02.businesscatalyst.com/index.html i also need a caption. 
+what am i doing wrong? 
+</s><s>reply's as soon as possible would be great! 
+</s><s>thankyou so much 
+james 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-5515929-5712478</DOCNO>
+<TEXT>
+<subject>Slide Show not working</subject>
+<post author="sleepingcatnz" timestamp="Sep 25, 2013 8:00 AM">
+<s>james, check out: http://kiyuco.com/default.aspx?ccid=6186&fid=55716&excludeboolfalse=tr ue&pageid=5266403&q=slideshow kiyuco is an excellent resource.</s><s> you may need to sign up but they are very helpful.</s><s> i had issues with js but trickster &amp; the bc forum were able to sort.</s><s> hope it all goes well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4674147-1060846</DOCNO>
+<TEXT>
+<subject>How do you integrate LyrisHQ Opt-in form code in BC so that it works?</subject>
+<post author="ptaylor1001" timestamp="Sep 5, 2012 1:10 AM">
+<s>i created an opt-in form using the lyrishq platform and tested it in ff, ie and chrome and it works.</s><s> however, when i put the code on a page in bc it does not work and i do not get any error messages when i click on the submit button. 
+</s><s>here is the code generated by lyrishq: 
+<table border="0" cellpadding="0" cellspacing="0"> <form action="http://www.elabs10.com/functions/mailing_list.html" method="post" name="uptml14294" onsubmit="return (!</s><s>(uptvalidateform(document.uptml14294)));"> <input type="hidden" name="submitaction" value="3" /> <input type="hidden" name="mlid" value="14294" /> <input type="hidden" name="siteid" value="2010001421" /> <input type="hidden" name="tagtype" value="q2" /> <input type="hidden" name="demographics" value="1,2,-1,8" /> <input type="hidden" name="redirection" value="http://www.fundadvisers.eu/thank-you" /> <input type="hidden" name="uredirection" value="http://" /> <input type="hidden" name="welcome" value="on" /> <input type="hidden" name="double_optin" value="on" /> <input type="hidden" name="append" value="" /> <input type="hidden" name="update" value="" /> <input type="hidden" name="activity" value="submit" /> <tr><td colspan="2"><font face="arial" size="2" color="#000000" /> please fill in the fields below:<br /><font size="1">(required fields in bold)<br /></font><b /></td></tr> <tr><td><font face="arial" size="2" color="#000000" /><b>first name</b></td><td><font face="arial" size="2" color="#000000" /><input type="text" name="val_1" size="10" value="" /></td></tr> <tr><td><font face="arial" size="2" color="#000000" /><b>last name</b></td><td><font face="arial" size="2" color="#000000" /><input type="text" name="val_2" size="10" value="" /></td></tr> <tr><td> <font face="arial" size="2" color="#000000" /> <b>email</b></td><td> <font face="arial" size="2" color="#000000" /> <input type='text' name='email' value='' size='10' /></td></tr> <tr><td><font face="arial" size="2" color="#000000" /><b>country</b></td><td><font face="arial" size="2" color="#000000" /><select name="val_8" size="1"><option value="">please select</option><option value="afghanistan" >afghanistan</option><option value="albania" >albania</option><option value="algeria" >algeria</option><option value="american samoa" >american samoa</option><option value="andorra" >andorra</option><option value="angola" >angola</option><option value="anguilla" >anguilla</option><option value="antarctica" >antarctica</option><option value="antigua and barbuda" >antigua and barbuda</option><option value="argentina" >argentina</option><option value="armenia" >armenia</option><option value="aruba" >aruba</option><option value="australia" >australia</option><option value="austria" >austria</option><option value="azerbaijan" >azerbaijan</option><option value="bahamas" >bahamas</option><option value="bahrain" >bahrain</option><option value="bangladesh" >bangladesh</option><option value="barbados" >barbados</option><option value="belarus" >belarus</option><option value="belgium" >belgium</option><option value="belize" >belize</option><option value="benin" >benin</option><option value="bermuda" >bermuda</option><option value="bhutan" >bhutan</option><option value="bolivia" >bolivia</option><option value="bosnia and herzegovina" >bosnia and herzegovina</option><option value="botswana" >botswana</option><option value="bouvet island" >bouvet island</option><option value="brazil" >brazil</option><option value="british indian ocean territory" >british indian ocean territory</option><option value="brunei darussalam" >brunei darussalam</option><option value="bulgaria" >bulgaria</option><option value="burkina faso" >burkina faso</option><option value="burundi" >burundi</option><option value="cambodia" >cambodia</option><option value="cameroon" >cameroon</option><option value="canada" >canada</option><option value="cape verde" >cape verde</option><option value="cayman islands" >cayman islands</option><option value="central african republic" >central african republic</option><option value="chad" >chad</option><option value="chile" >chile</option><option value="china" >china</option><option value="christmas island" >christmas island</option><option value="cocos (keeling) islands" >cocos (keeling) islands</option><option value="colombia" >colombia</option><option value="comoros" >comoros</option><option value="congo" >congo</option><option value="cook islands" >cook islands</option><option value="costa rica" >costa rica</option><option value="croatia (hrvatska)" >croatia (hrvatska)</option><option value="cuba" >cuba</option><option value="cyprus" >cyprus</option><option value="czech republic" >czech republic</option><option value="czechoslovakia (former)" >czechoslovakia (former)</option><option value="denmark" >denmark</option><option value="djibouti" >djibouti</option><option value="dominica" >dominica</option><option value="dominican republic" >dominican republic</option><option value="east timor" >east timor</option><option value="ecuador" >ecuador</option><option value="egypt" >egypt</option><option value="el salvador" >el salvador</option><option value="equatorial guinea" >equatorial guinea</option><option value="eritrea" >eritrea</option><option value="estonia" >estonia</option><option value="ethiopia" >ethiopia</option><option value="falkland islands (malvinas)" >falkland islands (malvinas)</option><option value="faroe islands" >faroe islands</option><option value="fiji" >fiji</option><option value="finland" >finland</option><option value="france" >france</option><option value="french guiana" >french guiana</option><option value="french polynesia" >french polynesia</option><option value="french southern territories" >french southern territories</option><option value="gabon" >gabon</option><option value="gambia" >gambia</option><option value="georgia" >georgia</option><option value="germany" >germany</option><option value="ghana" >ghana</option><option value="gibraltar" >gibraltar</option><option value="greece" >greece</option><option value="greenland" >greenland</option><option value="grenada" >grenada</option><option value="guadeloupe" >guadeloupe</option><option value="guam" >guam</option><option value="guatemala" >guatemala</option><option value="guinea" >guinea</option><option value="guinea-bissau" >guinea-bissau</option><option value="guyana" >guyana</option><option value="haiti" >haiti</option><option value="heard and mcdonald islands" >heard and mcdonald islands</option><option value="honduras" >honduras</option><option value="hong kong" >hong kong</option><option value="hungary" >hungary</option><option value="iceland" >iceland</option><option value="india" >india</option><option value="indonesia" >indonesia</option><option value="iran" >iran</option><option value="iraq" >iraq</option><option value="ireland" >ireland</option><option value="israel" >israel</option><option value="italy" >italy</option><option value="jamaica" >jamaica</option><option value="japan" >japan</option><option value="jordan" >jordan</option><option value="kazakhstan" >kazakhstan</option><option value="kenya" >kenya</option><option value="kiribati" >kiribati</option><option value="korea (north)" >korea (north)</option><option value="korea (south)" >korea (south)</option><option value="kuwait" >kuwait</option><option value="kyrgyzstan" >kyrgyzstan</option><option value="laos" >laos</option><option value="latvia" >latvia</option><option value="lebanon" >lebanon</option><option value="lesotho" >lesotho</option><option value="liberia" >liberia</option><option value="libya" >libya</option><option value="liechtenstein" >liechtenstein</option><option value="lithuania" >lithuania</option><option value="luxembourg" >luxembourg</option><option value="macau" >macau</option><option value="macedonia" >macedonia</option><option value="madagascar" >madagascar</option><option value="malawi" >malawi</option><option value="malaysia" >malaysia</option><option value="maldives" >maldives</option><option value="mali" >mali</option><option value="malta" >malta</option><option value="marshall islands" >marshall islands</option><option value="martinique" >martinique</option><option value="mauritania" >mauritania</option><option value="mauritius" >mauritius</option><option value="mayotte" >mayotte</option><option value="mexico" >mexico</option><option value="micronesia" >micronesia</option><option value="moldova" >moldova</option><option value="monaco" >monaco</option><option value="mongolia" >mongolia</option><option value="montserrat" >montserrat</option><option value="morocco" >morocco</option><option value="mozambique" >mozambique</option><option value="myanmar" >myanmar</option><option value="namibia" >namibia</option><option value="nauru" >nauru</option><option value="nepal" >nepal</option><option value="netherlands" >netherlands</option><option value="netherlands antilles" >netherlands antilles</option><option value="neutral zone" >neutral zone</option><option value="new caledonia" >new caledonia</option><option value="new zealand" >new zealand</option><option value="nicaragua" >nicaragua</option><option value="niger" >niger</option><option value="nigeria" >nigeria</option><option value="niue" >niue</option><option value="norfolk island" >norfolk island</option><option value="northern mariana islands" >northern mariana islands</option><option value="norway" >norway</option><option value="oman" >oman</option><option value="other" >other</option><option value="pakistan" >pakistan</option><option value="palau" >palau</option><option value="panama" >panama</option><option value="papua new guinea" >papua new guinea</option><option value="paraguay" >paraguay</option><option value="peru" >peru</option><option value="philippines" >philippines</option><option value="pitcairn" >pitcairn</option><option value="poland" >poland</option><option value="portugal" >portugal</option><option value="puerto rico" >puerto rico</option><option value="qatar" >qatar</option><option value="reunion" >reunion</option><option value="romania" >romania</option><option value="russian federation" >russian federation</option><option value="rwanda" >rwanda</option><option value="saint kitts and nevis" >saint kitts and nevis</option><option value="saint lucia" >saint lucia</option><option value="saint vincent and the grenadines" >saint vincent and the grenadines</option><option value="samoa" >samoa</option><option value="san marino" >san marino</option><option value="sao tome and principe" >sao tome and principe</option><option value="saudi arabia" >saudi arabia</option><option value="senegal" >senegal</option><option value="seychelles" >seychelles</option><option value="sierra leone" >sierra leone</option><option value="singapore" >singapore</option><option value="slovak republic" >slovak republic</option><option value="slovenia" >slovenia</option><option value="solomon islands" >solomon islands</option><option value="somalia" >somalia</option><option value="south africa" >south africa</option><option value="south georgia and the south sandwich islands" >south georgia and the south sandwich islands</option><option value="spain" >spain</option><option value="sri lanka" >sri lanka</option><option value="st.</s><s> helena" >st. helena</option><option value="st.</s><s> pierre and miquelon" >st. pierre and miquelon</option><option value="sudan" >sudan</option><option value="suriname" >suriname</option><option value="svalbard and jan mayen islands" >svalbard and jan mayen islands</option><option value="swaziland" >swaziland</option><option value="sweden" >sweden</option><option value="switzerland" >switzerland</option><option value="syria" >syria</option><option value="taiwan" >taiwan</option><option value="tajikistan" >tajikistan</option><option value="tanzania" >tanzania</option><option value="thailand" >thailand</option><option value="togo" >togo</option><option value="tokelau" >tokelau</option><option value="tonga" >tonga</option><option value="trinidad and tobago" >trinidad and tobago</option><option value="tunisia" >tunisia</option><option value="turkey" >turkey</option><option value="turkmenistan" >turkmenistan</option><option value="turks and caicos islands" >turks and caicos islands</option><option value="tuvalu" >tuvalu</option><option value="uganda" >uganda</option><option value="ukraine" >ukraine</option><option value="united arab emirate" >united arab emirate</option><option value="united kingdom" >united kingdom</option><option value="united states" >united states</option><option value="uruguay" >uruguay</option><option value="us minor outlying islands" >us minor outlying islands</option><option value="ussr (former)" >ussr (former)</option><option value="uzbekistan" >uzbekistan</option><option value="vanuatu" >vanuatu</option><option value="vatican city state (holy see)" >vatican city state (holy see)</option><option value="venezuela" >venezuela</option><option value="viet nam" >viet nam</option><option value="virgin islands (british)" >virgin islands (british)</option><option value="virgin islands (u.s.</s><s>)" >virgin islands (u.s.)</option><option value="wallis and futuna islands" >wallis and futuna islands</option><option value="western sahara" >western sahara</option><option value="yemen" >yemen</option><option value="yugoslavia" >yugoslavia</option><option value="democratic republic of the congo" >democratic republic of the congo</option><option value="zambia" >zambia</option><option value="zimbabwe" >zimbabwe</option><option value="aland islands" >aland islands</option><option value="azores" >azores</option><option value="canary islands" >canary islands</option><option value="channel islands" >channel islands</option><option value="isle of man" >isle of man</option><option value="ivory coast" >ivory coast</option><option value="jersey &amp;amp;amp;amp; guernsey" >jersey &amp;amp;amp;amp; guernsey</option><option value="madeira" >madeira</option><option value="montenegro" >montenegro</option><option value="serbia" >serbia</option><option value="palestinian territories" >palestinian territories</option><option value="jersey &amp;amp;amp; guernsey" >jersey &amp;amp;amp; guernsey</option><option value="jersey &amp;amp; guernsey" >jersey &amp;amp; guernsey</option><option value="jersey &amp; guernsey" >jersey &amp; guernsey</option></select></td></tr> <tr><td colspan="2"><font face="arial" size="2" color="#000000" /><input type="checkbox" id="unsubscribe" name="unsubscribe" /> unsubscribe from mailing list</td></tr> <tr><td colspan="2"><font face="arial" size="2" color="#000000" /><input type="submit" value="submit" /></td></tr><script language="javascript">//<![cdata[ function emailcheck (emailstr) { var emailpat=/^(.+)@(.+)$/; var specialchars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]"; var validchars="\[^\\s" + specialchars + "\]"; var quoteduser="(\"[^\"]*\")"; var ipdomainpat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/; var atom=validchars + '+'; var word="(" + atom + "|" + quoteduser + ")"; var userpat=new regexp("^" + word + "(\\." + word + ")*$"); var domainpat=new regexp("^" + atom + "(\\." + atom +")*$"); var matcharray=emailstr.match(emailpat); if (matcharray==null) { alert("email address seems incorrect (check @ and .'s)"); return false; } var user=matcharray[1]; var domain=matcharray[2]; if (user.match(userpat)==null) { alert("the username doesn't seem to be valid."); return false; } var iparray=domain.match(ipdomainpat); if (iparray!=null) { for (var i=1;i<=4;i++) { if (iparray[i]>255) { alert("destination ip address is invalid!"); return false; } } return true; } var domainarray=domain.match(domainpat); if (domainarray==null) { alert("the domain name doesn't seem to be valid."); return false; } var atompat=new regexp(atom,"g"); var domarr=domain.match(atompat); var len=domarr.length; if ((domarr[domarr.length-1] != "info") && (domarr[domarr.length-1] != "name") && (domarr[domarr.length-1] != "arpa") && (domarr[domarr.length-1] != "coop") && (domarr[domarr.length-1] != "aero")) { if (domarr[domarr.length-1].length<2 || domarr[domarr.length-1].length>3) { alert("the address must end in a three-letter domain, or two letter country."); return false; } } if (len<2) { var errstr="this address is missing a hostname!"; alert(errstr); return false; } return true; } function uptvalidateform(thisform) { if (thisform.val_1.value==""){ alert("please enter a value for first name"); return(true);}if (thisform.val_2.value==""){ alert("please enter a value for last name"); return(true);}if (thisform.val_8.selectedindex==0) { alert("please select a value for country"); return(true);} if (emailcheck(thisform.email.value)) { 
+if (document.getelementbyid('unsubscribe') && !</s><s>document.getelementbyid('unsubscribe').checked) {  } else { alert('thank you!'); } return false; } else { return true; } } 
+//]]> </script></form></table> 
+i appreciate any help in identifying where the issue is and steps to resolve it. 
+</s><s>thanks 
+</s><s>philip 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4674147-4674262</DOCNO>
+<TEXT>
+<subject>How do you integrate LyrisHQ Opt-in form code in BC so that it works?</subject>
+<post author="Liam%20Dilley" timestamp="Sep 5, 2012 2:02 AM">
+<s>hi philip, please do not take my bluntness the wrong way here, just getting to the point.</s><s> really is worth nothing posting the code unformted like this when it is also not in the page/template and thus environment it is not working under.</s><s> i am just guessing as others would to the problem even with your post likely you got a javascript error or something else.</s><s> with things like this you really need to post the url so people can see it in action, test it, use things like the developer toolbar in firefox to see if there is javascript errors etc.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4674147-4674319</DOCNO>
+<TEXT>
+<subject>How do you integrate LyrisHQ Opt-in form code in BC so that it works?</subject>
+<post author="ptaylor1001" timestamp="Sep 5, 2012 2:22 AM">
+<s>hi liam, 
+</s><s>i don't mind your bluntness at all but i am not a developer and do not normally frequent these forums.</s><s> therefore, i am not aware of the etiquette to be used. 
+</s><s>if you copy the code and save as an html file you will find that it works as advertised in all broswers.</s><s> however, as i said in my post, when it is applied to a bc site it does not work.</s><s> i did not get any errors and only a change in the colour of the submit button when i clicked on it. 
+</s><s>however, the url is http://www.fundadvisers.eu/investment-outlook. 
+btw, it is "...there are javascript errors..." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/How-to---HTML-/-CSS-/-JavaScript/Discussions-4674147-4674377</DOCNO>
+<TEXT>
+<subject>How do you integrate LyrisHQ Opt-in form code in BC so that it works?</subject>
+<post author="Liam%20Dilley" timestamp="Sep 5, 2012 2:56 AM">
+<s>hi paul, it is not etiquette, you want help, would love to help but you need to allow people to like i mentioned, that code on it's own just in its own file probably works, that is very likely not the issue.</s><s> considering how bc works with pages, templates, how you have those implemented in your site, how you have inserted that code into a page or template and implemented it is what matters.</s><s> conflicting scripts, missing code, posted in editor with invalid html having it changed by the editor...</s><s> there are lots of reasons for issues to occur.   it is a bit like taking taking something out of context, not really meaningful or can be taken the wrong way if used out of context.   in terms of your issue.</s><s> html errors.</s><s> your form if you use say firebug you can see has closed itself off right away and does not have the form elements inside thus nothing to submit of function correctly due to the html issues.</s><s> go through the errors http://validator.w3.org/check?verbose=1&uri=http%3a%2f%2fwww.fundadvis ers.eu%2finvestment-outlook ensure your forms is outputting correctly and you should be good to go/   just missed off the "is any" thats all.</s><s> but i get the intention of the comment.</s><s> noted.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+

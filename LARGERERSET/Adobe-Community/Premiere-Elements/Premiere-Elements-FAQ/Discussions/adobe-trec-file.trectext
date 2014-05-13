@@ -1,0 +1,548 @@
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-440037</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="Bill Hunt" timestamp="Feb 19, 2013 4:23 PM">
+<s>why doesn't my .</s><s>avi file import, or play properly in premiere?</s><s> hey, it's an .</s><s>avi file.</s><s> why can't premiere work with it?</s><s> it played fine in windows media player (wmp), and vlc player.</s><s> even quicktime player does a good job.</s><s> what's up with premiere? 
+</s><s>sound familiar?</s><s> you may even have asked some of the same questions.</s><s> what's the answer? 
+</s><s>well, it comes down to codec's.</s><s> those are the mysterious little modules that allow one to either encode, or decode audio and video files.</s><s> with but a very few, and some rather esoteric exceptions, these little guys are lurking around every audio or video file that you will ever see.</s><s> their handiwork is in there someplace, but we can't really see it. 
+</s><s>if you've ever used an adobe program to burn a dvd, you've used the mainconcept mpeg-2 codec, whether you realized it, or not.</s><s> that is but one of many hundreds of codec's.</s><s> they are everywhere. 
+</s><s>now, i mentioned .</s><s>avi files, but various codec's play a role in almost every av file.</s><s> they do a job, but can also wreck havoc, when one goes to play, or edit a file.</s><s> to use one, it must be properly installed on the computer.</s><s> some come with your os, but others have to be purchased, or downloaded, and then installed to function. 
+</s><s>the file extensions that we see all of the time, things like .</s><s>avi, .</s><s>mov, .</s><s>mpeg, .</s><s>tod, .</s><s>mod, etc. are but "wrappers." there can be so many different things inside those wrappers - read codec's.</s><s> imagine that someone has taken many packages of sticks of chewing gum and removed the outside paper from each stick.</s><s> all we have are the foil "wrappers." that is what those file extensions are.</s><s> now, we feel fairly certain that each one contains gum, but what flavor is in each?</s><s> is it double-mint?</s><s> is it spearmint?</s><s> is it juicy fruit?</s><s> that is what we're faced with, when dealing with most av files.</s><s> we think that the file is an av file and will probably contain either audio, video or, in many cases, both.</s><s> still, we do not know what flavor is inside the wrapper.</s><s> we can "sniff" the wrapper, but still do not know for sure.</s><s> that "sniffing" is what we do, when we look at the file extension.</s><s> we see .</s><s>avi (or other), but that does not tell us much.</s><s> here is where a little freeware program, g-spot comes in.</s><s> first thing that it does is to survey your entire computer to determine which codec's you have properly installed.</s><s> next, when you drag one of your av files to it, it will give you almost every bit of information on that file.</s><s> it works most thoroughly with .</s><s>avi's but also will give info on .</s><s>mpeg's, .</s><s>wmv's and .</s><s>mov's.</s><s> the amount of info will differ by the file's format.</s><s> with .</s><s>avi's it will not only tell you the "flavor" of the gum, but exactly how that gum was made.</s><s> the most important bits of info will be the codec's used in the creation of that file.</s><s> if it's an audio only file, it'll yield that info. if it's a video only file - same thing.</s><s> if the file is muxed (multiplexed with both audio and video) it'll tell you both codec's used.</s><s> next it'll tell you if you have the necessary codec's installed properly on your system.</s><s> if you do not, it will warn you, and also give you the official name of the necessary codec.</s><s> here, you'll need to use that name to go out and find it.</s><s> google will be very helpful here.</s><s> remember, some codec's will be free, and some will need to be purchased.</s><s> whichever you end up with, you'll need to install them properly on your computer. 
+</s><s>next, g-spot will allow you to render your file, using the codec's, if installed.</s><s> this can be a multi-step process, especially with muxed files, as you will need to render both the audio and video.</s><s> if all completes successfully, g-spot will offer to play the file in a small viewing window.</s><s> this is one of the most invaluable tools that you can have.</s><s> another is mediainfo, which is very similar to g-spot.</s><s> for a mac, try mediaimspector (http://mediainspector.massanti.com/).then, the use of the properties function in wmp, or qt player will also come in handy for gathering as much info on the file, as you can.</s><s> all are useful, but i use g-spot first and most often.</s><s> ok, we now know that the .</s><s>avi file is beechnut liquorice (divx codec), not my favorite.</s><s> what do we need to do for this file?</s><s> first, we'll need to probably download and install the divx codec.</s><s> with that, we can play the file in one of our players.</s><s> can we edit it?</s><s> maybe yes, and maybe no. note: some players have their own set of codec's and will play almost anything.</s><s> this, however is not a guarantee that any other program can use those versions of the codec's.</s><s> as a matter of fact, it's highly unlikely that any other program can use them. 
+</s><s>if we can play it, why would there be a problem editing it?</s><s> well, there are major differences in being able to play the file and being able to edit that same file.</s><s> some nle's (non linear editors) can handle some codec's better than other nle's.</s><s> it could just be a choice between different editing programs.</s><s> premiere cannot usually handle divx, or its open source cousin, xvid well, if at all.</s><s> most nle's can't either.</s><s> the majority are based on a dv-avi type ii w/ pcm/wav 48khz 16-bit audio workflow.</s><s> that is what they handle best.</s><s> let's call that file format spearmint, my favorite flavor.</s><s> it's created with the ms dv codec, and works perfectly in premiere, or most other nle's.</s><s> we're lucky, because there are programs available that can turn almost any flavor of av file into spearmint, er-r dv-avi type ii. we just need to use one of those to do the conversion, prior to importing the file into premiere. 
+</s><s>what about feeding premiere with say double-mint, and letting it convert internally to spearmint?</s><s> some times premiere can work with some codec's for editing.</s><s> often times its internal conversion will be perfect.</s><s> still, there is a price to pay for this and it's usually performance when editing.</s><s> on a very powerful computer, one might not notice the necessary internal processing going on, but if the computer is less than state-of-the-art, editing is likely to be slow, and can also crash, or run out of resources.</s><s> doing the conversion outside of premiere is always going to be better, as long as we convert to that dv-avi type ii format. 
+</s><s>even if premiere can import some of these files with other codec's inside, there are very often problems.</s><s> some common ones are oos (out of sync) issues, no audio, no video, horribly pixelated video, partial display of video or video and audio that halt, or stutter. 
+</s><s>when you see a .avi file, think of the foil wrapper on a stick of gum.</s><s> we think that there's gum inside, but we first need to find out the flavor. 
+</s><s>hunt 
+</s><s>message title was edited by: brett n 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2163462</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 7, 2009 1:07 PM">
+<s>this is a view of the g-spot gui with some of the important windows to use to get the necessary data from your av files.</s><s> note that g-spot works best with avi and mpeg (more useful data), but that it's a bit more limited with .</s><s>wmv's and .</s><s>mov's.</s><s> one can probably get more data from the properties panels in wmp, or qt player (ctrl-j in qt pro). 
+
+
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2264056</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Sep 21, 2009 3:49 PM">
+<s>note: there is an mpeg module for g-spot, but if you have 2.70a, it should not be necessary. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2281888</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="lucas%20maschio" timestamp="Sep 29, 2009 1:46 PM">
+<s>hi there.. 
+</s><s>sorry about my english, is not so good, and thats why i didnt understand your entirely post ! 
+</s><s>im desperate, im having exactly the problem that you posted here (oos), but i couldnt fix it with your help. 
+i downloaded gspot as directed and ran the file through it.</s><s> (as shown in my attached screen shot) 
+</s><s>can someone help me ?</s><s> thanx !</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2282007</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Sep 29, 2009 2:30 PM">
+<s>mpeg-1 audio is often problematic to edit.</s><s> oos is one of the problems, but there are others.</s><s> i would do anything to keep from having to use these. 
+</s><s>one way to handle this is to rip just the mpeg-1 audio from your av file and use a program, like audaticy, to save_as a pcm/wav (uncompressed) 48khz 16-bit audio file and replace the audio from your av file on the timeline. 
+i like the second way - convert the entire av file to dv-avi type ii w/ the same audio specs, as above. 
+</s><s>these will edit fine and you should not have any oos issues. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2466618</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="jeffgedgaud" timestamp="Dec 17, 2009 1:22 PM">
+<s>here a pic of the g spot run of the file i am using in premiere elements. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2468447</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Dec 18, 2009 10:00 AM">
+<s>there are three very popular h.264 codec's, apple, lead and mainconcept.</s><s> while all are h.264, not all users have had great luck with all of them.</s><s> the majority of users have found that either the lead, or the mainconcept do better than the apple, with is more common.</s><s> most of these issues have been when encoding, i.e.</s><s> exporting with the h.264 codec, though there have been editing and playback issues, as well. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2601674</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="CrazyEnigma" timestamp="Feb 18, 2010 10:36 AM">
+<s>sorry, i posted this in another thread. 
+</s><s>this is a really nice article.</s><s> excellent analogy, however.</s><s> here-in lies the problem. 
+</s><s>if adobe premiere likes spearmint, and it can't handle juicy fruit, then it should be able to understand that it needs to convert the file.</s><s> if adobe production premium is an all in one solution, then there should be a program that should convert it to the format that it likes (that's what the import is for), and yes, it should be able to read the codec and complain that the codec doesn't exist on the machine to properly convert it.</s><s> i don't think it should be left to the video editor to do this (although, in a small shop, it ends up being the video editor that has to solve this problem).</s><s> i want to spend my time editing the video and not have to fidget with codecs.</s><s> i thought that adobe media encoder was the program to do this.</s><s> ok, i tried to convert into a codec that it would like, but it can't even interpret the b and p frames of other codecs properly, so it is still crap in the end. 
+</s><s>if adobe media encoder spends so much time to render a video (i don't mind editing a crap version of the end-result and the render feature takes to much time to make it feasible in my workflow), why doesn't it do a proper job of encoding (to gather the proper frame), that's my problem.</s><s> why do you have to get something like g-spot and virtualdub to do the dirty work for you, when all you really need is some form of video that works with premiere?</s><s> i am spending far too much time trying to convert the video to a proper codec than editing video, which as we all know consumes most of our time. 
+</s><s>you pay the big bucks for it to work.</s><s> i expect adobe premiere to have this all worked out. 
+</s><s>it takes me 3 times as long to edit in a nle than something like windows movie maker (which i know is linear), but i want the features of the adobe premiere which i can't get with wmm.</s><s> i get quality output from wmm, but crap from premiere, which renders my final cut useless, and a complete waste of time. 
+</s><s>that's my biggest gripe right now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2602515</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Feb 18, 2010 4:17 PM">
+<s>well, pre & prpro can convert many formats and codec's.</s><s> pre is more lenient, than is its "big-brother," prpro.</s><s> however, as new codec's come out quarterly, or variations of existing ones do, it is totally impossible for an nle program to keep up.</s><s> each new version does have wider support for newer formats and codec's.</s><s> camera mfgr's are just ahead of adobe, and avid and most of the others.</s><s> sony has a leg-up with its vegas products and new codec's from sony cameras, as they are both in the development pipeline.</s><s> it takes others a while to get the new codec's, and then find a way to write them into the code.</s><s> there are never any sdk's, and any details do not come out, until the codec has been released. 
+</s><s>for more background on codec's, this article might prove useful. 
+</s><s>next, you have to understand that just because a codec is installed on a system, it does not mean that an nle can edit with it.</s><s> some are more lenient, than others, and do embrace some odd codec's.</s><s> many are delivery-only codec's and are not intended to ever be edited.</s><s> that, however, does not stop some people from trying. 
+</s><s>an nle program is but a tool.</s><s> a conversion program is but a tool.</s><s> one needs a well thought out toolbox.</s><s> no one program can do it all.</s><s> have you ever wondered why adobe offers prpro, indesign, photoshop, illustrator, dreamweaver, fireworks and flash?</s><s> to some degree, there is overlap on what each does, but each of those is specialized, and though that overlap might exist, a trained user will pick the right one for the right job. 
+<quote>
+</quote>first, the videographer should know what their camera used to record the footage as, and should share this info with the editor, if they are not one and the same person.</s><s> if the editor gets handed some av file, and the creator has no idea how it was shot and by which camera, the editor only needs to reach into their "toolbox," and grab g-spot, a very good little free utility.</s><s> when they run the footage through it, they will have all of the info.</s><s> a competent editor knows these things, or they need to learn them.</s><s> a competent videographer knows what format/codec their camera shoots in, and should be able to convey this information to the editor. 
+<quote>
+</quote>actually, pre and prpro do tell you when they cannot handle a lot of codec's, and will tell you if they are not installed.</s><s> some, they will attempt to work with, but just cannot.</s><s> <quote>
+</quote>the answer to this is to only use a camera that does i-frame encoding only.</s><s> choosing a gop codec (on the part of the camera's mfgr.</s><s>) shows a total disregard for editing. 
+</s><s>now, i get handed alls sorts of odd footage, by clients who have no clue what a codec is.</s><s> it behooves me to know how to convert it, to something that will edit, and be prepared to explain where there will be a loss in quality - even show them examples of what to expect.</s><s> that's where my toolbox comes in. 
+<quote>
+</quote>it sounds like you need a faster computer, and should also not attempt to edit gop material.</s><s> shoot i-frame only, and never render, unless you change the footage. 
+<quote>
+</quote>i cannot understand why one would turn their back on a great free utility. 
+</s><s>there is no way that an nle program can possibly know all codec's, especially ones, and variations on existing ones, that came out after the program was released.</s><s> even g-spot, a utility designed to do nothing but give one info on av files knows them all. 
+</s><s>what you will find if you query editors is that they do not want their nle to try to do it all.</s><s> actually, pre does do much more than prpro, in many respects.</s><s> still, some complain that the authoring module is not full-featured, like adobe encore is.</s><s> though bundled with prpro, encore is a separate program, and is not built in. 
+</s><s>now, i feel that the onus falls squarely on the shoulders of the camera mfgrs.</s><s> too few bother to tell the buyer how that camera records video.</s><s> too few point out that their footage is really designed to be displayed via a connection, or just posted to youtube - and never intended to be edited.</s><s> that however would never get past the marketing department.</s><s> now, why do they not choose to use i-frame, editable mainstream codec's in the first place?</s><s> why are they trying to use gop codec's, as those do not edit well to begin with and are heavily compressed?</s><s> it is because they do not care about the user ever editing the footage - only displaying it, or sticking it on facebook.</s><s> why is it that when a mfgr. tweaks an existing codec, like h.264, or mjpeg, they do not include an installer for their particular flavor of that codec on a dvd that ships with the camera?</s><s> it is because they do not care if the user can edit the footage. 
+<quote>
+</quote>this time can be cut way down, when one learns the software.</s><s> steve grisetti has some great "basic training" in the faq section, many excellent articles on muvipix, and a whole series of books.</s><s> i highly recommend them all. 
+<quote>
+</quote>it seems obvious to me, that you need to use wmm and not bother with any of the adobe products, as they are not suited for your needs. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2604567</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="CrazyEnigma" timestamp="Feb 19, 2010 12:37 PM">
+<s>thanks bill.</s><s> 
+</s><s>yes, wmm is good up to a certain point, but there are things that i want to do with prpro that i can't with wmm.</s><s> it would be nice to even cut footage and use them in each of the programs.</s><s> that i can't even do, because of the codec issues i am having.</s><s> i am not asking for the nle to do the codec work for me.</s><s> all i am asking is that there is a better way for the media encoder (because this is where i think the process is). 
+</s><s>there should be two processes, one where the user has full access to make their own codec conversions, and the other is to convert from one codec to a useable i-frame codec useable by prpro. 
+i totally understand the whole cs collection, and each tools is there for a certain purpose.</s><s> i wouldn't be using prpro to create a website, i would be using dreamweaver, but what gets me is that you have to use g-spot or a free tool.</s><s> master collection is not a complete toolset, for your complete production needs.</s><s> this is the reason why i think that media encoder lacks any intelligence.</s><s> the media encoder should be able to attach to any codec and output it into a corresponding codec or a codec format usable by prpro. 
+</s><s>in reference to doing things 3 times as long is inaccurate.</s><s> i am spending a lot of my time in conversions, when i just want to do editing.</s><s> my first time at prpro took me a little bit longer to learn, but i got the hang of it.</s><s> the problem now is that i can't produce anything of any use with media encoder because of the codec issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2605226</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Feb 19, 2010 6:22 PM">
+<s><quote>
+</quote>
+</s><s>there is no complete toolset anywhere.</s><s> i have a snap-on roll-away, that's about 5' tall.</s><s> it was filled with about everything that snap-on made at the time, and cost me about us$32k.</s><s> guess what?</s><s> i have probably 1,000 other tools from craftsman, mac, special-service tools from toyota, mercedes benz and jaguar, plus dozens of other mfgrs, for specialized tasks.</s><s> no toolset is ever complete.</s><s> should i purchase an audi, i would probably have to add some ss tools for it too. 
+</s><s>as for the mc not including g-spot, or similar, the premise is that one using prpro will at least know which codec's are used in the assets.</s><s> now, with pre, it is much more understandable that the user might have less of a clue what the codec is, or even how to find out, as the camera mfgrs. seldom go into much detail in that respect.</s><s> that is why i did this and the codec article, to which you almost replied.</s><s> most prpro users know going in, and do not need g-spot.</s><s> pre users are often left in the dark, and even the concept of codec's is often a real gray area.</s><s> they have just never experienced it, and assume that all video cameras are exactly the same, except for the zoom ratio, and the price.</s><s> they are often floored, when we ask for the codec that the camera records with.</s><s> "codec, what's a codec?" they read the manuals, and then look at the mfgr's web site - noting on codec's.</s><s> it's not until they hit some review, or use g-spot, but most are still not sure what's being talked about.</s><s> hence, the reason for the tips & tricks articles. 
+<quote>
+</quote>
+</s><s>this would be fodder for a separate post on how to set ame for export, using the necessary codec's.</s><s> besides the time to learn about codec's for playback, and codec's for editing, the last lesson block is to learn about codec's for encoding.</s><s> as mentioned in the codec article, linked above, there are several possible uses of codec's. 
+</s><s>as this is starting to get rather specific to individual cases, our mod is going to split off the discussion, to keep the avi and the codec articles free from confusing issues.</s><s> look for the continuation of the discussion, but it'll be out in the main pre forum. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2612563</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="CrazyEnigma" timestamp="Feb 23, 2010 8:15 AM">
+<s>i solved my problem, and i still had to use virtualdub to convert my screen capture recording to a useable editable codec.</s><s> still doesn't remove the fact that ame should render improperly. 
+</s><s>the second error was i was getting blurry images while editing.</s><s> using the default (dv-ntsc standard 48khz) was the culprit.</s><s> who would have thought this was the problem.</s><s> and this is the default!</s><s> i guess we are in america and most people using this software would use this as the default. 
+</s><s>when i imported the movie into pr, it looked clear, but when i placed it in the sequence, it was blurry.</s><s> i changed the sequence to dv-24p standard 48khz, and everything was crystal clear.</s><s> i take it that the sequence was supposed to match the source footage. 
+</s><s>ironically, i did another sequence in dv-ntsc and then placed it in a sequence that was dv-24p and it came out crystal clear.</s><s> ?</s><s>!</s><s>?</s><s> 
+</s><s>so the combination of these two factors made my editing experience a nightmare.</s><s> hopefully, this will help solve other people's issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2612965</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Feb 23, 2010 9:58 AM">
+<s><quote>
+</quote>this is correct.</s><s> the project preset must match the source footage 100%, or issues will develop. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2829083</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="May 20, 2010 8:14 AM">
+<s>for some additional background, see these articles: 
+codec's a primer vob's and their mpeg content gop (group of pictures) 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-2929948</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 27, 2010 6:42 PM">
+<s>here is another resource, that might prove useful. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3035089</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 7, 2010 3:33 PM">
+<s>there is another great utility, mediainfo.</s><s> it is available for the pc and for the mac. 
+</s><s>hope that this helps others, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3035120</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="gepagepa" timestamp="Aug 7, 2010 4:06 PM">
+<s>bill, thanks for your quick reply.</s><s> i deleted the original thread when i saw my email.</s><s> will my email address continue to show on forums when i reply to your emails?</s><s> is there way to not show my email address?</s><s> i selected hide email in my forum profile.</s><s> i need help to figure out this weird frustrating problem.</s><s> i am close to giving up. 
+</s><s>thanks george 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3035151</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 7, 2010 4:26 PM">
+<s>george, 
+</s><s>if you are replying via a browser, you should be able to not post any signature.</s><s> if you are replying via e-mail, then the e-mail program might have to be adjusted.</s><s> if replying from a smartphone, or similar, i do not know what might be possible. 
+</s><s>with e-mail replies, some pop servers will add additional lines (not one's sig), that the poster does not see, unless they later view the forum. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3233602</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="maxdido" timestamp="Oct 26, 2010 3:12 PM">
+<s>"we're lucky, because there are programs available that can turn almost any flavor of av file into spearmint, er-r dv-avi type ii. we just need to use one of those to do the conversion, prior to importing the file into premiere." 
+</s><s>i'm curious.</s><s> what other program do you use to convert to dv-avi type ii 
+</s><s>message was edited by: maxdido 
+never mind.</s><s> i found it already in the faq. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3244133</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Oct 31, 2010 10:04 AM">
+<s>for others, i use digitalmedia converter 2.7, which is older and shareware.</s><s> others really like prism, which is freeware, but i have never used it.</s><s> also, i have not used the newer versions of dmc, so cannot comment on them. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3249819</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="wset90" timestamp="Nov 3, 2010 1:39 AM">
+<s>thank you very much.</s><s> i shall study this!</s><s> wset 90 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3489629</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="Mack%20Ramedia" timestamp="Feb 23, 2011 12:14 PM">
+<s>hi bill, just curious.</s><s> why wouldn't pre be able to handle an uncompressed avi that windows moviemaker was able to handle.</s><s> when i pulled my avi into pre it got really dark; too dark for me to use.</s><s> yet, windows moviemaker handled it with ease.</s><s> i prefer not to download g-spot.</s><s> our it group frowns on us downloading any kind of freeware. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3611366</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="Peter%20Studt" timestamp="Apr 13, 2011 7:43 AM">
+<s>great guide to codec's bill, you have provided many answers in regard to avi and divx, and reasons for adobe applications having problems with them for me.</s><s> it would be nice to have a one tool fits all scenario and i'm sure many purchasers of adobe suites expect exactly that, but these technologies are really only comparatively new and exist in a very variable and volitile environement.</s><s> i googled "sar par dar" (storage, pixel and display, aspect ratio) the other day and was quite pleased to discover a nice little run down on the history of video (analog and digital) from wikipedia, only just touching the surface but still something to open the eyes a bit more (or glaze them over for many i suppose)...</s><s> cheers peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3612671</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Apr 13, 2011 3:59 PM">
+<s>i have no idea why your uncompressed avi would show with gamma issues.</s><s> i do not use uncompressed avi's often, but have never had any issues.</s><s> they have always imported and edited, just as a dv-avi file would. 
+</s><s>sorry that i cannot help with that issue. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3612673</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Apr 13, 2011 4:05 PM">
+<s>peter, 
+</s><s>for some codec's, and especially those not directly intended to be edited, i have found that the consumer nle's often do a better job - same with some "consumer" codec's.</s><s> though i have not tested it, some users indicate that prelements 9.0 will handle later divx (so long as one has the codec installed on the system).</s><s> i do not know about xvid, which is the open source version of divx, but has been known to cause issues, that divx does not.</s><s> i have found that cyberlink's powerdirector, and magix movieedit pro do handle some divx material.however, as divx & xvid are highly-compressed, the quality will be pretty bad. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3648130</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="numetro" timestamp="Apr 30, 2011 9:15 PM">
+<s>can you guys report that i am getting erroneous email alerts from this thread...</s><s> i contacted adobe about it today via the online chat and got no where. 
+</s><s>thanks, 
+</s><s>numetro 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3666312</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="May 9, 2011 12:45 PM">
+<s>this is an effect of the settings in your adobe account.</s><s> these are user settings, and there is nothing that adobe can do directly.</s><s> you need to follow the instructions in this article, or post of your issue to the forum comments forum. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3712077</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="luvsfotos" timestamp="May 31, 2011 6:08 PM">
+<s>hunt, what a great article!</s><s> entertaining, too.</s><s> i'm printing it out and will try to work with it.</s><s> (hope i can do it) really, thank you so much. luvsfotos 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3712964</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 1, 2011 6:55 AM">
+<s>thank you, and hope that it clears up everything for you. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3714109</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="APN2010" timestamp="Jun 1, 2011 3:37 PM">
+<s>bill, 
+</s><s>i downloaded g-spot.</s><s> my dodec is dvsd name dvc/dv video.</s><s> status says codec(s) are installed. 
+</s><s>i'm beginning to think that my project was corrupted when the system hung.</s><s> is there any way to fix this or do i need to start all over again? 
+</s><s>andy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3715113</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 2, 2011 7:05 AM">
+<s>andy, 
+</s><s>i would suggest posting to the appropriate premiere forum, i.e. the prelements, the prpro cs5/cs5.5, or the prpro cs4 & earlier, with the full details.</s><s> there are ways to often "fix" a project, but those differ by version of premiere.</s><s> by posting to the specific forum, then users of that version of program can help you with the exact steps that one can perform in that version of the program. 
+</s><s>good luck, and the dv/dvc avi files should play and edit perfectly in all versions of premiere. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3745178</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 16, 2011 10:14 PM">
+<s>while much of this adobe kb document is aimed at prpro, much will apply to pre too. 
+</s><s>hope that this helps, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3821753</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="vicky515" timestamp="Jul 26, 2011 10:50 AM">
+<s>i have avi files recorded from a digital camera that won't import into adobe premiere elements.  i keep getting "this type of file is not supported, or the required codec is not installed." i've used this gspot application and it shows codec: mjpg name: motion jpeg status: codec(s) are installed codec: pcm audio info: 44100hz  706 kb/s (1 chnl) stat: no codec required under proposed codec solutions and tests i get render ok, and it plays fine in the preview.</s><s> so... why won't adobe premiere elements import the darn clips?   for anyone else having the same issue, updating quicktime solved it for me.   cheers.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3823887</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="luvsfotos" timestamp="Mar 9, 2014 9:45 AM">
+<s>dear vicky515 i tried everything the forum members advised and none of them helped me get canon .</s><s>mod format files changed into .</s><s>mov files.</s><s> i was left feeling like i must be lacking some premiere elements gene since i just haven't been able to figure it out.</s><s> i stopped asking and stopped using premiere elements 9, my only video program.</s><s> i even e-mailed canon but my camcorder is out of warranty and they didn't respond.</s><s> when i feel strong enough (only kidding) i'll contact adobe premiere elements 9 "tech support" and try to get an answer out of them.</s><s> good luck and i sympathize. luvsfotos 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3828282</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jul 29, 2011 7:57 AM">
+<s>for mjpeg, this article might offer some help. 
+</s><s>while it lists two very popular mjpeg codec's, i always first suggest installing the mjpeg codec from the camera mfgr, as they tweak common codec's frequently.</s><s> the camera's codec might be a separate install, might be installed with a camera's driver, or perhaps with any cataloging, or editing utility.</s><s> it differs mfgr. to mfgr. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-3845791</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="Thor33433" timestamp="Aug 6, 2011 1:45 PM">
+<s>bill, it looks like you're the go-to guy here.</s><s> i have the same problem with some old 8mm movies that were digitized for me by a video service firm.</s><s> their extension is vob.</s><s> gspot tells me that they're in mpeg-2 program stream format, and that both the audio and video codecs are installed on my computer. 
+</s><s>when i import them into premier elements, the initial clip images are clear in the tasks panel, but when i double-click one, all i get is a black screen and the audio. 
+</s><s>help?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-4035315</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="RegentQbA" timestamp="Nov 18, 2011 2:34 PM">
+<s>bill, 
+</s><s>i've got a canon powershot sd870 is that tapes videos in avi.</s><s> i ran this camera with photoshop 5/premiere 3 elements for a couple of years.</s><s> i've got a win7 computer with elements 9 now but do not get the avi running.</s><s> sounds seems to be ok.</s><s> video is not running. 
+</s><s>tobias 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-4035909</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Nov 19, 2011 7:22 AM">
+<s>for your files, mjpeg codec, wrapped in avi, you need an mjpeg codec, that pre can work with.</s><s> it appears that your old computer had one, but the new one does not.</s><s> see this article for more info. for more info on codec's in general, see this article. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-FAQ/Discussions-1999545-4035910</DOCNO>
+<TEXT>
+<subject>FAQ: Problem with AVI File - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Nov 19, 2011 7:24 AM">
+<s>with vob's, premiere (elements, and prpro, as of the second cs4 update), so long as they are 100% dvd-compliant, the program can import and use them.</s><s> however, not all vob's are 100% dvd-compliant.</s><s> see this article for more background. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,3140 @@
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-1120897</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="dariaskempka" timestamp="Dec 26, 2012 12:15 PM">
+<s>how do non-cloud dw cs6 users embed edge animations into existing pages? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-4943450</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="PBodytko" timestamp="Dec 24, 2012 10:23 AM">
+<s>i am wondering about the same thing... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-4945979</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="AllDayDev" timestamp="Dec 26, 2012 12:20 PM">
+<s>there are four basic steps needed to embed an edge animate composition into an existing page:   publish from edge animate.</s><s> (this creates the necessary files to run the animation.</s><s> also, the code referenced in step 2 and 3 below will be included in the .html file that animate creates inside the publish/web folder, which you can just copy/paste.</s><s>) add a <div> to the page that has the id of stage and the correct class name for your stage (i.e. the "composition id" for your project in animate).</s><s> for example:  <div id="stage" class="edge-1655086"></div> include the preload .js file and the default style in your page's header, within edge runtime html comments.</s><s> for example:  <!--adobe edge runtime--> <script type="text/javascript" charset="utf-8" src="test-1655086_edgepreload.js"></script> <style> .edgeload-edge-1655086 { display:none; } </style> <!--adobe edge runtime end--> make sure to upload all of the include files to your server in the appropriate relative locations.</s><s> this includes the _edge.js files, _edgeactions.js file, _edgepreload.js file, the edge_includes folder and its contents, any other files/folders created inside the "publish/web" folder when you publish from edge animate (e.g.</s><s> "images" folder, etc.</s><s>).     here is a very simple example that will hopefully help to clarify: http://thetraininggrounds.com/an-test/insert-an-into-existing-page.htm l   as a reference, these are all of the files involved in my example: an-test/insert-an-into-existing-page.html (my existing html page) an-test/ball-bouncing-banner_edge.js an-test/ball-bouncing-banner_edgeactions.js an-test/ball-bouncing-banner_edgepreload.js an-test/edge_includes/edge.1.0.0.min.js an-test/edge_includes/jquery.easing.1.3.js an-test/edge_includes/jquery-1.7.1.min.js an-test/edge_includes/json2_min.js
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-4946005</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="PBodytko" timestamp="Dec 26, 2012 12:28 PM">
+<s>thanks carey.</s><s> this is very helpful.</s><s> i will test this approach for creating an animated website navigation menu -- i am especially worried about z-values... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-4947330</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="PBodytko" timestamp="Dec 27, 2012 7:45 AM">
+<s>this method works well, except i can't move the animation to anywhere within the html page.</s><s> i tried placing it in other divs but it seems to be glued in its position in relation to top left as was set in the edge document. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-4948280</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="Nancy%20O." timestamp="Dec 27, 2012 2:53 PM">
+<s>try wrapping your animation inside a parent division that has a css property of position:relative.   #divname { position:relative; /**to hold absolute positioned elements**/ width: 1000px; /**adjust width to suit**/ margin:0 auto /**with width, this is centered on screen**/ }   html:   <div id="divname"> animation stuff goes here.....</s><s> </div>     nancy o.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-5656065</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="rcraighead" timestamp="Sep 5, 2013 8:27 AM">
+<s>are all these steps still required for the current version of edge animate files?</s><s> sounds pretty complicated to me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-5656705</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="Nancy%20O." timestamp="Sep 5, 2013 11:43 AM">
+<s>which version of dreamweaver do you have?</s><s> if you're using cloud based cs6 or cc, adding edge animate projects to your pages is a snap.</s><s> if you don't have either of those dw versions, you must do it manually. 
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-5656760</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="rcraighead" timestamp="Sep 5, 2013 11:50 AM">
+<s>i'm on cc but i'm not actually using dw.</s><s> i use a drag-n-drop builder called weebly and i'm trying to simplify the import of edge html5 files onto that platform.</s><s> weebly will custom html code, if i knew what to add. 
+</s><s>my current thought is to build a .folio using indd and place a simple pdf into weebly.</s><s> all theory because i'm new to this. 
+i like the idea of using the .oam file, but weebly does not support it directly. 
+i know, i just need to learn dw.</s><s> so much to learn, so little time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-5656820</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="Nancy%20O." timestamp="Sep 5, 2013 11:59 AM">
+<s>weebly?</s><s> i'm not even sure weebly uses html5 doc type which is necessary for edge animate projects to work. 
+</s><s>an edge animate project is a collection of javascript, html5, css3 and images.</s><s> you'll get better results if you use dreamweaver or muse to build your page. 
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4939489-5656768</DOCNO>
+<TEXT>
+<subject>How to embed Edge Animate compositions into existing pages?</subject>
+<post author="rcraighead" timestamp="Sep 5, 2013 12:10 PM">
+<s>i realize weebly is not a professional tool, but it was the answer i needed when i could not afford a custom-built website and could not do it myself.</s><s> i see other weebly pages with html5, so it's doable.</s><s> i'll just keep looking for the answers. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-927451</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="Nancy O." timestamp="Nov 20, 2011 3:25 PM">
+<s>forum question: "how do i get my form to send sensitive credit card data to my email address?" 
+</s><s>forgive the rant, but i've been seeing lots of posts like this lately and frankly it leaves me terrified and irritated.</s><s> terrified for consumers who could be exploited by credit card & identity thieves.</s><s> terrified for site owners who could incur stiff penalties or be put out of business.</s><s> irritated with the fool of a web designer who thinks this is ok business practice. 
+</s><s>i've got news for you.</s><s> it's not ok to transfer sensitive data by e-mail.</s><s> it's not secure. 
+</s><s>if you're new to web design and need to build a store site for someone, please use paypal, google checkout or one of the industry approved shopping cart sites.</s><s> if you need a recommendation, feel free to post a question in the forum.</s><s> people here will be happy to share their opinions & experiences with you. 
+q: what is pci?</s><s> a: the payment card industry data security standard (pci dss) is a set of requirements designed to ensure that all companies that process, store or transmit credit card information maintain a secure environment.</s><s> essentially any merchant that has a merchant id (mid). 
+q: to whom does pci apply?</s><s> a: pci applies to all organizations or merchants, regardless of size or number of transactions, that accepts, transmits or stores any cardholder data. 
+q: what are the penalties for noncompliance?</s><s> a: the credit card companies may, at their discretion, fine an acquiring bank $5,000 to $100,000 per month for pci compliance violations.</s><s> the banks will most likely pass this fine on downstream till it eventually hits the merchant.</s><s> in most cases though, the bank suspends or terminates the merchant's credit card privileges. 
+i realize jobs are scarce & finding good projects to work on is much harder than it once was.</s><s> but that doesn't mean you should ever put yourself, the public and site owners at risk.</s><s> if a site owner insists on running his business without a pci compliant shopping cart to save a few dollars or [insert whatever excuse here], this is a red flag warning you to politely thank them & walk away from the project.</s><s> there is no excuse for not using a secure payment method.</s><s> paypal doesn't cost much (a small transaction fee) and it's very simple to set up. 
+</s><s>pci compliance guidelines & faq http://www.pcicomplianceguide.org/pcifaqs.php 
+some payment processors to look at ~ paypal ~ https://www.paypal.com/webapps/mpp/merchant google checkout ~ http://checkout.google.com/sell/?</s><s> authorize.net ~ http://www.authorize.net/ 
+shopping cart solutions: 
+cartweaver http://www.cartweaver.com/ 
+web assist http://www.webassist.com/support/ecommerce-options.php 
+adobe business catalyst ~ built-in turn-key e-commerce http://www.businesscatalyst.com/ 
+shopify http://www.shopify.com/ 
+mals-e https://www.mals-e.com/index.php 
+
+</s><s>nancy o. alt-web design & publishing web | graphics | print | media specialists http://alt-web.com/ http://twitter.com/altweb 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4037796</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="Curtis_E_Flush" timestamp="Nov 20, 2011 8:07 PM">
+<s>excellent post and very informative except that i have personally had a bad experience with paypal, and the result is that i will never use them again for anything, including purchases from already established sites. 
+</s><s>there are others, including 2pay which i will use. 
+</s><s>the whole post is spot on though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4037934</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="adninjastrator" timestamp="Nov 20, 2011 10:33 PM">
+<s>hey nancy...</s><s> no problem with the "rant"!</s><s>!</s><s> i've also dealt with many posts asking how to create this or that type of shopping cart.</s><s> will this work or that?</s><s> about the only addendum i would like to add to your excellant post is that when choosing a shopping cart... you should start at your bank and work backwards to the web site.. not the other way around!</s><s> so in other words... don't just choose a third party shopping cart and and expect your bank to accept your choice!</s><s>!</s><s> most major third party shopping carts require that you first have a "merchant account" at your bank.</s><s> your bank will not allow that shopping cart to directly connect into it (gee...</s><s> i wonder why).</s><s> each bank will have an approved "gateway" that they use as an interum connection between the shopping cart and the bank.</s><s> for example: http://www.firstdata.com/ecommerce/ or: http://www.authorize.net/ but each "gateway" only approves/works with certain third party shopping carts.</s><s> so i'd recomend that clients wanting to create a "shoping cart" always start at their bank and then work backwards to their web site.</s><s> if a "merchant account" is too much... then go paypal or some non-direct link to your bank.</s><s> but if the object is to process credit cards and deposit into your bank account (which means you need a merchant account)... then you had better start at your bank and end up at your web site...</s><s> not the other way around.</s><s> best wishes, adninjastrator 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4038334</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="Curtis_E_Flush" timestamp="Nov 21, 2011 5:51 AM">
+<s>another good point!</s><s> it would seem foolish to invest $300 in cartweaver, learn the php or asp back end of it, set the whole site up, get an ssl certificate, and put everyhting to the server... only to discover that your business can't do business... with your financial institution that is. 
+</s><s>there should be a full tutorial out there somewhere that covers all the bases of starting an e-store, not only from a html standpoint, but commercial, legal and financial as well. 
+</s><s>the idea that someone can go buy dreamweaver (or worse yet, only download a 30 day trial) and "voila!" they're an instant webmaster, is as foolish as thinking that buying a ticket on a cross-country flight will make someone a pilot. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4038432</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="pziecina" timestamp="Nov 21, 2011 6:51 AM">
+<s>hi nancy, 
+</s><s>nice rant. 
+</s><s>if i could just clarify about the shopping cart though.</s><s> there is no requirement for pci compliance, providing, (sorry for shouting but!</s><s>) the cart does not collect any user details, (order yes, user details no). 
+</s><s>also for those in the european communities, (eu) if the site designer/developer does not inform the site owner about the requirement for pci compliance, and the requirement to comply with data protection legislation, then it is the site designer/developer that is liable for all costs incurred by the site owner for any breach of said legislations, (professional responsibility).</s><s> they are also responsible for any breach of advertising standard, (false user policy, advertisement, etc) along with the site owner, (consider this as 'aiding and abetting'). 
+</s><s>the above legislation was passed at the beginning of this year, (march i think) at the same time as the advertising standards legislation. 
+</s><s>the us does have similar legislation but i think this varies state to state, so i cannot give clear details. 
+</s><s>pz 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4039568</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="Nancy%20O." timestamp="Nov 21, 2011 3:17 PM">
+<s>thanks curtis, adninjastrator and pz for your constructive input.</s><s> all excellent points. 
+<start with the bank> 
+</s><s>absolutely.</s><s> especially if the merchant already has pos (point of service) -- a brick & mortar shop where the credit card user is standing in front of him. 
+</s><s>on-line merchants need a cnp (card not present) account.</s><s> fees for cnps are somewhat higher owing to greater risk of fraud & charge backs on the internet. 
+</s><s>pos merchants have a gateway to process credit cards.</s><s> a physical terminal or box is connected to a phone line or internet cable and used at checkout to approve or decline purchases on the spot.</s><s> similarly, on-line merchants need an internet gateway to approve or decline purchases.</s><s> often the same gateway company can provide both services. 
+</s><s>finally, on-line merchants need a shopping cart that is compatible with their internet gateway's protocol. 
+</s><s>as pz said, any shopping cart can collect order details.</s><s> but only a pci compliant cart can collect customer data (card holder's name, address, credit card # & expiration date).</s><s> the level of encryption required for this standard is very high to safeguard customer data as it's being collected, stored and transmitted to the gateway. 
+i prefer to hand off customers to a secure payment processing agent like https://paypal or https://authorize.net for order completion.</s><s> it costs a little more but it's much safer for me as a web developer and the site owner who is ultimately responsible for protecting his customer's data.</s><s> unless you really know what you're doing, it's much better to let the experts handle this step. 
+@curtis, i've had good experiences with paypal.</s><s> but other options are good to know about.</s><s> especially for non-profits who may not be able to use paypal.</s><s> please post any others you've had good experiences with. 
+</s><s>thanks everyone! 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4040939</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="Curtis_E_Flush" timestamp="Nov 22, 2011 9:04 AM">
+<s>i like to work with 800cart.com 
+</s><s>they have a really user friendly setup, and 24/7 live phone or chat support for integration or billing questions/problems. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4125451</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="Lawrence_Cramer" timestamp="Jan 8, 2012 3:38 PM">
+<s>pci compliance is of high concern to anyone selling online so you need to take some time learning about it, then work with your host,and you payment gateway provide and in some cases tweak your site to bring things into line.</s><s> keep in mind that the whole pci issue is still relatively new so there are many interpretations.</s><s> some merchant account providers will not accept anything short of a locked down dedicated server with all the security you can load up on it and will not pass anything on any shared host.</s><s> naturally this is overkill and an over reaction.</s><s> others are much more realistic, so it doesn't hurt to even spend some time shopping merchant accounts and pci certification vendors - and ask others that have gotten their site/s certified. 
+</s><s>you can avoid the issue completely by handing off all the transaction to a payment provider, and for some sites this may be the perfect solution.</s><s> doing so does interrupt the flow of the check out and introduces the payment provides's branding into the process.</s><s> many prefer to have a seamless transaction for the customer.</s><s> not to worry, with some diligence you can provide this sort of user experience and be pci compliant. 
+</s><s>here's a link to a link to a knowledge base article on this topic. 
+http://forums.cartweaver.com/topic/pci-compliance-what-you-should-know 
+hope this helps 
+lawrence cramer - *adobe community professional* http://www.cartweaver.com php & coldfusion shopping cart for adobe dreamweaver 
+stay updated: http://www.facebook.com/cartweaver http://www.twitter.com/cartweaver 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4125445</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="mhollis55" timestamp="Jan 8, 2012 4:51 PM">
+<s>great rant. 
+i have done several stores and they're all mounted on secure servers.</s><s> i have had several clients of mine request that they receive an email of the credit card number being used in payment.</s><s> no thank you!</s><s> i won't do that.</s><s> "but what if their card doesn't go through?" then they'll telephone you if there is a problem.</s><s> and you can use your terminal or wait for a check to clear. 
+i do not store any credit card data on my servers.</s><s> period.</s><s> credit card numbers are destroyed after the session, as well as all other information pertaining to the session.</s><s> if their own web browser is set up to autofill stuff, that is their own issue. 
+</s><s>all servers doing financial transaction have security certificates.</s><s> all information that might have something to do with a financial transaction, password, etc is encrypted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-4467651</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="b00y0h" timestamp="Jun 5, 2012 12:02 PM">
+<s>unfortunately, it's not enough just to have a security certificate on your servers.</s><s> if customers enter cc data on your domain, then it has to be pci compliant. 
+http://www.mijireh.com/docs/what-you-need-to-know-about-pci-compliance / 
+handing off all the transaction to a payment provider doesn't have to interrupt the flow of the checkout, nor introduce the payment provider's branding.</s><s> for a seamless transaction for the customer (read... better completion rate), check out mijireh.com.</s><s> it looks as though they are initially a wordpress only solution, but they have an api for integrating with other solutions. 
+</s><s>bobby smith http://mijireh.com your design, our security 
+http://twitter.com/mijirehapp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4037530-5076914</DOCNO>
+<TEXT>
+<subject>Credit Cards & Forms</subject>
+<post author="nicklewis" timestamp="Feb 15, 2013 1:23 PM">
+<s>if you decide to use shopify i recommend you setup an affilaite program to get more sales.</s><s> i use osi affiliate software http://www.osiaffiliate.com it is called, but there are other solutions out there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3127556-719479</DOCNO>
+<TEXT>
+<subject>Creating a slideshow using dreamweaver cs5</subject>
+<post author="jaykay09" timestamp="Sep 12, 2010 10:16 AM">
+<s>hi guys i was wondering how do you create a slideshow in dreamweaver cs5, i was watching a guy do it in dreamweaver cs4 but i could not find the flash elements panel. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3127556-3127604</DOCNO>
+<TEXT>
+<subject>Creating a slideshow using dreamweaver cs5</subject>
+<post author="MurraySummers" timestamp="Sep 12, 2010 10:29 AM">
+<s>dw doesn't have native ability to do this, but you can find free code for such things by looking into some of the jquery demos, or by using the code here - http://www.highslide.com. 
+</s><s>for commercial slideshows, my personal favorite is slideshowmagic from projectseven - http://www.projectseven.com. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3127556-3128605</DOCNO>
+<TEXT>
+<subject>Creating a slideshow using dreamweaver cs5</subject>
+<post author="hans-g." timestamp="Sep 13, 2010 12:37 AM">
+<s>hi, 
+</s><s>as murray said: dw doesn't have native ability to do this, but, there are some dw-slideshow-widgets you could use.</s><s> last time i looked fore them i found three different slideshows. 
+
+
+</s><s>here the lnik where you can get the browser: http://labs.adobe.com/technologies/widgetbrowser/ 
+hans-g. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3127556-3154662</DOCNO>
+<TEXT>
+<subject>Creating a slideshow using dreamweaver cs5</subject>
+<post author="skeech3" timestamp="Sep 22, 2010 1:14 PM">
+<s>you might consider using flash and the plug in from slideshowpro - its very professional and easy to update and modify. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3127556-3154752</DOCNO>
+<TEXT>
+<subject>Creating a slideshow using dreamweaver cs5</subject>
+<post author="Lawrence_Cramer" timestamp="Sep 22, 2010 1:49 PM">
+<s>do a google search on "jquery slideshows"   behold!</s><s> a wonderland of slideshow plug-ins!   cool this is about jquery slide-shows is that they all work basically the same way, so once you go through the learning curve of implementing one you'll be able to use any of them.</s><s> this way you don't have to be locked in to a particular look.</s><s> you can use what will look best for each site.   enjoy!   -- lawrence cramer - *adobe community professional* http://www.cartweaver.com shopping cart for adobe dreamweaver available in php, coldfusion, and asp   stay updated - http://blog.cartweaver.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-492638</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Jon Michael Varese" timestamp="Sep 15, 2009 5:24 PM">
+<s>the documentation team at adobe gets a lot (and i mean a lot) of queries about css layouts -- what are they, how do they work, where do i go to start?</s><s> so i've put together a list of some of the best resources out there in the hopes of spreading the educational word.</s><s> for those of you who blog, write, or tweet about this issue, please publicize these resources as much as possible so that more people can find them.</s><s> also feel free to add to this list if you think there are any resources that i've missed. 
+</s><s>from table-based to tableless web design (adobe) popular two-part tutorial series on building a css layout from scratch, and converting table-based layouts to pure css. 
+</s><s>css page layout basics (adobe) explanation of a basic css layout that breaks down the structure and rules that create the layout. 
+</s><s>creating a css layout from scratch (subcide) an older but still quite useful step-by-step tutorial on creating a css layout. 
+</s><s>building your first css site (adobe) steps beginners through the process of defining structural elements and then styling them. 
+</s><s>tableless layouts with dreamweaver cs4 (adobe) shows you how to create a simple two-column css layout. 
+</s><s>creating a simple three-column design (adobe) shows you how to build a three-column design, including using the "faux column" technique 
+dreamweaver css starter layouts (adobe) an article written for dreamweaver cs3, but still useful as the starter layouts did not change in cs4. 
+</s><s>create a page with a css layout (adobe) the dreamweaver cs4 help doc equivalent to the above starter layouts article. 
+</s><s>css layout (html source) a popular article describing many of the most common terms and principles used for css layouts. 
+</s><s>in search of the holy grail (a list apart) elegant article on creating the "holy grail" of css layouts: the three-column, fixed-width sidebars, liquid center. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2252531</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Nadia-P" timestamp="Sep 16, 2009 7:01 AM">
+<s>this should be linked to in the dw faq :-) 
+
+</s><s>edit: link now added to the dreamweaver faq index 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2412744</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Sooxzie" timestamp="Nov 22, 2009 12:03 PM">
+<s>atthe risk of sounding too green, you should define css, which is an acronym, the first time you use it.</s><s> i have little web design experience and have no idea what it means.</s><s> you should always define an acronym in parantheses the first time it is used. 
+</s><s>now, what the hell does css mean? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2412849</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Nancy%20O." timestamp="Nov 22, 2009 12:23 PM">
+<s>css = cascading style sheets.  it's used to style your  html content.</s><s> html = hypertext mark-up language.   for more on these and other web terms, start here: html & css tutorials - http://w3schools.com/     nancy o. alt-web design & publishing web | graphics | print | media  specialists www.alt-web.com/ www.twitter.com/altweb www.alt-web.blogspot.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2648600</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="spyteen" timestamp="May 23, 2010 2:57 AM">
+<s>cs4 for css support new css3 ?</s><s> and cs4 layout call dot'n my toolbar   [link removed by moderator]
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2723025</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="songfachen" timestamp="Apr 8, 2010 8:01 PM">
+<s>how can i find the chinese version of this?</s><s> for me, it's very difficult to read english! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2832160</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Magpie0013" timestamp="May 21, 2010 9:11 AM">
+<s>how do i know if the dream weaver version i have is up to date?</s><s>.</s><s> i have dw 8 i got it wayback and just started using it in the last year.</s><s> i lost the box and key and have no idea how to check it and update it. 
+btw i have searched but could not find the help i need. 
+</s><s>prepare for lots of stupid questions.</s><s> thanks in advance 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2832923</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Nancy%20O." timestamp="May 21, 2010 1:55 PM">
+<s>this isn't a css question, but i'll try to answer you.   dw8 is several years old now.  there have been 3 new product releases since dw8 came out (cs3, cs4 and the current version which is cs5).   adobe does not issue updates on old software.</s><s> the last update issued was dw 8.02.   if you don't have the last update, you can get it here. http://www.adobe.com/support/dreamweaver/downloads_updaters.html   how to find my version & serial #? ---------------------------------------------------- in dw, click on help > about.</s><s> when the box begins to scroll, click inside it.     nancy o. alt-web design & publishing web | graphics | print | media  specialists http://alt-web.com/ http://twitter.com/altweb http://alt-web.blogspot.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2833912</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Magpie0013" timestamp="May 23, 2010 3:07 AM">
+<s>thank you very much nancy 
+i need to learn coding but after 7 years after a major injury i cant seam to learn alone online.</s><s> if i where to go to my local community college what would i start with for classes.</s><s> i have gone their before but because i am old i never get very far.</s><s> if i know what class to look for then i could bypass the admins at the school do i look for web design classes. 
+a note i am in to the internet after a serious accident. 
+</s><s>any ideas how i can move forward without any money? 
+i do really appreciate you taking the time to contact me!</s><s>!</s><s> 
+</s><s>billy grant - ty 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-2834884</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="Nancy%20O." timestamp="May 22, 2010 5:04 PM">
+<s>if you want to make a career out of building web sites, you need to learn html and css code.</s><s> i think you could learn the basics on your own.  start by working through the simple tutorials below.   start learning html  - http://w3schools.com/html/default.asp start learning css -  http://w3schools.com/css/default.asp   adobe dw isn't free but you you can download the 30-day trial. http://www.adobe.com/products/dreamweaver/ free web authoring tools - obviously, you get what you pay for.  these are scalled down versions of the for purchase products.   coffee cup html editor http://www.coffeecup.com/free-editor/   netobjects fusion essentials http://netobjects.com/html/essentials.html   top style lite css editor http://topstyle.en.softonic.com/   open source (free) web site systems -   wordpress - http://wordpress.org/   drupal - http://drupal.org/   joomla -  http://www.joomla.org/     hope you get back on your feet real soon!   nancy o. alt-web design & publishing web | graphics | print | media  specialists http://alt-web.com/ http://twitter.com/altweb http://alt-web.blogspot.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-3911272</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="CHunter321" timestamp="Sep 9, 2011 7:15 PM">
+<s>hi there!</s><s> 
+</s><s>you may have already found a version in chinese but if not, you can copy sections and past into this translator to generate the text in chinese: http://www.freetranslation.com/. 
+</s><s>good luck songfachen.</s><s> chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2251450-4408877</DOCNO>
+<TEXT>
+<subject>Get up to speed with CSS layouts</subject>
+<post author="federicom985" timestamp="May 15, 2012 7:20 AM">
+<s>i would like some kind of collaboration bewtween dreamweaver and wordpress.. http://www.eufemoweb.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233097-1433906</DOCNO>
+<TEXT>
+<subject>media query issues in fluid grid layout (take a look at this code)</subject>
+<post author="trying hard to learn" timestamp="Mar 22, 2014 4:55 AM">
+<s>how to make adjustments in specific device views without screwing everything up in other views.</s><s> i know in the css designer when i click global it makes changes to all views which is great.</s><s> but when i click one of the little icons at the button of the screen (like the smartphone icon or tabet etc) the changes i make in the view dont stay in that view but affect all views.</s><s> so i'm coming to understand ( maybe wrongly) that those icon have no design power other than to show you what thing look like in that view.</s><s> i'm starting to focus on clicking the stlye sheet dreamweaver cc created (not the boilerplate one) clicking the media query for the screen size i want to adjust and finding the selector i want to tweek (its right here the hickup i'm having is at - i cant adjust images that i have specifically in the corresponding view without screwing everything everywhere up in the other views) can anybody invision what i'm trying to do and what happening and give me a fix?</s><s>?</s><s>?</s><s>?</s><s> 
+</s><s>idealy i would like to simply click the view icon of the screen size i want to tweak and drag handle bars to resize images and the adjustment stay only in that sceen size range, but this is not happening.</s><s> this why i say that those (may wrongly i might be doing something wrong) icons have no design power other than to give you a view of things.</s><s> but either way whether i can click icons and rag handle handle bars or in i have to use css designer i cant specifically work in one view without affecting all the others. 
+</s><s>below is css code for media queries that are in my style sheet.</s><s> it might not be the cleanest bit i want you to focus on two main aspsects of the code 1) the media queries, particularly the smartphone 480 and below.</s><s> ( but all media queries if need be) 2) in the header and in the list iteams i have images.</s><s> its these images that i'm trying to resize - but only specific changes in specific views 
+take a look: 
+
+
+
+/* mobile layout: 480px and below. */ 
+.gridcontainer { margin-left: auto; margin-right: auto; width: 100%; padding-left: 0; padding-right: 0; clear: none; float: none; } #div1 { } #mainheader { margin-left: 0; position: static; height: auto; width: 100%; } #navbarone { 
+
+} #navbartwo { 
+
+} #listiteams { color: #ffffff; text-align: center; background-color: #9dc5d3; } #listiteamstwo { text-align: center; background-color: #9dc5d3; color: #ffffff; } #navbutton { width: 100%; } #li1 { width: 100%; clear: both; margin-left: 0; } #li2 { width: 100%; clear: both; margin-left: 0; } #navbuttontwo { width: 100%; } #li3 { width: 100%; clear: both; margin-left: 0; } #li4 { width: 100%; clear: both; margin-left: 0; } #flads { } .zeromargin_mobile { margin-left: 0; } .hide_mobile { display: none; } 
+
+/* tablet layout: 481px to 768px.</s><s> inherits styles from: mobile layout. */ 
+
+@media only screen and (min-width: 481px) { 
+
+.gridcontainer { width: 100%; padding-left: 0; padding-right: 0; clear: none; float: none; margin-left: auto; } #div1 { } #mainheader { position: static; height: auto; width: 100%; margin-left: 0; } #navbarone { } #navbartwo { } #listiteams { } #listiteamstwo { } #navbutton { width: 32.2033%; } #li1 { width: 32.2033%; clear: none; margin-left: 0; } #li2 { width: 32.2033%; clear: none; margin-left: 0; } #navbuttontwo { width: 32.2033%; } #li3 { width: 32.2033%; clear: none; margin-left: 0; } #li4 { width: 32.2033%; clear: none; margin-left: 0; } #flads { } .hide_tablet { display: none; } .zeromargin_tablet { margin-left: 0; } 
+
+
+
+} 
+
+/* desktop layout: 769px to a max of 1232px.</s><s> inherits styles from: mobile layout and tablet layout. */ 
+
+@media only screen and (min-width: 769px) { 
+
+.gridcontainer { width: 100%; max-width: 2000px; padding-left: 0; padding-right: 0; margin: auto; clear: none; float: none; margin-left: auto; } #div1 { } #mainheader { position: static; height: auto; width: 100%; margin-left: 0; } #navbarone { } #navbartwo { } #listiteams { } #listiteamstwo { } #navbutton { width: 32.7731%; } #li1 { width: 32.7731%; margin-left: 0; clear: none; } #li2 { width: 32.7731%; margin-left: 0; clear: none; } #navbuttontwo { width: 32.7731%; } #li3 { width: 32.7731%; margin-left: 0; clear: none; } #li4 { width: 32.7731%; margin-left: 0; clear: none; } #flags { } .zeromargin_desktop { margin-left: 0; } .hide_desktop { display: none; } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233097-6233401</DOCNO>
+<TEXT>
+<subject>media query issues in fluid grid layout (take a look at this code)</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 11:29 AM">
+<s>design view alone is very limiting.</s><s> to make the changes you want, you'll need to get under the hood and modify css code manually.</s><s> i highly recommend using a separate style sheet in case you make mistakes.</s><s> at least that way, you're not messing with the integrity of the fglayout. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233097-6233719</DOCNO>
+<TEXT>
+<subject>media query issues in fluid grid layout (take a look at this code)</subject>
+<post author="trying%20hard%20to%20learn" timestamp="Mar 22, 2014 2:44 PM">
+<s>ok but how do i make changes?</s><s> add another media query or use the ones i already have?</s><s> is my media queries ok?</s><s> do you see any thing wrong thats will prevent me from making the changes? 
+</s><s>as i said i have images in the header and list iteams, you would think i could simply add a height to the image in the media query and that change would stay in that media but thats not happening so how do i do it?</s><s>?</s><s>?</s><s> 
+</s><s>please focus answer on the bold portion.</s><s> please 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233097-6233819</DOCNO>
+<TEXT>
+<subject>media query issues in fluid grid layout (take a look at this code)</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 3:42 PM">
+<s>by default, image height and width are 100% in fluidgrid layouts.</s><s> you'll find it near the top of your css code. 
+@charset "utf-8"; img, object, embed, video { max-width: 100%; } .ie6 img { width:100%; } 
+</s><s>that's so they can re-scale to fit the various layouts.</s><s> if you need to assign explicit height & width values to certain elements, you can override that css rule by using the height & width attributes in your html code like this. 
+<img src="some_image.jpg" height="xxx" width="xxx"> 
+</s><s>or, you can give your image a class name and target that class with css media queries.</s><s> for an example, copy & paste this code into a new, blank document.</s><s> saveas test.hml and preview in browsers at different screen widths. 
+
+<!</s><s>doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>untitled document</title>
+
+<style>
+
+/**fluid grid default**/
+img, object, embed, video{
+max-width: 100%;
+}
+.ie6 img {
+width:100%;
+}
+
+/* special rules for mobiles */
+@media only screen and (max-width: 480px) {
+.nav {width:320px; height:74px; } 
+}
+
+/* special rules for tablets */
+@media only screen and (min-width: 482px) and (max-width: 1024px) {
+.nav {width: 480px; height: 148px;}
+}
+
+/* special rules for desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1230px) {
+.nav {width: 1000px; height: 225px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<h3>this image naturally rescales to layout</h3>
+<img src="http://placehold.it/1000x225" alt="some description">
+
+<h3>this image has a .nav class &amp; rescales to set media query break points.</h3>
+<img class="nav" src="http://placehold.it/1000x225" alt="some description">
+
+</body>
+</html> 
+</s><s>does this make sense now? 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233097-6233885</DOCNO>
+<TEXT>
+<subject>media query issues in fluid grid layout (take a look at this code)</subject>
+<post author="trying%20hard%20to%20learn" timestamp="Mar 22, 2014 5:12 PM">
+<s>nancy nancy bingo!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> i see i see!</s><s>!</s><s>!</s><s> i love you!</s><s>!</s><s>!</s><s> 
+</s><s>now let me just see something - this approach of adding a class to the image could i do this in my css instead of the html?</s><s> and this is not going to cause several copies of the same image to be downloaded to a users device and then pick one that meets the right size is it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233028-1433853</DOCNO>
+<TEXT>
+<subject>Set up PHP for Windows</subject>
+<post author="hsiahp" timestamp="Mar 21, 2014 11:06 PM">
+<s>i'm having trouble setting up a php for windows. 
+</s><s>i'm following these instructions on this site (http://www.adobe.com/devnet/dreamweaver/articles/dw_wordpress_pt2.html) so i can edit wordpress through dreamweaver locally. 
+</s><s>but in the middle of the instructions the link to "set up php for windows" is not working. 
+</s><s>because of this when i try to apply a theme to my local host and go to "http://localhost" is just goes to the xampp welcome page instead of showing the website theme is just applied using the wordpress dashboard. 
+</s><s>can anyone help me out? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233028-6233400</DOCNO>
+<TEXT>
+<subject>Set up PHP for Windows</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 11:25 AM">
+<s>see screenshots below. xampp\htdocs is where your local wp site files should reside. 
+
+
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232682-1433800</DOCNO>
+<TEXT>
+<subject>instancebegin template populating twice in child pages</subject>
+<post author="schintgen85" timestamp="Mar 22, 2014 3:38 PM">
+<s>i just made a change to my template for my site in dreamweaver.</s><s> i simply added the google analytics snippet to my head section, but now when it goes to update my child pages i get an error in line 1 stating "unbalanced instancebegin tag" and the pages don't update.</s><s> i looked at the code in one of my child pages and somehow instancebegin is now in twice.</s><s> here is a snippet of those first lines from a child page: 
+<!-- instancebegin template="/templates/template.dwt" codeoutsidehtmlislocked="false" --><!</s><s>doctype html> <!--[if ie 8]> <html class="no-js lt-ie9" lang="en" > <!</s><s>[endif]--> <!--[if gt ie 8]><!--> <html class="no-js" lang="en" ><!-- instancebegin template="/templates/template.dwt" codeoutsidehtmlislocked="false" --> <!--<!</s><s>[endif]--> 
+</s><s>how can i eliminate one of those "<!-- instancebegin template="/templates/template.dwt" codeoutsidehtmlislocked="false" -->"?</s><s> how did it get in there in the first place?</s><s> any help is appreciated! 
+
+</s><s>update: on a side note, i tried opening a child page in textedit and deleting one of those snippets and it came back the next time i saved the template and pushed the change to the pages, so i am still looking for a way to fix this issue... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233101-1433843</DOCNO>
+<TEXT>
+<subject>Synchonize with Remote Server</subject>
+<post author="smartwebs" timestamp="Mar 22, 2014 1:38 AM">
+<s>when updating content on my website i click the synchronize with reomter server icon the option is always entire site - this is not the way it used to be in my desktop version of dreamweaver.</s><s> there is never a time when i would want to do this   just the files i need to update - i have seen this answered before somewhere and that you were going to fix this - but still it is the same   as a suggestion - could the program remember our decision for this so that we don't upload the entire website by mistake.   i thank you for your urgent attention to this very annoying feature.   marc tracy
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233101-6233127</DOCNO>
+<TEXT>
+<subject>Synchonize with Remote Server</subject>
+<post author="subhadeep_banerjee" timestamp="Mar 22, 2014 5:12 AM">
+<s>well, opinions differ from user to user.</s><s> some users will want the 'entire site' option as default while others would want 'selected local files only'.</s><s> a preference setting for the default option seems like a good idea though.</s><s> please log your feature request here: https://www.adobe.com/go/dw_wishform 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232876-1433778</DOCNO>
+<TEXT>
+<subject>Connecting Wordpress to DW?</subject>
+<post author="filmschoolwtf" timestamp="Mar 21, 2014 8:09 PM">
+<s>hello i have a domain name http://filmschoolwtf.com i want to connect my wordpress to dreamweaver.</s><s> many of my friends have suggested me to use dreamweaver for coding as it is the best code editor available.</s><s> but i dont know how to connect my wordpress site to dreamweaver. 
+i have my own domain name and premium hosting but i dont see dreamweaver in the root folder.</s><s> so how could i install dreamweaver?</s><s> i hope i had made clear of what i need.</s><s> so please help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232876-6233123</DOCNO>
+<TEXT>
+<subject>Connecting Wordpress to DW?</subject>
+<post author="subhadeep_banerjee" timestamp="Mar 22, 2014 4:24 AM">
+<s>here's a good article on how to build wordpress sites with dw: http://www.adobe.com/inspire/2013/10/wordpress-sites-dreamweaver.html 
+for installing dreamweaver you need to create an adobe id (if you don't have one already) and login to https://creative.adobe.com/ you can download dreamweaver from the download center. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232740-1433747</DOCNO>
+<TEXT>
+<subject>JSP_Support.zxp invalid signature</subject>
+<post author="gpq" timestamp="Mar 21, 2014 5:47 PM">
+<s>hi, i need to install the jsp_support.zxp extension, but adobe extension manager cc says that the signature is invalid and stops middway. 
+</s><s>already saw thread: http://forums.adobe.com/message/5610330#5610330 but couldn't find useful information. 
+
+</s><s>using: windows 7 (64-bit) dreamweaver cc 13.2 build 6471 adobe extension manager cc 7.1.1.32 
+
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232740-6233122</DOCNO>
+<TEXT>
+<subject>JSP_Support.zxp invalid signature</subject>
+<post author="subhadeep_banerjee" timestamp="Mar 22, 2014 4:14 AM">
+<s>have you converted this from an older .mxp extension?</s><s> a lot of converted zxp extensions won't work with cc.</s><s> check with the extension developer if they have released a zxp version of it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232740-6233557</DOCNO>
+<TEXT>
+<subject>JSP_Support.zxp invalid signature</subject>
+<post author="gpq" timestamp="Mar 22, 2014 1:10 PM">
+<s>hi banerjee the extension is the one that adobe included in the dreamweaver cc folder, it's already a .zxp.</s><s> it was not converted, it's the official jsp extension by adobe.</s><s> it's called jsp_support.zxp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233119-1433885</DOCNO>
+<TEXT>
+<subject>Re:Dreamweaver / Phonegap Camera support</subject>
+<post author="mauprice" timestamp="Mar 22, 2014 3:55 AM">
+<s>hi, i am trying to get the camera to work in my android device (samsung n7000) 
+i create the apk file using the phonegap build service in dw6 and it shows no errors. 
+</s><s>howerver, when i install the app onto the device and run the app it does not trigger the camera? 
+</s><s>is there a trick to getting the camera to work when creating apps on dw6 using the phonegap build service built in to it? 
+
+
+this is the config.xml file i am using 
+
+<?</s><s>xml version="1.0" encoding="utf-8" ?</s><s>> <widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.phonegap.camera_test" versioncode = "11" version = "1.1.0" > 
+
+<name>test</name> 
+
+<description> bla </description> 
+
+<author href="http://bla.github.com" email="test@gmail.com"> bla </author> 
+
+
+
+<icon src="icon.png" gap:role="default" /> 
+
+
+
+<feature name="http://api.phonegap.com/1.0/geolocation"/> <feature name="http://api.phonegap.com/1.0/network"/> <feature name="http://api.phonegap.com/1.0/file"/> <feature name="http://api.phonegap.com/1.0/camera"/> <feature name="http://api.phonegap.com/1.0/media"/> <feature name="http://api.phonegap.com/1.0/device"/> 
+
+
+
+<feature name="http://api.phonegap.com/1.0/notification"/> <feature name="http://api.phonegap.com/1.0/battery"/> 
+
+
+
+<preference name="orientation" value="portrait" /> <preference name="webviewbounce" value="false" /> <preference name="prerendered-icon" value="true" /> <preference name="phonegap-version" value="3.1.0" /> 
+
+<preference name="fullscreen" value="false" /> <preference name="stay-in-webview" value="false" /> <preference name="ios-statusbarstyle" value="default" /> <preference name="android-minsdkversion" value="7" /> <preference name="android-installlocation" value="internalonly" /> <preference name="target-device" value="universal" /> <preference name="autohide-splashscreen" value="true" /> <preference name="load-url-timeout" value="60000" /> <preference name="show-splashscreen-spinner" value="true" /> <preference name="show-splash-screen-spinner" value="true" /> <preference name="allow-inline-media-playback" value="false" /> <preference name="launch-mode" value="standard" /> 
+
+<plugin name="capture" value="cdvcapture" /> <plugin name="camera" value="cdvcamera" /> </widget> 
+
+the index.html file is : 
+
+<script src="phonegap.js"></script> <script type="text/javascript" charset="utf-8"> 
+
+
+
+// called when capture operation is finished // function capturesuccess(mediafiles) { //var i, len; //for (i = 0, len = mediafiles.length; i < len; i += 1) { // //uploadfile(mediafiles[i]); //} //navigator.notification.alert('weee', null, 'great success!'); } 
+
+
+
+// called if something bad happens. // function captureerror(error) { //var msg = 'an error occurred during capture: ' + error.code; //navigator.notification.alert(msg, null, 'uh oh!'); } 
+
+
+
+// a button will call this function // function captureimage() { // launch device camera application, // allowing user to capture up to 2 images navigator.device.capture.captureimage(capturesuccess, captureerror, { limit: 2 }); } 
+
+
+
+// upload files to server function uploadfile(mediafile) { var ft = new filetransfer(), path = mediafile.fullpath, name = mediafile.name; 
+
+
+
+ft.upload(path, "http://my.domain.com/upload.php", function (result) { console.log('upload success: ' + result.responsecode); console.log(result.bytessent + ' bytes sent'); }, function (error) { console.log('error uploading file ' + path + ': ' + error.code); }, { filename: name }); } </script> 
+
+
+
+
+
+
+
+<script type="text/javascript" charset="utf-8"> 
+
+
+
+var picturesource; // picture source var destinationtype; // sets the format of returned value 
+
+
+
+// wait for cordova to connect with the device // function onload() { document.addeventlistener("deviceready", ondeviceready, false); } 
+
+
+
+// cordova is ready to be used! // function ondeviceready() { picturesource = navigator.camera.picturesourcetype; destinationtype = navigator.camera.destinationtype; alert("device is ready"); } 
+
+
+
+// called when a photo is successfully retrieved // function onphotodatasuccess(imagedata) { // uncomment to view the base64 encoded image data // console.log(imagedata); 
+
+
+
+// get image handle // var smallimage = document.getelementbyid('smallimage'); 
+
+
+
+// unhide image elements // smallimage.style.display = 'block'; 
+
+
+
+// show the captured photo // the inline css rules are used to resize the image // smallimage.src = "data:image/jpeg;base64," + imagedata; } 
+
+
+
+// called when a photo is successfully retrieved // function onphotourisuccess(imageuri) { // uncomment to view the image file uri // console.log(imageuri); 
+
+
+
+// get image handle // var largeimage = document.getelementbyid('largeimage'); 
+
+
+
+// unhide image elements // largeimage.style.display = 'block'; 
+
+
+
+// show the captured photo // the inline css rules are used to resize the image // largeimage.src = imageuri; } 
+
+
+
+// a button will call this function // function capturephoto() { // take picture using device camera and retrieve image as base64-encoded string navigator.camera.getpicture(onphotodatasuccess, onfail, { quality: 50, destinationtype: destinationtype.data_url }); } 
+
+
+
+// a button will call this function // function capturephotoedit() { // take picture using device camera, allow edit, and retrieve image as base64-encoded string navigator.camera.getpicture(onphotodatasuccess, onfail, { quality: 20, allowedit: true, destinationtype: destinationtype.data_url }); } 
+
+
+
+// a button will call this function // function getphoto(source) { // retrieve image file location from specified source navigator.camera.getpicture(onphotourisuccess, onfail, { quality: 50, destinationtype: destinationtype.file_uri, sourcetype: source }); } 
+
+
+
+// called if something bad happens. // function onfail(message) { alert('failed because: ' + message); } 
+
+
+
+</script> </head> <body onload="onload()"> <button onclick="capturephoto();">capture photo</button> <br><br> <button onclick="capturephotoedit();">capture editable photo</button> <br><br> <button onclick="getphoto(picturesource.photolibrary);">from photo library</button><br><br> <button onclick="getphoto(picturesource.savedphotoalbum);">from photo album</button><br><br> <img style="display:none;width:60px;height:60px;" id="smallimage" src="" /> <img style="display:none;" id="largeimage" src="" /> <br><button onclick="captureimage();">capture image</button> <br> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229672-1432969</DOCNO>
+<TEXT>
+<subject>Adobe Dreamweaver live css editing</subject>
+<post author="akiawt" timestamp="Mar 20, 2014 8:13 PM">
+<s>are there any documents about the technology, that adobe has used for live css editing 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229672-6229854</DOCNO>
+<TEXT>
+<subject>Adobe Dreamweaver live css editing</subject>
+<post author="subhadeep_banerjee" timestamp="Mar 20, 2014 9:48 PM">
+<s>do you mean the css designer or the rendering engine which makes live editing possible?</s><s> here's a link from inspire mag demonstrating css designer: http://www.adobe.com/inspire/2013/06/css-designer.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229672-6231652</DOCNO>
+<TEXT>
+<subject>Adobe Dreamweaver live css editing</subject>
+<post author="akiawt" timestamp="Mar 21, 2014 11:46 AM">
+<s>thanks for the reply.</s><s> i would like know more about the rendering engine which allow live css editing.</s><s> i don't understand the operation of it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229672-6233162</DOCNO>
+<TEXT>
+<subject>Adobe Dreamweaver live css editing</subject>
+<post author="subhadeep_banerjee" timestamp="Mar 22, 2014 3:40 AM">
+<s>the live view is rendered using the chromium embedded framework (cef3) found in chrome and safari.</s><s> here's a post from adobe blogs, for more info: http://blogs.adobe.com/jnack/2013/08/dreamweaver-gets-live-highlights- a-new-rendering-engine-more.html   -subhadeep
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5365818-1222564</DOCNO>
+<TEXT>
+<subject>QUIERO VER MI PAGINA WEB EN DISPOSITIVOS MOVILES</subject>
+<post author="fabri velezi" timestamp="May 30, 2013 11:09 AM">
+<s>hola 
+</s><s>que hago para que mi pagina la pueda ver el dispositivos moviles.</s><s> que modificaciones le hago al codigo?</s><s>?</s><s>?</s><s> gracias 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5365818-5367003</DOCNO>
+<TEXT>
+<subject>QUIERO VER MI PAGINA WEB EN DISPOSITIVOS MOVILES</subject>
+<post author="Ken%20Binney" timestamp="May 30, 2013 6:35 PM">
+<s>google search for responsive web design and media queries 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5365818-6233064</DOCNO>
+<TEXT>
+<subject>QUIERO VER MI PAGINA WEB EN DISPOSITIVOS MOVILES</subject>
+<post author="Juan%20Fernandez" timestamp="Mar 22, 2014 2:47 AM">
+<s>buenas noches realmente puedes hacer el diseño con wordpress o joomla con estos cms lograras administrar tu contenido de lo contrario si quieres que te realicen algun diseño de paginas web prof te recomiendo este sitio diseño de paginas web "acroweb" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233150-1433896</DOCNO>
+<TEXT>
+<subject>embedded vimeo videos do not work on iOS7 when packed with Phonegap build in DW</subject>
+<post author="Kyle_KIM" timestamp="Mar 22, 2014 2:44 AM">
+<s>i embedded vimeo videos into a jquery mobile templet and packed it through the phonegap build panel in dw the videos did not work on ios7 devices i first thought it is a problem with vimeo because there has been an issue being discussed in their community for a long.</s><s> i was desparate, then i simply zipped my site and uploaded it upto build.phonegap.com.</s><s> yes, now it works. 
+i think it is a problem with dreamweaver itself.</s><s> i am not sure if it also happens with youtube vidoes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229840-1433035</DOCNO>
+<TEXT>
+<subject>Why does it not work when I embed youtube into DWCS6?</subject>
+<post author="allegrophoto" timestamp="Mar 20, 2014 10:33 PM">
+<s>why does it not work when i embed youtube into dwcs6? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229840-6230043</DOCNO>
+<TEXT>
+<subject>Why does it not work when I embed youtube into DWCS6?</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 21, 2014 12:13 AM">
+<s>are you trying to preview it locally or on the server?</s><s> embedded youtube videos won't always play in a local preview. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229840-6230110</DOCNO>
+<TEXT>
+<subject>Why does it not work when I embed youtube into DWCS6?</subject>
+<post author="hans-g." timestamp="Mar 21, 2014 1:50 AM">
+<s>hi, 
+</s><s>you could use "add youtube videos and playlists to a website or blog by embedding it." at: https://support.google.com/youtube/answer/171780?hl=en 
+good luck!</s><s> hans-günter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229840-6232073</DOCNO>
+<TEXT>
+<subject>Why does it not work when I embed youtube into DWCS6?</subject>
+<post author="allegrophoto" timestamp="Mar 21, 2014 1:14 PM">
+<s>found the answer - thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229840-6232074</DOCNO>
+<TEXT>
+<subject>Why does it not work when I embed youtube into DWCS6?</subject>
+<post author="allegrophoto" timestamp="Mar 21, 2014 1:15 PM">
+<s>found the answer – thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229840-6233115</DOCNO>
+<TEXT>
+<subject>Why does it not work when I embed youtube into DWCS6?</subject>
+<post author="hans-g." timestamp="Mar 22, 2014 1:58 AM">
+<s>would you let me/us know how your "founded answer" looks like? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233114-1433883</DOCNO>
+<TEXT>
+<subject>Jumping Text</subject>
+<post author="pobarron" timestamp="Mar 22, 2014 1:28 AM">
+<s>this site i'm working http://www.nsmcleaning.com has a couple of lists that can be toggled.</s><s> i can't figure why the toggled text has a hitch in the last split second.</s><s> it doesn't look like the examples i use.</s><s> can anyone help?   also, does anyone know how to make the browser scroll with the toggle?</s><s> what should i be looking for?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233114-6233406</DOCNO>
+<TEXT>
+<subject>Jumping Text</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 11:39 AM">
+<s>i don't see any lists there. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233114-6233379</DOCNO>
+<TEXT>
+<subject>Jumping Text</subject>
+<post author="pobarron" timestamp="Mar 22, 2014 12:07 PM">
+<s>when you click on residential or commercial the p elements jump slightly and awkwardly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233114-6233671</DOCNO>
+<TEXT>
+<subject>Jumping Text</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 1:53 PM">
+<s>fix your coding errors.</s><s> your lists are a mess. http://validator.w3.org/check?verbose=1&uri=http%3a%2f%2fwww.nsmcleani ng.com%2f 
+your code needs to be streamlined to this and use css to change the styles as required. 
+<h1 class="rl_toggle">residential</h1> <ul id="rl_list"> <li>throughout the home</li> <li>living, dining and bedroom</li> <li>kitchen</li> <li>bathroom</li> </ul> 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233114-6233935</DOCNO>
+<TEXT>
+<subject>Jumping Text</subject>
+<post author="pobarron" timestamp="Mar 22, 2014 5:39 PM">
+<s>sounds like you're getting tired of my questions . 
+</s><s>trust me i figured there had to be an easier way to write the lists, but i had to fight through it to feel some sort of accomplishment .</s><s> i like what you wrote.</s><s> my only question is: how would i get the other list items to hide or slide down?</s><s> that's why i gave them all <li> tags.</s><s> should i put <ul>'s under the <li>'s?</s><s> like this: 
+<h1 class="rl_toggle">residential</h1> <ul id="rl_list"> <li>throughout the home</li> <ul id="tth_list"> <li>dusting</li> <li>mopping</li> </ul> <li>living, dining and bedroom</li> <li>kitchen</li> <li>bathroom</li> </ul> 
+?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s> thanks nancy.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233020-1433892</DOCNO>
+<TEXT>
+<subject>Using old Extensions in Dreamweaver CC</subject>
+<post author="riverWall86" timestamp="Mar 22, 2014 1:24 AM">
+<s>hi, 
+</s><s>i had a lightbox gallery extension that i used to use with my students for setting up image galleries in their websites. 
+</s><s>it was great for the purpose but i have tried to use it in dreamweaver cc but with no luck. 
+i have changed the file from an .mxp file to an .zxp file using extension manager cs6 and then imported the extension into extension manager cc. 
+i can then see the extension in dreamweaver cc under tcn widgets in the insert palette, but the lightbox icon has a question mark on it, and i get javascript error messages when i try to insert it into a page. 
+</s><s>does anyone have any thoughts on this? 
+i started a thread in the extensions manager forum but it was suggested i try over here in the dreamweaver forum. 
+</s><s>regards, john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6233020-6233403</DOCNO>
+<TEXT>
+<subject>Using old Extensions in Dreamweaver CC</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 11:36 AM">
+<s>ask the extension developer if they have updated that extension for dw cc.</s><s> if not, you're probably out of luck. 
+</s><s>fancybox2 is a terrific jquery plugin & very simple to implement with a few lines of code.</s><s> see below for a working example. 
+
+<!</s><s>doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html5, with fancybox2 viewer</title>
+
+<!--[if lt ie 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!</s><s>[endif]-->
+
+<!--latest jquery core library-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!--fancybox plugins-->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" media="screen">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
+
+<style>
+
+/**this styles image container**/
+#thumbs p {
+    float: left;
+    width: 180px;
+    height: 12.5em;
+    margin: 10px 0 0 20px;
+    padding: 10px;
+    border: 1px solid silver;
+    /**rounded borders**/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    /**this styles caption text**/
+    font: italic 14px/1.5 geneva, arial, helvetica, sans-serif;
+    color: #666;
+    text-align: center;
+}
+/**recommend using same size images**/
+#thumbs img {
+    width: 160px; /**adjust width to thumbnail**/
+    height: 120px; /**adjust height to thumbnail**/
+    margin-bottom: 1.5em;
+    opacity: 0.75;
+}
+#thumbs img:hover { opacity: 1.0 }
+
+/**float clearing**/
+#thumbs:after {
+    content: ".";
+    clear: left;
+    font-size: 0px;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+}
+</style>
+</head>
+
+<body>
+<h1><a href="http://fancyapps.com/fancybox/">fancybox2</a> viewer with images</h1>
+
+<!--insert thumbnails with links to full size images below--> 
+<div id="thumbs"> <p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 1" /></a> <br />
+</s><s>caption 1 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 2" /></a> <br />
+</s><s>caption 2 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 3" /></a> <br />
+</s><s>caption 3 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 4" /></a> <br />
+</s><s>caption 4 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120" alt="thumbnail 5" /></a> <br />
+</s><s>caption 5 </p>
+</s><s><!--end thumbs--></div>
+
+
+<!--fancybox function code--> 
+<script>
+$(document).ready(function() {
+    $('.fancybox').fancybox();
+    });
+</script>
+</body>
+</html> 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4210223-963662</DOCNO>
+<TEXT>
+<subject>when floating DIV tags, I am unable to center the tags? help..</subject>
+<post author="PhilipWhelan" timestamp="Feb 16, 2012 3:08 AM">
+<s>i am relatively new to dreamweaver, and have only used cs4 prior to cs5.5. 
+i am creating a website that has three columns, the header and the links bar to all other pages centers fine.</s><s> but when i try and align the div tags it acts as if it is glued to the left or right hand side of the screen. 
+i am just wondering if there is a way to align the most left of the tags to directly underneath the most left of the header and the same for the right hand side? 
+</s><s>if anybody could help it wouyld be much appreciated. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4210223-4210237</DOCNO>
+<TEXT>
+<subject>when floating DIV tags, I am unable to center the tags? help..</subject>
+<post author="osgood_" timestamp="Feb 16, 2012 3:17 AM">
+<s>can you post your html code and css here so we can see what it is you are tryng to do?</s><s> from reading your post i can't quite understand. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4210223-4210702</DOCNO>
+<TEXT>
+<subject>when floating DIV tags, I am unable to center the tags? help..</subject>
+<post author="adninjastrator" timestamp="Feb 16, 2012 8:15 AM">
+<s>as osgood said... best to see a link.</s><s> that being said....</s><s> "float" the left most <div> left and use a "margin-left" to "push" it away from the far left edge. then "float" the right hand <div> right and use a "margin-right" to push it away from the right hand edge as much as needed. http://www.w3schools.com/css/css_float.asp best wishes, adninjastrator 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4210223-4211033</DOCNO>
+<TEXT>
+<subject>when floating DIV tags, I am unable to center the tags? help..</subject>
+<post author="Nancy%20O." timestamp="Feb 16, 2012 9:50 AM">
+<s>do you mean something like this?</s><s> view source to see the code. http://alt-web.com/templates/3-col-970.shtml 
+
+
+</s><s>nancy o. alt-web design & publishing web | graphics | print | media specialists http://alt-web.com/ http://twitter.com/altweb 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4210223-4211502</DOCNO>
+<TEXT>
+<subject>when floating DIV tags, I am unable to center the tags? help..</subject>
+<post author="mhollis55" timestamp="Feb 16, 2012 12:51 PM">
+<s>first, the way you have to handle multiple columns is to wrap them in a larger div. 
+</s><s>so you'll have a container with three divs, name them left, center, right. 
+</s><s>so here are your styles in css: 
+#container { width: 780px; /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */ background: #ffffff; margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */ border: 1px solid #000000; text-align: left; /* this overrides the text-align: center on the body element. */ } .clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */ clear:both; height:0; font-size: 1px; line-height: 0px; } #left { float: left; /* since this element is floated, a width must be given */ width: 180px; /* the actual width of this div, in standards-compliant browsers, or standards mode in internet explorer will include the padding and border in addition to the width */ background: #ebebeb; /* the background color will be displayed for the length of the content in the column, but no further */ padding: 5px; /* padding keeps the content of the div away from the edges */ margin-top:15px; } #right { float: right; /* since this element is floated, a width must be given */ width: 280px; /* the actual width of this div, in standards-compliant browsers, or standards mode in internet explorer will include the padding and border in addition to the width */ background: #ffffff; /* the background color will be displayed for the length of the content in the column, but no further */ padding: 5px 5px 5px 5px; /* padding keeps the content of the div away from the edges */ } #center { margin: 0 290px 0 190px; /* the right and left margins on this div element creates the two outer columns on the sides of the page.</s><s> no matter how much content the sidebar divs contain, the column space will remain.</s><s> you can remove this margin if you want the #maincontent div's text to fill the sidebar spaces when the content in each sidebar ends. */ padding: 0 10px; /* remember that padding is the space inside the div box and margin is the space outside the div box */ } 
+</s><s>now, when you put together your html, you'll do this: 
+<!</s><s>doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <title>page title goes here</title> <link href="path/style.css" rel="stylesheet" type="text/css" /> </head> <body> <div id="container"> <div id="header"> header goes here </div> <!-- end #header --></div> <div id="left"> left content here </div> <div id="right"> rightmost content goes here.</s><s> please note the middle section comes after the right section.</s><s> </div> <div id="center"> this is the center stuff and you will note that it has margins that keep it to the center.</s><s> </div> <!-- this clearing element should immediately follow the #center div in order to force the #container div to contain all child floats --><br class="clearfloat" /> <div id="footer"> footer stuff goes here and is as wide as the main container </div> </div> </body> </html> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-4210223-6233039</DOCNO>
+<TEXT>
+<subject>when floating DIV tags, I am unable to center the tags? help..</subject>
+<post author="clintmannar" timestamp="Mar 21, 2014 11:12 PM">
+<s>in css you add the following inside div 
+margin: 0 auto; 
+css example... http://www.corelangs.com/css/box/center-div.html 
+clint 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230957-1433275</DOCNO>
+<TEXT>
+<subject>WordPress theme I made works in Chrome but not IE</subject>
+<post author="Michael Walton" timestamp="Mar 21, 2014 7:51 AM">
+<s>http://designerandpublisher.com/wp-testing/ 
+hi - i cut up my website so it works in wp.</s><s> i have a ways to go but for some reason what i already have works in chrome but does not in ie: 
+
+
+</s><s>the site before it was cut up worked and displayed perfectly so i'm puzzled.</s><s> any ideas?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230957-6230992</DOCNO>
+<TEXT>
+<subject>WordPress theme I made works in Chrome but not IE</subject>
+<post author="Jon%20Fritz%20II" timestamp="Mar 21, 2014 8:03 AM">
+<s>it also does not function correctly in firefox.</s><s> i'm not seeing anything in the html that jumps out and screams "i'm goofed up".</s><s> looking at the css next... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230957-6231051</DOCNO>
+<TEXT>
+<subject>WordPress theme I made works in Chrome but not IE</subject>
+<post author="Deaf%20Mike" timestamp="Mar 21, 2014 8:21 AM">
+<s>here it is before i cut it up for wp - straight html: 
+http://designerandpublisher.com/pdf/newsite/futuresite/index.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230957-6231097</DOCNO>
+<TEXT>
+<subject>WordPress theme I made works in Chrome but not IE</subject>
+<post author="Jon%20Fritz%20II" timestamp="Mar 21, 2014 8:31 AM">
+<s>for some reason, and i can't see it yet, ie and ff are ignoring the css on some of the u### ids. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230957-6232433</DOCNO>
+<TEXT>
+<subject>WordPress theme I made works in Chrome but not IE</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 3:31 PM">
+<s>did you actually use muse for this? 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230957-6232998</DOCNO>
+<TEXT>
+<subject>WordPress theme I made works in Chrome but not IE</subject>
+<post author="Deaf%20Mike" timestamp="Mar 21, 2014 11:09 PM">
+<s>hi - yeah i designed it in muse and then i went into dw and cut it up to incorporate the wp stuff. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-1313873</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="SB21" timestamp="Oct 12, 2013 2:57 AM">
+<s>my dw cc installation started having the following problem a few days ago. 
+</s><s>at times (randomly, but way to often), when doing ordinary stuff like saving (ctrl+s), selecting word left (ctrl+shift+left), invoking the code hint dropdown (to mention a few) - dw freezes with a spinning wait icon and then after a time (10-30 sec) a modal dialog appears: 
+
+(in text for the search engine: "a script in file unknown has been running for a long time.</s><s> do you want to continue?") 
+i do not have any extensions of plug-ins of any kind - it's a vanilla installation. 
+i have tried all the tricks found on this support site - and whatever i could find on the net: 
+- deleted user settings (files and registry) - cleared/deleted the caches - un-install + delete user settings - and a fresh reinstall (also deleted the saved user settings on the cc service) + upgrade to latest release. 
+</s><s>my machine is dell, i7, 16 gb, win7/pro/x64 
+any ideas what to do next?</s><s> is there a "debug mode" for dw cc 
+(and don't say call or chat with adobe - i have spent the last two days trying to get someone who knows more than how to install dw - what a disgrace) 
+</s><s>thanks 
+</s><s>soren 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-5755121</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="David_Powers" timestamp="Oct 12, 2013 8:49 AM">
+<s>i have asked one of the dreamweaver specialist staff to look at your problem.</s><s> judging from the labels on the buttons in the alert box, you're using a non-english installation (swedish or norwegian?</s><s>).</s><s> it would help the engineers to know which language version you're using. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-5757365</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="Preran" timestamp="Oct 13, 2013 7:32 PM">
+<s>thank you, david.</s><s> 
+</s><s>soren, 
+</s><s>i will check with the concerned members and get back to you.</s><s> give me some time. 
+</s><s>thanks, preran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-5757644</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="SB21" timestamp="Oct 13, 2013 11:34 PM">
+<s>thanks for the reply david! 
+</s><s>adobe apps are all installed in "international english" 
+</s><s>os is a danish win7/x64/pro 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-5757645</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="SB21" timestamp="Oct 13, 2013 11:38 PM">
+<s>thanks preran, 
+</s><s>i don't know if this is helpful, but i seem to have less 'freezes' when in the coding window, compared to split or design -- still have them, but i can work some minutes between each freeze. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-5758571</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="Devendar_kumar" timestamp="Oct 14, 2013 9:46 AM">
+<s>hi, 
+</s><s>please check this article and follow the mentioned steps. 
+http://helpx.adobe.com/dreamweaver/kb/troubleshoot-javascript-errors-d reamweaver-cs4.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5754815-6232934</DOCNO>
+<TEXT>
+<subject>Internal JS error keeps freezing up DW CC</subject>
+<post author="KenDWpg" timestamp="Mar 21, 2014 8:44 PM">
+<s>an "uninstall / reboot / and then reinstall / fixed it for me - windows 7 adobe dreamweaver cc 
+>>>>>>>no help from adobe!</s><s>!</s><s>!</s><s>!</s><s> adobe customer service is...</s><s> (disgusting) you took my money fast enough .... to bad you didn't try to help at least a bit.</s><s> for those of you thinking about getting adobe - good products when they work - but don't ever dream of getting customer service...</s><s> it does not exist!</s><s>!</s><s>!</s><s> you will wait for days to get customer service and when you do it will be someone who speaks broken english and understands zero english! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-905931</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="karindpowell" timestamp="Sep 23, 2011 11:46 AM">
+<s>using dreamweaver cs5.5 subscription.</s><s> very frequently in code view, when i select or begin to select code for copying, the program hangs, the screen grays out (makes it so i cannot click on dreamweaver).</s><s> the top of the screen in dreamweaver says (not responding).</s><s> after a long, long time (minutes), a window opens and says: 
+a script in file unknown has been running for a long time.</s><s> do you want to continue? 
+</s><s>clicking "no" removes the inability to click in dreamweaver.</s><s> i am then able to select and copy the code.</s><s> the message "not responding" goes away. 
+</s><s>this happens repeatedly all day long as i am working. 
+a bug? 
+--> karin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-3935045</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="SnakEyez02" timestamp="Sep 23, 2011 12:51 PM">
+<s>os?</s><s> can you duplicate with different files?</s><s> if not, can you post an example?</s><s> and do you know whether the message is from dw or whether the os is generating the message? 
+</s><s>i've personally never heard of this before and it could be a unique issue related to the subscription verison as opposed to the owned version.</s><s> but the only people who could answer that would be adobe so you may want to give them a call too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-3934946</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="karindpowell" timestamp="Sep 23, 2011 1:08 PM">
+<s>i will keep an eye on the details.</s><s> one thing i did notice: my search indexer (*grrrrr*) was running and maxing out my resources.</s><s> i've turned that off completely and i restarted dw cs5.5.</s><s> i'll see what happens now...</s><s> hopefully it was the os, like you suggested.</s><s> (windows...</s><s> i know...</s><s> i know...</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-3935021</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="SnakEyez02" timestamp="Sep 23, 2011 1:27 PM">
+<s>karin, i didn't mean it that way at all.</s><s> i was just asking your specific os (eg: windows 7 home 64-bit, windows vista 32-bit, etc), just in case others have the same issue you can compare whether it is something specific to the os and the version of dw.</s><s> i think back to a specific case where dw was writing the wrong path in vista/7 with older versions of dw.</s><s> because users started posting those details the problem was able to be addressed, but without those details its only speculation and even if you file a bug report with adobe, without that information there is nothing for them to act on. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-3939028</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="karindpowell" timestamp="Sep 26, 2011 1:59 PM">
+<s>it has been about three days now since i turned off windows 7 search indexing and the error has not happened again.</s><s> dreamweaver cs5.5 is not giving me this problem any longer. 
+</s><s>thank you, snakeyez02 for your input..</s><s> i did misundertand your reply, but it made me start me thinking about the operating system, and the thought lead to the solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-3939045</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="SnakEyez02" timestamp="Sep 26, 2011 2:05 PM">
+<s>karin, if that did fix the issue, post a bug report to adobe. 
+https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+they do investigate the bugs and the search indexing might be a common feature that a lot of users have so letting adobe know this will be helpful to them.</s><s> let them investigate and hopefully issue a patch so that you can use that windows feature in the future if you choose to do so. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-3977117</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="Clive%20Cooper" timestamp="Oct 18, 2011 4:33 AM">
+<s>just a note 
+i have had this problem on my mac 10.6.8 running cs5.5 
+not sure if there is a mac equivelent to the windows indexing fix? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-4175763</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="MarkC369" timestamp="Jan 31, 2012 3:25 AM">
+<s>not sure if my input will help, but i am getting this same issue.</s><s> (windows 7 64bit 6gb ram, quad core processor dw cs5.5 studend version) 
+i disabled search indexing on my machine a fair while ago, so i do not think that is the issue (for me anyway). 
+i also note that this does not happen with simple pages (i.e non-database non-php non-js related pages). 
+i also turned off discover pages, but i do have related files set to show. 
+</s><s>once i say "no" to the error message, i get a second error stating "javascript error while loading repeatregion.htm.</s><s> the user chose to stop the script." 
+</s><s>the page that i am working on has a connection to a mysql database and uses the repeat region functionality to create a dynamic list from the query results returned.</s><s> so i am guessing that behind the scenes there may be a connection timeout or something like that when trying to get the data from mysql, but that is just a guess. 
+i did not create a file called repeatregion.htm, so i am guessing this might be some kind of template that is used within dw for this functionality to work.</s><s> i have no idea where the javascript bit comes in, but again, this is not something that i set up. 
+</s><s>not sure it that helps at all, but a solution to this frustrating problem would be good. 
+ps.</s><s> i think that this problem only starts for me once i alter the fabricated php code for database binding and server behaviour.</s><s> as soon as i alter any of the code manually (adding some additional logic for example) then dw stops showing that i have bound recordsets and shows exclamation marks in the server behaviour section.</s><s> which makes sense, but might also be the reason that dw gets confused and hangs. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-4242490</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="maddogprod" timestamp="Mar 2, 2012 3:00 PM">
+<s>i've been having this same problem interrmittantly, always on more complex pages with recordsets.</s><s> windows 7 indexing is turned off.</s><s> i even turned off the testing server so in case it was timing out but that didn't help.</s><s> i'd love to hear something concrete about this! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-4247705</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="ValiantAleta" timestamp="Mar 6, 2012 3:40 AM">
+<s>i have the same problem!</s><s> it keeps hanging dw and i almost consider reinstalling dw from scratch to see if it works better after. 
+</s><s>someone that have any other ideas that might help?</s><s> i experience "the hang" so often that it almost drives me crazy!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-5275918</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="jkurzner" timestamp="Apr 29, 2013 5:35 AM">
+<s>hi markc369, 
+</s><s>did you get any resolution to this.</s><s> i have a similar problem and i've tried all the fixes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-5275872</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="karindpowell" timestamp="Apr 29, 2013 5:42 AM">
+<s>no resolution.</s><s> it does not happen as often as it used to, so i have not pursued it.</s><s> i'll try to log future events to see if they have something in common. 
+i am currently using: dreamweaver cs6 version 12.2 build 6006 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-5275994</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="ValiantAleta" timestamp="Apr 29, 2013 5:56 AM">
+<s>for me, it doesn't happen anymore.</s><s> actually, i'm pretty confused by that, but happy to get rid of it... ;-) 
+i am currently using: dreamweaver cs6 version 12.0 build 5861 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-6232708</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="KenDWpg" timestamp="Mar 21, 2014 6:27 PM">
+<s>me too... same problem...</s><s> adobe customer service offers zero help!</s><s> adobe really sucks ***...</s><s> i can't believe that people post a problem like this here...</s><s> a problem that shuts them down from working totally.,...</s><s> and not one of adobes millions and millions and millions of dollars are allocated to help us...</s><s> f-u-ck u adobe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3934907-6232828</DOCNO>
+<TEXT>
+<subject>DW CS5.5 Error "A script in file UNKNOWN has been running for a long time"</subject>
+<post author="KenDWpg" timestamp="Mar 21, 2014 8:42 PM">
+<s>an "uninstall / reboot / and then reinstall / fixed it for me - windows 7 adobe cc 
+>>>>>>>nno help from adobe!</s><s>!</s><s>!</s><s>!</s><s> adobe customer service is...</s><s> (disgusting) you took my money fast enough .... to bad you didn't try to help at least a bit.</s><s> for those of you thinking about getting adobe - good products when they work - but don't ever dream of getting customer service...</s><s> it does not exist!</s><s>!</s><s>!</s><s> you will wait for days to get customer service and when you do it will be someone who speaks broken english and understands zero english! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232838-1433785</DOCNO>
+<TEXT>
+<subject>Adobe Dreamweaver live css editing</subject>
+<post author="akiawt" timestamp="Mar 21, 2014 7:29 PM">
+<s>does dreamweaver allow 'live css editing' offline(without connecting to internet) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-1433135</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="cdnatadobe" timestamp="Mar 21, 2014 1:51 AM">
+<s>i've purchased dw cc, v 13.2 build 6471. fonts in px and em display correctly in design view and live mode.</s><s> however, font sizes in rem, while rendered correctly in live mode, appear to be multiplied by a factor of 10 in regular design view.</s><s> here is a basic code example with three text sizes: 
+
+</s><s>here's what live view renders: 
+
+</s><s>but, this is what design view shows: 
+
+</s><s>note that the html base font is set to 100%.</s><s> am i missing something else here?</s><s> is anyone able to duplicate this problem? 
+</s><s>regards, chris niestepski 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-6230415</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="subhadeep_banerjee" timestamp="Mar 21, 2014 3:39 AM">
+<s>good catch chris.</s><s> this happens because, the rendering engine for design view is a forked version of webkit.</s><s> in contrast, live view uses the chromium embedded framework and hence will give a more accurate browser-like rendering. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-6231849</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="cdnatadobe" timestamp="Mar 21, 2014 12:13 PM">
+<s>thank you, subhadeep!</s><s> whenever i'm not imagining things, that's good news! 
+</s><s>now, two questions: 
+1) should this be considered a "bug" in dw fork? 
+i believe so.</s><s> the fork appears to be multiplying the rem value by a factor of 10.</s><s> this throws the dimensions and alignment so much as to make design view useless when using rem. 
+2) i'm not the first to use rem with dw.</s><s> what are users using as a work-around? 
+</s><s>if the user unchecks view > display styles, that largly goes against the purpose of design view. 
+</s><s>the user can also do this in the css: 
+font-size: 1rem; font-size: 1px; /* comment for upload */ or 
+font-size: 1rem; font-size: 1em; /* comment for upload */ 
+this lets you work while in dw but doubles the work required, especially for elastic layouts.</s><s> and the idea of rem was so the user didn't have to do so many math calculations and worry about inhereitance as with em. 
+</s><s>any ideas? 
+- chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-6231940</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 12:54 PM">
+<s>the truth is design view has been sorely lacking for as long as i can remember.</s><s> at best, it's an approximation of what you might expect to see in some older browsers.</s><s> it's incapable of supporting many css level 3 properties so it's no surprise to me that rem fonts are grossly distorted.</s><s> don't rely on design view.</s><s> use split view with live view and preview in browsers to check your work. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-6232038</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="Jon%20Fritz%20II" timestamp="Mar 21, 2014 1:02 PM">
+<s>here's the feature request form: https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+maybe we can get them to add support for vh and related units too. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-6232657</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="cdnatadobe" timestamp="Mar 21, 2014 5:34 PM">
+<s>well, thanks, because i'll wager now that's what many people are stuck doing.</s><s> having to keep hitting refresh to make sure your changes just took kind of stinks. 
+i like design view, even though i do more typing in split with a lot of clicking for live view.</s><s> usually when i see gross distortions in design view, it's a cue that my code needs fixing, like a cleared float, or could be cleaned up.</s><s> i think we'd also agree that some things left to live view like css3 gradients are more cosmetic than structural.</s><s> rem is more integral to structure and layout, esp. if you really go elastic and start using it for margins and padding. 
+</s><s>design view doesn't have to be dead-on wsiwyg to make dw worth it, but with this rem defect it's not even close. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230175-6232659</DOCNO>
+<TEXT>
+<subject>REM Font Sizes Enlarged in Design View</subject>
+<post author="cdnatadobe" timestamp="Mar 21, 2014 5:37 PM">
+<s>done.</s><s> thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232451-1433695</DOCNO>
+<TEXT>
+<subject>attn: Nancy O - div as spacer</subject>
+<post author="Olde Worlde Lace" timestamp="Mar 21, 2014 4:21 PM">
+<s>the forum doesn't have a way to reply to your last comment so i am asking again.</s><s> you said that divs as spacers are old school.</s><s> i'm afraid that didn't help me much.</s><s> let me try to rephrase it.</s><s> i am trying to set up a table in the middle of the page with 4 images.</s><s> i apparently should not use a table.</s><s> i thought that by putting in 6 divs, one for each of the 4 images and a div on each side to use as spacers would work.</s><s> it didn't.</s><s> how do i get those 4 images in the center of the page fairly close to each other?</s><s> thanks for your patience. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232451-6233779</DOCNO>
+<TEXT>
+<subject>attn: Nancy O - div as spacer</subject>
+<post author="Nancy%20O." timestamp="Mar 22, 2014 2:42 PM">
+<s>there's lots of ways to do this without tables or so-called "spacers".</s><s> copy & paste this into a new, blank document.</s><s> i used floated <p> tags as containers for my images.</s><s> margins & padding provide the space between and around elements.</s><s> as an added bonus, this is a working fancybox viewer.</s><s> i was too busy to strip the code out. 
+
+<!</s><s>doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html5, with fancybox2 viewer</title>
+
+<!--[if lt ie 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<!</s><s>[endif]-->
+
+<!--latest jquery core library-->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!--fancybox plugins-->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" media="screen">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.pack.js"></script>
+
+<style>
+
+body {
+    background: silver;
+    font-family:segoe, "segoe ui", "dejavu sans", "trebuchet ms", verdana, sans-serif;
+}
+
+#wrapper {
+    width: 1000px; margin:0 auto;
+    background:#fff;
+    }
+/**this styles image container**/
+#thumbs p {
+    float: left;
+    width: 180px;
+    height: 12.5em;
+    margin: 10px 22px 0 22px; /**space between containers**/
+    padding: 10px; /**space around containers**/
+    border: 1px solid silver;
+    /**rounded borders**/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    /**this styles caption text**/
+    font: italic 14px/1.5 geneva, arial, helvetica, sans-serif;
+    color: #666;
+    text-align: center;
+}
+/**recommend using same size images**/
+#thumbs img {
+    width: 160px; /**adjust width to thumbnail**/
+    height: 120px; /**adjust height to thumbnail**/
+    margin-bottom: 1.5em;
+    opacity: 0.75;
+}
+#thumbs img:hover { opacity: 1.0 }
+
+/**float clearing**/
+#thumbs:after {
+    content: ".";
+    clear: left;
+    font-size: 0px;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1><a href="http://fancyapps.com/fancybox/">fancybox2</a> viewer with images</h1>
+
+<!--insert thumbnails with links to full size images below--> 
+<div id="thumbs"> <p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 1" /></a> <br />
+</s><s>caption 1 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 2" /></a> <br />
+</s><s>caption 2 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 3" /></a> <br />
+</s><s>caption 3 </p>
+</s><s><p><a class="fancybox" data-fancybox-group="gallery" href="http://placehold.it/400x320.jpg" title="optional captions"><img src="http://placehold.it/160x120.jpg" alt="thumbnail 4" /></a> <br />
+</s><s>caption 4 </p>
+
+</s><s><!--end thumbs--></div>
+<!--end wrapper--></div>
+
+<!--fancybox function code--> 
+<script>
+$(document).ready(function() {
+    $('.fancybox').fancybox();
+    });
+</script>
+</body>
+</html> 
+
+ps. you have to be logged-in to the forum to reply.</s><s> you should see the reply link just below the person's post. 
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229374-1432934</DOCNO>
+<TEXT>
+<subject>DW Fluid grid layout question, adding a second layout?</subject>
+<post author="Deixis" timestamp="Mar 20, 2014 4:57 PM">
+<s>beginner question: 
+so i've built my index page in dw cc using the fluid grid layout feature. 
+</s><s>my site construction consists of 
+index.html page boilerplate.css layout.css style.css respond.min.js 
+the index page uses all the basic template tags such as header, article, aside, h1-5, p, etc etc 
+</s><s>the site is working great and works responsively as i would expect. 
+</s><s>however, the problem is i want to add a second html page to the site which i want to have a different layout, css style and fluid grid.</s><s> the only consistent elements to the master index page will be the header and navigation menu. 
+</s><s>since all the styles of the html index page are linked to the master css pages how do i go about adding a different responsive layout to the same site without the changes affecting the master page? 
+</s><s>for example if i duplicate the index page and start changing the layout it affects the entire site, not what i want. 
+</s><s>so i thought i would need to duplicate all the files and rename them to something like 
+page_2.html layout_2.css style_2.css and the 'boilerplate.css' and 'respond.min.js' would not be duplicated and stay as they are. 
+...</s><s>but not sure if thats best practice to duplicate all the files so is there another method i should be considering?</s><s> or am i on the right track? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229374-6232547</DOCNO>
+<TEXT>
+<subject>DW Fluid grid layout question, adding a second layout?</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 4:10 PM">
+<s>it's really better to build one layout for your entire site.</s><s> you may decide not to use all the elements on every page, but your primary design scheme should take everything into consideration much the way bootstrap, skeleton and other rwd frameworks do. 
+</s><s>if necessary, you can use embedded css for a few page specific style changes.</s><s> embedded css will trump your external style sheets. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232469-1433682</DOCNO>
+<TEXT>
+<subject>ftp and previewing on my computer</subject>
+<post author="bluewren5" timestamp="Mar 21, 2014 3:24 PM">
+<s>my website is up the ftp address is correct but i cannot upload changes .when i try to preview it,it insists on going explore how can i preview on my computer first as i did in macomedia dreamwever.?then i also get a 404 error message.please excuse capitals 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232469-6232432</DOCNO>
+<TEXT>
+<subject>ftp and previewing on my computer</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 3:27 PM">
+<s>what's the url to your site?</s><s> is your local site properly defined in dw?</s><s> in which browsers are you trying to preview locally? 
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232469-6232473</DOCNO>
+<TEXT>
+<subject>ftp and previewing on my computer</subject>
+<post author="bluewren5" timestamp="Mar 21, 2014 3:29 PM">
+<s>www.simon-gideons.com.</s><s> well all the old files have been sent down to it. iexplore 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232469-6232436</DOCNO>
+<TEXT>
+<subject>ftp and previewing on my computer</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 3:37 PM">
+<s>your code has many critical errors including text where it doesn't belong & multiple <head> tags, etc.. http://validator.w3.org/check?verbose=1&uri=http%3a%2f%2fwww.simon-gid eons.com%2f 
+bad code confuses modern browsers. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230205-1433094</DOCNO>
+<TEXT>
+<subject>a little bit of validation</subject>
+<post author="tony_see" timestamp="Mar 21, 2014 2:03 AM">
+<s>the fancybox gallery i am trying to implement is working fine but i am finding a validation error is turning up in dwcs6 of the following code: validation error: bad value first_gallery for attribute rel on element a: not an absolute url.</s><s> the string first_gallery is not a registered keyword or absolute url.</s><s> [html5]   html: <div class="box">     <div class="boxinner">       <a class="fancybox" rel="first_gallery" href="igallery/images/large/nahc-r-1.jpg"> <img src="igallery/images/thumb/nahc-r-1.jpg" alt=""> </a><div class="titlebox">an old greenhouse</div></div></div>   javascript: <script type="text/javascript">           $(document).ready(function() {                     $("a.fancybox").fancybox();                     $(".fancybox").fancybox({                     preveffect          : 'none',                     nexteffect          : 'none',                     helpers          : {                               title          : {                                         type: 'outside'                               },                               thumbs          : {                                         width          : 50,                                         height          : 50                               }                     }           });           }); </script>   its the suggested validation correction (attached below) i dont get.     any suggestions please?</s><s>?</s><s> how can i correct the code that is . . .
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230205-6230755</DOCNO>
+<TEXT>
+<subject>a little bit of validation</subject>
+<post author="Jon%20Fritz%20II" timestamp="Mar 21, 2014 7:11 AM">
+<s>check your doctype declaration.   it has to be an xhtml doctype in order for the rel attribute to be used that way and validate.   html5 would need to use a data attribute to validate, i'm not sure if fancybox allows for that.</s><s> edit: either way, that particular error "shouldn't" throw any browsers into quirks or non-standard modes, basically, you shouldn't see any display problems because of it if you were to leave it in.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230205-6232430</DOCNO>
+<TEXT>
+<subject>a little bit of validation</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 3:25 PM">
+<s><quote>
+<s>
+
+</s></quote>yes, fancybox2 uses data-fancybox-group="gallery" which is valid html5. 
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229882-1433074</DOCNO>
+<TEXT>
+<subject>Web font not displaying</subject>
+<post author="skeeterz71xxx" timestamp="Mar 20, 2014 11:23 PM">
+<s>hi, 
+</s><s>i installed a webfont brandon_grotesque_regularrg and brandon_grotesquebold http://www.skeeterz71.com/zencart/.</s><s> for some reason they are not loading.</s><s> firebug shows the font there; however it is using the fallback font in my case verdana.</s><s> i'm pretty sure i have the @font-face correct.</s><s> using the regular as an example: 
+@font-face { font-family: 'brandon_grotesque_regularrg'; src: url('web-fonts/brandon_reg-webfont.eot'); src: url('web-fonts/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'), url('web-fonts/brandon_reg-webfont.woff') format('woff'), url('web-fonts/brandon_reg-webfont.ttf') format('truetype'), url('web-fonts/brandon_reg-webfont.svg#brandon_grotesque_regularrg') format('svg'); font-weight: normal; font-style: normal; } 
+</s><s>of course the fonts are located in the web-fonts folder. web-fonts folder is located in the same directory as style.css 
+if you were to look at the sidebar say "contact us" as an example, you can see a fallback fonts is being used instead. 
+i have the font declared for examplel 
+body{ font-family: 'brandon_grotesque_regularrg', verdana, arial, helvetica, sans-serif; } 
+</s><s>the files were generated at font squirrel and i copied/pasted the font declaration accorting to the instructions. 
+</s><s>so, i am at a loss why the fonts are not loading into the browser.</s><s> any help would be appreciated. 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229882-6230109</DOCNO>
+<TEXT>
+<subject>Web font not displaying</subject>
+<post author="hans-g." timestamp="Mar 21, 2014 7:44 AM">
+<s>hello skeeterz, ---------- del > my answer not of interest ---------- hans-günter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229882-6230262</DOCNO>
+<TEXT>
+<subject>Web font not displaying</subject>
+<post author="es73" timestamp="Mar 21, 2014 3:02 AM">
+<s>the folder that the web fonts are in are showing as error 403 - meaning that access has been denied.</s><s> check that the permissions for that folder are set correctly and that there is nothing else blocking access to that folder such as anything in your .htaccess file or something else set by your web host.</s><s> using the method above, btw, will only make the font visible on your local machine - it will not makje it available to remote viewers of the website. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229882-6230901</DOCNO>
+<TEXT>
+<subject>Web font not displaying</subject>
+<post author="skeeterz71xxx" timestamp="Mar 21, 2014 7:33 AM">
+<s>well i checked the chmod.</s><s> 755 so it's good.</s><s> no .htaccess issues.</s><s> this is frustrating.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229882-6232041</DOCNO>
+<TEXT>
+<subject>Web font not displaying</subject>
+<post author="es73" timestamp="Mar 21, 2014 1:14 PM">
+<s>contact your web host and see of they can see a reason that folder would have access blocked.</s><s> you can also try locating the web fonts folder elsewhere and link from there, perhaps in the site root.</s><s> i have found using fonts served from typekit to be a lot easier than installing fonts from font squirrel.</s><s> if you have a cc subscription you might like to try that - and you can still use brandon grotesque as your font.</s><s> if youre just after one font for one website you should be able to use the free trial version of you're not a cc member. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6229882-6232427</DOCNO>
+<TEXT>
+<subject>Web font not displaying</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 3:20 PM">
+<s>adobe edge web fonts are free. https://edgewebfonts.adobe.com/fonts just copy & paste some code into your <head> tags & reference the web font in your css. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230083-1433142</DOCNO>
+<TEXT>
+<subject>Organizing the thumbnails randomly</subject>
+<post author="mariatauber" timestamp="Mar 21, 2014 2:45 AM">
+<s>for the start page i want to organize my thumbnails randomly.</s><s> i did it using an "ap div" layout object but since it works with absolute positions of course when i try to open this page on a smaller screen the thumbs are almost outside of the screen..</s><s> how do i do it so that they are always in the middle of the screen? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230083-6230378</DOCNO>
+<TEXT>
+<subject>Organizing the thumbnails randomly</subject>
+<post author="Ken%20Binney" timestamp="Mar 21, 2014 5:03 AM">
+<s>please read this to learn about not using ap divs for layout purposes 
+http://www.apptools.com/examples/pagelayout101.php 
+what do you mean by "random"?</s><s> are you trying to have your page display your thumbnails differently each time the page loads? 
+</s><s>can you please post your code or give us an idea what you'd like to see? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230083-6230600</DOCNO>
+<TEXT>
+<subject>Organizing the thumbnails randomly</subject>
+<post author="mariatauber" timestamp="Mar 21, 2014 5:57 AM">
+<s>i meant i wanted the thumbnails to be always in the same position, but not in a grid, like disorganized.</s><s> thanks.</s><s> 
+
+</s><s>2014-03-21 12:44 gmt+01:00 ken binney <forums_noreply@adobe.com>: 
+<quote>
+<s>re: organizing the thumbnails randomly created by ken binney<http://forums.adobe.com/people/ken+binney>in *dreamweaver support forum* - view the full discussion<http://forums.adobe.com/message/6230378#6230378 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230083-6232425</DOCNO>
+<TEXT>
+<subject>Organizing the thumbnails randomly</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 3:13 PM">
+<s>you mean something like this tumbled gallery with jquery rotate?</s><s> http://alt-web.com/gallery/photo_gallery.html     nancy o.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-1433307</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis Tammy" timestamp="Mar 21, 2014 8:19 AM">
+<s>i'm working on updating a site that i didn't set up.</s><s> i used dreamweaver to make changes and i uploaded to the server.</s><s> now the files that i made changes to no longer is connected to the menu. 
+</s><s>index page: http://discountbannersandsigns.net/index.htm if you go to http://discountbannersandsigns.net/index.htm/flags you will see the menu as i didn't update that page. 
+i did try updating to site by dreamweaver, cyberduck and cpanel and the results are the same. 
+</s><s>where is the disconnect.</s><s> i see the menu in live view in dreamweaver but when i check it in the browser the menu dissappears. 
+</s><s>can someone please help?</s><s> thanks.</s><s> tammy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6231620</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 10:53 AM">
+<s>do you have a local testing server?  you'll need one to view server-side includes locally.  http://www.adobe.com/devnet/dreamweaver/articles/setup_php.html   i do see a left side menu on your first page http://discountbannersandsigns.net/index.htm   your second url shows the same menu http://discountbannersandsigns.net/flags.htm     nancy o.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6231623</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis%20Tammy" timestamp="Mar 21, 2014 11:00 AM">
+<s>i was able to fix it.</s><s> the code is older and for some reason the include menu function is no longer working.</s><s> i had changed the index page, balloon page and added a new page and update the include menu.</s><s> then i uploaded and the menu had dissapeared on the index and balloon pages.</s><s> to get it working again i had to manually enter the menu on those pages.</s><s> the balloons page as well and now i notice since i edited and uploaded the new page the images are no longer show up.</s><s> stumped again.</s><s> any ideas?</s><s> thanks so much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6231674</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 11:09 AM">
+<s>your images are inside data-src="" tags which implies the use of ajax or something else. 
+</s><s>if you put your images directly into <img src="" tags, i'm sure they will show up as the spinning gifs are now. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6231770</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis%20Tammy" timestamp="Mar 21, 2014 11:45 AM">
+<s>i changed it and in dreamweaver 80% showed up in live view, but in the browser still spinning gifs.</s><s> i've uploaded that page. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6231931</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 12:38 PM">
+<s>your srcs are still pointing to spinning gifs.</s><s> change this: 
+<img id="b-8" src="http://cdn.discountbannersandsigns.net/media/loading.gif" <img src="http://cdn.discountbannersandsigns.net/media/balloons/balloon-cluster. png" alt="balloon cluster" /> </div> <p>balloon cluster tree</p> 
+</s><s>to this: 
+<img src="http://cdn.discountbannersandsigns.net/media/balloons/balloon-cluster. png" alt="balloon cluster" /> </div> <p>balloon cluster tree</p> 
+</s><s>you might want to validate your code.</s><s> i'm seeing some unclosed tags. http://validator.w3.org/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6232111</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis%20Tammy" timestamp="Mar 21, 2014 1:25 PM">
+<s>ok, just uploaded.</s><s> i did that to all, but it only brought in the image of the above, balloon cluster.</s><s> this is what the bottem images should look like. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6232123</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 1:49 PM">
+<s>you still have a spinning gif in your code. 
+<img src="http://cdn.discountbannersandsigns.net/media/loading.gif" <img src="cdn/media/balloons/balloon-colors-new.jpg" /> 
+
+
+</s><s>nancy o.</s><s> 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6232337</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis%20Tammy" timestamp="Mar 21, 2014 2:50 PM">
+<s>thank you, that fixed that one but what i was focusing on was the bottom five section that is calling in the same jpg which they are called in by two different jpgs with different locations to display.</s><s> somehow i need to adjust where it reads the location?</s><s>.</s><s> maybe in the css?</s><s> i appreciate your assistance. 
+this is the original code for this section: 
+maybe we need to connect to the >img id="b-4" ....</s><s> there is a ccs for 
+</s><s>img#b-4 { top: -300px; left: -300px; } 
+
+
+
+<img src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="cdn/media/balloons/balloon-colors-new.jpg" /> 
+<div class="sample-box large"> <div class="example-viewer"> <img id="b-4" src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="http://cdn.discountbannersandsigns.net/media/balloons/balloon_examples .jpg" alt="balloon poppers" /> </div> <p>balloon poppers</p> </div> 
+<!--<div class="sample-box large"> <div class="example-viewer"> <img id="b-6" src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="http://cdn.discountbannersandsigns.net/media/balloons/balloon_examples .jpg" alt="sky dancer" /> </div> <p>sky dancer</p> </div>--> 
+
+<div class="sample-box large"> <div class="example-viewer"> <img id="b-2" src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="http://cdn.discountbannersandsigns.net/media/balloons/balloon_examples .jpg" alt="bobber balloons" /> </div> <p>balloon poppers</p> </div> <div class="sample-box"> <div class="sample-viewer"> <img id="f-4" src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="http://cdn.discountbannersandsigns.net/media/flags/flag_types.jpg" alt="flag types" /> </div> <p>12&rsquo; x 18&rsquo; 105 ft. pennant string</p> </div> <div class="sample-box"> <div class="sample-viewer"> <img id="f-5" src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="http://cdn.discountbannersandsigns.net/media/flags/flag_types.jpg" alt="flag types" /> </div> <p>5&frac12;&rsquo; helium balloon with 100&rsquo; pennant</p> </div> <div class="sample-box"> <div class="sample-viewer"> <img id="f-14" src="http://cdn.discountbannersandsigns.net/media/loading.gif" data-src="http://cdn.discountbannersandsigns.net/media/flags/flag_types.jpg" alt="flag types" /> </div> <p>17&rsquo; heavy duty balloons bag of 72</p> </div> <p class="clear-left"> </p> <!-- <h3 class="clear-left">balloons in use</h3> <div class="sample-box large"> <div class="example-viewer"> <img src="media/balloon-examples.jpg" alt="balloon stick" width="300" height="300" /> </div> <p>balloon stick</p> </div> --> </div> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6232409</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis%20Tammy" timestamp="Mar 21, 2014 2:55 PM">
+<s>ok i think i have this one figured out.</s><s> i'll let you know soon, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231090-6232413</DOCNO>
+<TEXT>
+<subject><!--#include virtual='menu.htm' -->  Wont appear when uploaded</subject>
+<post author="Tennis%20Tammy" timestamp="Mar 21, 2014 2:59 PM">
+<s>yes!</s><s>!</s><s>!</s><s>!</s><s> that did it.</s><s> nancy, thanks so much for your help.</s><s> i just got this sight to start maintaining and i may recommend a new site.</s><s> i did do a wc3 check and your right lots of errors. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231070-1433380</DOCNO>
+<TEXT>
+<subject>missing resize handles fluid grid layout</subject>
+<post author="SheridanBarber" timestamp="Mar 21, 2014 8:22 AM">
+<s>i have created a fluid grid layout and need to resize for tablet and desktop views but resize handles will not appear.</s><s> what did i do wrong? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6231070-6232347</DOCNO>
+<TEXT>
+<subject>missing resize handles fluid grid layout</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 2:44 PM">
+<s>go to view > visual aids > and enable fluid grid layout guides.</s><s> however, if you tampered with the temperamental fluid.css code, you probably broke the layout.</s><s> try starting over. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6221552-1431008</DOCNO>
+<TEXT>
+<subject>Customize drop-down menu problem</subject>
+<post author="nilesk" timestamp="Mar 18, 2014 1:14 PM">
+<s>please refer to attached file: i'm trying to implement a very simple drop-down menu under "selected projects" in the nav bar of my page layout: no boxes, no background color, no arrows; just simple text that highlights and shows the drop-down menu when hovered over (or clicked on).</s><s> can find my way around dw, but am not an experienced user and so far the spry menu bar is driving me to distraction.</s><s> any suggestions or is there an on-line resource that would be helpful?</s><s> thx for any help. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6221552-6221644</DOCNO>
+<TEXT>
+<subject>Customize drop-down menu problem</subject>
+<post author="Nancy%20O." timestamp="Mar 18, 2014 1:35 PM">
+<s>try this in a new, blank document.</s><s> adjust styles as desired. 
+
+<!</s><s>doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html5 doc with css drop-menu</title>
+
+<style>
+/* begin horizontal drop-menu */
+nav {
+    position: relative;
+    width: 100%;  /**adjust width as needed**/
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    z-index: 1000;
+}
+nav ul {
+    margin: 0;
+    padding: 0
+}
+nav li {
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+}
+/**top level menu**/
+nav li a {
+    display: block;
+    text-decoration: none;
+    margin-right: 2px;   /* space between links */
+    width: 9em;   /* adjust as needed or use auto */
+    padding: 6px 15px; /**space around links**/
+    font-weight: bold;
+    line-height: 2em;
+    color: #333;
+    text-transform:uppercase;
+}
+/**top menu style on mouse over**/
+nav li:hover > a {
+    color: #fff;
+    background: #1e5799;
+}
+/**sub-menu**/
+nav li ul {
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding: 0 1em;
+    font-weight: normal;
+    font-style: oblique;
+}
+/**sub-menu, help for older ie**/
+nav li:hover ul, nav li.hover ul {
+    display: block;
+    position: absolute;
+    padding: 0;
+}
+nav li:hover li, nav li.hover li { float: none; }
+
+/**drop-menu style**/
+nav li:hover li a, nav li.hover li a {
+    width: 9em;  /* adjust width as needed or use auto */
+    margin-top: 0;
+    line-height: 1.25em;
+    font-weight: normal;
+}
+/**drop-menu style on mouse over**/
+nav li li a:hover {
+    color: #004a43;
+    background: #fff;
+}
+</style>
+</head>
+
+<body>
+<nav>
+<ul>
+<li><a href="#">menu item 1 &#9660;</a>
+<ul>
+<li><a href="#">sub_menu1a</a> </li>
+<li><a href="#">sub_menu1b</a> </li>
+</ul>
+</li>
+<li><a href="#">menu item 2 &#9660;</a>
+<ul>
+<li><a href="#">sub_menu2a</a> </li>
+<li><a href="#">sub_menu2b</a> </li>
+<li><a href="#">sub_menu2c</a> </li>
+<li><a href="#">sub_menu2d</a> </li>
+</ul>
+</li>
+<li><a href="#">menu item 3</a></li>
+</ul>
+</nav>
+<!--end navigation-->
+</body>
+</html> 
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6221552-6221737</DOCNO>
+<TEXT>
+<subject>Customize drop-down menu problem</subject>
+<post author="nilesk" timestamp="Mar 18, 2014 1:57 PM">
+<s>ok, will give that a try, thanks.</s><s> apologies for the poor image quality, enlarged detail is attached for reference. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6221552-6232320</DOCNO>
+<TEXT>
+<subject>Customize drop-down menu problem</subject>
+<post author="nilesk" timestamp="Mar 21, 2014 2:38 PM">
+<s>this is coming along nicely, thanks again, though when laying out the elements they show up differently in design view v live view, see attached files.</s><s> my guess is it's positional or margin related, but so far haven't been able to find the culprit.</s><s> any suggestions? 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6221552-6232345</DOCNO>
+<TEXT>
+<subject>Customize drop-down menu problem</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 2:41 PM">
+<s>answers are in your code.</s><s> design view is not 100% reliable.</s><s> what matters is how it looks in browsers.</s><s> use your browser's right-click > inspect element feature to locate the relevant css code. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232196-1433586</DOCNO>
+<TEXT>
+<subject>How do I use a div as a spacer?</subject>
+<post author="Olde Worlde Lace" timestamp="Mar 21, 2014 2:08 PM">
+<s>if i put 6 divs next to each other and put wording in each they work fine in the desktop view but if i leave the left div blank to use as a spacer it will not work.</s><s> the other 5 move to the left.</s><s> i need to use the first and last divs as spacers.</s><s> i have heard you can use a blank transparent .gif but is that the only way?</s><s> can you please advise? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232196-6232234</DOCNO>
+<TEXT>
+<subject>How do I use a div as a spacer?</subject>
+<post author="Jon%20Fritz%20II" timestamp="Mar 21, 2014 2:13 PM">
+<s>you could set a min-width or min-height (depending on which direction the space is needed) on the "spacer" divs. 
+</s><s>it sort of depends on what you're doing if that's going to be the best thing to do. 
+</s><s>could you post a link to the problem page? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232196-6232340</DOCNO>
+<TEXT>
+<subject>How do I use a div as a spacer?</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 2:33 PM">
+<s>spacers?</s><s> golly, that's so old school.</s><s> use css margins, padding, widths, etc... 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232196-6232280</DOCNO>
+<TEXT>
+<subject>How do I use a div as a spacer?</subject>
+<post author="Olde%20Worlde%20Lace" timestamp="Mar 21, 2014 2:35 PM">
+<s>i am trying to convert from expression web 4 to dw cs6 which is quite a learning experience.</s><s> i can't send you a link because it isn't published but the following is the css for the desktop section.</s><s> i tried to set the width to 175 px but that didn't help at all.</s><s> i would appreciate your advice. @media only screen and (min-width: 769px) { .gridcontainer { width: 99.2424%; max-width: 1232px; padding-left: 0.3787%; padding-right: 0.3787%; margin: auto; } #layoutdiv1 { clear: both; float: left; margin-left: 0; width: 100%; display: block; } #n1 { clear: both; float: left; margin-left: 0; width: 16.0305%; display: block; text-align: center; color: #930; } #pic1 { clear: none; float: left; margin-left: 0.7633%; width: 16.0305%; display: block; } #pic2 { clear: none; float: left; margin-left: 0.7633%; width: 16.0305%; display: block; } #pic3 { clear: none; float: left; margin-left: 0.7633%; width: 16.0305%; display: block; } #pic4 { clear: none; float: left; margin-left: 0.7633%; width: 16.0305%; display: block; } #n2 { clear: none; float: left; margin-left: 0.7633%; width: 16.0305%; display: block; text-align: center; color: #900; } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6232196-6232343</DOCNO>
+<TEXT>
+<subject>How do I use a div as a spacer?</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 2:39 PM">
+<s>this is no help to us. we need to see the actual page online.</s><s> don't you have a web space you can use for testing & debugging purposes? 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230799-1433267</DOCNO>
+<TEXT>
+<subject>css designer in fluid grid layout (how to target specific media only)</subject>
+<post author="trying hard to learn" timestamp="Mar 21, 2014 6:59 AM">
+<s>1) when you say server up an image, one for smartphone, one for tablet, one for desktop - would this be better or worst for load times for people with data plans.</s><s> meaning would the code cause the persons browser to load all three images then choose which one to display afterwards or is it best to use the one images like i'm trying to do and sacrafice some image resolution for loading speed.</s><s> (i ask because i want to make sure i'm not confussed on this aspect with media queries) 
+
+2) dreamweaver fluid grid layout creates some css files automatically.</s><s> if i want to tweek some design and structure elements that only affect the specific device indiviually do i use the style sheet and media queries dreamweaver has already created or do i need to create a new style sheet and apply it to the media query dreamweaver cc has already created?</s><s> (i hope i'm clrear on this question) 
+
+
+</s><s>i'm at a crucial point in my learning of responsive design.</s><s> if i could get some answers on these questions i think after a week of hard (hard) struggles i can finally take off!</s><s>!</s><s> right now i really want to make sure my image stratigy is correct before i get too far along in this process and find out exactly how to make adjustments in specific device views without screwing everything up in other views.</s><s> i know in the css designer when i click global it makes changes to all views which is great.</s><s> but when i click one of the little icons at the button of the screen (like the smartphone icon or tabet etc) the changes i make in the view dont stay in that view but affect all views.</s><s> so i'm coming to understand ( maybe wrongly) that those icon have no design power other than to show you what thing look like in that view.</s><s> i'm starting to focus on clicking the stlye sheet dreamweaver cc created (not the boilerplate one) clicking the media query for the screen size i want to adjust and finding the selector i want to tweek (its right here the hickup i'm having is at - i cant adjust several images that i have specifically in the corresponding view without screwing everything everywhere up) can anybody invision what i'm trying to do and what happening and give me a fix?</s><s>?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230799-6231626</DOCNO>
+<TEXT>
+<subject>css designer in fluid grid layout (how to target specific media only)</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 11:02 AM">
+<s>see this example. http://alt-web.com/fluidgrid/fluid-4.html   custom css - scroll towards the bottom http://alt-web.com/fluidgrid/content-4.css   relevant html:   <div class="gridcontainer clearfix"> <img class="banner desktop" src="http://placehold.it/1056x200/198eba/ffffff&text=desktop.jpg" alt="desktop image" /> <img class="banner tablet" src="http://placehold.it/800x100/2a4d6b/ffffff&text=tablet.jpg" alt="mobile image" /> <img class="banner mobile" src="http://placehold.it/320x75/ffc000/000000&text=mobile.jpg" alt="mobile image" />   if bandwidth is a major concern, don't use separate images.     nancy o.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230799-6231761</DOCNO>
+<TEXT>
+<subject>css designer in fluid grid layout (how to target specific media only)</subject>
+<post author="osgood_" timestamp="Mar 21, 2014 11:58 AM">
+<s><quote>
+<s>trying hard to learn wrote: 
+1) when you say server up an image, one for smartphone, one for tablet, one for desktop - would this be better or worst for load times for people with data plans.</s><s> meaning would the code cause the persons browser to load all three images then choose which one to display afterwards or is it best to use the one images like i'm trying to do and sacrafice some image resolution for loading speed.</s><s> (i ask because i want to make sure i'm not confussed on this aspect with media queries) 
+
+</s></quote>
+</s><s>it was a suggestion but you picked up on the fact that all 3 images will need to be downloaded which may be an issue.</s><s> i don't think much investigation into how much of an issue it would be has been conducted safe to say everyone agrees the less one has to download the better. 
+
+
+<quote>
+<s>trying hard to learn wrote: 
+2) dreamweaver fluid grid layout creates some css files automatically.</s><s> if i want to tweek some design and structure elements that only affect the specific device indiviually do i use the style sheet and media queries dreamweaver has already created or do i need to create a new style sheet and apply it to the media query dreamweaver cc has already created?</s><s> (i hope i'm clrear on this question) 
+
+</s></quote>
+i don't use fluid grids so i can be of much help.</s><s> my personal opinion is you should try and produce your own responsive code.</s><s> it will be much cleaner, leaner and easier to manage.</s><s> it really isnt all that difficult to learn. 
+
+
+<quote>
+<s>trying hard to learn wrote 
+i'm at a crucial point in my learning of responsive design.</s><s> if i could get some answers on these questions i think after a week of hard (hard) struggles i can finally take off!</s><s>!</s><s> right now i really want to make sure my image stratigy is correct before i get too far along in this process and find out exactly how to make adjustments in specific device views without screwing everything up in other views. 
+</s></quote>its impossibe to screw anything up in other 'views' if you only target what you need to change at your specified break points ( css media queries) 
+
+<quote>
+<s>
+
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230799-6232192</DOCNO>
+<TEXT>
+<subject>css designer in fluid grid layout (how to target specific media only)</subject>
+<post author="trying%20hard%20to%20learn" timestamp="Mar 21, 2014 2:01 PM">
+<s>ok nancy o i'm at a big point now.</s><s> this is a make or break point hopefully you understand the specifics of the question i'm about to ask.</s><s> i'm going to design this site by myself without purchasing any code or elements from anywhere.</s><s> i've figured bandwidth is something i need to keep in mind so i'm going to use one set of images and just adjust them in the differant views (i'm willing to sacrafice some image quality for this factor). 
+1) the $10,000,000 question is "how do i taget image adjustments that only appiles to specific devices" (meaning i have some images that i placed using the "global media" in the css designer. the basic set layout is great i just need to adjust a few things with the images in the individual views).</s><s> now when i drag the handle bars on the images in lets say smartphone view for instantant it affects all the views.</s><s> so i've come to the conclusion (maybe wrongly) that these icons have no desige power other than to show you what things look like.</s><s> now i'm focus on exactly how to use the css designer and media queries because i believe ( i may be wrong let me know) it is here you target and adjust image sizing for the specific devices. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230799-6232275</DOCNO>
+<TEXT>
+<subject>css designer in fluid grid layout (how to target specific media only)</subject>
+<post author="trying%20hard%20to%20learn" timestamp="Mar 21, 2014 2:25 PM">
+<s>                    its impossibe to screw anything up in other 'views' if you only target what you need to change at your specified break points ( css media queries)          i'm so close to getting the answer its crazy!</s><s>!</s><s>!</s><s> you say impossible just hold off on that statement for a sec and you might have the answer for me.</s><s> now ideally i would just like to target the media and drag handle bars to resize the images in that specific media only.</s><s> if you can tell me exactly how to target media in this fashion that would be the million dollar moment.</s><s> because simply clicking the little icons at the bottom of the screen does nothing but show me what things look like in the differant views.</s><s> thats why i said i'm coming to the conclusion that they have no design power other than to look at the view.      this is why i'm focus on the css designer.</s><s> i see the "sources" section, the "media" section, and the selectors and properties section.</s><s> but i cant target what i want with this thing.</s><s> i mean if i cant simply click lets say smartphone view (from the icons at bottom of screen) for example, drag handle bars in that view and the changes stay only in that view then do the same with tablet and desktop how and where do i do it with code?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?</s><s>?            
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-6230799-6232335</DOCNO>
+<TEXT>
+<subject>css designer in fluid grid layout (how to target specific media only)</subject>
+<post author="Nancy%20O." timestamp="Mar 21, 2014 2:31 PM">
+<s>without knowing specifics, i can't make any more suggestions.</s><s> please upload your work so far to a remote server space you control and post the url. 
+</s><s>imo, there's no reason to use different image sizes unless you're doing something fundamentally wrong in your layout.</s><s> i'm guessing that you have expressed some explicit height values somewhere which are hindering your success.</s><s> again, without seeing your work, i can only make guesses. 
+
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-87626-87626</DOCNO>
+<TEXT>
+<subject>How  do I build a Guest Book</subject>
+<post author="mstrasko" timestamp="Jun 17, 2007 10:06 PM">
+<s>i would like to find out how to create a guest book from scratch in html or more likely in php (i'm familiar with html, yet i am still learning the other programming languages), that way when people visit my site they can leave feedback, comments, or simply ask questions, and instantly shows on the page.</s><s> the reason i am interested in building it from scratch is that i want to learn while building it.</s><s> yet there are so many elements in dreamweaver mx and cs3 that i don't know where to begin.</s><s> i mentioned the two different versions of dreamweaver because i am currently using the trial version of cs3, though when it expires i will be using mx, until i can afford to purchase cs3.</s><s> though i do all so have coldfusion.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-87626-635871</DOCNO>
+<TEXT>
+<subject>How  do I build a Guest Book</subject>
+<post author="Newsgroup_User" timestamp="Jun 17, 2007 10:16 PM">
+<s>mstrasko wrote: > i would like to find out how to create a guest book from scratch in > html or more likely in php (i'm familiar with html, yet i am still > learning the other programming languages), that way when people visit > my site they can leave feedback, comments, or simply ask questions, > and instantly shows on the page.</s><s> the reason i am interested in > building it from scratch is that i want to learn while building it.</s><s> > yet there are so many elements in dreamweaver mx and cs3 that i don't > know where to begin.</s><s> > > i mentioned the two different versions of dreamweaver because i am > currently using the trial version of cs3, though when it expires i > will be using mx, until i can afford to purchase cs3.</s><s> though i do all > so have coldfusion.</s><s> google for mysql tutorials.</s><s> at first try to read something from a mysql database, and then try to write something... -- freundliche grüsse, franz marksteiner
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-87626-635899</DOCNO>
+<TEXT>
+<subject>How  do I build a Guest Book</subject>
+<post author="mstrasko" timestamp="Jun 18, 2007 12:23 AM">
+<s>i appreciate the advice.</s><s> though i'm not sure i understand how mysql is going to assist me in creating a guest book in dreamweaver.</s><s> i was interesting in learning mysql eventually, though at the moment that software is a little advanced.</s><s> isn't there a way to build a guest book in dreamweaver?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-87626-636027</DOCNO>
+<TEXT>
+<subject>How  do I build a Guest Book</subject>
+<post author="mdonahue" timestamp="Jun 18, 2007 5:57 AM">
+<s>php and mysql work very nicely together.</s><s> a mysql database is a nice repository for the information supplied by your guest.</s><s> you use php to both add and retrieve the information supplied from the database.</s><s> the book php and mysql for dynamic web sites by larry ullman published by visual quickpro guide is a great book for beginners.</s><s> at least it was for me.</s><s> dave powers, who frequents these forums has book recommended by many titled foundation php.</s><s> it's almost a necessity to learn both together.</s><s> good luck.</s><s> mike d.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-87626-636097</DOCNO>
+<TEXT>
+<subject>How  do I build a Guest Book</subject>
+<post author="bregent" timestamp="Jun 18, 2007 7:31 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-87626-636819</DOCNO>
+<TEXT>
+<subject>How  do I build a Guest Book</subject>
+<post author="mstrasko" timestamp="Jun 18, 2007 11:55 PM">
+<s>thank you mdonahue and bregent, sounds as though i have a lot of reading to do.</s><s> i will look into both authors books.</s><s> php and sql have been a mystery to me for awhile, yet i have recently learned a little about sql in a class i'm taking.</s><s> it seems i have a lot more to learn about web development than i thought.</s><s> i will probably start asking even more question now.</s><s> thanks again for the advice.</s><s> i appreciate it.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-1314039</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="quek peow" timestamp="Oct 14, 2013 5:33 AM">
+<s>galaxy note3 version 4.3 is it supported by flash player lastest version xx.xxx.xx.81? 
+[subject line edited by moderator for clarity] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-5755670</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="C%20F%20McBlob" timestamp="Oct 12, 2013 3:44 PM">
+<s>no android device is supported by flash player (actually it's vice-versa: android dropped all flash support last year) anymore.</s><s> if the device was manufactured prior to june 2012, flash player 10.2 can still be loaded, but it's not able to access content that requires flash player 11.</s><s> you need to use "dolphin" as your browser to access flash content with an android device these days. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-5756558</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="fB3" timestamp="Oct 13, 2013 10:18 AM">
+<s>i think it is possible to install flashplayer 11.1 from the archives http://helpx.adobe.com/flash-player/kb/archived-flash-player-versions. html#main_archived_versions last version available http://download.macromedia.com/pub/flashplayer/installers/archive/andr oid/11.1.115.81/install_flash_player_ics.apk i have this version installed on my gs3 running android 4.1 works with firefox , dolphin, and the "stock" android browser.</s><s> not working on chrome though.</s><s> would be nice to know if you can install it.</s><s> good luck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-5781431</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="pho77" timestamp="Oct 23, 2013 2:34 AM">
+<s>fb3 is correct.</s><s> i was able to get flash on my note 3 by sideloading the last supported version.</s><s> here's the tutorial i used: http://flashnote3.com/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-5987953</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="www.spiderorbit.com" timestamp="Jan 6, 2014 11:39 PM">
+<s>no, i think android device doesn't support flash player.</s><s> so galaxy note 3 is unable to suppoer flash player. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-5994519</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="C%20F%20McBlob" timestamp="Jan 8, 2014 3:46 PM">
+<s>android no longer supports flash player. 
+</s><s>while "sideloading" is endorsed by users, it is neither supported nor endorsed by adobe or android.</s><s> additionally, you can void your warranty by sideloading certain apps.</s><s> i don't know if flash is one of those apps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-6186157</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="Trey%20Carey" timestamp="Mar 6, 2014 12:17 PM">
+<s><quote>
+<s>quek peow wrote: 
+galaxy note3 version 4.3 is it supported by flash player lastest version xx.xxx.xx.81? 
+[subject line edited by moderator for clarity] 
+</s></quote>i feel so bad for you, you should use html5.</s><s> it works great, iuf you need some html5 player code ill post it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-6186269</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 6, 2014 12:37 PM">
+<s><quote>
+<s>trey carey wrote: 
+<quote>
+<s>quek peow wrote: 
+galaxy note3 version 4.3 is it supported by flash player lastest version xx.xxx.xx.81? 
+[subject line edited by moderator for clarity] 
+</s></quote>i feel so bad for you, you should use html5.</s><s> it works great, iuf you need some html5 player code ill post it. 
+</s></quote>i feel pretty badly for you.</s><s> as a web designer, i know that html5 (hypertext markup language version 5) is a standard for the design compliance of the code in web pages, and not a player.</s><s> there is no such thing as user installable "html5 player code", as you describe it.</s><s> either a browser is standards compliant, or it isn't.</s><s> you can't just put a plug-in into it and make it do something the engine is incapable of. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-6186242</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="Trey%20Carey" timestamp="Mar 6, 2014 12:42 PM">
+<s><quote>
+<s>mike m wrote: 
+<quote>
+<s>trey carey wrote: 
+<quote>
+<s>quek peow wrote: 
+galaxy note3 version 4.3 is it supported by flash player lastest version xx.xxx.xx.81? 
+[subject line edited by moderator for clarity] 
+</s></quote>i feel so bad for you, you should use html5.</s><s> it works great, iuf you need some html5 player code ill post it. 
+</s></quote>i feel pretty badly for you.</s><s> as a web designer, i know that html5 (hypertext markup language version 5) is a standard for the design compliance of the code in web pages, and not a player.</s><s> there is no such thing as user installable "html5 player code", as you describe it.</s><s> either a browser is standards compliant, or it isn't.</s><s> you can't just put a plug-in into it and make it do something the engine is incapable of. 
+</s></quote>no, i wasnt implying you install some app or anything, if any webpage you visit is used as a html5 player then android should be able to play the video.</s><s> i have had great sucess with html5, code such as: 
+<!</s><s>doctype html> <html> <head> <meta charset="utf-8"> <title>html5 with video</title> <!--[if lt ie 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <!</s><s>[endif]--> </head> <body> <!--begin video--> <video width="500" height="325" poster="your_poster_image.jpg" controls> <!--these are legitimate 6 sec, sample videos for testing purposes.--> <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm"> <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg"> <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"> note: if you see this, you're using an outdated browser that doesn't support the video tag.</s><s> </video> <!--end video--> </body> </html> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-6186273</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="davidhelp" timestamp="Mar 6, 2014 12:45 PM">
+<s>go to settings and allow 3rd party apps to install.</s><s> then download the flashplayer. 
+i have the samsumng galaxy note 8" model and i watch shows from youtube to amazon that use flash.</s><s> you will also need to use the dolphin browser which allows you to change the "user agent" to mimic a desktop browser.</s><s> (amazon won't work otherwise) 
+</s><s>link has screenshots and links to the flashplayer and the dolphin browser. http://omegadroid.co/samsung-galaxy-note-3-flash-player-support/ 
+you can also use firefox and google chrome but need to change the user agent.</s><s> here is a link if for firefox on a desktop pc if you want to tether your phone but t-mobile or some other carrier does not want you to.</s><s> i did not locate one for the tablet version. https://addons.mozilla.org/en-us/firefox/addon/user-agent-switcher/ 
+google chrome user agent https://play.google.com/store/apps/details?id=com.appo2.ua 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5755530-6186280</DOCNO>
+<TEXT>
+<subject>Does Galaxy Note 3 support the latest Flash Player? [was: note3]</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 6, 2014 12:54 PM">
+<s>"if any webpage you visit is used as a html5 player then android should be able to play the video." 
+</s><s>well, yes.</s><s> that was the main idea behind html5.</s><s> in 2010, the w3c saw that the number of smartphone users would soon be more than 50% of all web users and they upgraded the standards to meet that challenge.</s><s> the last time i uploaded anything flash, other than a demo to show why i don't use it anymore, was january 2011.</s><s> since then, it's all been html5.</s><s> youtube, vimeo, dailymotion, and most all of the news sites have made the transition, but since web standards are tough to enforce, (they put them out there and it's up to web designers to comply - no penalty other than lost viewership if you don't) only the major sites will get fully onboard in a timely manner, and youtube only did the switch last summer.</s><s> facebook is still implementing it, with no timetable on completion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3662897-849034</DOCNO>
+<TEXT>
+<subject>Z Index, layering images, need help (going crazy!)</subject>
+<post author="garynng" timestamp="May 7, 2011 9:45 AM">
+<s>need some help on layering images.</s><s> as you can see, the "polaroid" has tape on it - i want that tape to overlap the menu bar.</s><s> the menu bar is a grapic (there is a slight gradient to it) and on top of it are the actual menu graphics.  if i remove the menu graphics, the photo overlaps fine.  but if i insert the menu graphics, they lie on top of the polaroid.  thanks in advance for any help you can provide.   gary   here is the code for the page:   <h1>sandiegohomegrown.com</h1>   <img src="images/menubar.gif" />   <ul id="menubar">    <li id="listen"><a href="songs.html">listen</a></li>   <li id="submit"><a href="submit.html">submit songs</a></li>   <li id="seals"><a href="seals.html">help the seals</a></li>   <li id="about"><a href="about.html">our story?</a></li>   <li id="sponsors"><a href="sponsors.html">sponsors</a></li> </ul>   <div id="polaroid"> <img src="images/band2_polaroid.png" width="280" height="354" /> </div><!--polaroid-->   here is the css:   #polaroid {     height: 354px;     width: 280px;     padding-left: 50px;     margin-top: -40px; } #menubar {     height: 30px;     width: 960px;     padding: 0px;     font-family: "courier new", courier, monospace;     list-style-type: none;     position: absolute;     display: block;     background-repeat: no-repeat;     margin-top: -30px; }   #menubar a {     width: 175px;     display: inline-block;     color: #2f3032;     text-align: left;     vertical-align: 0%;     margin: 0px;     list-style-type: none;     float: left;     height: 35px;     padding-top: 0px;     padding-right: 0px;     padding-bottom: 0px;     padding-left: 10px;     text-indent: -9999px; }   #menubar #listen {     background-repeat: no-repeat;     position: absolute;     background-image: url(images/titles/listen_bar_orig.gif); }   #menubar #submit {     background-image: url(images/titles/submit_bar_orig.gif);     background-repeat: no-repeat;     position: absolute;     margin-left: 150px;     width: 200px;     z-index: 1; }   #menubar #seals {     background-image: url(images/titles/seals_bar_orig.gif);     background-repeat: no-repeat;     position: absolute;     margin-left: 375px;     width: 225px; }   #menubar #about {     background-image: url(images/titles/about_bar_orig.gif);     background-repeat: no-repeat;     position: absolute;     margin-left: 625px; }   #menubar #sponsors {     background-image: url(images/titles/sponsor_bar_orig.gif);     background-repeat: no-repeat;     position: absolute;     margin-left: 800px; }
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-3662897-3662898</DOCNO>
+<TEXT>
+<subject>Z Index, layering images, need help (going crazy!)</subject>
+<post author="garynng" timestamp="May 7, 2011 9:48 AM">
+<s>auggh, just figured it out.</s><s> the polaroid needed to be relative positioning! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2421087-530502</DOCNO>
+<TEXT>
+<subject>Submit HTML form by email anonymously</subject>
+<post author="Nicky1977" timestamp="Nov 25, 2009 11:58 AM">
+<s>i run an intranet and have created a form in dreamweaver and added the following to the action tag: <form action="mailto:myemailaddress@nrta.mod.uk" method="post" name="survey" id="survey" enctype="text/plain" > which does work but the person that has filled in the form is identified in the resulting email and the purpose of the survey is that is remains anonymous.</s><s> is there any way using html code that i can hide the senders address?</s><s> i have found .</s><s>php and .</s><s>asp files that do this but .</s><s>php isn't installed on the (iis 6) web server and i can't get the asp pages to work. 
+</s><s>if anyone can help i would be really grateful, it's driving me insane!</s><s> thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2421087-2421334</DOCNO>
+<TEXT>
+<subject>Submit HTML form by email anonymously</subject>
+<post author="bregent" timestamp="Nov 25, 2009 1:26 PM">
+<s>>is there any way using html code that i can hide the senders address? 
+no. when you use mailto, the user's email client is used.</s><s> there is no way to hide the senders address. 
+
+>i have found .</s><s>php and .</s><s>asp files that do this but .</s><s>php >isn't installed on the (iis 6) web server and i can't get the asp pages to work. 
+</s><s>you will need to get some type of server side script to process the form.</s><s> what's wrong with the asp page you tried? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2421087-2422285</DOCNO>
+<TEXT>
+<subject>Submit HTML form by email anonymously</subject>
+<post author="Nicky1977" timestamp="Nov 26, 2009 2:41 AM">
+<s>i can't even get the .</s><s>asp page to display so i have no idea where i am going wrong there.</s><s> asp is allowed on the server so am a bit stumped.</s><s> i am trying to get php installed on my server too at the moment.</s><s> does anyone have some asp code that does this job out there?</s><s> thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-2421087-2422714</DOCNO>
+<TEXT>
+<subject>Submit HTML form by email anonymously</subject>
+<post author="SnakEyez02" timestamp="Nov 26, 2009 7:49 AM">
+<s>if an asp page does not display on your server the code we give you will be useless.</s><s> we need to get your server up and running first.</s><s> in iis 6 there was ridiculous security measures instated to prevent dynamic content because of supposed security risks at the time.</s><s> microsoft published the following technet article to help you get asp working on iis 6. 
+http://support.microsoft.com/default.aspx/kb/315122 
+post back if the above steps work and you can get a basic asp page running on your server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-1331684</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="SarahVictoria75" timestamp="Nov 9, 2013 3:46 AM">
+<s>hello, 
+</s><s>i'm building a site in dw cs6 using php and testing on my local server (mamp). 
+</s><s>i'm wanting to create a simple contact form so people can submit a message which will then be sent to one email address (my first time doing this). 
+</s><s>using tutorials and a bit of code from our hosting provider i've written the code below. 
+</s><s>is there a way that i can now test that this works on my local server?</s><s> i also want to create a thank you page that people will be redirected to. 
+</s><s>when i view the form in a browser, the css styling is working but i don't know if it works because when i roll over the submit button it doesn't seem active/change and when i click on it nothing happens - i just stay on the same page, rather than being directed to another page. 
+</s><s>i'm not sure if i've gone about this the right way. 
+i realise that i'll have to redirect the path for the 'thanks' and 'error' pages at the bottom to my local mamp htdocs folder, but i'm not given the option to browse for these files and just shown the 'bind to dynamic source' icon. 
+
+
+<form method="post" action="http://www.our_domain.co.uk/cgi-bin/formmail.pl" accept-charset="iso-8859-1" onsubmit="var originalcharset = document.charset; document.charset = 'iso-8859-1'; window.onbeforeunload = function () {document.charset=originalcharset;};"> <span id="nametextfield"> <label for="name"></label> <input type="text" name="name" id="name"> <span class="textfieldrequiredmsg">required</span></span><br><br> <span id="emailtextfield"> <label for="email"></label> <input type="text" name="email" id="email"> <span class="textfieldrequiredmsg">required</span><span class="textfieldinvalidformatmsg">invalid format</span></span><br><br> <span id="messagetextarea"> <label for="message"></label> <textarea name="message" id="message" cols="45" rows="5"></textarea> <span id="countmessagetextarea"> </span><span class="textarearequiredmsg"> required</span><span class="textareamincharsmsg">minimum number of characters not met.</span><span class="textareamaxcharsmsg">exceeded maximum number of characters.</span></span><br><br> <input name="submit" type="button" value="send"> <input type="hidden" name="recipient" value="enquiries@our_domain.co.uk" /> <input type="hidden" name="subject" value="enquiry from your website" /> <input type="hidden" name="redirect" value="http://www.our_domain.co.uk/thanks.php" /> <input type="hidden" name="missing_fields_redirect" value="http://www.our_domain.co.uk/error.php" /> <input type="hidden" name="required" value="realname,email," /> </form> 
+
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5828608</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="Nancy%20O." timestamp="Nov 9, 2013 7:42 AM">
+<s>i haven't used perl in ages.</s><s> is there some reason you're not using php to process your form? 
+</s><s>formm@ailer php from db masters http://dbmasters.net/index.php?id=4 
+formtoemail.com (free & pro versions available) http://formtoemail.com/formtoemail_pro_version.php 
+tectite http://www.tectite.com/formmailpage.php 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5829205</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="SarahVictoria75" timestamp="Nov 9, 2013 1:52 PM">
+<s>thanks nancy.</s><s> 
+</s><s>i downloaded formtoemail.com (pro), put the code onto my page and uploaded the script php file. 
+</s><s>i've tested the form remotely and it is working.</s><s> can i customise the form styling doing it this way?</s><s> i've managed to a bit just from changing a few bits in the code. 
+</s><s>the way i did it before using spry validation meant that i had css and js files for the spryvalidationtextarea and text field and so i could change the styling that way. 
+</s><s>when you say use php to process my form, did you mean my form is okay (inc. css files etc.</s><s>) and i just need to add some php scripting? 
+</s><s>thank you for your help - this is all new to me but i want to make sure i'm doing it right! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5829273</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="Nancy%20O." timestamp="Nov 9, 2013 1:54 PM">
+<s>you can style your forms any way you wish with css. 
+</s><s>client side validation (spry) is not reliable.</s><s> it uses the end user's browser & javascript.</s><s> if js is turned off, it won't do anything.</s><s> also, robots never use javascript.</s><s> so don't use js for anything important. 
+</s><s>always use server-side scripts (php) to gather, validate and process form data.</s><s> this does not rely on the end user's browser settings and is thus very reliable. 
+</s><s>php is also a very powerful tool for catching robots and stopping them from exploiting your forms and stuffing your inbox with unwanted spam mail.</s><s> the more you learn about php, the more you'll grow to love it. 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5829256</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="mhollis55" timestamp="Nov 9, 2013 1:54 PM">
+<s>the reason why nancy thinks you're using pearl to do your form processing is because of this line: 
+<form method="post" action="http://www.our_domain.co.uk/cgi-bin/formmail.pl" accept-charset="iso-8859-1" onsubmit="var originalcharset = document.charset; document.charset = 'iso-8859-1'; window.onbeforeunload = function () {document.charset=originalcharset;};"> 
+</s><s>specifically, what you are doing is that when someone presses the "submit" button, the result is to call a file called formmail.pl and any filename with the .pl extension is perl. 
+a file that uses php will end in .php. 
+</s><s>if you are using mamp (or wamp) one issue you may have is that you have not installed a php mail handler.</s><s> on a regular web server, there is usually an email sending application that runs in the background on that server.</s><s> mamp and wamp may not include that.</s><s> they also may not include php or perl, either. 
+</s><s>here is the start of the form that calls a php file to send email from one of my websites: 
+<form method="post" action="sendmail.php"> 
+</s><s>now, here, you're seeing that i am calling a php forms processor called sendmail.php.</s><s> that processor does all of my heavy lifting. 
+</s><s>you can see the entire form here (and it's pretty basic): 
+http://ghostsofnewengland.org/contact.php 
+i do all of the form checking in php.</s><s> i'm not using spry-which adobe dumped, by the way.</s><s> spry reveals itself to the user and i don't think it's as safe as checking things using a server-side script.</s><s> frankly, niether does nancy. 
+</s><s>is there any place we can see your page, other than on your own computer? 
+-mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5829288</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="SarahVictoria75" timestamp="Nov 9, 2013 2:07 PM">
+<s>thank you both. 
+</s><s>after downloading script from formtoemail.com my alternative contact page now looks like below and is saved in the same folder as the formtoemailpro.php file.</s><s> this does work but i'm confused now as to how to attach css styling to the form. 
+
+<?</s><s>php session_start(); if(isset($_session['submitted_form_values'])){extract($_session['submi tted_form_values']);} ?</s><s>> 
+
+
+</s><s><form action="formtoemailpro.php" method="post"> 
+<table border="0" style="background:" cellspacing="5"> 
+<tr align="left"><td>name</td><td><input type="text" size="30" name="name" value="<?php if(isset($name)){print stripslashes($name);}else{print "";} ?</s><s>>"></td></tr> 
+<tr align="left"><td>email</td><td><input type="text" size="30" name="email" value="<?php if(isset($email)){print stripslashes($email);}else{print "";} ?</s><s>>"></td></tr> 
+
+<tr align="left"><td>confirm email </td><td><input type="text" size="30" name="email2" value="<?php if(isset($email2)){print stripslashes($email2);}else{print "";} ?</s><s>>"></td></tr> 
+
+<tr align="left"><td valign="top">your message </td><td><textarea name="comments" rows="6" cols="30"><?php if(isset($comments)){print stripslashes($comments);}else{print "some default text";} ?</s><s>></textarea></td></tr> 
+
+<tr align="left"><td> </td><td><input type="submit" value="send"></td></tr> 
+</table> 
+</form> 
+<?</s><s>php if(isset($_session['formtoemail_form_errors'])) { print "<div style=\"color:#ff0000\">"; foreach($_session['formtoemail_form_errors'] as $form_error_value){print "<b>" . stripslashes($form_error_value) .</s><s> "</b><br>";} print "</div>"; unset($_session['formtoemail_form_errors']); } ?</s><s>> 
+</s><s>i'll have a look at your suggestions tomorrow and see how i get on.</s><s> thanks, vicky 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5830257</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="Nancy%20O." timestamp="Nov 10, 2013 9:24 AM">
+<s>of course you can use tables with forms, however i prefer to use  ordered lists and form labels for better web accessibility.   that's up to you.       nancy o.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5857984</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="SarahVictoria75" timestamp="Nov 20, 2013 4:16 AM">
+<s>hi nancy, 
+</s><s>this is the coding i downloaded off the internet from formtoemail as you suggested. 
+</s><s>do you know if there are any tutorials on how to use ordered lists and form labels instead? 
+</s><s>thanks, vicky 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Discussions-5828327-5858764</DOCNO>
+<TEXT>
+<subject>Testing Spry form on local server and redirecting to a 'thank you' page</subject>
+<post author="Nancy%20O." timestamp="Nov 20, 2013 8:40 AM">
+<s>view source to see the code. http://alt-web.com/test/basic-html5form-jquery.html     nancy o.
+</s></post>
+</TEXT>
+</DOC>
+
+

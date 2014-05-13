@@ -1,0 +1,52 @@
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Windows-(read-only)/Photoshop-Windows-FAQ/Discussions-1661424-375776</DOCNO>
+<TEXT>
+<subject>How to delete/reset Photoshop preferences</subject>
+<post author="Mathias Vejerslev" timestamp="Sep 29, 2012 9:04 AM">
+<s>background: sometimes photoshop can exhibit odd/erratic/weird behaviour.</s><s> the first step is to make sure that you are running the latest version of photoshop, by applying the relevant updates for your version of photoshop listed on this page: http://www.adobe.com/support/downloads/product.jsp?product=39&platform =windows Ê this behaviour can sometimes be overcome by resetting the photoshop preference file, or individual tool preferences.</s><s> the procedures outlined below are the most common methods of removing the program preferences file.</s><s> q: i am experiencing weird behaviour in photoshop. - how do i delete / reset my preferences?</s><s> photoshop versions after 6.0 (including 7.0, cs, cs2 ...</s><s>cs6): a:if a tool is behaving erratically, first try resetting just that tools preferences, via the method outlined by len hewitt in the post below this one.Ê if you have larger troubles, hold down alt, ctrl, and shift keys (mac: command, option, shift) while starting up photoshop.</s><s> a dialog box will appear asking if you wish to delete the preferences/settings file.Ê a2: you can also simply search your hard drive for a *.psp file and delete it.</s><s> it will be called something along the lines of "adobe photoshop x prefs.psp".</s><s> under vista or 7, look here: users/[username]/appdata/roaming/adobe/adobe photoshop [version #]/adobe photoshop [version #] settings Ê under win 2k/xp the preference file will be found at: %windir%\documents and settings\[username]\application data\adobe\photoshop\[version #]\adobe photoshop [version #] settings Ê [note: you need to set window's explorer options to "view hidden files and folders" to display the preference file] photoshop versions 5.5 and earlier: search for photos*.ini and delete (the file will be called photos followed by the version number - i.e photos55.ini for photoshop 5.5, photos40.ini for photoshop 4.0) resetting the preferences will restore photoshop settings to factory defaults.</s><s> if removing the preferences files does not resolve the problem you should check the photoshop support pages for further guidance. http://www.adobe.com/support/products/photoshop.html note that it is possible to keep a 'healthy' copy of the preferences file, so that you simply overwrite the preferences file if needed.</s><s> that way you won't have to re-adjust your preferences in photoshop after a reset.</s><s> more information on photoshop preferences can be found at: Ê tech doc, cs5: Ê http://kb2.adobe.com/cps/828/cpsid_82893.html tech doc, cs4: http://kb.adobe.com/selfservice/viewcontent.do?externalid=kb405012&sli ceid=2 tech doc, cs3: http://kb.adobe.com/selfservice/viewcontent.do?externalid=kb401600&sli ceid=1 doc on manually removing bridge preferences and cache: http://kb.adobe.com/selfservice/viewcontent.do?externalid=332992&slice id=1
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Windows-(read-only)/Photoshop-Windows-FAQ/Discussions-1661424-1661425</DOCNO>
+<TEXT>
+<subject>How to delete/reset Photoshop preferences</subject>
+<post author="LenHewitt" timestamp="Jan 31, 2011 1:36 PM">
+<s>save for web preferences (pscs>cs4) 
+</s><s>the save for web preferences can be deleted by holding down ctrl+alt whilst selecting 'save for web' in the file menu.</s><s> (this shortcut has been removed in cs5) if you wish to delete the save for web preferences manually, they are located at: 
+windows xp: c:\documents and settings\~username\application data\adobe\save for web\8.0\ (\9.0\ for cs2... up to 12.0 for cs5) windows vista or windows 7: c:\users\username\appdata\roaming\adobe\save for web\12.0\adobe save for web 12.0 prefs 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Windows-(read-only)/Photoshop-Windows-FAQ/Discussions-1661424-1661426</DOCNO>
+<TEXT>
+<subject>How to delete/reset Photoshop preferences</subject>
+<post author="LenHewitt" timestamp="Jan 30, 2011 5:25 AM">
+<s>is one of your tools behaving strangely - or not the way you expect - in photoshop? 
+</s><s>for every tool in photoshop's tool box, the user may choose to fully reset just that tool to its default settings.</s><s> to do this, look up to the options bar.</s><s> on the far left side you will see a button which displays an icon of the currently selected tool.</s><s> this is the tool preset picker.</s><s> right-click on this button, and you will see two entries: 
+reset tool 
+reset all tools 
+the first thing to try when a tool is not acting like you expect it should is to apply the command "reset tool" from this menu.</s><s> often this will cure a problem, and by starting your photoshop troubleshooting with this procedure you aren't resetting photoshop's entire behavior and environment to factory default in a wholesale manner.</s><s> instead, you're just getting that particular tool back to its default settings, leaving the rest of photoshop's settings alone. 
+</s><s>the second option would be more appropriate in a classroom setting, to get a "fresh version of photoshop", rather than for troubleshooting photoshop issues. 
+</s><s>if this doesn't cure the problem you're having, then you may need to move on to deleting/resetting all of your photoshop preferences to factory default. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Photoshop-General-Discussion/Photoshop-Windows-(read-only)/Photoshop-Windows-FAQ/Discussions-1661424-3436393</DOCNO>
+<TEXT>
+<subject>How to delete/reset Photoshop preferences</subject>
+<post author="PECourtejoie" timestamp="Jan 31, 2011 1:37 PM">
+<s>the thread has been updated with links for cs5, different windows versions, a note about the updates, a faster shortcut for the reset tools option, and updated the sfw with cs5 specific info. 
+</s></post>
+</TEXT>
+</DOC>
+
+

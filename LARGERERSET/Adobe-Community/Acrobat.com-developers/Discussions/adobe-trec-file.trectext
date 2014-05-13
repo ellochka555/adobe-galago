@@ -1,0 +1,590 @@
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5198883-1182939</DOCNO>
+<TEXT>
+<subject>Cannot open PDF files in AIR app on Mac OS. But same code worked in windows.</subject>
+<post author="ajaysinghrathore" timestamp="Apr 2, 2013 6:16 AM">
+<s>protected function button2_clickhandler(event:mouseevent):void {   if (htmlloader.pdfcapability == htmlpdfcapability.status_ok){  var filedir:file =new file(); var filepath:string = "";  try { // open browser for choose pdf file for open filedir.browseforopen("open as [only supports .</s><s>pdf extension with file name.</s><s>]");  filedir.addeventlistener(event.select, readfromdirectory); //htmlloader.parent.removechild(htmlloader); } catch (error:error) { trace("failed:", error.message); }  //***** browse event complete ***** function readfromdirectory(event:event):void { try { var newfile:file = event.target as file; filepath = newfile.nativepath;  var url:urlrequest = new urlrequest(filepath); //url to the file  htmlloader.width = 700; //width of the content area  htmlloader.height = 450; //height of the content area  htmlloader.load(url);  //wrapping into uicomponent  holder = new uicomponent(); holder.addchild(htmlloader); addelement(holder);  } catch(err:error) { trace("file not in correct format"); } } } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5198883-6115183</DOCNO>
+<TEXT>
+<subject>Cannot open PDF files in AIR app on Mac OS. But same code worked in windows.</subject>
+<post author="johnfencer" timestamp="Feb 12, 2014 3:33 PM">
+<s>hi, 
+</s><s>i have a similar problem.</s><s> i want to open swf and on windows works great but on mac doesn't.</s><s> did you manage so find a solution or a reason? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-6032002-1384592</DOCNO>
+<TEXT>
+<subject>Distributed form not functioning with hotmail or gmail</subject>
+<post author="Coldstream" timestamp="Jan 20, 2014 8:44 AM">
+<s>sorry, if this is the wrong place, but desperate to find an answer.</s><s> (this form is about to circulate amoung a few hundreds of grade 12 students, who will have a vast array of email options.  we need the students to not have difficulties submitting this form)   i have a form, distributed, sent out to people to fill in the form (testing it first), and submit.  which i will collect within the response file coming in on email.</s><s> some fill in the form, submit, it calls up the window to use either desktop or gmail/hotmail.  they select desktop/outlook sends exactly as needed.</s><s> excellent.</s><s> but some of the time, it does not even give the option for desktop or hotmail, it automatically goes to outlook.  which i think would be ok, if the student is on their home computer and want to send it that way.</s><s> (but possibly will be their parents email)   for those that are filling it in on a school computer and wish to use hotmail/gmail.  several problems occur.....</s><s> once they choose the hotmail/gmail choice, the process does not seem to continue on.  everything seems to disappear, and the form is never received by the intended collector.</s><s> never shows up in the gmail/hotmail sent file.</s><s> one person said, they thought it had gone thru the process... but collector never received.</s><s> one person said, it would not give them the choices... it automatically opened up outlook, even though they would like to have used hotmail instead.</s><s> i suspect most students would use a hotmail/gmail account to send the form in.</s><s> this is the form we created,http://www.sd22.bc.ca/forms/scholarship_application_final_distributed. pdf   if that helps with figuring out what is going on... appreciate anyone taking a look at it, even trying to submit.  just write on it test, so we know.</s><s> we are trying to get this ready for end of feb.   appreciate help... perhaps this should be posted on another forum as well.</s><s>?</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-6032002-6040484</DOCNO>
+<TEXT>
+<subject>Distributed form not functioning with hotmail or gmail</subject>
+<post author="Coldstream" timestamp="Jan 22, 2014 8:50 AM">
+<s>total egg on my face.</s><s> the people who discribed the problem to me, left out the fact that they actually did not read the pop up window that came up when they hit the submit button. 
+</s><s>so this explains why no one actually had an answer for me.</s><s> the pop up window, when one chooses the "internet option" clearly states that one must save, then attach to the email program they choose. 
+</s><s>my apologies out there ..... 
+</s><s>but it did bring up the little issue, that if someone check marks the "don't show this".... could cause issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-6013358-1379838</DOCNO>
+<TEXT>
+<subject>disabling menus and buttons</subject>
+<post author="kevin@abb" timestamp="Jan 14, 2014 4:23 PM">
+<s>i am trying to disable the highlight text toolbar button using app.hidetoolbarbutton but do not know the toolbar button name. 
+</s><s>also can registry entries be used to disable menu items such as file ,save ,saveas .</s><s> i am currently using java script with app.hidemenuitem and app.hidetoolbarbutton calls. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5992004-1374351</DOCNO>
+<TEXT>
+<subject>PDF vanishes in IE10/11 after download link click on HTML</subject>
+<post author="MartinCook2014" timestamp="Jan 8, 2014 3:51 AM">
+<s>all, 
+</s><s>we facing an issue with ie10/11 and latest release of adobe reader. 
+</s><s>we are showing the pdf on an html page inside a iframe and then have download links outside of this, this was working fine until updates to ie and reader occurred and now after the users click the download links the pdf being shown vanishes. 
+</s><s>sample html that we using, and can be run locally is shown below.</s><s> any help on this would be really much appreciated. 
+<!</s><s>doctype html> <html> <head> <meta http-equiv="x-ua-compatible" content="ie=edge" /> <meta http-equiv="content-type" content="text/html;charset=utf-8" /> <meta name="apple-mobile-web-app-status-bar-style" content="black" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="apple-touch-fullscreen" content="yes" /> <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"> <title>pdf test page</title> </script> </head> <body> <div id="pdf"> <iframe type="application/pdf" src="./resources/pdf.pdf" width="1024px" height="768px" runat="client" frameborder="0" scrolling="auto" name="flm_inner" id="flm_inner"> </iframe> </div> <div id="link"> <a href="./resources/doc.docx">download file</a> </div> </body> </html> 
+
+</s><s>download file 
+</s><s>this is what the page looks like after the download link has been clicked 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5975870-1370231</DOCNO>
+<TEXT>
+<subject>Broadcast multi stream bitrate</subject>
+<post author="duongtt" timestamp="Jan 2, 2014 8:08 PM">
+<s>hi admin 
+i want wirite app on website for broadcast multi stream bitrate to server (e.g: 240p, 420p, 720p).</s><s> can i do this with flex and as3. 
+</s><s>thansks all!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5902196-1351185</DOCNO>
+<TEXT>
+<subject>FMS in Windows2008R2 always conect fail</subject>
+<post author="EasonXu" timestamp="Dec 4, 2013 11:06 PM">
+<s>hi all, i've install fms 3.0.4 in win2003 32bit to publish video, it is normal. but if i install this in win2008 r2 64bit, it can be start normal, but got disconnect sometimes, and can't reconnect until restart the server(restart fme/fms service can't solved).</s><s> fms log show it has try to reconnect, but fail, as blow: [2013-12-4 11:39:50] start connect 221.143.xx.xx:xx [2013-12-4 11:39:59] 220.226..xx.xx:xx level:status code:netconnection.connect.success description:connection succeeded. objectencoding:3 [2013-12-4 11:39:59] send publishrequest to 220.226..xx.xx:xx [2013-12-4 11:39:59] get requestreply from 220.226..xx.xx:xx:kt isaccept:false [2013-12-4 11:40:9] 221.143..xx.xx:xx level:status code:netconnection.connect.failed description: during this time, i've try telnet the 221.143..xx.xx:xx, it can be connected.</s><s> after that, i try install fms 4.5.5, it got the same problem. 
+</s><s>please help!</s><s>!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5877878-1344644</DOCNO>
+<TEXT>
+<subject>I Can't seem to run a Trial Version of Acrobat XI Pro ??  I have tried to download the trial version</subject>
+<post author="A.Adams" timestamp="Nov 26, 2013 4:00 PM">
+<s>hi help desk: i can't seem to run a trial version of acrobat xi pro ?</s><s>?</s><s> i have tried to download the trial version of "acrobat xi pro" it will not run or start, and produces no errors, does anyone else have this issue, thanks al adams 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5804477-1325921</DOCNO>
+<TEXT>
+<subject>Cannot access document services API key / documentation</subject>
+<post author="fandypurse" timestamp="Oct 31, 2013 12:15 PM">
+<s>hello.</s><s> the following page https://api.share.acrobat.com/webservices/index.do 
+looks like this: 
+document services api welcome to the document services api which enables developer access to acrobat.com's free web-based service for sharing, publishing and organizing documents.</s><s> these apis allow you to easily integrate local, document-based workflows with acrobat.com's online service via existing or new mashups as well as applications built on flex, air, java, or any other language.</s><s> manage/get api developer key read documentation discuss developer forum visit our blog for the latest updates 
+clicking on any link leads to https://learn.adobe.com/wiki/display/acds/ that looks like this: 
+
+</s><s>dashboard not permitted 
+</s><s>not permitted 
+</s><s>you are not permitted to perform this operation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5804477-5820014</DOCNO>
+<TEXT>
+<subject>Cannot access document services API key / documentation</subject>
+<post author="bob.treitman" timestamp="Nov 6, 2013 8:29 AM">
+<s>api keys for workspaces.acrobat.com are no longer being issued.</s><s> we are in the process of cleaning up any references to it on our web site.</s><s> the page that you found should be removed shortly.</s><s> i apologize for the out-of-date information on that page. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4866482-1103055</DOCNO>
+<TEXT>
+<subject>acrobatdotcom_api_request@adobe.com not working</subject>
+<post author="Daniel Stöckli" timestamp="Nov 22, 2012 1:28 AM">
+<s>hi, 
+</s><s>i would like to ask for an api key but the email-address acrobatdotcom_api_request@adobe.com is not working.</s><s> how can i apply for the api key? 
+</s><s>thanks and regards, daniel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4866482-5819952</DOCNO>
+<TEXT>
+<subject>acrobatdotcom_api_request@adobe.com not working</subject>
+<post author="bob.treitman" timestamp="Nov 6, 2013 8:27 AM">
+<s>api keys for workspaces.acrobat.com are no longer being issued.</s><s> we are in the process of cleaning up any references to it on our web site. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5183450-1178646</DOCNO>
+<TEXT>
+<subject>Keyword list</subject>
+<post author="Claire Caat" timestamp="Mar 27, 2013 8:26 AM">
+<s>is it possible to create a keyword list from an index in acrobat pro x ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5159377-1173088</DOCNO>
+<TEXT>
+<subject>TimeStamp coded as BER or CER</subject>
+<post author="jose.centeno" timestamp="Mar 19, 2013 1:33 AM">
+<s>timestamps are correctly interpreted coded ber or cer format by adobe reader 9? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5144084-1169626</DOCNO>
+<TEXT>
+<subject>Problem signed pdf with TimeStamp</subject>
+<post author="jose.centeno" timestamp="Mar 13, 2013 2:01 AM">
+<s>first, sorry for my english. 
+i have a pdf signed with a certificate + tsa stamp with java application. 
+</s><s>with adobe reader 9: after validating, in the tab "date and time" does not show the button "show certificate" of "authority timestamp".</s><s> could you help me and tell me what to do to display the button and you can see the certificate? 
+</s><s>how can i upload signed the document for verification? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5116789-1163400</DOCNO>
+<TEXT>
+<subject>Acrobat cloud API</subject>
+<post author="Fawzi" timestamp="Mar 2, 2013 1:00 PM">
+<s>hi i am trying to authenticate a user from my site to access his / here files on acrobat.com is there any api tools like google drive and skydrive so when a user come to the site and want to order a print i can get the files from his storage at workspace.acorbat.com or from files.acrobat.com i know there was a project on the go with java and javascript but was none for .</s><s>net and they retire it, because there was a new api implementation in progress but i never heard anything since 2 years ago about that. if there is anything or another way to do it please let mk know thanks fawzi software developer the printing house ltd. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-5081271-1155349</DOCNO>
+<TEXT>
+<subject>PDF with FDF file and logo question</subject>
+<post author="Tore B. Krudtaa" timestamp="Feb 18, 2013 1:31 AM">
+<s>hi 
+</s><s>i have earlier used a pdf (a) with text fields together with a corresponding fdf file to generate pdf (a) with field values from the fdf file.</s><s> this works excellent. 
+no my customer want me to make a pdf (b) using acrobat xi pro.</s><s> very similar scenario as in the above example, but i want to be able to change the logo in the pdf using a corresponding fdf file (in addition to the text fields). 
+i have search the www to see if this is possible.</s><s> have found no explanation on how to accomplish this task.</s><s> is it possible or not to change a logo img file using an fdf file? 
+</s><s>if not, what are my options?</s><s> is there any workarounds? 
+</s><s>the reason my customer and i want this is: my customer has many customers.</s><s> those customers should be able to use their own logo in the pdfs.</s><s> if it was possible to change the logo using e.g.</s><s> fdf file or some other technique, it would save my customer a lot of work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4985774-1133362</DOCNO>
+<TEXT>
+<subject>How can i make links for pdf to be interactive in web</subject>
+<post author="t.k sajeev kumar" timestamp="Jan 11, 2013 2:50 AM">
+<s>i have done an interactive pdf and it works well in the computer.but when i uploaded it to the site it is not interactive.when i travelled through the reader forum i saw that there must be links for the pdf to be interactive.how i can make links.can you explain it in detail 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4958829-1127334</DOCNO>
+<TEXT>
+<subject>Acrobat Failed</subject>
+<post author="Alain2012" timestamp="Dec 31, 2012 7:20 AM">
+<s>hello everybody, 
+this is the fourth time that my acrobat x pro from my cs6 doesn't start.</s><s> it's necessary for me to uninstal the application and re-instal it.</s><s> i don't do anything in particulary before the crash, most of time, i don't even use the software. 
+i don't have any error message, nothing ...</s><s> adobe acrobat x pro just simply doesn't start.</s><s> somebody can help me ? 
+</s><s>thanks a lot.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4942006-1119888</DOCNO>
+<TEXT>
+<subject>Flash Player 11.5.502.135 bug-Full screen fail on youtube.</subject>
+<post author="Mr.Rice" timestamp="Dec 23, 2012 6:52 AM">
+<s>fix it.</s><s> i think it's the program and not my computer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4903545-1111400</DOCNO>
+<TEXT>
+<subject>HELP ME - Convert tiff to PDF</subject>
+<post author="Gilberto Valente 1976" timestamp="Dec 7, 2012 2:27 AM">
+<s>hi, i am from portugal, i need help i installed adobe acrobat 8 ??professional.</s><s> i have been convert multiple pdf files to tiff, using the following code: 
+
+</s><s>function convert_tiff_to_pdf(filepath as string) on error goto erroconvert_tiff_to_pdf 
+dim acroapp as acroapp dim avdoc as acroavdoc dim pddoc as acropddoc 
+set acroapp = createobject("acroexch.app") set avdoc = createobject("acroexch.avdoc")  if avdoc.open(filepath, vbnull) <> true then 'close the pdf avdoc.close (true) acroapp.exit 'cleanup set avdoc = nothing set acroapp = nothing exit function end if 
+set avdoc = acroapp.getactivedoc 
+if avdoc.isvalid then set pddoc = avdoc.getpddoc if pddoc.save(1 or 4 or 32, "c:\newfolder\" & me.ds_titulo & ".pdf") <> true then  else kill (filepath) end if pddoc.close end if 
+'close the pdf avdoc.close (true) acroapp.exit 'cleanup set pddoc = nothing set avdoc = nothing set acroapp = nothing 
+exit function 
+
+erroconvert_tiff_to_pdf: msgbox err.description 'cleanup set pddoc = nothing set avdoc = nothing set acroapp = nothing end function 
+works well, but in certain tiff files, an error message appears: "acrobat could not open file.tiff because it is either not a supported file type" 
+</s><s>it's possible ignore this warning?</s><s>?</s><s> if yes, what should i do. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4894922-1109491</DOCNO>
+<TEXT>
+<subject>Accessing files.acrobat.com via WebDav</subject>
+<post author="Daniel Stöckli" timestamp="Dec 4, 2012 2:33 AM">
+<s>hi, 
+</s><s>is it possible to access files.acrobat.com via webdav? 
+</s><s>or is there another way to access files.acrobat.com programatically? 
+</s><s>thank you.</s><s> 
+</s><s>best regards, daniel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4892644-1109031</DOCNO>
+<TEXT>
+<subject>Yellow Message Bar not showing on chrome</subject>
+<post author="CinziaTarantola" timestamp="Dec 3, 2012 8:22 AM">
+<s>hi, i need to populate a pdf form using an html form (with fdftoolkit), i'm using html because i have to store data into sql.</s><s> with firefox and explorer all i have to do is click on the yellow bar options and trust the host or document but in chrome there is no yellow bar.   is there a way to solve this problem?</s><s> thanks cinzia
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4858632-1101486</DOCNO>
+<TEXT>
+<subject>how can i add actions in acrobat 9 pro (PC)</subject>
+<post author="Simon Dav" timestamp="Nov 19, 2012 8:13 AM">
+<s>hi all, 
+</s><s>i am using acrobat 9 pro, how can i add actions like javascript in actions panel in pc windows, could any one help pls. 
+
+thanks simon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4858632-4874047</DOCNO>
+<TEXT>
+<subject>how can i add actions in acrobat 9 pro (PC)</subject>
+<post author="rajnikids" timestamp="Nov 26, 2012 6:01 AM">
+<s>yes simon, 
+i m too find the same. 
+it would be great help if any one show root. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4861818-1102121</DOCNO>
+<TEXT>
+<subject>Automate Index Building - Acrobat X Pro</subject>
+<post author="artFauxLife" timestamp="Nov 20, 2012 8:38 AM">
+<s>at my office we have a bank of pdf files that allow us to search prior invoices when clients come back for revisions, the pdfs are saved on a server we all access.</s><s> we've successfully set up and implemented the indexing of the colllection (20,000+ pdf files) for quick searching, which we love btw. 
+i noticed in the help section it mentioned automating the ability to update the index file (.pdx) using batch files (.bpdx) and a scheduler like windows scheduler but i can't find documentation on how to implement the process.</s><s> performing a search on the adobe support site for "bpdx" leads to information that essentially creates a loop instructing the user to search the support site for "bpdx." 
+</s><s>what syntax or commands need to be in the bpdx file? 
+</s><s>do i need to create a action in acrobat x pro to run when scheduler opens the bpdx file? 
+</s><s>would a javascript need to be created in conjunction with the action and bpdx file? 
+</s><s>also, is there documentation on the acrobat x api?</s><s> if so, a link would be helpful.</s><s> i found some documentation for acrobat 9 but not x. 
+</s><s>thanks for reading this discussion and i hope i've provided enough information to help find a sollution. 
+</s><s>cheers!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4816668-1092079</DOCNO>
+<TEXT>
+<subject>Problems accessing a PDF file that is in the internal NETWORK, my android application.</subject>
+<post author="Flávio Luiz Costa" timestamp="Nov 1, 2012 11:50 AM">
+<s>hey, can someone help me ? 
+i have an android application that locates the file on the network and gets its url. 
+</s><s>this url is passed as a parameter when calling the adobe reader, but it does not open the document. 
+</s><s>the url format is returning "http://192.168.1.1..........ex.pdf" 
+</s><s>this is a code: 
+the variable doc is a url. 
+private void loaddocinreader(string doc) throws activitynotfoundexception, exception { 
+
+try { intent intent = new intent(); intent.setpackage("com.adobe.reader"); intent.setdataandtype(uri.parse(doc), "application/pdf"); 
+
+startactivity(intent); 
+
+} catch (activitynotfoundexception activitynotfoundexception) { activitynotfoundexception.printstacktrace(); 
+
+throw activitynotfoundexception; } catch (exception otherexception) { otherexception.printstacktrace(); 
+
+throw otherexception; } } 
+private handler loaddocumenthandler = new handler() { public void handlemessage(message msg) { if (msg.obj == null) { 
+if(selecteddocumenturl.contains(".pdf")) { try { loaddocinreader(selecteddocumenturl); } catch (activitynotfoundexception e) { // todo auto-generated catch block e.printstacktrace(); } catch (exception e) { // todo auto-generated catch block e.printstacktrace(); } }else { intent showpic = intentfactory.createshowpicture( workorderdocumentstable.this, selecteddocumenturl); startactivity(showpic); } 
+} else { showdialog(getresources().getstring(r.string.atte ntion), ((exception) msg.obj).getmessage()); } progress.dismiss(); }; }; 
+thanks ! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4324343-987615</DOCNO>
+<TEXT>
+<subject>Native Extenstions Admob</subject>
+<post author="squeeky701" timestamp="Apr 10, 2012 6:34 AM">
+<s>i have to build an api to implement admob in mobile games.</s><s> i got the native extension working.</s><s> and i have a a working api for admob on android.</s><s> but when i combine the two its seems that the admob classes keeps returning null.</s><s> i suspect that i need to declare the following line in the sampleapp-app.xml 
+but when i do so it throws me compiler errors.</s><s> removing it everything works but then the adrequest and adview returns null.</s><s> how do i declare the com.google.ads.adactivity in the sampleapp-app.xml file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4324343-4806224</DOCNO>
+<TEXT>
+<subject>Native Extenstions Admob</subject>
+<post author="li_li_li87222" timestamp="Oct 28, 2012 8:12 AM">
+<s>http://code.google.com/p/flash-for-mobile/ qq????56892018 version for android http://code.google.com/p/flash-for-mobile/ version for iphone and ipad https://github.com/lilili87222/admob-for-flash this is a actionscript native extension for developer to ad advertisement to their air mobile application run on iphone or android.it very easy to use admob for flash android this lib enable you to add admob ad to your flash air application to add native advertisement to your actionscript3 application you just need to do four step 1.replace d:\program files\adobe\adobe flash builder 4.6\sdks\4.6.1\lib\android\lib\resources\android-res.jar with android-res.jar 2. add this config to -app.xml <android> <quote>
+<s><manifestadditions> 
+</s></quote><quote>
+<s><quote>
+<s><quote>
+<s><application> ?</s><s></s><s></s><s></s><s> ?</s><s></s><s></s><s></s><s> 
+</s></quote></application> 
+</s></quote>unknown end tag for </manifest> 
+</s></quote><quote>
+<s></manifestadditions> <quote>
+<s></android> 
+</s></quote>
+</s></quote>
+3.add this config to -app.xml <quote>
+<s><extensions> <quote>
+<s><extensionid> </extensionid> 
+</s></quote></extensions> 
+</s></quote>4. add code to your android air application like follow <quote>
+<s><quote>
+<s><quote>
+<s>?</s><s> ?</s><s></s><s></s><s></s><s> 
+</s></quote>
+</s></quote>
+</s></quote>// admob.showrelation(admobalignment?.align_bottom,adtype?.banner); <quote>
+<s>?</s><s> 
+</s></quote><quote>
+<s><quote>
+</quote>
+</s></quote><quote>
+</quote>
+<quote>
+<s>?</s><s> <quote>
+</quote>
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4797350-1087693</DOCNO>
+<TEXT>
+<subject>Acrobat XI trial pop-up</subject>
+<post author="naplesfanking" timestamp="Oct 24, 2012 10:12 AM">
+<s>i just signed up for acr xi(trial) and every time i open an acrobat file from an email, the annoying popup from adobe appears, asking me to buy the product.</s><s> how do i stop this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4695474-1065371</DOCNO>
+<TEXT>
+<subject>adobe.com online service 50 page PDF limit?</subject>
+<post author="dushy_shtibel" timestamp="Sep 13, 2012 3:58 AM">
+<s>on adobe.com i uploaded a pdf with 64 pages but on the embeded view i can see only 50 pages how can i see all pages? 
+see the link here: https://acrobat.com/app.html#d=gzzvkmh80bghcyo6kpxgeg i see 50 pages when you download the file you see it is 64 pages 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4606794-1046380</DOCNO>
+<TEXT>
+<subject>Calendar popup location</subject>
+<post author="horizonWeb" timestamp="Aug 8, 2012 7:09 AM">
+<s>i have added a popup calendar to select a date in my form - by default, it pops out to the right and down.</s><s> it their a way to have it pop out to the right and up.</s><s> it is sitting at the bottom of my page. 
+</s><s>thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4580599-1040880</DOCNO>
+<TEXT>
+<subject>i am creating a pdf using itext and numbering using pdfstamper. then i insert a scanned image using</subject>
+<post author="AnbuR" timestamp="Jul 26, 2012 12:47 AM">
+<s>i am creating a pdf using itext and numbering using pdfstamper. then i insert a scanned image using acrobat writer in the pdf document i have created using itext. the page number are incorrect. please help me how to get the ordered page numbers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4567869-1038400</DOCNO>
+<TEXT>
+<subject>Can Acrobat Fields Autopopulate other than Calculations?</subject>
+<post author="opub" timestamp="Jul 19, 2012 11:27 AM">
+<s>i know that acrobat 10.0 can do calculations, but can a form be designed so that when one textfield has a selection, another tex field will populate based on the information in the first field? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4512899-1027592</DOCNO>
+<TEXT>
+<subject>Mark Foster:Pools Game Development</subject>
+<post author="Markfoster11" timestamp="Jun 21, 2012 10:32 PM">
+<s>hi, 
+</s><s>this is mark foster.</s><s> i am very much interested in pools game and i want to develop an online 8 ball pools game website.</s><s> in which - 
+graphics should be more and playing option should be single player or multiplayer. 
+</s><s>players should have the condition of adding their friends. 
+</s><s>the limits of adding friends should be fixed. 
+</s><s>chat between players should be needed and it should be completely private. 
+</s><s>there should be a pool shop from where players can buy new sticks. 
+</s><s>the ranks of players should depend on their winning strategy. 
+i am looking for the best gaming software and tools.</s><s> which i can use to develop my website more exciting.</s><s> if you all have any idea about the software and tools please suggest me.</s><s> i am waiting for your valuable responses. 
+</s><s>thanks mark foster 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4512899-4518228</DOCNO>
+<TEXT>
+<subject>Mark Foster:Pools Game Development</subject>
+<post author="JoseWorthen" timestamp="Jun 25, 2012 4:14 AM">
+<s>hi, 
+</s><s>php is a best option for browser based games.</s><s> you can also go for c++ and opengl for developing an online game website. 
+</s><s>thanks jose worthen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4512899-4520504</DOCNO>
+<TEXT>
+<subject>Mark Foster:Pools Game Development</subject>
+<post author="Markfoster11" timestamp="Jun 25, 2012 10:02 PM">
+<s>hi, 
+</s><s>thanks for your suggestion.</s><s> i am aware about php and c++ but opengl is new for me.</s><s> can anyone tell me something about opengl and how i can use it to develop my online game? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4512899-4533197</DOCNO>
+<TEXT>
+<subject>Mark Foster:Pools Game Development</subject>
+<post author="DisantoCory" timestamp="Jul 2, 2012 5:29 AM">
+<s>hi, 
+</s><s>opengl is an instant mode graphics programming api originally developed by sgi.</s><s> opengl provides a complete feature set for 2d and 3d graphics operations in a pipelined hardware accelerated architecture for triangle and polygon rendering.</s><s> in a broader sense, opengl is a powerful and generic toolset for hardware assisted computer graphics. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4512899-4535716</DOCNO>
+<TEXT>
+<subject>Mark Foster:Pools Game Development</subject>
+<post author="Markfoster11" timestamp="Jul 3, 2012 5:52 AM">
+<s>hi, 
+</s><s>disanto cory, thanks for giving me information about opengl.</s><s> can anyone please tell me how i can use opengl to develop my online pools game website.</s><s> please answer me i am waiting.. 
+</s><s>thanks mark foster 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Acrobat.com-developers/Discussions-4512899-4539617</DOCNO>
+<TEXT>
+<subject>Mark Foster:Pools Game Development</subject>
+<post author="PatrioElams" timestamp="Jul 5, 2012 5:16 AM">
+<s>hi mark foster, 
+</s><s>if you want to use opengl, you can read this book "http://www.opengl.org/sdk/".</s><s> i hope it will be helpful for you to develop an online pools game website. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+

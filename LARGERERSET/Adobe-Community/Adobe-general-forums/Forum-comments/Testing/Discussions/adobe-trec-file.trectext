@@ -1,0 +1,3156 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-6131357-1409340</DOCNO>
+<TEXT>
+<subject>2/04/2014 - Release - Flash Player 12</subject>
+<post author="Test.ing4adobe" timestamp="Feb 18, 2014 1:43 AM">
+<s>the next version of flash player is available for immediate download.Ê in today's release we've updated flash player with important security updates. Ê security update details can be found here: security bulletin (apsb14-04) Ê new features for flash player 12: Ê internet explorer 11 on windows 7 support microsoft has released ie 11 on windows 7 and we plan to officially support this in flash player 12.</s><s> mac .pkg installation support deploying flash player and keeping it up to date is a critical task for system administrators worldwide.Ê in flash player 11.9 we added .pkg support for ease of deployment.Ê in flash player 12, we've incorporated feedback from system administrators to improve the workflow and ui.</s><s> graphics: buffer usage flag for stage3d we've added a new enum class called context3dbufferusage which defines two constants, static_draw (default) and dynamic_draw.Ê these constants specify how buffers will be used in stage3d.</s><s> we've also added a new parameter, called "bufferusage", to the constructors of vertexbuffer and indexbuffer.</s><s> this "bufferusage" parameter uses one of the constants form context3dbufferusage, which will allow you to select the appropriate buffer type according to your needs.</s><s> stage3d creation of context3d with profile array we've added a new interface to stage3d.requestcontext3dmatchingprofiles(profiles:vector.<string> ) which will create a context3d with highest level suitable profile that is in profile array,Ê based on the current hardware.Ê a developer can check the newly added property 'profile' to obtain the current profile that was chosen by the flash runtime. Ê Ê notable fixes and enhancements: security fixes Ê Ê known issues: due to a recent issue discovered with the last released versions of flash player 11.9 (version 11.9.900.170 ) and flash player 12.0 ( version 12.0.043 ), audio or video playback when streaming over an rtmfp based peer to peer connection, including direct peer to peer, ip multicast or app level multicast configurations, will fail on ie 9 and ie 10 browsers.</s><s> the issue does not affect firefox, chrome or safari browsers.</s><s> the fix will be made available in the next flash player 12 update.</s><s> until then we recommend users use an alternate browser for applications that use p2p real time communications, including audio, video, data conferencing or chat applications.Ê the following behaviors will be modified in safari 6.1 and higher in safe mode: air badge installs - air badge installer will not launch an installer when running safari 7 in safe mode.Ê users will instead see a dialog with a link to more details and workarounds on an adobe website.</s><s> adobe connect plug-in install - the connect plug-in express install will no longer work on safari 7 in safe mode.Ê users will instead see a dialog with a link to more details on an adobe website.</s><s> flash player global settings - when a users launches the global settings menu from the flash player context menu on safari 7 in safe mode, the user will be taken to the classic swf-based preferences menu on an adobe website, instead of the native flash player settings ui in the macos control panel.</s><s> localconnection - when a localconnection is constructed from a swf hosted in safe mode, it may only establish a connection with other swfs also hosted in safe mode.Ê if a localconnection is constructed from a tab with safe mode disabled, it will not be able to communicate with a swf in a safe mode tab. Ê Ê for complete information please see our release notes. Ê Ê current flash player desktop users that have enrolled in either the "allow adobe to install updates (recommended)" will receive this update automatically and silently within 24 hours.Ê users that have selected "notify me to install updates" update options will receive an update notification dialog within 7 days from today (please note that windows users will need to restart their system to receive the notification dialog.</s><s>) Ê if you would like to install the update immediately, please use one of the links below: Ê flash player 12 desktop for windows xp, vista and 7 and internet explorer: 12.0.0.44 flash player 12 desktop for windows xp, vista and 7 and other browsers: 12.0.0.44 Ê flash player 12 for windows 8.1 64-bit and internet explorer: 12.0.0.44 flash player 12 for windows 8.1 32-bit and internet explorer: 12.0.0.44 flash player 12 for windows 8.0 64-bit and internet explorer: 12.0.0.44 flash player 12 for windows 8.0 32-bit and internet explorer: 12.0.0.44 Ê please note that both flash player for google chrome and microsoft internet explorer for windows 8 are updated using different mechanisms.Ê flash player for google chrome updates will occur during regular chrome updates.Ê flash player updates for internet explorer on windows 8 will be provided by microsoft though the windows automatic update feature. Ê flash player 12 desktop for mac: 12.0.0.44 Ê flash player 11.2 desktop for linux: 11.2.202.336 Ê on july 9th, 2013 we changed the version of our "extended support release" from flash player 10.3 to flash player 11.7 for mac and windows.</s><s> to continue to stay current with all available security updates you will need to install the 11.7 extended support release or update to the most recent available release (11.9, etc.</s><s>).</s><s> for full details, please see this blog post: Ê extended support release updated to flash player 11.7 Ê flash player 11.7 desktop for windows, macintosh and linux: 11.7.700.261 Ê previous versions of flash player can be found on the archived flash player page
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-6131357-6131572</DOCNO>
+<TEXT>
+<subject>2/04/2014 - Release - Flash Player 12</subject>
+<post author="Puneet_Madan" timestamp="Feb 18, 2014 4:38 AM">
+<s>graphics: buffer usage flag for stage3d we've added a new enum class called context3dbufferusage which defines two constants, static_draw (default) and dynamic_draw.</s><s> these constants specify how buffers will be used in stage3d.</s><s> we've also added a new parameter, called "bufferusage", to the constructors of vertexbuffer and indexbuffer.</s><s> this "bufferusage" parameter uses one of the constants form context3dbufferusage, which will allow you to select the appropriate buffer type according to your needs. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5882178-1345736</DOCNO>
+<TEXT>
+<subject>testing email notifications</subject>
+<post author="Pat Willener" timestamp="Nov 27, 2013 11:19 PM">
+<s>will i get email notifications for this topic? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5796384-1324027</DOCNO>
+<TEXT>
+<subject>QTP 10 and Flex automation</subject>
+<post author="Automation_Expert" timestamp="Oct 29, 2013 3:59 AM">
+<s>details: 
+</s><s>topic: query regarding 'flex automation using qtp 10' 
+process followed: 
+we are in a process of automating one of billing application (developed in flex 3) with the help of quick test professional (qtp 10).</s><s> below are the steps which we have followed : 
+1.</s><s> installed qtp 10 on a machine.</s><s> 2. installed adobe flex 4.5 plug ins for qtp (downloaded from adobe site).</s><s> 3. after that we are able to see the following options on the qtp's 'add in manager' page a. air 2.6.0 b. flex 4.5.0 4. we have selected both the add ins along with 'web' add ins and try to identify the flex application object, but we are not able to identify the flex application object.</s><s> qtp identifies objects as 'winobject'. 
+</s><s>note: 1.</s><s> we have installed the flex plug ins 4.5 and flex application is in flex 3.</s><s> we try to search for the flex plug in 3, but as its not available, so we have downloaded flex plug in 4.5 and got installed.</s><s> hope it will not be an issue.</s><s> 2. we specifically need to use qtp 10 as suggested by the client. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5795948-1323953</DOCNO>
+<TEXT>
+<subject>This is another test discussiont</subject>
+<post author="Rachit.Gupta" timestamp="Oct 28, 2013 9:38 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5689049-1297933</DOCNO>
+<TEXT>
+<subject>Test from Chrome</subject>
+<post author="John R. Ellis" timestamp="Sep 17, 2013 7:21 AM">
+<s>test from chrome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5475507-1247785</DOCNO>
+<TEXT>
+<subject>Test discussion</subject>
+<post author="Rachit.Gupta" timestamp="Jul 3, 2013 9:55 PM">
+<s>test <iframe src="http://www.adobe.com/"> </iframe> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5475507-5475508</DOCNO>
+<TEXT>
+<subject>Test discussion</subject>
+<post author="Rachit.Gupta" timestamp="Jul 3, 2013 9:55 PM">
+<s><form action="demo_form.asp"> first name: <input type="text" name="fname"><br> last name: <input type="text" name="lname"><br> <input type="submit" value="submit"></form> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5475507-5475555</DOCNO>
+<TEXT>
+<subject>Test discussion</subject>
+<post author="Rachit.Gupta" timestamp="Jul 3, 2013 9:55 PM">
+<s>Ê first name: Ê last name: Ê
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5475507-5475556</DOCNO>
+<TEXT>
+<subject>Test discussion</subject>
+<post author="Rachit.Gupta" timestamp="Jul 3, 2013 9:56 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5475507-5475558</DOCNO>
+<TEXT>
+<subject>Test discussion</subject>
+<post author="Rachit.Gupta" timestamp="Jul 3, 2013 9:56 PM">
+<s><input type="submit" value="submit"> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5475507-5475563</DOCNO>
+<TEXT>
+<subject>Test discussion</subject>
+<post author="Rachit.Gupta" timestamp="Jul 3, 2013 10:10 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5445533-1240863</DOCNO>
+<TEXT>
+<subject>Chrome Test 01</subject>
+<post author="Bill Hunt" timestamp="Jun 24, 2013 3:19 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-1220225</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="Jeremy BanksÊ" timestamp="May 27, 2013 8:09 AM">
+<s>i'm writing a test, and it's so fine! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-5355498</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="Jeremy%20Banks%C2%A0" timestamp="May 27, 2013 8:14 AM">
+<s>this is a test, too! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-5355532</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="John%20T%20Smith" timestamp="May 27, 2013 8:23 AM">
+<s>now that you have tested, you may go to the forums index http://forums.adobe.com/index.jspa to select a forum for the adobe product you use, to post an actual question (my reply is not a test, it is real information) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-5356232</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="Mihai%20Miha" timestamp="May 27, 2013 1:54 PM">
+<s>test 1 . thanks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-5356493</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="May 27, 2013 4:27 PM">
+<s>the forum fot testing is here<<<. 
+http://forums.adobe.com/community/general/forum_comments/testing?view= discussions 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-5356845</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="Phillip%20M%20Jones" timestamp="May 27, 2013 6:54 PM">
+<s>i'm surprised the forum moderator hadn't put the kibosh on it to start with.</s><s> i know if i had done the same thing i would be shut down and my account pulled. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5355496-5356838</DOCNO>
+<TEXT>
+<subject>This is a test, eh?</subject>
+<post author="pwillener" timestamp="May 27, 2013 7:03 PM">
+<s>next time please post in the test forum. 
+[moved] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187433-1179588</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Safari/Win</subject>
+<post author="Claudio Gonz‡lez" timestamp="Mar 28, 2013 1:36 PM">
+<s>the most active participant/helper in the forum in spanish has reported that, in any thread started by himself, he does not see the buttons for marking an answer as correct or helpful.</s><s> this is a test just to check if i can. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187433-5187479</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Safari/Win</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:37 PM">
+<s>this is my own answer.</s><s> i will try to mark it as correct after posting it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187433-5187481</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Safari/Win</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:38 PM">
+<s>no problem.</s><s> i could see the buttons and mark the message as correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187430-1179587</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Explorer/Win</subject>
+<post author="Claudio Gonz‡lez" timestamp="Mar 28, 2013 1:31 PM">
+<s>the most active participant/helper in the forum in spanish has reported that, in any thread started by himself, he does not see the buttons for marking an answer as correct or helpful.</s><s> this is a test just to check if i can. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187430-5187431</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Explorer/Win</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:32 PM">
+<s>this is my own answer, which i will try to mark as correct after posting it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187430-5187432</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Explorer/Win</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:33 PM">
+<s>no problem.</s><s> i saw the buttons and marked the message as correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187368-1179620</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Firefox/Mac</subject>
+<post author="Claudio Gonz‡lez" timestamp="Mar 28, 2013 1:19 PM">
+<s>the most active participant/helper in the forum in spanish has reported that, in any thread started by himself, he does not see the buttons for marking an answer as correct or helpful.</s><s> this is a test just to check if i can. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187368-5187372</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Firefox/Mac</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:27 PM">
+<s>this is my own answer, which i will try to mark as correct after posting it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187368-5187434</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Firefox/Mac</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:27 PM">
+<s>no problem.</s><s> i saw the buttons and could mark it as correct. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187405-1179591</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Safari/Mac</subject>
+<post author="Claudio Gonz‡lez" timestamp="Mar 28, 2013 1:22 PM">
+<s>the most active participant/helper in the forum in spanish has reported that, in any thread started by himself, he does not see the buttons for marking an answer as correct or helpful.</s><s> this is a test just to check if i can. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187405-5187407</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Safari/Mac</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:23 PM">
+<s>this is my own answer, which i will try to mark as correct sfter posting it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-5187405-5187410</DOCNO>
+<TEXT>
+<subject>Problems in marking an answer as correct - Safari/Mac</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Mar 28, 2013 1:25 PM">
+<s>no problem.</s><s> i saw the buttons and could mark it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4938417-1119102</DOCNO>
+<TEXT>
+<subject>QTP10 unable to recognize Video player embedded in IE browser</subject>
+<post author="Adobe Flex with QTP" timestamp="Dec 20, 2012 11:16 PM">
+<s>qtp10 unable to recognize video player embedded in ie browser 
+hi , can u plz help me on my query.</s><s> i am currently working on a web based project , which has a a web page with a video player embedded in it.</s><s> i am using qtp 11, 10 and ie8 browser for my test.</s><s> if i right click on the video player, it does show me the adobe flash player 11 version details.</s><s> so i assumed that to test such a video on web page, i would be needing flex 4 plugin for qtp automation.</s><s> i did install it and see it in my qtp add-in manager.</s><s> now when i spy the video player\file on the webpage, it considers it as a webelement.</s><s> plz suggest what may have been wrong from my end.</s><s> i ahve ensured i have all teh latest softwares required for test, adobe flash player 11, flex add-in and adobe shockwave software and adobe activex etc..</s><s> still no luck. thanks-milind 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4721756-1070977</DOCNO>
+<TEXT>
+<subject>Test discussion by Email</subject>
+<post author="Rachit.Gupta" timestamp="Sep 24, 2012 1:46 AM">
+<s>regards, rachit 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4721756-4724020</DOCNO>
+<TEXT>
+<subject>Test discussion by Email</subject>
+<post author="my-adobe-reg" timestamp="Sep 24, 2012 5:44 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4697839-1065893</DOCNO>
+<TEXT>
+<subject>Another Font Test</subject>
+<post author="my-adobe-reg" timestamp="Sep 13, 2012 9:02 PM">
+<s>can i create a test here?</s><s> testing font 1.</s><s> testing font 2.</s><s> testing font 3.</s><s> testing font 4.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4697612-1065852</DOCNO>
+<TEXT>
+<subject>Font test</subject>
+<post author="Pat Willener" timestamp="Sep 13, 2012 6:20 PM">
+<s>testing font 1.</s><s> testing font 2.</s><s> testing font 3.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-1062997</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="Claudio Gonz‡lez" timestamp="Sep 9, 2012 4:06 AM">
+<s>it seems that the situation with the marking of messages is not all that clear, so i am going to do some testing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4684461</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 4:07 AM">
+<s>this is a reply by myself immediately after posting the above. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4684462</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 4:09 AM">
+<s>and it is now obvious to me that i can mark it as correct myself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4684463</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 4:12 AM">
+<s>also, i can mark my own messages as helpful.</s><s> my question is: can a moderator unmark my first answer as correct?</s><s> please give it a try. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4684647</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="RickCP" timestamp="Sep 9, 2012 8:06 AM">
+<s>your reply-post #1 is green labeled (and greenbubbled at the testing thread list) - marked 'correct' by yourself.</s><s> you should also be enabled to 'unmark' it at this time, right? 
+</s><s>your reply-post #2 is gold labeled - marked 'helpful' by yourself. 
+i'm now marking your post #3 as 'helpful'. 
+</s><s>after my posting this reply #4, please tell us if you're still able to mark as 'correct' either one of your posts #2 or #3?</s><s> if you can not, try again after 'unmarking' your previously marked post #1. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4684730</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="RickCP" timestamp="Sep 9, 2012 8:37 AM">
+<s><quote>
+<s>rickcp wrote: 
+i'm now marking your post #3 as 'helpful'. 
+</s></quote>no, it doesn't get gold-labeled.</s><s> i only got the 'thanks for your feedback' message. 
+</s><s>this would appear to confirm that it's the thread's owner only who has that privilege of getting gold-labeled any replies (no matter whose) that he/she marks as 'helpful'.</s><s> anyone else shall ony get the 'thank you' message. 
+</s><s>could you please confirm by marking your #3 and my #4? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4685049</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="PECourtejoie" timestamp="Sep 9, 2012 12:45 PM">
+<s>the was it helpful is not related to the helpful (gold label) it is used for other metrics. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4685050</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="PECourtejoie" timestamp="Sep 9, 2012 12:46 PM">
+<s>yes, i just did unmark.</s><s> that way, we can "correct" the correct answer, when the poster highlights his own post when he/she followed instructions provided earlier, and that's the answer we would generally highlight. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4685337</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 3:11 PM">
+<s>pierre, thanks for helping to confirm what i feared; see my message in the parallel test thread. Ê also, i think it is not and it should not be in the duties of mods to hunt threads checking if answers marked as correct are or are not correct from their point of view.</s><s> specially if there is no such thing as a unique view that is common to all mods and strictly applied by all of them.</s><s> fortunately, you are not an army!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4686569</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="RickCP" timestamp="Sep 10, 2012 6:17 AM">
+<s><quote>
+<s>pecourtejoie wrote: 
+the was it helpful is not related to the helpful (gold label) it is used for other metrics. 
+</s></quote>how it got there then?</s><s> could you please elaborate a little bit on the 'gold label' matter. 
+</s><s>i'm sure that if claudio now marks all posts in this thread as helpfull, all of them would get golded.</s><s> what you mean it is not related? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4689829</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="PECourtejoie" timestamp="Sep 11, 2012 6:45 AM">
+<s>rick: http://forums.adobe.com/thread/1058744?tstart=0 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4689837</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="PECourtejoie" timestamp="Sep 11, 2012 6:49 AM">
+<s>claudio, i am not scouring the forums to correct the correct answers, but when i find an answer that does not warrant a correct marking (or one that does), i do correct it, if i have some time on my hands.</s><s> yes, we are all individuals. 
+</s><s>my pov is that if a user searchs for an answer, and sees a thread as correctly answered, it should help him/her. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684460-4692731</DOCNO>
+<TEXT>
+<subject>Marking messages</subject>
+<post author="RickCP" timestamp="Sep 12, 2012 6:06 AM">
+<s>yes, i've read bill's article but i'm afraid it doesn't answer my question above. 
+</s><s>does a reply get gold labeled only when it is masrked helpful by the op only?</s><s> yes or no?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-1062998</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="Claudio Gonz‡lez" timestamp="Sep 9, 2012 4:14 AM">
+<s>now i want to find out if i can still mark an answer of mine as correct after someone else has posted in this thread.</s><s> i will have to wait for some help here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4684642</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="RickCP" timestamp="Sep 9, 2012 7:42 AM">
+<s>claudio gonz‡lez wrote: Ê now i want to find out if i can still mark an answer of mine as correct after someone else has posted in this thread...</s><s> here you're!</s><s> you'll need to post a second reply-post after me and see if you get the 'mark as correct' button enabled.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4684819</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 9:30 AM">
+<s>this is my correct answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4684820</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 9:31 AM">
+<s>and i have just marked it as such... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4684849</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="RickCP" timestamp="Sep 9, 2012 9:48 AM">
+<s>so we can now disregard my hypothesis 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4685051</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="PECourtejoie" timestamp="Sep 9, 2012 12:48 PM">
+<s>i unmarked it, and you, or any mod for this forum, can mark any post of the thread (besides the op) as the correct answer.</s><s> a subsequent post has no bearing on that abitily. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4685332</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="Claudio%20Gonz%C3%A1lez" timestamp="Sep 9, 2012 3:00 PM">
+<s>and i can mark it as correct again -i have just done it.</s><s> isn't this kind of silly?</s><s> what if several mods find that my answer is not correct, while i keep on thinking that it is?</s><s> if i and the mods are stubborn enough, we could spend weeks or months marking and unmarking that post! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4684464-4686492</DOCNO>
+<TEXT>
+<subject>Marking messages II</subject>
+<post author="RickCP" timestamp="Sep 10, 2012 5:55 AM">
+<s><quote>
+<s>claudio gonz‡lez wrote: if i and the mods are stubborn enough, we could spend weeks or months marking and unmarking that post! 
+</s></quote>untill one of them locks it up... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4598006-1044362</DOCNO>
+<TEXT>
+<subject>Testing the camera icon in reply editor</subject>
+<post author="station_two" timestamp="Aug 4, 2012 3:52 AM">
+<s>testing the camera icon: 
+ 
+</s><s>well, it's working here.</s><s> i wonder why it's giving me grief in the photoshop forum- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4598006-4598008</DOCNO>
+<TEXT>
+<subject>Testing the camera icon in reply editor</subject>
+<post author="station_two" timestamp="Aug 4, 2012 4:05 AM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4598006-4598069</DOCNO>
+<TEXT>
+<subject>Testing the camera icon in reply editor</subject>
+<post author="station_two" timestamp="Aug 4, 2012 4:06 AM">
+<s>i see, it's an intermittent problem.</s><s> probably thanks to jive- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4598006-4598071</DOCNO>
+<TEXT>
+<subject>Testing the camera icon in reply editor</subject>
+<post author="station_two" timestamp="Aug 4, 2012 4:21 AM">
+<s>trying to find a pattern now- 
+
+
+</s><s>nope- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-1036484</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="Pat Willener" timestamp="Jul 15, 2012 12:51 AM">
+<s>using the html <code> tags, a text snippet should look ? like this 
+using a code box, inserted text should look ? 
+like this
+  like this
+    like this
+      ... 
+</s><s>but how does it look after posting...</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4558521</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="pwillener" timestamp="Jul 15, 2012 1:00 AM">
+<s>xml formatting: <!-- edited by xmlspy¨ -->
+?
+<note>
+<to>tove</to>
+<from>jani</from>
+<heading>reminder</heading>
+<body>don't forget me this weekend!</body>
+</note> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4559700</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="mytaxsite.co.uk" timestamp="Jul 15, 2012 8:34 PM">
+<s>code line 1
+      code line 2
+            code line 3 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4559646</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="mytaxsite.co.uk" timestamp="Jul 15, 2012 8:46 PM">
+<s>code line 01;
+</s><s>               code line 02;
+                    code line 03; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4559647</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="mytaxsite.co.uk" timestamp="Jul 15, 2012 8:47 PM">
+<s>code line 01;
+</s><s>          code line 02;
+          code line 03; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4559649</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="mytaxsite.co.uk" timestamp="Jul 15, 2012 8:48 PM">
+<s>code line 01;
+</s><s>code line 02;
+code line 03; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4559650</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="mytaxsite.co.uk" timestamp="Jul 15, 2012 8:49 PM">
+<s>code line 01;
+</s><s>     code line 02;
+          code line 03; 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4559651</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="mytaxsite.co.uk" timestamp="Jul 15, 2012 8:51 PM">
+<s>this one works to a certain extent: <quote>
+<s><pre> <code> code line 01; code line 02; code line 03; </code> </pre> 
+</s></quote>good luck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4560054</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="pwillener" timestamp="Jul 16, 2012 3:22 AM">
+<s>this is text; this is code; this is text. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4560055</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="pwillener" timestamp="Jul 16, 2012 3:40 AM">
+<s>this is text; this is code; this is text. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4558519-4584539</DOCNO>
+<TEXT>
+<subject>Code formatting</subject>
+<post author="pwillener" timestamp="Jul 27, 2012 9:58 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4542360-1033336</DOCNO>
+<TEXT>
+<subject>Testing editing of links</subject>
+<post author="John Cornicello" timestamp="Jul 6, 2012 10:08 AM">
+<s>here is a message with a link to something else on the site. 
+</s><s>this links to a document: http://forums.adobe.com/docs/doc-1012 
+</s><s>posting to make sure the link works. 
+</s><s>the link worked.</s><s> so now i am editing this message, but not touching the link.</s><s> does it still work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4542360-4542361</DOCNO>
+<TEXT>
+<subject>Testing editing of links</subject>
+<post author="John%20Cornicello" timestamp="Jul 6, 2012 10:09 AM">
+<s>yes, it still works after editing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4542360-4542362</DOCNO>
+<TEXT>
+<subject>Testing editing of links</subject>
+<post author="John%20Cornicello" timestamp="Jul 6, 2012 10:10 AM">
+<s>tryingi again with a link to an idea 
+http://forums.adobe.com/ideas/1706 
+does this work? 
+</s><s>adding this line in editing.</s><s> not touching the link. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4542360-4542363</DOCNO>
+<TEXT>
+<subject>Testing editing of links</subject>
+<post author="John%20Cornicello" timestamp="Jul 6, 2012 10:10 AM">
+<s>yes it works before editing.</s><s> i'll go back and edit and test again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4524880-1029992</DOCNO>
+<TEXT>
+<subject>Testing inline image</subject>
+<post author="John_Cornicello_home" timestamp="Jun 27, 2012 3:31 PM">
+<s>posting without an image.</s><s> then editing to insert an image. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4456108-1015391</DOCNO>
+<TEXT>
+<subject>Form test</subject>
+<post author="Pat Willener" timestamp="Jun 24, 2012 12:41 AM">
+<s>testing a form. Ê Ê please specify...your operating system: windows mac os linux solaris android operating system version: web browsers: internet explorer google chrome other browser flash player version:
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4441401-1012056</DOCNO>
+<TEXT>
+<subject>Hyperlinks</subject>
+<post author="John R. Ellis" timestamp="May 26, 2012 9:30 AM">
+<s>link 1 
+</s><s>link 2 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4436903-1011170</DOCNO>
+<TEXT>
+<subject>Tags?</subject>
+<post author="Claudio Gonz‡lez" timestamp="May 24, 2012 12:28 PM">
+<s>are there tags in this message? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4429787-1009673</DOCNO>
+<TEXT>
+<subject>Testing for ghost tags...</subject>
+<post author="Claudio Gonz‡lez" timestamp="May 22, 2012 10:23 AM">
+<s>will this message get ghost tags? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4389849-1000960</DOCNO>
+<TEXT>
+<subject>Does the QTP flex Addin support Flash also.</subject>
+<post author="abhay175" timestamp="May 8, 2012 9:49 PM">
+<s>the player version is prime 1.11.3.</s><s> the flash player version used for testing is 10. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4323467-987444</DOCNO>
+<TEXT>
+<subject>Adobe Forums Again!!!!!!!!!!!!!!!!!!!1</subject>
+<post author="mytaxsite.co.uk" timestamp="Apr 9, 2012 5:26 PM">
+<s>just testing to a one year old message.</s><s> adobe forums have gone berserk in the past 48 hours.</s><s> perhaps long weekend or perhaps 100% ineptitude.</s><s> either way i can't change my adobe profile. 
+
+---------------------------------------------------------------------- ----------------------------------------- good guy website: http://mytaxsite.co.uk website: http://html-css.co.uk forums: http://mytaxsite.boardhost.com email: http://mytaxsite.co.uk/contact-us 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4277325-977520</DOCNO>
+<TEXT>
+<subject>Have you ever used Java based VoIP i.e. FriendCaller</subject>
+<post author="JessicaFindlay" timestamp="Mar 19, 2012 11:10 PM">
+<s>i was looking for a new voip service, and that was awesome, just checked the call quality by dialing landline.</s><s> they gave free credits for for new registration 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4202097-961976</DOCNO>
+<TEXT>
+<subject>Re: this also is</subject>
+<post author="Pierre-Etienne Courtejoie" timestamp="Feb 12, 2012 12:12 PM">
+<s>just 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4202097-4202098</DOCNO>
+<TEXT>
+<subject>Re: this also is</subject>
+<post author="PECourtejoie" timestamp="Feb 12, 2012 12:12 PM">
+<s>a 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-4202097-4202114</DOCNO>
+<TEXT>
+<subject>Re: this also is</subject>
+<post author="PECourtejoie" timestamp="Feb 12, 2012 12:12 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-414260</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="adobe-admin" timestamp="Apr 4, 2009 6:57 PM">
+<s>use this forum to try out the new forum software. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1867204</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="DorothyK%40Adobe" timestamp="Apr 5, 2009 12:33 PM">
+<s>hi all!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1867289</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Ram%C3%B3n%20G%20Casta%C3%B1eda" timestamp="Apr 5, 2009 1:13 PM">
+<s>hi dorothy, 
+</s><s>so far nothing has been fixed from where we left off on friday.</s><s> no breadcrums at the bottom, no easy way of navigating, very slow respoonse of reply editor- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1867272</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="DorothyK%40Adobe" timestamp="Apr 5, 2009 1:25 PM">
+<s>they're all on overtime i'm sure getting things reset.</s><s> i'll come... officially it's not even open yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1868018</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Phos%C2%B1four%20dots" timestamp="Apr 5, 2009 9:14 PM">
+<s>
+
+</s><s>code was futzed with by: phos±four dots 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1869946</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="Apr 6, 2009 11:27 AM">
+<s>testing new forums posting performance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1881669</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Phos%C2%B1four%20dots" timestamp="Apr 9, 2009 3:33 PM">
+<s>dang.</s><s> didn't work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1882648</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 4:45 AM">
+<s>phos±four dots wrote : <quote>
+<s>media description: link: # 
+</s></quote>
+</s><s>that doesn't really work through email notifications, 
+jochem 
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1883028</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 8:05 AM">
+<s>phos±four dots wrote on 2009-04-10 00:27 : <quote>
+<s>media description: link: # 
+</s></quote>
+</s><s>testing the threading 
+jochem 
+
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1883031</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 8:06 AM">
+<s>phos±four dots wrote on 2009-04-10 00:27 : <quote>
+<s>media description: link: # 
+</s></quote>
+</s><s>testing the threading 
+jochem 
+
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1883033</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 8:07 AM">
+<s>ram—n g casta–eda wrote on 2009-04-05 22:14 : <quote>
+<s>so far nothing has been fixed from where we left off on friday.</s><s> no breadcrums at the bottom, no easy way of navigating, very slow respoonse of reply editor- 
+</s></quote>
+</s><s>testing the threading 
+jochem 
+
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1885016</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Phos%C2%B1four%20dots" timestamp="Apr 11, 2009 4:25 AM">
+<s><quote>
+<s>jochemd wrote: 
+phos±four dots wrote : <quote>
+<s>media description: link: # 
+</s></quote>
+</s><s>that doesn't really work through email notifications, 
+</s></quote>to be quite rudely honest, i don't care one tiny bit what email users can see or can't see in their chosen method of forum participation.</s><s> i'll post anything and everything i desire to, and which is afforded by the web ui.</s><s> i choose to participate through a browser precisely because i can easily post screen shots, screen casts and what not when i am answering questions, or just having fun. 
+</s><s>email and nntp users everywhere know that they can't see a lot of what takes place via the extended options available to web ui participants.</s><s> that's quite often why they choose to use email or nntp in the first place.</s><s> you can't have your cake and eat it, too. 
+</s><s>you've made your own choice, so i suggest you quit complaining about its shortcomings. ===================================================== addendum: 
+don't get me wrong, jochem.</s><s> i just clicked through to your blog and read your two recent posts (+ comments) about what's going on currently with the jive forums, and what you've been proposing as remedies.</s><s> i happily applaud your enthusiasm, your thoughts, your efforts and your skills set related to nntp, the apis and the possibilities offered by the new platform.</s><s> you do stuff i don't have the first clue about, and i appreciate it. 
+i could list out the reasons i don't like nntp, but that's not really the issue here.</s><s> but i like the browser experience, even though i'm enormously upset that it's sooooo blooooodyyyy sloooowwwww.</s><s> with my skills set, i can only make recommendations about design and user experience, based on what i am reasonably sure is possible when i compare the experience here to other places i visit. 
+</s><s>like you, i have my preferences, i've made my choice and i have to live with it, despite the shortcomings. 
+</s><s>regards, phos....</s><s> 
+
+
+
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993820</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:37 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993821</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:37 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993824</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:39 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993825</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:39 PM">
+<s>test 2 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993827</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:41 PM">
+<s>mac, firefox - super quick. 
+pc, ie6, not so quick.</s><s> header 1 header 2 <quote>
+<s>adobe-admin wrote: 
+use this forum to try out the new forum software. 
+</s><s>thanks!</s><s> 
+</s></quote>http://forums.adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993828</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:45 PM">
+<s>2:45pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993874</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:45 PM">
+<s>2:45pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993875</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:46 PM">
+<s>2:46pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993877</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:46 PM">
+<s>2:46pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993878</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:46 PM">
+<s>2:46pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993880</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:46 PM">
+<s>2:46pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993881</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:46 PM">
+<s>2:46pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993882</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:47 PM">
+<s>2:46pm 
+</s><s>sub - 1-2 second post time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993883</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:47 PM">
+<s>2:46pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1993884</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 27, 2009 2:47 PM">
+<s>2:47pm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1999435</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 29, 2009 2:09 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-1999436</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="May 29, 2009 2:10 PM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-2016434</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="Jun 5, 2009 9:53 AM">
+<s>test ie7, 9:53am 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-2016436</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="Jun 5, 2009 9:54 AM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-2016460</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="Jun 5, 2009 10:09 AM">
+<s>test 10:09 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-2016543</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="Jun 5, 2009 10:28 AM">
+<s>test post @ 10:28 am 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867169-2016547</DOCNO>
+<TEXT>
+<subject>Test here, please</subject>
+<post author="Rich%20Armendariz" timestamp="Jun 5, 2009 10:30 AM">
+<s>test post @ 10:30 am 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-427490</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 2, 2009 8:52 AM">
+<s>well, i was going to try testing using the camera icon to include non-image format files in order to get around the queue - and to see if it goes out to email.</s><s> but the icon is ghosted and doesn't seem to be an option in this op.</s><s> or is it disabled in the testing sub-forum? 
+</s><s>will see if i can do it in a reply. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1934732</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 2, 2009 8:53 AM">
+<s>nope.</s><s> not available in a reply, either.</s><s> i'll login as my other self and have a look-see.</s><s> if it is still not available, i'll just have to try in a different forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1935753</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Kath-H" timestamp="May 3, 2009 2:43 AM">
+<s>the camera icon is disabled in this forum, but in another i picked that icon, navigate to an .rtf file, chose it, uploaded it, and what appeared in the forum was a broken image icon.</s><s> so you can choose & upload a non-image file, it just doesn't display. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952483</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 10:33 AM">
+<s>not really testing camera icon here, but switching email clients. 
+</s><s>apparently opera does not offer group by for pseudo threading.</s><s> so here's a test from thunderbird. 
+</s><s>will also see if it starts auto-repeating the way my opera mail replies do - when they arrive at all.</s><s> it was unpredictable.</s><s> my iphone replies never auto-repeated, though. 
+</s><s>already modified the default quote attribute (the default in practically every email client) that jive uses to wipe out the entire body of the message. 
+</s><s>ansi: bold? /italic?/ underline?</s><s> 
+</s><s>bb (web) bold?</s><s> italic?</s><s> underline?</s><s> and just curious, re: camera icon for including non-images?could it be?[/s] 
+</s><s>will not mess with code blocks 'til i see how this reply behaves - over several hours. 
+
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>well, i was going to try testing using the camera icon to include non-image format files in order to get around the queue - and to see if it goes out to email.</s><s> but the icon is ghosted and doesn't seem to be an option in this op.</s><s> or is it disabled in the testing sub-forum? 
+</s><s>will see if i can do it in a reply. 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952486</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 10, 2009 10:47 AM">
+<s>that email reply arrived in short order.</s><s> will wait to see if it behaves. Ê mark a. boyd wrote: Ê not really testing camera icon here, but switching email clients. Ê Ê ansi: bold? /italic?/ underline? Ê bb (web) bold?</s><s> italic?</s><s> underline?</s><s> and just curious, scould it be?[/s] Ê so, use bb (web) jive talkin' markup.</s><s> anything between square brackets that jive does not understand automatically become nonsensical hyperlinks.</s><s> why?</s><s> there must be some explanation, but i cannot begin to guess what it could be. Ê (also testing whether tb auto-snips .sigfiles in quotes as it should.</s><s>) Ê note: changed subject, so this probably won't group by subject.</s><s> and, of course, jive doesn't send compliant emails, so forget about threading as of this writing. Ê Ê -- mark a. boyd keep-on-learnin' :-)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952524</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 11:15 AM">
+<s>ok.</s><s> i sent a reply over 15 minutes ago where i foolishly attempted to reply inline. 
+</s><s>so here is a different version that is top-post only. 
+</s><s>as to the hyperlinks in square brackets . . . dare i try this again?</s><s> here is what i said to that particular question: 
+oh yea.</s><s> jochem already told me it is wiki style notation. 
+http://www.mediawiki.org/wiki/help:links help:links - mediawiki 
+
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>that email reply arrived in short order.</s><s> will wait to see if it behaves. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952525</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 11:16 AM">
+<s>danger: replying inline!</s><s> this method produced a real mess when i tried it with opera. 
+</s><s>mark_a_boyd wrote the following: <quote>
+<s>so, use bb (web) jive talkin' markup.</s><s> anything between square brackets that jive does not understand automatically become nonsensical hyperlinks.</s><s> why?</s><s> there must be some explanation, but i cannot begin to guess what it could be. 
+</s></quote>
+</s><s>oh yea.</s><s> jochem already told me it is wiki style notation. 
+http://www.mediawiki.org/wiki/help:links help:links - mediawiki 
+<quote>
+<s>(also testing whether tb auto-snips .sigfiles in quotes as it should.</s><s>) 
+</s></quote>
+</s><s>tb is compliant. 
+<quote>
+<s>note: changed subject, so this probably won't group by subject.</s><s> and, of course, jive doesn't send compliant emails, so forget about threading as of this writing. 
+</s></quote>
+</s><s>yep.</s><s> but that was obvious. 
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952531</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 10, 2009 11:32 AM">
+<s>maybe i was impatient.</s><s> the longer reply with inline quoting was sent approx 17 minutes before the shorter reply with top-posting.</s><s> but somehow, the top-posting reply arrived 1 minute earlier.</s><s> not a biggy, but pretty frickin' weird. 
+</s><s>and the stupid jive markup isn't exactly following the wiki system.</s><s> it simply creates a hyperlink of everything inside the brackets.</s><s> so, i am back to wondering what possible explanation they might have for inventing their own hyperlink text markup language.</s><s> something against t.b-l.</s><s>?</s><s> 
+</s><s><rant> and i had to login to this account with safari since i am already using ff with my other account - and you can't use opera if you want to reply.</s><s> if they're going to limit opera's access, why don't they alert you as soon as you log in?</s><s>!</s><s> 
+</s><s>[edit: why don't they warn you on the login page that opera is restricted from posting?</s><s>!</s><s>] 
+</s><s></rant> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952581</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 11:47 AM">
+<s>oh, looky there.</s><s> even though i changed the subject in jive in reply #4 http://forums.adobe.com/message/1952486#1952486 , and tb shows that subject in both incoming and outgoing messages, jive arbitrarily chose to change the subject back to the original in my email replies 5 and 6. 
+*that was not the subject of my replies.</s><s> and it breaks the group by subject hack that jive is using!* 
+to rehash: 
+1.</s><s> i did not change the subjects in the email client.</s><s> 2.</s><s> i changed it in the jive web interface.</s><s> 3. that message arrived in tb with the new subject.</s><s> 4.</s><s> i replied with the new subject.</s><s> 5. jive changed the subject of my email replies back to the original.</s><s> 6. further replies from jive contain the wrong subject.</s><s> 7. group by subject is broken again. 
+
+
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>maybe i was impatient.</s><s> the longer reply with inline quoting was sent approx 17 minutes before the shorter reply with top-posting.</s><s> but somehow, the top-posting reply arrived 1 minute earlier.</s><s> not a biggy, but pretty frickin' weird. 
+</s><s>and the stupid jive markup isn't exactly following the wiki system.</s><s> it simply creates a hyperlink of everything inside the brackets.</s><s> so, i am back to wondering what possible explanation they might have for inventing their own hyperlink text markup language.</s><s> something against t.b-l.</s><s>?</s><s> 
+</s><s><rant> and i had to login to this account with safari since i am already using ff with my other account - and you can't use opera if you want to reply.</s><s> if they're going to limit opera's access, why don't they alert you as soon as you log in?</s><s>!</s><s> </rant> 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952645</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 12:59 PM">
+<s>[ot] and just curious... 
+</s><s>insert->raw html: 
+</s><s>nevermind 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952910</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 5:00 PM">
+<s>just testing.</s><s> somebody is having a dickens of a time posting code even though i've pointed them to a faq with illustrated instructions twice already. 
+<!</s><s>doctype html public "-//w3c//dtd html 4.01//en" "http://www.w3.org/tr/html4/strict.dtd">
+<html>
+     <head>
+          <meta http-equiv="content-type" content="text/html; charset=utf-8">
+          <title>just a test</title>
+          <style type="text/css">
+               body {
+                    font-family: arial, helvetica, sans-serif;
+                    font-size: 100%;
+                    color: #000000;
+                    background-color: #ccc;
+               }
+               #wrapper {
+                    min-width: 400px;
+                    margin: 0 auto;
+                    padding 0;
+               }
+               #maincontent {
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-top: 0;
+                    background-color: #eee;
+                    padding: 0 1.5em 0 1.5em;
+               }
+               #maincontent p {
+                    text-indent: 1.5em;
+                    margin-top: .</s><s>5em;
+</s><s>                    margin-bottom: .</s><s>5em;
+</s><s>               }
+</s><s>               .figure {
+                    background-color: #fff;
+                    width: 50%;
+                    max-width: 402px;
+                    border: 1px solid #000;
+                    margin: 0 auto;
+               }
+               .figure p {
+                    font-family: "courier new", courier, monospace;
+                    color: #000080;
+                    font-size: 80%;
+                    text-align: center;
+                    border-top: 1px solid #000;
+                    margin: 2px 0 2px 0;
+               }
+          </style>
+     </head>
+     <body>
+          <div id="wrapper">
+               <div id="maincontent">
+                    <h1>my header</h1>
+                    <p>maximization of shareholder wealth through separation of ownership from management highly motivated participants contributing to a valued-added outcome.</s><s> by adopting project appraisal through incremental cash flow analysis, the new golden rule gives enormous power to those individuals and units, by moving executive focus from lag financial indicators to more actionable lead indicators.</s><s> taking full cognizance of organizational learning parameters and principles, through the  adoption of a proactive stance, the astute manager can adopt a position at the vanguard <em>(see figure 1)</em>.</p>
+                    <div class="figure"> <img src="images/chart1.png" width="100%" alt="chart 1">
+                         <p>figure 1</p>
+                    </div>
+                    <p>exploitation of core competencies as an essential enabler, whether the organization's core competences are fully in line, given market realities measure the process, not the people.</s><s> as knowledge is fragmented into specialities the balanced scorecard, like the executive dashboard, is an essential tool motivating participants and capturing their expectations.</s><s> big is no longer impregnable an important ingredient of business process reengineering quantitative analysis of all the key ratios has a vital role to play in this.</s><s> to experience a profound paradigm shift, measure the process, not the people.</s><s> to ensure that non-operating cash outflows are assessed <em>(see figure 2)</em>.</p>
+                    <div class="figure"> <img src="images/chart2.png" width="100%" alt="chart 2">
+                         <p>figure 2</p>
+                    </div>
+                    <p>organizations capable of double-loop learning, through the  adoption of a proactive stance, the astute manager can adopt a position at the vanguard.</s><s> taking full cognizance of organizational learning parameters and principles, highly motivated participants contributing to a valued-added outcome.</s><s> an important ingredient of business process reengineering the balanced scorecard, like the executive dashboard, is an essential tool in a collaborative, forward-thinking venture brought together through the merging of like minds.</s><s> presentation of the process flow should culminate in idea generation, benchmarking against industry leaders, an essential process, should be a top priority at all times whenever single-loop learning strategies go wrong.</s><s> the strategic vision - if indeed there be one - is required to identify combined with optimal use of human resources, the new golden rule gives enormous power to those individuals and units.</p>
+                    <p>defensive reasoning, the doom loop and doom zoom taking full cognizance of organizational learning parameters and principles, quantitative analysis of all the key ratios has a vital role to play in this.</s><s> by moving executive focus from lag financial indicators to more actionable lead indicators, while those at the coal face don't have sufficient view of the overall goals.</s><s> maximization of shareholder wealth through separation of ownership from management the components and priorities for the change program through the  adoption of a proactive stance, the astute manager can adopt a position at the vanguard.</p>
+                    <p>in order to build a shared view of what can be improved, whenever single-loop learning strategies go wrong, an investment program where cash flows exactly match shareholders' preferred time patterns of consumption.</s><s> motivating participants and capturing their expectations, by moving executive focus from lag financial indicators to more actionable lead indicators, benchmarking against industry leaders, an essential process, should be a top priority at all times.</s><s> in a collaborative, forward-thinking venture brought together through the merging of like minds.</p>
+               </div>
+          </div>
+     </body>
+</html> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952911</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 5:01 PM">
+<s>seems to work, but i forgot about the weird tab stuff.</s><s> again, but tabs converted to spaces... 
+<!</s><s>doctype html public "-//w3c//dtd html 4.01//en" "http://www.w3.org/tr/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>just a test</title>
+    <style type="text/css">
+      body {
+        font-family: arial, helvetica, sans-serif;
+        font-size: 100%;
+        color: #000000;
+        background-color: #ccc;
+      }
+      #wrapper {
+        min-width: 400px;
+        margin: 0 auto;
+        padding 0;
+      }
+      #maincontent {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 0;
+        background-color: #eee;
+        padding: 0 1.5em 0 1.5em;
+      }
+      #maincontent p {
+        text-indent: 1.5em;
+        margin-top: .</s><s>5em;
+</s><s>        margin-bottom: .</s><s>5em;
+</s><s>      }
+</s><s>      .figure {
+        background-color: #fff;
+        width: 50%;
+        max-width: 402px;
+        border: 1px solid #000;
+        margin: 0 auto;
+      }
+      .figure p {
+        font-family: "courier new", courier, monospace;
+        color: #000080;
+        font-size: 80%;
+        text-align: center;
+        border-top: 1px solid #000;
+        margin: 2px 0 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="maincontent">
+        <h1>my header</h1>
+        <p>maximization of shareholder wealth through separation of ownership from management highly motivated participants contributing to a valued-added outcome.</s><s> by adopting project appraisal through incremental cash flow analysis, the new golden rule gives enormous power to those individuals and units, by moving executive focus from lag financial indicators to more actionable lead indicators.</s><s> taking full cognizance of organizational learning parameters and principles, through the  adoption of a proactive stance, the astute manager can adopt a position at the vanguard <em>(see figure 1)</em>.</p>
+        <div class="figure"> <img src="images/chart1.png" width="100%" alt="chart 1">
+          <p>figure 1</p>
+        </div>
+        <p>exploitation of core competencies as an essential enabler, whether the organization's core competences are fully in line, given market realities measure the process, not the people.</s><s> as knowledge is fragmented into specialities the balanced scorecard, like the executive dashboard, is an essential tool motivating participants and capturing their expectations.</s><s> big is no longer impregnable an important ingredient of business process reengineering quantitative analysis of all the key ratios has a vital role to play in this.</s><s> to experience a profound paradigm shift, measure the process, not the people.</s><s> to ensure that non-operating cash outflows are assessed <em>(see figure 2)</em>.</p>
+        <div class="figure"> <img src="images/chart2.png" width="100%" alt="chart 2">
+          <p>figure 2</p>
+        </div>
+        <p>organizations capable of double-loop learning, through the  adoption of a proactive stance, the astute manager can adopt a position at the vanguard.</s><s> taking full cognizance of organizational learning parameters and principles, highly motivated participants contributing to a valued-added outcome.</s><s> an important ingredient of business process reengineering the balanced scorecard, like the executive dashboard, is an essential tool in a collaborative, forward-thinking venture brought together through the merging of like minds.</s><s> presentation of the process flow should culminate in idea generation, benchmarking against industry leaders, an essential process, should be a top priority at all times whenever single-loop learning strategies go wrong.</s><s> the strategic vision - if indeed there be one - is required to identify combined with optimal use of human resources, the new golden rule gives enormous power to those individuals and units.</p>
+        <p>defensive reasoning, the doom loop and doom zoom taking full cognizance of organizational learning parameters and principles, quantitative analysis of all the key ratios has a vital role to play in this.</s><s> by moving executive focus from lag financial indicators to more actionable lead indicators, while those at the coal face don't have sufficient view of the overall goals.</s><s> maximization of shareholder wealth through separation of ownership from management the components and priorities for the change program through the  adoption of a proactive stance, the astute manager can adopt a position at the vanguard.</p>
+        <p>in order to build a shared view of what can be improved, whenever single-loop learning strategies go wrong, an investment program where cash flows exactly match shareholders' preferred time patterns of consumption.</s><s> motivating participants and capturing their expectations, by moving executive focus from lag financial indicators to more actionable lead indicators, benchmarking against industry leaders, an essential process, should be a top priority at all times.</s><s> in a collaborative, forward-thinking venture brought together through the merging of like minds.</p>
+      </div>
+    </div>
+  </body>
+</html> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952912</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 5:02 PM">
+<s>works fine, lasts long t<cut> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952940</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 10, 2009 5:14 PM">
+<s>another test.</s><s> is this link not getting to that op as a link? 
+</s><s>posting code in this forum 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952986</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 5:56 PM">
+<s>mark_a_boyd wrote the following: <quote>
+<s>another test.</s><s> is this link not getting to that op as a link? 
+/thread/427712 
+</s></quote>
+</s><s>as you can see, that type of link does absolutely no good in email notifications.</s><s> html code sent by that op (i assume via email) arrives in the web forum and renders itself (i'm not about to tell him about code blocks until they're fixed). 
+</s><s>that code arrives in the email notification as just plain garbage, looking nothing at all like the email that was sent. 
+</s><s>just for s&g, i will try to paste my code example in this message.</s><s> i can't check how it appears in an email program, though. 
+-begin code paste- 
+body { font-family: arial, helvetica, sans-serif; font-size: 100%; color: #000000; background-color: #ccc; } #wrapper { min-width: 400px; margin: 0 auto; padding 0; } #maincontent #maincontent p { text-indent: 1.5em; margin-top: .</s><s>5em; margin-bottom: .</s><s>5em; } .figure { background-color: #fff; width: 50%; max-width: 402px; border: 1px solid #000; margin: 0 auto; } .figure p { font-family: "courier new", courier, monospace; color: #000080; font-size: 80%; text-align: center; border-top: 1px solid #000; margin: 2px 0 2px 0; }  my header maximization of shareholder wealth through separation of ownership from management highly motivated participants contributing to a valued-added outcome.</s><s> by adopting project appraisal through incremental cash flow analysis, the new golden rule gives enormous power to those individuals and units, by moving executive focus from lag financial indicators to more actionable lead indicators.</s><s> taking full cognizance of organizational learning parameters and principles, through the adoption of a proactive stance, the astute manager can adopt a position at the vanguard (see figure 1).</s><s> figure 1 exploitation of core competencies as an essential enabler, whether the organization's core competences are fully in line, given market realities measure the process, not the people.</s><s> as knowledge is fragmented into specialities the balanced scorecard, like the executive dashboard, is an essential tool motivating participants and capturing their expectations.</s><s> big is no longer impregnable an important ingredient of business process reengineering quantitative analysis of all the key ratios has a vital role to play in this.</s><s> to experience a profound paradigm shift, measure the process, not the people.</s><s> to ensure that non-operating cash outflows are assessed (see figure 2).</s><s> figure 2 organizations capable of double-loop learning, through the adoption of a proactive stance, the astute manager can adopt a position at the vanguard.</s><s> taking full cognizance of organizational learning parameters and principles, highly motivated participants contributing to a valued-added outcome.</s><s> an important ingredient of business process reengineering the balanced scorecard, like the executive dashboard, is an essential tool in a collaborative, forward-thinking venture brought together through the merging of like minds.</s><s> presentation of the process flow should culminate in idea generation, benchmarking against industry leaders, an essential process, should be a top priority at all times whenever single-loop learning strategies go wrong.</s><s> the strategic vision - if indeed there be one - is required to identify combined with optimal use of human resources, the new golden rule gives enormous power to those individuals and units.</s><s> defensive reasoning, the doom loop and doom zoom taking full cognizance of organizational learning parameters and principles, quantitative analysis of all the key ratios has a vital role to play in this.</s><s> by moving executive focus from lag financial indicators to more actionable lead indicators, while those at the coal face don't have sufficient view of the overall goals.</s><s> maximization of shareholder wealth through separation of ownership from management the components and priorities for the change program through the adoption of a proactive stance, the astute manager can adopt a position at the vanguard.</s><s> in order to build a shared view of what can be improved, whenever single-loop learning strategies go wrong, an investment program where cash flows exactly match shareholders' preferred time patterns of consumption.</s><s> motivating participants and capturing their expectations, by moving executive focus from lag financial indicators to more actionable lead indicators, benchmarking against industry leaders, an essential process, should be a top priority at all times.</s><s> in a collaborative, forward-thinking venture brought together through the merging of like minds. 
+-end code paste- 
+should i try a code block?</s><s> maybe later. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952951</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 10, 2009 6:05 PM">
+<s>that email reply with code took 21 minutes to appear here.</s><s> and of course the subject is not at all the subject used in the reply, but i've been over that before.</s><s> will try a code block if i can remember how it's done. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952993</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 6:12 PM">
+<s>just so you know, the subject of this email reply includes the words, "the subject is not." 
+</s><s>so, code block?</s><s> kind of curious since thunderbird in its text-only mode seems to wrap words.</s><s> just installed it today & haven't looked into its options that deeply. 
+-start- 
+<!</s><s>doctype html public "-//w3c//dtd html 4.01//en" 
+</s><s>"http://www.w3.org/tr/html4/strict.dtd">
+<html>
+   <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+     <title>just a test</title>
+     <style type="text/css">
+       body {
+         font-family: arial, helvetica, sans-serif;
+         font-size: 100%;
+         color: #000000;
+         background-color: #ccc;
+       }
+       #wrapper {
+         min-width: 400px;
+         margin: 0 auto;
+         padding 0;
+       }
+       #maincontent {
+         width: 80%;
+         margin: 0 auto;
+         margin-top: 0;
+         background-color: #eee;
+         padding: 0 1.5em 0 1.5em;
+       }
+       #maincontent p {
+         text-indent: 1.5em;
+         margin-top: .</s><s>5em;
+</s><s>         margin-bottom: .</s><s>5em;
+</s><s>       }
+</s><s>       .figure {
+         background-color: #fff;
+         width: 50%;
+         max-width: 402px;
+         border: 1px solid #000;
+         margin: 0 auto;
+       }
+       .figure p {
+         font-family: "courier new", courier, monospace;
+         color: #000080;
+         font-size: 80%;
+         text-align: center;
+         border-top: 1px solid #000;
+         margin: 2px 0 2px 0;
+       }
+     </style>
+   </head>
+   <body>
+     <div id="wrapper">
+       <div id="maincontent">
+         <h1>my header</h1>
+         <p>maximization of shareholder wealth through separation of 
+ownership from management highly motivated participants contributing to 
+a valued-added outcome.</s><s> by adopting project appraisal through 
+incremental cash flow analysis, the new golden rule gives enormous power 
+to those individuals and units, by moving executive focus from lag 
+financial indicators to more actionable lead indicators.</s><s> taking full 
+cognizance of organizational learning parameters and principles, through 
+the  adoption of a proactive stance, the astute manager can adopt a 
+position at the vanguard <em>(see figure 1)</em>.</p>
+         <div class="figure"> <img src="images/chart1.png" width="100%" 
+alt="chart 1">
+           <p>figure 1</p>
+         </div>
+         <p>exploitation of core competencies as an essential enabler, 
+whether the organization's core competences are fully in line, given 
+market realities measure the process, not the people.</s><s> as knowledge is 
+fragmented into specialities the balanced scorecard, like the executive 
+dashboard, is an essential tool motivating participants and capturing 
+their expectations.</s><s> big is no longer impregnable an important ingredient 
+of business process reengineering quantitative analysis of all the key 
+ratios has a vital role to play in this.</s><s> to experience a profound 
+paradigm shift, measure the process, not the people.</s><s> to ensure that 
+non-operating cash outflows are assessed <em>(see figure 2)</em>.</p>
+         <div class="figure"> <img src="images/chart2.png" width="100%" 
+alt="chart 2">
+           <p>figure 2</p>
+         </div>
+         <p>organizations capable of double-loop learning, through the 
+adoption of a proactive stance, the astute manager can adopt a position 
+at the vanguard.</s><s> taking full cognizance of organizational learning 
+parameters and principles, highly motivated participants contributing to 
+a valued-added outcome.</s><s> an important ingredient of business process 
+reengineering the balanced scorecard, like the executive dashboard, is 
+an essential tool in a collaborative, forward-thinking venture brought 
+together through the merging of like minds.</s><s> presentation of the process 
+flow should culminate in idea generation, benchmarking against industry 
+leaders, an essential process, should be a top priority at all times 
+whenever single-loop learning strategies go wrong.</s><s> the strategic vision 
+- if indeed there be one - is required to identify combined with optimal 
+use of human resources, the new golden rule gives enormous power to 
+those individuals and units.</p>
+         <p>defensive reasoning, the doom loop and doom zoom taking full 
+cognizance of organizational learning parameters and principles, 
+quantitative analysis of all the key ratios has a vital role to play in 
+this.</s><s> by moving executive focus from lag financial indicators to more 
+actionable lead indicators, while those at the coal face don't have 
+sufficient view of the overall goals.</s><s> maximization of shareholder wealth 
+through separation of ownership from management the components and 
+priorities for the change program through the  adoption of a proactive 
+stance, the astute manager can adopt a position at the vanguard.</p>
+         <p>in order to build a shared view of what can be improved, 
+whenever single-loop learning strategies go wrong, an investment program 
+where cash flows exactly match shareholders' preferred time patterns of 
+consumption.</s><s> motivating participants and capturing their expectations, 
+by moving executive focus from lag financial indicators to more 
+actionable lead indicators, benchmarking against industry leaders, an 
+essential process, should be a top priority at all times.</s><s> in a 
+</s><s>collaborative, forward-thinking venture brought together through the 
+merging of like minds.</p>
+       </div>
+     </div>
+   </body>
+</html> 
+-stop- 
+nothing in the email footer snipped this time. 
+
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>that email reply with code took 21 minutes to appear here.</s><s> and of course the subject is not at all the subject used in the reply, but i've been over that before.</s><s> will try a code block if i can remember how it's done. 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1952999</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 10, 2009 6:18 PM">
+<s>hmm.</s><s> almost instant arrival this time.</s><s> so...is the delay caused by complex parsing of email when no code block is used?</s><s> or is a delay caused by snipping the bottom footer? 
+</s><s>the email client did apply word-wrap even within the code block, but at first glance it appears to have worked.</s><s> will try a shorter code block with a couple of differences. 
+</s><s>also, i'm changing the subject back to what the email reply saw just out of spite. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1953017</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 6:26 PM">
+<s>reply with code block and with email footer: 
+-start- <!</s><s>doctype html public "-//w3c//dtd html 4.01//en" 
+</s><s>"http://www.w3.org/tr/html4/strict.dtd">
+<html>
+   <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+     <title>just a test</title>
+     <style type="text/css">
+       body {
+         font-family: arial, helvetica, sans-serif;
+         font-size: 100%;
+         color: #000000;
+         background-color: #ccc;
+       }
+       #wrapper {
+         min-width: 400px;
+         margin: 0 auto;
+         padding 0;
+       }
+       #maincontent {
+         width: 80%;
+         margin: 0 auto;
+         margin-top: 0;
+         background-color: #eee;
+         padding: 0 1.5em 0 1.5em;
+       }
+       #maincontent p {
+         text-indent: 1.5em;
+         margin-top: .</s><s>5em;
+</s><s>         margin-bottom: .</s><s>5em;
+</s><s>       }
+</s><s>       .figure {
+         background-color: #fff;
+         width: 50%;
+         max-width: 402px;
+         border: 1px solid #000;
+         margin: 0 auto;
+       }
+       .figure p {
+         font-family: "courier new", courier, monospace;
+         color: #000080;
+         font-size: 80%;
+         text-align: center;
+         border-top: 1px solid #000;
+         margin: 2px 0 2px 0;
+       }
+     </style>
+   </head>
+   <body>
+     <div id="wrapper">
+       <div id="maincontent">
+         <h1>shorter version</h1>
+         <p>maximization of shareholder wealth through separation [snip 
+rest of corporate mumbo-jumbo, but use square brackets] <em>(see figure 
+1)</em>.</p>
+         <div class="figure"> <img src="images/chart1.png" width="100%" 
+alt="chart 1">
+           <p>figure 1</p>
+         </div>
+         <p>exploitation of core competencies snip (boy that lead-in is 
+tempting!</s><s>) add: fake email directly. mailto:nobody@example.com</p>
+         <div class="figure"> <img src="images/chart2.png" width="100%" 
+alt="chart 2">
+           <p>figure 2</p>
+         </div>
+         <p>in order to build a shared view of what can be improved, 
+snip (another tempting lead-in!</s><s>) add another fake email <a 
+href="mailto:nobody@example.com">do not reply</a></p>
+       </div>
+     </div>
+   </body>
+</html> -stop- 
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>hmm.</s><s> almost instant arrival this time.</s><s> so...is the delay caused by complex parsing of email when no code block is used?</s><s> or is a delay caused by snipping the bottom footer? 
+</s><s>the email client did apply word-wrap even within the code block, but at first glance it appears to have worked.</s><s> will try a shorter code block with a couple of differences. 
+</s><s>also, i'm changing the subject back to what the email reply saw just out of spite. 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1953018</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 6:27 PM">
+<s>reply without code block and with email footer... 
+-start- 
+body { font-family: arial, helvetica, sans-serif; font-size: 100%; color: #000000; background-color: #ccc; } #wrapper { min-width: 400px; margin: 0 auto; padding 0; } #maincontent #maincontent p { text-indent: 1.5em; margin-top: .</s><s>5em; margin-bottom: .</s><s>5em; } .figure { background-color: #fff; width: 50%; max-width: 402px; border: 1px solid #000; margin: 0 auto; } .figure p { font-family: "courier new", courier, monospace; color: #000080; font-size: 80%; text-align: center; border-top: 1px solid #000; margin: 2px 0 2px 0; }  shorter version maximization of shareholder wealth through separation [snip rest of corporate mumbo-jumbo, but use square brackets] (see figure 1).</s><s> figure 1 exploitation of core competencies snip (boy that lead-in is tempting!</s><s>) add: fake email directly. mailto:nobody@example.com figure 2 in order to build a shared view of what can be improved, snip (another tempting lead-in!</s><s>) add another fake email do not reply 
+
+-stop- 
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>hmm.</s><s> almost instant arrival this time.</s><s> so...is the delay caused by complex parsing of email when no code block is used?</s><s> or is a delay caused by snipping the bottom footer? 
+</s><s>the email client did apply word-wrap even within the code block, but at first glance it appears to have worked.</s><s> will try a shorter code block with a couple of differences. 
+</s><s>also, i'm changing the subject back to what the email reply saw just out of spite. 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1953019</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 6:27 PM">
+<s>very simply reply.</s><s> just delete email footer.</s><s> no code. 
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>hmm.</s><s> almost instant arrival this time.</s><s> so...is the delay caused by complex parsing of email when no code block is used?</s><s> or is a delay caused by snipping the bottom footer? 
+</s><s>the email client did apply word-wrap even within the code block, but at first glance it appears to have worked.</s><s> will try a shorter code block with a couple of differences. 
+</s><s>also, i'm changing the subject back to what the email reply saw just out of spite. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1953003</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark_A_Boyd" timestamp="May 10, 2009 6:32 PM">
+<s>all three of those email replies arrived quickly.</s><s> bad guessing on my part about the delays.</s><s> i did forget to test the code block for incoming emails (mark_a_boyd does not have a valid email address.</s><s> will see if i can correct that now that the merger is pretty far back in history). 
+</s><s>this is the short version with square brackets and fake email addresses. 
+-start- 
+<!</s><s>doctype html public "-//w3c//dtd html 4.01//en" "http://www.w3.org/tr/html4/strict.dtd"> <html> <head> <meta http-equiv="content-type" content="text/html; charset=utf-8"> <title>just a test</title> <style type="text/css"> body { font-family: arial, helvetica, sans-serif; font-size: 100%; color: #000000; background-color: #ccc; } #wrapper { min-width: 400px; margin: 0 auto; padding 0; } #maincontent { width: 80%; margin: 0 auto; margin-top: 0; background-color: #eee; padding: 0 1.5em 0 1.5em; } #maincontent p { text-indent: 1.5em; margin-top: .</s><s>5em; margin-bottom: .</s><s>5em; } .figure { background-color: #fff; width: 50%; max-width: 402px; border: 1px solid #000; margin: 0 auto; } .figure p { font-family: "courier new", courier, monospace; color: #000080; font-size: 80%; text-align: center; border-top: 1px solid #000; margin: 2px 0 2px 0; } </style> </head> <body> <div id="wrapper"> <div id="maincontent"> <h1>shorter version</h1> <p>maximization of shareholder wealth through separation [snip rest of corporate mumbo-jumbo, but use square brackets] <em>(see figure 1)</em>.</p> <div class="figure"> <img src="images/chart1.png" width="100%" alt="chart 1"> <p>figure 1</p> </div> <p>exploitation of core competencies snip (boy that lead-in is tempting!</s><s>) add: fake email directly. mailto:nobody@example.com</p> <div class="figure"> <img src="images/chart2.png" width="100%" alt="chart 2"> <p>figure 2</p> </div> <p>in order to build a shared view of what can be improved, snip (another tempting lead-in!</s><s>) add another fake email <a href="mailto:nobody@example.com">do not reply</a></p> </div> </div> </body> </html> 
+-stop- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1953059</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 7:03 PM">
+<s>strange.</s><s> the mailto links got doubled up in a goofy way in the email.</s><s> jive should not mess with code blocks in any way!</s><s>!</s><s>!</s><s> 
+</s><s>now curious how this gets back to the forum.</s><s> just keeping the doubled up links in the quoted section without using a code block. 
+-- mark a. boyd keep-on-learnin' 
+mark_a_boyd wrote the following: <quote>
+<s>all three of those email replies arrived quickly.</s><s> bad guessing on my part about the delays.</s><s> i did forget to test the code block for incoming emails (mark_a_boyd does not have a valid email address.</s><s> will see if i can correct that now that the merger is pretty far back in history). 
+
+</s></quote>
+snip (no square brackets as i typically do) 
+<quote>
+<s><p>exploitation of core competencies snip (boy that lead-in is tempting!</s><s>) add: fake email directly. mailto:mailto:nobody@example.com</p> <div class="figure"> <img src="images/chart2.png" width="100%" alt="chart 2"> <p>figure 2</p> </div> <p>in order to build a shared view of what can be improved, snip (another tempting lead-in!</s><s>) add another fake email <a href="mailto:mailto:nobody@example.com">do not reply</a></p> 
+</s></quote>
+> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1934731-1953086</DOCNO>
+<TEXT>
+<subject>Camera icon for including non-images?</subject>
+<post author="Mark%20A.%20Boyd" timestamp="May 10, 2009 7:58 PM">
+<s>yea, that's how they looked in the email.</s><s> doubled up mailtos 
+right now i'm just seeing if i can post a reply via ff in the web forum.</s><s> i have been trying to reply in another forum and keep getting the "are you sure you want to navigate away from this page?" dialog - when hitting the [post message] button! 
+</s><s>ok.</s><s> i can reply via ff.</s><s> will try again in that other forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-423694</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark A. Boyd" timestamp="Apr 23, 2009 2:21 PM">
+<s>just starting a thread so i can see if i have successfully customized opera's quote attribution to avoid jive's silly "wrote[colon]" filter that causes blank messages.</s><s> (i wasn't subscribed to this group forum before.</s><s>) Ê stuff in a syntax highlighting->plain box
+</s><s> stuff in a quote box Ê bold, italic, underlined, strikethrough, all of the above. Ê Ê -- mark a. boyd keep-on-learnin'
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1914395</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 23, 2009 2:30 PM">
+<s>just in case i failed to subscribe to the entire testing...uh...forum?</s><s> discussion?...i'm replying via web.</s><s> maybe the mail queue is just slower today (as the whole site is for me). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1914543</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 23, 2009 3:08 PM">
+<s>ok, that was stupid.</s><s> i completely forgot that messages from myself are not sent to me. 
+i need to stop messing around with these web forums for a while and go back to a good old mailing list that i just re-subscribed to after many years of absence - where one can set one's own messages to be mailed back.</s><s> no javascript.</s><s> no css.</s><s> no login.</s><s> no web browser.</s><s> no images.</s><s> no colors.</s><s> no html of any kind.</s><s> just beautiful, quickly accessed, information-heavy, plain text in all its glorious simplicity. 
+</s><s>read - cursor down - read - cursor down - reply - cursor down - ignore thread - cursor down, etcetera. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1914544</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark_A_Boyd" timestamp="Apr 23, 2009 3:12 PM">
+<s>just remembered an old login that i can't change anymore. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1914523</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 23, 2009 3:14 PM">
+<s>on thu, 23 apr 2009 15:12:14 -0700, mark_a_boyd <forums@adobe.com> typed: 
+ok.</s><s> the email was almost instant from that account.</s><s> i'm too worn out to try what i was going to try about an hour ago. 
+</s><s>here's hoping this doesn't get auto-posted every hour. 
+
+> <quote>
+<s>just remembered an old login that i can't change anymore. 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1917514</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 24, 2009 8:43 PM">
+<s>mark_a_boyd said: 
+<quote>
+<s>just remembered an old login that i can't change anymore. 
+</s></quote>
+</s><s>ansi?</s><s> bold, /italic/, underline 
+bb syntax?</s><s> bold, italic, underline 
+code? 
+repeat with i = 1 to 10 put i put + put re: testing opera's quote attribution end repeat </code> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1917526</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark_A_Boyd" timestamp="Apr 24, 2009 8:56 PM">
+<s><quote>
+<s>mark a. boyd wrote: 
+mark_a_boyd said: 
+<quote>
+<s>just remembered an old login that i can't change anymore. 
+</s></quote>
+</s><s>ansi?</s><s> bold, /italic/, underline 
+bb syntax?</s><s> bold, italic, underline 
+code? 
+repeat with i = 1 to 10 put i put + put j end repeat </code> 
+</s></quote>
+</s><s>oh, yea.</s><s> jive likes the attribution inside the quote box.</s><s> odd, that. 
+</s><s>and the old-school ansi worked for *bold* and _underline_, but not /italic/.</s><s> the bb (web bb) style worked for all of them. 
+</s><s>here is jive's version of bold, italic, underline, and all of the above. 
+</s><s>it also broke the [i] that i was attempting to put inside a <code> element.</s><s> the opening <code> tag is hidden, but nothing is formatted as code.</s><s> and the closing </code> appears.</s><s> maybe i should have tried square brackets?</s><s> or <pre> with angled or square brackets? 
+</s><s>wait. the [j] turned into a blue, underlined j.</s><s> i don't recognize that. 
+</s><s>code block from jive insert->syntax highlighting->plain repeat with i = 1 to 10
+  put i
+  put [i]
+  put [j]
+end repeat 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1917520</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 24, 2009 9:24 PM">
+<s>so...</s><s> i sent an email reply about 20 minutes ago with some more tests (after reading one of jochem's replies regarding code blocks). 
+</s><s>it still hasn't appeared.</s><s> just firing this one off to see if my previous was rejected without bouncing or if there's simply a long delay. 
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1917529</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark_A_Boyd" timestamp="Apr 24, 2009 9:26 PM">
+<s>hmm.</s><s> yep, my 21:03 pacific time email reply did not get through.</s><s> i'll wait 'til tomorrow and see if it's just taking a while to filter - or to bounce.3 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1917770</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 25, 2009 4:06 AM">
+<s>mark_a_boyd wrote on 2009-04-25 05:56 : <quote>
+<s>wait. the re: testing opera's quote attribution turned into a blue, underlined j.</s><s> i don't recognize that. 
+</s></quote>
+</s><s>that is wiki style notation: http://www.mediawiki.org/wiki/help:links 
+jochem 
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918163</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 10:54 AM">
+<s>argh!</s><s> i sent two email replies (one to jochem) over 30 minutes ago today, april 25, and neither have appeared. 
+</s><s>simplified version 
+</s><s>imesh.face[f].vertices = oldmesh.face[f].vertices
+   imesh.face[f].shader = tshader
+   imesh.face[f].colors = [1,1,1]
+   imesh.face[f].texturecoordinates = oldmesh.face[f].texturecoordinates 
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918164</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 10:54 AM">
+<s>here's another: 
+.ugly {
+   background-color: #ff00ff;
+   color: #ffffff;
+} 
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918166</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 10:55 AM">
+<s>and another: 
+re: testing opera's quote attribution 
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918227</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark_A_Boyd" timestamp="Apr 25, 2009 11:06 AM">
+<s>all three of those came through. 
+</s><s>the email replies that did not arrive - and that have not bounced as of this writing had the following in common: 
+attempted to place the attribution within the quote (as the jive forum does) more complicated bbml and, possibly old html markup that confused the jive filters 
+i am betting #1 is the cause.</s><s> will test by repying twice to this message - once with standard attribution above the quote, and once with jive-style attribution inside the quote. 
+[edit] 
+<quote>
+<s>is this really a link? 
+</s></quote>yes, that came in as a link.</s><s> it was simply a question surrounded by square brackets and not inside a code block.</s><s> [is this really a link?</s><s>] 
+</s><s>is that silly or what? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918168</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 11:08 AM">
+<s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>d > <quote>
+<s>to post a reply to the thread message, either reply to this email (recommended) or visit the message page: http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918259</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 11:08 AM">
+<s><quote>
+<s>mark_a_boyd said: 
+</s></quote>> <quote>
+<s>all three of those came through. 
+</s></quote>he message page: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918260</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 11:12 AM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918313</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 11:38 AM">
+<s>strange and stranger.</s><s> i must assume this is caused by update attempts by adobe or jive.</s><s> i never had this kind of trouble with quoting jive messages in opera or anything else.</s><s> i also sent a plain old iphone reply prior to this (web) reply that has not appeared. 
+</s><s>i'm hoping this is just a temporary setback and that my timing is just terrible. 
+</s><s>fwiw, here is the full text of this email reply (sans headers) - assuming nothing gets translated by jive.</s><s> this is the one where i kept the attribution outside the quotes. 
+</s><s>mark_a_boyd said:
+
+>
+> all three of those came through.
+>  
+> the email replies that did not arrive - and that have not bounced as of  
+> this writing had the following in common:
+>  
+> 1.</s><s> attempted to place the attribution within the quote (as the jive  
+> forum does)
+> 2.</s><s> more complicated bbml and, possibly old html markup that confused the  
+> jive filters
+>  
+> i am betting #1 is the cause.</s><s> will test by repying twice to this message  
+> - once with standard attribution above the quote, and once with  
+> jive-style attribution inside the quote.
+
+</s><s>standard reply with the attribution above the quote.</s><s> also, i am not snipping the lines that appear at the bottom of every message.</s><s> those with 5 or more dashes.
+
+> --------------------------------------------------------------
+> this message was sent to: mark a. boyd
+>
+> to post a reply to the thread message, either reply to this email  
+> (recommended) or visit the message page:  
+> http://forums.adobe.com/message/1918227#1918227
+>
+> if you post by replying to this email, be sure to leave the  
+> square-bracketed text at the end of the subject line as it is.</s><s> this will  
+> help ensure that your message is posted correctly.
+>
+>
+> --end--
+
+
+
+-- 
+mark a. boyd
+keep-on-learnin' :-) 
+[edit: yes, that is exactly correct.</s><s>] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918272</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 11:53 AM">
+<s>iphone reply? 
+-- mark a. boyd keep-on-learnin' via iphone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918356</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 12:09 PM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918357</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 12:09 PM">
+<s><quote>
+<s>mark_a_boyd said: 
+</s></quote>> <quote>
+<s>all three of those came through. 
+</s></quote>he message page: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918358</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 12:09 PM">
+<s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>d > <quote>
+<s>to post a reply to the thread message, either reply to this email (recommended) or visit the message page: http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918405</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 12:59 PM">
+<s>well, hello iphone reply!</s><s> took you long enough (probably an at&t network delay). 
+</s><s>but!</s><s> now my opera replies are auto-posting all on their own! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918393</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 1:16 PM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918439</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 1:16 PM">
+<s><quote>
+<s>mark_a_boyd said: 
+</s></quote>> <quote>
+<s>all three of those came through. 
+</s></quote>he message page: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918440</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 1:16 PM">
+<s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>d > <quote>
+<s>to post a reply to the thread message, either reply to this email (recommended) or visit the message page: http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918491</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 2:39 PM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918535</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 3:46 PM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918536</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 3:46 PM">
+<s>+(slight modification of an earlier attempt.</s><s> text in italic parentheses are today's edits)+ 
+<quote>
+<s>mark_a_boyd said: 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918601</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 4:53 PM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918633</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 5:59 PM">
+<s>+(slight modification of an earlier attempt.</s><s> text in italic parentheses are today's edits)+ 
+<quote>
+<s>mark_a_boyd said: 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1914358-1918694</DOCNO>
+<TEXT>
+<subject>Testing Opera's quote attribution</subject>
+<post author="Mark%20A.%20Boyd" timestamp="Apr 25, 2009 5:59 PM">
+<s>what a mess! 
+</s><s>ok.</s><s> top post.</s><s> no snippage at all. 
+</s><s>mark_a_boyd said: 
+> <quote>
+<s>all three of those came through. 
+</s></quote>age: <quote>
+<s>http://forums.adobe.com/message/1918227#1918227 
+</s></quote>> <quote>
+<s>if you post by replying to this email, be sure to leave the square-bracketed text at the end of the subject line as it is.</s><s> this will help ensure that your message is posted correctly. 
+</s></quote>> > <quote>
+<s>end 
+</s></quote>
+
+
+-- mark a. boyd keep-on-learnin' 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-414285</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem van Dieten" timestamp="Apr 5, 2009 12:39 PM">
+<s>starting a new thread for testing purposes.</s><s> this should show the three attachments that are allowed for a new thread. 
+</s><s>jochem 
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867209</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="kanguyen" timestamp="Apr 5, 2009 12:49 PM">
+<s>please note that any file attachments that show up with the word "queued" means that your file is being processed by the virus scanner.</s><s> once the scan is complete, the file will be available. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867247</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 5, 2009 12:54 PM">
+<s>i think you have some performance tuning to do on the virus scanner.</s><s> if a 180 kb xml file takes 15 minutes, how long would a 5 mb binary take? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867213</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="DorothyK%40Adobe" timestamp="Apr 5, 2009 12:55 PM">
+<s>hi kim, looking good. 
+</s><s>so queued is an automated process rather then waiting for an admin to approve?</s><s> nice... as long as it's fairly quick. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867197</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Kath-H" timestamp="Apr 5, 2009 1:11 PM">
+<s>email notification working without having to go via googlemail. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867267</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="kanguyen" timestamp="Apr 5, 2009 1:13 PM">
+<s>we're working out a few kinks with the virus scanning.</s><s> this is not the normal turnaround time.</s><s> please hang on... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867319</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="DorothyK%40Adobe" timestamp="Apr 5, 2009 1:27 PM">
+<s><quote>
+<s>kanguyen wrote: 
+we're working out a few kinks with the virus scanning.</s><s> this is not the normal turnaround time.</s><s> please hang on... 
+</s></quote>no doubt!</s><s> at least let's hope not!</s><s> you're supposed to be home with family or whatever.</s><s> not busting your head over forum stuff. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867320</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="kanguyen" timestamp="Apr 5, 2009 1:27 PM">
+<s>yes, dorothy - this is automated, no manual intervention on our part. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867360</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="kanguyen" timestamp="Apr 5, 2009 2:31 PM">
+<s>thanks for the sentiment dorothy, but john and our team have been working around the clock and around the globe since friday as part of this launch.</s><s> now that we are live, we are monitoring and making sure things are going smoothly! 
+i see that jochem's attachment has passed through the virus scan, but we're keeping an eye on things to make sure this is not taking a long time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1867455</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="DorothyK%40Adobe" timestamp="Apr 5, 2009 2:44 PM">
+<s><quote>
+<s>kanguyen wrote: 
+thanks for the sentiment dorothy, but john and our team have been working around the clock and around the globe since friday as part of this launch.</s><s> now that we are live, we are monitoring and making sure things are going smoothly! 
+i see that jochem's attachment has passed through the virus scan, but we're keeping an eye on things to make sure this is not taking a long time. 
+</s></quote>i know you have, kim...</s><s> i'm sympathizing with what i know it's like. 
+</s><s>it will no doubt take some time to stabilize and settle in.</s><s> i'm not going to expect perfection right out of the gate.</s><s> tweaking has commenced without a doubt. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1882638</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 4:24 AM">
+<s>kanguyen wrote : 
+testing email filter 
+jochem 
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1882639</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 4:24 AM">
+<s>kanguyen wrote : <quote>
+<s>jochemd 
+</s></quote>
+testing email body filter 
+jochem 
+
+-- jochem van dieten http://jochem.vandieten.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1882640</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 4:24 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883643</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 11:45 AM">
+<s>x 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883645</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 11:46 AM">
+<s>x 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883679</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 11:56 AM">
+<s>test 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883682</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:03 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883729</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883730</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883731</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883733</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883734</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883735</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883736</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883737</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1883738</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 10, 2009 12:04 PM">
+<s>threading 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1888632</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 13, 2009 9:10 AM">
+<s>&lt;textformat leading="2">&lt;p align="left">&lt;font face="verdana" size="10" color="#0b333c" letterspacing="0" kerning="0">so what can we post through the webservice api?&lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="verdana" size="10" color="#0b333c" letterspacing="0" kerning="0">&lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="verdana" size="10" color="#0b333c" letterspacing="0" kerning="0">&lt;b>bol&lt;/b>d &lt;i>italic&lt;/i> &lt;u>underline&lt;/u> &lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="verdana" size="10" color="#0b333c" letterspacing="0" kerning="0">&lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="verdana" size="10" color="#0b333c" letterspacing="0" kerning="0">fo&lt;font size="36">n&lt;/font>t&lt;font face="courier" size="14">s&lt;/font>&lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="courier" size="14" color="#0b333c" letterspacing="0" kerning="0">&lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="courier" size="14" color="#ff0033" letterspacing="0" kerning="0">colors&lt;/font>&lt;/p>&lt;/textformat>&lt;textformat leading="2">&lt;p align="left">&lt;font face="courier" size="14" color="#ff0033" letterspacing="0" kerning="0">&lt;/font>&lt;/p>&lt;/textformat> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1888695</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 13, 2009 9:14 AM">
+<s>&lt;textformat leading="2">&lt;p align="left">&lt;font face="verdana" size="10" color="#0b333c" letterspacing="0" kerning="0">plain text perhaps?&lt;/font>&lt;/p>&lt;/textformat> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1888683</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Jochem%20van%20Dieten" timestamp="Apr 13, 2009 9:16 AM">
+<s>oeps?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-general-forums/Forum-comments/Testing/Discussions-1867224-1889576</DOCNO>
+<TEXT>
+<subject>Let's see what has been fixed</subject>
+<post author="Phos%C2%B1four%20dots" timestamp="Apr 13, 2009 2:22 PM">
+<s>
+
+</s><s>addendum: this was a winking commentary, yes, but it was also a test.</s><s> the little camera icon in the rich text formatting toolbar is grayed out, and i wanted to see if adding 'img src' code in the html composition pane still allowed for direct display of images. 
+</s></post>
+</TEXT>
+</DOC>
+
+

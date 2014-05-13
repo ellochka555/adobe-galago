@@ -1,0 +1,2689 @@
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6230653-1433270</DOCNO>
+<TEXT>
+<subject>Easiest way to edit photo gallery modules?</subject>
+<post author="warren_p" timestamp="Mar 21, 2014 6:39 AM">
+<s>hi, 
+</s><s>i apolagise if this is a simple question but where can i customixe the css of photo gallery modules, just to change thumbnail size etc.</s><s>?</s><s> 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6230653-6232585</DOCNO>
+<TEXT>
+<subject>Easiest way to edit photo gallery modules?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 21, 2014 4:48 PM">
+<s>http://forums.adobe.com/message/6230084#6230084 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6229780-1433054</DOCNO>
+<TEXT>
+<subject>Desperate here- Please help!! Setting a max size on the Photo in a Gallery</subject>
+<post author="XenoPeople" timestamp="Mar 20, 2014 10:24 PM">
+<s>i have a client who has 1,000s of picturea there are many of their pictures which are huge.</s><s> so the thumbnail is fine i can alter those ratios, but is there a way to alter the size the picture can be when clicked on and it enters the slideshow/gallery mode?</s><s> is there a way to set a max size and make that alteration all at once- instead of resizing every picture?</s><s> if so, how?</s><s> 
+</s><s>also, is there a way to take the previous and next buttons off the module under the thumbnail? 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6229780-6231485</DOCNO>
+<TEXT>
+<subject>Desperate here- Please help!! Setting a max size on the Photo in a Gallery</subject>
+<post author="XenoPeople" timestamp="Mar 21, 2014 10:21 AM">
+<s>see this thread for the way i potentially fixed this: 
+http://forums.adobe.com/message/6231316#6231316 
+i hope this helps someone else when they need it! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6229780-6232584</DOCNO>
+<TEXT>
+<subject>Desperate here- Please help!! Setting a max size on the Photo in a Gallery</subject>
+<post author="Liam%20Dilley" timestamp="Mar 21, 2014 4:46 PM">
+<s>hi there, editing the css to scale the large images is a real bad idea, especially huge ones as being indicated by you both.</s><s> these images are large and larger file size and will take a long time to download, especially on mobiles.</s><s> changing the css so they appear smaller does not change that at all.   you need upload images that are web optimised and scaled correctly first, this is really a good must for proper management.</s><s> in terms of the thumbnail images you need to just modify the module paramaters to get the size and scale you want so this is done server side and the images served already scaled.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6231179-1433392</DOCNO>
+<TEXT>
+<subject>Lightbox Gallery CSS?</subject>
+<post author="XenoPeople" timestamp="Mar 21, 2014 8:43 AM">
+<s>can anyone tell me where they lightbox image gallery css stylesheet is located and/or if it is editable? 
+i need to set a max size on the gallery and can't find where the css stylesheet or javascript or jquery files are. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6231179-6231184</DOCNO>
+<TEXT>
+<subject>Lightbox Gallery CSS?</subject>
+<post author="XenoPeople" timestamp="Mar 21, 2014 9:03 AM">
+<s>i was able to look at the page source on the gallery and found that the css which it uses is not one i see in my stylesheets- so i am guessing it is not directly editable.</s><s> so, i copied the css and stuck it in the modulestylesheet so i could edit it. 
+</s><s>this is what it looks like: my question is, which- if any- of these css rules would constrain the images to be - let's say max-width or max-height of only %30 of the screen when it pops up?</s><s> (to keep large images from overwhelming the screen without having to resize every single photo every time)? 
+
+#lightbox{ position: absolute; 
+top: 40px; left: 0; width: 30%; z-index: 200000; text-align: center; line-height: 0; } 
+
+#lightbox a img{ border: none; } 
+
+#lightbox img{ width: auto; height: auto;} 
+
+#outerimagecontainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; } 
+
+#imagecontainer{ padding: 10px; } 
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; } #hovernav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; } #imagecontainer>#hovernav{ left: 0;} #hovernav a{ outline: none;} 
+
+#prevlink, #nextlink { width: 49%; height: 100%; background: transparent url(/catalystimages/blank.gif) no-repeat; /* trick ie into showing hover */ display: block; } #prevblink, #nextblink { width: 63px; height: 32px; display: block; float: right; } 
+
+#prevlink{ left: 0; float: left;} #nextlink{ right: 0; float: right;} #prevlink:hover, #prevlink:visited:hover, #prevblink:hover, #prevblink:visited:hover, #prevblink { background: url(/catalystimages/prevlabel.gif) left 15% no-repeat; } #nextlink:hover, #nextlink:visited:hover,#nextblink:hover, #nextblink:visited:hover, #nextblink { background: url(/catalystimages/nextlabel.gif) right 15% no-repeat; } 
+
+
+
+#imagedatacontainer{ font: 10px verdana, helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; } 
+
+#imagedata{ padding:0 10px; } #imagedata #imagedetails{ width: 50%; float: left; text-align: left; } #imagedata #caption{ font-weight: bold; } #imagedata #numberdisplay{ display: block; clear: left; padding-bottom: 1.0em; } #imagedata #bottomnavclose{ width: 66px; float: right; margin:5px 0pt 0pt 5px; padding-bottom:0pt; } 
+#overlay{ position: absolute; top: 0; left: 0; z-index: 199999; width:100%; height: 500px; background-color: #000; filter:alpha(opacity=60); -moz-opacity: 0.6; opacity: 0.6; } 
+
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+
+* html>body .clearfix { display: inline-block; width: 100%; } 
+
+* html .clearfix { /* hides from ie-mac \*/ height: 1%; /* end hide from ie-mac */ } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6231179-6231316</DOCNO>
+<TEXT>
+<subject>Lightbox Gallery CSS?</subject>
+<post author="XenoPeople" timestamp="Mar 21, 2014 9:26 AM">
+<s>guys!</s><s> i am so close to figuring it out.</s><s> i know i need to play with it a little more but i was able to change a few settings and make my huge images now auto resize to a max size.</s><s> i hope this will be a starting point for anyone else who ever has this issue.</s><s> this just saved me so much time and trouble.</s><s> any suggestions on how to make this better is welcome!</s><s> thanks!</s><s> 
+
+#lightbox{ position: absolute; top:50%; left:50%; z-index:9999; width:*300px;* height:*300px;* margin:-250px 0 0 -250px; text-align:center; vertical-align: 50%; 
+} 
+
+#lightbox a img{ border: none; } 
+
+#lightbox img{ width: auto; height: auto; max-width: 650px; max-height: 650px;} 
+
+#outerimagecontainer{ position: relative; background-color: transparent; margin: 0 auto; max-width: 680px; max-height: 680px; width: auto; height: auto; } 
+
+#imagecontainer{ padding: 10px; max-width: 680px; max-height: 680px; width: auto; height: auto; 
+
+} 
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; } #hovernav{ position: absolute; top: 0; left: 0; 
+
+width: auto; height: auto; z-index: 10; } #imagecontainer>#hovernav{ left: 0;} #hovernav a{ outline: none;} 
+
+#prevlink, #nextlink { width: 49%; height: 100%; background: transparent url(/catalystimages/blank.gif) no-repeat; /* trick ie into showing hover */ display: block; } #prevblink, #nextblink { width: 63px; height: 32px; display: block; float: right; } 
+
+#prevlink{ left: 0; float: left;} #nextlink{ right: 0; float: right;} #prevlink:hover, #prevlink:visited:hover, #prevblink:hover, #prevblink:visited:hover, #prevblink { background: url(/catalystimages/prevlabel.gif) left 15% no-repeat; } #nextlink:hover, #nextlink:visited:hover,#nextblink:hover, #nextblink:visited:hover, #nextblink { background: url(/catalystimages/nextlabel.gif) right 15% no-repeat; } 
+
+
+
+#imagedatacontainer{ font: 10px verdana, helvetica, sans-serif; background-color: #000; margin: 0 auto; line-height: 1.4em; max-width: 680px; max-height: 680px; width: auto; height: auto; } 
+
+#imagedata{ padding:0 10px; } #imagedata #imagedetails{ width: 50%; float: left; text-align: left; } #imagedata #caption{ font-weight: bold; } #imagedata #numberdisplay{ display: block; clear: left; padding-bottom: 1.0em; } #imagedata #bottomnavclose{ width: 66px; float: right; margin:5px 0pt 0pt 5px; padding-bottom:0pt; } 
+#overlay{ position: absolute; top: 0; left: 0; z-index: 199999; width:100%; height: 500px; background-color: #000; filter:alpha(opacity=60); -moz-opacity: 0.6; opacity: 0.6; } 
+
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } 
+
+* html>body .clearfix { display: inline-block; width: 100%; } 
+
+* html .clearfix { /* hides from ie-mac \*/ height: 1%; /* end hide from ie-mac */ } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6179253-1420755</DOCNO>
+<TEXT>
+<subject>Photo Galleries into Albums?</subject>
+<post author="XenoPeople" timestamp="Mar 4, 2014 2:09 PM">
+<s>i see how to create different photo galleries in bc, however is there a way to make albums out of the different photo galleries? 
+</s><s>also, can there be a title over or under each event/album? 
+i want, if possible to make this "point and lclick" simple for the client. 
+</s><s>how i can solve it for me; 
+i make a photo gallery folder i upload all photos to that folder (they will be using ftp) i then go to the photo page make a table enter the name of the album on the top row i customize the photo gallery to show just 1 picture at 300 x 300.</s><s> insert the module into the place below the title of the album/event.</s><s> when the picture is clicked the slideshow opens. 
+</s><s>is there and easier way?</s><s> i mean it seems easy for me, but if there is something that would be easier that i am missing for the client... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6179253-6202922</DOCNO>
+<TEXT>
+<subject>Photo Galleries into Albums?</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 8:09 AM">
+<s>hello, 
+</s><s>you still have to go through the process of creating the photo gallery, getting the ids of each gallery and using them for whatever workaround may be available, so i don't see a more efficient approach.</s><s> still i'll leave it open to the community. 
+</s><s>kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6179253-6230984</DOCNO>
+<TEXT>
+<subject>Photo Galleries into Albums?</subject>
+<post author="XenoPeople" timestamp="Mar 21, 2014 7:49 AM">
+<s>thank you alex.</s><s> 
+</s><s>somewhat regarding this process.</s><s> i have been having an issue with the lightbox feature on the photo gallery.</s><s> is there any way to see a max size when you click a picture and it opens in the lightbox?</s><s> can i constrain the slideshow that opens to resize the image?</s><s> i have a client who has 1000's of pictures, most too big so it overwhelms the screen. 
+</s><s>is there any way to do this besides going through and editing all of their phots and then making them edit them all before they upload? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6230202-1433154</DOCNO>
+<TEXT>
+<subject>Can customers be notified if they have commented and their comment has been responded to?</subject>
+<post author="HH Thompson" timestamp="Mar 21, 2014 2:54 AM">
+<s>hi everyone!</s><s> i hope you're projects are going well! 
+i just wondered if there was a way that i could set up bc to send a customer an email notifiying them that a comment they have recently left has been repsonded to. 
+eg; my client writes a new blog, it gets read by 1000s and some one leaves a really cool response that the admin/user just has to reply to.</s><s> is there anyway that the commenter can be notified when they are responded to? 
+</s><s>i've had a look at workflows but i just can't seem to figure it out. 
+</s><s>thanks david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6229980-1433058</DOCNO>
+<TEXT>
+<subject>Where to get to xml to alter photo gallery?</subject>
+<post author="XenoPeople" timestamp="Mar 20, 2014 10:51 PM">
+<s>in the new format for bc i can't seem to find where to upload a xml file to help me tweek the photo gallery. 
+
+
+i was going to buy this tutorial in the hopes it will help me fix the sizing issue of the photo gallery.</s><s> when a picture is really large it fills the whole page when the picture is in slideshow mode.</s><s> i can't figure out how to change this, however, i've seen the xml referenced a few times.</s><s> any help on where to do so in the new layout?" 
+</s><s>or thoughts on this tutorial helping? 
+http://kiyuco.com/tutorials/build-a-custom-gallery-using-the-photo-gal lery-module 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6229980-6230084</DOCNO>
+<TEXT>
+<subject>Where to get to xml to alter photo gallery?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 21, 2014 12:51 AM">
+<s>the first thing to change is the module paramaters...</s><s> {module_photogallery,id,rowlength,targetframe,resultsperpage,width,height,usestandardmethod,thumbnailalgorithm} id - system generated id (do not change this number.</s><s>) rowlength - set the number of photos displayed per row targetframe - set the destination frame where the photos will open (such as _blank) resultsperpage - set the number of photos displayed per page width/height - set the width and height of the thumbnail images.</s><s> the default value is 80 pixels wide by 80 pixels high.</s><s> usestandardmethod - use the standard thumbnail generation.</s><s> set to false for better thumbnail quality (with increased file size). thumbnailalgorithm - to avoid squashed images and control image proportion size.</s><s> use the following paramaters: proportional,fill,fill_proportional.</s><s> to get the xml feed you go to the gallery in the admin it will be there.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6226038-1432125</DOCNO>
+<TEXT>
+<subject>Blog post has infinite amount of pages</subject>
+<post author="Jacskon" timestamp="Mar 19, 2014 7:21 PM">
+<s>hi, 
+</s><s>been trying to solve this for a while now, but cant figure it out. 
+</s><s>basically, everyone of my blog posts have an infinite amount of pages that google is indexing. 
+</s><s>for example 
+http://www.southerncrossroofing.com.au/blog/our-roofing-company 
+http://www.southerncrossroofing.com.au/blog/our-roofing-company?=page2 
+http://www.southerncrossroofing.com.au/blog/our-roofing-company?=page2 150495336148 
+</s><s>obviously it doesnt need any pages, only the one. 
+</s><s>any ideas how to get around this? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6091158-1399372</DOCNO>
+<TEXT>
+<subject>Social Media Modules not Displaying</subject>
+<post author="jennyfuga" timestamp="Feb 5, 2014 6:51 PM">
+<s>i am in the process of developing my blog and have placed the default social media modules into the blog.</s><s> however, they do not display.</s><s> does anyone have any ideas on why this is happening? 
+</s><s>here's the sample page i'm trying to get them to display on.</s><s> they should be above the comments section. 
+http://www.jennyfugadesign.com/blog/some-philosophical-questions 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6091158-6091771</DOCNO>
+<TEXT>
+<subject>Social Media Modules not Displaying</subject>
+<post author="Silviu%20Ghimpo" timestamp="Feb 6, 2014 1:11 AM">
+<s>hi jenny 
+</s><s>please follow the steps from this article http://kb.worldsecuresystems.com/kb/add-social-media.html 
+regards 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6091158-6092529</DOCNO>
+<TEXT>
+<subject>Social Media Modules not Displaying</subject>
+<post author="jennyfuga" timestamp="Feb 6, 2014 7:06 AM">
+<s>i don't see a social media module (step 4) or anything labeled "container.html" in my files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6091158-6093143</DOCNO>
+<TEXT>
+<subject>Social Media Modules not Displaying</subject>
+<post author="Silviu%20Ghimpo" timestamp="Feb 6, 2014 9:16 AM">
+<s>hi jenny 
+</s><s>you will need to login to admin area of your site , then go to develop tab : here is a screenshot : http://screencast.com/t/2chu8x3uvvx 
+hope this helps!</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6091158-6222528</DOCNO>
+<TEXT>
+<subject>Social Media Modules not Displaying</subject>
+<post author="JohnSSmith" timestamp="Mar 18, 2014 7:35 PM">
+<s>i have followed the addd social media help to the letter, and mine does not display either.   after using module insert {module_facebooklike, moduletemplategroup="", language="en_us", url="", layout="", showfaces="true", width="450", verb="like", font="", colorscheme=""}   i checked the source on mine compared to jenny's site, and notice my page does not have the javascript portion of facebook code being   <div id="fb-root"></div> <script>(function(d, s, id) {   var js, fjs = d.getelementsbytagname(s)[0];   if (d.getelementbyid(id)) return;   js = d.createelement(s); js.id = id;   js.src = "//connect.facebook.net/en_us/all.js#xfbml=1";   fjs.parentnode.insertbefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>   all get is this <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="false"></div>   so the module is putting that in only.   jenny i see you got yours to display, but i notice you seem to have a different url than what the facebook plugin would provide.</s><s> is this because you also could not get the module to work, and just manually put in the fb code?   if not then how did you get yours to work.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6091158-6222530</DOCNO>
+<TEXT>
+<subject>Social Media Modules not Displaying</subject>
+<post author="JohnSSmith" timestamp="Mar 18, 2014 8:00 PM">
+<s>ok figured it out   for other people struggling-   a) when you enter the code here as per silviu's screenshot : http://screencast.com/t/2chu8x3uvvx   you may have two container.html tabs showing, one of which is not relevant, so close the one that looks irrelevant, and dont put the two separate pieces of code in each one like i originally did.   b) paste in the java script (1st section of code from fb), and immediately afterwards paste in the div (second section of code from fb).   c) in the second code form fb it wll also have this: data-href="https://developers.facebook.com/docs/plugins/" delete it so it looks like this: <div class="fb-like" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>   and now it all works
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6215528-1429541</DOCNO>
+<TEXT>
+<subject>Missing Modules?</subject>
+<post author="roguehaumana" timestamp="Mar 16, 2014 10:50 PM">
+<s>i?ve searched the forum and cannot find an answer.</s><s> i?m very new to bc and am still feeling my way around it, but fairly familiar with dw.   while going through the modules that are listed in the bc tab group in dw, i don?t have all of the modules that i?ve seen in other people?s bc/dw setup.   what i have listed what?s missing?</s><s> ad rotators affiliate programs news blogs events campaigns catalogs comments content holders dynamic menus faqs forum general media download photo galleries reports rss channels secure zone search social media web apps web forms announcements bookings literature menu product   could someone please shed some light as to why i seem to be missing these modules, or what i need to do to get them?</s><s> any insight would be most helpful.   thank you for your time and attention!     osx 10.8.5 / dw cs5.5
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6215528-6215423</DOCNO>
+<TEXT>
+<subject>Missing Modules?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 16, 2014 10:54 PM">
+<s>hi there 
+- media downloads is the renamed literature. - bookings - this is events, you got that - announcements is now news, you got that - menu is of course - dynamic menu product - you probably do not see this because the site you are working on is not the top end ecommerce plan but you list web app so it will also be in there. 
+</s><s>overal i think you are seeing everything, you just not probably aware a few things were renamed down the line of bc's life span. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6215528-6215531</DOCNO>
+<TEXT>
+<subject>Missing Modules?</subject>
+<post author="roguehaumana" timestamp="Mar 16, 2014 10:58 PM">
+<s>thank you!</s><s> thank you!</s><s> thank you!</s><s> 
+</s><s>good to know.</s><s> i am trying to work off some old notes that i jotted down a while ago ... maybe it?s time to ditch the notes and look for more updated tutorials 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6215528-6216801</DOCNO>
+<TEXT>
+<subject>Missing Modules?</subject>
+<post author="BrandSteward" timestamp="Mar 17, 2014 9:06 AM">
+<s>good lluck with that.</s><s> if you can find up to date tutorials, let me know where they are!</s><s> i think the current state of play is atrocious. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6215528-6218152</DOCNO>
+<TEXT>
+<subject>Missing Modules?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 17, 2014 2:34 PM">
+<s>zero to hero should be up to date, so are many guides out there? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6215598-1429458</DOCNO>
+<TEXT>
+<subject>How to divide latest news/announcements into a carousel</subject>
+<post author="Kulsha DWD" timestamp="Mar 16, 2014 11:41 PM">
+<s>hi, i would like to use a text carousel/slider for my client's news summary listings on the home page.</s><s> i am using 'owl slider'.</s><s> it needs to automatically take the latest 9 listings and separate them onto 3 slides.</s><s> the owl slider script uses 3 groups of lists, one for each slide. 
+</s><s>first slide (easy - the latest 3 news items) ---------------------- <ul class="news"> {module_announcement,l,3} </ul> 
+but the following 2 slides is where i get stuck.... is it possible to then populate the other 2 slides with the latest 4th-6th news item (on the second slide) and the latest 7th-9th news items summaries on the third slide ?</s><s> ie: 
+</s><s>second slide ---------------------- <ul class="news"> {module_announcement,?</s><s>?</s><s>?</s><s>?</s><s>} to call up the 4th-6th latest article summary </ul> 
+</s><s>third slide ---------------------- <ul class="news"> {module_announcement,?</s><s>?</s><s>?</s><s>?</s><s>} to call up the 7th-9th latest article summary </ul> 
+i am hoping there is a simple way to call up the module with the parameters somehow?</s><s> ... or am i trying to do something too tricky with the news module? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6206227-1427158</DOCNO>
+<TEXT>
+<subject>Customize the SUBMIT Button</subject>
+<post author="7Points" timestamp="Mar 13, 2014 8:06 AM">
+<s>i'm trying to customize the standard webform submit button.</s><s> pretty sure it can be styled similarly to the way you can customize the image verification.</s><s> change the color, change the size, change the text, etc...</s><s> i've been searching but can't seem to find it in the system or knowledgebase.</s><s> any help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6206227-6206399</DOCNO>
+<TEXT>
+<subject>Customize the SUBMIT Button</subject>
+<post author="7Points" timestamp="Mar 13, 2014 8:42 AM">
+<s>nevermind guys...</s><s> i just styled the button with css.</s><s> i seemed to remember a way to customize the web form buttons within the bc system in the past and was just trying to remember how it was done.</s><s> but doing everything through css is much better.</s><s> thanks anyway! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6189939-1423209</DOCNO>
+<TEXT>
+<subject>BC Designer Needed Freelance-U.S.</subject>
+<post author="VNSSAC" timestamp="Mar 7, 2014 3:16 PM">
+<s>i need help with my ecommerce site.</s><s> been up for two years.</s><s> i know my way around it well but don't know code.</s><s> i need some minor sizing/margin fixes done and some overall store appearance changes made.</s><s> anyone know of anyone?</s><s> hourly pay and usa-based preferred.</s><s> vanessa 917.903.8199 | los angeles ca 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6189939-6202854</DOCNO>
+<TEXT>
+<subject>BC Designer Needed Freelance-U.S.</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 8:04 AM">
+<s>replied via pm 
+</s><s>kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6189939-6204191</DOCNO>
+<TEXT>
+<subject>BC Designer Needed Freelance-U.S.</subject>
+<post author="VNSSAC" timestamp="Mar 12, 2014 2:18 PM">
+<s>?</s><s> cn you please contact me at vanessa@soapfarm.com? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6196900-1424939</DOCNO>
+<TEXT>
+<subject>How do I turn off comments on my blog pages?</subject>
+<post author="joshock" timestamp="Mar 10, 2014 1:33 PM">
+<s>i see that i can create a rule that requires comments to be approved before they are posted, however i want to turn them off completely.</s><s> i don't want "post a comment" on my blog pages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6196900-6199668</DOCNO>
+<TEXT>
+<subject>How do I turn off comments on my blog pages?</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 11, 2014 9:35 AM">
+<s>hi, 
+</s><s>you can remove the comment feature completely within the blog layout. 
+</s><s>site manager -> module templates -> blog layout -> blog post details 
+
+
+</s><s>kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6196900-6204085</DOCNO>
+<TEXT>
+<subject>How do I turn off comments on my blog pages?</subject>
+<post author="joshock" timestamp="Mar 12, 2014 1:46 PM">
+<s>thank you sidney, that is exactly what i was looking for. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6129102-1408841</DOCNO>
+<TEXT>
+<subject>Is there an XMLRPC URL for blog module</subject>
+<post author="CKLAslan" timestamp="Feb 17, 2014 10:32 AM">
+<s>i would like to make blog posts from other applications or mobile apps.</s><s> i have seen that this is possible using blogpress (iphone).</s><s> however i can't get this to work.</s><s> i am host the bc blog on my own site/domain.</s><s> searches say i should be able to post using xmlrpc and the url format of https://mydomain.com/blogname/metaweblog.ashx but that doesn't seen to work. 
+</s><s>any other suggestions ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6129102-6202996</DOCNO>
+<TEXT>
+<subject>Is there an XMLRPC URL for blog module</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 8:32 AM">
+<s>hi!</s><s> 
+</s><s>the xmlrpc url is https://yourbcsitename.worldsecuresystems.com/metaweblogapi.ashx 
+here's a useful video: https://www.youtube.com/watch?v=ihc2e6lkbpc#t=166 
+kind regards, 
+alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6150004-1413748</DOCNO>
+<TEXT>
+<subject>is it possible to have two Announcement list layouts?</subject>
+<post author="Grant Senior" timestamp="Feb 23, 2014 8:06 PM">
+<s>i have the announcement news list layout working like this, it's fine and does what i want it to do. 
+<div class="newslinkbox"> <h2><a href="#">{tag_subject}</a></h2> <div class="newslinkdate">{tag_eventfromdate}</div> <p class="newslinkwords"> {tag_body, 100} </p> 
+</div> 
+</s><s>but i would also like the list to work as just links, like, <h2><a href="#">{tag_subject}</a></h2> is that possible?</s><s> can i have more than the 1 layout for an announcement list? 
+</s><s>this page has the news list items as links in the footer (but it's forced, not dynamic and would prefer it to be part of the module if possible) waitakeries.businesscatalyst.com/testingstuff.html this page has the list as they appear according to the list template and are generated by the module http://waitakeries.businesscatalyst.com/news.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6150004-6202927</DOCNO>
+<TEXT>
+<subject>is it possible to have two Announcement list layouts?</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 8:20 AM">
+<s>hi 
+</s><s>what you're probably looking for is custom templates: http://helpx.adobe.com/business-catalyst/partner/using-custom-template s-modules.html let me know if this is not what you're looking for 
+kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6159096-1415962</DOCNO>
+<TEXT>
+<subject>How do I return from the log out screen?</subject>
+<post author="NeilWilmore" timestamp="Feb 26, 2014 8:32 AM">
+<s>i am testing an installation of a forum module in a muse site.</s><s> the module works but when i log out i get stuck at the log out screen.</s><s> i have tried to use use hyperlinks manager to choose a browser window with no success.</s><s> i am hoping that users will be able to easily return to the muse site. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6159096-6202925</DOCNO>
+<TEXT>
+<subject>How do I return from the log out screen?</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 8:16 AM">
+<s>hi neil, 
+</s><s>this can be customisd from the system pages area, in your business catalyst admin: http://prntscr.com/305v17.</s><s> you can add whatever customization you want, such as a redirect, or a link to another page. 
+</s><s>kind regards, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6185932-1422330</DOCNO>
+<TEXT>
+<subject>Adding Main Image for Blogs</subject>
+<post author="jettmedia" timestamp="Mar 6, 2014 11:27 AM">
+<s>i've posted my blog but for some reason the image used in the blog is not showing up as the main image when you go to the blog homepage.</s><s> there is no image appearing actually.</s><s> also, on the home page footer there are my 3 most recent blogs that will take you to the blog page and the image is not showing up there either.</s><s> i've never had this problem when posting.</s><s> am i missing a step? 
+</s><s>thanks!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6185932-6202850</DOCNO>
+<TEXT>
+<subject>Adding Main Image for Blogs</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 7:53 AM">
+<s>sounds like a template/layout issue.</s><s> can you post the blog url? 
+</s><s>thanks, alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6194237-1424259</DOCNO>
+<TEXT>
+<subject>How do I display the latest news announcement article in full on a page</subject>
+<post author="Grant Senior" timestamp="Mar 9, 2014 7:50 PM">
+<s>hello, i have my news page set up so that it displays the news announcements as a list on the side of the page and the latest news article in full in the main body of the page.</s><s> seen here http://waitakeries.businesscatalyst.com/announcements/auckland-unitary -plan 
+this is ok, but it's forced by setting the announcement's url as the menu navigation's link address.</s><s> i'd prefer not to be doing that, and would rather the navigation pointed to a news.html page with the latest news announcement generated dynamically.</s><s> i thought this was possible, but i've had a bit of a search here and on google, haven't found the solution as yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6194237-6202849</DOCNO>
+<TEXT>
+<subject>How do I display the latest news announcement article in full on a page</subject>
+<post author="Alex%20Pavelescu" timestamp="Mar 12, 2014 7:51 AM">
+<s>hi 
+</s><s>i think what's needed here is the use of the ajax effect: http://prntscr.com/305p6d on any page, if you use {module_announcement,a,,,ajax,} for example it will list the items without changing the url, and load each on with ajax, so again, without changing the url. 
+</s><s>hope this helps alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6202651-1426288</DOCNO>
+<TEXT>
+<subject>Preserving BC web form formatting edits for a Muse page</subject>
+<post author="LarryfromSpark" timestamp="Mar 12, 2014 7:00 AM">
+<s>i have edited the formatting in bc but when i paste the code into muse it reverts to the ugly default formatting.</s><s> how can i prevent this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6192161-1423794</DOCNO>
+<TEXT>
+<subject>Page Template Settings?</subject>
+<post author="VNSSAC" timestamp="Mar 8, 2014 5:24 PM">
+<s>in modifying page template, i'm not sure what has happened but my pages (website) are all sitting to the left (left justify) with large negative space on the right.</s><s> i've also noticed that in editor my editing page has a narrow vertical preview which i can't slide.</s><s> wondering if there is a setting somewhere in templates overall which i've missed that is affecting both.</s><s> i do not know code.</s><s> need designer help for sure.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6192161-6192214</DOCNO>
+<TEXT>
+<subject>Page Template Settings?</subject>
+<post author="Liam%20Dilley" timestamp="Mar 8, 2014 5:31 PM">
+<s>without links we cant really help sorry.</s><s> it could be many things.</s><s> if your editing a lot of html using the editor this is not really a good idea.</s><s> it is xhtml compliant and just a content editor at the end of the day, if you have a html error (easy to do in just these editors) it will try and fix things up to conform to what it thinks will be something that renders, this could knock things off.</s><s> or it could be a matter of a css error somewhere, of which could be several things from the main containing elements.</s><s> but then that also depends on if your doing div's tables or html5.</s><s> and if your doing html5 that editor wont accept most of that.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6192161-6192284</DOCNO>
+<TEXT>
+<subject>Page Template Settings?</subject>
+<post author="VNSSAC" timestamp="Mar 8, 2014 5:36 PM">
+<s>liam what links do you need? 
+</s><s>per my other post, i desperately need bc designer help for some structural fixes.</s><s> do you know of anyone?</s><s> i am not a designer.</s><s> my site is www.soapfarm.com.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6184302-1421948</DOCNO>
+<TEXT>
+<subject>muse menu editing & BC Blog - solution comments please</subject>
+<post author="peterghill" timestamp="Mar 7, 2014 1:59 AM">
+<s>new to muse & bc.</s><s> 
+</s><s>created a site in muse, uploaded to mc no problem and added a news feed this shows on the site preview from bc but the news sub menu under in the know doesnt preview in muse. 
+i followed in detail the muse and bc blog tutorial video, created bc main template, added {tag_pagecontent} but i now understand that i cannot re-edit the muse menu hyperlinks. 
+blog name: mumsformums 
+url: http://mumsformums2.businesscatalyst.com/blog 
+so i have a site with top level nav: home in the know - news a new start lifestyle blog events contacts 
+i have tried exporting blog page from muse and excluding it to no avail. 
+</s><s>site structure is fairly simple but though i can preview the blog at: 
+http://mumsformums2.businesscatalyst.com/blog?preview=true 
+the blog doesnt show up @ http://mumsformums2.businesscatalyst.com/blog.html, i just get a page not found content holder text within {tag page element} 
+as i have currently excluded uploading the blog page from muse, the blog page doesnt show up in my pages. 
+i have tred creating a new page and asigning it the name blog but i get an error on publish that the page name is already being used by mums for mums blog. 
+i am sure this is something on the blog side or within bc 
+any help would be appreciated. 
+---------------------------------------------------------------------- -------------------------------- 
+ok so i get to access the blog at: 
+http://mumsformums2.businesscatalyst.com/blog and not 
+http://mumsformums2.businesscatalyst.com/blog.html 
+so how do i reedit the muse menu on the master and the bc main template to point to mumsformums/blog and not blog.html? 
+---------------------------------------------------------------------- --------------------------------- 
+my solution so far: i have managed to get use a redirect to the http://mumsformums2.businesscatalyst.com/blog via url redirect. 
+</s><s>as the page loads the main menu state was not correct (inactive as opposed to active).....so i then created an new muse master from scatch and applied the relevant styles to the bc menu master, i guess if i need another dynamic master within bc i will have to create another that is a child of the main master within muse. 
+</s><s>comments would be great if this is not the correct approach. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-1229028</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="AndrewKhan" timestamp="Jun 10, 2013 1:30 AM">
+<s>hi,   there is a long running problem with business catalyst at this moment in time - it allows spaces in file uploads.   this is a severe problem and simply shouldn't be allowed in any modern cms.   if i give an isolated example, i recently helped a client of mine launch an email campaign from their cp.</s><s> everything appears fine in all browsers, however in gmail, images with spaces in simply break.   this comes down to our client uploading images with spaces in, which suffice to say we have told them not to do.</s><s> it's easy to say we should tell our clients to do this however this will not do.</s><s> it is simply a requirement of all cms' in this day an age as files with spaces in will almost always cause problems somewhere.   before i carry on ranting, is there a way for me to enable a requirement for spaces in file uploads?   if not, this feature needs to be implemented.   thanks.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393261</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Liam%20Dilley" timestamp="Jun 10, 2013 2:56 AM">
+<s>hey andrew, this is not a bc problem but a web problem.</s><s> have you tried other cms's?</s><s> they allow them too.</s><s> it is a developers responsibility to train a client on this, i do, i tell them the reasons and they dont do it.</s><s> my past clients have very good use of both bc, images and more becasue they have had good advice and good training. 
+</s><s>and what id you do what spaces on a file for some reason?</s><s> you will force it so they cant? 
+</s><s>considering this is a problem easily solved by people, i do not see bc adding such a feature any time soon or the near future. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393289</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="AndrewKhan" timestamp="Jun 10, 2013 3:20 AM">
+<s>hi liam, 
+</s><s>in the minds of my customers is it a bc problem or is a web problem?</s><s> it is a bc problem. 
+</s><s>look at it this way; facebook, twitter and the many hundreds of websites that you can upload images to either disallow you from uploading images with spaces or loop through file names and convert the image filename to be web friendly. 
+</s><s>we can't expect less tech-savvy clients to remove spaces from their images, especially if there is no clear warning on the website to remove them.</s><s> are you suggesting, that we train each and every user of each and every website that we have built to remove spaces from their filenames? 
+</s><s>are you serious? 
+</s><s>there is no debate here - bc should be doing something to fix this problem, whether it is to give adequate warning and advice during the file upload period, to rename images to be web friendly or to disallow spaces in images completely it has to be done.</s><s> to suggest that this is a 'web problem' is to make excuses for adobe.</s><s> we should not have to train our clients to remove spaces from images file names. 
+</s><s>while i agree that with the tech-savvy it is simple to remove spaces from images it is not something we should expect users to do.</s><s> for an example, let's take a large scale ecommerce website.</s><s> there are multiple users of that website, some tech-savvy, others not-so.</s><s> this ecommerce website takes on a new user to help manage their products, who we will call john.</s><s> john isn't very tech savvy. 
+</s><s>the business-owners take john through the basics of uploading a product, possibly even suggesting he removes spaces from image file names.</s><s> however, being the new guy, john doesn't remember that and fails to remove spaces from a couple of images.</s><s> nobody knows, because these images appear fine in the latest browsers.</s><s> three weeks later, this business decides to launch an email campaign, which looks great in tests to outlook!</s><s> as the business-owners are not tech-savvy, they very-happily launch the email campaign based on a template created by the original developers without testing.</s><s> the original developers cannot take into account spaces in images as html email cannot run javascript. 
+</s><s>of course, just after the send date employee #5 notices that all of the product images are broken in gmail.</s><s> the business-owners then swiftly contact the web developers and all the blame comes to them, despite that fact they advised them on this originally. 
+</s><s>so in conclusion here, the business-owners lose out on valuable profits and their reputation is damaged and the web-developers reputation is scarred indefinitely, with business catalyst's problems being blamed on them as the reseller.</s><s> everybody loses. 
+</s><s>and all of this could of been avoided simply if adobe had put in adequate efforts (such as those previously described) to alleviate this problem. 
+</s><s>to suggest that we should be training our clients and all of their new and changing users to do the following is to make excuses for adobe's failures. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393419</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Liam%20Dilley" timestamp="Jun 10, 2013 4:03 AM">
+<s>thats a long post andrew but you need to trial things before you say they do things and the rest - disagree. 
+1.</s><s> twitter url shortens images into its system so no matter what the file its named into a computed series of numbers.</s><s> so this is not the same.</s><s> 2. facebook file uploads do not change the file name, images are treated in the same way as twitter. 
+i and most people will never want to see the same treated to images on bc. seo is just one reason for that. 
+</s><s>in terms of your thoughts - yes people do bad files and it causes problems in older browsers and javascript.</s><s> but those older browsers are getting older. 
+</s><s>in terms of business owners etc; view the history of these forums and the previous 2 for bc. you will see no more then, as far as i can recall 5 people including yourself post about this issue over the course of 7+ years. 
+</s><s>and as i have mentioned to you with lots of bc sites and clients under my belt - the 4 odd that have had issues with this soon sorted their issue, all but 1 before their site was live.</s><s> simple training, a simple guide to their site...</s><s> this is very easy to solve. 
+i do not even batter an eye lid at this.</s><s> even naming conventions to get extra features bc normally can not do and having clients manage that is possible. 
+</s><s>there are much more and much more important issues with bc and for client use, such as import and export management for example.</s><s> also you got bc and the infustrcture work this year and so smaller work will have attention on bc only this year.</s><s> so what is done needs to be important.</s><s> in terms of this, this is way way way down the list.</s><s> so even if it is something considered, like i said, do not expect this any time in the near future, this year, maybe not even next. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393430</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="AndrewKhan" timestamp="Jun 10, 2013 4:10 AM">
+<s>hi liam, 
+</s><s>i am well aware of how twitter and facebook manage images which is what i was mentioning with "loop through file names and convert the image filename to be web friendly." 
+</s><s>this is exactly what they do. 
+</s><s>for example: https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/435435_103411328 1_954793839_q.jpg 
+</s><s>the point is not how they have done it, is is simply that they have done it. 
+</s><s>the issue is, facebook and twitter, two of the largest and most widely used web applications on the internet fix this problem for you.</s><s> how can we expect our users to fix this problem when the biggest examples of web usability (no doubt, two that train users to use web applications) fix it for them?</s><s> this is a web problem, but is a web problem that has been fixed and bc should be up to date with that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393628</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Liam%20Dilley" timestamp="Jun 10, 2013 5:34 AM">
+<s>problem is andrew you using something to justify what your saying that is totally unrelated. 
+</s><s>why do they do this?</s><s> they dont care about being no spaces, or showing any relevence to what the original file name or anything is.</s><s> the reason they are uploaded and rendered in this way is for a number of reasons. 
+- the images are converted into an optimised/compressed format of their prefered implementation. - in terms of facebook it does pre-scanning for facial information and so on and post processing. - the file names are ference data values for the system to understand and render and for the server system to process. 
+</s><s>it has nothing to do with what your saying. 
+</s><s>in terms of an actual website use this method is really very useless.</s><s> as mentioned your images would now have no seo or human reference use at all.</s><s> useability of images would now be harder for clients.</s><s> without viewing the image you linked for example - what is it?</s><s> you dont know. 
+</s><s>and so on.</s><s> 
+</s><s>your trying to find reasons to jusitfy what your saying which really do not marry up unfortunatly.</s><s> i get what your saying, converting images and files into lowercase and replacing %20 with - would be a nice to have.</s><s> point is, is it important in terms of bc right now?</s><s> no is it easily managed right now by everyone?</s><s> yes, with very simple and easy wording and information to clients when you train them to use their online business tool.</s><s> (bc) 
+</s><s>so in the big scheme of things is it this big thing as you have outlined?</s><s> no.</s><s> 
+</s><s>how do you solve this currently then?</s><s> train your clients. 
+i know i bulleted the last rundown andrew and that may read cold but thats the simple facts here.</s><s> you can make a ticket to support and request the feature, but like i said, dont expect it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393694</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="AndrewKhan" timestamp="Jun 10, 2013 6:25 AM">
+<s>liam, 
+</s><s>you are missing my point. 
+i am not suggesting the method for this should be the same as facebook or twitter, merely that the method is there.</s><s> it comes down purely to usability issue.</s><s> the expected result of an image upload of any web app, stemming from the behaviour demonstrated with large scale web applications such as facebook or twitter (the reason for my previous mentions), is that any image upload should work.</s><s> i guaruntee you, large scale application developers would see spaces in images as a problem. 
+</s><s>it's not difficult to find a different method - you've already suggsted one yourself. 
+</s><s>your points regarding human reference and seo is irrelevant because it is not about the method.</s><s> i have never suggested bc should clone facebook or twitter's url format. 
+</s><s>additionally, if an image url is formatted as either 'product name 0132.jpg' or 'product_name_0132.jpg', they are both very much seo freindly and legible to a user.</s><s> so with that said, there is not a single reason this cannot be done. 
+</s><s>as i said previously, this is a web problem, but it is a web problem that has been fixed for quite some time. 
+</s><s>we should not have to train our clients on something they would expect to just work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-5393798</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Liam%20Dilley" timestamp="Jun 10, 2013 6:42 AM">
+<s>method but for all the wrong reasons.</s><s> word better as you basically said the method facebook and twitter used if they are now as you say not relevent, should have never broughtt them up ^^ 
+you need to also study what google considers _ in seo and - 
+reasons not to be done?</s><s> given you plenty - resources from bc, priority and need.</s><s> are lots of people over 7 plus years constantly complaining this is a big huge problem andrew?</s><s> simple fact is no. are there more important things to be done in bc - yep, heaps!</s><s> is this solvable by you very easily now?</s><s> yeah, it is.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-6179220</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Matt-e360" timestamp="Mar 4, 2014 1:42 PM">
+<s>i agree with you liam.</s><s> i feel stupid asking my clients to remove spaces from their image filenames.</s><s> it's embarrassing as they don't have to do it for any other app they use. 
+</s><s>if we were building a cms today and wanted to compete against the best in the business you simply wouldn't build a system that required users to remove spaces from their image filenames.</s><s> it's not user a friendly and it just adds another reason why the email marketing module in bc makes people leave bc. i'm hoping the next version currently in open beta allows us to resolve this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-6179946</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Liam%20Dilley" timestamp="Mar 4, 2014 6:38 PM">
+<s>every other app they use?</s><s> i do not think that will be entirely true matt.</s><s> not in terms of the web space.</s><s> some will ask to give a name after upload to set it, some will be smarter, modern application yes or choose thier own which on that side of things i know people who do not like when something renames their files, they want it as what they named it. 
+</s><s>media downloads is its own url link so files there do not change, but as during training a simple - its the web, no spaces, _ is same word - is new word for search engines.</s><s> really is something just a few minutes into a training session that for me, clients understand.</s><s> some people will not want something to auto change their name to something they dont so you need to code a system that has the option or a tick to do so or not.</s><s> it may get it wrong so it needs to show you the suggested version.</s><s> you may have two words together and you want to seperate it for seo etc....</s><s> lots of bits to implement, its not a 5 minute update. 
+</s><s>the better version of email marketing has been out of beta for quite a while as well matt, it is not on by default, again you cant just change over like that - lots of complaints.</s><s> it is something you need to activate and setup. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-6180745</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="AndrewKhan" timestamp="Mar 5, 2014 4:27 AM">
+<s>i see your point, but i don't agree.</s><s> i believe you're making excuses. 
+</s><s>this is not a difficult system to implement, and the problems you highlighted you've solved in your own response.</s><s> this is definitely not a complicated system, any team larger than a couple of people could have this ready for testing very quickly, rather than focusing on new features.</s><s> purveyors of quality web design and development strive to provide a service that is perfect and polished to their clients that adheres to the best practices of the web.</s><s> in it's current state, problems like these prevent developers from ever reaching that level. 
+</s><s>try using wordpress with a best practice, streamlined theme and you'll see what i mean. 
+</s><s>everything is effortless. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5393207-6182636</DOCNO>
+<TEXT>
+<subject>Disallow Spaces in Image Names</subject>
+<post author="Matt-e360" timestamp="Mar 5, 2014 12:42 PM">
+<s>oops just realised...</s><s> i meant to say i agree with andrew (not liam). 
+</s><s>"everything is effortless" - that's how it should be. 
+</s><s>asking or training users to jump through hoops to rename files is effort and a waste of time and money to even have to train people to do it. 
+</s><s>fortunately bc are continuing to work on this module - they need to because it's lagging behind industry standards set by the likes of mailchimp and campaign monitor. 
+</s><s>ultimately my clients decide for themselves by switching back to mailchimp after trying bc and finding it "too hard" due to all the little misgivings.</s><s> despite us offering support and training. 
+@liam we're using the "better" version of email marketing.</s><s> and it still has bugs, like some users not being able to use the visual editor (it's a known bug).</s><s> not sure who's kool aid you're drinking to support this module so fervently when it so obviously lags behind the industry benchmarks in this space. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4553301-1035538</DOCNO>
+<TEXT>
+<subject>How do I alter the announcements list so that it shows the most current news event at the top?</subject>
+<post author="kate fenner" timestamp="Jul 12, 2012 5:44 AM">
+<s>i have the announcent list module on my home page and it shows 25 news/announcements however you can only see a few on the home page without scrolling down.</s><s> i would like it to display those events that are coming up soon (and then when the date has passed, remove them) rather than events that are six months away.</s><s> how do i do this please?</s><s> regards kate 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4553301-4553332</DOCNO>
+<TEXT>
+<subject>How do I alter the announcements list so that it shows the most current news event at the top?</subject>
+<post author="Liam%20Dilley" timestamp="Jul 12, 2012 6:14 AM">
+<s>hi kate, depends on the setup.</s><s> you mentioned scrolling so i guess your using one of those old bc templates?   by default announcements will run in date order so the new ones are at the top.</s><s> there are options in the module to set it datereverse and by alphabetical.     {module_announcement}       {module_announcement,filter,id,notemplate,effect,targetframe,reserved,reserved,reserved,reserved,sort}        # after adding the announcement module to a web page, you can make changes to it to slightly alter its behavior.</s><s> normally the module would look like: {module_announcement,filter,id,notemplate,effect,targetframe,reserved,reserved,reserved,reserved,sort} parameters filter - filtering criteria for display and can be one of the following: i - individual item a - all items c - all items in some category cl - latest items in some category l - latest items r - random item id – system generated (do not change) notemplate – if you want to force the item not to use a site-level template when displayed pass in true, otherwise leave empty effect – enter ajax if you want to take advantage of the latest web technologies for a better customer experience targetframe – the frame in which to open the item in reserved - for use in a future release sort - if you leave this parameter blank, by default announcements are sorted from the latest to the oldest where the latest is displayed first alphabetical - sorts announcements alphabetically datereverse - sorts announcements in the reverse order, that is from the oldest to the latest examples of use {module_announcement,a,,,,_parent} - displays all announcements and open them in parent frame {module_announcement,l,5} - displays the latest five announcements.</s><s> {module_announcement,r,,true,ajax,_blank,,,,,datereverse} - opens a random item in a new window and doesn't apply the template.</s><s> it uses the ajax effect, where the detail content opens right underneath the announcement name and all the announcements are displayed from the oldest to the latest {module_announcement,cl,34392,,ajax,,,,,5} - displays the five latest announcements in category 34392   check to see what the module has been set as
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4553301-4932641</DOCNO>
+<TEXT>
+<subject>How do I alter the announcements list so that it shows the most current news event at the top?</subject>
+<post author="graugans%20Design" timestamp="Dec 19, 2012 1:43 AM">
+<s>hi kate, i have the same question.</s><s> did you found a solution so far, the post from liam didnt answer your question, he just copy and pasted what i already found in the knowledgebase.</s><s> maybe thats just a way to say "no, its not possible" ;-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4553301-4934124</DOCNO>
+<TEXT>
+<subject>How do I alter the announcements list so that it shows the most current news event at the top?</subject>
+<post author="Liam%20Dilley" timestamp="Dec 19, 2012 11:30 AM">
+<s>well, that is the answer right there in great detail.</s><s> if your using and old bc template you modify the height of the containing item and change the scroll effect on the css.</s><s> that is basic css and html changes depending on what you want to achieve.</s><s> ordering and the control of the actual news (what announcements are now called) list items is based on the above code. 
+</s><s>understanding the basics of bc, css and html will achieve what you need to do. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4553301-6177391</DOCNO>
+<TEXT>
+<subject>How do I alter the announcements list so that it shows the most current news event at the top?</subject>
+<post author="wmortimor" timestamp="Mar 4, 2014 5:29 AM">
+<s>{module_announcement,l,3,,,,,,,,datereverse} 
+</s><s>this will show the latest 3 announcements in reverse order.</s><s> replace the 3 with another number to display a different number of announcements. 
+{module_announcement,a,,,,,,,,,datereverse} this will show all announcements in reverse order. 
+</s><s>hope this helps someone. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6173114-1419302</DOCNO>
+<TEXT>
+<subject>Add Event to Calendar</subject>
+<post author="XenoPeople" timestamp="Mar 2, 2014 8:31 PM">
+<s>i have a client who want to be able to have their clients add events to their outlook or google calendar with a click. 
+</s><s>has anyone had any success doing this while integrating it into the events module? 
+
+
+</s><s>or can anyone give me any hint or help how do even accomplish this (paid app or written code) how to do this so it's easiest for the customer? 
+i tried addthisevent, but can't seem to make sense of that. 
+</s><s>any help would be very much apprecaited!</s><s> thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6170307-1418622</DOCNO>
+<TEXT>
+<subject>Numerous questions regarding "comments" module</subject>
+<post author="RabbitMountain" timestamp="Mar 1, 2014 4:46 PM">
+<s>hi there, i'm hoping someone can help me.</s><s> i'm having a heck of a time. 
+1.</s><s> how do i set blog post comments to appear in reverse chronological order? 
+2.</s><s> the comments settings allow for requiring people to log in before commenting.</s><s> where is the login form? 
+3.</s><s> has {tag_flag} been discontinued? 
+4.</s><s> how to require name, email and message on comments form? 
+</s><s>thanks in advance, -paula 
+message was edited by: rabbitmountain 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6162226-1416673</DOCNO>
+<TEXT>
+<subject>Web form "Work Address" and "Company" record</subject>
+<post author="Mike Connolly" timestamp="Feb 27, 2014 3:43 AM">
+<s>i have a web form with fields from contact tab; "company details" and "work address".   company details translates to a single "company name" field on form.   whenever the form is submitted;   company name is stored in a company record with no address.</s><s> work address is stored in a contact record with relationship to the company record.   when the form is completed again by same person (ie. same email address) but a different company; company name is stored in a new company record with no address.</s><s> work address is updated on their existing contact record with relationship to the new company record     problem: outcome is a contact with only one work address but two related company records with no addresses for them,   their first company's address has been lost?   possible solution:   in the site crm for the company record, there is an abiltiy to store an address for company.   is there a way to have work address stored on both contact and company records when submitting the form?        
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6029301-1383907</DOCNO>
+<TEXT>
+<subject>PhotoGalleryTemplate</subject>
+<post author="gripen" timestamp="Jan 19, 2014 11:18 AM">
+<s>hi,   is there a way to cutomise the photo gallery template to change the mumber of colums in the script depending on a media query?</s><s> my current settings are {module_photogallery,11704,2,,12,300,300} this works out fine on a mobline, but not a ipad or desktop.</s><s> this is what i would prefer:   @media only screen and (min-width: 481px) {} {module_photogallery,11704,3,,12,300,300} @media only screen and (min-width: 769px) {} {module_photogallery,11704,4,,12,300,300}   thanks
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6029301-6029556</DOCNO>
+<TEXT>
+<subject>PhotoGalleryTemplate</subject>
+<post author="Liam%20Dilley" timestamp="Jan 19, 2014 1:24 PM">
+<s>for responsive design, covert table elements (as they are table in css) to block level elements and float them etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6029301-6161397</DOCNO>
+<TEXT>
+<subject>PhotoGalleryTemplate</subject>
+<post author="BBowyer" timestamp="Feb 26, 2014 8:59 PM">
+<s>this might be helpful...http://pm.iformat.com.au/support/articles/16656-rendering-a-photo-gall ery-xml-feed-using 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6002111-1376941</DOCNO>
+<TEXT>
+<subject>BC Gallery Module question</subject>
+<post author="snarzom12" timestamp="Jan 10, 2014 4:27 PM">
+<s>hi, i want to modify the layout of the standard bc gallery module but can not find it anywhere, can someone point me in the right direction?</s><s> i want to remove the table layout and add my own responsive layout. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6002111-6003970</DOCNO>
+<TEXT>
+<subject>BC Gallery Module question</subject>
+<post author="Liam%20Dilley" timestamp="Jan 11, 2014 3:36 PM">
+<s>hi there, it has no layout control.</s><s> that is how it outputs.</s><s> with your media queries change the property of the table elements out of table and table cell into block etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6002111-6161396</DOCNO>
+<TEXT>
+<subject>BC Gallery Module question</subject>
+<post author="BBowyer" timestamp="Feb 26, 2014 8:58 PM">
+<s>i think you will like this http://pm.iformat.com.au/support/articles/16656-rendering-a-photo-gall ery-xml-feed-using 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-1163931</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="Researchscape" timestamp="Mar 3, 2013 5:06 PM">
+<s>i can assign tags to a blog post but i can't figure out how to display the assigned tags on each blog post.</s><s> how do i show just the tags for one post? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5120496</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="Sidney%20Mitchell" timestamp="Mar 4, 2013 9:45 AM">
+<s>hi, 
+</s><s>i does't look possible at this stage as i'm only able to locate the "top used blog tags" but for the overall blog layout. 
+- {tag_blogtaglist} list of top used tags.</s><s> default is first 10 entries sorted alphabetically.</s><s> you can customize to display less/more. 
+</s><s>i'll add this to our wishlist as a potential feature enhancement. 
+</s><s>kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5441932</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="TwiceMedia" timestamp="Jun 23, 2013 5:29 PM">
+<s>i'm surprised this isn't possible - it's a pretty standard concept in blogging.</s><s> in light of the awesome recent enhancements to the blog engine i figured this would have been top of the list. 
+</s><s>any sign of an eta? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5441859</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="Liam%20Dilley" timestamp="Jun 23, 2013 5:37 PM">
+<s>actually not really.</s><s> i would not recomend it because it will be classed as a link farm group.</s><s> search engines would ignore it.</s><s> the general tag cloud they understand is such and its nice from a user perspective but a series of content keywords all together at the bottom of a blog post with links, would be ignored or if to high would be considered negativly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5441956</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="TwiceMedia" timestamp="Jun 23, 2013 5:41 PM">
+<s>actually, liam, yes - it's important specifically for usability.</s><s> not everything is about seo, specifically in some cases where a blog is for a limited audience. 
+</s><s>blog tags displayed in a post are currently highly conventional, and many would think it important.</s><s> even if you do not agree. 
+i for one was incredibly surprised that something so simple just isn't possible in bc. and i'd prefer to use the blog engine than write a web app at this point. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5442155</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="Liam%20Dilley" timestamp="Jun 23, 2013 8:05 PM">
+<s>useability i would say to as well.</s><s> can be achieved in better ways with good navigation and blog layout overall.</s><s> i do this and never had the need to implement this or been requested to do so.</s><s> its an obvious thing to overcome the requirement but i would not consider it the best one.</s><s> same example is a site search.</s><s> good ui and design for most sites seeing this - fail.</s><s> you should not need it and only in some cases with a very large site is this needed.</s><s> if you need a search then the navigation is wrong and that is the thing that should be fixed.   hope that makes sense.</s><s> this is my view anyway, based on ux standards etc of course, but in terms of bc..</s><s> i would not expect the feature to be added, if it is at some point - cool if you want to use it.</s><s> but i dont see that being for a long while.</s><s> so you need to work with what you got.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5443218</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="Pam%20Hardy" timestamp="Jun 24, 2013 6:18 AM">
+<s>we would like to voice our desire for this feature as well.</s><s> our current bc clients have been asking us to add tag display to each of their blog posts and we have to tell them that we can't do so until bc adds the feature. 
+</s><s>in the meantime, we will advise prospective clients seeking blogging capability about bc's limitations regarding blog tags when we offer them various cms options. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5705041</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="luicylou" timestamp="Sep 22, 2013 10:24 PM">
+<s>i would like to add my vote in.</s><s> it is, from what i understood, standard blog-iquette for a function similar to {tag_blogtaglist} to display a list of tags either under a blog post teaser on the listing page or under the full article on a blog post detail page.</s><s> we have to undo our approved designs with the client after discovering that bc doesn't offer such basic functionality.</s><s> how many votes do you need to be able to scale this feature request?   thanks so much!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-5733991</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="TwiceMedia" timestamp="Oct 3, 2013 9:42 AM">
+<s>indeed.</s><s> 
+</s><s>bc staff, where have the feature requests gone?</s><s> is this on the list? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-6141098</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="RabbitMountain" timestamp="Feb 20, 2014 1:01 PM">
+<s>i would like this feature too, specifically for usability purposes. 
+</s><s>currently the only way to display tags is as a list of all tags across the blog.</s><s> if a user clicks thru to a tag archive (archived blog posts grouped by tag instead of date) there is no way to indicate exactly what this group of blog posts is.</s><s> how does the user know they are looking at what they want?</s><s> how do they know if they accidentally clicked on a wrong tag? 
+</s><s>in fact, how does anyone know what tags are assigned to any given blog post? 
+</s><s>moreover, listing individual tags in a blog post is an invitation to click to further, related content.</s><s> what google does with my tag list has no bearing on what my site visitors do while they're on my site.</s><s> i want my site visitors to click thru to more content and to know where they're at in the midst of all the blog posts.</s><s> this has been standard convention for a really long time now. 
+</s><s>this lack of front-end tag functionality effectively renders bc's tagging system useless, as liam already noted. 
+</s><s>final thought: i've been working with wordpress since before there was a wordpress fork, and i have never seen a blog post's tag list count against it in search engine rankings.</s><s> if anything, the tag archive page provides another page to index and all my wordpress sites show a fair number of visitors coming from serps to the tag archive page. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5118850-6141195</DOCNO>
+<TEXT>
+<subject>Display a blog post's tags</subject>
+<post author="luicylou" timestamp="Feb 20, 2014 1:07 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6136156-1410522</DOCNO>
+<TEXT>
+<subject>Multiple blogs - with different layouts?</subject>
+<post author="HH Thompson" timestamp="Feb 19, 2014 8:18 AM">
+<s>hello all.</s><s> 
+</s><s>i am stuck, i would like to run several blogs on my site as i think this is a really efficient way of managing content, especially for my client too.</s><s> but must all the blogs share the same layout?</s><s> i am happy customising the blog layout templates, but i would like to change the order of some contents, an be able to control what is on offer in each of the side bars.</s><s> is there a way to add a custom layout? 
+</s><s>cheers david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6136156-6137358</DOCNO>
+<TEXT>
+<subject>Multiple blogs - with different layouts?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 19, 2014 1:27 PM">
+<s>hi david, each blog can have a different overal template but all blogs share the same layouts. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6136156-6138581</DOCNO>
+<TEXT>
+<subject>Multiple blogs - with different layouts?</subject>
+<post author="HH%20Thompson" timestamp="Feb 20, 2014 1:13 AM">
+<s>thanks liam.</s><s> how would i go about giving the overall layout a dfifferent look for each blog?</s><s> do i need to make pages and pull the blogs through in content holders?</s><s> i have been considering this option however once you have pulled the blog into a standard page (in a content holder) you loose the option of utilising blog tags (outside of the content holder) as you can only assign tags to thier intended layout/template.</s><s> i cannot think of a work around? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6136156-6138918</DOCNO>
+<TEXT>
+<subject>Multiple blogs - with different layouts?</subject>
+<post author="Liam%20Dilley" timestamp="Feb 20, 2014 1:56 AM">
+<s>you wont be able to change positions etc without extensive javascript to do that.</s><s> with different templates and parent class/id's on those templates you can style all elements within the layouts differently. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-6136156-6138921</DOCNO>
+<TEXT>
+<subject>Multiple blogs - with different layouts?</subject>
+<post author="HH%20Thompson" timestamp="Feb 20, 2014 2:10 AM">
+<s>thanks liam, so some css trickery.</s><s> i'll give it a go. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-1040081</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Dec 4, 2012 5:42 AM">
+<s>hello, 
+</s><s>we are planning some important upcoming changes to how seo metadata is being handled for pages. 
+</s><s>the changes have already been validated with several partners.</s><s> it would still be helpful though if you'd review the changes and let us know your feedback, questions or concerns. 
+</s><s>here they are: http://www.businesscatalyst.com/mocks/metadata.html 
+thanks, marius 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4576871</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Scott%20B%20Reynolds" timestamp="Jul 24, 2012 9:41 AM">
+<s>this is great news marius.</s><s> moving the 'page title' away from the 'page name' will help reduce confusion.</s><s> it will be a lot more obvious what it does to users now that the title will be under seo metadata. 
+</s><s>do you know when we'll be able to add the description meta tag to blogs? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4577359</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Jeff%20Selser" timestamp="Jul 24, 2012 12:58 PM">
+<s>marius, this looks acceptable and should be easy to manage.</s><s> i would like to see these changes implemented. 
+</s><s>will these attributes also be available within the file manager interface?</s><s> that would be great for those of us whom prefer code editing! 
+</s><s>thanks for posing the question and asking for feedback. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4577630</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 24, 2012 3:21 PM">
+<s>anyone else find issues with the pages even with templates chosen having html body and head etc in it for this to work.</s><s> do some changes now to add meta and view the html.</s><s> had issues with your code or ajax as a result?</s><s> let the guys know if you do. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578360</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Jul 25, 2012 12:26 AM">
+<s>hi scott, 
+</s><s>thanks for your review!</s><s> we don't have a planned date yet for being able to add description meta tag to blogs, but we are aware about this need. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578362</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Jul 25, 2012 12:30 AM">
+<s>hi jeff, 
+</s><s>thanks!</s><s> regarding the file manager ui, the answer for now is no. we planned for this, but it's a low priority for now.</s><s> the reason is that we want to focus first on making it very easy for your clients to manage this data, and they don't have access to the new file manager.</s><s> see the 2nd page for the mockups at http://www.bcprerelease.com/mocks/fm.pdf for how it would look, when/if it will get done though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578292</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 25, 2012 12:52 AM">
+<s>awesome stuff to be honest marius, we can do it in html in a variety of ways ourselves as developers and the key was getting it working for our clients who are the ones this matters too.</s><s> appreciate that chain of thought from you guys hugely! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578410</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Jul 25, 2012 1:47 AM">
+<s>this is a great enhancement, we are very happy with this change and it will really serve hugely. 
+</s><s>thank you again! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578342</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="FraserMcCulloch" timestamp="Jul 25, 2012 1:54 AM">
+<s>change for the sake of change. 
+i have been able to rank pages highly using consistent url, page title, h1, meta description for the past 4 years 
+something i sadly cannot do with ecommerce catalogs.</s><s> with ecommerce products i have to use a custom field for the meta description. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578424</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 25, 2012 2:38 AM">
+<s>not change for the sake of change fraser.</s><s> try add meta to pages now and see what happens, its a mess.</s><s> also this same platform can be brought over to products etc as well hopefully with the update or soon after. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578525</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="FraserMcCulloch" timestamp="Jul 25, 2012 3:11 AM">
+<s>i have absolutely no problem adding meta data in original version of bc. 
+i make my money from researched and optimised websites so why would i use v3 with no on page optimisation tools for pages, catalogs, products and blogs ? 
+</s><s>see attached screenshot of a page i created a week ago, ranks 30 in google for a fairly competitive term "designer watches for women" and i've not added any backlinks yet. 
+i don't want my clients punished in the search engines because i decide to be an early adopter of version 3 
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578546</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 25, 2012 4:02 AM">
+<s>you do know that feature is partly disabled and being removed completly and the old ui going.</s><s> what would you do then without that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578676</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="FraserMcCulloch" timestamp="Jul 25, 2012 5:09 AM">
+<s>just created a page in v2, nothing disabled about url, page title, h1 or meta description. 
+i am sure i will be forced to change at some point in the future. 
+</s><s>but my whole point, speaking as one who builds website around keyword research, on page and off page is that bc still don't provide me a full set of tools via html pages, catalogs, products and blogs like other cms and ecommerce platforms. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578826</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Jul 25, 2012 7:06 AM">
+<s>hi fraser, 
+</s><s>we also plan to improve the other modules (blogs, catalogs, products...</s><s>), but longer term.</s><s> for now, we are improving just pages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4578876</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="FraserMcCulloch" timestamp="Jul 25, 2012 7:43 AM">
+<s>thank you marius i know when to give up whilst fighting a losing battle.</s><s> fraser.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4579559</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="TheRiot" timestamp="Jul 25, 2012 12:18 PM">
+<s>is the new interface for page seo metadata available to partners today? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4579703</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 25, 2012 1:43 PM">
+<s>go to the admin and set up your default ones.</s><s> have some added via that interface and then edit or change the meta or simulate a client doing it via the editor on the page and see the source code :) try to get rid of some etc. you can't because that's removed and you can get double ups on your meta and other issues :) 
+</s><s>to that: are you fixing the bugs with it of people try to add meta on products marius? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4584995</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Tim%20-%20Sprout" timestamp="Jul 28, 2012 11:12 AM">
+<s>i'm with liam on this.</s><s> wow, how i wish i would have worked with this more before starting to buid this website on bc. do i start over and port my theme work to another package or do i grind my teeth on bc some more? 
+</s><s>seo is key for a successful website and while i understand that meta desc and meta keywords are not the most important part of seo anymore they still matter.</s><s> i would probably say they don't make a difference anymore but just to be safe it doesn't hurt to have them setup correctly.</s><s> should google and other engines decide to use them in some way again in the future the site will be ready for it.</s><s> so why on earth would bc transition to v3 and leave meta tags in limbo?</s><s> not only is it in limbo but as liam points out - it causes issues with your html, maked duplicate tags, etc. 
+</s><s>here is a simple implementation bc: 
+1.</s><s> default meta desc and meta keywords somewhere in site settings.</s><s> if a page does not override them the default values are inserted. 
+2.</s><s> each page has a seo section with page title, page desc and page keywords.</s><s> they override step 1 if supplied. 
+3.</s><s> same for categories, same for products.</s><s> 
+</s><s>why is this such a hassle when every other product out there makes this so darn easy?</s><s> ugggggh.</s><s> 
+
+</s><s>now with my rant over, here is my hack to address this for now. 
+1.</s><s> make sure your page templates have no meta tags (unless you want the same thing for every page, or you want to make a page template for every page). 
+2.</s><s> add <meta name="description" content="your desc here" /> and <meta name="keywords" content="your keywords,go here,separated by a comma,but not a space"> to the page content via the wysiwyg on each page, bc will insert this into the head section. 
+</s><s>not great but it's something.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4585307</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 28, 2012 4:13 PM">
+<s>don't use it.</s><s> d it with a product and edit or remove and add a description and bc will insert a black description meta followed by the new one.</s><s> google and vo will read the first empty one.</s><s> several cases where pages screw up as well and the html in th editor that gets inserted i am not happy with. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4589465</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="M.%20Adey" timestamp="Jul 31, 2012 7:55 AM">
+<s>hi, 
+</s><s>what about having a "<head> section" where we could add other meta and most important <link rel="canonical" href=".... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4594150</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Todd%20H%26M" timestamp="Aug 2, 2012 9:16 AM">
+<s>so when is this (http://www.bcprerelease.com/mocks/metadata.html) being implented?</s><s> i see the page properties button in the editor ui but not the other ui changes like the seo meta data section, page properties button at the top, etc. 
+</s><s>thanks, todd 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4793758</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Oct 23, 2012 6:15 AM">
+<s>hello, 
+</s><s>sorry for the delay.</s><s> migrating existing data took us longer than expected to implement. 
+</s><s>the new ui is available now.</s><s> in order to activate it, please see http://www.bcprerelease.com/mocks/metadata.html 
+would you please let us know your feedback on the data migration process? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4805489</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Scott%20B%20Reynolds" timestamp="Oct 27, 2012 2:52 PM">
+<s>i had no issues migrating. 
+</s><s>the new ui for seo is a great step forward.</s><s> it will definitely help prevent confusion and make it easier to train customers.</s><s> i've tested it, and it works perfect! 
+</s><s>you might also consider adding more advanced features like allowing us to include a 'nofollow', 'noarchive', etc. 
+</s><s>also, the 'hide this page for search engines' defaults to hiding it from internal searches too (makes sense).</s><s> but, there probably should be a way to hide the page from search engines, but keep it in the internal search (and vise versa). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4805508</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Oct 27, 2012 3:05 PM">
+<s>been through that and more scott, they guys are not willing to do anything more any time soon.</s><s> tbh, it is a real step back seo wise.</s><s> the old method only needed a better ui and tweaks and i have said that also.</s><s> bc is dropping back in terms of seo with the competition all the time.</s><s> sitemap.xml is a right mess for example and no plans to sort that either any time soon, which will be a right mess too with the new web app engine coming that is suppsoed to replace everything.</s><s> if they dont start paying attention bc is going to be terrible in regards to seo 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4806236</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Scott%20B%20Reynolds" timestamp="Oct 28, 2012 9:21 AM">
+<s>liam, i'm probably opening a can of worms, but how is this a step back? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4806551</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Oct 28, 2012 12:27 PM">
+<s>other meta control, author etc which you could do, so a step back, it just needed polishing and improving.</s><s> lack of implementation for products, blog etc poperly, specifically the blog.</s><s> lack of support for social meta tags which the old one could have managed better...</s><s> yep you can do things to use these but its not easy for most, i can deal with many of these things but a lot of people cant, that what gripes me.</s><s> coninical support is still missing...</s><s> this side of bc has little or no love basically scott, these changes are basically something as a developer i could do in a morning at work and i likely not far from the truth from the engineers.</s><s> they do awesome work but it is again the case of the engineers being software developers, they do not understand the web that well.</s><s> just grinds my gears a lot on how much you have to fight for things that everyone else is doing and consider basic core things.</s><s> we are all cheeting for features coming out and i am very grateful to see them, but if you look, most of them are already in other systems for years. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4807285</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Oct 29, 2012 1:04 AM">
+<s>we are aware there are a lot of things to improve on seo. 
+</s><s>we made one step with pages for now.</s><s> while seo improvements come slower, we need to make sure they are the right steps.</s><s> for example, in order to exclude a page from google & site search before, you had to add <meta name="robots" content="noindex"> with your favorite code editor to the page open the page in admin console and check the box to exclude it from sitemap.xml and site search 
+now you need to do only one of these.</s><s> more important, you clients can do it too as there's an easy ui for it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4807318</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Oct 29, 2012 1:23 AM">
+<s>its things like the sitemap.xml though marius.</s><s> you make lots of web apps and do not use the detail view.</s><s> what a lot of people do not relaise is that the detail views of all those web app items sits in the sitemap.xml.</s><s> not being able to say "exclude from sitemap.xml" on such web apps really bad.</s><s> have to manually add that meta into those large layouts to avoid being indexed as a workaround. 
+</s><s>you have it so products and web apps meta in the layouts or content area get rendered in the head, blogs this does not happen.</s><s> the big main one everyone wants really good seo from - blogs, is the most lacking. 
+</s><s>wanting to correctly render the social media meta stuff on sites is hard and does not work in lots of areas. 
+ecommerce and a big one for duplicate content and need for conicial is lacking and i hope has some inclusion in updates next year. 
+</s><s>compared to just about everyone else it is really slow though you can not argue bc is lacking, what is frustrating for me is it is so close and only needs a little bit of love to correct most of this issues but it is not sadly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4812027</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Devon%20Reehl" timestamp="Oct 30, 2012 4:12 PM">
+<s>hi marius, 
+</s><s>in general, i'm happy with the seo meta changes.</s><s> i've implimented them on several sites now and everything went smoothly. 
+</s><s>two additional requests, which seem really basic and need to be addressed: 1) allow us to add metadata to blog posts.</s><s> really.</s><s> is that much more than a ui issue?</s><s> if so, can you explain to us the difficulty in implimenting it? 
+2) if you can't give us meta description fields for products, at least add 4 or more (so 8+ in total) custom fields to the products, so we can just create our own.</s><s> do this and it scratches our itch (at least temporarily) for things like fb open graph as well. 
+</s><s>devon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4818052</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Marius_Andreiana" timestamp="Nov 2, 2012 2:50 AM">
+<s>hi devon, 
+</s><s>we have these planned too, but cannot tell yet when will be done. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4891594</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Dec 2, 2012 8:50 PM">
+<s>this is a bit of a data dump but since someone did not renew the pre-release domain the site is down...   page seo metadata we are introducing a  new interface for editing page seo metadata by both partners and clients.</s><s> it can be activated  by going to this url on your site:   /adminconsole/#!/utilities/seosettings.aspx this will involve migrating some of existing metadata  from internal bc system into page content itself.</s><s> here are the effects of activating the new interface.</s><s> handling the following page metadata: description, title, robots noindex both of these can be set now when editing pages by using this dialog: changes: title, description and a new exclude from search fields will be also available in main view former page title field will be hidden (more notes below)     search results will replace existing "exclude from search results" option.</s><s> if enabled, it wil place <meta name="robots" content="noindex"> inside the page. if existing content="nofollow"  exists, it will be preserved if content="noindex" exists, the selected choise will be "show", otherwise "hide" when a page is saved, if it contains the above meta, the following actions will also be performed: exclude page from bc's site search exclude page from sitemap.xml    notes on handling page title page title can be set now both in html <title> tag (via the dialog above, dreamweaver or the code editor of your choice) (recommended), but also in the following field: when a page is rendered, it will use the title set in this field, if specified, and otherwise the value set in html <title> tag.</s><s> change: title will always be saved  in html <title> tag.</s><s> { tag_pagetitle } will continue to work in templates, and will render the value set in html <title> tag.</s><s> pages with metadata set with v2 interface this is no longer available  in v3 ui.</s><s> please see above the recommened way to work with metadata going forward.</s><s> when new interface for page seo metadata is enabled, the metadata assgined with pages with v2 ui, if any, will no longer be rendered.   what is not being changed?</s><s> handling metadata for blogs, products or other modules. these will be addressed longer term handling  facebook open graph or google plus tags per page these will not have dedicated uis, although we are considering it how about keywords metadata?</s><s> search engines do not use the keywords meta tag in web ranking.</s><s> if you'd still like to use keywords though, feel fre to edit the html content.   # migrating existing sites in order to activate the new ui, we will migrate existing data first.</s><s> 1. page titles for all pages which have the title set in this field we will move the title inside page content itself, using html <title> tag.</s><s> 2. exclude from search results page setting pages with exclude from search results set will have this added to page html code <meta name='robots' content='noindex'> 3. page metadata assigned with v2 interface for each metadata, we will move the contents in page contents.</s><s> example: this page <title>contact us</title> <meta name='description' content='contact abc company'> has the following metadata assigned description: contact xyz company robots: noindex after moving the data, the page will contain <title>contact us</title> <meta name='description' content='contact abc company'> <meta name='robots' content='noindex'> and have no metadata assigned in the v2 interface.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4936237</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Silkweb" timestamp="Dec 20, 2012 6:51 AM">
+<s>hi, 
+</s><s>is it possible to add catalog meta data yet? 
+</s><s>thanks 
+</s><s>tom 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4936239</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Dec 20, 2012 6:54 AM">
+<s>not yet, it is in progress to be implemented.</s><s> at this stage you can just add the meta tags in the description of the catalogue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-4976495</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jan 8, 2013 1:34 AM">
+<s>it is a very lacking update.</s><s> does not really address seo in bc, just fixes up some admin issues with features that already existed or were removed in the new ui etc. and in some places not completly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-5017961</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Scott_Apokrisis" timestamp="Jan 23, 2013 5:10 PM">
+<s>i agree - being able to use some custom fields in the <head> </head> section would be very helpful.</s><s> perhaps there already is a way to do this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-5268849</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Apr 25, 2013 7:13 PM">
+<s>when you upload a page with the html and head elements which don't include a <title> or <meta name="description" /> elements it's still clearing the page title and description that were inputed from the bc admin. 
+i still don't understand why the page title in the bc page admin isn't just reference by {module_pagetitle} rather than just being inserted into the page when you save through bc admin. 
+</s><s>it's completely disjointed from the way bc works.</s><s> espeically when you have {module_pagename} 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-5495172</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="thriftgirl" timestamp="Jul 11, 2013 1:19 AM">
+<s>i was beginning to think nobody even knows what the open graph is an then i read your comment and all the lights turned back on!</s><s>!</s><s> forget seo...i would rather see adobe's giant octupus arms reach out to facebook and figure out how to implement a bc module that is approved and enabled by facebook for the open graph.</s><s> now that would be leaps and bounds ahead of everyone else!</s><s>!</s><s> 
+</s><s>for those who want to be amazed by the deep dive and find out how it works, here are a few videos directly from facebook. apps.facebook.com/boilingtheocean and apps.facebook.com/deepdiveapps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-5495443</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Liam%20Dilley" timestamp="Jul 11, 2013 4:14 AM">
+<s>gary, what app do you use to do it.</s><s> some programs update by replacing the file rather then a true update and this causes problems with bc in terms of updating a page because the server treats it as a new file, because it basically is. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-5497621</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Gary%20Swanepoel%20-%20ITB" timestamp="Jul 11, 2013 2:44 PM">
+<s>komodo for editing and filezilla for uploading. 
+i haven't considered trying a new ftp program.</s><s> i might see if i can duplicate with something else. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4576675-6027410</DOCNO>
+<TEXT>
+<subject>upcoming pages SEO metadata changes</subject>
+<post author="Homestead%20disposal%2C%20Inc" timestamp="Jan 18, 2014 1:37 PM">
+<s>migrated pages onto the business catylist and now my metadata descriptions are all messed up....help www.homestead-disposal.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5664120-1291998</DOCNO>
+<TEXT>
+<subject>Blog comment replies</subject>
+<post author="chiefferret" timestamp="Sep 9, 2013 1:22 AM">
+<s>can u tell me if the new version of bc will enable replies to blog comments. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5664120-5664489</DOCNO>
+<TEXT>
+<subject>Blog comment replies</subject>
+<post author="Liam%20Dilley" timestamp="Sep 9, 2013 1:23 AM">
+<s>hey there, no one likes all cap titles here and they will be edited 
+bc always has had the ability to have comments on blogs.</s><s> they are a module you add to a blog and you can add any 3rd party like facebook comments to a blog as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5664120-5664513</DOCNO>
+<TEXT>
+<subject>Blog comment replies</subject>
+<post author="chiefferret" timestamp="Sep 9, 2013 1:34 AM">
+<s>i know that there is the ability to have comments on blogs.</s><s> i was wondering if there is the ability for the blogger to reply to the comments others have posted on a blog. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5664120-5664624</DOCNO>
+<TEXT>
+<subject>Blog comment replies</subject>
+<post author="Liam%20Dilley" timestamp="Sep 9, 2013 2:47 AM">
+<s>i have many sites where the admin have themselves in the crm and comment back, and to that all the 3rd party ones you can have the ability for the site owners to comment.</s><s> i am guessing what you actually mean is posts that stand out as the site owner and not look the same as the other posts? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5664120-5664653</DOCNO>
+<TEXT>
+<subject>Blog comment replies</subject>
+<post author="chiefferret" timestamp="Sep 9, 2013 2:55 AM">
+<s>thank you, i am a little confused with your terminology because i am only new to bc and having my own site for that matter.</s><s> i just wanted the ability to reply back to posts on my blog on my website.</s><s> that is have their comments visible and for me to just reply back and have that visible as well.</s><s> do i just comment on my own site as any other person would in the comments section but as a reply?</s><s> i read somewhere that i cannot reply to comments after i spent about two hours in my admin console trying to figure out how to reply.</s><s> does this make it any clearer?</s><s> i am sorry if i am not making a whole lot of sense.</s><s> i am not sure what a 3rd party is in this case. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5664120-5664716</DOCNO>
+<TEXT>
+<subject>Blog comment replies</subject>
+<post author="Liam%20Dilley" timestamp="Sep 9, 2013 3:50 AM">
+<s>you simply fill in your details and put your comment on the blog as anyone else at the moment.</s><s> that is the only way.</s><s> so you can have your own account that indicates it is you of the site and just comment.</s><s> there is no "reply" feature for bc on the comments though so you simply submit another comment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-1334543</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel Media Group" timestamp="Nov 13, 2013 9:44 AM">
+<s>i have used this tag often {tag_blogpostbodypreview, read more}, but in a recent update to an older site replacing {tag_blogpostbody} with {tag_blogpostbodypreview, read more} forces the "side-panel" div to slide under the post list and not to the right, as if that tag has a clear:both or block styling.   i have made sure that nothing else cause this and find that by replacing those tag with each other on the post list layout page breaks up the blog layout altogether   here's the catch, it only happens on the "home page" of the blog list, but not when viewing the  post detail or when you go to page #2 on the blog list view   see here home page http://www.peptalks.me/pep-talks-blog   see here a post detail and page 2 of the list http://www.peptalks.me/pep-talks-blog/page/2/ http://www.peptalks.me/pep-talks-blog/familiar_foods_upgraded_is_goooo ood   i can't for the life of it figure out why this is happening.   any insight would be worth a cocktail on me.</s><s> teejay
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5839407</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Tinymill%20Tim" timestamp="Nov 13, 2013 11:09 AM">
+<s>can you show us what you have in your module templates? 
+</s><s>here's a few things i noticed - 1) on the main blog homepage you have your side panel in the same div as post-list and 2) for some reason you are linking to module stylesheets in every single post? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5839919</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 1:20 PM">
+<s>1) let me review that.</s><s> 2) yes, i should take that out.</s><s> just using that during development. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840041</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 2:07 PM">
+<s>#2 cleaned up the repetive stylesheet. 
+#1 by default and as with all my other blogs that we have posted, the side-panel and post-list divs are inside the "wrapper clear" which is inside the "blog-container".</s><s> they all work fine. 
+</s><s>if i move the side-panel out of the "wrapper-clear", then the exact reverse happens.</s><s> the home page of the blog is right, but then all subsequent pages have the side-panel forced below the blog-list and details. 
+</s><s>this is what i have now 
+<div class="blog-container"> <div class="wrapper clear"> <div class="post-list"> <h1>{tag_blogtitle}</h1> {tag_postlist} <p class="page-nav">{tag_previouspage} {tag_pagination} {tag_nextpage}</p> </div> <div class="side-panel"> <div class="homevideo"> <ul> <li><a class="iframe" href="/polly-pitchford-demo-video.html"></a></li> </ul> </div> <div class="centerbits"> <h2><a class="iframe" href="/polly-pitchford-demo-video.html">watch motivational speaker polly pitchford in action!</a></h2> </div> <div class="rssbox"> <h2>subscribe to polly's blog<a sw="1" catid="58,21484" id="rss" href="/rssretrieve.aspx?id=21484&amp;type=rss20" target="_blank"><img src="/images/arch/rss-icon.png" alt="rss" name="rssicon" width="30" height="30" id="rssicon" style="border-width: 0px;border-style: solid;" /></a></h2> </div> <div class="homebook"> <ul> <li><a href="/book-funny-motivational-speaker-polly-pitchford"></a></li> </ul> <div class="phonenumber">(941)685-7725</div> <div class="email"><a href="mailto:polly@peptalks.me">e-mail</a></div> </div> <div class="padbox"> <h4>recent posts</h4> {tag_blogrecentpost,3} <hr /> <h4>archive</h4> {tag_blogpostarchive} <hr /> <h4>categories</h4> {tag_blogcategorylist} <hr /> <h4>tags</h4> {tag_blogtagcloud}</div> </div> </div> </div> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840042</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 2:10 PM">
+<s>again, if i just put in the {tag_blogpostbody} instead of the {tag_blogpostbodypreview, read more}, everything is hunky-dory and looking good.</s><s> all i we need is to abbreviate the blog post.</s><s> why would a different tag force the layout to be different.</s><s> odd.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840087</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Tinymill%20Tim" timestamp="Nov 13, 2013 2:29 PM">
+<s>what are you putting in the list view? 
+
+</s><s>tim mcloone tim@tinymill.com | 617-336-3156 twitter | linkedin | facebook www.tinymill.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840112</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 2:50 PM">
+<s><div class="blog-post"> <h2 class="post-title"> {tag_blogposttitle} </h2> <div class="post-details"> {tag_blogpostauthor} - {tag_blogpostdate} </div> <div class="post-body"> {tag_blogpostbodypreview, read more} <div class="links"> <a href="{tag_permalinkonly}#comments">comments ({tag_commentcount})</a></div> <hr /> </div> </div> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840220</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Tinymill%20Tim" timestamp="Nov 13, 2013 2:59 PM">
+<s>strange try this instead: {tag_blogpostbody, 400, read more} 
+400 being the number of characters you want. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840201</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 3:08 PM">
+<s>that one works, but now i need to get that image onto that type of preview too. 
+</s><s>so, is the tag that doing weird things - right?</s><s> why would it do that?</s><s> and why just on this site?</s><s> i use it at other without any problem.</s><s> that's the question i would love answered. 
+</s><s>good job and thanks, tim! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840224</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Tinymill%20Tim" timestamp="Nov 13, 2013 3:13 PM">
+<s>yeah totally strange.</s><s> {tag_blogpostbodypreview} pulls the content directly from the blog post, formatting and all where as {tag_blogpostbody, 400, read more} only pulls the characters so i am wondering if there is a misplaced div or tag somewhere in your first set of blog posts that is causing that.</s><s> it would explain why it only appears on the first page and not the others. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840253</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 3:18 PM">
+<s>i agree, but for the life of it, i can not find it.</s><s> i have rebuilt it three times and very slowly testing each element to make sure nothing flipped.</s><s> that's how i found the error with the tag. 
+</s><s>oh, well, thanks for working with me.</s><s> i owe you one.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840228</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Tinymill%20Tim" timestamp="Nov 13, 2013 3:21 PM">
+<s>no worries!</s><s> mine's a burbon! 
+</s><s>as a final thought, have you tried disabling each individual post one at a time and seeing what happens?</s><s> you should be able to find the culprit through process of elemination. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840258</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Liam%20Dilley" timestamp="Nov 13, 2013 3:33 PM">
+<s>the blogbody preview pulls the first paragraph of your content.</s><s> so if your wrapping the other one in a p tag you will be doubling up etc or if it was sitting with no formating then as tim said there will be a html error somewhere in your layout.</s><s> on that developer toolbar for firefox coupled with firebug are kind of must's for your web development.</s><s> if you use dw copying the source code and pasting it in a blank page or other coding platform with code validation will pick up any errors. 
+</s><s>with that as notes, you changing it joel because of this anyway but the body,400 tag cuts characters off and words so this is bad for seo and defeats part of the purpose of a blog listing.</s><s> with that as well if you not got your content paragraph actually wraped around a paragraph this is semantically incorect and also harms your seo 
+hope you found the issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840322</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 4:11 PM">
+<s>thanks, liam, for the pointer on search engines and cutting off text. 
+</s><s>does this apply to the {tag_blogpostbodypreview} as well? 
+</s><s>as for code work... 
+i use the firefox firebug too, but think firefox finds too much stuff wrong and filtering everything that is obvious is very time consuming.</s><s> besides that browser crashes on my mac all the time and takes too long to load and load sites in general, so i seldom like using it. 
+</s><s>my attitude is that if it works in firefox it works.</s><s> i try to keep it clean as i can. 
+</s><s>in my dw, which i use primarily, there aren't any errors found with any of the templates or layouts. 
+</s><s>like i said, why does this error only occur with the {tag_blogpostbodypreview} tag only?</s><s> it's a riddle i am going to solve. 
+i hope someone can find it with me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840376</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Liam%20Dilley" timestamp="Nov 13, 2013 4:34 PM">
+<s>blog preview always pulls the first paragraph so that will be in full.</s><s> if you at a point where firefox is finding to much wrong joel thats pretty bad to be honest.</s><s> you really need to address that.</s><s> i get annoyed when i have 4/5 errors on a page.</s><s> those will always be bc things i can not fix but if you do not have valid html, semantic html, css and javscript then fixing browser compatability issues and general bugs and issues like this become very hard.</s><s> changing those tags should not have any real effect on your layout for example but now your trying to track down the issue and fix it. 
+</s><s>which firefox you using?</s><s> the latest is firefox 25 
+a note on the concept if it works in firefox it works is not a good one firefox believe it or not is the number one browser in terms of reading something wrong and figuring out the best way to sort that out to make a website render.</s><s> so it can handle incorect enclosed lines in javascript or an extra comma where there should not be etc. for debugging thats why you browser test and check things like your console etc.</s><s> ie for example halts on a lot more errors in javascript and also of course is just bad at rendering html and css, even up to ie9 and in some css cases ie10 is bad too. 
+</s><s>chrome and webkit browsers also are a bit more strict in the rendering etc. if you do a jquery click on a dropdown it will work on firefox but this is incorect though and in a webkit browser it wont work. it ahs to be onchange. 
+
+</s><s>in terms of your error it pulls the html of first paragraph so it will be... 
+<p>my stuff</p> 
+</s><s>and the other tag you may have wrapped that in a p or a div or not so it just would have been... 
+</s><s>this is my content..</s><s> <a href="">readmore</> 
+</s><s>so if you not closed off a div etc or have double of of a pargraph you will encounter a html issue.</s><s> i not checked out your site so i cant say which.</s><s> but it will be a html validation.</s><s> run your page through validation and find your errors. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840422</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Joel%20Media%20Group" timestamp="Nov 13, 2013 4:43 PM">
+<s>liam and tim 
+</s><s>i found the error.</s><s> it was on one of the client's blog post, which had a iframe tag in it which triggered the issue!</s><s> removed it an now the blog layout works across the board.</s><s> thanks for having me look for this!</s><s> note: that is validation error does not show up in firefox. 
+</s><s>liam 
+</s><s>i agree with you on every point!</s><s> i am using firefox 25.</s><s> i usually filter the css errors because it includes styling that is not intend for firefox but for other browsers, which i include one to that speaks to it.</s><s> perhaps, i am not the best programmer, but everything i do works on all browsers.</s><s> i also exclude third party services and their errors because i have little control over them. 
+</s><s>one this site i can see some missing files from colorbox and maybe one or two things i need to fix, but the css errors are a plenty and not sure how to address them when there are intended for firefox, which include styling for webfonts, opacity, shading and rounded corners for example. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-5839088-5840618</DOCNO>
+<TEXT>
+<subject>A weird thing happens to layout when inserting {tag_blogpostbodypreview, Read More}</subject>
+<post author="Liam%20Dilley" timestamp="Nov 13, 2013 5:56 PM">
+<s>in terms of cross browser style stuff you can ignore that, thats fine 404 on files slows page loading down, it is good to fix those up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-998812</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="LittleBigJoe" timestamp="May 4, 2012 6:35 AM">
+<s>a recently activated site's ecommerce products are showing up in google search using the system domain (client.partnersite.com) instead of their specified domain (client.com).</s><s> what can be adjusted to remedy this?</s><s> with the new forum changeover, i am unable to find any archived questions or details from the original forums. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4379744</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Sidney%20Mitchell" timestamp="May 4, 2012 9:56 AM">
+<s>hi littlebigjoe, 
+</s><s>can you provide the domain url in question? 
+</s><s>also an example of what you are experiencing so we can help replicate. 
+</s><s>by default the system should not longer index system urls but if this is happening for your site we'll need to investigate this further. 
+</s><s>kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4379750</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="LittleBigMark" timestamp="May 4, 2012 10:11 AM">
+<s>sidney: www.stringstalker.com is the domain.</s><s> when a customer searches for "spypoint b47" in google, the url shown in the results takes them to stringstalker.partnersite.com website. 
+</s><s>sent on behalf of littlebigjoel 
+littlebigmark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4379753</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Sidney%20Mitchell" timestamp="May 4, 2012 10:23 AM">
+<s>thanks, 
+</s><s>i reviewed the notes from our team and it states trial sites shouldn't be indexed.</s><s> so in your case as its a live site you'll want to follow the note below. 
+</s><s>"note that trial sites will not be indexed by search engines.</s><s> should you want to disable search engine indexing after upgrade, please use a custom robots.txt file or upload an empty sitemap.xml. 
+</s><s>if you'd like to use a custom sitemap.xml file, simply upload it to your site.</s><s> if this file exists, it will be served instead of the bc-generated sitemap.xml." 
+</s><s>referenced: http://www.businesscatalyst.com/blogretrieve.aspx?postid=82709http://www.businesscatalyst.com/blogretrieve.aspx?postid=82709 
+let me know how this goes for you. -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4380377</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Liam%20Dilley" timestamp="May 4, 2012 2:40 PM">
+<s>sidney, can you again pass this on to the devs on this, i do not think what they put in place is working.</s><s> i have not had this for us yet but since the update i have seen several people still have their url's indexed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4380365</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Sidney%20Mitchell" timestamp="May 4, 2012 2:53 PM">
+<s>will do liam!</s><s> 
+</s><s>either myself or someone on the team will respond back with some more details on this occurrence. 
+</s><s>cheers! -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4387448</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="cristinel%40adobe" timestamp="May 8, 2012 7:13 AM">
+<s>hi liam, 
+</s><s>the current version available in production, has disabled indexing for trial sites by automatically serving a robots.txt file.</s><s> see this new trial site url for example: http://crowdcan.businesscatalyst.com/robots.txt 
+once the site is upgraded, we stop serving the robots.txt file and customers will have to create their own robots file and upload it in their site root. 
+</s><s>cristinel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4395988</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="May 10, 2012 8:38 PM">
+<s>re: www.williambaycottages.businesscatalyst.com   the .businesscatalyst system url is till appearing in google for the site www.williambaycottages.com.au.</s><s> the duplicate of the site is affecting the seo.</s><s> we did a search: https://www.google.com.au/search?sourceid=chrome&ie=utf-8&q=site%3awil liambaycottages.businesscatalyst.comi   how can we ensure that all these urls are removed?</s><s> i contacted support who told me to reindex the site, which i have done but the problem is still occuring.   the client has threatened to go and get a wordpress site so i am keen to resolve this issue before they do!h   thanks!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4396140</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Liam%20Dilley" timestamp="May 10, 2012 9:31 PM">
+<s>i sent the information to marius but i found the issue likely having people get their staging url indexed by google and it is because of the sitemap.xml 
+1. if you duplicate an existing site the sitemap.xml that now shows in ftp comes over.</s><s> even if you take the new site live, make changes during its development the system thinks that the sitemap.xml it sees is one you have manually added so does not trigger the sitemap.xml updates with new url's etc. if you had not figured this out you do not know about it and you get things indexed and then have to work to get the removed. 
+2.</s><s> in the other issue case if you have a website which you activate (pay) for the cms to do development and testing on things like payment forms, ecommerce etc the system now turns on the sitemap.xml (as its not manual under the new ui).</s><s> but it wil generate the development url.</s><s> this is ok as you should not have linked the site openly and google should not see it.</s><s> but if you take the site live, change to the new domain url the sitemap will keep rendering in the old development url. 
+</s><s>if you delete the sitemap.xml in the hope it will generate a new one, this also then does not work (did this to two sites) and checked the next day and no sitemap.xml was generated.</s><s> i knew i could go to the old ui or use the url in the admin to access the old seo page and i saw that the sitemap.xml was off.</s><s> it was not till i turned that back on and then waited for the next day i saw the sitemap.xml created and also with the correct links. 
+</s><s>if you are not aware of these (which most wont, you do not expect this) and you do things like register your sitemap.xml with google webmaster tools etc or it finds it naturually you are going to run into a variety of issues from it thinkin you have duplicant content to registering those url's you do not want it to. 
+</s><s>so with this in mind there needs to be some improvements to avoid and address these issues, the changes you guys made are not 100% just yet. 
+@jsjs2012 if you have had this you need to make sure things like the above has not occured and then do things like tell google webmaster tools about the development urls and how you not want them to show etc. that and ensuring your not linking to those urls any where on the site (happens more then you think, people think they have not but they have) etc and if you just give it a few weeks google gets the idea and they first drop in ranking over your actual content and then do not show up at all. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4396156</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="May 10, 2012 9:50 PM">
+<s>hi liam,   the site in question has been live for a long time so the the xml sitemap has been up and running and is also not showing any of the system urls in it.   as a comparison - head to google and search the following: site:williambaycottages.businesscatalyst.com this shows all the pages on the website that google recognises with the system url.   to compare to another site without the system urls do the same search but for: site:petshop-online.businesscatalyst.com   this site does not show any system urls which is what we would like for the william bay cottages site.   can you shed any light on this matter?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4396145</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Liam%20Dilley" timestamp="May 10, 2012 10:04 PM">
+<s>your site was before the changes the bc team made to prevent this then.</s><s> as to how it happend - since we have had only one case (where the client shared the development link on a public site which google grabed the link and then crawled the site from) it normally is as a result of the site being linked so google can crawl it. 
+</s><s>so, first step is to ensure this is not from the site itself.</s><s> you need run a search (lots of tools out there) to crawl the site links on the site and ensure that there is no absolute url link to that development domain.</s><s> if you do, once google is in their it will see all relative links as that develoment domain and index the url's as such. 
+</s><s>if that is all good and it is fixed up, do you have webmaster tools set up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4396224</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="May 10, 2012 10:37 PM">
+<s>we have been through the entire site to ensure there is no link with the system url - there was was last week which we fixed.</s><s> we then reindexed the site.</s><s> i do have webmaster tools and the site was submitted long ago.</s><s> is there another step i should take now? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4396701</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="TudorMuscalu" timestamp="May 11, 2012 3:05 AM">
+<s>looks ok from where i'm searching.</s><s> works great with the map/pics on the right 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4399382</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="May 11, 2012 3:23 PM">
+<s>yes, it  looks great when you search william bay cottages, but this is not the issue.</s><s> we are searching for (and trying to remove from the google search) all the pages that google has indexed that contain the business catalyst url, to search for these you need to put the following into google:   site:williambaycottages.businesscatalyst.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4399396</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Sidney%20Mitchell" timestamp="May 11, 2012 3:29 PM">
+<s>hi jsjs2012, 
+please view this thread and look to mario's solution which requires updating via webmaster tools. 
+- http://forums.adobe.com/message/4353886 
+kind regards, -sidney 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4399461</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Liam%20Dilley" timestamp="May 11, 2012 4:01 PM">
+<s>one thing everyone needs to understand, what ever you do, the fix wont happen overnight, it may not even happen over a few days.</s><s> when you have had this happen to fix it takes time.</s><s> going live with a site to have fully fledged seo can take up to 6 months, seo takes time 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4404245</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Lynda%20Spangler" timestamp="May 13, 2012 8:17 PM">
+<s>this may work (someone correct me if i am wrong) add the site to google's webmaster tools ie: mysite.businesscatalyst.com and verify it within google.</s><s> once that is done you can remove that site from google and the problem should be fixed.</s><s> i had my site doing this in the beginning.</s><s> was a bad link, i fixed then removed the site from google's search index. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4415157</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="May 17, 2012 12:37 AM">
+<s>thanks lynda, i have tried this so fingers crossed this is the answer!</s><s> thanks again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798198</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Klaye%20Morrison" timestamp="Oct 24, 2012 3:23 PM">
+<s>is anything more being done to fix this issue? 
+</s><s>your suggestions are not going to stop the trial site domain from being indexed.</s><s> can this please be escalated as it 's a very big problem with many of our sites.</s><s> one client in particular has paid an seo company to do work on the site, but they are unable to complete their work because of duplicate content issues. 
+</s><s>this site has 40 results in google for the trial site domain: google "site:hillslodge.pebbledesign.com" 
+i noticed that the above williambaycottages.businesscatalyst.com is still being indexed so the webmaster tools solution obviously has not worked. 
+</s><s>the trial url needs to be completely removed from google's index.</s><s> not redirected, removed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798667</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="Oct 24, 2012 6:45 PM">
+<s>hi klaye, no, the webmaster tools did not work, none of the suggestions have.</s><s> my client is also paying hefty fees for seo and the dual domain name is also effecting their seo results.</s><s> sadly, they don't plan to renew with bc as of december when their annual hosting expires and will be transfering to word press hosting.</s><s> i was told that the bc updates in september would remedy this issue but sadly nothing has changed and we will lose a client due to this.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798703</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Liam%20Dilley" timestamp="Oct 24, 2012 6:51 PM">
+<s>hi there, you did not see the updat eand check the dates on these posts klaye? 
+</s><s>go into the domain manager and click the development url and you will see a new option in there to prevent it being indexed.</s><s> it will take time for google to start ignoring it if it has picked it up though but the option has been implemented for a little while now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798669</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Klaye%20Morrison" timestamp="Oct 24, 2012 6:56 PM">
+<s>that's a shame.</s><s> we too have lost bc clients due to little things like this. 
+</s><s>i've thought of a workaround and may put it into action unless bc can resolve the issue.</s><s> i'll use our client for this example: 
+- change the trial url in the partner portal from hillslodge.pebbledesign.com to hillslodge2.pebbledesign.com (or something similar). - create an a record for hillslodge.pebbledesign.com inside our partner hosting account and point it to our other hosting solution (media temple). - within that hosting account, add a robots.txt and disallow it from being indexed. 
+</s><s>obviously this is a bit of a stuff around, but i'm pretty sure it will work.</s><s> hopefully it won't affect the rankings of the main domain, as hillslodge.pebbledesign.com has a 301 redirect to hillslodge.com.au. 
+</s><s>it would be much easier if bc could just resolve this issue themselves as this is not a time effective solution if we need to do it for all our clients. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798670</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Klaye%20Morrison" timestamp="Oct 24, 2012 6:58 PM">
+<s>liam, yes this has been implemented for a while now and the redirect is working, but the domain is still being picked up, just google "site:hillslodge.pebbledesign.com" and you can see. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798674</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="jsjs2012" timestamp="Oct 24, 2012 7:00 PM">
+<s>i implemeted this change a long time ago too, and google is still recognising the system url.</s><s> it's been a few months now, i would assume changes would have been recognised now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798676</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Klaye%20Morrison" timestamp="Oct 24, 2012 7:03 PM">
+<s>agree with the above, it's been long enough for google to stop indexing the trial domain.</s><s> something else needs to be done.</s><s> will this be looked into, or should i try implement my workaround above and see if it works? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4798732</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Liam%20Dilley" timestamp="Oct 24, 2012 7:41 PM">
+<s>have you tried the new disavow feautre?</s><s> http://www.seomoz.org/blog/googles-disavow-tool-take-a-deep-breath 
+google is thinking your links are stronger in that url and it is likely that the site has links to that development url.</s><s> i can honestly say i never had issues before unless clients linked the development url and with the new tool it sorts things out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4379161-4809445</DOCNO>
+<TEXT>
+<subject>System URL is showing in Google Search - how to remove?</subject>
+<post author="Klaye%20Morrison" timestamp="Oct 29, 2012 5:19 PM">
+<s>this finally appears to be working, but pdfs are not being redirected: https://www.google.com.au/search?q=site%3ahillslodge.pebbledesign.com& oq=site%3ahill&sugexp=chrome,mod=0&sourceid=chrome&ie=utf-8   is this going to be resolved?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-1007209</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik :: Creativaholic" timestamp="May 18, 2012 12:24 AM">
+<s>i used the jquery bassistance validation plugin in the checkout form, it works like a charm, however, i run into a little issue with dropdowns (select). 
+</s><s>to validate a select dropdown, the unvalid option needs to have an empty value - example: 
+<select name="shippingstate" id="shippingstate" class="required"> <option selected="selected" value="">-- state --</option> <option value="act">act</option> <option value="nsw">nsw</option> <option value="nt">nt</option> <option value="qld">qld</option> <option value="sa">sa</option> <option value="tas">tas</option> <option value="vic">vic</option> <option value="wa">wa</option> </select> 
+</s><s>now once the page is saved, bc scraps the empty value and i end up with: 
+<option selected="selected">-- state --</option> 
+i was trying to work around it somehow, but with no luck so far. 
+---------- 
+in the other hand, i love dw spry validation because you have more control over the validation errors, messages, css etc. and it can validate against any value you specify. 
+</s><s>does anyone had experience with spry validation or is there anything i should watch out for? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4425907</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="May 21, 2012 8:31 AM">
+<s>and so 3 days, no answer yet.</s><s> apparently no one got an answer.</s><s> well i do now for those who are wondering. 
+</s><s>there are some limitation on jquery and spry validation if you want to use it in the checkout form in bc (specially if you want a very complex, detailed and good looking form, just stick with what you've got for now, i have 1 of my programmers investigation and trying few things, so i will keep updating this as we go. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4470178</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 6, 2012 8:13 AM">
+<s>hey creativeaholic, 
+</s><s>in the old version of the forums i helped someone combine dreamweaver spry integration into a bc form.</s><s> basically, the spry javascript validation sits on top of the site as the first layer of validation and if that fails or there's no javascript, bc's required/non-required basic form validation takes hold and works it from there. 
+</s><s>you can see a demo of what i've got working at http://ignitemybusiness.com/demos/dreamweaver-spry-validation 
+the person i was assisting was trying to validate a social security number so don't put a real one in there for testing since the form does end up submitting a case to my site which i'll ignore and i don't want your danged ssn~! 
+</s><s>the key to using dw spry on top of the bc validation is that they both use the form element's onsubmit attribute so essentially, you need to build your form in bc and add it to a page, then you need to setup dw spry validation in dw as you normally would but you'll overwrite the onsubmit attribute for the form when you do that so when you're done you need to update the onsumbit javascript to essentially say, "if this form validates for spry, continue validating using bc's javscript next" and of course, if that validates for bc's javascript, the form will send. 
+</s><s>here's the code for the onsubmit attribute you need to add to the form: <form onsubmit="if (spry.widget.form.validate(this)) {checkwholeform37632(this); return false;} else {return false;}"> 
+</s><s>of course, you'll need to change the function name from "checkwholeform57632" to whatever your unique function is that was created on the fly for bc for your form.</s><s> the key to integrating spry and bc is updating the onsubmit like above and you'll be all set.</s><s> feel free to play with and dissect my demo above. 
+</s><s>sorry for the delay.</s><s> some things are worth the wait! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4470285</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 6, 2012 8:22 AM">
+<s>i haven't tested this on the checkout form validation, only the regular web forms for bc. i'm assuming it's the same concept except since there's no form element, you just update the onsubmit attribute for the "checkout" button.</s><s> so an example would be: 
+<a id="catshopbuy" onclick="if (spry.widget.form.validate(this)) {return validatecart(2199736);} else {return false;}"><img alt="" src="/catalystimages/shop_checkout.png"></a> 
+</s><s>it's a similar concept. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4471724</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Jun 6, 2012 3:55 PM">
+<s>yes true, and it will all work fine, but the limitations i found are in terms of some validations. 
+</s><s>for example: validating the type of credit card "visa, mastercard" etc. 
+i couldn't find how to select different types of cards, you either choose 1 single type of card, or all of them, where in australia, we rarely have dinner club, and some people don't like to allow amex because there are many fees behind it, so they like to stick to just visa and mastercard. 
+so the validation trigger would be: var textfieldwidget1 = new spry.widget.validationtextfield("textfieldwidget1", "credit_card"); 
+and you can specify the type of card by modifying it to: var textfieldwidget1 = new spry.widget.validationtextfield("textfieldwidget1", "credit_card", {format:"visa"}); 
+but then if you want to add mastercard, usually you'll do: var textfieldwidget1 = new spry.widget.validationtextfield("textfieldwidget1", "credit_card", {format:"visa, mastercard"}); 
+the problem with that, you get a javascript markup error. 
+there sould be a workaround, i just didn't have time to think properly, unless if you have already found the answer, that will be great. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4472082</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 6, 2012 7:45 PM">
+<s>i worked up a solution.</s><s> i had trouble figuring out how to reset the spry widget variable after it's been set initially but i've got it working now.</s><s> i've tested it with visa and mastercard and it works for me so as long as the credit card validation function supplied by dreamweaver is using up-to-date patterns we should be ok.</s><s> checkout what i've worked up: http://jsfiddle.net/hk9nz/52/   this was a fun little exercise.</s><s> i'm sorry if i didn't comment the code as much as i should but it's pretty straight forward.</s><s> let me know if you run into any gaffes.  try forking my code on jsfiddle and playing with it yourself.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4472083</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 6, 2012 7:49 PM">
+<s>if you want to change the options for credit card types you just need to remove the option elements in the #cardtype select element you don't want in your form if you don't want diner's club or amex and the code should still work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4472190</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 6, 2012 7:56 PM">
+<s>ok..</s><s> i added a little more code commenting for you.</s><s> here's the latest: http://jsfiddle.net/hk9nz/54/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4472202</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Jun 6, 2012 8:55 PM">
+<s>wow, thanks man, that was very detailed, and very clever implementation.</s><s> that's great. 
+i will have to go back now and play with that form again, i think there was few hick ups i've been scratching my head about.</s><s> i will come back again if i have more questions. 
+</s><s>thanks again 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4472941</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Frank%20Grootaarts" timestamp="Jun 7, 2012 5:27 AM">
+<s>hi trickster888, 
+</s><s>i'm build a form in bc but i need some detailed info on how to add the spry-validation.</s><s> you said: "you need to build your form in bc and add it to a page, then you need to setup dw spry validation in dw as you normally would but you'll overwrite the onsubmit attribute for the form".</s><s> so how can i setup/add the spryvalidation to an existing form build in bc? 
+</s><s>when i try to add spry-validation there is a new one created after my formfield?</s><s> can you help me an be specific on how to do that?</s><s> i would be very thankful. 
+</s><s>thanks 
+</s><s>frank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4474203</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 7, 2012 12:18 PM">
+<s>actually, i was mistaken.  adding spry validation in dreamweaver to a form that was built in bc does not override the onsubmit element on the form.  my apologies.</s><s> but if we want to add the spry validation on top of bc's javascript validation we will need to adjust the onsubmit function to test to see if the form validates via spry first, and if it does pass spry validation, then send it over to the bc validation.   the steps go like this:   create a form in bc and include your required fields as necessary.  create a field for "social security number" or anything else you want to validate with spry.</s><s> be sure to include this field in the bc form.</s><s> don't create the input in dreamweaver that needs spry validation.</s><s> do it on bc. insert your new bc web form on a web page via the admin panel's module manager or via the dreamweaver bc extension.</s><s> open up dreamweaver and download the page you just created from your bc site.</s><s> open the page that has your bc form in dreamweaver.</s><s> click the code view so that we can see the document source and take note of the form element's onsubmit attribute.</s><s> it should be something similar to: onsubmit="return checkwholeform77506(this)" except that your form will have it's own unique name for the checkwholeform function.  copy the function and save it on your page.</s><s> i usually add html comments just above the form element to save it.</s><s> such as: <!-- checkwholeform77506(this) --> you can leave the onsubmit function as it is for now, just copy it for reference.</s><s> we'll use it later.</s><s> now you can select an input element in your form and add spry validation widgets as you need them.  there will be a dialog to warn you that there's already an onsubmit function for the form.</s><s> just click ok.</s><s> when you insert your spry validations, dreamweaver will add script and css links to your document.  if you want to move those assets to a more permanent place, just copy those files to the folder you want and update their locations in dreamweaver so that they are pointing to the right javascripts and css files.</s><s> once your validations are setup, the last step is to edit the onsubmit attribute on the form element.  switch to code view again and we'll want to update that attribute with this: onsubmit="if (spry.widget.form.validate(this)) {checkwholeform77506(this); return false;} else {return false;}" important: each form's onsubmit function will vary slightly.  since each form has a unique "checkwholeform" function built by bc (my example is "checkwholeform77506(this)") you'll need to copy your unique function that we copied and hid before and replace my example.</s><s> check to make sure your onsubmit attribute on the form element looks like my example above but with your unique function in the place of mine.</s><s> save your web page in dreamweaver and press ctrl-u to upload.</s><s> select yes to upload the dependant files like the spry javascript and css that dreamweaver added for us. open your website and surf to the page with the form on it and test it out.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4474270</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Frank%20Grootaarts" timestamp="Jun 7, 2012 12:54 PM">
+<s>thank you trickster888 for this very well clear written guide! 
+i have used your 11 steps, and it is working. 
+i have a question you maybe also can help me with: 
+in my form i ask for a phone number.</s><s> but it is not required.</s><s> people can leave it blank.</s><s> is it possible to use validation only when a user wants to give their phone-number?</s><s> so i can check the pattern like 000-0000000 ? 
+</s><s>thanks, 
+</s><s>frank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4474419</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 7, 2012 1:31 PM">
+<s>yes.</s><s> you have to use a custom pattern since the default phone validation is for us/canada.</s><s> after you've selected your input for the phone number and created a spry validation for it, change your settings for the spry validation for a custom pattern, like: 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4474666</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Jun 7, 2012 2:41 PM">
+<s>yes as the trickster's screenshot, you can enforce the pattern but not make it required by leaving the required checkbox unchecked. 
+</s><s>the trickster, that is something awesome you've done here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4476216</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Jun 8, 2012 6:36 AM">
+<s>@thetrickster888, here's an interesting question. have you implemented the bc captcha with it?</s><s> if so, what have you done, did you keep just the default validation for the captcha or how did you go about it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4476513</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Frank%20Grootaarts" timestamp="Jun 8, 2012 7:59 AM">
+<s>hi trickster888 & creativaholic, 
+</s><s>at the end it was a very simple but effective solution.</s><s> i have my form finished with spry in dreamweaver and tested in bc. it works like a charm. 
+</s><s>thanks again! 
+</s><s>frank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4476535</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Tarik%20%3A%3A%20Creativaholic" timestamp="Jun 8, 2012 8:14 AM">
+<s>yeah another question though, on top of the captcha, what about the date picker?</s><s> any thoughts, anyone tried? 
+</s><s>these actually as i remember are the ones that pushed me to post-pone my trials 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4476858</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Jun 8, 2012 9:51 AM">
+<s>for the captcha, yes.</s><s> i just used the default one and i've had no issues tying in spry for other fields and using captcha at the same time. 
+</s><s>for a date picker you should be just fine too, just use a javascript datepicker.</s><s> i prefer one that was made for twitter bootstrap at http://www.eyecon.ro/bootstrap-datepicker/ 
+if you use a datepicker javascript widget like above you don't really need to use spry validation to validate that date since they'll be choosing the date from the widget and the script formats the date correctly for the user. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4655271</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Frank%20Grootaarts" timestamp="Aug 28, 2012 2:26 PM">
+<s>hi trickster, 
+</s><s>you helped me with spryvalidation in the bc forms and they work great.</s><s> now i wanted to do the same in the checkout form.</s><s> but i can't get it to work.</s><s> i have to confes that i don't know much about javascript, but with your clear help i got the forms to work. 
+</s><s>here's my site i'm working on: 
+http://grootaartseuronics.businesscatalyst.com/index.html 
+i think that the problem lays in this code: 
+
+
+i hope you can help me. 
+</s><s>thanks 
+</s><s>frank 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4655387</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Liam%20Dilley" timestamp="Aug 28, 2012 3:00 PM">
+<s>html5 validation for good browsers, have the bc one for older browsers - so easy and clean and stylish 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4657833</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="thetrickster888" timestamp="Aug 29, 2012 10:33 AM">
+<s>frank, 
+</s><s>it looks like your form element's onsubmit is fine.</s><s> no problem there.</s><s> it matches the checkwholeform function below.</s><s> i think you might be missing the links to the js and css for the dreamweaver spry validation.</s><s> when you are working on the form in dreamweaver, it should insert the required js and css and then you need to either copy that js or css to a specific location that you prefer or just upload those files to the site wherever dreamweaver places them in your site structure.</s><s> i prefer the former. 
+</s><s>also, it doesn't look like the actual spry validation javascript code is on the page so maybe you need to add the spry validation to the form fields in dreamweaver first.</s><s> all it looks like you've done is implemented the form's onsubmit code properly but haven't actually inserted the spry validations in dreamweaver yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Business-Catalyst/Content-Management-and-Modules/Discussions-4418579-4663184</DOCNO>
+<TEXT>
+<subject>Web Form Spry / JQuery Validation</subject>
+<post author="Frank%20Grootaarts" timestamp="Aug 31, 2012 5:51 AM">
+<s>hi trickster888, 
+</s><s>i found the problem i deleted some javascript by mistake: 
+if (theform.amount) why += iscurrency(theform.amount.value, "amount"); } if (theform.paymentmethodtype) why += checkselected(theform.paymentmethodtype, "payment method"); 
+so now i have fixed this and everything is working great.</s><s> thanks anyway for looking into this.</s><s> so spry works also in the order-registrationform! 
+</s><s>thank, 
+</s><s>frank 
+</s></post>
+</TEXT>
+</DOC>
+
+

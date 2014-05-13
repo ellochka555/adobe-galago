@@ -1,0 +1,608 @@
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-999038</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Pat Willener" timestamp="May 4, 2012 11:17 PM">
+<s>on one of our systems, japanese windows xp pro, i noticed that after the 11.2.292.235 update, file flash32_11_2_202_233.ocx was left behind.</s><s> here is the flashinstall.log file for that portion 
+2012-5-4+23-10-8.265 [error] 1226 1062
+?=o====== m/11.2.202.235 2012-05-04+23-10-02.421 ========
+0000 [i] 00000010 flashplayerinstaller.exe -install -iv 9
+0001 [i] 00000020 c:\windows\system32\flashplayercplapp.cpl
+0002 [w] 00001015 c:\windows\system32\macromed\flash\flash32_11_2_202_233.ocx 20
+0003 [i] 00000018
+0004 [w] 00001015 c:\windows\system32\macromed\flash\flash32_11_2_202_233.ocx 20
+0005 [i] 00000013 c:\windows\system32\macromed\flash\flash32_11_2_202_235.ocx
+0006 [i] 00000015 c:\windows\system32\macromed\flash\flashutil32_11_2_202_235_activex.exe
+0007 [i] 00000016 c:\windows\system32\macromed\flash\flashutil32_11_2_202_235_activex.dll
+0008 [i] 00000019 c:\windows\system32\flashplayercplapp.cpl
+0009 [w] 00001024 c:\windows\system32\flashplayercplapp.cpl 183
+0010 [w] 00001024 c:\windows\system32\flashplayerapp.exe 183
+0011 [i] 00000021 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe
+0012 [w] 00001106
+0013 [w] 00001106
+0014 [w] 00001024 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe 183
+0015 [i] 00000012
+=x====== m/11.2.202.235 2012-05-04+23-10-08.281 ======== 
+i thought that a windows restart may clear that file, but it did not. 
+</s><s>how is the background updater handling this; attempt to delete it at a later stage (e.g. during the next update)? 
+</s><s>p.s. on all other systems, all files were successfully removed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4383163</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="pwillener" timestamp="May 6, 2012 8:50 PM">
+<s>on another system, english windows xp pro, i noticed that npswf32_11_2_202_233.dll was left behind.</s><s> the log: 2012-5-5+2-23-8.625 [error] 1226 1062 ?=o====== m/11.2.202.235 2012-05-05+02-23-06.656 ======== 0000 [i] 00000010 flashplayerinstaller.exe -install -iv 9 0001 [i] 00000020 c:\windows\system32\flashplayercplapp.cpl 0002 [w] 00001036 software\mozilla\firefox\extensions/plugins 2 0003 [w] 00001036 software\mozilla\maintenanceservice\extensions/plugins 2 0004 [w] 00001036 software\mozilla\mozilla firefox\extensions/plugins 2 0005 [w] 00001036 software\opera software/last commandline 2 0006 [w] 00001036 software\opera software/last commandline 2 0007 [w] 00001036 software\opera software/plugin path 2 0008 [w] 00001036 software\opera software/plugin path 2 0009 [w] 00001015 c:\windows\system32\macromed\flash\npswf32_11_2_202_233.dll 5 0010 [i] 00000014 c:\windows\system32\macromed\flash\npswf32_11_2_202_235.dll 0011 [i] 00000015 c:\windows\system32\macromed\flash\flashutil32_11_2_202_235_plugin.exe 0012 [i] 00000017 c:\windows\system32\macromed\flash 0013 [i] 00000019 c:\windows\system32\flashplayercplapp.cpl 0014 [w] 00001024 c:\windows\system32\flashplayercplapp.cpl 183 0015 [w] 00001024 c:\windows\system32\flashplayerapp.exe 183 0016 [i] 00000021 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe 0017 [w] 00001106 0018 [w] 00001106 0019 [w] 00001024 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe 183 0020 [i] 00000012 =x====== m/11.2.202.235 2012-05-05+02-23-08.671 ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4385583</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 7, 2012 3:21 PM">
+<s>hi pat, 
+</s><s>just before i dive into more detail: with each upgrade, we attempt to remove all old files from the system.</s><s> this includes the activex or plugin control that you mention.</s><s> now, as you noticed, there are situations when an old file cannot be removed.</s><s> this is usually due to a browser having the old flash player loaded in memory.</s><s> in this case, we tell the os to remove this old file upon reboot, which is the best option available.</s><s> since the registry doesn't reference the old flash player anymore, new browser instances will load the new flash player even before a system is rebooted.</s><s> a reboot of the system will ultimately remove any old files that couldn't be removed previously. 
+</s><s>if the file is not removed after a reboot, you may have a permissions problem on the file or directory.</s><s> note that your browser will use the latest and safest version of flash player.</s><s> further updates will try again to remove this old file, but may not be able to do so if permissions have changed such that the installer cannot remove it. 
+</s><s>hope this helps. 
+-stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4386315</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="pwillener" timestamp="May 7, 2012 7:52 PM">
+<s>hi stephen, 
+</s><s>thank you very much for your detailed explanation.</s><s> i will observe these left-behind files, and check how it goes with the next background update. 
+</s><s>from your explanation i gather that these ocx and dll files have been unregistered, so i can assume that it is safe for users to manually delete them without having to unregister them first.</s><s> is this correct? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4386308</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 7, 2012 8:01 PM">
+<s>hi pat, 
+</s><s>you're correct.</s><s> these files can safely be removed by manually deleting them. 
+-stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4386825</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="dsmtoday2" timestamp="May 8, 2012 12:49 AM">
+<s><quote>
+<s>since the registry doesn't reference the old flash player anymore, new browser instances will load the new flash player even before a system is rebooted 
+</s></quote>
+</s><s>this is actually not true in the case of the plugin for firefox.</s><s> if both the 233 and the 235 dlls are left behind, firefox continues to use the 233 dll even after firefox is restarted several times.</s><s> this was true of most machines across our enterprise, as well as several computers at home.</s><s> the solution is to manually delete the 233 version of the dll.</s><s> then firefox properly loads the 235 version the next time you run it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4394527</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 10, 2012 10:15 AM">
+<s>hi dsmtoday2, 
+thank you for your report and i've passed that along. 
+</s><s>is there any way that you could tell us if this only affects firefox on these systems, or if other npapi browsers run into the same problem (such as safari or opera)? 
+</s><s>thank you, stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4396262</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="dsmtoday2" timestamp="May 10, 2012 11:01 PM">
+<s>sorry, we only run firefox, chrome, and ie here, so i can't attest to what happens on those other browsers. 
+</s><s>the only other thing i can add is that this was the 32bit version of flash. 
+</s><s>this is extremely easy to replicate.</s><s> i went into the c:\windows\system32\macromed\flash directory and copied npswf32_11_2_202_235.dll to npswf32_11_2_202_233.dll 
+i then launched procmon from sysinternals so i could spy on exactly what was happening.</s><s> then i launched firefox and went to the adobe flash about page.</s><s> of course, it returned version 235.</s><s> but procmon told a different story.</s><s> firefox had launched the plugin-container.exe using the 233 dll i just copied! "c:\program files\mozilla firefox\plugin-container.exe" --channel=2500.56b6a60.744882939 "c:\windows\system32\macromed\flash\npswf32_11_2_202_233.dll" - -greomni "c:\program files\mozilla firefox\omni.ja" 2500 "\\.\pipe\gecko-crash-server-pipe.2500" plugin 
+the problem comes because firefox is using a querydirectory command with '*' when it looks in the macromed\flash directory for the dll.</s><s> this returns items alphabetically.</s><s> it must be looking for the npswf32 prefix, so the lowest version number will always win! 
+</s><s>to prove this, i made a copy of npswf32_11_2_202_235.dll and named it npswf32_0.dll.</s><s> so now i'm looking at the following directory entries. 
+</s><s>flashinstall.log flashplayer.xpt flashplayerupdateservice.exe flashutil32_11_2_202_235_plugin.exe mms.cfg npswf32_0.dll npswf32_11_2_202_235.dll 
+note that alphabetically, my _0 copy is above the real copy.</s><s> i use procmon to spy on firefox once again.</s><s> and firefox goes and loads npsw32_0.dll into the plugin-container.exe command line!</s><s> this is despite the registry having no mention of this file, and all registry entries that refer to flash have npswf32_11_2_202_235.dll in them. 
+</s><s>you guys have a huge problem here. 
+</s><s>get procmon -> http://technet.microsoft.com/en-us/sysinternals/bb896645 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4398027</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 11, 2012 10:00 AM">
+<s>hi, 
+</s><s>thanks for the follow up.</s><s> this appears to be specific to mozilla firefox and we'll be reaching out to mozilla. 
+</s><s>thanks again! 
+-stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-999038</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Pat Willener" timestamp="May 4, 2012 11:17 PM">
+<s>on one of our systems, japanese windows xp pro, i noticed that after the 11.2.292.235 update, file flash32_11_2_202_233.ocx was left behind.</s><s> here is the flashinstall.log file for that portion 
+2012-5-4+23-10-8.265 [error] 1226 1062
+?=o====== m/11.2.202.235 2012-05-04+23-10-02.421 ========
+0000 [i] 00000010 flashplayerinstaller.exe -install -iv 9
+0001 [i] 00000020 c:\windows\system32\flashplayercplapp.cpl
+0002 [w] 00001015 c:\windows\system32\macromed\flash\flash32_11_2_202_233.ocx 20
+0003 [i] 00000018
+0004 [w] 00001015 c:\windows\system32\macromed\flash\flash32_11_2_202_233.ocx 20
+0005 [i] 00000013 c:\windows\system32\macromed\flash\flash32_11_2_202_235.ocx
+0006 [i] 00000015 c:\windows\system32\macromed\flash\flashutil32_11_2_202_235_activex.exe
+0007 [i] 00000016 c:\windows\system32\macromed\flash\flashutil32_11_2_202_235_activex.dll
+0008 [i] 00000019 c:\windows\system32\flashplayercplapp.cpl
+0009 [w] 00001024 c:\windows\system32\flashplayercplapp.cpl 183
+0010 [w] 00001024 c:\windows\system32\flashplayerapp.exe 183
+0011 [i] 00000021 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe
+0012 [w] 00001106
+0013 [w] 00001106
+0014 [w] 00001024 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe 183
+0015 [i] 00000012
+=x====== m/11.2.202.235 2012-05-04+23-10-08.281 ======== 
+i thought that a windows restart may clear that file, but it did not. 
+</s><s>how is the background updater handling this; attempt to delete it at a later stage (e.g. during the next update)? 
+</s><s>p.s. on all other systems, all files were successfully removed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4383163</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="pwillener" timestamp="May 6, 2012 8:50 PM">
+<s>on another system, english windows xp pro, i noticed that npswf32_11_2_202_233.dll was left behind.</s><s> the log: 2012-5-5+2-23-8.625 [error] 1226 1062 ?=o====== m/11.2.202.235 2012-05-05+02-23-06.656 ======== 0000 [i] 00000010 flashplayerinstaller.exe -install -iv 9 0001 [i] 00000020 c:\windows\system32\flashplayercplapp.cpl 0002 [w] 00001036 software\mozilla\firefox\extensions/plugins 2 0003 [w] 00001036 software\mozilla\maintenanceservice\extensions/plugins 2 0004 [w] 00001036 software\mozilla\mozilla firefox\extensions/plugins 2 0005 [w] 00001036 software\opera software/last commandline 2 0006 [w] 00001036 software\opera software/last commandline 2 0007 [w] 00001036 software\opera software/plugin path 2 0008 [w] 00001036 software\opera software/plugin path 2 0009 [w] 00001015 c:\windows\system32\macromed\flash\npswf32_11_2_202_233.dll 5 0010 [i] 00000014 c:\windows\system32\macromed\flash\npswf32_11_2_202_235.dll 0011 [i] 00000015 c:\windows\system32\macromed\flash\flashutil32_11_2_202_235_plugin.exe 0012 [i] 00000017 c:\windows\system32\macromed\flash 0013 [i] 00000019 c:\windows\system32\flashplayercplapp.cpl 0014 [w] 00001024 c:\windows\system32\flashplayercplapp.cpl 183 0015 [w] 00001024 c:\windows\system32\flashplayerapp.exe 183 0016 [i] 00000021 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe 0017 [w] 00001106 0018 [w] 00001106 0019 [w] 00001024 c:\windows\system32\macromed\flash\flashplayerupdateservice.exe 183 0020 [i] 00000012 =x====== m/11.2.202.235 2012-05-05+02-23-08.671 ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4385583</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 7, 2012 3:21 PM">
+<s>hi pat, 
+</s><s>just before i dive into more detail: with each upgrade, we attempt to remove all old files from the system.</s><s> this includes the activex or plugin control that you mention.</s><s> now, as you noticed, there are situations when an old file cannot be removed.</s><s> this is usually due to a browser having the old flash player loaded in memory.</s><s> in this case, we tell the os to remove this old file upon reboot, which is the best option available.</s><s> since the registry doesn't reference the old flash player anymore, new browser instances will load the new flash player even before a system is rebooted.</s><s> a reboot of the system will ultimately remove any old files that couldn't be removed previously. 
+</s><s>if the file is not removed after a reboot, you may have a permissions problem on the file or directory.</s><s> note that your browser will use the latest and safest version of flash player.</s><s> further updates will try again to remove this old file, but may not be able to do so if permissions have changed such that the installer cannot remove it. 
+</s><s>hope this helps. 
+-stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4386315</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="pwillener" timestamp="May 7, 2012 7:52 PM">
+<s>hi stephen, 
+</s><s>thank you very much for your detailed explanation.</s><s> i will observe these left-behind files, and check how it goes with the next background update. 
+</s><s>from your explanation i gather that these ocx and dll files have been unregistered, so i can assume that it is safe for users to manually delete them without having to unregister them first.</s><s> is this correct? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4386308</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 7, 2012 8:01 PM">
+<s>hi pat, 
+</s><s>you're correct.</s><s> these files can safely be removed by manually deleting them. 
+-stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4386825</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="dsmtoday2" timestamp="May 8, 2012 12:49 AM">
+<s><quote>
+<s>since the registry doesn't reference the old flash player anymore, new browser instances will load the new flash player even before a system is rebooted 
+</s></quote>
+</s><s>this is actually not true in the case of the plugin for firefox.</s><s> if both the 233 and the 235 dlls are left behind, firefox continues to use the 233 dll even after firefox is restarted several times.</s><s> this was true of most machines across our enterprise, as well as several computers at home.</s><s> the solution is to manually delete the 233 version of the dll.</s><s> then firefox properly loads the 235 version the next time you run it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4394527</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 10, 2012 10:15 AM">
+<s>hi dsmtoday2, 
+thank you for your report and i've passed that along. 
+</s><s>is there any way that you could tell us if this only affects firefox on these systems, or if other npapi browsers run into the same problem (such as safari or opera)? 
+</s><s>thank you, stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4396262</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="dsmtoday2" timestamp="May 10, 2012 11:01 PM">
+<s>sorry, we only run firefox, chrome, and ie here, so i can't attest to what happens on those other browsers. 
+</s><s>the only other thing i can add is that this was the 32bit version of flash. 
+</s><s>this is extremely easy to replicate.</s><s> i went into the c:\windows\system32\macromed\flash directory and copied npswf32_11_2_202_235.dll to npswf32_11_2_202_233.dll 
+i then launched procmon from sysinternals so i could spy on exactly what was happening.</s><s> then i launched firefox and went to the adobe flash about page.</s><s> of course, it returned version 235.</s><s> but procmon told a different story.</s><s> firefox had launched the plugin-container.exe using the 233 dll i just copied! "c:\program files\mozilla firefox\plugin-container.exe" --channel=2500.56b6a60.744882939 "c:\windows\system32\macromed\flash\npswf32_11_2_202_233.dll" - -greomni "c:\program files\mozilla firefox\omni.ja" 2500 "\\.\pipe\gecko-crash-server-pipe.2500" plugin 
+the problem comes because firefox is using a querydirectory command with '*' when it looks in the macromed\flash directory for the dll.</s><s> this returns items alphabetically.</s><s> it must be looking for the npswf32 prefix, so the lowest version number will always win! 
+</s><s>to prove this, i made a copy of npswf32_11_2_202_235.dll and named it npswf32_0.dll.</s><s> so now i'm looking at the following directory entries. 
+</s><s>flashinstall.log flashplayer.xpt flashplayerupdateservice.exe flashutil32_11_2_202_235_plugin.exe mms.cfg npswf32_0.dll npswf32_11_2_202_235.dll 
+note that alphabetically, my _0 copy is above the real copy.</s><s> i use procmon to spy on firefox once again.</s><s> and firefox goes and loads npsw32_0.dll into the plugin-container.exe command line!</s><s> this is despite the registry having no mention of this file, and all registry entries that refer to flash have npswf32_11_2_202_235.dll in them. 
+</s><s>you guys have a huge problem here. 
+</s><s>get procmon -> http://technet.microsoft.com/en-us/sysinternals/bb896645 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-4380801-4398027</DOCNO>
+<TEXT>
+<subject>Silent background update: old file(s) left behind</subject>
+<post author="Stephen%20Pohl" timestamp="May 11, 2012 10:00 AM">
+<s>hi, 
+</s><s>thanks for the follow up.</s><s> this appears to be specific to mozilla firefox and we'll be reaching out to mozilla. 
+</s><s>thanks again! 
+-stephen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6215358-1429454</DOCNO>
+<TEXT>
+<subject>pop-ups that ask to update and download  flashplayer...</subject>
+<post author="soview" timestamp="Mar 16, 2014 7:45 PM">
+<s>whenever i go to a site using the latest version of firefox, that has flashplayer on it i am bombarded with numerous pop-up suggesting that i upgrade by downloading and installing a piece of software.</s><s> i never comply because the urls are from various sites and none of them have "adobe" in them. 
+</s><s>here is a list of some of said sites, 
+http://static.onlineapplicationsdownloads.com/lp/flv-player_adbr4_ybr_ en.html?lg=en&chnl=apn_adbr4_2383341&dp=lax1cmlksdi-0cfbnhacgmcv8speg5 __oiinmjqumtg1lji0mc40osgbmlyxmzkf 
+http://static.onlineapplicationsdownloads.com/lp/flv-player_adbr4_ybr_ en.html?lg=en&chnl=apn_adbr4_2383341&dp=lax1cmlksdi-0cfbnhacgmcv8speg5 __oiinmjqumtg1lji0mc40osgbmlyxmzkf 
+http://www.downloadscanning.com/go/lightspark/?source=matomy_lightspar k-highvolume-us&adprovider=matomy2&subid=366151&subid2=&subid3=46171&s ubid4=20sy.f1krhm2x4ij0s4cwv1wpmxn000. 
+http://www.downloadscanning.com/go/lightspark/?source=matomy_lightspar k-highvolume-us&adprovider=matomy2&subid=366151&subid2=&subid3=46171&s ubid4=20sy.f168io9fwqs0s4cwv1wpmxy000. 
+http://service.srvmd5.com/serving/?appid=246&subid=lax1cmlksdi-0cfbnha cgid8wpl06lvkqcinmjqumtg1lji0mc40osgbmiwymzkf 
+http://service.srvmd5.com/serving/?appid=246&subid=lax1cmlksdi-0cfbnha cgid8wpl06lvkqcinmjqumtg1lji0mc40osgbmiwymzkf 
+http://www.playhe.com/lp/codecperformer/v18/?v=18&cid=4105&tid=lax1cml ksdi-0cfbnhacgkib2iji1ipvfiinmjqumtg1lji0mc40osgbmkoymzkf&pubid=238334 4 
+http://www.myatim.com/lp/codecperformer/v18/?v=18&cid=4105&tid=lax1cml ksdi-0cfbnhacgny4xu6lskfpcsinmjqumtg1lji0mc40osgbmj2ymzkf&pubid=238334 1 
+</s><s>are these lagget affiliates of adobe or rogue sites? 
+</s><s>sincerely, 
+</s><s>simore 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6215358-6215366</DOCNO>
+<TEXT>
+<subject>pop-ups that ask to update and download  flashplayer...</subject>
+<post author="pwillener" timestamp="Mar 16, 2014 8:45 PM">
+<s>can you post a screenshot of that pop-up?</s><s> see http://forums.adobe.com/thread/1070933 
+definitely none of the sites you posted are in any way connected with adobe or flash player.</s><s> my suspicion is that your system is infected with some malware. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6215358-6218103</DOCNO>
+<TEXT>
+<subject>pop-ups that ask to update and download  flashplayer...</subject>
+<post author="m_vargas" timestamp="Mar 17, 2014 2:18 PM">
+<s>hi soview,   a screenshot would be helpful, as pat requested, however, i can tell you those are not valid adobe urls for downloading flash player.  valid urls will either come from adobe.com or macromedia.com, depending on the file.</s><s> if you're getting these pop-ups it's very possible your computer has been infected with malware and/or adware.   -- maria
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6215358-1429454</DOCNO>
+<TEXT>
+<subject>pop-ups that ask to update and download  flashplayer...</subject>
+<post author="soview" timestamp="Mar 16, 2014 7:45 PM">
+<s>whenever i go to a site using the latest version of firefox, that has flashplayer on it i am bombarded with numerous pop-up suggesting that i upgrade by downloading and installing a piece of software.</s><s> i never comply because the urls are from various sites and none of them have "adobe" in them. 
+</s><s>here is a list of some of said sites, 
+http://static.onlineapplicationsdownloads.com/lp/flv-player_adbr4_ybr_ en.html?lg=en&chnl=apn_adbr4_2383341&dp=lax1cmlksdi-0cfbnhacgmcv8speg5 __oiinmjqumtg1lji0mc40osgbmlyxmzkf 
+http://static.onlineapplicationsdownloads.com/lp/flv-player_adbr4_ybr_ en.html?lg=en&chnl=apn_adbr4_2383341&dp=lax1cmlksdi-0cfbnhacgmcv8speg5 __oiinmjqumtg1lji0mc40osgbmlyxmzkf 
+http://www.downloadscanning.com/go/lightspark/?source=matomy_lightspar k-highvolume-us&adprovider=matomy2&subid=366151&subid2=&subid3=46171&s ubid4=20sy.f1krhm2x4ij0s4cwv1wpmxn000. 
+http://www.downloadscanning.com/go/lightspark/?source=matomy_lightspar k-highvolume-us&adprovider=matomy2&subid=366151&subid2=&subid3=46171&s ubid4=20sy.f168io9fwqs0s4cwv1wpmxy000. 
+http://service.srvmd5.com/serving/?appid=246&subid=lax1cmlksdi-0cfbnha cgid8wpl06lvkqcinmjqumtg1lji0mc40osgbmiwymzkf 
+http://service.srvmd5.com/serving/?appid=246&subid=lax1cmlksdi-0cfbnha cgid8wpl06lvkqcinmjqumtg1lji0mc40osgbmiwymzkf 
+http://www.playhe.com/lp/codecperformer/v18/?v=18&cid=4105&tid=lax1cml ksdi-0cfbnhacgkib2iji1ipvfiinmjqumtg1lji0mc40osgbmkoymzkf&pubid=238334 4 
+http://www.myatim.com/lp/codecperformer/v18/?v=18&cid=4105&tid=lax1cml ksdi-0cfbnhacgny4xu6lskfpcsinmjqumtg1lji0mc40osgbmj2ymzkf&pubid=238334 1 
+</s><s>are these lagget affiliates of adobe or rogue sites? 
+</s><s>sincerely, 
+</s><s>simore 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6215358-6215366</DOCNO>
+<TEXT>
+<subject>pop-ups that ask to update and download  flashplayer...</subject>
+<post author="pwillener" timestamp="Mar 16, 2014 8:45 PM">
+<s>can you post a screenshot of that pop-up?</s><s> see http://forums.adobe.com/thread/1070933 
+definitely none of the sites you posted are in any way connected with adobe or flash player.</s><s> my suspicion is that your system is infected with some malware. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6215358-6218103</DOCNO>
+<TEXT>
+<subject>pop-ups that ask to update and download  flashplayer...</subject>
+<post author="m_vargas" timestamp="Mar 17, 2014 2:18 PM">
+<s>hi soview,   a screenshot would be helpful, as pat requested, however, i can tell you those are not valid adobe urls for downloading flash player.  valid urls will either come from adobe.com or macromedia.com, depending on the file.</s><s> if you're getting these pop-ups it's very possible your computer has been infected with malware and/or adware.   -- maria
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-1429159</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 9:46 AM">
+<s>have tried to install v12 several times but i keep getting "wrong volume is in the drive pleae ensure volume wp1 is in drive v" 
+</s><s>drive v in my disk drive and there is no "volume" in it. 
+</s><s>if i allow the install to continue v12 appears on my "installed programs" list, but i am still asked to upgrade the player when i try to run something that needs the player. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6214735</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 16, 2014 1:41 PM">
+<s>what os, mike?</s><s> and what browser? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215005</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 3:58 PM">
+<s>oh, sorry; win7, 54 bit and firefox v27 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215176</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 16, 2014 5:06 PM">
+<s>are you using the stub installer or the full?</s><s> flash player plug-in (all other browsers) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215344</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 8:33 PM">
+<s>don't know what a stub installer is.</s><s> i dl'd the file from the adobe sight, like i have in the past; it's just that this time i got the error. 
+i used the link you included and dl'd the file; and got the same error when i tried to install it. 
+i pressed continue every time it popped up and when it was finished i tried running to video that prompted the upgrade and i got another flashplayer upgrade prompt. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215365</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="pwillener" timestamp="Mar 16, 2014 8:43 PM">
+<s>i have never seen this error before.</s><s> does flash player show as installed in programs & features? 
+</s><s>what files do you have in c:\windows\system32\macromed\flash and in c:\windows\syswow64\macromed\flash ?</s><s> you can paste a screenshot of these folders; see http://forums.adobe.com/thread/1070933 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215482</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 11:31 PM">
+<s>
+
+</s><s>i had a virus removed recently, by the tech service i subcribe to.</s><s> i am wondering if there is a connection?</s><s> i thought to call them first but thought i'd better check with someone here first, to make sure it wasn't an issue with the install.</s><s> i'm begining to think now is the time to call them.</s><s> i will wait to hear what you think. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215596</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="pwillener" timestamp="Mar 16, 2014 11:32 PM">
+<s>everything seems to be there.</s><s> does the shockwave flash plugin show up in firefox (tools | add-ons | plugins) ? 
+</s><s>does it show as installed on http://helpx.adobe.com/flash-player.html ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6217230</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 17, 2014 10:21 AM">
+<s>ok, i followed the steps in the link. 
+i got not installed on the check option so went ot the extentions in ff and reset the always activated option, when i went back to the check option it showed as installed! 
+i don't know what those error messages were all about or why the always activated option had to be reset but i guess it doesn't matter at this point. 
+</s><s>maybe it was something the tech guy did when he was clearing and resetting my system; to get rid of that virus. 
+</s><s>thanks so much for hanging in there with me in this issue! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-1429159</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 9:46 AM">
+<s>have tried to install v12 several times but i keep getting "wrong volume is in the drive pleae ensure volume wp1 is in drive v" 
+</s><s>drive v in my disk drive and there is no "volume" in it. 
+</s><s>if i allow the install to continue v12 appears on my "installed programs" list, but i am still asked to upgrade the player when i try to run something that needs the player. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6214735</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 16, 2014 1:41 PM">
+<s>what os, mike?</s><s> and what browser? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215005</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 3:58 PM">
+<s>oh, sorry; win7, 54 bit and firefox v27 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215176</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="C%20F%20McBlob" timestamp="Mar 16, 2014 5:06 PM">
+<s>are you using the stub installer or the full?</s><s> flash player plug-in (all other browsers) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215344</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 8:33 PM">
+<s>don't know what a stub installer is.</s><s> i dl'd the file from the adobe sight, like i have in the past; it's just that this time i got the error. 
+i used the link you included and dl'd the file; and got the same error when i tried to install it. 
+i pressed continue every time it popped up and when it was finished i tried running to video that prompted the upgrade and i got another flashplayer upgrade prompt. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215365</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="pwillener" timestamp="Mar 16, 2014 8:43 PM">
+<s>i have never seen this error before.</s><s> does flash player show as installed in programs & features? 
+</s><s>what files do you have in c:\windows\system32\macromed\flash and in c:\windows\syswow64\macromed\flash ?</s><s> you can paste a screenshot of these folders; see http://forums.adobe.com/thread/1070933 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215482</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 16, 2014 11:31 PM">
+<s>
+
+</s><s>i had a virus removed recently, by the tech service i subcribe to.</s><s> i am wondering if there is a connection?</s><s> i thought to call them first but thought i'd better check with someone here first, to make sure it wasn't an issue with the install.</s><s> i'm begining to think now is the time to call them.</s><s> i will wait to hear what you think. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6215596</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="pwillener" timestamp="Mar 16, 2014 11:32 PM">
+<s>everything seems to be there.</s><s> does the shockwave flash plugin show up in firefox (tools | add-ons | plugins) ? 
+</s><s>does it show as installed on http://helpx.adobe.com/flash-player.html ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Flash-Player/Installing-Flash-Player/Discussions-6214177-6217230</DOCNO>
+<TEXT>
+<subject>Wrong Vol error</subject>
+<post author="mikecox_" timestamp="Mar 17, 2014 10:21 AM">
+<s>ok, i followed the steps in the link. 
+i got not installed on the check option so went ot the extentions in ff and reset the always activated option, when i went back to the check option it showed as installed! 
+i don't know what those error messages were all about or why the always activated option had to be reset but i guess it doesn't matter at this point. 
+</s><s>maybe it was something the tech guy did when he was clearing and resetting my system; to get rid of that virus. 
+</s><s>thanks so much for hanging in there with me in this issue! 
+</s></post>
+</TEXT>
+</DOC>
+
+

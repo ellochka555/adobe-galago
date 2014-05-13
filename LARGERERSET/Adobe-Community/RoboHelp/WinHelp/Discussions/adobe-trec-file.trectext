@@ -1,0 +1,1262 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-5878434-1344830</DOCNO>
+<TEXT>
+<subject>After Generating a WinHelp File (*.chm) in RH 10 My Index and Search Index functions are disabled</subject>
+<post author="WilliamEngility" timestamp="Nov 26, 2013 8:57 PM">
+<s>hi folks, 
+</s><s>i am importing a technical document written in ms word 07 into robohelp 10 and appear to be missing a step.</s><s> after i generate the winhelp file everything looks great however the index links and the search feature in the *.</s><s>chm file point only to the main page.</s><s> the toc links work just fine.</s><s> i have generated an index using the "smart index" wizard and it shows the links pointing to the project home page.</s><s> when i try to click on one of the generated index links they all point to the "home" page.</s><s> the search feature does not work at all. 
+i am new to rh 10 and i know i am missing something.</s><s> can someone show me what that may be? 
+</s><s>thanks in advance and happy thanksgiving and holidays.</s><s> 
+</s><s>william hazen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-5878434-5879470</DOCNO>
+<TEXT>
+<subject>After Generating a WinHelp File (*.chm) in RH 10 My Index and Search Index functions are disabled</subject>
+<post author="Captiv8r" timestamp="Nov 27, 2013 6:19 AM">
+<s>hi william 
+</s><s>first, a bit of clarification.</s><s> winhelp files have a .hlp file extension.</s><s> if your file extension is .</s><s>chm, it is a microsoft html help file. 
+</s><s>when you look at the project in robohelp, how many topics do you have?</s><s> an easy way to discover that is by clicking tools > reports > project status. 
+</s><s>from what has been described, i'm going to guess you will see one very large topic. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-5276664-1201893</DOCNO>
+<TEXT>
+<subject>Microsoft downloads for WinHelp in KB 917607 do not apply to server 2003</subject>
+<post author="David Hurlston" timestamp="Apr 29, 2013 9:43 AM">
+<s>we have a user who is attempting to load our winhelp project on his windows 2003 server 
+the procedures in the kb article for downloading the winhelp engine apply only to server 2008 and when he attempts to use that, he gets a message that it is not valid for his server version. 
+</s><s>does anyone have any experience with running winhelp projects on server 2003? 
+</s><s>please note - this is not a question about running robohelp on a server 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-5276664-5276993</DOCNO>
+<TEXT>
+<subject>Microsoft downloads for WinHelp in KB 917607 do not apply to server 2003</subject>
+<post author="Peter%20Grainge" timestamp="Apr 29, 2013 11:26 AM">
+<s>i have no experience of this but the page below seems to indicate that winhelp should run on server 2003 without needing to download the engine. 
+http://blog.komeil.com/2009/06/windows-help-program-winhlp32exe-for.ht ml 
+i wonder if he had tried to run the help before trying to download this later engine and the help failed to work, prompting the search.</s><s> the page also refers to gid files and that makes me wonder if that is the issue.</s><s> i do recall that if you shipped both the hlp and the gid, there would be problems. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-5276664-5276997</DOCNO>
+<TEXT>
+<subject>Microsoft downloads for WinHelp in KB 917607 do not apply to server 2003</subject>
+<post author="David%20Hurlston" timestamp="Apr 29, 2013 11:35 AM">
+<s>yes, i suspect you are right and that server 2003 predated microsoft pulling the executable from their os's 
+thanks! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-4391986-1001485</DOCNO>
+<TEXT>
+<subject>Web link from winhelp does not work in Windows 7</subject>
+<post author="TFKjones" timestamp="May 9, 2012 1:18 PM">
+<s>i have a winhelp project that is developed and compiled on an xp box using robohelp 8. the .hlp runs fine in windows 7, except for the links to websites (html jumps, to use the rh vernacular).</s><s> the links work on xp. 
+</s><s>any ideas? 
+</s><s>thanks, walt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-4024258-924813</DOCNO>
+<TEXT>
+<subject>Signing .hlp files</subject>
+<post author="Bonnie J. Turner" timestamp="Nov 14, 2011 6:49 AM">
+<s>is it possible to digitally sign a .hlp file?</s><s> we would like to avoid getting an "unknown publisher" message when we open a .hlp file from a network share. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-4024258-4024531</DOCNO>
+<TEXT>
+<subject>Signing .hlp files</subject>
+<post author="Captiv8r" timestamp="Nov 14, 2011 8:21 AM">
+<s>welcome to our community, bonnie 
+i think you'll find the same (or dearth of) answers here on the adobe forums as you found on techwr-l. 
+</s><s>winhelp files are really old technology.</s><s> microsoft really tried to fool everyone into thinking winhelp was dead when they released vista.</s><s> of course it still works under vista and windows 7 and may require an additional download to make it work depending on whether it's 32 or 64 bit, but work it still does. 
+</s><s>however, digitally signing a hlp file is likely something you will find doesn't exist.</s><s> and it's quite logical if you think about it.</s><s> as you are still using .</s><s>hlp format, you are now among a very small minority of users.</s><s> to create something like a digital signature and make it work would require an investment of time and money.</s><s> and since this format is dying, i'd be very surprised to see anyone putting any real effort into something with zero payback. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7, 8 or 9 within the day!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-3563860-826227</DOCNO>
+<TEXT>
+<subject>Winhelp 4, problem compiling</subject>
+<post author="sogique" timestamp="Mar 22, 2011 11:51 AM">
+<s>hy everyone, 
+i try to investigate on a problem that one of our user have with robohelp 8.</s><s> i don't know if i'm giving the right information about my problem, so let me know if you need any other information.</s><s> the computer is a windows xp sp3 with 2 gb of ram. 
+</s><s>robohelp 8 winhelp 4 language: fr message: 
+</s><s>sorry but i can only have the message in french.</s><s> here is the traduction: result: winhelp generation failed layout: winhelp 4 launching of the compilation preprocessor winhelp 8.0.0.203 compilation of.....</s><s> preparation of creation winhelp...</s><s> clearing the output folder...</s><s> conditional text filtering...</s><s> treatment of rsipa v.rtf...</s><s> 
+
+</s><s>i got this message when i try to "compile" my .doc file.</s><s> the long line starting with w:\02 - biens..... is only the emplacement of the file in the network.</s><s> i tried locally on the computer (i copy the folder completely, then open it as usual.</s><s> the only difference is that it's faster to open this way).</s><s> i also climbed the memory of the computer to 2 gb just in case.</s><s> i also tried to delete the .rtf files, and remake it, but its the same.</s><s> another interesting thing, is that the user have sucessfully compile the file in the past (like 6-7 days ago).</s><s> but he probably did a bad manipulation, and now it doesn't work anymore...</s><s> i also made a new blank project, create 2-3 things on it, save it and compile it, and it worked (so i assume the software is correctly installed). 
+</s><s>my question are: 
+is there any log files that can bring me more information of why the compilation didn't work?</s><s> is the reinstallation of the software can resolve (for this time) the problem?</s><s> is there anyway to restart, if i can say this, the project, but keeping only the doc file?</s><s> (the project is about 150 pages, so if its possible to not restart it all over...</s><s>) 
+</s><s>thanks if anyone can bring me some tips/help, and if i'm not clear, say it (i'm just a poor french guy ^^ ) 
+
+</s><s>jimmy 
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-3563860-3565312</DOCNO>
+<TEXT>
+<subject>Winhelp 4, problem compiling</subject>
+<post author="RoboColum(n)" timestamp="Mar 23, 2011 2:46 AM">
+<s>hi jimmy.</s><s> 
+</s><s>i'd be tempted to find a backup of the help file before any of the recent changes were made (i.e. after the last successful compile) and see if that compiles correctly.</s><s> if it does, you know that something in the project is at fault.</s><s> what i'd then do is gradually add content compiling as you go until you hit the problem.</s><s> i doubt whether text would be the cause.</s><s> much more likely would be an image or some other interactive element (e.g. image map). 
+</s><s>the robocolum(n) @robocolumn colum mcandrew 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-3563860-3568516</DOCNO>
+<TEXT>
+<subject>Winhelp 4, problem compiling</subject>
+<post author="sogique" timestamp="Mar 24, 2011 7:45 AM">
+<s>hi, 
+</s><s>thank you for your answer.</s><s> we tried to restore the file the days it started to not compiled, but it makes no change.</s><s> but i did not try to recover one a couple of days before the incident. 
+</s><s>finally, the user found a workaround.</s><s> she just started a new project, create her heading and she was able to copy the content of her old file into the new one.</s><s> she saved it and the compilation worked perfectly! 
+</s><s>so for now, i'll just hope it will not happen again 
+thanks you for your help! 
+</s><s>jimmy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-683078</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="JonC." timestamp="Jul 19, 2010 7:08 AM">
+<s>i am using robohelp for word v8, and after i compile the project the image will not display.</s><s> i generated a .shg image, and this displays when i compile the projuect, but if i add a hot spot to the image i get an error message saying "unable to display graphic" where the image is supposed to be.</s><s> i have the updated imageapi.dll file so the hotspot would remember the link, but the image would display with multiple hotspots before the update it would not remember the topic linked to the hotspot.</s><s> when i updated the .dll file and add a hotspot to the graphic, it will not show up.</s><s> did i miss a setting that i needed to update with the new imageapi.dll file?</s><s> any help would be appreciated.</s><s> thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2987723</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="sdryer" timestamp="Jul 20, 2010 8:54 AM">
+<s>
+</s><s>hi jon, are you saying that the graphic *will* display if you insert it without hotspots, but that it *won't* display if it has hotspots? 
+</s><s>if that's the problem, then i'm not sure what to do - although you might try the fix below anyway and see if it helps. 
+</s><s>if the graphic just isn't displaying in compiled help, whether it has hotspots or not, then i may know how to help.</s><s> the last problem we had with our recent nightmare conversion to robohelp 8 was that a graphic which had been showing up fine for ages suddenly started not displaying.</s><s> (it was the only graphic in that particular .hlp in our multi-.hlp project.</s><s>) 
+</s><s>go into your .hpj file in notepad and check your bmroot path for the graphic that is not appearing.</s><s> in robohelp explorer, it probably shows up as a relative path (for example: bmroot=images).</s><s> you can't fix it in robohelp explorer, because i believe it sets the path up as a relative path automatically.</s><s> you need to find the bmroot path in the .hpj file and change it to the exact location of your image file (for example: bmroot=c:\help\images). 
+</s><s>off and on, over different versions of robohelp, i had occasionally encountered this problem with bmroot.</s><s> but, as i said, this graphic had been working fine with a relative path for ages.</s><s> i never thought to connect the problem of our disappearing graphic with the new imageapi.dll, but given the time frame for when we updated the .dll, that would make sense.</s><s> so let me know if this works - i'm curious. 
+(also, did you make sure you have both the .shg and the .bmp it is based on in your images directory?</s><s> you probably did, but just in case, i thought i'd mention it.</s><s>) 
+</s><s>good luck - sandy 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988111</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="JonC." timestamp="Jul 20, 2010 10:56 AM">
+<s>the graphic will display without hotspots, but will not display if i add a hotspot to the graphic.</s><s> i have a graphic that i am trying to add multiple hotspots to different regions of the graphic.</s><s> the graphic will show if there are no hotspots on the graphic, but as soon as i add a hotspot to a region on the graphic it will not display in the compiled view.</s><s> the graphic shows up in rh.</s><s> i am using a winhelp 4 output.</s><s> should i change this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988216</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="sdryer" timestamp="Jul 20, 2010 11:27 AM">
+<s>hi jon, did you check the bmroot path to your graphics directory and make sure it was an absolute path, not a relative path?</s><s> also, are the .bmp and the .shg both in your graphics directory, since you need both of them?</s><s> those are the only things that i know to check. 
+i was using a winhelp 2000 output.</s><s> i don't know if that makes a difference or not.</s><s> but after i updated the bmroot path as described in my previous post, i did not have any more problems with graphics not displaying.</s><s> hope it helps - sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988377</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="JonC." timestamp="Jul 20, 2010 12:30 PM">
+<s>sandy, 
+</s><s>i could not find the bmroot to any of my graphics in the .hpj file.</s><s> all i can see are the alias of my topics.</s><s> are you sure it is the .hpj file?</s><s> thank you for your help. 
+</s><s>jon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988379</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="JonC." timestamp="Jul 20, 2010 12:42 PM">
+<s>the .bmp files and the .shg files are in the same place as well. 
+</s><s>also, it does not matter which version of winhelp it is compiled in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988631</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="sdryer" timestamp="Jul 20, 2010 2:06 PM">
+<s>jon, yes, it is in the .hpj file.</s><s> i have attached some sample text from an .hpj file for you, only i moved it into word so i could highlight the bmroot section. 
+</s><s>don't worry about the message at the top of the .hpj that says "do not modify this file." it's ok to modify it.</s><s> (notice that underneath, it also says "you may edit this file.") 
+</s><s>the only reason i included the other sections from the .hpj was so that you would see where the bmroot information is located in relation to the other parts of the .hpj.</s><s> you will not necessarily have all the same sections in your .hpj.</s><s> but if you have graphics, you definitely have to have a bmroot section. 
+i hope this helps. - sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988655</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="JonC." timestamp="Jul 20, 2010 2:30 PM">
+<s>i was not using my bmroot folder.</s><s> i put all my images into that folder and compiled the project, but i had the same result.</s><s> i could see the graphic only if there were no hotspots on the graphic. 
+</s><s>jon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988741</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="sdryer" timestamp="Jul 20, 2010 2:49 PM">
+<s>hi jon, 
+</s><s>i am not sure what you mean by saying you are not using your bmroot folder.</s><s> the bmroot "folder" (in robohelp explorer) is just a way to identify the place where you have your graphics.</s><s> the name of the actual folder where you have the graphics stored will almost certainly not be bmroot.</s><s> it sounds like you might be confusing robohelp explorer and windows explorer. 
+</s><s>bmroot is not an actual location.</s><s> it is just a pointer that points to a location in your windows file structure, so that robohelp can "see" where your graphics are. 
+</s><s>you shouldn't have had to move anything.</s><s> you can leave your graphics wherever you want (as long as it's on your local drive - i'm assuming you're compiling over a network, which can cause problems).</s><s> it doesn't matter where the graphics are, as long as the place where they are is defined as one of your bmroot paths.</s><s> you can have one bmroot path, or more than one, it doesn't matter. 
+</s><s>i'm sorry if i confused you.</s><s> here's what i would try: 
+1) determine where your graphics are, using windows explorer (not robohelp explorer) 2) put the path to that folder in a bmroot line in the .hpj 
+then try compiling.</s><s> good luck - sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2988744</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="sdryer" timestamp="Jul 20, 2010 2:54 PM">
+<s>sorry, i left an important word out of this message.</s><s> i meant to say: i'm assuming you're not compiling over a network.</s><s> compiling over a network can cause problems.</s><s> you should keep all your project files on your local drive. 
+</s><s>hi jon, 
+</s><s>i am not sure what you mean by saying you are not using your bmroot folder.</s><s> the bmroot "folder" (in robohelp explorer) is just a way to identify the place where you have your graphics.</s><s> the name of the actual folder where you have the graphics stored will almost certainly not be bmroot.</s><s> it sounds like you might be confusing robohelp explorer and windows explorer. 
+</s><s>bmroot is not an actual location.</s><s> it is just a pointer that points to a location in your windows file structure, so that robohelp can "see" where your graphics are. 
+</s><s>you shouldn't have had to move anything.</s><s> you can leave your graphics wherever you want (as long as it's on your local drive - i'm assuming you're compiling over a network, which can cause problems).</s><s> it doesn't matter where the graphics are, as long as the place where they are is defined as one of your bmroot paths.</s><s> you can have one bmroot path, or more than one, it doesn't matter. 
+</s><s>i'm sorry if i confused you.</s><s> here's what i would try: 
+1) determine where your graphics are, using windows explorer (not robohelp explorer) 2) put the path to that folder in a bmroot line in the .hpj 
+then try compiling.</s><s> good luck - sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2990163</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="JonC." timestamp="Jul 21, 2010 6:23 AM">
+<s>thank you for all your help. 
+</s><s>sorry, i should have been more clear about what i did.</s><s> i was asked to convert a help system from forehelp to robohelp.</s><s> when i converted the files the conversion process dumped all of the images into the same folder as the .hpj file, and i guess it did not set up a bmroot folder.</s><s> so that is what i meant when i said i moved all the images into a folder, because rh gives a warning if the bmroot folder is the same location as the folder that contains the project. 
+i moved all the images into their own folder, and moved the entire project to my local drive, but this did not solve the problem. 
+
+</s><s>jon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2984518-2990803</DOCNO>
+<TEXT>
+<subject>Unable to display graphic</subject>
+<post author="sdryer" timestamp="Jul 21, 2010 9:53 AM">
+<s>hi jon, well, i'm sorry not to have been of more help - and now it looks like we're having the same problem.</s><s> i posted a new thread on this (http://forums.adobe.com/thread/684762), because i'm not sure if the experts on the forum see all these exchanges once they get down to this level.</s><s> if they do, sorry to everyone for double-posting. - sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2847226-647908</DOCNO>
+<TEXT>
+<subject>"access unnamed file" error; search tab not working on Citrix</subject>
+<post author="sdryer" timestamp="May 27, 2010 10:33 AM">
+<s>hi folks, we have a webhelp project and a winhelp version of the same project, generated in robohelp 8 and we're having some weird problems with it. 
+</s><s>problem 1: when the winhelp project is viewed via a citrix server, the full text search tab comes up blank gray.</s><s> when the project is run locally it works fine.</s><s> anyone had experience with this or have any idea what it would take to solve it? 
+</s><s>problem 2: when you select one particular menu item from the app (others work), it does not launch the help.</s><s> instead you get the following error: 
+release of product is imminent.</s><s> gloom abounds.</s><s> has anyone seen this before?</s><s> can you help?</s><s> thanks.-sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2847226-2857833</DOCNO>
+<TEXT>
+<subject>"access unnamed file" error; search tab not working on Citrix</subject>
+<post author="RoboColum(n)" timestamp="Jun 1, 2010 3:56 AM">
+<s>hi sandy.</s><s> 
+</s><s>i'm not sure i can help with your specifc error but i can offer some observations.</s><s> winhelp was never designed to be viewed over a citrix (or any other) server.</s><s> it is really only supposed to be run locally.</s><s> also as winhelp is a dying art form these days it is unlikely many people on this forum will be able to help, not least because of the way you are using the help. 
+</s><s>personally i'd advise you against using winhelp except when it is locally based.</s><s> i appreciate that this causes you untold difficulty if you are about to release, but that is the way it is. 
+
+
+</s><s>read the robocolum(n) for a tips, tricks and musings on the technical communication suite products.</s><s> follow the robocolum(n) on twitter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2847226-2864942</DOCNO>
+<TEXT>
+<subject>"access unnamed file" error; search tab not working on Citrix</subject>
+<post author="sdryer" timestamp="Jun 3, 2010 10:40 AM">
+<s>hi colm, we were leaning toward the conclusion that it was an unresolvable citrix issue, so in this case it's just a relief to have that confirmed by an outside source.</s><s> thanks for getting back to me - sandy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2838813-645790</DOCNO>
+<TEXT>
+<subject>Will WinHelp run on a 64-bit Windows 7 machine?</subject>
+<post author="David Hurlston" timestamp="May 24, 2010 2:42 PM">
+<s>we have a client who cannot run our winhelp products on a 64-bit windows 7 system.</s><s> the microsoft knowledgebase article provides the winhlp32 engine download but there no mention of whether this same engine will work on a 64-bit w7 system. 
+</s><s>does anyone have any experience of this? 
+</s><s>as a footnote, we have another client who successfully runs the winhelp engine on a 64-bit xp system 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2838813-2838906</DOCNO>
+<TEXT>
+<subject>Will WinHelp run on a 64-bit Windows 7 machine?</subject>
+<post author="Captiv8r" timestamp="May 24, 2010 3:24 PM">
+<s>hi there 
+i just tested a winhelp file and it popped right open on my windows 7 64 bit pc.</s><s> now it may have been an older 16 bit winhelp file, but it worked.</s><s> i think a 32 bit winhelp file would be treated the same way vista treated them.</s><s> it would prompt for a download of the 32 bit winhelp engine. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2838813-2838989</DOCNO>
+<TEXT>
+<subject>Will WinHelp run on a 64-bit Windows 7 machine?</subject>
+<post author="David%20Hurlston" timestamp="May 24, 2010 3:50 PM">
+<s>thanks rick - that's a big help. 
+</s><s>something else must be going on with the client.... 
+</s><s>david hurlston viadata lp tel: 281 242-6394 fax: 281 242-6498 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2786927-631830</DOCNO>
+<TEXT>
+<subject>TOC flashes inconsistenly</subject>
+<post author="LPN17" timestamp="May 5, 2010 12:48 AM">
+<s>i am building a winhelp help files for an application.</s><s> i am using robohelp for word version 7. 
+</s><s>when the user click the browse sequence button (next and previous) to toggle between topcis.</s><s> the toc at the left pane flashes.</s><s> i reckon that this happens because it is highlighting the topic title accordingly.</s><s> but, it seems very inconsistent because sometimes the highlight will just go down the topics smoothly and at other times, the toc seems to flash (dissapear and appear quickly) to refresh itself. 
+i am posting here hoping that someone may have a solution to this. 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2661304-596890</DOCNO>
+<TEXT>
+<subject>Help Jumps and Bullet Colours</subject>
+<post author="Luxxie" timestamp="Mar 15, 2010 12:14 PM">
+<s>i have two problems that may or may not be related to each other.</s><s> the first is that i have several topics with bullet lists.</s><s> the bullets are supposed to be blue, but after being compiled, there are some that are blue, and some that are black.</s><s> in general, the bullets that are black have a jump inserted (i have tried taking out the jump, and the bullet goes back to blue).</s><s> any suggestions on what caused this and what i can do to keep all bullets blue? 
+</s><s>also, when i select text to insert a jump, and right-click, i no longer get the option to insert a jump, and the robohelp tab in word does not give me this option.</s><s> any insight into this? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2346678-513764</DOCNO>
+<TEXT>
+<subject>Winhelp Problem - RoboHelp received Word error 24 message.</subject>
+<post author="Luxxie" timestamp="Oct 27, 2009 1:36 PM">
+<s>i am working with a winhelp project in robohelp 8.</s><s> i am not sure what version was used to create it.</s><s> i need to fix some help jumps but i keep getting the following message: robohelp received word error 24. if you continue to get this error, contact adobe systems for technical support." i also get the same message if i double-click on any topic. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2346678-2347022</DOCNO>
+<TEXT>
+<subject>Winhelp Problem - RoboHelp received Word error 24 message.</subject>
+<post author="Peter%20Grainge" timestamp="Oct 27, 2009 3:50 PM">
+<s>http://forums.adobe.com/message/46219 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2346678-2368220</DOCNO>
+<TEXT>
+<subject>Winhelp Problem - RoboHelp received Word error 24 message.</subject>
+<post author="Luxxie" timestamp="Nov 4, 2009 12:48 PM">
+<s>this is still not working for me.</s><s> i need other suggestions. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2353675-515285</DOCNO>
+<TEXT>
+<subject>Hide Search Tab</subject>
+<post author="Richard Sanford" timestamp="Oct 29, 2009 5:32 PM">
+<s>is there a way to suppress the display of the search tab in a winhelp 2000 project?</s><s> i'm using rh 7.0 for word. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2353675-2354295</DOCNO>
+<TEXT>
+<subject>Hide Search Tab</subject>
+<post author="RoboColum(n)" timestamp="Oct 30, 2009 2:55 AM">
+<s>hi richard. Ê it has been awhile since i did any winhelp work but i think you should be able to do this via the disablebutton startup macro.</s><s> take a look at this macro under the button category. Ê read the robocolum(n) for a tips, tricks and musings on the technical communication suite products.</s><s> follow the robocolum(n).</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2353675-2362613</DOCNO>
+<TEXT>
+<subject>Hide Search Tab</subject>
+<post author="Richard%20Sanford" timestamp="Nov 2, 2009 3:40 PM">
+<s>thanks, andrew.</s><s> it appears to me that macro and its companions, createbutton, enablebutton, etc., apply to help buttons only, not tabs: 
+disablebutton winhelp macro disablebutton("button-id") the disablebutton macro grays out a button added with the createbutton macro if the enablebutton macro has not yet been executed.</s><s> parameter description button-id the identifier assigned to the button by the createbutton macro.</s><s> the button identifier must be enclosed in quotation marks. 
+
+</s><s>also, the robohelpexshownavpane macro looked promising, but it hides the entire navigation pane, not an individual tab, and takes no parameters: 
+robohelpexshownavpane winhelp macro robohelpexshownavpane() this macro provides the functionality for the winhelp 4 explorer view Ð including the show/hide feature for the navigation pane.</s><s> robohelp automatically places this macro in the startup macros section (project tab, project folder startup macros folder) of your help project whenever you select this feature.</s><s> parameters none.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2360224-516689</DOCNO>
+<TEXT>
+<subject>WinHelp viewer for Windows 7</subject>
+<post author="RoboColum(n)" timestamp="Nov 2, 2009 1:39 AM">
+<s>just in case anyone may need it, microsoft have released a viewer for winhelp files under windows 7.</s><s> click here to download it. Ê read the robocolum(n) for a tips, tricks and musings on the technical communication suite products.</s><s> follow the robocolum(n).</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2324753-508880</DOCNO>
+<TEXT>
+<subject>What controls the index and search panes in RoboHelp 5?</subject>
+<post author="ShanKacie" timestamp="Oct 19, 2009 12:05 PM">
+<s>i'm using robohelp 5 and need to know what controls the index and search panes.</s><s> is there a specific file that controls 1 or both? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2324753-2324840</DOCNO>
+<TEXT>
+<subject>What controls the index and search panes in RoboHelp 5?</subject>
+<post author="RoboWizard" timestamp="Oct 19, 2009 12:20 PM">
+<s>hi there 
+so many unanswered questions. 
+</s><s>what are you using?</s><s> robohelp for word or robohelp html?</s><s> where are you wanting to control things?</s><s> in the robohelp editor or in the output?</s><s> is this really version 5 or did you mean x5? 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2324753-2324818</DOCNO>
+<TEXT>
+<subject>What controls the index and search panes in RoboHelp 5?</subject>
+<post author="ShanKacie" timestamp="Oct 19, 2009 12:22 PM">
+<s>sorry about that i meant robohelp x5.</s><s> i am using robohelp for word and i am wanting to delete the index and search tabs from the output. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2324753-2324885</DOCNO>
+<TEXT>
+<subject>What controls the index and search panes in RoboHelp 5?</subject>
+<post author="RoboWizard" timestamp="Oct 19, 2009 12:32 PM">
+<s>hi again 
+thanks for the additional information.</s><s> but that unfortunately spawns a new question.</s><s> what is your output? 
+</s><s>if it's winhelp (the only reason i can fathom anyone would be using robohelp for word) i believe you simply omit the cnt file, but it's been eons since i've used rh for word and done that, so i am likely wrong. 
+</s><s>if it's webhelp, you have options that govern whether the tabs are present.</s><s> you get to these using the single source layout dialog.</s><s> (well, you do in robohelp html anyway so i guess rh for word may be different) 
+</s><s>hopefully this helps.</s><s> if i'm wrong about some of this stuff (which i could be) hopefully someone that is more familiar with rh for word will chime in and offer more help. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2324753-2324874</DOCNO>
+<TEXT>
+<subject>What controls the index and search panes in RoboHelp 5?</subject>
+<post author="ShanKacie" timestamp="Oct 19, 2009 12:34 PM">
+<s>unfortunately it is winhelp, which we are actually moving away from using.</s><s> in the interim we are using robohelp as a browser to display another type of help so the index and search tabs are not needed.</s><s> i already removed the cnt and all it removed from the output was the table of contents.</s><s> the index and search are still there, but empty. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2289750-501142</DOCNO>
+<TEXT>
+<subject>RoboHelp rtf converter cannot be found</subject>
+<post author="MBarryH" timestamp="Oct 2, 2009 6:17 PM">
+<s>i have just installed adobe robohelp 8 for word, and am getting the above-mentioned message when trying to save ms-word file.</s><s> have performed "repair" ...</s><s> no luck.</s><s> any ideas greatly appreciated. 
+</s><s>mbh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2289750-2290038</DOCNO>
+<TEXT>
+<subject>RoboHelp rtf converter cannot be found</subject>
+<post author="Peter%20Grainge" timestamp="Oct 3, 2009 2:07 AM">
+<s>see snippet 112 on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-2137531-468833</DOCNO>
+<TEXT>
+<subject>Troubleshooting WinHelp</subject>
+<post author="Peter Grainge" timestamp="Jul 31, 2009 4:06 PM">
+<s>
+
+
+</s><s>this post will contain troubleshooting tips for winhelp. 
+</s><s>each category in the forum will have its own troubleshooting tips. 
+</s><s>bear with us while we add to this starter list.</s><s> items will be added as we think of them and not necessarily in order of importance. 
+</s><s>please feel free to email robowizard or peter grainge via their web sites with suggestions. 
+
+</s><s>the troubleshooting guide has links to the troubleshooting tips for the other robohelp forum categories. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-233847-233847</DOCNO>
+<TEXT>
+<subject>TOC Won't Display in WinHelp</subject>
+<post author="garysam" timestamp="Oct 17, 2008 9:18 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-233847-2040769</DOCNO>
+<TEXT>
+<subject>TOC Won't Display in WinHelp</subject>
+<post author="KMaggart" timestamp="Jun 15, 2009 11:48 AM">
+<s>we're getting the same issue here.</s><s> we compile - looks great.</s><s> we copy the hlp and cnt files to another computer and the toc disappears.</s><s> we're using robohelp for word and have been since v5.</s><s> can anyone help on this?</s><s> all topics are there; links work, graphics great, but the table of contents has vanished. 
+</s><s>if i run the autogenerate toc function, the toc disappears completely from the system.</s><s> bear in mind, this is the same file we've been working from for the last 3 years and up until now has been working.</s><s> we recently updated to v7 and upgraded again to v8 today. 
+i really appreciate any guidance anyone can give. 
+</s><s>kerry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-55675-55675</DOCNO>
+<TEXT>
+<subject>robohelp rtf converter cannot be found</subject>
+<post author="nylarising" timestamp="Apr 1, 2008 9:34 AM">
+<s>hi.</s><s> i'm using word 2003, sp2 and robohelp for word x5.01, build 606 to edit a previous winhelp project, and when i try to save the document i get a robohelp dialog box advising, "the product is not installed correctly.</s><s> the robohelp rtf converter cannot be found." i can't seem to find any info on this.</s><s> any ideas (as word will not let me save my changes).</s><s> also, i got word error 1057 (outta nowhere), but was able to circumvent with this knowledgebase article.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-55675-1054449</DOCNO>
+<TEXT>
+<subject>robohelp rtf converter cannot be found</subject>
+<post author="Tina%20Z-B" timestamp="Mar 11, 2009 7:33 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-55675-1054452</DOCNO>
+<TEXT>
+<subject>robohelp rtf converter cannot be found</subject>
+<post author="nylarising" timestamp="Mar 11, 2009 7:39 AM">
+<s>you're right...it is an old post, and i've switched to a different help authoring system i believe i had it "resolved" by having an older version of word installed (alongside word 2003). before i initiated robohelp, i would open that older version of word (just to have it cached), then close it, and open robohelp. that was the only solution that worked for me.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-55675-1960494</DOCNO>
+<TEXT>
+<subject>robohelp rtf converter cannot be found</subject>
+<post author="Peter%20Grainge" timestamp="May 13, 2009 11:32 AM">
+<s>i know this post is old but i just caught by it and was assisted by adobe in finding a solution. 
+i looked in the registry for the key shown and found it was missing.</s><s> i created it by copying the details from a working machine and it all seems to be working ok. 
+i have also attached the image so that you can download it and read the details more easily. 
+
+
+
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-1869702-414796</DOCNO>
+<TEXT>
+<subject>Using RoboHelp as a link on a Webpage</subject>
+<post author="jeepride" timestamp="Apr 6, 2009 10:38 AM">
+<s>has anyone used a link to robohelp chm file on a web page.</s><s> i wanted to update faqs and though robohelp would be the best way to do that.</s><s> i've always used it as a button on an application but not as a link on a menu on a web page. 
+</s><s>thanks rich 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-1869702-1869741</DOCNO>
+<TEXT>
+<subject>Using RoboHelp as a link on a Webpage</subject>
+<post author="RoboWizard" timestamp="Apr 6, 2009 10:46 AM">
+<s>hi there 
+i have used many different links to chm files on web pages.</s><s> but the links i've used are simply intended to allow the user to download the chm and run it locally.</s><s> they are never intended to allow the user to view the chm from the page.</s><s> there are also issues with downloading chm files from web pages.</s><s> you have to unblock them.</s><s> i've outlined how to fix that at this link. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>click here for adobe authorized captivate and robohelp html training click here for the sorcerstone blog click here for robohelp and captivate ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-203563-203563</DOCNO>
+<TEXT>
+<subject>RH 8, WinHelp, Japanese</subject>
+<post author="jesa712" timestamp="Feb 11, 2009 1:41 PM">
+<s>hi.</s><s> my company recently decided to localize in french and japanese.</s><s> currently we generate winhelp 2000 using x5.</s><s> their plan was to send the raw word documents to a language translation company and then we would create the winhelp 2000 project to generate .hlp/.cnt files.</s><s> i see that japanese is not supported in x5, so i'm looking into version 8. but...is winhelp 2000 a valid output in v8?</s><s> (i know we should update our help system to something a little more modern, but that is what the powers that be want for now.</s><s>) thanks!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-203563-1035367</DOCNO>
+<TEXT>
+<subject>RH 8, WinHelp, Japanese</subject>
+<post author="vivek_k-GfmzA1" timestamp="Feb 11, 2009 6:19 PM">
+<s>robohelp for word 8 supports winhelp 2000 output.</s><s> vivek.</s><s> adobe systems.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-223721-223721</DOCNO>
+<TEXT>
+<subject>Setting Default Topic</subject>
+<post author="Josh Rawls" timestamp="Dec 3, 2008 12:35 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-223721-994343</DOCNO>
+<TEXT>
+<subject>Setting Default Topic</subject>
+<post author="Captiv8r" timestamp="Dec 3, 2008 1:45 PM">
+<s>hi josh does your robohelp for word have an area labeled "single source layouts"?</s><s> if so, you just double-click the desired layout and the first screen of the resulting dialog has an option allowing you to nominate the default topic.</s><s> cheers...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-223721-994346</DOCNO>
+<TEXT>
+<subject>Setting Default Topic</subject>
+<post author="Josh%20Rawls" timestamp="Dec 3, 2008 1:58 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-38679-38679</DOCNO>
+<TEXT>
+<subject>Setting Focus back to calling window</subject>
+<post author="RajeshKumarrv" timestamp="Nov 30, 2008 9:45 PM">
+<s>hi, please suggest me some solution for following issue.</s><s> i created chm file using robohelp 7.02 version.</s><s> i could lauch this chm file from my c# application, after closing the chm file the focus is not set back to the c# application window.</s><s> i tried similar procedure with the file created using micorsoft html help sdk, this scenario is working correctly.</s><s> is there any setup that we should do in robohelp project, such that the focus could be set the calling application window.</s><s> thanks in advance.</s><s> with regards, rajeshrv.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-38679-992583</DOCNO>
+<TEXT>
+<subject>Setting Focus back to calling window</subject>
+<post author="Pete%20Lees" timestamp="Dec 1, 2008 3:34 AM">
+<s>hi, rajeshrv, and welcome to the forums, this problem appears to be related to the ehlpdhtm.js script file, which robohelp commonly compiles into an html help file.</s><s> see these threads for more information: after closing help file, app does not regain focus losing focus upon exiting .chm file pete
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-38679-993448</DOCNO>
+<TEXT>
+<subject>Setting Focus back to calling window</subject>
+<post author="RajeshKumarrv" timestamp="Dec 2, 2008 8:47 AM">
+<s>hi pete, thank you for your timely help, let me try the suggestions provided in the links, and get back to you.</s><s> with regards, rajeshrv.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-38679-993846</DOCNO>
+<TEXT>
+<subject>Setting Focus back to calling window</subject>
+<post author="RajeshKumarrv" timestamp="Dec 2, 2008 7:51 PM">
+<s>hi pete, i commented the lines between //begin to support previous hhactivex invoking ... //end to support previous hhactivex invoking in the file ehlpdhtm.js and it worked.</s><s> thank you very much for your help.</s><s> thank you, with regards, rajeshrv.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-34400-34400</DOCNO>
+<TEXT>
+<subject>X7 WinHelp files crashing on compile</subject>
+<post author="1newtonya" timestamp="Nov 10, 2008 2:13 PM">
+<s>one of our locations is encountering this problem: we are facing a daunting task in the last couple of months to work with robohelp in publishing our winhelp4 files for our products.</s><s> the project crashes when compiling the help files resulting in losing all the changes which we have done for the current sprint and previous ones.</s><s> i tried researching this issue in the adobe website and did not find any workarounds.</s><s> the new tool robohelp x7 is crashing with errors not only on my machine but also on other machines.</s><s> as a result, i had to go back to my old version of rh x5.</s><s> i generated the compiled help file successfully after cleaning my machine of the window and office updates.</s><s> i had to re-install the windows xp operating system twice on my machine to get rid of the new window and office updates.</s><s> however, this only gave me a small reprieve to compile the help file for a brief time.</s><s> but once again the same problem has re-appeared and i am totally at my wits end how to resolve this issue with our stated releases in the month of december 2008.</s><s> following is the compile error which leads to the project crashing.</s><s> "microsoft help workshop has encountered an error and needs to close.</s><s> we are sorry for the inconvenience. if you were in the middle of something, the information you were working on might be lost.</s><s> please tell microsoft about this problem..." i'm sure the error report was not sent to microsoft.</s><s> has anyone encountered this issue, and if so, can you provide any assistance?</s><s> thanks very much.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-28374-28374</DOCNO>
+<TEXT>
+<subject>RoboHelp 5 &amp; Word 2003</subject>
+<post author="jeffrey.helle" timestamp="Oct 17, 2008 7:01 AM">
+<s>below is a macro, which disables the enter key while completing a form, that is contained within a 2003 word document.</s><s> when the document is opened through webhelp this error is produced: runtime error 4605 : this command not available.</s><s> however, if you go to the webhelp directory and open the same document no error occurs.</s><s> another note - this same document works fine using word 2007 via webhelp.</s><s> any ideas?</s><s> sub enterkeymacro() ' check whether the document is protected for forms ' and whether the protection is active.</s><s> if activedocument.protectiontype = wdallowonlyformfields and _ selection.sections(1).protectedforforms = true then ' retrieve the bookmark of the current selection. ' this is equivalent to the name of the form field. myformfield = selection.bookmarks(1).name ' go to the next form field if the current form field ' is not the last one in the document.</s><s> if activedocument.formfields(myformfield).name <> _ activedocument.formfields(activedocument.formfields.count) _ .</s><s>name then activedocument.formfields(myformfield).next.select else ' if the current form field is the last one, ' go to the first form field in the document.</s><s> activedocument.formfields(1).select end if else ' if the document is not protected for forms, ' insert a tab stop character.</s><s> selection.typetext chr(13) end if end sub sub autonew() ' do not protect the template containing these macros.</s><s> customizationcontext = activedocument.attachedtemplate ' bind the enter key to the enterkeymacro.</s><s> keybindings.add keycode:=buildkeycode(wdkeyreturn), _ keycategory:=wdkeycategorymacro, command:="enterkeymacro" ' reprotect the document with forms protection.</s><s> activedocument.protect type:=wdallowonlyformfields, noreset:=true end sub sub autoopen() ' this macro will reassign the enter key when you open an existing ' word form fields document.</s><s> customizationcontext = activedocument.attachedtemplate ' bind the enter key to the enterkeymacro.</s><s> keybindings.add keycode:=buildkeycode(wdkeyreturn), _ keycategory:=wdkeycategorymacro, command:="enterkeymacro" end sub sub autoclose() customizationcontext = activedocument.attachedtemplate findkey(keycode:=buildkeycode(wdkeyreturn)).disable ' disables prompt to save template changes.</s><s> templates(1).save end sub
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-247053-247053</DOCNO>
+<TEXT>
+<subject>HELP_CONTEXT is 0; what to do</subject>
+<post author="Jenn_MM" timestamp="Jun 17, 2008 6:56 AM">
+<s>caveat--this is more of a winhelp 4 question than a rh question.</s><s> if the help_context is set to 0 is there anything i can do (i have access to the .hh file) or does the developer need to assign a number to the control?</s><s> thanks, jen
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-53669-53669</DOCNO>
+<TEXT>
+<subject>Help Jumps Converting to Popups - HELP!</subject>
+<post author="beerzie" timestamp="Jun 13, 2008 9:14 AM">
+<s>major issue here.</s><s> i am maintaining a large, nearly 15-year old help system that has thousands of topics and links, and nearly 30 different source word/rtf files.</s><s> suddenly, with no intentional changes whatsoever to my system or the source files, when i compile the project, the jumps that take the user to a different topic are converted to popup links in an entire document, and all of its constituent topics.</s><s> what is worse is that this behavior is capricious; in some of the documents, when i check their properties, it says the links are popups, but to not compile as such, in other documents, when i check their properties, it says the links are popups, and they do compile as popups.</s><s> here's what i have done and figured out so far: (1) i have checked the styles of the offending links.</s><s> it seems that a single underlined word compiles as a popup link, and a double-underlined word compiles as a regular jump to a new topic, (2) the offending styles -- and there are dozens per document, thanks to numerous authors over the years and word's lame handling of styles -- when changed back to the correct style, sometimes keep their style, other times revert back to the wrong style.</s><s> i am at wit's end.</s><s> does anyone know what to do?</s><s> changing to another help platform is not an option.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-53669-886374</DOCNO>
+<TEXT>
+<subject>Help Jumps Converting to Popups - HELP!</subject>
+<post author="Peter%20Grainge" timestamp="Jun 13, 2008 12:42 PM">
+<s>i can't help you with the specifics but are you running the project from and generating to your local drive.</s><s> any backups?</s><s> with a copy somewhere safe, i would try deleting the rtfs and then reopening the project.</s><s> that recreates the rtfs from the docs and can get rid of corruptions.</s><s> have you changed your version of word since the proejct was last worked on?</s><s> if so which version of word and rh are you using?</s><s> also after you upgraded word, did you uninstall and reinstall rh?</s><s> sorry there is nothing that nails it but one of those might just help.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-53669-886404</DOCNO>
+<TEXT>
+<subject>Help Jumps Converting to Popups - HELP!</subject>
+<post author="beerzie" timestamp="Jun 13, 2008 1:14 PM">
+<s>> any backups?</s><s> daily.</s><s> there is no software that i trust so much that i risk losing a day's work!</s><s> > with a copy somewhere safe, i would try deleting the rtfs and then reopening the project.</s><s> that recreates the rtfs from the docs and can get rid of corruptions.</s><s> i am going to try this.</s><s> it seems to me that i have done this before when i had problems and it has worked, but i doubt it will this time, as i have tried using a completely unrelated project and had the same problem.</s><s> but it's worth a try!</s><s> > have you changed your version of word since the project was last worked on?</s><s> if so which version of word and rh are you using?</s><s> also after you upgraded word, did you uninstall and reinstall rh?</s><s> no changes since i last used the project, though my company regularly pushes various mandatory microsoft security updates.</s><s> (i am on xp as an os.</s><s> word 2002, and am using rh x5.</s><s>) it hasn't been that long since i used the project, so there haven't been that many os updates since.</s><s> my suspicion is that robohelp has somehow gone hinky, and perhaps there was a ms update that did it.</s><s> i just downloaded and installed the 5.02 patch, and will try that.</s><s> i will try the rtf fix next, and if that doesn't work, i guess it's time to uninstall/reinstall.</s><s> if that doesn't work, i guess i will need to try a different machine.</s><s> if that doesn't work...i guess it may be time to look for a new job!</s><s> thanks for your help!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-96258-96258</DOCNO>
+<TEXT>
+<subject>Table border and shading disappear when generating to WinHelp 2000</subject>
+<post author="Heavy B" timestamp="Apr 21, 2008 8:57 AM">
+<s>table border and shading disappear when generating to winhelp 2000 is that normal?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-96258-846485</DOCNO>
+<TEXT>
+<subject>Table border and shading disappear when generating to WinHelp 2000</subject>
+<post author="RoboWizard" timestamp="Apr 21, 2008 10:08 AM">
+<s>hi heavy b i seem to recall that it's normal.</s><s> you are probably interested in a rather dated article found at this link.</s><s> cheers...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-96258-846596</DOCNO>
+<TEXT>
+<subject>Table border and shading disappear when generating to WinHelp 2000</subject>
+<post author="Heavy%20B" timestamp="Apr 21, 2008 11:18 AM">
+<s>that embedding objects article could certainly work if i didn't have links in the table.</s><s> thanks!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-96258-846936</DOCNO>
+<TEXT>
+<subject>Table border and shading disappear when generating to WinHelp 2000</subject>
+<post author="Captiv8r" timestamp="Apr 21, 2008 5:22 PM">
+<s>hi there when you embed in this manner, doesn't that essentially create an image once it's compiled?</s><s> if so, i would think you could overcome this using .</s><s>shg.</s><s> just a thought...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-101363-101363</DOCNO>
+<TEXT>
+<subject>Bookmarks not working when used in TOC</subject>
+<post author="hardlyworking" timestamp="Mar 31, 2008 2:12 PM">
+<s>does the winhelp .chm file format not support bookmarks in the toc?</s><s> i get the error message "this program cannot display the web page"?</s><s> don't see this mention in the bookmark page in the robohelp help.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-101363-829542</DOCNO>
+<TEXT>
+<subject>Bookmarks not working when used in TOC</subject>
+<post author="Captiv8r" timestamp="Mar 31, 2008 2:27 PM">
+<s>hi hardlyworking winhelp is .</s><s>hlp format. .</s><s>chm files are html help format.</s><s> i'm guessing you are using the latter, as you are talking about bookmarks.</s><s> where is your project?</s><s> if it is on a network, that's likely the issue here.</s><s> cheers...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-101363-830009</DOCNO>
+<TEXT>
+<subject>Bookmarks not working when used in TOC</subject>
+<post author="hardlyworking" timestamp="Apr 1, 2008 7:26 AM">
+<s>yes, .chm output is the one.</s><s> it is not on a network or synched drive, this is why i was concerned.</s><s> i thought i had read somewhere deep in the help files a caveat about using .chm with bookmark.</s><s> so, i have a .chm with bookmarks on a local drive.</s><s> when the end user clicks on a item in the toc that was created using a bookmark, they get the "this program cannot display the web page" error.</s><s> any ideas?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-101363-830038</DOCNO>
+<TEXT>
+<subject>Bookmarks not working when used in TOC</subject>
+<post author="hardlyworking" timestamp="Apr 1, 2008 7:52 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-101363-830061</DOCNO>
+<TEXT>
+<subject>Bookmarks not working when used in TOC</subject>
+<post author="hardlyworking" timestamp="Apr 1, 2008 8:17 AM">
+<s>ok, this is embarrassing but i feel i should document the answer in case some else has tired old eyes.</s><s> there were colons at the end of the non-working bookmarks.</s><s> i just could not see them very well when the red spell check underline was also there.</s><s> i have since implemented a "'no colon" policy at the end of topics, they are redundant anyway.</s><s> which brings up the question, can i change the font size for robohelp?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-257596-257596</DOCNO>
+<TEXT>
+<subject>What Replaces Winhelp ?</subject>
+<post author="IainCliffe" timestamp="Mar 13, 2008 8:02 AM">
+<s>so, microsoft have dumped winhelp.</s><s> the alternatives as i see it are: htmlhelp: - will not run over a network (without a registry hack) - vastly inferior context sensitive help support (graphics, formatting etc.</s><s>).</s><s> perhaps this has improved ?</s><s> webhelp/flashhelp: - not conducive to a local install (thousands of pages).</s><s> new ms help system: - not published ?</s><s> deep joy.... anyone have recommendations on a replacement (application help system) or timescale on the ms help system being incorporated into a toolsuite such as robohelp ?</s><s> thanks.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-257596-817107</DOCNO>
+<TEXT>
+<subject>What Replaces Winhelp ?</subject>
+<post author="Pete%20Lees" timestamp="Mar 13, 2008 8:33 AM">
+<s>iain, > so, microsoft have dumped winhelp.</s><s> more or less, yes, although the winhelp executable is still available from the microsoft download center for those users who don't have it.</s><s> that's just vista and windows server 2008 users at the moment, i believe.</s><s> > htmlhelp: > - vastly inferior context sensitive help support (graphics, formatting etc.</s><s>).</s><s> > perhaps this has improved ?</s><s> if you're happy to use a third-party solution like keyhelp then, yes, much improved.</s><s> see: http://keyworks.net/keyhelp.htm http://helpware.net/htmlhelp/how_to_whatsthis.htm > new ms help system: > - not published ?</s><s> this is true for the assistance platform (ap) help used in vista.</s><s> at the moment, we don't know whether a public version of this will ever be made available.</s><s> i'm not even sure that there's anyone at microsoft who is actively working on this anymore.</s><s> microsoft help 2.0 is still around for those who want to integrate their help content into the visual studio .</s><s>net help system.</s><s> there's a little more information on all of this here: http://www.winwriters.com/articles/news/news_2007_1201.htm for the time being, i believe the recommendation is broadly: use html help (.chm) for locally installed help; help 2.0 for .</s><s>net help integration; and browser-based help for anything that the first two formats don't suit.</s><s> pete
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-61260-61260</DOCNO>
+<TEXT>
+<subject>WinHelp and missing RoboEx32.dll</subject>
+<post author="Jo_West" timestamp="Sep 7, 2007 1:23 PM">
+<s>created a simple winhelp and i have 6 it users reviewing the content.</s><s> one user is getting a message that the roboex32.dll file is missing.</s><s> he is running windows xp pro with the latest service pack.</s><s> evidently he has the file - it is not in the system32 directory.</s><s> he is now questioning the use of robohelp in creating the help files - his concern is that when the help file is distributed further with the application, users further down the line will run into the same problem.</s><s> he feels that there shouldn't have to be "other software installed just to run help".</s><s> i guess my question is - how does the roboexe.dll get distributed - with the compiled help?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-61260-696883</DOCNO>
+<TEXT>
+<subject>WinHelp and missing RoboEx32.dll</subject>
+<post author="RoboColum(n)" timestamp="Sep 10, 2007 1:33 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-61260-809014</DOCNO>
+<TEXT>
+<subject>WinHelp and missing RoboEx32.dll</subject>
+<post author="vivek_k-GfmzA1" timestamp="Mar 1, 2008 3:44 AM">
+<s>hi jo, you can find this dll under <robohelp install dir>/redist folder.</s><s> only this dll needs to be redistributed along help files to the end users machine.</s><s> vivek.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-31398</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="vhendr" timestamp="Jun 7, 2006 4:51 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-327191</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="CraigCC" timestamp="Jun 8, 2006 3:16 AM">
+<s>hi vhendra, can you provide a little more detail on the error messages that are being displayed when the help crashes?</s><s> what version of rh and windows are you using?</s><s> also, you may want to check out the following link: http://www.helpware.net/far/far_faq.htm#index_tab_crash kind regards craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-327217</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="vhendr" timestamp="Jun 8, 2006 4:15 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-328220</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="CraigCC" timestamp="Jun 9, 2006 4:23 AM">
+<s>hi, did you check the link?</s><s> does that shine any light on your problem re:this problem is generally caused by the "stoplist" feature (a small text file containing words that should be ignored by the full text search engine).</s><s> lists greater than 512 bytes (characters) will hit a bug in the compiler that then fails to create the keyword index.</s><s> they work fine if you stay under that limit.</s><s> the problem no longer seems to show under win xp.</s><s> are you using the stoplist feature?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-328233</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="vhendr" timestamp="Jun 9, 2006 4:37 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-328237</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="CraigCC" timestamp="Jun 9, 2006 4:47 AM">
+<s>hi vhendra,, 1.</s><s> click the file menu and select project settings.</s><s> 2. on the general tab, click advanced.</s><s> the advanced settings for localization dialog opens.</s><s> 3. click the stop list tab.</s><s> what do you see?</s><s> can you also creat a brand new project and create on index entry, compile and see if you get the same error?</s><s> thanks craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-328240</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="vhendr" timestamp="Jun 9, 2006 4:54 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-329578</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="CraigCC" timestamp="Jun 12, 2006 5:11 AM">
+<s>hi vhendra, process of elimiination.</s><s> take a backup copy of your project, remove the stop list .stp file, recompile and see if you get the same problem.</s><s> if not it may well be another issue - hard to tell without looking at the project.</s><s> if you like, zip up your project and send it to me and i'll take a look over the next couple of days.</s><s> cheers craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-331934</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="vhendr" timestamp="Jun 14, 2006 10:21 AM">
+<s>i don't have a .stp file in my project.</s><s> the documentation i do is for proprietary software.</s><s> i'd like for you to look at my project, but need to know what your procedure is for handling files of this type.</s><s> i'd welcome you to log onto my computer to view, if that's an option.</s><s> thanks.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-31398-333709</DOCNO>
+<TEXT>
+<subject>Winhelp Index</subject>
+<post author="CraigCC" timestamp="Jun 16, 2006 6:12 AM">
+<s>hi vhendr, there is no procedure, this is just an informal offer to help out and take a look at your project.</s><s> just zip up your project and send it to me at craig.clarke @ helpsolutions.co.uk.</s><s> lets just make one thing clear - i am not an adobe employee or offering an alternative to adobe support.</s><s> adobe community experts are volunteers helping with peer to peer support via the forum.</s><s> going back through this thread, i'm now starting to wonder if this is an issue with the way that the help has been linked to the applciation.</s><s> do you get the same error when the help is opened from a folder on your c:\ drive or is only happening when you open the help via the applciation?</s><s> kind regards craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-267777</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="bawd" timestamp="Jul 5, 2006 4:57 AM">
+<s>when generating in winhelp, the error wizard displays messages such as - quote warning - hc3025: topic #123 of helpfile.rtf: jump to undefined topic id: "help topic" unquote the nature of the problem and its location are usually fairly obvious, so no problem there.</s><s> but - where is that does that topic reference number (e.g.</s><s> topic #123) come from and where is it shown/used apart from here?</s><s> it's not user-allocated, it's not shown in the topic properties dialog, it's not 'hidden' text and it does not always reflect the topic's actual sequential position in the .</s><s>doc.</s><s> so is it user-accessible?</s><s> am i missing something obvious?</s><s> this an oddity that i have noted for years, through all my various combinations of os/word/rh (currently fully-updated xp/2003/x5.02).</s><s> it's an irritation rather than a problem, of course.</s><s> has someone an answer, please?</s><s>!</s><s> brian (uk)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-466328</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="bawd" timestamp="Nov 27, 2006 4:33 AM">
+<s>if i'm not breaking any forum rules, may i re-post this query (in the absence of any response at all).</s><s> rather than the 'irritation' i confessed to then (may 2006), it has now become more an annoyance: quote: originally posted by: bawd when generating in winhelp, the error wizard displays messages such as - quote warning - hc3025: topic #123 of helpfile.rtf: jump to undefined topic id: "help topic" unquote the nature of the problem and its location are usually fairly obvious, so no problem there.</s><s> but - where is that does that topic reference number (e.g.</s><s> topic #123) come from and where is it shown/used apart from here?</s><s> it's not user-allocated, it's not shown in the topic properties dialog, it's not 'hidden' text and it does not always reflect the topic's actual sequential position in the .</s><s>doc.</s><s> so is it user-accessible?</s><s> am i missing something obvious?</s><s> this an oddity that i have noted for years, through all my various combinations of os/word/rh (currently fully-updated xp/2003/x5.02).</s><s> it's an irritation rather than a problem, of course.</s><s> has someone an answer, please?</s><s>!</s><s> brian (uk)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-466474</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="Simon_H_Holt" timestamp="Nov 27, 2006 7:38 AM">
+<s>hi brian in the absence of an expert, i'll take a stab at this.</s><s> my understanding has always been that the message is generated by the help compiler rather than robohelp, and therefore does not relate to any 'property' of the topic.</s><s> i've always assumed that the number is simply the topic's sequential position in the rtf file.</s><s> but if you've found that it is not necessarily so then i'm curious...one possible explanation is that you are looking at the page number in word and assuming that it represents the topic number (after all, topics are separated by page breaks).</s><s> i made that mistake once upon a time 'til i realised that long topics would aquire extra soft page breaks...doh!</s><s> is it possible that the topic order in the rtf is different from that in the .</s><s>doc?</s><s> i'd be surprised if it was but then again... ...</s><s>let's see if an expert can confirm or refute my assumptions...</s><s> cheers simon
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-467438</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="bawd" timestamp="Nov 28, 2006 5:07 AM">
+<s>hi simon thanks for that, though i'm afraid you're right that page numbers in neither doc nor rtf give consistent results.</s><s> however, you have made me think again in this area because my topics may be re-ordered many times before the first compile - they might retain an origination number or whatever.</s><s> are there any confessing experts in winhelp nowadays?</s><s> seems to me that not many of us admit to using (yes, and by choice!</s><s>) winhelp and word; a bit like using a quill, perhaps - does the job, but definitely antique technology...</s><s> best brian
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-467746</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="Simon_H_Holt" timestamp="Nov 28, 2006 9:33 AM">
+<s>one trick you can play with robohelp is to copy the temporary directory that it created during compilation, before it has chance to delete it.</s><s> in that directory you will find the _actual_ rtf files that the winhelp complier goes to work on - and i'd be pretty amazed if the 'topic number' reported in the error was not a true reflection of its sequence in the file.</s><s> as for teh rest - i have worked with word since version 2 and find i can make it do pretty much what i want. . .it is my 'editor of choice' but the writing is on the wall as vista compatibility becomes mandatory.</s><s> i wouldn't want to stay with word for html, given what i've read.</s><s> cheers
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-467747</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="Simon_H_Holt" timestamp="Nov 28, 2006 9:34 AM">
+<s>one trick you can play with robohelp is to copy the temporary directory that it created during compilation, before it has chance to delete it.</s><s> in that directory you will find the _actual_ rtf files that the winhelp complier goes to work on - and i'd be pretty amazed if the 'topic number' reported in the error was not a true reflection of its sequence in the file.</s><s> as for teh rest - i have worked with word since version 2 and find i can make it do pretty much what i want. . .it is my 'editor of choice' but the writing is on the wall as vista compatibility becomes mandatory.</s><s> i wouldn't want to stay with word for html, given what i've read.</s><s> cheers
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-467896</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="bawd" timestamp="Nov 28, 2006 11:58 AM">
+<s>hmm - worth a look, although if the # number is not displayed anywhere it would still be necessary to count through the topics (hundreds?</s><s>!</s><s>) re vista: no panic there - the client's customers are not the sort to update precipitately.</s><s> like you, after long use i don't have real problems with rh for word.</s><s> ciao
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-468509</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="Brian.Mccaffery" timestamp="Nov 29, 2006 3:10 AM">
+<s>brian, sorry no one got back to you on this.</s><s> click here to read the tech tip that may provide the answer.</s><s> hope it helps, if not, please post back.</s><s> brian
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/WinHelp/Discussions-267777-468645</DOCNO>
+<TEXT>
+<subject>Topic reference number in error Wizard</subject>
+<post author="bawd" timestamp="Nov 29, 2006 6:17 AM">
+<s>thanks for the try, brian, but i think i may have misdirected you with the particular example i gave.</s><s> an alternative might be - quote warning - hc3021: topic #23 of helpfile.rtf: cannot find the bitmap 'picture.bmp' unquote my problem is not with the nature of the error, only where that # number comes from and where, if anywhere, it can be tracked down.</s><s> best brian
+</s></post>
+</TEXT>
+</DOC>
+
+

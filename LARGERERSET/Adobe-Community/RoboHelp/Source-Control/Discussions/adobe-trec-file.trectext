@@ -1,0 +1,2009 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6227956-1432612</DOCNO>
+<TEXT>
+<subject>Tutorial on RoboSource Control?</subject>
+<post author="Ajay367" timestamp="Mar 20, 2014 10:03 AM">
+<s>hi, 
+</s><s>where can i find a good tutorial/manual on robosource control?</s><s> the help included with the source control is pretty cryptic to say the least. 
+i managed to install robosource control, and my team has been using it all these years.</s><s> but i've never delved into the more powerful features like pinning, tagging, branching, whatnot.</s><s> as our team consists of multiple writers working on the same project, the source control works transparently, enabling us to complete our task, but i've been rather scared of doing anything more than that. 
+</s><s>the help doesn't say much.</s><s> nor does google. 
+</s><s>any help, pointers would be greatly appreciated. 
+</s><s>thanks, ajay 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6227754-1432553</DOCNO>
+<TEXT>
+<subject>Perforce and .xpj files</subject>
+<post author="Mat D" timestamp="Mar 20, 2014 9:14 AM">
+<s>i've setup a couple of robohelp projects in perforce using this guide: http://www.adobe.com/devnet/robohelp/articles/perforce-integration.htm l 
+</s><s>everything is working fine, aside from the .xpj file from robohelp (that contains the source control connection details) also syncs with the perforce server, and if multiple users connect to the project, it does not save each user's details to the .xpj file. 
+</s><s>excluding the .xpj file from syncing with perforce means that when you first pull the files down from perforce, you cannot open the project (as there is no .xpj to open!</s><s>).</s><s> if you don't exclude it, you can open the project once with your perforce login details, but next time you open the project in robohelp, it asks you to login with the users details that first added the project to perforce. 
+</s><s>anyone any ideas?</s><s> and i hope i explained that clearly enough 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6175467-1419873</DOCNO>
+<TEXT>
+<subject>Error Message - Project is missing or has been removed from version control</subject>
+<post author="PH Preston" timestamp="Mar 3, 2014 1:04 PM">
+<s>all of a sudden, the sharepoint robohelp version control "link" stopped connecting to the team's local versions.</s><s> now, once we logout of rh, we have to redownload the sp version to our computers in order to continue working.</s><s> we are on robohelp 10 and did not have this issue previously.</s><s> we do not know what may have triggered it (perhaps an enterprise deployment of new security software?</s><s>).</s><s> any thoughts or ideas on how to re-establish and maintain the version control connection? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6175467-6175548</DOCNO>
+<TEXT>
+<subject>Error Message - Project is missing or has been removed from version control</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 3, 2014 1:16 PM">
+<s>might have better luck in http://forums.adobe.com/community/robohelp/robosource_control 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6175467-6179853</DOCNO>
+<TEXT>
+<subject>Error Message - Project is missing or has been removed from version control</subject>
+<post author="Peter%20Grainge" timestamp="Mar 4, 2014 5:28 PM">
+<s>thread moved to source control. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6175467-6180638</DOCNO>
+<TEXT>
+<subject>Error Message - Project is missing or has been removed from version control</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 5, 2014 2:38 AM">
+<s>strange.</s><s> try opening the xpj with notepad.</s><s> do you see a bunch of vc::provider and other vc:: settings under miscproperties? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6175467-6181570</DOCNO>
+<TEXT>
+<subject>Error Message - Project is missing or has been removed from version control</subject>
+<post author="PH%20Preston" timestamp="Mar 5, 2014 8:42 AM">
+<s>thanks william - yes, there were 4 "vc::" items: 
+vc::agent vc::provider vc::database vc::cookie 
+should there be no vc:: items? 
+</s><s>what we did to solve the problem so we could move on was delete the project, rename the xpj file, and reupload to sharepoint using the new name.</s><s> so far, so good, but it would be nice to know what actually happened, so we could fix it should it happen again. 
+</s><s>thanks much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6175467-6184567</DOCNO>
+<TEXT>
+<subject>Error Message - Project is missing or has been removed from version control</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 6, 2014 5:04 AM">
+<s>the vc:: items are the settings for version control.</s><s> they should be there. 
+</s><s>could it be that the cpd became corrupt?if your remove that and open the project, does it work then? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6179800-1420875</DOCNO>
+<TEXT>
+<subject>Has anyone used GitHub with RH projects?</subject>
+<post author="Ashley_Drew" timestamp="Mar 4, 2014 5:30 PM">
+<s>does anyone have any experience using github with robohelp?</s><s> i don't plan on setting it up to use the robohelp ui to check individual topics in and out.</s><s> i just want to check out the entire project.</s><s> if anyone has any experience with this, any tips would be greatly appreciated. 
+</s><s>also, can anyone please tell me which files to exclude when checking in the project?</s><s> i know you're supposed to exclude the .cpd file, but i think i read that there are others.</s><s> unfortunately, i can't find the thread where this was discussed. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6179800-6180640</DOCNO>
+<TEXT>
+<subject>Has anyone used GitHub with RH projects?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 5, 2014 2:41 AM">
+<s>as long as you check out/check in the entire project folder, you should be fine.</s><s> for robohelp, it's then as if there was no source control. 
+</s><s>exclude the cpd.</s><s> just include all the other files.</s><s> (don't forget to add new files to the source control when you create them.</s><s>) 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-3932568-905446</DOCNO>
+<TEXT>
+<subject>Checking out entire project</subject>
+<post author="Ashley_Drew" timestamp="Sep 22, 2011 11:12 AM">
+<s>i'm trying to get robohelp 9 set up with subversion.</s><s> thus far i'm using the rh ui to do everything, but i've seen posts from others saying they check the entire project in and out of source control.</s><s> can comeone please elaborate on how that works?</s><s> i know that there are some files that you don't add to source control, such as the .cpd file.</s><s> so how do you set everything up?</s><s> are you checking the folder that contains the project in and out?</s><s> if so, how do you omit the files that are supposed to be excluded? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-3932568-4005113</DOCNO>
+<TEXT>
+<subject>Checking out entire project</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 3, 2011 3:38 AM">
+<s>hi, 
+</s><s>you can check out the project from the robohelp gui.</s><s> click check out all to check out the entire project. 
+</s><s>you can also use the client to check out all the project files at once.</s><s> typically, you would not integrate the project with version control.</s><s> you just check in the files after you've closed robohelp. 
+</s><s>for more info on robohelp and subversion, see also http://www.adobe.com/devnet/robohelp/articles/robohelp_subversion.html 
+greet, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-3932568-6179799</DOCNO>
+<TEXT>
+<subject>Checking out entire project</subject>
+<post author="Ashley_Drew" timestamp="Mar 4, 2014 5:21 PM">
+<s>does anyone know specifically which files i need to exclude when checking a project into source control?</s><s> as i mentioned, i know that i'm supposed to exclude the cpd file, but are there any others that i should exclude? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-3932568-6180639</DOCNO>
+<TEXT>
+<subject>Checking out entire project</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 5, 2014 2:39 AM">
+<s>you can include all the other files.</s><s> robohelp creates some temporary files, but they are deleted when you close the project. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6019102-1381323</DOCNO>
+<TEXT>
+<subject>Robo Source Control getting corrupted</subject>
+<post author="rasterdan" timestamp="Jan 16, 2014 7:04 AM">
+<s>using rh10 and rsc, my files are getting corrupted.</s><s> i am using windows 7 64bit and i did apply the 64 bit patch.</s><s> we have been noticing small things going wrong recently and thought it was rh10 since no problems were observed in rh9. 
+i know that rh10 made some network changes, could this be effecting my project?</s><s> i am pulling everything possible out of version control to avoid further corruption.</s><s> some projects must be in source control. 
+</s><s>is anyone else having this problem?</s><s> some corruption is local and some is remote. 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6019102-6027449</DOCNO>
+<TEXT>
+<subject>Robo Source Control getting corrupted</subject>
+<post author="rasterdan" timestamp="Jan 18, 2014 1:32 PM">
+<s>i am going to try and setup subversion monday.</s><s> anyone know a good step by step install procedure for this on windows 7-64? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6019102-6044703</DOCNO>
+<TEXT>
+<subject>Robo Source Control getting corrupted</subject>
+<post author="rasterdan" timestamp="Jan 23, 2014 8:36 AM">
+<s>due to our server having very slow access and rh10 locking up, we believe that the source of the corruption is occurring when writing the files to disk or to our sourcecontrol server. 
+</s><s>rebooting the source control server fixed a lot of problems.</s><s> this pc gets rebooted monthly when it backs it up.</s><s> also, the server is only serving 6 projects to 2 people, ... nothing else.</s><s> we are going to reboot this pc weekly now and see if our problems go away. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6019102-6143164</DOCNO>
+<TEXT>
+<subject>Robo Source Control getting corrupted</subject>
+<post author="rasterdan" timestamp="Feb 21, 2014 5:52 AM">
+<s>update, so far, rebooting our rsc computer seems to have resolved a lot of problems including a lot of rh10 lockups and corrupted files.</s><s> we have been running a month now and things are nearly perfect.</s><s> every time we start looking away from rsc, we are brought back.</s><s> for some reason, we manage to get it working and it seems to do exactly what we want. 
+</s><s>it would be nice if it got an update from adobe rather letting it sit stagnate.</s><s> we think because it hasn't gotten any updates for years that it is the root of our problems, this is not always the case.</s><s> it seems like other things acting on rsc are the issue and not rsc itself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6131413-1409383</DOCNO>
+<TEXT>
+<subject>Is RoboSource Control compatible with Windows 8?</subject>
+<post author="Jop Smith" timestamp="Feb 18, 2014 3:11 AM">
+<s>is anyone using robosource control with windows 8.1?</s><s> i've heard rumours that it isn't compatible. 
+</s><s>thanks jonathan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6131413-6135166</DOCNO>
+<TEXT>
+<subject>Is RoboSource Control compatible with Windows 8?</subject>
+<post author="RoboColum(n)" timestamp="Feb 19, 2014 2:17 AM">
+<s>hi jonathan.</s><s> 
+</s><s>robosource control does not have a large user base, so the chances of anyone running it on windows 8.1 are slim.</s><s> i personally don't know if the two are compatible, but i don't remember hearing anything saying that they aren't. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6131413-6140287</DOCNO>
+<TEXT>
+<subject>Is RoboSource Control compatible with Windows 8?</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 20, 2014 9:53 AM">
+<s>well, rh11 is officially supported on win 8.1.</s><s> and robosourcecontrol is still part of rh11, although you must install it separately.</s><s> so i would expect the rh11 version to work. 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6134139-1410026</DOCNO>
+<TEXT>
+<subject>SQL Server Express 2012 ok, and is this better than 3rd party  SVC system?</subject>
+<post author="kdeuler" timestamp="Feb 18, 2014 5:02 PM">
+<s>hi.</s><s> can anyone advise if: 
+robosource control will work on sql server express 2012, or is some earlier version required.</s><s> is robosource control a more elegant (more integrated) solution than a 3rd party svc system, such as our perforce system (with mssvc plugin installed on rh.</s><s>) 
+</s><s>thanks.</s><s> 
+-kurt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6134139-6135164</DOCNO>
+<TEXT>
+<subject>SQL Server Express 2012 ok, and is this better than 3rd party  SVC system?</subject>
+<post author="RoboColum(n)" timestamp="Feb 19, 2014 2:14 AM">
+<s>hi kurt.</s><s> 
+</s><s>robosource control to my knowledge hasn't been developed in recent releases.</s><s> it is essentially the same product that existed years ago.</s><s> it works, but does not have a lot of users.</s><s> most people, including myself, prefer to use third party products such as perforce, svn. 
+</s><s>as robosource control is an old product and isn't widely used, i doubt whether anyone has tried using it on sql server express 2012.</s><s> that is not to say it won't work on it though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6123812-1407413</DOCNO>
+<TEXT>
+<subject>Anyone using source control AND cloud sharing?</subject>
+<post author="kdeuler" timestamp="Feb 15, 2014 9:51 AM">
+<s>hi.</s><s> i'm curious if anyone has any experience or tips to share about a robohelp environment that uses both source control and cloud sharing. 
+</s><s>my company uses perforce.</s><s> i'm purchasing a couple copies of tcs5, one for me in california, one for writer colleague in europe.</s><s> i'd like to use perforce for version control/backup, but use dropbox for rh asset sharing and sync.</s><s> is this workabout?</s><s> i'm guessing that the dropbox/sync mechnism won't work if one or both of us has not checked out a file that needs to be (automatically via sync) updated.</s><s> ("not checked out" = file is in read only state.</s><s>) 
+</s><s>if rh automatically checks files in/out of perforce in order to complete a cloudshare sync, that would be most cool! 
+</s><s>thanks in advance for your ideas! 
+-kurt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6123812-6127446</DOCNO>
+<TEXT>
+<subject>Anyone using source control AND cloud sharing?</subject>
+<post author="amitjha-lt" timestamp="Feb 16, 2014 8:51 PM">
+<s>hi kurt 
+</s><s>have you tried the scenario with rh 11? 
+</s><s>it should automatically check-out the file or should prompt for it based on the settings tools -> options -> version control 
+i tried with robo source control and sharepoint.</s><s> and it is working for me.</s><s> check-in has to be done mannually. 
+</s><s>please try and let us know the result. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6123812-6127374</DOCNO>
+<TEXT>
+<subject>Anyone using source control AND cloud sharing?</subject>
+<post author="kdeuler" timestamp="Feb 16, 2014 9:24 PM">
+<s>no.</s><s> i haven't had a chance to try this yet.</s><s> our company uses perforce for source countrol.</s><s> i believe there's an rh plugin that will integrate with perforce.</s><s> we'll no doubt try this. 
+</s><s>my work is linux only on server side.</s><s> no sharepoint or sql server available. 
+</s><s>thx.</s><s> 
+-kt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6123812-6127536</DOCNO>
+<TEXT>
+<subject>Anyone using source control AND cloud sharing?</subject>
+<post author="amitjha-lt" timestamp="Feb 16, 2014 10:08 PM">
+<s>hi 
+</s><s>for perforce please refer. http://www.adobe.com/devnet/robohelp/articles/perforce-integration.htm l 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6016467-1380677</DOCNO>
+<TEXT>
+<subject>No versions to test restoring a topic on RSC</subject>
+<post author="rwrich21" timestamp="Jan 15, 2014 12:33 PM">
+<s>?i have a question.</s><s> i am using robohelp 9 client and robosource control 3.1.</s><s> i just installed robosource control 3.1 two days ago.</s><s> it appeared to load my project to the database correctly.</s><s> yesterday i updated several topics and generate and published them to our website, all is looking good.</s><s> today i decide to test the restoring of a verson of that topic but when i opened up rsc an viewed the history there was only 1 version the initial load.</s><s> i had used rsc two years ago and then it always showed the versions you could chose from but now there is only one version. 
+</s><s>what is the problem? 
+</s><s>system attributes: robohelp 9 client html robosource contorl 3.1 robohelp server v9.0 webhelp pro 9.01.262 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6016467-6064295</DOCNO>
+<TEXT>
+<subject>No versions to test restoring a topic on RSC</subject>
+<post author="rwrich21" timestamp="Jan 29, 2014 4:47 AM">
+<s>when i make a change to a topic,check it in, generate and then publish the topic, why do i not see a new version for that topic when i go into rsc.</s><s> when i check history there is none when i check difference, rsc says they are identical.</s><s> it has been two weeks and i have updated many topic but to rsc nothing has changed.</s><s> could webhelp pro be the problem? 
+</s><s>system attributes: robohelp 9 client html robosource control 3.1 robohelp server v9.0 webhelp pro 9.01.262 ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-1261856</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="Kurt Collins" timestamp="Jul 24, 2013 12:21 PM">
+<s>hi all, 
+</s><s>i'm trying to integrate robohelp 10 with tfs 2012 so i can use source control through it. 
+</s><s>i've run through this tutorial: http://www.adobe.com/devnet/robohelp/articles/robohelp-tfs-integration .html but when i go to click "add to version control", i don't see tfs as a version control provider.</s><s> all i get is robohelp sharepoint connector.</s><s> 
+
+
+</s><s>i've also tried modifying my registry following this topic: http://helpx.adobe.com/robohelp/kb/registry-settings-microsoft-team-fo undation.html but i get the same results using that. 
+
+
+i can access the tfs server through visual studio's team explorer, and i've mapped my project folder through team explorer's source control explorer. 
+
+
+</s><s>i'm not sure what else i can do at this point. 
+</s><s>any help anyone can provide on the matter would be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-5550766</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jul 30, 2013 5:50 AM">
+<s>which versions of the msscci provider and vs do you use?</s><s> i have had problems using 2010 msscci provider with vs 2012. updating the msscci provider worked for me. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-5550819</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="Kurt%20Collins" timestamp="Jul 30, 2013 6:08 AM">
+<s>hi willam, 
+</s><s>thanks for your response.</s><s> i'm using 2012 for both msscci and vs. well, for vs, i'm just using the team explorer part of it, not the whole thing.</s><s> i'm not sure if that will make a difference or not.</s><s> i've also begun using tfs for source control on the robohelp project folder, using vs team explorer, which works for now, but it's not ideal.</s><s> i'd like for it to be integrated directly with rh. 
+</s><s>thanks for your help, kurt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-5551100</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jul 30, 2013 7:17 AM">
+<s>when you say 'team explorer part' what do you mean? 
+</s><s>personally, i first install the vs 2012 shell (integrated) and then the team explorer extension. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-5551111</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="Kurt%20Collins" timestamp="Jul 30, 2013 7:19 AM">
+<s>yes, that's what i meant.</s><s> i was trying to differentiate between vs 2012 shell and the full visual studio. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-5570537</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="Willam%20van%20Weelden" timestamp="Aug 6, 2013 6:19 AM">
+<s>the only thing i can suggest is to open a ticket with adobe support.</s><s> i think they are your best option of solving this problem. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-5713999</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="cfisher2" timestamp="Sep 25, 2013 2:28 PM">
+<s>is there a solution here?</s><s> we just got 'surprised' by this when testing our upgrade from tfs 2010 to 2012 with rh10. 
+</s><s>thanks- charles 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5535336-6045525</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not integrating with TFS 2102</subject>
+<post author="thomasramirez" timestamp="Jan 23, 2014 11:26 AM">
+<s>i'm looking for a solution but my problem is slightly different.</s><s> i'm running visual studio 2012 (update 4) and rh10.</s><s> when i installed the 32 bit msscci provider, the tfs option became available (the 64 bit provider was ignored).</s><s> now i get an error on check-in citing "trouble with tfs power tools".</s><s> the details says there was an "error loading the changeset comments policy policy".</s><s> i have tried installing both the 2010 and 2012 tfs power tools (combinations of one, the other, both) but still get the same error. 
+</s><s>thanks!</s><s> thomas 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6000529-1376485</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 stops working when a checked in topic is modified</subject>
+<post author="rasterdan" timestamp="Jan 10, 2014 7:58 AM">
+<s>robohelp 10 stops working every time when i open a checked in topic and make a change forcing the topic to be checked out automatically.</s><s> this worked perfectly in all previous versions of robohelp.</s><s> after restarting the program, the desired topic is checked out.</s><s> checking topics out manually before editing works without a crash. 
+i have uninstalled source control and reinstalled with no help.</s><s> this did help with placing images which also stopped robohelp 10 from working.</s><s> when placing an image and you click on the browse folders that worked ok.</s><s> it was when you clicked on the next folder resulted in the lockup ... every time.</s><s> reinstalling source control fixed that. 
+</s><s>automatic checkout of topics however crashes every time.</s><s> i have a local copy of my project and the server is accessed via vpn 3000 miles away.</s><s> i have never had any problem until robo10.</s><s> nothing has changed in our vpn or network since robo9 which worked perfectly.</s><s> also robohelp works very fast at first but after a few hours takes a very long time to check out or check in topics.</s><s> it is faster to close everything without checking in, reboot the pc, and then check in.</s><s> it is necessary to do this a couple times a day. 
+i am running a dell laptop i7, win 7-64, and a roadrunner lightening connection (45mbps down/5.8mbps up).</s><s> nothing else running on the network to eat up bandwidth.</s><s> cpu usage ~25%.</s><s> memory 3.5gb/8gb.</s><s> i have installed the 64bit patch for source control immediately after reinstall of source control. 
+</s><s>ideas?</s><s>?</s><s> 
+</s><s>thanks, dv 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6000529-6015374</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 stops working when a checked in topic is modified</subject>
+<post author="rasterdan" timestamp="Jan 15, 2014 8:01 AM">
+<s>update on this problem, the problem exists when the internet and internal network are slow.</s><s> i think there is some timeout either in windows or robohelp that throws this stopped working error. 
+</s><s>when the internet is working fast and our office network is not too busy, like early in the morning, i can edit a file and it will checkout, no problem.</s><s> once people wake up and start using the internet between fl and vancouver bc, i start getting lockups.</s><s> when people get into the office and start working, robo crashes every time.</s><s> i am forced to check out a topic and then edit. 
+i am going to contact our it dept to see if there is a network setting to increase the timeout before win7 gives up on source control. 
+dv 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6000529-6044699</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 stops working when a checked in topic is modified</subject>
+<post author="rasterdan" timestamp="Jan 23, 2014 8:31 AM">
+<s>for now we seem to have solved our own problem.</s><s> rebooting the robo source control computer seems to have fixed a lot of issues. 
+</s><s>this computer is a windows 7-64 bit pc with 6 projects parked.</s><s> 2 users access three of the projects and one person access the other three projects with a very occasional access by the second person.</s><s> nothing else does this computer do, just serve 6 projects. 
+</s><s>the pc lives in a climate controlled server room where the it dept backs it up and rebooted it monthly.</s><s> we are planning to reboot this pc weekly and fully suspect that the program lockups will be resolved with this fix.</s><s> i have tested checking in and out during peak internet traffic times and high network traffic times, like on friday during the office lunch when all of manufacturing can access their facebook pages, and all works very fast now. 
+</s><s>it seems strange that this mostly idle pc needs to be rebooted so frequently but ... that is our fix for now and expect that this will resolve the issue.</s><s> if we have further updates, they will be noted in this discussion thread. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6024122-1382542</DOCNO>
+<TEXT>
+<subject>Making project copy while removed from version control in TFS did not work in RH10</subject>
+<post author="Tatu Mbili" timestamp="Jan 17, 2014 10:59 AM">
+<s>hi all,   i finished one version of my project in rh9, removed it from version control in tfs, copied the entire project to a new folder called rh10, updated the copied project to robohelp 10 and then placed it back under version control in tfs.</s><s> although my .xpj file is being opened from the new folder, when rh checks in files to tfs, my files are still listed as located in the old rh9 folder on my local machine.</s><s> i had wanted to keep that old folder as a previous version (luckily i actually made two copies of it when it was out of version control!</s><s>) but don't know how to set rh10 up so that it is using the files in the new folder and saving them there.   i saw these directions in another post, based on a rick stone article which i personally have not been able to find, but am not sure if this works for tfs as well.</s><s> caution in this case being the better part of valour, would one of you gurus confirm or deny for me please?   1.</s><s> open the project you want to copy in robohelp, and make sure you 'get' the latest set of files from rsc.</s><s> close the project.</s><s> 2. in windows explorer, copy the local version of the robohelp project to a new folder.</s><s> 3. select all the files in the new folder and make sure they are all writable (right-click > properties > untick read only > ok).</s><s> 4. delete the copy's <projectname>.cpd and pblsvrs.sss files.</s><s> 5. open the copy's <projectname>.xpj file in notepad and replace this section:   <miscproperties>            <matchedpair>                 <name>vc::agent</name>                 <value>msscc</value>            </matchedpair>            <matchedpair>                 <name>vc::provider</name>                 <value>robosource control 3.1</value>            </matchedpair>            <matchedpair>                 <name>vc::database</name>                 <value>ng7emotybux</value>            </matchedpair>            <matchedpair>                 <name>vc::cookie</name>                 <value>$/<project-folder>/<project>@:robosource</value>            </matchedpair>      </miscproperties>   with:           <miscproperties/>   6. close notepad and save your changes.</s><s> 7. open the copy in robohelp – you can now work on the project as if it had never been associated with rsc! – and use the add to version control option to add the copy to its new location in rsc.     thanks!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-6024122-6031315</DOCNO>
+<TEXT>
+<subject>Making project copy while removed from version control in TFS did not work in RH10</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 20, 2014 6:04 AM">
+<s>rick used to have a weakness for funny post names.</s><s> the original post is on: http://www.robowizard.com/robowizard/newproject.htm#monthlyscry/102004 .htm 
+kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5988254-1373363</DOCNO>
+<TEXT>
+<subject>Copying projects in source control</subject>
+<post author="Jop Smith" timestamp="Jan 7, 2014 3:07 AM">
+<s>rh10 | webhelp 
+</s><s>we've recently implemented robosource control and i'm hoping someone can tell me how to copy a project that it is already under its control.</s><s> with each version of our software we need to duplicate the previous version's projects so that we can use them as the basis of the current version. 
+i had been told that i could open a project from version control to a different folder, remove it from version control, and then add it back into version control to a different folder.</s><s> this, in theory, should give a duplicate copy.</s><s> however, the removing from version control bit deletes the original project from version control, not the copy.</s><s> you then have add both projects back into version control to their respective folders, which is not desirable. 
+</s><s>is there an easier (or correct) way to do this? 
+</s><s>thanks jonathan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5988254-6001137</DOCNO>
+<TEXT>
+<subject>Copying projects in source control</subject>
+<post author="rasterdan" timestamp="Jan 10, 2014 10:54 AM">
+<s>we also do this occasionally.</s><s> i have made a new folder on my local pc, copied the contents to that new folder, under properties set the new contents to read/write, renamed the project file name .xpj file to the new desired name and opened in robo.</s><s> then put it into version control which copies it to the database. 
+</s><s>give that a try, it is more or less what i did a few months ago.</s><s> every time is an adventure. 
+dv 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5988254-6015124</DOCNO>
+<TEXT>
+<subject>Copying projects in source control</subject>
+<post author="Jop%20Smith" timestamp="Jan 15, 2014 7:06 AM">
+<s>thanks for that.   i found an article on rick stone's website and, after trying a few different method, it seems like the best way to copy a project.</s><s> here's what i did:   1.</s><s> open the project you want to copy in robohelp, and make sure you 'get' the latest set of files from rsc.</s><s> close the project.</s><s> 2. in windows explorer, copy the local version of the robohelp project to a new folder.</s><s> 3. select all the files in the new folder and make sure they are all writable (right-click > properties > untick read only > ok).</s><s> 4. delete the copy's <projectname>.cpd and pblsvrs.sss files.</s><s> 5. open the copy's <projectname>.xpj file in notepad and replace this section:   <miscproperties>            <matchedpair>                 <name>vc::agent</name>                 <value>msscc</value>            </matchedpair>            <matchedpair>                 <name>vc::provider</name>                 <value>robosource control 3.1</value>            </matchedpair>            <matchedpair>                 <name>vc::database</name>                 <value>ng7emotybux</value>            </matchedpair>            <matchedpair>                 <name>vc::cookie</name>                 <value>$/<project-folder>/<project>@:robosource</value>            </matchedpair>      </miscproperties>   with:           <miscproperties/>   6. close notepad and save your changes.</s><s> 7. open the copy in robohelp – you can now work on the project as if it had never been associated with rsc! – and use the add to version control option to add the copy to its new location in rsc.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5934138-1359363</DOCNO>
+<TEXT>
+<subject>RoboSource Control not available</subject>
+<post author="bkstew1" timestamp="Dec 16, 2013 5:52 AM">
+<s>i am using robohelp 10, and when i try to add my project to version control, the only available option is robohelp sharepoint connector.</s><s> i do not have robosource control listed as an option.</s><s> does this mean robosource control was not installed?</s><s> where can i look (what directory) for it to see if it was installed?</s><s> (i am not the administrator for my machine, so i did not install robohelp myself.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5934138-6001290</DOCNO>
+<TEXT>
+<subject>RoboSource Control not available</subject>
+<post author="rasterdan" timestamp="Jan 10, 2014 11:05 AM">
+<s>you need to setup robo source control server.</s><s> we had our it guy do it because there are some database bits that need to be installed that run in the background.</s><s> we prefer to have the roboserver not on a workstation pc so if the disk crashes or something happens to a laptop ..., we have the server intact.</s><s> plus the it dept backs up our robo server.</s><s> also when setting up the source control server, you need to write down the database name!</s><s> we are using sql server in the back end.</s><s> i think there were some instructions somewhere. 
+</s><s>once your server is setup and running, you will need to give your remote connection a name.</s><s> you will need to know the server name and we use the tcp ip address because it avoids any name server junk.</s><s> you will also need to know the exact name you gave your database. 
+</s><s>you should be able to use source control explorer to see the database from your client pc. 
+</s><s>hope that helped. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5989725-1373658</DOCNO>
+<TEXT>
+<subject>RH10: Importing/Renaming File Creates Recursive Bookmarks?</subject>
+<post author="M Domask" timestamp="Jan 7, 2014 11:15 AM">
+<s>hi, all, 
+</s><s>i'm trying to rename files in robohelp html 10.</s><s> i select the file in the topic list, right click, select properties, and change the file name on the general tab.</s><s> after clicking ok, the output view displays and shows the progress. 
+</s><s>however, this seems to create an infinite loop as the rename process somehow creates a bookmark over and over recursively.</s><s> for example, foo.htm#bar becomes foo.htm#bar#bar, foo.htm#bar#bar#bar, foo.htm#bar#bar#bar, etc., quickly exceeding robohelp's limits on file names.</s><s> the same thing happens when renaming the file external to robohelp and importing it. 
+</s><s>the project is in version control, and the topic in quesion has snippets and hyperlinks that refer to a bookmark in that snippet (e.g., href="#bar"). 
+</s><s>is there any solution to avoid this from happening?</s><s> here's a screenshot of the end result of an import. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5989725-5989906</DOCNO>
+<TEXT>
+<subject>RH10: Importing/Renaming File Creates Recursive Bookmarks?</subject>
+<post author="Peter%20Grainge" timestamp="Jan 7, 2014 12:11 PM">
+<s>i have never seen rh do that or seen any reports.</s><s> i am inclined to think it is something to do with your source control. 
+</s><s>open one of the sample projects and see what happens there when you perform the same steps.</s><s> click open on the robohelp starter page and then click samples in the ribbon on the left. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5989725-5990583</DOCNO>
+<TEXT>
+<subject>RH10: Importing/Renaming File Creates Recursive Bookmarks?</subject>
+<post author="M%20Domask" timestamp="Jan 7, 2014 2:57 PM">
+<s>thank you.</s><s> i tried the import in a sample project, and it worked as expected.</s><s> i removed the problem project from version control and it worked as expected. 
+</s><s>looks like this is an issue with using sharepoint as a version control platform. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5989725-5991786</DOCNO>
+<TEXT>
+<subject>RH10: Importing/Renaming File Creates Recursive Bookmarks?</subject>
+<post author="Peter%20Grainge" timestamp="Jan 8, 2014 1:51 AM">
+<s>i have moved the thread to the source control category in the hope someone can help you there. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5989725-5999065</DOCNO>
+<TEXT>
+<subject>RH10: Importing/Renaming File Creates Recursive Bookmarks?</subject>
+<post author="Amebr" timestamp="Jan 9, 2014 7:14 PM">
+<s>perhaps try checking out the entire project before renaming a topic?</s><s> i haven't ever used sharepoint as source control, though, so if might have some strange quirks... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-1352218</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="mark bower" timestamp="Dec 6, 2013 5:53 AM">
+<s>hello, 
+
+</s><s>we are experiencing issues when using robohelp html 10 with svn. 
+i have created a small project containing two topics and checked it into svn.</s><s> my colleague can then get the project from svn and the topics appear within the robohelp interface as expected.</s><s> however, if i then add new topics into the robohelp project and check them into svn, when my colleague gets the files (which appear on his hard drive as expected), they are not picked up within the robohelp interface. 
+i have read this thread (http://forums.adobe.com/thread/1072217), however deleting the cpd file either manually or setting the check box in robohelp has not made a difference. 
+</s><s>there was no issue using rh9 and svn - this is a new phenomenon (the project i have created is a small test project, but our larger, production project is experiencing the same problems).</s><s> we have a basic set up - we don't use a pushok plugin for robohelp; we have set the cpd and pss files to ignore in svn. 
+</s><s>any help would be greatly appreciated since if this cannot be fixed it would be a major issue for us. 
+</s><s>many thanks, 
+
+</s><s>mark bower 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5906637</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="RoboColum(n)" timestamp="Dec 6, 2013 6:26 AM">
+<s>hi mark.</s><s> 
+</s><s>so you are doing svn checkouts manually via the windows explorer interface?</s><s> also by "not picked up" do you mean they do not display in the rh interface?</s><s> if the topics have been added to the toc / index do they appear there?</s><s> in other words, is it just the topic files that are being lost? 
+</s><s>has your colleague tried deleting the cpd file at their end? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5906894</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="mark%20bower" timestamp="Dec 6, 2013 7:10 AM">
+<s>hi colum, 
+</s><s>thanks for replying. 
+</s><s>yes, we are doing svn checkouts manually via the windows explorer interface.</s><s> and yes, by 'not picked up' i mean that they are not displaying in the rh interface. 
+i have just added an index and a toc and checked them in to svn.</s><s> they appear to being picked up consistently in the rh interface by my colleague when he does a check out. 
+</s><s>the topic files are not being picked up in rh however although, oddly, *very* occasionally they do (perhaps 1 time out of 5, possibly fewer). 
+</s><s>my colleague has cleared his cpd file each time before he opens the project. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5919761</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="mark%20bower" timestamp="Dec 11, 2013 1:10 AM">
+<s>is no-one able to shed any light on this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5919831</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="RoboColum(n)" timestamp="Dec 11, 2013 2:25 AM">
+<s>hi mark.</s><s> 
+</s><s>the fact that you are only occasionally able to get rh to recognise all the files is an odd one.</s><s> we use svn and rh10 in exactly the same way as you in a multi-author team and have not run into this scenario. 
+i wonder whether this is more of an svn issue rather than rh.</s><s> are you all running the same svn client version? 
+</s><s>also can you confirm that the issue is only when you create topics that your colleagues pick up?</s><s> what happens if things are done the other way around - they create a topic that you pick up? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5920042</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="mark%20bower" timestamp="Dec 11, 2013 3:38 AM">
+<s>hi colum, 
+</s><s>we are both using the same version of the svn client - 1.6.7.18415.</s><s> this is the version we have always used - and which worked ok with rh9. 
+</s><s>the issue occurs both ways - if my colleague creates a topic, it's not picked up in my rh interface either.</s><s> if i create one, he can't see it. 
+</s><s>we can of course import them manually, but that sort of defeats the purpose of a functioning source control system. 
+</s><s>thanks, 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5920107</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="RoboColum(n)" timestamp="Dec 11, 2013 4:02 AM">
+<s>that is a fairly old version of the svn client.</s><s> the current version is 1.8.4.24972 which it may be worth upgrading to and see if that solves the issue. 
+</s><s>one other thing i was wondering about was whether there are any other rh project files you are ignoring on commit other than the cpd and pss files. 
+</s><s>finally locate the root.fpj file in your project directory and open it in notepad.</s><s> are any of the ignored files listed in it?</s><s> they will probably be near the bottom. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5920784</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="mark%20bower" timestamp="Dec 11, 2013 7:48 AM">
+<s>hi colum, 
+</s><s>your final paragraph set me thinking - and i examined the root.fpj file and, indeed, it is out of synch with the files in svn. 
+i have cleaned up the project in svn, removed the offending files and resynched everything - and now everything seems to be working ok.</s><s> i'm not really sure why this problem became apparent once we started using rh10, but everything sees to be behaving as expected now. 
+</s><s>thanks very much for your help. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5920846</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="RoboColum(n)" timestamp="Dec 11, 2013 8:04 AM">
+<s>hi mark.</s><s> 
+</s><s>i'm glad things appear to be ok now.</s><s> svn has a habit of setting the read only flag on all the files.</s><s> even worse is that it occasionally leaves the read only flag switched on when you checkout.</s><s> what may have been happening is that the root.fpj flag was not writable.</s><s> i'd have expected some message to have been displayed once an attempt was made to update it, but hey ho! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5906669-5920865</DOCNO>
+<TEXT>
+<subject>RoboHelp HTML 10 and SVN</subject>
+<post author="mark%20bower" timestamp="Dec 11, 2013 8:18 AM">
+<s>it's slighly frustrating not knowing what the cause was, but it works now and that's the main thing. 
+</s><s>indeed, onwards and upwards! 
+</s><s>cheers, 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5847771-1336746</DOCNO>
+<TEXT>
+<subject>no source to select manycam</subject>
+<post author="me_Evelyne2011" timestamp="Nov 16, 2013 12:17 PM">
+<s>hello.</s><s> i have a macbook air maverick;s 10.9 .</s><s> i am trying to broadcast on some sites who use adobe flash player. when i am opening manycam i dont find the source "manycam" so i can use it. what should i do ?</s><s> please i need help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5847771-5847944</DOCNO>
+<TEXT>
+<subject>no source to select manycam</subject>
+<post author="Captiv8r" timestamp="Nov 16, 2013 1:20 PM">
+<s>hi there 
+i know you likely think you posted in the correct place for your question as this forum is named "source control".</s><s> unfortunately, what is meant here is a source control application.</s><s> adobe has one named "robosource control".</s><s> and there are others.</s><s> these are applications that allow for controlling editing of content such as html files. 
+</s><s>i'm guessing you need to post your question over in the flash player forums.</s><s> see if the link below gets you where you need to be. 
+</s><s>click here to view 
+best of luck to you in solving your issue!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5847771-5847931</DOCNO>
+<TEXT>
+<subject>no source to select manycam</subject>
+<post author="me_Evelyne2011" timestamp="Nov 16, 2013 1:25 PM">
+<s>thank you i'm sorry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5824499-1330741</DOCNO>
+<TEXT>
+<subject>RoboHelp and SharePoint</subject>
+<post author="cmartin170" timestamp="Nov 7, 2013 1:43 PM">
+<s>i'm using robohelp html 10 with sharepoint as my version control.   when team members attempt to check in files, they receive the following message:     the message appears for several items to check in, so team members have to click yes many times to actually check in.</s><s> i'm not sure if this is a rh configuration issue or a sharepoint issue.</s><s> is there a way to stop the message?   i set sharepoint settings as instructed here: http://help.adobe.com/en_us/robohelp/robohtml/ws1b49059a33f77726-5aab6 6613798e5ec9b-7ffe.html   i have the following version control settings in rh:    
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5824499-5828657</DOCNO>
+<TEXT>
+<subject>RoboHelp and SharePoint</subject>
+<post author="Willam%20van%20Weelden" timestamp="Nov 9, 2013 7:47 AM">
+<s>my first hunch would be to check whether versioning is enabled in the library or whether it somehow got unchecked. 
+
+
+</s><s>is the file to be checked in already available in sharepoint? 
+
+
+</s><s>can you also try removing the project cpd and try again? 
+
+
+</s><s>greet, 
+
+
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5816213-1328762</DOCNO>
+<TEXT>
+<subject>Shared Location when using RoboSource Control</subject>
+<post author="Jop Smith" timestamp="Nov 5, 2013 5:24 AM">
+<s>rh10 | webhelp 
+</s><s>we've recently implemented robosource control with rh10 and have a multi-author environment.</s><s> does anyone know if it's possible to maintain a shared location of common resources, e.g. style sheet, etc?</s><s> i've always used robohelp's shared locaton feature when i've worked independently, but now we're working as a team it's more difficult. 
+</s><s>we've tried creating a shared location on the network, but this impacted the performance of robohelp as we are remote workers.</s><s> we've also tried pointing to a shared location locally on our laptops, but each time files are checked in it updates rhsharedresource.apj.</s><s> for example, user a sets the shared location to c:\users\joe.bloggs\documents\my robohelp projects\shared files\, but when user b "gets" the latest files from the server the links are broken because they're not joe bloggs! 
+</s><s>there may be a correct method or it simply may not be possible. 
+</s><s>i'd be grateful for any advise. 
+</s><s>thanks jonathan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5806480-1326403</DOCNO>
+<TEXT>
+<subject>Forced to close RoboHelp after generating SSLs in order to edit content</subject>
+<post author="AIR-Chayah" timestamp="Nov 1, 2013 7:19 AM">
+<s>i have reported this as a bug, but wonder whether any of you have had similar experiences and, if so, how you resolved it.</s><s> have to close robohelp after generating ssls in order to edit content   steps to reproduce bug: open project from visual studio source control (team foundation server).</s><s> select a single source layout and generate the output.</s><s> try to edit a topic.</s><s> the check out dialog box says "to modify this document, the files in the list below need to be checked out from version control.</s><s> do you want to check out these files." click yes.   results: the cannot complete operation dialog box appears.</s><s> "the files in the list below could not be checked out from version control.</s><s> exclusive access to these files is required to modify this document." click close, close robohelp, and restart robohelp.   expected results: the files should be checked out from version control with exclusive access when i click yes to check them out.</s><s> when i look in source control explorer, the file i tried to check out is not even checked out.</s><s> even manually locking the file for edit from source control does not free the file for editing in robohelp.   thanks.   carol
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5789138-1322213</DOCNO>
+<TEXT>
+<subject>Critical error of Source Control Provider</subject>
+<post author="DMilkes" timestamp="Oct 25, 2013 1:24 PM">
+<s>i have seen this issue mentioned before with no resolution, but i'll give it a try: 
+my team has robohelp 10 using microsoft team explorer for visual studio 2012. when we open an rh project through version control and publish it, we get an error message: "critical error of source control provider.</s><s> please restart ide".</s><s> however, we can just close the pop-up and the publishing continues without fail.</s><s> subsequent publishings while the project is open doesn't get the error message, but if we close and reopen, the first publishing gets the message back. 
+</s><s>why would that error message appear just once, and why is it critical if the connection to the server is not broken and there is no other problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5789138-5800057</DOCNO>
+<TEXT>
+<subject>Critical error of Source Control Provider</subject>
+<post author="Willam%20van%20Weelden" timestamp="Oct 30, 2013 5:32 AM">
+<s>try removing the project cpd file and reopen.</s><s> do you still get the issue? 
+</s><s>is there any more information in the error message? 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5789138-5800161</DOCNO>
+<TEXT>
+<subject>Critical error of Source Control Provider</subject>
+<post author="DMilkes" timestamp="Oct 30, 2013 6:11 AM">
+<s>i removed the cpd file but when i reopen the project it comes back.</s><s> i even selected the "clear project cache (.cpd) before opening any project" option in rh tools.</s><s> even with a smaller cpd file i get the same message. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5789138-5801900</DOCNO>
+<TEXT>
+<subject>Critical error of Source Control Provider</subject>
+<post author="Captiv8r" timestamp="Oct 30, 2013 3:16 PM">
+<s>hi there 
+cpd file is a "cache project database" file.</s><s> it helps with robohelp html functions.</s><s> there is no way to do without it.</s><s> the thing is, sometimes one needs to "clear" it by deleting it.</s><s> once it's gone, robohelp will bake up a fresh one on the spot. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5789138-5806479</DOCNO>
+<TEXT>
+<subject>Critical error of Source Control Provider</subject>
+<post author="AIR-Chayah" timestamp="Nov 1, 2013 7:15 AM">
+<s>i've been having the same problem for months, and have just entered this as a bug report (11/1/2013).your suggestion did not work for me.</s><s> i deleted the cpd file, opened the project from source control, and generated the webhelp.</s><s> the critical error dialog box still appears.</s><s> the dialog box also gets hidden behind the rh window.</s><s> to see it, i reduce the size of the window, enabling me to grab the dialog box and click ok.</s><s> the error does not impede generation of the help.</s><s> however, the generating message box (success/failure dialog is not fully active--"click view result to view: index.htm"--until you click ok in the error dialog box.</s><s> carol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5778840-1319752</DOCNO>
+<TEXT>
+<subject>RH8 and where it stores project files</subject>
+<post author="Mark Pud" timestamp="Oct 22, 2013 7:08 AM">
+<s>hi all, i'm remotely supporting some colleagues in another country who will be connecting to my rh project via our corporate lan.</s><s> the project is in rh8 html (webhelp) and using robo sourcecontrol 3.1.</s><s> they're running win xp sp3 (i know, i know). 
+i can get them connected to the project ok in rsc, but when opening the project in rh8 it's taking hours upon hours!</s><s> the project local store is a local drive e.g. c:\rh8. 
+</s><s>they have admin permission on their pc. 
+</s><s>one thing we noticed is that the files from the c: drive folder are also somehow finding their way into the user profile desktop (desktop icons are disabled on the corporate setup).</s><s> the profile is stored on the lan and is filling her profile space up - but i suspect this is also the cause of the epic slowness. 
+</s><s>any ideas on how i can stop rh mysteriously mirroring from c: to the user's profile? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5778840-5780794</DOCNO>
+<TEXT>
+<subject>RH8 and where it stores project files</subject>
+<post author="Captiv8r" timestamp="Oct 22, 2013 6:29 PM">
+<s>i've moved this thread to the source control area of the robohelp forums. 
+</s><s>hopefully that will help in getting a fast and accurate answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5778840-5802837</DOCNO>
+<TEXT>
+<subject>RH8 and where it stores project files</subject>
+<post author="Mark%20Pud" timestamp="Oct 31, 2013 2:06 AM">
+<s>thanks...</s><s> i'm now onsite in spain (tough life eh) and i still can't fathom what the issue is other than rh just doesn't like our network! 
+</s><s>we created a new empty project and that works fine, connects to source control and works in rh8 as expected. 
+</s><s>but the original project will not load up just just freezes for hours and never unfreezes!</s><s> the size of that project is only around 30mb so the network traffic shouldn't be heavy.. 
+</s><s>not sure about the issue of files from c: getting mirrored to her desktop, i can't reproduce it, so not going to worry about that for now! 
+</s><s>if anyone has any ideas on why this project would fail to load in rh8, please shout! 
+</s><s>otherwise we are going to have to rebuild on the new project 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5778840-5802918</DOCNO>
+<TEXT>
+<subject>RH8 and where it stores project files</subject>
+<post author="Willam%20van%20Weelden" timestamp="Oct 31, 2013 2:23 AM">
+<s>you may have done this already, but did you try removing the .</s><s>cpd file before opening?</s><s> that may help a little. 
+</s><s>is there anything custom in your project: large attachments, generated html files, etc.</s><s>?</s><s> 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5778840-5805962</DOCNO>
+<TEXT>
+<subject>RH8 and where it stores project files</subject>
+<post author="Mark%20Pud" timestamp="Nov 1, 2013 1:29 AM">
+<s>hi william, 
+</s><s>the cpd trick worked!</s><s>!</s><s> i had already set the rh option to automatically clear the cpd file, but that wasn't effective for some reason. 
+</s><s>initially we were setting up the connection into a blank folder on her c: drive so there was no cpd to delete.. but after it tried and failed (with a long frozen period) we could then access the c: drive, delete the cpd and then rh was able to open the project successfully. 
+</s><s>not sure why the rh option to auto clear the cpd wasn't effective though!</s><s> the mysteries of this program abound!</s><s>!</s><s>!</s><s> 
+</s><s>many thanks, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5758149-1314746</DOCNO>
+<TEXT>
+<subject>How to fix RoboHelp & Perforce integration problem?</subject>
+<post author="lillibetUK" timestamp="Oct 14, 2013 6:25 AM">
+<s>hi, 
+</s><s>i'm using robohelp 9 as part of the tech comms suite 3.5, perforce v2010.2 with scc plugin.</s><s> previously i was using windows xp, but i now have a new laptop on windows 7, which is why i'm trying to integrate my existing robohelp project with perforce. 
+</s><s>i've followed the instructions described in http://blogs.adobe.com/techcomm/2011/07/version-controlling-robohelp-p rojects-with-perforce.html. 
+i can open my project fine on my old xp laptop by clicking 'open project from version control' button. 
+</s><s>on my new windows 7 laptop i do the following from the starter page: click 'open project from version control' button, select perforce scm, ensure the connection is correct, choose the project file, click open. 
+</s><s>robohelp does the following: flashes 'getting latest version of file(s) in the bottom right-hand corner, when it gets to 'building file list...' it crashes with the message 'adobe robohelp 9 has stopped working' and my only option is to click 'close program'. 
+i cannot work out if the problem is with robohelp or perforce. 
+</s><s>however, i can open the project directly within perforce.</s><s> it offers me the 'get latest version' dialog listing my project files.</s><s> when i make changes to the topics i get the appropriate marks in my project files list.</s><s> when i close the project i get the 'check in' dialog where i can submit a comment for my changes and it checks in the files i updated. 
+</s><s>can anyone offer an explanation/suggestion why this doesn't work by clicking on the 'open project from version control' button? 
+</s><s>thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5758149-5761142</DOCNO>
+<TEXT>
+<subject>How to fix RoboHelp & Perforce integration problem?</subject>
+<post author="Jeff_Coatsworth" timestamp="Oct 15, 2013 6:16 AM">
+<s>might find some more assistance in this forum - http://forums.adobe.com/community/robohelp/robosource_control - don't let the name fool you – it's all source control methods being discussed in there, not just rs sc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5758149-5761161</DOCNO>
+<TEXT>
+<subject>How to fix RoboHelp & Perforce integration problem?</subject>
+<post author="lillibetUK" timestamp="Oct 15, 2013 6:38 AM">
+<s>thank you jeff, 
+</s><s>i didn't find this forum previously.</s><s> i guess it might be worth asking my question on there instead. 
+</s><s>i've had a look at the forum and there seems to be some related posts, but the posts that seem very similar don't all have answers.</s><s> i can't be the only one who's had this issue, can i?</s><s>!</s><s> i'll keep looking and searching. 
+</s><s>thanks again jeff. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5758149-5763479</DOCNO>
+<TEXT>
+<subject>How to fix RoboHelp & Perforce integration problem?</subject>
+<post author="Peter%20Grainge" timestamp="Oct 16, 2013 2:04 AM">
+<s>thread moved to source control forum.</s><s> hope one of the source control gurus can help. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5748897-1312359</DOCNO>
+<TEXT>
+<subject>Cannot Find Member Name System.Globalization.TextInfo</subject>
+<post author="woodman231" timestamp="Oct 9, 2013 2:48 PM">
+<s>all, 
+</s><s>i am gett the following error when trying to connect to a robosource server: cannot find member name system.globalization.textinfo. 
+i am using the following: robohelp 8 robosource 3.1 windows 7 32-bit 
+this error occurs after attempting to connect to a robosource server.</s><s> if i have incorrect information in there i get error messages about it being unable to connect.</s><s> i can telnet to the server in question and the server works for other users. 
+</s><s>the error says that i can do a stack trace which i will post here now.</s><s> any help will be appreciated. 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=- 
+cannot find member name system.globalization.textinfo. 
+
+
+
+</s><s>server stack trace: at system.runtime.serialization.formatters.binary.readobjectinfo.getmemb ertypes(string[] inmembernames) at system.runtime.serialization.formatters.binary.objectmap..ctor(string objectname, string[] membernames, binarytypeenum[] binarytypeenuma, object[] typeinformationa, int32[] memberassemids, objectreader objectreader, int32 objectid, binaryassemblyinfo assemblyinfo, sizedarray assemidtoassemblytable) at system.runtime.serialization.formatters.binary.objectmap.create(strin g name, string[] membernames, binarytypeenum[] binarytypeenuma, object[] typeinformationa, int32[] memberassemids, objectreader objectreader, int32 objectid, binaryassemblyinfo assemblyinfo, sizedarray assemidtoassemblytable) at system.runtime.serialization.formatters.binary.__binaryparser.readobj ectwithmaptyped(binaryobjectwithmaptyped record) at system.runtime.serialization.formatters.binary.__binaryparser.readobj ectwithmaptyped(binaryheaderenum binaryheaderenum) at system.runtime.serialization.formatters.binary.__binaryparser.run() at system.runtime.serialization.formatters.binary.objectreader.deseriali ze(headerhandler handler, __binaryparser serparser, boolean fcheck, imethodcallmessage methodcallmessage) at system.runtime.serialization.formatters.binary.binaryformatter.deseri alize(stream serializationstream, headerhandler handler, boolean fcheck, imethodcallmessage methodcallmessage) at system.runtime.remoting.channels.corechannel.deserializebinaryrequest message(string objecturi, stream inputstream, boolean bstrictbinding, typefilterlevel securitylevel) at system.runtime.remoting.channels.binaryserverformattersink.processmes sage(iserverchannelsinkstack sinkstack, imessage requestmsg, itransportheaders requestheaders, stream requeststream, imessage& responsemsg, itransportheaders& responseheaders, stream& responsestream) 
+
+</s><s>exception rethrown at [0]: at ng3.middletier.ng3middletierdatabase.initialise(ng3middletier context, string aliasname, string server, int32 port, boolean http, string dbname, string user, byte[] encpwd, boolean brememberpwd, ng3middletiersession session, boolean boffline, boolean basynch) at ng3.middletier.ng3middletier.opendatabase(string aliasname, string user, string pwd, boolean brememberpwd, ng3middletiersession session, offlineoption offline) at system.runtime.remoting.messaging.stackbuildersink._privateprocessmes sage(intptr md, object[] args, object server, int32 methodptr, boolean fexecuteincontext, object[]& outargs) at system.runtime.remoting.messaging.stackbuildersink.privateprocessmess age(runtimemethodhandle md, object[] args, object server, int32 methodptr, boolean fexecuteincontext, object[]& outargs) at system.runtime.remoting.messaging.stackbuildersink.syncprocessmessage (imessage msg, int32 methodptr, boolean fexecuteincontext) 
+
+</s><s>exception rethrown at [1]: at system.runtime.remoting.proxies.realproxy.handlereturnmessage(imessag e reqmsg, imessage retmsg) at system.runtime.remoting.proxies.realproxy.privateinvoke(messagedata& msgdata, int32 type) at ng3.middletier.ng3middletier.opendatabase(string aliasname, string user, string pwd, boolean brememberpwd, ng3middletiersession session, offlineoption offline) at ng3.mtconnection.ng3mtconnection.connect(configurationsettings settings, string connectionaliasname, string user, string pwd, boolean brememberpwd, ng3middletiersession session, offlineoption offline, object logindialog) at ng3explore.opendatabase.selectbutton_click(object sender, eventargs e) 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=- 
+thanks, sean w. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5748897-5753258</DOCNO>
+<TEXT>
+<subject>Cannot Find Member Name System.Globalization.TextInfo</subject>
+<post author="woodman231" timestamp="Oct 11, 2013 8:20 AM">
+<s>wow ok.</s><s> come to find out that the issue was that the robosource server was using robosource 3.0 and not 3.1.</s><s> thus the issue was that i was trying to use robosource 3.1 client with robosource 3.0 server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5719055-1305185</DOCNO>
+<TEXT>
+<subject>RH10 variable and build tag source file names</subject>
+<post author="ksnichols" timestamp="Sep 27, 2013 8:05 AM">
+<s>i'm using rh10 and outputting to webhelp.</s><s> my company requires that i archive project source files to our cvs via eclipse.</s><s> i am not using robosource_control and must use the company's development resources for archiving. 
+</s><s>since archiving the initial project, i have been uploading only source files with modified dates. 
+</s><s>however, i have discovered that the files i thought were storing user variables and build tags are not the correct files to archive.</s><s> since i am uploading all files with a newer date and that's not working, i need to know the user variable source file name and the build tag source file name that stores the currently defined variables and build tags. 
+i have already tried the webhelp forum and was directed to this forum to pose the question because i'm looking for source file information instead of output file information. 
+</s><s>thanks for your help!</s><s> karen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5719055-5721649</DOCNO>
+<TEXT>
+<subject>RH10 variable and build tag source file names</subject>
+<post author="Captiv8r" timestamp="Sep 28, 2013 12:13 PM">
+<s>hi karen 
+</s><s>if eclipse works like other source control systems, you nominate one folder on your c drive as the "working" folder.</s><s> then as you check files in or out for editing, the source control software handles copying them to and from the actual source control repository as well as flagging the local versions with read-only or not. 
+</s><s>essentially, all you should need to do is point the source control system to this folder and it should handle all the changes from that point forward. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5719055-5724736</DOCNO>
+<TEXT>
+<subject>RH10 variable and build tag source file names</subject>
+<post author="ksnichols" timestamp="Sep 30, 2013 6:09 AM">
+<s>yes, eclipse does work that way.</s><s> however, we do not use our development directory as the local eclipse repository.</s><s> i need to move changed files to the local repository (stores all source files in the project) so that eclipse can upload changes to the server.</s><s> yes, this is planned redundancy. 
+
+
+</s><s>that said, it is not acceptable to spend the time copying all files in the large projects from the work folder to the local repository.</s><s> i simply need to know which individual files to copy that include the currently defined variables and build tags.</s><s> note, we do not copy the ssl folder output files to our local source file repository, or other associated reference files that are not actually project source files. 
+
+
+</s><s>can you find someone who knows which files i need? 
+
+
+</s><s>thanks, 
+</s><s>karen 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5719128-1305189</DOCNO>
+<TEXT>
+<subject>RH 10 - SVN - PushOk plugin: Error occurs by renaming files</subject>
+<post author="MelanieeOo" timestamp="Sep 27, 2013 8:19 AM">
+<s>i'm testing the integration of robohelp projects with svn (with pushok plugin). 
+</s><s>everything has worked well until now apart from renaming files.</s><s> the following error occurs: 
+com.svnclient.error, hresult=0x80020009 path '...' is not a directory 
+there is a similar discussion from 2010 in the forum: http://forums.adobe.com/message/3005946#3005946 
+the suggestion is to duplicate the topic into a new name.</s><s> but this is not a workaround for us. what about hyperlinks referencing the topic? 
+i can't see this beeing the only way to rename files.</s><s> isn't there another solution? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-1285491</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="Cibyl" timestamp="Aug 29, 2013 6:07 AM">
+<s>a user has deleted the local roboholp project folder with checked out files.</s><s> (robohelp html version 9.0) the files are published as a webpage so the content is in html files - is there a way to get the content back in robohelp?</s><s> and how can i check-in her files (there is not option in source control (version 3.1.</s><s>), although i have administrative rights) 
+</s><s>thanks for any help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-5637060</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="RoboColum(n)" timestamp="Aug 29, 2013 6:22 AM">
+<s>first of all i assume you have checked the user's recycle bin to see if the source files are recoverable from there?</s><s> failing that, check out this demo on how to recover the source files from robosource control. 
+http://www.showmethedemo.com/tutorials/rsc-openproj1sttime/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-5637115</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="Captiv8r" timestamp="Aug 29, 2013 6:40 AM">
+<s>hi there 
+not sure about robosource control, but typically a source control application allows one to "get latest version".</s><s> the files should still be in the source control database, albeit with a status of "checked out".</s><s> so you should be able to recover the project by simply getting the latest version.</s><s> not sure about how to go about forcing a check in from the user account that is no longer there. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-5637117</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="Cibyl" timestamp="Aug 29, 2013 6:45 AM">
+<s>thank you.</s><s> yes i checked the recycle bin, it's empty...</s><s> i'll tried to recover the files with another user acount, this doesn't work, i don't see all files and folders.</s><s> but i hope it will work with the user account from the user had the last checkout (will be able to test tomorrow), as i can see in sourcecontrol, the structure is there... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-5637149</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="Cibyl" timestamp="Aug 29, 2013 6:47 AM">
+<s>hi, thanks for your answer, this gives me hope that i will be able to recover the structure with the users account (i was not able to recover it with my account).</s><s> will be able to test tomorrow morning and give you a status update...</s><s> cheers...cibyl 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-5637359</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="RoboColum(n)" timestamp="Aug 29, 2013 7:53 AM">
+<s>as i am guessing that you are not the robohelp user, the chances are you will not have access to the database storing the files.</s><s> your user should have.</s><s> if they didn't, i'd have thought that they wouldn't have been able to add the files to source conrol in the first place.</s><s> do let us know when you get the chance though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5637032-5658693</DOCNO>
+<TEXT>
+<subject>User has deleted checked out files</subject>
+<post author="Cibyl" timestamp="Sep 6, 2013 6:29 AM">
+<s>thanks a lot for all your help.</s><s> finally i was able to checkin all files after opening the project again on the users computer.</s><s> i had to change the checkin folder in source control (as the old was deleted) and had to update all the files with "get latest version" in robohelp after.</s><s> now all files are in the correct status and the user can continue his work. 
+a good weekend to all of you! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5649909-1288554</DOCNO>
+<TEXT>
+<subject>Which conditions require the rhsharedresource.apj file to be checked out?</subject>
+<post author="Blue_Horse" timestamp="Sep 3, 2013 11:03 AM">
+<s>our team uses robohelp html 9 (upgrading to 10 this week), and we use version control.</s><s> the rhsharedresource.apj file is always checked out by someone. 
+</s><s>when is it absolutely necessary to check out the rhsharedresource.apj file? 
+</s><s>can you modify an index by checking out the hhk file - without the rhsharedresource.apj file? 
+</s><s>thanks, rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5649909-5651724</DOCNO>
+<TEXT>
+<subject>Which conditions require the rhsharedresource.apj file to be checked out?</subject>
+<post author="RoboColum(n)" timestamp="Sep 4, 2013 2:31 AM">
+<s>this sounds like you have lost your synchronisation.</s><s> see snippet 14 at http://www.grainge.org/pages/authoring/rh9/using_rh9.htm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5627657-1283257</DOCNO>
+<TEXT>
+<subject>Robohelp, SharePoint, and .cpd</subject>
+<post author="cmartin170" timestamp="Aug 26, 2013 11:09 AM">
+<s>i recently added a robohelp 10 project to sharepoint source control.</s><s> now, when i attempt open the xpj from sharepoint, i recieve the following error and i cannot open the project: 
+i can still successfully open the project from my local machine, and the source control appears to work, but my team members need to access the project from sharepoint.</s><s> how do i resolve the cpd error? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5627657-5629570</DOCNO>
+<TEXT>
+<subject>Robohelp, SharePoint, and .cpd</subject>
+<post author="RoboColum(n)" timestamp="Aug 27, 2013 2:11 AM">
+<s>i personally would not be adding the .cpd file to source control.</s><s> i'd also ensure that you have the option to rebuild the .cpd file when you open the project selected (tools > options). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5627657-5630512</DOCNO>
+<TEXT>
+<subject>Robohelp, SharePoint, and .cpd</subject>
+<post author="cmartin170" timestamp="Aug 27, 2013 8:18 AM">
+<s>how do i remove the cpd file?</s><s> or, how do i avoid adding it in the first place?</s><s> when i delete the sharepoint cpd file, it's automatically rebuilt when i attempt to reopen the project, and i get the error message. 
+</s><s>when i originally added the project to source control, i didn't have the option to exclude certain files.</s><s> all files associated with the project are automatically added. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5627657-5633095</DOCNO>
+<TEXT>
+<subject>Robohelp, SharePoint, and .cpd</subject>
+<post author="RoboColum(n)" timestamp="Aug 28, 2013 2:12 AM">
+<s>if you click tools > options and select the "clear project cache (.cpd) before opening project" option, the cpd file will be deleted and rebuilt each time you open a project.</s><s> see if that solves the issue. 
+</s><s>if it doesn't, you'll need to ensure the file is not added to source control.</s><s> i do not use sharepoint for this purpose but all other source control applications give you a method of choosing what files to include/exclude.</s><s> i'd be suprised if sharepoint included all your project files by default. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-615866</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 12, 2010 2:22 PM">
+<s>hello, 
+</s><s>my fellow designer and i finally got version control/robosource 3.1 set up on our robohelp project.</s><s> what a difference!</s><s> now i have some questions about settings.</s><s> we are both connecting to the database from a shared robohelp file on a server.</s><s> should we now have our a copy of the project on our local machines or do we keep the one instance on a shared drive/server?</s><s> i ask because our version control is causing robohelp to start up and conduct updates very, very slowly (20 minutes to boot up). 
+</s><s>also, i have the settings marked to only allow one user to check out a file at a time (we do not want to do a lot of merging as there's only two of us working on more than 1,000 topics).</s><s> when i try and import or create a new file, i'm getting an error that the "*/root.fpj" is in use and cannot have multiple check-outs.</s><s> what can i do about this? 
+</s><s>thanks for your help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2730497</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Captiv8r" timestamp="Apr 12, 2010 2:35 PM">
+<s>hi there 
+any time you are working with source control you will be on a server.</s><s> that's the nature of the beast.</s><s> you must have a common point of storage where all access things.</s><s> the trick, however, is that source control maintains an area called a "working folder" that you also configure.</s><s> this area is typically on your local c drive.</s><s> as you work with files, they are checked out to you and copied to the working folder where you make edits.</s><s> this keeps you safe in robohelp as it only likes working with local files.</s><s> when you are finished editing, you check the files in and they are copied from your working folder to the source control repository. 
+</s><s>not sure what to advise on the root.fpj issue.</s><s> are all your files in a single folder and that folder is in the root?</s><s> if so, that probably explains it.</s><s> you really need to organize files into folders.</s><s> i'm not sure if rsc likes it when you have two different users updating content in the same folder.</s><s> it may allow it, but i don't use it much so am not sure.</s><s> hopefully another user can advise on that. 
+</s><s>leon?</s><s> bueller?</s><s> anyone?</s><s> 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2730517</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 12, 2010 2:44 PM">
+<s>great feedback.</s><s> when you say configure a local working file, how do you configure?</s><s> i didn't see anything in the help files-- if you have any guidance, i'd really appreciate it. 
+</s><s>as for the organization of our files, they are really organized as follows: project\topic.</s><s> as an expert user, do you have a recommendation on how to organize?</s><s> what will i appreciate as my project continues to grow?</s><s> a file for each topic?</s><s> is the root issue that all of my files are directly in my project file?</s><s> we've had a lot of issues when we publish our hyperlinks that the links turn relative, not absolute; therefore, we've been having to go into the html and turning the link into an absolute.</s><s> will the file organization help with this issue? 
+</s><s>rick-- you were the one who actually pushed me to get version control set up (albeit, we had to wait 6 mo. for our it department to get the sql database going).</s><s> thanks a bunch-- it is sooo much better!</s><s> how long should it take to load and update our version status with 1000 files...is 20 minutes reasonable? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2730870</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Amebr" timestamp="Apr 12, 2010 5:06 PM">
+<s>20min is a bit long i'd say.</s><s> ensure you have all the latest patches installed.</s><s> (8.0.2 assuming you are using rh8).</s><s> also, antivirus software can cause slowness as well.</s><s> get your tech guy to have a look to see what changes could be made (i think to stop it scanning every file coming out of source control). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2733638</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 13, 2010 3:10 PM">
+<s>thanks for the info. is there any information out there on how to configure your local "working" file?</s><s> still no luck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2733916</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Amebr" timestamp="Apr 13, 2010 4:50 PM">
+<s>we don't use robosource, but in microsoft visual sourcesafe, there's an option file > set working directory.</s><s> i assume there's something similar in robosource.</s><s> you just specify the local disk location where you want to work on the project.</s><s> we have ours set to pretty much replicate the source control folder structure. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2735728</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 14, 2010 9:34 AM">
+<s>thanks for all of the help.</s><s> i now have set the local working file, but have noticed that when i check out a file, the output view that pops up indicates that it is checked out to shared drive.</s><s> is that what it is supposed to do?</s><s> i've attached files to illustrate. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2735778</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Captiv8r" timestamp="Apr 14, 2010 9:41 AM">
+<s>hi again 
+what i'm seeing would seem to intimate that your working folder has been specified as a network resource.</s><s> this isn't what you want.</s><s> you need to sort how to configure the working folder to be on your local hard drive. 
+</s><s>i'm not sure if this will help.</s><s> perhaps it may. some folks begin working with robosource control and just start off on the wrong foot.</s><s> what i mean by that is to say they open the robosource control explorer application and just add a project in there.</s><s> there are certain files that don't need to be in source control.</s><s> the proper way to add a project to source control is by creating your project on your c drive, then clicking the "add to source control" icon in the source control toolbar.</s><s> thinking about it, perhaps that's how you configure the "working folder".</s><s> i don't use it so am not sure. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2736373</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="johndaigle" timestamp="Apr 14, 2010 1:07 PM">
+<s>hi, mollyid rick and amebr have made some excellent points.</s><s> it happens i have been working on some adobe captivate demos that show the basic techniques for getting started with robosource control.   each is about two to three minutes long.   this one shows how a brand new project is added to robosource control for the first time: http://www.showmethedemo.com/tutorials/rsc-add1sttime/   this one shows how to open a project that is already in source control to your working folder on your local hard drive. http://www.showmethedemo.com/tutorials/rsc-openproj1sttime/   i will be tweaking these demos in the next few days, but i think they lay out the basic ideas.   suggestions for improvement are welcome as i refine these demos.</s><s> john   john daigle adobe certified robohelp and captivate instructor evergreen, colorado http://www.showmethedemo.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2736785</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 14, 2010 3:07 PM">
+<s>this is excellent and answered most of my questions.</s><s> i think that adobe could use your help in designing their help system! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2737437</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Nandini_Gupta" timestamp="Apr 14, 2010 9:28 PM">
+<s>mollyid: john, peter grainge, rick stone, and several other robohelp power users are an integral part of the robohelp team, and we do use their expertise all the time to reach out to the large community of robohelp users.</s><s> adobe follows a community help model and offers a framework for creating and sharing content.</s><s> let me know when you want to create tips or tutorials to share your learning with other robosourcecontrol users. 
+</s><s>we are also working on improving the robosourcecontrol documentation and will keep you posted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2738543</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 15, 2010 7:56 AM">
+<s>this is great feedback.</s><s> what file will i be opening rbh from after it is now in version control?</s><s> in my working folder or the original folder?</s><s> my co-worker? 
+</s><s>molly chappell, m.ed.</s><s> designer, learning & development 303-895-2431 desk 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2739340</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="johndaigle" timestamp="Apr 15, 2010 11:59 AM">
+<s>hi, molly btw, i notice you are from colorado, too!</s><s> i'm from evergreen.</s><s> i am not a power user of robosource control, but i'll try and relate what others have told me.</s><s> if you have further questions, you should probably post them in the source control sub-forum where there are great power users (like gravenstein, amebr, themarcus7, elisafnord and mergethis) who might assist you more quickly. 
+</s><s>when you open the project to a folder on your hard drive, that becomes your working folder.</s><s> some authors keep the content in the same folder day after day and "get the latest version" whenever they start a session with robohelp.</s><s> in theory this keeps everything in sync.</s><s> your co-worker would do the same.generally i open the entire project to my working folder and not a particular file. 
+</s><s>i've heard some authors choose to delete their working folder and reopen it each day.</s><s> this way, they know they'll be getting all the freshest changes and content. 
+</s><s>another getting started tip: remember "opening" a project is not the same thing as "checking" it out.</s><s> this is a common misconception.</s><s> you can open the project and look at it, etc. without it being "checked out".</s><s> the red checkmark icons won't appear until you actually attempt to change some content, that's your cue that it has been checked out and no one else can work on that particular file. 
+</s><s>also, remember that when you work on them, you are not only checking out topic files, but the .hhc file for the toc, the .hhk file for the index, the .glo file for the glossary, etc. so it will make sense for you and your co-worker to have a plan on who will mainly work on which parts of the project.</s><s> also it is typical for an author to be the "designated publisher" and establish a routine that works best for you. 
+i wrote an article for an older version of robosource control on the adobe developer network website.</s><s> much of the material is still valid and may be helpful. http://www.adobe.com/devnet/robohelp/articles/robosource_control.html see toward the end, the sub head: summary workflow strategy for content management 
+thanks john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2739453</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 21, 2010 9:33 AM">
+<s>hello fellow coloradan!</s><s> i live in denver, but commute out to highlands ranch.</s><s> i work in l&d for a company and we manage the knowledge management system.</s><s> i pushed for the purchase of rbh, but the only problem is that we're not experts and my company would rather have us fumble through then send us to training.</s><s> so, fumble i do. 
+</s><s>you have so much useful information-- and you're very clear in relating it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2741540</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 16, 2010 8:07 AM">
+<s>john, 
+</s><s>how long should it take to add 1,000 topics to version control?</s><s> i'm not sure why, but it is taking a long time. 
+</s><s>molly chappell, m.ed.</s><s> designer, learning & development 303-895-2431 desk 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2741624</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="johndaigle" timestamp="Apr 16, 2010 8:24 AM">
+<s>gee, i would not have a clue on that one!</s><s> i would imagine the amount of content in those files, the bandwidth, the network latency, the sql server database performance would all be factors in the time.</s><s> hopefully subsequent actions will not take as long, but i can't say.</s><s> this is another great question for the source control power users.</s><s> i'm going to ask forum managers rick stone or peter grainge to move this thread over to the source control sub-forum.</s><s> sorry i couldn't be more helpful on this.</s><s> john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2753189</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 21, 2010 9:29 AM">
+<s>john, 
+</s><s>i've noticed that none of my posts to source control are being responded to-- so i'm wondering if you could help me clarify one last piece of my version control issues: 
+i still am struggling with one basic concept and i've seen it discussed on other threads-- this has to do with the c:drive and shared drives. 
+
+</s><s>if add the project to source control from a location on my c drive, then open the project via source control onto my coworkers c:drive (all of the files are then copied to working folder on the c drive), are all of the topics copied to source control and therefore do not need an additional copy of the the project on a shared drive?</s><s> i'm not sure if that makes sense. 
+</s><s>your help would be greatly appreciated! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2753241</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Captiv8r" timestamp="Apr 21, 2010 9:53 AM">
+<s>hi there 
+it isn't that anyone is singling you out and saying "let's not reply to her posts".</s><s> instead, it's a dearth of expert users with source control.</s><s> personally, it's a demon i'd rather avoid if i can because of the additional layers of complexity involved and issues with seemingly no answers. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcerstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2753573</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 21, 2010 11:52 AM">
+<s>thanks for the response!</s><s> i've read every post now on source control and it's amazing that adobe hasn't published more on the topic.</s><s> for example, the source control preference settings have only brief descriptions that aren't really a if...then... format.</s><s> i'm speaking as an instructional designer, of course!</s><s> thanks for your help rick, you're always on it and i greatly appreciate it.</s><s> someday i'll write a manual on source control, once i've broken it enough times to figure out how to do things the right way! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2754371</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Amebr" timestamp="Apr 21, 2010 5:19 PM">
+<s>you only need the two copies: 1) working folder 2) source control. 
+</s><s>the source control program will take care of "archiving" old version, which is the main reason for having another copy on a network drive.</s><s> also, your tech guys should be backing up the source control database in case something disastrous happens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2755904</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 22, 2010 9:10 AM">
+<s>wonderful!</s><s> thank you so much for the input.</s><s> that is what i was thinking, but it's not really spelled out anywhere.</s><s> what is the procedure with robosource if you create a new topic?</s><s> do other users have to do anything to ensure the new topic is added to their files?</s><s> it seems that robosource only "gets the latest version", which excludes new topics?</s><s> they seem to show in the database, but not transfer to other users..... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2756672</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="mollyid" timestamp="Apr 22, 2010 2:23 PM">
+<s>got everything finally cleaned up.</s><s> found out that one of our users did not have appropriate access on his c drive that was jumbling up the database.</s><s> he also needed to increase his virtual memory.</s><s> this is quite an intricate system!</s><s> i have corrected all of our issues, the only remaining is the root.fpj.</s><s> only one root file can be checked out at a time, causing issues when both of us want to create a new topic or delete a topic at the same time.</s><s> i'm wondering what will happen if i change the properties on the fpj to allow multiple check outs at the same time.</s><s> could that pose an issue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2756901</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Amebr" timestamp="Apr 22, 2010 10:55 PM">
+<s>i don't use robosource, so i can't comment on that application specifically.</s><s> i know that when using team foundation server, we have to use "get specific version" (then select "latest" within the resulting dialog box) rather than "get latest version".</s><s> maybe that will help. 
+</s><s>we've found it best to delete the cpd file if someone else has worked on a project. i.e.</s><s> user a works on a project.</s><s> user b wants to work on the project the next day, so deletes the cpd, before opening the project.</s><s> it seems to store each persons last known setup, and not pick up changes made by someone else.</s><s> you can set rh8 to automatically delete the cpd so you don't have to remember, although depending on the size of your projects, it can take some time to rebuild the cpd file. 
+i seem to remember someone saying at some point that you should determine who works on particular parts of a project, to avoid problems with the file lists, toc etc getting out of sync.</s><s> but i can't remember the details exactly.</s><s> maybe peter grainge's site will help.</s><s> specifically: 
+### link removed ### see post below. 
+i haven't gone through the entire help, but the sections on planning and source control maybe most relevant.</s><s> also, maybe someone else will remember the details about assigning responsibility to different areas. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2757359</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Peter%20Grainge" timestamp="Apr 22, 2010 10:54 PM">
+<s>the link is not valid but it wouldn't help anyway.</s><s> the only thing on my site about source control is in snippets where some files not to check in and out are listed. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-2730472-2757380</DOCNO>
+<TEXT>
+<subject>Version Control Added- Project settings questions</subject>
+<post author="Amebr" timestamp="Apr 22, 2010 11:27 PM">
+<s>sorry.</s><s> that'll teach me to be in a rush and not fully check the links.</s><s> i wish i could remember where i saw some material on who should perform which tasks - not so much source control related as just project management.</s><s> maybe it'll come to me over the weekend. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-1160647</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="AIR-Chayah" timestamp="Feb 26, 2013 9:51 AM">
+<s>our release engineer, who is experienced with tfs and source control, has not been able to successfully branch the release 1 project to a release 1.5 branch in source control.   after some experimenting, he found that the xpj file is not being updated with the correct path.</s><s> he edited the path to the new path, but finds that there is still something in rh that is holding on to the original path.   does anyone know whether this is a known problem and whether adobe robohelp plans to fix branching in a future release?</s><s> (or is it fixed in robohelp 10?</s><s>)   thank you.</s><s> carol
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5104775</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="Captiv8r" timestamp="Feb 26, 2013 12:12 PM">
+<s>hi carol 
+</s><s>i know that the xpj file parallels what is also in the .</s><s>cpd.</s><s> wondering if deleting the .</s><s>cpd would make a difference? 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5104801</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="AIR-Chayah" timestamp="Feb 26, 2013 12:19 PM">
+<s>hi, rick.</s><s> thanks for the information.</s><s> does branching work with rh10?</s><s> we have one writer using rh10 and will probably migrate everyone in the next couple of months.</s><s> i see that robocolum(n) considers the cpd an "item of wonder"!</s><s> i'm meeting with the release engineer to try to clean up the problems left by the attempt to branch (unlinked topics, missing topics, etc.</s><s>) and will suggest that we try deleting the cpd.</s><s> carol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5104847</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="Captiv8r" timestamp="Feb 26, 2013 12:34 PM">
+<s>sorry, i don't use source control so cannot comment on whether branching works or not. 
+</s><s>lol on the "item of wonder" bit.</s><s> there is no wonder to it at all.</s><s> (except, perhaps, to wonder why it is still needed in the mix.</s><s>) 
+</s><s>what the .</s><s>cpd is, is a microsoft access database file using a custom file extension.</s><s> i've since abandoned documenting the innards of it because it is now just a cache file used in conjunction with the .</s><s>xpj file and its merry band of other support files. 
+</s><s>but it's rife with all sorts of tables that are related to other tables.</s><s> so my thought was that since robohelp seems to be "holding on" to the original path, the .</s><s>cpd is a likely culprit. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5104893</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="AIR-Chayah" timestamp="Feb 26, 2013 12:38 PM">
+<s>thanks, rick.</s><s> i only asked about rh10 support for branching because you noted in your email that branching isn't supported in rh9-visual source control-tfs.</s><s> carol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5105262</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="Captiv8r" timestamp="Feb 26, 2013 2:27 PM">
+<s>egh?</s><s> what email are you referring to ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5106380</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 27, 2013 12:59 AM">
+<s>hi, 
+</s><s>just to confirm rick's suspicions: the cpd file also holds the source control data.</s><s> when manipulating the xpj, remove the cpd to let robohelp connnect to the correct tfs-location. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5106811</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="AIR-Chayah" timestamp="Feb 27, 2013 5:25 AM">
+<s>sorry about that, rick.</s><s> the repetition of the subject line in the body of the email confused me and i thought you were telling me that "branching does not work-". ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5108234</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="AIR-Chayah" timestamp="Feb 27, 2013 12:25 PM">
+<s>dear rick, william, and everyone else.   yes, deleting the cpd did work.</s><s> and here's how our release engineer managed to branch version 1 to version 2.</s><s> our [sourcebranch] was "main" (for version 1) and our [targetbranch] was "r2_main" (for version 2).   branch from [sourcebranch] to target [targetbranch].</s><s> map, and then 'get latest version' of the [targetbranch].</s><s> locate the .</s><s>cpd file within the newly created [targetbranch] in 'team explorer'.</s><s> perform a delete operation on the .</s><s>cpd file/ check in the pending change.</s><s> locate the .</s><s>xpj file within the newly created [targetbranch] in 'team explorer'.</s><s> check out the .</s><s>xpj file.</s><s> open the .</s><s>xpj file in a text editor (notepad, notepad++, editplus etc-).</s><s> modify the path to team foundation server (tfs) that points to the old [sourcebranch]. that is: modify $/help/[sourcebranch]/-/-/-to point to the [targetbranch].</s><s> save the file.</s><s> check in the .</s><s>xpj file .</s><s> open the .</s><s>xpj file in robohelp.</s><s> robohelp should create the .</s><s>cpd file automatically, but not check it in.</s><s> in 'team explorer', browse to the directory where the .</s><s>cpd file used to exist.</s><s> click 'add file to source control'.</s><s> select the .</s><s>cpd file.</s><s> check it in.</s><s> everything appears to work correctly.</s><s> carol
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5108215</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="Willam%20van%20Weelden" timestamp="Feb 27, 2013 12:32 PM">
+<s>hi, 
+</s><s>you should not add the cpd to source control.</s><s> you can set robohelp to rebuild the cpd on opening.</s><s> the cpd is just a cache file to allow faster project editing. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5108283</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="AIR-Chayah" timestamp="Feb 27, 2013 12:47 PM">
+<s>thanks, william.</s><s> for some reason the release engineer wanted to add it to sc, even though he knows that it gets re-created by robohelp.</s><s> carol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-5104304-5108474</DOCNO>
+<TEXT>
+<subject>Branching does not work with RH9, TFS, & Microsoft Visual Source Control</subject>
+<post author="Captiv8r" timestamp="Feb 27, 2013 1:36 PM">
+<s>lol, sometimes release engineers need educating on the differences between source files and output files! 
+</s><s>because to them, quite often, your output files are their source files! 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-157918</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="ContentManagement" timestamp="Apr 12, 2007 6:35 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586323</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="CraigCC" timestamp="Apr 12, 2007 6:46 AM">
+<s>hi cm, what version of rh are you using?</s><s> as far as i know robohelp x5 does not play well with vss.</s><s> however, the latest version robohelp 6 uses robohelp source control 3 which does integrate with vss.</s><s> i use robohelp x5 with vss but am very careful about which files get checked in and out to avoid problems.</s><s> what is your goal?</s><s> thanks craig i
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586345</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="ContentManagement" timestamp="Apr 12, 2007 7:18 AM">
+<s>hi craig, thanks for your quick reply.</s><s> i am very impressed!</s><s> i am using robohelp x.5.0.2.</s><s> would you please let me know which file i should pay attention when i check in/out?</s><s> maybe i can use robo source control intead of vss?</s><s> because we already have vss for development, so i think using existing vss can save administration time.</s><s> does robo source control work fine with robohelp and need more management?</s><s> thanks!</s><s>!</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586368</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="CraigCC" timestamp="Apr 12, 2007 7:40 AM">
+<s>hi cm, i'm a bit snowed under today.</s><s> but in a nutshell, we check in all the project files but are very very careful when checking out different file to different authors.</s><s> we make one author the vss controller and they are in charge of the toc index and other files that get updated when working with the project.</s><s> other authors 'get the latest' version and work with a copy of the project.</s><s> they can checkout specific .htm files or adding new .htm files to the project.</s><s> that way we keep sane!</s><s> the only problems we've had is with the .apj but i think this somehow got checked out to other contributers.</s><s> if you work with robohelp source control x5 you'll need to set up the database etc which is covered in the online help.</s><s> however, the latest version robohelp 6 intergrates with vss and other source control software.</s><s> the guys at adobe put a lot of work into this.</s><s> check out the article: http://www.adobe.com/devnet/robohelp/articles/robosource.html hope that helps and sorry to rush craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586407</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="ContentManagement" timestamp="Apr 12, 2007 8:02 AM">
+<s>hi craig, that helps me a lot!</s><s> i really appreciate it!</s><s> do you know why robosource control is not available to robohelp for word?</s><s> it is available to robohelp for html.</s><s> i used rh for html before, but want to use rh for word now.</s><s> i think robosource control should work fine with robohelp for html, right?</s><s> since they are developed by the same company, not like vss.</s><s> what is your oponion?</s><s> i really know nothing about robohelp.</s><s> thanks for your help!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586551</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="CraigCC" timestamp="Apr 12, 2007 9:41 AM">
+<s>i'm guessing that collaborative working with robohelp for word is a little troublesome, but others may have more experience with this.</s><s> robosource control does work fine with robohelp html, but there are improvements in robohelp 6.</s><s> my opinion is that i'd rather work with robohelp source control 3 (part of rh6) if i were embarking on a new collaborative authoring adventure.</s><s> others may have different opinions.</s><s> kind regards craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586552</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="Captiv8r" timestamp="Apr 12, 2007 9:41 AM">
+<s>hi folks i certainly don't mean to disagree with my fellow expert craig here, but i thought x5 was really no different than 6 with respect to vss.</s><s> actually, i used to advise folks to steer away from robosource control in favor of vss.</s><s> since we have a new flavor of source control with 6 (i believe it's now provided by a different supplier) we will hopefully see more stability with source control as supplied by robohelp.</s><s> cheers...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586561</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="CraigCC" timestamp="Apr 12, 2007 9:48 AM">
+<s>apologies rick.</s><s> my impression was that the new version of robohelp source control had improved integration with vss along with the rsc server being based on sql server - that was my reason for moving toward rh6.</s><s> sorry if the vss stuff was a little misleading - i'll do more homework next time :-) kind regards craig
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-586661</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="ContentManagement" timestamp="Apr 12, 2007 11:14 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-595280</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="Cathy_Miller" timestamp="Apr 23, 2007 1:14 PM">
+<s>hello rick i am currently a lone help author using robohelp html x5.0.2.</s><s> i will soon by joined by another author.</s><s> we will be working on the same help project(s).</s><s> i'm trying to decide whether to upgrade to rh6 plus buy another license, or just buy another rhx5 for the new author.</s><s> wondering if you have received any feedback on the source control function included with rh6.</s><s> according to adobe marketing material, this version uses a different (something) that makes it more stable than in previous versions.</s><s> thanks, cathy
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-595293</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="RoboWizard" timestamp="Apr 23, 2007 1:27 PM">
+<s>hi cathy unfortunately i cannot speak to whether the new version is better.</s><s> my fellow ace (on both levels - certified and community expert) john daigle is better prepared to answer this, as he has had a fair play at them.</s><s> hopefully he will see this and chime in.</s><s> i'll also ping him separately to provide a bit of a nudge.</s><s> cheers...</s><s> rick
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-595311</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="johndaigle" timestamp="Apr 23, 2007 1:45 PM">
+<s>hey, cathy!</s><s> the robosource control in x5 was "adequate" in its day.</s><s> but remember, that was nearly 4 years ago the problem was that the "free" access database was not really robust enough and to really make use of it, you need to use ms sql server, which is expensive.</s><s> that was then.</s><s> this is now.</s><s> the robosource control 3 that comes with robohelp 6 is way more better this is because, it allows you to use a free version of ms sql server express for a much more robust database.</s><s> so my advice would be to upgrade to robohelp 6 for sure.</s><s> it's not just hype.</s><s> if for some reason you can't upgrade, then you might be able to get away with the access database given that there are only two of you.</s><s> since you already have it, you could create a little test bed project and try it out.</s><s> (i have a suggestion for how to do that in my article.</s><s> see link below) for the lowdown on robosource control 3 see this matthew ellison's fine article getting started with robosource control 3 in robohelp 6 if you're interested in the "old" robosource control that comes with x5, you can check out my article to get you started.</s><s> sharing one robohelp project among multiple authors thanx, john
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-595489</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="Cathy_Miller" timestamp="Apr 23, 2007 4:12 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/Source-Control/Discussions-157918-597016</DOCNO>
+<TEXT>
+<subject>Visual Source Safe and RoboHelp for HTML</subject>
+<post author="OE3-chick" timestamp="Apr 25, 2007 11:14 AM">
+</post>
+</TEXT>
+</DOC>
+
+

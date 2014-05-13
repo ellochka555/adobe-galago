@@ -1,0 +1,2867 @@
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6215892-1429613</DOCNO>
+<TEXT>
+<subject>Edge won't work</subject>
+<post author="Bridge Seven" timestamp="Mar 17, 2014 4:33 AM">
+<s>chrome extention stays grey, nothing helps... 
+</s><s>my android divice detects my pc via wlan, and i get the passcode, but no reaction from chrome extetion on pc....</s><s> ps: my ipad won't iven give me the passcode, it's detects my pc, but won't give me the passcode.</s><s> software reinstall don't help. 
+</s><s>system: windows 7 chrome 33 
+</s><s>adobe onlinechat support has no idea for this..., but maybe you have?</s><s> thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6215892-6229996</DOCNO>
+<TEXT>
+<subject>Edge won't work</subject>
+<post author="saumishr" timestamp="Mar 20, 2014 11:35 PM">
+<s>looks like the desktop application is not able to communicate with the the chrome extension: 1.</s><s> please ensure that desktop app and all the devices are connected to same wifi network.</s><s> 2. are you possibly running two different versions of chrome e.g.</s><s> chrome canary and stable chrome?</s><s> can you post a screenshot of edge inspect system tray item with the menu open? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6215892-6233061</DOCNO>
+<TEXT>
+<subject>Edge won't work</subject>
+<post author="Bridge%20Seven" timestamp="Mar 22, 2014 1:56 AM">
+<s>all my devices are sure connected to one single wi-fi, ots the only one here...</s><s> i have only one chrome browser on my pc - original google. 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6202867-1426390</DOCNO>
+<TEXT>
+<subject>Edge Inspect won't connect</subject>
+<post author="Kimsin" timestamp="Mar 12, 2014 8:07 AM">
+<s>hi guys 
+i'm having trouble connecting my external devices to my desktop.</s><s> you really need to get this fixed or make a useful guide as i can see this a pretty common problem. 
+</s><s>everything seems to work fine up until the moment i try to connect the device to my desktop.</s><s> i.e. yes, i have checked the console and yes the necessary port is free and open.</s><s> also, the app has no trouble auto-detecting my desktop, it just won't connect when i select my desktop on my external device. 
+</s><s>thanks kim 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6202867-6215970</DOCNO>
+<TEXT>
+<subject>Edge Inspect won't connect</subject>
+<post author="saumishr" timestamp="Mar 17, 2014 3:48 AM">
+<s>to help us understand the issue, could you please tell us: 
+do you face the connection issue for few of the devices or the very first device itself doesn't connect?</s><s> just to add, the free version allows only a single connected device, while the full version does not limit the number of concurrently connected devices 
+what is the chrome verison and the desktop you are using?</s><s> .</s><s> 
+</s><s>what happens if you try to connect the device using ip address? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6202867-6221912</DOCNO>
+<TEXT>
+<subject>Edge Inspect won't connect</subject>
+<post author="Kimsin" timestamp="Mar 18, 2014 2:50 PM">
+<s>hi saumishr 
+</s><s>it's the very first device that doesn't connect and i have a full cc subscription.</s><s> so, i assume it's the full version i'm running?</s><s> i didn't even know you had a free version? 
+</s><s>chrome ver.: 33.0.1750.154 m desktop: windows 8 
+</s><s>bupkis is what happens when i try to connect using an ip address :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6202867-6229994</DOCNO>
+<TEXT>
+<subject>Edge Inspect won't connect</subject>
+<post author="saumishr" timestamp="Mar 20, 2014 11:25 PM">
+<s>please try the following.</s><s> some steps may be repetition of what you have already mentioned but these may be the likely causes and good for us to confirm: ensure that your computer and your device are on the same network port 7682 is available on your computer for use by edge inspect network settings allow communication on port 7682.</s><s> you may need to talk to your it department to determine that.</s><s> you have all the latest pieces of edge inspect installed: ios/adnroid app, chrome cxtension, and desktop application.</s><s> the desktop application is running on your computer and you are signed with adobe id there.</s><s> turn off your firewall (temporarily.</s><s> once you've made the connection you can turn it back on and make sure to add an exception for edge inspect) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6177397-1420364</DOCNO>
+<TEXT>
+<subject>Localhost subfolder sites not displaying Mac</subject>
+<post author="blackjak123" timestamp="Mar 4, 2014 5:56 AM">
+<s>hi, 
+</s><s>i'm trying to view localhost sites on my macbook, osx 10.9.2 i can view the root of my local host ok, there is an index.html file in there that will show up but if i try and access any sub folders, all i get is a blank screen. 
+</s><s>thanks jon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6177397-6187503</DOCNO>
+<TEXT>
+<subject>Localhost subfolder sites not displaying Mac</subject>
+<post author="saumishr" timestamp="Mar 6, 2014 9:59 PM">
+<s>edge inspect depends on the url which we send to the connected devices and expect them to be able to load that address into the webview/uiwebview components in the edge inspect app on the devices.</s><s> since you are getting the root html served correctly this indicates that edge inspect is setup properly.</s><s> please try to access your sub folder urls from browser in the device.</s><s> if it doesn't work then you may need to check your server configuration. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6177397-6187482</DOCNO>
+<TEXT>
+<subject>Localhost subfolder sites not displaying Mac</subject>
+<post author="blackjak123" timestamp="Mar 6, 2014 11:01 PM">
+<s>hi, i tried what you suggested and i cannot see teh sub folders but i cannot see the root file either.</s><s> i have an alias set up on my mac so instead on 127.0.0.1 i go to dev.local is this causing the issue? 
+</s><s>thanks jon 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6177397-6187789</DOCNO>
+<TEXT>
+<subject>Localhost subfolder sites not displaying Mac</subject>
+<post author="saumishr" timestamp="Mar 7, 2014 2:00 AM">
+<s>please try with dev.local pointing to your ip address.</s><s> also, sometimes server is set to listen only to localhost.</s><s> you may need to add your ip address in the server conf. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6185687-1422241</DOCNO>
+<TEXT>
+<subject>Reinstall program</subject>
+<post author="mbojanovic" timestamp="Mar 6, 2014 10:03 AM">
+<s>how can i install edge inspect again, if i already intsalled it, and uninstall it later? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6185687-6187501</DOCNO>
+<TEXT>
+<subject>Reinstall program</subject>
+<post author="saumishr" timestamp="Mar 6, 2014 9:46 PM">
+<s>please follow the steps from http://forums.adobe.com/docs/doc-2535 and install the required applications: 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6177856-1420434</DOCNO>
+<TEXT>
+<subject>Please start the Adobe Edge Inspect Application... Get Edge Inspect.</subject>
+<post author="Patty Velasco" timestamp="Mar 4, 2014 7:58 AM">
+<s>when i click on the button in the chrome navigator that message appears and the icon is in gray.</s><s> i have the desktop aplication running and the app in my android.</s><s> it seems that the chrome extension and the desktop aplication are not detecting each other.</s><s> my chrome version is:  32.0.1700.102 m i don't know what to do...
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6177856-6179463</DOCNO>
+<TEXT>
+<subject>Please start the Adobe Edge Inspect Application... Get Edge Inspect.</subject>
+<post author="Mark_Rausch" timestamp="Mar 4, 2014 2:57 PM">
+<s>hi patty, you're correct, the extension and the desktop app aren't detecting each other.</s><s> i'm not sure why.</s><s> can you try temporarily disabling your other chrome plug-ins and see if that makes a difference? 
+</s><s>also, check the versions of the inspect chrome extension and the desktop app and make sure they're the most current versions. 
+</s><s>let us know if that helps or not, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5803636-1325731</DOCNO>
+<TEXT>
+<subject>How can I connect my iPad through Adobe Edge Inspect CC without using Wi-Fi?</subject>
+<post author="S. Cain" timestamp="Oct 31, 2013 8:04 AM">
+<s>because i am at work and wi-fi is not available for use, i would like to manually connect my ipad to my computer so that i can still use this program.</s><s> how can i go about doing this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5803636-5834801</DOCNO>
+<TEXT>
+<subject>How can I connect my iPad through Adobe Edge Inspect CC without using Wi-Fi?</subject>
+<post author="saumishr" timestamp="Nov 12, 2013 1:49 AM">
+<s>it's possible but the networks where the devices/desktop are should be able to communicate with each other across port 7682. 
+</s><s>if your pc is connected to the hardwired network and your phone is on the wireless network do the following: 1.</s><s> install all the pieces of software... the desktop application on your pc, the edge inspect ios app on your ipad , and the edge inspect chrome extension in chrome.</s><s> 2. start up the desktop application and click on the edge inspect icon in chrome to open the dialog.</s><s> your computer's ip address should be displayed at the top, make note of it.</s><s> 3. start the application on your phone.</s><s> auto-discovery may not work in this case, so click the button in the upper right-hand corner of the phone application and enter your pc's ip address there.</s><s> 4. if port 7682 is open between the networks, you should get a connection and a passcode should appear on your phone.</s><s> enter that into the chrome extension dialog and you should be good to go.</s><s> let me know if it helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5803636-6166227</DOCNO>
+<TEXT>
+<subject>How can I connect my iPad through Adobe Edge Inspect CC without using Wi-Fi?</subject>
+<post author="JurijsKobecs" timestamp="Feb 28, 2014 6:07 AM">
+<s>it is possible to connect usb connected iphone and edge inspect without using wifi ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5803636-6173623</DOCNO>
+<TEXT>
+<subject>How can I connect my iPad through Adobe Edge Inspect CC without using Wi-Fi?</subject>
+<post author="saumishr" timestamp="Mar 4, 2014 12:23 AM">
+<s>i see the same query posted by you on: http://forums.adobe.com/message/5487003 
+please let me know if that helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6167313-1417778</DOCNO>
+<TEXT>
+<subject>Unable to Connect to Inspect</subject>
+<post author="cdenison" timestamp="Feb 28, 2014 2:46 PM">
+<s>i have installed the adobe inspect app on my iphone, i have installed the extension for google chrome.</s><s> both the device and my laptop are connected to the same wifi network.</s><s> i cannot get the device and laptop to recognize each other.</s><s> the name of the laptop is not in the "connections" window on my iphone, and through the extension in chrome, it's just spinning and says "waiting for a connection...".</s><s> i have tried tapping the "+" on my iphone and have added the ip address manually and get the message "connection unseccessful, please try again." 
+</s><s>please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6167313-6173621</DOCNO>
+<TEXT>
+<subject>Unable to Connect to Inspect</subject>
+<post author="saumishr" timestamp="Mar 3, 2014 4:00 AM">
+<s>please ensure the following: 1.</s><s> in you installed apps you have not mentioned edge inspect cc app which needs to be installed on your laptop.</s><s> is it installed?</s><s> 2. after you start the edge inspect application (e.g. from the start menu), make you are signed into it.</s><s> you'll see an icon for it in the notfication area (near the clock); right-click on it and choose sign in.</s><s> 3. are you running any firewall?</s><s> could you please try disabling the same.</s><s> this may be causing issue with device and edge inspect app communication.   let me know how it goes.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6168482-1418057</DOCNO>
+<TEXT>
+<subject>Edge Inspect won't load localhost pages...</subject>
+<post author="Laurence MacNeill" timestamp="Feb 28, 2014 5:35 PM">
+<s>if i browse to a "real" web-page in chrome on my mac, edge inspect shows it just fine on my mobile device.</s><s> if i go to a local page (http://192.168.1.204:8080/demo/weinre-demo.html for example) it does nothing.</s><s> the chrome browser on my mac shows the page just fine, but edge inspect does absolutely nothing. 
+</s><s>so what's going on?</s><s> why can it not see my local pages, but it can see any "real" web-page i go to? 
+</s><s>thanks, laurence macneill mableton, georgia, usa 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6168482-6173619</DOCNO>
+<TEXT>
+<subject>Edge Inspect won't load localhost pages...</subject>
+<post author="saumishr" timestamp="Mar 3, 2014 3:48 AM">
+<s>make sure that local server allows the page to be browsable on other machines.</s><s> you may need to modify the configuration file (http configuration in case of apache) so that outside computers can access your page.</s><s> also, look into the serevr error or access logs and see if you see any messages related to those recent failed accesses. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-1417692</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="rsdobbins" timestamp="Feb 28, 2014 8:22 AM">
+<s>i have installed the google chrome exstention and the ap on my ipad.</s><s> i luanch the edge inspect application then go to chrome and click on the edge inspect icon in the top right.</s><s> the window on chrome says waiting for connection.</s><s> when i load the ap on my ipad the macbook does not come up on the list of connections and when i enter the ip that is listed in the chrome window that does not work either. 
+</s><s>what are some other ways to trouble shoot this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6167397</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="Mark_Rausch" timestamp="Feb 28, 2014 11:30 AM">
+<s>hi, it sounds like you have only two of the three pieces you need installed.</s><s> the 3 applications are: an app that runs on your ipad the chrome extension a desktop application that enables the two to communicate. 
+</s><s>it sounds like you have the first two installed... have you also installed the edge inspect desktop helper app onto your macbook? 
+</s><s>once you've got that installed, start that on your mac and wait for the chrome extension to show you're connected.</s><s> after that you can start the ipad app and then you should be able to get a connection to your macbook. 
+</s><s>hope this helps, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6167521</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="rsdobbins" timestamp="Feb 28, 2014 11:40 AM">
+<s>i have the edge inspect program installed on my mac.</s><s> after opeing it in the application folder it places an icon in the top menu bar and i made sure to sign in with my cc login.</s><s> after doing that i proceeded to chrome and cliked on the in icon in the top right, this is where it says waiting on connection.</s><s> i get the same thing if i try to use it from with in edge reflow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6167722</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="Mark_Rausch" timestamp="Feb 28, 2014 12:40 PM">
+<s>can you post a screenshot of your chrome extension dialog? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6167947</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="rsdobbins" timestamp="Feb 28, 2014 1:32 PM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6167953</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="Mark_Rausch" timestamp="Feb 28, 2014 1:48 PM">
+<s>thanks.</s><s> that shows that the chrome extension and the desktop app are talking to each other which is good. 
+</s><s>now, are you on a home network or a work network, and are your macbook and ipad both connected to the same network? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6168025</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="rsdobbins" timestamp="Feb 28, 2014 2:33 PM">
+<s>i was on a public wifi network at earlier at work.</s><s> i just got home and it connected first thing on my home network.</s><s> both devices were on the same wifi network earlier, but i was not able to connect them even when i tried manually with the ip listed in the chrome extension dialog. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6168113</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="ryanstewartadobe" timestamp="Feb 28, 2014 2:38 PM">
+<s>not only do the device and computer need to be on the same network, they also have to be on the same subnet.</s><s> so it may be that they the corporate network is on a different submet. 
+</s><s>we're working on a solution that avoids this.</s><s> if you want to give it a try, drop me an email - ryan@adobe.com 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6166728-6168027</DOCNO>
+<TEXT>
+<subject>Unable to connect iPad to Macbook with Edge Inspect</subject>
+<post author="Mark_Rausch" timestamp="Feb 28, 2014 2:43 PM">
+<s>also, edge inspect requires port 7682 to be open to enable communication across it between the devices and the computer.</s><s> you might want to check with your it department or whoever is in control of the network to see if that's open or see if it can be opened. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5478563-1248425</DOCNO>
+<TEXT>
+<subject>Edge Inspect for PC without Wi-Fi</subject>
+<post author="Buffalo_0" timestamp="Jul 5, 2013 2:34 AM">
+<s>my pc at work doesn't currently have the ability to connect to my works wi-fi network, my smartphone can connect to the wi-fi network.</s><s> does anyone know of a way i can still use edge inspect or do all devices need to be connected to the same wi-fi network? 
+</s><s>many thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5478563-5487003</DOCNO>
+<TEXT>
+<subject>Edge Inspect for PC without Wi-Fi</subject>
+<post author="Mark_Rausch" timestamp="Jul 8, 2013 2:00 PM">
+<s>connecting to the same wi-fi network isn't really a requirement, but there could be problems doing it that way.</s><s> you still might be able to use edge inspect as long as the two networks can talk to each other across port 7682 - you may need to talk to your it department to know that for sure. 
+</s><s>if your pc is connected to the hardwired network and your phone is on the wireless network do the following: make sure you've got all the pieces of software installed... the desktop application on your pc, the app on your phone from the app store, and the edge inspect chrome extension in chrome.</s><s> turn off or temporarily disable any firewall software running on your pc.</s><s> start up the desktop application and click on the edge inspect icon in chrome to open the dialog.</s><s> your computer's ip address should be displayed at the top, make note of it start the application on your phone.</s><s> because you're on different networks, auto-discovery can't work, so click the button in the upper right-hand corner of the phone application and enter your pc's ip address there.</s><s> if port 7682 is open between the networks, you should get a connection and a passcode should appear on your phone.</s><s> enter that into the chrome extension dialog and you should be good to go. 
+</s><s>let me know how it goes and if you have any questions/problems, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5478563-6166305</DOCNO>
+<TEXT>
+<subject>Edge Inspect for PC without Wi-Fi</subject>
+<post author="JurijsKobecs" timestamp="Feb 28, 2014 6:13 AM">
+<s>is there any chance to connect iphone and edge inspect without wifi or internet at all just using usb cable? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5478563-6167064</DOCNO>
+<TEXT>
+<subject>Edge Inspect for PC without Wi-Fi</subject>
+<post author="Mark_Rausch" timestamp="Feb 28, 2014 10:03 AM">
+<s>no, sorry.</s><s> that's not possible. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6149781-1413688</DOCNO>
+<TEXT>
+<subject>nginx 404 on ipad</subject>
+<post author="InspectorGadget" timestamp="Feb 23, 2014 2:20 PM">
+<s>everything loads fine on my computer but i get a 404 on my ipad.</s><s> there seems to be a lot of information for debugging localhost issues for apache servers.</s><s> however, i cant seem to find any advice for running a localhost with nginx.</s><s> any help would be greatly appreciated. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6149781-6161950</DOCNO>
+<TEXT>
+<subject>nginx 404 on ipad</subject>
+<post author="saumishr" timestamp="Feb 27, 2014 2:57 AM">
+<s>hi, 
+</s><s>probably nginx is only listening to localhost.</s><s> you need to add your ip address in the server block.</s><s> for example: server { listen 80; server_name example.org www.example.org "" xx.xx.xx.xx <ip-address> ; } 
+
+</s><s>for more information on how to update server names please follow the article: http://nginx.org/en/docs/http/server_names.html.</s><s> further try accessing the local page via http://<your_ip_address>. 
+</s><s>let me know if this resolves your problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6144256-1412404</DOCNO>
+<TEXT>
+<subject>Edge Inspect connects - and then won't connect again</subject>
+<post author="susannakirk" timestamp="Feb 21, 2014 10:39 AM">
+<s>when i first set up edge inspect, everything worked smoothly.</s><s> however, the next time i fired up the desktop application and the chrome extension, i just got the "waiting for a connection" message indefinitely on the chrome extension, and my external clients all said "error connecting, tap to retry. 
+</s><s>attempting to connect phone via the ip address displayed in chrome extension also did not work. 
+</s><s>yesterday, i tried quitting edge inspect, and then restarting it, deleting the "enabled devices" and then, somehow (not sure of the exact order of events), "passcode" showed up again on my external client. 
+i was able to reestablish the connection and everything was fine again. 
+</s><s>however, today, i am again getting the "waiting to connect" message within the chrome extension, and the error connecting message on external clients. 
+i tried messing around, deleting and reinstalling phone app and chrome extension, restarting desktop application... nothing is working. 
+</s><s>is there something i can try?</s><s> given the fact that the setup worked initially, i can't figure out what might be causing this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6144256-6144776</DOCNO>
+<TEXT>
+<subject>Edge Inspect connects - and then won't connect again</subject>
+<post author="ryanstewartadobe" timestamp="Feb 21, 2014 1:23 PM">
+<s>i wonder if this is a subnet issue.</s><s> are you using all of your devices on a single wifi hotspot, or is it in a corporate envornment where they might be on the same network but using different wifi routers? 
+</s><s>we also are experimenting with some ideas that will help with connection issues but aren't ready to ship yet.</s><s> if you're interested in trying it out, let me know. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6144256-6145541</DOCNO>
+<TEXT>
+<subject>Edge Inspect connects - and then won't connect again</subject>
+<post author="susannakirk" timestamp="Feb 21, 2014 7:22 PM">
+<s>hi ryan, 
+</s><s>i checked with my boss and he says we have only one wifi router, so he thinks it shouldn't be a subnet issue. 
+</s><s>note, i did come home and try to connect the devices, and it worked instantly on my home network.</s><s> so it must be something different at work. 
+</s><s>if i originally established the connection at home (the first time i tried to connect -- which i think may have been while working from home), would the chrome extension remember settings that would keep me from being able to connect when both devices are moved to another wifi network (i.e., office)?</s><s> i wonder this because i think i also had trouble connecting when i was at my friend's house on his wifi network. 
+</s><s>thanks for the input! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6110460-1404019</DOCNO>
+<TEXT>
+<subject>Keep getting Function.caller used to retrieve strict caller error when inspecting page.</subject>
+<post author="kneuvirth" timestamp="Feb 11, 2014 11:06 AM">
+<s>i am trying to inspect one of my pages on my ipad using edge, but i keep getting the error: function.caller used to retrieve strict caller.</s><s> i think that it has something to do with calling a function on the myself var which i have used to store 'this' earlier in the method.</s><s> i am not using strict mode. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6110460-6135350</DOCNO>
+<TEXT>
+<subject>Keep getting Function.caller used to retrieve strict caller error when inspecting page.</subject>
+<post author="saumishr" timestamp="Feb 19, 2014 3:55 AM">
+<s>this problem seems more of the js code issue.</s><s> browsers prevent using caller to get a reference to a strict function, even when accessing caller on a non-strict function.</s><s> they all support getting a reference to a non-strict function via caller (on a non-strict function), just not a strict function.</s><s> even though you are not using strict mode, the function which you are trying to access may be under strict mode.</s><s> workaround can be, either you make your code completely strict compliant or try making the caller accessible by some other means, like passing it by name as an argument. 
+</s><s>let us know if that helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6110460-6135610</DOCNO>
+<TEXT>
+<subject>Keep getting Function.caller used to retrieve strict caller error when inspecting page.</subject>
+<post author="kneuvirth" timestamp="Feb 19, 2014 6:28 AM">
+<s>what i don't understand is why everything runs fine with no errors on my pc and on my ipad while they are connected through edge inspect.</s><s> the error only occurs when i try to inspect the dom on the ipad using edge? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6128034-1408468</DOCNO>
+<TEXT>
+<subject>The Web page at file:///android_asset/webkit could not be loaded</subject>
+<post author="optionsit" timestamp="Feb 17, 2014 4:04 AM">
+<s>hi, i am able to connect my android devices to edge inspect, but once it's connected it displayes a 404 error with the folowing message: 
+the web page at file:///android_asset/webkit could not be loaded 
+and i am not able to brows to the website i want to inspect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6128034-6131541</DOCNO>
+<TEXT>
+<subject>The Web page at file:///android_asset/webkit could not be loaded</subject>
+<post author="saumishr" timestamp="Feb 18, 2014 3:54 AM">
+<s>this seems to be an issue with the android.</s><s> do you get the same error while opening the url in the device browser. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6111741-1404344</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect App won't launch on MacBook Pro OSX 10.8.5</subject>
+<post author="GiuseppeAricoDesign" timestamp="Feb 11, 2014 5:20 PM">
+<s>hi there, i can't get edge inspect to launch on my macbook pro.</s><s> it works fine on my imac with the same os.</s><s> we i click on the launcher icon nothing happens (it doesn't even bounce on the dock).   any idea what's causing this?   thank you, giuseppe.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6111741-6112495</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect App won't launch on MacBook Pro OSX 10.8.5</subject>
+<post author="saumishr" timestamp="Feb 12, 2014 12:55 AM">
+<s>edge inspect desktop has no ui and only inspect icon will be visible in the menu bar.</s><s> also, you need to be logged in with adobe id in the app. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6108738-1403655</DOCNO>
+<TEXT>
+<subject>Issue with multiple devices being displayed</subject>
+<post author="Blue-Insurances" timestamp="Feb 11, 2014 2:32 AM">
+<s>hi there, 
+i recently upgraded to adobe cc and i am trying to setup edge inspect on my ipad and iphone.</s><s> i added both devices as laid out in the instructions, but when i try and preview both devices, i am getting the following message: 
+use of multiple devices is an edge inspect full version feature.</s><s> upgrade now to connect multiple devices concurrently. 
+</s><s>does this mean that i have to purchase another upgrade in order for multiple devices to be previewed?</s><s> any help appreciated. 
+cheers, blue-insurances 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6108738-6112489</DOCNO>
+<TEXT>
+<subject>Issue with multiple devices being displayed</subject>
+<post author="saumishr" timestamp="Feb 12, 2014 12:35 AM">
+<s>edge inspect has two pricing options, a free version, which allows only one device to be connected at a time, and a full version which allows an unlimited number of devices to be connected simultaneously.</s><s> if you have already subscribed to the full version of edge inspect try signing yourself out of the edge inspect application and then back in to resolve the issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6096708-1400760</DOCNO>
+<TEXT>
+<subject>Any chance to see Edge Inspect use Chrome Devtools instead of Weinre?</subject>
+<post author="res-u" timestamp="Feb 7, 2014 6:48 AM">
+<s>i am asking because 
+weinre is 
+- slow - not able to show media queries styles - not able to allow for remote debugging (like with the devtools js debugger) 
+
+this would be a great improvement 
+is it possible at all? 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6096708-6098814</DOCNO>
+<TEXT>
+<subject>Any chance to see Edge Inspect use Chrome Devtools instead of Weinre?</subject>
+<post author="ryanstewartadobe" timestamp="Feb 7, 2014 3:59 PM">
+<s>hey res-u, 
+</s><s>unfortunately just hooking into web inspector isn't an option for technical reasons.</s><s> at least it hasn't been in the past.</s><s> i haven't looked if they've updated their apis in such a way that would allow a service like edge inspect to use it.</s><s> i doubt it, but i know they were doing some work in that area, so it's something we can check into. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6096708-6099597</DOCNO>
+<TEXT>
+<subject>Any chance to see Edge Inspect use Chrome Devtools instead of Weinre?</subject>
+<post author="res-u" timestamp="Feb 8, 2014 1:19 AM">
+<s>thanks ryan, 
+</s><s>it's just that at the moment i still have to jump between 
+- inspect - devtools - safari 
+to benefit from the full palette of devices debugging 
+and the experience of using devetools to debug android devices is really nice 
+the real annoyance with weinre being that it chokes on media queries if they are in the same stylesheet as the regular css rules 
+there is a post about that on the forum and a bug report on the weinre bugtracker - https://issues.apache.org/jira/browse/cb-85 
+also to my knowledge you can't use a step debugger using weinre (am i wrong?</s><s>) 
+</s><s>anyhow inspect is really great so that would make it even better 
+hope your team can look into it 
+thanks 
+thomas 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6098114-1400989</DOCNO>
+<TEXT>
+<subject>Where can I find this file: Edge_Reflow_preview_6_LREF.msi</subject>
+<post author="lloydsdigitalproductions" timestamp="Feb 7, 2014 12:20 PM">
+<s>where can i find this file: edge_reflow_preview_6_lref.msi 
+as i need this old installation file to uninstall an old verison of reflow using uninstall or change a program in windows 8.1.</s><s> or i can't update and get this error: 
+exit code: 7 please see specific errors below for troubleshooting.</s><s> for example, error: 
+
+-------------------------------------- summary -------------------------------------- 
+- 0 fatal error(s), 3 error(s) 
+
+
+----------- payload: edge reflow 1.0.0.0 edge_reflow_preview_7_lref.msi_1.0 ----------- 
+error: the older version of adobe edge reflow cc preview cannot be removed.</s><s> contact your technical support group. 
+</s><s>error: install msi payload failed with error: 1603 - fatal error during installation.</s><s> msi error message: the older version of adobe edge reflow cc preview cannot be removed.</s><s> contact your technical support group. 
+</s><s>error: third party payload installer edge_reflow_preview_7_lref.msi failed with exit code: 1603 
+---------------------------------------------------------------------- --------------- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6098114-6098816</DOCNO>
+<TEXT>
+<subject>Where can I find this file: Edge_Reflow_preview_6_LREF.msi</subject>
+<post author="ryanstewartadobe" timestamp="Feb 7, 2014 4:01 PM">
+<s>hi lloyd, 
+</s><s>i think this belongs in the edge reflow forum. 
+</s><s>they might be able to help you get that. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6098114-6099205</DOCNO>
+<TEXT>
+<subject>Where can I find this file: Edge_Reflow_preview_6_LREF.msi</subject>
+<post author="lloydsdigitalproductions" timestamp="Feb 7, 2014 8:40 PM">
+<s>yeah, don't know how that happened.</s><s> thanks anyway. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6091884-1399543</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect won't open</subject>
+<post author="marcoscalatayud" timestamp="Feb 6, 2014 2:42 AM">
+<s>hi, 
+</s><s>i'm trying to launch adobe edge inspect but it won't do it. 
+i have another user in this same computer and it works flawlessly.</s><s> the strangest thing is that i installed the software from this user (where the app won't launch). 
+</s><s>console gives me this report: 
+process: edgeinspect [4507] path: /applications/adobe edge inspect cc.app/contents/macos/edgeinspect identifier: com.adobe.edgeinspect.application version: 1.0.407 (1.0.407.0) code type: x86 (native) parent process: launchd [176] responsible: edgeinspect [4507] user id: 502 
+</s><s>date/time: 2014-02-06 11:38:19.101 +0100 os version: mac os x 10.9.1 (13b42) report version: 11 anonymous uuid: be07de49-c882-75ea-4ebf-ad729fe8c0c4 
+</s><s>crashed thread: 0 dispatch queue: com.apple.main-thread 
+exception type: exc_crash (sigabrt) exception codes: 0x0000000000000000, 0x0000000000000000 
+</s><s>application specific information: terminating with uncaught exception of type dvacore::filesupport::dir_create_exception: $$$/dvacore/filesupport/dircreate=the directory '@0' could not be created.</s><s> please check the parent directory protection or permission rights. abort() called 
+
+
+</s><s>thanks :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6091884-6092783</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect won't open</subject>
+<post author="marcoscalatayud" timestamp="Feb 6, 2014 7:50 AM">
+<s>okay, i solved it by deleting the folder under /user/library 
+thanks to... 
+adliecxkamnadnra, 27-mar-2013 14:09 in reply to mark rausch report <quote>
+<s>no dice. 
+i sent the folder: 
+users/[username]/library/preferences/adobe/edge inspect 
+into the trash.</s><s> relaunched the app and same thing.</s><s> edge inspect appears to launch, makes a new pref folder, then crashes in a matter of 3 seconds. 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6091884-6094734</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect won't open</subject>
+<post author="JADH" timestamp="Feb 6, 2014 3:28 PM">
+<s>i had pretty much the exact same error (couldn't create that directory), except i've got no preference directory to delete.</s><s> if there's anyone still looking into this, i could use an alternate solution... 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6091884-6097111</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect won't open</subject>
+<post author="tjerkdekuijper" timestamp="Feb 7, 2014 8:30 AM">
+<s>i had the same issue, up untill i discovered this thread.</s><s> after reading i changed the permissions for the folder users/[username]/library/preferences/adobe using finder > cmd + i > staff reading and writing.</s><s> after this edge inspect worked. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6080982-1396862</DOCNO>
+<TEXT>
+<subject>Not able to view styles attached to elements</subject>
+<post author="b3ndro" timestamp="Feb 3, 2014 9:29 AM">
+<s>i currently have edge set up and i can see the pages perfectly on my device (ipad) but not able to view any of the styles attached to the elements.</s><s> i am trying to view this locally but i am using my ip to connect with edge and not localhost.</s><s> all the css files are relativly pathed which i dont know if that makes a difference or not.</s><s> my website is set up in iis7. 
+</s><s>any clues on what i am missing?</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6080982-6095928</DOCNO>
+<TEXT>
+<subject>Not able to view styles attached to elements</subject>
+<post author="saumishr" timestamp="Feb 7, 2014 12:41 AM">
+<s>as you said, you are using ip address for url and css paths are relative, edge insepct should not have a problem in getting the styles.</s><s> are you able to open the page properly in the device browser? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6074208-1394945</DOCNO>
+<TEXT>
+<subject>In CC will not sync/connect on any of my devices:</subject>
+<post author="ClayStudio_34" timestamp="Jan 31, 2014 12:50 PM">
+<s>i have installed it per the installation guide but it will noy sync.</s><s> it does see my wifi network but just shows the spinning wheel...any suggestions would be super 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6074208-6079787</DOCNO>
+<TEXT>
+<subject>In CC will not sync/connect on any of my devices:</subject>
+<post author="saumishr" timestamp="Feb 2, 2014 10:25 PM">
+<s>please provide us more information on the issue: 1.</s><s> is the edge inspect chrome extension icon still grey?</s><s> 2. automatic discovery doesn't work across different subnets.</s><s> edge inspect uses bonjour (zeroconf) to enable device clients to discover desktops to connect to.</s><s> bonjour doesn't broadcast across subnets so wireless devices will not be able to automatically discover computers running edge inspect on a different subnet.</s><s> you should still be able to use edge inspect, but you will have to manually connect the device to the desktop by clicking the + (plus) button in the upper right corner of the device client connections list.</s><s> 3. make sure port 7682 is open and not being blocked by any firewall. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6062541-1392193</DOCNO>
+<TEXT>
+<subject>Edge Inspect Won't Display Typekit Fonts over Local IP</subject>
+<post author="dgaebel@madebymode.com" timestamp="Jan 28, 2014 2:49 PM">
+<s>liz   jan 28, 2014  |  05:17pm est hi dennis,   here is the information from one of our engineers on using edge inspect and typekit:   "unfortunately it seems you've run into a situation where edge inspect and typekit don't integrate very well.</s><s> i'll explain a bit more, then offer some suggestions to work around the issue.   when you're browsing a local website via the hostname 'localhost', which would not be accessible to any other devices on your network, edge inspect automatically gets your machine's local ip address (which is not the same as the external ip as shown on sites like whatismyip.com) and sends that to the mobile apps.</s><s> for instance, let's say i have a sinatra application running in chrome on my mac as http://localhost:4567.</s><s> my iphone wouldn't be able to understand the hostname "localhost", but it can see my mac using its ip address 10.1.10.1, so edge inspect will navigate to http://10.1.10.1:4567.   so, to get fonts working, you could add both 'localhost' and '10.1.10.1' to your kit.</s><s> however, we don't recommend adding local ips to kits because they tend to change without warning.</s><s> (in my example above, the next time i turn on my computer its ip could have changed to 10.1.10.2, but all i would know is that fonts had stopped working on my devices again.</s><s>)   to work around this, we recommend using some form of "dynamic dns" - basically, a domain name that is automatically updated with your current ip and therefore will always point to your computer.   if you're using a mac, the simplest thing would be to use your mac's bonjour hostname.</s><s> bonjour is a technology built into mac os x and ios to help devices find each other automatically over networks.   to find your bonjour hostname:   1.</s><s> open system preferences on your mac.</s><s> 2. choose the sharing icon.</s><s> 3. your bonjour hostname will be displayed in the top area, under the "computer name" field.   you can add the hostname that appears there to your kit, and use it on any apple device on your network.</s><s> for example, my bonjour name is my-mbp.local, so i can browse to http://my-mbp.local:4567 on any mac or ios device and see my sinatra app.   unfortunately, this simple solution will only work on apple devices or windows pcs with apple's bonjour software installed - you can't use this hostname with android phones or tablets.</s><s> if you need a hostname that will work on any device, there are a couple of options i'd recommend:   1.</s><s> a third-party service called forward offers a way to easily forward ports from your computer to other devices anywhere on the internet.</s><s> you can learn more about them and sign up for a 30-day trial here: https://forwardhq.com.</s><s> forward will give you a permanent domain name for your forwarded app that you can add to your kit, such as 'dev-yourcompany.fwd.wf'.   2.</s><s> 37signals has a free "wildcard dns" service called xip.io that will automatically forward traffic to a local ip address.</s><s> you can get your current local ip address by opening system preferences, then choosing network.</s><s> the ip address should be shown in the small text underneath the connection status for whatever connection is active (i.e. has a green dot next to it).</s><s> once you have the ip, you can access your computer at [your ip].xip.io.</s><s> to get fonts working, add *.xip.io to your kit.</s><s> remember that your ip may change, so if your site stops being accessible you should check to make sure you have the correct ip address.   i personally use xip.io if i need to test typekit on multiple devices using edge inspect.</s><s> it's certainly not the easiest option to use, but it works quite well with almost no setup and it's free.   we're going to work to make the experience using typekit and edge inspect together better in the future, but hopefully these suggestions will help you out for now."   i hope that this helps; let me know if you have any other questions on this! -- liz   dennis   jan 28, 2014  |  04:25pm est original message   howdy,  looking for some suggestions to setup edge inspect correctly so i'm able to see my fonts served from typekit.    my current setup is the following w/mamp pro http://cl.ly/image/0w2h1e1q2p2t (http://cl.ly/image/0w2h1e1q2p2t)     it's a lithium based project setup so i need to operate this way in order to view the site locally.</s><s> changing the server name to something custom like mysite.local does not seem to work so far with edge inspect nor does localhost (especially since mamp screams at me).   currently, if i add my local ip to the typekit kit settings my fonts still won't load on edge inspect.   thanks for the assistance,   ~dennis
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6062541-6065821</DOCNO>
+<TEXT>
+<subject>Edge Inspect Won't Display Typekit Fonts over Local IP</subject>
+<post author="dgaebel%40madebymode.com" timestamp="Jan 29, 2014 10:45 AM">
+<s>using 192.168.0.2.xip.io does not work on edge but does on desktop.</s><s> what is the proper setup to get this to work with edge? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6062541-6071980</DOCNO>
+<TEXT>
+<subject>Edge Inspect Won't Display Typekit Fonts over Local IP</subject>
+<post author="saumishr" timestamp="Jan 31, 2014 12:46 AM">
+<s>did you follow the setup instructions from http://blogs.adobe.com/edgeinspect/2012/06/19/shadow-xip-io-virtual-ho sts-workflow-simplified/ ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6062541-6078493</DOCNO>
+<TEXT>
+<subject>Edge Inspect Won't Display Typekit Fonts over Local IP</subject>
+<post author="dgaebel%40madebymode.com" timestamp="Feb 2, 2014 11:41 AM">
+<s>i tracked this down to "text-rendering: optimizelegibility" css property.</s><s> toggling this property off displays the web fonts.</s><s> also oddly enough edge inspect removes the camel casing for the text-rendering value so "optimizelegibility" becomes "optimizelegibility" hard to tell if that is an issue because the edge inspect inspector removes camel casing each time i try and change it to the proper syntax. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6062541-6079784</DOCNO>
+<TEXT>
+<subject>Edge Inspect Won't Display Typekit Fonts over Local IP</subject>
+<post author="saumishr" timestamp="Feb 2, 2014 10:15 PM">
+<s>ahh..cool.</s><s> edge inspect uses webview to render the pages which is a stock browser.</s><s> webview has some quirks related to text-rendering.</s><s> it renders the system default font when rendering text that has the css attribute "text-rendering" set to either "optimizelegibility" or "geometricprecision".</s><s> there's a bug already logged for andorid.</s><s> for your reference: https://code.google.com/p/android/issues/detail?id=41846 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6076882-1395771</DOCNO>
+<TEXT>
+<subject>how do you connect edge inspect with chrome !?</subject>
+<post author="leo_0351" timestamp="Feb 1, 2014 3:07 PM">
+<s>how do you connect edge inspect to chrome 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6076882-6077507</DOCNO>
+<TEXT>
+<subject>how do you connect edge inspect with chrome !?</subject>
+<post author="ryanstewartadobe" timestamp="Feb 1, 2014 10:37 PM">
+<s>if you install the chrome extension then edge inspect will syncronize with whichever page is in the current tab. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6057065-1390882</DOCNO>
+<TEXT>
+<subject>Edge inspect css not loading</subject>
+<post author="DSM - Alex" timestamp="Jan 27, 2014 9:41 AM">
+<s>on certain websites the styles from included style sheets are not loading, for example our website www.dsm-design.co.uk.</s><s> i read somewhere this is because the style sheets are referenced locally in the markup for example css/style.css instead of the full url http:// etc. is this the reason the css is failing to show?</s><s> and if so are there any fixes without changing the html on the site? 
+</s><s>thanks alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6057065-6071978</DOCNO>
+<TEXT>
+<subject>Edge inspect css not loading</subject>
+<post author="saumishr" timestamp="Jan 31, 2014 12:25 AM">
+<s>we tried with the site www.dsm-design.co.uk and it worked fine.</s><s> are you having css urls as localhost?</s><s> if yes, please replace them with the ip address of the server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5383020-1226605</DOCNO>
+<TEXT>
+<subject>Edge Inspect not working for domain.dev URL's running locally on my laptop, displays error message.</subject>
+<post author="durangoodyear" timestamp="Jun 5, 2013 2:54 PM">
+<s>"an error occured web page not availiable". 
+</s><s>this, printed on a white screen, on my iphone5 (osx and ios all running latest updates, latest adobe edge inspect, freshly downloaded) is all i see when i try to visit any of the sites i run on my laptop with apache. 
+i set up my domains as "http://foobar.dev" (where '.dev' is the tld on my localhost for things ... local). 
+i can view any public internet sites, and they will show up on edge inspect on my phone, with no problem. 
+</s><s>i've tested this with turning off the firewall on my computer...</s><s> (but i'm surprised thats how edge works, but what ever). 
+
+
+</s><s>any guides?</s><s> tricks?</s><s> help? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5383020-5383039</DOCNO>
+<TEXT>
+<subject>Edge Inspect not working for domain.dev URL's running locally on my laptop, displays error message.</subject>
+<post author="Mark_Rausch" timestamp="Jun 5, 2013 3:02 PM">
+<s>you've got that tld set up in the configuration files on your computer and the devices running edge inspect don't have access to that information... so that's why you're seeing this issue. 
+</s><s>there are a couple of workflows you can use to get this working.</s><s> here are the blog posts we've written that describe them: http://blogs.adobe.com/edgeinspect/tag/virtual-hosts/ 
+let us know if this works for you or not, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5383020-5383026</DOCNO>
+<TEXT>
+<subject>Edge Inspect not working for domain.dev URL's running locally on my laptop, displays error message.</subject>
+<post author="durangoodyear" timestamp="Jun 5, 2013 3:05 PM">
+<s>.io is a valid tld though... is that part of the trick?</s><s> that its a real .tld, that adobe edge knows about? 
+</s><s>is there a techinical document that explains how edge inspect is reading the website off my computer?</s><s> that might help as well. 
+i will give that website a closer read, to see if it helps. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5383020-5383042</DOCNO>
+<TEXT>
+<subject>Edge Inspect not working for domain.dev URL's running locally on my laptop, displays error message.</subject>
+<post author="Mark_Rausch" timestamp="Jun 5, 2013 3:21 PM">
+<s>edge inspect doesn't do anything different to read the website off your computer than a normal browser does.</s><s> we send a url to the connected devices and expect them to be able to load that address into the webview/uiwebview components in the edge inspect app on the devices.the reason you're seeing an issue with edge inspect and your http://foobar.dev site is the same reason why you wouldn't/shouldn't expect to type that url into a browser on another machine and be able to view the website... there's no external dns server to talk to that knows where that address is actually located. 
+</s><s>so, edge inspect might be doing less than you thought is was in those terms.</s><s> the main focus of edge inspect really is: 1.</s><s> managing the connection from your computer to multiple connected devices 2.</s><s> translating localhost, 127.0.0.1, and <machinename>.local urls 3.</s><s> keeping multiple devices in sync 4.</s><s> simplifying things like cache clearing and screenshots on all your devices 5.</s><s> providing a simple interface into weinre for remote inspection 
+definitely read more on xip.io.</s><s> it's a public website, yes.</s><s> we don't have anything to do with it, but it does provide a nice workflow for using virtual hosts with edge inspect. 
+</s><s>mark 
+</s><s>message was edited by: mark rausch to clarify the 1st paragraph 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5383020-6070364</DOCNO>
+<TEXT>
+<subject>Edge Inspect not working for domain.dev URL's running locally on my laptop, displays error message.</subject>
+<post author="sethgecko77" timestamp="Jan 30, 2014 12:47 PM">
+<s>hello, were you able to get this working?</s><s> i have the default installation of anvil and adobe edge inspect and i'm having the same issue. 
+</s><s>everything is working except my anvil .dev domains. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-1178796</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="bchau12345" timestamp="Mar 27, 2013 11:09 AM">
+<s>is there any plan for edge inspect for windows phone 8? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-5184501</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="Mark_Rausch" timestamp="Mar 27, 2013 1:25 PM">
+<s>we are keeping an eye on the market penetration of windows phone 8.</s><s> at a certain threshold we would develop a client for it, but we're not at that point yet. 
+</s><s>hope this helps, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-5422195</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="posit-labs" timestamp="Jun 18, 2013 12:22 PM">
+<s>to debug on windows phone, you can use weinre directly, without edge inspect. 
+</s><s>here is a walkthrough: http://sviluppomobile.blogspot.com/2013/03/how-to-debug-windows-phone- html5-apps.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-5507702</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="Jitendra%20Vyas" timestamp="Jul 15, 2013 1:05 PM">
+<s>i would also like to have windows phone 8 client 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-5727741</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="cmunasinha" timestamp="Oct 1, 2013 5:06 AM">
+<s>hi, 
+</s><s>i know this is an old discussion, but thought i'd just point out some of the recent articles that are appearing on the ever increasing windows phone market share: http://www.pcpro.co.uk/news/384484/windows-phone-hits-double-digit-sha re-in-uk 
+just thought it was worth mentioning 
+chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-5802543</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="Alexander%20Wong" timestamp="Oct 30, 2013 8:16 PM">
+<s>the windows phone market is growing at a steady pace.</s><s> i personally develop websites and i test them on all 3 major platform, android, ios and wp.</s><s> hopefully adobe would support wp.</s><s> it's bloody annoying to have it on the first 2 platforms and wp is left out.</s><s> common' adobe!</s><s> all other companies are beginning to support wp already! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-5849575</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="Robert%20Sasak" timestamp="Nov 17, 2013 12:47 PM">
+<s>i had the same issue.</s><s> i simply want to debug on android, ios and windows phone as well.</s><s> my flustration with adobe end up by developing simple alternative to adobe edge inspect which is call browsync. http://browsync.net/ 
+benefits: - no software to install, only chrome extention - no registration, simply pick some passphrase to pair all your devices 
+there is also a web version, which use iframe and can be used on any platforms on any device http://browsync.net/client/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-6048548</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="Bushwa" timestamp="Jan 24, 2014 8:23 AM">
+<s>right now, i wish i had edge inspect for the windows 8.1 tablet that i'm testing on simply for the screen shot option.</s><s> i can't even figure out how to do it on the tablet because once the app opens, the snippet program stays with the desktop.</s><s> come on adobe, support the developers, not the market!</s><s> or both, you can support both... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5184012-6063965</DOCNO>
+<TEXT>
+<subject>Edge Inspect for Windows Phone 8?</subject>
+<post author="ryanstewartadobe" timestamp="Jan 29, 2014 1:50 AM">
+<s>hi all, 
+</s><s>we're looking into a solution for this.</s><s> if you're interested in trying it out, drop me an email. ryan@adobe.com 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6038306-1386177</DOCNO>
+<TEXT>
+<subject>The mobile doesn't connect to the computer</subject>
+<post author="Mandi8" timestamp="Jan 21, 2014 6:20 PM">
+<s>hello, 
+</s><s>i installed the edge inspect, the extension and the app.</s><s> the computer and the phone are on the same wifi network.</s><s> when i try to connect with the mobile it doesn't find anything.</s><s> when i try the manual connection i get this: connection unsuccessful, please try again.</s><s> in the firewall the port 7682 is allowed.</s><s> i checked the background.html file in the chrome extensions and give this message: 
+websocket connection to 'ws://127.0.0.1:7682/' failed: could not decode a text frame as utf-8. inspect.js:61 uncaught syntaxerror: unexpected token u inspect.js:224 trying inspect.js:1209 
+what should i do now to get it working? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6038306-6040297</DOCNO>
+<TEXT>
+<subject>The mobile doesn't connect to the computer</subject>
+<post author="Mandi8" timestamp="Jan 22, 2014 8:34 AM">
+<s>anybody?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6038306-6043340</DOCNO>
+<TEXT>
+<subject>The mobile doesn't connect to the computer</subject>
+<post author="saumishr" timestamp="Jan 23, 2014 12:22 AM">
+<s>hi, 
+</s><s>looks like chrome extension is not able to connect to edge inspect cc app installed on desktop.</s><s> what's the state of chrome extension icon.</s><s> is it grey?</s><s> also, are you signed in with adobe id in edge isnpect cc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6038306-6044238</DOCNO>
+<TEXT>
+<subject>The mobile doesn't connect to the computer</subject>
+<post author="Mandi8" timestamp="Jan 23, 2014 7:03 AM">
+<s>yes, the icon is gray.</s><s> and yes, i'm signed in. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4790510-1086128</DOCNO>
+<TEXT>
+<subject>Inspect element does not show css for current media query</subject>
+<post author="nizamil putra" timestamp="Oct 21, 2012 8:54 PM">
+<s>hi, i have one question about the inspect element; when i inspect element the website that i see on my mobile device, css element which appear on inspect element box is not css element for current media query.</s><s> could i see css element for current media query when i inspect it on mobile device? 
+*i inspected it on ipad, but css element (#logo) is not css element for current media query (ipad).</s><s> that should be like this; 
+
+</s><s>thanks, rizqi nizamil putra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4790510-4792200</DOCNO>
+<TEXT>
+<subject>Inspect element does not show css for current media query</subject>
+<post author="brucebowman" timestamp="Oct 22, 2012 12:31 PM">
+<s>hello nizamil putra, 
+question - do you have multiple @media blocks in a single css file?</s><s> if so, you may be running into a known issue, which is documented here: http://forums.adobe.com/docs/doc-2496#known-issues 
+media queries if you're testing with media queries all in one stylesheet, while testing, put them in individual stylesheets.</s><s> this is a current limitation with weinre that needs to be fixed. weinre has no problem with media queries as long as they're each linked separately and not created as @media blocks in your css.</s><s> for now, the simple workaround is to separate them while testing. 
+</s><s>if this sounds like your issue, you can vote to have this fixed by logging into the apache issue tracker for weinre, and voting: https://issues.apache.org/jira/browse/cb-85. 
+</s><s>if this does not sound like your issue - please provide mroe detail here. 
+</s><s>bruce 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4790510-4792979</DOCNO>
+<TEXT>
+<subject>Inspect element does not show css for current media query</subject>
+<post author="nizamil%20putra" timestamp="Oct 22, 2012 7:16 PM">
+<s>thanks for the answer bruce, 
+yes, that was my issue.</s><s> so the problem was from weinre.</s><s> i just voted https://issues.apache.org/jira/browse/cb-85, i hope the problem fixed as soon as possible 
+
+</s><s>thanks, nizamil putra 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4790510-5610621</DOCNO>
+<TEXT>
+<subject>Inspect element does not show css for current media query</subject>
+<post author="S.%20Bram" timestamp="Aug 20, 2013 8:47 AM">
+<s>the individually linked stytlesheets workaround does not appear to be working for me. 
+(running on our own weinre server, if that matters.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4790510-6039172</DOCNO>
+<TEXT>
+<subject>Inspect element does not show css for current media query</subject>
+<post author="tmalmborg" timestamp="Jan 22, 2014 2:03 AM">
+<s>i have the same issue when debugging on iphone.</s><s> this used to work, but now i get no properties for any element. 
+i tried both having media query separated and together in master style.css 
+
+https://www.dropbox.com/s/er0iwj2nq4gj7gn/screenshot%202014-01-22%2011 .</s><s>00.37.png 
+</s><s>cheers teodor 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6001258-1376692</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect Never Connects to Mobile Device</subject>
+<post author="Talks35" timestamp="Jan 10, 2014 11:26 AM">
+<s>i have installed the chrome extension as well as the iphone app.</s><s> i am connected on the same wifi connection.</s><s> they would not connect automatically.</s><s> i attempted to manually input ip address and an error message appears stating connection unsuccessful, please try again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6001258-6018133</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect Never Connects to Mobile Device</subject>
+<post author="saumishr" timestamp="Jan 16, 2014 12:25 AM">
+<s>have you installed the edge inspect cc app on your machine.</s><s> also you need to be signed in with adobe id. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6001258-6019336</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect Never Connects to Mobile Device</subject>
+<post author="Talks35" timestamp="Jan 16, 2014 7:41 AM">
+<s>yes, i was signed in and had downloaded the program.</s><s> and before you ask, yes i was using chrome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6001258-6021878</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect Never Connects to Mobile Device</subject>
+<post author="saumishr" timestamp="Jan 16, 2014 8:09 PM">
+<s>do you see the edge inspect badge (square white icon with 'in' in the center) in the windows system tray?</s><s> what message does it display in the chrome extension window?</s><s> do you have a firewall running on your pc?</s><s> can you also check your firewall settings and make sure that the edge inspect application is allowed on port 7682?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6001258-6038075</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect Never Connects to Mobile Device</subject>
+<post author="DariaKempkaCC" timestamp="Jan 21, 2014 4:33 PM">
+<s>i'm having the same problem.</s><s> i cannot get my iphone5 to see my computer.</s><s> can you help? 
+</s><s>i'm on chrome v.</s><s> 32, mac 10.8.5, ios7.0, creative cloud says i have the latest version of edge inspect on my desktop.</s><s> the app store says i have the most current version of the edge inspect app on my iphone5.</s><s> i am signed in to the creative cloud.</s><s> i'm on the same wireless network.</s><s> my browser says 'waiting for connection." my phone says "error connecting, tap to retry." but it never connects. 
+</s><s>i've successfully connected my android device, my iphone4 and my iphone 5, and ipad 2 in the past. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-6001258-6039003</DOCNO>
+<TEXT>
+<subject>Adobe Edge Inspect Never Connects to Mobile Device</subject>
+<post author="saumishr" timestamp="Jan 22, 2014 12:09 AM">
+<s>please try connecting with ip address.</s><s> click the button in the upper right-hand corner of the device application and enter your pc's ip address there.</s><s> let us know if you are able to connect.</s><s> also, are you getting this issue specifically for iphone5 or none of the devices getting conencted?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-1353748</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Dec 8, 2013 2:16 PM">
+<s>the adobe edge inspect chrome extension doesn't work.</s><s> instead the extension continue to try to connect to the server.</s><s> i came across this post, hoping for a fix.</s><s> my inspect.js file doesn't contain the 'shadow' parameter 
+will a firefox extension be coming in the not to distant future ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5936936</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="Vishakha" timestamp="Dec 16, 2013 9:48 PM">
+<s>if you have the latest chrome extension, it has the fix.</s><s> i will need some more details before i can help you resove the issue.</s><s> is the port 7682 blocked by the firewall on your machine?</s><s> please follow these steps : 1.</s><s> shut down the desktop app.</s><s> 2. go to chrome://extensions and check developer mode.</s><s> 3. then under the inspect extension, click the "background.html" link next to inspect views.</s><s> 4. click on the console tab and start the edge inspect desktop app again.</s><s> 5. copy and paste whatever appears in the console window into your response here. 
+</s><s>thanks, vishakha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5944175</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Dec 19, 2013 4:39 AM">
+<s><quote>
+<s>uncaught syntaxerror: unexpected token u inspect.js:224 aslconnection.receiveerrorinspect.js:224 _wshandle.onerrorinspect.js:79 trying inspect.js:1209 uncaught syntaxerror: unexpected token u inspect.js:224 
+aslconnection.receiveerrorinspect.js:224 
+_wshandle.onerrorinspect.js:79 
+trying 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5952616</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="saumishr" timestamp="Dec 22, 2013 11:06 PM">
+<s>edge inspect chrome extension is not able to establish a connection to edge inspect cc app.</s><s> this may be due to edge inspect desktop app not running or not signed in with adobe id.</s><s> make sure you are using the latest chrome extension and also let us know the chrome browser version and os information. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5954494</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="jordanrichiii" timestamp="Dec 23, 2013 11:29 PM">
+<s>does edge inspect work on chrome 31?</s><s> following the guidelines here http://blogs.adobe.com/edgeinspect/ do not help.</s><s> please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5962972</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Dec 28, 2013 7:35 PM">
+<s>i have got the extension to work.</s><s> although it won't connect, all it prompts is "waiting for a connection". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5963148</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="jordanrichiii" timestamp="Dec 28, 2013 11:02 PM">
+<s>i got it working now too.</s><s> i was seeing the same message of "waiting for a connection" i goofed.</s><s> i realized that not only do you download the extension.</s><s> i also had to download the edge inspector itself here:on the adobe inspect page 
+finally once thats downloaded and installed you have to open it up and you will see an small indicator on the dash if you have a mac saying ln.</s><s> then you would be able to open up chrome and see that it connects. 
+</s><s>hope that helps out it sure helped me out! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5963132</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Dec 28, 2013 11:17 PM">
+<s>i have the "in" icon in the taskbar, and yet i still can't connect and i continue to recieve the "waiting for a connection" within the chrome edge extension. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5972513</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Jan 1, 2014 8:20 PM">
+<s>this is extremely frustrating.</s><s> the edge inspect cc extension for chrome installed successfully.</s><s> when i run the extension all i see in the extension window is; 
+<name> <ip> rolling donut - waiting for a connection 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5972798</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="saumishr" timestamp="Jan 1, 2014 11:58 PM">
+<s>have you installed the device apps?</s><s> are the devices and machine where inspect cc app and extension are installed, are on the same network? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5973186</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Jan 2, 2014 5:13 AM">
+<s>the device apps are installed, everything is where it should be and running.</s><s> the only thing that isn't connecting is the edge inspect cc extension for chrome which consistantely says; waiting for a connection. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5973326</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="saumishr" timestamp="Jan 2, 2014 6:23 AM">
+<s>okay.</s><s> i assume that you have logged in with aodbe id in desktop edge cc app.</s><s> also, try manually connecting the device to the desktop by clicking the + (plus) button in the upper right corner of the device client connections list.</s><s> enter the ip address that you see in chrome extension window.</s><s> let us kow the error message that you get on the device apps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5975931</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Jan 2, 2014 8:11 PM">
+<s><quote>
+<s>also, try manually connecting the device to the desktop by clicking the + (plus) button in the upper right corner of the device client connections list. 
+</s></quote>
+</s><s>where is the + (plus) button ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5975923</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="Vishakha" timestamp="Jan 2, 2014 9:47 PM">
+<s>the plus icon is in the top right corner of your device app, on clicking, it takes you to the manual connect screen where you can enter the ip address. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5975949</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Jan 2, 2014 10:36 PM">
+<s>do you think i'm using edge inspect on a tablet ?</s><s> i'm using it on a desktop pc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5976106</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="saumishr" timestamp="Jan 2, 2014 10:41 PM">
+<s>edgeinspect is used to preview & inspect web designs on devices and not on pcs.</s><s> please follow this document for setup/usage instructions: http://forums.adobe.com/docs/doc-2535 adobe® edge inspect installation guide 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5979319</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="StrongBeaver" timestamp="Jan 3, 2014 10:18 PM">
+<s>my mistake, sorry. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-5984108</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="saumishr" timestamp="Jan 6, 2014 4:09 AM">
+<s>glad that it helped.</s><s> let us know if you face any issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-6028759</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="Nishank%20singla" timestamp="Jan 19, 2014 8:05 AM">
+<s>google chrome extension shows waiting for connection......not showing my device(iphone) my port is not blocked.......i turned off my firewall..... my edge code cc is showing my device and asking for password...after entering the number my iphone gets connected to edge code cc but not showing webpage in my device instead it is showing forbidden.....</s><s> please help me out in so that my chrome extension show my device not just only waiting for connection and also i will be able to see my webpage in my device via edge inspect extension in edge code cc 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-6034654</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="saumishr" timestamp="Jan 21, 2014 12:34 AM">
+<s>hi nishank, all the devices and device manager running along with edge code should be on the same subnet.</s><s> if its not, url is forbidden error will be thrown. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5912105-6034982</DOCNO>
+<TEXT>
+<subject>Chrome Edge Inspect Extension never connects</subject>
+<post author="Nishank%20singla" timestamp="Jan 21, 2014 2:46 AM">
+<s>my all devices are using same wifi and also please tell someting about edge inspect chrome extension, extension is showing waiting for connection only 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-1291371</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="Sytou34fr" timestamp="Sep 7, 2013 11:50 AM">
+<s>hello i'm trying to test a local url like xxxxx.localhost or loclahost / xxxxxxx this does not work.</s><s> i read this post related to this topic: http://blogs.adobe.com/edgeinspect/2012/06/19/shadow-xip-io-virtual-ho sts-workflow-simplified/ but i do not know what to do.</s><s> thank you for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5667988</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 10, 2013 1:24 AM">
+<s>could you please be more specific about the issue which you are facing. 
+</s><s>is the chrome extension icon is gray?</s><s> if yes, that means that either the edge inspect desktop application isn't running or that the chrome extension is unable to contact it.</s><s> i'll have to ask some basic questions here: have you started the edge inspect desktop application?</s><s> do you see any error messages when you try to start the desktop application?</s><s> the edge inspect icon should appear in your system tray, do you see it there?</s><s> are you looged in with adobe id in edge inspect desktop app? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5673404</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="Sytou34fr" timestamp="Sep 11, 2013 1:20 PM">
+<s>have you started the edge inspect desktop application?</s><s> yes do you see any error messages when you try to start the desktop application?</s><s> no the edge inspect icon should appear in your system tray, do you see it there?</s><s> yes are you looged in with adobe id in edge inspect desktop app?</s><s> yes 
+</s><s>the connection between the pc and the tablet is done correctly.</s><s> when i browse with chrome on websites (google, paypal, yahoo), the contents of the chrome browser on the pc appears on the tablet without a problem.</s><s> the firewall on my pc is configured to pass the request from the tablet.</s><s> this is a problem specific to the use of localhost wamp server running on my pc ?</s><s> a bug?</s><s> thank you for your help.ps : i have atttached a screenshot (192.168.1.98 is the ip address of my pc.</s><s> the name of my pc is danemark). device_model = mpman mpdc99 bt ips device_res = 1024x720 orientation = landscape os_name = android os_version = 4.1.1 pixel_density = 160 dpi request_id = 1d4ce08b-20f5-4a21-81ea-d7e7dbcdf3c5 status = viewport url = http://192.168.1.98/midivin/index.php?main_page=index&manufacturers_id =45 
+
+
+</s><s>ce message a été modifié par: sytou34fr 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5674817</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 11, 2013 11:37 PM">
+<s>thanks for the information!</s><s> you need to reconfigure the server to allow connections from other machines.</s><s> for instance if you have a wamp server running locally you need to modify bin\apache\apache2.4.4\httpd.conf.</s><s> find this: allow from 127.0.0.1 and change them to read: allow from all .</s><s> by default httpd conf only allows connections from localhost.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5676954</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="Sytou34fr" timestamp="Sep 12, 2013 12:48 PM">
+<s>no change 
+file httpd.conf : 
+# # this is the main apache http server configuration file.</s><s> it contains the # configuration directives that give the server its instructions. # see <url:http://httpd.apache.org/docs/2.2> for detailed information. # in particular, see # <url:http://httpd.apache.org/docs/2.2/mod/directives.html> # for a discussion of each configuration directive. # # do not simply read the instructions in here without understanding # what they do.</s><s> they're here only as hints or reminders.</s><s> if you are unsure # consult the online docs.</s><s> you have been warned. # # configuration and logfile names: if the filenames you specify for many # of the server's control files begin with "/" (or "drive:/" for win32), the # server will use that explicit path.</s><s> if the filenames do *not* begin # with "/", the value of serverroot is prepended -- so "logs/foo.log" # with serverroot set to "c:/program files/apache software foundation/apache2.2" will be interpreted by the # server as "c:/program files/apache software foundation/apache2.2/logs/foo.log". # # note: where filenames are specified, you must use forward slashes # instead of backslashes (e.g., "c:/apache" instead of "c:\apache"). # if a drive letter is omitted, the drive on which apache.exe is located # will be used by default.</s><s> it is recommended that you always supply # an explicit drive letter in absolute paths to avoid confusion. 
+
+# # serverroot: the top of the directory tree under which the server's # configuration, error, and log files are kept. # # do not add a slash at the end of the directory path.</s><s> if you point # serverroot at a non-local disk, be sure to point the lockfile directive # at a local disk.</s><s> if you wish to share the same serverroot for multiple # httpd daemons, you will need to change at least lockfile and pidfile. # serverroot "c:/wamp/bin/apache/apache2.2.17" 
+
+# # listen: allows you to bind apache to specific ip addresses and/or # ports, instead of the default.</s><s> see also the <virtualhost> # directive. # # change this to listen on specific ip addresses as shown below to # prevent apache from glomming onto all bound ip addresses. # #listen 12.34.56.78:80 listen 80 
+
+# # dynamic shared object (dso) support # # to be able to use the functionality of a module which was built as a dso you # have to place corresponding 'loadmodule' lines at this location so the # directives contained in it are actually available _before_ they are used. # statically compiled modules (those listed by 'httpd -l') do not need # to be loaded here. # # example: # loadmodule foo_module modules/mod_foo.so # loadmodule actions_module modules/mod_actions.so loadmodule alias_module modules/mod_alias.so loadmodule asis_module modules/mod_asis.so loadmodule auth_basic_module modules/mod_auth_basic.so #loadmodule auth_digest_module modules/mod_auth_digest.so #loadmodule authn_alias_module modules/mod_authn_alias.so #loadmodule authn_anon_module modules/mod_authn_anon.so #loadmodule authn_dbd_module modules/mod_authn_dbd.so #loadmodule authn_dbm_module modules/mod_authn_dbm.so loadmodule authn_default_module modules/mod_authn_default.so loadmodule authn_file_module modules/mod_authn_file.so #loadmodule authnz_ldap_module modules/mod_authnz_ldap.so #loadmodule authz_dbm_module modules/mod_authz_dbm.so loadmodule authz_default_module modules/mod_authz_default.so loadmodule authz_groupfile_module modules/mod_authz_groupfile.so loadmodule authz_host_module modules/mod_authz_host.so #loadmodule authz_owner_module modules/mod_authz_owner.so loadmodule authz_user_module modules/mod_authz_user.so loadmodule autoindex_module modules/mod_autoindex.so #loadmodule cache_module modules/mod_cache.so #loadmodule cern_meta_module modules/mod_cern_meta.so loadmodule cgi_module modules/mod_cgi.so #loadmodule charset_lite_module modules/mod_charset_lite.so #loadmodule dav_module modules/mod_dav.so #loadmodule dav_fs_module modules/mod_dav_fs.so #loadmodule dav_lock_module modules/mod_dav_lock.so #loadmodule dbd_module modules/mod_dbd.so #loadmodule deflate_module modules/mod_deflate.so loadmodule dir_module modules/mod_dir.so #loadmodule disk_cache_module modules/mod_disk_cache.so #loadmodule dumpio_module modules/mod_dumpio.so loadmodule env_module modules/mod_env.so #loadmodule expires_module modules/mod_expires.so #loadmodule ext_filter_module modules/mod_ext_filter.so #loadmodule file_cache_module modules/mod_file_cache.so #loadmodule filter_module modules/mod_filter.so #loadmodule headers_module modules/mod_headers.so #loadmodule ident_module modules/mod_ident.so #loadmodule imagemap_module modules/mod_imagemap.so loadmodule include_module modules/mod_include.so #loadmodule info_module modules/mod_info.so loadmodule isapi_module modules/mod_isapi.so #loadmodule ldap_module modules/mod_ldap.so #loadmodule logio_module modules/mod_logio.so loadmodule log_config_module modules/mod_log_config.so #loadmodule log_forensic_module modules/mod_log_forensic.so #loadmodule mem_cache_module modules/mod_mem_cache.so loadmodule mime_module modules/mod_mime.so #loadmodule mime_magic_module modules/mod_mime_magic.so loadmodule negotiation_module modules/mod_negotiation.so #loadmodule proxy_module modules/mod_proxy.so #loadmodule proxy_ajp_module modules/mod_proxy_ajp.so #loadmodule proxy_balancer_module modules/mod_proxy_balancer.so #loadmodule proxy_connect_module modules/mod_proxy_connect.so #loadmodule proxy_ftp_module modules/mod_proxy_ftp.so #loadmodule proxy_http_module modules/mod_proxy_http.so loadmodule rewrite_module modules/mod_rewrite.so loadmodule setenvif_module modules/mod_setenvif.so #loadmodule speling_module modules/mod_speling.so #loadmodule ssl_module modules/mod_ssl.so #loadmodule status_module modules/mod_status.so #loadmodule substitute_module modules/mod_substitute.so #loadmodule unique_id_module modules/mod_unique_id.so #loadmodule userdir_module modules/mod_userdir.so #loadmodule usertrack_module modules/mod_usertrack.so #loadmodule version_module modules/mod_version.so loadmodule vhost_alias_module modules/mod_vhost_alias.so loadmodule php5_module "c:/wamp/bin/php/php5.3.5/php5apache2_2.dll" 
+
+<ifmodule !</s><s>mpm_netware_module> <ifmodule !</s><s>mpm_winnt_module> # # if you wish httpd to run as a different user or group, you must run # httpd as root initially and it will switch. # # user/group: the name (or #number) of the user/group to run httpd as. # it is usually good practice to create a dedicated user and group for # running httpd, as with most system services. # user daemon group daemon 
+
+</ifmodule> </ifmodule> 
+
+# 'main' server configuration # # the directives in this section set up the values used by the 'main' # server, which responds to any requests that aren't handled by a # <virtualhost> definition.</s><s> these values also provide defaults for # any <virtualhost> containers you may define later in the file. # # all of these directives may appear inside <virtualhost> containers, # in which case these default settings will be overridden for the # virtual host being defined. # 
+
+# # serveradmin: your address, where problems with the server should be # e-mailed.</s><s> this address appears on some server-generated pages, such # as error documents. e.g. admin@your-domain.com # serveradmin admin@localhost 
+
+# # servername gives the name and port that the server uses to identify itself. # this can often be determined automatically, but we recommend you specify # it explicitly to prevent problems during startup. # # if your host doesn't have a registered dns name, enter its ip address here. # servername localhost:80 
+
+# # documentroot: the directory out of which you will serve your # documents.</s><s> by default, all requests are taken from this directory, but # symbolic links and aliases may be used to point to other locations. # documentroot "c:/wamp/www/" 
+
+# # each directory to which apache has access can be configured with respect # to which services and features are allowed and/or disabled in that # directory (and its subdirectories). # # first, we configure the "default" to be a very restrictive set of # features. # <directory /> options followsymlinks allowoverride none order deny,allow deny from all </directory> 
+
+# # note that from this point forward you must specifically allow # particular features to be enabled - so if something's not working as # you might expect, make sure that you have specifically enabled it # below. # 
+
+# # this should be changed to whatever you set documentroot to. # <directory "c:/wamp/www/"> # # possible values for the options directive are "none", "all", # or any combination of: # indexes includes followsymlinks symlinksifownermatch execcgi multiviews # # note that "multiviews" must be named *explicitly* --- "options all" # doesn't give it to you. # # the options directive is both complicated and important.</s><s> please see # http://httpd.apache.org/docs/2.2/mod/core.html#options # for more information. # options indexes followsymlinks 
+
+# # allowoverride controls what directives may be placed in .htaccess files. # it can be "all", "none", or any combination of the keywords: # options fileinfo authconfig limit # allowoverride all 
+
+# # controls who can get stuff from this server. # 
+
+# onlineoffline tag - don't remove order deny,allow deny from all allow from all 
+
+</directory> 
+
+# # directoryindex: sets the file that apache will serve if a directory # is requested. # <ifmodule dir_module> directoryindex index.php index.php3 index.html index.htm </ifmodule> 
+
+# # the following lines prevent .htaccess and .htpasswd files from being # viewed by web clients. # <filesmatch "^\.ht"> order allow,deny deny from all satisfy all </filesmatch> 
+
+# # errorlog: the location of the error log file. # if you do not specify an errorlog directive within a <virtualhost> # container, error messages relating to that virtual host will be # logged here.</s><s> if you *do* define an error logfile for a <virtualhost> # container, that host's errors will be logged there and not here. # errorlog "c:/wamp/logs/apache_error.log" 
+
+# # loglevel: control the number of messages logged to the error_log. # possible values include: debug, info, notice, warn, error, crit, # alert, emerg. # loglevel warn 
+
+<ifmodule log_config_module> # # the following directives define some format nicknames for use with # a customlog directive (see below). # logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\"" combined logformat "%h %l %u %t \"%r\" %>s %b" common 
+
+<ifmodule logio_module> # you need to enable mod_logio.c to use %i and %o logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\" %i %o" combinedio </ifmodule> 
+
+# # the location and format of the access logfile (common logfile format). # if you do not define any access logfiles within a <virtualhost> # container, they will be logged here.</s><s> contrariwise, if you *do* # define per-<virtualhost> access logfiles, transactions will be # logged therein and *not* in this file. # customlog "c:/wamp/logs/access.log" common 
+
+# # if you prefer a logfile with access, agent, and referer information # (combined logfile format) you can use the following directive. # #customlog "logs/access.log" combined </ifmodule> 
+
+<ifmodule alias_module> # # redirect: allows you to tell clients about documents that used to # exist in your server's namespace, but do not anymore.</s><s> the client # will make a new request for the document at its new location. # example: # redirect permanent /foo http://localhost/bar 
+
+# # alias: maps web paths into filesystem paths and is used to # access content that does not live under the documentroot. # example: # alias /webpath /full/filesystem/path # # if you include a trailing / on /webpath then the server will # require it to be present in the url.</s><s> you will also likely # need to provide a <directory> section to allow access to # the filesystem path. 
+
+# # scriptalias: this controls which directories contain server scripts. # scriptaliases are essentially the same as aliases, except that # documents in the target directory are treated as applications and # run by the server when requested rather than as documents sent to the # client.</s><s> the same rules about trailing "/" apply to scriptalias # directives as to alias. # scriptalias /cgi-bin/ "cgi-bin/" 
+
+</ifmodule> 
+
+<ifmodule cgid_module> # # scriptsock: on threaded servers, designate the path to the unix # socket used to communicate with the cgi daemon of mod_cgid. # #scriptsock logs/cgisock </ifmodule> 
+
+# # "c:/program files/apache software foundation/apache2.2/cgi-bin" should be changed to whatever your scriptaliased # cgi directory exists, if you have that configured. # <directory "cgi-bin"> allowoverride none options none order allow,deny allow from all </directory> 
+
+# # defaulttype: the default mime type the server will use for a document # if it cannot otherwise determine one, such as from filename extensions. # if your server contains mostly text or html documents, "text/plain" is # a good value.</s><s> if most of your content is binary, such as applications # or images, you may want to use "application/octet-stream" instead to # keep browsers from trying to display binary files as though they are # text. # defaulttype text/plain 
+
+<ifmodule mime_module> # # typesconfig points to the file containing the list of mappings from # filename extension to mime-type. # typesconfig conf/mime.types 
+
+# # addtype allows you to add to or override the mime configuration # file specified in typesconfig for specific file types. # #addtype application/x-gzip .tgz # # addencoding allows you to have certain browsers uncompress # information on the fly.</s><s> note: not all browsers support this. # #addencoding x-compress .</s><s>z #addencoding x-gzip .gz .tgz # # if the addencoding directives above are commented-out, then you # probably should define those extensions to indicate media types: # addtype application/x-compress .</s><s>z addtype application/x-gzip .gz .tgz addtype application/x-httpd-php .php addtype application/x-httpd-php .php3 
+
+# # addhandler allows you to map certain file extensions to "handlers": # actions unrelated to filetype.</s><s> these can be either built into the server # or added with the action directive (see below) # # to use cgi scripts outside of scriptaliased directories: # (you will also need to add "execcgi" to the "options" directive.</s><s>) # #addhandler cgi-script .cgi 
+
+# for type maps (negotiated resources): #addhandler type-map var 
+
+# # filters allow you to process content before it is sent to the client. # # to parse .shtml files for server-side includes (ssi): # (you will also need to add "includes" to the "options" directive.</s><s>) # #addtype text/html .shtml #addoutputfilter includes .shtml </ifmodule> 
+
+# # the mod_mime_magic module allows the server to use various hints from the # contents of the file itself to determine its type.</s><s> the mimemagicfile # directive tells the module where the hint definitions are located. # #mimemagicfile conf/magic 
+
+# # customizable error responses come in three flavors: # 1) plain text 2) local redirects 3) external redirects # # some examples: #errordocument 500 "the server made a boo boo." #errordocument 404 /missing.html #errordocument 404 "/cgi-bin/missing_handler.pl" #errordocument 402 http://localhost/subscription_info.html # 
+
+# # enablemmap and enablesendfile: on systems that support it, # memory-mapping or the sendfile syscall is used to deliver # files.</s><s> this usually improves server performance, but must # be turned off when serving from networked-mounted # filesystems or if support for these functions is otherwise # broken on your system. # #enablemmap off #enablesendfile off 
+
+# supplemental configuration # # the configuration files in the conf/extra/ directory can be # included to add extra features or to modify the default configuration of # the server, or you may simply copy their contents here and change as # necessary. 
+
+# server-pool management (mpm specific) #include conf/extra/httpd-mpm.conf 
+
+# multi-language error messages #include conf/extra/httpd-multilang-errordoc.conf 
+
+# fancy directory listings #include conf/extra/httpd-autoindex.conf 
+
+# language settings #include conf/extra/httpd-languages.conf 
+
+# user home directories #include conf/extra/httpd-userdir.conf 
+
+# real-time info on requests and configuration #include conf/extra/httpd-info.conf 
+
+# virtual hosts (ste) #include conf/extra/httpd-vhosts.conf 
+
+# local access to the apache http server manual #include conf/extra/httpd-manual.conf 
+
+# distributed authoring and versioning (webdav) #include conf/extra/httpd-dav.conf 
+
+# various default settings #include conf/extra/httpd-default.conf 
+
+# secure (ssl/tls) connections #include conf/extra/httpd-ssl.conf # # note: the following must must be present to support # starting without ssl on platforms with no /dev/random equivalent # but a statically compiled-in mod_ssl. # <ifmodule ssl_module> sslrandomseed startup builtin sslrandomseed connect builtin </ifmodule> 
+
+</s><s>namevirtualhost 127.0.0.1 <virtualhost 127.0.0.1> servername localhost documentroot "c:\wamp\www" </virtualhost> 
+
+
+
+</s><s>include "c:/wamp/alias/*" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5678297</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 12, 2013 11:06 PM">
+<s>okay.</s><s> looks like your documentroot is 'c:/wamp/www' .</s><s> try this: go to <directory "c:/wamp/www/"> tag.</s><s> comment out this line: deny from all let me know if it helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5678514</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="Sytou34fr" timestamp="Sep 13, 2013 3:05 AM">
+<s>no change 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5684755</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 16, 2013 12:14 AM">
+<s>please access the url with your ip address and not with localhost.</s><s> also check that you are able to browse that url from other machines in your network. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5685173</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 16, 2013 4:47 AM">
+<s>with reference to my previous reply, i assume that your document root is 'c:\wamp\www' where you have kept all the files.</s><s> as suggested: 
+1.</s><s> find <directory "c:/wamp/www"> in httpd.conf (note your path may be different depending on your localhost path.</s><s>) 
+</s><s>a few lines below this you will see these lines: order deny,allow deny from all allow from 127.0.0.1 
+</s><s>change deny from all to allow from all and comment out (#) the allow from 127.0.0.1 line. 
+2.</s><s> access all the urls with your machine ip and not the localhost. 
+</s><s>let us know if this helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5685254</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 16, 2013 5:01 AM">
+<s>make sure you restart the wampserver and put it back online in case you have to make change in httpd.conf.</s><s> also if you are getting 403 forbidden error, please follow this wampserver thread http://forum.wampserver.com/read.php?2,46857 which suggests to change 'listen 80' to listen 0.0.0.0:80 in httpd.conf. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5707183</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="Sytou34fr" timestamp="Sep 23, 2013 1:15 PM">
+<s>no change.</s><s> changes in the file are in bold and italics. 
+# # this is the main apache http server configuration file.</s><s> it contains the # configuration directives that give the server its instructions. # see <url:http://httpd.apache.org/docs/2.2> for detailed information. # in particular, see # <url:http://httpd.apache.org/docs/2.2/mod/directives.html> # for a discussion of each configuration directive. # # do not simply read the instructions in here without understanding # what they do.</s><s> they're here only as hints or reminders.</s><s> if you are unsure # consult the online docs.</s><s> you have been warned. # # configuration and logfile names: if the filenames you specify for many # of the server's control files begin with "/" (or "drive:/" for win32), the # server will use that explicit path.</s><s> if the filenames do *not* begin # with "/", the value of serverroot is prepended -- so "logs/foo.log" # with serverroot set to "c:/program files/apache software foundation/apache2.2" will be interpreted by the # server as "c:/program files/apache software foundation/apache2.2/logs/foo.log". # # note: where filenames are specified, you must use forward slashes # instead of backslashes (e.g., "c:/apache" instead of "c:\apache"). # if a drive letter is omitted, the drive on which apache.exe is located # will be used by default.</s><s> it is recommended that you always supply # an explicit drive letter in absolute paths to avoid confusion. 
+
+# # serverroot: the top of the directory tree under which the server's # configuration, error, and log files are kept. # # do not add a slash at the end of the directory path.</s><s> if you point # serverroot at a non-local disk, be sure to point the lockfile directive # at a local disk.</s><s> if you wish to share the same serverroot for multiple # httpd daemons, you will need to change at least lockfile and pidfile. # serverroot "c:/wamp/bin/apache/apache2.2.17" 
+
+# # listen: allows you to bind apache to specific ip addresses and/or # ports, instead of the default.</s><s> see also the <virtualhost> # directive. # # change this to listen on specific ip addresses as shown below to # prevent apache from glomming onto all bound ip addresses. # #listen 12.34.56.78:80 #listen 80 listen 0.0.0.0:80 
+
+# # dynamic shared object (dso) support # # to be able to use the functionality of a module which was built as a dso you # have to place corresponding 'loadmodule' lines at this location so the # directives contained in it are actually available _before_ they are used. # statically compiled modules (those listed by 'httpd -l') do not need # to be loaded here. # # example: # loadmodule foo_module modules/mod_foo.so # loadmodule actions_module modules/mod_actions.so loadmodule alias_module modules/mod_alias.so loadmodule asis_module modules/mod_asis.so loadmodule auth_basic_module modules/mod_auth_basic.so #loadmodule auth_digest_module modules/mod_auth_digest.so #loadmodule authn_alias_module modules/mod_authn_alias.so #loadmodule authn_anon_module modules/mod_authn_anon.so #loadmodule authn_dbd_module modules/mod_authn_dbd.so #loadmodule authn_dbm_module modules/mod_authn_dbm.so loadmodule authn_default_module modules/mod_authn_default.so loadmodule authn_file_module modules/mod_authn_file.so #loadmodule authnz_ldap_module modules/mod_authnz_ldap.so #loadmodule authz_dbm_module modules/mod_authz_dbm.so loadmodule authz_default_module modules/mod_authz_default.so loadmodule authz_groupfile_module modules/mod_authz_groupfile.so loadmodule authz_host_module modules/mod_authz_host.so #loadmodule authz_owner_module modules/mod_authz_owner.so loadmodule authz_user_module modules/mod_authz_user.so loadmodule autoindex_module modules/mod_autoindex.so #loadmodule cache_module modules/mod_cache.so #loadmodule cern_meta_module modules/mod_cern_meta.so loadmodule cgi_module modules/mod_cgi.so #loadmodule charset_lite_module modules/mod_charset_lite.so #loadmodule dav_module modules/mod_dav.so #loadmodule dav_fs_module modules/mod_dav_fs.so #loadmodule dav_lock_module modules/mod_dav_lock.so #loadmodule dbd_module modules/mod_dbd.so #loadmodule deflate_module modules/mod_deflate.so loadmodule dir_module modules/mod_dir.so #loadmodule disk_cache_module modules/mod_disk_cache.so #loadmodule dumpio_module modules/mod_dumpio.so loadmodule env_module modules/mod_env.so #loadmodule expires_module modules/mod_expires.so #loadmodule ext_filter_module modules/mod_ext_filter.so #loadmodule file_cache_module modules/mod_file_cache.so #loadmodule filter_module modules/mod_filter.so #loadmodule headers_module modules/mod_headers.so #loadmodule ident_module modules/mod_ident.so #loadmodule imagemap_module modules/mod_imagemap.so loadmodule include_module modules/mod_include.so #loadmodule info_module modules/mod_info.so loadmodule isapi_module modules/mod_isapi.so #loadmodule ldap_module modules/mod_ldap.so #loadmodule logio_module modules/mod_logio.so loadmodule log_config_module modules/mod_log_config.so #loadmodule log_forensic_module modules/mod_log_forensic.so #loadmodule mem_cache_module modules/mod_mem_cache.so loadmodule mime_module modules/mod_mime.so #loadmodule mime_magic_module modules/mod_mime_magic.so loadmodule negotiation_module modules/mod_negotiation.so #loadmodule proxy_module modules/mod_proxy.so #loadmodule proxy_ajp_module modules/mod_proxy_ajp.so #loadmodule proxy_balancer_module modules/mod_proxy_balancer.so #loadmodule proxy_connect_module modules/mod_proxy_connect.so #loadmodule proxy_ftp_module modules/mod_proxy_ftp.so #loadmodule proxy_http_module modules/mod_proxy_http.so loadmodule rewrite_module modules/mod_rewrite.so loadmodule setenvif_module modules/mod_setenvif.so #loadmodule speling_module modules/mod_speling.so #loadmodule ssl_module modules/mod_ssl.so #loadmodule status_module modules/mod_status.so #loadmodule substitute_module modules/mod_substitute.so #loadmodule unique_id_module modules/mod_unique_id.so #loadmodule userdir_module modules/mod_userdir.so #loadmodule usertrack_module modules/mod_usertrack.so #loadmodule version_module modules/mod_version.so loadmodule vhost_alias_module modules/mod_vhost_alias.so loadmodule php5_module "c:/wamp/bin/php/php5.3.5/php5apache2_2.dll" 
+
+<ifmodule !</s><s>mpm_netware_module> <ifmodule !</s><s>mpm_winnt_module> # # if you wish httpd to run as a different user or group, you must run # httpd as root initially and it will switch. # # user/group: the name (or #number) of the user/group to run httpd as. # it is usually good practice to create a dedicated user and group for # running httpd, as with most system services. # user daemon group daemon 
+
+</ifmodule> </ifmodule> 
+
+# 'main' server configuration # # the directives in this section set up the values used by the 'main' # server, which responds to any requests that aren't handled by a # <virtualhost> definition.</s><s> these values also provide defaults for # any <virtualhost> containers you may define later in the file. # # all of these directives may appear inside <virtualhost> containers, # in which case these default settings will be overridden for the # virtual host being defined. # 
+
+# # serveradmin: your address, where problems with the server should be # e-mailed.</s><s> this address appears on some server-generated pages, such # as error documents. e.g. admin@your-domain.com # serveradmin admin@localhost 
+
+# # servername gives the name and port that the server uses to identify itself. # this can often be determined automatically, but we recommend you specify # it explicitly to prevent problems during startup. # # if your host doesn't have a registered dns name, enter its ip address here. # servername localhost:80 
+
+# # documentroot: the directory out of which you will serve your # documents.</s><s> by default, all requests are taken from this directory, but # symbolic links and aliases may be used to point to other locations. # documentroot "c:/wamp/www/" 
+
+# # each directory to which apache has access can be configured with respect # to which services and features are allowed and/or disabled in that # directory (and its subdirectories). # # first, we configure the "default" to be a very restrictive set of # features. # <directory /> options followsymlinks allowoverride none order deny,allow deny from all </directory> 
+
+# # note that from this point forward you must specifically allow # particular features to be enabled - so if something's not working as # you might expect, make sure that you have specifically enabled it # below. # 
+
+# # this should be changed to whatever you set documentroot to. # <directory "c:/wamp/www/"> # # possible values for the options directive are "none", "all", # or any combination of: # indexes includes followsymlinks symlinksifownermatch execcgi multiviews # # note that "multiviews" must be named *explicitly* --- "options all" # doesn't give it to you. # # the options directive is both complicated and important.</s><s> please see # http://httpd.apache.org/docs/2.2/mod/core.html#options # for more information. # options indexes followsymlinks 
+
+# # allowoverride controls what directives may be placed in .htaccess files. # it can be "all", "none", or any combination of the keywords: # options fileinfo authconfig limit # allowoverride all 
+
+# # controls who can get stuff from this server. # 
+
+# onlineoffline tag - don't remove order deny,allow # deny from all allow from all 
+
+</directory> 
+
+# # directoryindex: sets the file that apache will serve if a directory # is requested. # <ifmodule dir_module> directoryindex index.php index.php3 index.html index.htm </ifmodule> 
+
+# # the following lines prevent .htaccess and .htpasswd files from being # viewed by web clients. # <filesmatch "^\.ht"> order allow,deny deny from all satisfy all </filesmatch> 
+
+# # errorlog: the location of the error log file. # if you do not specify an errorlog directive within a <virtualhost> # container, error messages relating to that virtual host will be # logged here.</s><s> if you *do* define an error logfile for a <virtualhost> # container, that host's errors will be logged there and not here. # errorlog "c:/wamp/logs/apache_error.log" 
+
+# # loglevel: control the number of messages logged to the error_log. # possible values include: debug, info, notice, warn, error, crit, # alert, emerg. # loglevel debug 
+
+<ifmodule log_config_module> # # the following directives define some format nicknames for use with # a customlog directive (see below). # logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\"" combined logformat "%h %l %u %t \"%r\" %>s %b" common 
+
+<ifmodule logio_module> # you need to enable mod_logio.c to use %i and %o logformat "%h %l %u %t \"%r\" %>s %b \"%{referer}i\" \"%{user-agent}i\" %i %o" combinedio </ifmodule> 
+
+# # the location and format of the access logfile (common logfile format). # if you do not define any access logfiles within a <virtualhost> # container, they will be logged here.</s><s> contrariwise, if you *do* # define per-<virtualhost> access logfiles, transactions will be # logged therein and *not* in this file. # customlog "c:/wamp/logs/access.log" common 
+
+# # if you prefer a logfile with access, agent, and referer information # (combined logfile format) you can use the following directive. # #customlog "logs/access.log" combined </ifmodule> 
+
+<ifmodule alias_module> # # redirect: allows you to tell clients about documents that used to # exist in your server's namespace, but do not anymore.</s><s> the client # will make a new request for the document at its new location. # example: # redirect permanent /foo http://localhost/bar 
+
+# # alias: maps web paths into filesystem paths and is used to # access content that does not live under the documentroot. # example: # alias /webpath /full/filesystem/path # # if you include a trailing / on /webpath then the server will # require it to be present in the url.</s><s> you will also likely # need to provide a <directory> section to allow access to # the filesystem path. 
+
+# # scriptalias: this controls which directories contain server scripts. # scriptaliases are essentially the same as aliases, except that # documents in the target directory are treated as applications and # run by the server when requested rather than as documents sent to the # client.</s><s> the same rules about trailing "/" apply to scriptalias # directives as to alias. # scriptalias /cgi-bin/ "cgi-bin/" 
+
+</ifmodule> 
+
+<ifmodule cgid_module> # # scriptsock: on threaded servers, designate the path to the unix # socket used to communicate with the cgi daemon of mod_cgid. # #scriptsock logs/cgisock </ifmodule> 
+
+# # "c:/program files/apache software foundation/apache2.2/cgi-bin" should be changed to whatever your scriptaliased # cgi directory exists, if you have that configured. # <directory "cgi-bin"> allowoverride none options none order allow,deny allow from all </directory> 
+
+# # defaulttype: the default mime type the server will use for a document # if it cannot otherwise determine one, such as from filename extensions. # if your server contains mostly text or html documents, "text/plain" is # a good value.</s><s> if most of your content is binary, such as applications # or images, you may want to use "application/octet-stream" instead to # keep browsers from trying to display binary files as though they are # text. # defaulttype text/plain 
+
+<ifmodule mime_module> # # typesconfig points to the file containing the list of mappings from # filename extension to mime-type. # typesconfig conf/mime.types 
+
+# # addtype allows you to add to or override the mime configuration # file specified in typesconfig for specific file types. # #addtype application/x-gzip .tgz # # addencoding allows you to have certain browsers uncompress # information on the fly.</s><s> note: not all browsers support this. # #addencoding x-compress .</s><s>z #addencoding x-gzip .gz .tgz # # if the addencoding directives above are commented-out, then you # probably should define those extensions to indicate media types: # addtype application/x-compress .</s><s>z addtype application/x-gzip .gz .tgz addtype application/x-httpd-php .php addtype application/x-httpd-php .php3 
+
+# # addhandler allows you to map certain file extensions to "handlers": # actions unrelated to filetype.</s><s> these can be either built into the server # or added with the action directive (see below) # # to use cgi scripts outside of scriptaliased directories: # (you will also need to add "execcgi" to the "options" directive.</s><s>) # #addhandler cgi-script .cgi 
+
+# for type maps (negotiated resources): #addhandler type-map var 
+
+# # filters allow you to process content before it is sent to the client. # # to parse .shtml files for server-side includes (ssi): # (you will also need to add "includes" to the "options" directive.</s><s>) # #addtype text/html .shtml #addoutputfilter includes .shtml </ifmodule> 
+
+# # the mod_mime_magic module allows the server to use various hints from the # contents of the file itself to determine its type.</s><s> the mimemagicfile # directive tells the module where the hint definitions are located. # #mimemagicfile conf/magic 
+
+# # customizable error responses come in three flavors: # 1) plain text 2) local redirects 3) external redirects # # some examples: #errordocument 500 "the server made a boo boo." #errordocument 404 /missing.html #errordocument 404 "/cgi-bin/missing_handler.pl" #errordocument 402 http://localhost/subscription_info.html # 
+
+# # enablemmap and enablesendfile: on systems that support it, # memory-mapping or the sendfile syscall is used to deliver # files.</s><s> this usually improves server performance, but must # be turned off when serving from networked-mounted # filesystems or if support for these functions is otherwise # broken on your system. # #enablemmap off #enablesendfile off 
+
+# supplemental configuration # # the configuration files in the conf/extra/ directory can be # included to add extra features or to modify the default configuration of # the server, or you may simply copy their contents here and change as # necessary. 
+
+# server-pool management (mpm specific) #include conf/extra/httpd-mpm.conf 
+
+# multi-language error messages #include conf/extra/httpd-multilang-errordoc.conf 
+
+# fancy directory listings #include conf/extra/httpd-autoindex.conf 
+
+# language settings #include conf/extra/httpd-languages.conf 
+
+# user home directories #include conf/extra/httpd-userdir.conf 
+
+# real-time info on requests and configuration #include conf/extra/httpd-info.conf 
+
+# virtual hosts (ste) #include conf/extra/httpd-vhosts.conf 
+
+# local access to the apache http server manual #include conf/extra/httpd-manual.conf 
+
+# distributed authoring and versioning (webdav) #include conf/extra/httpd-dav.conf 
+
+# various default settings #include conf/extra/httpd-default.conf 
+
+# secure (ssl/tls) connections #include conf/extra/httpd-ssl.conf # # note: the following must must be present to support # starting without ssl on platforms with no /dev/random equivalent # but a statically compiled-in mod_ssl. # <ifmodule ssl_module> sslrandomseed startup builtin sslrandomseed connect builtin </ifmodule> 
+
+#namevirtualhost 127.0.0.1 #<virtualhost 127.0.0.1> # servername localhost # documentroot "c:\wamp\www" #</virtualhost> 
+
+</s><s>namevirtualhost 192.168.1.98 <virtualhost 192.168.1.98> servername 192.168.1.98 documentroot "c:\wamp\www" </virtualhost> 
+
+</s><s>include "c:/wamp/alias/*" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5661638-5708860</DOCNO>
+<TEXT>
+<subject>Virtual Host (localhost) + Wamp 2.1</subject>
+<post author="saumishr" timestamp="Sep 24, 2013 3:57 AM">
+<s>since you are able to access other sites, it should not be an issue with edge inspect. httpd.conf looks okay provided you place all your files inside document root ( c:/wamp/www ).</s><s> please note, edge inspect will not be able to access a page if that url is not browsable on devices.</s><s> you can also check out with wamp forums.http://forum.wampserver.com/list.php?2 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-1079814</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="adriandhart" timestamp="Oct 10, 2012 4:36 AM">
+<s>whe i try to connect to my iphone 3g with edge inspect, the inpsect app on the iphone shows the mirror of the browser on my desktop machine, but when i click on the < > button, the inspector window launches, but instead of the link to the device being shown i get devices: none and the title in the top of the windaw says weinre: target not connected.   i have waited for for the spinning icon at the top of the app on the iphone to stop spinning, but the inpsector window still does not connect.     some info: remote device: iphone 3g local device: mac os x 10.7.5 local browser: chrome version 22.0.1229.92 i have also tried connecting to an ipad 2 and it all works brilliantly.</s><s> edge inspect is a great tool, but i am frustrated that the connection to my iphone is not working.</s><s> it was the same when it was shadow
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4764112</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Oct 10, 2012 10:27 AM">
+<s>is your iphone on the same wireless network as your ipad? 
+</s><s>from the native browser on your iphone can you try browsing to http://debug.edgeinspect.adobe.com/ and tell me what you see? 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4765785</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="adriandhart" timestamp="Oct 11, 2012 12:14 AM">
+<s>mark, thanks for getting back to me.</s><s> in answer to your questions... 
+</s><s>is your iphone on the same wireless network as your ipad? - yes it is. 
+</s><s>from the native browser on your iphone can you try browsing to http://debug.edgeinspect.adobe.com/ and tell me what you see? - 
+
+
+</s><s>hope this helps. 
+</s><s>thanks, adrian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4767027</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Oct 11, 2012 10:12 AM">
+<s>it's helpful, but not tremendously so we're a little stumped right now.</s><s> our best guess is that the 3g is slow enough that it's surpassing the weinre timeout.</s><s> can you try the same test with the simplest page imagineable: http://www.brainjar.com/java/host/test.html ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4774334</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="adriandhart" timestamp="Oct 15, 2012 1:50 AM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4774939</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Matt%20M%20Johnson" timestamp="Oct 15, 2012 7:44 AM">
+<s>adrian, sorry, we weren't very clear on the last test.</s><s> can you browse to that simple page in edge inspect and try to click the remote inspection button for the 3g and see if it still does not work for that page? 
+</s><s>thanks, matt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4774986</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="adriandhart" timestamp="Oct 15, 2012 8:07 AM">
+<s>lol i did wonder if that's what you meant 
+i tried the above url in inspect and exactly the same thing happened as before...</s><s> the page was there in the inspect window on my iphone (as per screenshot above) in the inspector window under devices it said 'none'.</s><s> the title of the inspector window read 'weinre: target not connected' 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4793627</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="luftwav" timestamp="Oct 23, 2012 4:26 AM">
+<s>hi 
+</s><s>i'm also encountering the same issue as adrian.</s><s> i did what matt proposed and also got the same result (devices: none).</s><s> i'm running mac osx lion with the latest chrome, remote inspecting to a iphone 4s with ios5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4794978</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Oct 23, 2012 12:48 PM">
+<s>hi adrian, 
+</s><s>we're not sure what's going on.</s><s> our weinre server works for most people but doesn't seem to work for you.</s><s> the best suggestion i can come up with at this point is that you should try running your own weinre server from your machine.</s><s> the setup isn't too difficult, we have instructions here: http://forums.adobe.com/docs/doc-2623 and can help if you run into issues. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4794979</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Oct 23, 2012 12:51 PM">
+<s>hi luftwav, 
+can you turn off any firewall software on your machine to see if that makes a difference? 
+</s><s>from the native browser on your iphone can you try browsing to http://debug.edgeinspect.adobe.com/ and tell me what you see? 
+</s><s>thanks, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4795792</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="luftwav" timestamp="Oct 23, 2012 7:00 PM">
+<s>hi mark 
+</s><s>thanks for the suggestions.</s><s> i have resolved the problem partially, but here are some inputs/feedback that may help your team. 
+>> can you turn off any firewall software on your machine to see if that makes a difference?</s><s> i don't have any firewall installed on my mac (nor i think there was any turned on by default). 
+>> from the native browser on your iphone can you try browsing to http://debug.edgeinspect.adobe.com/ and tell me what you see?</s><s> yes i can see the adobe edge inspect logo.</s><s> however, when i tried to used edge inspect and point to the url, the web page does not load on the edge inspector iphone app 
+partial resolve i have successfully use edge inspect using own home/personal network. 
+i encountered the issues when i was using edge inspect on my office network.</s><s> i'm able to show all other pages on my edge inspector mobile app but not inspect the codes as highlighted by adrian above.</s><s> i'm still figuring out if it is a time-out issue from adobe's server due or some network firewall issue or a internet bandwidth issue.</s><s> and yes, another solution would be to install our own weinre server. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4961637</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="TheJJJ" timestamp="Jan 2, 2013 3:33 AM">
+<s>same problem here: (solved!</s><s>) 
+</s><s>wrt-router 192.168.1.1 
+</s><s>win7:192.168.1.183 (wlan), no firewall development + webserver (xampp) + edge inspect , coolnovo chromium browser with edge inspect add-on.</s><s> (has a connectify hotspot tool, which is disabled for this.</s><s>) 
+</s><s>lg android: 192.168.1.160 edge inspect app shows website from 192.168.1.183 
+</s><s>edge inpsect connection can be established and shows the sites syncronised with the desktop browser. 
+http://debug.edgeinspect.adobe.com/ can be accessed with both devices (logo and brown striped background). 
+</s><s>trying to inspect the device results in a new window: weinre: target not connected. / no devices 
+restarted everything several times, reconnected mobile to wlan again, .... 
+</s><s>oops.</s><s> now it works!</s><s> probably this 'solution' helps anyone: reconnect your devices to the wlan again and probably wait a little. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4967570</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="adriandhart" timestamp="Jan 4, 2013 6:03 AM">
+<s>i have lost count of the number of times i have reconected, restarted and sworn at my iphone. 
+</s><s>still doesn't work here - unsolved! 
+i think it is a timeout issue because the iphone 3g (and older models) do not have the power to run this app effieciently. 
+i have given up trying until somebody comes up with a good solution. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4967751</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="TheJJJ" timestamp="Jan 4, 2013 7:16 AM">
+<s>additional note: because edge inspect does not show the site as the default android browser, chrome, opera and mozilla do, i often switch between these apps. edge inspect seems to hold the wlan connection when it's in the foreground, but with the normal browsers, the phone switches to standby. after that the edge connection is lost and sometimes really hard to reconnect. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-4974680</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Jan 7, 2013 11:39 AM">
+<s>adriandhart, sorry to hear this still isn't working for you.</s><s> the only other possible suggestion i have for you is to set up weinre locally and try making use of that local server.</s><s> though that's still no guaranteed to solve your issue since we don't know the exact cause of it. 
+</s><s>instructions for setting up a local weinre instance are here: http://forums.adobe.com/docs/doc-2623 
+</s><s>hope this helps, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5306718</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Jules%20Moretti" timestamp="May 9, 2013 12:56 PM">
+<s>ok so i am also having the same problem and i tried setting up the weinre locally and that did not work.</s><s> tried it on a local router that has very little restrictions did not work. 
+</s><s>tried having my computer connected to the internet via ethernet meanwhile sharing the internet through wifi directly to my iphone, still no target. 
+</s><s>tried vpning to california just in case, still did not work. 
+</s><s>we need a solution to this otherwise its just going to fill us with frustrations.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5306990</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 9, 2013 2:25 PM">
+<s>hi jules, sorry to hear you're having an issue too.</s><s> the problem with trying to figure this out is that the problem is almost certainly some configuration on your machine or network and that's extremely difficult to solve remotely. 
+</s><s>here are some suggestions for other things to try, let me know what happens for each as it may give me some clue what's wrong.</s><s> if you see something you think is wrong, please be as descriptive and complete as possible... screenshots can definitely be helpful.</s><s> in chrome, go to http://debug.edgeinspect.adobe.com/ and tell me what you see there does it make a difference if you test a different page?</s><s> give http://google.com a try and see if you get a different-looking weinre window.</s><s> are you testing content from localhost?</s><s> if so, try taking edge inspect out of the loop and see if that changes anything...</s><s> put this script tag into your web page: <script src="http://debug.edgeinspect.adobe.com/target/target-script-min.js#moretti"></script> reload the page in chrome.</s><s> in a new browser tab/window go to http://debug.edgeinspect.adobe.com/client/#moretti does that get you a working weinre window?</s><s> if so, load the page in the native browser on your device (you'll need to use your computer's ip address instead of localhost) and on your computer refresh the /client#moretti window does that work?</s><s> (note: you can use any identifier after the hash as long as it's the same in both your script tag and the url you input) 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5306994</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 9, 2013 2:27 PM">
+<s>oh, also... what version of chrome are you running?</s><s> there's a known issue with weinre and chrome 28. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5313249</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="JedR" timestamp="May 12, 2013 5:14 AM">
+<s>hi 
+</s><s>i'm getting the same problem.</s><s> edge inspect follows along with the pages i visit, but when i attempt remote debug i get the "weinre: target not connected" message at the top of the debug tools window.</s><s> i'm running chrome 28, so i suspect the issue is related to the weinre chrome 28 bug.</s><s> here's a screenshot of how the weinre console is erroring: 
+
+
+</s><s>please fix your weinre server asap for chrome 28 guys!</s><s> everyone is auto-updating onto chrome 28 so edge inspect is basically globally broken right now. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5315178</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="lukyanov" timestamp="May 13, 2013 3:16 AM">
+<s>hi   same problem here, when i try remote debug apears weinre window with "target not connected" title i have windows7 64 + ipod touch4 with ios 6.1.3 (latest).</s><s> i turned off firewall software but get same.   also, hope it will hepls i go 2 http://debug.edgeinspect.adobe.com/ and from pc: all fine i get page with lines and logo and from device: only brown background and little title at bottom "powered by weinre learn more about edge inspect"   oh and my chrome version 26.0.1410.64 m   hope for ur help.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5315220</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="JedR" timestamp="May 13, 2013 3:25 AM">
+<s>@lukyanov it doesn't sound like you're problem is exactly the same.</s><s> with the chrome 28 weinre bug edge inspect still connects and works on the device (able to following along with browsing on the desktop) its just the remote dev tools weinre connection that doesn't work.</s><s> sounds like your issue is more fundamental if edge inspect isn't connecting at all on your device. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5315272</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="lukyanov" timestamp="May 13, 2013 4:33 AM">
+<s>oh i meant post in thread) 
+i can connect with inspect to my device but only function that i have its watching them synchronized 
+hope this will helps) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5316765</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 13, 2013 12:19 PM">
+<s>fyi, we are working on updating our version of weinre now.</s><s> we hope to have a version that works with chrome 28 posted in the next couple of hours. 
+lukyanov, i'll try to help you out after we get weinre updated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5316819</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="lukyanov" timestamp="May 13, 2013 12:37 PM">
+<s>ty dude i rly want this stuff) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5317200</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 13, 2013 2:50 PM">
+<s>for everyone using chrome 27 or above - we've integrated the weinre fixes and pushed those changes live to our server.</s><s> let us know if you see any problems. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5317208</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="JedR" timestamp="May 13, 2013 2:59 PM">
+<s>that's fixed it for me on chrome 28.</s><s> thanks so much for the swift response, great work! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5317252</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 13, 2013 3:20 PM">
+<s>hi lukyanov, 
+ok, now that we've got the major problem taken care of i'll try to help you out. 
+</s><s>so, it sounds like your desktop and your device can both reach our weinre server... that's good.</s><s> and since you can sync browse you've got your device connected correctly too.</s><s> can you take a screenshot of the weinre window and post it here? 
+</s><s>thanks, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5318031</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="lukyanov" timestamp="May 13, 2013 10:32 PM">
+<s>even 2) at first img boot process and second with error 
+
+hope it helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5319689</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 14, 2013 10:40 AM">
+<s>thanks.</s><s> i'm not sure what's going on there. 
+a couple more questions: can you try browsing in chrome to a public site like http://www.google.com and see if your device can remote inspect that page?</s><s> if not, check for any firewall software, and try turning that off temporarily.</s><s> does that makes any difference with a public site?</s><s> if you're testing a local page that you can edit, try taking edge inspect out of the loop and see if that changes anything...</s><s> put this script tag into your web page: <script src="http://debug.edgeinspect.adobe.com/target/target-script-min.js#lukyano v"></script> reload the page in chrome.</s><s> in a new browser tab/window go to http://debug.edgeinspect.adobe.com/client/#lukyanov does that get you a working weinre window?</s><s> if so, load the page in the native browser on your device (you'll need to use your computer's ip address instead of localhost) and on your computer refresh the /client#moretti window 
+if none of that works for you, i have one more possible workaround for you, but try those things first and tell me what happened with each. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5320031</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="lukyanov" timestamp="May 14, 2013 12:48 PM">
+<s>oh i did it all before i posted here) will tell u more now 
+1)its didnt worked for me, also i tryed wisit "simple html page" that u wrote here. still same 2)i even tryed delete it and open ports 8080 and 7682 in my router settings.</s><s> no result 3)did it and even put this script in one site which i was developt in past and nothing change 
+also i run weinre+node js+putting custom weinre server in inspect options and this didnt work 
+so i'm in despair) what is ur last plan? 
+p.s. ill try tomorrow test inspect with my device on my co-worker macbook in office network mb it will clear wheres problem 
+lukyanov 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5320238</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="May 14, 2013 1:20 PM">
+<s>my last suggestion was running your own weinre server, which you say you've done.</s><s> we know of no reason why this shouldn't work... there must be some machine or network configuration that's preventing the communication. 
+</s><s>so, i want to be clear, you did step #3 above and it still didn't work for you?</s><s> can you describe exactly what you did and exactly what happened?</s><s> there is absolutely no reason that should fail.</s><s> our weinre server is running on http on port 80 and you can reach the server from both your computer and your phone.</s><s> that basically should not fail unless you've got some very strange configuration.</s><s> please describe in detail what you did and provide screenshots of what you're seeing. 
+</s><s>also, try doing the local weinre server test again, but use your machine ip address instead of "localhost" in the custom weinre server setting in the chrome extension. 
+</s><s>definitely try remote inspection out on other machines and other networks if you can. 
+</s><s>do you have a home network you can try?</s><s> are you absolutely sure your computer and phone are on the same network when you're doing these tests? 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5444767</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Rafael%20Rinaldi" timestamp="Jun 24, 2013 12:37 PM">
+<s>i'm unable to run edge inspect from iphone 3gs as well. 
+</s><s>i've installed the desktop app, the chrome extension and the iphone app.</s><s> when i run the iphone app, it shows my computer on the list but when i click on it, it remains loading forever and nothing happens.</s><s> i've tried to manually set the ip address as well but without success. 
+</s><s>from my case scenario and the replies on this thread i would say that adobe edge inspect doesn't work on the iphone 3gs. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5444957</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Jun 24, 2013 1:17 PM">
+<s>hi rafael, 
+</s><s>this thread is about people having problems with their connected devices being unable to connect to weinre for remote inspection.</s><s> it sounds like you're having problems with getting a basic connection going... something entirely different.</s><s> we don't know of any issues with getting a 3gs connected to your computer with edge inspect.</s><s> that said, connection problems can generally be solved by following these steps: 
+make sure your computer and your devices are connected to the same network.</s><s> make sure your computer is not on vpn since that will block other external connections.</s><s> temporarily turn off any firewall software on your computer.</s><s> (once you get connected you can re-enable the firewall and then add an exception for edge inspect) make sure that port 7682 is not being used by anything on your computer and that your network doesn't block communications across that port.</s><s> generally this isn't a problem on a home network, but can be a problem in corporate network environments.</s><s> if you're on a corporate network, also make sure that your computer and your device are on the same subnetwork or that communication on port 7682 is allowed across subnets... talk to your it department about that.</s><s> enter the ip address of your computer in the manual connection screen.</s><s> enter only the ip address without any protocol.</s><s> click the connect button and let me know if you see any error messages in that screen. 
+</s><s>try that and let me know if you're able to get a connection. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5445095</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Rafael%20Rinaldi" timestamp="Jun 24, 2013 1:45 PM">
+<s>yeah, i've just replied on this post because is the only one mentioning issues with iphone 3gs and i didn't wanted to create a new one...</s><s> you think that creating a new thread for my case would be better? 
+</s><s>anyway, i did every step you've mentioned: 
+1.</s><s> they are.</s><s> 2. it's not a vpn.</s><s> 3. we don't have any firewalls here.</s><s> 4. ports being used: 80 (http), 88 (kerberos), 548 (afpovertcp), 7682, 8000 (irdmi).</s><s> this was shown while the desktop app and the iphone app were open at the same time.</s><s> if i turn off the iphone app, port 7682 doesn't show up on the list.</s><s> 5. already did that.</s><s> it remains "conecting..." forever. 
+</s><s>thanks for your help!</s><s> this is very frustrating. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5445372</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Jun 24, 2013 2:42 PM">
+<s>no, let's leave it in this thread. 
+i understand your frustration.</s><s> we should be able to get this connecting, though it may take a few more rounds here, so please be patient 
+#3.</s><s> it's very likely that whatever computer you're using has some firewall software running by default.</s><s> what type of computer do you have and what os version is it running? 
+#4.</s><s> are you on a home network or a work network? 
+#5.</s><s> do you see any other messages in the manual connection screen on your iphone? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5445503</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Rafael%20Rinaldi" timestamp="Jun 24, 2013 3:24 PM">
+<s>i'll be patient 
+so, let's go: 
+.</s><s>3 i'm running osx 10.8.4 on a mac mini. .</s><s>4 i'm at work, but we're a very small studio so we don't have any fancy firewall or network settings going on. .</s><s>5 i don't see any message, it just remains connecting forever and nothing happens.</s><s> same thing for automatic and manual configuration. 
+</s><s>here are the screen shots: 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5445648</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Jun 24, 2013 3:33 PM">
+<s>#3. go to system preferences > security & privacy > firewall and make sure the firewall is off on your mac. 
+</s><s>do you have a home network or alternate network (e.g. coffee shop) you could try this on to see if you get different results there?</s><s> i know that's not a final solution, but it can help narrow down where the problem is. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5446113</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Rafael%20Rinaldi" timestamp="Jun 24, 2013 6:59 PM">
+<s>just tried it from home and – sadly – same thing is happening.</s><s> this time i checked the firewalls and they were turned off already as you said. 
+i have no idea what the issue is i appreciate your effort though 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5446114</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Rafael%20Rinaldi" timestamp="Jun 24, 2013 7:07 PM">
+<s>fyi i've just tested with an iphone 4gs and it worked fine.</s><s> the problem really seems to be exclusively of the iphone 3gs. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4763154-5448637</DOCNO>
+<TEXT>
+<subject>Inspector not working... weinre: target not connected</subject>
+<post author="Mark_Rausch" timestamp="Jun 25, 2013 11:15 AM">
+<s>hi rafael, 
+</s><s>we're in the process of trying to get hold of an iphone 3gs to try this for ourselves.</s><s> we'll update you when we have more information.</s><s> thanks for your patience 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4944426-1120511</DOCNO>
+<TEXT>
+<subject>Installation Directory must be on a local hard drive</subject>
+<post author="philstapple philstapple" timestamp="Dec 25, 2012 9:29 AM">
+<s>when installing the app, pop up "installation directory must be on a local hard drive" i don't know how to fix the problem 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-4944426-4959285</DOCNO>
+<TEXT>
+<subject>Installation Directory must be on a local hard drive</subject>
+<post author="AllDayDev" timestamp="Feb 14, 2013 11:19 AM">
+<s>sorry to hear you ran into this error.</s><s> i have not seen this with edge inspect before, but a quick search shows that this error seems to occur in rare cases for many msi-based installers. 
+</s><s>here are a couple of the suggested solutions that seem to be successful: 
+- clear your %temp% folder, then run the installer again.</s><s> in case you're not familiar with doing so, see solution 2 in this article for instructions: http://helpx.adobe.com/x-productkb/global/troubleshoot-unexpected-beha vior-user-account-2.html 
+- force the installer to run with administrator privileges.</s><s> to do so: locate the edge inspect msi installer file that you downloaded.</s><s> while holding down the shift key on the keyboard, right-click on the edge inspect msi, then choose copy as path.</s><s> go to start > all programs > accessories.</s><s> right-click on command prompt and choose run as administrator.</s><s> this should open a command prompt window, labeled "administrator:".</s><s> in the command prompt window, type msiexec /i (you need to enter a single space after "/i").</s><s> right-click in the command prompt window, then choose paste.</s><s> this should paste the path to the msi file that you copied in step 2 above.</s><s> press enter to run the command. 
+
+</s><s>let us know whether or not these help, or if you have any questions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-1308519</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="ArnoldD" timestamp="Oct 2, 2013 7:19 PM">
+<s>i came across this thread (how to solve the sec-websocket-protocol error in chrome 30.0.1599.66 m) and applying the same edit to the inspect.js file for the edge inspect chrome extension solved the websocket error immediately, the issue most of us have been experiencing with the latest chrome version: 30.0.1599.66. we couldn't revert back to chrome 29 (latest known version working with edge inspect) because we couldn't find it, but in any case chrome will auto-update to version 30. 
+</s><s>my system info: osx 10.7.5, chrome extension adobe edge inspect cc 1.0.424.1, adobe edge inspect cc 1.0.407, chrome 30.0.1599.66 
+</s><s>disclaimer: this steps will modify the adobe chrome extension as installed from the chrome web store.</s><s> i will not be held responsible for any other issues this may cause.</s><s> i'm just reporting a fix that immediately worked for me.</s><s> i'm assuming you can always remove the extension from chrome and reinstall from the store. 
+</s><s>step 1: disable edge inspect chrome extension browse to chrome://extensions and uncheck/disable adobe edge inspect cc 1.0.424.1 
+</s><s>step 2: browse to the inspect.js file in finder, cmd-shift-g or from the menu bar go > go to folder...</s><s> copy/paste ~/library/application support/google/chrome/default/extensions/ijoeapleklopieoejahbpdnhkjjgddem/1.0.424.1_0/js/ 
+</s><s>step 3: edit inspect.js file select inspect.js and edit it any text editor (textedit, textwrangler, or even edge code cc) on line 61 look for the following code: this._wshandle = new websocket(this._protocol + "://" + this._host + ":" + this._port + "/", "shadow"); edit the line to remove , "shadow" (note the comma and space is also to be removed).</s><s> so you're resulting code should be: this._wshandle = new websocket(this._protocol + "://" + this._host + ":" + this._port + "/"); save changes 
+step 4: enable edge inspect chrome extension browse to chrome://extensions and check/enable adobe edge inspect cc 1.0.424.1 the icon in your toolbar should change immediately from grayed out to full color brown and everything should function as usual 
+again, i'm not sure if this is the ultimate fix, but at least edge inspect works again until the chrome extension is fixed or chrome changes the way websockets are handled. 
+</s><s>hope this helps!</s><s>!</s><s> 
+-arnold 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5733243</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="saumishr" timestamp="Oct 3, 2013 4:31 AM">
+<s>thanks arnold for the workaround.</s><s> we are aware of this issue and working actively to resolve it.</s><s> will keep you posted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5734049</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="DariaKempkaCC" timestamp="Oct 3, 2013 10:02 AM">
+<s>worked perfectly for me.</s><s> thanks for this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5734792</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="bbc.underthebridge" timestamp="Oct 3, 2013 3:13 PM">
+<s>worked for me as well.</s><s> many thanks for the fix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5734900</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="BradleyJ" timestamp="Oct 4, 2013 8:38 AM">
+<s>thank bejesus.</s><s> that worked.</s><s> good instructions.</s><s> i have zero js experience but figured it out.</s><s> my finder couldn't find the folder however so i had to manually go and look for it in my library folder fyi. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5735553</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="RaulJimenez" timestamp="Oct 4, 2013 1:22 AM">
+<s>just in case that anyone is working with windows 7, you should change the location to this one: 
+c:\users\<your_user_name>\appdata\local\google\chrome\user data\default\extensions\ijoeapleklopieoejahbpdnhkjjgddem\1.0.424.1_0\ js 
+confirmed that it works also on windows 7. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5735865</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="RohithRavindranath" timestamp="Oct 4, 2013 4:38 AM">
+<s>fantastic!</s><s> that worked.</s><s> for those of you who are on mac and can't find the folder directly - look in your ~/library/application support/google/chrome/<profile>/extensions/ijoeapleklopieoejahbpdnhkjjgddem/1.0.424.1_0/js/ essentially check each profile folders and find that directory and modify as arnold stated.</s><s> cheers.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5740735</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="_protonate" timestamp="Oct 6, 2013 9:35 PM">
+<s>worked for me, a great sunday night save.</s><s> thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5740940</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="P.%20Schmidt" timestamp="Oct 7, 2013 1:13 AM">
+<s>same problem was on my windows 7 64bit. 
+i found "inspect.js" in my profile-directory in appdata (is hidden folder) -- > appdata\local\google\chrome\user data\default\extensions\ijoeapleklopieoejahbpdnhkjjgddem\1.0.424.1_0\ js 
+thank you it was very very helpful!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5741272</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Dominik%20Guzei" timestamp="Oct 7, 2013 5:04 AM">
+<s>thanks, you saved my day! :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5741896</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="relishmarketingatlanta" timestamp="Oct 7, 2013 9:01 AM">
+<s>a solution that actually works?</s><s>!</s><s>?</s><s>!</s><s> how about that!</s><s> thanks so much you have saved the day! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5749771</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="alaskatroll" timestamp="Oct 9, 2013 11:49 PM">
+<s>thank you so much kind sir. 
+</s><s>i'm kind of upset and puzzled that adobe isn't on top of this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5750826</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="the_new_mr" timestamp="Oct 10, 2013 9:17 AM">
+<s>thanks!</s><s> worked a charm. 
+//edit to get edge inspect working with the chrome that brackets starts up via live preview, i performed the same edit in inspect.js found in the following location on my windows machine.</s><s> hope this helps someone else. 
+</s><s>c:\users\<username>\appdata\roaming\brackets\live-dev-profile\default\ extensions\ijoeapleklopieoejahbpdnhkjjgddem\1.0.424.1_0\js 
+//edit2 i also had to add the edge inspect extension for this chrome by the way (seems to be a separate configuration) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5752120</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Zedmus" timestamp="Oct 10, 2013 7:24 PM">
+<s>they have since updated the extention to version 1.0.424.2.</s><s> it appears they have put this fix in it, but it still does not work:( 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5754919</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Vishakha" timestamp="Oct 12, 2013 6:31 AM">
+<s>the chrome extension is updated with the fix.</s><s> do you still see an "unexpected token" error, with the new version? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5754985</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Zedmus" timestamp="Oct 12, 2013 7:21 AM">
+<s>i'm not getting a token error in the console log, but the extention still is grayed out and does not respond. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5755100</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Vishakha" timestamp="Oct 12, 2013 8:54 AM">
+<s>i'm assuming the edge inspect app is running and you are signed in with your adobe id?</s><s> can you click on the toggle switch for synchronous browsing, on the upper right corner of extension popup?</s><s> whats the message that you see on the chrome extension popup?</s><s> can you paste a screenshot here or send it to me at vvaidya@adobe.com. 
+~vish 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5761533</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Zedmus" timestamp="Oct 15, 2013 8:26 AM">
+<s>i uninstalled and re-installed the extension.</s><s> that worked, not sure why since i had updated it earlier (after the fix). 
+</s><s>thank you for your help and quick reponse. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5764302</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="patitdude" timestamp="Oct 16, 2013 8:55 AM">
+<s>i tried to uninistall and re-install (1.0.424.2) without any success.</s><s> i changed the javascript per the instruction, and instead of getting an error in console.log within chrome, i get no error but it doesn't communicate with my samsung galaxy s3.</s><s> i even unistall the chrome extension and the free version on my phone. 
+</s><s>any help would be appreciated. 
+
+environment: windows 8, google chrome n 30.0.1599.101 m, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5766098</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Vishakha" timestamp="Oct 16, 2013 8:59 PM">
+<s>do you see a "waiting for connection" in the extension popup?</s><s> or is the extension greyed out? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5767468</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="patitdude" timestamp="Oct 17, 2013 9:03 AM">
+<s>the extension is not greyed out out, but waiting for connection. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5769569</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="Vishakha" timestamp="Oct 17, 2013 10:46 PM">
+<s>please try the following - 1> ensure edge inspect app is running and listensing to port 7682, using netstat command.</s><s> 2> ensure device and desktop can talk to each other across port 7682, you might have to disable/modify firewall settings 3> use the ip shown in extension popup to connect from device.   let me know how it goes.   ~ vish
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5732612-5920755</DOCNO>
+<TEXT>
+<subject>WORKAROUND/POSSIBLE SOLUTION: Chrome 30 for Mac and Edge Inspect CC sec-WebSocket-Protocol error</subject>
+<post author="patitdude" timestamp="Dec 11, 2013 7:38 AM">
+<s>i did get it to work on chrome 32.0.1700.41 (beta). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-1224965</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Handycam" timestamp="Jun 3, 2013 1:26 PM">
+<s>i have installed edge inspect on my mac, the chrome extension, and on my ipad 3. 
+</s><s>all 3 on the same wifi. 
+i can successfully view pages that are available on the open internet opened in my desktop chrome in inspect on the ipad. 
+</s><s>however, any page i open with the file:// protocol or via the mamp pro server on my mac will not show in inspect on the ipad. 
+</s><s>since i develop my websites locally (mostly using mamp pro) and this is the exact use case i would need inspect for, am i missing something here or can you only view pages on the internet? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376071</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Mark_Rausch" timestamp="Jun 3, 2013 1:42 PM">
+<s>hi handycam, 
+</s><s>first, the client applications can't use file:// urls, make sure to only use the http protocol to access the files you want to preview in edge inspect. 
+</s><s>second, yes, you absolutely can use localhost urls served by mamp, wamp, xammp, mac web sharing and the like.</s><s> i'm not sure exactly what's going wrong for you, but here's a few things to look into: make sure to (at least temporarily) turn off any software firewalls you have running to eliminate that as a problem.</s><s> try accessing the local page with a http://localhost url.</s><s> if that doesn't show in edge inspect click the button in the upper right corner of the edge inspect application on your ipad and choose "open in browser".</s><s> what url do you see in safari and is your page displayed correctly there?</s><s> try accessing the local page via http://<your_ip_address> and answer the questions from #2 look into the apache error and access logs in mamp and see if you see any messages relating to those recent failed accesses.</s><s> sometimes you need to modify the apache httpd configuration file so that outside computers can access your page. 
+</s><s>let me know how that goes and we'll take it from there, mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376151</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Handycam" timestamp="Jun 3, 2013 1:47 PM">
+<s>i can't access it from mamp with a simple "localhost" since this is mamp pro and i have several virtual hosts set up.</s><s> for example, to access this site it's "http://testsite2" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376154</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Mark_Rausch" timestamp="Jun 3, 2013 1:51 PM">
+<s>*ding* that's the problem. 
+i assume you modified your hosts file to set up the virtual host name, right?</s><s> the edge inspect devices don't know about those settings and hence can't figure out where to go to.</s><s> we have a couple of blog posts on using edge inspect with virtual hosts here: http://blogs.adobe.com/edgeinspect/tag/virtual-hosts/ 
+i think the xip.io solution is a bit simpler.</s><s> try using that and let me know if you can/can't get it working. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376529</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Handycam" timestamp="Jun 3, 2013 4:03 PM">
+<s>i found this helpful article: http://codeboxers.com/accessing-mamp-sites-from-local-devices-phones-t ablets/ 
+then i need to open http://testsite2.192.168.0.0.xip.io in my desktop browser for the page to show up on the ipad with inspect 
+it works, although wordpress sites do not work.</s><s> the site loads, but none of the css or images do.</s><s> i expect because wp-options table in the database is set to http://testsite2 for the site root. 
+i suppose i can develop wordpress in coda 2 and then proof the site on ipad with diet coda. 
+</s><s>it would be much better to have an easier method in the future to do this. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376546</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Mark_Rausch" timestamp="Jun 3, 2013 4:12 PM">
+<s>http://blogs.adobe.com/edgeinspect/2013/05/01/edge-inspect-wordpress-w orkflow/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376533</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Handycam" timestamp="Jun 3, 2013 4:31 PM">
+<s>that's a handy plugin, will save me a lot of time.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376538</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Handycam" timestamp="Jun 3, 2013 4:46 PM">
+<s>the inspector does not work, though: i get a window "weinre" and nothing else 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376632</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Mark_Rausch" timestamp="Jun 3, 2013 4:49 PM">
+<s>what's not working?</s><s> that's the first page and it looks correct to me. 
+</s><s>have you tried clicking on the elements tab?</s><s> what does it contain? 
+</s><s>what about the console tab?</s><s> do you see any of your console.log() messages in there? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376647</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Handycam" timestamp="Jun 3, 2013 4:53 PM">
+<s>doh!</s><s> 
+</s><s>i didn't even click on elements since i thought i was supposed to do something on that main screen.</s><s> it was a bit unclear.</s><s> it works. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Inspect/Discussions-5376059-5376635</DOCNO>
+<TEXT>
+<subject>Can't use Edge Inspect with local files or MAMP Pro</subject>
+<post author="Mark_Rausch" timestamp="Jun 3, 2013 4:58 PM">
+<s>hahaha, no problem.</s><s> thanks for letting us know there isn't a problem there 
+fyi, we know that screen is a bit unclear and we've talked about ways to make it clearer than it is.</s><s> believe it or not it used to be even more confusing before we did some cleanup on it, and would like to do some more. 
+</s><s>mark 
+</s></post>
+</TEXT>
+</DOC>
+
+

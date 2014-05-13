@@ -1,0 +1,660 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-486301</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="gauravnasit" timestamp="Sep 2, 2009 8:35 AM">
+<s>hi,   i am using blazedds remote objects in my application and following is the error i am getting.   faultcode:server.processing.duplicatesessiondetected faultstring:'detected duplicate http - based flexsessions, generally due to the remote host disabling session cookies.</s><s> session coolkies must be enable to manage the client connection correctly.' faultdetail: 'null'   along with this error i also get the following error most times. faultcode:server.processing faultstring:'there was an unhandler failure on the server.</s><s> the flexsession is invalid.' faultcode:'null'   my environment for the application is as follows:   server - websephere v6.1 browser - ie 6, mozilla 3.x.</s><s> i have tried on both the browsers and it occurs in both of them.</s><s> flex - flex sdk - 3.2 java - java 5.0   my application is as follows: i have configured blazedds on the server side to access remote objects to get data onto the client which is written in flex/actionscript.   when i run the application it seems to run fine.</s><s> but at times the above error occurs.</s><s> i am unable to reproduce this error at will.</s><s> i am not sure about the reason that this error seems to occur.   i have attached the config files for my application.</s><s> the limit being 3 files the one remaining services-config.xml is as below:   <?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <services-config>       <services>         <service-include file-path="remoting-config.xml" />         <service-include file-path="proxy-config.xml" />         <service-include file-path="messaging-config.xml" />            </services>       <security>         <login-command class="flex.messaging.security.webspherelogincommand" server="websphere"/>     </security>       <channels>           <channel-definition id="my-amf" class="mx.messaging.channels.amfchannel">             <endpoint url="http://{server.name}:{server.port}/{context.root}/messagebroker/amf" class="flex.messaging.endpoints.amfendpoint"/>             <properties>                 <polling-enabled>false</polling-enabled>             </properties>         </channel-definition>           <channel-definition id="my-secure-amf" class="mx.messaging.channels.secureamfchannel">             <endpoint url="https://{server.name}:{server.port}/{context.root}/messagebroker/amfsecure" class="flex.messaging.endpoints.secureamfendpoint"/>             <properties>                    <!--https requests on some browsers do not work when pragma "no-cache" are set-->                 <add-no-cache-headers>false</add-no-cache-headers>             </properties>         </channel-definition>           <channel-definition id="my-polling-amf" class="mx.messaging.channels.amfchannel">             <endpoint url="http://{server.name}:{server.port}/{context.root}/messagebroker/amfpolling" class="flex.messaging.endpoints.amfendpoint"/>             <properties>                 <polling-enabled>true</polling-enabled>                 <polling-interval-seconds>4</polling-interval-seconds>             </properties>         </channel-definition>     </channels>       <logging>         <target class="flex.messaging.log.consoletarget" level="error">             <properties>                 <prefix>[blazeds] </prefix>                 <includedate>false</includedate>                 <includetime>false</includetime>                 <includelevel>false</includelevel>                 <includecategory>false</includecategory>             </properties>             <filters>                 <pattern>endpoint.*</pattern>                 <pattern>service.*</pattern>                 <pattern>configuration</pattern>             </filters>         </target>     </logging>       <system>         <redeploy>             <enabled>false</enabled>         </redeploy>     </system>   </services-config>   it has been quite some time that i have been unable to resolve the issue.</s><s> any help in resolving the issue is appreciated.   thanks a bunch..</s><s>!</s><s>!   please let me know if you need to know anything else regarding the issue.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2221026</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="gauravnasit" timestamp="Sep 2, 2009 8:51 AM">
+<s>also, 
+</s><s>for the above case i am using session beans which have the methods that are being exposed as remote services. 
+</s><s>the one file that was remaining to be attached, namely, the services-config.xml is been attached here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2558359</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Ron%20Pasch" timestamp="Feb 1, 2010 2:06 AM">
+<s>have you ever found the problem that was causing this?</s><s> we're running into the same problems and have a pretty similar set up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2613154</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="TomEuchre" timestamp="Feb 23, 2010 11:05 AM">
+<s>this problem only appears for us too under websphere 6.2.</s><s> under tomcat there is no issue.</s><s> there must be more people using blazeds on websphere, right?</s><s> anyone got an idea? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2613300</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="gauravnasit" timestamp="Feb 23, 2010 11:48 AM">
+<s>no resolution yet for the mentioned problem..:( 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2651481</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="javanatic23%40yahoo.com" timestamp="Mar 11, 2010 6:31 AM">
+<s>we have the same issue... using tomcat proxied by apache.</s><s> any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2659947</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 15, 2010 2:04 AM">
+<s>hi, 
+</s><s>same problem here with flex and coldfusion 9. 
+</s><s>it's very anoying, i looked for a sollution with no luck 
+aubry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2660197</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Alex%20Glosband" timestamp="Mar 15, 2010 4:58 AM">
+<s>hi.</s><s> 
+</s><s>the client needs to be able to maintain session with the server for blazeds to work properly.</s><s> when a blazeds application connects to the server over an endpoint, a flexclient is created on the server and associated with the jee session.</s><s> the id of the flexclient is returned to the flex application as the dsid header on the response message and then the flex application will pass this dsid header with every request. 
+</s><s>there are some situations where a single application could have more than one flexclient.</s><s> for example, if your application uses two different endpoints to communicate with the server at the same time there would be a different flexclient for each endpoint.</s><s> also, if you loaded two blazeds applications into a parent application as sub-apps, each blazeds sub-app would have its own flexclient. 
+</s><s>the duplicate session detected errors come from the flexclient id on the request already being associated with a different jee session on the server.</s><s> a flexclient can only be associated with a single session.</s><s> blazeds checks that the flexclient id on the request and the jee session for the request (this will be represented by either a jsessionid session cookie header or jsessionid url parameter) are what it expects.</s><s> if the flexclient id is already associated with another session we throw an error. 
+</s><s>in most cases these errors stem from two initial ping requests getting made to the server at roughly the same time.</s><s> this could be the application connecting up to the server over two endpoints or two sub-apps in a parent application connecting to the server at the same time.</s><s> if the client doesn't have a session with the server when these requests go out, a jee session will be created for each request.</s><s> also a flexclient will get created for each request and associated with its respective jee session.</s><s> the problem happens when the responses get sent back to the client.</s><s> each response will have a different session cookie header.</s><s> the last response will win and its session cookie header will get stored by the browser.</s><s> now, when additional requests get made to the server, the jee session will only be correct for one of the endpoints or sub apps.</s><s> the other one will cause duplicate session detected errors. 
+</s><s>the solution for this in most cases is to make sure that you already have a session with the server before connecting up over two endpoints at the same time.</s><s> there are a number of ways you can implement this in your application which i won't go into in detail here. 
+</s><s>it sounds like people are getting these errors for a number of reasons.</s><s> hopefully understanding how the duplicate session detection works will help you debug your issues. 
+</s><s>for anyone who is interested, i have also blogged about this topic in detail here. 
+http://www.alexglosband.com/?p=3 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2660397</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 15, 2010 7:23 AM">
+<s>hi, 
+</s><s>thanks alex !</s><s> 
+</s><s>"the solution for this in most cases is to make sure that you already have a session with the server before connecting up over two endpoints at the same time.</s><s> there are a number of ways you can implement this in your application which i won't go into in detail here." 
+i am using coldfusion 9 and in my application.cfm i've put : 
+</s><s>"<cfapplication name="app name" sessionmanagement="yes" sessiontimeout="#createtimespan(0, 0, 30, 0)#"> 
+</s><s>this doesn't fx my issue.</s><s> i have only one cfm page (with html inside) that holds my application swf (flex app) and of course many cfc's (in a separate folder, but same server) like this : 
+--my server --------my app -----------------application.cfm -----------------index.cfm -----------------myapp.swf --------cfc folder -----------------application.cfm -----------------folder 1 ---------------------------mycfc1.cfc ---------------------------mycfc2.cfc -----------------folder 2 --------------------------- ... --------------------------- ... --------------------------- ... -----------------folder 3 --------------------------- ... --------------------------- ... 
+
+i don't know what to do ... sometimes i recieve this error more than 100 times a day... 
+</s><s>regards, 
+</s><s>aubry 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2660481</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Alex%20Glosband" timestamp="Mar 15, 2010 7:42 AM">
+<s>how easy is it for you to reproduce the error? 
+</s><s>i'd like to know what is the situation that is causing you to get these errors.</s><s> it doesn't sound like you have the problem i discussed with two ping requests reaching the server at roughly the same time. 
+</s><s>if you can reproduce the problem relatively easily/consistently, i would try to use a tool like charles to capture the traffic between the client and the server.</s><s> if you can get a capture log where you encounter this error, i can take a look at it for you and let you know if i think it's a bug/problem in blazeds. 
+</s><s>if it's not that easy to reproduce consistently, i would turn on server side logging in blazeds, get the problem to happen and then send me your log file to look at.</s><s> you'll want to turn on debug level logging with a filter pattern of "*". 
+</s><s>here are instructions for setting up server side logging in blazeds. 
+http://livedocs.adobe.com/blazeds/1/blazeds_devguide/help.html?content =services_logging_3.html 
+you can just reply back to this thread and attach your capture log, server side log file or both and i will take a look at them for you.</s><s> thanks.</s><s> 
+-alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2662686</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 16, 2010 2:17 AM">
+<s>hi alex, 
+</s><s>here are 2 messages i logged : 
+
+[blazeds]unhandled error when processing a message: flex.messaging.localizedexception: the flexsession is invalid.
+  incomingmessage: flex message (flex.messaging.messages.remotingmessage) 
+    operation = send
+    clientid = null
+    destination = coldfusion
+    messageid = fb94ef44-690d-dbe3-f267-660fa1384663
+    timestamp = 0
+    timetolive = 0
+    body = null
+    hdr(dsid) = 302c30de-6b1b-c98f-7afc-f6a91976a6c2
+    hdr(dsendpoint) = my-cfamf
+  errorreply: flex message (flex.messaging.messages.errormessage) 
+    clientid = null
+    correlationid = fb94ef44-690d-dbe3-f267-660fa1384663
+    destination = coldfusion
+    messageid = 302c77cb-281c-2661-8a77-36779e4fd20d
+    timestamp = 1268727660968
+    timetolive = 0
+    body = null
+    code =  server.processing
+    message =  there was an unhandled failure on the server.</s><s> the flexsession is invalid.
+    details =  null
+    rootcause =  null
+    body =  null
+    extendeddata =  null
+  exception: flex.messaging.localizedexception: the flexsession is invalid.
+     at flex.messaging.flexsession.checkvalid(flexsession.java:916)
+     at flex.messaging.flexsession.addsessiondestroyedlistener(flexsession.java:382)
+     at flex.messaging.client.flexclient.registerflexsession(flexclient.java:1084)
+     at flex.messaging.endpoints.abstractendpoint.setupflexclient(abstractendpoint.java:939)
+     at flex.messaging.endpoints.basehttpendpoint.setupflexclient(basehttpendpoint.java:374)
+     at flex.messaging.endpoints.abstractendpoint.setupflexclient(abstractendpoint.java:910)
+     at flex.messaging.endpoints.amf.messagebrokerfilter.invoke(messagebrokerfilter.java:92)
+     at flex.messaging.endpoints.amf.legacyfilter.invoke(legacyfilter.java:158)
+     at flex.messaging.endpoints.amf.sessionfilter.invoke(sessionfilter.java:44)
+     at flex.messaging.endpoints.amf.batchprocessfilter.invoke(batchprocessfilter.java:67)
+     at flex.messaging.endpoints.amf.serializationfilter.invoke(serializationfilter.java:146)
+     at flex.messaging.endpoints.basehttpendpoint.service(basehttpendpoint.java:278)
+     at coldfusion.flash.messaging.cfamfendpoint.service(cfamfendpoint.java:200)
+     at flex.messaging.messagebrokerservlet.service(messagebrokerservlet.java:322)
+     at coldfusion.flex.coldfusionmessagebrokerservlet.service(coldfusionmessagebrokerservlet.java:51)
+     at javax.servlet.http.httpservlet.service(httpservlet.java:853)
+     at coldfusion.bootstrap.bootstrapservlet.service(bootstrapservlet.java:89)
+     at jrun.servlet.filterchain.dofilter(filterchain.java:86)
+     at com.intergral.fusionreactor.filter.fusionreactorfilter.b(fusionreactorfilter.java:376)
+     at com.intergral.fusionreactor.filter.fusionreactorfilter.c(fusionreactorfilter.java:254)
+     at com.intergral.fusionreactor.filter.fusionreactorfilter.dofilter(fusionreactorfilter.java:164)
+     at jrun.servlet.filterchain.dofilter(filterchain.java:94)
+     at coldfusion.filter.flashrequestcontrolfilter.dofilter(flashrequestcontrolfilter.java:71)
+     at coldfusion.bootstrap.bootstrapfilter.dofilter(bootstrapfilter.java:46)
+     at jrun.servlet.filterchain.dofilter(filterchain.java:94)
+     at jrun.servlet.filterchain.service(filterchain.java:101)
+     at jrun.servlet.servletinvoker.invoke(servletinvoker.java:106)
+     at jrun.servlet.jruninvokerchain.invokenext(jruninvokerchain.java:42)
+     at jrun.servlet.jrunrequestdispatcher.invoke(jrunrequestdispatcher.java:286)
+     at jrun.servlet.servletengineservice.dispatch(servletengineservice.java:543)
+     at jrun.servlet.jrpp.jrunproxyservice.invokerunnable(jrunproxyservice.java:203)
+     at jrunx.scheduler.threadpool$downstreammetrics.invokerunnable(threadpool.java:320)
+     at jrunx.scheduler.threadpool$threadthrottle.invokerunnable(threadpool.java:428)
+     at jrunx.scheduler.threadpool$upstreammetrics.invokerunnable(threadpool.java:266)
+     at jrunx.scheduler.workerthread.run(workerthread.java:66) 
+
+</s><s>second one : 
+
+</s><s>[blazeds]unhandled error when processing a message: flex.messaging.localizedexception: the flexsession is invalid.
+  incomingmessage: flex message (flex.messaging.messages.remotingmessage) 
+    operation = whoswho
+    clientid = null
+    destination = coldfusion
+    messageid = f8466371-6de8-f9cf-4e1c-663dafc61884
+    timestamp = 0
+    timetolive = 0
+    body = null
+    hdr(dsid) = 309d602c-a41a-fca1-648b-99cc42f72a26
+    hdr(dsendpoint) = my-cfamf
+  errorreply: flex message (flex.messaging.messages.errormessage) 
+    clientid = null
+    correlationid = f8466371-6de8-f9cf-4e1c-663dafc61884
+    destination = coldfusion
+    messageid = 309d8b89-b739-6bba-e19b-be633f48035f
+    timestamp = 1268730696359
+    timetolive = 0
+    body = null
+    code =  server.processing
+    message =  there was an unhandled failure on the server.</s><s> the flexsession is invalid.
+    details =  null
+    rootcause =  null
+    body =  null
+    extendeddata =  null
+  exception: flex.messaging.localizedexception: the flexsession is invalid.
+     at flex.messaging.flexsession.checkvalid(flexsession.java:916)
+     at flex.messaging.flexsession.addsessiondestroyedlistener(flexsession.java:382)
+     at flex.messaging.client.flexclient.registerflexsession(flexclient.java:1084)
+     at flex.messaging.endpoints.abstractendpoint.setupflexclient(abstractendpoint.java:939)
+     at flex.messaging.endpoints.basehttpendpoint.setupflexclient(basehttpendpoint.java:374)
+     at flex.messaging.endpoints.abstractendpoint.setupflexclient(abstractendpoint.java:910)
+     at flex.messaging.endpoints.amf.messagebrokerfilter.invoke(messagebrokerfilter.java:92)
+     at flex.messaging.endpoints.amf.legacyfilter.invoke(legacyfilter.java:158)
+     at flex.messaging.endpoints.amf.sessionfilter.invoke(sessionfilter.java:44)
+     at flex.messaging.endpoints.amf.batchprocessfilter.invoke(batchprocessfilter.java:67)
+     at flex.messaging.endpoints.amf.serializationfilter.invoke(serializationfilter.java:146)
+     at flex.messaging.endpoints.basehttpendpoint.service(basehttpendpoint.java:278)
+     at coldfusion.flash.messaging.cfamfendpoint.service(cfamfendpoint.java:200)
+     at flex.messaging.messagebrokerservlet.service(messagebrokerservlet.java:322)
+     at coldfusion.flex.coldfusionmessagebrokerservlet.service(coldfusionmessagebrokerservlet.java:51)
+     at javax.servlet.http.httpservlet.service(httpservlet.java:853)
+     at coldfusion.bootstrap.bootstrapservlet.service(bootstrapservlet.java:89)
+     at jrun.servlet.filterchain.dofilter(filterchain.java:86)
+     at com.intergral.fusionreactor.filter.fusionreactorfilter.b(fusionreactorfilter.java:376)
+     at com.intergral.fusionreactor.filter.fusionreactorfilter.c(fusionreactorfilter.java:254)
+     at com.intergral.fusionreactor.filter.fusionreactorfilter.dofilter(fusionreactorfilter.java:164)
+     at jrun.servlet.filterchain.dofilter(filterchain.java:94)
+     at coldfusion.filter.flashrequestcontrolfilter.dofilter(flashrequestcontrolfilter.java:71)
+     at coldfusion.bootstrap.bootstrapfilter.dofilter(bootstrapfilter.java:46)
+     at jrun.servlet.filterchain.dofilter(filterchain.java:94)
+     at jrun.servlet.filterchain.service(filterchain.java:101)
+     at jrun.servlet.servletinvoker.invoke(servletinvoker.java:106)
+     at jrun.servlet.jruninvokerchain.invokenext(jruninvokerchain.java:42)
+     at jrun.servlet.jrunrequestdispatcher.invoke(jrunrequestdispatcher.java:286)
+     at jrun.servlet.servletengineservice.dispatch(servletengineservice.java:543)
+     at jrun.servlet.jrpp.jrunproxyservice.invokerunnable(jrunproxyservice.java:203)
+     at jrunx.scheduler.threadpool$downstreammetrics.invokerunnable(threadpool.java:320)
+     at jrunx.scheduler.threadpool$threadthrottle.invokerunnable(threadpool.java:428)
+     at jrunx.scheduler.threadpool$upstreammetrics.invokerunnable(threadpool.java:266)
+     at jrunx.scheduler.workerthread.run(workerthread.java:66) 
+
+i hope this can help you ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2664006</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="duardor" timestamp="Mar 16, 2010 11:48 AM">
+<s>hello im using blazeds 3.2.0.3978.</s><s> websphere 6.1.0.19 nd remote objects are secured (i have to channelset.login to have access to them). 
+</s><s>there is a serious bug in this "server.processing.duplicatesessiondetected" logic.</s><s> i got some logs like this.</s><s> this was generated by a request, not by the listener: 
+
+[16/03/10 14:33:27:776 gmt-03:00] 00000096 systemout     o [blazeds]03/16/2010 14:33:27.776 [debug] [endpoint.flexsession] flexsession with id 'do9ytievtzr3cpwtqdyhibt' for an http-based client connection has been invalidated.
+[16/03/10 14:33:27:776 gmt-03:00] 00000096 systemout     o [blazeds]03/16/2010 14:33:27.776 [debug] [client.flexclient] flexclient with id '34baab4f-380d-02db-595f-a1b159b9a5d8' has been invalidated.
+[16/03/10 14:33:27:776 gmt-03:00] 00000096 systemout     o [blazeds]03/16/2010 14:33:27.776 [debug] [endpoint.flexsession] flexsession with id '2fpy3vd9o3rvndci5szgkhc' for an http-based client connection has been invalidated.
+[16/03/10 14:33:27:776 gmt-03:00] 00000096 systemout     o [blazeds]03/16/2010 14:33:27.776 [debug] [endpoint.flexsession] flexsession created with id 'wotgikmdnkhbbtyzs5ktl7c' for an http-based client connection.
+[16/03/10 14:33:27:792 gmt-03:00] 00000096 systemout     o [blazeds]03/16/2010 14:33:27.792 [debug] [message.general] error handling message: flex.messaging.endpoints.duplicatesessionexception: detected duplicate http-based flexsessions, generally due to the remote host disabling session cookies.</s><s> session cookies must be enabled to manage the client connection correctly. 
+</s><s>for the same request, blaze is invalidating my first flex session, after this he invalidates my flex client, invalidate a second flex session and after that create a new third flex session, throwing the error... 
+i found out a pattern here.</s><s> this erros happens when my sessions is invalidated by an active request.</s><s> when the session is invalidated by the listener blazeds will throw a "client.authentication" error.</s><s> let me put this in an example.</s><s> i can reproduce the error following the steps below: 1 - set my session timeout to 1 (1 min) in web.xml 2 - make some requests to the application.</s><s> 3 - wait 1 min idle, but not much more.</s><s> 4 - make another request to blazeds before the listener logs that it's invalidating the session, but after the timeout (like, in 1 min and 5 secs).</s><s> 5 - bam.</s><s> sessions creations and invalidations, and error "server.processing.duplicatesessiondetected" thrown. 
+
+</s><s>if i wait for the messages of the listener invalidating the session: 
+[16/03/10 15:06:51:592 gmt-03:00] 0000009f systemout     o [blazeds]03/16/2010 15:06:51.592 [debug] [client.flexclient] flexclient with id '34baab4f-380d-02db-595f-a1b159b9a5d8' has been invalidated.
+[16/03/10 15:06:51:592 gmt-03:00] 0000009f systemout     o [blazeds]03/16/2010 15:06:51.592 [debug] [endpoint.flexsession] flexsession with id '3gir4jtevc4erd42f0011hp' for an http-based client connection has been invalidated. 
+and make another request, blazeds will create a new client (the same invalidated before), a new flex session and then will throw me a "client.authentication" saying that ""login required before authorization can proceed." which is fine because my application is handling this and showing the login window again. 
+
+</s><s>so, plz help! 
+i just don't want to abandon flex right now but if i can't enconunter a solution other than compiling my own blaze version i'll have to abandon flex :-( 
+
+
+</s><s>edit: also, if you remove the listener from web.xml you will see the "server.processing.duplicatesessiondetected" and the following pattern for every request after the session expired.</s><s> it seems the request after session expiration creates a new session but then blazeds checks my stored client and the session id.</s><s> it's not a match, then blaze invalidate all three objects (new session, old session and flex client) and then creates a new session to throw the error after: 
+
+[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [debug] [endpoint.flexsession] flexsession created with id '7rmvovv6cmmejfc635q2ppq' for an http-based client connection.
+[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [info] [endpoint.general] channel endpoint my-amf received request.
+[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [debug] [endpoint.amf] deserializing amf/http request
+version: 3
+  (message #0 targeturi=null, responseuri=/10)
+    (array #0)
+      [0] = (typed object #0 'flex.messaging.messages.remotingmessage')
+        source = null
+        operation = "consultarcilindros"
+        destination = "cadastrocilindroservice"
+        messageid = "f31d4d5e-7fba-4a87-107c-684170bbbddd"
+        timetolive = 0
+        timestamp = 0
+        body = (array #1)
+          [0] = "9860"
+          [1] = "virgem"
+          [2] = null
+          [3] = 1
+        clientid = "358154bd-2c0d-1116-f735-8bd33dea3291"
+        headers = (object #2)
+</s><s>          dsendpoint = "my-amf"
+</s><s>          dsid = "35811815-d409-bfe7-064f-450503d46b7a"
+
+</s><s>[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [debug] [endpoint.flexsession] flexsession with id 'yhzdtcropg5agiqa7klchz1' for an http-based client connection has been invalidated.
+[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [debug] [client.flexclient] flexclient with id '35811815-d409-bfe7-064f-450503d46b7a' has been invalidated.
+[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [debug] [endpoint.flexsession] flexsession with id '7rmvovv6cmmejfc635q2ppq' for an http-based client connection has been invalidated.
+[16/03/10 15:34:30:412 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.412 [debug] [endpoint.flexsession] flexsession created with id 'yhzdtcropg5agiqa7klchz1' for an http-based client connection.
+[16/03/10 15:34:30:443 gmt-03:00] 00000093 systemout     o [blazeds]03/16/2010 15:34:30.443 [debug] [message.general] error handling message: flex.messaging.endpoints.duplicatesessionexception: detected duplicate http-based flexsessions, generally due to the remote host disabling session cookies.</s><s> session cookies must be enabled to manage the client connection correctly.
+  incomingmessage: flex message (flex.messaging.messages.remotingmessage) 
+    operation = consultarcilindros
+    clientid = 358154bd-2c0d-1116-f735-8bd33dea3291
+    destination = cadastrocilindroservice
+    messageid = f31d4d5e-7fba-4a87-107c-684170bbbddd
+    timestamp = 0
+    timetolive = 0
+    body = null
+    hdr(dsendpoint) = my-amf
+    hdr(dsid) = 35811815-d409-bfe7-064f-450503d46b7a
+  errorreply: flex message (flex.messaging.messages.errormessage) 
+    clientid = 358154bd-2c0d-1116-f735-8bd33dea3291
+    correlationid = f31d4d5e-7fba-4a87-107c-684170bbbddd
+    destination = cadastrocilindroservice
+    messageid = 3587ba4d-7b0b-1846-73dd-399aa4c2f806
+    timestamp = 1268764470443
+    timetolive = 0
+    body = null
+    code =  server.processing.duplicatesessiondetected
+    message =  detected duplicate http-based flexsessions, generally due to the remote host disabling session cookies.</s><s> session cookies must be enabled to manage the client connection correctly.
+    details =  null
+    rootcause =  null
+    body =  null
+    extendeddata =  null 
+
+</s><s>it seems the session invalidation triggered by a request is the trouble, throwing the exception "server.processing.duplicatesessiondetected when it wasn't supposed to.</s><s> i don't have access to svn here from my work place but when i got at home i'll check out the code and see if i can discover more about this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2668549</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 18, 2010 5:15 AM">
+<s>hi duardor, 
+</s><s>any updates ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2668654</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="duardor" timestamp="Mar 18, 2010 6:05 AM">
+<s>hello i discovered some things, but i'm still working in the problem right now, debugging blazeds source and understanding what websphere does... 
+</s><s>it seems the source of all problem with blazeds + websphere 6.1 is the fact that when you call request.getuserprincipal() in a non protected resource websphere will return null always even if the user is already authenticated.</s><s> this way request.getuserprincipal() will always return null in websphere because we can't protect the message broker servlet. 
+</s><s>what i did so far: - i developed a new logincommand that will authenticate using the websphere security mechanism, including generating the lpta tokens and binding the principal to the request.</s><s> the one provided with blazeds is a little too simple and don't use the websphere programatic jaas the way is supposed to be used.</s><s> i had success in this but you have to pay some attention to some detail configuring security in websphere to make this work.</s><s> so i can authenticate against websphere security and my response will have the specific websphere cookies to propagate credentials.</s><s> i'm thinking about submit this in jira as a fix or alternative to the current websphere login command. 
+- now i'm working in a way to make websphere return the authentication information from a request to an unprotected resource (request.isuserinrole(), request.getuserprincipal(), etc).</s><s> websphere has an option to enable returning authentication information even from unprotected resources but when i enable this blazeds can't deserialize the request (maybe websphere change it in some way, i don't know).</s><s> an eofexception is thrown when an amf0input is used to read the first piece of data (the amf version, an unsigned short).</s><s> worse yet blaze ds will send nothing to the flash player and from this moment the flash players freezes and i have to close my browser (in fact, blazeds will answer nothing and the flash player just freezes, i think this could be a bug, at least i'd wait a error fault from blazeds but i debugged the code and the response is not touched by blazeds).</s><s> i think this can be a potential bug in blazeds because the flash player will wait for a response that will never arrive and just freezes. 
+</s><s>in the moment i'm trying to identify what changes in the request when i enable the option in websphere.</s><s> also i'm updating websphere to the last fix pack to see if it's just a bug.</s><s> if all this doesn't work i have another option to try: protect the message broker servlet and develop a servlet that just signalizes a "client.authentication" fault and set this servlet as my login page in web.xml. 
+</s><s>will update here as soon as possible. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2668659</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 18, 2010 6:15 AM">
+<s>i have a different configuration, i am using coldfusion so i don't know if have exactly the same problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2668835</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 18, 2010 7:16 AM">
+<s>hi alex, 
+</s><s>i am still getting this error (not me but some people who use my application). 
+</s><s>is it related to a flex config file in coldfusion (remoting-config.xml, services-config.xml, proxy-config.xml...</s><s>) ?</s><s> 
+</s><s>in my application i always use remoteobjects like this : 
+
+
+<mx:remoteobject id="datagetinfos" showbusycursor="true" destination="coldfusion" source="cfcprod.home.access">
+<mx:method name="getareas" result="resulthandlergetareas(event)" fault="server_fault_silent(event, this.classname.tostring()); getareasfault(event);">
+<mx:arguments>
+<userid>{auser.userid}</userid> 
+</mx:arguments>
+</mx:method>
+....
+</mx:remoteobject> 
+
+
+same destination for all (=coldfusion). 
+
+ps : here are the config file i use when i compile my app in flex http://www.aubweb.be/attachements/ 
+
+</s><s>thanks a lot for your help. 
+</s><s>aubry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2669615</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="duardor" timestamp="Mar 18, 2010 11:26 AM">
+<s>so, after i updated my was to 6.1.0.29 my problem was gone.</s><s> now i can use request.isuserinrole() from unprotected resources and this solved my problems integrating websphere 6.1 and blazeds. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2686301</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 25, 2010 2:17 AM">
+<s>
+</s><s>hi 
+</s><s>i personally had this error this morning when i opened the app in internet explorer.</s><s> i ran charles to capture what was happening- 
+here's a response header in ie : (remote objects threw fault event) 
+</s><s>http/1.1 200 ok date thu, 25 mar 2010 08:57:12 gmt server microsoft-iis/6.0 x-powered-by asp.net set-cookie jsessionid=8430c9fca90edc183d88362d1c57527f2518;path=/ set-cookie jsessionid=8430c9fca90edc183d88362d1c57527f2518;path=/ set-cookie jsessionid=8430c9fca90edc183d88362d1c57527f2518;path=/ set-cookie jsessionid=8430c9fca90edc183d88362d1c57527f2518;path=/ set-cookie jsessionid=8430c9fca90edc183d88362d1c57527f2518;path=/ pragma no-cache expires sat, 25 dec 1999 00:00:00 gmt cache-control no-cache content-type application/x-amf content-length 2261 
+i opened the app in chrome and for the same thing look at the header response : (remote objects threw result event) 
+</s><s>http/1.1 200 ok date thu, 25 mar 2010 09:03:14 gmt server microsoft-iis/6.0 x-powered-by asp.net pragma no-cache expires sat, 25 dec 1999 00:00:00 gmt cache-control no-cache content-type application/x-amf content-length 610 
+
+
+</s><s>amf response in ie : 
+amf message message header body [0] body part target string /81/onstatus response string content object flex.messaging.messages.errormessage headers object rootcause null body null correlationid string 4d090d88-6681-526a-29e4-9489b94325e7 faultdetail null faultstring string detected duplicate http-based flexsessions, generally due to the remote host disabling session cookies.</s><s> session cookies must be enabled to manage the client connection correctly. clientid null timetolive number 0 destination string coldfusion timestamp number 1269507432078 extendeddata null faultcode string server.processing.duplicatesessiondetected messageid string a1a53498-ae08-ab21-1cc3-b6e789a5c582 
+
+</s><s>so now- how can i fix this issue ?</s><s>?</s><s>?</s><s> why i have 4 times set-cookie? 
+</s><s>please advise. 
+</s><s>aubry 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2686515</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Alex%20Glosband" timestamp="Mar 25, 2010 3:56 AM">
+<s>hi aubry, 
+</s><s>what does your deployment look like?</s><s> you have an iis server that is proxying requests to your application server?</s><s> do you have a single application server at the backend or a cluster of application servers? 
+i don't know of anything that would cause 5 set-cookie headers to get added to the response but i don't think that should in itself be a problem as all the cookies have the same jsessionid and path.</s><s> one of the cookies should get stored by the browser and the browser should then pass it with every request. 
+</s><s>can you send the charles log with both the requests and the responses?</s><s> what does the request look like in the ie case when you get the duplicate session detected error?</s><s> does it have a jsessionid session cookie header?</s><s> maybe cookies are disabled in the browser and that is the problem? 
+</s><s>also, what version/build of blazeds are you using?</s><s> i'd recommend that anyone having duplicate session detection problems try using the latest nightly 3.x or trunk build from the blazeds downloads page and see if that helps things. 
+-alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2686535</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 25, 2010 4:18 AM">
+<s>hi alex, 
+</s><s>thanks for your prompt reply.</s><s> charles file is there : http://www.aubweb.be/flexsessions.chls 
+we have one iis server with coldfusion 9 installed on it.</s><s> and one other server with all the databases. 
+i am using the balzeds version shipped with cf9. 
+</s><s>i'll try to install the latest nightly trunk build of blaze ds.</s><s> i just need to replace some files on my locale machine where i compile ?</s><s> and some jars on the server that's right ?</s><s> (quite noob question but i don't want to mess something). 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2689784</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="Mar 26, 2010 2:36 AM">
+<s>hi, 
+</s><s>i stopped my coldfusion service.</s><s> i replaced all my flex-messaging-*.jar that are in coldfusion9\lib directory with the ones that are in the last version of blazeds (3.3.0.14146), binary versiom.</s><s> restarted coldfusion ... 
+</s><s>and the problem is still there... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2708041</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Nicolas%20H." timestamp="Apr 1, 2010 11:35 PM">
+<s>hi, 
+</s><s>maybe the problem is not in blazeds and so updating it won't change anything. 
+</s><s>the duplicate session is triggered when you have multiple requests coming from the same client with different dsid in the header of the amf request or multiple sessions coming with the same dsid. 
+</s><s>hope this help, nicolas. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2708056</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Play123" timestamp="Apr 1, 2010 11:38 PM">
+<s>ive had some similar problems, great information in this post. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2791147</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="May 6, 2010 5:55 AM">
+<s>issue still not fixed on my side... 
+i've planned to reinstall cf9 on our production environement 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2821645</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="May 18, 2010 12:52 AM">
+<s>i reinstalled coldfusion 9 yesterday and problem is still there... 
+</s><s>rpc fault faultstring="detected duplicate http-based flexsessions, generally due to the remote host disabling session cookies.</s><s> session cookies must be enabled to manage the client connection correctly." faultcode="server.processing.duplicatesessiondetected" faultdetail="null" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2822333</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Alex%20Glosband" timestamp="May 18, 2010 7:15 AM">
+<s>hi.</s><s> looking at the charles log you attached awhile back, the problem looks to be due to the server creating a new httpsession for every request to the flex gateway.</s><s> the first request to the flex gateway in the charles log failed because the flexclient id in the amf request (this is the dsid header) was already associated with another http session.   if you look at the headers in the response to this first request you'll see at number of set-cookie headers for the jsessionid.   set-cookie jsessionid=8430e043b5563663a32f7c491c681b4771e4;path=/ set-cookie jsessionid=8430e043b5563663a32f7c491c681b4771e4;path=/ set-cookie jsessionid=8430e043b5563663a32f7c491c681b4771e4;path=/ set-cookie jsessionid=8430e043b5563663a32f7c491c681b4771e4;path=/     i'm not sure why there is more than one of these but what this means is that the server did not recognize the jsessionid on the request and created a new httpsession for you.</s><s> that should not be happening.</s><s> if the flex client has a flexclient id, it means that a new flexclient was created on the server and tied to a http session.</s><s> the jsessionid and the flexclient id were returned to the client.</s><s> the client now needs to pass that same flexclient id and the jsessionid to the server.</s><s> in this case however the server doesn't recognize the jsessionid you are sending it.   if you look at the http headers on the first request to the flex gateway, you can see that there are two jsessionid headers.   s_sess %20s_cc%3dtrue%3b%20s_sq%3dswhswhstarwoodone%253d%252526pid%25253deame %2525253a%25252520homepage%252526pidt%25253d1%252526oid%25253dfunction linkit%25252528%25252529%2525257bif%25252528this.linktext.indexof%2525 2528%25252522javascript%2525253a%25252522%25252529%25252521%2525253d-1 %25252529eval%25252528this.linktext%25252529elsemenuloc.location%25252 6oidt%25253d2%252526ot%25253dspan%252526oi%25253d1810%3b tlthid 2b05517a37eb1037cbd3c3b4e4c00546 tltsid 2748929a37eb1037cb71c3b4e4c00546 jsessionid 00001dwix_mxhmz-qeoo0jcvueo:13mo7b8v1 s_vi [cs]v1|477b6ad8000041fc-a290b2400000ebc[ce] s_pers %20s_vnum%3d1270635787495%2526vn%253d23%7c1270635787495%3b%20s_lastvis it%3d1269506873843%7c1364114873843%3b%20gpv_p12%3d157%252c3760795%252c 157_3760798%7c1269508694906%3b%20s_visit%3d1%7c1269508701433%3b%20s_nr %3d1269506901448%7c1272098901448%3b%20s_invisit%3dtrue%7c1269508701464 %3b%20temp_s_campaign_es%3dsw1_etools_starhot%7c1272098901480%3b%20s_e v45%3d%255b%255b%2527es%253aundefined%2527%252c%25271252569704540%2527 %255d%252c%255b%2527es%253a09%253a16%253a2009%2527%252c%25271253107565 476%2527%255d%252c%255b%2527es%253a11%253a03%253a2009%2527%252c%252712 57260612733%2527%255d%252c%255b%2527es%253a11%253a30%253a2009%2527%252 c%25271259598422585%2527%255d%252c%255b%2527es%253a03%253a25%253a2010% 2527%252c%25271269506901480%2527%255d%255d%7c1427273301480%3b cfadmin_lastpage_admin %2fcfide%2fadministrator%2flogging%2findex%2ecfm analyzer_directory c%3a%5cinetpub%5cwwwroot%5ceamedashboard%5creflexcfcprod cfid 12815 cftoken 768a952af8676dab-726e30c2-1cc4-432d-d0fa7089bc4af753 jsessionid 84302df05caf65289cd66e46581257450252 the server is probably just seeing the first jsessionid which it doesn't recognize and then creating a new http session.</s><s> i'd look at where this first jsessionid is getting set and see if you can configure things so the correct jsessionid is getting sent to the flex gateway.   hope that helps.   -alex
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2822445</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="May 18, 2010 7:44 AM">
+<s>thank you alex, 
+</s><s>but i have no clue at all on how to handle this.</s><s> can you please shed some light ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2822483</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="Alex%20Glosband" timestamp="May 18, 2010 7:59 AM">
+<s>hi.</s><s> it looks like you are using a couple different subdomains.</s><s> it seems like maybe the session id from a server on one subdomain is getting sent to the flex gateway which is running on a server on another subdomain.</s><s> i can see that the following jsessionid is getting sent to both reflextest.starwoodhotels.com and reflex.starwoodhotels.com. 
+00001dwix_mxhmz-qeoo0jcvueo:13mo7b8v1 
+do you know which server is setting this session cookie?</s><s> could you possibly take one of the servers such as reflextest.starwoodhotels.com out of the picture and see if it fixes the problem? 
+</s><s>if taking one of the servers out of the picture resolves the problem you may be able to configure one of the servers so the browser doesn't send the jsessionid to the other server.</s><s> you would probably do this by setting the path or the domain property on the cookie.</s><s> i'm not sure how application servers typically expose these properties so if you get this far will leave this part up to you to figure out 
+hope that helps. 
+-alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2822542</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="aubweb" timestamp="May 18, 2010 8:25 AM">
+<s>reflex.st.... is setting the session cookie and the strange thing is that we recieve the error before that the application is looking for a xml file on the other subdomain (reflextest). 
+</s><s>to be more clear when you launch the app you have the error on the first page.</s><s> and on few pages i load an rss feed that stands on reflextest domain. 
+</s><s>that's the only interaction between those 2 domains. on both domains cf9 is installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-2994148</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="gmstoner" timestamp="Jul 22, 2010 1:20 PM">
+<s>i believe i'm running into this as well.</s><s> we have a two server situation.</s><s> the application server is running cf9 and the webserver on a different box is running apache/tomcat.</s><s> the swf is on the apache server and making calls to the cf9 server.</s><s> it works fine for all browsers but ie. something about ie is causing the same issue triggering a duplicate session.</s><s> the apache server is placing a jsessionid cookie on the users browser when they log in.</s><s> it is our main domain.</s><s> the cf application server is on a subdomain www2.maindomain. 
+</s><s>i'm wondering if these cookies are getting confused. 
+</s><s>did you get any resolution to this issue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-3440699</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="David_Welch" timestamp="Feb 1, 2011 7:17 AM">
+<s>i'm using the same environment, but, am getting "validation of the ltpa token failed because the token expired with the following info..." whenever the session ends and the app goes after another request.</s><s> i'm okay with handling it with re-authenticating from the flex side if an error is returned, but, websphere doesn't return a real response...have you seen this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-Open-Source/BlazeDS/General-Discussion/Discussions-2220982-3474958</DOCNO>
+<TEXT>
+<subject>Server.Processing.DuplicateSessionDetected</subject>
+<post author="khatchik82" timestamp="Feb 16, 2011 5:10 PM">
+<s>i had a problem like this with cross-domain cookies. 
+</s><s>sorry i didn't read all the thread but the "duplicate session" is when the jsessionid cookie is not accepted by the browser. 
+i did what this blog says and it worked for me in safari. 
+a little bit of jquery and worked like a charm... 
+http://anantgarg.com/2010/02/18/cross-domain-cookies-in-safari/ 
+</s></post>
+</TEXT>
+</DOC>
+
+

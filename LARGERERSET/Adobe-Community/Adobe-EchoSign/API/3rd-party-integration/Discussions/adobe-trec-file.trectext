@@ -1,0 +1,70 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-EchoSign/API/3rd-party-integration/Discussions-5818848-1329394</DOCNO>
+<TEXT>
+<subject>How to check a checkbox field value in fw9 PDF form</subject>
+<post author="naveen519" timestamp="Nov 5, 2013 11:04 PM">
+<s>hi, 
+</s><s>i got a pdf given form irs (http://www.irs.gov/pub/irs-pdf/fw9.pdf).</s><s> while creating a widget to this pdf form to sign it, i merged the custum data to those pdf form fields using api setmergefields. 
+</s><s>all the data fields are merged fine except the checkboxes.</s><s> i tried by passing the values to the merge_fields array as 'on', '1', 'checked', 'checkbox(checked)' but no luck 
+what is wrong here in checking the chexbox field in this fw9 pdf or how to check a checkbox field in a form? 
+</s><s>thank you, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-EchoSign/API/3rd-party-integration/Discussions-5818848-5819219</DOCNO>
+<TEXT>
+<subject>How to check a checkbox field value in fw9 PDF form</subject>
+<post author="SimonATS" timestamp="Nov 6, 2013 3:43 AM">
+<s>"1" will do the trick, but the resulting tick will not be very visible during the signing stage. 
+</s><s>possibly becasue the form itself is a livecycle (static) xfa form. 
+</s><s>you could try refrying the form by printing the pdf to a pdf printer then readding the form fields and using text tgas in these fields: https://www.echosign.adobe.com/en/support/knowledgebase/add_form_field s_and_signature_blocks_to_my_documents_through_echosign_text_tags.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-EchoSign/API/3rd-party-integration/Discussions-5818848-5819236</DOCNO>
+<TEXT>
+<subject>How to check a checkbox field value in fw9 PDF form</subject>
+<post author="naveen519" timestamp="Nov 6, 2013 3:59 AM">
+<s>hi simon, 
+</s><s>i readded the form fields and used the same text tags by printing the pdf in pdf printer.</s><s> now im able to check the boxes fine.</s><s> i could not be able to the edit the form by acrobat, untill i printed it in pdf printer. 
+</s><s>thanks for your great support. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-EchoSign/API/3rd-party-integration/Discussions-5818848-5819237</DOCNO>
+<TEXT>
+<subject>How to check a checkbox field value in fw9 PDF form</subject>
+<post author="naveen519" timestamp="Nov 6, 2013 4:09 AM">
+<s>hi simon, 
+</s><s>i re-added and edited the fields of fw9 form by pdf printer.</s><s> while doing so, i made fields as ready only so that, the data cannot be edited in the form through the widget but will be merged the data to fields only be the code.</s><s> wherein im using the widget only for signature but not for form filling. 
+</s><s>here, im able to merge my custom data to all fields while creating widget but not to the fields of checkboxes.</s><s> the checkboxes fields which are made ready-only are not allowing me to merge the value as checked by the api. 
+</s><s>please help me, 
+thanks you, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-EchoSign/API/3rd-party-integration/Discussions-5818848-5819838</DOCNO>
+<TEXT>
+<subject>How to check a checkbox field value in fw9 PDF form</subject>
+<post author="SimonATS" timestamp="Nov 6, 2013 7:54 AM">
+<s>hi naveen, 
+</s><s>for read only checkboxes your default value in the soap request needs to match the export value of the checkbox in acrobat.</s><s> (check this via the checkbox properties in acrobat) 
+</s><s>by default this is set to yes. 
+</s><s>so either chnage the checkbox properties in acrobat to match your request, or match your request to the property in acrobat. 
+</s></post>
+</TEXT>
+</DOC>
+
+

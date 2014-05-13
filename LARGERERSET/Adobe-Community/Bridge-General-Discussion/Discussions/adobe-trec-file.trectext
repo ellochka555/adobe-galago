@@ -1,0 +1,2305 @@
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6226720-1432325</DOCNO>
+<TEXT>
+<subject>Bridge CS6 How to turn off auto tone adjustment for the loupe?</subject>
+<post author="ceh2" timestamp="Mar 20, 2014 3:58 AM">
+<s>adobe bridge cs6. 'apply auto tone adjustments' is unchecked in camera raw preferences.</s><s> yet every time i click on an image in the preview panel it does a tonal adjustment before it magnifies the image detail.</s><s> i am viewing bracketed images and do not want any auto tone applied at any time while previewing images.</s><s> how can i turn off all auto tone adjustment for the program - including the loupe.</s><s> i never had this issue in a previous version.</s><s> i'm on pc.</s><s> thanks for any help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6226720-6227382</DOCNO>
+<TEXT>
+<subject>Bridge CS6 How to turn off auto tone adjustment for the loupe?</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 8:14 AM">
+<s>see if this helps. http://www.luminous-landscape.com/tutorials/cr-auto.shtml 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6226720-6227923</DOCNO>
+<TEXT>
+<subject>Bridge CS6 How to turn off auto tone adjustment for the loupe?</subject>
+<post author="ceh2" timestamp="Mar 20, 2014 9:58 AM">
+<s>thanks!</s><s> but i'm afraid that doesn't help.</s><s> all the adjustments are turned off already for both bridge and acr.</s><s> when i use the loupe in bridge preview pane - i click on a spot in the image, the loupe image shows the same size as in preview (no magnification), then there is a pause, the shadows all brighten up, and the loupe image is magnified.</s><s> this only happens when the loupe is used - no auto settings are applied in either bridge or acr unless i use the loupe.</s><s> the only way to eliminate them is to go into preferences / purge cache. 
+</s><s>this is happening only on cs6 master collection on my win 7 computer.</s><s> settings look the same as those for ps cs6 on a xp 64 bit computer which works fine.</s><s> when i use the loupe on that computer it just magnifies the image right away - no pause, or same magnification preview.</s><s> it seems there is some setting that is being triggered by the loupe itself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6226720-6233062</DOCNO>
+<TEXT>
+<subject>Bridge CS6 How to turn off auto tone adjustment for the loupe?</subject>
+<post author="ceh2" timestamp="Mar 22, 2014 1:56 AM">
+<s>i have gone through the settings, saves new camera raw defaults, and still have the auto adjust happening with the loupe in the preview pane.</s><s> can anyone help?</s><s> i am working with bracketed images and don't want any auto tone adjustment applied in bridge or acr. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-1431743</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="2geedesign" timestamp="Mar 19, 2014 10:48 AM">
+<s>i've just updated creative cloud and gone to launch bridge cc and the following message comes up - the program can't start because msvcp110.dll is missing from your computer.</s><s> try re-installing the program to fix the problem" i've re-installed bridge but the problem still exists.</s><s> i'm running windows 7 pro 64 bit which is fully upto date.</s><s> any help would be much appreciated. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-6224695</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 11:44 AM">
+<s>this is an error related to nik plugins.</s><s> download latest version. http://www.google.com/nikcollection/. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-6224882</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="2geedesign" timestamp="Mar 19, 2014 12:18 PM">
+<s>thanks curt for your response.</s><s> although i do have the nik collection installed, at present they are only linked to photoshop cs6 and not photoshop cc so i'm not sure if that makes a difference to my problem.</s><s> however after a bit of searching i discovered that the msvcp110.dll file should be found in both the windows-system32 and windows-syswow64 folder.</s><s> in fact i discovered that it had "disappeared" from the syswow64 folder so i copied the file across from the system32 folder and it seems to have fixed the problem.</s><s> no idea why it disappeared in the first place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-6231472</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="Crocky007" timestamp="Mar 21, 2014 10:19 AM">
+<s>just updated creative cloud and got the same system error for (bridge.exe).</s><s> "the program can't start because msvcp110.dii is missing from your computer.</s><s> try reinstalling the program to fix this problem. 
+</s><s>i'm running windows 7 professional.</s><s> 64-bit operating system.</s><s> 
+</s><s>i see there is a solution from (2greedesign), but i don't understand the syswow64 folder.</s><s> is there a simple fix that i can get from adobe? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-6231446</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="2geedesign" timestamp="Mar 21, 2014 10:55 AM">
+<s>hi crocky007 i was going to explain my solution but having got home i see that adobe have released an update to creative cloud to solve this very problem.</s><s> so it looks as if we were not alone experiencing this problem and adobe have responded.</s><s> hopefully you'll be sorted now :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-6232507</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="Curt%20Y" timestamp="Mar 21, 2014 4:22 PM">
+<s>here is the workaround for those without nik filters. http://helpx.adobe.com/creative-cloud/kb/missing-msvcp110dll.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224452-6232672</DOCNO>
+<TEXT>
+<subject>Missing MSVP110.dll file</subject>
+<post author="Crocky007" timestamp="Mar 21, 2014 5:52 PM">
+<s>thanks folks i used (curt y)'s link from adobe and it worked perfectly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6232623-1433760</DOCNO>
+<TEXT>
+<subject>Bridge Photo Downloader File Rename convention</subject>
+<post author="ojodegato" timestamp="Mar 21, 2014 4:54 PM">
+<s>i use a custom file rename preset (yymmdd + text + file number sufix) in br cc.</s><s> this custom preset is not available in the adobe bridge cc photo downloader reneame files drop down menu.</s><s> neither is the custom preset formula availble in the advanced rename dialog. 
+i end up importing files with the bridge photo downloader (do not rename files) and then rename files using the bridge batch rename saved preset. 
+</s><s>is there a way to add a custom file rename convention which is not availble in the bridge photo downloader?</s><s> the idea is to rename files during the file ingestion process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-1429067</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="mixapix" timestamp="Mar 16, 2014 7:24 AM">
+<s>what is the correct way to reorganize keywords?</s><s> i'm using bridge cs4 (mac).</s><s> i've painstakingly keyworded several thousand images (making up keywords as i went along), but didn't pay much attention to organizing them neatly as keywords/sub-keywords.</s><s> rather, it's a looooooong list of words. 
+</s><s>if i organize them, will this mess up the keywording in my images or does it only have to do with the tidyness in bridge itself? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6214388</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="Curt%20Y" timestamp="Mar 16, 2014 11:12 AM">
+<s>you can open keywords keywords panel and in upper right corner click to get drop down menu.</s><s> select export and believe you can change in text editor.</s><s> as long as you do not change any keywords should not affect current keywords on images. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6214916</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="mixapix" timestamp="Mar 16, 2014 3:18 PM">
+<s>i'm not sure what you mean.</s><s> why do i need to edit in a text editor when i can drag the keywords around with the mouse in bridge? 
+</s><s>ok, being a little more specific, let's start with my exisiting keyword list in bridge: 
+events birthday graduation wedding other keywords airport architecture beach bus car dolphin dining cafe coffee dinner restaurant tea train travel weather wedding 
+
+</s><s>now, the photos are already done with all the keywording (the ones in bold above have been used) , but i would rather reorganize the messy list to something like this: 
+animals cat dog dolphin dining cafe coffee dinner restaurant tea events birthday graduation travel wedding locations airport beach transportation boat bus car subway train tram weather rain snow storm sunset other keywords architecture 
+so can i simply move (drag & drop) my existing keywords around to become sub-keywords and creating new keyword categories in order to achive a tidier keyword list?</s><s> or do i additionally after this have to select all the photos from within one keyword group, assign them the newly moved keyword (same word, different place) and lastly remove the existing keyword? 
+</s><s>and how about "wedding" which i created as a sub-keyword underneath "other keywords", but which was also already present as a default within "events"?</s><s> i haven't used the latter in any of my photos (just the one within "other keywords") but the spelling is of course exactly the same.</s><s> finally, is it ok to create a main keyword group (e.g.</s><s> "transportation") and move "bus", "car" and "train" (which i've already used) within that category? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6215717</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="Yammer" timestamp="Mar 17, 2014 1:43 AM">
+<s>i didn't have time to read this properly.</s><s> all i'll say is that (in my experience) you can't just move keywords around in the hierarchy.</s><s> in the past, when i have wanted to reorganise keywords, i have had to duplicate them in another part of the tree before removing the original.</s><s> this is not a straightforward task.</s><s> the problem is the way the keywords are stored in xmp as comma separated lists.</s><s> once you move the keyword in bridge, it does not automatically update your images, and they become disconnected from the keyword list. 
+</s><s>what i do is create a new keyword with a temporary name.</s><s> select all the keyworded files and check the new temp keyword.</s><s> uncheck the old keyword.</s><s> delete the old keyword.</s><s> then repeat the process after creating the correct keyword in the place you wanted. 
+</s><s>hope that made sense. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6215772</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="mixapix" timestamp="Mar 17, 2014 2:20 AM">
+<s>so there's a relation between the keywords in each image's xmp and the bridge keyword list?</s><s> i was thinking bridge would just act as a tool for assigning keywords, and when that's done you can do whatever you like in bridge, but not so? 
+</s><s>if the keyworded images rely on the bridge keywords, won't this cause problems if i some day bring my images (on a portable hard drive) over to a friend's house where i view them in his bridge (obviously with no keywords at all (i.e. just the adobe defaults) or a whole different set of keywords than mine)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6215658</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="Yammer" timestamp="Mar 17, 2014 2:33 AM">
+<s>iirc, the hierarchy is stored in the xmp with each image.</s><s> if you change the hierarchy in bridge keywords panel, it does not update the images. 
+</s><s>when you move keyworded images to another bridge system, they must be indexed before they can be searched.</s><s> once they are indexed, the new keywords appear in the keywords panel in italics.</s><s> this means that they have been found but not registered as standard keywords on that system.</s><s> you can make them permanent, but i can't remember how, off the top of my head--i think it's probably a right click action. 
+</s><s>this can get messy if you have keywords duplicated within the hierarchy in different positions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6222254</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="mixapix" timestamp="Mar 18, 2014 4:41 PM">
+<s>your suggestion seems to work and makes sense: select a specific keyword (e.g.</s><s> "wedding") from the filter panel create a new, temporary keyword (in the keywords panel) to have something to organize those photos by (when the original one is gone), for instance "wedding----" select all the photos (cmd/ctrl-a) which are currently displayed (i.e. all the "wedding" photos in this example) uncheck the current (but misplaced) keyword (e.g.</s><s> "wedding") for all those photos from the keywords panel delete the misplaced keyword (e.g.</s><s> "wedding") from the keywords panel select the "wedding---" keyword from the filter panel (the same photos should show, but with a different, temporary keyword).</s><s> create a new keyword you want to use, this time putting it in the right place (e.g.</s><s> "wedding", but in a different location in the keyword list shown in the keywords panel select all the photos (cmd/ctrl-a) which are currently displayed (i.e. all the "wedding---" photos in this example) check (assign) all those photos with the new, correctly located keyword (e.g.</s><s> "wedding") in the keywords panel uncheck the temporarily used "wedding---" keyword for all those photos in the keywords panel delete the temporary keyword (e.g.</s><s> "wedding---") 
+</s><s>i hope this is what you meant.</s><s> at least it seems to work here.</s><s> the only thing i didn't do right away was to delete the misplaced keyword.</s><s> but as long as that word has been removed from all photos (likewise, if the same word at a different location in the list has been removed from the photos) it shouldn't matter, should it? 
+i believe the moral of the story to all of this is think and plan before starting to make the keyword list as fixing all the mistakes later will only mean a lot of extra work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6223113</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="Yammer" timestamp="Mar 19, 2014 2:54 AM">
+<s>spot on.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6232514</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="mixapix" timestamp="Mar 21, 2014 4:02 PM">
+<s>thanks i figure this information might be useful for others as well, hence the step-by-step guide. 
+</s><s>being in the process of cleaning up (removing keywords which aren't used in the list, removing "temporary helper keywords" (e.g.</s><s> "wedding---" from the example above) i figured a smart way to figure out which keywords have/haven't been used in all photos within a main folder: 
+in case that main folder has sub-folders, be sure to display all of them as well (view-show items from sub-folders) once all the photos are shown (in the "content" panel) select them all (ctrl/cmd-a) in the keyword list ("keywords" panel) you should see a [ - ] (hyphen) next to each keyword which has been used.</s><s> this means some of the selected photos use those keywords.</s><s> a tick [ √ ] character on the other hand means all of the selected photos use that specific keyword.</s><s> those keywords not having a [ - ] or [ √ ] next to them means those keywords haven't been used anywhere among the selected photos, so you can safely delete those keywords from the list. 
+</s><s>this procedure is also helpful in determining if you have several instances of the same keyword, but at different places in the list.</s><s> use the temporary keyword to fix this problem.</s><s> for instance; you find that the keyword "boat" has been used in two places: 
+transportation boat 
+and 
+other keywords boat 
+in order to fix this do the following (once you've located which keywords have been duplicated): (in the "filter" panel), select the first instance (i.e.</s><s> "transportation-boat").</s><s> be sure all those photos are selected (ctrl/cmd-a) now select (or create first, then select) the temporary keyword you want to use (e.g.</s><s> "boat---") so that they all get that temporary keyword now for the second keyword: next, (in the "filter" panel again). select the second instance of the same keyword (i.e.</s><s> "other keywords-boat").</s><s> now select all those photos (ctrl/cmd-a) select the temporary keyword ("boat---" so that all the selected photos get that temporary keyword now for the deletion of those duplicated keywords: (in the "filter" panel), choose the keyword temporary keyword ("boat---") for both instances of the "boat" keyword, then select all photos displayed with that filter (ctrl/cmd-a) (in the "keywords" panel), locate the first instance of "boat" you want to delete, then remove the [ √ ] next to it.</s><s> the small box should now be empty.</s><s> when this is done you can safely delete that keyword in the "keywords" panel locate the second instance of the same keyword.</s><s> it's probably deselected (because you just removed all instances of the exact same spelling of the same keyword).</s><s> if you're happy with the location of the other instance of this keyword then just enable it for all the selected photos (so that a [ √ ] is shown next to it.</s><s> if you don't want to keep that keyword where it is, then just delete that one as well (make sure it's not used for any photos (you should see an empty box next to it) now create the same keyword ("boat") exactly where you want it in the list of keywords make sure all the photos within that filter are selected (ctrl/cmd-a), then apply the new "boat" keyword for all of them 
+the temporary keywords might be useful to keep until you're 100% sure everything is fine.</s><s> you can quickly and easily remove all of them by un-ticking each of their boxes one by one when you're displaying (and have selected) all the photos from the folder/sub-folders, then deleting them one by one. 
+</s><s>please feel free to comment the above if i've made any mistakes or you have something to add. 
+</s><s>yammer: i didn't quite understand what the occasional italicized keyword means.</s><s> something tells me they are keywords found in the photos but aren't included in the keyword list.</s><s> is this correct?</s><s> i assume this also means i can remove them in the same way as above, by first selecting all the photos containing them, unchecking the italicized keyword, then finally deleting it.</s><s> seems to work fine, so i hope it won't cause any issues further down the line... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6213878-6232608</DOCNO>
+<TEXT>
+<subject>Reorganizing keywords</subject>
+<post author="Curt%20Y" timestamp="Mar 21, 2014 4:36 PM">
+<s>thanks for posting this, may help others with similar problems. 
+</s><s>italicized keywords are not persistent, so your assumption is correct.</s><s> will see this with imported images with keywords. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225635-1432080</DOCNO>
+<TEXT>
+<subject>Bridge color tif thumbnails appear as partial B&W</subject>
+<post author="brownold" timestamp="Mar 19, 2014 4:26 PM">
+<s>recently bridge has taken my scanned color files, to which i made minor adjustment and save in pscs6 as a tif., and has given the saturation value as -100 for "reds", -100 for the "oranges" and -98 for the "yellows" in camera raw 8.3 hsl/grayscale/saturations.</s><s> this shows up in the bridge thumbnails.</s><s> when i choose the image to open directly in photoshop cs6 no problem with the color.</s><s> when i choose open in camera raw.</s><s> the first thing i have to do is correct the saturation..</s><s> is there a fix for this annoyance? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225635-6225870</DOCNO>
+<TEXT>
+<subject>Bridge color tif thumbnails appear as partial B&W</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 5:29 PM">
+<s>check edit/camera raw preferences and uncheck any default auto settings 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225635-6225865</DOCNO>
+<TEXT>
+<subject>Bridge color tif thumbnails appear as partial B&W</subject>
+<post author="brownold" timestamp="Mar 19, 2014 6:56 PM">
+<s>curt y, thanks for the suggestioin.</s><s> i went to camera raw in bridge preferences and found one item selected.</s><s> deselected> quit bridge> rebooted the program.</s><s> nothing has changed.</s><s> still looking for the answer to this.</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225635-6225984</DOCNO>
+<TEXT>
+<subject>Bridge color tif thumbnails appear as partial B&W</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 7:17 PM">
+<s>a little unclear with what this means "when i choose the image to open directly in photoshop cs6 no problem with the color.</s><s> when i choose open in camera raw.</s><s> the first thing i have to do is correct the saturation.." 
+</s><s>perhaps you left something out after camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225635-6232580</DOCNO>
+<TEXT>
+<subject>Bridge color tif thumbnails appear as partial B&W</subject>
+<post author="brownold" timestamp="Mar 21, 2014 4:35 PM">
+<s>curt y you know that using a mac i select a tif image to open in acr by using the command > r keys.</s><s> when i do this the image that shows grey in the bridge thumbnails opens in camera raw as the grey thumbnails i see in bridge which when i go to hsl/grayscale/saturations. show the values as i have described.</s><s> however when i select the grey thumbnail in bridge and double click it the image opens in ps cs6 as the full color image i am expecting to see from the bridge thumbnail through to the open image.</s><s> so to be clear.</s><s> in bridge the problem images show themselves as partially grey until corrected in acr.</s><s> saving them in psc6 does nothing as far as their appearance in bridge.</s><s> it is a bit maddening.</s><s> check this out in your acr.</s><s> take the values i have described and you will see what i see.</s><s> thanks for your attention.</s><s> hope this helps.</s><s> tom 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6231725-1433532</DOCNO>
+<TEXT>
+<subject>Hi I am running Photoshop cc and cant seem to see any Raw files from my Nikon D4s? Any help apprecia</subject>
+<post author="Saraya" timestamp="Mar 21, 2014 11:26 AM">
+<s>i have been able to see nikon d4 files no problem, but now i have a nikon d4s they are not showing?</s><s> any help? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6231725-6232605</DOCNO>
+<TEXT>
+<subject>Hi I am running Photoshop cc and cant seem to see any Raw files from my Nikon D4s? Any help apprecia</subject>
+<post author="Curt%20Y" timestamp="Mar 21, 2014 4:31 PM">
+<s>i don't see that listed in the camera section.</s><s> unless i missed it camera may be too new to be supported yet.</s><s> look at acr 8.4 beta and see it is is listed yet. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6231436-1433470</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.3:  Saving error: "There was an error writing this file"</subject>
+<post author="KrisiteLou" timestamp="Mar 21, 2014 10:11 AM">
+<s>i keep receiving the following message when i try to save my edited images in raw: "there was an error writing this file" 
+</s><s>please help! 
+</s><s>thanks, kristie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6231436-6232508</DOCNO>
+<TEXT>
+<subject>Camera Raw 8.3:  Saving error: "There was an error writing this file"</subject>
+<post author="Curt%20Y" timestamp="Mar 21, 2014 4:24 PM">
+<s>this frequently is an os permission issue.</s><s> external drive? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-1423569</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="hasanders" timestamp="Mar 8, 2014 9:20 AM">
+<s>hello.</s><s> i am wondering if it's possible to add a comment field in the editable metadata fields in bridge.</s><s> i would like to be able to have the field appear in the properties details tab of the file under "comments." 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6192383</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="Curt%20Y" timestamp="Mar 8, 2014 7:58 PM">
+<s>confused, if you want to add metadata in bridge, why do you have file open in windows explorer?</s><s> what not have it open in bridge and right click on file info and add your data? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6192386</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="hasanders" timestamp="Mar 8, 2014 8:04 PM">
+<s>i do have bridge open and always add data from there.</s><s> however, if i send the file to someone else that does not have bridge, i want the "comments" field viewed through windows explorer to be filled in.</s><s> as of right now, i have to manually fill in that field through windows explorer.</s><s> there is no place in bridge that i know of to do it.</s><s> i hope that makes better sense? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6192388</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="Curt%20Y" timestamp="Mar 8, 2014 8:09 PM">
+<s>not all browsers have the same headings.</s><s> have you experimented with different flelds in bridge to see if any show up as comments in winexp?</s><s> or perhaps another topic that could be used.</s><s> there are numerous tabs where info can be added. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6192480</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="hasanders" timestamp="Mar 8, 2014 8:14 PM">
+<s>i have experimented a bit with different fields in bridge to no avail.</s><s> the database i am uploading my files to (ancestry.com) automatically pulls from the comments field i am entering manually in windows explorer, thus saving me from having to do it twice.</s><s> i shall continue experimenting in bridge. *sigh* thanks for the suggestions, curt! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6192482</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="Curt%20Y" timestamp="Mar 8, 2014 8:31 PM">
+<s>i added a comment in winexp and nothing showed up in bridge.</s><s> so if you want comments to appear in both places you will have to find a common subject line.</s><s> it appears windows comments is not a common field. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6192485</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="hasanders" timestamp="Mar 8, 2014 8:44 PM">
+<s>yeah, it's a bummer though, since ancestry pulls directly from the windows comments field.</s><s> i find this odd that ancestry would be so limited, though not surprised... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6191360-6232029</DOCNO>
+<TEXT>
+<subject>Add comment field in Metadata IPTC</subject>
+<post author="Terry%20Veiga" timestamp="Mar 21, 2014 1:05 PM">
+<s>watching this thread and hoping for a solution.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223671-1431580</DOCNO>
+<TEXT>
+<subject>Nikon Coolpix P340 Camera RAW plug in for Adobe Bridge?</subject>
+<post author="unintentionalart" timestamp="Mar 19, 2014 7:24 AM">
+<s>just got a p340 specifically for the ability to capture raw images and realized that the camera isn't supported yet.</s><s> anyone know when the plug in for the p340 will be available? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223671-6223964</DOCNO>
+<TEXT>
+<subject>Nikon Coolpix P340 Camera RAW plug in for Adobe Bridge?</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:29 AM">
+<s>you can try the beta acr 8.4.</s><s> need cs6 or cc to use it.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223671-6226890</DOCNO>
+<TEXT>
+<subject>Nikon Coolpix P340 Camera RAW plug in for Adobe Bridge?</subject>
+<post author="unintentionalart" timestamp="Mar 20, 2014 4:41 AM">
+<s>thanks for trying to help, curt y.</s><s> i did download the beta acr 8.4.0.182 and have cc.</s><s> i checked that it was installed.</s><s> i redownloaded the images from the camera.</s><s> after i did that, the nef files in raw showed up in bridge but no thumbnails.</s><s> when i tried to open them i got the same error message that these can't be opened.</s><s> i researched the beta acr 8.4 newly suported cameras and the coolpix p340 was not listed. 
+i tried taking the memmory card out of the p340 and put it into my nikon d7000 to see if i could download the files in raw as the d7000 is supported, but for some reason the files did not even appear on the d7000.</s><s> i guess p340 files won't be able to be viewed or otherwise utilized in a d7000 camera. 
+</s><s>unless you have any other suggestions, i guess i need to wait until adobe adds the p340 to the list of supported cameras. 
+</s><s>best/saul 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223671-6227377</DOCNO>
+<TEXT>
+<subject>Nikon Coolpix P340 Camera RAW plug in for Adobe Bridge?</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 8:10 AM">
+<s>being a very new camera apparently it is not yet supported.</s><s> and don't mix camera cards.</s><s> each camera raw is unique.</s><s> camera makers do not give adobe any info on how to decode the images.</s><s> they have to do it by reverse engineering.</s><s> this is a travesty and really slows down the process, and makes it less reliabile.</s><s> trade secrets and use "our products" i guess. 
+</s><s>keep looking at the beta and see when they add your camera.</s><s> in mean time you will have to use the software supplied for camera. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223671-6227482</DOCNO>
+<TEXT>
+<subject>Nikon Coolpix P340 Camera RAW plug in for Adobe Bridge?</subject>
+<post author="unintentionalart" timestamp="Mar 20, 2014 8:15 AM">
+<s>thanks, curt y. i'll do that. 
+</s><s>best/saul 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223671-6231736</DOCNO>
+<TEXT>
+<subject>Nikon Coolpix P340 Camera RAW plug in for Adobe Bridge?</subject>
+<post author="Marco879534" timestamp="Mar 21, 2014 11:26 AM">
+<s>i have got the same problem.</s><s> i tried everything. but nothing works.</s><s> do you have some new experiences? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6230849-1433293</DOCNO>
+<TEXT>
+<subject>Bridge error message in CS6</subject>
+<post author="Remo0903" timestamp="Mar 21, 2014 11:10 AM">
+<s>bij het openen van de bridge worden de foto's getoond en stopt met een foutmelding " adobe gs6" is onverwachts gestopt ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-888123</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="NukeyAut" timestamp="Aug 8, 2011 1:55 AM">
+<s>i am sorting my files (.</s><s>jpg) with bridge.</s><s> some files just can't get rated (bridge fails without giving me an error), and if i try to set other metadata (like keywords), bridge tells me "there was an error writing metadata to ".....</s><s>jpg".</s><s> i have full access to the folder, it is an internal disk, the files are not locked.</s><s> it affects about 5% of all files - this is the second shooting (&folder) where i have this problem.</s><s> i don't see any differences between the files i can change and the ones where i can't.</s><s> i can rename the file with bridge, but that does change nothing.</s><s> i tried purging the cache, it changed nothing.</s><s> i just found out: i can change the tags with windows explorer, bridge does show them, and afterwards i can change them with bridge too.</s><s> someone got an idea how i can avoid this step?   [win7pro x64, i7]
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3848289</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Curt%20Y" timestamp="Aug 8, 2011 7:44 AM">
+<s>i have seen this problem with jpeg 2000 photos where tags can not be added. 
+</s><s>have you tried to open in ps and then "save as" with a different name?</s><s> might be some weird file error. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3894644</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Camakazi" timestamp="Aug 31, 2011 11:14 AM">
+<s>i have the same issue (sort of...</s><s>) my photos are located on a server running server2008.</s><s> usually i can rate the photos but then go to add other metadata (e.g.</s><s> keyword or tag) and get the error message.</s><s> however, if i wait awhile (not just a few seconds, but can be as long as a minute or so), then i can write the metadata.</s><s> to me, this likely shows that there is some problem and/or incompatiability (with windows 7/server2008) in the bridge file write caching (i.e. the file is still locked from a previous write attempt when it tries to add the new metadata).</s><s> i have a wired 1g lan and fast computers (including the server) and lots of memory, so i'm sure it is not network/memory lag.</s><s> i haven't played with any sever2008 and/or windows 7 settings; or for that matter done any work on the write cahing methods employed for server2008.</s><s> (i do have write caching enabled on my local harddrives - but i'm assuming any write caching for the server is independent.</s><s>) any thoughts or explanations regarding bridge writes it's metadata would be appreciated (e.g. does it locally cache changes and do a bulk update?</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3895514</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Aug 31, 2011 7:32 PM">
+<s>it is a known issue that write metadata error to jpg and tiff on a network shared win7 or win2008 server os.</s><s> bridge team is working on it. 
+</s><s>thank you for report it. 
+</s><s>melissa bridge qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3895866</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="NukeyAut" timestamp="Sep 1, 2011 2:45 AM">
+<s>dear melissa, 
+</s><s>this is a single-user installation (win7 pro x64) without any network involved. 
+</s><s>best regards, simon jiménez 
+
+</s><s>am 01.09.2011 04:33, schrieb jingshu li: <quote>
+<s>it is a known issue that write metadata error to jpg and tiff on a network shared win7 or win2008 server os.</s><s> bridge team is working on it.</s><s>  thank you for report it.</s><s>  melissa bridge qe 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3897875</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Sep 2, 2011 12:34 AM">
+<s><quote>
+<s>jingshu li wrote: 
+it is a known issue that write metadata error to jpg and tiff on a network shared win7 or win2008 server os.</s><s> bridge team is working on it. 
+</s><s>thank you for report it. 
+</s><s>melissa bridge qe 
+</s></quote>what about "error writing metadata..." from the last few versions of cs on various versions of windows (xp and 7 at least)?</s><s> i have experienced this for years, especially when keywording using collections of images from different folders. 
+</s><s>it seems to me to be an issue with bridge and file locking, with bridge being unable to write to some files even though they are not opened. 
+</s><s>my workaround has always involved one of the following: 1. wait several minutes until bridge has stopped enumerating files 2. open the offending file(s) with bridge, change some insignificant setting and save them again 3. restart bridge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3897861</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Sep 2, 2011 12:55 AM">
+<s>dear nukeyaut, 
+</s><s>i notice you mentioned some of your jpg files have the write metedata error issue.</s><s> so some other jpg files in your folder don't have the issue, right?</s><s> if so, i have several questions: 1.</s><s> do you create the jpg files with the issue and without the issue in same way?</s><s> e.g, do you create the 2 kinds of jpg files by same camera model?</s><s> 2. what will happen if you move the jpg files with the issue to your desktop?</s><s> how about to switch to another user account and then apply metadata to the jpg file?</s><s> how about use another windows 7 machine?</s><s> 3. could you please help to sent a sample jpg file with the issue to me? 
+</s><s>thanks, melissa ( jingshu@adobe.com ) bridge qe 
+
+<quote>
+<s>nukeyaut wrote: 
+dear melissa, 
+this is a single-user installation (win7 pro x64) without any network involved. 
+</s><s>best regards, simon jiménez 
+
+</s><s>am 01.09.2011 04:33, schrieb jingshu li: <quote>
+<s>it is a known issue that write metadata error to jpg and tiff on a network shared win7 or win2008 server os.</s><s> bridge team is working on it. 
+</s><s>thank you for report it. 
+</s><s>melissa bridge qe 
+</s></quote>> 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3897864</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Sep 2, 2011 1:01 AM">
+<s>dear yammer p, 
+</s><s>i would like to clarify the issues you've met.</s><s> do you mean usually you'll see the 'error writing metadata...' error when you apply (especially) keywords to images in a collection?</s><s> if so, do you usually use camara raw files in the collection?</s><s> actually there's another known issue that when apply metadata to camera raw files in collection will cause the error in some certain steps.</s><s> i'm wondering to make sure if your issue is the know issue or not. 
+</s><s>thanks, melissa bridge qe 
+</s><s><quote>
+<s>yammer p wrote: 
+<quote>
+<s>jingshu li wrote: 
+it is a known issue that write metadata error to jpg and tiff on a network shared win7 or win2008 server os.</s><s> bridge team is working on it. 
+</s><s>thank you for report it. 
+</s><s>melissa bridge qe 
+</s></quote>what about "error writing metadata..." from the last few versions of cs on various versions of windows (xp and 7 at least)?</s><s> i have experienced this for years, especially when keywording using collections of images from different folders. 
+</s><s>it seems to me to be an issue with bridge and file locking, with bridge being unable to write to some files even though they are not opened. 
+</s><s>my workaround has always involved one of the following: 1. wait several minutes until bridge has stopped enumerating files 2. open the offending file(s) with bridge, change some insignificant setting and save them again 3. restart bridge 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3897912</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Sep 2, 2011 1:38 AM">
+<s><quote>
+<s>jingshu li wrote: 
+if so, do you usually use camara raw files in the collection?</s><s> actually there's another known issue that when apply metadata to camera raw files in collection will cause the error in some certain steps.</s><s> i'm wondering to make sure if your issue is the know issue or not. 
+</s></quote>i'm dealing with smart collections or searches of tens or hundreds or thousands of raw images from a three-tiered folder structure of about 20,000 images.</s><s> the raw images are proprietary nikon files with sidecar files, processed only in camera raw.</s><s> i would make selections of tens of images and apply (or remove) keywords, but often the error writing metadata message would pop up for anything from one to most of the selected files. 
+</s><s>each error requires clicking on an ok button, which can take an eternity, and leaves many files unmodified.</s><s> trying the files again usually (but not always) results in the same error message.</s><s> the longer you leave it, the better your chances. 
+</s><s>sometimes it would be fine.</s><s> it seemed to get worse the longer i ran bridge, and i would usually restart bridge when things got unbearable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3898021</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="NukeyAut" timestamp="Sep 2, 2011 3:03 AM">
+<s>dear melissa, 
+</s><s>1.</s><s>) exactly the same camera model (nikon d7000), same sd-card.</s><s> 2.</s><s>) i will try the next time, i "fixed" all files the way i described earlier.</s><s> this is a single-user machine, there is only one account, it has admin rights and user account control is off.</s><s> i do not own another win7-machine.</s><s> 3.</s><s>) next time. 
+</s><s>best regards, simon jiménez 
+</s><s>am 02.09.2011 09:55, schrieb jingshu li: <quote>
+<s>dear nukeyaut,  i notice you mentioned some of your jpg files have the write metedata error issue.</s><s> so some other jpg files in your folder don't have the issue, right?</s><s> if so, i have several questions: 1.</s><s> do you create the jpg files with the issue and without the issue in same way?</s><s> e.g, do you create the 2 kinds of jpg files by same camera model?</s><s> 2. what will happen if you move the jpg files with the issue to your desktop?</s><s> how about to switch to another user account and then apply metadata to the jpg file?</s><s> how about use another windows 7 machine?</s><s> 3. could you please help to sent a sample jpg file with the issue to me?</s><s>  thanks, melissa ( mailto:jingshu@adobe.com ) bridge qe 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3898138</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="NukeyAut" timestamp="Sep 2, 2011 5:34 AM">
+<s>dear melissa, 
+</s><s>i got this error again.</s><s> copying to desktop does make no difference.</s><s> i uploaded a file, and when i download it again (uploading via ftp, downloading via http), the error still exists.</s><s> please verify that error: http://simon.jimenez.at/upload/d70_9360.jpg the picture was made using a d7000 and a sandisk sdhc card.</s><s> several other files of the same series (i did this just to test this out) were unaffected. 
+</s><s>best regards, simon jiménez 
+</s><s>am 02.09.2011 09:55, schrieb jingshu li: <quote>
+<s>dear nukeyaut,  i notice you mentioned some of your jpg files have the write metedata error issue.</s><s> so some other jpg files in your folder don't have the issue, right?</s><s> if so, i have several questions: 1.</s><s> do you create the jpg files with the issue and without the issue in same way?</s><s> e.g, do you create the 2 kinds of jpg files by same camera model?</s><s> 2. what will happen if you move the jpg files with the issue to your desktop?</s><s> how about to switch to another user account and then apply metadata to the jpg file?</s><s> how about use another windows 7 machine?</s><s> 3. could you please help to sent a sample jpg file with the issue to me?</s><s>  thanks, melissa ( mailto:jingshu@adobe.com ) bridge qe 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3909775</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Sep 9, 2011 2:19 AM">
+<s>dear nukeyaut, 
+</s><s>thank you for the sample test file.</s><s> i reproduced the issue in my testing machine and now the developer is investigating it.</s><s> here i have another workaround: if you usually won't use acr (adobe camera raw) to edit the jpg files, you can set 'disable jpeg support' from edit -> camera raw preferences -> jpeg and tiff handling -> jpeg.</s><s> and then you can write metadata to the jpg file in bridge, no need to change the tags with windows explorer.</s><s> thank you again for reporting the issue. 
+</s><s>melissa bridge qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3909812</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Sep 9, 2011 2:28 AM">
+<s>dear yammer p, 
+</s><s>i tested your issue but haven't reproduced yet.</s><s> could you please provide more info? 
+1.</s><s> you mentioned usually you will select tens of images (in the smart collection or search result) and apply metadata, and then you get the error.</s><s> i'm wondering can you apply metadata successfully if you only select one image and then apply metadata?</s><s> 2. before you apply metadata, do you wait for the images thumbnails genaration complete?</s><s> 3. can you apply metadata successfully if you selete the images at their real location (not in the smart collection or search result?</s><s>) 4. your os info, mac or win, and version? 
+</s><s>thanks, melissa bridge qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3909984</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Sep 9, 2011 6:04 AM">
+<s><quote>
+<s>jingshu li wrote: 
+
+1.</s><s> you mentioned usually you will select tens of images (in the smart collection or search result) and apply metadata, and then you get the error.</s><s> i'm wondering can you apply metadata successfully if you only select one image and then apply metadata?</s><s> 2. before you apply metadata, do you wait for the images thumbnails genaration complete?</s><s> 3. can you apply metadata successfully if you selete the images at their real location (not in the smart collection or search result?</s><s>) 4. your os info, mac or win, and version? 
+</s></quote>
+i just set up a quick test, and it failed immediately.</s><s> i haven't even been using bridge today... 
+</s><s>the computer runs cs5 on windows 7 professional 64-bit.</s><s> i used to run cs3/cs4 on a different computer loaded with windows xp professional.</s><s> i'm always up-to-date with os/driver/application updates.</s><s> both systems exhibited the same problem.</s><s> the raw image 3-tier folder hierarcy is on a separate internal drive: p:\camera\2011\08-15 location\, p:\camera\2011\08-16 location\, etc. the bridge cache is on a separate internal drive: t:\bridgecs5\, camera raw's cache is in t:\cameraraw\.</s><s> the images are mostly nikon nef (d300), and acr saves settings to 'sidecar' files.</s><s> most of the images have settings, and many have crops. 
+i created a new collection, and dragged the contents of 7 image folders into it - a total of 407 images.</s><s> none of these files have had keywords applied, but most had been worked in camera raw already.</s><s> after waiting for thumbnail/preview generation to finish, i selected the collection, created a new sub-keyword, selected all images in the collection, and ticked the new keyword (automatically ticking the parent keyword).</s><s> within a few seconds, i started getting the "error writing metadata..." warnings, and had to ok 15 images. 
+</s><s>the failed images were spread across 3 of the 7 selected directories.</s><s> trying the same thing 30 minutes later resulted in the same errors.</s><s> trying each failed image individually gave the same error (either as part of the collection, or from it's own folder). 
+i opened one of the problem images in camera raw, and adjusted blacks, clicking done to save the settings.</s><s> i then tried to apply the keywords again.</s><s> this time it worked. 
+</s><s>to answer your questions directly: 1.</s><s> i have never experienced this problem keywording files individually (apart from after the errors, as mentioned above), but then i wouldn't usually be selecting lots of images to keyword individual images.</s><s> 2. yes, i always wait for the spinning circles to disappear, sometimes even longer!</s><s> 3.</s><s> i just tried applying keywords to a single folder of 102 images, and 2 failed to update.</s><s> so the answer is no, it fails at real locations too.</s><s> 4. windows 7 professional 64-bit, running on intel core2 duo and 4gb ram.</s><s> same thing happened before on a windows xp professional pc, running on an intel pentium 4 and 2gb ram and a single hard drive. 
+i hope that helps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3909985</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Sep 9, 2011 6:08 AM">
+<s>i should add that, in the past, i have become so frustrated by this and regular unnecessary thumbnail/preview updates, i have resorted to ctrl-start and reset bridge to defaults, but the problems have always returned. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3910137</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="NukeyAut" timestamp="Sep 9, 2011 7:03 AM">
+<s>thanks very much, as i do not use adobe camera raw for jpg files, this is a good workaround! 
+</s><s>best regards, simon 
+</s><s>am 09.09.2011 11:19, schrieb jingshu li: <quote>
+<s>dear nukeyaut,  thank you for the sample test file.</s><s> i reproduced the issue in my testing machine and now the developer is investigating it.</s><s> here i have another workaround: if you usually won't use acr (adobe camera raw) to edit the jpg files, you can set 'disable jpeg support' from edit -> camera raw preferences -> jpeg and tiff handling -> jpeg.</s><s> and then you can write metadata to the jpg file in bridge, no need to change the tags with windows explorer.</s><s> thank you again for reporting the issue.</s><s>  melissa bridge qe 
+</s></quote>> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-3972305</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="SuzScriv52" timestamp="Oct 14, 2011 9:22 PM">
+<s>i'm having the exact same problem.  and the file content, camera, everything is identical.  the keyword tagging problem only occurs on some, not all of my photos, so i can't understand why this is happening.  i should also mention that i typically don't use camera raw to edit photos (although i do occasionally).  and i tried the suggested workaround (to disable the jpeg support), and it didn't help resolve the problem.  will adobe correct this problem on their next update?   thanks, suzanne
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4028809</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 16, 2011 12:34 AM">
+<s>any progress? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4028912</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Nov 16, 2011 2:22 AM">
+<s>dear yammer, 
+i appologize that not reply you for so long time.</s><s> from the description of the issue, it seems parts of your nikon d300 nef files cause this issue.</s><s> i tested all my nikon d300 nef files but still cannot reproduce it.</s><s> could you please provide me a sample file?</s><s> please email me (jingshu@adobe.com).</s><s> if the file is too large and cannot be sent by email, please also tell me through email, and i'll provide a ftp server to you to upload the sample file. 
+</s><s>beside, i still have 2 questions: 1.</s><s> where are your nikon d300 nef files located?</s><s> on a local disk or you need to access them through network?</s><s> 2. if you copy the file onto your desktop and then apply keyword, will the metadata get applied successfully? 
+</s><s>thanks, melissa bridge qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4032460</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 17, 2011 9:58 AM">
+<s>i have emailed a nef and sidecar to you.</s><s> i think the sidecar is the root of the problem.</s><s> it will only accept a keyword if it is first updated by camera raw or the settings cleared.</s><s> there must be a problem with the content of the xmp which causes bridge to give up.</s><s> the xmp provided is unmodified. 
+</s><s>in answer to your questions: 
+1.</s><s> the files are on an internal raid array, which is an ntfs volume, drive p:.</s><s> previously, they were on a single drive, with the same problem.</s><s> 2. copying the problem files to a new location, either the desktop or another volume produces the same results, with the same files failing to accept keywords. 
+</s><s>there is nothing obviously different about the files which fail.</s><s> they seem to be randomly chosen.</s><s> some have more complex settings than others.</s><s> some have crops.</s><s> in one shoot, taken over several minutes, most will work, but some will fail. 
+</s><s>hopefully, the image i provided will fail for you, and you might be able to analyse the xmp for causes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4033769</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 18, 2011 12:49 AM">
+<s>i've done some more experimentation this morning, and i think i'm getting closer to the cause of the problem. 
+i have a batch of 460 photos in several folders which i have duplicated in two other locations.</s><s> on keywording, the metadata occurs in the same files in each location, so the location is not the problem, it's the files.</s><s> in every case, modifying one parameter in camera raw will fix the metadata error.</s><s> the only thing that changes is the file's sidecar. 
+i have done a text diff on several xmp files, before and after camera raw use, and there are several things besides the intentional change which happen... 
+1.</s><s> the metadata date and instance id are updated.</s><s> 2. the history list is appended to.</s><s> 3. the default lens profile details are added (6 parameters) 4. the crop parameters are updated 
+i don't think the lens profile changes are significant because files which produced no metadata error had no additional lens profile details either. 
+</s><s>it is the last one of these which i think is significant.</s><s> in all files i tried (failed or not), the crop parameters had changed after an update of a single trivial basic setting (e.g.</s><s> recovery or clarity), even though the crop wasn't touched!</s><s> i noticed that all the failed photos had a crop - apart from one.</s><s> i checked the uncropped photo's xmp file before and after a setting change, and, interestingly, the before version had crop settings and the after version had none!</s><s> i had previously thought that it might be only the cropped files which gave the problem, but was proved wrong - it now seems that even uncropped files can have crop data. 
+</s><s>so, my conclusion is that bridge throws up the metadata error because it cannot parse the xmp data.</s><s> certainly in my case, a problem in the crop metadata seems to be the cause, and the best way to fix this is by allowing camera raw to parse and re-save the data. 
+</s><s>the questions are: why/how is the crop data wrong, and how can it be fixed without opening each individual file?</s><s> maybe i need to open 20,000 images in bridge, change an unused parameter then change it back again?</s><s> who's to say the probem won't reoccur later? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4033883</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Nov 18, 2011 3:10 AM">
+<s>dear yammer p, 
+</s><s>i received your sample nef file with the xmp file but unfortunately i still cannot reproduced the issue in my testing machine. 
+i re-arrange all the info so far and need to check with you if i didn't mis-understand your problem and didn't missing something: 1. all the files are generated by nikon d300 2. all the files (failed or not) have the sidercar xmp file.</s><s> 3. part of files are failed to write metadata, and part of not.</s><s> 3. once modified any parameter in acr for the files (failed or not), the write metadata error will not occur any more.</s><s> 4. all the failed files have crop paramater in sidercar xmp file, most of the failed files crop data will be updated after modified any irrelevant setting in acr.</s><s> only one of the failed file has crop data before edit in acr, while the crop data was cleared after edit in acr.</s><s> 5. bridge version is 4.0.5.11 and acr version is 6.6 
+
+</s><s>please correct me if my understanding is wrong or missing something. 
+</s><s>although i haven't reproduced the issue with your sample files, i want to try again with acr crop feature next week.</s><s> i may need more info from next week. 
+</s><s>thanks for all the info so far.</s><s> melissa bridge qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4034333</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 18, 2011 7:37 AM">
+<s>i am surprised the keywording worked.</s><s> it doesn't seem to matter where i put these files.</s><s> just to check: you copied both the nef and the xmp and tried to apply keywords without opening the image first? 
+</s><s>the only other factor which i have not taken into consideration is the bridge database.</s><s> maybe duplicates are handled by the same database entry, in which case that image will only fail on my computer. 
+1.</s><s> yes, all d300 2.</s><s> yes, all have xmp sidecar.</s><s> 3. usually 0–20% will not accept keywords.</s><s> i have to click ok on each failed image.</s><s> 4. yes, all have crop parameters in xmp - even one file which had no crop symbol.</s><s> crop parameters seem to get updated, regardless of the metadata problem.</s><s> maybe 25% of all my files are cropped, but most cropped files do not necessarily get the metadata error.</s><s> 5. bridge is 4.0.5.11 and acr is 6.6rc1, but i've seen this problem for a very long time, maybe even as long ago as cs3, definitely cs4. 
+</s><s>thanks for persevering. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4042342</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Nov 23, 2011 12:47 AM">
+<s>dear yammer p, just to check: you copied both the nef and the xmp and tried to apply keywords without opening the image first?</s><s> yes, i download both the nef and the xmp on my win 7 desktop, open bridge and then apply keyword, without opening the image in acr or ps first.   i still cannot reproduce the issue after trying to set crop in acr 6.6.   have you ever use other app to edit the image before crop it in acr?   and, could you please help to check if it can apply keywords when you download the image from the link you've emailed me?   thanks, melissa bridge qe
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4046304</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 25, 2011 7:41 AM">
+<s>i downloaded my own files and tried to apply keywords, and it worked fine this time.</s><s> clearly, this problem is quite complicated! 
+</s><s>some of my nef files have been updated in nikon capturenx, but not since july 2008, when i stopped using it.</s><s> the vast majority of the nef files are untouched by human hand. 
+i have tried various versions of lightroom over the years, set to write to xmp for compatibility with bridge/camera raw.</s><s> the xmp files have been variously updated with every version of adobe camera raw and lightroom over a period of 3–4 years, starting with cs3. 
+</s><s>last week, i was unable to generate a thumbnail image for one photo in bridge.</s><s> i purged the image's cache, deleted the xmp sidecar and replaced the photo from backup and it made no difference.</s><s> i renamed a copy and placed it in the same folder, it generated a thumbnail straight away.</s><s> it seems to me that bridge is struggling with it's database.</s><s> it's almost as if it had decided that particular file name was not going to work.</s><s> it strikes me that this is similar behaviour to the metadata problem, where it decides that a particular file cannot be written to. 
+i suspect that the error is down to my bridge database, which is why you could not recreate the error with the file i uploaded.</s><s> presumably, having used bridge a lot in the last week, something has changed in my database which also means that i cannot recreate the error with the same file. 
+i decided to go mad, and did another ctrl-start to clear bridge's settings.</s><s> i accepted the default cache location (it was previously on another internal drive).</s><s> i tried to keyword a collection and it worked without error.</s><s> i tried another collection straight away.</s><s> it failed.</s><s> there were so many errors, i had to end task to save my finger.</s><s> clearly, a bridge reset doesn't help much.</s><s> now i've got 20,000 previews and thumbnails to generate. 
+i suggest creating several collections of 500+ images, select all in each collection, and try to keyword them with dummy keywords on multiple levels.</s><s> for me, it will fail fairly quickly. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4046399</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Curt%20Y" timestamp="Nov 25, 2011 8:19 AM">
+<s>yammer, 
+</s><s>just a suggestion, when you find a file that does not work e-mail it to yourself and see if it still does not work before e-mailing to jingshu. 
+</s><s>not sure how the camera raw cache is handled on reset preference.</s><s> it may be purged also but have you purged that also? 
+</s><s>you refer to the bridge database, i assume that is the central cache rather than storing your info in camera raw database rather than xmp. 
+</s><s>also, when you can not keyword in bridge and you add the keyword in win exporer? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4046435</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 25, 2011 9:01 AM">
+<s><quote>
+<s>curt y wrote: 
+just a suggestion, when you find a file that does not work e-mail it to yourself and see if it still does not work before e-mailing to jingshu. 
+</s></quote>already tried it before i sent it!</s><s> great minds. 
+</s><s>the bridge cache folder contains 4 folders: 256, 1024, full, & data.</s><s> the first three are thumbnails, previews and 100% previews.</s><s> the last one appears to be two databases.</s><s> what these databases are for i don't know.</s><s> presumably, bridge needs to track which images have already been cached (not that that seems to help, as many of my images are re-cached unnecessarily all the time); i would also guess that bridge has a file lock system as well as databases for recently used folders etc. 
+</s><s>when i reset bridge this week, it went from using one set of folders to another on a different drive.</s><s> in effect, all previews and databases were discarded.</s><s> i thought it was worth trying the default location, and deleting the old cache.</s><s> the collections remained because they are stored elsewhere in the user profile. 
+i always opt to save camera raw data in xmp. 
+i never keyword in windows explorer.</s><s> only bridge.</s><s> however i don't do that much these days because the errors make it too painful in batches. 
+</s><s>what i'd like to know is why an image refused to generate a thumbnail, until i renamed it outside bridge. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4046495</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Curt%20Y" timestamp="Nov 25, 2011 9:25 AM">
+<s><quote>
+<s>yammer p wrote: 
+what i'd like to know is why an image refused to generate a thumbnail, until i renamed it outside bridge. 
+</s></quote>usually it is becasue there is some error in how the image file was constructed.</s><s> by saving it in another program whatever error was there, it was eliminated.</s><s> this is the same problem in a parallel thread http://forums.adobe.com/thread/925441?tstart=0 where op can add metadata to files generated with his camera until he saves it in ps. 
+</s><s>in this case jingsshu was able to reproduce the problem.</s><s> hopefully the solution here will help in your solution. 
+</s><s>if you have a pic that does not work send me a copy in pm and i will see it if works for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4051737</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Nov 28, 2011 11:48 PM">
+<s><quote>
+<s>curt y wrote: 
+in this case jingsshu was able to reproduce the problem.</s><s> hopefully the solution here will help in your solution. 
+</s></quote>let's hope so. 
+i had another think about this problem, seeing as something is being done about it.</s><s> i have another ongoing problem, which has also bothered me in the long term, related to thumbnail/preview generation.</s><s> despite ensuring that all my images are cached, bridge regularly wants to cache some of them again, and again, and again.</s><s> this can be a drain on resources, and slows the computer down.</s><s> it occurred to me that, as well as the broken thumbnail, this problem could also be related. 
+i have often purged the cache, or even removed it altogether, in the vain hope that problems will go away, but they always return.</s><s> this week i started again, and had to cache over 20,000 photos, which i did using the tools > cache option this time. 
+</s><s>it occurred to me that the bridge cache, which is stored in a folder on the hard drive, not only contains generated jpegs at thumbnail, preview and (optionally) 100% sizes, but it must also contain a keyword cache.</s><s> why else would bridge include an "indexing" facility?</s><s> it makes sense that, not only are the images cached, but some of their metadata is too, and it is this metadata cache which is used for searches and collections.</s><s> i can't prove this, but as a someone who has written code for a living, it makes sense. 
+</s><s>if bridge is having trouble accessing cached records in certain circumstances (searches/collections), then this may exhibit the symptoms of being unable to access the real data, as well as thinking that image previews need regenerating.</s><s> it could also explain why some images' xmp appear to be unwriteable: maybe it's the "metadata cache" which is unwriteable, hence certain images only failing on my computer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4056351</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Jingshu%20Li" timestamp="Nov 30, 2011 10:03 PM">
+<s>dear yammer p and curt y, 
+</s><s>firstly thank you so much for the discussion and all the info so far.</s><s> from all the previous discussion and testing, i feel and agree with you that this issue (include the metadata write error and the thumbnail error) is more likely a bridge cache / database issue, however i haven't found a good way to reproduce it in my office.</s><s> i've asked another bridge qe who's focusing on cache / thumbnailing to try this issue together with me.</s><s> we still need sometime and might need more infor from you.</s><s> by the way, the issue in a parallel thread http://forums.adobe.com/thread/925441?tstart=0 (which i've already recreated) seems a different issue with this one.</s><s> that issue is an xmp bug and it is unrelated to the bridge working environment (i mean cache / database...</s><s>) so it was reproduced more easily in my machine once i got the sample files. 
+</s><s>thanks, melissa bridge qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4059169</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Dec 2, 2011 4:10 AM">
+<s><quote>
+<s>jingshu li wrote: 
+from all the previous discussion and testing, i feel and agree with you that this issue (include the metadata write error and the thumbnail error) is more likely a bridge cache / database issue, however i haven't found a good way to reproduce it in my office.</s><s> i've asked another bridge qe who's focusing on cache / thumbnailing to try this issue together with me.</s><s> we still need sometime and might need more infor from you. 
+</s></quote>i don't think this problem will be easy to recreate reliably.</s><s> i have been trying for months, and i still can't do it with any certainty.</s><s> also, it looks like it's unlikely that anyone will be able to supply you with faulty files, as it seems like bridge is having trouble manipulating its database. 
+i can recreate the fault quite quickly, but randomly.</s><s> sometimes it works, sometimes not.</s><s> i can't work out what changes. 
+</s><s>for example.</s><s> i have recently compiled several collections of about 600–1000 images.</s><s> i can't keyword either of the first two collections i have selected (error writing metadata) either in full, or a sub-selection.</s><s> so, i selected about 60 images and loaded them into camera raw, changing the sharpness amount slightly, and clicking done to close.</s><s> once the circle stopped spinning, i tried to keyword again, and it worked perfectly. 
+</s><s>it seems to start with collections or finds-anything which groups images from different locations.</s><s> keywording files in these selections is hit and miss.</s><s> if any files refuse to be keyworded, they stay in this state; that is, by leaving the selection, and visiting the file's folder, it still produces the error if you try to keyword it individually.</s><s> but clearly, this is not a problem with the file, as it can be keyworded on another computer.</s><s> there must be a database record for each image, and this record's contents must somehow get into a state where it cannot be keyworded, unless it is updated by camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4086417</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="cjk10280" timestamp="Dec 15, 2011 4:37 AM">
+<s>dear melissa, 
+</s><s>same issue here (error writing metadata to a number of jpg files).</s><s> it happens mostly while adding keywords in batch but can also happen also when labeling or rating just one file. 
+</s><s>if i open the file offending file in ps and resave it, then bridge seems to be able to tag it, but it's hard to tell if that's because the file was resaved or because the new changes would be applied to only one file (rather than batch). 
+i did a lot of software development and the route i would take would be to have bridge display a specific error code when it cannot rate, label or tag a file, based on what the problem is. 
+</s><s>that would go a long way in helping zoom in on the problem. 
+</s><s>my platform: mac os x, both snow leopard and lion. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4095808</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Kul%40" timestamp="Dec 20, 2011 10:01 AM">
+<s>i regurlarly have this issue with bridge.</s><s> i use nef and tif only and have 8000/10 000 photos per folder.</s><s> i don't know what causes this.</s><s> but i have noticed that it occurs often after i clean the system of temporary files or when i open bridge when there ia a heavy load on the processor. 
+</s><s>what i do is wait for bridge to be done opening and then i press f5 to refresh.</s><s> this has always done the trick for me.</s><s> maybe the criterias are not loaded properly.</s><s> who knows.</s><s> maybe melissa can enlighten us on that. 
+fyi: windows 7 home premium 64 bit, u9400 1,4 ghz (dual-core) intel processor, 4 gb ram 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4096625</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Curt%20Y" timestamp="Dec 20, 2011 5:24 PM">
+<s>kul@, it seems like having 10,000 images per folder would put a heavy strain on the processor to built all the thumbnails especialy if hq version.</s><s> the 4 gigs of ram probably probably does not help either. 
+i don't know what the effect of the number of files per folder.</s><s> my thing is that there more images there are per folder the higher the chance of a cache error when building the thumbnails.</s><s> i know in cs3 errors were common and compounded by any switch from the folder before the thumnail building process was finished. 
+</s><s>with all that said i try to keep my files around 1,500 per folder and i use embedded thumbs.</s><s> have never experienced a problem, but that could have nothing to do with folder size. 
+</s><s>will be interesting to see if adobe can ferret out the answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4097134</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Dec 21, 2011 1:55 AM">
+<s>it could well be related to number of images, but not necessaily in the same folder.</s><s> it seems to affect me when working with large numbers in collections or finds.</s><s> otherwise, i tend to have quite low numbers of images in individual folders.</s><s> say 10-100.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4097470</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Kul%40" timestamp="Dec 21, 2011 6:47 AM">
+<s>it is a choice to have a large number of images per folder.</s><s> the intention is to ease keywording, metadata editing and batch processing.</s><s> bridge is meant for professionals and as such should be able to handle the load.</s><s> with large projects and collections, it would be impractical to have them spread out over several folders to accomodate bridge. 
+</s><s>as for my ultra portable, it is ideal for on the road and meets more than the minimum requirements to run cs5. 
+</s><s>for sure, it happens that the processor cannot handle the requests bridge puts on it.</s><s> the program should be designed to handle this.</s><s> i think that bridge drops the request to the processor when it does not get an answer quickly enough. 
+</s><s>the point of my post is that the workaround of this bug (in my opinion it is a bug) is to press f5 to refresh.</s><s> this does the trick everytime.</s><s> some file must get corrupted because restarting bridge and/or the computer doesn't restore my ability to edit image metadata only f5 does. 
+i love bridge by the way. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4117401</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Jan 4, 2012 4:55 AM">
+<s>i've logged this bug on the photoshop.com website. 
+http://feedback.photoshop.com/photoshop_family/topics/error_writing_me tadata_keywording_in_bridge 
+please feel free to visit the link and click the "+1" icon to add weight to this issue! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4159317</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Jan 23, 2012 10:31 AM">
+<s>hello 
+</s><s>it's all gone quiet on this topic. 
+</s><s>do you need any more information? 
+</s><s>have you made any progress? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4160421</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="theMikeD" timestamp="Jan 23, 2012 6:11 PM">
+<s>i thought i was on to something, and posed my results before finding this thread, so i'll simply link to it. 
+http://forums.adobe.com/message/4159905 
+sure would like to see this resolved.</s><s> i really like the idea of a more specific error code or something to ease the tracing of this super-annoying bug. 
+
+...</s><s>mike 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-3847762-4160709</DOCNO>
+<TEXT>
+<subject>Bridge 4.1.0.54: Error writing Metadata to some [....].jpg</subject>
+<post author="Yammer" timestamp="Jan 24, 2012 12:15 AM">
+<s>not being a mac person, i'm not sure i understand your posts.</s><s> you have found a correlation between file attributes and the problem, but not the xmp data itself? 
+</s><s>what happens if you make a camera raw adjustment to a problem image, does this change the problem attribute? 
+</s><s>our best guess on the windows side is that bridge is getting its internal database out of sync with reality, although it's difficult to tell for sure because there is no specific error reporting. 
+i have noted myself that my collection of xmp sidecar files, which have been built up over 4 years, starting with acr4, often look slightly different, as they have been untouched or updated with different versions of acr for different adjustments.</s><s> i don't know if inconsistencies in xmp structure, or a flaw in database management causes the metadata error to start, but in my case i strongly suspect that it is the database management.</s><s> this because, i can almost guarantee the problem starts with searches and collections, where bridge must have to build tables of file data from its database. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6229553-1433012</DOCNO>
+<TEXT>
+<subject>Problem purging cache with Bridge CS6</subject>
+<post author="Zuma" timestamp="Mar 20, 2014 6:50 PM">
+<s>when i open bridge cs6, i get a message that the cache needs to be purged.</s><s> when i initiate the purge, the program hangs, and i have to force quit.</s><s> how can i resolve this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6229553-6229466</DOCNO>
+<TEXT>
+<subject>Problem purging cache with Bridge CS6</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 7:01 PM">
+<s>must be a mac.</s><s> need to purge cache manually. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6229553-6229641</DOCNO>
+<TEXT>
+<subject>Problem purging cache with Bridge CS6</subject>
+<post author="Chris%20Cox" timestamp="Mar 20, 2014 7:20 PM">
+<s>you posted in the photoshop forum by mistake.</s><s> i've moved your post to the bridge forum where you are more likely to get answers about bridge issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6228835-1432835</DOCNO>
+<TEXT>
+<subject>Why is Bridge crashing?</subject>
+<post author="TheresaRaffetto" timestamp="Mar 20, 2014 2:11 PM">
+<s>hi, 
+</s><s>i'm using ps cs 6 with bridge v.</s><s> 5.0.0.399 on a macbook pro 10.6.8. consistenly when using bridge the files pixelate and then the program crashes.</s><s> this happens so often i can not use the program.</s><s> any guidance would be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6228835-6229047</DOCNO>
+<TEXT>
+<subject>Why is Bridge crashing?</subject>
+<post author="Chris%20Cox" timestamp="Mar 20, 2014 3:04 PM">
+<s>you posted in the photoshop forum by mistake.</s><s> i've moved your post to the bridge forum. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6228835-6229457</DOCNO>
+<TEXT>
+<subject>Why is Bridge crashing?</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 5:36 PM">
+<s>something other than bridge causing this.</s><s> my first suspect is the video card.</s><s> you can check this out by clicking on "use software rendering" in advanced preferences.</s><s> do it change anything? 
+</s><s>post a crash report to narrow down problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227726-1432565</DOCNO>
+<TEXT>
+<subject>MSVCP110.DLL</subject>
+<post author="Eric Noguet" timestamp="Mar 20, 2014 9:44 AM">
+<s>fenêtre d'info : "impossible de démarrer bridge car il manque msvcp110.dll.</s><s> essayez de réinstaller l'application". 
+</s><s>mais comment faire avec cc pour réinstaller un logiciel de la suite ? 
+a noter toutefois que bridge s'ouvre quand même au 7e. clic !</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227726-6228008</DOCNO>
+<TEXT>
+<subject>MSVCP110.DLL</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 10:29 AM">
+<s>this error relates to nik filters.</s><s> download the latest version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227726-6228147</DOCNO>
+<TEXT>
+<subject>MSVCP110.DLL</subject>
+<post author="Eric%20Noguet" timestamp="Mar 20, 2014 11:26 AM">
+<s>merci pour votre réponse mais je n'ai pas de filtres nik sur cette machine.</s><s> le problème semble apparu après la mise à jour de creative cloud ce matin ... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227726-6228607</DOCNO>
+<TEXT>
+<subject>MSVCP110.DLL</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 1:04 PM">
+<s>here is a fix http://helpx.adobe.com/creative-cloud/kb/missing-msvcp110dll.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218933-1430355</DOCNO>
+<TEXT>
+<subject>The RAW setting in Bridge is not working. Reply to Curt y</subject>
+<post author="hsmuyang" timestamp="Mar 17, 2014 8:23 PM">
+<s>normally, when i open the image file it shows all the thumbnail images, with the file names and cr2.; then i click a thumbnail to highlight it.</s><s> then, the small round icon in the toolbar is dark, and when the cursor is over it , it says "open in camera raw" .</s><s> when the icon is clicked, the file opens to a large working image for editing.</s><s> now, there are no thumbnail images, just the blank icons for each file, and the small circle on the toolbar is grey, and doesn't do anything.</s><s> when i double-click a file, (without knowing which image it is because there is no thumbnail) it opens directly into photoshop.</s><s> i need the thumbnails, and i need to open them in camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218933-6223117</DOCNO>
+<TEXT>
+<subject>The RAW setting in Bridge is not working. Reply to Curt y</subject>
+<post author="Yammer" timestamp="Mar 19, 2014 3:02 AM">
+<s>i never notied that icon before, and i've been using bridge for 7 years. 
+</s><s>usually, when you have no image previews for raw files, this means that your camera raw plug-in is older than your camera.</s><s> people always come across this problem when they use a new camera with older software. 
+</s><s>to be sure, we need to know which camera you are using, and which version of camera raw.</s><s> to save typing this out for the three-thousandth time, please follow this page which i wrote earlier: http://yphotography.co.uk/articles/get-adobe-camera-raw-acr-open-photo s/ 
+this covers the subject, which is by far the most commonly asked question about opening raw files by a country mile. 
+</s><s>if everything checks out fine, let us know.</s><s> if not, give us more information and we may be able to fix this for you. 
+ps. please just open one discussion per problem.</s><s> there are three threads on this now.</s><s> it makes it difficult to follow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218933-6227917</DOCNO>
+<TEXT>
+<subject>The RAW setting in Bridge is not working. Reply to Curt y</subject>
+<post author="hsmuyang" timestamp="Mar 20, 2014 9:51 AM">
+<s>my photoshop and bridge is cs4, purchased in 2008, and the canon 5d mark 11, purchased earlier.</s><s> i have cr2.</s><s> the camera and software worked together fine for all those years. 
+
+</s><s>now, however, when i click bridge to open a file containing several images, i do not get thumbnail images, just a circle with cr 2 and the file name, no image. 
+
+</s><s>if i double click one of the circles, the image will open in camera raw, and i can edit, and open photoshop and edit again.</s><s> if i then save a jpeg version, i will be able to open it and see the image in bridge. 
+
+</s><s>the problem is that now if i shoot 100 pictures, i can open bridge but there are no thumbnail images, only cr2 and file name. 
+
+i hope this can clarify the problem.</s><s> camera and software have not been changed.</s><s> thank you very much.</s><s> please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218933-6228009</DOCNO>
+<TEXT>
+<subject>The RAW setting in Bridge is not working. Reply to Curt y</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 10:32 AM">
+<s>have you purged cache? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218933-6228231</DOCNO>
+<TEXT>
+<subject>The RAW setting in Bridge is not working. Reply to Curt y</subject>
+<post author="Yammer" timestamp="Mar 20, 2014 11:19 AM">
+<s>which version of camera raw are you using?</s><s> if not 5.7, it may be worth installing it.</s><s> like curt says, the problem likely cache-related.</s><s> you can purge individual folders or purge the lot if it has become corrupted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227449-1432438</DOCNO>
+<TEXT>
+<subject>Bridge CS3 error message</subject>
+<post author="emarie810" timestamp="Mar 20, 2014 8:10 AM">
+<s>when i downloaded my cs3 on my new imac i am now unable to open the bridge program all other programs are fine but every time i open the bridge there is an unexpectedly closed message there is an error message but i can see it because the closed messsage comes up so fast.</s><s> i have tried to uninstall and reinstall the program but the same thing happens.</s><s> can anyone please help me i have so much information in that program?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227449-6227378</DOCNO>
+<TEXT>
+<subject>Bridge CS3 error message</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 8:12 AM">
+<s>a reinstall rarely fixes problem.</s><s> you need to see what message says, even if you have to set up a video camera and record the screen. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227449-6227612</DOCNO>
+<TEXT>
+<subject>Bridge CS3 error message</subject>
+<post author="emarie810" timestamp="Mar 20, 2014 8:35 AM">
+<s>thanks i took a video like you said and the error message says "this application has been moved from the location it was originally installed.some settings need to be repaired" there is a repair now button but since the unexpectedly closed window comes up so fast how can i repair it?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227449-6227530</DOCNO>
+<TEXT>
+<subject>Bridge CS3 error message</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 8:37 AM">
+<s>did you move any files after the install?</s><s> whether you did or not computer thinks you did. 
+</s><s>best bet is to uninstall, run adobe script cleaner, then reinstall.</s><s> the script cleaner will delete any bits and pieces missed by uninstall. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227449-6227621</DOCNO>
+<TEXT>
+<subject>Bridge CS3 error message</subject>
+<post author="emarie810" timestamp="Mar 20, 2014 8:45 AM">
+<s>i do see that bridge is in two different places one is in a file folder.</s><s> where would i find the adobe script cleaner its not in the adobe utilities folder?</s><s> thanks so much for all your help!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6227449-6228006</DOCNO>
+<TEXT>
+<subject>Bridge CS3 error message</subject>
+<post author="Curt%20Y" timestamp="Mar 20, 2014 10:27 AM">
+<s>it is a download. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218032-1430170</DOCNO>
+<TEXT>
+<subject>Bridge Raw not working, cannot see Raw image in Bridge</subject>
+<post author="hsmuyang" timestamp="Mar 17, 2014 1:58 PM">
+<s>the raw setting in bridge is not working.</s><s> when i open bridge i can see only icons, no images.</s><s> the raw tool icon is grey, not active.</s><s> i am going on a trip tomorrow and i need bridge to be working.</s><s> it was working earlier. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218032-6218706</DOCNO>
+<TEXT>
+<subject>Bridge Raw not working, cannot see Raw image in Bridge</subject>
+<post author="Curt%20Y" timestamp="Mar 17, 2014 5:44 PM">
+<s>not sure what a raw tool icon is.</s><s> what os?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218032-6218935</DOCNO>
+<TEXT>
+<subject>Bridge Raw not working, cannot see Raw image in Bridge</subject>
+<post author="hsmuyang" timestamp="Mar 17, 2014 8:34 PM">
+<s>the raw setting in bridge is not working. 
+</s><s>normally, when i open the image file it shows all the thumbnail images, with the file names and cr2.; then i click a thumbnail to highlight it.</s><s> then, the small round icon in the toolbar is dark, and when the cursor is over it , it says "open in camera raw" .</s><s> when the icon is clicked, the file opens to a large working image for editing.</s><s> now, there are no thumbnail images, just the blank icons for each file, and the small circle on the toolbar is grey, and doesn't do anything.</s><s> when i double-click a file, (without knowing which image it is because there is no thumbnail) it opens directly into photoshop.</s><s> i need the thumbnails, and i need to open them in camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218032-6219063</DOCNO>
+<TEXT>
+<subject>Bridge Raw not working, cannot see Raw image in Bridge</subject>
+<post author="hsmuyang" timestamp="Mar 17, 2014 8:45 PM">
+<s>normally, when i open the image file it shows all the thumbnail images, with the file names and cr2.; then i click a thumbnail to highlight it.</s><s> then, the small round icon in the toolbar is dark, and when the cursor is over it , it says "open in camera raw" . 
+</s><s>when the icon is clicked, the file opens to a large working image for editing. 
+</s><s>now, there are no thumbnail images, just the blank icons for each file, and the small circle on the toolbar is grey, and doesn't do anything. 
+</s><s>when i double-click a file, (without knowing which image it is because there is no thumbnail) it opens directly into photoshop. 
+i need the thumbnails, and i need to open them in camera raw. 
+</s><s>the software is a mac air.</s><s> camera is a canon 5d mark 2.</s><s> please help.</s><s> thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218032-6222460</DOCNO>
+<TEXT>
+<subject>Bridge Raw not working, cannot see Raw image in Bridge</subject>
+<post author="Curt%20Y" timestamp="Mar 18, 2014 7:32 PM">
+<s>in all of this you still have not said what bridge you are using.</s><s> for a cannon 5d mark ii you need acr 5.2 or above, which is in cs4. 
+</s><s>if you have a cr2 if you open it whether in bridge or double click and open in ps, it will open in camera raw. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6218032-6227915</DOCNO>
+<TEXT>
+<subject>Bridge Raw not working, cannot see Raw image in Bridge</subject>
+<post author="hsmuyang" timestamp="Mar 20, 2014 9:50 AM">
+<s>my photoshop and bridge is cs4, purchased in 2008, and the canon 5d mark 11, purchased earlier.</s><s> i have cr2.</s><s> the camera and software worked together fine for all those years. 
+
+</s><s>now, however, when i click bridge to open a file containing several images, i do not get thumbnail images, just a circle with cr 2 and the file name, no image. 
+
+</s><s>if i double click one of the circles, the image will open in camera raw, and i can edit, and open photoshop and edit again.</s><s> if i then save a jpeg version, i will be able to open it and see the image in bridge. 
+
+</s><s>the problem is that now if i shoot 100 pictures, i can open bridge but there are no thumbnail images, only cr2 and file name. 
+
+i hope this can clarify the problem.</s><s> camera and software have not been changed.</s><s> thank you very much.</s><s> please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225840-1432085</DOCNO>
+<TEXT>
+<subject>Bridge in CS6</subject>
+<post author="Dorit Thies" timestamp="Mar 19, 2014 5:09 PM">
+<s>i just upgraded to cs6.</s><s> where is the bridge app?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225840-6225874</DOCNO>
+<TEXT>
+<subject>Bridge in CS6</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 5:33 PM">
+<s>bridge is included with cs6. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225839-1432084</DOCNO>
+<TEXT>
+<subject>No PSD file association</subject>
+<post author="wgdesigngroup" timestamp="Mar 19, 2014 5:09 PM">
+<s>i just got around to uninstalling cs5 (i still have to do cs6). 
+</s><s>however i lost all my cc file associations in bridge.</s><s> i was able to ge indd, ai associated and tif & jpg with pshop but there is no psd reference in the file type association and i cannot add it. 
+</s><s>is there a way to rectify this? 
+</s><s>pc install. 
+</s><s>thanks 
+</s><s>brian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6225839-6225873</DOCNO>
+<TEXT>
+<subject>No PSD file association</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 5:32 PM">
+<s>when you uninstall a previous version it can foul up the file associations.</s><s> you either have to fool with the registry, or unstall everything, run adobe script cleaner, then reinstall.</s><s> unless you really need the space it is advisable to leave old versions for backup. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224386-1431678</DOCNO>
+<TEXT>
+<subject>Adobe Bridge Tools</subject>
+<post author="sbonito" timestamp="Mar 19, 2014 10:11 AM">
+<s>hello, i need to change a lot of pictures from rgb to cmyk.</s><s> to do this i opened adobe bridge and under tools, i am supposed to scroll down and see photoshop so i can then access image processor.</s><s> i can only see illustrator there.</s><s> any idea why this is happening.</s><s> i there anything i need to reset?</s><s> thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224386-6224692</DOCNO>
+<TEXT>
+<subject>Adobe Bridge Tools</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 11:40 AM">
+<s>click on edit/preferences/startup scripts and see if you have a check mark for bridge and ps. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224386-6224847</DOCNO>
+<TEXT>
+<subject>Adobe Bridge Tools</subject>
+<post author="sbonito" timestamp="Mar 19, 2014 12:31 PM">
+<s>i did that.</s><s> photoshop doesnt even show on the scripts...just bridge and illustrator which are both checked 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224386-6225834</DOCNO>
+<TEXT>
+<subject>Adobe Bridge Tools</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 5:21 PM">
+<s>without the startup script for ps you can not commuinicate with it.</s><s> google this.</s><s> might also try resetting preferences.</s><s> hold crtl key or alt key and start bridge.</s><s> should get a reset window. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224542-1431767</DOCNO>
+<TEXT>
+<subject>Jpeg link to original raw files bridge or lightroom?</subject>
+<post author="surfguyrob" timestamp="Mar 19, 2014 11:15 AM">
+<s>i have recently exported jpegs and given them to a librarian to add metadata.</s><s> he used bridge to add the metadata to the jpegs.</s><s> is there a simple way to give him the original raw files and they will automatically link together?</s><s> the filenames have been changed.</s><s> i am hoping there is a residual filename in the metadata. 
+</s><s>thanks, rob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224542-6224697</DOCNO>
+<TEXT>
+<subject>Jpeg link to original raw files bridge or lightroom?</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 11:47 AM">
+<s>not that i know of.</s><s> and with a new name it is a new file. 
+</s><s>there will only be old name if he did batch rename and had the box check to preserve current file name. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223183-1431427</DOCNO>
+<TEXT>
+<subject>BRIDGE ne répond plus</subject>
+<post author="MNRJLH" timestamp="Mar 19, 2014 4:21 AM">
+<s>depuis la dernière mise à jour de "bridge" cette application ne répond plus.</s><s> photoshop, lightroom fonctionnent correctement mais bridge reste muette.</s><s> que dois-je faire ?</s><s>.</s><s> j'ai adressé plusieurs messages mais je n'ai toujours pas de réponse.</s><s> merci à qui pourra me répondre et me dépanner. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223183-6223240</DOCNO>
+<TEXT>
+<subject>BRIDGE ne répond plus</subject>
+<post author="Romsinha" timestamp="Mar 19, 2014 5:12 AM">
+<s>moving to bridge forum. 
+</s><s>regards, romit sinha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223183-6223841</DOCNO>
+<TEXT>
+<subject>BRIDGE ne répond plus</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:25 AM">
+<s>what bridge, what os? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223183-6224144</DOCNO>
+<TEXT>
+<subject>BRIDGE ne répond plus</subject>
+<post author="MNRJLH" timestamp="Mar 19, 2014 9:09 AM">
+<s>thanks you, my computer is dell studio 8500 intel core i7, memory 6 go, system windows seven.</s><s> bridge cc.</s><s> i just uninstall bridge, how to reinstall bridge on the same computer ?</s><s>.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223183-6224325</DOCNO>
+<TEXT>
+<subject>BRIDGE ne répond plus</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 9:56 AM">
+<s>same way you did first time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224167-1431673</DOCNO>
+<TEXT>
+<subject>Switchboard Not Responding</subject>
+<post author="Limbo Design" timestamp="Mar 19, 2014 9:34 AM">
+<s>i open up bridge and it's slow.</s><s> did i mention slow?</s><s> i look into my activity monitor and yep, there in red is the switchboard, not working again.</s><s> i force quit switchboard, and we're in business for a little bit. 
+no, i'm not opening photoshop, which from what i've read, is some sort of connection between bridge and photoshop. 
+</s><s>any ideas on deleting switchboard? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6224014-1431633</DOCNO>
+<TEXT>
+<subject>Output in Bridge CC missing. Attempt to install fix from Bridge Help. WinZip failed. Now what?</subject>
+<post author="Rob_Working" timestamp="Mar 19, 2014 8:49 AM">
+<s>the output function in bridge cc is missing.</s><s> i attempted to install the fix that was available via bridge help.</s><s> the winzip download worked fine.</s><s> i found the recommended file location.</s><s> the fix did not install.</s><s> what else can i use?</s><s> when will an update be available?</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-1130349</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="bob_brennan_47" timestamp="Jan 6, 2013 9:48 AM">
+<s>2 second lag after clicking on any menu item.</s><s> 4-8 second lag after right clicking on any image.</s><s> 3 second lag while selecting images with arrow keys.</s><s> 2 second lag selecting multiple images 
+my system is high performance: .</s><s> 12 core 3.3ghz xeon processors .</s><s> 24gb ram .</s><s> primary drive is 8 ssds in a raid0 configuration .</s><s> dual nvidia quadro fx5400 .</s><s> os: win7 x64 
+</s><s>cs5 and cs5.5 were very "snappy" in responsiveness on this system.</s><s> cs6 bridge works fine on my laptop, perfectly responsive. 
+</s><s>once camera raw or photoshop are open, no issue working in these tools, so, the issue is bridge. 
+</s><s>here's my debugging steps which have not worked to fix the issue: installed the latest camera raw plug in from nikon.</s><s> nikon d800 raw .</s><s>nef files work in windows explorer and in cs5.5.</s><s> installed all windows updates installed the lastest nvidia fx5800 card drivers uninstalled all adobe products (reader, media player, etc.</s><s>) uninstalled all plugs ins (hdr, noise, etc.</s><s>) checked there are no fonts on the system (no ttf files) uninstalled office 2013 to make sure there were no system font issues.</s><s> uninstalled all nikon software except the raw plug in.</s><s> deleted c:\program files\adobe and c:\program files (x86)\adobe searched for any adobe reference in c:\users\<my_username>\ (example appdata), and deleted it.</s><s> cleaned the registry of any reference to adobe or any dll related to adobe or an adobe plug in.</s><s> rebooted multiple times.</s><s> re-installed cs6 master collection.</s><s> at this point it did not recognize my raw photos (.</s><s>nef from a nikon d800).</s><s> installed all adobe updates.</s><s> the updates fixed the camera raw issue ran fonttest.jsx – all fonts passed, none failed.</s><s> tried preferences: advanced -> use software rendering : cpu utilization went up, but, no impact on the lag startup scripts : disabled all but photoshop cs6 increased cache size, compacted cache, purged cache, different cache organizations, etc. 
+</s><s>does anyone know how to fix this 
+bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-4972352</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Jan 6, 2013 10:44 AM">
+<s><quote>
+<s>bob_brennan_47 wrote: 
+2 second lag after clicking on any menu item.</s><s> 4-8 second lag after right clicking on any image.</s><s> 3 second lag while selecting images with arrow keys.</s><s> 2 second lag selecting multiple images 
+cs6 bridge works fine on my laptop, perfectly responsive. 
+
+</s></quote>since it works fine on laptop and not on desktop it can not be bridge.</s><s> feel it is a software conflict.</s><s> you task is a little easier than most as you have a good working verion on laptop and not on desktop.</s><s> you need to compare and see what is different between the two.</s><s> do you have the same anti-virus program, any key macro programs, same os version, pen tablet programs, mouse, mouse driver, and so forth. 
+</s><s>not a computer whiz but as i have said on similar posts, it is almost as there is some delay when you click on an item and when bridge gets the signal.</s><s> feel this click is routed through the os subroutine for this function, and there is something that is intersepting the signal to search for something.</s><s> the trick of course is to figure out what. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-4972404</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Jan 6, 2013 11:14 AM">
+<s>i assume this means two gpu cards dual nvidia quadro fx5400.</s><s> since you get no added boost to performance from 2 cards on ps assume the same for bridge.</s><s> since they are both the same it will work this way.</s><s> two different cards will cause problems. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5046920</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="deadcities" timestamp="Feb 4, 2013 11:53 AM">
+<s>i have exactly the same issue on windows 8.</s><s> i was wondering if it was a software conflict so i created a new acount, logged in and tried bridge from there.</s><s> it worked perfectly.</s><s> i've yet to figure out which program is conflicting with bridge but i'll keep you guys posted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5050912</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="xermes" timestamp="Feb 5, 2013 6:16 PM">
+<s>win7 pro x64, intel 3570k, radeon hd 7850, 128gb ssd on 'c' containing os and applications (user profile still on 'c' but data mapped to a hard drive). 
+</s><s>bridge cs6 (fully updated) is glacially slow and is totally unusable on my new build pc.</s><s> bridge successfully builds cache but it's as if it forgets where it has put it and tries to build cache all over again.</s><s> response times can be 40 seconds or so.</s><s> like the previous poster it runs perfectly if i create a new user account and run bridge from that. 
+</s><s>there are no issues with other applications and the event log is clean. 
+</s><s>adobe support remotely logged on tp my pc and tried various fixes, non of which worked.</s><s> eventually a new user account was generated and bridge was run from there.</s><s> bridge ran perfectly.</s><s> adobe support concluded that it was a user account issue and that i should talk to microsoft.</s><s> alternatively it was suggested that i should to run bridge and ps from the new logon. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5051027</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Feb 5, 2013 7:17 PM">
+<s>most programs run best on c drive.</s><s> with the small ssd's becoming popular numerous problems appear as temp and other programs are moved elsewhere.</s><s> make sure you have the latest bridge update as it was supposed to fix the temp problem not being on c drive. 
+</s><s>are you on a network?</s><s> many are finding if it is on favorite list they have slowdowns and bridge tries to recache everything.</s><s> unplug from network and see if it works. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5051585</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="xermes" timestamp="Feb 6, 2013 2:41 AM">
+<s>my configuration: 
+i am on a home network (no domain controller), the pc from which i run bridge is ethernet attached and another is connected wirelessly.</s><s> only my documents, my music, my pictures and my videos folders are mapped to hard disk 'd' as per: 
+http://windows.microsoft.com/en-gb/windows7/redirect-a-folder-to-a-new -location 
+the paging file and remaining user data remain on 'c'.</s><s> re ssds the temp and tmp variable assignments are the same for both user accounts: 
+user variables temp %userprofile%\appdata\local\temp tmp %userprofile%\appdata\local\temp 
+system variables temp: c:\windows\temp tmp: c:\windows\temp 
+it makes no difference whether bridge's cache is mapped to 'c' ot 'd'. 
+</s><s>there is 55gb of free space on my ssd 'c' drive and i have 8gb of ram.</s><s> as ssd and network configurations are common to both my user account (bridge is glacially slow) and the new test user account (bridge is lightning fast), i can't see how these can be the problem, but thanks for drawing them to my attention. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5053913</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="xermes" timestamp="Feb 6, 2013 3:41 PM">
+<s>bridge is totally unusable.</s><s> google's picasa works well and provides a work-around pending resolution: 
+http://picasa.google.com/ 
+how to integrate with ps: http://productforums.google.com/forum/#!topic/picasa/fwapo0rxzbs 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5054036</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Feb 6, 2013 5:07 PM">
+<s>a number of users never use bridge as a browser, but use windows explorer.</s><s> they buy a plug in so it will display thumbnails of psd files and are quite happy with the arrangement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5059725</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="xermes" timestamp="Feb 8, 2013 6:28 PM">
+<s>bob, 
+</s><s>i am running win7 pro x64 and this worked for me.</s><s> try running the latest version of bridge (5.0.2.4) in vista sp2 compatibility mode.</s><s> both 32bit and 64bit bridge now work like a dream (attention adobe support!</s><s>).</s><s> 
+</s><s>1. click the windows orb bottom left and click 'all programs' 2. right-click on adobe bridge (32bit or 64bit) 3. click 'copy' 4. right-click on the windows desktop and click 'paste shortcut' 5. right-click the shortcut and click 'properties' 6. click on the 'compatibility' tab 7. click the 'run this program in compatibility mode' checkbox and select 'windows vista (service pack 2) from the dropdown..</s><s> 8. click 'ok' 
+</s><s>you may do this for both 32bit and 64bit versions of bridge.</s><s> click on the appropriate shortcut on the desktop to launch the program. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5060224</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="bob_brennan_47" timestamp="Feb 9, 2013 6:51 AM">
+<s>thank you xermes for finding a workaround to the bug! 
+i ended up doing a clean install on win8x64 and everything works great. 
+</s><s>so, it's definitely in the interaction between the os io stack and adobe's io stack.</s><s> they really need to acknowledge the issue, root cause it, and issue a patch. 
+</s><s>thanks again for being so helpful. 
+bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5060287</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="xermes" timestamp="Feb 9, 2013 7:22 AM">
+<s>having just searched 'bridge' and 'compatibility mode' i see i am not the only one to discover that emulating vista sp2 works for others too.</s><s> adobe's assertion that the widely reported glacially slow bridge issue is all due to user account corruption is wearing a little thin. 
+</s><s>meanwhile i am finding that picasa 3 works better for me.</s><s> it supports online albums and also offers face recognition.</s><s> i installed the program and it immediately set off matching photographs with faces and indexing them accordingly.</s><s> it even correctly identified pics of me when i was very young despite my face having changed somewhat in the intervening years.</s><s> where picasa produced an insufficiently confident match it asked for confirmation.</s><s> picasa allowed me to assign a name to each face.</s><s> though the matching process requires some effort, being able to search by face match has made my large collection of phographs very much more accessible and i found some excellent photographs that i had not seen in a long time! 
+</s><s>as described earlier in this thread a few clicks will pass a photograph to ps for editing.</s><s> however the slick way is to use picasa's api to configure a button.</s><s> this invokes ps with a single click.</s><s> it involves a bit of xml and guid generation which should not be difficult for anyone with a technical background.</s><s> the examples available will need editing for cs6. 
+</s><s>picasa raw support: http://support.google.com/picasa/answer/15625?hl=en& 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5236018</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="J%20H%20H" timestamp="Apr 15, 2013 7:43 AM">
+<s>many thanks for this info. cs6 bridge was extremely slow, but your workaround worked perfectly.</s><s> john hallam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5737783</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="NurseBob" timestamp="Oct 5, 2013 1:15 AM">
+<s>xermes, 
+</s><s>i wish i'd found your solution before uninstalling, reinstalling, and losing all of my collections...</s><s> well, at least the images are safe and backed-up, and i guess having already rated the images, it won't be too horrible rebuilding the collections, but i did have over 10,000 images in those collections...</s><s> so it goes.</s><s> thanks again, you saved much gnashing of teeth and pulling of hair.</s><s> one interesting aspect: i'd been running bridge cs6 64bit for over a year without a problem, then suddenly last week, totally unresponsive.</s><s> at times it took minutes to even access the toolbar.</s><s> according to task manager and the performance monitor, only 1 of the 12 cpu threads was engaged, all the others were either parked or at 0%.</s><s> i guess adobe hasn't quite mastered the distributed processing...</s><s> and further, my wife's pc has just started exhibiting the same behavior, but it couldn't be adobe's fault! 
+</s><s>bob 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858109</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 20, 2013 5:42 AM">
+<s>i'm getting the same problem.</s><s> lag for around 5 seconds.</s><s> i also tried the vista service pack 2 solution which works but... 
+</s><s>photoshop files will not load in photoshop cc because "adobe photoshop cannot run on this computer because this version of photoshop requires windows 7 or later" 
+</s><s>most others files work, indesign, acrobat, illustrator. 
+i have pointed the image department within adobe to this page and getting a call within the next 3 days from the senior department and will update you on what he says. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858241</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 20, 2013 6:16 AM">
+<s>update: 
+</s><s>if photoshop is open then it will load photoshop files into it so running in vista service pack 2 'compatibility mode' will sort the problem out. 
+i hope adobe will have a better solution... we will see. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858396</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Omke%20Oudeman" timestamp="Nov 20, 2013 6:57 AM">
+<s><quote>
+<s>photoshop files will not load in photoshop cc because "adobe photoshop cannot run on this computer because this version of photoshop requires windows 7 or later" 
+</s></quote>
+
+</s><s>as a mac user i have to be careful but maybe curt can hop in.</s><s> to my knowledge both xp and vista are indeed no longer supported by adobe per cc. 
+</s><s>xp is also soon to be dropped by ms so that is understandable but vista is more recent.</s><s> however there have been many problems to solve for adobe regarding vista which (as i also understood) has yet a very small group of users, hence they stopped developing their software further for this platform due to cutting costs and make the best out of the available resources for more recent systems. 
+</s><s>maybe curt can correct me but the easiest way for you would be either to stay with cs6 or bite the bullet and upgrade to at least windows 7 so both system and software are again in line with each other. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858506</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Nov 20, 2013 7:30 AM">
+<s>i have talked at length to adobe about this issue.</s><s> they have not been able to reproduce it.</s><s> they maintain it is a user install problem, and there is no good reason that vista should work when win7 does not.</s><s> but evidence shows it does.</s><s> this issue will never be addressed as they have moved beyond cs6. 
+</s><s>there is something in the install bridge does not like, or some incompatibility with other software that causes the problem.</s><s> an uninstall, running adobe script cleaner,and reinstall, or setting up another user account are the only options i can think of. 
+a number of users have very slow bridge if connected to a server.</s><s> have no experience with servers, but it appears the conflict arises when the server has "favorites" or other folders on it that bridge wants to search and cache. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858476</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 20, 2013 7:31 AM">
+<s>i think you missunderstood.</s><s> i am using windows 8.1 pro but this is a work around for the problem. 
+</s><s>my problem with bridge cc: 
+6 second lag after clicking on any menu item.</s><s> 6-8 second lag after right clicking on any image.</s><s> 6 second lag while selecting images with arrow keys.</s><s> 6 second lag selecting multiple images 
+solution: 
+try running the latest version of bridge in vista sp2 compatibility mode.</s><s> both 32bit and 64bit bridge now work like a dream (attention adobe support!</s><s>).</s><s> 
+</s><s>1. click the windows orb bottom left and click 'all programs' 2. right-click on adobe bridge (32bit or 64bit) 3. click 'copy' 4. right-click on the windows desktop and click 'paste shortcut' 5. right-click the shortcut and click 'properties' 6. click on the 'compatibility' tab 7. click the 'run this program in compatibility mode' checkbox and select 'windows vista (service pack 2) from the dropdown..</s><s> 8. click 'ok' 
+</s><s>you may do this for both 32bit and 64bit versions of bridge.</s><s> click on the appropriate shortcut on the desktop to launch the program. 
+</s><s>the message 'photoshop files will not load in photoshop cc because "adobe photoshop cannot run on this computer because this version of photoshop requires windows 7 or later' is just a comment you get when running bridge in vista sp2 compatibility mode as i guess bridge thinks its on a vista machine. 
+</s><s>its just a work around for the lag problem some people are getting. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858478</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 20, 2013 7:33 AM">
+<s>well adobe should see that this is also happening on bridge cc ...... 
+</s><s>its also a clean install windows 8.1 pro 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858480</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 20, 2013 7:41 AM">
+<s>is the adobe scripe cleaner - adobe cc cleaner tool?</s><s> 
+</s><s>what order do you need to uninstall? 
+i have done the following: 
+1.</s><s> uninstalled all adobe software 2.</s><s> used adobe cc cleaner tool 3.</s><s> reboot 4.</s><s> reinstall bridge 
+</s><s>still had the problem. 
+:-( 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858600</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Omke%20Oudeman" timestamp="Nov 20, 2013 7:50 AM">
+<s>sorry for misunderstanding, use forum by email and did not see previous post or whole thread, hence my remarks for upgrade 
+your use of the cleaner tool (indeed earlier known as clean script) is correct. 
+</s><s>however your central cache file probably is still the same as before.</s><s> i am in favor of dumping the whole cache file manually (curt should have the windows path at hand) and start fresh over again.</s><s> in fact, i have used the cleaner tool myself and i first uninstall, run script and then provide a manual search for other adobe files and folders (like cache) left and dump them manually. 
+</s><s>also i would not select the option to create cache per folder when possible and would get rid of such invisible files from earlier versions. 
+</s><s>all the best, i now leave it to the windows experts 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858488</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 20, 2013 7:57 AM">
+<s>i did delete the bridge cache files as i direct bridge to another drive to store them but i am not aware of other files that might have to be deleted manually? 
+</s><s>maybe curt do you have some more info? 
+</s><s>thanks for the info anyway omke. 
+i have also done all the the following (see link) 
+helpx.adobe.com/bridge/kb/troubleshoot-errors-freezes-bridge-windows.h tml 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858715</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Nov 20, 2013 8:19 AM">
+<s>the cache files are at user/appdata/roaming/adobe/bridgex/cache 
+note that appdata is a hidden file and you need to turn this option on in windows explorer. 
+</s><s>not the adobe tech guy, but feel it is some software conflict on the individual's machine.</s><s> otherwise everyone would have very slow bridge and it shows up rarely.</s><s> generally a lag indicates bridge is checking on something or waiting for a all clear signal.</s><s> sometimes it can be as simple as disconnecting the server, or changing your virus software.</s><s> norton is particualrly noted for being intrusisve at scanning files before they are allowed to process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5858905</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Omke%20Oudeman" timestamp="Nov 20, 2013 9:22 AM">
+<s><quote>
+<s>but i am not aware of other files that might have to be deleted manually? 
+</s></quote>
+
+i was referring to the hidden files with cache for folder.</s><s> you can check when having pointed bridge to a folder and in menu view select 'show hidden files'.</s><s> when you use side car xmp they also show now but if you have cache files they are called bridge.cache and bridge.cachet or something alike (haven't used them for long) and have a document icon. 
+</s><s>otherwise the remarks curt stated about individual machine problems makes sense to me, how sad it may seem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5871601</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="billbyrnes%40live.com" timestamp="Nov 25, 2013 1:55 AM">
+<s>i have bridge 64 bit cc on my machine and i have the same problem. 
+</s><s>bill byrnes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5882227</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 28, 2013 1:02 AM">
+<s>i talked to support on thursday and was told that someone would call within 3 days. 
+</s><s>of course no-one did.</s><s> adobe have gotten too big and when that happens support becomes bad, very bad. 
+</s><s>the last problem i had with bridge was all the 'file type associations' were lost.</s><s> i thought being a paying customer i will call on their help.</s><s> again crap support, kept telling me the same thing set each one up individually.</s><s> in the end i found a registry hack that sorted the problem out. 
+</s><s>i'm all up for being legal and pay a lot of money on software making sure i am but i do understand that when a large company offers such bad support why people start thinking why pay. 
+</s><s>surely part of the cloud subscription i pay should enable me to get support others who use the software illegally don't get.</s><s> of course in reality i don't.</s><s> i don't get any useful support. 
+i have to repeat myself for every department, wait around for calls that never come and hunt the forums for people who seem to do better jobs in informing others of how to solve problems. 
+i will keep updated on the problem as i know more.</s><s> i will also like anyone else who is having to problem to message here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5883125</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Nov 28, 2013 8:24 AM">
+<s>if you want help here please start your own discussion thread.</s><s> the issuse you have are common.</s><s> chat is a good option, but you need to have everything defined as they pretty much work off of a script to give standard answers to common problems.</s><s> anything more complex and they send you here to the unpaid users volunteering their time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5884335</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="CW%20Photography" timestamp="Nov 28, 2013 11:43 PM">
+<s>im still in the stage of using adobe's support which by the way never called again.</s><s> i was just updating on here so anyone else with the problem may have a better understanding of what to do. 
+</s><s>does anyone have a good point of call for adobe.</s><s> they say they are going to call but never do.</s><s> does anyone else get this bad level of customer support? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5884576</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Omke%20Oudeman" timestamp="Nov 29, 2013 2:36 AM">
+<s><quote>
+<s>they say they are going to call but never do.</s><s> does anyone else get this bad level of customer support? 
+</s></quote>
+
+</s><s>considering the fact that mostly only the bad stories are told and only a few good stories come above i have to say i can't remember any good story about adobe support but have seen lots of bad stories.</s><s> regarding some copies of chat conversation quit hilarious if it weren't such sad occasions for the ones with a problem.. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-5885498</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Nov 29, 2013 10:05 AM">
+<s>do not expect adobe to call back, like omke says it rarely happens.</s><s> if you want to use adobe help you have to be the squeaky wheel.</s><s> if you do not hear back in 24 hours likely you will not, so call every 24 hrs. until successful, or you run out of patience. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-6223957</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Joe8888" timestamp="Mar 19, 2014 8:30 AM">
+<s>i just ran into a problem with bridge.</s><s> bridge recognized the hard drive but couldn't get any information from it.</s><s> windows 8 had no problem in explorer.</s><s> to resolve the issue i just renamed the drive.</s><s> go to control panel > administrative tools > computer management > disk management > right click the problem drive and select change drive letter.</s><s> then select a different letter.</s><s> when i pulled up bridge again it still gave me the same error pop up message but, it recognized the new letter drive.</s><s> frankly, i'm not sure what the original problem was here, but hopefully someone else can use this information. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-4972261-6223974</DOCNO>
+<TEXT>
+<subject>Bridge Issue:  CS6 Unresponsive, how to make it respond?</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:41 AM">
+<s>this would have been an os permission error.</s><s> by re-naming drive you changed ownership. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223600-1431543</DOCNO>
+<TEXT>
+<subject>output to contact sheet – "current folder only" required</subject>
+<post author="Niels Grundtvig Nielsen" timestamp="Mar 19, 2014 7:08 AM">
+<s>the history for the magnifying glass top right tells me i'm looking at "bridge search: current folder", but what i see is images from current folder and all sub-folders.</s><s> is there any way to customise this search so i get just the results from the current folder? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6223600-6223842</DOCNO>
+<TEXT>
+<subject>output to contact sheet – "current folder only" required</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:27 AM">
+<s>filter gives you only info for current folder. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6222326-1431271</DOCNO>
+<TEXT>
+<subject>Bridge CC for audio content management</subject>
+<post author="ODAudio" timestamp="Mar 18, 2014 6:11 PM">
+<s>i work for an organization that has a large volume of video and audio content.</s><s> we are considering switching to adobe cc and using bridge as a content management system for metadata/keywording and hopefully be able to put in a keyword and find relevant audio,video and photo content. 
+</s><s>my involvement is mainly on the audio side of the content and while i see that bridge will work with audio and video, there is not much talk about its use with audio. 
+</s><s>is anyone using cc in an audio content management capacity? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6222326-6222559</DOCNO>
+<TEXT>
+<subject>Bridge CC for audio content management</subject>
+<post author="Curt%20Y" timestamp="Mar 18, 2014 7:44 PM">
+<s>bridge is not a good product for digiat assest management, nor it it meant to work on a network.</s><s> it is primarily set up to work as a image file browser. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6222326-6222920</DOCNO>
+<TEXT>
+<subject>Bridge CC for audio content management</subject>
+<post author="ODAudio" timestamp="Mar 19, 2014 12:33 AM">
+<s>any recommendations on something more appropriate! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6222326-6223840</DOCNO>
+<TEXT>
+<subject>Bridge CC for audio content management</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:23 AM">
+<s>best bet is to google audio dam or some such wording.</s><s> have no experience with this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6222490-1431238</DOCNO>
+<TEXT>
+<subject>Bridge Problem</subject>
+<post author="eizoflexscan" timestamp="Mar 18, 2014 8:06 PM">
+<s>once i used e: disk to get copies of files from d: disk, i couldn't open d: dish files anymore through bridge of addobe cs6.</s><s> the screen always show inset disk and the e: always opened the door.</s><s> if i use cs5, the operation is normal.</s><s> how to solve this problem? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6222490-6223839</DOCNO>
+<TEXT>
+<subject>Bridge Problem</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:21 AM">
+<s>this is an os device problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6220948-1430902</DOCNO>
+<TEXT>
+<subject>Bridge Freeze</subject>
+<post author="TOM1" timestamp="Mar 18, 2014 10:45 AM">
+<s>bridge opens with a message "bridge encountered a problem and is unable to read the cache.</s><s> please try purging the central cache in cache preferences to correct the situation." when i attempt to purge the cache, bridge freezes. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6220948-6222557</DOCNO>
+<TEXT>
+<subject>Bridge Freeze</subject>
+<post author="Curt%20Y" timestamp="Mar 18, 2014 7:39 PM">
+<s>mac?</s><s> read related post on this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6220948-6222493</DOCNO>
+<TEXT>
+<subject>Bridge Freeze</subject>
+<post author="TOM1" timestamp="Mar 18, 2014 8:34 PM">
+<s>mac...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6220948-6223837</DOCNO>
+<TEXT>
+<subject>Bridge Freeze</subject>
+<post author="Curt%20Y" timestamp="Mar 19, 2014 8:20 AM">
+<s>see post #6 of this thread. http://forums.adobe.com/message/5223112 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6221092-1430912</DOCNO>
+<TEXT>
+<subject>Bridge CC</subject>
+<post author="bluelady58" timestamp="Mar 18, 2014 10:59 AM">
+<s>i have just downloaded bridge cc to be able to use camera raw but every time i try to open a photo in camera raw i get the following message: 
+bridge's parent application is not active.</s><s> bridge requires that a qualifying product has been launched at least once to enable this feature. 
+</s><s>could someone please tell me what this means and what i have to do to enable camera raw 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6221092-6221681</DOCNO>
+<TEXT>
+<subject>Bridge CC</subject>
+<post author="bluelady58" timestamp="Mar 18, 2014 1:56 PM">
+<s>i have elements 10. i've tried open as and then changing to camera raw but i get a message saying, can't ope file due to program error 
+help please, someone 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Bridge-General-Discussion/Discussions-6221092-6222558</DOCNO>
+<TEXT>
+<subject>Bridge CC</subject>
+<post author="Curt%20Y" timestamp="Mar 18, 2014 7:41 PM">
+<s>this frequently means you have an expired adobe trial on computer.</s><s> uninstall it.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

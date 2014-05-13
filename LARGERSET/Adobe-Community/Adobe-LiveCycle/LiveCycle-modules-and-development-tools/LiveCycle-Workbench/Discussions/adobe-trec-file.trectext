@@ -1,0 +1,88 @@
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Workbench/Discussions-6219430-1430505</DOCNO>
+<TEXT>
+<subject>How to use fragments in HTML page or Java page?</subject>
+<post author="Ritesh Grover" timestamp="Mar 18, 2014 3:04 AM">
+<s>hi friends, 
+</s><s>i want to use the fragments, that i have creating in dynamic pdf form , on my web pages.</s><s> i want to save my application development time so want to reuse the same fragments in the application itself.</s><s> please suggest how can i do this?</s><s> your quick response will be very beneficial for me 
+
+</s><s>regards ritesh grover rgrover@seasiainfotech.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Workbench/Discussions-6219430-1430505</DOCNO>
+<TEXT>
+<subject>How to use fragments in HTML page or Java page?</subject>
+<post author="Ritesh Grover" timestamp="Mar 18, 2014 3:04 AM">
+<s>hi friends, 
+</s><s>i want to use the fragments, that i have creating in dynamic pdf form , on my web pages.</s><s> i want to save my application development time so want to reuse the same fragments in the application itself.</s><s> please suggest how can i do this?</s><s> your quick response will be very beneficial for me 
+
+</s><s>regards ritesh grover rgrover@seasiainfotech.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Workbench/Discussions-6218301-1430198</DOCNO>
+<TEXT>
+<subject>(ES3) Adding Invisible Signature field?</subject>
+<post author="C.Batt" timestamp="Mar 17, 2014 3:29 PM">
+<s>i understand that signature service can't add invisible signature field to a dynamic xfa pdf, so i'm trying the following: 
+forms service's renderpdfform operation to merge form and data; and then output service's transformpdf operation to flatten pdf. 
+</s><s>however i still get the error: alc-dss-300-007 addition of signature fields is not supported for dynamic xfa pdfs 
+this seems to indicate that previous steps i took do not in fact transform a dynamic xfa pdf to static pdf. 
+</s><s>is there are way to transform a dynamic xfa pdf to a static pdf so that i can add an invisible signature field that can be used by the signature service's certify pdf operation? 
+(i feel like i must be overlooking something simple, and my google-fu is failing me.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Workbench/Discussions-6218301-6221562</DOCNO>
+<TEXT>
+<subject>(ES3) Adding Invisible Signature field?</subject>
+<post author="C.Batt" timestamp="Mar 18, 2014 2:23 PM">
+<s>bit ashamed of this one.</s><s> was simply doing something wrong in the formsservice renderpdfform operation to merge the form with data. 
+</s><s>for anyone in the future that is experiencing the same problem, in the formsservice renderpdfform operation of the process, view all options in the property sheet, and under: 
+pdf options, check "generate appearances on server" render options, set "render at client" to "no" additional options, set "form model processing" to "server side" 
+</s><s>explanation here: http://blogs.adobe.com/steampowered/tag/livecycle-output 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Workbench/Discussions-6218301-1430198</DOCNO>
+<TEXT>
+<subject>(ES3) Adding Invisible Signature field?</subject>
+<post author="C.Batt" timestamp="Mar 17, 2014 3:29 PM">
+<s>i understand that signature service can't add invisible signature field to a dynamic xfa pdf, so i'm trying the following: 
+forms service's renderpdfform operation to merge form and data; and then output service's transformpdf operation to flatten pdf. 
+</s><s>however i still get the error: alc-dss-300-007 addition of signature fields is not supported for dynamic xfa pdfs 
+this seems to indicate that previous steps i took do not in fact transform a dynamic xfa pdf to static pdf. 
+</s><s>is there are way to transform a dynamic xfa pdf to a static pdf so that i can add an invisible signature field that can be used by the signature service's certify pdf operation? 
+(i feel like i must be overlooking something simple, and my google-fu is failing me.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Adobe-LiveCycle/LiveCycle-modules-and-development-tools/LiveCycle-Workbench/Discussions-6218301-6221562</DOCNO>
+<TEXT>
+<subject>(ES3) Adding Invisible Signature field?</subject>
+<post author="C.Batt" timestamp="Mar 18, 2014 2:23 PM">
+<s>bit ashamed of this one.</s><s> was simply doing something wrong in the formsservice renderpdfform operation to merge the form with data. 
+</s><s>for anyone in the future that is experiencing the same problem, in the formsservice renderpdfform operation of the process, view all options in the property sheet, and under: 
+pdf options, check "generate appearances on server" render options, set "render at client" to "no" additional options, set "form model processing" to "server side" 
+</s><s>explanation here: http://blogs.adobe.com/steampowered/tag/livecycle-output 
+</s></post>
+</TEXT>
+</DOC>
+
+

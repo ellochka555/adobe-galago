@@ -1,0 +1,2699 @@
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6232515-1433656</DOCNO>
+<TEXT>
+<subject>Need to import customized workspace</subject>
+<post author="RosemaryC" timestamp="Mar 21, 2014 3:55 PM">
+<s>how do i import a workspace from one version of framemaker to another? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6232515-6232519</DOCNO>
+<TEXT>
+<subject>Need to import customized workspace</subject>
+<post author="RosemaryC" timestamp="Mar 21, 2014 4:24 PM">
+<s>i finally found the file in which my settings are stored and copied it to the corresponding folder for my new version of framemaker.</s><s> workspaces are saved in c:\users\[username]\appdata\roaming\adobe\framemaker\[versionnumber]\ workspaces\[structured/unstructured] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-592394</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="mariod1014" timestamp="Mar 8, 2010 6:45 PM">
+<s>is framemaker capable of navigating up/down one row by using the arrow keys?</s><s> this seems such a basic functionality but i can't do it?</s><s> i'm using v7.0 (the company is cheap and won't upgrade).</s><s> alternately, is there a third party keyboard utility to get around this limitation? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-2645233</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="FieryPantone" timestamp="Mar 9, 2010 1:09 AM">
+<s>i'm delighted to be able to say ...</s><s> fm 7.0 has just what you're looking for!</s><s> the key-sequence is esc, t, m, d - probably a fossil of command-mode, table, move, down. 
+</s><s>and because i've briefly reverted to 7.0 while waiting for a new 9.0 licence, i've been able to check and can confirm you get the full set: up and down, plus next (for right) and previous (for left).</s><s> i'm not sure these actually made it through to 9.0, which is strange. 
+</s><s>have fun keyboarding round tables <g> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-2645334</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="Michael%20M%C3%BCller-Hillebrand-basb7I" timestamp="Mar 9, 2010 2:30 AM">
+<s>if you want to use the arrow keys you have to capture the keyboard event and move the cursor via api programming.</s><s> there is a free script available that does this, if you have the framescript plug-in. 
+- michael 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-2645530</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="JohannesKrueger" timestamp="Mar 9, 2010 4:37 AM">
+<s>if you are using fm on windows but don't have framescript, you could use autohotkey, which is a very versatile, macro interpreter for windows under gnu license (i.e. free to use).   in contrast to what a framescript could presumably do, autohotkey won't recognize whether the cursor is within a table or not, but as the fm key sequence is unambigious, that doesn't do any harm.   your ahk macro could look like this: #ifwinactive ahk_class framefamily7.0mdiframe down::sendinput {esc}tmd{down} up::sendinput {esc}tmu{up} #ifwinactive the first line is specific to fm8 (although it says "framefamily7") and restricts the hotkeys to apply only in fm.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-2649321</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="Lynne%20A.%20Price" timestamp="Mar 10, 2010 10:55 AM">
+<s>no need to use a plug-in or scripting language, or to use the existing shortcuts if you prefer something else.</s><s> framemaker shortcuts and menus can be customized to your convenience.   for details, see the "customizing frame products" manual.</s><s> in 7.0, this pdf book is in the $fmhome\onlinedocuments where $fmhome is your main framemaker directory, probably something like c:\program files\adobe\framemaker7.0.   while you can use a different file, one way to make your change is to create or edit $fmhome\fminit\configui\customui.cfg.</s><s> this is a plain text file that you can edit with notepad or any other plain text editor (if you use framemaker make sure to save the file as text and put the filename in quotes in the save as dialog box so that framemaker does not assign a .</s><s>txt extension).   suppose you want to use the up and down arrow keys to move up and down one cell.</s><s> you probably do not want to disable the usual functionality assigned to those keys--moving up and down a line in text.</s><s> you might therefore want to use shift-up arrow and shift-down arrow.</s><s> in customui.cfg all you need is:   <modify moveiptocellabove   <keysequence +/up> > <modify moveiptocellbelow   <keysequence +/down> >   here, + indicates use of the shift key.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-6167861</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="CK_2013" timestamp="Feb 28, 2014 1:17 PM">
+<s>hi lynne.</s><s> i found your reply as i was looking for a solution to this problem (keyboard navigation up and down rows in tables) in framemaker 10 and was wondering if you/anyone knew of an updated solution if you were now using framemaker 10. 
+</s><s>for example, in fm 10, i'm assuming the file to update now is cmds.cfg because i couldn't fine customui.cfg (e.g., it's now under c:\program files (x86)\adobe\adobeframemaker10\fminit\configui)? 
+</s><s>next, i opened this file, but it's a mass of text w/o any space breaks.</s><s> would i just paste the move code you listed above into the end of that file (i.e., before the *** end of commands *** closing text/tag), or does that code have to go in a particular location?</s><s> if it's the latter case, is there a way to make that text legible, or is there text to search for that could bring me to the proper location? 
+i tried using the esc t m d (as per http://help.adobe.com/en_us/framemaker/10.0/using/wsd817046a44e105e21e 63e3d11ab7f7862b-7f82.html) and it just doesn't function.</s><s> hence, looking for another solution because i need to update a number of tables and it's maddening not to be able to quickly move through cells using my keyboard keys. 
+</s><s>anyway, hope you/someone can help.</s><s> thanks!</s><s> c 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-6168159</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="Lynne%20A.%20Price" timestamp="Feb 28, 2014 2:52 PM">
+<s>c, a few things: 
+1. fm does not provide a file called customui.cfg.</s><s> if you need it, just create it with your favorite text editor.</s><s> it can go in ...\fminit\configui.</s><s> alternatively, you can create the file elsewhere and/or name it something else.</s><s> just find the line in maker.ini that says: 
+configcustomuifile=fminit\configui\customui.cfg 
+and specify a different filename.</s><s> relative pathnames are relative to the fm installation directory (within c:\program files), but you can specify an absolute path. 
+</s><s>remember that there are two copies of maker.ini--one in the fm installation directory and one in your user area (such as \users\<your userid>\appdata\roaming\adobe\framemaker\10). 
+2.</s><s> the ability to specify a custom config ui file is provided specifically so you do not need to edit cmds.cfg. 
+3.</s><s> if you want to inspect cmds.cfg, there's an easy way to make it more readable, even if the contents are still somewhat obtuse.</s><s> there are various conventions for representing line breaks on different computer systems and the cmds.cfg convention is different than the most common windows convention.</s><s> just open the file in fm, which recognizes the line breaks correctly. 
+4.</s><s> starting with fm 11, each workspace has its own menus.</s><s> while maker.ini can still specify a customui.cfg, it's not very useful.</s><s> fm does process any such file when it starts up, but as soon as you open a document all the menus and shortcuts are replaced by those specified in the .cfg file associated with the current workspace. 
+--lynne 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-2644773-6231117</DOCNO>
+<TEXT>
+<subject>Down one row using arrow keys</subject>
+<post author="CK_2013" timestamp="Mar 21, 2014 8:46 AM">
+<s>it worked!</s><s> thank you so much.</s><s> sorry for delay - needed to get it to allow me to modify the folder and file and then i mistyped the code, but once i copied it exactly as you showed, it worked right away!</s><s>!</s><s>!</s><s> caroline 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6230785-1433285</DOCNO>
+<TEXT>
+<subject>Framemaker Publishing Server 11 Web front end?</subject>
+<post author="Tiggyboo1" timestamp="Mar 21, 2014 7:17 AM">
+<s>i'm looking for api information for trying manage server 11 jobs via a web front end.</s><s> any examples or references to api locations would be appreciated!</s><s> note that what we are trying to create is something similar to what server 12 already has, but our institutional browser for the forseeable future is ie8, unfortunately, so that rules out server 12. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6229506-1432973</DOCNO>
+<TEXT>
+<subject>Custom toolbar for wrap text in Bold - fcodes? or extendscript?</subject>
+<post author="tracey.orso" timestamp="Mar 20, 2014 6:04 PM">
+<s>hi, 
+</s><s>i'm replacing the text_formattig toolbar with one that looks the same but instead of adding format overrides, it wraps the selected text with the bold, italic etc elements. 
+</s><s>so in text_format.xml i have added, for example> 
+<action command="wrapbold"> <images dark_normal="p_textbold_18x18_n.png" dark_rollover="p_textbold_18x18_r.png" normal="p_textbold_18x18_n_d.png" rollover="p_textbold_18x18_r_d.png"/> </action> 
+
+and in customui.cfg i have> 
+<command wrapbold <label wrapbold> <keysequence \!</s><s>c2b> <definition \xf49 > <mode all>> 
+
+</s><s>this launches the quick insert menu, but i'm not sure if i can key down and select b then enter, to wrap with the required element. 
+</s><s>can i combine fcodes to do this?</s><s> does anyone know? 
+or am i better off calling extendscript from the toolbar instead? 
+
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6229506-6229495</DOCNO>
+<TEXT>
+<subject>Custom toolbar for wrap text in Bold - fcodes? or extendscript?</subject>
+<post author="Lynne%20A.%20Price" timestamp="Mar 20, 2014 7:25 PM">
+<s>tracey, what version of framemaker are you running?</s><s> fm 12 has a customizable quick element toolbar that may be what you want.</s><s> see: 
+</s><s>http://help.adobe.com/en_us/framemaker/using/ws2d2a17056e219198-10de06 4142a20156dc-8000.html 
+for information on both using it and customizing it. 
+--lynne 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6229506-6229695</DOCNO>
+<TEXT>
+<subject>Custom toolbar for wrap text in Bold - fcodes? or extendscript?</subject>
+<post author="tracey.orso" timestamp="Mar 20, 2014 7:36 PM">
+<s>thankyou lynne, but it is framemaker 11.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6139526-1411351</DOCNO>
+<TEXT>
+<subject>Unable to re-save a PDF file in FrameMaker 10</subject>
+<post author="nankinnankin" timestamp="Feb 20, 2014 7:05 AM">
+<s>after creating and saving a pdf file, i am unable to resave the file with that name after making changes to it. 
+</s><s>the adobe acrobat message i get is: 
+
+
+</s><s>this error does not occur when i try to make comments and resave a .pdf created with microsoft word. 
+i have a workaround which is to save the file using a different name, delete the original file, and rename the new file with the original name.</s><s> i would prefer not to have to do this with each saved change. 
+</s><s>thank you for any help or suggestions you can offer. 
+nankinnankin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6139526-6139683</DOCNO>
+<TEXT>
+<subject>Unable to re-save a PDF file in FrameMaker 10</subject>
+<post author="Jeff_Coatsworth" timestamp="Feb 20, 2014 7:26 AM">
+<s>not sure how this is a fm problem – you've created the pdf out of fm, then edited it in acrobat, then you want to save it again?</s><s> i think the issue is in acrobat, not fm- 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6139526-6140900</DOCNO>
+<TEXT>
+<subject>Unable to re-save a PDF file in FrameMaker 10</subject>
+<post author="nankinnankin" timestamp="Feb 20, 2014 12:10 PM">
+<s>hi jeff, 
+</s><s>you are correct.</s><s> this is an acrobat issue.</s><s> thank you for your response. 
+nankinnankin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6139526-6196152</DOCNO>
+<TEXT>
+<subject>Unable to re-save a PDF file in FrameMaker 10</subject>
+<post author="binh" timestamp="Mar 10, 2014 10:38 AM">
+<s>actually, i had similar issue, but it was fm.</s><s> occasionally, when i did a save as pdf or save as with html, fm went on for a few moment then stoped saving with an error message along the line: cannot create <some file name>...</s><s> it kept doing the same thing for several tries until i deleted the previously generated files, then all would be well for a while, until the next time...</s><s> i don't know it had anything to do with the generated files (pdf or html) being opened on a web-browser at the moment.</s><s> yet, as i remembered prior to that and verified afterward, in those times that went without such error, those files were being opened as well.</s><s> thanks!</s><s> ps: i'm using framemaker 11 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6139526-6228356</DOCNO>
+<TEXT>
+<subject>Unable to re-save a PDF file in FrameMaker 10</subject>
+<post author="nankinnankin" timestamp="Mar 20, 2014 12:41 PM">
+<s>hi binh, 
+i can't help you with that issue, but i can tell you that after calling acrobat we realized the problem was that my document default was set up to show the document in the preview pane as well as on the screen.</s><s> as long as the preview pane is open, acrobat sees the document as being open and is unable to save. 
+nankinnankin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6139526-6228586</DOCNO>
+<TEXT>
+<subject>Unable to re-save a PDF file in FrameMaker 10</subject>
+<post author="binh" timestamp="Mar 20, 2014 12:44 PM">
+<s>thank you, nankinnankin!</s><s> i'll check out that possibility. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6228205-1432629</DOCNO>
+<TEXT>
+<subject>WebWorks plug-in missing?</subject>
+<post author="RonSAP" timestamp="Mar 20, 2014 11:31 AM">
+<s>hi everyone....i just upgraded to fm10 and now my webworks epublisher designer (v2013.2) throws a "no valid license key was found to enable adobe framemaker support" when i try to generate help.</s><s> i suspect i am missing a plug-in for fm, but can't find any mention of it either in framemaker help or webworks help or support.</s><s> can anybody assist?</s><s>?</s><s> 
+</s><s>thanks!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6228205-6228263</DOCNO>
+<TEXT>
+<subject>WebWorks plug-in missing?</subject>
+<post author="Art_Campbell" timestamp="Mar 20, 2014 11:37 AM">
+<s>webworks supports frame, but frame doesn't provide active support for ww; it's just another plugin it sounds as if you haven't updated ww to your new platform, but there isn't anything you'd do to enable ww support on the fm side; afaik it's all webworks code coming in through the plugin api. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6228205-6228332</DOCNO>
+<TEXT>
+<subject>WebWorks plug-in missing?</subject>
+<post author="RonSAP" timestamp="Mar 20, 2014 11:44 AM">
+<s>thank you art.</s><s> i suspected it was a ww issue.</s><s> i am running the latest ww, however, and it *was* working until i upgraded to frame 10.</s><s> i am also trying to get an answer from the ww side. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6222942-1431329</DOCNO>
+<TEXT>
+<subject>How do I hide Framemaker 12 welcome screen?</subject>
+<post author="StudioSm" timestamp="Mar 19, 2014 2:11 AM">
+<s>i would like to hide the welcome/splash screen in framemaker 12. in framemaker 11 there was an option for that in the maker.ini, but i can not find that option in maker.ini 12. can anybody enlighten me on this? 
+regards bjørn 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6222942-6224444</DOCNO>
+<TEXT>
+<subject>How do I hide Framemaker 12 welcome screen?</subject>
+<post author="Arnis%20Gubins" timestamp="Mar 19, 2014 10:31 AM">
+<s>have you tried adding splashscreen=off in the [preferences] section of the maker.ini? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6222942-6226484</DOCNO>
+<TEXT>
+<subject>How do I hide Framemaker 12 welcome screen?</subject>
+<post author="StudioSm" timestamp="Mar 20, 2014 1:07 AM">
+<s>hi arnis gubins thanks for your reply.</s><s> i do not seem to have such an entry in my maker.ini. 
+</s><s>the preferences section looks like this for framemaker 12: 
+[preferences] toolbariconscolor=colored toolbariconssize=large sessionrestoreinfoserializedoncrash=off lastusedworkspaceinunstructuredmode=blank autocollapseiconicpods=off autoshowhiddenpods=on hidepodsonclose=off opendocsastabs=on hidesingletabsindocs=on preventdoctabbingwhendragging=off opencompdocsastabs=on tooltipmode=normal uibrightness=1 usegrayscaleappicon=off unresolvedcrossreferencesdialog=on openingoldreleasedocdialog=off unsupportedhotspotshapesdialog=on unavailablefontsdialog=on dictionaryprovidermismatchdialog=on unsupportedfileformatformodedialog=on unsupportedfileformatforviewdialog=on showalertsonsessionrestore=off menuset=complete lastactiveview=wysiwyg view crossplatformfilenaming=windows snap=off gravity=off checkoutonopen=on uploadonsave=on 
+best regards bjørn 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6222942-6226829</DOCNO>
+<TEXT>
+<subject>How do I hide Framemaker 12 welcome screen?</subject>
+<post author="Error7103" timestamp="Mar 20, 2014 4:11 AM">
+<s>> i do not seem to have such an entry in my maker.ini. 
+</s><s>what arnis is suggesting is that you add one, and see what happens. 
+</s><s>it wouldn't be the first time that fm has had an inadequately documented ini setting that isn't present by default. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6222942-6226693</DOCNO>
+<TEXT>
+<subject>How do I hide Framemaker 12 welcome screen?</subject>
+<post author="yves.barbion" timestamp="Mar 20, 2014 4:22 AM">
+<s>hi bjorn 
+</s><s>you need to *add* the entry to your maker.ini.</s><s> this works for me: 
+[preferences] ;--------------------------- misc preferences ------------------------------ ; the period must be used for specifying the decimal point.</s><s> dontshowwelcomescreen=on askexit=off 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6222942-6226863</DOCNO>
+<TEXT>
+<subject>How do I hide Framemaker 12 welcome screen?</subject>
+<post author="StudioSm" timestamp="Mar 20, 2014 4:34 AM">
+<s>hi yves that worked!</s><s> thanks a lot!</s><s> 
+</s><s>regards bjørn 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6226574-1432280</DOCNO>
+<TEXT>
+<subject>Frame Maker - Image caption</subject>
+<post author="MURALIDHAR YALAMANCHI" timestamp="Mar 20, 2014 2:09 AM">
+<s>how can we add image caption in a frame maker document, as in a word document? 
+i have created a style called image caption, where the font is bold.</s><s> but there is no image number.</s><s> manually, i have added numbers.</s><s> but the drawback is that if i insert another image in between the existing paragraphs, then i have to update the image numbers manually.</s><s> please let me know, if there is a way to create a paragraph style, so that image numbers are also updated automatically. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6226574-6226633</DOCNO>
+<TEXT>
+<subject>Frame Maker - Image caption</subject>
+<post author="Error7103" timestamp="Mar 20, 2014 5:54 AM">
+<s>assuming you want "figure 123" 
+</s><s>format > paragraph > designer paragraph tag: [ image caption ] properties: [ numbering ] [*] autonumber format: [ f:figure\ <n+> ] 
+</s><s>"f:" specifiies counter f, so that other auto-numbered paragraphs won't disrupt caption numbers. 
+</s><s>"\ " is a non-breaking space, useful for cross-referencing captions near right margins. 
+</s><s>"<n+>" increments counter f, which starts at 0, so the first caption defaults to 1, depending on book numbering properties. 
+</s><s>the auto-numbering works correctly if the caption paragraph is located: in normal flow a, in a table cell anchored to flow a, in a text frame within an anchored frame, but only in the case where there is a single text frame containing a caption in that anchored frame, or in a table cell in a text frame in an anchored frame, also subject to the single-text-frame-caption rule 
+if you have more than one text frame in an anchored frame, they all get the same auto-number (up through fm9, anyway).</s><s> this probably isn't a defect. 
+i don't know what happens if you use unanchored frames, as they are unwise for multiple more serious reasons. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6226772-1432307</DOCNO>
+<TEXT>
+<subject>managing table titles in FrameMaker 12 does not work</subject>
+<post author="StudioSm" timestamp="Mar 20, 2014 3:48 AM">
+<s>i have a mysterious problem in framemaker 12. when creating a table i am not able to move the table title.</s><s> when changing the setting to below or above or whatever and pressing apply nothing happens.</s><s> the feature works allright in framemaker 11.</s><s> i have tried with both existing and new documents and the it doesn't matter.</s><s> i can not do anything with the title position of tables.</s><s> are anybody else expiriencing the same problem ? 
+regards bjørn 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6201921-1426142</DOCNO>
+<TEXT>
+<subject>Where can I find trainning for DITA xml using FrameMaker in my region</subject>
+<post author="Engineer/technical writer" timestamp="Mar 12, 2014 12:37 AM">
+<s>hey, 
+</s><s>i'm planning on to move from unstructured framemaker to structured using dita xml.</s><s> where can i find trainning courses that would available in my region (finland)? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6201921-6202310</DOCNO>
+<TEXT>
+<subject>Where can I find trainning for DITA xml using FrameMaker in my region</subject>
+<post author="Engineer%2Ftechnical%20writer" timestamp="Mar 12, 2014 4:55 AM">
+<s>i think we found something already. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6201921-6226705</DOCNO>
+<TEXT>
+<subject>Where can I find trainning for DITA xml using FrameMaker in my region</subject>
+<post author="Himanshusingh10" timestamp="Mar 20, 2014 3:23 AM">
+<s>good to know you could find someone.</s><s> for reference, you can always find adobe certified training partnersby visiting our partner finder portal : http://training.adobe.com/training/partner-finder.html#p=1&product=ado be-frame-maker 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6225287-1431966</DOCNO>
+<TEXT>
+<subject>How to control the FrameMaker 12 interface spread?</subject>
+<post author="donna_unmani" timestamp="Mar 19, 2014 2:23 PM">
+<s>hello, i've installed framemaker 12 on a surface pro (windows 8, tablet-sized monitor).</s><s> when the preferences are set to framemaker 12 basic, the interface is displayed as it should, using the complete screen.</s><s> but if i switch to a different flavor: framemaker 12 xml authoring, or framemaker 12 structured, the interface shrinks to about half the screen making it utterly unusable as i can't see anything.</s><s> i've set the monitor to default.</s><s> this "shrinking" also occurs when i'm in the basic framemaker 12 mode and press the shortcut of f9 to get the list of paragraph styles. 
+</s><s>is there a way to control this undesired behavior and have the gui use the entire screen? 
+</s><s>many thanks, donna 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6197104-1425004</DOCNO>
+<TEXT>
+<subject>Anchored Frames: Can I change the default type?</subject>
+<post author="Aulder" timestamp="Mar 10, 2014 2:25 PM">
+<s>when i import a graphic, it comes up in an anchored frame that is centered and cropped.</s><s> i always want it to be right and not-cropped.</s><s> is there a way to set this preference? 
+
+</s><s>using fm12, which continues to have the bug that pressing ctrl-9 (or -8 or -0) and starting to type to quickly (the first time) causing a hang-up from which the only solution is to close fm12 and open it again, a 2-minute waste of time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6197104-6198759</DOCNO>
+<TEXT>
+<subject>Anchored Frames: Can I change the default type?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 11, 2014 5:16 AM">
+<s>can't help you with the first point as i don't work much with graphics in my docs (& the ones i do have depend on anchored frames) – maybe use object styles to set your defaults? 
+</s><s>on your second point – have you updated your copy of fm12 with the latest patch? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6197104-6199260</DOCNO>
+<TEXT>
+<subject>Anchored Frames: Can I change the default type?</subject>
+<post author="Art_Campbell" timestamp="Mar 11, 2014 7:58 AM">
+<s>if i recall correctly, there isn't a way to reset the default directly, but it does seem to inherit the history of some imports.</s><s> the solution i like the best is to run a micro framescript (from rick quato) that's configurable to whatever set of parameters you want to use.</s><s> also works retroactively to reset all frames book-wide. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+
+</s><s>on tue, mar 11, 2014 at 8:16 am, jeff_coatsworth 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6197104-6224674</DOCNO>
+<TEXT>
+<subject>Anchored Frames: Can I change the default type?</subject>
+<post author="ReneSteph" timestamp="Mar 19, 2014 11:24 AM">
+<s>once upon a time, long, long ago, there was a plugin available from the late bruce foster (may he rest in peace) named impgraph that did exactly this.</s><s> however, with his passing, the plugin is no longer available.</s><s> actually, there was also a function to faciliate a "shrinkwrap" function to fit the frame to the graphic, or only to width or height proporitionately...but i'm not sure whether my fm7.2 interface was pulling that feature from bruce's impgraph or elsewhere.</s><s> anywho...</s><s> 
+</s><s><quote>
+<s>art_campbell wrote: the solution i like the best is to run a micro framescript (from rick quato) that's configurable to whatever set of parameters you want to use.</s><s> also works retroactively to reset all frames book-wide. 
+</s></quote>i went to www.frameexpert.com and www.rickquatro.com (the only 2 sites to my knowledge where i could get one of rick's scripts) but i'm not seeing any micro scripts for managing anchored frames.</s><s> art, can you provide a link to rick's solution? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6197104-6225239</DOCNO>
+<TEXT>
+<subject>Anchored Frames: Can I change the default type?</subject>
+<post author="Art_Campbell" timestamp="Mar 19, 2014 1:53 PM">
+<s>no, he doesn't have his scripts online anywhere, as far as i know.</s><s> drop him an email at rick@frameexpert.com . 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6223067-1431422</DOCNO>
+<TEXT>
+<subject>Using "Save as PDF" changes fonts</subject>
+<post author="StudioSm" timestamp="Mar 19, 2014 2:29 AM">
+<s>i have some documents in czech in framemaker 12. when i print to pdf the documents converts all right, but when using "save as pdf" all arial fonts are replaced with times new roman and the entire process seems to use a lot of time and computer memory.</s><s> the save as pdf always have been buggy, but some of my customers apparently seems to need this feature.</s><s> how does one troubleshoot the strange behaviour of font replacement ? 
+</s><s>best regards bjørn 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6223067-6224446</DOCNO>
+<TEXT>
+<subject>Using "Save as PDF" changes fonts</subject>
+<post author="Arnis%20Gubins" timestamp="Mar 19, 2014 10:37 AM">
+<s>usual suspects: 
+adobepdf printer instance is not set as the default (use setprint utility available from http://sundorne.com/framemaker/freeware/setprint.htm).</s><s> printer vs. soft fonts (i.e. installed fonts) are you using a codepage arial font for czech or a unicode enabled version?</s><s> distiller joboptions - embed & subset all fonts; cancel if embedding fails avoid cmyk option with otf pro and wgl-tt fonts unless you specifically are creating output for colour press work 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6223067-6224675</DOCNO>
+<TEXT>
+<subject>Using "Save as PDF" changes fonts</subject>
+<post author="ReneSteph" timestamp="Mar 19, 2014 11:26 AM">
+<s>also check default settings in the acrobat distiller job options, check the default job option in the pdf setup for the document, and make sure that the settings that include the your solutions are the default for the adobe printer instance.</s><s> otherwise, you may get it set up correctly but the wrong settings get pulled by a default value. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-1430651</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="puzzled but hoping" timestamp="Mar 18, 2014 6:09 AM">
+<s>is there any way to import an svg image into a fm document and use any text information in the svg (on an extra "unlocked layer whilst all others are locked" ) interactively e.g. for referencing purposes or like a hotspot feature? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220158</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 7:17 AM">
+<s>doubtful, but you can: set the svg object's run-around properties to none draw a text frame over the svg text replicate that text in the text box (or any text, really) create a hypertext marker in that fm text make the fm text non-visible: - via font color assigned & color views, or - just send to back   fm can probably "see" the contents of an svg for purposes of polluting the color catalog (if the svg is indexed color), but probably cannot see the text.   what's the output workflow, and does the svg vector content (if any) and text survive as vector & text into that?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220232</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="puzzled%20but%20hoping" timestamp="Mar 18, 2014 7:33 AM">
+<s>thanks for the reply.</s><s> the idea with the varuoious single text boxes is quite a work around, not sorry to say - neither really elegant nor really suitable for the task.   i had recalled a feature in a tool called "catalog creator" which boasts a so-called "hot spot editor": "...</s><s>the  graphics can be edited, hotspotted and then saved in the interactiv svg format.</s><s> svg is a w3c web standard and is characterised by a high quality at extreme compression ratio.</s><s>[...</s><s>] the hotspots can be detected due to existing layers, fonts, colors, textsizes or other available attributes.</s><s> hotspots are not limited to text and geometries, you can also use contour lines to define a hotspot. ..." the idea was to use the data on the text layer that may be referenced as any other formatted text in fm.</s><s> so if it is possible to use script (i am just your average fm user, nothing truely fancy) to extract that info then it might be done.</s><s> since frame maker doesn't work with layers, it might be able to "use" the layer feature in one of the other adobe products such as photoshop or illustrator.</s><s> and if others can do it (see cc) - why shouldn't adobe itself offer that (some day).</s><s> (maybe i should post this in the "wish list" section)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6220264</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 8:08 AM">
+<s>> the idea with the various single text boxes is quite a work around, not sorry to say - neither really elegant nor really suitable for the task. 
+</s><s>it's the legacy way of doing it in fm. 
+</s><s>the current version of fm may have newer tools for this, depending on workflow and target delivery format. 
+i still use fm7 for most work, have fm9 available, but have only explored it for issues of concern to our shop (which includes almost no hot-spotting, as we're using an entirely different xml tool for parts catalogs). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219928-6224298</DOCNO>
+<TEXT>
+<subject>Interactive SVG in FrameMaker</subject>
+<post author="Error7103" timestamp="Mar 19, 2014 10:02 AM">
+<s>a quick search turns up that adobe added some hotspot capability at fm11.</s><s> one link is: adobe framemaker 12 * hotspots the page includes text and a video.</s><s> i don't know how stable the url is. 
+</s><s>the feature appears to simplify inserting a hotspot, and greatly expands control of the geometry of hotspots, but doesn't seem to have any object-content-aware capability. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-1430652</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="puzzled but hoping" timestamp="Mar 18, 2014 6:12 AM">
+<s>is it possible to define the width of columns in a format for tables in fm 11 in order to change all tables in a file rather than to have to go through the painstaking task of setting each value for each column of each table... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6220167</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 7:33 AM">
+<s>if fm had this capbility, this wouldn't exist: http://www.frameexpert.com/plugins/tablecleaner/resizetablecolumns.htm i've not used it myself. 
+</s><s>even via mif hacking, changing column widths is not trivial, because the size presented to you is apt to be rounded compared to the precise n-digit value actually stored, and all sorts of other random stuff in a mif can easily have the same numeric string (so you have to parse tags, sometimes on adjacent lines, to be sure) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6220234</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="puzzled%20but%20hoping" timestamp="Mar 18, 2014 7:40 AM">
+<s>great, - i shall try that tool!, much appreciated.   also thanks for the tiny insight into the realm of fm code difficulties - same root problem it seems i mine with changing tables too late for a stressfree workflow - forever elvolving structures are always more difficult to handle than those that have a beginning and an end.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219989-6223319</DOCNO>
+<TEXT>
+<subject>Table format column width</subject>
+<post author="Russ%20Ward" timestamp="Mar 19, 2014 4:49 AM">
+<s>puzzled, 
+my ws utilities plugin can also do this.</s><s> you can copy table column widths from one table to the clipboard, then paste them to all selected tables.</s><s> the plugin isn't free but it does have a free trial version that would accomplish this task, albiet while nagging you to buy a license. 
+http://www.weststreetconsulting.com/wsc_utils.htm 
+russ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220433-1430810</DOCNO>
+<TEXT>
+<subject>How do I clear ruling on a table</subject>
+<post author="FMdancer" timestamp="Mar 18, 2014 8:47 AM">
+<s>i am using fm 11 and have a acronym list in table format.</s><s> the heading row should have a thin line on the outside and inside cells.</s><s> my line between cells doesn't show.</s><s> my repeat heading rows done have the bottom line (they do have the top and side lines.</s><s> when i try to correct with the table designer or custom rulling, it doesn't take the change. 
+</s><s>some of my rows in the middle of a page have top and buttom lines which i am tryingn to clear.</s><s> the custom ruling and shading changes don't make the change.</s><s> how do i fix these issues?</s><s> thanks for your help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220433-6220534</DOCNO>
+<TEXT>
+<subject>How do I clear ruling on a table</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 8:57 AM">
+<s>a usual suspect is that what appear to be heading or footing rows are actually body rows, or vice versa. 
+</s><s>often the easiest way to fix the problem is to create a new empty table of the named tag, verify the default formatting, then copy the contents of the old table into the new one. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220433-6221444</DOCNO>
+<TEXT>
+<subject>How do I clear ruling on a table</subject>
+<post author="FMdancer" timestamp="Mar 18, 2014 12:28 PM">
+<s>thanks for the idea.</s><s> is there a way to check if fm believes the row is a header or footer?</s><s> my table is 12 pages long, so it seemed easier to insert some rows and move the contents to the unlined rows and delete the lined rows. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220433-6222947</DOCNO>
+<TEXT>
+<subject>How do I clear ruling on a table</subject>
+<post author="FieryPantone" timestamp="Mar 19, 2014 12:07 AM">
+<s>visually, sort of - you can't click in a header or footer row when it's been automatically repeated, if you do click on one there's no paragraph in the status bar, and when you can click in a header/footer add rows or columns is greyed out in the table menu. 
+</s><s>mind you, this counts as anecdotal: it's what i've just noticed now, on a quick test. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220590-1430812</DOCNO>
+<TEXT>
+<subject>How do I format my figure captions to show a period</subject>
+<post author="FMdancer" timestamp="Mar 18, 2014 9:05 AM">
+<s>in fm 11, i need to format hundreds of figure captions in the format nn.</s><s> figure title; where nn is the figure number followed by a period, then two spaces or a tab followed by the figure title.</s><s> when i make a figure number cross-reference the period after the figure number should not be picked up.</s><s> does this mean i can't use the period in the building block.</s><s> what is the most efficient way to format the figures.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220590-6220539</DOCNO>
+<TEXT>
+<subject>How do I format my figure captions to show a period</subject>
+<post author="Error7103" timestamp="Mar 18, 2014 9:13 AM">
+<s>this is the different between building blocks <$paranum> and <$paranumonly>. 
+</s><s>use <$paranumonly> and <$paratext> in the xref format.</s><s> you might need to add other text if desired. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220590-6221447</DOCNO>
+<TEXT>
+<subject>How do I format my figure captions to show a period</subject>
+<post author="FMdancer" timestamp="Mar 18, 2014 12:31 PM">
+<s>thanks for the idea though.</s><s> for hundreds of figures it seems better to have to add a period (.</s><s>) rather than the word "figure." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220590-6221479</DOCNO>
+<TEXT>
+<subject>How do I format my figure captions to show a period</subject>
+<post author="Arnis%20Gubins" timestamp="Mar 18, 2014 12:42 PM">
+<s>why are you trying to add things manually?</s><s> in your figure caption paragraph autonumber definition, use the period.</s><s> in your cross-references use the <$paranumonly> building block to extract just the number and then, as error says, create an x-ref format that includes the text that you want, e.g.</s><s> "see figure <$paranumonly> on page <$pagenum>". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6220590-6221560</DOCNO>
+<TEXT>
+<subject>How do I format my figure captions to show a period</subject>
+<post author="FMdancer" timestamp="Mar 18, 2014 1:32 PM">
+<s>i see what you're saying.</s><s> i misunderstood what the previous answer was trying to say.</s><s> i thought i would have to manually enter "figure" each time for a cross reference.</s><s> once i ready your answer, i understood what both of you were saying.</s><s> that worked perfectly.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-1429666</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="bowen192" timestamp="Mar 17, 2014 6:46 AM">
+<s>hello , 
+</s><s>i am trying to create a tab at the bottom of each page of a document which displays the first and last paragraph number on the page. 
+</s><s>my paragraph numbers are made up of the section number and a sequential number. 
+</s><s>on a previous project i have definitley created something that cross-references a final paragraph, i just can't remember how. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6216386</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 7:27 AM">
+<s>does this tab/xref reside in a background text frame from a master page, or just something in flow a (such as a text frame in an anchored frame set to bottom of column). 
+</s><s>the variables and building blocks available are different for each. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6216605</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="bowen192" timestamp="Mar 17, 2014 8:05 AM">
+<s>sorry, the tab/xref does currently reside in a background text frame from a master page but i do have the luxury of moving it if need be. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6217203</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 10:24 AM">
+<s>according to the fm7 help, the variables for background text frame use might be: <$paranumonly[paratag]> to pick up the first instance on a page, and <$paranumonly[+,paratag]> to pick up the last. 
+</s><s>the "+," bit is the key.</s><s> i've never tried it myself. 
+</s><s>this presumably also assumes that the paras of interest all have the same format name. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216207-6221449</DOCNO>
+<TEXT>
+<subject>Automatically cross-reference paragraph number</subject>
+<post author="ReneSteph" timestamp="Mar 18, 2014 12:38 PM">
+<s>i think you'll have to modify one of the system running h/f variables in the master page view to have the aforementioned definition, and then place and format that running h/f variable in the background frame.</s><s> using a cross-reference format won't change it from one page to the next when in the body view; but using the running h/f system variable will. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-1424690</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="blitza4life" timestamp="Mar 10, 2014 8:46 AM">
+<s>i am using framemaker 7.1 and have created a table of contents for a book.</s><s> when i open the pdf created for this book the links in the toc go to the corresponding pages for the first few chapters but nothing after those works.</s><s> in framemaker when i use alt+ctrl to try to test the link i get an error saying that it cannot find the files for the links that do not work.</s><s> does anyone know what causes this error?</s><s> the files are in the folder and at the location it is looking for them.</s><s> this has me stumped. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6195742</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 10, 2014 9:11 AM">
+<s>what happens when you update the book?</s><s> are you still getting broken link messages?</s><s> maybe the files have gotten locked as read-only.</s><s> try opening all files in the book first before updating – that can often give you better error reporting as to what's happening rather than the silent opens that fm does when updating unopened docs. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6195772</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="blitza4life" timestamp="Mar 10, 2014 9:18 AM">
+<s>updating the book doesn't fix it and i have tried opening the links in fm with the chapter open.</s><s> i am pretty sure the files are not read-only.</s><s> i tried updating with all the files open but i am still getting the error saying the files does not exist even though it does. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6195840</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 10, 2014 9:22 AM">
+<s>are you seeing any other error messages in the console window when updating? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6195774</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="blitza4life" timestamp="Mar 10, 2014 9:23 AM">
+<s>no 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6195842</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 10, 2014 9:26 AM">
+<s>ok, what about creating a fresh book and filling it with the .fm files and then creating a toc and ix? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6195892</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="blitza4life" timestamp="Mar 10, 2014 9:51 AM">
+<s>tried to make a new book and encountered the same errors 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6196230</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 10, 2014 10:55 AM">
+<s>i'm thinking something has gotten damaged in your fm install – test that out by creating 3 dummy lorsum .fm docs and package them in a book.</s><s> try to create generated files (toc/ix) – if that bombs, it's your install.</s><s> if it doesn't, then there may be something messed up in your files.</s><s> try mif-washing them to see if that fixes them. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6196263</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="blitza4life" timestamp="Mar 10, 2014 11:04 AM">
+<s>what is mif washing?</s><s> i have not had a problem like this yet and it works for some of the chapter files so i think it may be with these specific files.</s><s> if this will fix those files this may be the preferred method. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6196240</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 10, 2014 11:09 AM">
+<s>just do a search on "mif wash" in the fm forums – there's a bunch of explanations out there with instructions.</s><s> here's one – "a mif-wash is the process of saving the fm file as a mif, then opening the .mif version and re-saving it as the binary .fm file." 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6195605-6221448</DOCNO>
+<TEXT>
+<subject>Table of Contents Broken Links</subject>
+<post author="ReneSteph" timestamp="Mar 18, 2014 12:31 PM">
+<s>blitza4life, 
+you didn't mention whether any conditional text may exist in the document.</s><s> however, i have seen this happen when conditional text was used in a book and pages got edited with the conditional text hidden.</s><s> if this is the culprit, the cause would be a bit of text or end-of-paragraph marker adjacent to a heading that has a condition tag applied that is set to hide at when the book is generated.</s><s> if you want to rule this out, here's how: open all files in the book.</s><s> set all conditions to show with indicators.</s><s> update the book.</s><s> save all files.</s><s> save all files as mif.</s><s> (yes, in addition to...</s><s>) close the book and all its files.</s><s> open the book.mif file, save as .book; and then open all the mif files associated, then save those back to fm.</s><s> check the toc links to see if they work.</s><s> if they do, when you land on the linked text you'll be able to see and either remove the condition tags or delete the tagged text.</s><s> then, update the book again and the toc should be accurate. 
+</s><s>another potential root cause of this problem could be text insets, but that's more complicated and less frequently the issue.</s><s> please update this string when you find a solution. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6219102-1430450</DOCNO>
+<TEXT>
+<subject>MIF Reference manuals for FM11 & 12 available</subject>
+<post author="Arnis Gubins" timestamp="Mar 17, 2014 10:36 PM">
+<s>mif reference manuals are now available for fm11 and fm12.</s><s> they are currently only direct links: 
+http://help.adobe.com/en_us/framemaker/mifreference/mifref.pdf http://help.adobe.com/en_us/framemaker/11.0/mifreference/mifref.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-1429738</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="kim.utesch" timestamp="Mar 17, 2014 7:53 AM">
+<s>why can't i use these features any more? 
+i also can't use the launch photoshop or launch illustrator features.</s><s> i use the adobe master collection 6 for those products. 
+</s><s>adobe captivate is also grayed out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6216640</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="Art_Campbell" timestamp="Mar 17, 2014 8:03 AM">
+<s>unless you installed fm as part of tcs5, it's unlikely fm 12 knows the software locations and has tied into the other programs. 
+</s><s>since you just installed, i'd call adobe support for help because they do free installation troubleshooting. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s><s>i support www.thegrotonline.com, hyperlocal news for groton ma. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6216642</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="kim.utesch" timestamp="Mar 17, 2014 10:26 PM">
+<s>thank you for the reply.</s><s> i did install fm as part of the tcs5.</s><s> i guess i will have to give them a call. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6216585-6218179</DOCNO>
+<TEXT>
+<subject>Why can't I use the Edit with Illustrator or Edit with Photoshop features in FrameMaker12?</subject>
+<post author="Mike%20Wickham" timestamp="Mar 17, 2014 2:28 PM">
+<s>one of the features in the ws utilities plugin allows creation of easy menu entries for edit with illustrator and edit with photohop. http://www.weststreetconsulting.com/wsc_utils.htm 
+you might also want to post in the framemaker extendscript forum to see if anyone has created a script to add these menu items.</s><s> it seems like it would be a common request. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6217360-1429948</DOCNO>
+<TEXT>
+<subject>Why am I getting configuration error 16 in FM11 after sucsessful using the product for few months.</subject>
+<post author="ianach" timestamp="Mar 17, 2014 11:09 AM">
+<s>after reinstalling the product it works fine for a period of time and suddenly this error appears again. what is the reason for that?</s><s> i am working on windows 7, fm 11. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6217360-6217449</DOCNO>
+<TEXT>
+<subject>Why am I getting configuration error 16 in FM11 after sucsessful using the product for few months.</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 17, 2014 11:30 AM">
+<s>all patched up?</s><s> what are you doing that results in the error?</s><s> have you submitted it to adobe techs? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210660-1428254</DOCNO>
+<TEXT>
+<subject>How to view non-printing marks</subject>
+<post author="TpowellCAE_Healthcare" timestamp="Mar 14, 2014 1:41 PM">
+<s>in framemaker 10 , can you view non-printig marks?</s><s> in ms word, you can show all paragraph marks and it will show the little dots between words, for exapmle.</s><s> does framemaker have this?</s><s> (all i found was view text symbols, but that does not show the spacing marks).</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210660-6216586</DOCNO>
+<TEXT>
+<subject>How to view non-printing marks</subject>
+<post author="K.Daube" timestamp="Mar 17, 2014 7:53 AM">
+<s>with textsymbols on you will see tabs, nl and ¶ as well as others - but there is no way to make spaces more visible than they are ...</s><s> since all other "white space characters" than blank are made visible by a special font, you are certain that blanks are just that. 
+</s><s>hth klaus daube 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-1428086</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="pdhlm" timestamp="Mar 14, 2014 10:58 AM">
+<s>how do i get conditional text to print as black? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210144</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 11:01 AM">
+<s>what version of fm?</s><s> in my fm11 copy, you can edit the conditional text attributes via the conditional text panel and click on the little pen icon to edit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210129</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="pdhlm" timestamp="Mar 14, 2014 11:14 AM">
+<s>fm10.</s><s> i don't want to change the color of the conditional text (red, blue, etc.</s><s>).</s><s> i want it to print as black. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6210325</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 12:11 PM">
+<s>just checked the bible – i'm not seeing how you can print in color but not print conditional text in black. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215655</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="FieryPantone" timestamp="Mar 17, 2014 12:15 AM">
+<s>i have occasionally used conditions to keep track of content myself and speed up searches; there, i simply left the style, colour and background settinsg "as is".</s><s> is that the sort of thing op is looking for? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215544</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Winfried%20Reng" timestamp="Mar 17, 2014 1:14 AM">
+<s>hi, 
+</s><s>i do not know, if i understand you correctly.</s><s> in the "show/hide condtiional text" pod there is the option "show condition indicators".</s><s> just deactivate this option.</s><s> then your condtional text is shown as if it would not have any condition applied.</s><s> your text will have the colour of your paragraph or character format. 
+</s><s>this is for framemaker 11, but this option existed also in earlier versions. 
+</s><s>best regards 
+winfried 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210122-6215888</DOCNO>
+<TEXT>
+<subject>Conditional text printing color</subject>
+<post author="Error7103" timestamp="Mar 17, 2014 4:15 AM">
+<s>> ...</s><s> "show condition indicators".</s><s> just deactivate this option.   and if that's unsatisfactory, and the color is unique to the condition, simply use the book menu, with all component files selected: view > color > definitions re-define the color to be black.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-1428243</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:14 PM">
+<s>hello, the first page of each chapter in a fm 11 book has a few cross-references to sections within the chapter.</s><s> each of these few cross-reference entries is preceded by a diamond-shaped bullet.</s><s> they are all dark purple.</s><s> i cannot for the life of me figure out how to change them to black.</s><s> our printer is charging color prices because of these purple cross-ref bullets.</s><s> thanks for all the always-great input. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210585</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 1:17 PM">
+<s>do they involve a character or paragraph style that you can edit? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210445</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:21 PM">
+<s>not that i've found yet, no. both the paragraph style and the character style it's set to black.</s><s> the format of the cross reference does not appear to have any color seeing to it... just "default font". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210448</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:23 PM">
+<s>i suppose i could try to determine what that "default font" is for cross references.</s><s> maybe that's where the people is coming from? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210591</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 1:26 PM">
+<s>can you post a screen shot of the page & maybe the reference page?</s><s> (use the camera icon in the web interface) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210647</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 1:38 PM">
+<s>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6210713</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 14, 2014 2:16 PM">
+<s>here are the refernce pages.</s><s> (4) 
+
+
+
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210463-6212045</DOCNO>
+<TEXT>
+<subject>Purple bullets?</subject>
+<post author="Projectus" timestamp="Mar 15, 2014 7:40 AM">
+<s>i figured it out.</s><s> the diamond-shaped bullets are a separate font, in my case it is a dingbat.</s><s> the text is adobe garamond pro.</s><s> if i get the cross-reference entry selected, i have to change the color of the dingbat character from "blue violet" to black and apply it to all.</s><s> but that makes the text of the entry become the dingbat font as well, which must separately be changed back to adobe garamond pro.</s><s> now, to find a way to apply the change to all of these entries throughout the book, instead of chapter by chapter. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210242-1428172</DOCNO>
+<TEXT>
+<subject>Problems importing PDF comments</subject>
+<post author="larocpt" timestamp="Mar 14, 2014 11:31 AM">
+<s>hello, 
+</s><s>i've read the previous discussions regarding this issue and have not found any answers.</s><s> i have fm 11 and acrobat 10.</s><s> i am not changing the source file after creating the tagged pdf but fm states that the source file has changed and insists on only placing markers randomly in the fm document instead of importing the comments.</s><s> i work with multiple users and this feature would greatly help our team since converting from word to frame and back is nearly impossible.</s><s> please help! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6210242-6210327</DOCNO>
+<TEXT>
+<subject>Problems importing PDF comments</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 12:13 PM">
+<s>in pre-fm12, even a save (or auto-save in the background) counted as a change, so you really have to be extra careful if you want to get this working.</s><s> fm12 has improved it immeasurably. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6209898-1428111</DOCNO>
+<TEXT>
+<subject>Multiple Flows of Same Name in One File</subject>
+<post author="max_drawdown" timestamp="Mar 14, 2014 10:08 AM">
+<s>(fm11 on win7) 
+</s><s>the compare documents utility reports that the same file has multiple flows of the same name, and so does not compare the files.</s><s> doh!</s><s> 
+</s><s>the report from the utility seems accurate.</s><s> i see two end-of-flow markers in the file, one on the second page and another on the final page.</s><s> the flow tag names of the text frames on the body pages are identical: bodytext.</s><s> the autoconnect box on each is selected. 
+i still want to compare the files, so i try this: 
+when i do view > master pages and then go back to view > body pages, fm says some body pages in the file override their master page layout.</s><s> do i want to override?</s><s> i say yes.</s><s> i go to the body pages.</s><s> everything looks the same.</s><s> i try compare documents again.</s><s> same message. 
+</s><s>so how do i join those two flows, even though they apparently are already autoconnected and have the same name? 
+</s><s>or, as an alternative, how do gain the benefits of a compare documents operation in a file that contains two flows of the same name? 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-1427523</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="max_drawdown" timestamp="Mar 13, 2014 2:29 PM">
+<s>got a trailhead for this? 
+</s><s>the symptom is intermittent.</s><s> it happens after changing many exhibits and then file > import > file operations, or text inset properties > update operations, in a fairly short time, a time of intense updates during a review cycle. 
+i try to link in a graphic file or inset, but fm seems to use a prior version of the graphic or inset when generating a pdf.</s><s> i can open the graphic or inset file in its native app (sometimes fm) and the expected change is present.</s><s> the wysiwyg shows one thing and the pdf another.</s><s> reminds me of the days before wysiwyg. 
+a quick surf of the forum shows plenty of stuff pertaining to "cache" and "font," but the fonts in the pdf look fine. 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-6208914</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 4:47 AM">
+<s>what version of fm?</s><s> are you saving between each of these operations? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-6207517-6209818</DOCNO>
+<TEXT>
+<subject>Insets and referenced graphics not updating in pdf</subject>
+<post author="max_drawdown" timestamp="Mar 14, 2014 9:56 AM">
+<s>@jeff, 
+</s><s>fm11.</s><s> sorry to omit that earlier. 
+</s><s>yes, saving each time, in the source app and in the fm container file. 
+</s><s>best regards, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-1292602</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 9, 2013 1:04 PM">
+<s>hi, 
+</s><s>i have had a few blue screens recently on my old windows xp system with frame 7.2 and 3 gb ram. 
+</s><s>now i see that my color palette is scrambled in one large manual.</s><s> only the basic colors are there and a long list of entries like rgb 017,013,010 are inthe palette.</s><s> they don't do anything and i can't delete them via view > color > definitions. 
+</s><s>the manual is 482 pages, 52 mb, with scores of graphics and photos imported by reference. 
+</s><s>as a workaround, i copies the contents into a new file and that fixed the problem, but a few hours later, the color palette is corrupted again. 
+</s><s>has anyone seen this before and is there a more sure workaround? 
+</s><s>yours, 
+</s><s>michael f 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5666767</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 9, 2013 1:35 PM">
+<s>see: how do i remove colors from the tools palette 
+in a nutshell, you can't.</s><s> you need to find the indexed color import causing it, and fix that (convert it to vector, contone or bitmap). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5666849</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Arnis%20Gubins" timestamp="Sep 9, 2013 1:38 PM">
+<s>the rgb colours come frrom importewd graphics that use indexed colours, typically pngs or gifs.</s><s> you should convert these to use 24-bit colours.</s><s> you can delete the rgb colours more easily in a mif file.</s><s> the colours will be re-created by fm whenever you import one of these indexed-colour files, so no "corruption" is taking place. 
+</s><s>you might want to have a look at silicon prairie's colortools (http://www.siliconprairiesoftware.com/products.html) if this is a persistent problem and/or you have a lot of these problematic images. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5668976</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 8:14 AM">
+<s>arnis, 
+</s><s>thank you for the suggestions.</s><s> i'm relieved that my manual is not corrupted. 
+</s><s>let me see if i understand you. 
+1.</s><s> "convert graphics to use 24-bit colours." 
+</s><s>in photoshop i can see under image -> mode that each photo is set to indexed color.</s><s> if i change it to rgb color or cmyk color, then i can choose only 8 bits/channel or 16 bits/channel from the menu.</s><s> i don't know how to get 24-bits. 
+btw, a graphics co-worker has recommended that i set photos to rgb color rather than cmyk color since they are primarily used in pdf files.</s><s> does that sound right? 
+
+2.</s><s> "delete the rgb colours more easily in a mif file." 
+</s><s>what do i look for in the mif file and what exactly do i delete?</s><s> are the colors all in one place or part of each image? 
+</s><s>should i fix the color mode of all the graphics first and then edit the mif file and remove the odd color names? 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669089</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 10, 2013 8:26 AM">
+<s>>...</s><s> i can choose only 8 bits/channel or 16 bits/channel from the menu.</s><s> i don't know how to get 24-bits. 
+8 bits/channel is 24 bits (8 bits each for r, g and b), aka contone. 
+> btw, a graphics co-worker has recommended that i set photos to rgb > color rather than cmyk color since they are primarily used in pdf files.</s><s> > does that sound right? 
+</s><s>usually.</s><s> we use srgb as our color space for this reason. 
+>> 2.</s><s> "delete the rgb colours more easily in a mif file." 
+</s><s>even once you eliminate all the indexed color imports, it may take some effort to delete all those rgb definitions.</s><s> doing it in mif is trivial (well, as trivial as mif mucking ever gets, anyway). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669079</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 8:26 AM">
+<s>arnis and error, 
+</s><s>one more detail.</s><s> i originally saved all the images from a word 10 file as png files.</s><s> word 10 seems to have added a save as picture option to the popup menu. 
+</s><s>if i save them as jpeg files and replace the png files, will that eliminate the odd colors in the color palette?</s><s> will there be any improvement in screen resolution? 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669183</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Error7103" timestamp="Sep 10, 2013 8:54 AM">
+<s>> ... originally saved all the images from a word 10 file ... 
+</s><s>are these natural world photos, or screenshots? 
+> ... as png files. 
+</s><s>png can do indexed color and contone.</s><s> i'll bet ms provides no control over that at save. 
+> word 10 seems to have added a save as picture option to the popup menu.</s><s> > if i save them as jpeg files and replace the png files, will that eliminate the > odd colors in the color palette? 
+</s><s>that's two separate questions: 1.</s><s> will they save as 24-bit contone?</s><s> 2. will reimporting them as contone clean up the color catalog?</s><s> answers: 1. maybe 2. probably not automatically (but is necessary to allow clean-up) 
+</s><s>jpeg, alas, can also support indexed color (we've had trouble due to that).</s><s> what ms is doing is anyone's guess, because: a. they never give us control (we're too stupid), and b. they never tell us what they are doing (we don't need to know). 
+> will there be any improvement in screen resolution? 
+</s><s>hard to say.</s><s> it depends on how mr.bill saves, and whether your current zoom level affects that.</s><s> jpeg will introduce artifacts - "ringing" at edges where the curve-match algorithm (dct) runs out of gas.</s><s> and since this is ms, you probably don't get to specify the jpeg compression level. 
+</s><s>the ideal situation is to go back to the raw original art. 
+</s><s>any chance word can save as tiff? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669170</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Arnis%20Gubins" timestamp="Sep 10, 2013 8:58 AM">
+<s>michael, 
+</s><s>jpgs are only meant to be used for photographic images (not any form of screen captures).</s><s> so unless you are actually dealing with photos, disregard this format (it will introduce unwanted artifacts, especially around text and straight lines). 
+</s><s>if by word 10 you actually mean word 2010, then the graphics can be direcly obtained from the file.</s><s> the word .docx format is just a zip container.</s><s> so simply crate a copy of the file with a .zip extension and use any zip program to open this..</s><s> you will find the graphics in their original state and can adjust them as required, rather than relying on microsoft's filtering. 
+</s><s>in the mif file, look for the "<colorcatalog" entry, which is the start of the color catalog.</s><s> then there will bee a series of < color entries, each looking something like this: 
+<color <colortag 'black'> <colorcyan 0.000000> <colormagenta 0.000000> <coloryellow 0.000000> <colorblack 100.000000> <colorattribute colorisblack> <colorattribute colorisreserved> > # end of color 
+the first 16 colors (ending at "salmon") are system reserved colours and should be left as is.</s><s> the subsequent rgbxxxxx color tag entries can all be deleted. 
+</s><s>be careful not to delete the closing ">" for the "<colorcatalog" entry after the last "<color" entry. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-5669443</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="Michael314" timestamp="Sep 10, 2013 10:22 AM">
+<s>arnis and error, 
+</s><s>thanks for all that great information.</s><s> i had no idea you could turn word 2010 files into zip files and then extract all the graphics in one subfolder.</s><s> that in itself is a great time-saver since it eliminates the need to save them one at a time.</s><s> the files were extracted as png files so i'll convert them to 8 bit rgb and save them as jpegs since they are all photos (i don't know how or when the photos were converted from jpeg to png.</s><s> the doc file is four years old.</s><s>) 
+</s><s>i looked at a mif file and found the color tags.</s><s> as error said, that's an easy bit of mif mucking.</s><s> i also noticed a few unrelated instances of duplicate color names i had used in a condition tag (purple vs. purple) and cleaned those up. 
+</s><s>thanks to you both for helping me fix the problems and give me a better way to handle the graphics. 
+</s><s>yours, 
+</s><s>michael f ======== 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-5666746-6209245</DOCNO>
+<TEXT>
+<subject>Strange change to color palette</subject>
+<post author="ReneSteph" timestamp="Mar 14, 2014 7:16 AM">
+<s>great tip about the docx files.</s><s> i had been searching for each graphic, then reset to size at insertion, save as web page (filtered) and grabbing the images that way.</s><s> your zip method is a tremendous timesaver.</s><s> love it!</s><s> 
+</s><s>so, in fm12.0.1.331 i'm finding this same rgb situation: all the referenced graphics are png, but they were screen shots taken with snagit, rather than harvested from word.</s><s> i ran the latest version of silicon prarie's color tools (hat tip to steve@sps), then saved as mif.</s><s> verified the rgb clutter was gone from the list.</s><s> opened the mif, saved as fm, still looked fine.</s><s> made some edits, saved the fm file, and the blasted rgb clutter returned. 
+</s><s>it's been a few versions (maybe fm7.0?</s><s>) since i've seen that kind of stubborn attachment to the rgb clutter from png files.</s><s> thought that was fixed.</s><s> do i need to take a different approach?</s><s> i have a batch graphic conversion utility, could move them all from png to jpg, i guess, but then there's the reinsertion time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-315610</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="(Len_Fridman)" timestamp="Aug 21, 2008 7:59 AM">
+<s>i need to track changes from draft to draft and would like to use different change bar colors for this purpose.</s><s> is this possible using framemaker?</s><s> thanks in advance,
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-1235664</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Art%20Campbell" timestamp="Aug 21, 2008 8:36 AM">
+<s>i'm not positive you can do it just with change bars, but the track changes capability in fm 8 should allow you to juggle colors and revs at will by altering the conditions it applies automatically.</s><s> so you could have one color set for first draft, another color set for second, and so on.</s><s> art
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208105</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Krazy%20Glew" timestamp="Mar 13, 2014 6:26 PM">
+<s>while "track changes" helps, it does not work wekll in a document that makes extensive use of conditional text, where the edits need to add/remove conditional text. 
+</s><s>i.e,. it would be nice to have different change bar typesm in addition. 
+</s><s>as it is, i find track changes not very useful.</s><s> so i am resorting to turning change bars on and off.</s><s> which loses, because then i lose change bars prior to the new set. 
+</s><s>by the way: i can get multiple changebars easily in latex. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208536</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="FieryPantone" timestamp="Mar 14, 2014 12:18 AM">
+<s>fwiw, i've always used conditions for track changes and never even considered turning track changes on – i found it far too easy to end up with an unreadable document.</s><s> i agree, though, that change bars that picked up the colour of the font could be a nifty enhancement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1235663-6208918</DOCNO>
+<TEXT>
+<subject>Does FrameMaker Support Multiple Change Bar Colors?</subject>
+<post author="Jeff_Coatsworth" timestamp="Mar 14, 2014 4:49 AM">
+<s>get out your requests here - https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-316058</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(carl_fargon)" timestamp="Dec 3, 2007 3:06 PM">
+<s>i am trying to follow the directions to add the degree symbol to the toolbar.</s><s> i need the degree symbol code to enter.</s><s> also, there is already a degree symbol in the cmds.cfg and menu.cfg files.</s><s> not sure why the symbol does not appear on the drop-down?</s><s> the /xxx is what i believe i need.</s><s> thanks, carl
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238158</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Niels_Grundtvig_Nielsen)" timestamp="Dec 4, 2007 12:46 AM">
+<s>if it's the same \x code as you'd use for mml (not meant to sound condescending, it's just that's about all i ever use the \x codes for) then the windows character sets .pdf buried in the installation proposes [alt+] 0176 [\x code] \xfb [fm shortcut] control+q { [output] ° [name] ring hth
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238159</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(carl_fargon)" timestamp="Dec 4, 2007 7:20 AM">
+<s>nope that did not work, thanks.</s><s> it also says there is a probelm in the menu?</s><s> if whomever wrote the faq for adding the symbols to the menu could just write down the directions for a degree symbol it would all be great, thanks again, carl
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238161</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Van_Kurtz)" timestamp="Dec 4, 2007 10:19 AM">
+<s>carl, unless your framemaker files have to be cross-platform, open the accessory windows character map, find the degree symbol, copy it, and paste it into your framemaker document.</s><s> much easier than trying to remember or find the frame key sequence.</s><s> van
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238162</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Kenneth_Benson)" timestamp="Dec 4, 2007 10:22 AM">
+<s>in windows, a degree symbol is alt 0186 (from the numeric keypad).</s><s> after you look it up (in windows character map) three or four times, you'll remember it. -- kenneth benson pegasus type, inc. www.pegtype.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238160</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="Arnis%20Gubins" timestamp="Dec 4, 2007 11:32 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238163</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Dennis_Brunnenmeyer)" timestamp="Dec 4, 2007 7:06 PM">
+<s>try alt-0176, not alt-0186.</s><s> i found it very convenient to make up a little laminated "cheat sheet" for the common symbols i often use: ° ± ® © , etc. it might be possible that the codes could be different for some font families...i'm not sure.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238164</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Kenneth_Benson)" timestamp="Dec 5, 2007 7:00 AM">
+<s>dennis brunnenmeyer wrote: > try alt-0176, not alt-0186.</s><s> thanks, dennis.</s><s> good catch.</s><s> 0186 is ordinal o, a sort of superscript o that's used only in spanish or portuguese, i think.</s><s> definitely not a degree sign. -- kenneth benson pegasus type, inc. www.pegtype.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238165</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Niels_Grundtvig_Nielsen)" timestamp="Dec 5, 2007 11:40 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-1238166</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="(Kenneth_Benson)" timestamp="Dec 6, 2007 7:18 AM">
+<s>yes, my bad. -- kenneth benson pegasus type, inc. www.pegtype.com
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-4111434</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="farrelldoc" timestamp="Dec 31, 2011 6:13 AM">
+<s>(niels_grundtvig_nielsen) wrote:   [fm shortcut] control+q {   thank you!   i love the shortcut keys.</s><s> that is just what i was looking for.</s><s> you're a gem!   karen
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-4111435</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="farrelldoc" timestamp="Dec 31, 2011 6:21 AM">
+<s>for those of you looking for the character set (and other docs) in the installation folder, here is where it is in windows 7 64bit for fm9: 
+c:\program files (x86)\adobe\framemaker9\documents 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-4111837</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="Error7103" timestamp="Dec 31, 2011 11:45 AM">
+<s>just something to think about... 
+</s><s>we do special characters (i.e. anything not in the ascii set) as variables.</s><s> for example, degree would be: name: char.symbol.degree definition: <symbol>\xb0<default ¶ font> the last element of the name ("degree") is either the name from the frame special characters document, or the formal unicode name. 
+</s><s>we do this for several reasons, some of which might not apply to other users: 
+we're on fm7.1, and since no one seems to know exactly when and how adobe does unicode conversion when migrating a document to fm8 or later, this isolates any problems to the variable catalog.</s><s> this is not just future planning.</s><s> our outside translators, usually on later frame, probably find it helpful already.</s><s> when you use keyboard shortcuts, you often have to apply a character format (font name and/or style).</s><s> the next character you type after that is by default also in that override.</s><s> using a variable automatically resumes the current formatting.</s><s> the appearance of all instances of the char is controlled from one place.</s><s> so if, for example, you can no longer use the inherently superscripted 0123 (usually because you need 4), it's easy to change all the current ones to explicity supers. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-4143337</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="Tigdave" timestamp="Jan 16, 2012 4:50 AM">
+<s>when you convert a legacy fm document to fm 8 or later, the conversion is pretty smart.</s><s> fm will look at the font used for every character (either stylesheet of hardcoded), and the character map used by that font, and will convert that character to the correct unicode character. 
+i used it to convert some multi-lingual masters (english, russian, and chinese mixed, along with dingbat and symbol) and it converted all document text perfectly, although i had to hardcode the double-byte chinese text into a chinese font because the main stylesheet font could only handle english and russian.</s><s> it was impressive, and a real time-saver for a 60-manual set.</s><s> another remarkable thing is that i could still use the old (non-unicode font) if i wanted, within the limitations of that font of course.</s><s> in my case, fm8 could still display the converted russian text correctly using the old non-unicode font!</s><s> fm will backmap the unicode document characters (which are stored in unicode and stay as unicode) on-the-fly and use the old font to display the characters correctly using the old font.</s><s> it was very useful and it gave me workable documents for the interim, until i could set up stylesheets that used the new proper unicode fonts that came with fm 8. 
+</s><s>however, no conversion is performed on features with "internal" text that has no inherent font format such as cross-reference formats, variables or markers, which is probably just as well because remapping the cross-ref marker text would break the links).</s><s> you'll have to convert or rebuild those by hand. 
+i have some related questions.</s><s> using \x code to make special characters that you can pick off a menu only works for the "traditional" character slots at position 256 (ff hex) or below.</s><s> is there any syntax that works for unicode slot numbers that are higher than 256?</s><s> i have tried \u and \u followed by the four-digit utf-8 code but i get nothing. 
+</s><s>also, is it also good practice (or perhaps even absolutely necessary) to read, edit, and save all fm8 and later config files as utf-8? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1238157-5942798</DOCNO>
+<TEXT>
+<subject>DEGREE SYMBOL</subject>
+<post author="Error7103" timestamp="Dec 19, 2013 12:14 PM">
+<s>now this old thread will never fall out of "popular discussions" 
+> definition: <symbol>\xb0<default ¶ font> 
+</s><s>the <symbol> tag implies that a character format of name symbol was previously created.</s><s> in general when creating such a tag, make sure that all fields of the dialog are blank or as-is except the key one (font family in this case). 
+</s><s>the trailing <default ¶ font> is unnecessary and is harmful if any other overrides or character tags were applied to the surrounding text. 
+> is there any syntax that works for unicode slot numbers > that are higher than 256?</s><s> i have tried \u and \u followed > by the four-digit utf-8 code but i get nothing. 
+\u1234 is supposed to be the notation.</s><s> no _, +, or space between the lowercase "u" and the utf8 codepoint see: enter unicode u+21cc code point in dialogs?</s><s> and entering a unicode value as a bullet in an autonumber format 
+</s><s>of course, for framemaker 8.0 and later, with any minimally populated unicode font (having the latin-1 supplement), a rigorus way to implement the degree symbol is to use code point: \u00b0 it wouldn't surprise me if this also works for older iso 8859 fonts, which use the same code point for the same symbol. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-315567</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Jul 27, 2006 5:02 PM">
+<s>i am a long-time and very experienced user of framemaker, acrobat, and all associated tools.</s><s> my xp-sp2 system is thoroughly debugged and fully updated.</s><s> when i create pdfs in frame, sections of the text come up missing.</s><s> the document remains correctly formatted and organized - there are simply missing sentences, paragraphs, etc. in no discernible pattern.</s><s> i have tried every fix i can think of and all those i have found by searching online - to no avail.</s><s> these documents are created from scratch in frame 7.2p158; i have updated the installation at least once without solving the problem.</s><s> the pdfs are being created by every known process: print to distiller (7.0) within frame; save as pdf; print to generic postscript and pass to distiller.</s><s> the missing text remains consistent within all processes.</s><s> the fonts involved range from junk of unknown origin to (most of my fonts) true adobe postscript.</s><s> changing fonts does not cure the problem, although it sometimes changes which parts disappear.</s><s> there is no particularly complex formatting involved (no equations, no unusual character overrides).</s><s> these documents are mostly contracts and other simple but rigidly formatted documents.</s><s> none involve imported graphics.</s><s> i have tried all variations of saving to mif and rtf and re-importing.</s><s> this sometimes changes the faults, but does not cure them.</s><s> this problem occurs only with framemaker.</s><s> i can export perfect pdfs, some from very complex source documents, from word, indesign, coreldraw and a dozen other tools, using any fonts on my system.</s><s> (i am dismayed at how hard adobe support has gotten to use - as the owner of nine of their most expensive apps, i should be able to get better online support without calling in and begging permission!</s><s>) if anyone can point me to a known bug, a known fix, or a good starting point for unraveling this problem - or confirm that they've seen a similar error - i would appreciate it!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234971</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="MichaelKazlow" timestamp="Jul 27, 2006 6:02 PM">
+<s>can you post a frame document that only uses adobe ps fonts that we might own that has this problem to see if we can duplicate the problem?</s><s> mike
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234972</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Arnis%20Gubins" timestamp="Jul 27, 2006 6:33 PM">
+<s>i'm assuming that you are using the adobe pdf printer instance when creating the output from fm.</s><s> the dropped text issue can sometimes be resolved by changing the default setting for the printer instance graphic > print quality to 600 dpi (located under the printing preferences > layout > advanced and also under properties > advanced > printing defaults > layout > advanced - change it at both locations).</s><s> this is described in the following technote: http://www.adobe.com/support/techdocs/324972.html this 600dpi setting only affects the object placement granularity on the page, not the actual resolution of the objects.</s><s> there is a magic number based upon the page-size, font height and the graphic resolution that causes all sorts of phunnies if you leave this setting at the default (4000dpi, i think).
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234973</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Jul 27, 2006 7:13 PM">
+<s>mike - i can try, but it tends to be only longer documents (3-4 pages, so just whipping one up would be tedious) and most of my examples are confidential agreements and contracts.</s><s> wait - i probably have an event policy i can post.</s><s> i'll check.</s><s> arnis - i tried all of the suggestions in your post, and a few more.</s><s> all of my print resolution settings were either 1200 or 600 dpi; i changed them to 600 across the board.</s><s> (i should note that i tried a variety of standard and custom pdf settings, including "smallest file size," without solving the problem.</s><s>) no solution.</s><s> i updated acrobat to 7.0.8, one of the few updates not applied to my system.</s><s> this changed the list of pdf standards from some odd-looking ones that never seemed right to the more usual v4-5-6-7 choices.</s><s> i'm beginning to wonder if i should totally uninstall all acrobat files, and perhaps frame, and do a clean install.</s><s> (urgh... this is a relatively new, clean system build overall, done when i updated my entire adobe suite in february.</s><s>) the problem, as nearly as i can tell, lies entirely with frame.</s><s> i do some very large and complex pdf output from indesign and the only problems are ones i create myself. :) further ideas much appreciated.</s><s> i will check for a broken file i can post.</s><s> addendum: i opened one of the first documents i had trouble with, one i finally beat into pdf form but do not recall exactly how (print to a generic ps driver and pass to distiller, i think.</s><s>) on attempting to print, i got a frame internal error: 7204, 6109922 7778420 0. it will not print to pdf.</s><s> it prints fine to hp ps and pcl.</s><s> then i opened an old but reliable frame 5 file, a short chapter from a book with some complex formatting (professional references and end notes).</s><s> opened, printed... huge swaths of missing text.</s><s> is frame broken with respect to pdf?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234974</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Rebecca_Officer)" timestamp="Jul 27, 2006 7:45 PM">
+<s>make it 300 dpi instead of 600.</s><s> 600 works for most people but we had to drop to 300 for the fix.</s><s> cheers, rebecca
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234975</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Jul 27, 2006 9:07 PM">
+<s>well, i went to extremes and set all the driver dpi's to 150, and the pdf print resolution to 300.</s><s> solved the problem.</s><s> for the current doc, anyway; it still crashes the other.</s><s> minor rant: how could this happen with an adobe app updated to latest spec, printing with adobe fonts to adobe pdf (with acrobat updated to latest specs), on a very "clean" system with fully updated xp and beaucoup resources (2gb ram, 100's of gb of free disk space)?</s><s> huh.</s><s> (rant over.</s><s>) if i create and tweak a special frame 7 pdf preset at 300 dpi all around, what am i giving up?</s><s> higher image res?</s><s> it should not affect any vector components including type resolution, right?
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234976</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Rebecca_Officer)" timestamp="Jul 27, 2006 9:21 PM">
+<s>dov isaac's take on it about 18 months ago was that they couldn't reproduce the bug but were trying.</s><s> i agree with you that it's crazy it's been around so long.</s><s> at least now that tech note documents the fix!</s><s> you shouldn't need to change anything but the settings arnis described.</s><s> they affect the granularity of text placement (nothing to do with graphics), and general feeling was that 300 dpi has no visible effect for almost everyone.</s><s> lower than that might.</s><s> others may have more info than i do on that.</s><s> cheers, rebecca
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234977</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Jul 28, 2006 7:33 AM">
+<s>thanks, all.</s><s> a working workaround is better than nothing... but not as good as a fix.</s><s> i wish adobe would stop treating frame like an unwanted stepchild.</s><s> what is it with high-powered text-focused page layout apps that lead to their being kept in the closet under the stairs by their owners - ventura, sprint, manuscript and now framemaker. *sigh*.</s><s> i've come to like indesign a great deal for shorter work, but it's still not a very capable long-doc or simple-doc tool.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234978</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Art%20Campbell" timestamp="Jul 28, 2006 7:40 AM">
+<s>dov, or any other adobe people listening in ....</s><s> i think there are more than enough people who would be happy to provide sample documents for testing. ;- ) this is not a rare bug; it's depressingly common.</s><s> just as a ps... another work around i've found that works for me is to use my xerox ps driver to print a ps file and then distill that.</s><s> may work with other ps drivers too.</s><s> cheers, art
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234979</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(sherman_watstein)" timestamp="Jul 28, 2006 1:31 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234980</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Jul 28, 2006 3:12 PM">
+<s>thanks for the comments, sherman.</s><s> i recall that the way i got the first problem doc to print was by printing to a generic ps driver and passing it to distiller.</s><s> i installed a generic driver (one of the xerox docucolor ones, which i recall having good results from in the make-a-ps days) and it worked... although i had to re-output one page separately.</s><s> better than nothing, it got my agreement off to the party who needs it, and now i get to add my voice to those clamoring for adobe to fix the real problem here... :p
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234981</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Helge%20Blischke" timestamp="Jul 31, 2006 5:21 AM">
+<s>what i experienced recently (independent of the printer driver software , on both nt4 (with the kernel mode printing system) and xp (with the user mode running stuff)) is that, whenever using truetype fonts which are downloaded incrementally, it happens that the initial part of the font program (the part containig the type42 interpreter) is downloaded more than once, which causes the set of glyphs of the previously loaded instances get undefined (i.e. replaced by .notdef) and thus appearing as white space.</s><s> i suspect that this is an issue of the windows gdi, as i never encountered this bug with applacations which generate their own postscript code, like indesign.</s><s> helge
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234982</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(sherman_watstein)" timestamp="Aug 1, 2006 6:08 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234983</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 20, 2006 6:35 AM">
+<s>maybe a little bit late, but i can confirm exactly the same bug as nitropress described.</s><s> my configuration: - win xp pro on a p4/3ghz, 2 gb ram - acrobat 3d - fm 7.2, latest patches applied (but happens with 7.0 as well) documents, that have been saved to pdf in february this year without any problems now come out with large blocks of text missing.</s><s> i've been trying several things (before discovering this thread), including several uninstalls of acrobat 3d, installation of the original fm 7.2-distiller (which always seemed to work), re-installation of a3d ...</s><s> i haven't been able to recognize any system behind the erratic behavior.</s><s> fm-distiller works - a3d 7.0.7 works - 7.0.8 doesn't - (re-install) - 7.0.7 doesn't - fm-distiller works - a3d 7.0.7 works ... and stops working some hours later...</s><s> interesting enough: i created a ps file using the acrobat printer to be distilled on mac.</s><s> same result.</s><s> the bug definitely occurs on writing to ps, not in distiller.</s><s> i've been doing this silly game for about 3 days.</s><s> now, after discovering the 300dpi quality solution, a3d 7.0.7 works again.</s><s> i hope, for more than the next couple of hours.</s><s> bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234984</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(sherman_f_watstein)" timestamp="Aug 21, 2006 7:16 AM">
+<s>nitropress- ran into the same problem weeks ago using fm 7.2 and distiller 7.x. and was able to solve the problem.</s><s> the company i work for has either hp or lexmark printers, and even a few that do postscript printing.</s><s> however, the postscript printers have never been set up to print asa postscript printer.</s><s> when i installed fm 7.2 on a pc, i added a tektronix phaser 550j 1200 dpi as my ps printer.</s><s> in do this i forgot to use hp software and instead used windows 2000 (in my case) to add the printer.</s><s> i had no problem with a small fm document.</s><s> when the document got bigger, i found missing test and throughout the document.</s><s> i then delated the printer and installed it using tektronics software from their web site.</s><s> that fied the missing text.</s><s> i know that may people want to generate a pdf directly through fm, but i've been using fm from it;'s first release and find that creating a ps file first and then using distiller is the best way to be able to control what one gets.</s><s> even fm and adobne support agree.</s><s> if you think the adobe pdf printer is the cause, try this suggestion
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234985</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 21, 2006 7:48 AM">
+<s>sherman - i've tried every possible path from framemaker document to pdf, including hand-cranked processes using a variety of ps print drivers and reducing the resolutions to dot-matrix levels.</s><s> the fix is very hit-or-miss.</s><s> bernd - your situation is similar to mine.</s><s> i finally got my critical document to print by using a different ps driver (a xerox rip, can't recall exactly which model at this moment.</s><s>) then i went to print out a companion document a few days later... same round of problems that i could not fix.</s><s> so i went to reinstall frame 6 on my system... and ran into the "too much memory" problem.</s><s> i reset the virtual memory down to ridiculous levels (100 mb) and still got errors.</s><s> so - i installed frame 6 on my new system, a dual-opteron monster with not 2gb, but 4gb of ram.</s><s> perhaps it's the better memory management of that system (with windows xp64) but i had no problem and printed the document (via print to ps and manual processing to pdf) just fine.</s><s> then i zipped up the frame 6 installation and dumped it on the older system, where it works fine except for the persistent registry warnings - which i'll fix when i have a moment.</s><s> however, the same document, when saved from frame 7.2 into v6 format, and opened in frame 6, caused the same missing-text problems through several approaches.</s><s> i might be stating the obvious, but this is a major, major bug and it lies wholly within adobe's product circle.</s><s> it should not have existed with the final release or at least should have been fixed early on... yet here we are more than a year into it with no fix in sight (except a crappy, half-effective workaround).</s><s> and i have discovered, to my frustration and dismay, that indesign makes a very poor substitute for frame when doing long documents.</s><s> part of it was unfamiliarity with things like flowing text over multiple pages, but after an hour's work i still had nothing that looked like my relatively simple frame document... and i had to spend two hours on the above process to get the stupid thing to pdf so i could get it to the client.</s><s> i realize framemaker is a minor product and an unwanted stepchild, without the glitz, glamor and recognition of photoshop or premiere, but really, adobe... this clusterf*ck is beneath you!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234986</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Art%20Campbell" timestamp="Aug 21, 2006 8:44 AM">
+<s>there is a frame support document online that offers troubleshooting suggestions, at http://www.adobe.com/support/techdocs/329942.html also, although i habitually print to a ps file generated by a xerox 2450 driver and distill that, i've noticed that i have fewer problems if i turn off "fast www view" and set the dpi to less than 600.</s><s> i agree with the general thesis however -- this whole area is a major bug that's been dragging on far too long.</s><s> art
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234987</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 21, 2006 9:02 AM">
+<s>art - yes, i've seen the adobe document you reference.</s><s> it doesn't quite seem to address the real problem, only concatenated problems stemming from the original that can be fixed on some systems by mucking with the product versions or settings.</s><s> my system was freshly rebuilt from an new os install up, using all new and current adobe products including distiller 7.0 and frame 7.2 (and nearly everything else they make).</s><s> although i verified the steps involved, none of my problem stems from having mismatched or outdated software components.</s><s> and i think it's something of a fandance on adobe's part to point the blame that way.</s><s> the new, current, supposedly stable apps, free of legacy and third-party issues, are broken.</s><s> everything else is window dressing.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234988</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 21, 2006 9:07 AM">
+<s>nitropress, just fyi... after it turned out that reducing the pdf/printer resolution didn't cure anything, i found something else which currently works.</s><s> but as all solutions until now just have been temporary remedies, i'm not sure if it will continue to work tomorrow... but currently i've been able to finish the pdf export of about 20 manuals that refused to do so before.</s><s> what i did: once again i deleted all the adobefnt??.lst files and (this one was new) additionally the fntcache.dat file from the windows/system32 folder.</s><s> after restarting my pc all pdfs came out as expected.</s><s> about id: i share your thoughts.</s><s> things i'm doing within a hour in fm take several hours in id.</s><s> this is quite annoying especially during work on early versions of any manual, when infos are changed on a daily basis.</s><s> currently i'm working on manuals in several languages, with about 60% of the languages done in fm, the rest is done in id (was necessary for languages like arabic).</s><s> this gives a quite good workflow comparison...</s><s> bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234989</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 21, 2006 9:19 AM">
+<s>indesign is just about the most wonderful publication tool i've ever used - each time i learn a new function or feature, it's pretty much how i would have designed it based on 25 years of experience and preference.</s><s> i wish i'd had something like it ten years ago!</s><s> but it's rotten at the long documents and formatted pages that are framemaker's strength.</s><s> i don't know why professional-grade, long-doc tools are forever being left to rot by their makers - ventura, manuscript, sprint, a few others.</s><s> it's a small but stable market and any software company that gets into it thinking they're going to knock word out of the box is a gang of idiots.</s><s> but anyone who gets into it to give a sizeable and specialized base of users that don't want to muck with things like tex a tool... well, we'll buy every version they make. *sigh*.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234990</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="peter%20at%20knowhowpro" timestamp="Aug 21, 2006 10:05 AM">
+<s>hi, bernd: if you have the time and interest, perhaps you could start a new thread in which you compare the tasks you do quickly in framemaker, and which are more tedious to do in indesign.</s><s> this could invite some suggestions for workarounds or different work methods, and also become the basis for product enhancement requests for new indesign releases. ________________ regards, peter gold knowhow proservices
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234991</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(sherman_watstein)" timestamp="Aug 22, 2006 8:27 AM">
+<s>additional thoughts-- have you ever generated a list of fonts and took a look at the page(s) that you have the problems with?</s><s> maybe we should have asked if this document was writen from scratch or imported from an existing document or even ms word?</s><s> i have seen this happen where the imported text looks like it was formated with your document sytles, but you may have missed something (text was using a font from say ms word that is not part of your document).</s><s> when you create a pdf, the font was not found and and you never embedded it in distiller, result would be this missing material.</s><s> using windows 2000 or later (platform that framemaker is designed on) seems to work better with fm than windows xp.</s><s> seems that a great number of problems with fm are windows xp users!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234992</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 22, 2006 8:57 AM">
+<s>i rarely try to import documents into framemaker - there was a time when i used it as my daily word processor as well as for formatting! - but i occasionally do import text from word.</s><s> i never leave any formatting in place on such docs and clear everything to "body" before proceeding with an fm format.</s><s> my font set is extensive and i have a few that i use frequently - the stone family, for example.</s><s> there should be no font-related issues as i've used these for years in a dozen different apps with no problems.</s><s> as for os, i stayed with windows 2000 for a very long time after windows nt got too creaky, and upgraded to xp only when i was forced to by... surprise!</s><s>...</s><s> adobe's requirement for it on the video editing side.</s><s> xp is hardly a new os and we are way past the point where it should be causing problems on current-rev software.</s><s> i'm not sure whether xp is the real culprit, or if it's just that a majority of users are now on xp... and probably got there by upgrading a win2k system or by haphazardly applying service packs and updates.</s><s> anything but a fresh xp install, with all sps and updates applied before major software is loaded, is likely cause problems.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234993</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 22, 2006 9:02 AM">
+<s>sherman, yes, of course checking the fonts (documents and system) has been one of the first steps.</s><s> like nitropress, i'm quite familiar with things that *can* happen to a document (i'm working with fm since version 3.1 on mac and win), and all documents are as clean as they can be.</s><s> the symptoms definitely would be different in case of overridden paragraph formats.</s><s> at least, it couldn't happen that one day pdf export works flawlessly, the next day it won't, the third day it works for three hours before it stops doing so... all with the same documents.</s><s> a great number of problems with xp users?</s><s> well, yes, on my mac i definitely had less problems ;-) peter: yes, a comparison thread could be a good idea.</s><s> just let me finish my currently not-so-fluent-but-still-urgent pdf creations (updating *many* manuals)...</s><s> bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234994</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Seanb_us" timestamp="Aug 22, 2006 9:06 AM">
+<s>hi, in adobe distiller font settings, try setting "when embedding fails" to "cancel job." check the never embed area and make sure it's empty.</s><s> retry the pdf.</s><s> was the pdf created or not?</s><s> regards, sean
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234995</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 22, 2006 9:31 AM">
+<s>sean - i'm not sure what this would fix.</s><s> in my case, the documents were created using two font families - stone serif and stone sans.</s><s> nothing else.</s><s> (oh, bedrock in a header logo.</s><s>) the missing text problem in absolutely no way that i can tell maps to any feature, formatting choice, or other simple thing.</s><s> part of a paragraph in stone serif will print; part won't.</s><s> the headings in stone sans will print; a disclaimer paragraph in it won't.</s><s> it isn't even whole paragraphs or headings or sections that fail to print - it's random chunks here and there.</s><s> it's not even connected to character formats or paragraph overrides.</s><s> i have a very solid understanding of frame and text processing and programming and system operation... and i can't figure out a possible root cause for this problem.</s><s> i don't feel bad, though.</s><s> clearly, adobe can't either. :p
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234996</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Seanb_us" timestamp="Aug 22, 2006 9:36 AM">
+<s>>i'm not sure what this would fix hi.</s><s> it won't fix anything.</s><s> i was curious about what would happen and it didn't seem like it'd take too much effort.</s><s> given the randomness of it all, though, maybe that won't tell us anything.</s><s> >i have a very solid understanding of frame and text processing and programming and system operation... and i can't figure out a possible root cause for this problem.</s><s> i don't feel bad, though.</s><s> please believe i am not questioning that.</s><s> i'm just thinking about a way to troubleshoot this that has not been tried.</s><s> cheers, sean
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234997</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 22, 2006 9:48 AM">
+<s>sean, since the process has been working yesterday (the whole day) and didn't work again today, i was in the lucky position to check this option, too.</s><s> no difference, pdfs come out exactly as nitropress describes.</s><s> nitropress: what just (right in this very moment) *did* re-enable the creation of correctly written pdfs, was the same thing i already wrote yesterday.</s><s> 1. pdfs corrupt 2. delete fntcache.dat from windows/system32 folder and reboot 3. pdfs work :-) ... for today ;-) bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234998</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Seanb_us" timestamp="Aug 22, 2006 9:51 AM">
+<s>bernd, what fonts, from where did you get them?</s><s> sean
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1234999</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 22, 2006 10:00 AM">
+<s>sean - i wasn't taking anything as an insult, just adding to the data points.</s><s> i'm willing to try anything - i will muck with various distiller settings, deleting the font cache, etc. in an attempt to help find a universal fix or workaround.</s><s> but not this week.</s><s> i have one more day of killer logistical effort for a conference i have to drive 400 miles for... and i'm done with fm pdfs for the moment. :)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235000</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 22, 2006 10:06 AM">
+<s>sean, fonts used don't seem to matter.</s><s> this bug happens with manuals completely based on the berhold imago (ps) as well as with completely different manuals, written using the ff meta (ps).</s><s> it's just deleting the fntcache.dat from the windows/system32 folder that *definitely* makes a difference.</s><s> this file is automatically recreated on windows start, so i get a new one that works for one day.</s><s> bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235001</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Art%20Campbell" timestamp="Aug 22, 2006 10:20 AM">
+<s>bernd, thanks so much for posting the fntcache.dat fix/workaround.</s><s> nothing readily visible on the ms site about it.</s><s> interestingly, there isn't too much about it or its inner workings.</s><s> it seems to be recreated in the same size after the reboot, so it must survey the available fonts.</s><s> also, apparently some viri writers hide things in it...</s><s> nitro -- stone sans is also one of the fonts on my system that may be related.</s><s> or it could just be a coincidence...</s><s> cheers, art
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235003</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Seanb_us" timestamp="Aug 22, 2006 10:23 AM">
+<s>but, does this happen with helvetica, times, etc?</s><s> am wondering if we can get a list of affected fonts.</s><s> hmmmmm ... you might want to change fonts anyway, given the requirement for password-protected pdfs.</s><s> you may embed the font software into electronic documents for use on computers that are not licensed computers, subject to the following restrictions: (a) the electronic documents are distributed in a secure format that allows only printing and viewing, and prohibits editing, selecting, enhancing or modifying the text; and (b) the electronic documents are for personal or internal business use.</s><s> if you are unable to limit access to the document to view and print only, then the electronic document may not be used on computers that are not licensed computers.</s><s> you may embed the font software into electronic documents for use on computers that are licensed computers provided that the electronic documents are for personal or internal business use.</s><s> without the purchase of an additional license, you may not otherwise embed the font software.</s><s> for example and without limitation: (i) you may not embed the font software into your hardware, software or other products, such as, application programs, electronic games, e-books, kiosks, printers, etc.; (ii) you may not embed the font software into your web pages; and (iii) you may not embed the font software into electronic documents that permit editing, selecting, enhancing or other modifying of the text.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235004</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 22, 2006 10:38 AM">
+<s>art, are you saying the (semi)fix works for you, too?</s><s> well, this could be a hint... maybe it becomes possible to really fix this thing one day.</s><s> sean, i know (possible) license restrictions of fonts, but this is definitely the wrong track.</s><s> all documents *have been working* for years and *still work* after deleting this §$%& dat file and also still work on other computers.</s><s> all fonts i'm using allow pdf embedding.</s><s> so a font could possibly result in a distiller error message or in the not-creation of a pdf, but wouldn't pretend that all is well and create a pdf that's missing random text blocks.</s><s> bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235002</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Thomas_Michanek)" timestamp="Aug 22, 2006 10:41 AM">
+<s>> thanks so much for posting the fntcache.dat fix/workaround.</s><s> > also, apparently some viri writers hide things in it...</s><s> yup.</s><s> to quote some conversations on the net: "...the next day i found a trojan backdoor virus on windows xp with a file it had created called fntcache.dat.</s><s> the fntcache.dat is merely camouflage, and has nothing to do with fonts (necessarily).</s><s> font caches are common system files, and using them as a place to store viruses or virus data is just a little bit of social engineering on the virus-writer's part to keep you from noticing they're there.</s><s> update your virus definitions and see what your virus checker tells you." "i am seeing fntcache.dat file in c:\winnt\system32.</s><s> is this a bad file?</s><s> can i remove this file?</s><s> fntcache.dat (font cache) comes with a clean install of microsoft windows 2000 professional." meaning: fntcache.dat is a legit system file, but it may contain viruses.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235005</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Seanb_us" timestamp="Aug 22, 2006 10:43 AM">
+<s>oh, sorry, not what i meant.</s><s> as an aside i meant that given the requirement that you must password protect your pdfs, you might want to change fonts anyway.</s><s> but, i am really wondering if we can get a list of affected fonts.</s><s> cheers, sean
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235006</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="(Bernd_Meissner)" timestamp="Aug 22, 2006 11:00 AM">
+<s>sean, why should this become necessary?</s><s> a pdf *only* allows editing, if the used fonts are installed on your local system (and thus assumes that you're a licensed user), no matter if you embedded fonts or not.</s><s> so the license restrictions forbid anything that allows a direct download of the font file, but not embedding within a pdf.</s><s> thomas, i've been checking the fntcache files using a hex editor.</s><s> well, i'm not a programmer, but the working and the corrupt version definitely look like a... well...</s><s> a fontcache ;-) the question is: what has the adobe pdf printer to do with this special cache file?</s><s> bernd
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235007</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 22, 2006 11:00 AM">
+<s>sean - i don't think it's any one font or family (assuming good quality fonts).</s><s> i am reasonably sure that i converted a problem document to times new roman and had the same missing text problems.</s><s> sometimes changing the fonts will change the parts that drop out, but not fix the problem.</s><s> if i had to guess, it's related to the distiller or framemaker working space and is caused or exacerbated by large physical or virtual memory spaces.</s><s> (tried to install an older version of frame on a new, big-ram system?</s><s> can't do it!</s><s>) i suspect a similar glitch is at the heart of this problem - an overlooked bit of code that makes assumptions about the maximum memory size and thus causes overruns on the postscript font space.</s><s> complete wag, i admit.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235008</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="Seanb_us" timestamp="Aug 22, 2006 12:22 PM">
+<s>yup.</s><s> am wagging, too.</s><s> i was not assuming the problem could only be a distiller one, though.</s><s> i wanted to also consider other factors, like seeing if it was certain fonts or not, thus the list.</s><s> cheers, sean
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-1234970-1235009</DOCNO>
+<TEXT>
+<subject>Text missing from PDF</subject>
+<post author="NitroPress" timestamp="Aug 22, 2006 1:32 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-757124</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Nov 25, 2010 3:30 AM">
+<s>i have a 150 page framemaker document (with lots of linked illustrator cs4 files) that is taking 7 minutes to print to the default adobe pdf printer.</s><s> in contrast, an old quicksilver / interleaf document that is 200 pages long and contains even more graphics embedded as huge tif files, takes 20 seconds to print to the same default adobe pdf printer. 
+i have tried all the suggestions i can find on the web, including adobe forums, but nothing works.</s><s> can anyone suggest why printing from framemaker 9 to adobe pdf is taking such a long time?</s><s> it would appear to be a framemaker problem, since every other application can print to the adobe pdf printer without any problems, and so can framemaker... but only at a snail's pace! 
+i am using ts2 (framemaker 9 and adobe acrobat 9 pro extended) on a 3.0 ghz quad core pc running windows xp pro. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3299683</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="NL_Derek-56V59O" timestamp="Nov 25, 2010 5:24 AM">
+<s>hi, 
+</s><s>i have had similar problems; you might check out: http://forums.adobe.com/thread/540379 it contains several tips you might try. 
+--- derek 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3299782</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Nov 25, 2010 6:28 AM">
+<s>derek, 
+</s><s>thanks for replying.</s><s> the thread you mentioned was one of the many i tried, but none of the suggestions worked.</s><s> it seems the only solution you found was to install a very old driver, is that correct?</s><s> i don't want to do that when every other program on my pc, adobe or not, can print perfectly fast to the default, uncustomized adobe pdf printer. 
+</s><s>that points the blame at framemaker, or perhaps using linked illustrator files within framemaker.</s><s> the reason i say this is because when printing, the little framemaker print output window clearly shows the process is slowing on the graphics-heavy pages.</s><s> i'd expect that a bit with any program, but should sending a single page with a little 1.2 mb linked ai file really lock up a 3.0ghz pc for 25 seconds? 
+</s><s>some further tests are necessary.</s><s> i'll have to waste some time taking one chapter from my book and replacing all the linked ai files with linked svgs to see if the problem is illustrator based.</s><s> if that doesn't work, i'll try tifs or jpgs... 
+</s><s>edit: since writing the above i have tried using a cs3 illustrator file, an svg and a tiff.</s><s> the cs3 file and the svg still took 20 seconds to print a single page, but using a tiff instead caused the page to print almost instantaneously!</s><s> how can it be that using a vector based file can cause printing to adobe pdf to be about 20x slower than using a tif file? 
+</s><s>edit: using framemaker's save as pdf... menu option to write the complete book takes around 4m 30s, an improvement over the 7 minutes printing it to the adobe pdf printer, but still far too slow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3299897</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Jeff_Coatsworth" timestamp="Nov 25, 2010 6:43 AM">
+<s>what do you mean by "linked" when you refer to graphics?</s><s> ole type linking?</s><s> i didn't think that was "best practices" anymore due to security tightening. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3300066</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Nov 25, 2010 8:22 AM">
+<s>i mean choosing file > import...</s><s> > file, then selecting an ai file and using the import by reference option.</s><s> is this bad practice?</s><s> i assumed it was the slickest way to insert a picture in framemaker, so that double-clicking opens it immediately in illustrator for modifications, and there's only one ai file rather than an ai source file + svg pair for every graphic... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3301391</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Jeff_Coatsworth" timestamp="Nov 26, 2010 6:04 AM">
+<s>i've read that best practice these days is to import graphics by reference so that file sizes don't get bloated.</s><s> ole linking got impaired due to security in some o/s's, so i don't think it's much used anymore. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3301377</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Nov 26, 2010 6:20 AM">
+<s>good, i was hoping i wasn't doing something stupid!</s><s> but if using "import by reference" ai files in a framemaker document makes output to pdf so ridiculously slow, it rather defeats the object doesn't it?</s><s> it's going to be silly having to take a coffee break while my all-adobe pipeline crawls along for 7 minutes making a pdf for me.</s><s> i might as well be creating tif exports of every illustrator file, and linking the tifs into the fm document - but that's a messy route that i wanted to avoid. 
+</s><s>since reading some other posts, it seems i'm not the only one with this problem, so i do hope somebody in adobe has looked into this problem and found the cause.</s><s> adobe's r jacquez has recently been posting about the forthcoming fm10, showing us its "rich-media" facilities, but i dread to think how long it's going to take fm to produce a pdf loaded with video and 3d models. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3301790</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Mike%20Wickham" timestamp="Nov 26, 2010 10:12 AM">
+<s><quote>
+<s>but if using "import by reference" ai files in a framemaker document makes output to pdf so ridiculously slow, it rather defeats the object doesn't it? 
+</s></quote>> 
+</s><s>if i recall correctly, framemaker doesn't directly support ai files.</s><s> it does manage to use them by reading internal pdf structures and then converting them to eps.</s><s> there's a good explanation at the bottom of this thread: http://forums.adobe.com/thread/435883.</s><s> in any case, you might try converting your files to eps or pdf first and importing those to see if it makes a difference for you. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3304982</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Nov 29, 2010 5:08 AM">
+<s>many thanks mike, that is extremely helpful.</s><s> now i know the cause of the problem, i realise i'll have to go back to the age old method of exporting every ai file as some other format.</s><s> as ever i am surprised (but shouldn't be) that everything doesn't just work together in the world of adobe software, despite paying £x000 for the privelege and £x000 more for every "upgrade". 
+[a while later...</s><s> so in illustrator i re-saved all my ai files as "illustrator eps" files.</s><s> in framemaker, i then laboriously replaced all my import by reference'd ai files with import by reference'd eps files instead.</s><s> the result?</s><s> instead of taking 7 minutes to print my 150 page book, it now takes "only" 5.5 minutes!</s><s> does adobe think that is acceptable, when ancient 10 year old quicksilver / interleaf program could print a 200 page book in 20 seconds to the very same adobe pdf printer?</s><s>] 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3397976</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 12, 2011 2:54 PM">
+<s>has this been answered anywhere?</s><s>?</s><s>?</s><s> i have soooo many problems with this.</s><s> i have separted sections of one book into 7 books because it takes so long to make a pdf. ....and i mean....15 to 20 minutes for a large doc...maybe 400 pages...that seems crazy to me. ....but i have many illustrator file.</s><s> is this still an issue? 
+</s><s>thanks, 
+</s><s>ls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3398722</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Jan 13, 2011 1:23 AM">
+<s>i have no answer to this problem.</s><s> naturally, you'd expect framemaker to fully support adobe's own flagship vector drawing program, otherwise how are technical writers supposed to include complex diagrams in their work?</s><s> do we really have to go through the time-wasting annoyance of using an intermediate format such as .eps, when we've committed to an all-adobe software route?</s><s> did anyone at adobe ever try printing a large document with lots of ai files imported by reference (typical of many customers' documents) to check if it worked? 
+</s><s>there seems to be something very wrong with framemaker if it can reduce my high-spec pc to a 20 minute crawl, whereas an archaic program such as interleaf / quicksilver running on the same pc can print a longer document (heavily laden with embedded bitmaps) in 20 seconds to the same acrobat pdf printer. 
+</s><s>would anyone from adobe like to comment? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3399288</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Van%20Kurtz" timestamp="Jan 13, 2011 6:44 AM">
+<s>for what it is worth, saving an illustrator file to eps is just as good as saving to ai.</s><s> both formats are completely editable with illustrator.</s><s> furthermore, double-clicking an imported by reference eps file in a framemaker file opens it in illustrator.</s><s> there is no need to keep both versions for each illustration.</s><s> we use eps for almost all illustrations, pdf for others. 
+i am not sure about ai files, but when one imports an eps file, it is always the size of the bounding box, not the page size. 
+</s><s>my pdf creations times are on the order of 20 to 30 minutes for a 300 to 400 page manual.</s><s> i have always assumed that the long time has to do with the fact that the illustrations are stored on a network drive, there are lost of illustrations, and each illustration includes all the fonts used in it.</s><s> there may be ways to reduce these times, but i usually use that time to check email, etc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3399339</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Jan 13, 2011 7:03 AM">
+<s>van kurtz: it's interesting to note that you get hopelessly slow pdf creation times too!</s><s> in my response above, on 29th november, i mentioned trying eps files instead of ai.</s><s> they were also extremely slow to print, so i maintain there is a serious problem with printing vector art from framemaker to acrobat.</s><s> nobody from adobe seems to want to supply an answer.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3399413</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 13, 2011 7:24 AM">
+<s>is there a way to show that this question has not been answered in the forum?</s><s> maybe there are other ideas on this. 
+</s><s>thanks, 
+</s><s>ls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3399953</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Van%20Kurtz" timestamp="Jan 13, 2011 10:23 AM">
+<s>reaction, 
+</s><s>in our case, most of the illustrations are in the 1 to 10 mb range; and there are many illustrations per manual.</s><s> the illustrations are stored on a network drive, as well as the frame files themselves.</s><s> when i create a pdf or a ps file, it is created on the network drive.</s><s> so, i have always assumed that the time was spent transferring all those files back and forth between the network drive and my computer.</s><s> the resulting ps file is 300 to 500 mb.</s><s> most of the time is spent creating the ps file; the distillation goes rather quickly. 
+</s><s>when we had framemaker 7.2, the pdf creation times were on the order of 40 to 45 minutes.</s><s> we got the archive plugin, which could be used to copy all the files, frame and eps, to the local computer.</s><s> this took about 5 minutes or more.</s><s> then we could create a pdf without all the network traffic.</s><s> it still took 10 to 15 minutes.</s><s> when we upgraded to framemaker 9, the pdf creation times went down to 20 minutes or so, which seemed good compared to 45 minutes.</s><s> so, we just live with it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3400248</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Art_Campbell" timestamp="Jan 13, 2011 11:49 AM">
+<s>ls: if you want some help trouble shooting, it'd be good to supply your system specs: os, ram, fm and acrobat versions (make sure they're fully patched), where the files are (net / local), how graphics are referenced by frame, and what method you use to create the pdf. 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3400299</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 13, 2011 12:07 PM">
+<s>thanks art, but it seems to be a fm problem.</s><s> as the others have said, they have the same problems....and i have seen others posting over the months.</s><s> i was just hoping that maybe someone had found an answer.</s><s> i can't move all my files back and forth from the network to my desktop to make a pdf.</s><s> we are talking about100's of vector and image files for just one book and we are printing highlight color.</s><s> so, i have a color and grayscale version of every image that i have in my manuals.</s><s> plus, from what van said, it seems it doesn't save that much time.</s><s> guess i will just wait on the pdf's until this is corrected or just live with it if adobe can't come up with a solution. 
+
+</s><s>thanks again.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3400363</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Art_Campbell" timestamp="Jan 13, 2011 12:42 PM">
+<s>it may be a fm problem, but there are thousands of users who aren't experiencing it.... 
+</s><s>which probably means it only crops up under certain circumstances, and also that it can be corrected. 
+
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3401609</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Jan 14, 2011 2:07 AM">
+<s>just for the record: 
+* i bought ts2 and therefore installed framemaker 9 and acrobat 9 at the same time, on a new pc. * that pc is an intel core2quad 3.0ghz, 4gb ram, windows xp sp3.</s><s> everything including windows is fully updated / patched as it should be. * i was using illustrator cs4, now cs5, but the same problem exists. * my ancient quicksilver / interleaf program, and any other application, can print extremely fast to the adobe pdf printer. 
+</s><s>conclusion: framemaker is the problem. 
+</s><s>using the same manufacturer's software should guarantee perfect integration and slick performance, which clearly isn't the case.</s><s> i suspect it's due to framemaker having being overlooked for so many years, while acrobat and others were being bloated with unnecessary features. 
+</s><s>what concerns me most is that for framemaker 10, i have only seen boasting about new "rich media" capabilities.</s><s> one wonders how fm10 could possibly deal with "rich media" if it can't even handle extremely lean media - pure vector artwork - written in a language (eps) that adobe also created! 
+</s><s>would anyone from adobe like to comment? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402033</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 14, 2011 6:43 AM">
+<s>my computer 
+windows xp professional version2002 service pack 3 
+</s><s>intel(r) pentium(r) 4cpu 3.00ghz 2.99ghz, 3.25gb of ram 
+</s><s>using acrobat 8.1 professional.</s><s> (haven't upgraded because i saw too many posts with people having problems.</s><s>) 
+</s><s>using adobe design premium cs3 (i use ai files, we always have for any vector files and way to many to change over to eps.</s><s>) 
+
+</s><s>we have also been changing over from interleaf.</s><s> i really like fm except for this problem.</s><s> very glad to get out of interleaf. 
+</s><s>we also used indesign for a while and there are no problems printing to pdf. 
+ls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402048</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Art_Campbell" timestamp="Jan 14, 2011 6:52 AM">
+<s>thanks for the additional info. 
+</s><s>how do you create the pdf?</s><s> saveas pdf or by printing to the (default) acrobat printer?</s><s> and are your graphic files copied into the fm files or imported by reference? 
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402099</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Jeff_Coatsworth" timestamp="Jan 14, 2011 7:20 AM">
+<s>nope - this is a user to user forum.</s><s> don't expect them (adobe) to chime in anytime soon. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402101</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 14, 2011 7:22 AM">
+<s>art, 
+</s><s>i save to pdf.</s><s> i would actually have to leave work if i printed to pdf...lol...doesn't work.</s><s> can't remember the problem and scared to try right now to find out cause i dont' want to crash... 
+i import by reference with all files, both ai and tiff. 
+i have setup fm to default to adobe pdf. 
+</s><s>not sure what you mean by "acrobat printer?". 
+
+</s><s>thanks, 
+</s><s>ls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402166</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Art_Campbell" timestamp="Jan 14, 2011 7:38 AM">
+<s>the acrobat printer is the logical printer set up by the installation.</s><s> in windows, it'll show up as if it were a physical printer; you can direct any application to print to it. 
+</s><s>frame's saveas pdf tool is notoriously unrelaible (and slow) for most people, so printing to the acrobat printer way to produce a pdf. 
+</s><s>if there's something wrong with your setup so that you can't do that, that would be an issue worth resolving both because it gives you an additional, better, output option and because if the installation isn't correct that may be the root cause of your slow printing problem.</s><s> both saveas and print use the same core acrobat software, but with different options and parameters. 
+</s><s>although you mention xp/sp3, you don't mention whether you've installed the microsoft hotfix for all postscript printers, including acrobat.</s><s> if you haven't, this would be mandantory because fixes os bugs in the printer handling. http://support.microsoft.com/?id=952909 (gives details on the hotfix) and http://support.microsoft.com/hotfix/kbhotfix.aspx?kbnum=952909&kbln=en -us (direct download link) 
+</s><s>if you haven't installed this, do so before you try any other tweaking..... 
+
+
+</s><s>art 
+
+</s><s>art campbell art.campbell@gmail.com "...</s><s> in my opinion, there's nothing in this world beats a '52 vincent and a redheaded girl." -- richard thompson no disclaimers apply.</s><s> dod 358 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402341</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Arnis%20Gubins" timestamp="Jan 14, 2011 8:40 AM">
+<s>the "adobe pdf" is the acrobat printer instance.</s><s> instead of using the save as pdf route, try printing to this device and enable the print to file option.</s><s> then manually run the distiller to convert the ps file (or print to a watched folder with distiller enabled to look for ps files in the desired location). 
+</s><s>if you need bookmarks and interactive feature in the pdf, then check the "generate acrobat data" option in the print window, otherwise for print leave this option unchecked. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402372</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 14, 2011 9:04 AM">
+<s>wellll, i installed the hotfix.</s><s> still did a save as pdf that took 30 minutes.</s><s> was kind of scared to print to a pdf. 
+</s><s>saw arnuis's comment, so did it anyway....i really knew better...lol....</s><s> it is still running very very slowly.</s><s> looks like it will take about the same time or more...lol... 
+
+</s><s>sooooo....what did yall say was the next thing to look at? 
+</s><s>thanks, 
+</s><s>ls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402431</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Art%20Campbell" timestamp="Jan 14, 2011 9:11 AM">
+<s>assuming you rebooted after installing the hotfix to refresh everything....</s><s> i'd try: 
+* opening all files in the book before printing.</s><s> this should eliminate network slow-downs and anti-virus checking as files are opened. * if you have the screen real estate, open task manger or a similar tool (process explorer) to see what processes are working hard when you do the pdf. * check your hard drive free space.</s><s> creating a pdf uses lots of temp space, and if you don't have a lot available, the process can slow down if files have to be swapped in and out. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402524</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 14, 2011 9:37 AM">
+<s>thanks yall....will try on monday. 
+i have 103g of free space on my computer. 
+</s><s>will try the other things though.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3402553</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Arnis%20Gubins" timestamp="Jan 14, 2011 9:48 AM">
+<s>check the adobe pdf printer properties > advanced settings for spooling.</s><s> under xp, it should be set for: start printing after last page is spooled, while under vista/win 7 it should be set for start printing immediately. 
+</s><s>are you certain that it is printing to file?</s><s> i do catalogues with hundreds of eps graphics and these only take a minute or so to create the ps file (running distiller itself takes a bit longer and speed does depend upon the complexity and amount of the graphics).</s><s> fm just dumps the eps content to the print stream without any handling.</s><s> on the other hand, if you have included pdf or svg graphics, then fm has to run these through a conversion filter to create eps content on output and this requires additional resources in both temp disk space and cpu.</s><s> if you are pulling your content from network drives, then this will also substantially slow down the print process. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3406862</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Jan 17, 2011 1:41 AM">
+<s>arnis, 
+</s><s>thank you for your reply.</s><s> i have tried all the suggestions listed by others, and by yourself above, and my little 76 page a5 document still takes around 4 minutes to print. 
+</s><s>having made the switch to the all-adobe route of framemaker 9 with illustrator cs4/5 for graphics, i now have to wait several minutes to print a document to the adobe pdf printer.</s><s> i cannot understand why using the very latest adobe software, which should be light years ahead of my old applications, is in fact so hopelessly slow.</s><s> surely, importing by reference ai files into framemaker should be the cleanest possible way to include vector artwork in a technical manual?</s><s> why doesn't framemaker 'understand' ai files?</s><s> and even accepting that it doesn't, then why is it so slow in its own processing of the ai data? 
+i do hope that somebody at adobe is devoting their full attention to researching this fundamental problem with framemaker, as it ruins an otherwise excellent application. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407255</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Mike%20Wickham" timestamp="Jan 17, 2011 6:24 AM">
+<s>another thing to check, which i didn't see previously mentioned in this thread, is your acrobat installation.</s><s> adobe has warned us against having more than one installation of acrobat and/or adobe reader and/or the pdf creation plugin that comes with framemaker installed on the same machine.</s><s> they can cause bad interactions with each other that don't necessarily show up until specific settings or conditions exist.</s><s> then you get a surprise. 
+</s><s>so if there is a time that you have had more than one of any or all of these installed on your computer at the same time, you need to go through and uninstall all of them-- and then put back only acrobat.</s><s> then hope that fixes things up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407296</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Jan 17, 2011 6:40 AM">
+<s>mike, 
+</s><s>thanks mike, that definitely sounds like another thing to try.</s><s> but how do i know if i have the "...</s><s>pdf creation plugin that comes with framemaker" installed?</s><s> i'm fairly sure i installed ts2 on a 'clean' machine, so i should only have whatever the ts2 installer decided to put on my computer.</s><s> i don't appear to have a separate adobe reader installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407391</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Mike%20Wickham" timestamp="Jan 17, 2011 7:32 AM">
+<s><quote>
+<s>but how do i know if i have the "...+pdf creation plugin that comes 
+</s></quote>with framemaker+" installed? 
+</s><s>i'm sorry, but i don't know the answer to that.</s><s> i've never used the add-on because i always have the full version of acrobat installed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407394</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Jeff_Coatsworth" timestamp="Jan 17, 2011 7:36 AM">
+<s>tcs2 includes the full acrobat pro extended version.</s><s> afair if you just installed fm by itself (no suites), you got a "semi-crippled" version of acrobat. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407557</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Arnis%20Gubins" timestamp="Jan 17, 2011 9:16 AM">
+<s>from your reply it isn't completely clear if you are you importing native .</s><s>ai format files or files saved in eps format. 
+</s><s>files in the current native .</s><s>ai format use a pdf-like structure (that contains a lot more info than a pdf required for display), which fm assumes is a pdf file.</s><s> when creating output, fm then tries to run this "pdf" format through it's internal filter to create an eps representation, which takes additional time trying to sort out the illustrator internal information from the pdf drawing information.</s><s> the epslevelforplacedpdf setting in the maker.ini file determines how the features are converted.</s><s> by default this is set to the dumbest level (i.e. ancient level 1 postscript). 
+</s><s>eps files are just simply dumped straight into the output stream (passed through). 
+</s><s>on a fast machine, the resource hit from this sort of conversation may not be too noticeable for the occasional file, but with many .</s><s>ai files, this could be more noticeable, though i doubt it's solely the cause of the larger times that you're seeing.</s><s> usually, if you have a properly configured adobepdf printer instance set as your system default for fm, work on local drives, use eps, tiff, jpeg, png imported by reference, print to file to create .</s><s>ps files, the process is very quick.</s><s> all i can think of is to use a tool like process explorer to monitor what is happening when creating output from fm to try to identify where the slow down is occurring. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407818</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 17, 2011 11:12 AM">
+<s>after reading all the msgs since friday.</s><s> i did try to open all the files in my book and print to a ps file.</s><s> took forever.</s><s> also, why do you have to reset every document in the book when fm crashes?</s><s> i have to wait every time when i try these things because i don't want to have to do that.</s><s> seems just reseting the book file itself would work. 
+</s><s>anyway, i have attached a jpg of my current programs, add in's....ect. that seem to be maybe things i should get rid of.</s><s> would one of you take a look and let me know.</s><s> maybe that is my problem.</s><s> i hope it is readable. 
+</s><s>thanks, 
+</s><s>ls 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3407950</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Mike%20Wickham" timestamp="Jan 17, 2011 11:43 AM">
+<s>i see a potentially huge problem right off the bat.</s><s> you've got both acrobat 8 and adobe reader 7 installed on the same machine!</s><s> adobe has very strongly warned us against having more than one total of any of these installed: acrobat, reader, or fm's optional pdf creation add-on.</s><s> so you need to uninstall both of those, starting with the last one installed, then reinstall only acrobat.</s><s> leave reader off.</s><s> everything it does is already contained in acrobat. 
+i also see some things listed there as "adobe pdfl..." i don't know what those are.</s><s> i don't have them on my computer and i've got tons of adobe software installed.</s><s> i'm sure someone else will pop in with the answer.</s><s> but i see one of them is version 9, which may mean you have yet another conflicting version of something on your machine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3408061</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="lsk2002" timestamp="Jan 17, 2011 12:09 PM">
+<s>well, i got rid of the reader 7.</s><s> i don't see a reader 8. what are adobe acrobat connect add-in, adobe help viewer 2, and adobe extend toolkit 2?</s><s> the adobe pdfl is for our applicationxtender program.</s><s> 
+</s><s>thanks, 
+</s><s>ls 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3408276</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="Mike%20Wickham" timestamp="Jan 17, 2011 1:40 PM">
+<s><quote>
+<s>well, i got rid of the reader 7.</s><s> 
+</s></quote>
+</s><s>yes, but did you also uninstall and reinstall acrobat 8?</s><s> since you had both, you can't just uninstall the one you don't need.</s><s> my understanding is that acrobat and reader each can overwrite files of the other.</s><s> so uninstalling reader may still leave messed up files or missing files for acrobat.</s><s> you have to uninstall both, reboot, then reinstall acrobat. 
+> what are adobe acrobat connect add-in, adobe help viewer 2, and adobe extend toolkit 2?</s><s> > 
+</s><s>the help viewer installs with framemaker.</s><s> the other two install with the the creative suites.</s><s> leave them alone. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/FrameMaker/Discussions-3299527-3409227</DOCNO>
+<TEXT>
+<subject>Very slow printing to default Adobe PDF printer</subject>
+<post author="ReactionAtWork" timestamp="Jan 18, 2011 1:35 AM">
+<s>arnis, 
+</s><s>many thanks for clarifying the situation with ai and framemaker.</s><s> in conclusion, for other users coming to this thread: 
+* importing a native .</s><s>ai file into framemaker (using "import by reference" in my case) doesn't work as it should. * framemaker doesn't interpret the .</s><s>ai file correctly as simple vector artwork, but instead as pdf, and so makes very slow work of converting the graphic when printing. * outputting from illustrator as .</s><s>eps instead of .</s><s>ai should be much quicker when imported into framemaker, but not necessarily.</s><s> other unresolved issues might also cause slow printing. 
+i do hope a future update patch to fm10 will cure this flaw in framemaker's interpretation of ai files.</s><s> personally, i am not remotely interested in fm10's 'rich media', but would love it if framemaker could properly handle 'lean media', such a vector drawings made in illustrator. 
+</s></post>
+</TEXT>
+</DOC>
+
+

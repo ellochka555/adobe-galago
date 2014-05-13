@@ -1,0 +1,1231 @@
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-5794268-1323504</DOCNO>
+<TEXT>
+<subject>ExtendScript is only running within ExtendScript Toolkit Editor</subject>
+<post author="Ketschak" timestamp="Oct 28, 2013 10:06 AM">
+<s>i wrote a simple script which should sequentially execute individual scripts with different applications utilizing bridgetalk.</s><s> the script is working fine if i load it in the extendscript toolkit and press <f5> to execute the script in debug mode.</s><s> but if i directly execute the script by double-clicking the file, only the first script (illustratortasks) is executed and photoshop is never started. 
+</s><s>it seems the scripts hangs in the while loop and the script does never stop.</s><s> i have to manually kill the "extendscript toolkit" task with the windows task manager to stop the task. 
+</s><s>here is the script: 
+
+#target estoolkit
+runscript("illustrator", "~/desktop/illustratortasks.jsx");
+runscript("photoshop", "~/desktop/photoshoptasks.jsx");
+ 
+// run the script and wait until it has finished
+function runscript(target, script)
+{
+    $.writeln("start "+script+" in "+target);
+    var bt = new bridgetalk();
+    var finished = false;
+    bt.target = target;
+    bt.body = "$.evalfile('"+script+"');"
+    bt.onresult = function(res) {
+        $.writeln("\nfinished:\n"+res.body);
+        finished = true;
+    }
+    bt.onerror = function(res) {
+        $.writeln("\nfinished with error:\n"+res.body);
+        finished = true;
+    }
+    bt.send();
+    while (!</s><s>finished) 
+    {
+        $.sleep(1000);
+    } 
+} 
+</s><s>any idea what causes this strange behaviour and how to fix it?</s><s> thanks!</s><s> 
+</s><s>windows 7 64 bit / adobe premium cs5.5 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103350-287527</DOCNO>
+<TEXT>
+<subject>Adding menu items and making system calls in AfterEffects (AE,CS3)</subject>
+<post author="(Scot_Brew)" timestamp="Apr 28, 2008 12:59 PM">
+<s>we are looking to do the following things via javascript in aftereffects cs3.</s><s> it does seem straight-forward, but am unable to find a good reference or example. * add at startup a menu item under "file" (or similar main menu) and have it call a script function when clicked. * have a script make an external system call (to launch an external application/executable with a few parameters) any insights on how to achieve this?</s><s> many thanks!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103350-1103351</DOCNO>
+<TEXT>
+<subject>Adding menu items and making system calls in AfterEffects (AE,CS3)</subject>
+<post author="(Scot_Brew)" timestamp="Jun 5, 2008 7:47 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103350-5323278</DOCNO>
+<TEXT>
+<subject>Adding menu items and making system calls in AfterEffects (AE,CS3)</subject>
+<post author="rickg_la" timestamp="May 15, 2013 11:00 AM">
+<s>i wanted to see if there was any update on this, i'm writing a series of tools and would love to create a custom menu for quick and easy access.</s><s> if it turns out there isn't an "easy" way to do this (env variables, special directory locations, javascripts) would anyone know if access to the menubar is possible from the plugin api? 
+</s><s>i'm fairly new to after effects, just getting up-to-speed on the environment now... seeing if i can duplicate the functionality of some old nuke scripts in ae. 
+thanks, rick_ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103350-5324164</DOCNO>
+<TEXT>
+<subject>Adding menu items and making system calls in AfterEffects (AE,CS3)</subject>
+<post author="rickg_la" timestamp="May 15, 2013 3:07 PM">
+<s>found my answer in the sdk docs. thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103350-5720788</DOCNO>
+<TEXT>
+<subject>Adding menu items and making system calls in AfterEffects (AE,CS3)</subject>
+<post author="kemal%20toygun" timestamp="Sep 27, 2013 11:46 PM">
+<s>te?ekkürler çok faydalı oldu... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-5517872-1257650</DOCNO>
+<TEXT>
+<subject>Array of Images - What is the best adobe programm?</subject>
+<post author="ole nordmann" timestamp="Jul 18, 2013 10:52 AM">
+<s>hallo everybody, 
+i'm new to this forum and this is my first post.</s><s> may someone can help me: i have got 12 images (jpg) of the same size and i want to do an random array of these for a high quality ditigtal print.</s><s> for more variation the images should be mirrored.</s><s> what is the best adobe product to do that?</s><s> is there a way for automating? 
+</s><s>here is a quick concept drawing: 
+
+thanks for help 
+cheers ole 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4998077-1136167</DOCNO>
+<TEXT>
+<subject>Recommendation on How to Make small Interactions with buttons</subject>
+<post author="KatherineDV2" timestamp="Jan 16, 2013 5:44 AM">
+<s>hey there adobe users 
+ive been given the task to make a small vertual interface for a program for tech support to help the advisor troubleshoot with customers 
+so bassically i have a bunch of screeen shots to each section of the programs adn all the options in menus.</s><s> so the idea is that they could click the button on the screenshoot and it would take them to another screenshoot and they click the done button and taken them into the mian screen shoots or the one perivous to thast depending on where they are in the programs > so basically an online vertual emulator. 
+</s><s>to be honest the last time i did something liek this was a couple years agian i more stick to frame by frame and grouping animantions with flash. so what im looking for is just a basic actionscriupt thast will allow this to happen as unable to really find what im looking for but im sure there something built right into adobe flash thast im just missings. 
+any help would be wonerful. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4543756-1033597</DOCNO>
+<TEXT>
+<subject>PHP</subject>
+<post author="nevitt99" timestamp="Jul 7, 2012 9:44 AM">
+<s>i'm updating my portfolio to include php, however, i'm having trouble getting the php to work on a html page.</s><s> the html works on the php page as expected.</s><s> how do i connect the php to the html page.</s><s> right now when i view the html page with the php on it i just see the php code.</s><s> i'm a beginner at php and have studied it for about three months. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4543756-4543946</DOCNO>
+<TEXT>
+<subject>PHP</subject>
+<post author="Nancy%20O." timestamp="Jul 7, 2012 12:38 PM">
+<s>you need a server to parse php code.</s><s> either upload your html page(s) to your remote server or set up a local testing server on your pc.</s><s> below are some apache testing servers you can download (free). 
+</s><s>wamp for windows http://www.wampserver.com/en/ 
+xampp for windows http://www.apachefriends.org/en/xampp-windows.html 
+xampp for mac http://www.apachefriends.org/en/xampp-macosx.html 
+mamp for mac http://www.mamp.info/en/downloads/index.html 
+setting up a php environment in dreamweaver http://www.adobe.com/devnet/dreamweaver/articles/setup_php.html 
+building your first dynamic website – part 1: setting up your site and database connection http://www.adobe.com/devnet/dreamweaver/articles/first_dynamic_site_pt 1.html 
+
+</s><s>nancy o.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4543756-4543986</DOCNO>
+<TEXT>
+<subject>PHP</subject>
+<post author="nevitt99" timestamp="Jul 7, 2012 1:11 PM">
+<s>how come the php works in ew and not dw? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4543756-4544028</DOCNO>
+<TEXT>
+<subject>PHP</subject>
+<post author="Nancy%20O." timestamp="Jul 7, 2012 1:19 PM">
+<s>already answered in dw general discussion forum http://forums.adobe.com/thread/1033598?tstart=0     nancy o.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4379215-998820</DOCNO>
+<TEXT>
+<subject>Cross Site LoadMovie and ISAPI Filter</subject>
+<post author="Alexandre_WebTraining" timestamp="May 4, 2012 7:04 AM">
+<s>i have the following scenario:   i need to distribute my swf and flv files acoording to client ip origin.</s><s> i am using isapi filter to do the url redirect.</s><s> my apllication uses html/flash as2/javascript my isapi filter redirect the swf/flv/xml calls other webserver.   i putted a crossdomain.xml file on the main server but it is not working fine.</s><s> the first movie is loaded correctly but fails when this movie uses loadmovie and loadxml.   question: both are necesssary crossdomain.xml and system.allowdomain() or just the server file addresses the problem?   restrictions: - i can not redirect all the content due to cross site scripting issues (javascript) - i dont have acess to fla files (they are third party elearning content).</s><s> so i can not assure they are using system.allowdomain()     am i missing something?   thanks in advance   alexandre  
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103413-287543</DOCNO>
+<TEXT>
+<subject>Open PDF file with Bookmarks Showing</subject>
+<post author="(Karen_Little)" timestamp="Oct 7, 2008 6:26 AM">
+<s>hi - forgive me if this is the wrong forum, but i can't find a topic called "how to use acrobat" i need to create a pdf that will open in acrobat reader with the bookmarks displayed.</s><s> the file will be distributed as a pdf and will not be associated with a web page.</s><s> and, if everything was perfect, i'd like that file to be open at 100% instead of the current 150%.</s><s> is there a way to set this up?</s><s> karen
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103413-1103414</DOCNO>
+<TEXT>
+<subject>Open PDF file with Bookmarks Showing</subject>
+<post author="try67" timestamp="Oct 7, 2008 7:11 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103413-1103415</DOCNO>
+<TEXT>
+<subject>Open PDF file with Bookmarks Showing</subject>
+<post author="(Karen_Little)" timestamp="Oct 7, 2008 8:52 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103413-1103416</DOCNO>
+<TEXT>
+<subject>Open PDF file with Bookmarks Showing</subject>
+<post author="try67" timestamp="Oct 7, 2008 12:28 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103413-4081979</DOCNO>
+<TEXT>
+<subject>Open PDF file with Bookmarks Showing</subject>
+<post author="Former%20Playtex%20Auditor" timestamp="Dec 13, 2011 9:36 AM">
+<s>good morning.</s><s> i was researching this same issue and found a solution for adobe 9 standard.</s><s> i went into file > properties > inital view tab.</s><s> on the first line, it says "navigation tab:" i selected "bookmarks panel and page" from the drop-down selection.</s><s> save your file, of course.</s><s> now, whenever someone opens this file, the bookmarks will show on the left side of the page and the document to the right. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103413-4081982</DOCNO>
+<TEXT>
+<subject>Open PDF file with Bookmarks Showing</subject>
+<post author="Former%20Playtex%20Auditor" timestamp="Dec 13, 2011 9:39 AM">
+<s>
+
+</s><s>oops.</s><s> forgot the screen shot. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4049261-929808</DOCNO>
+<TEXT>
+<subject>Hi there... I need a little help with buttons and their actions using flex builder 4.5</subject>
+<post author="VaRepo" timestamp="Nov 27, 2011 6:21 PM">
+<s>i run a repo company and have zero experience in the developing applications and i could use some help from anybody that is willing to give it....</s><s> here is a basic idea of what i need...  let's say there are 3 states... state 1 has a question that says "car you read this?" and a "yes" and a "no" button... when you select either answer, you go to slide 2.  slide 2 with have a question like "is the sky brown?" and a "yes" and a "no" button and when either button is selected, you are taken to slide 3.  slide 3 needs to be some sort of a text form that is created by the user selecting the buttons and the screen would say something like "yes, i can read this.  no, the sky is not brown", or "no, i can't read this.   yes, the sky is brown" .  i know how to get the buttons to take the user to the correct new slide, but i do not know how to get the buttons to insert specific text somewhere else when any button is selected....</s><s> can anybody help me?  youtube is only getting me so far, and my kids are driving me nuts while i'm trying to figure this monster out...  i've gotten several slides created and some screens have several buttons, i just need to see what i need to put in the code to get it to do this type of function 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103410-287542</DOCNO>
+<TEXT>
+<subject>How to get result from BridgeTalk message?</subject>
+<post author="Kasyan Servetsky" timestamp="Sep 24, 2008 10:35 AM">
+<s>dear all, i want to add a new function to my preflight script which should check color settings chosen in photoshop.</s><s> my major problem is that i cant get result outside of bt.onresult function.</s><s> here is where i got so far: 
+ 
+ #target indesign-5.0
+ #targetengine "session"
+ var myresult2 = infofromps();
+ $.writeln("myresult2 = " + myresult2);
+ 
+ function infofromps() {
+    var bt = new bridgetalk;
+    bt.target = "photoshop";
+    bt.body = "app.colorsettings;"
+    bt.onresult = function(resobj) {
+       var myresult1 = resobj.body;
+       $.writeln("myresult1 = " + myresult1);
+       return myresult1;
+    }
+    bt.send();
+ }
+</s><s> it writes myresult1 variable to console as expected, but myresult2 is undefined.</s><s> why?</s><s> another question: ive been experimenting with bridgetalk for some time and found out a strange phenomenon.</s><s> when i send a bridgetalk message, lets say, from indesign to photoshop in main target engine this script doesnt work, but when in session or a custom one it works.</s><s> why so?</s><s> i want to explore the possibilities of interapplication communication for a long time.</s><s> but i cant get reliable information on this topic.</s><s> ive read interapplication communication with scripts chapter in javascript tools guide several times but i couldnt get the example scripts (in communicating through messages section) working.</s><s> ive found a few examples in adobe bridge cs3 sdk: snpsendarray.jsx, snpsendmessagetoindesign.jsx etc. they work like a charm but their code is hard for me to understand im not a programmer by background.</s><s> so, i have two favors to ask of you: 1st could someone give me complete and working examples, similar to given in communicating through messages section?</s><s> 2nd could somebody explain to me, in simple terms , some example from bridge cs3 sdk?</s><s> thanks in advance.</s><s> kasyan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103410-1103411</DOCNO>
+<TEXT>
+<subject>How to get result from BridgeTalk message?</subject>
+<post author="Bob%2C%20Adobe%20Engineer" timestamp="Sep 25, 2008 9:24 AM">
+<s>your questions tell me that you don't really understand the asynchronous behavior or bridgetalk.</s><s> when you call bt.send() to send your bridgetalk message, your script doesn't stop.</s><s> i continues to execute until completion.</s><s> your onresult handler function is called when a result is received from the target application.</s><s> without a persistent session, indesign (and ps) start a scripting engine for your script.</s><s> when your script completes, the scripting engine is killed off.</s><s> if you send a bridgetalk message in such a script, when the result comes back to indesign, the reference to your script and its scripting engine no longer exists.</s><s> that's why you must use a persistent session in indesign if you are sending a bridgetalk message and expecting a response.</s><s> in the code you provided, think of the onresult handler as a separate function to be executed at some future time.</s><s> your function infofromps() does not return anything, which is why the first writeln returns "undefined".</s><s> your onresult function will execute when a result is received; but, that will be at some future time, long after your infofromps() function has already returned.</s><s> the execution works like so: var myresult2 = infofromps(); - this causes the infofromps() function to execute... infofromps() creates a bt message, sets the properties including the onresult handler, and calls "bt.send()".</s><s> it then completes, and returns nothing (undefined).</s><s> the next line to execute (because infofromps() has compelted) is: $.writeln("myresult2 = " + myresult2); and since infofromps() returned noting, you get myresult = undefined in the estk.</s><s> then, at some time (depends on how long the script takes to execute in photoshop - could be hours), a response message is received from photoshop.</s><s> at that time, your onresult handler executes: myresult1 is set to the response message body, the $.writeln writes the correct stuff into the estk console, and the onresult function returns myresult1 (which does nothing).</s><s> you can't "return" something from an onresult handler.</s><s> the correct way to use bridgetalk is to write your script so that it sends the message, and then to write the onresult handler so it does what you need with the returning message. #target indesign; #targetengine "session" function infofromps() { var bt = new bridgetalk(); bt.target = "photoshop"; bt.body = "app.colorsettings;" bt.onresult = function( msg ) { var myresult = msg.body; $.writeln( "bridgetalk result = " + myresult ); dosomethingnow( myresult ); } bt.send(); } dosomethingnow = function( result ) { $.writeln( "now i am doing something with " + result ); } infofromps(); this *should* (i haven't tested it) write into the estk console: "bridgetalk result..." "now i am doing something with..." regards bob
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103410-1103412</DOCNO>
+<TEXT>
+<subject>How to get result from BridgeTalk message?</subject>
+<post author="Kasyan%20Servetsky" timestamp="Sep 25, 2008 10:43 AM">
+<s>hi bob, thank you so much for the quick reply and intelligible explanation.</s><s> you opened my eyes to this problem.</s><s> i reached a deadlock and you showed me the way out of it.</s><s> i wouldn't be able to solve this thing without your help.</s><s> now it works at last!</s><s> thank you again, bob.</s><s> kasyan 
+#target indesign-5.0
+ #targetengine "session"
+ 
+ function infofromps() {
+    var bt = new bridgetalk;
+    bt.target = "photoshop";
+    bt.body = "app.colorsettings;"
+    bt.onresult = function(resobj) {
+       var myresult = resobj.body;
+       $.writeln( "bridgetalk result = " + myresult );
+       dosomethingnow( myresult );
+    }
+    bt.send();
+ }
+ 
+ function dosomethingnow( result ) {
+    if (result != "iso web coated") {
+       alert( "color settings in photoshop are set to \"" + result + "\"");
+    }
+ }
+ 
+ infofromps();
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103410-4007041</DOCNO>
+<TEXT>
+<subject>How to get result from BridgeTalk message?</subject>
+<post author="dhishok" timestamp="Nov 3, 2011 7:43 PM">
+<s>hi bob & kasyan, 
+</s><s>currently i am working with indesign cs3.</s><s> i need to check whether the object layered images preseneted in my indesign document, if it is found i need to open the particular image (.ai or .psd) in the (illustrator or photoshop) applications and do some layer manipulation in it and do saveas with different name.</s><s> finally i need to relink the image in indesign. 
+i have written the script for indesign, illustrator & photoshop seperately for the above stuff.</s><s> the only thing i need to do is combine these scripts and make them intermediate.</s><s> finally i have to run this script from indesign scripts palette. 
+</s><s>in a script, targetting the different applications is not work out i think so.</s><s> hence i tried with bridge talk() but facing difficulties on execution from estk. 
+</s><s>below is my code: --------------------------------------------------- #target indesign-5.0 var doc = app.activedocument; var doclinks = doc.links; var olimage = []; var olayer = []; var mycheck = 0; 
+for (e=0; e<doclinks.length; e++){ var mylink = doclinks[e]; var myglayer = mylink.parent.graphiclayeroptions.graphiclayers; if (myglayer.length > 1){ for (g=0; g<myglayer.length; g++){ if (myglayer[g].currentvisibility != myglayer[g].originalvisibility){ olayer.push(myglayer[g].name); olayer.push(myglayer[g].currentvisibility); olimage.push(olayer); mycheck = 1; } } if (mycheck == 1){ var myupdatedimage = setlayervisibility(mylink.filepath, olimage); alert (myupdatedimage); } } } 
+
+
+function setlayervisibility(myfile, objlayers){ 
+if (myfile.tostring().match(/\.ai$/gi) != null){ 
+//~ #target illustrator-13.0 
+var doc = app.open(file(myfile)); var docpath = doc.path; 
+for (o=0; o<objlayers.length; o++){ if (objlayers[o][1]) doc.layers.getbyname(objlayers[o][0]).visible = true; else doc.layers.getbyname(objlayers[o][0]).remove(); } 
+var saveoptions = new illustratorsaveoptions(); var aics4doc = new file(docpath + "/" + doc.name.replace(".ai", "-b.ai")); saveoptions.compatibility = compatibility.illustrator13; saveoptions.flattenoutput = outputflattening.preserveappearance; doc.saveas( aics4doc, saveoptions ); return aics4doc; } 
+else if (myfile.tostring().match(/\.psd$/gi) != null){ 
+//~ #target photoshop 
+var doc = app.open(file(myfile)); var doclayers = doc.layers; var docpath = doc.fullname.tostring().replace(/\.psd$/gi, "-b.psd"); 
+for (p=0; p<objlayers.length; p++){ if (objlayers[p][1]) doc.layers.getbyname(objlayers[p][0]).visible = true; else doc.layers.getbyname(objlayers[p][0]).remove(); } 
+doc.saveas (file(docpath)); return docpath; } } 
+
+</s><s>can you please guide me in this regard. 
+
+</s><s>thanks in advance thiyagu 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4000419-919916</DOCNO>
+<TEXT>
+<subject>selection.bounds operation?</subject>
+<post author="raybeau528" timestamp="Oct 31, 2011 4:48 PM">
+<s>i have this simple jsx script where i want to get the bounds of a selection: 
+try { var s = app.activedocument.selection.bounds alert(s.tosource()) } catch(e) { alert("no selection") } 
+</s><s>it does detect that there is a selection present but does not return that array of x,y coordinates that bounds the selecton.</s><s> the alert displays [({}),({}),({}),({})] all elements of the array are determined to be undefined. 
+</s><s>any help is appreciated. 
+</s><s>thanks!</s><s> 
+</s><s>ray 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4000419-4000762</DOCNO>
+<TEXT>
+<subject>selection.bounds operation?</subject>
+<post author="John%C2%A0Hawkinson" timestamp="Oct 31, 2011 11:13 PM">
+<s>what application are you scripting? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-4000469-919918</DOCNO>
+<TEXT>
+<subject>doc.pathItems.add and  line.strokePath inconsistent with document resolution</subject>
+<post author="raybeau528" timestamp="Oct 31, 2011 5:05 PM">
+<s>applicaton: cs5 and javascript 
+the doc.pathitems.add() and line.strokepath() scripting commands have inconsistent results with document resolution setting. 
+</s><s>in a for loop i create a pathitem line, stroke it, then delete the path.</s><s> i may do this several hundred times in the loop. 
+</s><s>it works fine when the document resolution is low like 72.</s><s> as the resolution increases, not all lines are painted within the document.</s><s> i've observed the line actually painted within the photoshop window outside of the image.</s><s> at 300 resolution, only about 1/4 of the lines actually get painted on the document.</s><s> i've used the waitforredraw (or something like that) function from the adobe js scripting reference document but it had no affect on the problem. 
+</s><s>any help is appreciated. 
+</s><s>thanks!</s><s> 
+</s><s>ray 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3874839-893711</DOCNO>
+<TEXT>
+<subject>Script to convert text file to text layer.</subject>
+<post author="Nictra_Savios" timestamp="Aug 21, 2011 2:53 PM">
+<s>alright, totally new at this extendscript stuff, but it will be my 6th coding/scripting language if i can become profficiant in it.</s><s> ( after c++, objective-c, applescript, autohotkey and bash...</s><s> i don't count html/css) 
+</s><s>so this is script number zero, i need somewhere to start, and i have a project i've been working on that i can't see another way to do it, so since i'm new at this, id like you to help me write this, i honestly have no idea, not even a clue where to start (time for 'hello world!' eh?</s><s>).</s><s> 
+</s><s>anyway, what i would like help making is a script, that will take the 50 text files i have in a folder [ d:\code\examples\helloworld\*.txt] and make them all text layers with font: anonymous pro, size 8, color 0xffffff.</s><s> alighted to the top/left at 0,0.</s><s> i would like the layer name to be the text-files name before the last period (i say last because one is named visual basic .</s><s>net.txt)... although first wouldn't be too bad.</s><s> (so lets just say, until a period) 
+</s><s>the reason i can't do this task by hand is simple, they are all 'hello world' examples, they are in 49 different coding languages.</s><s> each language has a seperate text file, like bash.txt, ada.txt, (extendscript.txt next?</s><s> .. make it an even 50 xd) 
+</s><s>so, little help making this?</s><s> maybe an example? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3874839-3874895</DOCNO>
+<TEXT>
+<subject>Script to convert text file to text layer.</subject>
+<post author="John%C2%A0Hawkinson" timestamp="Aug 21, 2011 3:48 PM">
+<s>this is the cross-application scripting forum, but your question doesn't sound cross-application, so there is probably a better place for it. 
+i cannot tell, from your question, what application you are attempting to script.</s><s> that makes all the difference in the world.</s><s> (knowing the version would be nice, too...</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3874839-3876139</DOCNO>
+<TEXT>
+<subject>Script to convert text file to text layer.</subject>
+<post author="Nictra_Savios" timestamp="Aug 22, 2011 9:23 AM">
+<s>when i find the edit button, i'll edit the post... anyway....</s><s> adobe master collection cs5.5, i want this to work with photoshop, but after i learn more, the plan is to make it work with some of the other programs.</s><s> and if this topic is in the wrong place, i kindly ask a moderator to move it
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3874839-3879635</DOCNO>
+<TEXT>
+<subject>Script to convert text file to text layer.</subject>
+<post author="John%C2%A0Hawkinson" timestamp="Aug 23, 2011 8:05 PM">
+<s>sorry for the delay.</s><s> i suspect you may not get much moderator attention, you are probably best off posting in the photoshop scripting forum.</s><s> scripting for all the creative suite applications is not at all the same.</s><s> they are all different, though there are certainly similarities. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3764029-870028</DOCNO>
+<TEXT>
+<subject>Extendscript toolkit cs4 trying to take over.</subject>
+<post author="Thumpmonkey20" timestamp="Jun 26, 2011 8:32 PM">
+<s>i'm not sure if this is the right place for this questions, and if not, please forgive me, but i've been working on this issue for a few weeks now, and have yet to find a solution... 
+</s><s>when i try to access anything on my computer like "exe" programs, extendscript toolkit keeps coming up and wanting me to choose a language... what's going on, and how do i fix this without nuking my whole pc... thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3508064-799749</DOCNO>
+<TEXT>
+<subject>Button wont work after Swipe</subject>
+<post author="bock85" timestamp="Mar 4, 2011 7:02 AM">
+<s>hello everybody,   i have this script to scroll a movieclip on ipad:   import fl.transitions.tween; import fl.transitions.easing.*; text_asco.addeventlistener(transformgestureevent.gesture_swipe, onswipe8); function onswipe8 (e:transformgestureevent):void{ if (e.offsety == 1) { if(text_asco.y <= 100){ var righttween:tween = new tween(text_asco, "y", regular.easeout, text_asco.y, text_asco.y+200, 0.5, true); } } if (e.offsety == -1) { { var lefttween:tween = new tween(text_asco, "y", regular.easeout, text_asco.y, text_asco.y-200, 0.5, true); } } }   and then i have some buttons that moves in timeline, so if the user press chapter one in a menu then it jumps on the timeline so the scrollable movieclip is place at chapter one.</s><s> but my problem is that when i have used the swipe gesture the buttons wont work anymore.   this is my code for ons of the button:   a.addeventlistener(mouseevent.click, a_click, false, 0, true); function a_click(event:mouseevent) { gotoandstop("asco"); }   what is wrong?</s><s>?</s><s>?</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2306963-504883</DOCNO>
+<TEXT>
+<subject>best place to learn scripting</subject>
+<post author="hilukasz" timestamp="Oct 11, 2009 5:46 AM">
+<s>i just read adobe intro to scripting.</s><s> i have some background in dom scripting and plan on reading the js reference next. would anyone suggest a different or have good places to check out for introduction scripting stuff?</s><s> how did you learn scripting? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2306963-3330875</DOCNO>
+<TEXT>
+<subject>best place to learn scripting</subject>
+<post author="Maneet%20Puri" timestamp="Dec 9, 2010 8:40 PM">
+<s>hi, there are various manuals available on net to learn scripting, you can opt anyone of these which you think is more easy for you to use and learn.</s><s> but what matters more is the practice, along with manuals do search for some script codes so that you get more exposure in how people are doing it and will help you a lot.</s><s> cheers, ~maneet 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2306963-3331256</DOCNO>
+<TEXT>
+<subject>best place to learn scripting</subject>
+<post author="Kasyan%20Servetsky" timestamp="Dec 10, 2010 3:38 AM">
+<s>here is a list of links for beginners and here are some more advanced resources. 
+</s><s>kasyan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1952012-430769</DOCNO>
+<TEXT>
+<subject>How to begin a successful freelance scripter career?</subject>
+<post author="Kasyan Servetsky" timestamp="May 10, 2009 1:24 AM">
+<s>
+</s><s>dear all, 
+
+</s><s>due to economic troubles in my country, the number of pages in the magazine a work for has reduced by half.</s><s> as a result, i have less work, slashed salary, more free time and desire to occupy myself with what i really love to do – writing scripts.</s><s> since there exist people that develop scripts, i guess that people, who need scripts to be written for them and willing to pay for that, must exist somewhere as well. 
+
+q #1: how to find them?</s><s> i browsed dozens of freelance sites, but found only one request to write a script for indesign, back in 2008.</s><s> i couldn't find even an appropriate category: something like scripting for indesign, photoshop, incopy, etc. 
+
+q #2: what are the rates for writing scripts?</s><s> how such kind of work is rated: by hours, number of lines/characters? 
+
+q #3: how to transfer money from country to country? 
+</s><s>as far as i understand, the most popular way to pay online is paypal, but it imposed restrictions in my country: we can send money, but can't receive them.</s><s> which money transfer system to choose: swift, moneygram, western union, contact, unistream? 
+i would appreciate any advice on this subject because i really don't know where to start. 
+
+</s><s>kasyan 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1952012-3269977</DOCNO>
+<TEXT>
+<subject>How to begin a successful freelance scripter career?</subject>
+<post author="MLP77007" timestamp="Nov 11, 2010 3:53 PM">
+<s>hi kasyan, are you still looking to do freelance scripting?</s><s> we are looking for someone to help us put together some scripts for indesign and photoshop.</s><s> if you are still interested, let me know how i can contact you, thanks. 
+</s><s>amir 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1952012-3271828</DOCNO>
+<TEXT>
+<subject>How to begin a successful freelance scripter career?</subject>
+<post author="Kasyan%20Servetsky" timestamp="Nov 12, 2010 10:21 AM">
+<s>hi amir, 
+</s><s>yes, i am still inerested.</s><s> get in touch with me in private: askoldich [at] yahoo [dot] com 
+</s><s>kasyan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1952012-3271889</DOCNO>
+<TEXT>
+<subject>How to begin a successful freelance scripter career?</subject>
+<post author="Kasyan%20Servetsky" timestamp="Nov 12, 2010 10:21 AM">
+<s>hi amir, 
+</s><s>yes, i am still inerested.</s><s> get in touch with me in private: askoldich [at] yahoo [dot] com 
+</s><s>kasyan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-3070090-704760</DOCNO>
+<TEXT>
+<subject>What's needed for a PDF processing module for InDesign Server?</subject>
+<post author="warzenbeisser" timestamp="Aug 20, 2010 8:50 AM">
+<s>hello, 
+</s><s>after digging through lots of documentation and whitepapers, i am still puzzled about what would be an efficient way to implement a software module that handles some specific processing tasks of pdf output (automatically generated in indesign server and targeted for various types of print configurations from small-run lfp up to very high volume commercial printing). 
+</s><s>we have a working standalone script that uses acrobat's preflight and correction functions, and now we would like to port and integrate this into a server-based workflow.</s><s> apparently, there is no acrobat server product available.</s><s> distiller server does exist, but seems to be limited to converting postscript to pdf without the pdf-to-pdf processing features we need.</s><s> some of the functionality that is typically found in rips (e.g. converting colours to a preset output intent with highly configurable options [for pixel/vector elements, black and spot colour ink issues etc.</s><s>] and flattening native transparency) could probably be implemented using the adobe pdf print engine, but this seems a bit overkill and would probably require extensive programming from scratch.</s><s> i suspect there should be a smarter way to use existing software – but which?</s><s> i am not yet familiar with indesign server; does its sdk permit full access to the same parts/functions of the pdf library that acrobat uses for its preflight and correction features? 
+</s><s>any help is welcome.</s><s> eric 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2942750-672184</DOCNO>
+<TEXT>
+<subject>Bug in ExtendScript's regular expression engine</subject>
+<post author="John Whitney" timestamp="Jul 1, 2010 9:33 PM">
+<s>i'm using extendscript 3.92.115, and i'm noticing that a certain regular expressions don't work properly.</s><s> i've tried the same expressions on popular browsers, and they work fine.</s><s> here's an example: 
+alert('ab'.match(/(.</s><s>)(?:.*?</s><s>)$/)); 
+
+</s><s>the alert should display the array: ["ab", "a"], because there is a match ("ab"), and one capturing group ("(.</s><s>)" captures "a").</s><s> instead it displays ["ab", undefined], which makes no sense.</s><s> it works fine if both groups are capturing: "(.</s><s>)(.*?</s><s>)$", if you remove the non-greedy modifier: "(.</s><s>)(?:.*)$", or even if you don't group the second part: "(.</s><s>).*?$".</s><s> 
+</s><s>any thoughts?</s><s> i can modify my regular expressions to work around these problems, but it'd be good to fix the engine if it's really broken, as i suspect. 
+
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2863943-652119</DOCNO>
+<TEXT>
+<subject>XML parsing with JS works on Mac -not Windows HELP!</subject>
+<post author="Hanaan Rosenthal" timestamp="Jun 3, 2010 4:20 AM">
+<s>hi, i created an illustrator cs3 js script that parses xml successfully on mac.</s><s> when run on windows it fails to recognize the elements.</s><s> client is waiting for this to work and i am out of answers... 
+</s><s>any ideas/thoughts?</s><s> are the paths different? 
+
+on mac: fundxmlcount=17 on windows: fundxmlcount=0 
+here's the script: 
+
+
+
+var datafolderpath = /path/to/directory/"; var datafile = new file(datafolderpath+datafilename); datafile.open ("r"); datafile.seek(0); var xmltext = datafile.read (); var fundxmlobject = new xml (xmltext); var fundxmlcount = fundxmlobject.fund.length(); return fundxmlcount; 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-287529</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(arindhama)" timestamp="May 15, 2008 9:03 PM">
+<s>sir, we would like to purchase adobe, if we can find indic unicode support (complex script support) in all products of dtp and designing kind.</s><s> if anyone can help us whether we can expect such one in the future.</s><s> thanks arindhama
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103356</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(ruvanw)" timestamp="Jan 15, 2009 9:35 PM">
+<s>adobe, please respond to this query - its 9 months old!</s><s> most of asia is shut out of your technology owing to lack of complex script support in virtually all of your products.</s><s> can you not at least use the default rendering engines in the os platforms you have software for?</s><s> we use most other software on windows, linux and even mac os without a problem now - but not adobe products.</s><s> and, your monopoly may soon run out... ruvan sri lanka.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103357</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(amar_gurung)" timestamp="Jan 15, 2009 9:51 PM">
+<s>similar case for nepal.</s><s> most nepalis use nepali otf (linked to the devanagari unicode chart) for dtp applications.</s><s> however, this is not possible for pagemaker and other adobe products.</s><s> and adobe products seem to the standard used by most layout and design team.</s><s> what this means is that most publishing houses are not able to use unicode based fonts (which would allow for better search and other features) in nepali.</s><s> it would be great if adobe could explain when it will extend support for complex scripts. amar nepal
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103358</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(Laxmi_Khatiwada)" timestamp="Jan 16, 2009 6:24 AM">
+<s>if adobe facilitates supporting for otf complex scripts in its products, adobe will the biggest software seller for printing jobs in nepal as well as south asia.</s><s> laxmi
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103359</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(Omar1234)" timestamp="Jan 17, 2009 3:18 AM">
+<s>we have difficult time with working with adobe as it doesnt support our language.. if you could have it support pashto would be very useful.</s><s> thanks, omar- afghanistan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103360</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(Firoj)" timestamp="Jan 17, 2009 7:32 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103361</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(wasala)" timestamp="Jan 18, 2009 4:30 AM">
+<s>adobe, you got to support unicode (for all asian scripts) or else you'll fail.</s><s> because, we,the opensource community we will support competitive opensource adobe look-a-like tools to support unicode!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s>!</s><s> asanka
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103362</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(Pema_Choejey)" timestamp="Mar 8, 2009 7:53 PM">
+<s>adobe, in bhutan, we are also fully dependent on adobe products, especially print and media organizations are heavely using them.</s><s> however, there are problems since it's based on ascii.</s><s> we will appreciate if adobe could support unicode to support complex scripts in their products.</s><s> pema c
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103363</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(Imtiaz_Ahmed)" timestamp="Mar 8, 2009 8:32 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103364</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(wasantha)" timestamp="Mar 10, 2009 8:49 PM">
+<s>lack of unicode support in adobe products has forced us to find work-around solutions to support printing related egov applications in sri lanka.</s><s> we had to buy extra sw such as ms publisher for few govt organizations though they have adobe products.</s><s> if adobe does not work to make their products unicode compatible, eventually all local printing industry will migrate to products with unicode support.</s><s> wasantha sri lanka
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-1103365</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="(Dave_Saunders)" timestamp="Mar 11, 2009 3:43 AM">
+<s>i'm not sure how a discussion of unicode support is relevant to this forum.</s><s> the "scripting" referred to here is that of automation not that which has much to do with unicode.</s><s> i suggest you take this discussion to the typography forum: http://www.adobeforums.com/webx/.eea5b3a/ and, if i may suggest, please be a bit more specific about which applications you're talking about or just what you mean by unicode support because i was under the impression that adobe applications do support unicode.</s><s> dave
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103355-2774631</DOCNO>
+<TEXT>
+<subject>INDIC UNICODE SUPPORT</subject>
+<post author="Jayanta%20Nath" timestamp="Apr 30, 2010 11:04 AM">
+<s>dear all, 
+</s><s>use the adobe middle eastern version cs2,cs3,cs4, or coming cs5.</s><s> it is support all indic unicode version.</s><s> the distributor of this version is winsoft international (http://www.winsoft-international.com/).</s><s> download the trial and check it out.it allows you to edit and work in one or several of the following languages at the same time: arabic, azeri, bengali, farsi, georgian, greek, gujarati, hebrew, hindi, kannada, kazakh, khmer/cambodian, lao, malayalam, marathi, oriya, punjabi, tamil, thai, urdu, vietnamese 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2728899-615488</DOCNO>
+<TEXT>
+<subject>Single JavaScript for both Illustrator and InDesign</subject>
+<post author="Hanaan Rosenthal" timestamp="Apr 12, 2010 5:48 AM">
+<s>hi, is there any way to use javascript to target both indesign and illustrator?</s><s> multiple files maybe?</s><s> searched the forums and found nothing that answered this... 
+</s><s>thanks!</s><s> hanaan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2549066-564649</DOCNO>
+<TEXT>
+<subject>GREP Expression Needed</subject>
+<post author="laurieann77" timestamp="Jan 27, 2010 12:26 PM">
+<s>
+</s><s>i'm reposting this here, hoping some genius scripters will know more than the designers --- 
+i've scoured the websites and have been trying to figure out the correct grep expression for what i'm trying to achieve, but to no avail, so alas i am posting this in hopes of ending my misery. 
+i want to add an italic character style to the names of naval ships (uss xxx xxx) in my book.</s><s> i want to italicize the name, but not the 'uss'.</s><s> any ideas? 
+</s><s>thanks a million. ~laurie 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-2394517-524706</DOCNO>
+<TEXT>
+<subject>Javascript: Passing values to Print Dialog</subject>
+<post author="fshuja" timestamp="Nov 14, 2009 11:07 PM">
+<s>hi, i have a pdf page containg 8 pages.</s><s> on first page there is a print button and some select boxes (page1, page2, ..</s><s> page8) i want to open print dialog with page numbers already set from the select boxes.</s><s> example: if i have checked page1, page 4 check boxes then print dialog should show the values in print rang > pages [1,4] how can i do this using javascript?</s><s> please help me out thanks faraz 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-287551</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="jhuddle123" timestamp="Mar 23, 2009 11:33 AM">
+<s>i've got a javascript for cs3/tiger that i'm writing that eventually will let a user select an image and a caption in indesign, then tells bridge to write the caption data into the image metadata.</s><s> i need help - the script works in pieces, but not when put together.</s><s> it's built as an indesign script, then follows the procedure to create a script object to send to bridge.</s><s> when it runs, the indesign portion works fine, but nothing happens in bridge.</s><s> the script is below, with comments.</s><s> can someone help!</s><s>?</s><s> thanks. // this is the indesign portion of the script, which was tested separately and is working fine.</s><s> right now, for testing purposes, the data from this portion isn't even used by the later bridge portion but once i get the bridge part together, it will use those variables. #target "indesign-5.0" var myobjectlist = new array; //script does nothing if no documents are open or if no objects are selected. if(app.documents.length != 0){ if(app.selection.length != 0){ for(mycounter = 0; mycounter < app.selection.length; mycounter ++){ switch(app.selection[mycounter].constructor.name){ case "textframe": var mycaption = app.selection[mycounter].contents; $.writeln(mycaption); break; default: var mylink = app.selection[mycounter].graphics[0].itemlink.filepath; $.writeln(mylink); } } } } // here's where i create the string of the script to send to bridge. // the script itself is almost completely a lifted from the snpmodifymetadta sample from the bridge sdk // it basically finds a certain image file and modifies the description metatata.</s><s> i hardcoded the caption text and image path just for testing- eventually i would like it to use the variables from indesign. // this script works fine as-is when run in the original bridge scripting context. // the method here of concatenating and sending the myscript string works fine when i use a different (smaller) script. so i can't tell why it's not working!</s><s>?</s><s> var myscript = "function snpmodifymetadata()"; myscript += "{"; myscript += " this.requiredcontext = \"needs to run in bridge, \nwith a selection of a file, \nideally with some metadata\";"; myscript += "}"; myscript += "snpmodifymetadata.prototype.run = function()"; myscript += "{"; myscript += " if(!this.canrun())"; myscript += " {"; myscript += " return false;"; myscript += " }"; myscript += " if( xmplib == undefined )"; myscript += " {"; myscript += " if( folder.fs == \"windows\" )"; myscript += " {"; myscript += " var pathtolib = folder.startup.fsname + \"/adobexmpscript.dll\";"; myscript += " }"; myscript += " else"; myscript += " {"; myscript += " var pathtolib = folder.startup.fsname + \"/adobexmpscript.framework\";"; myscript += " }"; myscript += " var libfile = new file( pathtolib );"; myscript += " var xmplib = new externalobject(\"lib:\" + pathtolib );"; myscript += " }"; myscript += " $.writeln(\"about to run snpmodifyxml\");"; myscript += " var thumb = new thumbnail(folder(\"/macintosh hd/users/hearstuser/desktop/bridgescriptimages/orion_stack copy 6.psd\"));"; myscript += " if(thumb.hasmetadata)"; myscript += " {"; myscript += " var md = thumb.synchronousmetadata;"; myscript += " var xmp = new xmpmeta(md.serialize());"; myscript += " $.writeln(\"snpmodifyxml: about to modify xmp data for \" + thumb.name);"; myscript += " $.writeln(\"xmp packet before modifications:\");"; myscript += " $.writeln(\"-------------------------------------------------\");"; myscript += " $.writeln(xmp.dumpobject());"; myscript += " xmp.deleteproperty(xmpconst.ns_xmp, \"description\");"; myscript += " xmp.setproperty(xmpconst.ns_xmp, \"description\", \"hothereheythere\");"; myscript += " var d = new xmpdatetime(new date());"; myscript += " d.converttolocaltime();"; myscript += " xmp.setproperty(xmpconst.ns_xmp, \"modifydate\", d, xmpconst.xmpdate);"; myscript += " $.writeln(\"xmp packet af
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1103437</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="jhuddle123" timestamp="Mar 23, 2009 11:37 AM">
+<s>here's the rest of the script (sorry so long, maybe i'm supposed to upload a file..</s><s>?</s><s>?</s><s>) myscript += " $.writeln(\"xmp packet after modifications:\");"; myscript += " $.writeln(\"-------------------------------------------------\");"; myscript += " $.writeln(xmp.dumpobject());"; myscript += " var updatedpacket = xmp.serialize(xmpconst.serialize_omit_packet_wrapper | xmpconst.serialize_use_compact_format);"; myscript += " thumb.metadata = new metadata(updatedpacket);"; myscript += " }"; myscript += " else"; myscript += " {"; myscript += " $.writeln(\"the selected thumbnail has no metadata.\");"; myscript += " }"; myscript += " $.writeln(\"ran snpmodifymetadata\");"; myscript += " return true;"; myscript += "}"; myscript += "snpmodifymetadata.prototype.canrun = function()"; myscript += " {"; myscript += " if( (bridgetalk.appname == \"bridge\") && (app.document.selectionlength == 1)) {"; myscript += " return true;"; myscript += " }"; myscript += " $.writeln(\"error:: cannot run snpmodifymetadata\");";1 myscript += " $.writeln(this.requiredcontext);"; myscript += " return false;"; myscript += "}"; myscript += "if(typeof(snpmodifymetadata_unittest ) == \"undefined\") {"; myscript += " new snpmodifymetadata().run();"; myscript += "}"; myscript2 = "var thumb = new thumbnail(folder(\"/macintosh hd/users/hearstuser/desktop/bridgescriptimages/orion_stack copy 18.psd\"));"; myscript2 += " var props = thumb.reflect.properties; for (var i = 0; i < props.length; i++) {$.writeln('this property ' + props[i].name + ' is ' + thumb[props[i].name]);}"; //here's the script in action in bridge var targetapp = bridgetalk.getspecifier( "bridge", "2"); if( targetapp ) { var bt = new bridgetalk; // create a new bridgetalk message object bt.target = "bridge"; // send this msg to the adobe bridge application // the script to evaluate is contained in a string in the "body" property bt.body = myscript bt.send(0); } any help is appreciated!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1103438</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="jhuddle123" timestamp="Mar 23, 2009 11:39 AM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1103439</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="Kasyan%20Servetsky" timestamp="Mar 24, 2009 2:08 AM">
+<s>#target 'indesign-5.0'
+ var myobjectlist = new array;
+ if(app.documents.length != 0){
+    if(app.selection.length != 0){
+       for(mycounter = 0; mycounter < app.selection.length; mycounter ++){
+          switch(app.selection[mycounter].constructor.name){
+          case "textframe":
+          var mycaption = app.selection[mycounter].contents;
+          $.writeln(mycaption); break;
+          default: var mylink = app.selection[mycounter].graphics[0].itemlink.filepath;
+          $.writeln(mylink);
+          }
+       }
+    }
+ }
+ 
+ var myscript = 'function snpmodifymetadata()\n';
+ myscript += '{\n';
+ myscript += ' this.requiredcontext = \"needs to run in bridge, with a selection of a file, ideally with some metadata\";\n';
+ myscript += '}\n';
+ myscript += 'snpmodifymetadata.prototype.run = function()\n';
+ myscript += '{\n';
+ myscript += ' if(!this.canrun())\n';
+ myscript += ' {\n';
+ myscript += ' return false;\n';
+ myscript += ' }\n';
+ myscript += ' if( xmplib == undefined )\n';
+ myscript += ' {\n';
+ myscript += ' if( folder.fs == \"windows\")\n';
+ myscript += ' {\n';
+ myscript += ' var pathtolib = folder.startup.fsname + \"/adobexmpscript.dll\";\n';
+ myscript += ' }\n';
+ myscript += ' else\n';
+ myscript += ' {\n';
+ myscript += ' var pathtolib = folder.startup.fsname + \"/adobexmpscript.framework\";\n';
+ myscript += ' }\n';
+ myscript += ' var libfile = new file( pathtolib );\n';
+ myscript += ' var xmplib = new externalobject(\"lib:\" + pathtolib );\n';
+ myscript += ' }\n';
+ myscript += ' $.writeln(\"about to run snpmodifyxml\");\n';
+ myscript += ' var thumb = new thumbnail(folder(\"~/desktop/bridgescriptimages/orion_stack copy 6.psd\"));\n';
+ myscript += ' if(thumb.hasmetadata)\n';
+ myscript += ' {\n';
+ myscript += ' var md = thumb.synchronousmetadata;\n';
+ myscript += ' var xmp = new xmpmeta(md.serialize());\n';
+ myscript += ' $.writeln(\"snpmodifyxml: about to modify xmp data for \" + thumb.name);\n';
+ myscript += ' $.writeln(\"xmp packet before modifications:\");\n';
+ myscript += ' $.writeln(\"-------------------------------------------------\");\n';
+ myscript += ' $.writeln(xmp.dumpobject());\n';
+ myscript += ' xmp.deleteproperty(xmpconst.ns_xmp, \"description\");\n';
+ myscript += ' xmp.setproperty(xmpconst.ns_xmp, \"description\", \"hothereheythere\");\n';
+ myscript += ' var d = new xmpdatetime(new date());\n';
+ myscript += ' d.converttolocaltime();\n';
+ myscript += ' xmp.setproperty(xmpconst.ns_xmp, \"modifydate\", d, xmpconst.xmpdate);\n';
+ myscript += ' $.writeln(\"xmp packet after modifications:\");\n';
+ myscript += ' $.writeln(\"-------------------------------------------------\");\n';
+ myscript += ' $.writeln(xmp.dumpobject());\n';
+ myscript += ' var updatedpacket = xmp.serialize(xmpconst.serialize_omit_packet_wrapper | xmpconst.serialize_use_compact_format);\n';
+ myscript += ' thumb.metadata = new metadata(updatedpacket);\n';
+ myscript += ' }\n';
+ myscript += ' else\n';
+ myscript += ' {\n';
+ myscript += ' $.writeln(\"the selected thumbnail has no metadata.\");\n';
+ myscript += ' }\n';
+ myscript += ' $.writeln(\"ran snpmodifymetadata\");\n';
+ myscript += ' return true;\n';
+ myscript += '}\n';
+ myscript += 'snpmodifymetadata.prototype.canrun = function()\n';
+ myscript += ' {\n';
+ myscript += ' if( (bridgetalk.appname == \"bridge\") && (app.document.selectionlength == 1)) {\n';
+ myscript += ' return true;\n';
+ myscript += ' }\n';
+ myscript += ' $.writeln(\"error:: cannot run snpmodifymetadata\");\n';1
+ myscript += ' $.writeln(this.requiredcontext);\n';
+ myscript += ' return false;\n';
+ myscript += '}\n';
+ myscript += 'if(typeof(snpmodifymetadata_unittest ) == \"undefined\") {\n';
+ myscript += ' new snpmodifymetadata().run();\n';
+ myscript += '}';
+ 
+ var targetapp = bridgetalk.getspecifier( "bridge", "2");
+ if( targetapp ) {
+    var bt = new bridgetalk; // create a new bridgetalk message object
+    bt.target = "bridge"; // send this msg to the adobe bridge application
+    bt.body = myscript
+    bt.send(0);
+ }
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1103440</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="Kasyan%20Servetsky" timestamp="Mar 24, 2009 2:40 AM">
+<s>hi jim, first of all please use script poster when you post your code – this will make it much easier to read.</s><s> if you place a breakpoint somewhere in your code, after you defined myscript variable and type 'myscript' and return in console, you'll get the script you are about to send to bridge.</s><s> copy it , create a new file and paste.</s><s> you'll see that your code is totally scrambled.</s><s> it can't work.</s><s> at first, you need to create a script for bridge, test it and then assign it to a variable as a string.</s><s> when you do this, use two sets of quotes single – outside and double – inside each line, and also put a new line (\n)at the end of every but last line.</s><s> and you don't need to place the whole example script – it looks like spaghetti code.</s><s> just write what is necessary for your script to work.</s><s> kasyan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1103441</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="jhuddle123" timestamp="Mar 30, 2009 7:43 PM">
+<s>kasyan, thanks for your message.</s><s> i will use the script poster next time for sure, sorry for the mess.</s><s> i did make efforts to take out superfluous code (it's not just a copy/paste of the example script), but i hope i didn't miss any.</s><s> the script works great now.</s><s> however, i'm trying to get it to the next stage, where i get the mycaption from indesign and pass it through the bridgetalk object.</s><s> i have no success.</s><s> if i understood the javascript tools guide correctly . .</s><s> i tried this: bt.headers ["mynewcaption"] = "" + mycaption; before the bt.send(0); and then i try to test if the variable can be seen in the bridge script with this as the last line: myscript += ' $.writeln(bt.headers [\"mynewcaption\"]);'; but after running, console shows no trace of it!</s><s> actually trying to get it into this line from the middle of the bridge script: myscript += ' xmp.setproperty(xmpconst.ns_xmp, \"description\", mycaption");\n'; hope this makes sense.</s><s> if anyone has suggesttions let me know!</s><s> thanks.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1103442</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="Kasyan%20Servetsky" timestamp="Mar 31, 2009 7:12 AM">
+<s>hi jim, you don't need to use headers like so: 
+bt.headers ["mynewcaption"] = "" + mycaption;
+ here is my vision of how to make this script – it's not totally tested and it requires improvement of course.</s><s> kasyan 
+#target indesign
+ var mydoc = app.activedocument;
+ var myselection = app.selection;
+ 
+ if (myselection.length != 2) {
+    alert("one image and one textframe should be selected.");
+    exit();
+ }
+ try {
+    if (myselection[0].constructor.name == "textframe" && myselection[1].images.length == 1) {
+       var mytextframe = myselection[0];
+       var myimage = myselection[1].images[0];
+       var mycaption = mytextframe.contents;
+       var mypath = new file(myimage.itemlink.filepath).absoluteuri;
+    }
+    else if (myselection[1].constructor.name != "textframe" && myselection[0].images.length == 1) {
+       var mytextframe = myselection[1];
+       var myimage = myselection[0].images[0];
+       var mycaption = mytextframe.contents;
+       var mypath = new file(myimage.itemlink.filepath).absoluteuri;
+    }
+ }
+ catch(e) {
+    alert("something wrong with your selection.\nerror: " + e.message);
+    exit();
+ }
+ 
+ var bt = new bridgetalk();
+ bt.target = "bridge";
+ var myscript = 'function writecaption(mycaption, mypath) {\n';
+ myscript += '    if( xmplib == undefined )\n';
+ myscript += '    {\n';
+ myscript += '       if( folder.fs == "windows")\n';
+ myscript += '       {\n';
+ myscript += '          var pathtolib = folder.startup.fsname + "/adobexmpscript.dll";\n';
+ myscript += '       }\n';
+ myscript += '      else\n';
+ myscript += '      {\n';
+ myscript += '          var pathtolib = folder.startup.fsname + "/adobexmpscript.framework";\n';
+ myscript += '       }\n';
+ myscript += '       var libfile = new file( pathtolib );\n';
+ myscript += '       var xmplib = new externalobject("lib:" + pathtolib );\n';
+ myscript += '    }\n';
+ myscript += '   var thumb = new thumbnail (file (mypath));\n';
+ myscript += '   if (thumb.hasmetadata)\n';
+ myscript += '    {\n';
+ myscript += '      var md = thumb.synchronousmetadata;\n';
+ myscript += '      var xmp = new xmpmeta(md.serialize());\n';
+ myscript += '      xmp.deleteproperty(xmpconst.ns_xmp, "description");\n';
+ myscript += '      xmp.setproperty(xmpconst.ns_xmp, "description", mycaption);\n';
+ myscript += '      var updatedpacket = xmp.serialize(xmpconst.serialize_omit_packet_wrapper | xmpconst.serialize_use_compact_format);\n';
+ myscript += '      thumb.metadata = new metadata(updatedpacket);\n';
+ myscript += '   }\n';
+ myscript += '}\n';
+ myscript += 'writecaption(\"' + mycaption + '\", \"' + mypath + '\");\n';
+ bt.body = myscript;
+ bt.send();
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1871287</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="jhuddle123" timestamp="Apr 6, 2009 5:53 PM">
+<s>well this is great - very informative.</s><s> thanks so much! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103436-1901445</DOCNO>
+<TEXT>
+<subject>Need help [JS]: select images/captions in InD, switch to Bridge and write to XMP</subject>
+<post author="Kasyan%20Servetsky" timestamp="Apr 18, 2009 8:24 AM">
+<s>recently i received an e-mail from a user asking me to remake the script i had posted here a while ago.</s><s> i rechecked my previous post and found a couple of serious mistakes.</s><s> so i revised it according to what he asked.</s><s> each page in his indesign document contains one image and one text frame with description.</s><s> at start the script checks the selection.</s><s> if nothing is selected it processes all pages in the document.</s><s> in case two objects are selected – it checks whether one of them text frame and the other a rectangle and if the rectangle contains an image, then it reads the contents of the text frame, replacing hard and soft returns with spaces and writes this text to the corresponding image's description field.</s><s> in the end, it updates all links and saves the file.</s><s> the script works both on mac and pc, assuming that cs3 installed in the default location so long as it depends on libraries: /c/program files/adobe/adobe bridge cs3/adobexmpscript.dll (on pc) /applications/adobe bridge cs3/bridge cs3.app/contents/macos/adobexmpscript.framework (on mac) so, if necessary, correct these lines.   here is my script in case somebody is interested:   #target indesign   var mydoc = app.activedocument; var myselection = app.selection;   if (myselection.length == 0) {     processpages(); } else if (myselection.length == 1) {     alert("one image and one textframe should be selected.");     exit();    } else if (myselection.length == 2) {     try {         if (myselection[0].constructor.name == "textframe" && myselection[1].images.length == 1) {             var mytextframe = myselection[0];             var myimage = myselection[1].images[0];             var mycaption = replacereturnwithspace(mytextframe.contents);             var mypath = new file(myimage.itemlink.filepath).absoluteuri;         }         else if (myselection[1].constructor.name == "textframe" && myselection[0].images.length == 1) {             var mytextframe = myselection[1];             var myimage = myselection[0].images[0];             var mycaption = replacereturnwithspace(mytextframe.contents);             var mypath = new file(myimage.itemlink.filepath).absoluteuri;         }     }     catch(e) {         alert("something wrong with your selection.\nerror: " + e.message);         exit();     }       createbridgetalkmessage(mycaption, mypath); } else if (myselection.length > 2) {     alert("one image and one textframe should be selected.");     exit(); }   updatealloutdatedlinks(); mydoc.save(); alert("all done.");   //+++++++++++++++++++ functions ++++++++++++++++++++++   function createbridgetalkmessage(mycaption, mypath) {     var bt = new bridgetalk();     bt.target = "bridge";     var myscript = writecaption.tostring() + '\r';     myscript += 'writecaption(\"' + mycaption + '\", \"' + mypath + '\");';     bt.body = myscript;     bt.send(); }   function writecaption(mycaption, mypath) {     if( xmplib == undefined ) {         if( folder.fs == "windows") {             var pathtolib = "/c/program files/adobe/adobe bridge cs3/adobexmpscript.dll";         }         else {             var pathtolib = "/applications/adobe bridge cs3/bridge cs3.app/contents/macos/adobexmpscript.framework";         }         var libfile = new file( pathtolib );         var xmplib = new externalobject("lib:" + pathtolib );     }     var thumb = new thumbnail (file (mypath));       if (thumb.hasmetadata) {         var md = thumb.synchronousmetadata;         var xmp = new xmpmeta(md.serialize());         xmp.deleteproperty(xmpconst.ns_xmp, "description");         xmp.setproperty(xmpconst.ns_xmp, "description", mycaption);         var updatedpacket = xmp.serialize(xmpconst.serialize_omit_packet_wrapper | xmpconst.serialize_use_compact_format);         thumb.metadata = new metadata(updatedpacket);     } }   function processpages() {     var mypages = mydoc.pages;     for (i = 0; i < mypages.length; i++) {         var mypage = mypages[i];         if (mypage.textframes.length == 1 && mypage.rectangles.length == 1) {             if (mypage.rectangles[0].graphics.length == 1) {             var a = mypage.rectangles[0];                 var myimage = mypage.rectangles[0].graphics[0];                 var mypath = new file(myimage.itemlink.filepath).absoluteuri;                 var mytextframe = mypage.textframes[0];                 var mycaption = replacereturnwithspace(mytextframe.contents);                 createbridgetalkmessage(mycaption, mypath);             }         }     } }   function replacereturnwithspace(mystring) {     mystring = mystring.replace( /\n/g , " " );     mystring = mystring.replace( /\r/g , " " );     return mystring; }   function updatealloutdatedlinks() {     for(var mycounter = mydoc.links.length-1; mycounter >= 0; mycounter--){         var mylink = mydoc.links[mycounter];         if (mylink.status == linkstatus.linkoutofdate){             mylink.update();         }     } }   if somebody interested in developing this script further, do not hesitate to post here your feedback.   kasyan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1901037-421070</DOCNO>
+<TEXT>
+<subject>Acrobat reader 7 not liking commands in the URL</subject>
+<post author="Michel Plungjan" timestamp="Apr 18, 2009 12:19 AM">
+<s>hi, i just recently discovered that i could tell the reader to turn off toolbars and such using the querystring 
+it works perfectly in ar9 but gives me an error in ar7to the effect that the command is illegal. 
+i can post the exact error, but i need to be at a windows pc which i will be on monday 
+perhaps somone already knows the issue? 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103445-287553</DOCNO>
+<TEXT>
+<subject>Saving code collapse in ExtendScript toolkit</subject>
+<post author="(Jeremy_Clark)" timestamp="Mar 30, 2009 11:37 AM">
+<s>hello, is there a way to save the code collapse choices for a .jsx file in extendscript toolkit 2?</s><s> everytime i collapse code, i save the document but the code is expanded once i close and re-open the file.</s><s> thanks for any advice
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103435-287550</DOCNO>
+<TEXT>
+<subject>Package MXP extensions for Illustrator, InDesign, & Photoshop</subject>
+<post author="(Justin_Putney)" timestamp="Mar 1, 2009 11:02 PM">
+<s>more details here: http://ajarproductions.com/blog/2009/03/01/extension-manager-for-cs4/
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103434-287549</DOCNO>
+<TEXT>
+<subject>Cross-scripting from Extendscript to JSFL</subject>
+<post author="(Justin_Putney)" timestamp="Mar 1, 2009 11:00 PM">
+<s>details here: http://ajarproductions.com/blog/2008/12/14/easy-and-readable-extendscr ipt-to-jsfl-workflow/ here's a script that i created using that technique: http://ajarproductions.com/blog/2008/12/05/send-colors-from-indesign-a nd-illustrator-to-flash/
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-287547</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Jan 11, 2009 11:25 PM">
+<s>hi, i have a problem with editing in the new extendscript which is annoying the hell out of me, and i am suprised that i haven't seen any one else annoyed with it because i doubt the problem is isolated to my pc.</s><s> the problem is as follows: in the previous extendscript(v2) i could use tabs when writing code, the code would align vertically due to me using these tabs, now in the latest version (v3) the tabs will not align the code vertically and it makes it look all ugly.</s><s> my guess for why this is happening now is that it is an over-site in the development of the extendscript v3 when the editor was updated.</s><s> does anyone have this same exact problem?</s><s> kind regards, ben.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103422</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Dave_Saunders)" timestamp="Jan 12, 2009 5:00 AM">
+<s>works fine for me.</s><s> dave
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103423</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Jan 12, 2009 3:30 PM">
+<s>hi dave, could you please send a screenshot showing your code lining up vertically using tabs?</s><s> maybe i could work out how to fix it?</s><s> thanks, ben.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103424</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Jan 12, 2009 7:05 PM">
+<s>here is a screenshot of my code in eclipse(a great program for editing source code-too bad the last development on jseclipse was two years ago... thanks to adobe buying them out...</s><s>) http://a.imagehost.org/0809/eclipse.png and here a screenshot of the same code in extendscript http://a.imagehost.org/0239/es3.png as you can see the colons do not line up, i am using the same font and size in both programs, and they used to line up in extendscript v2.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103425</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Dave_Saunders)" timestamp="Jan 12, 2009 7:20 PM">
+<s>ah, your coding style is completely different from mine.</s><s> how many spaces per tab do you have set in preferences?</s><s> are you using a monospaced font?</s><s> dave
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103426</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Jan 12, 2009 10:34 PM">
+<s>i have 4 tab stops set(same as in eclipse).</s><s> the font i use in eclipse is courier new regular 12.</s><s> the font in extendscript is courier new 12, i dont have a thing to select 'regular'.</s><s> i'm guessing courier new is a monospaced font.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103427</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Jan 12, 2009 10:40 PM">
+</post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103428</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Jan 20, 2009 8:59 PM">
+<s>hello?</s><s> anyone out there who cares?</s><s> adobe doesn't have any official support for this product in particular so it seems to be a little hard to have this bug fixed. i've tried to get it resolved through the after effects product support, but so far have had trouble getting into the support portal since the license isn't under my account, since it is licensed by the company i work for and i even saw the guy who got these licenses have trouble adding the support portal for after effects into his account.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103429</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Teus_de_Jong)" timestamp="Jan 21, 2009 5:59 AM">
+<s>ben, i always use tabs, never spaces, so i didn't notice.</s><s> but you seem to be right, i see the following: 1.</s><s> tab stops do not align with spaces.</s><s> 2. the number of spaces i set in preferences for tab stops don't have any influence.</s><s> it seems tab stops are placed independent of the width of spaces.</s><s> quite annoying if you're using your style of coding.</s><s> teus
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103430</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="pkahrel" timestamp="Jan 21, 2009 6:12 AM">
+<s>teus, >2.</s><s> the number of spaces i set in preferences for tab stops don't have any influence.</s><s> changing this setting has no effect on the active window, but you see the result when you create a new script file.</s><s> ben -- i can reproduce the behaviour that you see and it is indeed pretty hopeless.</s><s> peter
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103431</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Dave_Saunders)" timestamp="Jan 21, 2009 8:05 AM">
+<s>my impression is that two (or however many you set in preferences) spaces are being used instead of tab characters, so tabs in estk cs4 align only at the beginning of lines (which happens to be the only place i use them).</s><s> dave
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/General-and-cross-application-scripting/Discussions-1103421-1103432</DOCNO>
+<TEXT>
+<subject>Extendscript V3(CS4) Tab Stops</subject>
+<post author="(Ben_Pettit)" timestamp="Feb 11, 2009 10:16 PM">
+<s>thanks guys, it's good to know other people have the same problem.</s><s> i'm going to try as hard as i can to bring this up with adobe support.</s><s> ben.</s><s>
+</s></post>
+</TEXT>
+</DOC>
+
+

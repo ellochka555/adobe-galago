@@ -1,0 +1,683 @@
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-572518</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="Bill Hunt" timestamp="Feb 8, 2010 8:35 AM">
+<s>
+</s><s>users often encounter situations, where there is much background noise also recorded along with the human speech, that they are attempting to capture.</s><s> this can be heavy ambient noise from near-by traffic, and a/c unit, wind, birds in a park, or others speaking close enough to the mic to be picked up.</s><s> most of the time, these extraneous noises are unwanted in the audio portion of the av file. 
+</s><s>unfortunately, the best solution comes before one captures the footage.</s><s> a good mic, good mic'ing technique, quieting the environment, or moving the taping to a quiet location are the best practices.</s><s> sometimes, many of these "cures" are not possible.</s><s> still, they are where one really needs to start. 
+</s><s>when the audio has been captured, there can be major issues, when trying to remove the unwanted noise.</s><s> there are some programs, and techniques that might be helpful at reducing these noises, but remember, these will only be so effective.</s><s> if the noises are isolated to particular frequency ranges, outside of those of human speech, the prospect increases of success.</s><s> a 60hz hum is a good candidate for removal.</s><s> other human speech is certainly not.</s><s> wind noise can be broad spectrum can be very problematic, as if you remove it, for all overlapping frequencies with the human speech, those will all be removed, leaving the desired sound removed too.</s><s> this is not what you want.</s><s> one's success will depend entirely on the frequencies of the undesirable noise, and how much of it, one can live with. 
+</s><s>now, there are some tools, that can be very useful, but only within the realm of the parameters discussed above.</s><s> regardless of which tools you use, you had better plan on spending a lot of time with a good set of headphones, and a lot of listening and testing. 
+</s><s>the first tool that i turn to is adobe audition.</s><s> it is a pro-level audio-editing program, and is not inexpensive.</s><s> it is very powerful, but with that power comes both a learning curve and a lot of manipulation.</s><s> one of its restoration effects is noise reduction (process).</s><s> this is used in conjunction with the capture noise reduction profile, which, when applied to a section of the offending noise, without the human speech, will map the audio profile of that noise.</s><s> this profile will then be loaded into restoration>noise reduction (process).</s><s> there, one has many controls for the application of the effect, and the ability to preview those settings.</s><s> plan on spending some time with this effect, as it can be very easily overdone.</s><s> when this happens, the human speech will take on a strong echo.</s><s> as you reduce this undesirable effect, the ambient noise level will increase.</s><s> make settings, test - repeat - repeat - repeat.</s><s> when you have balanced the noise reduction vs the distortion, that is as good as it gets. 
+</s><s>from that point, one would then look to effect>parametric eq (equalizer) or effec>graphic eq, to manually reduce certain frequencies (outside of the range of human speech), and also pump up certain frequencies that make up human speech - 125 - 250 hz is about where most human speech occurs.</s><s> these can be increased, but if your noise is full-spectrum, remember you will also increase any part of that noise, that resides in this range too. 
+</s><s>after all has been done here, there are three filters, that might help too: low-pass, high-pass and the notch/gate filters.</s><s> again, these can be very useful if there is zero overlap from the noise to the spectrum of human speech.</s><s> again, apply, test - repeat, etc. 
+</s><s>one very useful effect in audition is repair transient.</s><s> this can be used to remove pops, clicks and other transient noise.</s><s> many bird calls are transients, and with a bit of work, can often be eliminated completely.</s><s> i could not live without this effect, as it can clean up so very much, leaving the noise floor untouched, but completely removing the transients. 
+</s><s>now, buying audition is not in everyone's budget.</s><s> one good freeware program for audio-editing is audacity.</s><s> it can work with many vst's, and there are vst versions of several different eq's, plus high-pass, low-pass and notch/gate filters.</s><s> i have never seen a noise-reduction vst that really worked, nor a transient removal vst, but they might exist.</s><s> note: while audacity is free, only some available vst's will be free.</s><s> some are more expensive than audition. 
+</s><s>some years ago, i was working on a particularly badly degraded piece of audio.</s><s> it came from a vhs tape of an old tv show, and apparently the tape deck had major problems, and maybe the signal was poor as well.</s><s> this piece of audio just did not exist beyond this vhs tape, so i had to work on it.</s><s> i spent a full day in audition, and really was not doing well.</s><s> it seemed that if i reduced part of the noise, some aspect of the audio disappeared also.</s><s> months before, i had purchased one of the magix music studio programs.</s><s> it came bundled with a little program called audio cleaning lab.</s><s> i installed both programs, but never touched acl.</s><s> it just languished on my desktop.</s><s> as i was about to give up on the restoration, i opened up all of my magix programs, hoping to find a "magic bullet." nothing in the usual suspects, and then i opened up acl for the first time.</s><s> it had a simple little interface and looked more like a toy, than a serious audio program.</s><s> there were default presets for several parameters, but not much more.</s><s> out of curiosity, i grabbed my wav from audition and ran it through acl with the default presets.</s><s> i was amazed at how much it improved on my day's work.</s><s> when the shock subsided, i decided to try it on the un-altered wav.</s><s> it was amazing.</s><s> i then worked on the output from acl, back in audition, and got a useful file.</s><s> that little "toy," had done a fabulous job within the parameters and limitations of a program that does only one thing - cleans up audio.</s><s> if one does a little additional work in a full-featured audio editing-program, like audition, things can be amazingly good.</s><s> even then, one still must be ready to adjust, test, and repeat. 
+</s><s>my audio "toolbox" runs from audition to audacity, and includes several of the magix programs and many others.</s><s> when trying to "clean up" existing audio, i am ready to use any/all of those, and be patient. 
+</s><s>still, recording the cleanest audio initially, will pay dividends.</s><s> cleaning up poor audio in post-production is limited and is very labor-intensive. 
+</s><s>another "fix" for bad audio is "dubbing." this is the process of re-recording the audio in a quite location, with good mics, and the actors watching their performance on a monitor.</s><s> this is the opposite of lip-syncing, but can be very effective, and is done in hollywood often.</s><s> once a good clean dub has been recorded, it would be imported into one's nle (non linear editor) of choice and aligned with the video portion of the clip, that was used as a visual for the dub.</s><s> the original audio would be deleted, or muted.</s><s> one of the nice benefits of doing things this way is that one can dub to an edited visual.</s><s> if necessary, one could also do a tiny bit of time stretch on the dubbed audio, to get perfect sync.</s><s> this does get involved, but can be done.</s><s> many programs will allow one to alter time, but maintain pitch. 
+</s><s>if necessary, other audio, besides just the dubbed human speech, can be added, where necessary.</s><s> if one needs certain sfx (sound effects), to match visuals, these can be added.</s><s> a second similar method is to do foley sound, where one finds items that will sound "like" what appears on screen.</s><s> these range from things like "creating" thunder by shaking a sheet of aluminum, or similar.</s><s> if one's dubbing is also missing wanted sounds, using sfx clips (either recording these, or finding them online) or doing foley sound can replace those audio elements that are now muted, or deleted. 
+i also highly recommend that one use a good pair of noise-canceling headphones, and apply a liberal dose of patience, when doing any audio work.</s><s> often, it can take far more time, than either setting it up correctly in the first place, or just doing a reshoot. 
+
+</s><s>hope that this helps someone, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-2589244</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="mopunkie" timestamp="Feb 13, 2010 9:40 AM">
+<s>thanks for the help.</s><s> i only wish to lower the volume on a part of the clip.</s><s> only when the boat starts up.</s><s> it is loud and i just want to lower its volume.</s><s> i don't need to seperate out conversation or anything.</s><s> i want to keep the volume up at the beginning of the clip and turn down the volume for the remainder of the clip.</s><s> here is the audio clip.</s><s> i realize this isn't actually noise reduction in its true sense. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-2590601</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="Feb 14, 2010 9:48 AM">
+<s><quote>
+</quote>
+</s><s>this is very easily done with the fixed effect>volume and keyframes.</s><s> i have done this in prpro 2.0, as its effects control panel is more similar to the one in pre 7 & 8, and i only have pre 4. things will not be exactly the same in pre 7, or 8, but this should get you started: 
+
+</s><s>below is my output file.</s><s> i also added the fill right effect, to get the signal into both channels. 
+</s><s>hope that this helps.</s><s> also, i converted the aac to pcm/wav in qt pro, so that it could be edited in pre. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-2858053</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="Sparkle%20Cleaning" timestamp="Jun 1, 2010 6:35 AM">
+<s>thank you.</s><s> very useful information.</s><s> i use this knowledge in sparkle cleaning project your thread very help me) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-2858260</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="Jun 1, 2010 7:52 AM">
+<s>you are most welcome, and welcome to the forum. 
+</s><s>if you have any questions on either the audio, or the video, please feel free to post out in the main forum, where people will be most likely to see your post. 
+</s><s>happy editing, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-2860521</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="Sparkle%20Cleaning" timestamp="Jun 1, 2010 11:53 PM">
+<s>thank you for the warm welcome 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-3279387</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="Nov 16, 2010 7:22 AM">
+<s>there was a recent thread in the prpro cs5 forum, where a user had applied the de-noiser effect to some audio clips, that had a "fade in" via volume keyframes.</s><s> this caused the levels to drop noticeably, as the effect was taking its initial measurement of the noise floor, in the keyframed beginning. 
+i reference that thread above, as it points out a potential problem, that can arise under certain circumstances.</s><s> for the "spoiler" look down to the end, and especially a response from colin.</s><s> the early part of the thread is interesting reading, as folk tackled the issue, but the "climax" is at the end. 
+</s><s>hope that this helps anyone experiencing an issue with effects, like de-noiser. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-4060479</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="John%20Novotny" timestamp="Dec 2, 2011 2:51 PM">
+<s>this post was helpful, thanks. 
+</s><s>basically i'm screwed, noise or artifacts is my current choice no matter what i do. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-4063307</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="Dec 4, 2011 3:21 PM">
+<s>john, 
+</s><s>sorry that you were not able to clean things up enough.</s><s> it can be very tough, to totally impossible, depending on the noise, and the frequencies that you wish to maintain.</s><s> when it gets down to that, re-recording the audio is often the only solution. 
+</s><s>the above mentioned programs and techniques only work so far. 
+</s><s>on csi, they make cleaning up audio look so easy - just a few clicks, and everything is as prefect, as if it had been done in a well-mic'ed studio.</s><s> it is seldom that easy. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-4068682</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="soundsdelightful" timestamp="Dec 7, 2011 3:36 AM">
+<s>dear hunt found your post v interesting and informative and wondered if you could help with a problem?</s><s> i edit talks in adobe audition and the sound is so low i often have to amplify it x20 to be able to hear it, yet when i burn it to cd it sounds fine at the original level - amplifying is too much.</s><s> the speaker settings are all up full.</s><s> i've tried different headsets and can improve the quality but not the volume of the sound to match what appears on the cd.</s><s> do you have any suggestions?</s><s> thanks from soundsdelightful 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-4069398</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="Dec 7, 2011 9:32 AM">
+<s>i have not encountered that issue.</s><s> now, i monitor all my audio with a pair of bose qc-15's, and the edited volume translates well, in my finished projects, when tested on several of my systems from a cheap, bargain-basement dvd player and a tv with the tiny, built-in speakers and internal audio processing, to some esoteric home theater systems. 
+</s><s>my first thought would be that the volume/gain on your testing system might be higher, than the volume/gain of your daw/editing rig. 
+i notice similar results with many commercially produced dvd's and bd's, in areas like the menus' audio - far, far too loud for me on my reference systems.</s><s> that is one reason that i usually attenuate all menu audo by about -3 to -6 db - i want it as "background" only, and not something to really call attention to itself. 
+</s><s>however, i am not sure that is what you are experiencing, hence my guess. 
+</s><s>good luck, 
+hunt 
+ps - just like video calibration on various playback systems, how a client has their audio calibrated can really affect how things sound to them.</s><s> i try to use my reference systems, and produce to them - that is the best that i can do, so the client may have to ride volume/gain up/down, per their systems' calibration. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-4140008</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="Srivas%20108" timestamp="Jan 14, 2012 7:41 AM">
+<s>hi bill.</s><s> 
+</s><s>thank you for a nice post, very informative.</s><s> it's hard to find something about restoration work, i mean like a live workshop, that would be really great to have.</s><s> i use audition and i have to try out some of the things you're recommending, especially those: <quote>
+<s>
+
+</s><s>from that point, one would then look to effect>parametric eq (equalizer) or effec>graphic eq, to manually reduce certain frequencies (outside of the range of human speech), and also pump up certain frequencies that make up human speech - 125 - 250 hz is about where most human speech occurs.</s><s> these can be increased, but if your noise is full-spectrum, remember you will also increase any part of that noise, that resides in this range too. 
+</s><s>after all has been done here, there are three filters, that might help too: low-pass, high-pass and the notch/gate filters.</s><s> again, these can be very useful if there is zero overlap from the noise to the spectrum of human speech.</s><s> again, apply, test - repeat, etc. 
+</s><s>one very useful effect in audition is repair transient.</s><s> this can be used to remove pops, clicks and other transient noise.</s><s> many bird calls are transients, and with a bit of work, can often be eliminated completely.</s><s> i could not live without this effect, as it can clean up so very much, leaving the noise floor untouched, but completely removing the transients. 
+</s><s>now, buying audition is not in everyone's budget.</s><s> one good freeware program for audio-editing is audacity.</s><s> it can work with many vst's, and there are vst versions of several different eq's, plus high-pass, low-pass and notch/gate filters.</s><s> i have never seen a noise-reduction vst that really worked, nor a transient removal vst, but they might exist.</s><s> note: while audacity is free, only some available vst's will be free.</s><s> some are more expensive than audition. 
+
+</s></quote>
+i would like to add that sometimes it's good to use dynamics processing to get rid of certain noise, i have one particularly bad audio track and this effect does a great job.</s><s> here's what i use: 
+i have a point added in the middle of the expanders, straight expander line is too heavy reduction, quiet blocks between the sound, i like to fiddle with this point here and there to find the suitable reduction.</s><s> and another great option in audition is hiss reduction.</s><s> i find it smart to keep it on light reduction level and then play around with the noise floor, usually that is enough to take away backround hiss.</s><s> sometimes noise reduction gives better results, sometimes hiss reduction.</s><s> another nice feature is to amplify certain frequencies with multiband compressor.</s><s> some person recently suggested me to use that and it's nice to add some clarity in case of low qualiy speech recordings.</s><s> i choose raise vocals preset and then play around with gain levels on different bands. 
+</s><s>actually i'm not an expert, just trying things out, but i have one audio clip and i did what i could with it, but there's not much i could do, it's an 8 bit 8khz recording (actually 4 khz by spectral view).</s><s> i used the above effects and raised volume a little more with hard limiting, but there's still a lot to be improved.</s><s> one thing is distortion.</s><s> i've read that this is practically impossible to take away, but something can be done.</s><s> do you know how to do it?</s><s> i would like to learn that. 
+</s><s>thanks again for a nice post. 
+</s><s>and have to check out this magix restoration plugin, interesting. 
+</s><s>srivas 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-4140261</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="Jan 14, 2012 9:11 AM">
+<s>thank you for taking the time to add those suggestions and instructions. 
+</s><s>as there can be so many "types" of offending noise, this thread could expand to many pages, and having good suggestions for users is wonderful.</s><s> the more useful vst's, and operations, that one has at their disposal, the better.</s><s> again, thank you for posting the detailed steps.</s><s> keep the tips coming. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-5317233</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="the_wine_snob" timestamp="May 13, 2013 3:04 PM">
+<s>this adobetv episode might be useful for using adobe audition to work on audio "noise:" http://tv.adobe.com/watch/no-stupid-questions-with-colin-smith/advance d-noise-reduction-in-audition-cs55/ 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2575964-5803446</DOCNO>
+<TEXT>
+<subject>Fixing Background Noise in Audio</subject>
+<post author="fredowww66" timestamp="Oct 31, 2013 7:24 AM">
+<s>interesting article but it focuses completly outside pe.</s><s> that's a pitty, because f.e.</s><s> pe 11 has already a lot of sound/noice effects/filters.</s><s> i can not believe that they all don't work and if this was the case adobe should not build them in than. 
+</s><s>so it would be nice if someone can go in on the delivered noisefilter tools in pe.</s><s> in the most practical way, f.e.: problem: loud tick in sound (f.e. someone touched mic or table close to mic), how to delete this in the best way. answer: use filter x and than a detailed description of the buttons of that effect (now most users doesn't have an idea of the function of those buttons) 
+</s><s>other problem: streetnoise while interviewing, etc.</s><s> i know already that for windnoise there is no good solution, so that faq can be skipped :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-464549</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="Bill Hunt" timestamp="Jun 2, 2012 3:52 PM">
+<s>we often see people trying to edit existing dvd-videos.</s><s> some seem to be able to do this fine, while others struggle mightily.</s><s> what's the deal?</s><s> why can't one just import those vob files and edit happily away? 
+</s><s>let's go back to the basics just a bit.</s><s> a .vob file is a "video object file." as such, and by the dvd-specs., it can contain quite a bit of stuff.</s><s> some of this is beyond just the audio & video contained in the usually present mpeg-2 file, which is hidden inside the vob.</s><s> this vob can contain subtitles, menus, and rom content, to name but a few.</s><s> with simple vob's, one can often play them, if they are just renamed to .</s><s>mpeg, though not always.</s><s> in the case where this works, one does not need a dvd software player.</s><s> any player program that can handle mpeg-2 can play the file. 
+</s><s>the structure and elements of a dvd-video dvd-5 (4.7gb, single sided, single layer) will be in most cases: 
+audio_ts folder (usually empty).</s><s> may also not be present. 
+</s><s>video_ts folder, which contains video_ts.ifo (video manager.info), video_ts.bup (vmgi.backup), vts_01_0.ifo (video title #1.info), vts_01_1.vob (video title #1.video), and more of these, incremented by 1.</s><s> depending on the number of "titles" on a particular disc, the numbers can range up to the limit of 99.</s><s> for projects from most nle/authoring programs will only have one "title," so you'll likely not see more than 4 vob's and their accompanying ifo's and bup's.</s><s> the vob's will be approximately 1gb in size, the upper limit. 
+</s><s>the title of the "movie" inside the video_ts folder will be contained in the .</s><s>ifo and the bup files.</s><s> if you open up a dvd-video in windows explorer, you'll see just the folders, and no name, or anything else.</s><s> the same is for the file names inside the folder(s).</s><s> they will look the same for all dvd-videos, though the exact number of these will differ, depending on the structure and number of discrete titles on the disc.</s><s> it's not until one opens the dvd-video in either a software player, or in a set-top player, that the ifo files will play, allowing the player to then access and work with the .</s><s>vob's, via the instructions that are contained in the ifo and bup files. 
+</s><s>editing a vob can be a tricky, as it can contain all those different things.</s><s> ripping the mpeg-2 file from the vob is usually the best approach.</s><s> that is what prpro, pe, or other nle's (non linear editor) attempt to do.</s><s> sometimes, it works fine, but sometimes it does not.</s><s> another problem can be when there are multiple vob's, as the mpeg-2 files can span multiple vob's, as they cannot contain more than about 1gb of data.</s><s> this is why a dvd-video can only have 1gb of space for all menus and their elements. 
+</s><s>as vob's can contain the full menuing structure (this will be the first vob), unless this structure is done 100% by the dvd-specs, there will be issues.</s><s> most dvd-recorders include some form of menuing, and most do not do it perfectly.</s><s> this will create issues.</s><s> ripping via software will likely be the only answer, or doing a manual capture from a set-top dvd player, hooked up appropriately to your computer with a capture card, or bridge, and using the software that came with that device.</s><s> you will not have any "device control," so you must start the capture software, hit record, and then start your dvd in its player.</s><s> if you do this, make certain that you capture to dv-avi type ii w/ 48khz 16-bit audio. 
+</s><s>once one has edited the audio & video contained in the .</s><s>vob(s), the process to get the resulting project back into dvd-video form is to burn to dvd.</s><s> this is the authoring process. 
+</s><s>three things happen: 
+1.</s><s>) the edited file is transcoded to mpeg-2. if you were working from a vob already, the audio & video material has already been transcoded to mpeg-2, in which there will already be compression of the data.</s><s> if you do this again, there will be more compression of the data, resulting in a loss in quality.</s><s> some nle's can do "smart rendering/encoding." none of the programs from adobe can do this, as they are designed to work with material captured from a minidv tape camera.</s><s> while they can handle other footage, there will be compromises.</s><s> when designed, dv-avi type ii was chosen as the base workflow, because that was what most minidv tape cameras produced.</s><s> the introduction of flash memory, minidvd, and hard drive cameras, plus the introduction of hd, has changed things a bit, and will continue to change them over the next versions of the programs. 
+2.</s><s>) the folder structure and the necessary files are created. 
+3.</s><s>) the above material is then physically burned to a dvd-video, or is copied to a folder on the computer in the required, and necessary form and structure. 
+</s><s>in the case of the former, one can then play the dvd-video via a software player on a computer, or on a set-top player hooked to a tv or display device.</s><s> in the case of the latter, one needs a software player to play the files in the vob, with the instructions coming from the ifo, or the bup files. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2227250</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="backstarCM" timestamp="Sep 4, 2009 12:23 PM">
+<s>if you really want to get into editing the vide files on a dvd (without transcoding, that is) you are going to have to learn a bit about demuxing and remuxing. 
+</s><s>here's a tutorial that outlines the basic steps you should take: http://backstar.com/blog/2009/09/01/edit-video-on-an-existing-dvd/ 
+note: if you just need to do basic trims then vobblanker may be the only program that you need. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2227728</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Sep 4, 2009 3:23 PM">
+<s>welcome to the forum and thank you for the link. 
+</s><s>ripping the dvd-video can be a simple process, or an involved one.</s><s> the software to do the work is changing with many of the old stand-bys being removed from the market, and newer ones taking their place.</s><s> as you point out, the quality can vary. 
+</s><s>with the inclusion of vob (100% dvd-compliant) handling in both pre and prpro (cs4.1), much of the work has been taken out, though one is still editing mpeg-2 files, and then, if they go to another dvd-video, will pay the price in quality through additional compression.</s><s> if the mpeg-2 is the best that one can get, and the highest quality is the goal, then neither of the premiere applications will be the best choice.</s><s> full implementation of "smart rendering," in some other apps. will be the way to go.</s><s> still, going back to the source footage, where possible, is better than any editing of the mpeg-2's - just not always possible. 
+</s><s>thanks, 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2298534</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Oct 7, 2009 8:24 AM">
+<s>here is a link to an article by steve grisetti, on using tools, like mpeg streamclip to get editable source files from .</s><s>vob's.</s><s> 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2298536</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Oct 7, 2009 8:25 AM">
+<s>here is an encore faq article, by jeff bellune on ripping editable material from a dvd.</s><s> it's based on adobe encore (authoring program), but applies to nle's, as well. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2478388</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Dec 23, 2009 3:05 PM">
+<s>
+</s><s>now, i use a panasonic that can play either vhs, or dvd's, and can burn from a vhs to a dvd-video.</s><s> however, the only thing that i use the dvd aspect for is doing an archive of the vhs tape.</s><s> instead of using that dvd, i use an analog to digital (a-d) bridge to get my digitized material to the hdd.</s><s> the reason for this are two-fold: 
+1.</s><s>) when a dvd-video is created, the digitized material is compressed into mpeg-2 format.</s><s> when you later want to edit this material, it is already compressed, and in what is called a gop (group of pictures) format, and all frames are not there.</s><s> you have one traditional frame, and the next ~ 15 are only "difference" frames, which do not contain all of the info, only links back to that last full frame, the i-frame.</s><s> if one is going to edit, they need all i-frames, and pre creates those, so one can edit at a frame-level.</s><s> when done, if they want to end up with an edited dvd-video, that footage will have to be compressed again, into mpeg-2.</s><s> by doing the capture via the a-d bridge, i save that file to dv-avi type ii, which is all i-frame, and edits nicely in pre.</s><s> then, when finished, and i go to my edited dvd-video, i only have one mpeg-2 compression, and not the 2 that you will have.</s><s> the quality is much higher. 
+2.</s><s>) as stated above, dvr's, most similar machines and many software authoring programs do not follow the dvd-specs 100%.</s><s> these results will give problems, and usually with the first vob, which also contains menus, etc. the use of an a-d bridge bypasses these problems, as all you have are the pure dv-avi type ii files w/ nothing else included. 
+i am a big fan of the canopus advc-300 a-d bridge, but their much less expensive unit, the advc-110, or the similar unit, the ads pyro av link, can do all that you would want.</s><s> the only real advantage of their 300 model is with the timebase corrections for color balance and gamma correction, plus other corrections.</s><s> however, it's more expensive and all of those corrections can be done in pre, though they do take some work and time.</s><s> for me, being able to do them at the time of capture saves me time. 
+</s><s>there are cheaper a-d units, like the dazzle, but i don't know of anyone, who's ever gotten them to work.</s><s> we get dozens of users with them each year.</s><s> the vast majority throw those units into the trash and go with the canopus, or the pyro instead. 
+</s><s>good luck, 
+hunt 
+
+</s><s>here is a recent faq addition on this subject. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2478495</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Dec 23, 2009 3:43 PM">
+<s>here are some additional links to articles by john t. smith on the subject of dvd - vob editing: 
+
+</s><s>notes on editing compressed files http://www.pacifier.com/~jtsmith/adobe.htm#edcf 
+capture analog video http://forums.adobe.com/thread/431853?tstart=0 
+what codec is inside that avi?</s><s> http://forums.adobe.com/thread/440037?tstart=0 
+tools to convert to dv-avi http://forums.adobe.com/thread/415317?tstart=0 
+
+</s><s>thanks john, 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2730848</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Apr 12, 2010 4:58 PM">
+<s><quote>
+</quote>
+</s><s>this is just for clarification, in case the above line is not clear: 
+with the simple vob's, one can often both play and edit these, if they change the file extension from .</s><s>vob to .</s><s>mpeg.</s><s> this is most easily done in windows explorer, or similar utility.</s><s> in the case listed in the first part of this article, if one had "vts_01_1.vob," they would change just the file extension to "vts_01_1.mpeg." 
+</s><s>hope that this makes the process a bit more clear. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2888160</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 11, 2010 10:58 AM">
+<s>another consideration with vob's can be the audio.</s><s> there are two possibilities with ntsc vob's, and they are pcm/wav 48khz 16-bit audio stream, and then dd ac3 (flavor of mpeg audio).</s><s> the latter might be problematic, as support for importing ac3 is missing in some nle (non linear editor) programs.</s><s> depending on the nle, there might be workarounds, but one can usually rip the ac3 audio with a program like audition, or the great, free audacity, and just save_as pcm/wav 48khz 16-bit. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2907430</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 18, 2010 8:46 AM">
+<s>based on a strong rec. from a prpro forum regular, dag norum, i've added a ripping utility, flaskmpeg, to the list of ripping software.</s><s> it does not decrypt commercial dvd's with copy protection, but seems to do a great job with other dvd's, when many competitive programs fail.</s><s> i had heard of it sometime back, but had forgotten about it, until dag mentioned it in another thread.</s><s> he also commented that it was wonderful for ripping mini dvd's from some problem cameras (maybe ones that do not finialize the discs). 
+</s><s>hope that this helps someone, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-2977189</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jul 15, 2010 1:22 PM">
+<s>one important bit of instruction: before one imports the vob(s) into the nle, they should definitely copy the vob's to a local hdd, and not import directly from the dvd.</s><s> first, that dvd will always have to be inserted, and also it is a very slow way to edit, and likely to give one problems. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3036249</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 8, 2010 9:55 AM">
+<s>if one has prpro through cs3, the trick to get dd ac3 into it will be to locate the ac3 .dll in adobe encore, and copy that from the encore root folder to the prpro root folder.</s><s> the name changes by version of encore, so look for one with "ac3" in it, and copy over. 
+</s><s>with prpro cs4, that trick no longer worked, and still did not with cs4.1, but the necessary .dll was added with cs4.2.</s><s> so if you have cs4, or cs4.1, update to cs4.2.</s><s> cs5 offers native dd ac3 support, as did cs4.2. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3189231</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="TISHAY26" timestamp="Oct 6, 2010 8:36 AM">
+<s>hello, 
+</s><s>i have a quick question: i am able to import the vob files fine, when changing to an mpeg.</s><s> however, i have audio issues.</s><s> either the audio will lag, or it will cut off and even sometimes i have levels but can't hear anything.</s><s> i was wondering, is this a project file issue; what should my project file settings be in order to do edits on vob's? 
+</s><s>thanks so much, 
+t. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3189310</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Oct 6, 2010 8:52 AM">
+<s>first, muxed (multiplexed - both audio & video in one file) files, which the mpeg-2 in the vob will be, often has oos (out of sync) issues.</s><s> probably the best cure is to rip the muxed audio stream with a program like adobe audition, or the free audio-editor, audacity.</s><s> then save as pcm/wav 48khz 16-bit and import that wav file into the project to replace the mpeg audio stream. 
+</s><s>for addressing oos issues, this article might be useful. 
+</s><s>as far as project setting, we'd need to know which program and which version you are using. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3196153</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="Mach10Media" timestamp="Oct 9, 2010 2:42 AM">
+<s>is it possible to retrieve anything resembling a layered photoshop file, or a collection of parts that would make up the dvd's menu, from these .</s><s>vob, .</s><s>ifo, or .</s><s>bup files?</s><s> a fellow asked if he could reverse engineer the menus from an old dvd.</s><s> i've managed to pull a still image of the menu with vobblanker... but more than that i am lost.</s><s> coincidently, you are probably the guy to answer this post: 
+http://forums.adobe.com/thread/735824?tstart=0 
+
+</s><s>thanks, david 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3197096</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Oct 9, 2010 6:04 PM">
+<s>david, 
+</s><s>i have not used it, but i believe that pgcedit can extract the elements of the menus from the first vob.</s><s> now, whether they can be extracted to psd's, is beyond my knowledge.</s><s> however, my guess would be that you cannot, since the psd's will have been encoded and encapsulated into that vob. 
+</s><s>it might be easier to do a screen-cap of the menu(s), and then just create them anew. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3495366</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Feb 26, 2011 7:50 AM">
+<s>when starting with vob's, there are two considerations, regarding quality output: 
+
+</s><s>first, the vob will contain the mpeg-2 encoded av material, and that is heavily-compressed.</s><s> if one outputs to a dvd, then there will be a second encoding step, and the resultant heavy-compression.</s><s> quality will suffer, and especially with any off-axis motion, either camera, or subject.</s><s> second, the dvd standard is uff (upper field first) and will be interlaced.</s><s> some devices use lff (lower field first).</s><s> this results in some ugly footage.</s><s> the field order would need to be reversed in this case.</s><s> check the field order of your source dvd footage, just to make sure that you have a match in the field order. 
+
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3551193</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 2, 2012 3:54 PM">
+<s>one correction, offered by jeff bellune and neil wilkes, is that the audio_ts is used with dvd-a, and is certainly required for that usage.</s><s> my statement: 
+
+<quote>
+</quote>
+
+is inaccurate, and especially regarding dvd-a production. 
+</s><s>for dvd-video, it will most likely be empty, or might not even be present, depending on which authoring program is used. 
+</s><s>thanks to jeff and neil for the correction. 
+</s><s>hunt 
+</s><s>[edit] that line, regarding the audio_ts folder, has been corrected in the initial posted article. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3561941</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Mar 21, 2011 3:22 PM">
+<s>some editors are often faced with dvd's that have supplemental audio steams, say a narration, an alternate audio track, or various languages.</s><s> these do not directly import into premiere.   colin brougham has provided a workflow and utility suggestion for extracting the supplemental audio material:     get rejig (free and involves no installation).</s><s> open  rejig, and click the file mode button.</s><s> click the add button, and then  the next add button; navigate to and select your vob file.  click done.</s><s> in  the "stream list & demuxing" pane, you'll see an mpeg video stream  and probably a couple of ac3 audio streams; if the audio stream has an "audiodelay" tag, check the "fix & correct ac3 delay" box.</s><s> select the audio stream you want, and click the demux button; pick a save  location and file name, and hit save.</s><s> you can also demux the video stream to an m2v file if you want; just follow the same practice.</s><s> when done, you can close rejig.</s><s> import the demuxed audio and (optionally) video, sync-and-link them, and edit away.</s><s> if you didn't demux the video, you can use the original vob and replace its audio with the demuxed audio.</s><s> thank you colin,   hunt   ps - another user recommended another program, vob2mpg, to do the same.</s><s> thanks for that rec. too.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3600183</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="Good%20News%20Broadcast" timestamp="Apr 7, 2011 10:32 AM">
+<s>raw video files straight off of a dvd isn't compatible to premiere pro cs4.</s><s> so what i usually do is, i encode it through handbrake to maintain high quality.</s><s> all of a sudden im getting difficulty with handbrake.</s><s> when i import it through premiere only a fraction of the video gets shown.</s><s> i have two question in regards to that...</s><s> 1) what could i be doing wrong?</s><s> 2) and does adobe premiere have a encoder program specifically for premiere so that i dont have to use a program that may not be compatible to it? 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3614402</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Apr 14, 2011 9:11 AM">
+<s>i have never used handbrake, but seem to recall a thread on the prpro forum, where one user was having issues with the files that it produced. 
+</s><s>if pre/prpro (after about cs4.2.1) will not import the vob's, then the material is likely not 100% dvd-compliant.</s><s> this often happens, when a dvr unit was used to create the dvd-video from tape, or another source.</s><s> some authoring software also does not produce 100% dvd-compliant vob's. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3720480</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jun 2, 2012 3:55 PM">
+<s>jeff bellune, author of the focal easy guide to adobe encoredvd 2.0, forum mod and contributor, and adobe community professional, has posted his workflow for ripping problem vob's. 
+
+</s><s>when i get troublesome vob files, i do the following: 
+1.</s><s> rip the dvd to a hard disk.</s><s> that eliminates the media and the burner from the rest of the process.</s><s> 2. add the vob file(s) to the playlist in dgmpgdec and save the project.</s><s> it indexes every frame of the vob file(s), concatenates multiple vob indexes so that the vobs can be treated as a single video clip and then adds that info to a .dgi file.</s><s> it also demuxes the audio.</s><s> 3. use an avisynth script to open the .dgi file in virtualdub.</s><s> you can dub the audio and video together in virtualdub, or wait until you import the audio and video into pr.</s><s> 4. export a lossless avi file from virtualdub and import it into pr. 
+i have a couple of tutorials on my web site that deal with getting and using those open-source tools.</s><s> i talk about dgmpgdec in the hd2sd tutorial, about halfway through: 
+bellune digital video services - tutorials - hd2sd - high quality scaling from hd to sd bellune digital video services - tutorials - the essential open-source toolkit 
+thanks to jeff. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3787201</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Jul 8, 2011 10:21 AM">
+<s>for ripping/converting problem vob's, one user, jim simon, had very good luck with this utility. 
+</s><s>note: i have not used it, but jim is a very critical, and trusted user. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3853459</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 10, 2011 8:37 AM">
+<s>colin brougham has posted a workflow for dealing problem vob's in the prpro cs 5 / 5.5 forum, and this might help others: 
+
+<quote>
+<s>you may need to massage the video and audio streams a bit to get them to work.</s><s> the following doesn't work with every broken mpeg2 file, but i've had a pretty high rate of success with the following process (i'll assume you're using windows): 
+get rejig and restream (both are free and involve no installation).</s><s> open rejig, and click the file mode button.</s><s> click the add button, and then the next add button; navigate to and select your vob file.</s><s> click done.</s><s> in the "stream list & demuxing" pane, you'll see an mpeg video stream and (probably) an ac3 audio stream; if the audio stream has an "audiodelay" tag, check the "fix & correct ac3 delay" box.</s><s> select the mpeg video stream, and click the demux button; pick a save location and file name, and hit save.</s><s> when the video is demuxed, do the same for the audio stream.</s><s> when done, you can close rejig.</s><s> sometimes at this point, you can import the m2v file (that's the demuxed mpeg video stream) into premiere and the file will be correct; if so, just import the ac3 file, sync-and-link them and edit away.</s><s> if the file still shows the wrong duration, open restream and load the demuxed m2v file into it.</s><s> under the "group of pictures" section, check the "reset timestamps" option; this will usually fix the broken duration.</s><s> pick a save location and name (by default, restream appends ".</s><s></s><s>0" to the filename), and save the file.</s><s> try importing this file into premiere and check its duration and playback. 
+</s><s>you can mux the files together if you want, but i usually just import them separately and link them together in premiere pro.</s><s> if you want to mux them, let me know and i'll add those details. 
+</s></quote>
+
+</s><s>hope that this workflow helps others. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3856492</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="msp1518" timestamp="Aug 11, 2011 12:35 PM">
+<s>what to do with pcm audio?</s><s> i tried rejig and was able to get my video from the dvd into premiere pro.</s><s> however, i did not have ac3 audio on the dvd. it was lpcm and prempro doesn't want to recognize the audio rejig gave me. 
+</s><s>stumped.</s><s> 
+</s><s>update: really stumped.</s><s> cannot find answers.</s><s> banging my head against a wall. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3856633</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 11, 2011 12:47 PM">
+<s>for audio that is incompatible with premiere, i use adobe audition to convert it.</s><s> soundbooth can do this too.</s><s> if you do not have either, then the great, free audio-editor, audacity, handles most audio formats, and an save_as pcm/wav @ 48khz 16-bit, that should work nicely. 
+</s><s>good luck, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3856652</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="msp1518" timestamp="Aug 11, 2011 12:54 PM">
+<s>i found an odd workaround.</s><s> i opened the mp4 (or mkv, i do not remember which) in ts muxer and had it demux the audio stream for me.</s><s> i can open that in prempro. 
+</s><s>this is a very basic, not very pretty way of doing things, but ti worked so i cannot complain. 
+</s><s>thnks for the help.</s><s> without that tutorial, i'd not have the video in there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-3856754</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Aug 11, 2011 1:31 PM">
+<s>any workflow, that works, is good! 
+</s><s>when i am dealing with any troublesome audio, i just reach for audition, 'cause it's sitting there and lonely... 
+</s><s>good luck, and happy editing, 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-4857936</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="fwfr65f54a" timestamp="Nov 20, 2012 6:52 AM">
+<s>thank you share your articles , dvds save their video and audio content together in one file called a dvd video object (vob).</s><s> in order to make your dvd's vob file , you can convert it into an vob file, which works in many more programs. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-4858620</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Nov 19, 2012 7:15 AM">
+<s>as this is in the adobe forum, we have concentrated on the two adobe programs, used for authoring a dvd-video, encore (included with premiere pro), and premiere elements.</s><s> both of those programs will write the necessary vob files, along with the ifo and bup files to the video_ts folder, and either burn to a dvd-video disc, or to just that video_ts folder, where directed, for either playback on a computer via a dvd software player, or to burn to a physical disc later on.</s><s> encore can also directly burn a project to an iso (sort of like a zip file, as a single file, containing the video_ts folder with its files), and many burning utilities, like the free imgburn, can then burn that iso to a disc, extracting the video_ts folder, and the files within it. 
+</s><s>with an authoring program, there is no need for the user to convert the mpeg-2 files to vob, and possibly span them over several vob's, so there is nothing else needed, unless one wishes to do the burn later, and then imgburn, or similar, would come into play. 
+</s><s>hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Premiere-Elements/Premiere-Elements-Tips-&-Tricks/Discussions-2117743-6125824</DOCNO>
+<TEXT>
+<subject>DVD - VOB Files - The Lowdown</subject>
+<post author="the_wine_snob" timestamp="Feb 16, 2014 7:29 AM">
+<s>jim simon, mod of the prpro forum has a ripping software recommendation, that works well for him. 
+</s><s>see reply #2 in this thread: http://forums.adobe.com/message/6035954#6035954 
+hunt 
+</s></post>
+</TEXT>
+</DOC>
+
+

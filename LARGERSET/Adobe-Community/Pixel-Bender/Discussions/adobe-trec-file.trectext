@@ -1,0 +1,2244 @@
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-1251025</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="jpaters" timestamp="Jul 9, 2013 12:14 PM">
+<s>it appears that the latest version of flash (11.7.700.232 / 11.8.800.94) has removed support for just-in-time compilation of pixelbender shader programs into machine code.</s><s> for example, you can compare the fps of this animation: 
+http://spinningowl.com/flash_experiments/pbtest_cpu.html?placevaluesbe foretb_=savedvalues&tb_iframe=true&height=660&width=650&modal=false 
+with the latest flash vs. any previous versions, and the fps on the latest flash runs at nearly a fivefold slowdown.</s><s> i've verified that the pixelbender program is no longer running directly via machine code, but is instead interpreted by the runtime. 
+</s><s>is there something different that has to be set via the wmode parameter or some other html parameter to maintain the old behavior?</s><s> or has jit support been dropped entirely from pixelbender? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5507427</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="tekintatar2" timestamp="Jul 15, 2013 11:44 AM">
+<s>we are having the same issue here and right now striving to find a workaround.</s><s> please let us know if there are any workarounds.</s><s> this is affecting many businesses right now who runs filters on pixel bender.</s><s> the performance is unacceptable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5518174</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="dancaporale" timestamp="Jul 18, 2013 12:16 PM">
+<s>same issue here, a disastrous development for us as we rely heavily on pixelbender for gameplay.</s><s> how is this dropped into the release without warning?</s><s> any workaround suggestions are welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5531010</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="PM_KaraJones" timestamp="Jul 23, 2013 8:31 AM">
+<s>just adding our name to the list of affected businesses with this issue.</s><s> we use pixel bender shaders heavily in our customization of graphic content, which directly affects our customers' experience and likelyhood of them renewing or subscribing to our site.</s><s> sincerely hoping this issue is resolve or that someone else finds a workaround.</s><s> really not looking forward to redeveloping everything in html5... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5531997</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="JordanCPaul" timestamp="Jul 23, 2013 1:15 PM">
+<s>another name in the list of disapointed (albeit not exactly surprised) users now faced with negative business reprecussions as a result of this undocumented and unsubstantiated change in performance and behavior.</s><s> we are using pb as a number cruncher, and our critical section is going from average worse case of 400ms to a whopping 5000ms - thats a ten fold reduction in performance.</s><s> seriously guys, this is a "production software 101" mistake.</s><s> how can you knowingly drop a release with this kind of a change and not notify your users? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5551846</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="neavecom" timestamp="Jul 30, 2013 10:42 AM">
+<s>here is an email i received about this issue from an adobe engineer: ...this was a permanent change that was made to address a security issue with the player.</s><s> in our decision making we believed that this feature was seldom used and that while falling back to the interpreter would be slower, since the feature was designed 5 years ago, current desktop system speeds should help compensate for the decreased performance.</s><s> we also believed that performance should be acceptable on mobile for small filtered areas (it's been implemented in interpreted mode on mobile from the beginning.</s><s>)   we are still gathering feedback from customers on [this] bug report and there are internal discussions about the ramifications of this change.</s><s> so it looks as though this change is not going to be reversed any time soon, given that there are security implications.   the only workaround is to reduce the dimensions of the bitmapdata object that the pixel bender shader uses.</s><s> this will improve frame rate performance, but will of course mean images will be pixelated if the bitmapdata is then enlarged to its previous size.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5564879</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="anthony.ka" timestamp="Aug 4, 2013 5:37 AM">
+<s>there is a bug in adobe's system for this issue: 
+https://bugbase.adobe.com/index.cfm?event=bug&id=3591185 
+please vote it up so that it gets addressed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5585914</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="jaziza34" timestamp="Aug 11, 2013 5:40 PM">
+<s>this literally killing our 3 year old project. backward compatiblity means nothing ... how come they decided to do this out of the blue?</s><s> every project using pixel bender get effected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5671120</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="NatR1" timestamp="Sep 10, 2013 9:10 PM">
+<s>the change has also caused huge problems on the scratch http://scratch.mit.edu website, used by thousands of children, teens, and educators around the world to create projects and learn programming. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5716564</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="neavecom" timestamp="Sep 26, 2013 11:18 AM">
+<s>it appears as though adobe are not going to resolve this issue, as their bug has now been marked "neverfix" https://bugbase.adobe.com/index.cfm?event=bug&id=3591185 <quote>
+<s>this feature was disabled due to security issues.</s><s> stage3d and agal should be a more than adequate replacement.</s><s> for the users that were using pixelbender "off-label" for data processing, alchemy is a good alternative. 
+</s></quote>an unsatisfactory conclusion imo, but a conclusion nonetheless. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-6184078</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="Jakub%20Wagner" timestamp="Mar 6, 2014 1:09 AM">
+<s>neverfix.</s><s> haha, good joke adobe! 
+</s><s>you know what?</s><s> what about the flash community stops paying you for a one month?</s><s> huh?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-1251025</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="jpaters" timestamp="Jul 9, 2013 12:14 PM">
+<s>it appears that the latest version of flash (11.7.700.232 / 11.8.800.94) has removed support for just-in-time compilation of pixelbender shader programs into machine code.</s><s> for example, you can compare the fps of this animation: 
+http://spinningowl.com/flash_experiments/pbtest_cpu.html?placevaluesbe foretb_=savedvalues&tb_iframe=true&height=660&width=650&modal=false 
+with the latest flash vs. any previous versions, and the fps on the latest flash runs at nearly a fivefold slowdown.</s><s> i've verified that the pixelbender program is no longer running directly via machine code, but is instead interpreted by the runtime. 
+</s><s>is there something different that has to be set via the wmode parameter or some other html parameter to maintain the old behavior?</s><s> or has jit support been dropped entirely from pixelbender? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5507427</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="tekintatar2" timestamp="Jul 15, 2013 11:44 AM">
+<s>we are having the same issue here and right now striving to find a workaround.</s><s> please let us know if there are any workarounds.</s><s> this is affecting many businesses right now who runs filters on pixel bender.</s><s> the performance is unacceptable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5518174</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="dancaporale" timestamp="Jul 18, 2013 12:16 PM">
+<s>same issue here, a disastrous development for us as we rely heavily on pixelbender for gameplay.</s><s> how is this dropped into the release without warning?</s><s> any workaround suggestions are welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5531010</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="PM_KaraJones" timestamp="Jul 23, 2013 8:31 AM">
+<s>just adding our name to the list of affected businesses with this issue.</s><s> we use pixel bender shaders heavily in our customization of graphic content, which directly affects our customers' experience and likelyhood of them renewing or subscribing to our site.</s><s> sincerely hoping this issue is resolve or that someone else finds a workaround.</s><s> really not looking forward to redeveloping everything in html5... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5531997</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="JordanCPaul" timestamp="Jul 23, 2013 1:15 PM">
+<s>another name in the list of disapointed (albeit not exactly surprised) users now faced with negative business reprecussions as a result of this undocumented and unsubstantiated change in performance and behavior.</s><s> we are using pb as a number cruncher, and our critical section is going from average worse case of 400ms to a whopping 5000ms - thats a ten fold reduction in performance.</s><s> seriously guys, this is a "production software 101" mistake.</s><s> how can you knowingly drop a release with this kind of a change and not notify your users? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5551846</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="neavecom" timestamp="Jul 30, 2013 10:42 AM">
+<s>here is an email i received about this issue from an adobe engineer: ...this was a permanent change that was made to address a security issue with the player.</s><s> in our decision making we believed that this feature was seldom used and that while falling back to the interpreter would be slower, since the feature was designed 5 years ago, current desktop system speeds should help compensate for the decreased performance.</s><s> we also believed that performance should be acceptable on mobile for small filtered areas (it's been implemented in interpreted mode on mobile from the beginning.</s><s>)   we are still gathering feedback from customers on [this] bug report and there are internal discussions about the ramifications of this change.</s><s> so it looks as though this change is not going to be reversed any time soon, given that there are security implications.   the only workaround is to reduce the dimensions of the bitmapdata object that the pixel bender shader uses.</s><s> this will improve frame rate performance, but will of course mean images will be pixelated if the bitmapdata is then enlarged to its previous size.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5564879</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="anthony.ka" timestamp="Aug 4, 2013 5:37 AM">
+<s>there is a bug in adobe's system for this issue: 
+https://bugbase.adobe.com/index.cfm?event=bug&id=3591185 
+please vote it up so that it gets addressed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5585914</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="jaziza34" timestamp="Aug 11, 2013 5:40 PM">
+<s>this literally killing our 3 year old project. backward compatiblity means nothing ... how come they decided to do this out of the blue?</s><s> every project using pixel bender get effected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5671120</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="NatR1" timestamp="Sep 10, 2013 9:10 PM">
+<s>the change has also caused huge problems on the scratch http://scratch.mit.edu website, used by thousands of children, teens, and educators around the world to create projects and learn programming. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-5716564</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="neavecom" timestamp="Sep 26, 2013 11:18 AM">
+<s>it appears as though adobe are not going to resolve this issue, as their bug has now been marked "neverfix" https://bugbase.adobe.com/index.cfm?event=bug&id=3591185 <quote>
+<s>this feature was disabled due to security issues.</s><s> stage3d and agal should be a more than adequate replacement.</s><s> for the users that were using pixelbender "off-label" for data processing, alchemy is a good alternative. 
+</s></quote>an unsatisfactory conclusion imo, but a conclusion nonetheless. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5489722-6184078</DOCNO>
+<TEXT>
+<subject>PixelBender in Flash no longer compiles to machine code?</subject>
+<post author="Jakub%20Wagner" timestamp="Mar 6, 2014 1:09 AM">
+<s>neverfix.</s><s> haha, good joke adobe! 
+</s><s>you know what?</s><s> what about the flash community stops paying you for a one month?</s><s> huh?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-6064505-1392684</DOCNO>
+<TEXT>
+<subject>Free filter or/ plug-in set? for "OIL PAINT" - to download & add to Photoshop CS 5 (Mac OSX 10.8) ?</subject>
+<post author="mdgiamo" timestamp="Jan 29, 2014 6:30 AM">
+<s>i have the cs 5 suite instaled on 2 of my macs (per adobe licensing).  i upgraded (aftwrward, in 2012) just the photoshop cs 5 app to photoshop cs 6. there is a great filter [then new] with ps cs 6 called "oil paint".</s><s> i hope to be able to find out from anyone if there a free and compatible: filter, filter set,  or plug-in(s) set, so i can add the filter "oil paint" - to download & add to photoshop cs 5 (mac osx 10.8) ?   many thanks.   mdgiamo usa   ps - i downloaded pixel bender - but that does not seem to provide what i am looking for..</s><s>!</s><s> in fact - after i installed it - it is not embedded in photoshop cs 5, contrary to adobe's claim that once you install it - it will be there in cs 5.</s><s> pixel bender opens separately; and looks to be [only] a-user-definable add-on for ps cs 5+  [and done via custom user progamming changes - which on first glance did not seem easy to figure out.</s><s> and i am a programmer, beside being a highly creative person (for decades), and with all forms of digital media).
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-6064505-6125355</DOCNO>
+<TEXT>
+<subject>Free filter or/ plug-in set? for "OIL PAINT" - to download & add to Photoshop CS 5 (Mac OSX 10.8) ?</subject>
+<post author="R_Kelly" timestamp="Feb 16, 2014 12:56 AM">
+<s>you can download the pixel bender plugin for photoshop cs5, which includes the oil paint filter. 
+</s><s>listed under archived downloads 
+http://www.adobe.com/devnet/pixelbender.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-6064505-6127670</DOCNO>
+<TEXT>
+<subject>Free filter or/ plug-in set? for "OIL PAINT" - to download & add to Photoshop CS 5 (Mac OSX 10.8) ?</subject>
+<post author="mdgiamo" timestamp="Feb 16, 2014 11:28 PM">
+<s>please advise: i have the [circa 2010] 64-bit v.cs 5 photoshop (et.al) - that has been updated by adobe a few times, by my choice- or by their automatic update method (which i try not to utilize, automatically: i like to know what it is that is being installed befoeit happens.</s><s> think the now unstoppable google chrome v32 for macs.</s><s> unbelievable gall from google; and it breaks anything that is supposed to run /stream from the web in apple inc's quicktime).</s><s> anyway: when i clicked on your provided link (above), it brought meto the pixel bender page, including numerous archived plug-in downloads; neither of the uris (for a plug-in that enables oil paint filter in ps cs 5) - for any of the offered 64-bit mac oxs plug-ins /downloads.</s><s> nothing happens.</s><s> can you please explain more; or perhaps what it is i am doing wrong?</s><s> note: i did not "sign in" at the time, to the adobe site with my adobe account id /pwd; but then - i did not think i have to sign in download a freely available plug-in. 
+</s><s>thanks very much. 
+</s><s>mdgiamo 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-6064505-1392684</DOCNO>
+<TEXT>
+<subject>Free filter or/ plug-in set? for "OIL PAINT" - to download & add to Photoshop CS 5 (Mac OSX 10.8) ?</subject>
+<post author="mdgiamo" timestamp="Jan 29, 2014 6:30 AM">
+<s>i have the cs 5 suite instaled on 2 of my macs (per adobe licensing).  i upgraded (aftwrward, in 2012) just the photoshop cs 5 app to photoshop cs 6. there is a great filter [then new] with ps cs 6 called "oil paint".</s><s> i hope to be able to find out from anyone if there a free and compatible: filter, filter set,  or plug-in(s) set, so i can add the filter "oil paint" - to download & add to photoshop cs 5 (mac osx 10.8) ?   many thanks.   mdgiamo usa   ps - i downloaded pixel bender - but that does not seem to provide what i am looking for..</s><s>!</s><s> in fact - after i installed it - it is not embedded in photoshop cs 5, contrary to adobe's claim that once you install it - it will be there in cs 5.</s><s> pixel bender opens separately; and looks to be [only] a-user-definable add-on for ps cs 5+  [and done via custom user progamming changes - which on first glance did not seem easy to figure out.</s><s> and i am a programmer, beside being a highly creative person (for decades), and with all forms of digital media).
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-6064505-6125355</DOCNO>
+<TEXT>
+<subject>Free filter or/ plug-in set? for "OIL PAINT" - to download & add to Photoshop CS 5 (Mac OSX 10.8) ?</subject>
+<post author="R_Kelly" timestamp="Feb 16, 2014 12:56 AM">
+<s>you can download the pixel bender plugin for photoshop cs5, which includes the oil paint filter. 
+</s><s>listed under archived downloads 
+http://www.adobe.com/devnet/pixelbender.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-6064505-6127670</DOCNO>
+<TEXT>
+<subject>Free filter or/ plug-in set? for "OIL PAINT" - to download & add to Photoshop CS 5 (Mac OSX 10.8) ?</subject>
+<post author="mdgiamo" timestamp="Feb 16, 2014 11:28 PM">
+<s>please advise: i have the [circa 2010] 64-bit v.cs 5 photoshop (et.al) - that has been updated by adobe a few times, by my choice- or by their automatic update method (which i try not to utilize, automatically: i like to know what it is that is being installed befoeit happens.</s><s> think the now unstoppable google chrome v32 for macs.</s><s> unbelievable gall from google; and it breaks anything that is supposed to run /stream from the web in apple inc's quicktime).</s><s> anyway: when i clicked on your provided link (above), it brought meto the pixel bender page, including numerous archived plug-in downloads; neither of the uris (for a plug-in that enables oil paint filter in ps cs 5) - for any of the offered 64-bit mac oxs plug-ins /downloads.</s><s> nothing happens.</s><s> can you please explain more; or perhaps what it is i am doing wrong?</s><s> note: i did not "sign in" at the time, to the adobe site with my adobe account id /pwd; but then - i did not think i have to sign in download a freely available plug-in. 
+</s><s>thanks very much. 
+</s><s>mdgiamo 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5943373-1361651</DOCNO>
+<TEXT>
+<subject>Pixel bender wont open on win 7</subject>
+<post author="phoenix198787" timestamp="Dec 18, 2013 7:17 PM">
+<s>i have been tryign to install pixel bender toolkit 2.5 so i can pplay with the droste filter that was not added to creative cloud a bit disapointed its nto in the new creative suite thta i pay for but that sneither here nor there the pixelbender program shoudl run as a standalone program from what i have found. now problem i have is that when i open pixel bender it closes right away nothng happens liek error messages it is liek soemone clicked close as soona s it opened. please help me as i havebeen pulling out my hair tryign to fix i even reintalled windows and problem is still here. the program will work if i downlaod the old 1.5 version but i dodnt see why the new version wotn open. pleas ehelp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5943373-6126530</DOCNO>
+<TEXT>
+<subject>Pixel bender wont open on win 7</subject>
+<post author="foostrom" timestamp="Feb 16, 2014 1:03 PM">
+<s>i've got the exact same problem: 
+trying to open the pixel bender toolkit, it immediately closes after initiation.</s><s> no message whatsoever. 
+i hadn't used the plug-in for a while, i have changed my graphic card to an unsupported nvidia card.</s><s> but the pixel bender filters do open in photoshop cs5(12.0 64-bit), although new filter don't seem to show up (but that might be a different issue) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5943373-6126536</DOCNO>
+<TEXT>
+<subject>Pixel bender wont open on win 7</subject>
+<post author="foostrom" timestamp="Feb 16, 2014 1:26 PM">
+<s>i've managed to get it to work in compatability mode with 256 colors.</s><s> quite useless because i'm unable to see what i'm doing, although it does allow me to edit the code. 
+</s><s>it unfortunately seems to me that you need an outdated graphic card to still use pixel bender toolkit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5943373-1361651</DOCNO>
+<TEXT>
+<subject>Pixel bender wont open on win 7</subject>
+<post author="phoenix198787" timestamp="Dec 18, 2013 7:17 PM">
+<s>i have been tryign to install pixel bender toolkit 2.5 so i can pplay with the droste filter that was not added to creative cloud a bit disapointed its nto in the new creative suite thta i pay for but that sneither here nor there the pixelbender program shoudl run as a standalone program from what i have found. now problem i have is that when i open pixel bender it closes right away nothng happens liek error messages it is liek soemone clicked close as soona s it opened. please help me as i havebeen pulling out my hair tryign to fix i even reintalled windows and problem is still here. the program will work if i downlaod the old 1.5 version but i dodnt see why the new version wotn open. pleas ehelp 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5943373-6126530</DOCNO>
+<TEXT>
+<subject>Pixel bender wont open on win 7</subject>
+<post author="foostrom" timestamp="Feb 16, 2014 1:03 PM">
+<s>i've got the exact same problem: 
+trying to open the pixel bender toolkit, it immediately closes after initiation.</s><s> no message whatsoever. 
+i hadn't used the plug-in for a while, i have changed my graphic card to an unsupported nvidia card.</s><s> but the pixel bender filters do open in photoshop cs5(12.0 64-bit), although new filter don't seem to show up (but that might be a different issue) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5943373-6126536</DOCNO>
+<TEXT>
+<subject>Pixel bender wont open on win 7</subject>
+<post author="foostrom" timestamp="Feb 16, 2014 1:26 PM">
+<s>i've managed to get it to work in compatability mode with 256 colors.</s><s> quite useless because i'm unable to see what i'm doing, although it does allow me to edit the code. 
+</s><s>it unfortunately seems to me that you need an outdated graphic card to still use pixel bender toolkit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5933155-1359103</DOCNO>
+<TEXT>
+<subject>Droste Effect Crashes PS CS4.</subject>
+<post author="Smitty8771" timestamp="Dec 15, 2013 6:42 PM">
+<s>i have installed the pixel bender plug-in.</s><s> it appears in the list of filters.</s><s> i installed the droste effect and it appears in the gallery. 
+</s><s>with a photo displayed and selected, all of the default items in the pixel bender gallery work as advertized. 
+</s><s>however, the droste effect causes an error message saying "the operation cannot be completed" and photoshop cs4/64 running on windows 7 crashes and has to be closed. 
+</s><s>any suggestions would be greatly appreciated. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5933155-1359103</DOCNO>
+<TEXT>
+<subject>Droste Effect Crashes PS CS4.</subject>
+<post author="Smitty8771" timestamp="Dec 15, 2013 6:42 PM">
+<s>i have installed the pixel bender plug-in.</s><s> it appears in the list of filters.</s><s> i installed the droste effect and it appears in the gallery. 
+</s><s>with a photo displayed and selected, all of the default items in the pixel bender gallery work as advertized. 
+</s><s>however, the droste effect causes an error message saying "the operation cannot be completed" and photoshop cs4/64 running on windows 7 crashes and has to be closed. 
+</s><s>any suggestions would be greatly appreciated. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5552017-1265876</DOCNO>
+<TEXT>
+<subject>Pixel Bender slow in build</subject>
+<post author="jbecker_ufi" timestamp="Jul 30, 2013 11:48 AM">
+<s>i wrote some pixel bender kernels using pixel bender 2.5. i'm using them in an adobe air application i built using flash builder 4.7 and the air3.6 sdk.</s><s> when i run the application from flash builder the shaders work great.</s><s> when i release the build, however, and install the application the shaders becaome very slow.</s><s> does anybody know what this is? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5552017-5564817</DOCNO>
+<TEXT>
+<subject>Pixel Bender slow in build</subject>
+<post author="anthony.ka" timestamp="Aug 4, 2013 5:36 AM">
+<s>this may be related to this issue: https://bugbase.adobe.com/index.cfm?event=bug&id=3591185 please vote up the issue in order to have it addressed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5552017-1265876</DOCNO>
+<TEXT>
+<subject>Pixel Bender slow in build</subject>
+<post author="jbecker_ufi" timestamp="Jul 30, 2013 11:48 AM">
+<s>i wrote some pixel bender kernels using pixel bender 2.5. i'm using them in an adobe air application i built using flash builder 4.7 and the air3.6 sdk.</s><s> when i run the application from flash builder the shaders work great.</s><s> when i release the build, however, and install the application the shaders becaome very slow.</s><s> does anybody know what this is? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5552017-5564817</DOCNO>
+<TEXT>
+<subject>Pixel Bender slow in build</subject>
+<post author="anthony.ka" timestamp="Aug 4, 2013 5:36 AM">
+<s>this may be related to this issue: https://bugbase.adobe.com/index.cfm?event=bug&id=3591185 please vote up the issue in order to have it addressed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-961367</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="lucille2010" timestamp="Feb 10, 2012 12:37 PM">
+<s>i truly hope you guys answer.</s><s> i see others have the same problem and never got a response.</s><s> i waited on hold for almost an hour to speak to someone and finally hung up. 
+</s><s>pixel bender shows up in the adobe folder, and then under ps. it does not show up in ps under filters.</s><s> i have the cs5 web premium 32 bit. 
+</s><s>please answer. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-4237580</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="AIF%20Carroll" timestamp="Feb 29, 2012 11:18 AM">
+<s>the photoshop plugin for pixel bender filters was not included in the photoshop installer for cs5.</s><s> the "pixel bender" that shows up in your installation is the pixel bender toolkit, which is the development environment for creating and editing pixel bender filters.</s><s> you can download and install the pixel bender plugin for free, as a photoshop extension from adobe labs (http://labs.adobe.com/technologies/pixelbenderplugin/). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-5105723</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="falmouthcapecod" timestamp="Feb 26, 2013 5:49 PM">
+<s>but it does not work!</s><s> we never see the filters in pscs5.</s><s> we all have tried it many ways.</s><s> here we are a year later, and no decent answers, what is the problem, please at least let us know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-5111511</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="AIF%20Carroll" timestamp="Feb 28, 2013 12:27 PM">
+<s>thank you for your interest in and enthusiasm for pixel bender.</s><s> pixel bender has been offered in the past on adobe labs as a technology preview (http://labs.adobe.com/about/).</s><s> it was never a shipping/officially supported product/feature: http://labs.adobe.com/about/faq/#itema-8.</s><s> as of cs6, we are no longer providing pixel bender as a labs technology.</s><s> photoshop cs6 has taken the pixel bender filter most popular with customers, oil paint, and turned it into an official feature in cs6.</s><s> photoshop cs6 no longer supports pixel bender for 3rd party development. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-5487376</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="choupette2u" timestamp="Jul 8, 2013 4:10 PM">
+<s>i encountered the same problem and just spent almost 3hours looking for a solution and i found one!</s><s>!</s><s> a well explained video on utube!</s><s> and it works, i run cs5 on windows 8 but the rules are the same.</s><s> i really hope it helps you. 
+here the link and title of the video http://www.youtube.com/watch?v=_u26xv0cnlw 
+how to download & install pixel bender 
+gavtrain 
+the links he shows to download the program have changed, so in case you don't have the download anymore go to http://www.adobe.com/devnet/pixelbender.html then download pixel bender toolkit 2.5 for windows (zip, 59 mb) it is on the left under the icon proceed with the installation then be ready for the magic step 2 now from the same page that you just downloaded the pixel bender toolkit scroll down to the "archived downloads" and download pixel bender plug-in for photoshop cs5 (12.1) (win 32–bit) or pixel bender plug-in for photoshop cs5 (12.0) (win 32–bit) with all my tries i can't remember which one i tried. try 12.1 first, however you feel like once you have that follow the instruction of gavtrain in his video to open the plugin in administrator and tadaaaaa it will work, it did for me 
+good luck 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-961367</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="lucille2010" timestamp="Feb 10, 2012 12:37 PM">
+<s>i truly hope you guys answer.</s><s> i see others have the same problem and never got a response.</s><s> i waited on hold for almost an hour to speak to someone and finally hung up. 
+</s><s>pixel bender shows up in the adobe folder, and then under ps. it does not show up in ps under filters.</s><s> i have the cs5 web premium 32 bit. 
+</s><s>please answer. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-4237580</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="AIF%20Carroll" timestamp="Feb 29, 2012 11:18 AM">
+<s>the photoshop plugin for pixel bender filters was not included in the photoshop installer for cs5.</s><s> the "pixel bender" that shows up in your installation is the pixel bender toolkit, which is the development environment for creating and editing pixel bender filters.</s><s> you can download and install the pixel bender plugin for free, as a photoshop extension from adobe labs (http://labs.adobe.com/technologies/pixelbenderplugin/). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-5105723</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="falmouthcapecod" timestamp="Feb 26, 2013 5:49 PM">
+<s>but it does not work!</s><s> we never see the filters in pscs5.</s><s> we all have tried it many ways.</s><s> here we are a year later, and no decent answers, what is the problem, please at least let us know. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-5111511</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="AIF%20Carroll" timestamp="Feb 28, 2013 12:27 PM">
+<s>thank you for your interest in and enthusiasm for pixel bender.</s><s> pixel bender has been offered in the past on adobe labs as a technology preview (http://labs.adobe.com/about/).</s><s> it was never a shipping/officially supported product/feature: http://labs.adobe.com/about/faq/#itema-8.</s><s> as of cs6, we are no longer providing pixel bender as a labs technology.</s><s> photoshop cs6 has taken the pixel bender filter most popular with customers, oil paint, and turned it into an official feature in cs6.</s><s> photoshop cs6 no longer supports pixel bender for 3rd party development. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4199206-5487376</DOCNO>
+<TEXT>
+<subject>I Cannot get pixel bender to show in PS</subject>
+<post author="choupette2u" timestamp="Jul 8, 2013 4:10 PM">
+<s>i encountered the same problem and just spent almost 3hours looking for a solution and i found one!</s><s>!</s><s> a well explained video on utube!</s><s> and it works, i run cs5 on windows 8 but the rules are the same.</s><s> i really hope it helps you. 
+here the link and title of the video http://www.youtube.com/watch?v=_u26xv0cnlw 
+how to download & install pixel bender 
+gavtrain 
+the links he shows to download the program have changed, so in case you don't have the download anymore go to http://www.adobe.com/devnet/pixelbender.html then download pixel bender toolkit 2.5 for windows (zip, 59 mb) it is on the left under the icon proceed with the installation then be ready for the magic step 2 now from the same page that you just downloaded the pixel bender toolkit scroll down to the "archived downloads" and download pixel bender plug-in for photoshop cs5 (12.1) (win 32–bit) or pixel bender plug-in for photoshop cs5 (12.0) (win 32–bit) with all my tries i can't remember which one i tried. try 12.1 first, however you feel like once you have that follow the instruction of gavtrain in his video to open the plugin in administrator and tadaaaaa it will work, it did for me 
+good luck 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5423650-1236032</DOCNO>
+<TEXT>
+<subject>Server-Side Pixel Bender</subject>
+<post author="Chung Leong" timestamp="Jun 18, 2013 5:59 PM">
+<s>i've written a php extension capable of running pixel bender kernels (flash-compatible ones).</s><s> performance is not great, as it's not multithreaded and doesn't make use of the gpu, but it can typically process an image in fraction of a second.</s><s> compiling to native code using gcc reduces this time further. 
+</s><s>it's something that opens up new possibilities for pixel bender, i believe.</s><s> you can allow end-user to interactively adjust the parameters to a pb filter, with immediate display of the outcome.</s><s> the final parameters can then be sent to the server and which apply the effect to the stored resource (an image or perhaps a video). 
+http://www.php-qb.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5423650-1236032</DOCNO>
+<TEXT>
+<subject>Server-Side Pixel Bender</subject>
+<post author="Chung Leong" timestamp="Jun 18, 2013 5:59 PM">
+<s>i've written a php extension capable of running pixel bender kernels (flash-compatible ones).</s><s> performance is not great, as it's not multithreaded and doesn't make use of the gpu, but it can typically process an image in fraction of a second.</s><s> compiling to native code using gcc reduces this time further. 
+</s><s>it's something that opens up new possibilities for pixel bender, i believe.</s><s> you can allow end-user to interactively adjust the parameters to a pb filter, with immediate display of the outcome.</s><s> the final parameters can then be sent to the server and which apply the effect to the stored resource (an image or perhaps a video). 
+http://www.php-qb.net/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5304436-1208275</DOCNO>
+<TEXT>
+<subject>Pixel Bender Installation</subject>
+<post author="260251" timestamp="May 9, 2013 12:07 AM">
+<s>i have downloaded and extracted pixel bender on windows 8 but it does not show on cs5 filters!</s><s> it worked fine with vista.</s><s> what can i do?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5304436-1208275</DOCNO>
+<TEXT>
+<subject>Pixel Bender Installation</subject>
+<post author="260251" timestamp="May 9, 2013 12:07 AM">
+<s>i have downloaded and extracted pixel bender on windows 8 but it does not show on cs5 filters!</s><s> it worked fine with vista.</s><s> what can i do?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-440550</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="jbfiedler" timestamp="May 31, 2009 11:18 AM">
+<s>hello, 
+</s><s>i just formatted my computer and now realized i didn't back up my pixel bender files.</s><s> i still have the pbj's on my web site but no pbk's .</s><s> i realize asking for a decompiler on an adobe forum is rediculous, however, i had some awesome filters (distances maps, voronoi diagrams, colorspace trasfrorms, and more) and i am desperate to get them back.</s><s> anyways i would be forever grateful to anyone that can help me out. 
+</s><s>thanks in advance, justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2003920</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Kevin%20Goldsmith" timestamp="Jun 1, 2009 9:57 AM">
+<s>yow, that is sucky.</s><s> sorry to hear it.</s><s> a pbj->pbk tool is possible, but we haven't written one even for internal use yet.</s><s> lemme check with the team to see if we have anything that could help you out. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2007012</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="AIF%20Bob" timestamp="Jun 2, 2009 11:02 AM">
+<s>tinic posted a disassembler on his blog here: 
+http://www.kaourantin.net/2008/09/pixel-bender-pbj-files.html 
+that will at least let you extract the logic.</s><s> you'll need to come up with decent variable names, but you should be able to make progress.</s><s> if that doesn't work let me know and we'll ry and work out something else. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2008551</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="jbfiedler" timestamp="Jun 2, 2009 10:38 PM">
+<s>thanks guys, 
+i tried tinic's decompiler which worked to produce the assembly.</s><s> unfortunately i have (stomach sinks) 13 filters most of which were very detailed so going through that way may take longer than recoding from scratch .</s><s> please let me know if you find any other solutions. 
+</s><s>thanks again, justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2009756</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="AIF%20Bob" timestamp="Jun 3, 2009 8:57 AM">
+<s>unfortunately tinic's disassembler is the best tool we have available right now.</s><s> you could write a tool to take the output of the disassembler and turn it back into .pbk format and then work on cleaning that up, but that might not be any quicker than starting from scratch. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2065275</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Enrique%20Flouret" timestamp="Jun 25, 2009 4:33 AM">
+<s>sorry if this sounds stupid, but there are a lot of tools to recover formatted hard disks.</s><s> unless you performed a low level formatting (i'm not an expert), chances are that you only erased an index or similar, and your files ar still there. 
+</s><s>of course, as soon as you start using your hard disk again, the data becomes corrupted or lost.</s><s> but in your case, i would give it a try. 
+</s><s>just do some search at google for data recovery tools or something like recovering files from formatted hd. 
+</s><s>hope this helps 
+enrique 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-3021628</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Royi%20A" timestamp="Aug 3, 2010 1:58 AM">
+<s>i think it's built in the 2.0 ide, isn't it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4607782</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="nabboull" timestamp="Aug 8, 2012 12:08 PM">
+<s>hi kevin, were you able to find out if adobe has created a tool to decompile .pbj files ?</s><s> i am writing an app for a customer and they want me to make sure the noone is able to download the .pbj files and decompile them. thanks please let me know if this is possible. 
+</s><s>nabil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4609015</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 8, 2012 11:46 PM">
+<s>it is possible to turn the pbj into agal, see the post above.</s><s> however, no one has done a pbj->pbk converter that i know of, and it would be quite difficult. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4609522</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="nabboull" timestamp="Aug 9, 2012 6:19 AM">
+<s>thanks kevin, i am sorry what is "agal" ?</s><s> adobe has not done a pbj->pbk converter is this official ?</s><s> thanks nabil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4609981</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 9, 2012 8:54 AM">
+<s>sorry, i was thinking of pixel bender 3d, not pixel bender byte code.</s><s> there was never a pbj->pbk decompiler developed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-5064345</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="kennelbound" timestamp="Feb 11, 2013 9:49 AM">
+<s>not sure if this is still revelant, but the haxe community has written a decompiler for pbj files: 
+http://ncannasse.fr/blog/pixel_bender_assembler 
+hopefully that helps someone else who might be in the same boat! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-440550</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="jbfiedler" timestamp="May 31, 2009 11:18 AM">
+<s>hello, 
+</s><s>i just formatted my computer and now realized i didn't back up my pixel bender files.</s><s> i still have the pbj's on my web site but no pbk's .</s><s> i realize asking for a decompiler on an adobe forum is rediculous, however, i had some awesome filters (distances maps, voronoi diagrams, colorspace trasfrorms, and more) and i am desperate to get them back.</s><s> anyways i would be forever grateful to anyone that can help me out. 
+</s><s>thanks in advance, justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2003920</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Kevin%20Goldsmith" timestamp="Jun 1, 2009 9:57 AM">
+<s>yow, that is sucky.</s><s> sorry to hear it.</s><s> a pbj->pbk tool is possible, but we haven't written one even for internal use yet.</s><s> lemme check with the team to see if we have anything that could help you out. 
+</s><s>kevin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2007012</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="AIF%20Bob" timestamp="Jun 2, 2009 11:02 AM">
+<s>tinic posted a disassembler on his blog here: 
+http://www.kaourantin.net/2008/09/pixel-bender-pbj-files.html 
+that will at least let you extract the logic.</s><s> you'll need to come up with decent variable names, but you should be able to make progress.</s><s> if that doesn't work let me know and we'll ry and work out something else. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2008551</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="jbfiedler" timestamp="Jun 2, 2009 10:38 PM">
+<s>thanks guys, 
+i tried tinic's decompiler which worked to produce the assembly.</s><s> unfortunately i have (stomach sinks) 13 filters most of which were very detailed so going through that way may take longer than recoding from scratch .</s><s> please let me know if you find any other solutions. 
+</s><s>thanks again, justin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2009756</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="AIF%20Bob" timestamp="Jun 3, 2009 8:57 AM">
+<s>unfortunately tinic's disassembler is the best tool we have available right now.</s><s> you could write a tool to take the output of the disassembler and turn it back into .pbk format and then work on cleaning that up, but that might not be any quicker than starting from scratch. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-2065275</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Enrique%20Flouret" timestamp="Jun 25, 2009 4:33 AM">
+<s>sorry if this sounds stupid, but there are a lot of tools to recover formatted hard disks.</s><s> unless you performed a low level formatting (i'm not an expert), chances are that you only erased an index or similar, and your files ar still there. 
+</s><s>of course, as soon as you start using your hard disk again, the data becomes corrupted or lost.</s><s> but in your case, i would give it a try. 
+</s><s>just do some search at google for data recovery tools or something like recovering files from formatted hd. 
+</s><s>hope this helps 
+enrique 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-3021628</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Royi%20A" timestamp="Aug 3, 2010 1:58 AM">
+<s>i think it's built in the 2.0 ide, isn't it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4607782</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="nabboull" timestamp="Aug 8, 2012 12:08 PM">
+<s>hi kevin, were you able to find out if adobe has created a tool to decompile .pbj files ?</s><s> i am writing an app for a customer and they want me to make sure the noone is able to download the .pbj files and decompile them. thanks please let me know if this is possible. 
+</s><s>nabil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4609015</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 8, 2012 11:46 PM">
+<s>it is possible to turn the pbj into agal, see the post above.</s><s> however, no one has done a pbj->pbk converter that i know of, and it would be quite difficult. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4609522</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="nabboull" timestamp="Aug 9, 2012 6:19 AM">
+<s>thanks kevin, i am sorry what is "agal" ?</s><s> adobe has not done a pbj->pbk converter is this official ?</s><s> thanks nabil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-4609981</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 9, 2012 8:54 AM">
+<s>sorry, i was thinking of pixel bender 3d, not pixel bender byte code.</s><s> there was never a pbj->pbk decompiler developed. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-2001945-5064345</DOCNO>
+<TEXT>
+<subject>White Hat PBJ Decompiling</subject>
+<post author="kennelbound" timestamp="Feb 11, 2013 9:49 AM">
+<s>not sure if this is still revelant, but the haxe community has written a decompiler for pbj files: 
+http://ncannasse.fr/blog/pixel_bender_assembler 
+hopefully that helps someone else who might be in the same boat! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5007293-1138172</DOCNO>
+<TEXT>
+<subject>Multiple Image inputs in Blendmode Shader</subject>
+<post author="intravenus" timestamp="Jan 19, 2013 1:17 PM">
+<s>i'm using 3 input images in a kernel destined to be used as a blendmode.shader.</s><s> as the documentation states, i have the background image as the first input, the foreground image (to whose bitmap i apply the blendmode) as the second input, and a third image which is to be used to transform the output colours.</s><s> the third image is passed to the shader by actionscript as per the documentation. 
+</s><s>the shader works as it should in the pb toolkit, and also if i use it in a shaderjob, but if i use it as a blendmode it breaks down and the third input image seems to be the problem. 
+</s><s>strangley, if i strip the shader of all code and leave only: 
+dst = samplenearest(thirdinputimage, outcoord()); 
+the output gets filled with a single colour and not the third image's pixels as would be expected. 
+</s><s>are there any known issues with using three or more input images that i may have overlooked? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-5007293-1138172</DOCNO>
+<TEXT>
+<subject>Multiple Image inputs in Blendmode Shader</subject>
+<post author="intravenus" timestamp="Jan 19, 2013 1:17 PM">
+<s>i'm using 3 input images in a kernel destined to be used as a blendmode.shader.</s><s> as the documentation states, i have the background image as the first input, the foreground image (to whose bitmap i apply the blendmode) as the second input, and a third image which is to be used to transform the output colours.</s><s> the third image is passed to the shader by actionscript as per the documentation. 
+</s><s>the shader works as it should in the pb toolkit, and also if i use it in a shaderjob, but if i use it as a blendmode it breaks down and the third input image seems to be the problem. 
+</s><s>strangley, if i strip the shader of all code and leave only: 
+dst = samplenearest(thirdinputimage, outcoord()); 
+the output gets filled with a single colour and not the third image's pixels as would be expected. 
+</s><s>are there any known issues with using three or more input images that i may have overlooked? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4976585-1131352</DOCNO>
+<TEXT>
+<subject>Is Pixel Bender Runtime engine available for 3rd Party Apps?</subject>
+<post author="willch0xxx0" timestamp="Jan 8, 2013 2:43 AM">
+<s>if pixel bender plugins are no longer supported by cs6, what other applications might use them? 
+</s><s>is the pixel bender runtime engine being made available so that bender plugins can be used by my own applications?</s><s> ( i'm developing an application in windows mfc / c++ for processing medical images) 
+</s><s>where can i get details about redistributing the pixel bender runtime engine + my bender plugins?</s><s> what licence restrictions exist? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4976585-1131352</DOCNO>
+<TEXT>
+<subject>Is Pixel Bender Runtime engine available for 3rd Party Apps?</subject>
+<post author="willch0xxx0" timestamp="Jan 8, 2013 2:43 AM">
+<s>if pixel bender plugins are no longer supported by cs6, what other applications might use them? 
+</s><s>is the pixel bender runtime engine being made available so that bender plugins can be used by my own applications?</s><s> ( i'm developing an application in windows mfc / c++ for processing medical images) 
+</s><s>where can i get details about redistributing the pixel bender runtime engine + my bender plugins?</s><s> what licence restrictions exist? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-988962</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="chauffeurdevan" timestamp="Apr 12, 2012 11:50 AM">
+<s>hi, 
+</s><s>i just read that pixel bender have been removed.</s><s> is it officially discontinued, or do you plan to add it back - for example as gpu accelerated - in the future ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-4395438</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="pvpcom20" timestamp="May 10, 2012 3:30 PM">
+<s>hi, 
+</s><s>i just noticed that my pixel bender plug-ins do not show up in the effects and presets area in my ae cs6.</s><s> i copied the *.pbg files into the plug-ins-directory of ae cs6. 
+</s><s>what's the problem here? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-4710776</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="Felix%20Dames" timestamp="Sep 19, 2012 9:55 AM">
+<s>it's a shame that adobe dropped pixel bender support for after effects cs6 & photoshop cs6! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-4976584</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="willch0xxx0" timestamp="Jan 8, 2013 2:40 AM">
+<s>if pixel bender plugins are no longer supported by cs6, what other applications might use them? 
+</s><s>is the pixel bender runtime engine being made available so that bender plugins can be used by my own applications?</s><s> ( i'm developing an application in windows mfc / c++ for processing medical images) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-988962</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="chauffeurdevan" timestamp="Apr 12, 2012 11:50 AM">
+<s>hi, 
+</s><s>i just read that pixel bender have been removed.</s><s> is it officially discontinued, or do you plan to add it back - for example as gpu accelerated - in the future ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-4395438</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="pvpcom20" timestamp="May 10, 2012 3:30 PM">
+<s>hi, 
+</s><s>i just noticed that my pixel bender plug-ins do not show up in the effects and presets area in my ae cs6.</s><s> i copied the *.pbg files into the plug-ins-directory of ae cs6. 
+</s><s>what's the problem here? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-4710776</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="Felix%20Dames" timestamp="Sep 19, 2012 9:55 AM">
+<s>it's a shame that adobe dropped pixel bender support for after effects cs6 & photoshop cs6! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4330710-4976584</DOCNO>
+<TEXT>
+<subject>Pixel Bender removed from AE CS6 !?</subject>
+<post author="willch0xxx0" timestamp="Jan 8, 2013 2:40 AM">
+<s>if pixel bender plugins are no longer supported by cs6, what other applications might use them? 
+</s><s>is the pixel bender runtime engine being made available so that bender plugins can be used by my own applications?</s><s> ( i'm developing an application in windows mfc / c++ for processing medical images) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4900281-1110664</DOCNO>
+<TEXT>
+<subject>where can I get the Pixel Bender2.6?</subject>
+<post author="wlx" timestamp="Dec 5, 2012 7:16 PM">
+<s>hi there,i note there's only pixel bender 2.5 on the page http://www.adobe.com/cn/devnet/pixelbender.html but in cs5.5 the pb has upgrade to 2.6, and for now where can i get the latest version?</s><s> what's the diferent from the 2.5? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4900281-1110664</DOCNO>
+<TEXT>
+<subject>where can I get the Pixel Bender2.6?</subject>
+<post author="wlx" timestamp="Dec 5, 2012 7:16 PM">
+<s>hi there,i note there's only pixel bender 2.5 on the page http://www.adobe.com/cn/devnet/pixelbender.html but in cs5.5 the pb has upgrade to 2.6, and for now where can i get the latest version?</s><s> what's the diferent from the 2.5? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-1049864</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="angie_tianshi" timestamp="Aug 15, 2012 3:47 AM">
+<s>i have adobe cs6 and adobe cs4.</s><s> in cs4 i installed pixel bender.</s><s> when i bought cs6 i tried to install pixel bender only to discover that it is not supported for cs6.</s><s> but since i tried to install it i get two error messages each time i open cs6.</s><s> the first says 'the procedure entry point _cgmdrawbuffersarb could not be located in the dyamic link library aif_ogl.dll' i can click on ok and the open procedure continues.</s><s> i then get a second error message which says 'the procedure entry point (very long file name) could not be located in the dynamic link library at aif_ogl.dll' .</s><s> i have tried a reinstall but this has had no effect (i didn't uninstall before doing this).</s><s> the program seems to be working ok - i have noticed no changes in its functions - but feel that i should rectify this if at all possible.</s><s> please could you help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4623624</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="angie_tianshi" timestamp="Aug 15, 2012 10:11 AM">
+<s>well in case anyone else has a similar problem i have solved it with the help of someone who is a computer buff.</s><s> i deleted the aif_ogl.dll file and all references to pixel bender from cs6, then re-installed from the cs6 dvd and this seems to have solved the problem.</s><s> cs6 now opens with no error messages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4623666</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 15, 2012 10:24 AM">
+<s>yes, the pixel bender plug in added some components to photoshop that are now part of cs6, so when you tried to install the plug-in, the new dlls were overwritten by old ones. 
+</s><s>sorry for the inconvenience. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4624260</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="angie_tianshi" timestamp="Aug 15, 2012 1:15 PM">
+<s>can i use pixel bender in cs6?</s><s> if so how?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4624696</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 15, 2012 4:47 PM">
+<s>no, sorry.</s><s> the pixel bender plug-in will not work with ps cs6. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4710775</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Felix%20Dames" timestamp="Sep 19, 2012 9:53 AM">
+<s>pixel bender support for after effects cs6 and photoshop cs6 were dropped so i consider pixel bender to be dead?</s><s>!</s><s> where is the benefit of programming effects/filters/shaders when you can't use them anymore in a professional environment? 
+</s><s>well i hope it is only temporarily that the support is dropped otherwise i'm really asking myself why on earth i learned the pixel bender language!</s><s> if it's true then this really was a waste of time! 
+</s><s>some clarification from adobe would be great. 
+</s><s>cheers, felix 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4874403</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Sabrina.Lynn" timestamp="Nov 26, 2012 8:25 AM">
+<s>will there be a pixel blender released for cs6? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-1049864</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="angie_tianshi" timestamp="Aug 15, 2012 3:47 AM">
+<s>i have adobe cs6 and adobe cs4.</s><s> in cs4 i installed pixel bender.</s><s> when i bought cs6 i tried to install pixel bender only to discover that it is not supported for cs6.</s><s> but since i tried to install it i get two error messages each time i open cs6.</s><s> the first says 'the procedure entry point _cgmdrawbuffersarb could not be located in the dyamic link library aif_ogl.dll' i can click on ok and the open procedure continues.</s><s> i then get a second error message which says 'the procedure entry point (very long file name) could not be located in the dynamic link library at aif_ogl.dll' .</s><s> i have tried a reinstall but this has had no effect (i didn't uninstall before doing this).</s><s> the program seems to be working ok - i have noticed no changes in its functions - but feel that i should rectify this if at all possible.</s><s> please could you help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4623624</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="angie_tianshi" timestamp="Aug 15, 2012 10:11 AM">
+<s>well in case anyone else has a similar problem i have solved it with the help of someone who is a computer buff.</s><s> i deleted the aif_ogl.dll file and all references to pixel bender from cs6, then re-installed from the cs6 dvd and this seems to have solved the problem.</s><s> cs6 now opens with no error messages. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4623666</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 15, 2012 10:24 AM">
+<s>yes, the pixel bender plug in added some components to photoshop that are now part of cs6, so when you tried to install the plug-in, the new dlls were overwritten by old ones. 
+</s><s>sorry for the inconvenience. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4624260</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="angie_tianshi" timestamp="Aug 15, 2012 1:15 PM">
+<s>can i use pixel bender in cs6?</s><s> if so how?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4624696</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Kevin%20Goldsmith" timestamp="Aug 15, 2012 4:47 PM">
+<s>no, sorry.</s><s> the pixel bender plug-in will not work with ps cs6. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4710775</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Felix%20Dames" timestamp="Sep 19, 2012 9:53 AM">
+<s>pixel bender support for after effects cs6 and photoshop cs6 were dropped so i consider pixel bender to be dead?</s><s>!</s><s> where is the benefit of programming effects/filters/shaders when you can't use them anymore in a professional environment? 
+</s><s>well i hope it is only temporarily that the support is dropped otherwise i'm really asking myself why on earth i learned the pixel bender language!</s><s> if it's true then this really was a waste of time! 
+</s><s>some clarification from adobe would be great. 
+</s><s>cheers, felix 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4622619-4874403</DOCNO>
+<TEXT>
+<subject>Error messages in CS6</subject>
+<post author="Sabrina.Lynn" timestamp="Nov 26, 2012 8:25 AM">
+<s>will there be a pixel blender released for cs6? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-847262</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="Pierre Yves GATOUILLAT" timestamp="May 4, 2011 3:24 AM">
+<s>i suppose pixel bender is not currently supported with the latest version of flash builder 4.5 including the packager for ios.</s><s> however i'm not sure as the contents of http://labs.adobe.com/wiki/index.php/packager_for_iphone:release_notes moved to http://www.adobe.com/products/air/tools/ ... or not :| 
+
+i tried to run a pb kernel through air on ipad but it didn't work.</s><s> it worked perfectly on desktop though.</s><s> so should pb work with air on ios ?</s><s> am i missing something ?</s><s> or does adobe plan to implement it later ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-3664379</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="AIF%20Bob" timestamp="May 8, 2011 3:08 PM">
+<s>pixel bender does not work with air on ios. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4512866</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="bonsai123" timestamp="Jun 21, 2012 11:07 PM">
+<s>any update on this?</s><s> what about pixel bender 3d that's on labs atm? 
+http://labs.adobe.com/technologies/pixelbender3d/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4515742</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="Pierre%20Yves%20GATOUILLAT" timestamp="Jun 23, 2012 7:02 AM">
+<s>pixel bender 3d is a completely different thing, it's basically the official high level shader language for stage3d if don't want to deal with agal, so it should run on ios.</s><s> however pixel bender "classic" is more useful for general purpose stuff, and always runs on the cpu (when it comes to flash at least), so i think it suffers from the same limitations as trying to execute abc code from an external swf file on ios: apple forbids the execution of non precompiled code (except js and maybe lua) on ios. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4516211</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="bonsai123" timestamp="Jun 23, 2012 4:54 PM">
+<s>cheers m8.. thanks for the info 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4817523</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="pierBover" timestamp="Nov 1, 2012 5:43 PM">
+<s>so it's not possible to create a custon blend mode in ios?</s><s> even with cpu render mode? 
+</s><s>according to the documentation it should work with cpu...</s><s> <quote>
+<s>blendmode.shader( "shader"): used to specify that a pixel bender shader is used to create a custom blending effect.</s><s> for more information about using shaders, see working with pixel bender shaders.</s><s> (not supported under gpu rendering.</s><s>) 
+
+</s></quote>http://help.adobe.com/en_us/as3/dev/ws5b3ccc516d4fbf351e63e3d118a9b902 04-7df1.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-847262</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="Pierre Yves GATOUILLAT" timestamp="May 4, 2011 3:24 AM">
+<s>i suppose pixel bender is not currently supported with the latest version of flash builder 4.5 including the packager for ios.</s><s> however i'm not sure as the contents of http://labs.adobe.com/wiki/index.php/packager_for_iphone:release_notes moved to http://www.adobe.com/products/air/tools/ ... or not :| 
+
+i tried to run a pb kernel through air on ipad but it didn't work.</s><s> it worked perfectly on desktop though.</s><s> so should pb work with air on ios ?</s><s> am i missing something ?</s><s> or does adobe plan to implement it later ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-3664379</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="AIF%20Bob" timestamp="May 8, 2011 3:08 PM">
+<s>pixel bender does not work with air on ios. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4512866</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="bonsai123" timestamp="Jun 21, 2012 11:07 PM">
+<s>any update on this?</s><s> what about pixel bender 3d that's on labs atm? 
+http://labs.adobe.com/technologies/pixelbender3d/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4515742</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="Pierre%20Yves%20GATOUILLAT" timestamp="Jun 23, 2012 7:02 AM">
+<s>pixel bender 3d is a completely different thing, it's basically the official high level shader language for stage3d if don't want to deal with agal, so it should run on ios.</s><s> however pixel bender "classic" is more useful for general purpose stuff, and always runs on the cpu (when it comes to flash at least), so i think it suffers from the same limitations as trying to execute abc code from an external swf file on ios: apple forbids the execution of non precompiled code (except js and maybe lua) on ios. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4516211</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="bonsai123" timestamp="Jun 23, 2012 4:54 PM">
+<s>cheers m8.. thanks for the info 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-3654780-4817523</DOCNO>
+<TEXT>
+<subject>Pixel Bender with AIR on iOS</subject>
+<post author="pierBover" timestamp="Nov 1, 2012 5:43 PM">
+<s>so it's not possible to create a custon blend mode in ios?</s><s> even with cpu render mode? 
+</s><s>according to the documentation it should work with cpu...</s><s> <quote>
+<s>blendmode.shader( "shader"): used to specify that a pixel bender shader is used to create a custom blending effect.</s><s> for more information about using shaders, see working with pixel bender shaders.</s><s> (not supported under gpu rendering.</s><s>) 
+
+</s></quote>http://help.adobe.com/en_us/as3/dev/ws5b3ccc516d4fbf351e63e3d118a9b902 04-7df1.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4815568-1091865</DOCNO>
+<TEXT>
+<subject>When i open pixel bender, photoshop crashes and closes</subject>
+<post author="chikpo" timestamp="Nov 1, 2012 5:11 AM">
+<s>hi, i really need help, i been spending hours trying to fix it when i open pixel bender, photoshop crashes and closes.</s><s> i went to edit>preferances> performace and looked at the gpu setting, it gives a small message at the bottom but i dont know what it means.</s><s> i cant also click on advanced settings as photoshop would also crash 
+please help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4815568-1091865</DOCNO>
+<TEXT>
+<subject>When i open pixel bender, photoshop crashes and closes</subject>
+<post author="chikpo" timestamp="Nov 1, 2012 5:11 AM">
+<s>hi, i really need help, i been spending hours trying to fix it when i open pixel bender, photoshop crashes and closes.</s><s> i went to edit>preferances> performace and looked at the gpu setting, it gives a small message at the bottom but i dont know what it means.</s><s> i cant also click on advanced settings as photoshop would also crash 
+please help 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-950523</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="imc_markmcclung" timestamp="Jan 17, 2012 1:31 AM">
+<s>hello 
+</s><s>cant some one please help me.</s><s> i have a mac with photoshop cs5 and i am trying to install the pixel bender plugin and every time i try i keep getting the message 'this extension can not be installed, it requires 32bit photoshop version in range of inclusively between 12.0 and 12.0.' 
+i have also tried all the other versions available but keep getting the same message. 
+</s><s>any ideas? 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4431906</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="Meepsia" timestamp="May 23, 2012 2:36 AM">
+<s>i unfortunately can't help you.</s><s> but i get the same problem on a windows pc so you are not alone.</s><s> help, please?</s><s> sorry for yelling - but i would really love to try out this nifty plug-in love meeps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4440790</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="QVisionStudios.com" timestamp="May 25, 2012 9:17 PM">
+<s>i get the same message.</s><s> installing as admin through adobe extension manager.</s><s> my cs5 (win7-64bit) is up to date.</s><s> using photoshop extended v12.0 64bit.</s><s> i've got the the 64bit version of pb - tried the v5 and v5.1 - no luck.</s><s> so i'm guessing pixelbender only installs on the non-extended version for some reason.</s><s> so i'll yell help along with you and hopefully someone can hear us! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4531523</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="CK_Student" timestamp="Jul 1, 2012 5:49 AM">
+<s>me 4 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4598085</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="Meepsia" timestamp="Aug 4, 2012 4:44 AM">
+<s>yes!</s><s> i found a solution and it at least works for me 
+go this page: http://www.adobe.com/devnet/pixelbender.html and download the toolkit to your desktop.</s><s> open the zip-file and run the program.</s><s> then go back and try to install pixelbender again. 
+</s><s>that worked for me 
+and i wish you the best of luck with it too 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4811162</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="kh.Qasimirfan" timestamp="Oct 30, 2012 10:03 AM">
+<s>i downloaded this toolkit but it also gave an error saying this cant be installed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-950523</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="imc_markmcclung" timestamp="Jan 17, 2012 1:31 AM">
+<s>hello 
+</s><s>cant some one please help me.</s><s> i have a mac with photoshop cs5 and i am trying to install the pixel bender plugin and every time i try i keep getting the message 'this extension can not be installed, it requires 32bit photoshop version in range of inclusively between 12.0 and 12.0.' 
+i have also tried all the other versions available but keep getting the same message. 
+</s><s>any ideas? 
+</s><s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4431906</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="Meepsia" timestamp="May 23, 2012 2:36 AM">
+<s>i unfortunately can't help you.</s><s> but i get the same problem on a windows pc so you are not alone.</s><s> help, please?</s><s> sorry for yelling - but i would really love to try out this nifty plug-in love meeps 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4440790</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="QVisionStudios.com" timestamp="May 25, 2012 9:17 PM">
+<s>i get the same message.</s><s> installing as admin through adobe extension manager.</s><s> my cs5 (win7-64bit) is up to date.</s><s> using photoshop extended v12.0 64bit.</s><s> i've got the the 64bit version of pb - tried the v5 and v5.1 - no luck.</s><s> so i'm guessing pixelbender only installs on the non-extended version for some reason.</s><s> so i'll yell help along with you and hopefully someone can hear us! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4531523</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="CK_Student" timestamp="Jul 1, 2012 5:49 AM">
+<s>me 4 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4598085</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="Meepsia" timestamp="Aug 4, 2012 4:44 AM">
+<s>yes!</s><s> i found a solution and it at least works for me 
+go this page: http://www.adobe.com/devnet/pixelbender.html and download the toolkit to your desktop.</s><s> open the zip-file and run the program.</s><s> then go back and try to install pixelbender again. 
+</s><s>that worked for me 
+and i wish you the best of luck with it too 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4145716-4811162</DOCNO>
+<TEXT>
+<subject>Cant install Pixel bender</subject>
+<post author="kh.Qasimirfan" timestamp="Oct 30, 2012 10:03 AM">
+<s>i downloaded this toolkit but it also gave an error saying this cant be installed 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4555634-1035931</DOCNO>
+<TEXT>
+<subject>Where are the good times when you sent a question to tech-support.</subject>
+<post author="heimo-erich" timestamp="Jul 13, 2012 4:42 AM">
+<s>today it appears, that support it sleeping and reduced to the knowledge how to handle a cash dispensing machine... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4555634-1035931</DOCNO>
+<TEXT>
+<subject>Where are the good times when you sent a question to tech-support.</subject>
+<post author="heimo-erich" timestamp="Jul 13, 2012 4:42 AM">
+<s>today it appears, that support it sleeping and reduced to the knowledge how to handle a cash dispensing machine... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4484184-1021406</DOCNO>
+<TEXT>
+<subject>sampleLinear doesn't work when scaling outCoord using ByteArray or Vector.<Number></subject>
+<post author="rawhedrawhed" timestamp="Jun 11, 2012 3:32 PM">
+<s>hi, 
+</s><s>i think i've found a bug in pixel bender that's so far been missed. 
+</s><s>if you want to upsample a buffer using a shaderjob and bytearray/vector.<number> it doesn't work with samplelinear, only samplenearest.</s><s> using samplelinear it returns a buffer with mostly black pixels but with every 2nd pixel (for upsampling to a double sized buffer) written to.</s><s> so basically it looks like it's upsampling but only writing to some of the target pixels... 
+btw, i'm talking about in flash here.</s><s> and i need to use bytearray/vector.<number> instead of bitmapdata as i need to process 32-bit data. 
+</s><s>strangely it works in the pb toolkit in all of the modes (gpu, cpu, flash). 
+am i doing something wrong or is this a known issue? 
+</s><s>here's my sample code: 
+package { import flash.display.bitmap; import flash.display.bitmapdata; import flash.display.shader; import flash.display.shaderjob; import flash.display.shaderprecision; import flash.display.sprite; import flash.display.stagequality; import flash.geom.vector3d; import flash.utils.bytearray; import flash.utils.endian; import flash.utils.timer; 
+public class test_upscale extends sprite { [embed ( source = "../data/embed/pixelbender/bilinearresample.pbj", mimetype = "application/octet-stream" ) ] private var bilinearscalingkernel:class; 
+public function test_upscale() { const srcwidth:int = 256; const srcheight:int = 256; const dstwidth:int = 256; const dstheight:int = 256; 
+this.stage.quality = stagequality.best; 
+// create noise input buffer var input:bytearray = new bytearray(); input.endian = endian.little_endian; input.length = srcwidth * srcheight * 4 * 4; for (var i:int = 0; i < srcwidth*srcheight; i++) { var val:int = math.random() * 255.0; input.writefloat(val); input.writefloat(val); input.writefloat(val); input.writefloat(255.0); } input.position = 0; 
+// create output buffer var output:bytearray = new bytearray(); output.endian = endian.little_endian; output.length = dstwidth * dstheight * 4 * 4; 
+
+// resample resample(input, srcwidth, srcheight, dstwidth, dstheight, output); 
+// display as a bitmap this.addchild(new bitmap(tobitmap(dstwidth, dstheight, output) )); } 
+private static function tobitmap(width:int, height:int, data:bytearray):bitmapdata { data.position = 0; 
+var bmp:bitmapdata = new bitmapdata(width, height, false); var idx:int = 0; for (var j:int = 0; j < height; j++) { for (var i:int = 0; i < width; i++) { var r:int = data.readfloat() as int; var g:int = data.readfloat() as int; var b:int = data.readfloat() as int; data.readfloat(); var c:int = r + (g << 8) + (b << 16); bmp.setpixel(i, j, c); idx++; } } 
+return bmp; } 
+public function resample(src:bytearray, srcwidth:int, srcheight:int, dstwidth:int, dstheight:int, dst:bytearray):void { // create and configure a shader object var shader:shader = new shader(); shader.precisionhint =shaderprecision.full; shader.bytecode = new bilinearscalingkernel(); shader.data.src.input = src; shader.data.src.width = srcwidth; shader.data.src.height = srcheight; shader.data.scaley.value = [0.5]; 
+
+var job:shaderjob = new shaderjob(shader, dst, dstwidth, dstheight); 
+job.start(true); // true flag runs the job synchronously.</s><s> } } } 
+
+
+
+
+</s><s><languageversion : 1.0;> kernel bilinearresample < namespace : "com.test.pixelbender"; vendor : "me"; version : 1; description : "bilinear"; > { input image4 src; output pixel4 dst;  parameter float scaley;  void evaluatepixel() { dst = samplelinear(src, outcoord() * float2(scaley, scaley)); // bilinear scaling } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4484184-4488738</DOCNO>
+<TEXT>
+<subject>sampleLinear doesn't work when scaling outCoord using ByteArray or Vector.<Number></subject>
+<post author="rawhedrawhed" timestamp="Jun 13, 2012 5:47 AM">
+<s>my bad...   pixel bender is fine, the bug was in my code that converts the floats back to a bitmapdata it seems that       var r:int = data.readfloat() as int;   does something strange..</s><s> if i just remove the "as int" it works fine...  still not sure why though   -andrew
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4484184-1021406</DOCNO>
+<TEXT>
+<subject>sampleLinear doesn't work when scaling outCoord using ByteArray or Vector.<Number></subject>
+<post author="rawhedrawhed" timestamp="Jun 11, 2012 3:32 PM">
+<s>hi, 
+</s><s>i think i've found a bug in pixel bender that's so far been missed. 
+</s><s>if you want to upsample a buffer using a shaderjob and bytearray/vector.<number> it doesn't work with samplelinear, only samplenearest.</s><s> using samplelinear it returns a buffer with mostly black pixels but with every 2nd pixel (for upsampling to a double sized buffer) written to.</s><s> so basically it looks like it's upsampling but only writing to some of the target pixels... 
+btw, i'm talking about in flash here.</s><s> and i need to use bytearray/vector.<number> instead of bitmapdata as i need to process 32-bit data. 
+</s><s>strangely it works in the pb toolkit in all of the modes (gpu, cpu, flash). 
+am i doing something wrong or is this a known issue? 
+</s><s>here's my sample code: 
+package { import flash.display.bitmap; import flash.display.bitmapdata; import flash.display.shader; import flash.display.shaderjob; import flash.display.shaderprecision; import flash.display.sprite; import flash.display.stagequality; import flash.geom.vector3d; import flash.utils.bytearray; import flash.utils.endian; import flash.utils.timer; 
+public class test_upscale extends sprite { [embed ( source = "../data/embed/pixelbender/bilinearresample.pbj", mimetype = "application/octet-stream" ) ] private var bilinearscalingkernel:class; 
+public function test_upscale() { const srcwidth:int = 256; const srcheight:int = 256; const dstwidth:int = 256; const dstheight:int = 256; 
+this.stage.quality = stagequality.best; 
+// create noise input buffer var input:bytearray = new bytearray(); input.endian = endian.little_endian; input.length = srcwidth * srcheight * 4 * 4; for (var i:int = 0; i < srcwidth*srcheight; i++) { var val:int = math.random() * 255.0; input.writefloat(val); input.writefloat(val); input.writefloat(val); input.writefloat(255.0); } input.position = 0; 
+// create output buffer var output:bytearray = new bytearray(); output.endian = endian.little_endian; output.length = dstwidth * dstheight * 4 * 4; 
+
+// resample resample(input, srcwidth, srcheight, dstwidth, dstheight, output); 
+// display as a bitmap this.addchild(new bitmap(tobitmap(dstwidth, dstheight, output) )); } 
+private static function tobitmap(width:int, height:int, data:bytearray):bitmapdata { data.position = 0; 
+var bmp:bitmapdata = new bitmapdata(width, height, false); var idx:int = 0; for (var j:int = 0; j < height; j++) { for (var i:int = 0; i < width; i++) { var r:int = data.readfloat() as int; var g:int = data.readfloat() as int; var b:int = data.readfloat() as int; data.readfloat(); var c:int = r + (g << 8) + (b << 16); bmp.setpixel(i, j, c); idx++; } } 
+return bmp; } 
+public function resample(src:bytearray, srcwidth:int, srcheight:int, dstwidth:int, dstheight:int, dst:bytearray):void { // create and configure a shader object var shader:shader = new shader(); shader.precisionhint =shaderprecision.full; shader.bytecode = new bilinearscalingkernel(); shader.data.src.input = src; shader.data.src.width = srcwidth; shader.data.src.height = srcheight; shader.data.scaley.value = [0.5]; 
+
+var job:shaderjob = new shaderjob(shader, dst, dstwidth, dstheight); 
+job.start(true); // true flag runs the job synchronously.</s><s> } } } 
+
+
+
+
+</s><s><languageversion : 1.0;> kernel bilinearresample < namespace : "com.test.pixelbender"; vendor : "me"; version : 1; description : "bilinear"; > { input image4 src; output pixel4 dst;  parameter float scaley;  void evaluatepixel() { dst = samplelinear(src, outcoord() * float2(scaley, scaley)); // bilinear scaling } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4484184-4488738</DOCNO>
+<TEXT>
+<subject>sampleLinear doesn't work when scaling outCoord using ByteArray or Vector.<Number></subject>
+<post author="rawhedrawhed" timestamp="Jun 13, 2012 5:47 AM">
+<s>my bad...   pixel bender is fine, the bug was in my code that converts the floats back to a bitmapdata it seems that       var r:int = data.readfloat() as int;   does something strange..</s><s> if i just remove the "as int" it works fine...  still not sure why though   -andrew
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4447032-1013376</DOCNO>
+<TEXT>
+<subject>The maximal input pixel per side square seems to be fixed by the graphics card, right?</subject>
+<post author="heimo-erich" timestamp="May 29, 2012 3:23 AM">
+<s>up to now i found no way to increase input image pixel number on longest side.</s><s> on some systems my input was restricted to 1024, on others to 4000.</s><s> since i can decide to use cpu instead of gpu, on board graphics card memory shoud not be the issue?</s><s> (btw pb works great, both as standalone or plug-in in cs5) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4447032-1013376</DOCNO>
+<TEXT>
+<subject>The maximal input pixel per side square seems to be fixed by the graphics card, right?</subject>
+<post author="heimo-erich" timestamp="May 29, 2012 3:23 AM">
+<s>up to now i found no way to increase input image pixel number on longest side.</s><s> on some systems my input was restricted to 1024, on others to 4000.</s><s> since i can decide to use cpu instead of gpu, on board graphics card memory shoud not be the issue?</s><s> (btw pb works great, both as standalone or plug-in in cs5) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4432126-1010126</DOCNO>
+<TEXT>
+<subject>Pixel Bender and Stage3D (Stage Video, Starling, etc)</subject>
+<post author="daniel_sedlacek" timestamp="May 23, 2012 4:36 AM">
+<s>maybne this is a silly question but i failed to google the answer: how does pixel bender combine with stage3d? 
+</s><s>specifically: 
+</s><s>do pixel bender filters work on top of hw accelerated video? 
+</s><s>do pixel bender filters work on top of starling viewport? 
+</s><s>thanks daniel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4432126-1010126</DOCNO>
+<TEXT>
+<subject>Pixel Bender and Stage3D (Stage Video, Starling, etc)</subject>
+<post author="daniel_sedlacek" timestamp="May 23, 2012 4:36 AM">
+<s>maybne this is a silly question but i failed to google the answer: how does pixel bender combine with stage3d? 
+</s><s>specifically: 
+</s><s>do pixel bender filters work on top of hw accelerated video? 
+</s><s>do pixel bender filters work on top of starling viewport? 
+</s><s>thanks daniel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4399405-1003124</DOCNO>
+<TEXT>
+<subject>Odd PB alpha handling in Flash</subject>
+<post author="John Blackburne" timestamp="May 11, 2012 3:42 PM">
+<s>i encountered an odd problem with a shader i wrote this week.</s><s> i eventually achieved the effect another way but came back to it today to try and work out what was happening, and it's even odder than i thought. 
+</s><s>my test shader is as follows 
+float2 relativepos = outcoord(); pixel4 incol = samplenearest(oimage, relativepos); dst = pixel4(0.5, relativepos.x * 0.005, relativepos.y * 0.005, incol.w); 
+all it does is generates a colour and combines it with the alpha of the source image.</s><s> the problem is this seems to produce odd results for intermediate alpha values: they seem often to get greyer.</s><s> so i wrote an app to test it.</s><s> the app is here 
+http://wonderfl.net/c/dlhh 
+and all it does is generate a bitmap with a lot of alpha and no colour (at left) then uses applyfilter to generate another bitmap (at right).</s><s> although the pattern is roughly preserved the intermediate alpha values look very odd.</s><s> looking closely there are distinct grey borders around the holes e.g. at the right. 
+
+</s><s>this is a simple test case to highlight the problem but it's apparent and obvious in much less extreme images.</s><s> it's noticable in the toolkit too, althogh harder to spot against its background. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4399405-4399684</DOCNO>
+<TEXT>
+<subject>Odd PB alpha handling in Flash</subject>
+<post author="Kevin%20Goldsmith" timestamp="May 11, 2012 5:23 PM">
+<s>images in flash have their alphas pre-multiplied before being handed to pixel bender for processing, this would account for what you are seeing, i think. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4399405-4400448</DOCNO>
+<TEXT>
+<subject>Odd PB alpha handling in Flash</subject>
+<post author="John%20Blackburne" timestamp="May 12, 2012 4:46 AM">
+<s>it does, sort of.</s><s> i think i know what's going on now. 
+i don't care about the input side of it: i'm only using the alpha of the input image, not the colour, so any premultiplication is being disregarded.</s><s> i can throw away the input alpha entirely and it still happens with a shader-generated alpha.</s><s> whatever it is is happening on output. 
+</s><s>it seems it's also scaling the output, attempting to reverse the pre-multiplication so a pass-thru filter 
+dst = samplenearest(oimage, relativepos); 
+would have no effect.</s><s> to undo this i need to do the following 
+float2 relativepos = outcoord(); pixel4 incol = samplenearest(oimage, relativepos); float fa = incol.a; dst = pixel4(0.0, relativepos.x * 0.005 * fa, relativepos.y * 0.005 * fa, fa); 
+i.e. multiply each channel by the alpha which seems to work. 
+i can't see this documented anywhere but the toolkit provides a clue: the preferences have a 'premultiply/unmultiply color by alpha' which says "flash player premultiplies each color by the alpha channel.</s><s> with this option checked, you will get a better approximation of running in flash player." except it seems to do nothing and be always on.</s><s> after that a bit of experimentation suggested what unmultiplying is. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4399405-1003124</DOCNO>
+<TEXT>
+<subject>Odd PB alpha handling in Flash</subject>
+<post author="John Blackburne" timestamp="May 11, 2012 3:42 PM">
+<s>i encountered an odd problem with a shader i wrote this week.</s><s> i eventually achieved the effect another way but came back to it today to try and work out what was happening, and it's even odder than i thought. 
+</s><s>my test shader is as follows 
+float2 relativepos = outcoord(); pixel4 incol = samplenearest(oimage, relativepos); dst = pixel4(0.5, relativepos.x * 0.005, relativepos.y * 0.005, incol.w); 
+all it does is generates a colour and combines it with the alpha of the source image.</s><s> the problem is this seems to produce odd results for intermediate alpha values: they seem often to get greyer.</s><s> so i wrote an app to test it.</s><s> the app is here 
+http://wonderfl.net/c/dlhh 
+and all it does is generate a bitmap with a lot of alpha and no colour (at left) then uses applyfilter to generate another bitmap (at right).</s><s> although the pattern is roughly preserved the intermediate alpha values look very odd.</s><s> looking closely there are distinct grey borders around the holes e.g. at the right. 
+
+</s><s>this is a simple test case to highlight the problem but it's apparent and obvious in much less extreme images.</s><s> it's noticable in the toolkit too, althogh harder to spot against its background. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4399405-4399684</DOCNO>
+<TEXT>
+<subject>Odd PB alpha handling in Flash</subject>
+<post author="Kevin%20Goldsmith" timestamp="May 11, 2012 5:23 PM">
+<s>images in flash have their alphas pre-multiplied before being handed to pixel bender for processing, this would account for what you are seeing, i think. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4399405-4400448</DOCNO>
+<TEXT>
+<subject>Odd PB alpha handling in Flash</subject>
+<post author="John%20Blackburne" timestamp="May 12, 2012 4:46 AM">
+<s>it does, sort of.</s><s> i think i know what's going on now. 
+i don't care about the input side of it: i'm only using the alpha of the input image, not the colour, so any premultiplication is being disregarded.</s><s> i can throw away the input alpha entirely and it still happens with a shader-generated alpha.</s><s> whatever it is is happening on output. 
+</s><s>it seems it's also scaling the output, attempting to reverse the pre-multiplication so a pass-thru filter 
+dst = samplenearest(oimage, relativepos); 
+would have no effect.</s><s> to undo this i need to do the following 
+float2 relativepos = outcoord(); pixel4 incol = samplenearest(oimage, relativepos); float fa = incol.a; dst = pixel4(0.0, relativepos.x * 0.005 * fa, relativepos.y * 0.005 * fa, fa); 
+i.e. multiply each channel by the alpha which seems to work. 
+i can't see this documented anywhere but the toolkit provides a clue: the preferences have a 'premultiply/unmultiply color by alpha' which says "flash player premultiplies each color by the alpha channel.</s><s> with this option checked, you will get a better approximation of running in flash player." except it seems to do nothing and be always on.</s><s> after that a bit of experimentation suggested what unmultiplying is. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-995530</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="Apr 25, 2012 9:33 PM">
+<s>i am new to pixelbender.</s><s> i have looked at it many times in the last few years, but i can understand how it works. 
+i want to compare a large number of images and i would like to try pixelbender to create a filter that does the same thing as the i think pb should be faster. 
+</s><s>also, i want to create a filter equivalent to the as3 bitmapdata threshold() method. 
+</s><s>any suggestions on how i can do those 2 filters? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4364240</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="Apr 26, 2012 5:18 PM">
+<s>i experimented a little trying to do the equivalent of a bitmapdata.compare() in pixel bender by writing it as: 
+<languageversion : 1.0;> 
+
+kernel compare1 < namespace : "your namespace"; vendor : "your vendor"; version : 1; > { input image4 src; input image4 src2; output pixel4 dst; 
+
+void evaluatepixel() { pixel4 color = samplenearest(src, outcoord()); pixel4 color2 = samplenearest(src2, outcoord());  
+
+if (color == color2) { dst = float4(0.0, 0.0, 0.0, 0.0); } else{ dst = float4(1.0,1.0,1.0,1.0); }  } } 
+</s><s>it kind of work when selecting gpu, but when selecting flash as the way to run it, it produced a different result (and not at all what i was expecting).</s><s> only it seems to work ok when the pixels on both images are either black or white. 
+</s><s>any ideas why this is not working?</s><s> and off course any suggestions on how to create a filter that does something similar to bitmapdata threshold are welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4379990</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="AIF%20Chuck" timestamp="May 4, 2012 11:27 AM">
+<s>i tried a few different formulations with the pixel bender toolkit and you're right that something is wonky.</s><s> i think the scaling in the toolkit might be the issue rather than the flash code itself.</s><s> it appears to treat the first and second images differently, which is a bug. 
+</s><s>have you tried running your filter in a flash program, rather than via the toolkit? 
+</s><s>thanks, chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4380110</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="May 4, 2012 12:32 PM">
+<s>chuck, 
+</s><s>i run the the filter ina a flash program getting a different result that the one i expected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4380178</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="AIF%20Chuck" timestamp="May 4, 2012 1:23 PM">
+<s>can you post the actionscript you are using?</s><s> the flash pathway in the pixelbender toolkit seems to be broken for this scenario, but i may be able to debug via your program. 
+</s><s>thanks, chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4380436</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="May 4, 2012 3:45 PM">
+<s>chuck here is the code.</s><s> the images are created dynamically for the test. 
+<?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <s:application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" creationcomplete="init()"> <fx:declarations> <!-- place non-visual elements (e.g., services, value objects) here --> </fx:declarations> 
+<fx:script> <!</s><s>[cdata[ import flash.display.bitmap; import flash.display.bitmapdata; import flash.display.shader; import flash.display.shaderjob; import flash.geom.rectangle; import flash.utils.gettimer; 
+import utils.bitmapsaver; import utils.compareshader; 
+private var initialtime : int; private var loadcomplete : int; private var scale:number = 10; private var outputbitmapdata:bitmapdata; [bindable] private var img:bitmap; 
+[embed(source = 'compare.pbj', mimetype = 'application/octet-stream')] private var testshader:class; 
+private function init():void { var mybitmapdata:bitmapdata = new bitmapdata(400*scale, 400*scale, false, 0x00ff00); outputbitmapdata = new bitmapdata(mybitmapdata.width, mybitmapdata.height); 
+var rect:rectangle = new rectangle(100*scale, 100*scale, 120*scale, 120*scale); mybitmapdata.fillrect(rect, 0xff0000); 
+var bm:bitmap = new bitmap(mybitmapdata); a.source =bm; 
+var bd2:bitmapdata = new bitmapdata(400*scale, 400*scale, false, 0x00ff00); rect = new rectangle(180*scale, 180*scale, 80*scale, 80*scale); bd2.fillrect(rect, 0xff0000); 
+var bm2:bitmap = new bitmap(bd2); b.source=bm2; 
+initialtime = gettimer(); var diffbmpdata:bitmapdata = mybitmapdata.compare(bd2) as bitmapdata; var r:bitmap = new bitmap(diffbmpdata); c.source=r; 
+
+loadcomplete = gettimer(); msg.text = "process time: " + (loadcomplete - initialtime) + "ms - - no. pixels processed: " + string((400*scale)*(400*scale)); 
+initialtime = gettimer(); 
+
+var myshader:shader = new shader(new testshader() as bytearray); myshader.data.src.input = mybitmapdata; myshader.data.src2.input = bd2; 
+//create the shaderjob var myjob:shaderjob = new shaderjob(myshader, outputbitmapdata); myjob.addeventlistener(shaderevent.complete, oncomplete); //needed if passing the true parameter on myjob.start(); //and run it!</s><s> myjob.start(); img = new bitmap(outputbitmapdata); 
+loadcomplete = gettimer(); msg.text += "\nprocess time with shader: " + (loadcomplete - initialtime) + "ms"; 
+} 
+private function oncomplete(e:shaderevent):void { img = new bitmap(outputbitmapdata); loadcomplete = gettimer(); msg.text += "\nprocess time with shader: " + (loadcomplete - initialtime) + "ms"; } 
+private function saveimg(img:image):void { var tbs:bitmapsaver = new bitmapsaver(); tbs.savepng(img); } 
+]]> </fx:script> <s:hgroup width="100%" height="100%" > <s:image id="a" width="400" height="400" click="saveimg(a)"/> <s:image id="b" width="400" height="400" click="saveimg(b)"/> <s:image id="c" width="400" height="400" /> <s:image id="d" width="400" height="400" source="{img}" click="saveimg(d)"/> </s:hgroup> <s:label id="msg" width="100%" y="450" /> 
+</s:application> 
+</s><s>gilbert 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-995530</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="Apr 25, 2012 9:33 PM">
+<s>i am new to pixelbender.</s><s> i have looked at it many times in the last few years, but i can understand how it works. 
+i want to compare a large number of images and i would like to try pixelbender to create a filter that does the same thing as the i think pb should be faster. 
+</s><s>also, i want to create a filter equivalent to the as3 bitmapdata threshold() method. 
+</s><s>any suggestions on how i can do those 2 filters? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4364240</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="Apr 26, 2012 5:18 PM">
+<s>i experimented a little trying to do the equivalent of a bitmapdata.compare() in pixel bender by writing it as: 
+<languageversion : 1.0;> 
+
+kernel compare1 < namespace : "your namespace"; vendor : "your vendor"; version : 1; > { input image4 src; input image4 src2; output pixel4 dst; 
+
+void evaluatepixel() { pixel4 color = samplenearest(src, outcoord()); pixel4 color2 = samplenearest(src2, outcoord());  
+
+if (color == color2) { dst = float4(0.0, 0.0, 0.0, 0.0); } else{ dst = float4(1.0,1.0,1.0,1.0); }  } } 
+</s><s>it kind of work when selecting gpu, but when selecting flash as the way to run it, it produced a different result (and not at all what i was expecting).</s><s> only it seems to work ok when the pixels on both images are either black or white. 
+</s><s>any ideas why this is not working?</s><s> and off course any suggestions on how to create a filter that does something similar to bitmapdata threshold are welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4379990</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="AIF%20Chuck" timestamp="May 4, 2012 11:27 AM">
+<s>i tried a few different formulations with the pixel bender toolkit and you're right that something is wonky.</s><s> i think the scaling in the toolkit might be the issue rather than the flash code itself.</s><s> it appears to treat the first and second images differently, which is a bug. 
+</s><s>have you tried running your filter in a flash program, rather than via the toolkit? 
+</s><s>thanks, chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4380110</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="May 4, 2012 12:32 PM">
+<s>chuck, 
+</s><s>i run the the filter ina a flash program getting a different result that the one i expected. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4380178</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="AIF%20Chuck" timestamp="May 4, 2012 1:23 PM">
+<s>can you post the actionscript you are using?</s><s> the flash pathway in the pixelbender toolkit seems to be broken for this scenario, but i may be able to debug via your program. 
+</s><s>thanks, chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4362075-4380436</DOCNO>
+<TEXT>
+<subject>How to create a filter to do a bitmapdata compare and another to do a threshold?</subject>
+<post author="Gil1" timestamp="May 4, 2012 3:45 PM">
+<s>chuck here is the code.</s><s> the images are created dynamically for the test. 
+<?</s><s>xml version="1.0" encoding="utf-8"?</s><s>> <s:application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/mx" width="100%" height="100%" creationcomplete="init()"> <fx:declarations> <!-- place non-visual elements (e.g., services, value objects) here --> </fx:declarations> 
+<fx:script> <!</s><s>[cdata[ import flash.display.bitmap; import flash.display.bitmapdata; import flash.display.shader; import flash.display.shaderjob; import flash.geom.rectangle; import flash.utils.gettimer; 
+import utils.bitmapsaver; import utils.compareshader; 
+private var initialtime : int; private var loadcomplete : int; private var scale:number = 10; private var outputbitmapdata:bitmapdata; [bindable] private var img:bitmap; 
+[embed(source = 'compare.pbj', mimetype = 'application/octet-stream')] private var testshader:class; 
+private function init():void { var mybitmapdata:bitmapdata = new bitmapdata(400*scale, 400*scale, false, 0x00ff00); outputbitmapdata = new bitmapdata(mybitmapdata.width, mybitmapdata.height); 
+var rect:rectangle = new rectangle(100*scale, 100*scale, 120*scale, 120*scale); mybitmapdata.fillrect(rect, 0xff0000); 
+var bm:bitmap = new bitmap(mybitmapdata); a.source =bm; 
+var bd2:bitmapdata = new bitmapdata(400*scale, 400*scale, false, 0x00ff00); rect = new rectangle(180*scale, 180*scale, 80*scale, 80*scale); bd2.fillrect(rect, 0xff0000); 
+var bm2:bitmap = new bitmap(bd2); b.source=bm2; 
+initialtime = gettimer(); var diffbmpdata:bitmapdata = mybitmapdata.compare(bd2) as bitmapdata; var r:bitmap = new bitmap(diffbmpdata); c.source=r; 
+
+loadcomplete = gettimer(); msg.text = "process time: " + (loadcomplete - initialtime) + "ms - - no. pixels processed: " + string((400*scale)*(400*scale)); 
+initialtime = gettimer(); 
+
+var myshader:shader = new shader(new testshader() as bytearray); myshader.data.src.input = mybitmapdata; myshader.data.src2.input = bd2; 
+//create the shaderjob var myjob:shaderjob = new shaderjob(myshader, outputbitmapdata); myjob.addeventlistener(shaderevent.complete, oncomplete); //needed if passing the true parameter on myjob.start(); //and run it!</s><s> myjob.start(); img = new bitmap(outputbitmapdata); 
+loadcomplete = gettimer(); msg.text += "\nprocess time with shader: " + (loadcomplete - initialtime) + "ms"; 
+} 
+private function oncomplete(e:shaderevent):void { img = new bitmap(outputbitmapdata); loadcomplete = gettimer(); msg.text += "\nprocess time with shader: " + (loadcomplete - initialtime) + "ms"; } 
+private function saveimg(img:image):void { var tbs:bitmapsaver = new bitmapsaver(); tbs.savepng(img); } 
+]]> </fx:script> <s:hgroup width="100%" height="100%" > <s:image id="a" width="400" height="400" click="saveimg(a)"/> <s:image id="b" width="400" height="400" click="saveimg(b)"/> <s:image id="c" width="400" height="400" /> <s:image id="d" width="400" height="400" source="{img}" click="saveimg(d)"/> </s:hgroup> <s:label id="msg" width="100%" y="450" /> 
+</s:application> 
+</s><s>gilbert 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4346479-992239</DOCNO>
+<TEXT>
+<subject>Shader works in toolkit, not in Flash</subject>
+<post author="John Blackburne" timestamp="Apr 19, 2012 6:11 AM">
+<s>the following shader (which creates a circular gradient fill that interpolates along the angle, not the radius: the full shader code and it working is here) works in pixel bender toolkit but not in flash: in flash it seems to go into an infinite loop 
+void evaluatepixel() { // calculate where we are relative to the center float2 relativepos = outcoord() - center; // get our bearing relative to start angle, wrap it and scale to (-2, 2) float dir = atan(relativepos.y, relativepos.x); dir = dir - startangle; float dir2 = dir + twopi; dir = dir < -pi ?</s><s> dir2 : dir; dir = dir * 4.0 / twopi; 
+// get colours to interpolate between and how far to interpolate float3 colfrom, colto; if (dir < 0.0) { if (dir < -1.0) { dir = dir + 2.0; colfrom = col1; colto = col2; } else { dir = dir + 1.0; colfrom = col2; colto = col3; } } else { if (dir < 1.0) { colfrom = col3; colto = col4; } else { dir = dir - 1.0; colfrom = col4; colto = col1; } } // linearly interpolate float3 interp = mix(colfrom, colto, float3(dir, dir, dir)); // convert to smooth interpolation through colours interp = colfrom + (colto - colfrom) * smoothstep(colfrom, colto, interp); dst = pixel4(interp.x, interp.y, interp.z, 1.0); } } 
+</s><s>to fix it 'dir' cannot be used both in the 'if' statements and set in the statements that depend on them.</s><s> i.e. the following which replaces 'dir' with 'dir2' works.</s><s> it would be better if this were consistent between the toolkit and flash (the shader is one without an input image so won't work in ae or ps).</s><s> tested with flash 11.2. 
+void evaluatepixel() { // calculate where we are relative to the center float2 relativepos = outcoord() - center; // get our bearing relative to start angle, wrap it and scale to (-2, 2) float dir = atan(relativepos.y, relativepos.x); dir = dir - startangle; float dir2 = dir + twopi; dir = dir < -pi ?</s><s> dir2 : dir; dir = dir * 4.0 / twopi; 
+// get colours to interpolate between and how far to interpolate float3 colfrom, colto; if (dir < 0.0) { if (dir < -1.0) { dir2 = dir + 2.0; colfrom = col1; colto = col2; } else { dir2 = dir + 1.0; colfrom = col2; colto = col3; } } else { if (dir < 1.0) { dir2 = dir; colfrom = col3; colto = col4; } else { dir2 = dir - 1.0; colfrom = col4; colto = col1; } } // linearly interpolate float3 interp = mix(colfrom, colto, float3(dir2, dir2, dir2)); // convert to smooth interpolation through colours interp = colfrom + (colto - colfrom) * smoothstep(colfrom, colto, interp); dst = pixel4(interp.x, interp.y, interp.z, 1.0); } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4346479-4347319</DOCNO>
+<TEXT>
+<subject>Shader works in toolkit, not in Flash</subject>
+<post author="AIF%20Chuck" timestamp="Apr 19, 2012 11:20 AM">
+<s>hi john, 
+</s><s>thanks for that information, and thank you for the workaround.</s><s> i'll add it as a bug.</s><s> it sounds like variable scoping might have a bug in the pb -> pb-byte-code conversion for flash. 
+i don't have a good feel for when this would be addressed, but unfortunately my best guess is not for some time.</s><s> we've largely buttoned up cs6 save for crazy show stopper issues and this is well-below that threshhold.</s><s> while flash isn't tied to that schedule, most current pixel bender developement is aimed at the mainline suite apps so that's the schedule compiler fixes would be likely to come down. 
+</s><s>best, chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4346479-4379728</DOCNO>
+<TEXT>
+<subject>Shader works in toolkit, not in Flash</subject>
+<post author="John%20Blackburne" timestamp="May 4, 2012 10:21 AM">
+<s>a further observation, discovered by accident today.</s><s> it seems what the precisionhint is set to makes a difference.</s><s> i've had the 'fixed' shader in since the above but must have commented out the following line   ggradshader.precisionhint = shaderprecision.fast;   at some point trying to get it to work.</s><s> but adding a similar shader today i re-enabled the line and saw the same locking-up behaviour until i commented out that line again.   i've not tried the various combinations of old/new code, fast or not precision to get to the bottom of it: the shader doesn't run often enough to worry over performance, i'd just been enabling fast precision on the assumption that it's a sensible trade off in a game.</s><s> just making a note of it in case anyone else encounters a similar issue.   john
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4346479-992239</DOCNO>
+<TEXT>
+<subject>Shader works in toolkit, not in Flash</subject>
+<post author="John Blackburne" timestamp="Apr 19, 2012 6:11 AM">
+<s>the following shader (which creates a circular gradient fill that interpolates along the angle, not the radius: the full shader code and it working is here) works in pixel bender toolkit but not in flash: in flash it seems to go into an infinite loop 
+void evaluatepixel() { // calculate where we are relative to the center float2 relativepos = outcoord() - center; // get our bearing relative to start angle, wrap it and scale to (-2, 2) float dir = atan(relativepos.y, relativepos.x); dir = dir - startangle; float dir2 = dir + twopi; dir = dir < -pi ?</s><s> dir2 : dir; dir = dir * 4.0 / twopi; 
+// get colours to interpolate between and how far to interpolate float3 colfrom, colto; if (dir < 0.0) { if (dir < -1.0) { dir = dir + 2.0; colfrom = col1; colto = col2; } else { dir = dir + 1.0; colfrom = col2; colto = col3; } } else { if (dir < 1.0) { colfrom = col3; colto = col4; } else { dir = dir - 1.0; colfrom = col4; colto = col1; } } // linearly interpolate float3 interp = mix(colfrom, colto, float3(dir, dir, dir)); // convert to smooth interpolation through colours interp = colfrom + (colto - colfrom) * smoothstep(colfrom, colto, interp); dst = pixel4(interp.x, interp.y, interp.z, 1.0); } } 
+</s><s>to fix it 'dir' cannot be used both in the 'if' statements and set in the statements that depend on them.</s><s> i.e. the following which replaces 'dir' with 'dir2' works.</s><s> it would be better if this were consistent between the toolkit and flash (the shader is one without an input image so won't work in ae or ps).</s><s> tested with flash 11.2. 
+void evaluatepixel() { // calculate where we are relative to the center float2 relativepos = outcoord() - center; // get our bearing relative to start angle, wrap it and scale to (-2, 2) float dir = atan(relativepos.y, relativepos.x); dir = dir - startangle; float dir2 = dir + twopi; dir = dir < -pi ?</s><s> dir2 : dir; dir = dir * 4.0 / twopi; 
+// get colours to interpolate between and how far to interpolate float3 colfrom, colto; if (dir < 0.0) { if (dir < -1.0) { dir2 = dir + 2.0; colfrom = col1; colto = col2; } else { dir2 = dir + 1.0; colfrom = col2; colto = col3; } } else { if (dir < 1.0) { dir2 = dir; colfrom = col3; colto = col4; } else { dir2 = dir - 1.0; colfrom = col4; colto = col1; } } // linearly interpolate float3 interp = mix(colfrom, colto, float3(dir2, dir2, dir2)); // convert to smooth interpolation through colours interp = colfrom + (colto - colfrom) * smoothstep(colfrom, colto, interp); dst = pixel4(interp.x, interp.y, interp.z, 1.0); } } 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4346479-4347319</DOCNO>
+<TEXT>
+<subject>Shader works in toolkit, not in Flash</subject>
+<post author="AIF%20Chuck" timestamp="Apr 19, 2012 11:20 AM">
+<s>hi john, 
+</s><s>thanks for that information, and thank you for the workaround.</s><s> i'll add it as a bug.</s><s> it sounds like variable scoping might have a bug in the pb -> pb-byte-code conversion for flash. 
+i don't have a good feel for when this would be addressed, but unfortunately my best guess is not for some time.</s><s> we've largely buttoned up cs6 save for crazy show stopper issues and this is well-below that threshhold.</s><s> while flash isn't tied to that schedule, most current pixel bender developement is aimed at the mainline suite apps so that's the schedule compiler fixes would be likely to come down. 
+</s><s>best, chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4346479-4379728</DOCNO>
+<TEXT>
+<subject>Shader works in toolkit, not in Flash</subject>
+<post author="John%20Blackburne" timestamp="May 4, 2012 10:21 AM">
+<s>a further observation, discovered by accident today.</s><s> it seems what the precisionhint is set to makes a difference.</s><s> i've had the 'fixed' shader in since the above but must have commented out the following line   ggradshader.precisionhint = shaderprecision.fast;   at some point trying to get it to work.</s><s> but adding a similar shader today i re-enabled the line and saw the same locking-up behaviour until i commented out that line again.   i've not tried the various combinations of old/new code, fast or not precision to get to the bottom of it: the shader doesn't run often enough to worry over performance, i'd just been enabling fast precision on the assumption that it's a sensible trade off in a game.</s><s> just making a note of it in case anyone else encounters a similar issue.   john
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4325760-987940</DOCNO>
+<TEXT>
+<subject>Fast Fourier Transform (FFT) in Pixel Bender?</subject>
+<post author="Holtenwood" timestamp="Apr 10, 2012 3:56 PM">
+<s>does anyone out there have a pixel bender algorithm for doing an fft? 
+</s><s>searching the internet i find a fair amount of dicussion about how this should be able to be done and probably pretty fast if executed on the gpu due to pixel bender's parallel proceesing.</s><s> but i do not find any actual examples of it being done. 
+</s><s>so far my own attempts at coding an fft algorithm in pixel bender have failed. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4325760-4347328</DOCNO>
+<TEXT>
+<subject>Fast Fourier Transform (FFT) in Pixel Bender?</subject>
+<post author="AIF%20Chuck" timestamp="Apr 19, 2012 11:37 AM">
+<s>hello holtenwood, 
+</s><s>i don't know of anyone who's done this and i'm not an expert personally in gpu-ifying that algorithm.</s><s> it looks like gpu gems 2 looked at doing fft via a multipass shader.</s><s> you could probably do the multipass aspect via a graph that's simply a linear chain via the toolkit.</s><s> any interpolated calculations happening in the vertex stage would need to be shoved into the fragment stage or out to the evaldependents/evalparameters stage. 
+</s><s>good luck! 
+</s><s>here's the article i was looking at to learn more: http://http.developer.nvidia.com/gpugems2/gpugems2_chapter48.html 
+chuck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4325760-4347392</DOCNO>
+<TEXT>
+<subject>Fast Fourier Transform (FFT) in Pixel Bender?</subject>
+<post author="AIF%20Chuck" timestamp="Apr 19, 2012 11:40 AM">
+<s>hello again, 
+sorry to dissapoint, but the toolkit doesn't support 32 bit image buffers in the gpu path and you'd want that for this application.</s><s> we support them under the hood when doing cpu path computations, but for what you want to do, there wouldn't be any point since gpu speed is what you're hoping for. 
+</s><s>chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4325760-987940</DOCNO>
+<TEXT>
+<subject>Fast Fourier Transform (FFT) in Pixel Bender?</subject>
+<post author="Holtenwood" timestamp="Apr 10, 2012 3:56 PM">
+<s>does anyone out there have a pixel bender algorithm for doing an fft? 
+</s><s>searching the internet i find a fair amount of dicussion about how this should be able to be done and probably pretty fast if executed on the gpu due to pixel bender's parallel proceesing.</s><s> but i do not find any actual examples of it being done. 
+</s><s>so far my own attempts at coding an fft algorithm in pixel bender have failed. 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4325760-4347328</DOCNO>
+<TEXT>
+<subject>Fast Fourier Transform (FFT) in Pixel Bender?</subject>
+<post author="AIF%20Chuck" timestamp="Apr 19, 2012 11:37 AM">
+<s>hello holtenwood, 
+</s><s>i don't know of anyone who's done this and i'm not an expert personally in gpu-ifying that algorithm.</s><s> it looks like gpu gems 2 looked at doing fft via a multipass shader.</s><s> you could probably do the multipass aspect via a graph that's simply a linear chain via the toolkit.</s><s> any interpolated calculations happening in the vertex stage would need to be shoved into the fragment stage or out to the evaldependents/evalparameters stage. 
+</s><s>good luck! 
+</s><s>here's the article i was looking at to learn more: http://http.developer.nvidia.com/gpugems2/gpugems2_chapter48.html 
+chuck. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Pixel-Bender/Discussions-4325760-4347392</DOCNO>
+<TEXT>
+<subject>Fast Fourier Transform (FFT) in Pixel Bender?</subject>
+<post author="AIF%20Chuck" timestamp="Apr 19, 2012 11:40 AM">
+<s>hello again, 
+sorry to dissapoint, but the toolkit doesn't support 32 bit image buffers in the gpu path and you'd want that for this application.</s><s> we support them under the hood when doing cpu path computations, but for what you want to do, there wouldn't be any point since gpu speed is what you're hoping for. 
+</s><s>chuck.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

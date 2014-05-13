@@ -1,0 +1,1922 @@
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-1038806</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="_durin_" timestamp="Jul 20, 2012 12:25 PM">
+<s>hi everyone, 
+earlier this week, adobe update manager may have informed you that an update was available for audition cs6.</s><s> this update contained a new bug that broke the dynamics processing effect.</s><s> we have prepared a new update which is available via the adobe.com website. 
+</s><s>if you have not yet updated audition cs6, or have previously updated to the 5.0.1 build 6 patch, please download the latest 5.0.1 build 7 update from windows: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5419 mac: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5418 
+thank you for your support and please notify us if you experience any troubles downloading or installing the update. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4573549</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="dnicgrip" timestamp="Jul 22, 2012 8:55 PM">
+<s>hi durin i have to get an omf to a sound mix but it stalls at composition stage.i loaded the new update but its ot working.what should i do?</s><s> thanks brian 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4573637</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="_durin_" timestamp="Jul 22, 2012 9:24 PM">
+<s>thanks for the follow-up in the omf post.</s><s> as mentioned there - and this has nothing to do with the patch - as of sometime this month, omf export fails.</s><s> as we discovered, there is a bug in avid's omf toolkit which is used to build omf sessions that generates guids for generated clips based on the current date.</s><s> as of july 12th or so, the algorithm starts spitting out negative numbers.</s><s> (why this function outputs a signed integer, i don't know, but havoc is wreaked on our end.</s><s>) when i have more information about a patch, i'll follow-up at the usual spots (forums, twitter, facebook, blog, etc.</s><s>) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4578653</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="RJRadio" timestamp="Jul 25, 2012 5:33 AM">
+<s>.</s><s>the linke points to a file that has the words trial in the patch zip.</s><s> auditiontrial-5.0.1-mul-adobeupdate.zip is this the one for my paid version?</s><s> <quote>
+<s>_durin_ wrote: 
+hi everyone, 
+earlier this week, adobe update manager may have informed you that an update was available for audition cs6.</s><s> this update contained a new bug that broke the dynamics processing effect.</s><s> we have prepared a new update which is available via the adobe.com website. 
+</s><s>if you have not yet updated audition cs6, or have previously updated to the 5.0.1 build 6 patch, please download the latest 5.0.1 build 7 update from windows: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5419 mac: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5418 
+thank you for your support and please notify us if you experience any troubles downloading or installing the update. 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4579081</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="_durin_" timestamp="Jul 25, 2012 8:58 AM">
+<s>hi rjradio, 
+</s><s>sorry for any confusion.</s><s> the file works on all release versions of audition, including the trial and activated editions. 
+</s><s>briefly, there is no difference between the trial and activated versions of audition anymore.</s><s> au3 had a specific, time-limited trial version that could not be activated.</s><s> if you chose to purchase it after the trial ran out, you were required to uninstall the trial and reinstall with a serial number.</s><s> audition cs6 (and 5.5) uses a single installer and implements the adobe activation tools which allow for different activation states and configurations, depending on the serial number entered. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4580868</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="RJRadio" timestamp="Jul 26, 2012 4:58 AM">
+<s>okay, thanks for clarifying.</s><s> i'll update immediately. 
+</s><s>thanks durin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4594152</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="Rich%20LePage" timestamp="Aug 2, 2012 9:18 AM">
+<s>good to know- that "trial" thing threw me too.</s><s> downloaded it and ran the patch, but 1st attempt it failed to install.</s><s> maybe this was because machine was online and so was trying to run an update checker or something in bg but unknown to us at the time, even though cs6 was not running when tried to apply the patch.</s><s> solution was shut machine down completely, cold reboot.</s><s> then apply prev. downloaded patch, which installed fine that time.</s><s> all set with "build 7" now-- thx. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4595422</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="Wrldtvlr" timestamp="Aug 2, 2012 7:48 PM">
+<s>strange - the in-program check for update does not flag that a patch is needed from win 7(64) build 6 to build 7, but manually applying the patch works fine. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4595871</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="SteveG(AudioMasters)" timestamp="Aug 3, 2012 3:10 AM">
+<s><quote>
+<s>wrldtvlr wrote: 
+strange - the in-program check for update does not flag that a patch is needed from win 7(64) build 6 to build 7, but manually applying the patch works fine. 
+</s></quote>i just installed cs6 on a new machine, and had exactly the same experience.</s><s> i think that there's a good chance that because of the problem with the previous build of the patch, it was de-linked from the updater, and the new one hasn't been linked yet.</s><s> and i don't think it will be until we are generally sure that it doesn't cause any more problems! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4595999</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="Rich%20LePage" timestamp="Aug 3, 2012 4:54 AM">
+<s>what steve says does sound logical -- even if it's a bit counterintuitive for the user in this partic. situation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4570529-4596494</DOCNO>
+<TEXT>
+<subject>Audition CS6 update - IMPORTANT INFORMATION</subject>
+<post author="_durin_" timestamp="Aug 3, 2012 8:50 AM">
+<s>that's the reason.</s><s> we were unable to replace the 5.0.1 build in the updater under the current process, so rather than allow everyone to download the problem build, we pulled it and are directing folks toward the download.</s><s> you may see a proper new update through the updater tool soon. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4562898-1037362</DOCNO>
+<TEXT>
+<subject>Adobe Audition CS6 (5.0.1) update patch released</subject>
+<post author="_durin_" timestamp="Jul 20, 2012 12:19 PM">
+<s>update: a new 5.0.1 update build has been made available as of july 20, 2012, due to an issue discovered in the dynamics processing effect.</s><s> if you previously updated adobe audition cs6, please visit the links below and install the new update.</s><s> this update is not available via adobe update manager and must be downloaded via the website. 
+</s><s>today we released an update to address several bugs in audition cs6.</s><s> many were minor workflow issues, but a few could cause audition to crash under certain circumstances. 
+</s><s>download the patch installer directly from: windows: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5419 mac: http://www.adobe.com/support/downloads/detail.jsp?ftpid=5418 
+bugs fixed in adobe audition cs6 5.0.1 update: ape files with metadata inserted by other editors cause audition to crash (windows) if previous session directory no longer exists, audition leaves the folder location field empty multitrack fades no longer respect the fade type preference.</s><s> (worked in cs5.5) audition may crash when users choose to create unique copies of selected mt regions playback stutters when creating a unique copy of a clip while right-click dragging channel mix settings not honored on export when not exposed in dialog eucon soft key set contains keys that do nothing session tempo broken on systems using commas instead of decimal points bounce to new track > selected track bounces after passing through track output if a favorite was recorded on subset of channels, the favorite will fail if those channels are disabled sending a stereo bus side-chained to a mono track may crash the application uad-2 plug-ins missing from windows effects menu audition may crash on launch when cooltype encounters certain installed fonts (mac) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4562898-4563480</DOCNO>
+<TEXT>
+<subject>Adobe Audition CS6 (5.0.1) update patch released</subject>
+<post author="Rich%20LePage" timestamp="Jul 17, 2012 1:31 PM">
+<s>just saw it - thx durin!</s><s> as i noted, it had already self-upgraded anyhow. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4562898-4568844</DOCNO>
+<TEXT>
+<subject>Adobe Audition CS6 (5.0.1) update patch released</subject>
+<post author="Jozmosis" timestamp="Jul 19, 2012 6:00 PM">
+<s>i'm really happy to see this update out, but i haven't been able to install it on my mac yet. 
+</s><s>the updates item in the help menu is greyed out for me.</s><s> when i try running the installer from the direct download it says 'updates have been suppressed by your administrator.' 
+i can't imagine that i would have disabled updates. 
+</s><s>any advice? 
+
+</s><s>joseph 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4562898-4678801</DOCNO>
+<TEXT>
+<subject>Adobe Audition CS6 (5.0.1) update patch released</subject>
+<post author="ptrubert" timestamp="Sep 6, 2012 12:17 PM">
+<s>to 27bpm 
+</s><s>i did face the same problem.</s><s> this solved it: http://helpx.adobe.com/creative-suite/kb/disable-auto-updates-applicat ion-manager.html 
+regards 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4524827-1029959</DOCNO>
+<TEXT>
+<subject>Adobe Audition Resources & Information</subject>
+<post author="_durin_" timestamp="Jun 27, 2012 3:23 PM">
+<s>hi everyone,   we've been trying to increase the visibility of audition around adobe's services, as well as several third-party sites.  if you've been looking for information, tutorials, commentary, or more, this is the thread to read!   inside sound: adobe audition blog this is the official blog for adobe audition written by the audition team.  more in-depth articles are posted here, as well as announcements, polls, etc.   adobe audition user to user forums you are already here.  the dynamite audition user community hangs out here answering questions, giving advice, getting grumpy with the forum software and impolite newbies, and sharing their feedback directly with the audition development team.   sound your best: adobe tv video tutorials and demonstrations of audition and other adobe applications.  a great resource for walkthroughs and learning about new features!   twitter: @audition get the word directly from our social media team, the development team, and @audition users around the globe.  lots of great links, demos, tutorials, complaints, and feedback.   facebook: adobe audition our official facebook page!  like it and get updates and news from the team and other users in your stream.   report a bug / request a feature when you find an issue with the way a feature works, or can't find the feature at all, let us know!  while we might not be able to respond to every request, every email is read and any requests are noted in the corresponding feature in our database.  bugs are investigated and written as necessary.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-988645</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 8:43 AM">
+<s>good news, everyone! 
+</s><s>i'm very excited to share the news that production premium cs6 will be revealed at nab next week, but even better, i get to share details about audition cs6 with everyone right away.</s><s> more detailed information about some of the new features will be released on the audition inside sound blog this week, but i'l be happy to discuss specifics about the new features on this message thread. 
+</s><s>here's a quick list of the new features and functionality: 
+audition cs6 highlights: real-time and rendered clip stretching in multi-track - including new "varispeed" mode clip grouping – including suspend, trimming, & stretching of groups vst3 support (mac and win) and more effects new pitch correction/manipulation tools automatic speech alignment tool red book audio cd burning hardware controllers support - including native avid eucon and mackie mcu support write/touch/latch automation modes media browser with file preview session templates and enhancements expanded file format support (native, libsndfile, dlms) audition cs6 complete list of new features: multitrack session templates automatic speech alignment clip grouping suspend mode focus clip actions trim/fade grouped clips time aligned stretching of groups clip spotting – manual entry of clip start or end time clip stretching - real-time and rendered mode using izotope radius vari-speed clip stretching metronome track skip selection play mode save all open files with session preference select all clips from playhead to end of track sum to mono per track bounce selected track reveal clip in files panel trim to selection send clip to back preference to play/hide overlapped clips mixer enhancements snap volume and pan envelopes at 0db drag and drop file marker range to multitrack (as clip) waveform (editor) multiple clipboards skip selection play mode open append subclip marker support (premiere and prelude) improvements to spectral spot healing (limit selection to x- or y- axis) pitch display effects vst3 side chain support improved plug-in scanning engine new channel map per effect – control over effect input and output channel routing save and apply effect racks as a favorite new/added effects: automatic pitch correction manual pitch correction with new spectral pitch view mode generate tones doppler shifter notch filter graphic phase shifter gain / fade envelopes general media browser preview in media browser and files panel search/filter in media browser and files panel display markers for all files in markers panel access and open order fields in files panel (sorting) keyboard shortcuts (shortcut editor enhancements, copy to clipboard) adobe graphics manager implementation to improve ui drawing dlms integration to support additional video and audio file format import/open opengl display for video including improved video display for improved performance new spectral display preferences support for additional framerates (23.976, 59.94 ndf/df) machine-specific device preferences (optional common audio hardware settings for all users) import most preferences from cs5.5 pinch-to-zoom, rotate to scrub mac touchpad support (mac only) improved properties panel ui layout 
+broadcast specific itu loudness – normalize files (batch) to itu-bs.1770-2 (r128), view loudness level diagnostics native mpeg1-layer 2 audio (mp2) import and export enhanced cart timer and metadata support control surface/automation mackie mcu, native avid eucon, other controller support recordable track automation (full write, touch, latch support with undo) 
+</s><s>format support mpeg4, hd video, and additional audio import (via dlms) native mpeg1-layer2 (mp2) audio import and export native ape, flac, ogg export and import libsndfile export – export most formats supported by libsndfile cd import metadata support (via freedb) enhanced raw format support output red book cd burning (via cd layout) quick burn single-file, cd-text) advanced mixdown – mixdown tracks, busses and/or master as seperate files save all audio as batch process save copies of associated files – collect/archive all files in a session save open file references in session ("remember" all open files with the session) advanced session export – including ability to convert sample rate of session and associated files preferred asset importer saved with session files 
+edited to include additional features. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329079</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_colin_" timestamp="Apr 11, 2012 10:40 PM">
+<s>and to add to durin's post, you can get some initial screen snippets (although not complete and we'll be posting more details on inside sound blog in the future) here: http://success.adobe.com/assets/en/downloads/guides/au_cs6_wn_reveal.p df 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329097</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Mannymac" timestamp="Apr 11, 2012 11:16 PM">
+<s>sounds dream like.</s><s> will midi be also supported so we can use midi controllers for more comfortable mixing? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329164</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_colin_" timestamp="Apr 11, 2012 11:25 PM">
+<s><quote>
+<s>mannymac wrote: 
+sounds dream like.</s><s> will midi be also supported so we can use midi controllers for more comfortable mixing? 
+</s></quote>
+</s><s>are you referring to control surfaces/hardware like mackie, faderport, and the like (flying faders, transport control, etc)?</s><s> if so, then yes, some of those controllers piggy back on the midi protocol for interfacing and control.</s><s> we support the same controllers audition 3 had (which was largely mackie mcu protocol based and used by many 3rd party controllers).</s><s> we have also added native avid eucon protocol in order to support the avid artist series controllers (aka euphonix). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329237</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="SuiteSpot" timestamp="Apr 12, 2012 1:39 AM">
+<s>i think its been said before but maybe not in capitals - wow! 
+</s><s>manual pitch correction, groups, metronome and a few other things would have done me but this looks like you guys have been flat out! 
+</s><s>heaps more there than i could have even hoped for - really looking forward to getting hold of this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329610</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="vadrum" timestamp="Apr 12, 2012 5:29 AM">
+<s>great job, very nice to see the new features and the "old" ones finally restored!</s><s> what i don't see here is "rejoining split clips" and the possibility to open the previous ".ses" files.</s><s> considering there's a "nearly" in the list of the new features, will there be something else near to what i mentioned above?</s><s> it would be amazing 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329764</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="therealdobro" timestamp="Apr 12, 2012 6:26 AM">
+<s>me too.</s><s> this raises the game.</s><s> on or ahead of predicted schedule too.</s><s> bring it on!</s><s> 
+</s><s>hey, does this mean a new version of the translator? :-) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329768</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_colin_" timestamp="Apr 12, 2012 6:35 AM">
+<s><quote>
+<s>vadrum wrote: 
+considering there's a "nearly" in the list of the new features, will there be something else near to what i mentioned above?</s><s> it would be amazing 
+</s></quote>
+
+</s><s>ah, this list durin gives is pretty much complete, i wrote "nearly" in my type up just in case i accidentally missed something small.</s><s> we fixed/tweaked quite a few very small things (to some these will really matter for their workflow).</s><s> the bulk of it is listed above or on the blog, especially the large features.</s><s> for example, as i'm typing this i just realized a small change that i need to add to the blog post list, which is "restricting the x or y movement of the mouse in spectral using a modifier key when performing a selection", small change but for anyone doing lots of restoration work, it makes linear selections far easier. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329775</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="SuiteSpot" timestamp="Apr 12, 2012 6:50 AM">
+<s>there is obviously a lot of totally new stuff that isn't relevant to conversion but looking at the list there is probably a couple of things we can add like (and i'm guessing here) group clips, notch filter fx, clip stretch and maybe more.</s><s> i thought i saw what looked like a metronome icon (similar to the one in reaper) in the sneak peak video but i didn't see it mentioned in colin's list. 
+</s><s>will know more once i get my hands on a copy.</s><s> either way we will have something out as fast as possible. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329825</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Bob%20Howes" timestamp="Apr 12, 2012 6:55 AM">
+<s>metronome isn't on durin's list but it's there on the detailed pages in the link colin put up in the second post of this thread..."metronome page 7". 
+</s><s>so...yay!</s><s> 
+</s><s>i wish i was going to be at nab this year....and hope we can download the trial as soon as the announcement is made there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329884</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_colin_" timestamp="Apr 12, 2012 7:09 AM">
+<s>yes, mea culpa... metronome is in audition cs6!</s><s> we'll give some more info on it on the blog, but basically it's now track based, routable and quite handy.</s><s> <quote>
+<s>bob howes wrote: 
+metronome isn't on durin's list but it's there on the detailed pages in the link colin put up in the second post of this thread..."metronome page 7". 
+</s><s>so...yay!</s><s> 
+</s><s>i wish i was going to be at nab this year....and hope we can download the trial as soon as the announcement is made there. 
+</s></quote>
+</s><s>colin 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4329836</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="SuiteSpot" timestamp="Apr 12, 2012 7:18 AM">
+<s>i'm going to nab for the first time - maybe they have adobe show bags with trial versions in it - lol 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330260</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 8:58 AM">
+<s>the main list has been updated to reflect the missed items, and i reserve the right to continue updating it with other features we might have overlooked when posting! 
+</s><s>the metronome in cs6 is really nice.</s><s> it's a unique track that can be treated like any audio track.</s><s> you can edit the pattern, route the output through sends and buses, record automation for cases where you might only want a lead-in, run effects on it if that floats your boat.</s><s> you can even include it in your mixdown if you wish. 
+</s><s>i'll be adding some posts today and tomorrow showing off some of the new stuff.</s><s> feel free to make requests so i don't have to make the hard decisions about what to share first. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330251</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Kost7" timestamp="Apr 12, 2012 9:12 AM">
+<s>awesome!</s><s> but what about midi track like it was in audition 3?</s><s> where you can insert or edit notes.</s><s> is it back? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330323</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 9:31 AM">
+<s>midi sequencing and vsti support is not available in audition cs6.</s><s> there was a lot of primary feature development this cycle, and i would not have wanted to make the compromises to a midi environment that would have been necessary to squeeze it in this cycle. 
+</s><s>midi composition support remains in our feature backlog and is considered for each release, but there are several reasons it doesn't typically bubble up higher in priority.</s><s> audition and cool edit always shined as audio editing tools, and this has always been the focus of the team with midi support sort of an afterthought, but never our core competency.</s><s> with audition 3, we built a basic midi sequencer with vsti support, but ran into some implementation speed bumps when plugging it into the existing playback engine that resulted in a less-than-great experience in my opinion.</s><s> it functioned, but i've never felt it held up to the other areas of audition in terms of usability and simplicity. 
+i know there are those on the team - myself included - that would love to develop a full midi environment, and while it's never been a highly-demanded feature, i know plenty of users would like a basic composition workflow in audition as well.</s><s> if we tackle this, i would hope we can take the time and resources to design a very competent interface that you enjoy using, and not just build something as a check mark on a feature list.</s><s> we can start a separate thread on this, perhaps in the feature request forum, and discuss in detail what sort of functionality and tools you would like to see in audition to support midi and virtual instruments. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330451</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="SteveG(AudioMasters)" timestamp="Apr 12, 2012 10:39 AM">
+<s><quote>
+<s>_durin_ wrote: 
+
+</s><s>midi composition support remains in our feature backlog... 
+</s></quote>
+</s><s>and long may it do so! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330520</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Kost7" timestamp="Apr 12, 2012 11:06 AM">
+<s>i'll be waiting...</s><s> and what about rewire? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330565</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="oussamaelzein" timestamp="Apr 12, 2012 11:16 AM">
+<s>you just won me over.</s><s> the question is if i buy audition cs 5.5 now do i get cs 6 upgrade free?</s><s> or should i just wait? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4330567</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 11:25 AM">
+<s>rewire support has also not been implemented for audition cs at this time. 
+</s><s>adobe has historically always offered a free upgrade grace period when you purchase the current version close to the announcement (or in this case, the reveal) of the next release.</s><s> if you purchase audition cs 5.5 now, you'll be eligible for a free upgrade to cs6 when released.</s><s> i believe this only applies to purchases made directly from adobe (via the adobe.com online store or telephone sales) and will provide you with the downloadable installer for cs6 when released. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331002</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="C.R.Helmrich" timestamp="Apr 12, 2012 1:58 PM">
+<s>c.r.helmrich likes this 
+seriously, the list of new features is very impressive.</s><s> great work!</s><s> question, though.</s><s> you mention: " adobe graphics manager implementation to improve ui drawing opengl display for video including improved video display for improved performance new spectral display preferences " for cs 5.5 i had reported two edit-view related display bugs (spectral display "db range" value not saved properly, spectral drawing hick-ups when switching between files).</s><s> also, compared to audition 1.x i noticed a slower live-update of the frequency analysis window (i.e. less updates per second) when playing a file.</s><s> does this mean all three issues have been solved in the course of implementing the above 3 bullet points? 
+</s><s>edit: you wrote, "i'll be adding some posts ... showing off some of the new stuff.</s><s> feel free to make requests so i don't have to make the hard decisions about what to share first." => i'd like to see the new spectral display preferences, please 
+chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331138</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="jdmack01" timestamp="Apr 12, 2012 2:40 PM">
+<s>i've read over the new features, and in terms of the automation, there is one question i don't see specifically answered.</s><s> will i be able to record surround-sound panning moves in real time in cs6?</s><s> it's always been a pain to move sounds in a circle up until now. 
+</s><s>and i take it that cs6 will still be a 32-bit program?</s><s> i was hoping that applying effects to large files (noise reduction, for example) would be speedier. 
+j.</s><s> d.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331277</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="jdmack01" timestamp="Apr 12, 2012 4:13 PM">
+<s>i also meant to ask - have scripts returned to this version of aa? 
+j.</s><s> d.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331414</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Ron_Day" timestamp="Apr 12, 2012 4:46 PM">
+<s>here's some additional information on the upgrade policy now that we have revealed the product (this link is diectly from the adobe store): http://store.adobe.com/store/en_us/popup/offer/cs55_cs6.html 
+thanks, --ron 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331462</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Bob%20Howes" timestamp="Apr 12, 2012 5:27 PM">
+<s>thanks for that, ron! 
+</s><s>to save others having to read some very fine print...what ron linked to says that those with audition cs5.5 will, for a special one-time offer, get a free upgrade to cs6. 
+</s><s>the next person to say adobe haven't listened to customers on this forum deserves to be jumped on!</s><s> that sound very fair to me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331688</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 8:02 PM">
+<s>new blog post up about the return and enhancement of cd burning in audition cs 6 at http://blogs.adobe.com/insidesound/2012/04/audio-cd-burning-in-adobe-a udition-cs6.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331690</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 8:04 PM">
+<s>bob, 
+</s><s>i believe the free upgrade ron posted only applies to items purchased between march 26 and may 6, 2012. full pricing and upgrade details have yet to be released. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331676</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Bob%20Howes" timestamp="Apr 12, 2012 8:14 PM">
+<s>ooops!</s><s> well, i said it was very small print! 
+i really must see about new glasses.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4331679</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 12, 2012 8:22 PM">
+<s>j.d.</s><s> 
+</s><s>scripts as they were in au3 have not returned.</s><s> the favorites tool allows you to record processes and actions and performs much of what scripts allowed, but obviously there was a level of detail scripting offered - if you were able to learn the, uh, nuances of the language - that favorites doesn't yet accomplish.</s><s> i believe we'll continue to make favorites more powerful, but i also hope we can implement and expose a comprehensive scripting layer as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4332291</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="RJRadio" timestamp="Apr 13, 2012 4:31 AM">
+<s>okay, now that i've picked myself off the floor after seeing what was put back in and all of the new goodies.</s><s> all i can say to durin and crew.</s><s> job well done!</s><s>!</s><s>!</s><s>!</s><s> 
+</s><s>cheers 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4333146</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Lighthope" timestamp="Apr 13, 2012 10:43 AM">
+<s>hmm...this is going to be something that i am going to have to look very hard it.</s><s> i've held on to 2.0 for so long because each upgrade (with the notable exception of 5.5) was only a small upgrade not worthy of the price. 
+</s><s>this one however definately has possibilties. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4333218</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 13, 2012 10:45 AM">
+<s><quote>
+<s>jdmack01 wrote: 
+will i be able to record surround-sound panning moves in real time in cs6?</s><s> it's always been a pain to move sounds in a circle up until now. 
+
+</s></quote>you can record surround pan automation by setting the track to write, touch, or latch mode and either adjusting positioning in the surround panner panel, adjusting the puck in the track panel mini-panner view, or via hardware controllers like the avid artist mc control. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4333909</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="_durin_" timestamp="Apr 13, 2012 3:35 PM">
+<s>i've put together a short video showing off the new session templates feature in audition cs6.</s><s> if everyone finds these useful, i'll put together some more and bump up the production values a bit. 
+
+
+i should note that the green interface tint is a byproduct of the screen capture utility i'm using.</s><s> audition cs6 is still every shade of glorious gray. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334025</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Teetow1" timestamp="Apr 13, 2012 4:26 PM">
+<s><quote>
+<s>_durin_ wrote: 
+i also hope we can implement and expose a comprehensive scripting layer as well. 
+</s></quote>i'm going to print this on a t-shirt and sit on the pavement outside your office until the day this feature is implemented. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334061</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="SuiteSpot" timestamp="Apr 13, 2012 5:04 PM">
+<s>i have been hoping for session templates since before i could spell the word! 
+</s><s>this is going to save so much time especially when i have a full band in doing bed tracks for an album and i have set up a a complex headphone mix for the first track - no more dodgy workarounds - woo hoo!</s><s>.</s><s> 
+</s><s>well done guys! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334354</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Kost7" timestamp="Apr 13, 2012 9:21 PM">
+<s><quote>
+<s>
+
+</s><s>i'm going to print this on a t-shirt and sit on the pavement outside your office until the day this feature is implemented. 
+</s></quote>outside his office you will find that another guy is already there with big words of midi and rewire 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334355</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Kost7" timestamp="Apr 13, 2012 10:09 PM">
+<s><quote>
+<s>_durin_ wrote: 
+if everyone finds these useful, i'll put together some more and bump up the production values a bit. 
+</s></quote>useful big time!</s><s>!</s><s>!</s><s> but why inputs are empty.</s><s> i can assign input devices and save, right?</s><s> it would be helpful for live multitrack recording when i have to assign different inputs to 14 tracks. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334446</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Kost7" timestamp="Apr 14, 2012 1:46 AM">
+<s><quote>
+<s>_durin_ wrote: 
+if we tackle this, i would hope we can take the time and resources to design a very competent interface that you enjoy using, and not just build something as a check mark on a feature list. 
+</s></quote>meanwhile it would be only logical to have rewire in cs6 to use other software.</s><s> othere major audio software like acid pro, logic, cubase, sonar, protools have rewire. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334455</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="ryclark" timestamp="Apr 14, 2012 3:20 AM">
+<s>but they are all music sequencers rather than pure audio editors, except perhaps for pt which is ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334509</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="SteveG(AudioMasters)" timestamp="Apr 14, 2012 4:40 AM">
+<s><quote>
+<s>kost7 wrote: 
+outside his office you will find that another guy is already there with big words of midi and rewire 
+</s></quote>complete waste of time.</s><s> if you want to compete with music software, then you have to add all of the other bits and pieces that music software has - like notation facilities and grids where you really don't need them, etc. and then you're in direct competition with a load of mature software that already exists to fill this need - you'd always be playing catch-up.</s><s> and you've needlessly cluttered up the interface.</s><s> but more significantly, you've provided facilities that the vast majority of your proven market has no need or desire for.</s><s> if the big players did need this sort of stuff, then it would be there.</s><s> i think you'll find that most of them actively don't want music software, and would rather adobe added facilities that they do want. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4329044-4334503</DOCNO>
+<TEXT>
+<subject>CS6 Production Premium revealed.  Audition CS6 Details.</subject>
+<post author="Kost7" timestamp="Apr 14, 2012 5:33 AM">
+<s><quote>
+<s>steveg(audiomasters) wrote: if you want to compete with music software, then you have to add all of the other bits and pieces that music software has - like notation facilities and grids where you really don't need them, etc. and then you're in direct competition with a load of mature software that already exists to fill this need - you'd always be playing catch-up. 
+</s></quote>yes, that's precisely my point of having rewire in audition cs6. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6232823-1433799</DOCNO>
+<TEXT>
+<subject>Mixing and exporting for more than 8 channels and non-standard multichannel setups</subject>
+<post author="SpdCncpt" timestamp="Mar 21, 2014 7:35 PM">
+<s>i am trying to do something kind of unconventional, although i have seen people on the forums trying to do similar things.</s><s> unfortunately, it's unclear if they succeeded or not, and if they did, how. 
+</s><s>i'm trying to figure out how to mix sound for an environment that has many (somewhere between 8 and 16) independent speakers, all connected to an audio interface.</s><s> i know that wav, aac, and other audio file formats can carry that many channels and i can map them to the individual speakers.</s><s> my question is how to edit/mix.</s><s> specifically, is this possible in audition?</s><s> it seems like it might be in cc, but not previous?</s><s> (i have cs6.</s><s>) how do you set up the project file.</s><s> when i create a new multitrack project, i can choose mono, stereo, or 5.1.</s><s> the 5.1 option allows me to assign sounds to the five speakers in a standard 5.1 setup and the lfe.</s><s> is it possible mix for an environment with more than that?</s><s> or with a different configuration of speakers?</s><s> in audio midi setup (for windows people, that's where in osx you set the more advanced audio preferences) i can configure up to 7.1 as well as geometric arrangements like quadrophonic, hexagonal, and octagonal.</s><s> is it possible in audition to mix for anything like these?</s><s> there have been some threads where people talk about using 16 discrete outputs in audition.</s><s> how is this possible?</s><s> is each track able to be routed to a different output?</s><s> if so, is it possible to write a file that has all of these tracks assigned to their discrete output channels?</s><s> is it possible to nest audio sessions like you can nest premiere sequences?</s><s> for example, can i create a multitrack project with mono output and have that session be embedded into another multitrack session or do i have to finish editing the first one and write a file from it to use it in another project?</s><s> can buses be used to do this?</s><s> what i'm wondering is if what i describe in #3 above is possible, then how to have more than just a single pre-made audio file going to each of the outputs, to allow me to mix each channel with various sounds. 
+</s><s>sorry that's a few questions, but they all revolve around how to work with multi-channel sound that isn't stereo or 5.1.</s><s> thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6232823-6233159</DOCNO>
+<TEXT>
+<subject>Mixing and exporting for more than 8 channels and non-standard multichannel setups</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 22, 2014 2:57 AM">
+<s><quote>
+<s>spdcncpt wrote: 
+i'm trying to figure out how to mix sound for an environment that has many (somewhere between 8 and 16) independent speakers, all connected to an audio interface.</s><s> i know that wav, aac, and other audio file formats can carry that many channels and i can map them to the individual speakers.</s><s> my question is how to edit/mix.</s><s> specifically, 
+</s><s>is this possible in audition?</s><s> it seems like it might be in cc, but not previous?</s><s> (i have cs6.</s><s>) 
+</s></quote>as you have probably gathered, this is effectively a work in progress... 
+<quote>
+</quote>at present, this is restricted to what you can see, but there's sort-of a workaround - albeit not an ideal one... 
+<quote>
+</quote>if you have a multichannel sound device, and all the outputs are visible to audition, then yes, each track can be assigned directly to a different output.</s><s> and if you set one up, you can do this with buses as well... 
+<quote>
+</quote>it's not possible to nest sessions at present in any version, and this has been asked about before.</s><s> there are some significant issues with this, mainly to do with things like sample rates, output formats, etc. doesn't mean that it won't happen, but don't hold your breath...</s><s> as i said, there's a workaround, and yes, it's buses.</s><s> since you can effectively submix to a bus, and the bus output can go directly to hardware, then you can do what you want.</s><s> the compromise is that in order to save the overall result, you'll end up with all of your source files, and a session file.</s><s> and you'll have to play the whole thing back in audition, rather than export it to a single file and be able to play it on a multichannel player.</s><s> but yes, it should work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6231531-1433504</DOCNO>
+<TEXT>
+<subject>How do I extract multiple tracks from a CD into a single file in Audition CS6?</subject>
+<post author="RbtD" timestamp="Mar 21, 2014 11:04 AM">
+<s>i use audition to edit my pastor's messages.</s><s> the message cd is made with five minute tracks.</s><s> i want to extract the tracks from the cd into a single file for editing and altering the track lengths.</s><s> i have done this before in audition cs6, but i haven't been able to find instructions for it.</s><s> i only found a note stating this is available in auditioncc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6231531-6232746</DOCNO>
+<TEXT>
+<subject>How do I extract multiple tracks from a CD into a single file in Audition CS6?</subject>
+<post author="Bob%20Howes" timestamp="Mar 21, 2014 6:58 PM">
+<s>when you go to file/extract audio from cd, on the pop up menu that you get, there's a tick box right at the bottom (on the left hand side) for "extract to a single file". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6231531-6232808</DOCNO>
+<TEXT>
+<subject>How do I extract multiple tracks from a CD into a single file in Audition CS6?</subject>
+<post author="_durin_" timestamp="Mar 21, 2014 7:25 PM">
+<s>"extract to a single file" was not available as an option until audition cc.</s><s> the only solution for audition cs6 was to extract to separate files and then either copy/paste each track into a single file, or file > open append... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6231531-6232930</DOCNO>
+<TEXT>
+<subject>How do I extract multiple tracks from a CD into a single file in Audition CS6?</subject>
+<post author="Bob%20Howes" timestamp="Mar 21, 2014 10:02 PM">
+<s>sorry...i must have misread the question.</s><s> i took it as meaning he'd recently moved to cc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6232243-1433664</DOCNO>
+<TEXT>
+<subject>audition cs6</subject>
+<post author="julienluc" timestamp="Mar 21, 2014 3:39 PM">
+<s>bonjour, je voudrais télécharge une version d'évaluation de audition cs6 pour essayer.</s><s> est ce possible? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227243-1432460</DOCNO>
+<TEXT>
+<subject>Lock clips in hierarchy not just in time.</subject>
+<post author="smd1uk" timestamp="Mar 20, 2014 7:30 AM">
+<s>when using audition cs6 i often have to "drop in" a retake over another clip.</s><s> in audition 2 this "dropped in" clip would stay to the front above the original clip.</s><s> in cs6 it doesn't, if i select the original clip the "drop in" goes to the back.</s><s> is there any way that i can lock clips not just in time but also in hierarchy?</s><s> it can be very annoying to mix down a session only to find that a "drop in" has disappeared from the mix. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227243-6230418</DOCNO>
+<TEXT>
+<subject>Lock clips in hierarchy not just in time.</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 21, 2014 3:42 AM">
+<s>i think that this is now the default behaviour - if you want a clip at the front, you have to select it, and then it should stay there, and that's the one you hear in the mix.</s><s> if it doesn't, then that might be a bug, but as far as i'm aware, it works fine.</s><s> personally i rather like the idea of a 'heirarchy lock' - it seems like a safer option, but strictly speaking it shouldn't be necessary. 
+i should also say that there's at least one other thing that people really don't like about the present drop-in arrangements, and that's the way that nothing gets automatically deleted when you overdub a track.</s><s> adobe don't trust you to know what you're doing, and assume that you are always going to want the one you just deleted... and it's since this change that the rotating heirarchy of clips has come about. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227243-6230467</DOCNO>
+<TEXT>
+<subject>Lock clips in hierarchy not just in time.</subject>
+<post author="ryclark" timestamp="Mar 21, 2014 4:48 AM">
+<s>the only work around that i can think of is to split the original clip and push the ends back to either end of the new dropped in clip.</s><s> that way the new clip is always in front because there is nothing for it to get pushed behind. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227243-6231420</DOCNO>
+<TEXT>
+<subject>Lock clips in hierarchy not just in time.</subject>
+<post author="smd1uk" timestamp="Mar 21, 2014 9:56 AM">
+<s>hi steve, 
+</s><s>thanks for your reply.</s><s> overdubbed clip always automatically goes to the back if the clip that it is over is selected unfortunately. 
+</s><s>best wishes, steve 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227243-6231422</DOCNO>
+<TEXT>
+<subject>Lock clips in hierarchy not just in time.</subject>
+<post author="smd1uk" timestamp="Mar 21, 2014 9:58 AM">
+<s>hi ryan, 
+</s><s>thanks, i never thought of that!</s><s> i'll try it but it should work. 
+</s><s>best wishes, steve. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6230126-1433134</DOCNO>
+<TEXT>
+<subject>is there a way to match a voice?</subject>
+<post author="mantralightroom" timestamp="Mar 21, 2014 1:40 AM">
+<s>hi if i record my voice and say for example the work "test" and record in another file my voice where i say "red" 
+is there a way to use audition cc to analize the 2 files and tell me if it's the same person voices? 
+i know , i watched many films , never understood how do it 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6230126-6230308</DOCNO>
+<TEXT>
+<subject>is there a way to match a voice?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 21, 2014 3:30 AM">
+<s><quote>
+<s>mantralightroom wrote: 
+hi if i record my voice and say for example the work "test" and record in another file my voice where i say "red" 
+is there a way to use audition cc to analize the 2 files and tell me if it's the same person voices? 
+i know , i watched many films , never understood how do it 
+</s></quote>there is software available that will help with this, but audition isn't really suited to it - and it's complicated, to say the least; the analyses tend to be specialised, and require several different software tools.</s><s> and they are also not conclusive, in many instances. if you want some sort of an idea of the sort of software you have to use, then have a look here. 
+</s><s>but don't get fooled by these detective series - their 'instant' results are invariably a complete work of fiction, just like the rest of their stories. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227422-1432484</DOCNO>
+<TEXT>
+<subject>Comment combiner deux pistes mono (L & R) en une seule piste stéréo ? (édition multipiste)</subject>
+<post author="dorvac" timestamp="Mar 20, 2014 8:09 AM">
+<s>bonsoir à tous, 
+je crois que tout est dans le titre du post 
+en effectuant quelques recherches, je me suis rendu compte que beaucoup de gens savaient comment créer un fichier stéréo à partir de deux fichiers monos.</s><s> en revanche, pour ce qui est de l'édition multipiste, je n'arrive pas à trouver comment faire pour combiner deux pistes mono et n'en faire plus qu'une seule stéréo. 
+</s><s>je vous remercie par avance de vos réponses. 
+</s><s>bien à vous, 
+marc. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227422-6230174</DOCNO>
+<TEXT>
+<subject>Comment combiner deux pistes mono (L & R) en une seule piste stéréo ? (édition multipiste)</subject>
+<post author="Bob%20Howes" timestamp="Mar 21, 2014 2:06 AM">
+<s>bonjour marc, 
+</s><s>excusez mon tres mauvais francais mais je croix que j'ai compris votre question. 
+</s><s>la maniere la plus simple do convertir deux pists mono in stereo est de le traiter comme un "mix down".</s><s> allez dans file / export / multitrack mixdown.</s><s> si vous avez uniquement deux pistes mono, il vous suffit de selectionner "session entiere".</s><s> mais si non vous pouvez mettre en surbrillance les deux pistes mono et choisessez "selected clips".</s><s> cela vous donnera un munu de choix et il vous sufft de selectionner un piste stereo pour votra type de mixage. 
+j'espere que cela a du sens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226438-1432205</DOCNO>
+<TEXT>
+<subject>Audition 3 and a new computer</subject>
+<post author="Jari Lampila" timestamp="Mar 20, 2014 12:37 AM">
+<s>i have purchased adobe audition 3 as a cd for years ago.</s><s> it was an update from audition 1.</s><s> i cannot install audition 3 from cd to my new computer because i haven't version 1 in the bottom.</s><s> i tried downloading program from internet, but the serial number on my cd didn't work.</s><s> what can i do?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226438-6226591</DOCNO>
+<TEXT>
+<subject>Audition 3 and a new computer</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 20, 2014 2:34 AM">
+<s><quote>
+<s>jari lampila wrote: 
+i tried downloading program from internet, but the serial number on my cd didn't work.</s><s> what can i do?</s><s> 
+</s></quote>there is only one way to install audition 3 now, and that's by following the instructions in the faq about it.</s><s> no existing serial numbers will work at all, as the activation server is broken - you have to use the one given with the link. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226438-6227151</DOCNO>
+<TEXT>
+<subject>Audition 3 and a new computer</subject>
+<post author="GautamBahl" timestamp="Mar 20, 2014 7:17 AM">
+<s>hi jari, 
+</s><s>welcome to adobe forums.</s><s> 
+</s><s>please refer to the below article. 
+http://helpx.adobe.com/x-productkb/policy-pricing/creative-suite-2-act ivation-end-life.html 
+thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226438-6227571</DOCNO>
+<TEXT>
+<subject>Audition 3 and a new computer</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 20, 2014 8:36 AM">
+<s>i'd refer to the faq if i were you.</s><s> this is because you appear to have installed audition and tried to activate it.</s><s> the only place that the instructions for getting out of that particular situation will be found is in it - they are not in the link above.</s><s> but the faq also contains the link to the download site, and the information contained in the previous reply. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226438-6230123</DOCNO>
+<TEXT>
+<subject>Audition 3 and a new computer</subject>
+<post author="mantralightroom" timestamp="Mar 21, 2014 1:38 AM">
+<s>but under w7 or w8 it does mess up the languages is there a fix?</s><s> i mean 50% in english 50% in my native language 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226438-6230125</DOCNO>
+<TEXT>
+<subject>Audition 3 and a new computer</subject>
+<post author="mantralightroom" timestamp="Mar 21, 2014 1:38 AM">
+<s>is there a fix for languages?</s><s> thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227902-1432593</DOCNO>
+<TEXT>
+<subject>5.1 Surround Requirement</subject>
+<post author="MarkGilvey" timestamp="Mar 20, 2014 10:01 AM">
+<s>i might get a gig making a 30 sec spot to be shown in theaters for a local business.</s><s> i've got experience working with the video format they are asking for but haven't done any audio to meet the 5.1 surround sound requirement.</s><s> if i get some audio from a stock house, how do i convert it to 5.1?</s><s> i'll be using ae cc and i have audition cc, so far i'm only looking at music and no narration, maybe some sound effects. 
+</s><s>the specs i got are from this pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227902-6229058</DOCNO>
+<TEXT>
+<subject>5.1 Surround Requirement</subject>
+<post author="ryclark" timestamp="Mar 20, 2014 3:37 PM">
+<s>how will you be providing the final edited video to the distribution house? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6227902-6229254</DOCNO>
+<TEXT>
+<subject>5.1 Surround Requirement</subject>
+<post author="MarkGilvey" timestamp="Mar 20, 2014 4:04 PM">
+<s>i just got off the phone with the distribution house; they will take my audio as i would normally create it, doesn't have to be 5.1.</s><s> i will begiving them a .mov file that uses the apple prores422 (hq) codec. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226965-1432259</DOCNO>
+<TEXT>
+<subject>Audition CC crashes on close</subject>
+<post author="_lornaw_" timestamp="Mar 20, 2014 5:28 AM">
+<s>i know this seems like a small problem, but my concern is there's possibly a larger issue at hand. 
+</s><s>whenever i close down au cc it will crash, closing my the x at the top or right clicking my task bar and selecting 'close window'.</s><s> i have no idea why it does this, i only work with audio files between 2 seconds to 4 minutes, and never normally have more than 5 open but it can be more. 
+</s><s>what on earth is this to do with? 
+</s><s>running windows 64 bit, on intel core i7 4770k cpu @ 3.50 ghz 3.50 ghz with 32 gb of ram 
+thanks all 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226965-6227013</DOCNO>
+<TEXT>
+<subject>Audition CC crashes on close</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 20, 2014 6:03 AM">
+<s>what happens when you reopen it? 
+</s><s>the other thing you should take a note of is that there's a crash reporting procedure - the devs like to know about them.</s><s> you can find out what to do in this faq. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6226965-6227100</DOCNO>
+<TEXT>
+<subject>Audition CC crashes on close</subject>
+<post author="_lornaw_" timestamp="Mar 20, 2014 6:22 AM">
+<s>thanks for the reply steve. 
+</s><s>all seems absolutely fine until i go to finish with it again, this can happen if i use it more than once in the same day, but also between entire computer shut downs. 
+</s><s>audition is works fine the whole time as well but like i said the only issue i'm getting is the error message on close.</s><s> ok will do that. 
+</s><s>this is very odd, i'm just hoping i'm not causing the issue or it's not building up to an ultimate crash! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-1431380</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="markiedenver" timestamp="Mar 18, 2014 11:02 PM">
+<s>sorry if this is redundant.</s><s> is there any way to tell audition to never ever ever ever create a sub folder when i create a session?</s><s> i prefer to organize this myself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6222896</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="Bob%20Howes" timestamp="Mar 19, 2014 12:32 AM">
+<s>how are setting up the recording when you create a session?</s><s> i always specify where i want to record when i create the session and have never noticed any unwanted sub folders. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6223000</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 19, 2014 2:38 AM">
+<s>ditto.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6223217</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="Bob%20Howes" timestamp="Mar 19, 2014 3:49 AM">
+<s>actually i suppose we should ask what version of audition is in use...this is meant to be the forum for aa cs5.5 and upwards but, if we're talking about an early version, those did record to temp files before they were manually saved. 
+</s><s>even then i never noticed any permanent sub folders...just the space for the temp files that i specified at the initial set up. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6223277</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 19, 2014 4:27 AM">
+<s>i can't think of any situations where this would automatically happen on setting up a session, but i think that there are circumstances to do with overdubs (or something like this anyway, that i never do) whereby you can end up with a _recorded subfolder you didn't directly ask for, possibly.</s><s> but the answer to the question is the same, regardless - you can't alter audition's behaviour in this regard, no. the reason that anything at all like this happens is to prevent you from being tripped up by your own stupidity - even if you aren't being stupid.</s><s> it's all down to the lawyers again, and adobe not wishing to be sued for any consequential liabiliy (even though they couldn't be...</s><s>).</s><s> they don't trust you to look after your own business. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6223411</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="SuiteSpot" timestamp="Mar 19, 2014 5:40 AM">
+<s>it would be interesting to find out the name or names of the sub folders being created - is it just the usual/normal '_recorded' folder that is the problem or the 'bounced files' folder or is it something else?</s><s> pretty much most daws exhibit this sort of behaviour - profools, cubendo, etal all do the same thing 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6226220</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="markiedenver" timestamp="Mar 19, 2014 9:06 PM">
+<s>hi guys.</s><s> thanks for all the replies.</s><s> let me be more specific.</s><s> it's adobe cs6.</s><s> here's what happens.</s><s> when i create a new mult-track session, it asks me to select a folder to place it in.</s><s> when i select an existing folder, where i'd like the session file and all accompanying files to reside (like i'm used to doing for the past 10 or 12 years) it creates another folder within that folder and gives in the same name.</s><s> this makes my head want to explode.</s><s> i don't want that folder.</s><s> i already have the folder i want and creating new folders makes it more difficult to organize my session they way i'm used to.</s><s> i understand it's trying to help, but i want it to stop.</s><s> is there a setting to make this work more like 3.0 and mind its own business?</s><s> thank you all again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6226237</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="SuiteSpot" timestamp="Mar 19, 2014 9:45 PM">
+<s>yep - thought that that was what it was - happens to me sometimes too;-) i've been meaning to isolate the cause (i suspect it is in the sequence of steps) - i have a couple of things to do right now and then i'll get right on to it and get back to you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222717-6226367</DOCNO>
+<TEXT>
+<subject>Adobe creating sub folders.  STOP!</subject>
+<post author="SuiteSpot" timestamp="Mar 19, 2014 11:50 PM">
+<s>ok i see what is probably happening if you create a folder called test and then you open audition cs6 and create a new multitrack session called 'test' and you select the folder 'test' to place it in then audition creates a sub-folder called 'test' and puts a new sesx file called 'test' in it 
+essentially au creates a folder the same name as the name of the project/sesx file and then creates an sesx file and puts it in that folder 
+so what you need to do when doing the above (as an example) you would use the 'browse' button to tell au to create the multitrack session in the folder above where you think you want it - knowing that audition will create the folder for you - if the folder already exists au will say that the sesx file already exists (even if it doesn't and only the folder exists) and asks if you want to overwrite - in this case you would say yes 
+make sense? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222364-1431207</DOCNO>
+<TEXT>
+<subject>White Screen</subject>
+<post author="Beato1" timestamp="Mar 18, 2014 6:23 PM">
+<s>i have audition cc.</s><s> after recording a track, when i click on the screen to edit i am (most times) getting a white screen.</s><s> i still see the waveform, but i can't do anything until the screen goes back to the normal color (black w.green lines).</s><s> can someone tell me what's happening and how i can fix it...this just started happening...</s><s> thanks, bobby b 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222364-6222999</DOCNO>
+<TEXT>
+<subject>White Screen</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 19, 2014 2:37 AM">
+<s>all that means is that the entire waveform is selected.</s><s> just click the mouse on the waveform, and it will revert to normal. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6219749-1430581</DOCNO>
+<TEXT>
+<subject>Abot Adive audition</subject>
+<post author="emancipationfilmart" timestamp="Mar 18, 2014 4:38 AM">
+<s>i dont find the adobe audition app on my pc after installing it through creative cloud and i have payed monthly for it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6219749-6222974</DOCNO>
+<TEXT>
+<subject>Abot Adive audition</subject>
+<post author="Bob%20Howes" timestamp="Mar 19, 2014 12:38 AM">
+<s>where are you looking? 
+</s><s>on my pc, it installs to c: program files / adobe / adobe audition cc.</s><s> make sure you're not in program files (x86). 
+fyi, it shows up in the all programs section of the start menu but, if you want a desk top icon, you have to create that for yourself. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222708-1431315</DOCNO>
+<TEXT>
+<subject>16 to 32 bit rates?</subject>
+<post author="Monkirox" timestamp="Mar 18, 2014 9:42 PM">
+<s>i recorded audio in audition at 16-bit mode, although my macbook appears to work best in 32-bit mode.</s><s> i did this so that my recording can be compatible with the pcs and audio uploader i use at work, which uses 16-bit mode. 
+</s><s>now i am unable to even play back my recording on my macbook.</s><s> i need to edit it and then upload it from the system at my work. 
+</s><s>how can i make the audio file compatible with both systems/play for now so that i can at least edit it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6222708-6222895</DOCNO>
+<TEXT>
+<subject>16 to 32 bit rates?</subject>
+<post author="Bob%20Howes" timestamp="Mar 19, 2014 12:31 AM">
+<s>sorry, but i think we need a lot more information about how you recorded your material and then what you did to it when it became unplayable.</s><s> what sort of audio interface did you use?</s><s> what are the full details of the settings you used to record: bit depth (16 bit?</s><s>), sample rate, the type of file you saved to (.wav .aif or something else), that sort of thing? 
+fyi, audition can convert most file types and sample rates/bit depths as required.</s><s> similarly, there's no reason pcs can't work in 32 bit floating point--it's just down to the software you choose to do it.</s><s> however, if you have to end up in 16 bit for your uploader you may as well stick to that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6219976-1430643</DOCNO>
+<TEXT>
+<subject>Audition 3.0.1 freezes on Win7 32 pc when inserting/removing thumb drives</subject>
+<post author="KaylynD" timestamp="Mar 18, 2014 6:10 AM">
+<s>whenever i put in or remove an external drive, audition locks up and has to be restarted.</s><s> this also happens when i log on to a network drive.</s><s> we have a lot of network drives and switching between them happens frequently.</s><s> our it guy refuses to look at the issue saying it's a windows 7 problem.</s><s> but audition is running on my home box with no issues. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6219976-6220438</DOCNO>
+<TEXT>
+<subject>Audition 3.0.1 freezes on Win7 32 pc when inserting/removing thumb drives</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 18, 2014 9:04 AM">
+<s><quote>
+<s>kaylynd wrote: 
+our it guy refuses to look at the issue saying it's a windows 7 problem.</s><s> but audition is running on my home box with no issues. 
+</s></quote>quite...</s><s> you need to update the it guy model.</s><s> he needs the co-operation patch applied, and then a reboot. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6219976-6221989</DOCNO>
+<TEXT>
+<subject>Audition 3.0.1 freezes on Win7 32 pc when inserting/removing thumb drives</subject>
+<post author="ryclark" timestamp="Mar 18, 2014 3:24 PM">
+<s>or just a boot in a selected place. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6218044-1430135</DOCNO>
+<TEXT>
+<subject>HELP!!! CS5 Issue with Favorites / Presets</subject>
+<post author="thescream80" timestamp="Mar 17, 2014 2:03 PM">
+<s>hello!</s><s> 
+</s><s>i am on a mac and i seem to have saved my settings as favorites and not presets.</s><s> i am working on moving all my files to a new mac and audition 6. 
+</s><s>is there a way i can change a favorite to a preset so i can export so i have my settings on my new computer? 
+
+</s><s>any help is greatly appricaited 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6218044-6218417</DOCNO>
+<TEXT>
+<subject>HELP!!! CS5 Issue with Favorites / Presets</subject>
+<post author="ryclark" timestamp="Mar 17, 2014 3:52 PM">
+<s>i suspect that you can only do it by opening an audio file and using your favorite on it.</s><s> then immediately open the effect which should still have your favorite settings in it which you can then save as a new preset. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6218044-6218686</DOCNO>
+<TEXT>
+<subject>HELP!!! CS5 Issue with Favorites / Presets</subject>
+<post author="thescream80" timestamp="Mar 17, 2014 4:59 PM">
+<s>awesome.</s><s> will try that:) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6218044-6220905</DOCNO>
+<TEXT>
+<subject>HELP!!! CS5 Issue with Favorites / Presets</subject>
+<post author="thescream80" timestamp="Mar 18, 2014 10:16 AM">
+<s>thank you so much that worked!</s><s>!</s><s>!</s><s> you're awesome!</s><s>!</s><s>!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6219078-1430412</DOCNO>
+<TEXT>
+<subject>Surrond Panning Issue</subject>
+<post author="tom.chase" timestamp="Mar 17, 2014 9:09 PM">
+<s>i am a indepenedent film maker and finally ventured into the world of 5.1 from my studio at home.</s><s> i purchased a saffire pro 24, have two m-audio bx5's and three alesis elevate 3's as rears and center channel.</s><s> for the most part everything is working great until, i try to automate a very specific pan - i have an effect that i want to start in the rear right channel and pan up to the right front channel - seems simple.</s><s> what happens though is it seems to take the least direct route, meaning it goes from rr to lr to rf to center to rf instead of rr to rf.</s><s> what am i doing wrong, i've tried to keyframe it and everything but can't seem to make it go the direct route. 
+
+</s><s>my setup 2011 mac pro dual quad core 26gb ram many terabytes of hd space saffire pro 24 (using all six outputs) adobe audition cc 
+
+
+</s><s>thanks 
+</s><s>tom chase 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-1427641</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="BJBBJB1" timestamp="Mar 13, 2014 4:29 PM">
+<s>greetings, 
+</s><s>i am very familiar with ppro and ps but only use audition cc once in a while.</s><s> i've found a couple adobe blog posts on this that helped but i need to know just 2 more things! 
+i want to take a large live concert audio .</s><s>wav file and split it up into separate tracks.</s><s> of course easy to add markers and export into separate files.</s><s> i found a post on that.</s><s> but here is what i am not sure of.</s><s> when i select my track splits i want to be very sure that the next selection i make starts a second after the prior one.</s><s> so if i am selecting "sections" in order to place my markers, i am concerned i will ruin the overall cd. 
+</s><s>now i know i can just split them and burn to cd, but i want the separate .</s><s>wav files because i would like to add some eq and effects on certain tracks.</s><s> then i want to re-combine them in the correct order so that the cd plays without breaks. 
+</s><s>finally, for certain tracks i might want to add a fade out and fade in for the next track.</s><s> i would prefer not to have to render this type of effect.</s><s> for those tracks that i want to do this for, can i just add a setting and then when i "export" or "save as separate tracks" it will put the fade in there? 
+i am cool with using other burning software to make my cd, and make sure i don't introduce gaps with the burning process, but i want to make sure i have good split audio files first. 
+
+i thougth about applying all of my effects first on the one big file, but then i have the same issue.</s><s> my effects might overshoot and mess up some of the tracks that do have different sources and are not contiguous. 
+</s><s>any help appreciated!</s><s> thanks, bjbbjb1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-6207890</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="ryclark" timestamp="Mar 13, 2014 4:45 PM">
+<s>probably your best bet is to put your continuous .wav into the multitrack view and split it up there.</s><s> because it is non destructive you can move the individual clips around, apply different effects to them, overlap them to create crossfades etc. without affecting the original file.</s><s> once you are happy with the editing you can mix the whole lot down to one continuous file again to apply the track markers to for the cd and burn from the newly mastered file. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-6212251</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="BJBBJB1" timestamp="Mar 15, 2014 9:05 AM">
+<s>thanks for that.</s><s> i've played around with it and i think my pr pro experience will help.</s><s> does this sound like a reasonable workflow?</s><s> and i also snuck in a few questions 
+-import the file -go to a multitrack view in with the same sample paramaters as my .wav file. -use the razor tool to cut each track into a different session.</s><s> (here is a question....i know about "snap-to" and the setting within a track.</s><s> but for multi-track, is there a way to tell the next track to start right after the prior track?</s><s> vs. trying to visually line it up with that yellow line that pops up.</s><s> just not sure i can make it seemless with that yellow line).</s><s> is there a command or something? -eq each track, and looks like i can save presets for the different halls. -seems like i can then select a track, right-click and "mix-down session to new file for selected track".</s><s> is that right? -so then i have a folder with each track, still in .wav having lost no quality, and i can then combine them into a cd with my own burning software. -and/or i can select them all and "mix-down session to new file for entire session".</s><s> and then re-import that file and put in chapter marks and burn a cd right in audition. 
+</s><s>finally, i am pretty good with my audio mixing in pr pro and in the real world.</s><s> is there an faq or any tips on using the basic eq in audition?</s><s> or maybe a little reverb.</s><s> again, just tweaking live band audio, don't need to get crazy with flanger, etc.</s><s> i can imagine trying to make the bass less muddy, bring up the cymbals.</s><s> i saw that expand soundstage which looked interesting. 
+
+</s><s>thanks again, kind of having fun with this.</s><s> bjbbjb1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-6212457</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="ryclark" timestamp="Mar 15, 2014 11:10 AM">
+<s>if snapping is turned on and you have snap to clip turned on then as you slide the new clips around on different tracks they will snap to the end of the previous one even if it is on a different track. 
+</s><s>the best eq to use, once you get your head round it, is the parametric eq since it gives you a huge number of options to tweak the sound either visually or manually.</s><s> the adjustable q makes it very versatile by allowing you to set very gentle wide sweeping eq or drastic sharp peaked dips or humps. 
+</s><s>there is a very good free guide to mixing which might help you from izotope. 
+http://downloads.izotope.com/guides/izotope-mixing-guide-principles-ti ps-techniques.pdf 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-6214008</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="BJBBJB1" timestamp="Mar 16, 2014 7:38 AM">
+<s>thanks.</s><s> i have the snapping icon at the top of the multitrack list "on".</s><s> i also have edit>snap to clips on.</s><s> i still feel like i am manually trying to get it perfectly aligned.</s><s> is there a command or keyboard shortcut that just pushes the selected clip to the left so it is "snapped to" the prior multi-track clip?</s><s> or do you have to do it with the mouse.</s><s> and i understand it tries to guide you, but when you do not want any breaks in the mix, it still seems rather manual. 
+</s><s>or if you drop it when you see the "yellow line", does that mean it is perfectly snapped? 
+</s><s>thanks, bjbbjb1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-6214441</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="ryclark" timestamp="Mar 16, 2014 11:12 AM">
+<s><quote>
+<s>bjbbjb1 wrote: 
+
+</s><s>or if you drop it when you see the "yellow line", does that mean it is perfectly snapped? 
+</s><s>thanks, bjbbjb1 
+</s></quote>yes, provided you only have snap to clips turned on as long as you don't have any of the snap to ruler options turned on as well.</s><s> they could cause some confusion as to what your clips were snapping to. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6207844-6219003</DOCNO>
+<TEXT>
+<subject>Audition CC Specific track split overlap/fade question</subject>
+<post author="BJBBJB1" timestamp="Mar 17, 2014 7:41 PM">
+<s>thanks, that makes sense.</s><s> appreciate it.</s><s> bjbbjb1 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6218415-1430218</DOCNO>
+<TEXT>
+<subject>Why does pitch bender not allow me to drag the curve to change pitch?</subject>
+<post author="umhum" timestamp="Mar 17, 2014 3:49 PM">
+<s>i currently have version 6.0 on the mac.</s><s> i am trying to change the pitch of a generated tone (short in duration, about 300ms).</s><s> however, and this has only been happening recently, when selecting the pitch bender tool, i can no longer drag the curve the change the pitch.</s><s> when i try to double click a specific point on my pitch graph, it simply highlights the entire selection.</s><s> i tried selecting a preset, and even though the pitch curve changes, i am unable to adjust the curve.</s><s> is it something i changed, or is this a bug?</s><s> thank you in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6218415-6218420</DOCNO>
+<TEXT>
+<subject>Why does pitch bender not allow me to drag the curve to change pitch?</subject>
+<post author="ryclark" timestamp="Mar 17, 2014 3:57 PM">
+<s>a long shot.</s><s> maybe you have turned on a snapping option that won't allow you to accurately select a point within your very short audio segment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-1428709</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="Biophony1" timestamp="Mar 15, 2014 11:57 AM">
+<s>audition cs6 is installed and will show on the screen, but it won't play the file.</s><s> help please? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6212648</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="kglad" timestamp="Mar 15, 2014 12:16 PM">
+<s>did you test other audio files to determine if it's an audio file problem?</s><s> did you test at the same time to play the audio file in another player? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6212717</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="Biophony1" timestamp="Mar 15, 2014 12:21 PM">
+<s>yes.</s><s> the audio files play with other audio software.</s><s> and audition worked yesterday.</s><s> just won't play, today. 
+</s><s>bk 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6212651</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="kglad" timestamp="Mar 15, 2014 12:25 PM">
+<s>try reinstalling. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6212721</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="Biophony1" timestamp="Mar 15, 2014 12:29 PM">
+<s>guess i'll have to do that.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6212748</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="kglad" timestamp="Mar 15, 2014 12:46 PM">
+<s>you're welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6218187</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 17, 2014 2:47 PM">
+<s>i wouldn't bother - that won't be the problem at all.</s><s> if you can open audition, load a file, and then it won't play, the transport has failed.</s><s> and the only reason that the transport fails is that audition isn't connected to your sound device any more.</s><s> so go to the preferences section, look at the hardware settings and see what's happened there.</s><s> reinstalling won't alter this in the slightest. 
+</s><s>you haven't said whether this is on a mac or a pc, but this behaviour is the same on both. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6212630-6218263</DOCNO>
+<TEXT>
+<subject>AuditionCS6 loaded but won't play</subject>
+<post author="Biophony1" timestamp="Mar 17, 2014 3:08 PM">
+<s>thanks, steve.</s><s> that's what i figured.</s><s> after fiddling w/ it for a bit, i got it to work, finally. 
+</s><s>bernie 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6217094-1429865</DOCNO>
+<TEXT>
+<subject>How to enable pre-rendering to apply effects to track?</subject>
+<post author="j0dyr3" timestamp="Mar 17, 2014 9:50 AM">
+<s>when i try to apply effects, i get this message: the selected effect may not be suitable for real-time playback because its either cpu-intensive or high-latency.</s><s> to maximize playback performance, enable pre-rendering on the trck containing the effect.</s><s> my question is: how do i enable pre-rendering?</s><s> will this solve my issue? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6217094-6217143</DOCNO>
+<TEXT>
+<subject>How to enable pre-rendering to apply effects to track?</subject>
+<post author="_durin_" timestamp="Mar 17, 2014 10:08 AM">
+<s>the simplest way is to click the button with the lightning bolt icon in the effects rack.</s><s> this will enable pre-render for the track, and will background-render the track.</s><s> any changes you make to this track will automatically trigger a new render, so you don't need to freeze/unfreeze/re-freeze when modifying parameters. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6217094-6217227</DOCNO>
+<TEXT>
+<subject>How to enable pre-rendering to apply effects to track?</subject>
+<post author="j0dyr3" timestamp="Mar 17, 2014 10:26 AM">
+<s>i clicked the button, but it did not seem to help. the same message appears. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6217094-6218188</DOCNO>
+<TEXT>
+<subject>How to enable pre-rendering to apply effects to track?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 17, 2014 2:48 PM">
+<s>did you wait for long enough for it to do the pre-render? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6217257-1430021</DOCNO>
+<TEXT>
+<subject>Ronald Singleton</subject>
+<post author="Ronald Singleton" timestamp="Mar 17, 2014 10:49 AM">
+<s>how to download the au software? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216541-1429755</DOCNO>
+<TEXT>
+<subject>Can I Use Adobe Audition CS6 with an Avid Eleven interface?</subject>
+<post author="starsixxxtynine" timestamp="Mar 17, 2014 7:40 AM">
+<s>i have a pc and the adobe creative suite.</s><s> i recently bought an avid eleven guitar rack and computer interface.</s><s> i have been having problems with protools crashing, and apparently it is a common problem with protools/pc.</s><s> i like the adobe audition, and was wondering if i can use my eleven with aa cs6?</s><s> if so how do i get my aa to recognize/communicate with the eleven? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216541-6216932</DOCNO>
+<TEXT>
+<subject>Can I Use Adobe Audition CS6 with an Avid Eleven interface?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 17, 2014 9:19 AM">
+<s>really, it's a digidesign box.</s><s> apparently if you go into the hardware settings page in audition it should be listed as an available asio driver by digidesign.</s><s> beyond that though, i can't tell you whether it will actually work.</s><s> if you haven't installed audition yet, download the trial and give it a go.</s><s> report back, and then we'll all know! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216541-6217019</DOCNO>
+<TEXT>
+<subject>Can I Use Adobe Audition CS6 with an Avid Eleven interface?</subject>
+<post author="starsixxxtynine" timestamp="Mar 17, 2014 9:33 AM">
+<s>it wasn't coming up as an asio device.</s><s> but im running windows 8 and there was a software upgrade release that i didnt have, so i dl'd it and im all set.</s><s> sorry for the silly question. but i figured it out 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216541-6217055</DOCNO>
+<TEXT>
+<subject>Can I Use Adobe Audition CS6 with an Avid Eleven interface?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 17, 2014 9:40 AM">
+<s>thx for reporting back.</s><s> still like to know if it all works okay though... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6215966-1429597</DOCNO>
+<TEXT>
+<subject>Converting sample rate when exporting</subject>
+<post author="brazil101" timestamp="Mar 17, 2014 4:14 AM">
+<s>cs5.5 
+</s><s>i'm using audition to do some final mastering to 16-bit stereo 44100 wav files, in 32 float multi-track sessions. 
+</s><s>all i'm doing is increasing the clip gain, then exporting to 16-bit stereo 44100 wave and 320 mp3. 
+</s><s>i'm not changing the sample rate, channels or bit depth, but i am applying triangular dither when exporting. 
+</s><s>the thing i've noticed is even though i'm not changing any of the properties of the files, when exporting audition still tells me its "converting sample rate", despite the sample rate being the same as the source (44100).</s><s> the quality advanced tab on the sample rate is greyed out. 
+</s><s>also, when i check the history box for the newly exported files it tells me "convert sample type on save as" 
+</s><s>what is audition doing at this stage? 
+</s><s>how can it be converting the sample rate, when the sample rate is the exact same as the source?</s><s> and the quality tab for sample rate conversion is greyed out? 
+</s><s>all i'm doing is upping the clip gain slightly and then applying dither to these files.</s><s> no sample rates are changed. 
+</s><s>any help greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6215966-6216933</DOCNO>
+<TEXT>
+<subject>Converting sample rate when exporting</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 17, 2014 9:24 AM">
+<s><quote>
+<s>brazil101 wrote: 
+i'm using audition to do some final mastering to 16-bit stereo 44100 wav files, in 32 float multi-track sessions. 
+</s><s>i'm not changing the sample rate, channels or bit depth, 
+</s></quote>except that you are... 
+</s><s>if you open a 16-bit file as a 32-bit float, then you've changed the bit depth.</s><s> it's the right thing to do if you are doing amplitude changes, as it makes any change effectively lossless, but it will still have to be converted back to 16-bit if you elect to store it like that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216781-1429795</DOCNO>
+<TEXT>
+<subject>Apollo Quad Interface incompatible with Audition CC on OSX 10.9</subject>
+<post author="Sammy-" timestamp="Mar 17, 2014 8:35 AM">
+<s>hello, 
+</s><s>i am using adobe audition cc on osx 10.9.2.</s><s> i am mixing projects in 5.1 and use the multichannel output supported by audition.</s><s> i recently switched interfaces and purchased an apollo quad.</s><s> i have all of the apollo software installed and osx recognizes the device.</s><s> it works fine with protools.</s><s> however, when i use audtion i am unable to assign the hardware outputs in the preferences>audio channel mapping of audition.</s><s> i simply get an error that reads "unable to get device information". 
+</s><s>is anyone successfully using an apollo quad with audition cc? 
+</s><s>does anyone know if the two products are incompatible and i should stop trying to use this combination? 
+</s><s>thanks, sam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216491-1429695</DOCNO>
+<TEXT>
+<subject>How to load files on G external? (SpeedGrade sees files)</subject>
+<post author="PhotoJournal" timestamp="Mar 17, 2014 7:51 AM">
+<s>i downloaded lesson files for audition onto an external g drive.</s><s> these files (after un-zip) are not shown in the audtion media browser.</s><s> i got around this by making a folder on c for the lessons i needed.</s><s> however, in the future i would like to store audition files on the g drive.</s><s> speedgrade sees the files on g fine.</s><s> is this a bug in audition, or a problem with my configuration?</s><s> i have both my hpenvy quad laptop connected to the g drive and my macpro (2007 vintage) connected to the g.</s><s> i have not used both the mac and the envy at the same time to connect to the g external drive. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216006-1429653</DOCNO>
+<TEXT>
+<subject>adobe free tial version audition program</subject>
+<post author="Dino 2012" timestamp="Mar 17, 2014 4:50 AM">
+<s>i want to dwnloud trial version of adobe audition 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6216006-6216036</DOCNO>
+<TEXT>
+<subject>adobe free tial version audition program</subject>
+<post author="Bob%20Howes" timestamp="Mar 17, 2014 5:11 AM">
+<s>you should be able to get the trial version of audition cc here: http://www.adobe.com/au/downloads.html   (i haven't been able to double check the trial download--i have a cc account and it takes me to a full download page.</s><s>)
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6213363-1428899</DOCNO>
+<TEXT>
+<subject>Upgrade adobe audition</subject>
+<post author="gazza 123" timestamp="Mar 15, 2014 7:08 PM">
+<s>hi i have a copy of adobe audition 1 and as you know it is for windows only.</s><s> i would like to upgrade to audition 3 for imac.</s><s> is there anyway possible please ? 
+</s><s>thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6213363-6213586</DOCNO>
+<TEXT>
+<subject>Upgrade adobe audition</subject>
+<post author="Bob%20Howes" timestamp="Mar 15, 2014 10:29 PM">
+<s>no. audition 3 was still a windows-only programme.</s><s> the first version that could run on a mac was cs5.5 and (being honest) this was lacking quite a few features we take for granted.</s><s> cs6 is probably the first one to consder to replace what you're used to (or cc on a monthly subscription if you want the very latest--there are some nice extras added between cs6 and cc). 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6213363-6215988</DOCNO>
+<TEXT>
+<subject>Upgrade adobe audition</subject>
+<post author="gazza%20123" timestamp="Mar 17, 2014 4:00 AM">
+<s>many thanks bob i will check it out, as i do miss my cool edit pro and audition 1. 
+</s><s>gaz 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6214155-1429143</DOCNO>
+<TEXT>
+<subject>Why does my recording voice sound slow?</subject>
+<post author="Mimichild" timestamp="Mar 16, 2014 8:34 AM">
+<s>hello!</s><s> i've recently been using audition 5.5 and i have a blue yeti microphone.</s><s> i've been doing covers for a while on audacity, but the overall sound wasn't good enough.</s><s> so when i tried audition, the sound was better but my voice wouldn't sync with the background music.</s><s> i tried to record it in real time and then add the music later but it doesn't work.</s><s> can anybody tell me what i'm doing wrong?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6214155-6214444</DOCNO>
+<TEXT>
+<subject>Why does my recording voice sound slow?</subject>
+<post author="ryclark" timestamp="Mar 16, 2014 11:17 AM">
+<s>possibly you haven't got all the parts of the recording chain set to the correct sample rate.</s><s> the blue yeti, windows sound and audition must all be set to the same sample rate.</s><s> with audacity windows is probably having to do a sample rate conversion to match the mic to the audio software.</s><s> doing that will cause quite a loss in sound quality.</s><s> audition is trying to do the correct thing when recording but saves the file with the incorrect sample rate info causing it to play back slowed down. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6214155-6215289</DOCNO>
+<TEXT>
+<subject>Why does my recording voice sound slow?</subject>
+<post author="Mimichild" timestamp="Mar 16, 2014 7:16 PM">
+<s>thanks!</s><s> ok i need to change my sample rate so how do i do that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6214155-6215803</DOCNO>
+<TEXT>
+<subject>Why does my recording voice sound slow?</subject>
+<post author="SteveG(AudioMasters)" timestamp="Mar 17, 2014 2:44 AM">
+<s><quote>
+<s>mimichild wrote: 
+thanks!</s><s> ok i need to change my sample rate so how do i do that? 
+</s></quote>you don't with a blue yeti - they're firmly stuck at 48k 16 bit.</s><s> you've either got to resample everything else so that it's at this rate, or get a non-usb microphone, preamp and sound device - which would at least let you control the sample rate you record at. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4630526-1051594</DOCNO>
+<TEXT>
+<subject>Audition CS6 Mac Won't Play Audio Interface Preference Issue</subject>
+<post author="Arkon76" timestamp="Aug 18, 2012 12:31 AM">
+<s>hi im having some problems with audition cs6 mac.</s><s> i have the full master collection and only encounter this issue with audition. 
+</s><s>on my macbook pro i use my internal speakers/audio or a vrm box audio interface, occasionally ill use a fasttrack pro to record.</s><s> my problem occurs after i use the audio interface.</s><s> when i next open audition set up for the built in speakers/audio and hit play, it says playing but nothing plays. 
+
+
+</s><s>when i open audition after using a external interface going back to my built in macbook audio i get a pop warning that: 
+</s><s>"your systems audio hardware settings have changed.</s><s> would you like to go review audition's audio hardware preferences?" 
+
+i click yes, go to that everything is set for internal mac audio, 
+
+
+
+
+hit play, says playing bottom left, then just sits there. 
+
+
+i noticed today when it did this, that it if i go into the audio channel mapping preference, it shows what ever audio interface i used last on the output/not working on it.</s><s> i am unable to change theses settings. 
+
+
+i reboot after changing audio interfaces, etc. 
+i can delete my audition preference files in my user folder and it functions again, but that also entails rescanning all plugins which takes some time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4630526-4630527</DOCNO>
+<TEXT>
+<subject>Audition CS6 Mac Won't Play Audio Interface Preference Issue</subject>
+<post author="Arkon76" timestamp="Aug 18, 2012 12:43 AM">
+<s>i just found that removing machinespecificsettings.xml in the user/preferences/adobe/audition/5.0/ folder will get it to play again under the internal audio settings.</s><s> and when i look at channel mapping it shows the internal audio. 
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4630526-5049475</DOCNO>
+<TEXT>
+<subject>Audition CS6 Mac Won't Play Audio Interface Preference Issue</subject>
+<post author="jmallin" timestamp="Feb 5, 2013 9:34 AM">
+<s>i had the same problem -- audition (cs6 on a mac) just wouldn't play.</s><s> removing machinespecificsettings.xml worked for me as well. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4630526-6214817</DOCNO>
+<TEXT>
+<subject>Audition CS6 Mac Won't Play Audio Interface Preference Issue</subject>
+<post author="forensicbp" timestamp="Mar 16, 2014 2:04 PM">
+<s>i have this exact problem but i don't do much at all on my mac besides record...how do i find this "machinespecificsettings.xml".</s><s> i read your path but i don't appear to even have that path on my mac. 
+</s><s>please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-4630526-6214950</DOCNO>
+<TEXT>
+<subject>Audition CS6 Mac Won't Play Audio Interface Preference Issue</subject>
+<post author="_durin_" timestamp="Mar 16, 2014 2:54 PM">
+<s>try the following: - open edit > preferences > audio hardware settings - change the master clock setting from output to input, then click ok - repeat, but change it back to output. 
+</s><s>this should restore the connection with the audio device. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Audition-CS5.5,-CS6-&-CC/Discussions-6214111-1429099</DOCNO>
+<TEXT>
+<subject>Audition CC Crashes on Exit</subject>
+<post author="billbyrnes@live.com" timestamp="Mar 16, 2014 8:10 AM">
+<s>i have adobe audition cc on on a windows 8.1 64 bit system.</s><s> when i open an mp3 or wav audio file and make some changes, then not save those changes, and i exit the program, everyhing appears to be working correctly.</s><s> the program asks me if i want to save, i answer not and the program seems to exit gracefully.</s><s> however, i get an error in the windows event log and action center that says audition stopped working and had to be closed down.</s><s> there is also a dmp file in the user->appdata->local->crashdumps folder. 
+</s><s>does anyone have any ideas what could be causing this and what the solution would be? 
+</s><s>thanks for your help. 
+</s><s>bill byrnes 
+</s></post>
+</TEXT>
+</DOC>
+
+

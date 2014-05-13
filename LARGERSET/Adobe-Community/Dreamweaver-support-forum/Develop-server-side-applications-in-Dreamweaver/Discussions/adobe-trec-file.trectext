@@ -1,0 +1,134 @@
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-1429707</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="kerrywales" timestamp="Mar 17, 2014 6:40 AM">
+<s>hello, 
+</s><s>i am looking to allow the user to set the number of rows returned in a repeat region from the fixed amount set using server behaviours to a figure set by the person viewing the page. 
+i have seen that the code generated uses: 
+$maxrows_rsvenues = 20; 
+to start with i thought something simple.</s><s> either all records or the preset 20 rows at a time.</s><s> i presume session variables would be a good way to go so setting a form on the page with a checkbox (checked meaning all and unchecked for 20).</s><s> (it gets me into how the coding works) having googled my requirement and read responses on using checkboxes and session variables i had the following theory 
+at start of page make sure session value exists: 
+if (!</s><s>isset($_session)) { session_start(); } $_session['listcount']='20'; 
+in the body before the table created within the repeat region put <form id="form1" name="form1" method="post" action=""> <p id="frmfilter"> <input name="seeall" type="checkbox" id="seeall" value="1" /> <label for="seeall">seeall</label> <input type="submit" name="set filter" id="set filter" value="set filter" /> </p> </form> <?</s><s>php if (isset($_post['submit'])) { if ($_post['seeall'] == '1') { $_session['venuelistcount'] = '999999'; } else { $_session['venuelistcount'] = '20'; } } ?</s><s>> 
+</s><s><?</s><s>php echo "list count: ".$_session['venuelistcount']; ?</s><s>> 
+
+</s><s>the problem is the session variable never seems to be modified.</s><s> can someone explain what i have misunderstood, or perhaps a better option to implement what i want. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-6216835</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="bregent" timestamp="Mar 17, 2014 9:22 AM">
+<s>> if (isset($_post['submit'])) { 
+
+</s><s>your form has no elements named 'submit' so it will never get past the first if statement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-6219336</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="kerrywales" timestamp="Mar 18, 2014 1:33 AM">
+<s>thanks that was my misunderstanding of the $_post.</s><s> i have got it to remember the state now. 
+i have this code inserted at the begining of the cs5.5 generated code 
+<?</s><s>php require_once('../connections/dbconn.php'); ?</s><s>> <?</s><s>php if (!</s><s>isset($_session)) { session_start(); $_session['listcount']='20'; } ...... 
+then later replace the rhside of an assignement to use the session variable ... $totalrows_rsvenues = mysql_num_rows($rsvenues); 
+
+$maxrows_rsvenues = $_session['venuelistcount']; $pagenum_rsvenues = 0; .... 
+and code in a form to set the session variable ....</s><s> <form id="form1" name="form1" method="post" action=""> <p id="frmfilter"> <input name="seeall" type="checkbox" id="seeall" value="1" /> <label for="seeall">seeall</label> <input type="submit" name="setfilter" id="setfilter" value="set filter" /> </p> </form> <?</s><s>php if (isset($_post['setfilter'])) { if ($_post['seeall'] == '1') { $_session['listcount'] = '999999'; } else { $_session['listcount'] = '20'; } } ?</s><s>> 
+
+</s><s><?</s><s>php echo "list count: ".$_session['listcount']; ?</s><s>> 
+</s><s>but how do i trigger the cs5.5 code to redraw the data with the new values.</s><s> or should i not bother with the generated code and do it all in php manually? 
+</s><s>kerry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-6220699</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="bregent" timestamp="Mar 18, 2014 9:41 AM">
+<s>but how do i trigger the cs5.5 code to redraw the data with the new values. Ê what do you mean by 'redraw the data'? Ê or should i not bother with the generated code and do it all in php manually?</s><s> i think your best bet is to code this by hand.</s><s> dw's generated code is badly outdated and overly complex.</s><s> in addition, once you start making changing to the generated code, it breaks the connection to the server behaviors and then dw has a tendency to duplicate the code.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-1429707</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="kerrywales" timestamp="Mar 17, 2014 6:40 AM">
+<s>hello, 
+</s><s>i am looking to allow the user to set the number of rows returned in a repeat region from the fixed amount set using server behaviours to a figure set by the person viewing the page. 
+i have seen that the code generated uses: 
+$maxrows_rsvenues = 20; 
+to start with i thought something simple.</s><s> either all records or the preset 20 rows at a time.</s><s> i presume session variables would be a good way to go so setting a form on the page with a checkbox (checked meaning all and unchecked for 20).</s><s> (it gets me into how the coding works) having googled my requirement and read responses on using checkboxes and session variables i had the following theory 
+at start of page make sure session value exists: 
+if (!</s><s>isset($_session)) { session_start(); } $_session['listcount']='20'; 
+in the body before the table created within the repeat region put <form id="form1" name="form1" method="post" action=""> <p id="frmfilter"> <input name="seeall" type="checkbox" id="seeall" value="1" /> <label for="seeall">seeall</label> <input type="submit" name="set filter" id="set filter" value="set filter" /> </p> </form> <?</s><s>php if (isset($_post['submit'])) { if ($_post['seeall'] == '1') { $_session['venuelistcount'] = '999999'; } else { $_session['venuelistcount'] = '20'; } } ?</s><s>> 
+</s><s><?</s><s>php echo "list count: ".$_session['venuelistcount']; ?</s><s>> 
+
+</s><s>the problem is the session variable never seems to be modified.</s><s> can someone explain what i have misunderstood, or perhaps a better option to implement what i want. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-6216835</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="bregent" timestamp="Mar 17, 2014 9:22 AM">
+<s>> if (isset($_post['submit'])) { 
+
+</s><s>your form has no elements named 'submit' so it will never get past the first if statement. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-6219336</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="kerrywales" timestamp="Mar 18, 2014 1:33 AM">
+<s>thanks that was my misunderstanding of the $_post.</s><s> i have got it to remember the state now. 
+i have this code inserted at the begining of the cs5.5 generated code 
+<?</s><s>php require_once('../connections/dbconn.php'); ?</s><s>> <?</s><s>php if (!</s><s>isset($_session)) { session_start(); $_session['listcount']='20'; } ...... 
+then later replace the rhside of an assignement to use the session variable ... $totalrows_rsvenues = mysql_num_rows($rsvenues); 
+
+$maxrows_rsvenues = $_session['venuelistcount']; $pagenum_rsvenues = 0; .... 
+and code in a form to set the session variable ....</s><s> <form id="form1" name="form1" method="post" action=""> <p id="frmfilter"> <input name="seeall" type="checkbox" id="seeall" value="1" /> <label for="seeall">seeall</label> <input type="submit" name="setfilter" id="setfilter" value="set filter" /> </p> </form> <?</s><s>php if (isset($_post['setfilter'])) { if ($_post['seeall'] == '1') { $_session['listcount'] = '999999'; } else { $_session['listcount'] = '20'; } } ?</s><s>> 
+
+</s><s><?</s><s>php echo "list count: ".$_session['listcount']; ?</s><s>> 
+</s><s>but how do i trigger the cs5.5 code to redraw the data with the new values.</s><s> or should i not bother with the generated code and do it all in php manually? 
+</s><s>kerry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Dreamweaver-support-forum/Develop-server-side-applications-in-Dreamweaver/Discussions-6216280-6220699</DOCNO>
+<TEXT>
+<subject>CS5.5 want to change the number records returned for a repeat region from user input</subject>
+<post author="bregent" timestamp="Mar 18, 2014 9:41 AM">
+<s>but how do i trigger the cs5.5 code to redraw the data with the new values. Ê what do you mean by 'redraw the data'? Ê or should i not bother with the generated code and do it all in php manually?</s><s> i think your best bet is to code this by hand.</s><s> dw's generated code is badly outdated and overly complex.</s><s> in addition, once you start making changing to the generated code, it breaks the connection to the server behaviors and then dw has a tendency to duplicate the code.
+</s></post>
+</TEXT>
+</DOC>
+
+

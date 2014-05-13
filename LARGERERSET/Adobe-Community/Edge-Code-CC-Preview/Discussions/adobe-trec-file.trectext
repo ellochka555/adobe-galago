@@ -1,0 +1,2306 @@
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-1403926</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="mattdwm" timestamp="Feb 11, 2014 9:07 AM">
+<s>live preview is stuck on connecting.</s><s> i'm on a mac 10.9.1.</s><s> 
+</s><s>edge code cc version: experimental build 0.97.0-359084144 (preview) (on branch master,master 85d293f3f) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6110067</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="ingorichter" timestamp="Feb 11, 2014 9:54 AM">
+<s>has this ever worked for you?</s><s> which version of chrome do you have installed? 
+- ingo 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6110123</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="mattdwm" timestamp="Feb 11, 2014 10:00 AM">
+<s>no it's never worked.</s><s> chrome is version 32. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6127341</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="mattdwm" timestamp="Feb 16, 2014 7:42 PM">
+<s>any ideas how i can troubleshoot this? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6129334</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="mattdwm" timestamp="Feb 17, 2014 10:45 AM">
+<s>i was able to get it working by opening chrome with this command: /applications/google\ chrome.app/contents/macos/google\ chrome --remote-debugging-port=9222 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6131697</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="Muscavado" timestamp="Feb 18, 2014 5:21 AM">
+<s>thanks, this worked for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6131774</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="Muscavado" timestamp="Feb 18, 2014 5:25 AM">
+<s>...err - sort of.</s><s> i was too quick replying.</s><s> when i went back to code there was the familiar 'unable to load live development page' and everything's gone again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6227290</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:46 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6227821</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="mattdwm" timestamp="Mar 20, 2014 9:26 AM">
+<s>open folder doesn't fix it for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6227841</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 10:03 AM">
+<s>try something about this in some ways.</s><s> one variant from file -> open folder.   second - like on picture: choose from left column where there is small arrows: up/down   as i remember it worked not from first time.</s><s> and of ?ourse: update adobe edge code cc to latest version via cloud creative program: here for example: https://creative.adobe.com/products/code?promoid=kfkml
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6229016</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 20, 2014 2:44 PM">
+<s>matt, the next release of edge code will have a number of reliability fixes for live preview that we hope will fix the problem for you.</s><s> sit tight and hopefully we'll be able to get that into your hands pretty soon! 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6229965</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 11:05 PM">
+<s>peter make please also adjustable fonts and color and so on for displaying code in main windows. 
+</s><s>at this moment i don't like how it display russian characters (font and size and color) - so it would be great if i could adjust it for myself.</s><s> also great if default settings for such displaying font, color and size were also great on russian and other languages. 
+</s><s>wish you great mood ))) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6109868-6232167</DOCNO>
+<TEXT>
+<subject>Live Preview stuck connecting</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 21, 2014 2:07 PM">
+<s>hi yezmuch, 
+</s><s>please start a new thread if you want to ask about somehing that's unrelated. 
+</s><s>font preferences are on the roadmap, though they unfortunately won't be in the very next edge code release.</s><s> in the meantime, you can use this workaround to change your editor font: https://github.com/adobe/brackets/wiki/customize-your-code-font 
+to change editor coloring schemes, you can install one of the popular brackets "themes" plugins following these steps: http://forums.adobe.com/docs/doc-3191 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6232194-1433585</DOCNO>
+<TEXT>
+<subject>How do I connect to PhoneGap Build?</subject>
+<post author="Laurence MacNeill" timestamp="Mar 21, 2014 2:01 PM">
+<s>i was watching this tutorial here: https://helpx.adobe.com/creative-cloud/tutorials/videos/phonegap-build -first-app.html?product=phonegap-build&path=get-started 
+the guy in the tutorial shows how to connect your edge code to phonegap build -- but mine doesn't have the phonegap build plugin button that he mentions...</s><s> mine looks a little different, too -- i assume he's using on older version of edge code in that video... 
+</s><s>so where is the phonegap plugin hidden in edge code cc? 
+</s><s>thanks, laurence macneill mableton, georgia, usa 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6226059-1432154</DOCNO>
+<TEXT>
+<subject>Getting Adobe Edge</subject>
+<post author="Taylorowens89" timestamp="Mar 19, 2014 8:12 PM">
+<s>i downloaded adobe cloud, does that mean i have adobe edge or do i have to download it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6226059-6229101</DOCNO>
+<TEXT>
+<subject>Getting Adobe Edge</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 20, 2014 2:56 PM">
+<s>no, you have to download it -- but you use the creative cloud desktop app to do that.</s><s> click the "apps" tab in the creative cloud app, then scroll down to the edge code item and click install. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6208772-1427841</DOCNO>
+<TEXT>
+<subject>Live Preview not Working</subject>
+<post author="Sangahyando" timestamp="Mar 14, 2014 2:46 AM">
+<s>using edge code preview experimental build 0.97.0-359084144 i get : 
+live preview error : unable to load live development page 
+when attempting to do a live preview. 
+</s><s>chrome does pop up and the page is loaded, after a few seconds the above error is thrown, and any further changes to the document are not shown in the browser. 
+</s><s>this occurs both when not using a local server and when using http://www.learning.local:80.</s><s> the local server is hosted by iis on windows 7. 
+</s><s>is there any way of debugging edge code to attempt to see why this is happening? 
+</s><s>any help greatly appreciated, need any more info please ask. 
+</s><s>regards andrew 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6208772-6212734</DOCNO>
+<TEXT>
+<subject>Live Preview not Working</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 15, 2014 1:04 PM">
+<s>the chrome api that brackets uses changed in version 34 (beta, dev, canary), so be sure to use version 33 (stable).</s><s> this will be fixed in the next release of edge code. 
+</s><s>also, live html does not update page as you type if you specify your own server (i.e.</s><s> base url), but will update when you save your page. 
+</s><s>hope this helps, randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6208772-6217917</DOCNO>
+<TEXT>
+<subject>Live Preview not Working</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 17, 2014 1:30 PM">
+<s>the next release of edge code will have a number of fixes for live preview connection problems.</s><s> hold tight and hopefully this will be improved for you soon! 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6208772-6227400</DOCNO>
+<TEXT>
+<subject>Live Preview not Working</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:50 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6208772-6227689</DOCNO>
+<TEXT>
+<subject>Live Preview not Working</subject>
+<post author="Sangahyando" timestamp="Mar 20, 2014 9:02 AM">
+<s>hi yezmuch, that may be true in a lot of cases, but not mine as by default that is what i do. 
+</s><s>downgrading chrome worked for me, though there are still intermittent issues (no errors) when writing sass, which is then compiled by compass into a stylesheet within my folder structure.</s><s> sometimes it works, sometimes it doesn't.</s><s> (yes, i do save my sass files first. 
+</s><s>thanks andrew 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6208772-6229013</DOCNO>
+<TEXT>
+<subject>Live Preview not Working</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 20, 2014 2:37 PM">
+<s>there's a known incompatibility with chrome beta (chrome 34), which will be fixed in the next release of edge code.</s><s> is that the version you were on before? 
+</s><s>in terms of sass/compass -- the current release of edge code only notices externally-modified files if you leave the edge code window and then come back.</s><s> the next version of edge code will do a much better job of recognizing changes instantly & automatically. 
+</s><s>in the meantime, with the current release, you should be able to trigger edge code to check by quickly alt-tabbing to a different app and then back.</s><s> but the trick is if you do it too soon after saving your sass edits (before the background sass->css compilation is done) then there won't be any css file change to notice yet.</s><s> but hopefully knowing that's what triggers the check for changes will at least make it feel a little more predictable for now. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6227052-1432358</DOCNO>
+<TEXT>
+<subject>Can not open remote files</subject>
+<post author="JayCBRF4" timestamp="Mar 20, 2014 6:47 AM">
+<s>code allows me to open a web folder on a local server but not to open an individual html file.</s><s> do files have to be located on local hard drive in order to open and edit?</s><s> back to dreamweaver...</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6227052-6227206</DOCNO>
+<TEXT>
+<subject>Can not open remote files</subject>
+<post author="cfjedimaster" timestamp="Mar 20, 2014 6:53 AM">
+<s>correct, you need to work with local files.</s><s> while it is convenient to edit over ftp, i'd probably recommend against it. 
+</s><s>you could consider this plugin: https://github.com/timburgess/brackets-ftp-sync 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6227052-6227192</DOCNO>
+<TEXT>
+<subject>Can not open remote files</subject>
+<post author="JayCBRF4" timestamp="Mar 20, 2014 6:59 AM">
+<s>i am talking about a local fileserver not an ftp server.</s><s> this is a computer i am connected to locally on my network. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6227052-6227213</DOCNO>
+<TEXT>
+<subject>Can not open remote files</subject>
+<post author="cfjedimaster" timestamp="Mar 20, 2014 7:00 AM">
+<s>ah - then you would need to map a drive then.</s><s> that should be easy enough, right? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6227052-6228282</DOCNO>
+<TEXT>
+<subject>Can not open remote files</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 20, 2014 11:53 AM">
+<s>jay, can you clarify what steps you're doing to "open a web folder" in edge code?</s><s> and what steps you're doing to (attempt to) "open an individual html file"?</s><s> if you can open the whole folder in edge code, you should be able to open any of the files in it just as well... 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-1091455</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Oct 31, 2012 10:56 AM">
+<s>i've recently downloaded adobe edge code and noticed that the live preview doesn't work when i edit it and i also checked the source code and sore that it didn't change.</s><s> the icon in the top right corner is yellow, i am using windows 7 and google chrome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814002</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="Raymond%20Lim%20(Adobe)" timestamp="Oct 31, 2012 11:03 AM">
+<s>we don't have a trouble shooting page for edge code yet, but you can check brackets trouble shooting page to fix the issue you're experiencing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814128</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Oct 31, 2012 11:58 AM">
+<s>thank you i got it to work.</s><s> but can't adobe edge edit the html file at all. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814096</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="Raymond%20Lim%20(Adobe)" timestamp="Oct 31, 2012 12:01 PM">
+<s>html and javascript content changes won't show up in chrome yet for edge code.</s><s> brackets just made this work in sprint 15, but you have to wait for the next edge code release to get that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814176</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Oct 31, 2012 12:07 PM">
+<s>would it work in any other browser? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814098</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="Raymond%20Lim%20(Adobe)" timestamp="Oct 31, 2012 12:09 PM">
+<s>sorry, no. both brackets and edge code only launch chrome for live preview. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814181</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Oct 31, 2012 12:11 PM">
+<s>would changing div style="" work? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814211</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="Raymond%20Lim%20(Adobe)" timestamp="Oct 31, 2012 12:17 PM">
+<s>i don't think so as inline style is still part of the html and not the one css agent is watching. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814199</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Oct 31, 2012 12:37 PM">
+<s>the general rule of thumb is: only the contents of .css files are updated in real time as you're typing, in the current version of live preview.</s><s> to see anything else, you must save your changes and reload the webpage.</s><s> in the latest version of brackets (and therefore the next upcoming release of edge code), we make this a little easier by automatically reloading the page when you save. 
+</s><s>down the road, we'd like to make .html and .js update as you're typing too -- we're just not there yet.</s><s> here are the user stories tracking those future features: https://trello.com/card/0-live-html-editing-in-brackets/4f90a6d98f7750 5d7940ce88/247 https://trello.com/card/3-live-javascript-editing-in-brackets/4f90a6d9 8f77505d7940ce88/263 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814246</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Oct 31, 2012 12:50 PM">
+<s>when is the new version coming out and do you know for certain that it will include the new html live preview feature? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4814831</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="adrock" timestamp="Oct 31, 2012 6:31 PM">
+<s>tentatively, we are planning a new update to edge code following brackets sprint 17.</s><s> it will be available via the creative cloud some time after 11/28 (hopefully not too far after).</s><s> it will include all of the features in brackets through sprint 17 (including html live reload) as well as support for edge web fonts. 
+-adam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4816754</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Nov 1, 2012 12:16 PM">
+<s>why didn't they just add this feature to dreamweaver?</s><s> also is it connected and interacted with adobe edge? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4816814</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="adrock" timestamp="Nov 1, 2012 12:37 PM">
+<s>sorry, but i can't really comment on the features in dreamweaver.</s><s> dreamweaver and edge code are two different products.</s><s> edge code does not have a design view, instead we rely on the connection to the browser to preview design, so live html / css is important. 
+</s><s>we haven't added any integration with edge animate to date, but we plan to eventually integrate edge code with all of the edge tools and services. 
+-adam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4816896</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="1bodger1212" timestamp="Nov 1, 2012 1:15 PM">
+<s>thank you 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-4867629</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="UltraChilly" timestamp="Nov 22, 2012 1:39 PM">
+<s>hi, i just noticed something, i had a folder that wasn't working with live preview, it contained two files : sitename.html and sitename.css.</s><s> i just renamed the css file "style.css", changed it in my html file, reloaded the editor (cmd+r) and tadaa!</s><s> live preview works again...</s><s> so my guess is you have to call your css file "style.css"...</s><s> or i just got lucky... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-5323296</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="ryanstewartadobe" timestamp="May 15, 2013 11:09 AM">
+<s>hi all, 
+</s><s>if you're still having problems with live preview i'd encourage you to try preview 4 when we release it on june 17th.</s><s> it's got a number of fixes for some of the issues we've seen around getting live preview to work. 
+</s><s>feel free to email me if you have any questions. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4813933-6227402</DOCNO>
+<TEXT>
+<subject>Adobe Edge code live preview is not working</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:52 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-1071288</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="JH92" timestamp="Sep 24, 2012 12:35 PM">
+<s>the live preview feature tells me i need to relaunch chrome with remote debugging enabled, but i can't figure out how to enable it.</s><s> any pointers? 
+</s><s>thanks john 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-4723681</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="Pan1234" timestamp="Sep 24, 2012 2:44 PM">
+<s>sorry to see that you run into this issue.</s><s> we are tracking it at present it happens randomly.</s><s> same issue as i saw in another thread here in this forum which indicates more people are running into it.</s><s> please try to logout to stop all user processes.</s><s> log in again and see if that fixed this issue.</s><s> please alsorefer to https://github.com/adobe/brackets/issues/1704. 
+</s><s>hth, 
+</s><s>peter thiess 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-4724572</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Sep 25, 2012 12:14 AM">
+<s>john, are you on windows or mac?</s><s> 
+</s><s>on windows if you see that message typically it's spurious (see the issue linked above).</s><s> on mac it's common to see that message if chrome is already running, but clicking the "relaunch chrome" button should work. 
+</s><s>do you have chrome installed in a nonstandard location by any chance?</s><s> being unable to find chrome has caused us some problems in the past (for example, bug #1668). 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-4726224</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="njadobe2" timestamp="Sep 25, 2012 11:30 AM">
+<s>fyi, on twitter jh mentioned that he's on windows.</s><s> he has both canary and ordinary chrome installed, and it sounds like his ordinary chrome install is in the standard folder (down in appdata).</s><s> i tried installing canary on my windows machine to see if it would interfere with live development, but it doesn't seem to (brackets just launches the ordinary chrome), so not sure what's going on here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-4727419</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="thefuzie" timestamp="Sep 25, 2012 6:14 PM">
+<s>fwiw.. on osx at least, this seems to be related to whether edge code launched the original instance of chrome.</s><s> when it did, all seems fine.</s><s> when i open chrome manually (i.e. when it's already running, like peter says) then option+cmd+p from edge code, i get the "relaunch/remote debugging" error.</s><s> once i relaunch, it's fine. 
+i suspect edge code needs the window handle, which it doesn't have when you launch chrome manually.</s><s> i guess on other platforms / in other scenarios..</s><s> edge code is not retaining that vaule.</s><s> (probably a big duh to you guys.</s><s> took me a minute to remember what edge is built on..</s><s> ) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-4727420</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="njadobe2" timestamp="Sep 25, 2012 6:15 PM">
+<s>on mac os x, this is actually as designed--the issue is that we need chrome to run with its remote debugging api turned on, and on the mac there's no way to do that without relaunching it with a command-line flag.</s><s> on windows, we can pass it the flag to turn it on without relaunching the app. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-4728780</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="David_Powers" timestamp="Sep 26, 2012 7:37 AM">
+<s>live preview has stopped working for me in my main account on windows 7. 
+i have two accounts: david is the main one, the other is v2b.</s><s> after doing some work in the v2b account, live preview no longer works in brackets or edge code in my main (david) account. 
+</s><s>the problem appears to be that the chrome dll can't be found.</s><s> here are a couple of error messages from the chrome debug.log in the david account: 
+[0926/120200:error:client_util.cc(394)] failed to load chrome dll from c:\users\v2b\appdata\local\google\chrome\application\22.0.1229.79\chr ome.dll 
+[0926/120200:error:client_util.cc(442)] could not find exported function relaunchchromebrowserwithnewcommandlineifneeded 
+i've added a similar note to the thread started by randy on github. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-5207881</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="tobymathews" timestamp="Apr 4, 2013 2:53 PM">
+<s>i can't get this to work on windows 8 professional - brackets itself offers me the option to relaunch chrome, but the whatever i do i end u with a tab in chrome that is 'waiting...' (displays a brackets logo and spinning wheel in the middle of the browser). 
+</s><s>toby 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-5216481</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="Randy%20Edmunds" timestamp="Apr 8, 2013 9:01 AM">
+<s>toby, 
+</s><s>thanks for reporting this.</s><s> did you try all of the suggestions in the troubleshooting page? 
+</s><s>if you're still seeing the proble, then please file an issue. 
+</s><s>does it work if you close chrome first?</s><s> i know that this is a pain and not a solution, but just wanted to help you find a workaround. 
+</s><s>regards, randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-5218520</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="tobymathews" timestamp="Apr 9, 2013 12:59 AM">
+<s>randy, thanks for your reply, i'll try those and get back to you.</s><s> toby
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-5218521</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="tobymathews" timestamp="Apr 9, 2013 1:00 AM">
+<s>ps had already tried restarting chrome, that didn't seem to change anything. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-5283304</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="tobymathews" timestamp="May 1, 2013 12:10 PM">
+<s>randy, the new build appears to have fixed the problem - at least it's gone now anyway.</s><s> thanks, toby
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4723296-6227399</DOCNO>
+<TEXT>
+<subject>Live Preview not connecting</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:49 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5832166-1332751</DOCNO>
+<TEXT>
+<subject>Live preview not working - won't connect</subject>
+<post author="TomWhitakerRowley" timestamp="Nov 11, 2013 5:45 AM">
+<s>hi, i am trying edge code for the first time and am having problems with live preview. 
+</s><s>when first installed, i successfully got a live preview of the index.html, then when i opened another html file and clicked live preview and it wouldn't connect, it showed the half yellow icon. 
+i rebooted, repeated and opened my own html file immediately.</s><s> this time it opened that file and worked as it should, saving the html updated the chrome preview. 
+</s><s>but again, as soon as i opened a new file, clicked live preview, it won't connect again. 
+i am on windows 7 64bit, have tried closing / opening code and chrome but nothing will then preview again until a reboot. 
+</s><s>any ideas? 
+</s><s>many thanks 
+tom 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5832166-5832159</DOCNO>
+<TEXT>
+<subject>Live preview not working - won't connect</subject>
+<post author="TomWhitakerRowley" timestamp="Nov 11, 2013 6:29 AM">
+<s>i think i've narrowed down my problem further.</s><s> the problems only start when i try to turn on edge inspect. 
+</s><s>as soon as i switch on inspect, i lose live preview. 
+</s><s>incidentally, inspect won't show the html i am editing either, but probably because live preview isnt working, as it can show other sites i am browsing in chrome when i click the inspect extension. 
+
+
+</s><s>many thanks tom 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5832166-6227292</DOCNO>
+<TEXT>
+<subject>Live preview not working - won't connect</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:48 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5988321-1373375</DOCNO>
+<TEXT>
+<subject>Exploring how the Live Preview works</subject>
+<post author="Steven_Andrews" timestamp="Jan 7, 2014 5:11 AM">
+<s>hi guys,   i've two questions for you: -   1 - is there any luiterature anywhere that explains how the live preveiw function in code cc works?  more specifically, if it can be customised.   2 - has anyone managed to get this working with sharepoint?  i think this would be a brilliant facility to get working and is something i'd like to investigate.   many thanks, steven
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5988321-6048487</DOCNO>
+<TEXT>
+<subject>Exploring how the Live Preview works</subject>
+<post author="Randy%20Edmunds" timestamp="Jan 24, 2014 7:57 AM">
+<s>steven, 
+</s><s>i'm not familiar with sharepoint, but you can use file > project settings... to specify the base url to a server.</s><s> note that some live preview features, such as live html, do not work with this setup. 
+</s><s>you can find more info on live preview here. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5988321-6227291</DOCNO>
+<TEXT>
+<subject>Exploring how the Live Preview works</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:47 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-1384330</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Surfsup" timestamp="Jan 20, 2014 2:33 AM">
+<s>my edge code only live previews css changes.</s><s> when i work on the html file it doesnt highlight anything or update the changes that i made, unless i save the file.</s><s> but to the best of my knowledge since the last update edge code is supposed to update html as you type as well.</s><s> however the default index.html file that is provided by adobe updates itself fine.</s><s> the only difference that i can notice is that adobe's file is viewed as a localhost link while mine is viewed as a 'file///' in chrome.</s><s> please note that im a beginner developer.</s><s> thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6048558</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Randy%20Edmunds" timestamp="Jan 24, 2014 8:11 AM">
+<s>it sounds like the file you are editing is outside of your "project".</s><s> use file > open folder... to select a containing folder as your "project". 
+</s><s>here's more info about how to use and troubleshoot live preview. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6131783</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Muscavado" timestamp="Feb 18, 2014 5:47 AM">
+<s>hi, i'm having problems with live preview.</s><s> i've tried all the suggestions in troubleshooting - disabling all extensions, restarting etc. but no joy.</s><s> things momentarily worked when i started chrome via terminal - 
+/applications/google\ chrome.app/contents/macos/google\ chrome --remote-debugging-port=9222 
+
+- but then went awry again. 
+</s><s>i'm on chrome 34.0.1838.2 dev.</s><s> perhaps this error log helps solve things...</s><s>?</s><s> 
+
+</s><s>see /usr/include/servers/bootstrap_defs.h for the error codes.</s><s> 2014-02-18 13:18:26.433 google chrome helper[7126:507] *** cfmessageport: bootstrap_register(): failed 1100 (0x44c) 'permission denied', port = 0x6027, name = 'com.apple.tsm.portname' see /usr/include/servers/bootstrap_defs.h for the error codes.</s><s> [7113:87043:0218/131828:error:form_data.cc(108)] bad pickle of formdata, no version present [7113:87043:0218/131828:error:form_data.cc(108)] bad pickle of formdata, no version present [7113:87043:0218/131828:error:form_data.cc(108)] bad pickle of formdata, no version present [7113:87043:0218/131828:error:form_data.cc(108)] bad pickle of formdata, no version present [7113:87043:0218/131828:error:form_data.cc(108)] bad pickle of formdata, no version present 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6132110</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Randy%20Edmunds" timestamp="Feb 18, 2014 7:31 AM">
+<s>> i'm on chrome 34.0.1838.2 dev   edge code cc only supports stable chrome.   randy
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6135255</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Muscavado" timestamp="Feb 19, 2014 3:06 AM">
+<s>ok - moved over to stable chrome 32 - no difference.</s><s> still unable to load... even though it appears to, then doesn't maintain for live updates.</s><s> this is kind of a deal breaker.</s><s> if i can't use live code updates, i guess i'll go back to working in sublime... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6135258</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Muscavado" timestamp="Feb 19, 2014 3:20 AM">
+<s>sorry - a little frustrated...</s><s> i saw your reply to vycanismajoris re: chrome custom profile.</s><s> even though i 've disable the dev version of chrome and edge code isn't accessing it - perhaps it is still accessing plists and profiles somewhere.</s><s> where can i go to re-set those, if that is what i need to do? 
+</s><s>thanks for your help here. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6135281</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Muscavado" timestamp="Feb 19, 2014 3:39 AM">
+<s>thanks to your response to vycanismajoris.</s><s> resolved.</s><s> by closing chrome, going to ~/library/application support/google/chrome/ and renaming default to backupdefault, so that on re-opening a new profile is created.</s><s> however, how to get all the useful settings out of the backupdefault folder without re-breaking things?</s><s> any idea what might be the problem setting? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6135852</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="Randy%20Edmunds" timestamp="Feb 19, 2014 7:33 AM">
+<s>sorry, i don't know what the problem setting could be.</s><s> let us know if you can isolate it any further. 
+</s><s>thanks, randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6030894-6227289</DOCNO>
+<TEXT>
+<subject>Live Preview not working with HTML</subject>
+<post author="YezMUCH" timestamp="Mar 20, 2014 7:45 AM">
+<s>problem with livepreview mode solved!</s><s> you need to open your files as a folder: file -> open folder than it works great and refresh without saving page   http://clip2net.com/s/73pzbk   wish you all best ))) friends..
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-1428646</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="ashrafo" timestamp="Mar 15, 2014 10:09 AM">
+<s>i have a problem in the file (epub -> ibooks app on ipad) that does not display a images, but when i rotate the ipad screen all the pictures show , note i create html file from adobe edge (html + js files) , do you have any suggestions. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6212386</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="ashrafo" timestamp="Mar 15, 2014 10:11 AM">
+<s>i have an example epub if you need 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6212736</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 15, 2014 1:07 PM">
+<s>do you have a link to a page that everyone can look at?</s><s> that's the best way to get help for specific files. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6213578</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="ashrafo" timestamp="Mar 15, 2014 11:27 PM">
+<s>thanks for the reply; 
+must see the file on the ipad because the epub files only works on ebook reader file works well on all browsers (chrome,safari ....</s><s>), but when you put it inside the (.epub) file you can see the error. 
+
+ashrafo, 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6213579</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="ashrafo" timestamp="Mar 15, 2014 11:31 PM">
+<s>epub does not display a images, but when i rotate the ipad device(rotate screen) all the pictures show. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6217912</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 17, 2014 1:24 PM">
+<s>what app are you using to create the epub file?</s><s> how did you embed the html content in it? 
+</s><s>when you say "adobe edge," are you referring to edge animate?</s><s> bear in mind that this forum is specific to adobe edge code, which is a different product from edge animate.</s><s> for issues with edge animate, use this forum instead. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6217887</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="ashrafo" timestamp="Mar 17, 2014 1:39 PM">
+<s>mr.peter thanks for the reply i mean edge animate i will use the correct forum 
+
+</s><s>ashrafo , 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6212385-6217991</DOCNO>
+<TEXT>
+<subject>display images in epub</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 17, 2014 1:51 PM">
+<s>ok, thanks for clarifying! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5796140-1323989</DOCNO>
+<TEXT>
+<subject>HTML code hints not working inside the <script> block, ember.js</subject>
+<post author="Alex Wang" timestamp="Oct 28, 2013 11:50 PM">
+<s>hi, i'm using adobe edge code to write emberjs.</s><s> the code hints of html not woring inside the <script> block. for example: 
+
+<script type="text/x-handlebars"> <div id="frm"> <h1>load tweets fro: </h1> </div> 
+
+</script> 
+
+</s><s>is there any way to make html code hints works inside the <script> block?</s><s> or any extension for emberjs? 
+
+</s><s>thanks!</s><s>!</s><s> 
+
+</s><s>alex 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5796140-5917133</DOCNO>
+<TEXT>
+<subject>HTML code hints not working inside the <script> block, ember.js</subject>
+<post author="Randy%20Edmunds" timestamp="Dec 10, 2013 8:02 AM">
+<s>currently, there is no way to get html hints inside of a script tag. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5796140-6203683</DOCNO>
+<TEXT>
+<subject>HTML code hints not working inside the <script> block, ember.js</subject>
+<post author="webteam.me" timestamp="Mar 12, 2014 11:55 AM">
+<s>why not?</s><s> can someone at adobe address this, client side mvc frameworks are becoming more and more popular.</s><s> i love edge code, but it really sucks that all of my html is displayed as plain text, no code hints, no (cmd + e), no awesomeness, i may as well develop handlebars in notepad, because it is exactly the same.</s><s> please, this is important, it needs to be a priority. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5796140-6204246</DOCNO>
+<TEXT>
+<subject>HTML code hints not working inside the <script> block, ember.js</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 12, 2014 2:28 PM">
+<s>if you place your templates in separate standalone html files (i.e. not wrapped in a script tag), they will of course be highlighted as html, with code hints and all.</s><s> so there's always that workaround. 
+</s><s>in addition, some html templates embedded inside script tags are recognized.</s><s> unfortunately the mimetypes people use for this aren't very well standardized, and edge code only recognizes some of them.</s><s> if you use type="text/x-handlebars-template" it should work.</s><s> same for type="text/x-mustache".</s><s> i'll see if we can add some more commonly used mimetypes to the list for the next release (including the "text/x-handlebars" you're using above). 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5796140-6204829</DOCNO>
+<TEXT>
+<subject>HTML code hints not working inside the <script> block, ember.js</subject>
+<post author="webteam.me" timestamp="Mar 12, 2014 6:01 PM">
+<s>and that's why i use adobe.</s><s> love it!</s><s> thank you.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-1426023</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="christine-bush" timestamp="Mar 11, 2014 6:08 PM">
+<s>for example: 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-6203592</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 12, 2014 11:37 AM">
+<s>that means that live preview has detected an html syntax error at that line number.</s><s> you'll need to fix that before edge code will resume pushing updates to the browser. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-6204419</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="christine-bush" timestamp="Mar 12, 2014 2:51 PM">
+<s>hi rnady, i assumed it was something of this flavor.</s><s> this seems to be a "feature" which neither tells me anything helpful (like what the html syntax error is) nor is whatever syntax error being complained about duplicated by chrome.</s><s> why should i be using this software again? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-6204421</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="christine-bush" timestamp="Mar 12, 2014 2:52 PM">
+<s>...and in the example provided, what could be wrong with a closing body tag?</s><s>?</s><s> just curious! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-6204409</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="Raymond%20Lim%20(Adobe)" timestamp="Mar 12, 2014 3:14 PM">
+<s>you may have a missing closing tag like </div> before this line. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-6204308</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 12, 2014 3:14 PM">
+<s>yes, i agree that better discovery is needed here.</s><s> i recently opened a bug with some suggestions. 
+</s><s>in case you were not aware, edge code is built on top of the brackets editor.</s><s> you can find out more info in the how to use brackets doc and the troubleshooting brackets doc. 
+</s><s>as far as the syntax error, i can't see enough of your doc to say for sure.</s><s> i assume that you have an opening <body> tag, but it could be incorrectly nested inside <head> tag.</s><s> most likely is that it's not the <body> tag but the tag immediately inside it -- maybe an unclosed <div> tag? 
+</s><s>thanks for trying out edge code cc preview. 
+</s><s>hope this helps, randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6201416-6204499</DOCNO>
+<TEXT>
+<subject>What does it mean when Adobe Edge Code CC (Preview) highlights a line number?</subject>
+<post author="christine-bush" timestamp="Mar 12, 2014 3:30 PM">
+<s>randy, thanks for taking the time to file the bug with suggestions.</s><s> i'm totally onboard with all of them.</s><s> i, too, have noticed that edge code likes to give feedback while typing, which is not helpful.</s><s> i had hoped there was a grand stash of ux data from a decade or more of dreamweaver development/testing that might be brought to bear on this product.</s><s> by the way: i've never even noticed the red lightning bolt. 
+</s><s>i'm starting to get the feeling this product is being tested on the assumption that i have multiple monitors and am eyeing the live preview with every keystroke.</s><s> this is not the case for me. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6204098-1426712</DOCNO>
+<TEXT>
+<subject>Enable hints in other file types</subject>
+<post author="blackfootdirect" timestamp="Mar 12, 2014 1:39 PM">
+<s>hi i am doing some asp code tweaks on a cms skin, and the extention ascx is used, however when i load it, there are no hints available. 
+is there a way to add file extensions to the edge code so i can get hints for other file types than the usual htm php js etc.</s><s> ?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6204098-6204243</DOCNO>
+<TEXT>
+<subject>Enable hints in other file types</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 12, 2014 2:13 PM">
+<s>yes, edge code supports extensions.</s><s> here's an extension that will provide generic code hints just listing all the tokens in the current file: https://github.com/bigeyex/brackets-wordhint.</s><s> it should work for basically any file type.</s><s> this is similar to the simple hinting you get in editors like sublime or textmate.</s><s> if you're looking for more language-aware code hints, your best bet is to use an asp-specific ide like visual studio instead. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-1231013</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="screen_name_hero" timestamp="Jun 12, 2013 7:42 AM">
+<s>hi everyone, i have been using edge code to edit some php files and use the 'live' to see what i am doing. 
+however i have run into an issue where when i copy the file that im working on in edge to another location with another machine(physically different computer) edge will refuse to save changes to the file even though im not prompted with an error the file is still in the same location and name was not altered.</s><s> this glitch continues after i have exited and restarted the program. 
+i believe it is possible that this may have to do with the network drive i am working from however i have yet test to see wether it is indeed the source of my problems. 
+
+</s><s>at this point i am looking for troublshooting suggestions 
+tl:dr : edge code does not save changes when the file i have been working on is accessed by another computer, the issue persists when program is restarted and when the other machine is not using the file at all. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-5407925</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="ryanstewartadobe" timestamp="Jun 13, 2013 11:32 PM">
+<s>i'm not totally sure i follow.</s><s> all you're doing is working in edge code, copying a file, and pasting it somewhere else?</s><s> and edge code won't let you save? 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-5408927</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="screen_name_hero" timestamp="Jun 14, 2013 7:47 AM">
+<s>correct.</s><s> 
+</s><s>for example this is a timeline of what happens.</s><s> i work with edge, save file.</s><s> copy the file from the network drive to a sever via ftp to test it on the test domain. go back to edge , make more changes. most of the time it continues to behave normally and saves properly or it does not apply changes to the file when i save .</s><s> i do not get an error.</s><s> opening up the php file with notepad(any basic txt editor) shows that it has not be altered since the first time it was copied.(changes made with notepad save normally.</s><s>) close and reopend edge , file it still as it was from file copy, make changes , hit save . does not save. 
+</s><s>this is not a consistent problem but when it happens it is exceedingly agravating. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-5408929</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="screen_name_hero" timestamp="Jun 14, 2013 7:49 AM">
+<s>as an asside i am not 100% sure if it is edge or a combination of using the network drive and edge. because the network drive is a bit weird.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-5417000</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="screen_name_hero" timestamp="Jun 17, 2013 12:26 PM">
+<s>i have done some testing and it appears that it is not edge.</s><s> and is either the drive or the software being used. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-6096950</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="AHachey" timestamp="Feb 7, 2014 8:01 AM">
+<s>i'm encountering the same exact problem, although i haven't tried copying my edge files.</s><s> i've been saving over older files during development, but now every time save my work, edge does not write any of the js files.</s><s> have i reached the memory limit of the program? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-6097035</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="screen_name_hero" timestamp="Feb 7, 2014 8:11 AM">
+<s>hello ahachey, 
+</s><s>in my case it was clear that my networked drive was not properly connected. 
+</s><s>however edge would never inform me that it did not actually save.</s><s> i'm thinking this is more something on the operating system then the application. 
+</s><s>so i would suggest making sure that there is not an issue with where you are trying to save. 
+</s><s>what can you tell me about the location that you are saving too ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-6096984</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="AHachey" timestamp="Feb 7, 2014 8:17 AM">
+<s>i'm saving to my local hard drive- it seems like as soon as i reach 2mb for the js edge file, it won't save and won't alert you of any issues.</s><s> i have my file to the point where every time i create my 5 last symbols edge decides not to save any progress. 
+
+</s><s>on fri, feb 7, 2014 at 11:11 am, screen_name_hero 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-6097220</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="screen_name_hero" timestamp="Feb 7, 2014 9:05 AM">
+<s>it is irksome that edge does not vailidate a save : [ would help you and i with these sort of problems 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5401621-6201639</DOCNO>
+<TEXT>
+<subject>Edge Code not saving</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 11, 2014 8:32 PM">
+<s>screen_name_hero: sorry for not closing the loop sooner.</s><s> when you say the problem is not edge code in your case, do you mean that other applications had the same problem?</s><s> for example, if you try to edit the file with notepad and then save, does it also fail to modify the file and doesn't show you any error messages? 
+btw, what operating system are you on?</s><s> and do you know what type of connection the network share was using?</s><s> i tried saving to a unc share (the kind where the path starts with "\\") after disconnecting it and edge code did indeed give me an error message indicating that the save failed. 
+
+</s><s>ahachey: i notice you mentioned "symbols"... are you using edge animate, or edge code?</s><s> edge animate has a different support forum: http://forums.adobe.com/community/edge_animate 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4794576-1087110</DOCNO>
+<TEXT>
+<subject>Edge Code and Dreamweaver</subject>
+<post author="wesleybrownuk" timestamp="Oct 23, 2012 10:36 AM">
+<s>so like everyone else im really excited about edge in general, and edge code looks like its shaping up into something special. 
+</s><s>dreamweaver has been part of my work flow for.. ever.... 
+</s><s>is there any plans to intergrate the adobe code technology into the code view of dreamweaver, i understand the complications of that, but that just seems the sensible thing to do, or is the aim for edge code to replace dreamweavers code tools?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4794576-4795892</DOCNO>
+<TEXT>
+<subject>Edge Code and Dreamweaver</subject>
+<post author="adrock" timestamp="Oct 23, 2012 7:59 PM">
+<s>we don't have any plans to replace dreamweaver with edge code. 
+</s><s>while there is some overlap in functionality (like the ability to edit html, css and javascript) we think that there is room for both edge code and dreamweaver.</s><s> with edge code we are building a lightweight code editor that is meant to work in conjunction with an array of smaller, more focused tools and services.</s><s> dreamwever, on the other hand, is an incredibly complex and deep tool that by iteself solves a a number of web development and design problems. 
+a good example is site management and server-side programming.</s><s> edge code is inteded to be used in conjuction with ftp or other deployment tools, where dreamweaver as everything built in.</s><s> dreamweaver also supports server-side development for languages like php, coldfusion, etc. where edge code is 100% focused on client-side development. 
+</s><s>the beauty of the creative cloud membership, is that you don't have to pick one or the other.</s><s> you can get them both for the same price.</s><s> so rather than port features from one tool to the other, we're going to focus on how the tools might work together. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4794576-4798100</DOCNO>
+<TEXT>
+<subject>Edge Code and Dreamweaver</subject>
+<post author="Vladimir_Krstic" timestamp="Oct 24, 2012 2:13 PM">
+<s>you wish to say that adobe won't provide extensions for server-side development and site management, but of course developers could create that extensions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4794576-4798132</DOCNO>
+<TEXT>
+<subject>Edge Code and Dreamweaver</subject>
+<post author="cfjedimaster" timestamp="Oct 24, 2012 2:19 PM">
+<s>sure.</s><s> you are free to make any extension you want. 
+
+</s><s>on wed, oct 24, 2012 at 4:13 pm, vladimir_krstic 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-4794576-6200928</DOCNO>
+<TEXT>
+<subject>Edge Code and Dreamweaver</subject>
+<post author="Zipbug" timestamp="Mar 11, 2014 2:12 PM">
+<s>when you say that they can work together, do you have any tips for how one might do this?</s><s> for example the company i work for uses dreamweaver to check out files, how would you suggest i use dreamweaver in tandem with edge code to get the best result.</s><s> i've really come to love edge code and the tools it comes with, but i'm not sure if i can use it without being able to use the check out feature. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180349-1421005</DOCNO>
+<TEXT>
+<subject>slowdown over time?</subject>
+<post author="HobyVH" timestamp="Mar 4, 2014 11:21 PM">
+<s>has anyone else experienced the application slowing down after long continuous sessions of use? 
+</s><s>the first thing to slow for me is scrolling, then eventually even typing happens with a considerable delay.</s><s> this has happened on mac (mavericks) and windows (8.1) with a handful of site files, especialy in longer css files, usually with the live preview on.</s><s> relaunching edge code will speed things up again.</s><s> i haven't had time to do any causation tests. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180349-6183014</DOCNO>
+<TEXT>
+<subject>slowdown over time?</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 5, 2014 2:01 PM">
+<s>do you notice memory usage benig much higher before you quit & restart? 
+</s><s>if you notice this happening only while editing specific files or specific projects, would you be willing to share that code with us privately? 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180349-6182945</DOCNO>
+<TEXT>
+<subject>slowdown over time?</subject>
+<post author="HobyVH" timestamp="Mar 5, 2014 2:08 PM">
+<s>i didn't look at the usage, sorry.</s><s> i was too focused on the work. 
+</s><s>i'll have to try it on other files to know if it changes between projects but it didn't seem to be specific to those files. 
+</s><s>also, is there likely to be a difference between the edge and brackets distributions?</s><s> i just started using brackets instead to get sooner releases. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180349-6200865</DOCNO>
+<TEXT>
+<subject>slowdown over time?</subject>
+<post author="EfrenCast" timestamp="Mar 11, 2014 1:51 PM">
+<s>i've noticed myself that edge cc is slow when other programs run smoothly (i use wrangler).</s><s> i will be testing it this weekend and will get back with the results. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6188657-1422951</DOCNO>
+<TEXT>
+<subject>Auto inserting tags in EC</subject>
+<post author="Svenar" timestamp="Mar 7, 2014 8:29 AM">
+<s>hi!   when i work in dreamweavwer, if i start entering tags, suggestions will automatically pop up and when  i select it will be inserted.  is this possible in ec?   what program will you recommend for typing html code?</s><s> dreamweaver or ec?   svein-tore
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6188657-6189194</DOCNO>
+<TEXT>
+<subject>Auto inserting tags in EC</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 7, 2014 10:41 AM">
+<s>edge code should give you suggestions for tag names and attribute names while you're typing in an html file.</s><s> if you're not seeing that, could you send us a copy of the html files you're working on?</s><s> something about the file may be causing problems... 
+</s><s>you can also switch back to the default "getting started" project (click the project name dropdown in the left-hand pane) and check whether code hints appear in that simple content, at least.</s><s> if not, there may be something wrong with your installation overall -- please let us know so we can try to troubleshoot. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6188657-6189846</DOCNO>
+<TEXT>
+<subject>Auto inserting tags in EC</subject>
+<post author="Svenar" timestamp="Mar 7, 2014 2:21 PM">
+<s>thanks for your answer.</s><s> i think i've got it:) when i start ce, it won't work.</s><s> but, when i save the file as an html, i get the tags.</s><s> on the other hand, i have tested an different html editor, named .sublime. 
+</s><s>this one i think is a bit better than ec when it comes to tags. if i in ec write 
+i could have menitoned more examples, but i think you (and others reading this post) know what i mean.</s><s> in ec i only get the start tag, in sublime i got the open and close tag (the complete tag).</s><s> something to think aobut when it comes to improvements of ec 
+finally, thanks for your quick and good answer peter.</s><s> i see there are many helpfull people "out there" 
+
+</s><s>best regards, svein-tore 
+
+</s><s>2014-03-07 19:41 gmt+01:00 peter flynn (adobe) <forums_noreply@adobe.com>: 
+<quote>
+<s>re: auto inserting tags in ec created by peter flynn (adobe)<http://forums.adobe.com/people/peterflynn%28adobe%29>in *edge code cc preview* - view the full discussion<http://forums.adobe.com/message/6189194#6189194 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6188657-6189818</DOCNO>
+<TEXT>
+<subject>Auto inserting tags in EC</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 7, 2014 2:31 PM">
+<s>if you have an untitled document you won't get html code hints for it.</s><s> this is because, until you give it a filename, edge code has no idea whether it should treat the content as html, javascript, or something else.</s><s> similarly you won't see any syntax coloring, etc. this is also how sublime and other editors work (although in some editors you can pick a language from the statusbar before giving it a name, you always have to do something to say what languge you're coding in). 
+i can't see the example code you posted -- looks like it got escaped by the forum software.</s><s> but once edge code knows a file is html content, typing a tag will indeed auto-insert the closing tag too.</s><s> if that's not what you were referring to, please give a step-by-step example that illustrates the issue (for example: type "<", then "d", then press the down arrow to pick "div" from the code hints, then type ">"; what i expected it to do was ..., but what actually happened was ...</s><s>).</s><s> 
+</s><s>thanks, 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6188657-6189952</DOCNO>
+<TEXT>
+<subject>Auto inserting tags in EC</subject>
+<post author="Svenar" timestamp="Mar 7, 2014 3:04 PM">
+<s>hi peter!</s><s> 
+</s><s>since i answered i have tested a bit, and found you are right, it is in fsact giving me the whole tag :). 
+</s><s>svein-tore 
+
+</s><s>2014-03-07 23:31 gmt+01:00 peter flynn (adobe) <forums_noreply@adobe.com>: 
+<quote>
+<s>re: auto inserting tags in ec created by peter flynn (adobe)<http://forums.adobe.com/people/peterflynn%28adobe%29>in *edge code cc preview* - view the full discussion<http://forums.adobe.com/message/6189818#6189818 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180422-1421052</DOCNO>
+<TEXT>
+<subject>request: awesome find and replace</subject>
+<post author="HobyVH" timestamp="Mar 5, 2014 12:10 AM">
+<s>i'm sure this is on the roadmap but a really good search and replace functionality would be appreciated.</s><s> currently i jump to textwrangler if i'm on the mac for this but the potential for a smarter multi-file search and replace seems like it could be effortless in edge code. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180422-6181469</DOCNO>
+<TEXT>
+<subject>request: awesome find and replace</subject>
+<post author="Preran" timestamp="Mar 5, 2014 8:01 AM">
+<s>hi hobyvh, 
+</s><s>deeply appreciate your feedback.</s><s> it would be wonderful if you could consolidate all your requests into one forum post to make it simpler for the experts and the product team. 
+</s><s>thanks, preran 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180422-6182767</DOCNO>
+<TEXT>
+<subject>request: awesome find and replace</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 5, 2014 1:27 PM">
+<s>personally i don't mind having these be separate threads since they're each about pretty unrelated features.</s><s> anyway, either way... 
+</s><s>the next release of edge code will have significant improvements to search & replace.</s><s> find in files (i.e. multi-file search) is going to be a good deal faster, and you'll have the ability to filter out specific files, subfolders, file extensions, etc. from your search. 
+</s><s>edge code is based on an adobe-sponsored open source project called brackets, and you can see some of these features there already: 
+
+
+</s><s>replace across multiple files is something that's on the roadmap for the near future, but it probably won't be available in the very next edge code release. 
+</s><s>are there other find/replace-related features you'd like to see? 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180422-6182807</DOCNO>
+<TEXT>
+<subject>request: awesome find and replace</subject>
+<post author="HobyVH" timestamp="Mar 5, 2014 1:28 PM">
+<s>interesting.</s><s> i've found over time that a consolidated request message works well for closed feedback channels but in open forums like this-they don't get noticed, read, or discussed since they're all tucked inside a generic subject line. 
+</s><s>since they're all separate, it's easy to tell what they are and be compelled to click on it.</s><s> plus, my requests don't all have the same priority or functional grouping.</s><s> if they were on a backlog, they'd be different stories, right? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180422-6182943</DOCNO>
+<TEXT>
+<subject>request: awesome find and replace</subject>
+<post author="HobyVH" timestamp="Mar 5, 2014 2:00 PM">
+<s>hi peter, i think that would cover the basic needs.</s><s> additional features should probably target making different kinds of refactoring easier, like taking css into less or changing between classes and ids (i'm sure there are more common activities than these to look at). 
+</s><s>otherwise things like saved patterns and such seem more useful for general purpose text editors. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180350-1421006</DOCNO>
+<TEXT>
+<subject>request: drag and drop text</subject>
+<post author="HobyVH" timestamp="Mar 4, 2014 11:24 PM">
+<s>drag and drop text is becoming more of a sorely missed feature as i use this app.</s><s> i'll often switch to another editor just to do this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180350-6182888</DOCNO>
+<TEXT>
+<subject>request: drag and drop text</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 5, 2014 1:54 PM">
+<s>you can upvote that feature here: https://trello.com/c/io24byhm/910-drag-and-drop-selected-text-within-e ditor 
+in the meantime, there are some other shortcuts that i find very useful for moving around blocks of text: ctrl+d to duplicate line (or duplicate selection, if you have text selected) ctrl+shift+up/down to move the current line or selected block up/down in one-line increments ctrl+shift+d to delete the current line(s) ctrl+l to select the current line, or add the next line to the selection there are also a few extensions that let you select syntactic blocks in curly-brace languages and in html. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180353-1421009</DOCNO>
+<TEXT>
+<subject>request: edit history with diff</subject>
+<post author="HobyVH" timestamp="Mar 4, 2014 11:34 PM">
+<s>it would be really great if edge code had some built in edit history with diff feature.</s><s> the overall capability in intellij is what i have in mind, though i'd appreciate a different implementation and visual treatment. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180353-6182880</DOCNO>
+<TEXT>
+<subject>request: edit history with diff</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 5, 2014 1:36 PM">
+<s>you can upvote that feature suggestion here: https://trello.com/c/h8aydwfa/391-local-history-versioning 
+however, this is likely pretty far down our priority list.</s><s> edge code (and the brackets project it's based on) is intended to be a lightweight editor rather than a heavier ide, and this is more of an ide-like feature.</s><s> what we'd be more likely to have in the nearer term is a simple diff view against your source control, without any separate local history.</s><s> you can vote on that feature here: https://trello.com/c/ysseh9uv/996-diff-compare-view.</s><s> and there's actually a git extension that already offers this level of functionality today! 
+</s><s>hope that helps, 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180353-6182939</DOCNO>
+<TEXT>
+<subject>request: edit history with diff</subject>
+<post author="HobyVH" timestamp="Mar 5, 2014 1:53 PM">
+<s>thanks peter, i thought that might be the case.</s><s> the 2 reasons i think an internal history diff tool would be appreciated are: some places i've worked don't have version control or don't have it for that specific project.</s><s> many people coming from the design world aren't going to be using a centralized version control.</s><s> they're likely to not have the knowledge or desire to use anything beyond dropbox or a server share to work with.</s><s> with either of those, people are missing a great personal benifit of being able to roll back any set of changes in a visible fashion so they're free to explore changes as quickly as they think of them.</s><s> setting up git, svn, etc. can be a big barrier to entry for most people.</s><s> i think it can help people do good work if the functionality can be the same whether they're using an edge-specific feature or an integration with version control (or almost version control with cloud sync tools). 
+</s><s>features upvoted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180351-1421007</DOCNO>
+<TEXT>
+<subject>request: split screen and/or multiple windows</subject>
+<post author="HobyVH" timestamp="Mar 4, 2014 11:28 PM">
+<s>sometimes i'd like to view more than one section of a long file at the same time.</s><s> other times i'd like to view/write more than one file at the same time too.</s><s> the implementation could be split screen or multiple windows.</s><s> so far i've been using other text editors to accomplish this. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180351-6182772</DOCNO>
+<TEXT>
+<subject>request: split screen and/or multiple windows</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 5, 2014 1:31 PM">
+<s>these are both on the brackets feature backlog.</s><s> you can upvote them here: 
+split view - https://trello.com/c/8yafyazd/500-split-view-multiple-documents multiple windows - https://trello.com/c/ym0yysxx/679-multiple-separate-windows 
+split view should be coming within the next few months, while mutliple windows is probably a good deal farther away. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6180421-1421051</DOCNO>
+<TEXT>
+<subject>request: better quickedit of new complex styles</subject>
+<post author="HobyVH" timestamp="Mar 5, 2014 12:02 AM">
+<s>this request is kind of open-ended, since i don't have a good idea of what i'd like-but it would be great if there is some way that the process for creating cascading styles and style variations could be improved/automated. 
+</s><s>when i'm creating more complex css, i find that i need to jump out of quick edit and stay in the css files and "work blind" for a while before returning.</s><s> i'd really prefer to stay in quick edit unless i'm organizing the css (automatic css organizing options!</s><s> there's another feature request). 
+</s><s>an example: if i start making .class1 .class2 { blah:foo; } and both .class1 and .class2 already exist-it would be great to see those somewhere so i can tell what styles i want to write. 
+</s><s>another situation: i'm starting a new style and i'd like to know what is already being inherited by this object.</s><s> currently the only way to see that is to look in the web browser's inspect element-which breaks live preview. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-1159001</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="jmcoutinho" timestamp="Feb 23, 2013 12:29 PM">
+<s>when i try to enable my live preview on edge code preveiew 3, i get an error message saying: http://puu.sh/27au2 (chrome needs to be relaunched with remote debugging enabled.</s><s>) when i press the 'relaunch' button, chrome closes, but it doesn't open anymore and when i open it manually and try to live preview again, the same happens. 
+</s><s>my google chrome is updated and i'm running widnows 7...</s><s> this only started happening a few days ago, and i've tryed to restart the computer and chrome, but nothing happened. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5097688</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="ryanstewartadobe" timestamp="Feb 23, 2013 10:38 PM">
+<s>hi jm, 
+</s><s>is chrome installed in the default location or do you have it in a different folder on your machine? 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5097877</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="jmcoutinho" timestamp="Feb 24, 2013 1:13 AM">
+<s>hi 
+</s><s>i've installed google chrome normaly.</s><s> it's under "appdata\local\google\chrome\application"...</s><s> should i try to reinstall it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5099708</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="ryanstewartadobe" timestamp="Feb 25, 2013 12:35 AM">
+<s>can you try the instructions here for forcing chrome to run in remote debug mode: http://www.chromium.org/developers/how-tos/run-chromium-with-flags 
+then try connecting to live preview from edge code?</s><s> i'm trying to make sure that the remote debugging is being set up correctly. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5100186</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="jmcoutinho" timestamp="Feb 25, 2013 6:54 AM">
+<s>hey!</s><s> 
+</s><s>i tried to follow the instructions on that link you've sent me, but it wasn't possible, so, i reinstaled chrome.</s><s> it's all okay now, the message appeared again, but this time, when i pressed 'relaunch chrome', that's exactly what happened, and the live preview was working perfectly. 
+</s><s>thanks very much for the help, and edge code is an amazing program!</s><s> <quote>
+<s>(: 
+</s></quote>
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5102873</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="ryanstewartadobe" timestamp="Feb 26, 2013 12:26 AM">
+<s>great!</s><s> i'm glad it worked out and glad you're enjoying edge code! 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5154335</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="ericadev" timestamp="Mar 16, 2013 10:31 PM">
+<s>i am having this same problem.</s><s> i have tried to manually open chrome in remote debug mode.</s><s> i tried uninstalling and reinstalling chrome.</s><s> it is installed in program files. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-5165342</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="ryanstewartadobe" timestamp="Mar 20, 2013 3:41 PM">
+<s>hi erica, i *think* we've got a fix for this.</s><s> you can see the status here - https://github.com/adobe/brackets/issues/2370 
+we'll be bringing this into the next version of edge code which will be in early may. 
+</s><s>apologies that you can't get it to work, and if you have any questions, feel free to drop me a note. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-6173903</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="artsyfartsygirl" timestamp="Mar 3, 2014 6:22 AM">
+<s>i'm still having this issue, but since the original person was able to fix it by reinstalling chrome i think i will try that.</s><s> i just installed edge code for the first time mid-last week and it was working like a champ until friday afternoon.</s><s> i was able to get the live connect to work this morning when i first launched it, but now it's giving this remote debugging error over and over again. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5096983-6179784</DOCNO>
+<TEXT>
+<subject>Edge & Chrome Debugging Problem</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 4, 2014 5:26 PM">
+<s>there are some additional live preview launching bug fixes going into brackets during its next two cycles, so those fixes will all be in the next edge code release as well.</s><s> hopefully that will help further improve things. 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6174334-1419565</DOCNO>
+<TEXT>
+<subject>Why does Live Preview not work on my Mac Chrome browser?</subject>
+<post author="rmilham" timestamp="Mar 3, 2014 8:23 AM">
+<s>why does live preview not work on my mac using chrome browser?</s><s> i still have to do the "save and refresh dance". 
+i love code app anyway but would love that feature to work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6174334-6179499</DOCNO>
+<TEXT>
+<subject>Why does Live Preview not work on my Mac Chrome browser?</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 4, 2014 3:48 PM">
+<s>start by reading the live preview sections of the how to use brackets and troubleshooting docs. 
+</s><s>let us know if you still cannot get it to work. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6174971-1419715</DOCNO>
+<TEXT>
+<subject>How do I fix the pipelining vulnerability to DoS attacks in EdgeCode-node.exe.</subject>
+<post author="Richard Bernard" timestamp="Mar 3, 2014 10:47 AM">
+<s>my antivirus sofware identified this problem and suggested upgrading to version 0.8.26 or 0.10.21.</s><s> where can i find these and once i have one of them, how do i apply the fix.</s><s> i'm running on a windows7 64-bit platform.</s><s> more importantly, when is cc going to patch this software? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6174971-6176688</DOCNO>
+<TEXT>
+<subject>How do I fix the pipelining vulnerability to DoS attacks in EdgeCode-node.exe.</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 3, 2014 9:44 PM">
+<s>hi richard, 
+</s><s>as i understand it, the issue mentioned is only relevant if you're using node as a public-facing web server.</s><s> the node blog says: anyone using node.js v0.8 or v0.10 to run http servers in production please update as soon as possible.</s><s> (emphasis added) 
+</s><s>since the node executable inside edge code is used only for development -- e.g. your own testing (live preview), and other internal brackets usage -- the issue isn't really going to affect you. 
+</s><s>the next release of edge code should have a newer version of node (>= 0.10.24), so at that point it should no longer be getting flagged by your av software. 
+</s><s>hope that helps, 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6174971-6178808</DOCNO>
+<TEXT>
+<subject>How do I fix the pipelining vulnerability to DoS attacks in EdgeCode-node.exe.</subject>
+<post author="Richard%20Bernard" timestamp="Mar 4, 2014 11:49 AM">
+<s>peter, 
+
+
+</s><s>yes, it does.</s><s> i'm glad this turns out to be a red herring, but i also prefer to be safe rather than sorry so i always follow up on this kind of stuff.</s><s> i'll ignore it until the new release in may. thanks. 
+
+
+</s><s>richard 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6176716-1420129</DOCNO>
+<TEXT>
+<subject>Is Edge Code CC a demo version? (Was: Edge Code CC)</subject>
+<post author="rhondakayshow" timestamp="Mar 5, 2014 8:02 AM">
+<s>is edge code cc (preview) a demo version or a full version?</s><s> i am confused by the term 'preview." is there a version called "edge code cc?" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6176716-6176686</DOCNO>
+<TEXT>
+<subject>Is Edge Code CC a demo version? (Was: Edge Code CC)</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 3, 2014 9:36 PM">
+<s>it's more of a beta -- there is no "fuller" version with more features, but we think edge code needs a little more polish before we could call it a finished 1.0 release.</s><s> edge code is based on an open-source project called brackets, and you can track the progress of brackets development here if you're interested (note the "1.0 backlog" column at far right). 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6172462-1419131</DOCNO>
+<TEXT>
+<subject>Where Is The Edge Code Compiler?</subject>
+<post author="jrun_user85" timestamp="Mar 2, 2014 2:57 PM">
+<s>i was just wondering where the java compiler is supposed to be accessed in the edge code application?</s><s> i have a fairly long java source code program which pretty badly needs compilation as soon as possible. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6172462-6174214</DOCNO>
+<TEXT>
+<subject>Where Is The Edge Code Compiler?</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 3, 2014 8:05 AM">
+<s>there is no java compiler component for edge code.</s><s> edge code is designed for javascript (not java) developers. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6161876-1416583</DOCNO>
+<TEXT>
+<subject>SVN support</subject>
+<post author="JurijsKobecs" timestamp="Feb 27, 2014 1:13 AM">
+<s>any community extension for svn support on edge? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6161876-6170490</DOCNO>
+<TEXT>
+<subject>SVN support</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 1, 2014 4:48 PM">
+<s>i'm not aware of any. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6160754-1416287</DOCNO>
+<TEXT>
+<subject>Integration with Business Catalyst</subject>
+<post author="Phorden" timestamp="Feb 26, 2014 2:56 PM">
+<s>i would love to see an integration with edge code for business catalyst.</s><s> dreamweaver already has this with the bc modules built in.</s><s> i would love to see this feature added to edge code or through and edge code extension.</s><s> is there anything like this being developed? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-6160754-6170413</DOCNO>
+<TEXT>
+<subject>Integration with Business Catalyst</subject>
+<post author="Randy%20Edmunds" timestamp="Mar 1, 2014 4:46 PM">
+<s>interesting idea, but i'm not aware of anyone working on that. 
+</s><s>randy 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-1177054</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="Starman_1971" timestamp="Mar 25, 2013 4:27 AM">
+<s>i got really simple question: 
+how i can change background colour of the adobe edge code editor from white to dark ? 
+</s><s>kind regards, vladimir. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5177142</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Mar 25, 2013 10:34 AM">
+<s>hi vladimir, 
+</s><s>there's no official way to change editor color schemes yet, but as an unofficial hack you can do this: 
+find the 'www' folder within your install of edge code (on mac, right-click the app and choose show package contents) navigate to www/styles and open brackets_codemirror_override.less find the ".</s><s>codemirror-scroll" css rule near the top of the file and change background-color to whatever you'd like.</s><s> save the file, quit and restart edge code 
+hope that helps! 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5177279</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="cfjedimaster" timestamp="Mar 25, 2013 10:42 AM">
+<s>how about the themes extension?</s><s> i've only tested it with brackets though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5177355</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="ryanstewartadobe" timestamp="Mar 25, 2013 11:07 AM">
+<s>we'll also be adding theme support directly so you don't need to go through that manual process.</s><s> i'm not totally sure where it will land on the priority list/time frame but it's something i'd like to do sooner rather than later. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5317130</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="DarkKnight369" timestamp="May 13, 2013 2:30 PM">
+<s>i was able to change the background color.</s><s> i am now looking to tweak the plain text code color that you would find within tags such as <p></p>.</s><s> i have been digging through the less files without much luck.</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5319472</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="ryanstewartadobe" timestamp="May 14, 2013 9:49 AM">
+<s>hey darkknight, 
+</s><s>you might want to look at this set of themes - https://github.com/chriskempson/tomorrow-theme/tree/master/brackets - i think they might do what you want or at least proivde an example. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5429114</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="CandidTheory" timestamp="Jun 19, 2013 8:28 PM">
+<s>how do we install the theme? 
+i have downloaded other themes in zip files and placed them into the user folder (windows 8) and that worked.</s><s> but for the link provided, the theme does not seem to work properly... 
+</s><s>this is the theme i downloaded and installed successfully: https://github.com/miguelcastillo/brackets-themes 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5176030-5431267</DOCNO>
+<TEXT>
+<subject>How I can change background colour from white to dark ?</subject>
+<post author="ryanstewartadobe" timestamp="Jun 20, 2013 8:55 AM">
+<s>hi candid theory, with miguel's extension you just intstall it (which you've done) and then you can select new themes through the "themes" menu that shoud show up in edge code.</s><s> you don't need to worry about copying anything over. 
+</s><s>are you not seeing the themes menu? 
+</s><s>we're going to be adding officiall support for themes over the next couple of months.</s><s> if you have any feedback on how you want them to work, definitely let me know! 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-1276831</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="The Kojoman" timestamp="Aug 16, 2013 2:41 AM">
+<s>i've just downloaded edge code via creative cloud, but when i open up the application the only thing i get is a blank white window titled index.html.</s><s> i cant type in it, i don't get any toolbars or menus or anything.</s><s> not even the "about edge code" from the "edge code" menu shows anything. 
+</s><s>what can i do?</s><s> 
+</s><s>i have a 2,6 ghz intel core i7 macbook pro retina 16 gb ram (1600 mhz ddr3) nvidia geforce gt 650m 1024 mb os x 10.8.4 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5600601</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="ryanstewartadobe" timestamp="Aug 16, 2013 9:11 AM">
+<s>hi kojoman, 
+</s><s>can you try opening edge code, then in a browser window going to http://localhost:9235/.</s><s> you should see a list of "web inspectable content" (or something).</s><s> and your edge code instance should be listed as a link.</s><s> click that, and then can you tell me if you see anything in the console? 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5606555</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="The%20Kojoman" timestamp="Aug 19, 2013 5:51 AM">
+<s>yes, i get anuncaught error: load timeout for modules.....</s><s> then it lists a bunch of modules and then this: http://requirejs.org/docs/errors.html#timeout require.js:163 makeerrorrequire.js:163 checkloadedrequire.js:689 (anonymous function) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5607412</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Aug 19, 2013 9:59 AM">
+<s>kojoman, 
+</s><s>how old is the hardware you're running?</s><s> is disk access unusually slow, perhaps?</s><s> are you launching brackets while other apps are doing a lot of work in the background? 
+</s><s>if there are no other errors listed above that one, it typically means that it simply took a long time (i think > 7 seconds) for certain js files to be loaded from disk.</s><s> (it could also indicate the files are flat-out missing -- so you could try uninstalling & reinstalling edge code to make sure your installation didn't become corrupt). 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5610223</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="The%20Kojoman" timestamp="Aug 20, 2013 6:52 AM">
+<s>i have an ssd disk so i guess that should be fine (my computer specs are in the first post) my laptop's pretty fresh that shouldn't be the problem.</s><s> tried to delete edge code and reinstall it (couldn't find an uninstaller).</s><s> but it looks the same.</s><s> just a blank screen.</s><s> tried to install brackets (why the two software?</s><s>) but with the same results (see attached image). 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5610290</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="cfjedimaster" timestamp="Aug 20, 2013 6:58 AM">
+<s>just a quick reply kojo re: brackets and edge code.</s><s> brackets is an open source initiative and is what edge code is built on top off.</s><s> so same core code, but edge code is our edition of it so to speak. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5610333</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="The%20Kojoman" timestamp="Aug 20, 2013 7:13 AM">
+<s>hypothetically, if prerelease software, with a name related to japanese steel that rhymes with banana, had been installed on this machine, could that have anything to do with it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5610821</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="ryanstewartadobe" timestamp="Aug 20, 2013 9:54 AM">
+<s>ahhh, i see what's happening.</s><s> which version of edge code are you using?</s><s> i think this looks like the white screen of death that we saw a little while back - https://github.com/adobe/brackets/issues/4400 
+but i thought that had been fixed.</s><s> if you're using the latest preview, then we might need to reopen that issue. 
+</s><s>and the other prerelease shouldn't have any conflict. 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5647901</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="wgreen02" timestamp="Sep 2, 2013 7:29 PM">
+<s>ryan- 
+</s><s>for the first time, i'm getting this issue on my machine as well, running windows 7.</s><s> program opens, but with a blank white screen, menu selections do nothing. 
+</s><s>bill 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5650406</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="Peter%20Flynn%20(Adobe)" timestamp="Sep 3, 2013 2:00 PM">
+<s>bill, 
+</s><s>can you do the diagnostic steps ryan listed above?</s><s> (open localhost:9235, etc.</s><s>) let us know what you see in the console (or better yet, paste it here or add a screenshot). 
+</s><s>thanks!</s><s> 
+- peter 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5654060</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="ryanstewartadobe" timestamp="Sep 4, 2013 4:06 PM">
+<s>hi bill, 
+</s><s>also, are you running any extensions currently? 
+=ryan 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5654280</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="wgreen02" timestamp="Sep 4, 2013 5:13 PM">
+<s>it just says inspectable webcontents...there are no items listed underneath. 
+</s><s>bill 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5654282</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="wgreen02" timestamp="Sep 4, 2013 5:14 PM">
+<s>nope, no extensions.</s><s> i initially did a re-install and posted on here that all was ok, but right after that i'm back tot he white screen again. :-( 
+</s><s>bill 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5655001</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="ryanstewartadobe" timestamp="Sep 5, 2013 1:35 AM">
+<s>doh!</s><s> do you know which preview you're running?</s><s> the latest is preview 5 which if you go to help->about edge code you'll see a dialogue box.</s><s> the version should say something like "experimental build 0.95.0-359081402 (preview)" 
+</s><s>what version numbrer do you have? 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5655408</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="wgreen02" timestamp="Sep 5, 2013 5:15 AM">
+<s>i'm running the most current version: 
+experimental build 0.95.0-359081402 
+</s><s>the odd part is, this morning it opened up with no problem again...the issue appears to be sporadic. 
+</s><s>bill 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5657179</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="The%20Kojoman" timestamp="Sep 5, 2013 1:52 PM">
+<s>i solved the issue.</s><s> it turned out i had an active anti virus software on... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5657180</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="ryanstewartadobe" timestamp="Sep 5, 2013 1:54 PM">
+<s>ahh, thanks kojoman.</s><s> bill, could that be your issue? 
+</s><s>peter, is that a known issue for us? 
+=ryan ryan@adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5657782</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="wgreen02" timestamp="Sep 5, 2013 8:03 PM">
+<s>don't think so...mine works sometimes and sometimes it doesn't anti-virus is on all the time.</s><s> right now it's opening up like a champ.</s><s> tomorrow it may not.</s><s> hopefully that's not the case! :-) 
+i do appreciate your quick responses, though...most forums you have to wait days for a reply. 
+</s><s>bill 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5863286</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="David%20Alcala%20-%20Adobe" timestamp="Nov 21, 2013 12:29 PM">
+<s>hi kojoman - can you let us know what antivirus software you were running and the exact steps to reproduce the problem? 
+</s><s>thanks, 
+</s><s>david alcala edge code qe 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5863409</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="David%20Alcala%20-%20Adobe" timestamp="Nov 21, 2013 12:35 PM">
+<s>hi bill   can you still reproduce this issue with edge code preview 6?  can you also see if you can reproduce the issue with brackets sprint 34?: http://download.brackets.io   thanks, david alcala edge code qe
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5864006</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="wgreen02" timestamp="Nov 21, 2013 4:00 PM">
+<s>actually, i have not had this problem in quite some time...whatever was causing it seems to have gone away.</s><s> thanks for checking in though!</s><s> i appreciate it. 
+</s><s>bill 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Edge-Code-CC-Preview/Discussions-5599723-5868675</DOCNO>
+<TEXT>
+<subject>Edge Code CC won't load, blank window</subject>
+<post author="The%20Kojoman" timestamp="Nov 23, 2013 2:49 PM">
+<s>i used comodo.</s><s> but i can't remember the steps i'm afraid.</s><s> sorry i couldn't be of more assistance. 
+/johan 
+<quote>
+<s>21 nov 2013 kl.</s><s> 21:29 skrev david alcala <forums_noreply@adobe.com>: 
+
+re: edge code cc won't load, blank window created by david alcala in edge code cc preview - view the full discussion hi kojoman - can you let us know what antivirus software you were running and the exact steps to reproduce the problem? 
+
+
+</s><s>thanks, 
+
+
+</s><s>david alcala 
+</s><s>edge code qe 
+</s><s>please note that the adobe forums do not accept email attachments.</s><s> if you want to embed a screen image in your message please visit the thread in the forum to embed the image at http://forums.adobe.com/message/5863286#5863286 replies to this message go to everyone subscribed to this thread, not directly to the person who posted the message.</s><s> to post a reply, either reply to this email or visit the message page: re: edge code cc won't load, blank window to unsubscribe from this thread, please visit the message page at re: edge code cc won't load, blank window.</s><s> in the actions box on the right, click the stop email notifications link.</s><s> start a new discussion in edge code cc preview at adobe community for more information about maintaining your forum email notifications please go to http://forums.adobe.com/thread/416458?tstart=0. 
+</s></quote>
+
+</s></post>
+</TEXT>
+</DOC>
+
+

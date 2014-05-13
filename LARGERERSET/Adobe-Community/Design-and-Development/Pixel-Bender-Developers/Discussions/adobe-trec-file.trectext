@@ -1,0 +1,23 @@
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Pixel-Bender-Developers/Discussions-3621974-840066</DOCNO>
+<TEXT>
+<subject>Pixel bender rendering inside flash is different than preview in Toolkit 2.5</subject>
+<post author="galanedu" timestamp="Apr 18, 2011 9:30 AM">
+<s>hello, i'm from barcelona, spain and my english is not good   i'm doing with pixel bender toolkit 2.5 a shader for using it in flash as blend mode.   it's strange, but in the preview with loaded images inside is correct, just like i want.   but when i export this pbj to use inside flash it renders different.   i test a simple shader with this sentences:   if(outcoord().x == outcoord().y){      result = pixel4(0.0,1.0,0.0,1.0); }else{      result = samplenearest(background, outcoord()); }   in toolkit draws a diagonal line (correct), but in flash outcoord().x == outcoord().y always returns true.   do you know why this is posible?</s><s>?   could you help me?</s><s> pleeeease   thanks   eduardo galan
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/Design-and-Development/Pixel-Bender-Developers/Discussions-3449101-787357</DOCNO>
+<TEXT>
+<subject>Need help with a filter to use in Photoshop CS5</subject>
+<post author="InfraredGuy" timestamp="Feb 4, 2011 10:41 AM">
+<s>i am a novice so please be patient.</s><s> over the past 15 years or so i have been using a simple filter that i created in filter factory to do some analysis on aerial photographs.</s><s> i am way behind on updates (currently using photoshop cs (version 8)).</s><s> i want to upgrade and am using a trial of cs5.</s><s> after talking with customer support i've found there is no way to use this filter in cs5 and filter factory is no longer supported in the photoshop suite.</s><s> can someone help me to create the same filter in pixel bender to use in photoshop cs5?</s><s> i will share the details of the filter if someone responds. 
+</s><s>thanks!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+

@@ -1,0 +1,3677 @@
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-1149997</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 8, 2013 9:56 AM">
+<s>my client is looking to change the way they generate help for an internal application.</s><s> until now, they've been using robohelp for word x3.</s><s> i was able to import the existing project into robohelp 10 and generate "primary layout (webhelp)." i opened the generated help in ie and firefox and found the table of contents, which generated well. 
+</s><s>most but not all of the individual help pages will not open, however.</s><s> those that will not open are in chm format.</s><s> firefox is reporting errors like "firefox doesn't know how to open this address, because the protocol (rmation.chm) isn't associated with any program." can anyone advise me on how to proceed? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5058602</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="RoboColum(n)" timestamp="Feb 8, 2013 10:07 AM">
+<s>can we clarify a few things first. 
+</s><s>it sounds like you have migrated the rhx3 output into the robohelp html application and are not using the old robohelp for word application at all.</s><s> is that correct? 
+</s><s>second you start talking about webhelp generating ok and then say the problem is with a chm.</s><s> do you mean that you are creating both webhelp and chms and that the generated webhelp is all displaying ok? 
+</s><s>next i am confused what firefox has to do with chm files.</s><s> do you get this error message when you double click on the chm file to open it? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5058725</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 8, 2013 11:05 AM">
+<s>my apologies for being such a noob with robohelp: i imported the existing robohelp project by opening the .hpj file in the project.</s><s> there's also a .hlp in the directory; however, when i try to open that file, i'm consistently getting "the specified file could not be opened.  ensure that the help file is not running and try again." it's not running.</s><s> i'm not using the old robohelp for word application at all.</s><s> once i opened the old project, i immediately generated web help using the file/generate/primary layout(webhelp) menu option.</s><s> i'm not intentionally doing anything to generate chms.</s><s> if i open the top-level generated .htm file in firefox, i see a left-side navigation bar with the table of contents.  the index is fully populated; however, clicking on many of the toc entries leads to the error i posted above.</s><s> there are no .chm files in the generated webhelp content (which is what i expected and hoped for) i found a bunch of references in the generated html that look like this:   <nobr><a href="../n.chm::/v_i_p_definition.htm"><b>v.i.p. - definition</b></a></nobr><br> i have no idea where "n.chm::" came from.  it's not in the generated folder structure.</s><s> the toc entries have similar incorrect links with portions of .chm filenames and double-colons.
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5066126</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="Peter%20Grainge" timestamp="Feb 12, 2013 1:35 AM">
+<s>somewhere along the line someone has created those links that now need to point the correct topic in the webhelp.</s><s> i am assuming the topic is part of this webhelp. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5066889</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 12, 2013 7:50 AM">
+<s>yes, the vip definition is part of the help project.</s><s> i'll speak with the person responsible for maintaining the help but i suspect that she's not very technical. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5066941</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="Peter%20Grainge" timestamp="Feb 12, 2013 7:58 AM">
+<s>useful to know you are not the author.</s><s> when you create links, it is done in a different way when creating links between topics in the same help file and topics in another help file.</s><s> the latter is also done in different ways according to whether you care linking to a topic in a chm and a topic in say webhelp. 
+i believe this is where your problem lays. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5067706</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 12, 2013 11:46 AM">
+<s>i met with the person responsible for maintaining the help content.</s><s> there doesn't seem to be anything different about the links that function properly as opposed to those that end up corrupted.</s><s> it seems as if most of the toc entries (maintained manually), all of the index entries (also maintained manually), and half or more of the inter-topic links are bad. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5069241</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="Peter%20Grainge" timestamp="Feb 13, 2013 1:17 AM">
+<s>can you please post a good link alongside a bad link? 
+</s><s>did the robohelp for word project generate webhelp or chms? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5071071</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 13, 2013 1:47 PM">
+<s>the robohelp for word x3 project was used to produce winhlp (.hlp files) only. 
+a good link looks like: 
+<a href="essential_comment_guest_lookup.htm">essential comment/guest lookup</a> 
+
+a bad link (from the same generated .htm file) looks like: 
+<a href="-à¡-.chm::/guest_lookup.htm">guest lookup</a> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5071381</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 13, 2013 3:43 PM">
+<s>new information.</s><s> i found that if i change some of the "upgrade options," i get much better results.</s><s> specifically, when i first open the old .hpj file, i selected the following options: in "import winhelp project: folders": select "do not create subfolder" under "folder for html files" in "import winhelp project: features": select "retain" under "external topics" 
+</s><s>all the links come into the upgraded project correctly.</s><s> i'm wondering how i might have known about these option settings at the beginning of this effort. 
+i appear now to have a functionally-equivalent web-based help system.</s><s> it would have been nice if the glossary in the old system were imported into rh10 as a collection of glossary items but i'm not sure how the links to those items that are currently in the help topics ought to have been handled in that situation. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5072139</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="Peter%20Grainge" timestamp="Feb 14, 2013 12:28 AM">
+<s>the two links do show one was created as a link to another topic within the project and the other to a topic in a chm.</s><s> can you identify in the new project one of the links that was broken and see how it is written now. 
+</s><s>there is something on my site in snippets about converting from winhelp but you have fixed the issue now. 
+</s><s>importing from winhelp is always a trial and error process. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5072502</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 14, 2013 4:55 AM">
+<s>i understand what you are saying about the links having been created differently but there is no apparent difference when i examine the link properties in rh4w.</s><s> also, i don't think that there are any .</s><s>chms to link to in that project.</s><s> why would changing the two options i selected convert an external link to a .chm into an internal topic link? 
+</s><s>the adobe documentation of the "convert from winhelp" process is seriously lacking. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5072473</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="Peter%20Grainge" timestamp="Feb 14, 2013 5:18 AM">
+<s>so those links above are post import? 
+</s><s>if yes, what were they before import? 
+</s><s>just curious. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5076641</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 15, 2013 11:52 AM">
+<s>(sorry for the delay in getting back to you - i don't seem to get email notifications of updates to this topic despite "watching" it and having my profile setup to request email updates.</s><s> yet another frustration.</s><s>) 
+</s><s>in the rh4wx3 project, they're both just a normal links to hekp topics, all in the same word file (the links and the link targets).</s><s> i tried to generate webhelp out of rh4w but it fails without much explanation, so i can't cut-and-paste a link to show you. 
+i realized that when you wrote "importing from winhelp is always a trial and error process," you were implying that the documentation for that process is useless.</s><s> i have to agree. 
+</s><s>does adobe offer support of any kind for robohelp? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5077919</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="Peter%20Grainge" timestamp="Feb 16, 2013 2:20 AM">
+<s>sorry for the delay in getting back to you - i don't seem to get email notifications of updates to this topic despite "watching" it and having my profile setup to request email updates.</s><s> yet another frustration 
+see the sidebar on the right.</s><s> there is a link to start email notifications. 
+</s><s>in the rh4wx3 project, they're both just a normal links to hekp topics, all in the same word file (the links and the link targets).</s><s> i tried to generate webhelp out of rh4w but it fails without much explanation, so i can't cut-and-paste a link to show you. 
+</s><s>are you generating to a local drive?</s><s> otherwise i am not sure why that is happening. 
+i realized that when you wrote "importing from winhelp is always a trial and error process," you were implying that the documentation for that process is useless.</s><s> i have to agree. 
+no that isn't what i meant.</s><s> it is more that different projects seem to work better one way than another. 
+</s><s>does adobe offer support of any kind for robohelp? 
+</s><s>paid support is available.</s><s> the number depends on your location.</s><s> if us based, it is 
+800-833-6687 monday-friday, 5am-7pm pst 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5058545-5079906</DOCNO>
+<TEXT>
+<subject>Generating WebHelp/HTML After Upgrading from RoboHelp for Word X3</subject>
+<post author="StevenHB13" timestamp="Feb 17, 2013 9:01 AM">
+<s>sorry for the delay in getting back to you - i don't seem to get email notifications of updates to this topic despite "watching" it and having my profile setup to request email updates.</s><s> yet another frustration 
+see the sidebar on the right.</s><s> there is a link to start email notifications. 
+
+</s><s>it says "stop email notifications." there are no emails in my spam folder.</s><s> i'll try a different email address. 
+
+</s><s>in the rh4wx3 project, they're both just a normal links to hekp topics, all in the same word file (the links and the link targets).</s><s> i tried to generate webhelp out of rh4w but it fails without much explanation, so i can't cut-and-paste a link to show you. 
+</s><s>are you generating to a local drive?</s><s> otherwise i am not sure why that is happening. 
+
+i was. 
+
+i realized that when you wrote "importing from winhelp is always a trial and error process," you were implying that the documentation for that process is useless.</s><s> i have to agree. 
+no that isn't what i meant.</s><s> it is more that different projects seem to work better one way than another. 
+</s><s>if there's no documentation describing why different projects work differently, how to tell how a particular project will work best, and what the relationship is between a bad outcome and a specific, incorrectly set option parameter, i'll stand by my characterization. 
+</s><s>does adobe offer support of any kind for robohelp? 
+</s><s>paid support is available.</s><s> the number depends on your location.</s><s> if us based, it is 
+800-833-6687 monday-friday, 5am-7pm pst 
+thanks, i am us-based. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-6109378-1403777</DOCNO>
+<TEXT>
+<subject>Why does RoboHelp 9.0.023 insert unwanted double quotes in the chm file?</subject>
+<post author="cgcogan1" timestamp="Feb 11, 2014 7:34 AM">
+<s>robohelp for word inserts double quotes at the end of a topic that has conditional text, i do not see the quotes in the word document, but the quotes are present in the chm file. 
+</s><s>using windows 7, robohelp v9.0.023 and microsoft office word 2007. 
+
+</s><s>from ms word document: 
+
+
+
+</s><s>from the chm file: 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-6109378-6215997</DOCNO>
+<TEXT>
+<subject>Why does RoboHelp 9.0.023 insert unwanted double quotes in the chm file?</subject>
+<post author="Paula%20Stern" timestamp="Mar 17, 2014 4:25 AM">
+<s>look in the html code to see if something is there.</s><s> often we can't "see" something in the wysiwyg display but it turns up in the code. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-1085264</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="gthomson_ca" timestamp="Oct 19, 2012 11:49 AM">
+<s>i'm using robohelp 9 with windows 7, office 2007 and trying to generate printed documentation.</s><s> i've adjusted security in ms word and go through the setup in single source options in robohelp but when it gets to the point of trying to generate printed output it seems to get stuck on processing documents.</s><s> i try to cancel out but nothing happens and am forced to control quit. 
+am i missing some kind of configuration options? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4789593</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="Peter%20Grainge" timestamp="Oct 21, 2012 8:00 AM">
+<s>try with one of the sample projects?</s><s> that will help identify it is a general problem or just the project you are working on. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4795054</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="gthomson_ca" timestamp="Oct 23, 2012 1:12 PM">
+<s>no luck.</s><s> i opened a default robohelp project (sales builder) and tried to generate printed output for that.</s><s> same issue.</s><s> starts off ok but then can't get past processing topics...i try and cancel, close the window but nothing happens.</s><s> i'm forced to kill the process every time. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4795084</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="Peter%20Grainge" timestamp="Oct 23, 2012 1:34 PM">
+<s>do you have the pdf option selected as well as word?</s><s> if so try without. 
+</s><s>are you generating to a network drive rather than a local drive?</s><s> generate locally. 
+</s><s>how long are you allowing the process to run? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4795154</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="gthomson_ca" timestamp="Oct 23, 2012 1:39 PM">
+<s>no, these projects are sitting locally on my system.</s><s> my original project file is significantly big so i liked your idea of trying a sample file that was much smaller but still the same problem.</s><s> in both cases, i'm waiting at least 5 minutes and for my project i was waiting 10.</s><s> am i being too impatient?</s><s> it generates a webhelp version is less than 2 minutes so this is what i'm comparing it too?</s><s>?</s><s>?</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4796487</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="Peter%20Grainge" timestamp="Oct 24, 2012 5:13 AM">
+<s>i would leave it ten minutes or so just to prove the point but i don't think it will make a difference.</s><s> as a final test, create a new single topic project. 
+</s><s>you say you have adjusted security in word but not the setting you have applied.</s><s> it must be the lowest. 
+</s><s>the fact that this is happening to all projects tested so far does suggest an installation issue.</s><s> before going down that route though, where does your normal.dot template reside? 
+</s><s>are you able to install to another machine? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4796706</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="gthomson_ca" timestamp="Oct 24, 2012 6:27 AM">
+<s>ok, i figured it out.</s><s> so i generated a 1 page project tand this dialogue window that pops up titled "convert from:" and then lists a bunch of options to choose from, html being the selected default.</s><s> the reason it couldn't proceed in previous tries was i couldn't see this dialogue window?</s><s>?</s><s>?</s><s> and that's why the process was running but not progressing or letting me cancel out. 
+</s><s>is there a setting i need to select in word or robohelp so that this option is selected automatically?</s><s> my normal.dotm file is located c:\users\(myusername)\appdate\roaming\microsoft and my security settings is under the microsoft word trust center and i've selected enable all macros 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-4799066</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="Peter%20Grainge" timestamp="Oct 25, 2012 12:27 AM">
+<s>please post a screenshot of the dialog you are referring to.</s><s> use the camera icon you will see when posting your reply. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-6167373</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="gjg97" timestamp="Feb 28, 2014 10:51 AM">
+<s>i was also having this problem and i think it's now resolved. 
+i am trying the robohelp 11 trial on windows 7 with office 2010 and had the same issue where when attempting to generate printed documentation it would hang at the "processing topics" step for 5-10 minutes.</s><s> i also had to end the program each time through the task manager. 
+i was working with the sample employeecare2 help project on my local system.</s><s> the first time i got some message about another program using normal.dot and clicked through it, but i didn't see that again and then was getting this problem.</s><s> i then made a new, single-topic help project and for the first time noticed a "convert file" dialog pop up from word that was waiting for me to do something.</s><s> i'm not sure if this dialog was popping up before, so i could have missed it.</s><s> i believe this is the same dialog the op mentioned. 
+
+</s><s>the default was html and i clicked ok and the robohelp doc generation finished.</s><s> subsequent generations of docs did not prompt me about this again.</s><s> so i think it's resolved. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4787284-6215996</DOCNO>
+<TEXT>
+<subject>Unable to generate printed documentation</subject>
+<post author="Paula%20Stern" timestamp="Mar 17, 2014 4:23 AM">
+<s>try to identify which file is hanging the generating process.</s><s> i had something similar and found that the file itself was corrupted.</s><s> when i removed it from the project - the file compiled just fine.</s><s> then, going back, i was able to identify something in the formatting that was hanging the file. 
+</s><s>if you open a sample file that rh ships with and without touching it other than to compile, the file is hanging, i would think this has to do with a system issue and something in your configuration is not compatible.</s><s> also, was word installed before or after robohelp?</s><s> if after, that alone could be the problem. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-6057563-1391003</DOCNO>
+<TEXT>
+<subject>Balloon pop-up help menus for context sensitive help using Word files</subject>
+<post author="MSpring" timestamp="Jan 27, 2014 11:54 AM">
+<s>how do you create mouse-over balloon pop-up help menus for context sensitive help using word files? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-6057563-6057863</DOCNO>
+<TEXT>
+<subject>Balloon pop-up help menus for context sensitive help using Word files</subject>
+<post author="Willam%20van%20Weelden" timestamp="Jan 27, 2014 12:55 PM">
+<s>can you define 'balloon pop-up'?</s><s> what kind of behaviour are you expecting? 
+</s><s>how are you using word files?</s><s> importing or linking? 
+</s><s>kind regards, 
+willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-6057563-6057917</DOCNO>
+<TEXT>
+<subject>Balloon pop-up help menus for context sensitive help using Word files</subject>
+<post author="MSpring" timestamp="Jan 27, 2014 1:07 PM">
+<s>importing.</s><s> by balloon pop-up, i mean if you roll the mouse over an item on the ui of an applications (such as the column heading of a table), a text description of the contents of that column "pop-up" on the screen on the column heading.</s><s> when you move the mouse away, the "pop-up" or balloon disappears. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-6057563-6057986</DOCNO>
+<TEXT>
+<subject>Balloon pop-up help menus for context sensitive help using Word files</subject>
+<post author="Captiv8r" timestamp="Jan 27, 2014 1:22 PM">
+<s>of course i could be wrong here, but this sounds like something that would totally fall into the application developer's lap. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5989294-1373662</DOCNO>
+<TEXT>
+<subject>Generate from Robohelp to MS WORD: Both Word doc map levels (Headings) & PDF Bookmarks are incorrect</subject>
+<post author="ROBOPM" timestamp="Jan 7, 2014 9:39 AM">
+<s>hello all,   please review the following problem i am experiencing with my word output document map / pdf bookmarks,   thank you all for your time and assistance,   ~pm   software versions: win 7, robohelp 8, word 2007   issue: generating toc chapters from robohelp 8 to ms word 2007, word document map levels (headings) are incorrect or navigation trees are not consistent.</s><s> robohelp 8->ssl configured and mapped, using a word template .dot.   solution guidance: the pdf is generated from the word document that, in turn, is created from the robohelp 8 project.</s><s> the pdf generation is configured to use heading styles to create bookmarks.   note: word styles are mapped to styles defined in the robohelp templates however; the resulting document/pdf will generate incorrect or inconsistent bookmarks.   problem onset: unable to determine when this first occurred, looked at older generated "pdf's" hence, there were no bookmarks; probably due to not having the option in word converting/publishing into adobe 'heading option' checked off.   description: in the adobe reader, click on the view->navigation panel->bookmarks (note: this can also be seen in word 2007 'document map' left pane), the navigation trees are not consistent.   expected result: the bookmark structure follows the structure of the document where the first level are chapters, second level of the navigation tree are topics, etc.   actual result: the bookmark structure is not consistent and shows things like "scenario 1", "figure 1" on the same level as chapter headings.   example #1: click on the + sign next to the introduction bookmark;   expected result: it should show introduction ->introduction ->support and training   actual result: introduction ->introduction   ->support and training   example #2: click on the + sign next to the preparing for database migration bookmark;   expected result: it should show; preparing for database migration ->required steps for certain versions of financials ->any version running on sql server 7.0 ->version 3.x running on sql server 2000 ->version pre-4.3.11 running on sql server 2000 ->version 4.3.11 or later running on sql server 2000   actual result: preparing for database migration; ->required steps for certain versions of financials ->any version running on sql server 7.0 ->version 3.x running on sql server 2000 ->version pre-4.3.11 running on sql server 2000 1.</s><s> upgrade 4.3.11 or later to 4.6 while running under sql server 2000.</s><s> 2. upgrade sql server 2000 to sql server 2005/2008/2012. ->version 4.3.11 or later running on sql server 2000: scenario 1 scenario 2   and so forth...   example #3: 1) open pdf 2) in the adobe reader click on the view->navigation panel->bookmarks;   expected result: the bookmark structure follows the structure of the document where the first level are chapters, second level of the navigation tree are topics, etc.   actual result: the bookmark structure is not consistent and shows things like "fdp", "2. click next." on the same level as chapter headings.   example #4 (visual): notice "step / action", this text is coming from robohelp as 'normal' styles and is mapped to word as a 'normal' styles but word is reading it as "outline level" (paragraph).</s><s> see sample word screenshots below.   attempts to rectify problem: this is not a problem if i generate a single chapter from robohelp toc 'chapter layout'.</s><s> i also tried all the chapters separately and there were no problems.</s><s> when i generate all 24 chapters from my toc 'chapter layout'  there are issues (e.g., single word like "step / action" text, nubered and bullited text become headings).</s><s> sample 1 sample 2 shown in this sample screenshot i include the html from robohelp
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5989294-5989782</DOCNO>
+<TEXT>
+<subject>Generate from Robohelp to MS WORD: Both Word doc map levels (Headings) & PDF Bookmarks are incorrect</subject>
+<post author="Peter%20Grainge" timestamp="Jan 7, 2014 12:03 PM">
+<s>i am locking this thread as you have already posted the same question in the robohelp general forum and you are not using robohelp for word, a separate application. 
+http://forums.adobe.com/message/5974223 
+i am sorry it hasn't been answered yet but i will take a look tomorrow.</s><s> there's a lot in your post to wade through.</s><s> j 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5873062-1343465</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not finding Microsoft Word</subject>
+<post author="B. Abzug" timestamp="Nov 25, 2013 10:29 AM">
+<s>i just installed robohelp 10, and want to import a word doc.</s><s> however, i get a notifcation the word is not installed.</s><s> however, i have word 2013.</s><s> any suggestions? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5873062-5875191</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 not finding Microsoft Word</subject>
+<post author="Peter%20Grainge" timestamp="Nov 26, 2013 1:47 AM">
+<s>as far as rh is concerned you don't have word installed.</s><s> rh10 does not support word 2013.</s><s> there is a workaround for creating printed documents from rh10 to word 2013 but not for importing. 
+</s><s>subject to licences, you will need to install word 2010 instead of word 2013 or in addition to word 2013. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5871893-1343152</DOCNO>
+<TEXT>
+<subject>Broken bookmark cross references in Printed Documentation</subject>
+<post author="Rupesh.U.K" timestamp="Nov 25, 2013 4:44 AM">
+<s>hi, 
+</s><s>i'am using rh 10 to generate a printed documentation output.</s><s> what i notice is that the book marked cross references are broken in the printed documentation output.</s><s> other cross references are linking fine, but, the bookmarked cross references do not link to their destination. 
+i generated a chm file for the project and the bookmarked cross references appear fine there.</s><s> is there anything that could be tried to rectify this problem. 
+</s><s>please note that i'am using html files as the source files to convert to a word output. 
+
+</s><s>thanks, rupesh 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-1339935</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Scott Huerta" timestamp="Nov 20, 2013 1:03 PM">
+<s>i've got an old winhelp4 project that has been neglected for years and now we are trying to bring it current. 
+</s><s>i've deleted the old toc it had and created a new one with just a couple of entries to start with (just to make sure everything gets put together ok).</s><s> i've run into an odd thing.</s><s> after generating the help files, if i click on the button to "review primary layout" or generate the help file and click on "view result" i get the old version of the toc.</s><s> that is, 10 books in the contents tab window.</s><s> if i double click in windows explorer on the actual generated .hlp file i get the correct contents. 
+</s><s>it appears to me that robohelp is "remembering" something that deleting and recreating the toc did not reset.</s><s> i went trough all of the files that i saw for the rh project but didn't see anything that had the old book names in them. 
+</s><s>i'm using rh for word 10.0 on win7 pro (64-bit). 
+</s><s>this is w winhelp4 project.</s><s> the plan is to move to html.</s><s> but can't do it now. 
+</s><s>where is this information coming from? 
+</s><s>any and all help is appreciated. 
+</s><s>tia 
+</s><s>scott 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5859699</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Captiv8r" timestamp="Nov 20, 2013 1:10 PM">
+<s>hi scott 
+</s><s>so what is life like in the days of assembling pyramids? 
+</s><s>sorry, couldn't resist teasing you a bit on your using robohelp for word. 
+</s><s>my thought here is that you need to ensure you scrub the system of any old files lurking about.</s><s> we see the same thing from time to time over in the world of robohelp html where folks insist robohelp is "remembering" old stuff.</s><s> only to discover later that for whatever reason, they had forgotten about this file over here.</s><s> once they deleted all traces of the old output, voila!</s><s> the new content begins "magickally" appearing! 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5859997</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Scott%20Huerta" timestamp="Nov 20, 2013 1:51 PM">
+<s>hi rick, 
+</s><s>thanks for the quick reply.</s><s> yes working with robohelp for word is a bit frustrating when you know better things are available.</s><s> hopefully this project will be converted to html sometime next year.</s><s> but for now, it is what it is. 
+i backed up my project folder (including all subfolders) and deleted everything except for the .cnt, .doc &.hpj files.</s><s> this did not resolve the issue.</s><s> where else would something like this be stored?</s><s> i even deleted the .cnt file after that and am still getting the obsolete toc. 
+</s><s>any other ideas and/or thoughts? 
+</s><s>thanks 
+</s><s>scott 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5860608</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Captiv8r" timestamp="Nov 20, 2013 5:59 PM">
+<s>i'd be looking all over my hard drive as well as in any network locations.</s><s> sorry i can't be more specific than that. 
+i suppose to confirm whether this is the issue, i'd also try renaming the project so the output files are different. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5861463</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Peter%20Grainge" timestamp="Nov 21, 2013 2:48 AM">
+<s>didn't hlp create some other file in the same folder that needs to be trashed? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5861456</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="RoboColum(n)" timestamp="Nov 21, 2013 3:09 AM">
+<s>the ,hlp and .</s><s>cnt files are the ones i remember but i think there could be others depending on what other stuff is used (e.g. macros).</s><s> i seem to remember there is a report that can be run that lists all the files that must be distributed with your winhelp project.</s><s> i can't for the life of me remember where it is though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5861566</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Peter%20Grainge" timestamp="Nov 21, 2013 3:29 AM">
+<s>no, there was some other file that got created when people used the help. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5861939</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Captiv8r" timestamp="Nov 21, 2013 6:14 AM">
+<s>very weak and distant neurons firing here...</s><s> painful...</s><s> 
+</s><s>wasn't it called a gid file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5862015</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="RoboColum(n)" timestamp="Nov 21, 2013 6:38 AM">
+<s>give that man a large gold star!</s><s> that's the one.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5862075</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Peter%20Grainge" timestamp="Nov 21, 2013 6:51 AM">
+<s>yes sir.</s><s> thank you.</s><s> 
+@scott.</s><s> make sure there isn't one of those kicking around.</s><s> if there is, just trash it. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5863034</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Scott%20Huerta" timestamp="Nov 21, 2013 10:57 AM">
+<s>thanks everyone for your replies.</s><s> but still no joy. 
+</s><s>i've deleted all of the .gid files and this issue still exists.</s><s> i'm missing something. 
+</s><s>is any of this type of information saved anywhere in the robohelp folder structure, ini files or registry? 
+</s><s>thanks 
+</s><s>scott 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5863364</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Captiv8r" timestamp="Nov 21, 2013 12:14 PM">
+<s>so you are saying it even happens after a copy and a rename? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5863308</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Peter%20Grainge" timestamp="Nov 21, 2013 12:20 PM">
+<s>what version of word are you using and is it the 32 bit or 64 bit version? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5859782-5865819</DOCNO>
+<TEXT>
+<subject>Discrepancy between Book Content (TOC) between RoboHelp Explorer & CNT/HLP Generated</subject>
+<post author="Scott%20Huerta" timestamp="Nov 22, 2013 8:35 AM">
+<s>still no luck. 
+</s><s>i've copied the project files, deleted everything except the ,hpj, .doc, .cnt, and .hh files. 
+</s><s>renaming them (1 by 1 as there's no "save as" option) i don't see any books listed under the contents tab (i only see the full screen help screen that has menu options of help topics, back, print, <<, and >> and it displays the default topic (which i'm also trying figure out how to change in robohelp explorer). 
+</s><s>at this point i'm thinking (and back to using the original project files) as long as i can see the correct books under the content tab when i double-click on the .hlp file in windows explorer i should be ok.</s><s> it's a little disheartening that the robohelp explorer shows something different.</s><s> i'm concerned that maybe this is a corruption issue and hope that nothing blows up in my face if i go ahead and use the output from this project. 
+</s><s>to answer the additional questions as to what version of ms word is being used, it's ms word 2007 (32-bit) on win7 pro 64-bit. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5756684-1314380</DOCNO>
+<TEXT>
+<subject>Robohelp menu banner not working</subject>
+<post author="David Hurlston" timestamp="Oct 13, 2013 11:12 AM">
+<s>hello rh for word stalwarts! 
+
+</s><s>this is for robohelp 9 and 10, generating winhelp 2000, word 2007 
+</s><s>the rh banner menu at the top of the screen has stopped working as of a couple of weeks back 
+
+
+</s><s>any item selected from here does nothing, then when the cursor is put back on the word, word crashes 
+that means i have to insert graphics, mid-topics and other useful stuff manually 
+that's quite annoying so if there any ideas, i'd be happy to hear them 
+thanks 
+(i inadvertently posted this first in the general discussion group) 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5756684-5757864</DOCNO>
+<TEXT>
+<subject>Robohelp menu banner not working</subject>
+<post author="Peter%20Grainge" timestamp="Oct 14, 2013 4:03 AM">
+<s>not one i have seen reported before david.</s><s> wondering about word updates that have been installed or simply reinstalling rh. 
+btw did you get my email about a week back?</s><s> if not, please check spam and let me know if it did end up there.</s><s> i will resend from another address. 
+
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5756684-5758030</DOCNO>
+<TEXT>
+<subject>Robohelp menu banner not working</subject>
+<post author="Captiv8r" timestamp="Oct 14, 2013 5:26 AM">
+<s>hi all 
+</s><s>i notice the title bar says "compatibility mode".</s><s> haven't used robohelp for word myself since the last century, but wondering if that might have something to do with it? 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5756684-5769590</DOCNO>
+<TEXT>
+<subject>Robohelp menu banner not working</subject>
+<post author="David%20Hurlston" timestamp="Oct 18, 2013 12:09 AM">
+<s>regrettably, that wasn't the cause - but thanks for the suggestion rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5756684-5769671</DOCNO>
+<TEXT>
+<subject>Robohelp menu banner not working</subject>
+<post author="Peter%20Grainge" timestamp="Oct 18, 2013 1:58 AM">
+<s>david 
+</s><s>have you checked your macro settings in word's trust centre? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5756684-5782237</DOCNO>
+<TEXT>
+<subject>Robohelp menu banner not working</subject>
+<post author="David%20Hurlston" timestamp="Oct 23, 2013 8:17 AM">
+<s>nope - still the same. 
+i will try a reinstall... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-1303423</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="dhanya.p" timestamp="Sep 25, 2013 2:16 AM">
+<s>hi, 
+</s><s>i am using single source for publishing word and html help.</s><s> how to update header only for word publish and footer only for html help in robohelp 10.</s><s> please help me. 
+</s><s>regards, nalini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-5722813</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="Peter%20Grainge" timestamp="Sep 29, 2013 6:53 AM">
+<s>you cannot publish headers or footers when creating printed documentation.</s><s> see the pages on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-5724312</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="dhanya.p" timestamp="Sep 30, 2013 2:05 AM">
+<s>hi, 
+</s><s>thanks for your reply. 
+i understand that headers and footers provided in master page will not get published on header/footer of the word document (created using printed_documentation settings) but is there any way to get it done.</s><s> whether i have to do it manually. 
+</s><s>our organisation wants to use a single source for publishing online help and user manual- pdf.</s><s> please suggest me 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-5724363</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="Peter%20Grainge" timestamp="Sep 30, 2013 2:22 AM">
+<s>as explained in printed documentation on my site, the only ways are to edit the word document that is produced or copy the content from the rh generated document into your own word template. 
+</s><s>from there you can generate a pdf. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-5743824</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="dhanya.p" timestamp="Oct 8, 2013 2:06 AM">
+<s>hi peter, 
+</s><s>thankyou so much for your reply.</s><s> still i am facing some issues with robohelp 10.</s><s> it is regarding with duplicate heading levels published in the printed documentation output.</s><s> the books linked to the topics get published with two heading levels in the body of the content and the table of content in the printed documentation. 
+i tried chatting with adobe support team.</s><s> but they could not help me. 
+</s><s>please help me to get it published without duplicate headings. 
+</s><s>regards, nalini 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-5743868</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="Peter%20Grainge" timestamp="Oct 8, 2013 2:22 AM">
+<s>this looks very much like a question you have posted in the robohelp general forum.</s><s> is it the same question and are you using rh for word or rh html. 
+</s><s>please clarify and please do not duplicate questions as it results in disjointed answers.</s><s> please see the before you post thread as it is important that you start threads with the version and edition of rh being used, it affects answers. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5711716-5743909</DOCNO>
+<TEXT>
+<subject>header and footer issues in robohelp 10</subject>
+<post author="dhanya.p" timestamp="Oct 8, 2013 2:45 AM">
+<s>im extremely sorry for the repeating the question again here..</s><s> apologize for the same 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-487634</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="jancojan" timestamp="Sep 5, 2009 12:33 AM">
+<s>i just upgraded to robohelp 8 for word (office 2007, xp pro) and continue to have this problem after compiling a project (microsoft html) and clicking on view.</s><s> one suggestion was to change the path closer to the root directory.</s><s> i changed the output path the c:\ (can't get any closer than that!</s><s>) and that didn't help.</s><s> i searched the forum for a definitive fix but haven't found one yet.</s><s> the file opens fine using explorer but it's obviously a pain-in-the-butt to have to always do that.</s><s> thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2228273</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="Peter%20Grainge" timestamp="Sep 5, 2009 12:43 AM">
+<s>try these links found by searching on mk:@msitstore and hovering over the magnifying glass. 
+</s><s>the first is from a robohelp for word user. 
+http://forums.adobe.com/message/2110232#2110232 
+this message contains the second link below.</s><s> try that one next. 
+http://forums.adobe.com/message/766278#766278 
+http://www.robworley.com/2005/03/what-does-cannot-open-the-file-mkmsit store-mean/ 
+another one: 
+http://forums.adobe.com/message/58920#58920 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2234648</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="jancojan" timestamp="Sep 8, 2009 12:12 PM">
+<s>thanks for the suggestions peter.</s><s> i've tried them without success, except for the "try replacing the curly quotes (both single and double) with straight quotes.</s><s> also try replacing the em and en dashes with the hyphen." i have no idea what this is referring to, contents of a file, path name or what.</s><s> perhaps with some clarification i could give it a try.</s><s> i never had this problem with v6 or any of the robohelp office products.</s><s> it appears that it can be caused by a number of different things.</s><s> all my files appear to be registered fine.</s><s> where is robohelp picking up this pathname to insert into the project file path? 
+</s><s>any other suggestions are welcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2234682</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="Peter%20Grainge" timestamp="Sep 8, 2009 12:30 PM">
+<s>the quotes bit is what word calls smart quotes.</s><s> look it up in word's help.</s><s> never use them in html.</s><s> they are nothing but trouble. 
+</s><s>not sure without reading the links where they are suggesting the dashes would be but again you will find out about them in word's help. 
+</s><s>post back if still stuck after a bit more homework. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2301846</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="RoboHelpisnice" timestamp="Oct 8, 2009 10:47 AM">
+<s>i also compile my help projects using the .chm format.</s><s> i have a handful of users at one site that are not able to open the help files.</s><s> when they click on the help from the application, it looks like it thinks about it, but then nothing happens.</s><s> when i had them try to open the help files directly from their local directory, they received the following: cannot open the file: mk:@msitstore:c:\program files\....\helpfile.chm. 
+
+i have tried recompiling the .chm file.</s><s> i have tried recompiling the .chm file so it was closer to my root directory.</s><s> i have had the client "unblock" the properties of the .chm file.</s><s> none of these solutions fixed their issue.</s><s> (i posted the .chm file on our ftp site for the user to save down and replace their other help file.</s><s>) 
+
+</s><s>besides the things i've tried, other posts suggest the users go into their registry files to manipulate the hhctrl.ocx.</s><s> what other solutions are out there?</s><s> i don't think i can feasibly tell another customer that they should try to update their registry files.</s><s> i am able to access the helpfile.chm from multiple computers from our site and have not had issues. 
+
+</s><s>thanks for your help! 
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2302032</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="Peter%20Grainge" timestamp="Oct 8, 2009 11:48 AM">
+<s>various solutions are posted above in this thread.</s><s> to the best of my knowledge they are the only known solutions. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2309453</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="Pete%20Lees" timestamp="Oct 12, 2009 11:30 AM">
+<s>hi, robohelpisnice, 
+</s><s>when you say that a handful of users at one site cannot open your help file, does this mean that other users at the site can open it? 
+</s><s>the "cannot open the file" message is often an indication that a help file has been corrupted in some way, so, as a test, it may be worth trying to distribute your file by some other means - for example, by zipping it up and emailing it to these users.</s><s> if may be that your file was corrupted when it was downloaded from your ftp site. 
+</s><s>presumably, none of these users has problems with the other html help files on their computers? 
+</s><s>pete 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2309593</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="RoboHelpisnice" timestamp="Oct 12, 2009 12:16 PM">
+<s>hi pete,   there are a handful of users at a site that are able to open the help documentation w/out an issue, but there are more users that are unable to open the help.   the site downloads our software release and when the user logs into our product, and auto-update is performed to update their c: drive w/ the latest files, including the help file.  all users will have the same version of the help documentation (the same .chm file).   it has to be an issue related to the computer, but we haven't figured it out yet.  i had one of the developers here create a batch file that would register the hhctrl.ocx - i had two of the users run the .bat, and they received the successful message, but they are still unable to view the help.</s><s> c:\windows\system32\regsvr32.exe -u "c:\windows\system32\hhctrl.ocx" c:\windows\system32\regsvr32.exe "c:\windows\system32\hhctrl.ocx"   i have recompiled the help several times.  i have posted several .chm files on our ftp sites to try.  i have tried to email the .chm file, but that failed due to the extension or the size of the document (it is just over 5mb).  i have now tried to email the help as a .</s><s>txt to see if the user will be able to receive it and then have them rename the file as a .chm.   the users are running an os of windows xp professional sp3.   i am using robohelp 8.0.0.203.   thank you for your help!
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2309672</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="RoboHelpisnice" timestamp="Oct 12, 2009 12:44 PM">
+<s>i can now also rule out possible compression issues from the ftp site as i was able to email the help file w/ the .</s><s>txt extension and then had the user rename the file as a .chm.</s><s> she still received the same error: cannot open the file: mk:@msitstore:c:\program files\....\help\helpfile.chm 
+some of the users unable to access the help file are my power users.</s><s> they rely on the help documentation. 
+</s><s>any suggestions you can give me would be greatly appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-2309750</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="Pete%20Lees" timestamp="Oct 12, 2009 1:22 PM">
+<s>hi, again, 
+so, it sounds like your help file is fine and there is a problem with each user's computer.</s><s> do they experience the same problem with any other help files that they open? 
+</s><s>perhaps you can ask one of the users to run mj's help diagnostics, available from the address below, and have them select the option to refresh the registration of all hh 1.x dlls. 
+http://helpware.net/downloads/index.htm#mjs 
+if the problem persists, it would be good to see the report that mj's help diagnostics generates.</s><s> perhaps you can get that from the user and post it here. 
+i don't think that reregistering hhctrl.ocx will make a difference; if one of the html help viewer components is at fault, it's most likely to be hh.exe.</s><s> either way, mj's help diagnostics should detect and resolve the problem. 
+</s><s>some other things to watch for are excessively long folder paths down to the help file (should not exceed 256 characters) and non-alphanumeric characters in the path or file name (hash symbols, for example). 
+</s><s>pete 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2227577-5713045</DOCNO>
+<TEXT>
+<subject>Cannot open the file: mk:@MSITStore</subject>
+<post author="Gerhard2010" timestamp="Sep 25, 2013 10:25 AM">
+<s>thanks a lot 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-1213319</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="Theodorakis55" timestamp="May 16, 2013 7:40 AM">
+<s>i know this is all a day late and a follar short but for those folks that still use robohelp for word: 
+if your company is going to windows 7, x5 will not work.</s><s> you need to bump it up to at least rh8. 
+</s><s>even after you upgrade, if you use the tripane (winhelp_2000) view in rh for word, it will not work on windows 7 even with the microsoft patch.</s><s> with the patch it will look like an older version of rh in winhelp_4.</s><s> at least i have not been able to get it to display. 
+</s><s>what will work is if you compile it in webhelp.</s><s> you will loose some links.</s><s> i know i should be moving to robhelp html and i tried, but when i did that i got a lot of garbage at the top of all my topics, i lost all my external links and i would have to retrain my partner... 
+</s><s>now about links.</s><s> my only complaint about robohelp for word was it's limited external linking capacity.</s><s> if you use rh for word you know you can only brouse to the net or to an htm or html document.</s><s> it doesn't mean you can't link to a pdf or an excel spread sheet.</s><s> you just can't brouse to it.</s><s> you can manually enter the path.</s><s> i just changed 740+ htm links to pdf links (pdf in same file as htm and the names were the same except for extension) and it worked.</s><s> if you intend to try this back up. 
+</s><s>anyway, if this helps anyone great..if not thanks for letting me babble.</s><s> i like my robohelp for word in webhelp format. 
+</s><s>peggy theo.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-5328656</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="Peter%20Grainge" timestamp="May 17, 2013 1:45 AM">
+<s>thanks for posting this peggy. 
+</s><s>it is worth adding that there is another way of continuing to work with word - using linked documents in robohelp html.</s><s> you create word documents entirely independent of robohelp and then create topics by linking those documents in a robohelp html project. 
+</s><s>you cannot create winhelp that way but winhelp is on life support and requires users to download a viewer, you cannot distribute it.</s><s> it really is time to move on from winhelp. 
+</s><s>robohelp for word is not getting much development and does not get the new features being added to robohelp html. 
+</s><s>linking is covered on my site. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-5339915</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="Theodorakis55" timestamp="May 21, 2013 10:32 AM">
+<s>thanks for the feedback. i've had bad luck converting my winhelp to robohelp html.</s><s> lost tons of links when i did.</s><s> it worked better when i compiled in webhelp but using robohelp for word.</s><s> it does everything i need it to do, including directly linking pdf, excel, power points etc. it runs on windows 7 and can use office 10 (with patch).</s><s> any new projects i'll work in rh html but my old projects just don't take well to conversion.</s><s> like one of my projects has over 100,000 links to external documents....i have no desire to relink everything. 
+i am compiling in webhelp (single source) instead of winhelp, but still using rh for word.</s><s> it works so everyone is happy. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-5340001</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="Peter%20Grainge" timestamp="May 21, 2013 10:41 AM">
+<s>ok but if you do decide to give conversion another go i would try generating a chm from robohelp for word and then reverse engineering that as covered on my site.</s><s> i am not guaranteeing it will be seamless but it's worth a shot. 
+100.000 links?</s><s> sheesh.</s><s> 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-5675918</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="Freespirit-ST" timestamp="Sep 12, 2013 8:03 AM">
+<s>just seeing, and needing, this information now.</s><s> i have a robohelp for word project, in rh8, that may need to run in windows 7.</s><s> i can't convert it, because it is context-sensitive to our system (one of them) - and all the attachment links are hard-coded into the system, so would take an enormous effort to change the code.</s><s> this is our only rh for word project, and the system is barely used - but occasionally needs an update. 
+</s><s>so, if we had our users download winhelp32.exe into the appropriate help installation file location, would this hlp work?</s><s>?</s><s> it's a winhelp 2000 with the tri-pane presentation.</s><s> (looking for a quick fix here.</s><s>) 
+</s><s>thanks as always for your assistance, peter! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-5681690</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="Peter%20Grainge" timestamp="Sep 14, 2013 7:50 AM">
+<s>users can download a link that will make a hlp file run.</s><s> whether or not rh8 for word will run under windows 7 is another matter.</s><s> rh8 html was patched during its lifetime to run under windows 7 but i don't know if that applied to rh8 for word. 
+i think you are just going to have to try it. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5326070-5702387</DOCNO>
+<TEXT>
+<subject>This is a bit of information for folks that use Robohelp for Word.</subject>
+<post author="David%20Hurlston" timestamp="Sep 21, 2013 12:31 PM">
+<s>we generate legacy wh2000 projects all day long that run properly under vista/win7/win8.</s><s> maybe you didn't do the registry tweak needed for macros to run properly, or you are running on an intranet.</s><s> take a close look at the knowledge base article at http://support.microsoft.com/kb/917607 
+we also generate webhelp and html5 multi-screen.</s><s> we have found that converting a wh2000 project hpj to multi-screen is not completely trouble-free and some work is needed on the word files to get the correct output. 
+</s><s>all in all, it's best to get off winhelp.</s><s> odds are you will be forced to do it sooner or later anyway given microsoft's aversion to it 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5697339-1299948</DOCNO>
+<TEXT>
+<subject>What version of MS Word is compatible with RH 9?</subject>
+<post author="kb1107" timestamp="Sep 19, 2013 1:23 PM">
+<s>i recently upgraded from ms 2003 to ms 2013 (along with moving to win 7) and found rh9 does not play well, so considering installing ms 2010 instead.</s><s> seems there have been issues with ms 2010 also.</s><s> so, what works with rh9? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5697339-5698863</DOCNO>
+<TEXT>
+<subject>What version of MS Word is compatible with RH 9?</subject>
+<post author="RoboColum(n)" timestamp="Sep 20, 2013 2:21 AM">
+<s>windows 7 does not support winhelp out of the box regardless of which word version you have.</s><s> you'll need to download the microsoft patch from the link below: 
+http://www.microsoft.com/en-gb/download/details.aspx?id=91 
+if you still have issues with rh for word your options include starting to use the rh html application that comes with rh.</s><s> it is much better suited to today's world.</s><s> perhaps if you tell us what you mean when you say "does not play well" and we will be able to advise further. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5697339-5699387</DOCNO>
+<TEXT>
+<subject>What version of MS Word is compatible with RH 9?</subject>
+<post author="Captiv8r" timestamp="Sep 20, 2013 7:01 AM">
+<s>colum, while i'm not 100% sure on this, i'm not thinking that's exactly true.</s><s> here's why.</s><s> 
+</s><s>when microsoft introduced the windows vista version of its operating system, they announced deprecation of winhelp.</s><s> along those lines it was a bit fuzzy.</s><s> keep in mind that there are two flavors of winhelp.</s><s> 16 bit and 32 bit.</s><s> so beginning with vista, (and i'm assuming the same applies to windows 7 here) 16 bit versions of winhelp worked just fine and a winhelp viewer was natively included.</s><s> but the 32 bit version of the winhelp viewer was missing.</s><s> upon the first attempt to open a 32 bit winhelp file, the user was prompted to download and install the 32 bit version of the winhelp viewer.</s><s> i'm assuming this is a way for microsoft to gauge how many folks are still using winhelp.</s><s> albeit the 32 bit version. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5688458-1297778</DOCNO>
+<TEXT>
+<subject>Compilation hangs in Robohelp for word</subject>
+<post author="akshathakorana" timestamp="Sep 17, 2013 4:31 AM">
+<s>hi, 
+</s><s>in robohelp 9 for word, we are not able to compile the html files from .hpj file if the size exceeds 10 kbs.</s><s> this is while migrating a winhelp project to .hpj file.</s><s> could you please let me know the settings for compiling the html files from an .hpj file. 
+</s><s>regards, akshatha 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5632655-1284407</DOCNO>
+<TEXT>
+<subject>retaining format of table borders of Help done in Robohelp 7 into RoboHelp 9</subject>
+<post author="InformationWriter1" timestamp="Aug 27, 2013 9:26 PM">
+<s>does anyone know how to import or retain the properties of table borders/cells of a compiled html help module that was generated in robohelp 7 into robohelp 9?</s><s> i'm using robohelp 9 for my work and have to generate an html help using robohelp 9.</s><s> but the previous help was generated in robohelp 7.</s><s> when i have to generate the new help in robohelp 9, this robohelp doesn't have the same properties of the table borders of the previous help.</s><s> please help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5632655-5632967</DOCNO>
+<TEXT>
+<subject>retaining format of table borders of Help done in Robohelp 7 into RoboHelp 9</subject>
+<post author="Peter%20Grainge" timestamp="Aug 28, 2013 12:44 AM">
+<s>please confirm that you are using robohelp for word rather than robohelp html as i didn't think tables had changed in rh for word. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5632655-5636285</DOCNO>
+<TEXT>
+<subject>retaining format of table borders of Help done in Robohelp 7 into RoboHelp 9</subject>
+<post author="InformationWriter1" timestamp="Aug 28, 2013 11:42 PM">
+<s>hi, i'm using robohelp html 9, not robohelp for word.</s><s> robohelp 9 is the help authoring tool that was provided by my superiors for using as the tool for importing a word document into robohelp and converting and generating the doc into an html help.</s><s> robohelp for word is installed in my computer, but i don't really know how to use it.</s><s> is it similar to the controls/functions of robohelp 9? 
+</s><s>does robohelp for word also generate a chm (compiled help module) or .chm file?</s><s> does robohelp for word retain the format of the original table borders/cells of a previous chm generated from robohelp 7?</s><s> and the project files that i initially saw in robohelp for word are in .hpj and.hlp files.</s><s> are they the same as an .hhp file? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5632655-5636408</DOCNO>
+<TEXT>
+<subject>retaining format of table borders of Help done in Robohelp 7 into RoboHelp 9</subject>
+<post author="Peter%20Grainge" timestamp="Aug 29, 2013 1:03 AM">
+<s>i'm still not sure about what you are using and were using in rh7.</s><s> rh for word has an hpj file to open it, rh html has an xpj file.</s><s> they are different from an hhp file which is also a rh html file. 
+</s><s>both generate chms so once we are certain about that rh html is what your rh7 project was in, we can deal with the table problem. 
+</s><s>if rh for word is what is in use, then it should not have changed.</s><s> in rh html tables are now css driven but your old ones should not have been affected.</s><s> let's cover that when we are certain of the version of rh the project is in. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5578529-1271935</DOCNO>
+<TEXT>
+<subject>creating editable - fill-in boxes and fields</subject>
+<post author="shipmaster415" timestamp="Aug 8, 2013 12:33 PM">
+<s>working on an word doc file and need to create editable boxes and field hat can be saved as a .pdf and forwarded or saved for future editing. 
+i am only using the trial version of adobe acrobat 10. 
+</s><s>looking forward to hearing from you. 
+</s><s>perry 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5578529-5580116</DOCNO>
+<TEXT>
+<subject>creating editable - fill-in boxes and fields</subject>
+<post author="RoboColum(n)" timestamp="Aug 9, 2013 3:03 AM">
+<s>hi perry.</s><s> 
+</s><s>this sounds like you are not using adobe robohelp at all but microsoft word and outputting to pdf.</s><s> is this correct?</s><s> if so you are asking in the wrong place.</s><s> if you want to just create a form in word, that should be easily achievable. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-1267637</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="pgcalc" timestamp="Aug 1, 2013 3:43 PM">
+<s>i have a help project created in robohelp for word 8.</s><s> i recently upgraded from word 2007 to word 2010 and discovered that rh8 for word won't work with word 2010. so i purchased robohelp 10 and have installed robohelp for word from it.</s><s> alas, rh for word still won't work with word 2010.</s><s> when i try to open my project, i get this message: 
+
+
+</s><s>before i bought rh10, i live-chatted with an adobe sales person who assured me it was compatible with word 2010. 
+btw, i tried to roll back to word 2007, but i was getting weird behavior running word, so i have reinstalled word 2010 and want to stay there. 
+</s><s>any ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5560874</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="RoboColum(n)" timestamp="Aug 2, 2013 1:37 AM">
+<s>unfortunatelty rh for word has not changed in years and is more or less a legacy product.</s><s> it is only included with robohelp because there are still some users producing winhelp and the like.</s><s> do you really have to use rh for word or would the rh html application meet your needs better? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5561144</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="pgcalc" timestamp="Aug 2, 2013 5:50 AM">
+<s>so, what i'm hearing is that no version of rh for word is compatible with word 2010?</s><s> curiously, the modification date for the robohelp.exe is 6/23/12, so adobe must have done something to rh for word well after word 2010 was released. 
+</s><s>i've used robohelp html to create help for one of our other products and will definitely do that with the product i'm trying to work on now, but i was hoping to put it off for a while more as we are just starting a project to re-write its code, which would be the perfect time to convert the help format, too.</s><s> it will be no small task to convert several thousand topics from a few word files to several thousand separate .htm files.</s><s> is there an easy way to do this that i'm not aware of? 
+</s><s>thanks.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5561273</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="RoboColum(n)" timestamp="Aug 2, 2013 6:45 AM">
+<s>it has been a long time since i've done this but i seem to remember creating a new rh html project and importing the hlp file did a very good conversion job. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5561425</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="Peter%20Grainge" timestamp="Aug 2, 2013 7:40 AM">
+<s>i should be able to access a robohelp for word machine tomorrow to check it is still working but i do know it did work with 2010 last time i used it. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5563558</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="Peter%20Grainge" timestamp="Aug 3, 2013 11:01 AM">
+<s>i have just installed rh10 for word on a new machine and initially i got this message. 
+
+
+i wonder if you have followed those instuctions?</s><s> i changed the setting to enable all. 
+</s><s>the other possibility is what do you have set for the default version?</s><s> if it is 2007 and that no longer exists on your machine, then rh will not be able to proceed.</s><s> the dropdown should show 2010 
+
+
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5570428</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="pgcalc" timestamp="Aug 6, 2013 5:55 AM">
+<s>i tried both your suggestions and, unfortunately, neither made a difference.</s><s> i continue to get the same error when i try to open my project.</s><s> any other ideas? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5559965-5571735</DOCNO>
+<TEXT>
+<subject>RoboHelp for Word installed from RoboHelp 10 won't work with Word 2010</subject>
+<post author="Peter%20Grainge" timestamp="Aug 6, 2013 11:40 AM">
+<s>is your normal.dot file on your local machine rather than a network drive? 
+</s><s>support for installation problems is free so it might be worth trying tech support.</s><s> rh10 for word definitely does work with word 2010.</s><s> i have had it on several machines. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-1241495</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="mhcamire" timestamp="Jun 25, 2013 11:14 AM">
+<s>i am new at robohelp and have been recently assigned a task to convert several word documents into robohelp using version 9 of robohelp.</s><s> can someone please direct me in the right direction (location, url, tutorials etc.</s><s>) to find some step-by-step help, it would be most appreciative 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5448684</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="Captiv8r" timestamp="Jun 25, 2013 11:36 AM">
+<s>hi there 
+the first question you need to answer here is this: 
+do i simply want to import the word documents so they become robohelp topics and once that happens, i will simply discard the word documents as if they never existed to begin with? 
+</s><s>or...</s><s> 
+</s><s>do i want to allow others to make changes to the word documents later and i'll update robohelp as the changes are made? 
+i ask because there are now two different ways to work with word content and robohelp. 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5449031</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="mhcamire" timestamp="Jun 25, 2013 1:22 PM">
+<s>it all depends.</s><s> these will be released to our clients, so i'm thinking it may have to be the first choice.</s><s> linking the document then giving it to the client, i'm not sure if the updates would take. 
+</s><s>so lets import the document. 
+</s><s>michael 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5450782</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="RoboColum(n)" timestamp="Jun 26, 2013 2:43 AM">
+<s>hi michael.</s><s> 
+</s><s>rick asked that question because there is a method of linking a word file to a robohelp project and bringing in any changes to them.</s><s> it was designed exactly for the scenario where a sme or client writes the content and someone else just acts as a kind of content curator.</s><s> however if you just want to import the word file, this is fine also but you'll need to understand that once the content is in robohelp, the content would need to be changed in robohelp. 
+</s><s>there is a good tutorial on the benefits of both linking and importing over on peter grainge's website (see the link below).</s><s> this is a very useful resource for all things robohelp and well worth bookmarking. 
+http://www.grainge.org/pages/authoring/importing/about_importing_linki ng.htm 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451283</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="Captiv8r" timestamp="Jun 26, 2013 6:31 AM">
+<s>hi michael 
+</s><s>i cannot help but to notice that you posted in the robohelp for word forum category.</s><s> is this the application you are using?</s><s> if so, robohelp simply uses the microsoft word document as the source.</s><s> there is no linking available that i'm aware of because the document *is* what you edit. 
+</s><s>only if using the robohelp html application is the linking possible.</s><s> (at least, to the best of my knowledge - perhaps colum knows something i don't - i never claim to know all there is to know about anything) 
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451309</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="mhcamire" timestamp="Jun 26, 2013 6:34 AM">
+<s>is there a site or tutorial that i can follow that starts from point a and takes you through all the steps.</s><s> i just downloaded the software last week and have never used it before.</s><s> i have watched several of the tv spots, but those all seem to be specific to a subject. 
+i need something to show me how to get started (what needs to be done first then second and so on) and move on to the next step.</s><s> i'm not very technical either so please be patience with me.</s><s> i can follow directions pretty good. 
+</s><s>thanks for all the responses and help. 
+</s><s>michael 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451404</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="RoboColum(n)" timestamp="Jun 26, 2013 6:42 AM">
+<s>i wish i did rick.</s><s> i hadn't noticed this was the rh for word forum.</s><s> michael it does seem you are using the rh html application.</s><s> how do you tell?</s><s> simple.</s><s> as rick says, if you open a rh for word project microsoft word opens along side it and you author in that.</s><s> with rh html all the authoring is done inside the application.</s><s> it would look something like (but not exactly like) this. 
+</s><s>can you confirm this is what you are using?</s><s> there are some books you can use to train yourself or you can get classroom led training.</s><s> rick could possibly help you there. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451402</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="mhcamire" timestamp="Jun 26, 2013 7:03 AM">
+<s>i actually have both available to me and that maybe part of the confusion for me.</s><s> maybe this will help.</s><s> all of our help is created and maintained in word documents.</s><s> i have 13 different documents that we maintain.</s><s> the previous person (who i wished would have trained a backup person) use to take the updated versions and convert them to robohelp format and these then got migrated into our application somehow. 
+</s><s>which version do you suggest i use the robohelp html or the robohelp for word? 
+i have tried searching for books but not much luck. 
+</s><s>again thanks for all the help - much appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451485</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="RoboColum(n)" timestamp="Jun 26, 2013 7:10 AM">
+<s>definitely use the rh html application.</s><s> rh for word is really little more than a legacy application used by those poor souls still requiring winhelp files.</s><s> in honour of the fact that we live in the 21st century i think you should expounge that application from your memory. 
+</s><s>iconlogic do a series of books on robohelp versions 8 to 10.</s><s> look here: http://www.iconlogic.com/skills-drills-workbooks/adobe.html 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451476</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="Captiv8r" timestamp="Jun 26, 2013 7:31 AM">
+<s>i hesitate to mention it as my goal here is only to help, not to solicit business, but since we are on the subject of books and training... 
+</s><s>while i'm sure iconlogic would like to think they are the only game in town.</s><s> (seems they have done a good job of convincing colum ) i also offer training and books. 
+</s><s>i'll be happy to speak with you privately if you are interested. 
+rstone75 (at) kc (dot) rr (dot) com 
+
+</s><s>cheers...</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5451673</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="RoboColum(n)" timestamp="Jun 26, 2013 8:06 AM">
+<s>lol!</s><s> i did state above "there are some books you can use to train yourself or you can get classroom led training.</s><s> rick could possibly help you there." 
+</s><s>michael.</s><s> for fear of accusing rick of being long in the tooth, he is a mammoth in pure robohelp terms.</s><s> running for cover 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5448607-5452053</DOCNO>
+<TEXT>
+<subject>Converting Word Document into Robohelp format</subject>
+<post author="Captiv8r" timestamp="Jun 26, 2013 9:06 AM">
+<s>lol, don't make me go all wooly on ya! 
+</s><s>apologies colum, didn't see that comment somehow. 
+</s><s>off to lunch with me now!</s><s> rick 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-1222715</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="AmberDrivePete" timestamp="May 30, 2013 2:28 PM">
+<s>how to resolve this error message?</s><s> the process seems to be hung up on processing the first rtf file. 
+</s><s>using robohelp9, windows xp, ms office 2010.</s><s> 
+</s><s>tia 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-5367577</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="RoboColum(n)" timestamp="May 31, 2013 1:30 AM">
+<s>there aren't a lot of winhelp users left these days so getting an answer here could prove difficult.</s><s> even more so when you consider you are stillon winxp.</s><s> however do you get the same error when geneating winhelp from another rtf file.</s><s> try opening one of the sample projects and generating that.</s><s> if that fails it may be worth looking at your macro level settings in word. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-5368783</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="AmberDrivePete" timestamp="May 31, 2013 10:09 AM">
+<s>yes, i am able to generate a sample project. 
+</s><s>my project consists of 8 word documents.</s><s> it appears that robohelp fails on one or two of these documents.</s><s> i tried adding each one individually to the project and re-compiling so i know which ones fail.</s><s> they used to work fine, so i don't know how why they could have ten corrupted.</s><s> i even tried to copy and paste the entire "bad" document into a new word document (tried both .doc and .docx). 
+i don't see where i can change the macro properties for the document.</s><s> in any case, since all of the docs have the same macro property (i assume) and most of the them do compile, that can't be the issue. 
+</s><s>any advice is appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-5374224</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="RoboColum(n)" timestamp="Jun 3, 2013 2:39 AM">
+<s>if you are able to generate winhelp with some of the rtf files then the problem is not with macro settings or your installation.</s><s> it must be something in the one or two rtf files you are not able to compile.</s><s> i'm afraid the only way to identify what exactly is to do some further detective work along the lines of what you have already done.</s><s> it may help if it is possible to identify whether any changes have been made to these files.</s><s> take a copy of the rtf file, strip the changes out and see if you can generate winhelp.</s><s> if you can, add back in the change a bit at a time until it fails. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-5422366</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="Theodorakis55" timestamp="Jun 18, 2013 12:49 PM">
+<s>this has happened to me in the past.</s><s> i don't know if this will work for you but it did for me.</s><s> delete the problem rtf file.</s><s> when you reopen robohelp it will automatically make a new rtf file.</s><s> then i compiled and it was fine. 
+</s><s>the other thing is if you dropped an image in to the document, not an image from the image file but a cut and paste image it gave me trouble. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-5432052</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="AmberDrivePete" timestamp="Jun 20, 2013 11:41 AM">
+<s>thank you for your tip.</s><s> i deleted all the .</s><s>rtf files and was able to recompile!</s><s> alas, now i am not able to link the help file to my delphi executable - i keep getting "the topic does not exist.</s><s> contact your application vendor for an updated help file (129) error message". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5366465-5435347</DOCNO>
+<TEXT>
+<subject>Failed to Generate WinHelp error message</subject>
+<post author="RoboColum(n)" timestamp="Jun 21, 2013 7:31 AM">
+<s>if i dig deep into my memory banks i believe this is caused by the old version of your winhelp file still being accessed by the application.</s><s> ensure the application is using the new version. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5429317-1237232</DOCNO>
+<TEXT>
+<subject>Does RoboHelp 10 include RoboHelp for Word?</subject>
+<post author="SG Doc Manager" timestamp="Jun 19, 2013 10:11 PM">
+<s>does robohelp 10 include robohelp for word?</s><s> the earlier version robohelp 9 included robohelp for word. 
+</s><s>thanks in advance. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5429317-5429844</DOCNO>
+<TEXT>
+<subject>Does RoboHelp 10 include RoboHelp for Word?</subject>
+<post author="RoboColum(n)" timestamp="Jun 20, 2013 2:15 AM">
+<s>i have not installed the full robohelp 10 version but in previous versions there was an option to install the robohelp for word application.</s><s> are you using the trial robohelp 10 version?</s><s> if so, i suspect this will not include the robohelp for word application. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5429317-5429870</DOCNO>
+<TEXT>
+<subject>Does RoboHelp 10 include RoboHelp for Word?</subject>
+<post author="SG%20Doc%20Manager" timestamp="Jun 20, 2013 2:34 AM">
+<s>i reinstalled adobe robohelp 10 all over again but this time more carefully keepign watch at each step.</s><s> the option to install robohelp for word is present but it's not installed by default and the option itself is not easily noticed during the installation.</s><s> during installation, you need to select the product 'adobe robohelp 10' in the left pane of the install wizard and it shows up the list of sub-options (one of the sub-options is robohelp for word) in the right pane of the install wizard. 
+i contacted adobe support and convinced them to log an product enhancement request from a usability perspective. 
+</s><s>so that's that.</s><s> robohelp for word is indeed present in robohelp 10 but it's not installed by default. 
+</s><s>thanks for posting you reply though. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5429317-5429957</DOCNO>
+<TEXT>
+<subject>Does RoboHelp 10 include RoboHelp for Word?</subject>
+<post author="RoboColum(n)" timestamp="Jun 20, 2013 2:42 AM">
+<s>that is the same installation methid as robohelp 8 and 9.</s><s> you are obviously a good salesman if you convinced them to change the behaviour.</s><s> the trouble is just because they are convinced, doesn't mean it will happen.</s><s> there are so few rh for word users these days that in my opinion it won't happen.</s><s> still good for you for making the point 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5257166-1197249</DOCNO>
+<TEXT>
+<subject>Win 8 64 bit - RH 10 - Printed documentations</subject>
+<post author="traxlermichael" timestamp="Apr 22, 2013 5:29 AM">
+<s>hi,i worked with rh 8 on a win 7 32 bit and word 2007 pc before.</s><s> all went well.now i bought a win 8 64 bit pc with office 2010 and i downloaded the rh 10 trial version to be able to create a printed documentation in word or pdf .</s><s> both is not possible.</s><s> what shall i do to make it run?</s><s> michael 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5257166-5260496</DOCNO>
+<TEXT>
+<subject>Win 8 64 bit - RH 10 - Printed documentations</subject>
+<post author="Peter%20Grainge" timestamp="Apr 23, 2013 5:41 AM">
+<s>you need to explain why you say "both is not possible". 
+</s><s>what happens when you try? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5257166-5260694</DOCNO>
+<TEXT>
+<subject>Win 8 64 bit - RH 10 - Printed documentations</subject>
+<post author="traxlermichael" timestamp="Apr 23, 2013 6:44 AM">
+<s>both is pdf an word document. 
+i can create printed documentations with a example project.</s><s> i am busy looking up, where the probelm lies in my project.</s><s> the generation always stops when it comes to "create title page". 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5257166-5261757</DOCNO>
+<TEXT>
+<subject>Win 8 64 bit - RH 10 - Printed documentations</subject>
+<post author="Peter%20Grainge" timestamp="Apr 23, 2013 12:49 PM">
+<s>try deselecting pdf just while fixing this problem. 
+</s><s>are you using your own title page or the supplied default? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5218802-1187869</DOCNO>
+<TEXT>
+<subject>Import word macros</subject>
+<post author="jaynov17" timestamp="Apr 9, 2013 4:26 AM">
+<s>hi, 
+
+</s><s>can anyone tell me how to import written macros in to robohelp 10?</s><s> coz in our office we have a in-built macros template which we use for doing word documents. now as we want to buy robohelp 10 i would like to know how to import the same add-in to robohelp 10. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5218802-5218834</DOCNO>
+<TEXT>
+<subject>Import word macros</subject>
+<post author="Peter%20Grainge" timestamp="Apr 9, 2013 4:53 AM">
+<s>to help you best i think we need to start this conversation at a different point.</s><s> is the purchase of rh10 your first work with rh or will it be an upgrade? 
+</s><s>if you are just about to start, maybe robohelp html has advantages over robohelp for word.</s><s> in robohelp html you can link to word documents so you would just carry on producing your content in word using the templates you currently have.</s><s> then you would link to them and each time you generate help, the content gets updated to the latest version of your word document.</s><s> that workflow has the advantage that robohelp html is better supported on these forums and with new features in each upgrade.</s><s> robohelp for word is very much a legacy product and note the number of posts on that forum. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5218802-5218918</DOCNO>
+<TEXT>
+<subject>Import word macros</subject>
+<post author="jaynov17" timestamp="Apr 9, 2013 5:57 AM">
+<s>hi, 
+</s><s>thank you for the mail. 
+</s><s>we want to buy robohelp 10 license but before that, want to get hands-on experience in trial version.in trial version only robohelp html is downloaded and so started working with it. 
+
+</s><s>regards, 
+</s><s>jaya 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5218802-5219024</DOCNO>
+<TEXT>
+<subject>Import word macros</subject>
+<post author="Peter%20Grainge" timestamp="Apr 9, 2013 6:09 AM">
+<s>both are in the trial.</s><s> you have to check robohelp for word to get that installed, it is not a default. 
+</s><s>it's not clear from your reply if you are now going to try what i have suggested. 
+i would be wary of messing with the templates that come with robohelp for word. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5218802-5219074</DOCNO>
+<TEXT>
+<subject>Import word macros</subject>
+<post author="jaynov17" timestamp="Apr 9, 2013 6:26 AM">
+<s>hi, 
+</s><s>when i am trying to download the following link is given for download which has robohelp 10 not mentioning if it is html or for word. 
+http://www.adobe.com/cfusion/tdrc/index.cfm?loc=en_us&product=robohelp 
+could you advise me how to proceed from here for downloading robohelp for word? 
+</s><s>regards, 
+</s><s>jaya 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5218802-5219106</DOCNO>
+<TEXT>
+<subject>Import word macros</subject>
+<post author="Peter%20Grainge" timestamp="Apr 9, 2013 7:04 AM">
+<s>the download contains both.</s><s> when you start running it, there is an option to include robohelp for word. 
+</s><s>robohelp for word does not have linking in the same way as robohelp html so if you are going to use robohelp for word, good luck.</s><s> i strongly suspect integrating your macros in the robohelp word templates will give issues and there will be no one with the necessary knowledge to help you. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5163002-1173952</DOCNO>
+<TEXT>
+<subject>RoboHelp Automation with Scripting with CLI only</subject>
+<post author="Ravi@Haldia" timestamp="Mar 20, 2013 3:27 AM">
+<s>how can we automate robohelp update of linking doc files through scripting without launching robohelp application gui?why is it that everytime scripting is launched through robohelphtml -x test.jsx,robohelp gui opens?can't we do these stuffs with cli only without automatic launching of gui?if not through scripting,through some other means?rhcl doesn't provides this interface,i think! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5163002-5163292</DOCNO>
+<TEXT>
+<subject>RoboHelp Automation with Scripting with CLI only</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 20, 2013 6:15 AM">
+<s>you can quit robohelp when the script is done: 
+robohelp.quit(); 
+at least the gui won't remain when the script is done, although you will see it when the script runs. 
+</s><s>rhcl does not show the gui, but there are also less options. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5163002-5163679</DOCNO>
+<TEXT>
+<subject>RoboHelp Automation with Scripting with CLI only</subject>
+<post author="Ravi%40Haldia" timestamp="Mar 20, 2013 8:12 AM">
+<s>william, thanks for your reply.yes,i can quit robohelp once my scripting is done by robohelp.quit().but isn't there any other option to do automation with cli only?we want to automate this help integration for our build server.we want to change only doc file and then xpj project should automatically get developed from it and them through rhcl html o/p should be generated.but if during the build time,robohelp gui will open,even for few seconds,it wont be good.that is why i was looking for a cli interface which could do this automation thing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5163002-5177505</DOCNO>
+<TEXT>
+<subject>RoboHelp Automation with Scripting with CLI only</subject>
+<post author="Willam%20van%20Weelden" timestamp="Mar 25, 2013 11:51 AM">
+<s>it seems no one has an idea.</s><s> you can use rhcl, but that can only compile the help.</s><s> i don't believe it updates linked documents. 
+i'm sorry, but it seems this cannot be done at the moment.</s><s> please consider filing a feature request: https://www.adobe.com/cfusion/mmform/index.cfm?name=wishform if adobe doesn't know what their clients want, it becomes very hard to create the software we need. 
+</s><s>greet, 
+</s><s>willam 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5147834-1170424</DOCNO>
+<TEXT>
+<subject>Does any body knows how to detect the resolution of an inserted image in word?</subject>
+<post author="Shaheedz" timestamp="Mar 14, 2013 7:14 AM">
+<s>does any body knows how to detect the resolution of an inserted image in word? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5147834-5147843</DOCNO>
+<TEXT>
+<subject>Does any body knows how to detect the resolution of an inserted image in word?</subject>
+<post author="RoboColum(n)" timestamp="Mar 14, 2013 7:26 AM">
+<s>the resolution depends on many factors including the screen resolution of the screen used to capture it and the compression of the file type used to save the image as. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5147834-5154354</DOCNO>
+<TEXT>
+<subject>Does any body knows how to detect the resolution of an inserted image in word?</subject>
+<post author="Shaheedz" timestamp="Mar 16, 2013 10:57 PM">
+<s>robo, what i am talking about is the original image resolution it self in "ppi" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5147834-5154510</DOCNO>
+<TEXT>
+<subject>Does any body knows how to detect the resolution of an inserted image in word?</subject>
+<post author="Peter%20Grainge" timestamp="Mar 17, 2013 3:14 AM">
+<s>right click the image in word and click save as picture. 
+</s><s>open the image in whatever graphics program you use or in windows picture viewer.</s><s> via the properties there you should be able to view the dimensions. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5147834-5156193</DOCNO>
+<TEXT>
+<subject>Does any body knows how to detect the resolution of an inserted image in word?</subject>
+<post author="Shaheedz" timestamp="Mar 17, 2013 11:42 PM">
+<s>mr peter, it has a problem that the images are compressed to resolution lower than the original inserted one "give it try insert a known resolution image save and close the word" 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5147834-5156316</DOCNO>
+<TEXT>
+<subject>Does any body knows how to detect the resolution of an inserted image in word?</subject>
+<post author="Peter%20Grainge" timestamp="Mar 18, 2013 1:24 AM">
+<s>i'm not sure i understand your reply but when you insert images into word that are larger than will fit on the page, they are automatically compressed.</s><s> if you right click and select size and position you can restore it to 100% but you will not see all the image. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5101943-1160136</DOCNO>
+<TEXT>
+<subject>Upgrading to Windows 7 with Robohelp for Word X5</subject>
+<post author="Brenda Hutch" timestamp="Feb 25, 2013 3:15 PM">
+<s>currently using robohelp for word x5 on windows xp professional with microsoft office 2003. 
+</s><s>i'm a consultant and my client's it department is planning to upgrade to windows 7.</s><s> does anyone know if x5 will work with windows 7? 
+</s><s>thanks, brenda hutch consultant 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5101943-5103025</DOCNO>
+<TEXT>
+<subject>Upgrading to Windows 7 with Robohelp for Word X5</subject>
+<post author="Peter%20Grainge" timestamp="Feb 26, 2013 1:42 AM">
+<s>i very much doubt you have a snowball's chance in hell.</s><s> rh 8 was the first version to be supported under windows 7 and then only when patched. 
+</s><s>another consideration is that even if it did work, the outputs would not be compatible with modern browsers.</s><s> they would not work on chrome for example.</s><s> time to upgrade more than the operating system is my take. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5101943-5107520</DOCNO>
+<TEXT>
+<subject>Upgrading to Windows 7 with Robohelp for Word X5</subject>
+<post author="Brenda%20Hutch" timestamp="Feb 27, 2013 9:09 AM">
+<s>thanks peter, that's what i figured.</s><s> i appreciate your quick response! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5039920-1145715</DOCNO>
+<TEXT>
+<subject>Upgrade from Robohelp 5x</subject>
+<post author="johnnyfox87" timestamp="Feb 1, 2013 5:17 AM">
+<s>hello, 
+</s><s>i have a an old and big (about 300 topics) robohelp for word project, which was used to create winhelp files with robohelp version 5x. 
+</s><s>now i want to upgrade to robohelp 10 and create winhelp aswell as html helpfiles.</s><s> is there any chance i can use the old project with the new version? 
+i already tried to open it with the new version of robohelp for word but the generated helpfiles were corrupt.</s><s> i also tried to import the word file and the winhelp file but it didnt work either. 
+</s><s>and is it possible to use any of these files to create a new html project with robohelp 10? 
+</s><s>i'm thankful for any tips. 
+</s><s>johann 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5039920-5040073</DOCNO>
+<TEXT>
+<subject>Upgrade from Robohelp 5x</subject>
+<post author="NeilE3" timestamp="Feb 1, 2013 6:14 AM">
+<s>hi johann, 
+</s><s>it should be possible.</s><s> however, depending on whether the rh4word project predates rh x5 and how far back, you may have some bad codes that are causing the corruption.</s><s> are you familiar with the rh4word winhelp codes?</s><s> the answer will affect the approach that i suggest. 
+</s><s>regards, neil 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5039920-5063424</DOCNO>
+<TEXT>
+<subject>Upgrade from Robohelp 5x</subject>
+<post author="johnnyfox87" timestamp="Feb 11, 2013 1:08 AM">
+<s>hi neil, 
+</s><s>sorry for my absence - i got sick last week... 
+</s><s>i'm not really familiar with the code, but i'm working on that.</s><s> i already noticed that i get a better result when i dont use wysiwyg mode. 
+</s><s>do you have any other suggestions? 
+</s><s>regards, 
+</s><s>johann 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5039920-5063994</DOCNO>
+<TEXT>
+<subject>Upgrade from Robohelp 5x</subject>
+<post author="NeilE3" timestamp="Feb 11, 2013 7:55 AM">
+<s><quote>
+<s>the easiest solution, if it works, is to try to export the rh4word project out to word and then import that word document back into rh10.</s><s> note that when i refer to the "word document", i'm referring to the word document created from rh4word, not your original word document.</s><s> let me know if that's actually what you meant.</s><s> if it isn't, give it a try and let me know the result. 
+</s></quote>> > neil > > <jive-1947224907-2csi-2-30iyo@mail.forums.adobe.com 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5039920-5065091</DOCNO>
+<TEXT>
+<subject>Upgrade from Robohelp 5x</subject>
+<post author="StevenHB13" timestamp="Feb 11, 2013 2:05 PM">
+<s>it sounds like i have the same or a similar problem (see http://forums.adobe.com/thread/1149997?tstart=0) - i'm importing a rh4word project into robohelp 10 and getting corruption in the generated html.</s><s> what is the rh4word winhelp code solution? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-5039920-5066283</DOCNO>
+<TEXT>
+<subject>Upgrade from Robohelp 5x</subject>
+<post author="NeilE3" timestamp="Feb 12, 2013 3:08 AM">
+<s><quote>
+<s>sorry if i didn't make myself clear...</s><s> i'm guessing that there's something in the rh4word codes (in the headers and footnotes) that's causing problems in rh10.</s><s> my suggestion is to create a pure word version of the rh4word project, stripping out the header and footnote codes, and try importing that pure word document back into rh10. 
+</s></quote>> > i will add that i taught rh4word and winhelp coding <quote>
+<s>for years and could probably fix this for you on a project basis if you wanted to go that route. 
+</s></quote>> > neil > 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4961233-1127930</DOCNO>
+<TEXT>
+<subject>WinHelp, Windows 8 and Ultrabook - macros not working</subject>
+<post author="David Hurlston" timestamp="Jan 1, 2013 10:15 PM">
+<s>our products are generated for winhelp 2000 using rh9 for word 
+the user has symptoms typical of macros not working.</s><s> this has normally been caused by the user not properly doing the step described in the knowledgebase article at http://support.microsoft.com/kb/917607 regarding " how to enable macros on a single computer after you install the winhlp32.exe" 
+
+i have updated a machine to windows 8, performed the knowledgebase article items and our products work fine.</s><s> i have also verified that the user's machine has the correct registry settings, so it looks like windows 8 is not the culprit.</s><s> that leaves the ultrabook 
+
+</s><s>this combination of windows 8 and ultrabook is quite new and i am hoping someone using winhelp 2000 has already run into it. 
+</s><s>please let me know if so. 
+</s><s>thanks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4961233-4961457</DOCNO>
+<TEXT>
+<subject>WinHelp, Windows 8 and Ultrabook - macros not working</subject>
+<post author="Peter%20Grainge" timestamp="Jan 2, 2013 1:18 AM">
+<s>there's another factor not in your calculations, robohelp 9.</s><s> not supported as far as i know on windows 8. 
+</s><s>robohelp 10 was released before windows 8 so adobe could only test it against a beta version.</s><s> some issues have been seen with that so the chances of robohelp for word working on windows 8 without some issues are slim. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4961233-4961616</DOCNO>
+<TEXT>
+<subject>WinHelp, Windows 8 and Ultrabook - macros not working</subject>
+<post author="Peter%20Grainge" timestamp="Jan 2, 2013 3:21 AM">
+<s>david 
+</s><s>on rereading this, i am not sure i follow. 
+</s><s>you say "i have updated a machine to windows 8, performed the knowledgebase article items and our products work fine." 
+</s><s>so on your machine it is ok but not on that of a user who has an ultrabook, is that the case?</s><s> if so, i'm not sure how to help as it is machine specific.</s><s> are you 100% sure they downloaded the right viewer and installed it with admin rights? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4961233-4961620</DOCNO>
+<TEXT>
+<subject>WinHelp, Windows 8 and Ultrabook - macros not working</subject>
+<post author="Peter%20Grainge" timestamp="Jan 2, 2013 3:34 AM">
+<s>have you seen http://support.microsoft.com/kb/917607#knownissueupdate? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4961233-4963848</DOCNO>
+<TEXT>
+<subject>WinHelp, Windows 8 and Ultrabook - macros not working</subject>
+<post author="David%20Hurlston" timestamp="Jan 2, 2013 6:47 PM">
+<s>hello peter, 
+</s><s>we are not developing on win 8 - just have a user running on win 8 the user has done everything right according to the kb articles, including the updated one you referred to - so you are right, it appears to be machine specific and i am hoping some other poor soul has this combination of win 8, wh2000 and ultrabook. 
+</s><s>the chances are slim i know.... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4961233-4993158</DOCNO>
+<TEXT>
+<subject>WinHelp, Windows 8 and Ultrabook - macros not working</subject>
+<post author="David%20Hurlston" timestamp="Jan 14, 2013 12:06 PM">
+<s>a contact i have within microsoft has tested our product on his windows 8 machine and sees the same macros problem as the user, so it seems that the ultrabook is not the culprit after all. 
+</s><s>he willl take it up with the windows help team at microsoft and i will post the outcome. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-1109391</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Try Cads" timestamp="Dec 3, 2012 8:40 PM">
+<s>hi, 
+</s><s>i have installed robohelp trial in windows 7 64 bit with office 2010. but office 2010 file format is not recognised in robohelp.</s><s> word 2010 is not listed under options.</s><s> how to configure robohelp such that word 2010 files are recognised by rh. 
+
+</s><s>soni 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4894908</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="RoboColum(n)" timestamp="Dec 4, 2012 2:23 AM">
+<s>hi soni.</s><s> 
+</s><s>can we just check whether you are trying to use the robohelp for word application?</s><s> the reason i ask is that robohelp comes in two flavours; the one i mentioned and robohelp html.</s><s> you've posted in the robohelp for word forum but i just want to be sure. 
+</s><s>if you are using robohelp for word, you should know that this application is very old and is not widely used these days.</s><s> in fact i haven't used it for 10 years which is software terms is a lifetime.</s><s> adobe haven't made any chances to it for a long time either.</s><s> the chances are it just doesn't work with word 2010 or any other appliction developed a long time after robohelp for word. 
+</s><s>this raises the question, do you need to use robohelp for word or will robohelp html fit the bill.</s><s> to answer that, we need to know a little more about what you are trying to achieve.</s><s> can you start by saying whether you are trying to amend some legacy output, creating a new help file and what type of output you require.</s><s> once we know this we will be able to advise more. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4903030</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Try%20Cads" timestamp="Dec 6, 2012 8:19 PM">
+<s>
+</s><s>as i have installed robohelp 10 with the word option the question has been posted in this forum. 
+</s><s>the purpose for using robohelp is to create a new chm html help file.</s><s> the reason to opt for word is becuase, the output remains in a word format i just have to replace the word document with the same style that has been used in word. 
+</s><s>can you please let me know whether it is possible to retain the word format in robohelp while converting it to chm format. 
+
+</s><s>soni 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4903469</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Peter%20Grainge" timestamp="Dec 7, 2012 1:41 AM">
+<s>you are saying the output remains in word but then saying the output is to be converted from word to a chm.</s><s> in robohelp for word the source is a word document, is that what you mean. 
+</s><s>you can work that way but as colum has pointed out, robohelp for word is not so widely used so that is very little support in that forum. 
+</s><s>to get back to your original question, robohelp 10 does support word 2010 so you need to tell us what is leading you to say it is not supported.</s><s> what is it that you are doing that is failing? 
+</s><s>also you said the purpose is to create a chm.</s><s> robohelp html does that and version 10 enables you to apply a skin to give the chm a much more modern appearance.</s><s> see the robohelp tour on my site for information about that. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4903566</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Try%20Cads" timestamp="Dec 7, 2012 3:14 AM">
+<s>yes in robohelp for word the source is a word document.</s><s> the output is chm.</s><s> the formatting and styles used in word are applied to the help file.</s><s> word 2010 is not supported in robohelp word, hence my query was posted in robehelp for word.</s><s> as word 2010 is not listed under the options just like word 2003 and word 2007. 
+</s><s>but robohelp for html supports word 2010, there aren't any issues with that. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4903557</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="RoboColum(n)" timestamp="Dec 7, 2012 3:32 AM">
+<s>adobe (or macromedia who owned robohelp before abobe bought it) have not changed the robohelp for word in a long, long time.</s><s> as such if the documentation says that word 2010 is not supported, it isn't.</s><s> your only option then is to use a supported word version or go over to using robohelp html. 
+</s><s>if you are producing a chm file this is by far the best option.</s><s> why?</s><s> for a start it uses actual html source code.</s><s> robohelp for word doesn't.</s><s> it uses word.</s><s> it may well convert (very badly) the word file into html but the result is widely accepted to be hopeless.</s><s> as a result you are likely to get all sorts of issues. 
+</s><s>it is your choice but producing chm from the robohelp for word application is like trying to run a 100 metre race whilst drinking a cup of coffee.</s><s> it can be done but it will slow you up and make a lot of mess in the meantime 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4904251</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Peter%20Grainge" timestamp="Dec 7, 2012 9:05 AM">
+<s>you state "word 2010 is not supported in robohelp word, hence my query was posted in robehelp for word.</s><s> as word 2010 is not listed under the options just like word 2003 and word 2007." where are you getting that from.</s><s> i just opened robohelp for word 10 and see this dialog in tools > options. 
+i don't think adobe would give that option for an unsupported version. 
+
+
+</s><s>the problem could be you have the 64 bit version of word installed and it may be that is not recognised.</s><s> it was an issue in robohelp 9.</s><s> see item 9 at http://www.grainge.org/pages/authoring/rh9/using_rh9.htm.</s><s> you will have to ask adobe if the issue remains in robohelp 10. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4935888</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Peter%20Grainge" timestamp="Dec 20, 2012 3:16 AM">
+<s>after digging around i have established this was a problem in the initial release of rh9 that was fixed in the 9.0.1 service release. 
+</s><s>see http://blogs.adobe.com/techcomm/2011/05/robohelp-9-0-1-is-now-availabl e.html 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4894499-4935890</DOCNO>
+<TEXT>
+<subject>RoboHelp10 in Windows 7 64 bit and Office Word 2010.</subject>
+<post author="Peter%20Grainge" timestamp="Dec 20, 2012 3:17 AM">
+<s>sorry meant to add that rh10 should be ok so if it is not you should contact adobe and ask them to treat is as an installation problem (not chargeable). 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-1113323</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Alex Meijering Tangram" timestamp="Dec 11, 2012 6:11 AM">
+<s>we use robohelp 10 and create webhelp which we post on a webserver.</s><s> the toc index, search / navigation panes do not display any content.</s><s> if we generate a version with the "pure html" option instead of the "dhtml" option the navigation panes do show the content, but we would rather not take this route because other functions still don't work properly. 
+</s><s>it happens regardless of the contents of the helpfile. 
+no relevant javascript errors show in the console. 
+</s><s>we found various tricks that claim to solve this issue but at least for robohelp 10 they don't work. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4912259</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Peter%20Grainge" timestamp="Dec 11, 2012 7:20 AM">
+<s>i think we need to establish whether this is a project issue, a server issue or a robohelp for word issue. 
+</s><s>please open the robohelp html program and open the employee care sample project.</s><s> click open on the robohelp starter page and then click samples in the ribbon on the left. 
+</s><s>go to the single source layout pods and generate one of the webhelp layouts.</s><s> put that on your server and see if it has the same problems.</s><s> if it does, then that may suggest the issue is with robohelp for word and we can run some more tests to confirm that. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+message was edited by peter grainge to correct second paragraph. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4914872</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Alex%20Meijering%20Tangram" timestamp="Dec 12, 2012 1:49 AM">
+<s>we have tested the robohtml sample project and that does work on our server. 
+</s><s>so i guess the issue is related to robohelp for word. 
+</s><s>do you have any suggestions to run some more tests to confirm that? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4914941</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="RoboColum(n)" timestamp="Dec 12, 2012 2:40 AM">
+<s>the problem is with your project, not the application.</s><s> btw you are using rh html not rhml for word right? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4914994</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Peter%20Grainge" timestamp="Dec 12, 2012 2:56 AM">
+<s>this is a kludge but it may get you out of a hole. 
+</s><s>use robohelp for word to generate a chm instead of webhelp.</s><s> for colum's benefit i know the poster is using robohelp for word from a previous post. 
+</s><s>reverse engineer the chm following the instructions on my site. 
+</s><s>open that the reverse engineered project in robohelp html and generate from there. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4915026</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Alex%20Meijering%20Tangram" timestamp="Dec 12, 2012 3:36 AM">
+<s>i will try your suggestion.</s><s> does this imply that a solution / fix for this issue in robohelp for word is not to be expected? 
+</s><s>finally, would your reverse engineering conversion suggestion give better results than the standard "import & convert .hpj project" option offered in robohelp html?</s><s> i have tried this option before and at a first glance i noticed most topic links were broken. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4915080</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Peter%20Grainge" timestamp="Dec 12, 2012 4:06 AM">
+<s>only adobe can answer the first question but i would not recommend holding your breath!</s><s> please do submit a bug report as otherwise there is no chance of a fix.</s><s> please follow this link. 
+http://www.adobe.com/cfusion/mmform/index.cfm?name=wishform&product=38 
+i have not tested the method using a chm generated from robohelp for word so i cannot give you that assurance.</s><s> however, i cannot see why it would be any different and the links work whenever i have reverse engineered a chm. 
+</s><s>the downside of course is any build tags will be lost as your source will be just whatever was in the output. 
+</s><s>the process only takes a short while so it's worth a try. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4912095-4915098</DOCNO>
+<TEXT>
+<subject>RoboHelp 10 generates Webhelp that does not display well in Google Chrome</subject>
+<post author="Peter%20Grainge" timestamp="Dec 12, 2012 4:29 AM">
+<s>...</s><s> of course, losing build tags or anything else is only an issue if you plan to convert to using robohelp html.</s><s> if you are going to continue working in robohelp for word, then this kludge is only a means of getting the help onto a server so that loss will not matter. 
+</s><s>that said, working in robohelp html is better.</s><s> it's kept more up to date and there is more support. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4904292-1111561</DOCNO>
+<TEXT>
+<subject>Very Slow PDF to Word Conversion - Help!</subject>
+<post author="M455" timestamp="Dec 7, 2012 9:44 AM">
+<s>i have a few documents that need to be converted from pdf to word.</s><s> i have a pc operating on windows 2010.</s><s> i have installed updates but converting process is still very slow.</s><s> particularly while " processing file for exporting".</s><s> please help me resolve this issue.</s><s> i have a deadline i am trying to meet. 
+</s><s>responses appreciated! 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4904292-4907507</DOCNO>
+<TEXT>
+<subject>Very Slow PDF to Word Conversion - Help!</subject>
+<post author="Peter%20Grainge" timestamp="Dec 9, 2012 6:54 AM">
+<s>are you in the correct forum? 
+</s><s>your question appears to be related to converting pdf files to word so i am not seeing any connection with adobe robohelp. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+
+
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-832162</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Mar 31, 2011 12:34 PM">
+<s>hello, 
+</s><s>i just upgraded everything: win7, office 2010, rh 9 from rh 8.</s><s> i first installed rh8 on this new system so i could install rh9 as an upgrade.</s><s> once that was done, i uninstalled rh8.</s><s> now i can start rh9 and it opens word to show my default opening document.</s><s> the rh toolbars are visible in the word pane, but none of the options are functional.</s><s> when i try to open a different document in the project, i get the messages below.</s><s> there are additional errors from word, which has to close itself and open again with a restored document. 
+i know from prior advice given here that it's past time to switch from rh for word to rh html, but i would like to get comfortable with all these other upgrades before i make that step. 
+</s><s>thanks for any help offered. 
+</s><s>carma 
+
+
+
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3586512</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Mar 31, 2011 2:56 PM">
+<s>let me check i got that right.</s><s> you installed 8, then 9, then uninstalled 8. 
+</s><s>first you didn't need to install 8.</s><s> had you installed 9 first it would have detected 8 was not present and just asked you for your 8 serial number. 
+i suspect uninstalling 8 after installing 9 has damaged some setting so i would uninstall 9 and then reinstall it. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3586640</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Mar 31, 2011 3:42 PM">
+<s>hi peter, 
+</s><s>you are right, i installed 8 first, then 9, then uninstalled 8.</s><s> i will follow your advice to un/reinstall 9 and report back.</s><s> thanks.</s><s> 
+</s><s>carma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3586791</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Mar 31, 2011 4:51 PM">
+<s>i have un/reinstalled 9 and now i have access to robohelp tools in word, but still get the same two errors when trying to open a second document in word or make any changes.</s><s> any other suggestions? 
+</s><s>thanks again.</s><s> carma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3587331</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 1, 2011 1:01 AM">
+<s>are you trying with a new document or could it be a corrupted document? 
+
+
+</s><s>also try a document in a path that does not contain full stops (periods).</s><s> just wondering if robohelp is having problems with that.</s><s> it shouldn't but who knows. 
+
+</s><s>also is this a 32 bit or 64 bit machine and was word installed using 32 bit mode? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3588437</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Apr 1, 2011 10:46 AM">
+<s>my project contains about 30 long word documents, and it's possible one or more of them are corrupted.</s><s> however, i get the error message no matter which document i try to open within robohelp, and it seems unlikely that all of them are truly corrupted since i've been working with them for years in robohelp for word. 
+i will try your suggestion to change the path to eliminate the periods. 
+</s><s>this is a 32 bit machine and i assume our it guy installed word in 32 bit mode. 
+</s><s>because i couldn't do any work at all with rh for word, i imported the project into rh html, after some help from users in another thread.</s><s> i think i will request support from adobe on the rh for word problem.</s><s> even if i go forward with html only, i still want to know if the documents are corrupted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3588539</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 1, 2011 11:29 AM">
+<s>also try a new project with one of your documents. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3620961</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 17, 2011 9:43 PM">
+<s>wow, i've done almost the same thing, but using a win7 x64 machine.</s><s> i wish i could get as far as you.</s><s> robohelp9 for word either simply fails to load previous projects or else complains that the word documents are right write protected (which they are not), or if i try to import the word documents into robohelp9 html it complains that the version of word that is installed is later than that required and please load an earlier version!</s><s> now this is particularly gaulling because i just upgraded from 8 to 9 specifically so that robohelp was compatible with office 2010.</s><s> i will try installing as suggested elsewhere in this thread but i have no faith that it will resolve the issues.</s><s> has anybody had a seemless run with robohelp9/win7 x64/ofiice 2010 and legacy help files, and if so what was there solution.</s><s> failing that how do you actually get to email adobe's technical support.</s><s> sorry about the last question but i'm a frustrated newbie with this, and this is the least on my problems 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3621035</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 17, 2011 10:53 PM">
+<s>there aren't so many robohelp for word forum supporters around these days but i'll try. 
+</s><s>did you buy an upgrade and if you did, did you first uninstall the old version.</s><s> whilst you can have more than one version of robohelp html on a machine, that's not true of robohelp for word.</s><s> i think in project settings, there is a setting for the version of word.</s><s> is that correct?</s><s> do you have the 64 or 32 bit version of office installed?</s><s> robohelp, like many apps, will only work with the 32 bit version of office on a 64 bit machine. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3621197</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 18, 2011 1:51 AM">
+<s>thanks for the rapid reponse.</s><s> i'm using the 32bit version of office 2010, despite running x64 win 7 as i understand from microsoft that the 64 bit version has "issues" and i just tried to create a new project with a simple word file created with word 2010.</s><s> i got the same error complaining about a corrupt or password protected file which it clearly isn't.</s><s> i am yet to unistall robohelp9 but will do so now and then re-install and wil let you know waht happens. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3621198</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 18, 2011 1:55 AM">
+<s>btw peter 
+</s><s>i really appreciate your responses as i understand that robohelp word is rapidly becoming outdated and i want to convert to robohelp html.</s><s> then maybe you will be albe to relaxe a little 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3621178</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 18, 2011 2:09 AM">
+<s>make sure no older version is installed, even if it is an upgrade. 
+</s><s>also you must have local admin rights when you install. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3621996</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Apr 18, 2011 9:37 AM">
+<s>hello, 
+</s><s>because none of the suggestions offered here solved the problem, i opened a support case with adobe.</s><s> i got a call three days later and was informed that this problem is a "known bug" and the engineers are working on it, but there is no projected fix date, so my support case was closed.</s><s> no suggestions were offered for workarounds.</s><s> i understood before upgrading that rh9 was compatible with word 2010, and the fact that it doesn't work at all seems to me more than a "bug".</s><s> i thought about trying to install word 2007, but i'm not sure how that would work with the rest of the office 2010 programs on my win7 system, and the adobe tech support person didn't know if that would fix the "bug" or not.</s><s> i think i might be basically support-less if i made that choice. 
+</s><s>so i imported my project to rh9 html and i'm going to use that going forward.</s><s> after the import, i found many topics with formatting problems that will need cleaning up, and that will keep me busy for awhile.</s><s> for example, some topics appear in a font and size found nowhere in the project; there are big chunks of garbage characters randomly scattered about, and of course a lot of the formatting done in word is gone or scrambled. 
+</s><s>background: i use rh for one huge project (thousands of topics, some very short, some long and full of jumps, tables, images, etc.</s><s>) that was started about 10 years ago and has been through many upgrades of rh and ms office.</s><s> i expected there would be a lot of clean up involved with those old word files, and that's partly why i avoided making this move to html.</s><s> now the time has come. 
+</s><s>carma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3623005</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 20, 2011 4:11 AM">
+<s>hi carma 
+</s><s>just a very quick response for now, will get back if i resolve anything.</s><s> your email has confirmed my fear, that robohelp9 is incompatible with word 2010, but like you i have just upgraded everything including my development environment visual studio 2010 and so all of the goal posts have changed.</s><s> the annoying thing is that we had purchased robohelp 8 6 weeks before upgrading to office 2010 but adobe would not come to the party and supply an upgrade gratis, instead we were told to get robohelp 9 as that was compatible! 
+</s><s>my background is that i am a research engineer, and the bunny, ten years or so ago, who said that he would supply the software capturing the research for the sponsors.</s><s> we need to issue new versions of the software that is compatible with the new platforms, win 7 etc. and also captures the ongoing research.</s><s> so i'm struggling to get new compatible software running, secured and the documentation, that comprises all reports, papers, presentations and videos, built and integrated into the whole.</s><s> rh had done the documentation in the past, albeit painfully, and i was hoping that this would now be the least of my problems.</s><s> like you i'm intending to clean up/up date the docs and go to html.</s><s> instead i'm confounded at every turn.</s><s> i can convert some of the original help files into html, but not others.</s><s> i cannot currently open any of the old help files in rh word, and rh html complains that it needs a previous version of office if i try and import the docs - arrrghhh!</s><s> i must have been pretty bad in an earlier life. 
+</s><s>will keep you informed 
+
+</s><s>regards 
+</s><s>lionel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3626233</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 20, 2011 4:21 AM">
+<s>carma and lionel 
+</s><s>first a question for both of you.</s><s> would you be able to install both word 2010 and robohelp 9 on a machine with the same os that you have and that has not previously had robohelp installed.</s><s> you would only be installing in trial mode so no serial number would be required. 
+</s><s>now some specifics. 
+</s><s>carma 
+</s><s>i cannot say if word 2007 will fix your problem but assuming you have full licences for both versions of word, they should work ok.</s><s> i have both 2003 and 2010. it requires you open the required version of word and then close it or leave it running before you work with robohelp but that's all.</s><s> i'm not so sure about installing an earlier version after a later version. 
+</s><s>on the font issue, click in some of the paragraphs and see what style is shown in the dropdown.</s><s> if they are lists it is possible the answer will be "none" and you have to apply a paragraph style as well as the list style.</s><s> i can give you more information if that is the problem. 
+</s><s>lionel 
+</s><s>you said your files were being flagged as write protected.</s><s> did you mean that or are you getting the same message as carma where they are password protected?</s><s> not quite the same thing. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3626258</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 20, 2011 4:32 AM">
+<s>hi peter 
+</s><s>i think it is complaining about both.</s><s> i have had to drop this for a day or two, to progress other things but will get back to it in the next day or so and will confirm this. 
+</s><s>unfortunately the only other machine i have access to that is running win7 x64 is my notebook and i downloaded and installed a trial version of robohelp9 on that.</s><s> i had also run rh8 previously. 
+btw i had previously run with earlier versions of word on an earlier desktop so that i could use an older version of rh.</s><s> the trick of running the earlier compliant version before running rh worked, as you describe, but of course it means that the pc is littered with all sorts of files, and in mine and i think carma's case, this was an attempt to rationalise and future proof the pcs and the application files. 
+</s><s>thanks for your help 
+regards 
+lionel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3626291</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="ankur.singla" timestamp="Apr 20, 2011 5:13 AM">
+<s>hi carma/lionel, 
+</s><s>can you please 
+1)clean app data->microsoft->template which contains rhw templates.</s><s> if older rhw version templates are also present then it might be incompatible with office 2010 hence problem will occur 2)run as admin after cleaning app data. 
+</s><s>do let me know the results once you have done that. 
+</s><s>regards ankur singla rh engineering 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3627162</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Apr 20, 2011 11:45 AM">
+<s>ankur, 
+</s><s>i deleted the old robohelp files in the template folder as you suggested, at least i think i found the right location.</s><s> see screen shot of what remains in templates after i removed the rh files.</s><s> however, i still get the same error messages and can't use rh9 for word. 
+
+
+</s><s>peter, 
+</s><s>unfortunately, i don't have another computer available to do a fresh installation.</s><s> i work remotely from my head office in another state, and they only give me one computer. 
+</s><s>regarding the font issue, it appears that some of the styles didn't come along with the project into html from rh for word.</s><s> some documents have all their styles still attached, some not and there are some styles that i didn't create but showed up anyway.</s><s> i had a lot of elaborate formatting in word that seemed like a good idea at the time. 
+</s><s>also, in making a rh upgrade a few years ago there was a huge problem with my project, which involved many weeks of ongoing support from adobe to resolve.</s><s> all map ids were lost, styles got scrambled, documents turned into garbage, etc. we eventually got things put back together, and the project ws usable again but i think some hidden problems remained and i didn't really know how to detect or fix them.</s><s> so i'm pressing on with the conversion/cleanup to html. 
+</s><s>carma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3627252</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 20, 2011 12:29 PM">
+<s>anticipating a question that ankur will likely ask. 
+</s><s>you are remotely accessing your project.</s><s> please confirm robohelp is installed on the pc you are accessing rather than the one you are physically using and that you are using a version of word that is on the same machine as robohelp.</s><s> also where is the project stored? 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3627321</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="Apr 20, 2011 12:46 PM">
+<s>peter, 
+</s><s>no, sorry i wasn't clear.</s><s> i have rh9 installed on the computer at my location, and the project files are on the same computer.</s><s> nothing is doing remotely over a network.</s><s> when my project is compiled i email the result to our office and they distribute the file with our product.</s><s> we have one license for rh and it lives here with me. 
+</s><s>carma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3627572</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 20, 2011 2:39 PM">
+<s>peter 
+</s><s>yes both the software, office and rh and the help files are all on the local pc, no network involved. 
+
+</s><s>regards 
+</s><s>lionel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3630573</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Lionel_Pul" timestamp="Apr 26, 2011 12:27 AM">
+<s>ankur/peter 
+
+
+</s><s>i have finally found some time to have another look at this.</s><s> i removed all previous copies of rh and rh templates as requested installed rh and my attempts to create help files or import existing help files is summarised here, with a more detailed log shown below. 
+1.</s><s> i am experiencing problems with rh word - new or existing word files are said to be corrupt or password protected. 
+2. success using rh html to import word 2010 or previous word docs 
+3. partial success using rh html to import existing help, .hlp, files 
+4. very limited success if at all importing more complex help files that form part of a combined set. 
+5. trying to open an existing help project in rh word takes a very very long time and the os claims that the rh word is no longer responding.</s><s> there certainly does not appear to be any activity, just a status bar stating reading project source... 
+a log of my attempts is listed here 
+
+</s><s>rh installation and creation log 22/04/2011 removed rh8 and rh9 from the pc.</s><s> went to the applicationdata\microsoft\templates, i.e. %appdata%\microsoft\templates and removed all rh templates and also the two templates hpj2doc.dot and hpj2docm.dot, fearing that these may also be used by rh word. 
+</s><s>tried to install rh but got the following dialog 
+cid:image002.png@01cc0108.e330e3e0 clicking reinstall simply restarted the installation process but it never completed, the whole pc hung, such that you could not even load the task monitor.</s><s> re-booted pc and then successfully installed rh9.</s><s> following attempts to create help files follow: 
+· after successful installation opened rh word and tried to run a very simple help file with previously created help doc and received this cid:image003.png@01cc0108.e330e3e0 
+· (ii) started rh word afresh and tried to create a simple help file from scratch targeted as a chm file.</s><s> note word is displaying 3rd helpfile.docx[compatibility mode] - microsoft word in its window handle -why?</s><s>.</s><s> this worked fine see 3rd helpfile.chm.</s><s> after creation of this help file the application data\microsoft\templates directory contained this cid:image004.png@01cc0108.e330e3e0 
+· (iii) started rh word afresh and tried to create a help file by importing a simple word document saved as a native word 2010 docx.</s><s> this produced the following dialog 
+cid:image005.png@01cc0108.e330e3e0 and the documents topics were not imported. 
+· (iv) started rh word afresh and tried to create a help file by importing a simple word document saved as a legacy word 97-2003 doc file.</s><s> this again produced the dialog · cid:image006.png@01cc0108.e330e3e0 
+· (v) started rh html and tried to create a file by importing a simple word document saved as a native word 2010 docx.</s><s> imported ok as a single html file, ignoring the headings and produced a toc with just the two topics, the 1st default topic and the imported word docx.</s><s> see import_a_word_2010_doc.chm the fact that the headings have not created separate html files is probably due to my unfamiliarity with rh html. · (vi) same result when importing a word 97-2003.doc file · (vii) repeat (v) but with same word docx now containing a toc, partial success in that each topic is now defined as a bookmark in and toc transferred to rh.</s><s> would prefer the topics to stay as new topics but again this may be due to my lack of familiarity with rh html · (vii) started rh html and imported small previously created .hlp file successfully.</s><s> some minor errors but acceptable · (viii) started rh html and imported more complex previously created .hlp file .</s><s> this file's help files toc had been "hidden" so that it could be used with a combined toc that controlled several help files, i.e. in the original help files hpj file is the line cnt = combined.cnt 
+cid:image009.jpg@01cc0109.1dd985b0 
+</s><s>this combined.cnt file referenced the actual help files .cnt file - was this the reason for the following failure?</s><s> the importation was almost useless.</s><s> hardly any of the topics were identified and spurious bookmarks scattered throughout the document at apparently random locations 
+
+
+
+
+
+regards lionel csiro 
+hydraulic transport systems 
+
+
+
+
+cid:image001.gif@01cc0107.ba7fd380<callto://lionelpu/ 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3636953</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 26, 2011 12:31 AM">
+<s>lionel 
+</s><s>first i have removed the contact details from your post.</s><s> best not to put those on any forum unless of course you love spam. 
+i think you intended that the post showed images.</s><s> i don't know how you inserted them but they have just become links back to the top of this thread.</s><s> you need to have the images on your local machine and use the camera. 
+</s><s>paste the whole thread in again but inserting images as above.</s><s> once it is correctly posted, i will delete the original. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3642594</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Apr 28, 2011 4:38 AM">
+<s>i have just spoken to adobe.</s><s> they are aware of this thread and are investigating the matter. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3657856</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="May 5, 2011 7:24 AM">
+<s>there is a service release available via help > updates. 
+</s><s>please see if installing that helps and post back. 
+</s><s>lionel - if it doesn't then please add those images. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3658304</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="carma3" timestamp="May 5, 2011 9:55 AM">
+<s>hello peter, 
+</s><s>i installed up the update and it didn't change anything for me--get the same errors in rh 9 for word. 
+</s><s>thank you for pursuing the issue with adobe and for posting here. 
+</s><s>i'm still slogging through the conversion of my project into rh html. 
+</s><s>carma 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3659817</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="May 5, 2011 10:56 PM">
+<s>i have advised adobe of this.</s><s> shame lionel seems to have dropped out of this thread.</s><s> he posted a lot of information but it needs the screenshots that don't appear in the thread. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3942471</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="cnevin" timestamp="Sep 28, 2011 5:35 AM">
+<s>hi, i have just upgraded to word 2010 and am using rh9 and have struck the same problem.</s><s> is there any update on this from adobe or has anyone found a work around?</s><s> regards christina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3942513</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Sep 28, 2011 5:43 AM">
+<s>christina 
+</s><s>robohelp html or robohelp for word?</s><s> 
+</s><s>please post a screenshot of the message you are getting. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3942697</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="cnevin" timestamp="Sep 28, 2011 7:17 AM">
+<s>hi, it turns up when i try to use rh for word.</s><s> i checked that the default word version is word 2010 and it is.</s><s> the message is: 
+
+cheers christina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3942611</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Sep 28, 2011 7:21 AM">
+<s>as yet there is no fix for that problem.</s><s> your only option is to try again with an earlier version of word.</s><s> i'm not sure it will work but it's the only thing i can suggest. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3942753</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="cnevin" timestamp="Sep 28, 2011 7:50 AM">
+<s>well, drat.</s><s> thank you for the help though. 
+cheers christina 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3982470</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Vyradder" timestamp="Oct 20, 2011 11:36 AM">
+<s>i have the same issues, and moving to a previous version of word is not an option (company policy).</s><s> i'm working with an old legacy help system (it's huge) written in winhelp.</s><s> previously, when i upgraded from rh5 to rh7 i had word document corruption issues that i was able to solve somehow (should have documented that process).</s><s> in this case, i've tried deleting affected .rtf's to have rh re-create them, but that doesn't seem to solve the problem.</s><s> word files get corrupted if i try to make changes to them.</s><s> oddly enough, this happens to a much lesser degree if i only open one word file at a time.</s><s> this thread seems to conclude that users in this position are basically out of luck? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3982450</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Oct 20, 2011 12:06 PM">
+<s>which issues?</s><s> there are a number here.</s><s> using save all even to save one file has solved one person's problem but beyond that, i do not know when a fix will be forthcoming.</s><s> that is something you will have to take up with adobe. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-3989754</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Vyradder" timestamp="Oct 25, 2011 11:08 AM">
+<s>the two popup messages in the original post is what i was referring to, peter, in terms of what errors i am witnessing. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-3586135-4086829</DOCNO>
+<TEXT>
+<subject>RoboHelp 9, Win 7, Word 2010: RH9 and Word not hooking up</subject>
+<post author="Peter%20Grainge" timestamp="Dec 15, 2011 7:21 AM">
+<s>all subscribers to this thread should update to the just released service release 9.0.2. 
+</s><s>click here for information 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-666283</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Booooch" timestamp="Jun 23, 2010 9:21 AM">
+<s>we just upgraded a user from windows xp 32 bit, office 2003 pro and robohelp 5.02 to a new machine with windows 7 64 bit, office 2010 pro 32 bit and rh8.</s><s> we made a copy of the rh5 project as a backup and then proceeded to import the rh5 project into rh8.</s><s> when the project completed loading we recieved the following message: the version of word you have installed is not supported.</s><s> please install an earilier version of word before running robohelp for word.</s><s> clicking okay on the message leaves us in rh8 with the project open, however we cannot open any files in word 2010 and get the same message when trying to do so. 
+</s><s>prior to upgrading we did not experience this issue.</s><s> robohelp was installed after office 2010.</s><s> we cannot open any files with robohelp for word in word 2010. 
+</s><s>we searched for and upgraded robohelp for word to version 8.0.203.</s><s> the software is stating there are no further updates. 
+</s><s>any help will be appreciated. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-2919425</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="RoboColum(n)" timestamp="Jun 23, 2010 9:34 AM">
+<s>ms word 2010 is not supported yet with rh8.</s><s> if you don't use any ms word functionality (e.g. use the rh html application and don't generate any printed documentation you'd probably be ok.</s><s> otherwise you'll have to wait for adobe to issue an update that does allow word 2010 or go back to using office 2007 or earlier.   btw although there are users using windows 7 and robohelp 8 successfully, only the 32 bit version is officially supported.</s><s> read the robocolum(n) for a tips, tricks and musings on the technical communication suite products.</s><s> follow the robocolum(n) on twitter
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-2919426</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Captiv8r" timestamp="Jun 23, 2010 9:42 AM">
+<s>hi there 
+unfortunately about all we can suggest is to install an older version of word that robohelp knows about.</s><s> version 8 was released long before word 2010.</s><s> so it's no surprise it's not compatible. 
+</s><s>you should also report this to adobe as a bug or feature request (depending on your view) link is in my sig. 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 within the day - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-2919460</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Booooch" timestamp="Jun 23, 2010 9:52 AM">
+<s>thanks for the quick replies, although not what we were hoping to hear.</s><s> i posted this to adobe as a bug report.</s><s> thank you!</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-2991411</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Flaven" timestamp="Jul 21, 2010 1:39 PM">
+<s>not to be contrary, but adobe sure got captivate 5 compatibility into robohelp 8 quickly.</s><s> since office 2010 has been publicly available for a long time, it is surprising that rh8 has not been updated.</s><s> oh, wait: rh9 upgrade fees.</s><s> never mind...<g> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3073319</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Bitpusher1010" timestamp="Aug 21, 2010 7:56 PM">
+<s>has this been resolved in any way?</s><s> i looked at the on-line store and it shows robohelp 8, with support for word 2007.</s><s> no mention of word 2010. what is the upgrade path? 
+</s><s>as a programmer, i can't imagine the upgrade would require much work.</s><s> testing, yes, but, i think word pretty much kept the same object model.</s><s> could be wrong.... but the com interface is by it's very nature suppose to be consistent across builds. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3073317</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Captiv8r" timestamp="Aug 21, 2010 8:18 PM">
+<s>hi there 
+no further updates have been released to bring office 2010 compatibility to robohelp for word. 
+</s><s>this somewhat underscores why so many have abandoned robohelp for word in favor of robohelp html.</s><s> you are no longer dependent on a specific version of word for your authoring. 
+</s><s>cheers...</s><s> rick 
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3142354</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Duncan%20Rosie" timestamp="Sep 17, 2010 11:29 AM">
+<s>i have a large rh for word project (in rh x3 - word xp) and specifically upgraded to the technical suite to get rh 8, assuming it would work with office 2010 which i am already running. 
+</s><s>how difficult is it going to be to convert this into a rh html project? 
+</s><s>regards, duncan.</s><s> 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3145099</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Peter%20Grainge" timestamp="Sep 18, 2010 10:09 PM">
+<s>never assume any compatibility.         rh8 was out before office 2010 and is not compatible.</s><s> snippet 117 on my site may help you.   see www.grainge.org for robohelp and authoring tips   @petergrainge
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3155141</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="WinOutreach" timestamp="Sep 22, 2010 4:00 PM">
+<s>hello colum mcandrew, adobe robohelp 8 supports windows 7.</s><s> robohelp 8 is compatible with windows xp with service pack 2 (service pack 3 is recommended), windows vista with service pack 1 and windows 7.</s><s> esther windows outreach team- it pro
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3270726</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="mykeehu" timestamp="Nov 12, 2010 2:26 AM">
+<s>here is final solution: if upgrade (or clean install) to office 2010, then in registry missing old path to word.   just copy this code to a regfile (anyname.reg), and registration it: windows registry editor version 5.00
+
+[hkey_local_machine\software\microsoft\office\12.0\word\installroot]
+</s><s>"path"="c:\\program files\\microsoft office\\office14\\"
+</s><s> and robohelp will find and work with word 2010 (office 14.0) too...</s><s> this working with robohelp html
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271681</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="yamaco" timestamp="Nov 12, 2010 9:17 AM">
+<s>hello, are you sure that this registry change works definitely with rh 8 html ?</s><s> i use rh 7 html but this change has no effect.</s><s> because i must buy an upgrade to version 8, i would like to know this solution is ok. 
+</s><s>thank you for answer. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271663</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Booooch" timestamp="Nov 12, 2010 9:30 AM">
+<s>the solution provided by mykeehu does not work.</s><s> this question as far as i am concerned is still an open issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271724</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Booooch" timestamp="Nov 12, 2010 9:34 AM">
+<s>what we did that does work is we installed microsoft word 2003 on the same machine with office 2010.</s><s> rh8 works with word 2003.</s><s> this is not the optimal solution, so until adobe corrects the problem, this is how we will use the product. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271727</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="mykeehu" timestamp="Nov 12, 2010 9:37 AM">
+<s>this work to me.</s><s> i upgraded from office 2003 to 2010, and doesn't work robohelp 8. and when register this key, rh 8 open my word doc file and make a microsoft html help with them.</s><s> tried with other office version number?</s><s> like 
+\office\11.0\word\ \office\10.0\word\ 
+</s><s>in registry path.</s><s> because i think rh will check where was word installed and read this path... 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271731</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Booooch" timestamp="Nov 12, 2010 9:40 AM">
+<s>you're using robohelp for html.</s><s> the original question was on robohelp for word.</s><s> your solution does not work on robohelp for word.</s><s> it is still an open issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271734</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="mykeehu" timestamp="Nov 12, 2010 9:44 AM">
+<s>right, i just published a half solution for help generating for rh 8 html.. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271737</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="mykeehu" timestamp="Nov 12, 2010 9:46 AM">
+<s>i suggest to you: wait for version 9... 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271760</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="yamaco" timestamp="Nov 12, 2010 9:47 AM">
+<s>ok, thanks a lot for answers.</s><s> don't you know any estimation of releasing date of version 9 ? 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3271785</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="mykeehu" timestamp="Nov 12, 2010 9:48 AM">
+<s>i don't know, sorry.</s><s> i'm just a user. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3272557</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Captiv8r" timestamp="Nov 12, 2010 3:19 PM">
+<s>hi all 
+</s><s>as far as when 9 will appear, i'm under the distinct impression that it will ship some time in 2011. 
+</s><s>only adobe can offer anything more specific than that.</s><s> anything else is just a guess.</s><s> even then, nobody but adobe will know the exact date it is released.</s><s> we all find that out at the same time. 
+</s><s>let's all hope it gets to bake longer than captivate 5 did.</s><s> i hate when products are extra doughey in the middle! 
+</s><s>cheers...</s><s> rick 
+
+</s><s>helpful and handy links robohelp wish form/bug reporting form begin learning robohelp html 7 or 8 moments from now - $24.95!</s><s> adobe certified robohelp html training sorcererstone blog robohelp ebooks 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3343094</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Mike.Taddei" timestamp="Dec 15, 2010 1:52 PM">
+<s>this registry change worked for me for robohtml; it allows me to import word documents into my robohelp project again using office 2010. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3394545</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="csloyer" timestamp="Jan 11, 2011 10:38 AM">
+<s>i've tried a couple of times to enter a registry key listed above (and failed ).</s><s> what i did was add a new key (string) in the robohelp 8.0.1 folder and copied the key listed above into the data field.</s><s> i'm guessing that i did something wrong?</s><s> if anyone has a moment, would you point out my mistake? 
+
+
+thanks, 
+chris 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3394596</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Peter%20Grainge" timestamp="Jan 11, 2011 11:13 AM">
+<s>first you must realise you would be working with an unsupported version of word and it is possible the macros that robohelp uses in robohelp for word might not work.</s><s> i don't mean to scaremonger as it may well work, the point is that you have to accept the downside if there is one. 
+</s><s>i'm no registry expert so maybe there are different keys in different installations and maybe there are others that need editing.</s><s> i assume the path to where word is installed is correct for you. 
+
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3394712</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="csloyer" timestamp="Jan 11, 2011 11:39 AM">
+<s>thanks peter...</s><s> 
+</s><s>i'm only interested in being able to use the printed documentation feature in robohelp 8 with word 2010 (as i do not use the robohelp for word function).</s><s> at this point i see no value in upgrading to robohelp 9 just to be able to output to word 2010 (as of now, i do not have a use for the other new features in robohelp 9) . 
+i will continue to fool around with the reg key and if i can't get to work, i'll just output to word 2007 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3736745</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="StephenD1957" timestamp="Jun 13, 2011 11:00 AM">
+<s>so is the word 2010 compatibility problem the reason i can't generate a pdf from robohelp 8?</s><s> if i uncheck the word option for generating printed doc and leave just pdf, i still get the word compatibility error message. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3736964</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="yamaco" timestamp="Jun 13, 2011 12:21 PM">
+<s>yes, this is main reason of problem.</s><s> i asked my national dept of adobe for explaining this case (i need not word while generating pdf) but did not get any reasonable explanation so i think that it is either bug in version 8 or intention - i am not able to decide what is right :-) finally, i upgraded od version 9 and all works fine. 
+</s><s>karel 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-2919356-3737004</DOCNO>
+<TEXT>
+<subject>RH8, Robohelp for Word, Office 2010</subject>
+<post author="Peter%20Grainge" timestamp="Jun 13, 2011 12:54 PM">
+<s>robohelp 8 was not compatible with word 2010.</s><s> hacks were put forward with mixed results. 
+</s><s>when robohelp produces a pdf it does so by creating a hidden word document and then creating a pdf from that.</s><s> no compatible version of word means there is no document to generate the pdf from. 
+</s><s>quite simply, you need a compatible version to get either a word document or a pdf. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-962756</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 14, 2012 9:13 AM">
+<s>i have installed robohelp 9 on my windows 7 machine that has ms office 2010 already installed on it. 
+i have installed the robohelp 9.0.2 update.</s><s> i start robohelp 9 for word and create a new winhelp 4 project. 
+i give it a name and click finish.</s><s> i get an error message that says "robohelp can not open docx files in the current word version" 
+i click ok and it launches the template in word and gives me a macro error that saya "compile error in hidden module autoopen.</s><s> this error commonly occurs when code is incompatible with the version, platform, architecture of this application" 
+</s><s>when i close the word document, i get an error about hidden module autoclose.</s><s> it's like there is something wrong with the template. 
+</s><s>note: i previously had robohelp 8 installed, but uninstalled and made sure that every occurence of robohelp.dot was gone. 
+</s><s>shouldn't robohelp 9 be creating a .dotx for office 2010? 
+am i doing something wrong? 
+
+</s><s>thanks for any help, george 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4206454</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 14, 2012 10:50 AM">
+<s>look in tools > options to see which version of word is set there. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4206619</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 14, 2012 11:27 AM">
+<s><quote>
+<s>peter grainge wrote: 
+look in tools > options to see which version of word is set there. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></quote>
+i looked where you said and no word version is selected.</s><s> see below, the dropdown doesn't have any choices in it. 
+
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4206608</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 14, 2012 11:37 AM">
+<s>it looks like the install has not worked, based on your first post and that dropdown being empty.</s><s> my inclination would be to uninstall and then try again. 
+</s><s>is your normal.dot word template on your hard drive?</s><s> if your it have it on a network drive that might cause problems. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4206716</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 14, 2012 12:27 PM">
+<s>i uninstalled, cleaned out all files witth the name robohelp and reinstalled.</s><s> i still have the same problem. 
+</s><s>the file is called normal.dotm and the file path is c:\users\gheller\appdata\roaming\microsoft\templates 
+under security settings, i have full control of the file and folder so it's not a permissions issue. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4207513</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 15, 2012 12:28 AM">
+<s>there should be a .dot file as well as the .</s><s>dotm.</s><s> if you do not have a .dot file i wonder if that is why robohelp is not picking up the word installation. 
+i believe jeff coatsworth has pointed out in other posts that you can get free support for installation issues from adobe tech support. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4208067</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 15, 2012 7:16 AM">
+<s>could you please point me to the post that jeff made or give me contact info for the free support? 
+</s><s>thanks in advance, george 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4208223</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 15, 2012 7:31 AM">
+<s>where you phone will depend on what country you are in. 
+</s><s>start here. http://www.adobe.com/support/contact/ 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4209125</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 15, 2012 1:26 PM">
+<s>i'm in the us.</s><s> i called adobe tech support and they are working the issue.</s><s> i'll keep you posted. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4215816</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="bjh955" timestamp="Feb 18, 2012 7:50 PM">
+<s>hi george, 
+</s><s>i note the line in your original post :- 
+</s><s>"note: i previously had robohelp 8 installed, but uninstalled and made sure that every occurence of robohelp.dot was gone." 
+i think that is your problem.</s><s> you have deleted the robohelp.dot from the templates directory.</s><s> although you are using office 2010 or 2007 robohelp still insists on using an office 2003 or earlier format template in *.</s><s>dot format.</s><s> you need to have a robohelp.dot template for the program to work.</s><s> may i syggest a re-install, leave the robohelp.dot in place as it is instaled and see what happens ?</s><s> i posted an issue a couple of weeks ago questioning why robohelp does not use dotx or dotm format templates as per office 2010 and peter grainge has asked adobe on my behalf... yet to see a reply. 
+</s><s>my issue related to potemntial incosistency in bult output (corruption) and question whether that was caused bt the different formats of the template ie:- a 2003 format templat in documents saved in 2010 or 2007 format.</s><s> as others have stated in the past word starts up in 'compatribility' mode when using the *.</s><s>dot format template that i have found may be linked to some output and build issues ? 
+</s><s>good luck. 
+</s><s>bryan holman 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4217479</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 20, 2012 2:13 AM">
+<s>bryan 
+</s><s>if i didn't already suggest it, i think you should report all your woes to adobe by way of a bug report. 
+</s><s>better still, join us all over on robohelp html. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4220555</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 21, 2012 11:00 AM">
+<s>peter, 
+</s><s>i have no objection to robohelp for html.</s><s> our existing help files are in .rtf format.</s><s> they could probably be converted to html.</s><s> the help files need to work in a windows client .</s><s>net application.</s><s> can robohelp for html do that? 
+</s><s>george 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4220798</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 21, 2012 12:35 PM">
+<s>my understanding is that webhelp should work just fine in that environment.</s><s> can someone confirm? 
+</s><s>george: prompt me if no one responds and you cannot find anything in robohelp's own help.</s><s> i'll see what i can find out. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4222165</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="USPTOGeorge" timestamp="Feb 22, 2012 6:37 AM">
+<s>i just tried to create a web help project and got the same errors.</s><s> peter, the adobe helpdesk did offer to remote into my machine and solve the problem.</s><s> i checked with our helpdesk and they said it would only be ok if the adobe representative is someone who works with uspto (us patent & trademark office).</s><s> if adobe has such a person, they could help. 
+</s></post>
+</TEXT>
+</DOC>
+
+
+<DOC>
+<DOCNO>Adobe-Community/RoboHelp/RoboHelp-for-Word/Discussions-4206278-4222317</DOCNO>
+<TEXT>
+<subject>Robohelp 9 not working with Word 2010 on Windows 7</subject>
+<post author="Peter%20Grainge" timestamp="Feb 22, 2012 7:25 AM">
+<s>are you saying that your help desk is stipulating that the adobe person must have some specific certification?</s><s> if so, good luck with that one.</s><s> do your helpdesk not know of adobe?</s><s> their name alone should be sufficient. 
+
+</s><s>see www.grainge.org for robohelp and authoring tips 
+@petergrainge 
+</s></post>
+</TEXT>
+</DOC>
+
+
