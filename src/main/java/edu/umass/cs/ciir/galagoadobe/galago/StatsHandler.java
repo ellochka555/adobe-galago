@@ -133,9 +133,9 @@ public class StatsHandler extends ContextHandler {
                 _forums =(String[])jsonObj.get("f[]");
                 join = (String[])jsonObj.get("j[]");
             }catch(Exception e){}
+            response.setHeader("Content-Type", "application/json; charset=utf-8");
+            ServletOutputStream outputStream = response.getOutputStream();
             if(join != null && _forums != null){
-                response.setHeader("Content-Type", "application/json; charset=utf-8");
-                ServletOutputStream outputStream = response.getOutputStream();
                 IOUtils.write(buildStats(_forums, join, !filter, false), outputStream);
                 outputStream.close();
                 response.flushBuffer();
@@ -146,13 +146,12 @@ public class StatsHandler extends ContextHandler {
                 join = (String[])jsonObj.get("ngrams[]");
             }catch(Exception e){}
             if(join != null && _forums != null){
-                response.setHeader("Content-Type", "application/json; charset=utf-8");
-                ServletOutputStream outputStream = response.getOutputStream();
                 IOUtils.write(buildStats(_forums, join, !filter, true), outputStream);
                 outputStream.close();
                 response.flushBuffer();
                 return;
             }
+
 
 
 

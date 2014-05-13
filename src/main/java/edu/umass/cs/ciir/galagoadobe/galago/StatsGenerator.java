@@ -11,6 +11,13 @@ import org.lemurproject.galago.core.retrieval.iterator.DataIterator;
 import org.lemurproject.galago.core.retrieval.processing.ScoringContext;
 import org.lemurproject.galago.tupleflow.FakeParameters;
 import org.lemurproject.galago.tupleflow.Parameters;
+/*
+import weka.clusterers.SimpleKMeans;
+import weka.core.Attribute;
+import weka.core.BinarySparseInstance;
+import weka.core.Instances;
+*/
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
@@ -23,20 +30,21 @@ import java.io.InputStreamReader;
 public class StatsGenerator {
 
     public static Map<String, Boolean> stopWords;
-    public static Map<String, Boolean> sentiWords;
+    public static Map<String, Integer> sentiWords;
     public static Document.DocumentComponents docCompCnfg;
 
     static {
         try{
             docCompCnfg = new Document.DocumentComponents(true,true,false);
             stopWords = new HashMap<String, Boolean>();
-            sentiWords = new HashMap<String, Boolean>();
+            sentiWords = new HashMap<String, Integer>();
 
             BufferedReader reader = new BufferedReader(new InputStreamReader(docCompCnfg.getClass().getResourceAsStream("/sentiwordlist.txt")));
             String line = null;
+            int i = 0;
             while ((line = reader.readLine()) != null) {
                 line = line.trim();
-                sentiWords.put(line, true);
+                sentiWords.put(line, i++);
             }
             reader = new BufferedReader(new InputStreamReader(docCompCnfg.getClass().getResourceAsStream("/inquery")));
             line = null;
@@ -44,6 +52,7 @@ public class StatsGenerator {
                 line = line.trim();
                 stopWords.put(line, true);
             }
+
         }catch(Exception e){
             e.printStackTrace();
             throw new ExceptionInInitializerError(e);
@@ -106,6 +115,7 @@ public class StatsGenerator {
         NGrams ngram = null; // NGram-ifys sentences.
 
 
+        int ind = 0;
         for(String post : names){
             curd = r.getDocument(post, docCompCnfg);
             tagTokenizer.process(curd);

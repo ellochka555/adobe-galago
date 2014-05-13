@@ -81,7 +81,7 @@ public class AdobeStats extends AppFunction{
             output.print(forumToStats.get(thrd).toString());
         }
 */
-        StatTracker stats = new StatTracker(new NGrams(), 0, 0, 0, 0, 0, 0);
+        StatTracker stats = new StatTracker(new NGrams(StatsGenerator.sentiWords, true), 0, 0, 0, 0, 0, 0, 0);
         for(String thrd : threadToStats.keySet()){
             stats = stats.combine(threadToStats.get(thrd));
         }

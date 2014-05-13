@@ -175,38 +175,38 @@ public class trecWriterProcessor extends Processor{
         }
         sb.deleteCharAt(sb.length()-1);
         String headerBegin = sb.toString();
+        System.out.println(headerBegin);
 
-        Element OP = thread.select(".jive-thread-post").first();
+        Element OP = thread.select(".j-op").first();
         if( OP == null ){
             return null;
         }
-        String subject = OP.select(".jive-thread-post-body"
-                +" .jive-thread-post-body-container"
-                +" .jive-thread-post-subject"
-                +" .jive-thread-post-subject-content"
-                +" h2"
+        String subject = OP.select(".j-thread-post"
+                +" .js-original-header"
+                +" h1"
                 +" a").first().text();
 
-        String OPtimestamp = OP.select(".jive-thread-post-body"
-                +" .jive-thread-post-body-container"
-                +" .jive-thread-post-subject"
-                +" .jive-thread-post-subject-content"
-                +" h3").first().text();
+        String OPtimestamp = OP.select(".j-thread-post"
+                +" .js-original-header"
+                +" .j-post-author").first().ownText();
+        System.out.println(OPtimestamp);
 
         Elements ids = OP.select("a");
         List<Element> idli = ids.subList(0, 2);
         String OPmsgID = idli.get(0).attr("name");
         String threadID = idli.get(1).attr("name");
 
-        String OPauthor = OP.select(".jive-thread-post-body"
-                +" .jive-author-cc"
-                +" .jive-author-avatar-container-cc"
-                +" .jive-username-link-wrapper"
-                +" a").first().text();
 
-        Element miniParas = OP.select(".jive-thread-post-body"
-                + " .jive-thread-post-body-container"
-                + " .jive-thread-post-message"
+        String OPauthor = OP.select(".j-thread-post"
+                +" .js-original-header"
+                +" .j-post-author"
+                +" strong"
+                +" a").first().attr("data-username");
+
+
+
+        Element miniParas = OP.select(".j-thread-post"
+                + " .j-original-message"
                 + " .jive-rendered-content").first();
 
         String OPcontent = paragraphsToString(miniParas);
@@ -221,7 +221,7 @@ public class trecWriterProcessor extends Processor{
                     , OPcontent
                     , headerBegin));
         }
-
+/*
         Element correct = thread.select("#jive-inline-answer-outer-div").first();
         if( correct != null){
             String cauthor = correct.select("#jive-inline-answer-inner-avatar"
@@ -252,7 +252,7 @@ public class trecWriterProcessor extends Processor{
                         , ccontent
                         , headerBegin));
             }
-        }
+        }*/
 
         String oauthor = null;
         String otimestamp = null;
@@ -268,21 +268,17 @@ public class trecWriterProcessor extends Processor{
                 +" li.reply"
                 +" div.jive-thread-message"
                 +" div"
-                +" div.jive-thread-reply");
+                +" div.j-thread-post");
         if( !otherComments.isEmpty() ){
             for ( Element comment : otherComments){
                 omsgID = comment.select("a").first().attr("name");
-                otimestamp = comment.select(".jive-thread-reply-body-container"
-                    +" .jive-thread-reply-subject"
-                    +" .jive-thread-reply-date"
-                    +" span").text();
-                oauthor = comment.select(".jive-thread-reply-body-container"
-                        +" .jive-thread-reply-subject"
-                        +" .jive-reply-thread-username"
-                        +" .jive-username-link").first().attr("data-username");
-                oMiniParas = comment.select(".jive-thread-reply-body-container"
-                        +" .jive-thread-reply-message"
-                        +" .jive-rendered-content").first();
+                otimestamp = comment.select("header"
+                    +" .j-post-author").first().ownText();
+                oauthor = comment.select("header"
+                        +" .j-post-author"
+                        +" strong"
+                        +" a").first().attr("data-username");
+                oMiniParas = comment.select(".jive-rendered-content").first();
                 ocontent = paragraphsToString(oMiniParas);
 
                 if(map.get(headerBegin+"-"+threadID+"-"+omsgID) == null){

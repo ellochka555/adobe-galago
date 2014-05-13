@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ArrayList;
 
 
 public class NGrams {
@@ -40,28 +41,18 @@ public class NGrams {
     public Map<String, Integer> uni;
     public Map<String, Integer> bi;
     public Map<String, Integer> tri;
-    public Map<String, Boolean> sent;
+    public Map<String, Integer> sent;
     public boolean all;
 
-    public NGrams(String sen, Map<String, Boolean> sentiWords, boolean allowAll) {
+
+    public NGrams(Map<String, Integer> sentiWords, boolean allowAll){
         uni = new HashMap<String, Integer>();
         bi = new HashMap<String, Integer>();
         tri = new HashMap<String, Integer>();
         this.sent = sentiWords;
         this.all = allowAll;
-        this.addSentence(sen);
     }
-    public NGrams(Map<String, Boolean> sentiWords, boolean allowAll){
-        this(null, sentiWords, allowAll);
-    }
-    public NGrams(Map<String,Integer> uni, Map<String,Integer> bi, Map<String,Integer> tri
-            , Map<String, Boolean> sentiWords, boolean allowAll){
-        this.uni = uni;
-        this.bi = bi;
-        this.tri = tri;
-        this.all = allowAll;
-        this.sent = sentiWords;
-    }
+
 
     public JSONObject toJSON() throws JSONException {
         JSONObject json = new JSONObject();
@@ -115,7 +106,7 @@ public class NGrams {
         String[] cur = new String[3];
         Integer number = null;
         boolean skip = false;
-
+        String tok = null;
         for(int i = 0; i < arr.length; i++){
             cur[2] = cur[1];
             cur[1] = cur[0];
@@ -129,20 +120,22 @@ public class NGrams {
             if(skip) continue;
             if(cur[2] != null && cur[1] != null && cur[0] != null
                     && (this.all || sent.get(cur[2]) != null || sent.get(cur[1]) != null || sent.get(cur[0]) != null) ){
-                number = tri.get(cur[2]+" "+cur[1]+" "+cur[0]);
+                tok = cur[2]+" "+cur[1]+" "+cur[0];
+                number = tri.get(tok);
                 if(number == null){
-                    tri.put(cur[2]+" "+cur[1]+" "+cur[0], 1);
+                    tri.put(tok, 1);
                 }else{
-                    tri.put(cur[2]+" "+cur[1]+" "+cur[0], number+1);
+                    tri.put(tok, number+1);
                 }
             }
             if(cur[1] != null && cur[0] != null
                     && (this.all || sent.get(cur[1]) != null || sent.get(cur[0]) != null)){
-                number = bi.get(cur[1]+" "+cur[0]);
+                tok = cur[1]+" "+cur[0];
+                number = bi.get(tok);
                 if(number == null){
-                    bi.put(cur[1]+" "+cur[0], 1);
+                    bi.put(tok, 1);
                 }else{
-                    bi.put(cur[1]+" "+cur[0], number+1);
+                    bi.put(tok, number+1);
                 }
             }
             number = uni.get(cur[0]);

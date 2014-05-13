@@ -15,9 +15,6 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 
-/**
- * Created by nick on 3/22/14.
- */
 public class NamesHandler extends ContextHandler {
 
     private Parameters params;
@@ -46,6 +43,7 @@ public class NamesHandler extends ContextHandler {
         try{
             msgs = StatsGenerator.getNames(params);
         }catch(Exception e){
+            e.printStackTrace();
             return null;
         }
         if(msgs == null) return null;
@@ -64,12 +62,11 @@ public class NamesHandler extends ContextHandler {
     }
 
     public String getJSON() throws IOException {
-
         List<String> msgs = null;
         try{
             msgs = StatsGenerator.getNames(params);
         }catch(Exception e){
-            return "{\"names\":[\"error\"]}";
+            throw new IOException(e);
         }
         if(msgs == null) return "{\"names\":[\"error\"]}";
 
